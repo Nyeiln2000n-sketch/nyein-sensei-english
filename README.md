@@ -112,6 +112,3 @@ nyein-sensei-english/
 
 - Vocabulary: **600 rows, 600 unique English terms** (20 topics × 30)
 - Phrases: **320** (20 topics × 16)
-
-## CI
-Vercel builds automatically from `main` with Supabase env vars injected.

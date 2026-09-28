@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import type { TopicId, Level } from './types';
 import HomeScreen from './components/HomeScreen';
 import TopicsScreen from './components/TopicsScreen';
@@ -7,28 +7,90 @@ import LessonScreen from './components/LessonScreen';
 import GameScreen from './components/GameScreen';
 import LibraryScreen from './components/LibraryScreen';
 import StatsScreen from './components/StatsScreen';
+import OnboardingScreen from './components/OnboardingScreen';
+import AuthScreen from './components/AuthScreen';
+import ProfileScreen from './components/ProfileScreen';
+import { TabBar } from './components/ui';
+import { getSession, onAuthChange } from './lib/auth';
+
+type TabName = 'home' | 'topics' | 'library' | 'stats' | 'profile';
 
 type Route =
-  | { name: 'home' }
-  | { name: 'topics' }
+  | { name: 'onboarding' }
+  | { name: 'auth' }
+  | { name: TabName }
   | { name: 'topic'; topic: TopicId }
   | { name: 'lesson'; topic: TopicId; level: Level }
-  | { name: 'game'; game: string; topic: TopicId }
-  | { name: 'library' }
-  | { name: 'stats' };
+  | { name: 'game'; game: string; topic: TopicId };
+
+const ONBOARDED_KEY = 'nyein-sensei-onboarded';
+
+const TABS = [
+  { id: 'home', icon: '🏠', label: 'ပင်မ' },
+  { id: 'topics', icon: '📚', label: 'သင်ခန်းစာ' },
+  { id: 'library', icon: '🔊', label: 'အသံ' },
+  { id: 'stats', icon: '🏆', label: 'တိုးတက်မှု' },
+  { id: 'profile', icon: '👤', label: 'ပရိုဖိုင်' },
+] as const;
 
 export default function App() {
-  const [route, setRoute] = useState<Route>({ name: 'home' });
+  const [route, setRoute] = useState<Route>(() => {
+    try {
+      return localStorage.getItem(ONBOARDED_KEY) === '1' ? { name: 'home' } : { name: 'onboarding' };
+    } catch {
+      return { name: 'onboarding' };
+    }
+  });
   // bump to force progress-refreshing screens to re-render
   const [tick, setTick] = useState(0);
   const refresh = () => setTick((t) => t + 1);
+  const [authMode, setAuthMode] = useState<'signin' | 'signup'>('signin');
+  const [email, setEmail] = useState<string | null>(() => getSession()?.user?.email ?? null);
 
+  useEffect(() => {
+    return onAuthChange((s) => setEmail(s?.user?.email ?? null));
+  }, []);
+
+  const markOnboarded = () => {
+    try {
+      localStorage.setItem(ONBOARDED_KEY, '1');
+    } catch {
+      /* ignore */
+    }
+  };
   const goHome = () => { setRoute({ name: 'home' }); refresh(); };
-  const showNav = route.name === 'home' || route.name === 'topics' || route.name === 'library' || route.name === 'stats';
+  const goTab = (id: string) => {
+    const tab = TABS.find((t) => t.id === id);
+    if (tab) {
+      setRoute({ name: tab.id });
+      refresh();
+    }
+  };
+
+  const showTabs =
+    route.name === 'home' ||
+    route.name === 'topics' ||
+    route.name === 'library' ||
+    route.name === 'stats' ||
+    route.name === 'profile';
 
   return (
     <div className="app" key={tick}>
       <main className="main">
+        {route.name === 'onboarding' && (
+          <OnboardingScreen
+            onStart={() => { markOnboarded(); goHome(); }}
+            onLogin={() => { setAuthMode('signin'); setRoute({ name: 'auth' }); }}
+          />
+        )}
+        {route.name === 'auth' && (
+          <AuthScreen
+            mode={authMode}
+            onModeChange={setAuthMode}
+            onSuccess={() => { markOnboarded(); goHome(); }}
+            onBack={goHome}
+          />
+        )}
         {route.name === 'home' && (
           <HomeScreen
             onOpenTopics={() => setRoute({ name: 'topics' })}
@@ -56,28 +118,22 @@ export default function App() {
         )}
         {route.name === 'library' && <LibraryScreen onBack={goHome} />}
         {route.name === 'stats' && <StatsScreen onBack={goHome} />}
+        {route.name === 'profile' && (
+          <ProfileScreen
+            email={email}
+            onBack={goHome}
+            onSignedOut={() => { goHome(); }}
+            onSignIn={() => { setAuthMode('signin'); setRoute({ name: 'auth' }); }}
+          />
+        )}
       </main>
 
-      {showNav && (
-        <nav className="bottom-nav">
-          {(
-            [
-              ['home', '🏠', 'ပင်မ'],
-              ['topics', '📚', 'သင်ခန်းစာ'],
-              ['library', '🔊', 'အသံ'],
-              ['stats', '🏆', 'တိုးတက်မှု'],
-            ] as const
-          ).map(([name, icon, label]) => (
-            <button
-              key={name}
-              className={`nav-item ${route.name === name ? 'active' : ''}`}
-              onClick={() => { setRoute({ name } as Route); refresh(); }}
-            >
-              <span className="nav-icon">{icon}</span>
-              <span className="nav-label">{label}</span>
-            </button>
-          ))}
-        </nav>
+      {showTabs && (
+        <TabBar
+          tabs={[...TABS]}
+          active={route.name}
+          onChange={goTab}
+        />
       )}
     </div>
   );

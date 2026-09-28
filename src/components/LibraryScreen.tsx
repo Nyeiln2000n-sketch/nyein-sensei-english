@@ -1,74 +1,108 @@
 import { useMemo, useState } from 'react';
-import { allWords, allPhrases } from '../data';
+import { allWords, allPhrases, topics } from '../data';
+import type { TopicId } from '../types';
 import { speak } from '../lib/audio';
+import { AppBar, MascotBubble, SectionTitle } from './ui';
 
 interface Props {
   onBack: () => void;
 }
 
+type Tab = 'words' | 'phrases';
+type TopicFilter = TopicId | 'all';
+
 export default function LibraryScreen({ onBack }: Props) {
   const [query, setQuery] = useState('');
-  const [filter, setFilter] = useState<'words' | 'phrases'>('words');
+  const [tab, setTab] = useState<Tab>('words');
+  const [topic, setTopic] = useState<TopicFilter>('all');
 
   const q = query.trim().toLowerCase();
+
   const items = useMemo(() => {
-    if (!q) return [];
-    if (filter === 'words') {
-      return allWords
-        .filter((w) => w.en.toLowerCase().includes(q) || w.my.includes(query.trim()))
-        .slice(0, 50);
+    const matchesQuery = (en: string, my: string) =>
+      q === '' || en.toLowerCase().includes(q) || my.includes(query.trim());
+    if (tab === 'words') {
+      return allWords.filter(
+        (w) => (topic === 'all' || w.topic === topic) && matchesQuery(w.en, w.my),
+      );
     }
-    return allPhrases
-      .filter((p) => p.en.toLowerCase().includes(q) || p.my.includes(query.trim()))
-      .slice(0, 50);
-  }, [q, filter, query]);
+    return allPhrases.filter(
+      (p) => (topic === 'all' || p.topic === topic) && matchesQuery(p.en, p.my),
+    );
+  }, [q, query, tab, topic]);
 
   return (
-    <div className="page-enter">
-      <div className="nav-bar">
-        <button className="icon-btn" onClick={onBack} aria-label="back">‹</button>
-        <h1>🔊 အသံစာကြည့်တိုက်</h1>
-        <span className="nav-spacer" />
+    <div className="screen">
+      <AppBar title="🔊 အသံစာကြည့်တိုက်" onBack={onBack} />
+
+      <input
+        className="input"
+        type="search"
+        placeholder="စကားလုံးရှာရန်…"
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
+        aria-label="စကားလုံးရှာရန်"
+      />
+
+      <div className="chip-row">
+        <button
+          className={`chip-word ${topic === 'all' ? 'active' : ''}`}
+          onClick={() => setTopic('all')}
+        >
+          🌟 အားလုံး
+        </button>
+        {topics.map((t) => (
+          <button
+            key={t.id}
+            className={`chip-word ${topic === t.id ? 'active' : ''}`}
+            onClick={() => setTopic(t.id)}
+          >
+            {t.icon} {t.nameMy}
+          </button>
+        ))}
       </div>
 
-      <div className="search-bar">
-        <span>🔍</span>
-        <input
-          type="search"
-          placeholder="ရှာရန်... (ဥပမာ: apple, မိသားစု)"
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          aria-label="search"
-        />
-      </div>
-
-      <div className="tabs">
+      <div className="chip-row">
         {(
           [
             ['words', `🔤 စကားလုံး (${allWords.length})`],
             ['phrases', `💬 စကားစု (${allPhrases.length})`],
           ] as const
         ).map(([key, label]) => (
-          <button key={key} className={`tab ${filter === key ? 'active' : ''}`} onClick={() => setFilter(key)}>
+          <button
+            key={key}
+            className={`chip-word ${tab === key ? 'active' : ''}`}
+            onClick={() => setTab(key)}
+          >
             {label}
           </button>
         ))}
       </div>
 
-      {!q && (
-        <div className="empty-state">
-          <div className="empty-emoji">🔊</div>
-          <p>စကားလုံး သို့မဟုတ် အဓိပ္ပာယ်ကို ရိုက်ထည့်ပါ။<br />နှိပ်လိုက်တာနဲ့ အသံထွက်ကို ကြားရမယ်။</p>
-        </div>
+      <SectionTitle>{`📚 ${items.length} ခု တွေ့တယ်`}</SectionTitle>
+
+      {items.length === 0 && (
+        <MascotBubble text="မတွေ့ဘူး 😿 တစ်ခြားစကားလုံး စမ်းကြည့်ပါနော်" img="/mascot.png" />
       )}
 
       <div className="word-list">
         {items.map((item, i) => (
-          <button key={i} className="word-row" onClick={() => speak(item.en)}>
-            <span className="word-en">{item.en}</span>
-            <span className="word-my">{item.my}</span>
-            <span className="speak-icon">🔊</span>
-          </button>
+          <div key={`${tab}-${i}-${item.en}`} className="card word-row">
+            <div className="word-text">
+              <span className="word-en">{item.en}</span>
+              <span className="word-my">{item.my}</span>
+              {'level' in item && (
+                <span className="word-level">{'⭐'.repeat(Number((item as { level?: unknown }).level) || 1)}</span>
+              )}
+            </div>
+            <button
+              className="btn-chunky btn-green speak-btn"
+              onClick={() => speak(item.en)}
+              aria-label={`${item.en} အသံဖွင့်ရန်`}
+            >
+              🔊
+            </button>
+          </div>
         ))}
       </div>
     </div>

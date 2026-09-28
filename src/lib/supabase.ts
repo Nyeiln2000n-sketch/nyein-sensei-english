@@ -10,6 +10,7 @@
 // official client; the table/RLS contract stays the same.
 
 import type { LessonResult, Progress } from '../types';
+import { getAccessToken } from './auth';
 
 // Build-time globals injected by vite.config.ts `define` (mapped from
 // VITE_SUPABASE_* or the Supabase Vercel integration's SUPABASE_* names).
@@ -42,11 +43,14 @@ function deviceId(): string {
 async function rest(path: string, init: RequestInit = {}): Promise<Response | null> {
   if (!supabaseEnabled) return null;
   try {
+    // When the user is signed in, use their session access token so RLS
+    // policies see the authenticated user; otherwise fall back to the anon key.
+    const token = getAccessToken() ?? (ANON_KEY as string);
     return await fetch(`${URL}/rest/v1/${path}`, {
       ...init,
       headers: {
         apikey: ANON_KEY as string,
-        Authorization: `Bearer ${ANON_KEY}`,
+        Authorization: `Bearer ${token}`,
         'Content-Type': 'application/json',
         // resolution=merge-duplicates: upsert on conflict (device_id / profile_id).
         // return=representation: PostgREST returns the upserted row so we can

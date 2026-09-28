@@ -1,59 +1,86 @@
-import { topics } from '../data';
-import { getProgress, getXP, getStreak, getAnswerStats, resetProgress } from '../lib/storage';
+import { getProgress, resetProgress } from '../lib/storage';
+import { AppBar, MascotBubble, Sky } from './ui';
 
 interface Props {
   onBack: () => void;
 }
 
+const DAY_LABELS = ['တနင်္လာ', 'အင်္ဂါ', 'ဗုဒ္ဓဟူး', 'ကြာသပတေး', 'သောကြာ', 'စနေ', 'တနင်္ဂနွေ'];
+
+function todayKey(): string {
+  const d = new Date();
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+}
+
+/** Index of today in a Mon(0)..Sun(6) week row. */
+function todayWeekdayIndex(): number {
+  return (new Date().getDay() + 6) % 7;
+}
+
 export default function StatsScreen({ onBack }: Props) {
   const progress = getProgress();
-  const xp = getXP();
-  const streak = getStreak();
-  const answers = getAnswerStats();
-  const accuracy = answers.total > 0 ? Math.round((answers.correct / answers.total) * 100) : 0;
-  const completed = Object.keys(progress.completedLessons).length;
-  const total = topics.length * 3;
+  const accuracy =
+    progress.totalAnswered > 0
+      ? Math.round((progress.totalCorrect / progress.totalAnswered) * 100)
+      : 0;
+  const mascotImg = progress.streakDays > 0 ? '/mascot-celebrate.png' : '/mascot.png';
+  const isActiveToday = progress.lastActiveDate === todayKey();
+  const todayIdx = todayWeekdayIndex();
+
+  const message =
+    progress.streakDays > 0
+      ? `ကြည့်စမ်း! 🔥 ${progress.streakDays} ရက်ဆက်တိုက် ကြိုးစားနေပြီ — ဒီလိုပဲ ဆက်သွားပါ 💪`
+      : 'ဒီနေ့ကစပြီး စကားလုံးလေးတစ်လုံးနဲ့ အတူတူ စလိုက်ရအောင် 🌱';
 
   return (
-    <div className="page-enter">
-      <div className="nav-bar">
-        <button className="icon-btn" onClick={onBack} aria-label="back">‹</button>
-        <h1>🏆 တိုးတက်မှု</h1>
-        <span className="nav-spacer" />
-      </div>
+    <div className="screen">
+      <AppBar title="🏆 တိုးတက်မှု" onBack={onBack} />
+      <Sky>
+        <div className="stats-hero">
+          <img src={mascotImg} alt="မာဆကုတ်" className="stats-mascot" />
+          <MascotBubble text={message} img={mascotImg} />
+        </div>
 
-      <div className="stat-row">
-        <div className="stat-card"><div className="stat-num">🔥 {streak}</div><div className="stat-label">နေ့ဆက်တိုက်</div></div>
-        <div className="stat-card"><div className="stat-num">⭐ {xp}</div><div className="stat-label">XP စုစုပေါင်း</div></div>
-        <div className="stat-card"><div className="stat-num">{accuracy}%</div><div className="stat-label">မှန်ကန်နှုန်း</div></div>
-      </div>
-
-      <section className="section">
-        <h2>သင်ခန်းစာ ပြီးစီးမှု</h2>
-        <div className="big-progress">
-          <div className="progress-track big">
-            <div className="progress-fill" style={{ width: `${(completed / total) * 100}%` }} />
+        <div className="stat-grid">
+          <div className="stat-card">
+            <div className="stat-num">🔥 {progress.streakDays}</div>
+            <div className="stat-label">ရက်ဆက်</div>
           </div>
-          <p>{completed} / {total} သင်ခန်းစာ</p>
+          <div className="stat-card">
+            <div className="stat-num">⚡ {progress.xp}</div>
+            <div className="stat-label">XP စုစုပေါင်း</div>
+          </div>
+          <div className="stat-card">
+            <div className="stat-num">🎯 {accuracy}%</div>
+            <div className="stat-label">မှန်ကန်မှု</div>
+          </div>
+          <div className="stat-card">
+            <div className="stat-num">🏆 {progress.bestCombo}</div>
+            <div className="stat-label">အကောင်းဆုံး combo</div>
+          </div>
         </div>
-        <div className="topic-progress-list">
-          {topics.map((t) => {
-            const done = [1, 2, 3].filter((l) => progress.completedLessons[`${t.id}:${l}`]).length;
-            if (done === 0) return null;
-            return (
-              <div key={t.id} className="tp-row" style={{ ['--tc' as string]: t.color }}>
-                <span>{t.icon} {t.nameMy}</span>
-                <div className="progress-track small"><div className="progress-fill" style={{ width: `${(done / 3) * 100}%` }} /></div>
-                <span>{done}/3</span>
-              </div>
-            );
-          })}
-        </div>
-      </section>
 
-      <section className="section">
+        <div className="card week-row">
+          <div className="section-title">📅 ဒီအပတ်</div>
+          <div className="week-dots">
+            {DAY_LABELS.map((label, i) => {
+              const isToday = i === todayIdx;
+              const active = isToday && isActiveToday;
+              return (
+                <div key={label} className={`week-day ${isToday ? 'today' : ''} ${active ? 'active' : ''}`}>
+                  <span className="week-dot">{active ? '🔥' : '·'}</span>
+                  <span className="week-label">{label}</span>
+                </div>
+              );
+            })}
+          </div>
+          <p className="week-note">
+            {isActiveToday ? 'ဒီနေ့ လေ့လာပြီးပြီ! 🎉' : 'ဒီနေ့ မလေ့လာရသေးဘူး — တစ်ခန်းလေ့လာလိုက်ပါ 💪'}
+          </p>
+        </div>
+
         <button
-          className="btn-ghost danger"
+          className="btn-chunky btn-soft"
           onClick={() => {
             if (confirm('တိုးတက်မှုအားလုံး ဖျက်ပစ်မှာလား?')) {
               resetProgress();
@@ -63,7 +90,7 @@ export default function StatsScreen({ onBack }: Props) {
         >
           🗑 တိုးတက်မှု ပြန်လည်သတ်မှတ်မယ်
         </button>
-      </section>
+      </Sky>
     </div>
   );
 }

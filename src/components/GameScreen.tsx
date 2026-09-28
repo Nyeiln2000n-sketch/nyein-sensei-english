@@ -3,6 +3,8 @@ import type { TopicId, Word } from '../types';
 import { topicMeta, wordsByTopic, sample } from '../data';
 import { speak } from '../lib/audio';
 import { addXP, recordAnswer } from '../lib/storage';
+import { MascotBubble, Sky, ProgressBar } from './ui';
+import { FeedbackPanel } from './LessonScreen';
 
 interface Props {
   game: string;
@@ -11,35 +13,30 @@ interface Props {
 }
 
 export default function GameScreen({ game, topic, onExit }: Props) {
-  const meta = topicMeta(topic);
   return (
-    <div className="page-enter">
-      <div className="nav-bar">
-        <button className="icon-btn" onClick={onExit} aria-label="back">‹</button>
-        <h1>{meta.nameMy}</h1>
-        <span className="nav-spacer" />
+    <Sky>
+      <div className="screen">
+        {game === 'memory' && <MemoryGame topic={topic} onExit={onExit} />}
+        {game === 'reverse' && <ReverseGame topic={topic} onExit={onExit} />}
       </div>
-      {game === 'memory' && <MemoryGame topic={topic} onExit={onExit} />}
-      {game === 'reverse' && <ReverseGame topic={topic} onExit={onExit} />}
-    </div>
+    </Sky>
   );
 }
 
 function GameResult({ earned, onExit }: { earned: number; onExit: () => void }) {
   return (
-    <div className="result-screen">
-      <div className="result-emoji pop-in">🏆</div>
+    <div>
+      <img src="/mascot-celebrate.png" alt="ဂုဏ်ယူပါတယ်" style={{ width: 140, height: 140 }} />
       <h1>ဂိမ်းပြီးဆုံးပါပြီ!</h1>
-      <div className="result-stats">
-        <div className="result-stat"><b>+{earned}</b><span>XP ရရှိမှု</span></div>
-      </div>
-      <button className="btn-primary" onClick={onExit}>ပြန်သွားမယ်</button>
+      <div className="stat-card"><b>+{earned}</b><span>XP ရရှိမှု</span></div>
+      <button className="btn-chunky btn-green" onClick={onExit}>ပြီးပြီ</button>
     </div>
   );
 }
 
 /* ---------- 🃏 memory matching ---------- */
 function MemoryGame({ topic, onExit }: { topic: TopicId; onExit: () => void }) {
+  const meta = topicMeta(topic);
   type Card = { uid: number; text: string; kind: 'en' | 'my'; word: Word };
   const words = useMemo(() => sample(wordsByTopic(topic), 6), [topic]);
   const [deck, setDeck] = useState<Card[]>(() => {
@@ -84,15 +81,20 @@ function MemoryGame({ topic, onExit }: { topic: TopicId; onExit: () => void }) {
 
   return (
     <div>
-      <h2 className="round-title">🃏 မှတ်ဉာဏ်ကတ်ဂိမ်း</h2>
-      <p className="hint">ကတ် ၂ ခု လှန်ပြီး English–မြန်မာ တွဲဖက်ရှာပါ · {moves} ကြိမ်</p>
-      <div className="memory-grid">
+      <div className="appbar">
+        <button className="btn-soft" onClick={onExit} aria-label="back">✕</button>
+        <ProgressBar value={found.length} total={deck.length} />
+        <span>{moves} ကြိမ်</span>
+      </div>
+      <div className="section-title">🃏 မှတ်ဉာဏ်ကတ်ဂိမ်း · {meta.nameMy}</div>
+      <MascotBubble img="/mascot.png" text="ကတ် ၂ ခု လှန်ပြီး English–မြန်မာ တွဲဖက်ရှာပါ" />
+      <div>
         {deck.map((c) => {
           const face = open.includes(c.uid) || found.includes(c.uid);
           return (
             <button
               key={c.uid}
-              className={`mem-card ${face ? 'face' : ''} ${found.includes(c.uid) ? 'found' : ''}`}
+              className={`chip-word${found.includes(c.uid) ? ' matched' : ''}${open.includes(c.uid) && !found.includes(c.uid) ? ' selected' : ''}`}
               onClick={() => flip(c)}
             >
               {face ? c.text : '?'}
@@ -106,6 +108,7 @@ function MemoryGame({ topic, onExit }: { topic: TopicId; onExit: () => void }) {
 
 /* ---------- 🔄 reverse translation quiz ---------- */
 function ReverseGame({ topic, onExit }: { topic: TopicId; onExit: () => void }) {
+  const meta = topicMeta(topic);
   const words = useMemo(() => sample(wordsByTopic(topic), 8), [topic]);
   const pool = useMemo(() => wordsByTopic(topic), [topic]);
   const [idx, setIdx] = useState(0);
@@ -142,20 +145,28 @@ function ReverseGame({ topic, onExit }: { topic: TopicId; onExit: () => void }) 
 
   if (idx >= words.length) return <GameResult earned={earned} onExit={onExit} />;
 
+  const ok = picked === word.en;
+
   return (
     <div>
-      <h2 className="round-title">🔄 ပြောင်းပြန်ဘာသာပြန်</h2>
-      <p className="hint">{idx + 1}/{words.length} · မှန်ကန်မှု {score}</p>
-      <div className="reverse-prompt">“{word.my}”</div>
-      <div className="options">
+      <div className="appbar">
+        <button className="btn-soft" onClick={onExit} aria-label="back">✕</button>
+        <ProgressBar value={idx} total={words.length} />
+        <span>{idx + 1}/{words.length}</span>
+      </div>
+      <div className="section-title">🔄 ပြောင်းပြန်ဘာသာပြန် · {meta.nameMy}</div>
+      <MascotBubble img="/mascot.png" text="ဒီစကားလုံးကို English လို ဘာသာပြန်ပါ" />
+      <div className="card">“{word.my}”</div>
+      <div>
         {options.map((o) => (
           <button
             key={o.en}
             className={
-              'option' +
+              'card' +
               (picked && o.en === word.en ? ' correct' : '') +
               (picked === o.en && o.en !== word.en ? ' wrong' : '')
             }
+            style={{ width: '100%' }}
             disabled={!!picked}
             onClick={() => pick(o.en)}
           >
@@ -163,10 +174,9 @@ function ReverseGame({ topic, onExit }: { topic: TopicId; onExit: () => void }) 
           </button>
         ))}
       </div>
+      <div className="bubble">{idx + 1}/{words.length} · မှန်ကန်မှု {score}</div>
       {picked && (
-        <button className="btn-primary" onClick={next}>
-          {picked === word.en ? 'မှန်တယ်! ✓' : `အဖြေမှန်: ${word.en} →`}
-        </button>
+        <FeedbackPanel ok={ok} title={ok ? 'တော်လိုက်တာ! 🎉' : `အဖြေမှန်: ${word.en} →`} onNext={next} />
       )}
     </div>
   );

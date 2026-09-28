@@ -3,6 +3,7 @@ import type { TopicId, Level, Word, Phrase } from '../types';
 import { topicMeta, wordsByTopic, phrasesByTopic, sample } from '../data';
 import { speak } from '../lib/audio';
 import { addXP, recordAnswer, markLessonComplete } from '../lib/storage';
+import { MascotBubble, Sky, ProgressBar } from './ui';
 
 interface Props {
   topic: TopicId;
@@ -70,37 +71,39 @@ export default function LessonScreen({ topic, level, onExit }: Props) {
 
   if (done) {
     return (
-      <div className="page-enter result-screen">
-        <div className="result-emoji pop-in">🎉</div>
-        <h1>ပြီးဆုံးပါပြီ!</h1>
-        <p className="result-sub">{meta.nameMy} · အဆင့် {level}</p>
-        <div className="result-stats">
-          <div className="result-stat"><b>+{earned}</b><span>XP ရရှိမှု</span></div>
-          <div className="result-stat"><b>{correctCount}/{rounds.length}</b><span>မှန်ကန်မှု</span></div>
+      <Sky>
+        <div className="screen">
+          <img src="/mascot-celebrate.png" alt="ဂုဏ်ယူပါတယ်" style={{ width: 140, height: 140 }} />
+          <h1>ပြီးဆုံးပါပြီ!</h1>
+          <p>{meta.nameMy} · အဆင့် {level}</p>
+          <div>
+            <div className="stat-card"><b>+{earned}</b><span>XP ရရှိမှု</span></div>
+            <div className="stat-card"><b>{correctCount}/{rounds.length}</b><span>မှန်ကန်မှု</span></div>
+          </div>
+          <button className="btn-chunky btn-green" onClick={onExit}>ပြီးပြီ</button>
         </div>
-        <button className="btn-primary" onClick={onExit}>ပြန်သွားမယ်</button>
-      </div>
+      </Sky>
     );
   }
 
   return (
-    <div className="lesson page-enter">
-      <div className="lesson-top">
-        <button className="icon-btn" onClick={onExit} aria-label="quit">✕</button>
-        <div className="progress-track">
-          <div className="progress-fill" style={{ width: `${((idx + 1) / rounds.length) * 100}%` }} />
+    <Sky>
+      <div className="screen">
+        <div className="appbar">
+          <button className="btn-soft" onClick={onExit} aria-label="quit">✕</button>
+          <ProgressBar value={idx + 1} total={rounds.length} />
+          <span>{idx + 1}/{rounds.length}</span>
         </div>
-        <span className="round-num">{idx + 1}/{rounds.length}</span>
+        {combo >= 3 && <div className="combo-badge pop-in">🔥 {combo} ဆက်တိုက်!</div>}
+        <div key={idx}>
+          {round.kind === 'quiz' && <QuizRound round={round} onAnswer={handleAnswer} onNext={next} />}
+          {round.kind === 'translation' && <TranslationRound round={round} onAnswer={handleAnswer} onNext={next} />}
+          {round.kind === 'listening' && <ListeningRound round={round} onAnswer={handleAnswer} onNext={next} />}
+          {round.kind === 'order' && <OrderRound round={round} onAnswer={handleAnswer} onNext={next} />}
+          {round.kind === 'match' && <MatchRound round={round} onAnswer={handleAnswer} onNext={next} />}
+        </div>
       </div>
-      {combo >= 3 && <div className="combo-badge pop-in">🔥 {combo} ဆက်တိုက်!</div>}
-      <div className="round-body" key={idx}>
-        {round.kind === 'quiz' && <QuizRound round={round} onAnswer={handleAnswer} onNext={next} />}
-        {round.kind === 'translation' && <TranslationRound round={round} onAnswer={handleAnswer} onNext={next} />}
-        {round.kind === 'listening' && <ListeningRound round={round} onAnswer={handleAnswer} onNext={next} />}
-        {round.kind === 'order' && <OrderRound round={round} onAnswer={handleAnswer} onNext={next} />}
-        {round.kind === 'match' && <MatchRound round={round} onAnswer={handleAnswer} onNext={next} />}
-      </div>
-    </div>
+    </Sky>
   );
 }
 
@@ -116,6 +119,17 @@ function useAutoSpeak(text: string, deps: unknown[] = []) {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, deps);
+}
+
+export function FeedbackPanel({ ok, title, onNext }: { ok: boolean; title: string; onNext: () => void }) {
+  return (
+    <div className="card" style={ok ? { background: '#dcfce7' } : { background: '#fee2e2' }}>
+      <div className="section-title">{title}</div>
+      <button className={`btn-chunky ${ok ? 'btn-green' : 'btn-soft'}`} onClick={onNext}>
+        {ok ? 'ဆက်သွားမယ်' : 'ထပ်ကြိုးစားမယ်'}
+      </button>
+    </div>
+  );
 }
 
 function Options({
@@ -134,14 +148,18 @@ function Options({
   render: (o: { key: string }) => string;
 }) {
   return (
-    <div className="options">
+    <div>
       {options.map((o) => {
-        const cls =
-          'option' +
-          (locked && o.key === correctKey ? ' correct' : '') +
-          (locked && pickedKey === o.key && o.key !== correctKey ? ' wrong' : '');
+        const isCorrect = locked && o.key === correctKey;
+        const isWrong = locked && pickedKey === o.key && o.key !== correctKey;
         return (
-          <button key={o.key} className={cls} disabled={locked} onClick={() => onPick(o.key)}>
+          <button
+            key={o.key}
+            className={'card' + (isCorrect ? ' correct' : '') + (isWrong ? ' wrong' : '')}
+            style={{ width: '100%' }}
+            disabled={locked}
+            onClick={() => onPick(o.key)}
+          >
             {render(o)}
           </button>
         );
@@ -165,10 +183,11 @@ function useChoice(correctKey: string, onAnswer: (c: boolean) => void) {
 function QuizRound({ round, onAnswer, onNext }: { round: Extract<Round, { kind: 'quiz' }>; onAnswer: (c: boolean) => void; onNext: () => void }) {
   useAutoSpeak(round.word.en, []);
   const { picked, pick, locked } = useChoice(round.word.en, onAnswer);
+  const ok = picked === round.word.en;
   return (
     <div>
-      <h2 className="round-title">“{round.word.en}” ရဲ့အဓိပ္ပာယ်က ဘာလဲ?</h2>
-      <button className="listen-btn" onClick={() => speak(round.word.en)}>🔊 နားထောင်မယ်</button>
+      <MascotBubble img="/mascot.png" text={`“${round.word.en}” ရဲ့အဓိပ္ပာယ်က ဘာလဲ?`} />
+      <button className="btn-chunky btn-soft" onClick={() => speak(round.word.en)}>🔊 နားထောင်မယ်</button>
       <Options
         options={round.options.map((o) => ({ ...o, key: o.en }))}
         onPick={pick}
@@ -178,9 +197,7 @@ function QuizRound({ round, onAnswer, onNext }: { round: Extract<Round, { kind: 
         render={(o) => (o as unknown as Word).my}
       />
       {locked && (
-        <button className="btn-primary" onClick={onNext}>
-          {picked === round.word.en ? 'မှန်တယ်! ဆက်သွားမယ် ✓' : `အဖြေမှန်: ${round.word.my} →`}
-        </button>
+        <FeedbackPanel ok={ok} title={ok ? 'တော်လိုက်တာ! 🎉' : `အဖြေမှန်: ${round.word.my} →`} onNext={onNext} />
       )}
     </div>
   );
@@ -191,9 +208,10 @@ function TranslationRound({ round, onAnswer, onNext }: { round: Extract<Round, {
   useEffect(() => {
     if (locked) speak(round.word.en);
   }, [locked, round.word.en]);
+  const ok = picked === round.word.en;
   return (
     <div>
-      <h2 className="round-title">“{round.word.my}” ကို English လို ဘယ်လိုပြောမလဲ?</h2>
+      <MascotBubble img="/mascot.png" text={`“${round.word.my}” ကို English လို ဘယ်လိုပြောမလဲ?`} />
       <Options
         options={round.options.map((o) => ({ ...o, key: o.en }))}
         onPick={pick}
@@ -203,9 +221,7 @@ function TranslationRound({ round, onAnswer, onNext }: { round: Extract<Round, {
         render={(o) => (o as unknown as Word).en}
       />
       {locked && (
-        <button className="btn-primary" onClick={onNext}>
-          {picked === round.word.en ? 'မှန်တယ်! ဆက်သွားမယ် ✓' : `အဖြေမှန်: ${round.word.en} →`}
-        </button>
+        <FeedbackPanel ok={ok} title={ok ? 'တော်လိုက်တာ! 🎉' : `အဖြေမှန်: ${round.word.en} →`} onNext={onNext} />
       )}
     </div>
   );
@@ -214,10 +230,11 @@ function TranslationRound({ round, onAnswer, onNext }: { round: Extract<Round, {
 function ListeningRound({ round, onAnswer, onNext }: { round: Extract<Round, { kind: 'listening' }>; onAnswer: (c: boolean) => void; onNext: () => void }) {
   useAutoSpeak(round.word.en, []);
   const { picked, pick, locked } = useChoice(round.word.en, onAnswer);
+  const ok = picked === round.word.en;
   return (
     <div>
-      <h2 className="round-title">ကြားရတဲ့စကားလုံးကို ရွေးပါ</h2>
-      <button className="big-listen" onClick={() => speak(round.word.en)}>🔊<small>ထပ်နားထောင်မယ်</small></button>
+      <MascotBubble img="/mascot.png" text="ကြားရတဲ့စကားလုံးကို ရွေးပါ" />
+      <button className="btn-chunky btn-soft" onClick={() => speak(round.word.en)}>🔊 <small>ထပ်နားထောင်မယ်</small></button>
       <Options
         options={round.options.map((o) => ({ ...o, key: o.en }))}
         onPick={pick}
@@ -227,9 +244,7 @@ function ListeningRound({ round, onAnswer, onNext }: { round: Extract<Round, { k
         render={(o) => (o as unknown as Word).my}
       />
       {locked && (
-        <button className="btn-primary" onClick={onNext}>
-          {picked === round.word.en ? `မှန်တယ်! (${round.word.en}) ✓` : `အဖြေမှန်: ${round.word.en} →`}
-        </button>
+        <FeedbackPanel ok={ok} title={ok ? 'တော်လိုက်တာ! 🎉' : `အဖြေမှန်: ${round.word.en} →`} onNext={onNext} />
       )}
     </div>
   );
@@ -247,19 +262,19 @@ function OrderRound({ round, onAnswer, onNext }: { round: Extract<Round, { kind:
   };
   return (
     <div>
-      <h2 className="round-title">စကားစုကို အစဉ်လိုက်စီပါ</h2>
-      <p className="hint">💡 {round.phrase.my}</p>
-      <div className="sentence-box">
-        {chosen.length === 0 && !checked && <span className="placeholder">စကားလုံးများ နှိပ်ပါ…</span>}
+      <MascotBubble img="/mascot.png" text="စကားစုကို အစဉ်လိုက်စီပါ" />
+      <div className="bubble">💡 {round.phrase.my}</div>
+      <div className="card">
+        {chosen.length === 0 && !checked && <span>စကားလုံးများ နှိပ်ပါ…</span>}
         {chosen.map((i, k) => (
-          <span key={k} className="token chosen">{round.shuffled[i]}</span>
+          <span key={k} className="chip-word">{round.shuffled[i]}</span>
         ))}
       </div>
-      <div className="token-pool">
+      <div>
         {round.shuffled.map((t, i) => (
           <button
             key={i}
-            className={`token ${chosen.includes(i) ? 'used' : ''}`}
+            className={`chip-word${chosen.includes(i) ? ' used' : ''}`}
             disabled={chosen.includes(i) || checked}
             onClick={() => setChosen([...chosen, i])}
           >
@@ -267,20 +282,16 @@ function OrderRound({ round, onAnswer, onNext }: { round: Extract<Round, { kind:
           </button>
         ))}
       </div>
-      <div className="row-btns">
-        {!checked && (
-          <>
-            <button className="btn-ghost" onClick={() => setChosen(chosen.slice(0, -1))}>↩ ဖျက်မယ်</button>
-            <button className="btn-primary" disabled={chosen.length !== target.length} onClick={check}>စစ်ဆေးမယ်</button>
-          </>
-        )}
-        {checked && (
-          <button className="btn-primary" onClick={onNext}>
-            {correct ? 'မှန်တယ်! ✓' : `အဖြေမှန်: ${round.phrase.en} →`}
-          </button>
-        )}
-      </div>
-      {checked && !correct && <p className="hint">💡 {round.phrase.my}</p>}
+      {!checked && (
+        <div>
+          <button className="btn-chunky btn-soft" onClick={() => setChosen(chosen.slice(0, -1))}>↩ ဖျက်မယ်</button>
+          <button className="btn-chunky btn-green" disabled={chosen.length !== target.length} onClick={check}>စစ်ဆေးမယ်</button>
+        </div>
+      )}
+      {checked && (
+        <FeedbackPanel ok={correct} title={correct ? 'တော်လိုက်တာ! 🎉' : `အဖြေမှန်: ${round.phrase.en} →`} onNext={onNext} />
+      )}
+      {checked && !correct && <div className="bubble">💡 {round.phrase.my}</div>}
     </div>
   );
 }
@@ -325,12 +336,12 @@ function MatchRound({ round, onAnswer, onNext }: { round: Extract<Round, { kind:
 
   return (
     <div>
-      <h2 className="round-title">တွဲဖက်များကို ရှာပါ 🔗</h2>
-      <div className={`match-grid ${mistake ? 'shake' : ''}`}>
+      <MascotBubble img="/mascot.png" text="တွဲဖက်များကို ရှာပါ 🔗" />
+      <div className={mistake ? 'shake' : ''}>
         {cards.map((c) => (
           <button
             key={c.id}
-            className={`match-card ${matched.includes(c.id) ? 'matched' : ''} ${first?.id === c.id ? 'selected' : ''}`}
+            className={`chip-word${matched.includes(c.id) ? ' matched' : ''}${first?.id === c.id ? ' selected' : ''}`}
             onClick={() => tap(c)}
           >
             {c.text}
@@ -338,7 +349,7 @@ function MatchRound({ round, onAnswer, onNext }: { round: Extract<Round, { kind:
         ))}
       </div>
       {allMatched && (
-        <button className="btn-primary" onClick={onNext}>ပြီးပြီ! ဆက်သွားမယ် →</button>
+        <button className="btn-chunky btn-green" onClick={onNext}>ပြီးပြီ! ဆက်သွားမယ် →</button>
       )}
     </div>
   );
