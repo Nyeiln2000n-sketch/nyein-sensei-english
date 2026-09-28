@@ -53,6 +53,13 @@ export default function PracticeScreen({ go, params }: { go: GoFn; params?: NavP
   const queue = useMemo(() => sample(pool, pool.length), [pool]);
   const [pos, setPos] = useState(0);
   const phrase = queue[pos % queue.length];
+
+  // Each new phrase starts at the top — never inherit the previous scroll.
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+  }, [pos]);
   const [listening, setListening] = useState(false);
   const [verdict, setVerdict] = useState<Verdict>(null);
   const [error, setError] = useState<string | null>(null);

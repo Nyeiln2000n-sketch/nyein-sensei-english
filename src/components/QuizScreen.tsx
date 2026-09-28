@@ -7,7 +7,7 @@
 // difficulty (harder templates + same-topic distractors after 2+ consecutive
 // correct; easier templates + mixed-topic distractors after a miss).
 // 'grammar' and 'phrases' modes keep their original fixed builders.
-import { useMemo, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { X, Volume2 } from 'lucide-react';
 import type { GoFn, NavParams } from '../routes';
 import type { TopicId, Level, Word, Phrase } from '../types';
@@ -488,6 +488,14 @@ export default function QuizScreen({ go, params }: { go: GoFn; params?: NavParam
     }
     setIdx(idx + 1);
   };
+
+  // Each new round starts at the top: a scrolled-down round must never
+  // leave the next one opened mid-page with the header cut off.
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+  }, [idx]);
 
   if (!round) {
     return (
