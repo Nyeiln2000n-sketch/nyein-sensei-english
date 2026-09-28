@@ -1,29 +1,161 @@
-// Shared Duolingo-style UI primitives. Other screens depend on these.
+// Shared mockup UI primitives for Nyein Sensei English.
+// All components are copy-agnostic: text comes in via props (Myanmar-first,
+// decided by the screens).
+//
+// NOTE on this repo's lucide-react build (v1.48.0): the classic `Home` icon is
+// exported as `House` and `CircleHelp` is exported as `CircleQuestionMark`.
+// Use those names (other workers: do NOT import `Home` or `CircleHelp`).
 
 import type { ReactNode } from 'react';
+import {
+  House,
+  BookOpen,
+  Mic,
+  Trophy,
+  User,
+  X,
+  ChevronRight,
+  ArrowLeft,
+} from 'lucide-react';
+import type { LucideIcon } from 'lucide-react';
+import MascotScene3D from './Mascot3D';
 
-/* ---------- chunky 3D button ---------- */
-export function ChunkyButton({
+export type MascotPose =
+  | 'wave'
+  | 'celebrate'
+  | 'thinking'
+  | 'encourage'
+  | 'amazed'
+  | 'reading';
+
+/* ---------------- page wrapper ---------------- */
+
+export function Screen({
+  children,
+  className = '',
+}: {
+  children: ReactNode;
+  className?: string;
+}) {
+  return <div className={`screen ${className}`.trim()}>{children}</div>;
+}
+
+/* ---------------- bottom tab bar ---------------- */
+
+export type TabId = 'home' | 'lessons' | 'practice' | 'achievements' | 'profile';
+
+export function TabBar({
+  active,
+  onTab,
+  labels,
+}: {
+  active: TabId;
+  onTab: (id: TabId) => void;
+  labels?: Partial<Record<TabId, string>>;
+}) {
+  const fallback: Record<TabId, string> = {
+    home: 'ပင်မ',
+    lessons: 'သင်ခန်းစာ',
+    practice: 'လေ့ကျင့်',
+    achievements: 'ဆုများ',
+    profile: 'ပရိုဖိုင်',
+  };
+  const text = { ...fallback, ...labels };
+  const tabs: { id: TabId; icon: LucideIcon }[] = [
+    { id: 'home', icon: House },
+    { id: 'lessons', icon: BookOpen },
+    { id: 'practice', icon: Mic },
+    { id: 'achievements', icon: Trophy },
+    { id: 'profile', icon: User },
+  ];
+  return (
+    <nav className="tabbar" aria-label="main navigation">
+      {tabs.map((t) => {
+        const Icon = t.icon;
+        const isActive = active === t.id;
+        return (
+          <button
+            key={t.id}
+            type="button"
+            className={`tab${isActive ? ' active' : ''}`}
+            aria-current={isActive ? 'page' : undefined}
+            onClick={() => onTab(t.id)}
+          >
+            <Icon size={22} strokeWidth={isActive ? 2.5 : 2} />
+            <span>{text[t.id]}</span>
+          </button>
+        );
+      })}
+    </nav>
+  );
+}
+
+/* ---------------- top bars ---------------- */
+
+export function TopBar({
+  variant,
+  title,
+  onClose,
+  onBack,
+  right,
+}: {
+  variant: 'close' | 'back';
+  title?: string;
+  onClose?: () => void;
+  onBack?: () => void;
+  right?: ReactNode;
+}) {
+  if (variant === 'close') {
+    return (
+      <div className="topbar">
+        <button
+          type="button"
+          className="icon-btn"
+          onClick={onClose}
+          aria-label="ပိတ်ရန်"
+        >
+          <X size={20} />
+        </button>
+        <div className="grow" />
+        {right ?? <div className="topbar-spacer" />}
+      </div>
+    );
+  }
+  return (
+    <div className="topbar">
+      <button
+        type="button"
+        className="icon-btn"
+        onClick={onBack}
+        aria-label="နောက်သို့"
+      >
+        <ArrowLeft size={20} />
+      </button>
+      <div className="topbar-title">{title}</div>
+      {right ?? <div className="topbar-spacer" />}
+    </div>
+  );
+}
+
+/* ---------------- pill button ---------------- */
+
+export function PillButton({
+  color = 'orange',
   children,
   onClick,
-  variant = 'orange',
-  fullWidth = false,
   disabled = false,
   type = 'button',
 }: {
+  color?: 'orange' | 'green' | 'blue';
   children: ReactNode;
   onClick?: () => void;
-  variant?: 'orange' | 'green' | 'soft';
-  fullWidth?: boolean;
   disabled?: boolean;
   type?: 'button' | 'submit';
 }) {
-  const cls = variant === 'green' ? 'btn-green' : variant === 'soft' ? 'btn-soft' : 'btn-chunky';
   return (
     <button
       type={type}
-      className={cls}
-      style={fullWidth ? { width: '100%' } : undefined}
+      className={`pill-btn btn-${color}`}
       onClick={onClick}
       disabled={disabled}
     >
@@ -32,124 +164,141 @@ export function ChunkyButton({
   );
 }
 
-/* ---------- bottom tab bar ---------- */
-export interface TabDef {
-  id: string;
-  icon: string;
-  label: string;
-}
+/* ---------------- segmented control ---------------- */
 
-export function TabBar({
-  tabs,
-  active,
+export function SegmentedControl<T extends string>({
+  options,
+  value,
   onChange,
 }: {
-  tabs: TabDef[];
-  active: string;
-  onChange: (id: string) => void;
+  options: { value: T; label: string }[];
+  value: T;
+  onChange: (v: T) => void;
 }) {
   return (
-    <nav className="tabbar">
-      {tabs.map((t) => (
+    <div className="segmented" role="tablist">
+      {options.map((o) => (
         <button
-          key={t.id}
+          key={o.value}
           type="button"
-          className={`tab ${active === t.id ? 'active' : ''}`}
-          onClick={() => onChange(t.id)}
-          aria-label={t.label}
+          role="tab"
+          aria-selected={value === o.value}
+          className={`seg-btn${value === o.value ? ' active' : ''}`}
+          onClick={() => onChange(o.value)}
         >
-          <span className="tab-icon">{t.icon}</span>
-          <span className="tab-label">{t.label}</span>
+          {o.label}
         </button>
       ))}
-    </nav>
+    </div>
   );
 }
 
-/* ---------- top app bar ----------
-   Primary form: <AppBar streak xp onProfile /> shows 🔥 streak and 💎 XP chips
-   plus an optional profile button. Also supports <AppBar title onBack />
-   (used by Library/Stats screens): a back button + title, with the stat
-   chips shown whenever streak/xp are provided. */
-export function AppBar({
-  streak,
-  xp,
-  onProfile,
-  title,
-  onBack,
+/* ---------------- thin rounded progress bar (green fill) ---------------- */
+
+export function ProgressBar({
+  value,
+  max = 100,
+  className = '',
 }: {
-  streak?: number;
-  xp?: number;
-  onProfile?: () => void;
-  title?: string;
-  onBack?: () => void;
+  value: number;
+  max?: number;
+  className?: string;
+}) {
+  const pct = max > 0 ? Math.min(100, Math.max(0, (value / max) * 100)) : 0;
+  return (
+    <div
+      className={`progress ${className}`.trim()}
+      role="progressbar"
+      aria-valuenow={Math.round(pct)}
+      aria-valuemin={0}
+      aria-valuemax={100}
+    >
+      <div className="progress-fill" style={{ width: `${pct}%` }} />
+    </div>
+  );
+}
+
+/* ---------------- menu row (tinted icon badge + title + chevron) ---------------- */
+
+export function MenuRow({
+  icon: Icon,
+  badgeBg,
+  badgeColor = '#3f3a34',
+  title,
+  subtitle,
+  onClick,
+}: {
+  icon: LucideIcon;
+  badgeBg: string;
+  badgeColor?: string;
+  title: string;
+  subtitle?: string;
+  onClick?: () => void;
 }) {
   return (
-    <header className="appbar">
-      {onBack ? (
-        <button type="button" className="profile-btn" onClick={onBack} aria-label="နောက်သို့">
-          ←
-        </button>
-      ) : (
-        <img src="/mascot.png" alt="မက်စကော့" className="appbar-mascot" />
-      )}
-      <div className="appbar-title">{title ?? 'Nyein Sensei English'}</div>
-      {typeof streak === 'number' && <span className="stat-chip">🔥 {streak}</span>}
-      {typeof xp === 'number' && <span className="stat-chip">💎 {xp}</span>}
-      {onProfile && (
-        <button type="button" className="profile-btn" onClick={onProfile} aria-label="ပရိုဖိုင်">
-          👤
-        </button>
-      )}
-    </header>
+    <button type="button" className="menu-row" onClick={onClick}>
+      <span
+        className="menu-icon-badge"
+        style={{ background: badgeBg, color: badgeColor }}
+      >
+        <Icon size={24} />
+      </span>
+      <span className="menu-row-text">
+        <span className="menu-row-title">{title}</span>
+        {subtitle && <div className="menu-row-sub">{subtitle}</div>}
+      </span>
+      <ChevronRight size={20} className="menu-chevron" />
+    </button>
   );
 }
 
-/* ---------- mascot + speech bubble ---------- */
-export function MascotBubble({ text, img = '/mascot.png' }: { text: ReactNode; img?: string }) {
+/* ---------------- stat pill (emoji + number, e.g. 🔥 0) ---------------- */
+
+export function StatPill({
+  emoji,
+  value,
+  onClick,
+}: {
+  emoji: string;
+  value: ReactNode;
+  onClick?: () => void;
+}) {
   return (
-    <div className="mascot-row">
-      <img src={img} alt="မက်စကော့" className="mascot-img" />
+    <span
+      className="stat-pill"
+      role={onClick ? 'button' : undefined}
+      tabIndex={onClick ? 0 : undefined}
+      onClick={onClick}
+    >
+      <span aria-hidden="true">{emoji}</span>
+      <span>{value}</span>
+    </span>
+  );
+}
+
+/* ---------------- mascot + speech bubble (3D mascot, Worker 4) ---------------- */
+
+export function MascotBubble({
+  pose,
+  text,
+  size = 84,
+  sparkle = false,
+}: {
+  pose: MascotPose;
+  text: ReactNode;
+  size?: number;
+  sparkle?: boolean;
+}) {
+  return (
+    <div className="mascot-bubble">
+      <div
+        className="mascot-holder"
+        style={{ width: size, height: size }}
+        aria-hidden="true"
+      >
+        <MascotScene3D pose={pose} size={size} sparkle={sparkle} />
+      </div>
       <div className="bubble">{text}</div>
     </div>
   );
-}
-
-/* ---------- sky scene wrapper ----------
-   Scenery renders inside .sky-scene (absolute, own overflow:hidden) so it
-   can never clip the content children, which flow naturally on top. */
-export function Sky({ children }: { children: ReactNode }) {
-  return (
-    <div className="sky">
-      <div className="sky-scene" aria-hidden>
-        <div className="sky-sun" />
-        <div className="sky-cloud c1" />
-        <div className="sky-cloud c2" />
-        <div className="sky-hill h1" />
-        <div className="sky-hill h2" />
-      </div>
-      {children}
-    </div>
-  );
-}
-
-/* ---------- progress bar ---------- */
-export function ProgressBar({ value, total }: { value: number; total: number }) {
-  const pct = total > 0 ? Math.min(100, Math.max(0, (value / total) * 100)) : 0;
-  return (
-    <div className="track" role="progressbar" aria-valuenow={Math.round(pct)} aria-valuemin={0} aria-valuemax={100}>
-      <div className="fill" style={{ width: `${pct}%` }} />
-    </div>
-  );
-}
-
-/* ---------- section title (accepts title prop or children) ---------- */
-export function SectionTitle({
-  title,
-  children,
-}: {
-  title?: string;
-  children?: ReactNode;
-}) {
-  return <h2 className="section-title">{title ?? children}</h2>;
 }

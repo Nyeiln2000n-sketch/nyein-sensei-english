@@ -1,138 +1,122 @@
-import { useEffect, useState } from 'react';
-import type { TopicId, Level } from './types';
-import HomeScreen from './components/HomeScreen';
-import TopicsScreen from './components/TopicsScreen';
-import TopicDetailScreen from './components/TopicDetailScreen';
-import LessonScreen from './components/LessonScreen';
-import GameScreen from './components/GameScreen';
-import LibraryScreen from './components/LibraryScreen';
-import StatsScreen from './components/StatsScreen';
-import OnboardingScreen from './components/OnboardingScreen';
-import AuthScreen from './components/AuthScreen';
+import { useCallback, useEffect, useState } from 'react';
+import type { RouteName, NavParams, GoFn } from './routes';
+import SplashScreen from './components/SplashScreen';
+import DashboardScreen from './components/DashboardScreen';
+import LessonsScreen from './components/LessonsScreen';
+import QuizScreen from './components/QuizScreen';
+import VocabScreen from './components/VocabScreen';
+import PracticeScreen from './components/PracticeScreen';
+import AchievementsScreen from './components/AchievementsScreen';
 import ProfileScreen from './components/ProfileScreen';
-import { TabBar } from './components/ui';
+import LessonCompleteScreen from './components/LessonCompleteScreen';
+import AuthScreen from './components/AuthScreen';
+import { TabBar, type TabId } from './components/ui';
 import { getSession, onAuthChange } from './lib/auth';
-
-type TabName = 'home' | 'topics' | 'library' | 'stats' | 'profile';
-
-type Route =
-  | { name: 'onboarding' }
-  | { name: 'auth' }
-  | { name: TabName }
-  | { name: 'topic'; topic: TopicId }
-  | { name: 'lesson'; topic: TopicId; level: Level }
-  | { name: 'game'; game: string; topic: TopicId };
 
 const ONBOARDED_KEY = 'nyein-sensei-onboarded';
 
-const TABS = [
-  { id: 'home', icon: '🏠', label: 'ပင်မ' },
-  { id: 'topics', icon: '📚', label: 'သင်ခန်းစာ' },
-  { id: 'library', icon: '🔊', label: 'အသံ' },
-  { id: 'stats', icon: '🏆', label: 'တိုးတက်မှု' },
-  { id: 'profile', icon: '👤', label: 'ပရိုဖိုင်' },
-] as const;
+interface Route {
+  name: RouteName;
+  params?: NavParams;
+}
+
+const TAB_ROUTES: Record<TabId, RouteName> = {
+  home: 'home',
+  lessons: 'lessons',
+  practice: 'practice',
+  achievements: 'achievements',
+  profile: 'profile',
+};
+
+function tabForRoute(name: RouteName): TabId | null {
+  switch (name) {
+    case 'home':
+      return 'home';
+    case 'lessons':
+      return 'lessons';
+    case 'practice':
+      return 'practice';
+    case 'achievements':
+      return 'achievements';
+    case 'profile':
+      return 'profile';
+    default:
+      return null;
+  }
+}
+
+/** Tabs stay visible on tab screens + quiz/vocab flows hide them. */
+function showTabs(name: RouteName): boolean {
+  return name === 'home' || name === 'lessons' || name === 'achievements' || name === 'profile';
+}
 
 export default function App() {
-  const [route, setRoute] = useState<Route>(() => {
+  const [stack, setStack] = useState<Route[]>(() => {
+    let onboarded = false;
     try {
-      return localStorage.getItem(ONBOARDED_KEY) === '1' ? { name: 'home' } : { name: 'onboarding' };
+      onboarded = localStorage.getItem(ONBOARDED_KEY) === '1';
     } catch {
-      return { name: 'onboarding' };
+      onboarded = false;
     }
+    return [{ name: onboarded ? 'home' : 'splash' }];
   });
   // bump to force progress-refreshing screens to re-render
   const [tick, setTick] = useState(0);
   const refresh = () => setTick((t) => t + 1);
-  const [authMode, setAuthMode] = useState<'signin' | 'signup'>('signin');
+
+  // Session logic kept identical to the previous shell: subscribe to auth
+  // changes and keep the current email in state. Screens own their own copy
+  // needs via ../lib/auth; this subscription keeps the shell fresh.
   const [email, setEmail] = useState<string | null>(() => getSession()?.user?.email ?? null);
 
   useEffect(() => {
     return onAuthChange((s) => setEmail(s?.user?.email ?? null));
   }, []);
 
-  const markOnboarded = () => {
-    try {
-      localStorage.setItem(ONBOARDED_KEY, '1');
-    } catch {
-      /* ignore */
+  const go: GoFn = useCallback((name, params) => {
+    if (name === 'home') {
+      try {
+        localStorage.setItem(ONBOARDED_KEY, '1');
+      } catch {
+        /* ignore */
+      }
     }
-  };
-  const goHome = () => { setRoute({ name: 'home' }); refresh(); };
-  const goTab = (id: string) => {
-    const tab = TABS.find((t) => t.id === id);
-    if (tab) {
-      setRoute({ name: tab.id });
-      refresh();
-    }
-  };
+    setStack((prev) => {
+      if (name === 'back') {
+        return prev.length > 1 ? prev.slice(0, -1) : prev;
+      }
+      // Tab taps reset the stack to that tab.
+      const tabId = (Object.keys(TAB_ROUTES) as TabId[]).find((id) => TAB_ROUTES[id] === name);
+      if (tabId) {
+        return [{ name, params }];
+      }
+      return [...prev, { name, params }];
+    });
+    setTick((t) => t + 1);
+  }, []);
 
-  const showTabs =
-    route.name === 'home' ||
-    route.name === 'topics' ||
-    route.name === 'library' ||
-    route.name === 'stats' ||
-    route.name === 'profile';
+  const route = stack[stack.length - 1];
+  const screenProps = { go, params: route.params };
 
   return (
-    <div className="app" key={tick}>
+    <div className="app" key={tick} data-email={email ?? ''}>
       <main className="main">
-        {route.name === 'onboarding' && (
-          <OnboardingScreen
-            onStart={() => { markOnboarded(); goHome(); }}
-            onLogin={() => { setAuthMode('signin'); setRoute({ name: 'auth' }); }}
-          />
-        )}
-        {route.name === 'auth' && (
-          <AuthScreen
-            mode={authMode}
-            onModeChange={setAuthMode}
-            onSuccess={() => { markOnboarded(); goHome(); }}
-            onBack={goHome}
-          />
-        )}
-        {route.name === 'home' && (
-          <HomeScreen
-            onOpenTopics={() => setRoute({ name: 'topics' })}
-            onOpenLibrary={() => setRoute({ name: 'library' })}
-            onOpenStats={() => setRoute({ name: 'stats' })}
-            onOpenTopic={(id) => setRoute({ name: 'topic', topic: id as TopicId })}
-          />
-        )}
-        {route.name === 'topics' && (
-          <TopicsScreen onBack={goHome} onOpenTopic={(id) => setRoute({ name: 'topic', topic: id as TopicId })} />
-        )}
-        {route.name === 'topic' && (
-          <TopicDetailScreen
-            topicId={route.topic}
-            onBack={() => setRoute({ name: 'topics' })}
-            onStartLesson={(topic, level) => setRoute({ name: 'lesson', topic, level })}
-            onStartGame={(game, topic) => setRoute({ name: 'game', game, topic })}
-          />
-        )}
-        {route.name === 'lesson' && (
-          <LessonScreen topic={route.topic} level={route.level} onExit={() => { setRoute({ name: 'topic', topic: route.topic }); refresh(); }} />
-        )}
-        {route.name === 'game' && (
-          <GameScreen game={route.game} topic={route.topic} onExit={() => { setRoute({ name: 'topic', topic: route.topic }); refresh(); }} />
-        )}
-        {route.name === 'library' && <LibraryScreen onBack={goHome} />}
-        {route.name === 'stats' && <StatsScreen onBack={goHome} />}
-        {route.name === 'profile' && (
-          <ProfileScreen
-            email={email}
-            onBack={goHome}
-            onSignedOut={() => { goHome(); }}
-            onSignIn={() => { setAuthMode('signin'); setRoute({ name: 'auth' }); }}
-          />
-        )}
+        {route.name === 'splash' && <SplashScreen {...screenProps} />}
+        {route.name === 'auth' && <AuthScreen {...screenProps} />}
+        {route.name === 'home' && <DashboardScreen {...screenProps} />}
+        {route.name === 'lessons' && <LessonsScreen {...screenProps} />}
+        {route.name === 'quiz' && <QuizScreen {...screenProps} />}
+        {route.name === 'vocab' && <VocabScreen {...screenProps} />}
+        {route.name === 'practice' && <PracticeScreen {...screenProps} />}
+        {route.name === 'achievements' && <AchievementsScreen {...screenProps} />}
+        {route.name === 'profile' && <ProfileScreen {...screenProps} />}
+        {route.name === 'lessonComplete' && <LessonCompleteScreen {...screenProps} />}
       </main>
 
-      {showTabs && (
+      {showTabs(route.name) && (
         <TabBar
-          tabs={[...TABS]}
-          active={route.name}
-          onChange={goTab}
+          active={tabForRoute(route.name) ?? 'home'}
+          onTab={(id) => go(TAB_ROUTES[id])}
         />
       )}
     </div>

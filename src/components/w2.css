@@ -1,0 +1,73 @@
+/* Scoped styles for Worker-2 screens (Splash / Dashboard / Lessons). All classes
+   are prefixed w2- to avoid collisions with shared styles. */
+
+@keyframes w2-float {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-18px) scale(1.04); }
+}
+
+@keyframes w2-drift {
+  0% { transform: translateY(0) rotate(0deg); opacity: 0.85; }
+  100% { transform: translateY(-26px) rotate(24deg); opacity: 0.5; }
+}
+
+@keyframes w2-pop {
+  from { opacity: 0; transform: translateY(16px) scale(0.97); }
+  to { opacity: 1; transform: none; }
+}
+
+.w2-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(46px);
+  opacity: 0.55;
+  pointer-events: none;
+  animation: w2-float 9s ease-in-out infinite;
+}
+
+.w2-confetti {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  animation: w2-drift 6.5s ease-in-out infinite alternate;
+}
+
+.w2-enter {
+  animation: w2-pop 0.45s ease both;
+}
+
+.w2-enter-1 { animation: w2-pop 0.45s ease both; animation-delay: 0.06s; }
+.w2-enter-2 { animation: w2-pop 0.45s ease both; animation-delay: 0.12s; }
+.w2-enter-3 { animation: w2-pop 0.45s ease both; animation-delay: 0.18s; }
+
+.w2-press {
+  transition: transform 0.12s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+.w2-press:active { transform: scale(0.97); }
+
+/* speech bubble with a left-pointing tail */
+.w2-bubble {
+  position: relative;
+  background: #FFF6E8;
+  border: 1.5px solid #F3E2C2;
+  border-radius: 18px;
+  padding: 12px 14px;
+  font-size: 14.5px;
+  line-height: 1.65;
+  color: #5d564d;
+  flex: 1;
+}
+.w2-bubble::before {
+  content: '';
+  position: absolute;
+  left: -8px;
+  top: 50%;
+  width: 14px;
+  height: 14px;
+  background: #FFF6E8;
+  border-left: 1.5px solid #F3E2C2;
+  border-bottom: 1.5px solid #F3E2C2;
+  transform: translateY(-50%) rotate(45deg);
+  border-bottom-left-radius: 4px;
+}

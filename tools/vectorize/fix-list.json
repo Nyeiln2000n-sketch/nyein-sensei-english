@@ -1,0 +1,1366 @@
+[
+  {
+    "type": "exact",
+    "fingerprint": "3d0986c640c474c5",
+    "items": [
+      {
+        "id": "phrase:emotions:0199",
+        "kind": "phrase",
+        "en": "Don't worry.",
+        "my": "စိတ်မပူပါနဲ့။",
+        "file": "src/data/phrases-b.ts",
+        "line": 47
+      },
+      {
+        "id": "phrase:friends:0028",
+        "kind": "phrase",
+        "en": "Don't worry.",
+        "my": "စိတ်မပူပါနဲ့။",
+        "file": "src/data/phrases-a.ts",
+        "line": 35
+      }
+    ]
+  },
+  {
+    "type": "exact",
+    "fingerprint": "3e3065e00bb54f4a",
+    "items": [
+      {
+        "id": "phrase:friends:0026",
+        "kind": "phrase",
+        "en": "See you soon!",
+        "my": "မကြာမီ တွေ့မယ်",
+        "file": "src/data/phrases-a.ts",
+        "line": 33
+      },
+      {
+        "id": "phrase:time:0298",
+        "kind": "phrase",
+        "en": "See you soon!",
+        "my": "မကြာမီ တွေ့မယ်",
+        "file": "src/data/phrases-b.ts",
+        "line": 152
+      }
+    ]
+  },
+  {
+    "type": "exact",
+    "fingerprint": "92084418ea1f2c3b",
+    "items": [
+      {
+        "id": "phrase:emotions:0196",
+        "kind": "phrase",
+        "en": "Are you okay?",
+        "my": "အဆင်ပြေလား။",
+        "file": "src/data/phrases-b.ts",
+        "line": 44
+      },
+      {
+        "id": "phrase:health:0090",
+        "kind": "phrase",
+        "en": "Are you okay?",
+        "my": "အဆင်ပြေလား။",
+        "file": "src/data/phrases-a.ts",
+        "line": 101
+      }
+    ]
+  },
+  {
+    "type": "exact",
+    "fingerprint": "954488a3be43df1d",
+    "items": [
+      {
+        "id": "phrase:nature:0141",
+        "kind": "phrase",
+        "en": "The wind is strong.",
+        "my": "လေက ပြင်းတယ်။",
+        "file": "src/data/phrases-a.ts",
+        "line": 155
+      },
+      {
+        "id": "phrase:weather:0311",
+        "kind": "phrase",
+        "en": "The wind is strong.",
+        "my": "လေက ပြင်းတယ်။",
+        "file": "src/data/phrases-b.ts",
+        "line": 166
+      }
+    ]
+  },
+  {
+    "type": "exact",
+    "fingerprint": "cbe649f8e0039474",
+    "items": [
+      {
+        "id": "phrase:daily-life:0213",
+        "kind": "phrase",
+        "en": "What time is it?",
+        "my": "ဘယ်အချိန်ရှိပြီလဲ။",
+        "file": "src/data/phrases-b.ts",
+        "line": 62
+      },
+      {
+        "id": "phrase:time:0288",
+        "kind": "phrase",
+        "en": "What time is it?",
+        "my": "ဘယ်အချိန်ရှိပြီလဲ။",
+        "file": "src/data/phrases-b.ts",
+        "line": 142
+      }
+    ]
+  },
+  {
+    "type": "exact",
+    "fingerprint": "fbc3652668676d45",
+    "items": [
+      {
+        "id": "phrase:friends:0031",
+        "kind": "phrase",
+        "en": "Call me later.",
+        "my": "နောက်မှ ဖုန်းခေါ်ပါ။",
+        "file": "src/data/phrases-a.ts",
+        "line": 38
+      },
+      {
+        "id": "phrase:technology:0161",
+        "kind": "phrase",
+        "en": "Call me later.",
+        "my": "နောက်မှ ဖုန်းခေါ်ပါ။",
+        "file": "src/data/phrases-b.ts",
+        "line": 7
+      }
+    ]
+  },
+  {
+    "type": "near",
+    "score": 1.0,
+    "driver": "vocab",
+    "cross_kind": false,
+    "items": [
+      {
+        "id": "phrase:friends:0026",
+        "kind": "phrase",
+        "en": "See you soon!",
+        "my": "မကြာမီ တွေ့မယ်",
+        "file": "src/data/phrases-a.ts",
+        "line": 33
+      },
+      {
+        "id": "phrase:time:0298",
+        "kind": "phrase",
+        "en": "See you soon!",
+        "my": "မကြာမီ တွေ့မယ်",
+        "file": "src/data/phrases-b.ts",
+        "line": 152
+      }
+    ]
+  },
+  {
+    "type": "near",
+    "score": 1.0,
+    "driver": "vocab",
+    "cross_kind": false,
+    "items": [
+      {
+        "id": "phrase:friends:0028",
+        "kind": "phrase",
+        "en": "Don't worry.",
+        "my": "စိတ်မပူပါနဲ့။",
+        "file": "src/data/phrases-a.ts",
+        "line": 35
+      },
+      {
+        "id": "phrase:emotions:0199",
+        "kind": "phrase",
+        "en": "Don't worry.",
+        "my": "စိတ်မပူပါနဲ့။",
+        "file": "src/data/phrases-b.ts",
+        "line": 47
+      }
+    ]
+  },
+  {
+    "type": "near",
+    "score": 1.0,
+    "driver": "vocab",
+    "cross_kind": false,
+    "items": [
+      {
+        "id": "phrase:friends:0031",
+        "kind": "phrase",
+        "en": "Call me later.",
+        "my": "နောက်မှ ဖုန်းခေါ်ပါ။",
+        "file": "src/data/phrases-a.ts",
+        "line": 38
+      },
+      {
+        "id": "phrase:technology:0161",
+        "kind": "phrase",
+        "en": "Call me later.",
+        "my": "နောက်မှ ဖုန်းခေါ်ပါ။",
+        "file": "src/data/phrases-b.ts",
+        "line": 7
+      }
+    ]
+  },
+  {
+    "type": "near",
+    "score": 1.0,
+    "driver": "vocab",
+    "cross_kind": false,
+    "items": [
+      {
+        "id": "phrase:health:0090",
+        "kind": "phrase",
+        "en": "Are you okay?",
+        "my": "အဆင်ပြေလား။",
+        "file": "src/data/phrases-a.ts",
+        "line": 101
+      },
+      {
+        "id": "phrase:emotions:0196",
+        "kind": "phrase",
+        "en": "Are you okay?",
+        "my": "အဆင်ပြေလား။",
+        "file": "src/data/phrases-b.ts",
+        "line": 44
+      }
+    ]
+  },
+  {
+    "type": "near",
+    "score": 1.0,
+    "driver": "vocab",
+    "cross_kind": false,
+    "items": [
+      {
+        "id": "phrase:nature:0141",
+        "kind": "phrase",
+        "en": "The wind is strong.",
+        "my": "လေက ပြင်းတယ်။",
+        "file": "src/data/phrases-a.ts",
+        "line": 155
+      },
+      {
+        "id": "phrase:weather:0311",
+        "kind": "phrase",
+        "en": "The wind is strong.",
+        "my": "လေက ပြင်းတယ်။",
+        "file": "src/data/phrases-b.ts",
+        "line": 166
+      }
+    ]
+  },
+  {
+    "type": "near",
+    "score": 1.0,
+    "driver": "vocab",
+    "cross_kind": false,
+    "items": [
+      {
+        "id": "phrase:daily-life:0213",
+        "kind": "phrase",
+        "en": "What time is it?",
+        "my": "ဘယ်အချိန်ရှိပြီလဲ။",
+        "file": "src/data/phrases-b.ts",
+        "line": 62
+      },
+      {
+        "id": "phrase:time:0288",
+        "kind": "phrase",
+        "en": "What time is it?",
+        "my": "ဘယ်အချိန်ရှိပြီလဲ။",
+        "file": "src/data/phrases-b.ts",
+        "line": 142
+      }
+    ]
+  },
+  {
+    "type": "near",
+    "score": 1.0,
+    "driver": "vocab",
+    "cross_kind": true,
+    "items": [
+      {
+        "id": "topic:family",
+        "kind": "topic",
+        "en": "Family",
+        "my": "မိသားစု",
+        "file": "src/data/topics.ts",
+        "line": 4
+      },
+      {
+        "id": "word:family:family",
+        "kind": "word",
+        "en": "family",
+        "my": "မိသားစု",
+        "file": "src/data/words-family.ts",
+        "line": 23
+      }
+    ]
+  },
+  {
+    "type": "near",
+    "score": 1.0,
+    "driver": "vocab",
+    "cross_kind": true,
+    "items": [
+      {
+        "id": "topic:work",
+        "kind": "topic",
+        "en": "Work",
+        "my": "အလုပ်",
+        "file": "src/data/topics.ts",
+        "line": 6
+      },
+      {
+        "id": "word:work:work",
+        "kind": "word",
+        "en": "work",
+        "my": "အလုပ်",
+        "file": "src/data/words-work.ts",
+        "line": 5
+      }
+    ]
+  },
+  {
+    "type": "near",
+    "score": 1.0,
+    "driver": "vocab",
+    "cross_kind": true,
+    "items": [
+      {
+        "id": "topic:travel",
+        "kind": "topic",
+        "en": "Travel",
+        "my": "ခရီးသွား",
+        "file": "src/data/topics.ts",
+        "line": 8
+      },
+      {
+        "id": "word:travel:travel",
+        "kind": "word",
+        "en": "travel",
+        "my": "ခရီးသွားသည်",
+        "file": "src/data/words-travel.ts",
+        "line": 5
+      }
+    ]
+  },
+  {
+    "type": "near",
+    "score": 1.0,
+    "driver": "vocab",
+    "cross_kind": true,
+    "items": [
+      {
+        "id": "topic:health",
+        "kind": "topic",
+        "en": "Health",
+        "my": "ကျန်းမာရေး",
+        "file": "src/data/topics.ts",
+        "line": 9
+      },
+      {
+        "id": "word:health:health",
+        "kind": "word",
+        "en": "health",
+        "my": "ကျန်းမာရေး",
+        "file": "src/data/words-health.ts",
+        "line": 5
+      }
+    ]
+  },
+  {
+    "type": "near",
+    "score": 1.0,
+    "driver": "vocab",
+    "cross_kind": true,
+    "items": [
+      {
+        "id": "topic:school",
+        "kind": "topic",
+        "en": "School",
+        "my": "ကျောင်း",
+        "file": "src/data/topics.ts",
+        "line": 10
+      },
+      {
+        "id": "word:school:school",
+        "kind": "word",
+        "en": "school",
+        "my": "ကျောင်း",
+        "file": "src/data/words-school.ts",
+        "line": 5
+      }
+    ]
+  },
+  {
+    "type": "near",
+    "score": 1.0,
+    "driver": "vocab",
+    "cross_kind": true,
+    "items": [
+      {
+        "id": "topic:food",
+        "kind": "topic",
+        "en": "Food",
+        "my": "အစားအစာ",
+        "file": "src/data/topics.ts",
+        "line": 11
+      },
+      {
+        "id": "word:food:food",
+        "kind": "word",
+        "en": "food",
+        "my": "အစားအစာ",
+        "file": "src/data/words-food.ts",
+        "line": 5
+      }
+    ]
+  },
+  {
+    "type": "near",
+    "score": 1.0,
+    "driver": "vocab",
+    "cross_kind": true,
+    "items": [
+      {
+        "id": "topic:nature",
+        "kind": "topic",
+        "en": "Nature",
+        "my": "သဘာဝ",
+        "file": "src/data/topics.ts",
+        "line": 12
+      },
+      {
+        "id": "word:nature:nature",
+        "kind": "word",
+        "en": "nature",
+        "my": "သဘာဝ",
+        "file": "src/data/words-nature.ts",
+        "line": 5
+      }
+    ]
+  },
+  {
+    "type": "near",
+    "score": 1.0,
+    "driver": "vocab",
+    "cross_kind": true,
+    "items": [
+      {
+        "id": "topic:technology",
+        "kind": "topic",
+        "en": "Technology",
+        "my": "နည်းပညာ",
+        "file": "src/data/topics.ts",
+        "line": 14
+      },
+      {
+        "id": "word:technology:technology",
+        "kind": "word",
+        "en": "technology",
+        "my": "နည်းပညာ",
+        "file": "src/data/words-technology.ts",
+        "line": 5
+      }
+    ]
+  },
+  {
+    "type": "near",
+    "score": 1.0,
+    "driver": "vocab",
+    "cross_kind": true,
+    "items": [
+      {
+        "id": "topic:business",
+        "kind": "topic",
+        "en": "Business",
+        "my": "စီးပွားရေး",
+        "file": "src/data/topics.ts",
+        "line": 15
+      },
+      {
+        "id": "word:business:business",
+        "kind": "word",
+        "en": "business",
+        "my": "စီးပွားရေး",
+        "file": "src/data/words-business.ts",
+        "line": 5
+      }
+    ]
+  },
+  {
+    "type": "near",
+    "score": 1.0,
+    "driver": "vocab",
+    "cross_kind": true,
+    "items": [
+      {
+        "id": "topic:home",
+        "kind": "topic",
+        "en": "Home",
+        "my": "အိမ်",
+        "file": "src/data/topics.ts",
+        "line": 19
+      },
+      {
+        "id": "word:family:home",
+        "kind": "word",
+        "en": "home",
+        "my": "အိမ်",
+        "file": "src/data/words-family.ts",
+        "line": 24
+      }
+    ]
+  },
+  {
+    "type": "near",
+    "score": 1.0,
+    "driver": "vocab",
+    "cross_kind": true,
+    "items": [
+      {
+        "id": "topic:clothing",
+        "kind": "topic",
+        "en": "Clothing",
+        "my": "အဝတ်အစား",
+        "file": "src/data/topics.ts",
+        "line": 20
+      },
+      {
+        "id": "word:clothing:clothing",
+        "kind": "word",
+        "en": "clothing",
+        "my": "အဝတ်အစား",
+        "file": "src/data/words-clothing.ts",
+        "line": 5
+      }
+    ]
+  },
+  {
+    "type": "near",
+    "score": 1.0,
+    "driver": "vocab",
+    "cross_kind": true,
+    "items": [
+      {
+        "id": "topic:time",
+        "kind": "topic",
+        "en": "Time",
+        "my": "အချိန်",
+        "file": "src/data/topics.ts",
+        "line": 22
+      },
+      {
+        "id": "word:time:time",
+        "kind": "word",
+        "en": "time",
+        "my": "အချိန်",
+        "file": "src/data/words-time.ts",
+        "line": 5
+      }
+    ]
+  },
+  {
+    "type": "near",
+    "score": 1.0,
+    "driver": "vocab",
+    "cross_kind": true,
+    "items": [
+      {
+        "id": "topic:weather",
+        "kind": "topic",
+        "en": "Weather",
+        "my": "ရာသီဥတု",
+        "file": "src/data/topics.ts",
+        "line": 23
+      },
+      {
+        "id": "word:weather:weather",
+        "kind": "word",
+        "en": "weather",
+        "my": "ရာသီဥတု",
+        "file": "src/data/words-weather.ts",
+        "line": 5
+      }
+    ]
+  },
+  {
+    "type": "near",
+    "score": 0.88,
+    "driver": "vocab",
+    "cross_kind": false,
+    "items": [
+      {
+        "id": "phrase:daily-life:0212",
+        "kind": "phrase",
+        "en": "I clean my room.",
+        "my": "အခန်းကို သန့်ရှင်းတယ်။",
+        "file": "src/data/phrases-b.ts",
+        "line": 61
+      },
+      {
+        "id": "phrase:home:0241",
+        "kind": "phrase",
+        "en": "My room is clean.",
+        "my": "ကျွန်တော့်အခန်းက သန့်ရှင်းတယ်။",
+        "file": "src/data/phrases-b.ts",
+        "line": 92
+      }
+    ]
+  },
+  {
+    "type": "pattern",
+    "name": "Let's ",
+    "note": "Overused suggestion template: 18 of 320 phrases (5.6%) start with 'Let's ...' across 12 topics; 3 in friends alone (a:24,32,37). Identical Myanmar '...ကြရအောင်။' makes them feel machine-made. Vary openings: 'Shall we ...?', 'How about ...?', imperatives.",
+    "range": "src/data/phrases-a.ts lines 24,32,37,46,78,87,116,126,137,153,160,168; src/data/phrases-b.ts lines 25,38,60,68,97,154",
+    "items": [
+      {
+        "id": "phrase:friends:0017",
+        "kind": "phrase",
+        "en": "Let's meet tomorrow.",
+        "my": "မနက်ဖြန် တွေ့ကြရအောင်။",
+        "file": "src/data/phrases-a.ts",
+        "line": 24
+      },
+      {
+        "id": "phrase:friends:0025",
+        "kind": "phrase",
+        "en": "Let's share lunch.",
+        "my": "နေ့လည်စာ အတူစားကြရအောင်။",
+        "file": "src/data/phrases-a.ts",
+        "line": 32
+      },
+      {
+        "id": "phrase:friends:0030",
+        "kind": "phrase",
+        "en": "Let's take a photo.",
+        "my": "ဓာတ်ပုံ ရိုက်ကြရအောင်။",
+        "file": "src/data/phrases-a.ts",
+        "line": 37
+      },
+      {
+        "id": "phrase:work:0038",
+        "kind": "phrase",
+        "en": "Let's start work.",
+        "my": "အလုပ် စတင်ကြရအောင်။",
+        "file": "src/data/phrases-a.ts",
+        "line": 46
+      },
+      {
+        "id": "phrase:travel:0068",
+        "kind": "phrase",
+        "en": "Let's go to the beach.",
+        "my": "ကမ်းခြေကို သွားကြရအောင်။",
+        "file": "src/data/phrases-a.ts",
+        "line": 78
+      },
+      {
+        "id": "phrase:travel:0077",
+        "kind": "phrase",
+        "en": "Let's take a boat.",
+        "my": "သင်္ဘော စီးကြရအောင်။",
+        "file": "src/data/phrases-a.ts",
+        "line": 87
+      },
+      {
+        "id": "phrase:school:0104",
+        "kind": "phrase",
+        "en": "Let's study together.",
+        "my": "အတူတူ လေ့လာကြရအောင်။",
+        "file": "src/data/phrases-a.ts",
+        "line": 116
+      },
+      {
+        "id": "phrase:food:0113",
+        "kind": "phrase",
+        "en": "Let's eat rice.",
+        "my": "ထမင်း စားကြရအောင်။",
+        "file": "src/data/phrases-a.ts",
+        "line": 126
+      },
+      {
+        "id": "phrase:food:0124",
+        "kind": "phrase",
+        "en": "Let's cook dinner.",
+        "my": "ညစာ ချက်ကြရအောင်။",
+        "file": "src/data/phrases-a.ts",
+        "line": 137
+      },
+      {
+        "id": "phrase:nature:0139",
+        "kind": "phrase",
+        "en": "Let's plant a tree.",
+        "my": "သစ်ပင် စိုက်ကြရအောင်။",
+        "file": "src/data/phrases-a.ts",
+        "line": 153
+      },
+      {
+        "id": "phrase:sports:0145",
+        "kind": "phrase",
+        "en": "Let's play together.",
+        "my": "အတူတူ ကစားကြရအောင်။",
+        "file": "src/data/phrases-a.ts",
+        "line": 160
+      },
+      {
+        "id": "phrase:sports:0153",
+        "kind": "phrase",
+        "en": "Let's go cycling.",
+        "my": "စက်ဘီး စီးကြရအောင်။",
+        "file": "src/data/phrases-a.ts",
+        "line": 168
+      },
+      {
+        "id": "phrase:business:0178",
+        "kind": "phrase",
+        "en": "Let's make a deal.",
+        "my": "သဘောတူညီချက် လုပ်ကြရအောင်။",
+        "file": "src/data/phrases-b.ts",
+        "line": 25
+      },
+      {
+        "id": "phrase:business:0191",
+        "kind": "phrase",
+        "en": "Let's work together.",
+        "my": "အတူတူ အလုပ်လုပ်ကြရအောင်။",
+        "file": "src/data/phrases-b.ts",
+        "line": 38
+      },
+      {
+        "id": "phrase:daily-life:0211",
+        "kind": "phrase",
+        "en": "Let's go shopping.",
+        "my": "ဈေးဝယ်သွားကြရအောင်။",
+        "file": "src/data/phrases-b.ts",
+        "line": 60
+      },
+      {
+        "id": "phrase:daily-life:0219",
+        "kind": "phrase",
+        "en": "Let's take a walk.",
+        "my": "လမ်းလျှောက်ကြရအောင်။",
+        "file": "src/data/phrases-b.ts",
+        "line": 68
+      },
+      {
+        "id": "phrase:home:0246",
+        "kind": "phrase",
+        "en": "Let's watch TV.",
+        "my": "တီဗီ ကြည့်ကြရအောင်။",
+        "file": "src/data/phrases-b.ts",
+        "line": 97
+      },
+      {
+        "id": "phrase:time:0300",
+        "kind": "phrase",
+        "en": "Let's meet at noon.",
+        "my": "နေ့လယ်မှာ တွေ့ကြရအောင်။",
+        "file": "src/data/phrases-b.ts",
+        "line": 154
+      }
+    ]
+  },
+  {
+    "type": "pattern",
+    "name": "I like / I love",
+    "note": "Affection template: 9x 'I like X.' + 3x 'I love X.' across 10 topics (e.g. 'I like this color.' shopping a:66 vs 'I like this city.' travel a:80 — same frame, one word swapped). Vary with 'I'm fond of', 'X is my favorite', 'I enjoy'.",
+    "range": "src/data/phrases-a.ts lines 6,21,66,80,110,128,138,149,159; src/data/phrases-b.ts lines 45,101,112,131,167",
+    "items": [
+      {
+        "id": "phrase:family:0000",
+        "kind": "phrase",
+        "en": "I love my family.",
+        "my": "ကျွန်တော့် မိသားစုကို ချစ်တယ်။",
+        "file": "src/data/phrases-a.ts",
+        "line": 6
+      },
+      {
+        "id": "phrase:family:0015",
+        "kind": "phrase",
+        "en": "I love you all.",
+        "my": "မင်းတို့အားလုံးကို ချစ်တယ်။",
+        "file": "src/data/phrases-a.ts",
+        "line": 21
+      },
+      {
+        "id": "phrase:shopping:0057",
+        "kind": "phrase",
+        "en": "I like this color.",
+        "my": "ဒီအရောင်ကို ကြိုက်တယ်။",
+        "file": "src/data/phrases-a.ts",
+        "line": 66
+      },
+      {
+        "id": "phrase:travel:0070",
+        "kind": "phrase",
+        "en": "I like this city.",
+        "my": "ဒီမြို့ကို ကြိုက်တယ်။",
+        "file": "src/data/phrases-a.ts",
+        "line": 80
+      },
+      {
+        "id": "phrase:school:0098",
+        "kind": "phrase",
+        "en": "I like English.",
+        "my": "အင်္ဂလိပ်စာကို ကြိုက်တယ်။",
+        "file": "src/data/phrases-a.ts",
+        "line": 110
+      },
+      {
+        "id": "phrase:food:0115",
+        "kind": "phrase",
+        "en": "I like noodles.",
+        "my": "ခေါက်ဆွဲကို ကြိုက်တယ်။",
+        "file": "src/data/phrases-a.ts",
+        "line": 128
+      },
+      {
+        "id": "phrase:food:0125",
+        "kind": "phrase",
+        "en": "I love fruit.",
+        "my": "သစ်သီးကို ချစ်တယ်။",
+        "file": "src/data/phrases-a.ts",
+        "line": 138
+      },
+      {
+        "id": "phrase:nature:0135",
+        "kind": "phrase",
+        "en": "I love nature.",
+        "my": "သဘာဝကို ချစ်တယ်။",
+        "file": "src/data/phrases-a.ts",
+        "line": 149
+      },
+      {
+        "id": "phrase:sports:0144",
+        "kind": "phrase",
+        "en": "I like football.",
+        "my": "ဘောလုံးကို ကြိုက်တယ်။",
+        "file": "src/data/phrases-a.ts",
+        "line": 159
+      },
+      {
+        "id": "phrase:emotions:0197",
+        "kind": "phrase",
+        "en": "I love you.",
+        "my": "မင်းကို ချစ်တယ်။",
+        "file": "src/data/phrases-b.ts",
+        "line": 45
+      },
+      {
+        "id": "phrase:home:0250",
+        "kind": "phrase",
+        "en": "I like my home.",
+        "my": "အိမ်ကို ကြိုက်တယ်။",
+        "file": "src/data/phrases-b.ts",
+        "line": 101
+      },
+      {
+        "id": "phrase:clothing:0260",
+        "kind": "phrase",
+        "en": "I like your hat.",
+        "my": "မင်းဦးထုပ်ကို ကြိုက်တယ်။",
+        "file": "src/data/phrases-b.ts",
+        "line": 112
+      },
+      {
+        "id": "phrase:animals:0278",
+        "kind": "phrase",
+        "en": "I like monkeys.",
+        "my": "မျောက်တွေကို ကြိုက်တယ်။",
+        "file": "src/data/phrases-b.ts",
+        "line": 131
+      },
+      {
+        "id": "phrase:weather:0312",
+        "kind": "phrase",
+        "en": "I like winter.",
+        "my": "ဆောင်းရာသီကို ကြိုက်တယ်။",
+        "file": "src/data/phrases-b.ts",
+        "line": 167
+      }
+    ]
+  },
+  {
+    "type": "pattern",
+    "name": "I have",
+    "note": "Possession template: 9x 'I have X.' (family a:9, health a:92,98 within-topic pair 'I have a fever.'/'I have a cough.', school a:114, technology b:6, business b:23, emotions b:52, animals b:125). Vary with 'I've got', 'There is/are', possessives.",
+    "range": "src/data/phrases-a.ts lines 9,92,98,114; src/data/phrases-b.ts lines 6,23,52,125",
+    "items": [
+      {
+        "id": "phrase:family:0003",
+        "kind": "phrase",
+        "en": "I have two brothers.",
+        "my": "ကျွန်တော့်မှာ အစ်ကို နှစ်ယောက် ရှိတယ်။",
+        "file": "src/data/phrases-a.ts",
+        "line": 9
+      },
+      {
+        "id": "phrase:health:0081",
+        "kind": "phrase",
+        "en": "I have a fever.",
+        "my": "အဖျားရှိတယ်။",
+        "file": "src/data/phrases-a.ts",
+        "line": 92
+      },
+      {
+        "id": "phrase:health:0087",
+        "kind": "phrase",
+        "en": "I have a cough.",
+        "my": "ချောင်းဆိုးတယ်။",
+        "file": "src/data/phrases-a.ts",
+        "line": 98
+      },
+      {
+        "id": "phrase:school:0102",
+        "kind": "phrase",
+        "en": "I have a question.",
+        "my": "မေးခွန်း တစ်ခုရှိတယ်။",
+        "file": "src/data/phrases-a.ts",
+        "line": 114
+      },
+      {
+        "id": "phrase:technology:0160",
+        "kind": "phrase",
+        "en": "I have a phone.",
+        "my": "ကျွန်တော့်မှာ ဖုန်းရှိတယ်။",
+        "file": "src/data/phrases-b.ts",
+        "line": 6
+      },
+      {
+        "id": "phrase:business:0176",
+        "kind": "phrase",
+        "en": "I have a business.",
+        "my": "ကျွန်တော့်မှာ စီးပွားရေးလုပ်ငန်း ရှိတယ်။",
+        "file": "src/data/phrases-b.ts",
+        "line": 23
+      },
+      {
+        "id": "phrase:emotions:0204",
+        "kind": "phrase",
+        "en": "I have hope.",
+        "my": "မျှော်လင့်ချက် ရှိတယ်။",
+        "file": "src/data/phrases-b.ts",
+        "line": 52
+      },
+      {
+        "id": "phrase:animals:0272",
+        "kind": "phrase",
+        "en": "I have a dog.",
+        "my": "ကျွန်တော့်မှာ ခွေးရှိတယ်။",
+        "file": "src/data/phrases-b.ts",
+        "line": 125
+      }
+    ]
+  },
+  {
+    "type": "pattern",
+    "name": "Don't",
+    "note": "Prohibition template: 7x 'Don't ...' — 3 of them inside the emotions topic (b:41 'Don't be sad.', b:47 'Don't worry.', b:54 'Don't cry.'). Rewrite 2 of the 3 as affirmative encouragement.",
+    "range": "src/data/phrases-a.ts lines 35; src/data/phrases-b.ts lines 34,41,47,54,71,85",
+    "items": [
+      {
+        "id": "phrase:friends:0028",
+        "kind": "phrase",
+        "en": "Don't worry.",
+        "my": "စိတ်မပူပါနဲ့။",
+        "file": "src/data/phrases-a.ts",
+        "line": 35
+      },
+      {
+        "id": "phrase:business:0187",
+        "kind": "phrase",
+        "en": "Don't spend too much.",
+        "my": "အများကြီး မသုံးပါနဲ့။",
+        "file": "src/data/phrases-b.ts",
+        "line": 34
+      },
+      {
+        "id": "phrase:emotions:0193",
+        "kind": "phrase",
+        "en": "Don't be sad.",
+        "my": "ဝမ်းမနည်းပါနဲ့။",
+        "file": "src/data/phrases-b.ts",
+        "line": 41
+      },
+      {
+        "id": "phrase:emotions:0199",
+        "kind": "phrase",
+        "en": "Don't worry.",
+        "my": "စိတ်မပူပါနဲ့။",
+        "file": "src/data/phrases-b.ts",
+        "line": 47
+      },
+      {
+        "id": "phrase:emotions:0206",
+        "kind": "phrase",
+        "en": "Don't cry.",
+        "my": "မငိုပါနဲ့။",
+        "file": "src/data/phrases-b.ts",
+        "line": 54
+      },
+      {
+        "id": "phrase:daily-life:0222",
+        "kind": "phrase",
+        "en": "Don't be late.",
+        "my": "နောက်မကျပါနဲ့။",
+        "file": "src/data/phrases-b.ts",
+        "line": 71
+      },
+      {
+        "id": "phrase:emergencies:0235",
+        "kind": "phrase",
+        "en": "Don't move!",
+        "my": "မလှုပ်ပါနဲ့",
+        "file": "src/data/phrases-b.ts",
+        "line": 85
+      }
+    ]
+  },
+  {
+    "type": "pattern",
+    "name": "It's / It is",
+    "note": "Weather/description template: 10x 'It's X.'/'It is X.' — 4 inside weather topic (b:159,160,163,164) plus near-identical 'It is raining.' (nature a:146) vs \"It's raining now.\" (weather b:160). Vary with 'The weather is...', 'Looks like...', 'Feels like...'.",
+    "range": "src/data/phrases-a.ts lines 58,146; src/data/phrases-b.ts lines 86,111,143,149,159,160,163,164",
+    "items": [
+      {
+        "id": "phrase:shopping:0049",
+        "kind": "phrase",
+        "en": "It's too expensive.",
+        "my": "ဈေးကြီးလွန်းတယ်။",
+        "file": "src/data/phrases-a.ts",
+        "line": 58
+      },
+      {
+        "id": "phrase:nature:0132",
+        "kind": "phrase",
+        "en": "It is raining.",
+        "my": "မိုးရွာနေတယ်။",
+        "file": "src/data/phrases-a.ts",
+        "line": 146
+      },
+      {
+        "id": "phrase:emergencies:0236",
+        "kind": "phrase",
+        "en": "It's dangerous here.",
+        "my": "ဒီမှာ အန္တရာယ်ရှိတယ်။",
+        "file": "src/data/phrases-b.ts",
+        "line": 86
+      },
+      {
+        "id": "phrase:clothing:0259",
+        "kind": "phrase",
+        "en": "It's cold, wear a coat.",
+        "my": "အေးတယ်၊ ကုတ်အင်္ကျီ ဝတ်ပါ။",
+        "file": "src/data/phrases-b.ts",
+        "line": 111
+      },
+      {
+        "id": "phrase:time:0289",
+        "kind": "phrase",
+        "en": "It's three o'clock.",
+        "my": "သုံးနာရီ ထိုးပြီ။",
+        "file": "src/data/phrases-b.ts",
+        "line": 143
+      },
+      {
+        "id": "phrase:time:0295",
+        "kind": "phrase",
+        "en": "It's getting late.",
+        "my": "နောက်ကျနေပြီ။",
+        "file": "src/data/phrases-b.ts",
+        "line": 149
+      },
+      {
+        "id": "phrase:weather:0304",
+        "kind": "phrase",
+        "en": "It's sunny today.",
+        "my": "ဒီနေ့ နေသာတယ်။",
+        "file": "src/data/phrases-b.ts",
+        "line": 159
+      },
+      {
+        "id": "phrase:weather:0305",
+        "kind": "phrase",
+        "en": "It's raining now.",
+        "my": "အခု မိုးရွာနေတယ်။",
+        "file": "src/data/phrases-b.ts",
+        "line": 160
+      },
+      {
+        "id": "phrase:weather:0308",
+        "kind": "phrase",
+        "en": "It's very hot.",
+        "my": "အရမ်း ပူတယ်။",
+        "file": "src/data/phrases-b.ts",
+        "line": 163
+      },
+      {
+        "id": "phrase:weather:0309",
+        "kind": "phrase",
+        "en": "It's cold outside.",
+        "my": "အပြင်မှာ အေးတယ်။",
+        "file": "src/data/phrases-b.ts",
+        "line": 164
+      }
+    ]
+  },
+  {
+    "type": "pattern",
+    "name": "Where is",
+    "note": "Location-question template: 5x 'Where is X?' across family/shopping/travel(x2)/health. Fine for beginners but repetitive; vary 1-2 with 'Where can I find ...?' or 'Is there ... near here?'.",
+    "range": "src/data/phrases-a.ts lines 13,65,75,88,99",
+    "items": [
+      {
+        "id": "phrase:family:0007",
+        "kind": "phrase",
+        "en": "Where is dad?",
+        "my": "အဖေ ဘယ်မှာလဲ။",
+        "file": "src/data/phrases-a.ts",
+        "line": 13
+      },
+      {
+        "id": "phrase:shopping:0056",
+        "kind": "phrase",
+        "en": "Where is the receipt?",
+        "my": "ပြေစာစာရွက် ဘယ်မှာလဲ။",
+        "file": "src/data/phrases-a.ts",
+        "line": 65
+      },
+      {
+        "id": "phrase:travel:0065",
+        "kind": "phrase",
+        "en": "Where is the airport?",
+        "my": "လေဆိပ် ဘယ်မှာလဲ။",
+        "file": "src/data/phrases-a.ts",
+        "line": 75
+      },
+      {
+        "id": "phrase:travel:0078",
+        "kind": "phrase",
+        "en": "Where is my luggage?",
+        "my": "ကျွန်တော့်ခရီးဆောင်အိတ် ဘယ်မှာလဲ။",
+        "file": "src/data/phrases-a.ts",
+        "line": 88
+      },
+      {
+        "id": "phrase:health:0088",
+        "kind": "phrase",
+        "en": "Where is the hospital?",
+        "my": "ဆေးရုံ ဘယ်မှာလဲ။",
+        "file": "src/data/phrases-a.ts",
+        "line": 99
+      }
+    ]
+  },
+  {
+    "type": "pattern",
+    "name": "Take",
+    "note": "Command template: 6x 'Take ...' including near-frame pair 'Take care of grandma.' (family a:16) vs 'Take care of animals.' (animals b:140). Vary with 'Grab', 'Bring', 'Look after'.",
+    "range": "src/data/phrases-a.ts lines 16,83,95; src/data/phrases-b.ts lines 11,140,161",
+    "items": [
+      {
+        "id": "phrase:family:0010",
+        "kind": "phrase",
+        "en": "Take care of grandma.",
+        "my": "အဖွားကို ဂရုစိုက်ပါ။",
+        "file": "src/data/phrases-a.ts",
+        "line": 16
+      },
+      {
+        "id": "phrase:travel:0073",
+        "kind": "phrase",
+        "en": "Take a taxi.",
+        "my": "တက္ကစီ စီးပါ။",
+        "file": "src/data/phrases-a.ts",
+        "line": 83
+      },
+      {
+        "id": "phrase:health:0084",
+        "kind": "phrase",
+        "en": "Take this medicine.",
+        "my": "ဒီဆေးကို သောက်ပါ။",
+        "file": "src/data/phrases-a.ts",
+        "line": 95
+      },
+      {
+        "id": "phrase:technology:0165",
+        "kind": "phrase",
+        "en": "Take a photo!",
+        "my": "ဓာတ်ပုံ ရိုက်ပါ",
+        "file": "src/data/phrases-b.ts",
+        "line": 11
+      },
+      {
+        "id": "phrase:animals:0287",
+        "kind": "phrase",
+        "en": "Take care of animals.",
+        "my": "တိရစ္ဆာန်တွေကို ဂရုစိုက်ပါ။",
+        "file": "src/data/phrases-b.ts",
+        "line": 140
+      },
+      {
+        "id": "phrase:weather:0306",
+        "kind": "phrase",
+        "en": "Take an umbrella.",
+        "my": "ထီး ယူသွားပါ။",
+        "file": "src/data/phrases-b.ts",
+        "line": 161
+      }
+    ]
+  },
+  {
+    "type": "pattern",
+    "name": "X is my Y",
+    "note": "Self-introduction template: 6x 'X is my Y.' (This is my father./She is my mother. family a:7,8; He is my best friend. a:23; She is my boss. a:41; She is my teacher. a:109; This is my house. b:91). Vary with 'Meet my ...', 'This is ...' + apposition, 'My ... is a ...'.",
+    "range": "src/data/phrases-a.ts lines 7,8,23,41,88,109; src/data/phrases-b.ts lines 91",
+    "items": [
+      {
+        "id": "phrase:family:0001",
+        "kind": "phrase",
+        "en": "This is my father.",
+        "my": "ဒါ ကျွန်တော့်အဖေ ဖြစ်ပါတယ်။",
+        "file": "src/data/phrases-a.ts",
+        "line": 7
+      },
+      {
+        "id": "phrase:family:0002",
+        "kind": "phrase",
+        "en": "She is my mother.",
+        "my": "သူက ကျွန်တော့်အမေ ဖြစ်ပါတယ်။",
+        "file": "src/data/phrases-a.ts",
+        "line": 8
+      },
+      {
+        "id": "phrase:friends:0016",
+        "kind": "phrase",
+        "en": "He is my best friend.",
+        "my": "သူက ကျွန်တော့်အရင်းနှီးဆုံးသူငယ်ချင်း ဖြစ်တယ်။",
+        "file": "src/data/phrases-a.ts",
+        "line": 23
+      },
+      {
+        "id": "phrase:work:0033",
+        "kind": "phrase",
+        "en": "She is my boss.",
+        "my": "သူက ကျွန်တော့်သူဌေး ဖြစ်တယ်။",
+        "file": "src/data/phrases-a.ts",
+        "line": 41
+      },
+      {
+        "id": "phrase:travel:0078",
+        "kind": "phrase",
+        "en": "Where is my luggage?",
+        "my": "ကျွန်တော့်ခရီးဆောင်အိတ် ဘယ်မှာလဲ။",
+        "file": "src/data/phrases-a.ts",
+        "line": 88
+      },
+      {
+        "id": "phrase:school:0097",
+        "kind": "phrase",
+        "en": "She is my teacher.",
+        "my": "သူက ကျွန်တော့်ဆရာမ ဖြစ်တယ်။",
+        "file": "src/data/phrases-a.ts",
+        "line": 109
+      },
+      {
+        "id": "phrase:home:0240",
+        "kind": "phrase",
+        "en": "This is my house.",
+        "my": "ဒါ ကျွန်တော့်အိမ် ဖြစ်တယ်။",
+        "file": "src/data/phrases-b.ts",
+        "line": 91
+      }
+    ]
+  },
+  {
+    "type": "pattern",
+    "name": "See you",
+    "note": "Farewell template: 4x 'See you X' ('See you soon!' exact-dup a:33/b:152, 'See you tomorrow!' daily-life b:70, 'See you on Monday.' time b:145). Keep one 'See you soon!', rewrite the rest ('Bye for now!', 'Until tomorrow!', 'See you Monday!').",
+    "range": "src/data/phrases-a.ts lines 33; src/data/phrases-b.ts lines 70,145,152",
+    "items": [
+      {
+        "id": "phrase:friends:0026",
+        "kind": "phrase",
+        "en": "See you soon!",
+        "my": "မကြာမီ တွေ့မယ်",
+        "file": "src/data/phrases-a.ts",
+        "line": 33
+      },
+      {
+        "id": "phrase:daily-life:0221",
+        "kind": "phrase",
+        "en": "See you tomorrow!",
+        "my": "မနက်ဖြန် တွေ့မယ်",
+        "file": "src/data/phrases-b.ts",
+        "line": 70
+      },
+      {
+        "id": "phrase:time:0291",
+        "kind": "phrase",
+        "en": "See you on Monday.",
+        "my": "တနင်္လာနေ့မှာ တွေ့မယ်။",
+        "file": "src/data/phrases-b.ts",
+        "line": 145
+      },
+      {
+        "id": "phrase:time:0298",
+        "kind": "phrase",
+        "en": "See you soon!",
+        "my": "မကြာမီ တွေ့မယ်",
+        "file": "src/data/phrases-b.ts",
+        "line": 152
+      }
+    ]
+  },
+  {
+    "type": "pattern",
+    "name": "The X is big",
+    "note": "Adjective-copula cluster: 5x '...big.' (The tree is big. nature a:141; My family is big. family a:14; The class is big. school a:120; The screen is big. technology b:15; Elephants are big. animals b:127) — same adjective recycled 5x across topics. Swap synonyms (huge, large) or reframe ('What a big tree!').",
+    "range": "src/data/phrases-a.ts lines 14,120,142; src/data/phrases-b.ts lines 15,127",
+    "items": [
+      {
+        "id": "phrase:family:0008",
+        "kind": "phrase",
+        "en": "My family is big.",
+        "my": "ကျွန်တော့်မိသားစုက ကြီးတယ်။",
+        "file": "src/data/phrases-a.ts",
+        "line": 14
+      },
+      {
+        "id": "phrase:school:0108",
+        "kind": "phrase",
+        "en": "The class is big.",
+        "my": "အတန်းက ကြီးတယ်။",
+        "file": "src/data/phrases-a.ts",
+        "line": 120
+      },
+      {
+        "id": "phrase:nature:0128",
+        "kind": "phrase",
+        "en": "The tree is big.",
+        "my": "သစ်ပင်က ကြီးတယ်။",
+        "file": "src/data/phrases-a.ts",
+        "line": 142
+      },
+      {
+        "id": "phrase:technology:0169",
+        "kind": "phrase",
+        "en": "The screen is big.",
+        "my": "မျက်နှာပြင်က ကြီးတယ်။",
+        "file": "src/data/phrases-b.ts",
+        "line": 15
+      },
+      {
+        "id": "phrase:animals:0274",
+        "kind": "phrase",
+        "en": "Elephants are big.",
+        "my": "ဆင်တွေက ကြီးတယ်။",
+        "file": "src/data/phrases-b.ts",
+        "line": 127
+      }
+    ]
+  }
+]

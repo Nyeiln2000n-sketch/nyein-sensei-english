@@ -1,0 +1,353 @@
+/* Worker 4 — screen 7 (Achievements), 8 (Profile), 10 (LessonComplete) + Auth reskin.
+   Scoped with w4- prefix; design tokens come from :root in styles.css. */
+
+/* ---------- achievements header ---------- */
+.w4-head-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-warm);
+  padding: 14px 16px;
+}
+
+.w4-head-title {
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--title);
+  line-height: 1.3;
+}
+
+.w4-head-sub {
+  font-size: 12.5px;
+  color: var(--body);
+  margin-top: 2px;
+}
+
+.w4-chip {
+  display: inline-block;
+  margin-top: 6px;
+  background: var(--cream);
+  color: var(--title);
+  font-size: 11.5px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 999px;
+}
+
+.w4-seg-wrap { margin: 14px 0 4px; }
+
+/* ---------- medal grid ---------- */
+.w4-medal-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px 10px;
+  margin-top: 14px;
+}
+
+.w4-medal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+}
+
+.w4-medal-disc {
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-warm);
+}
+
+.w4-medal.unlocked .w4-medal-disc {
+  background: linear-gradient(135deg, #ffd98a 0%, #ffb74d 60%, #f59d2a 100%);
+  color: #fff;
+}
+
+.w4-medal.locked .w4-medal-disc {
+  background: #ececec;
+  color: #b5b5b5;
+  box-shadow: none;
+}
+
+.w4-medal-name {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--title);
+  line-height: 1.35;
+}
+
+.w4-medal.locked .w4-medal-name { color: #a8a8a8; }
+
+/* ---------- progress / stat cards ---------- */
+.w4-card {
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-warm);
+  padding: 18px;
+  margin-top: 14px;
+}
+
+.w4-card-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--title);
+  margin-bottom: 10px;
+}
+
+.w4-progress-line {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--title);
+  margin-bottom: 8px;
+}
+
+.w4-progress-note {
+  margin-top: 10px;
+  font-size: 13px;
+  color: var(--body);
+}
+
+.w4-stat-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.w4-stat-card {
+  background: var(--card);
+  border-radius: 18px;
+  box-shadow: var(--shadow-warm);
+  padding: 16px 12px;
+  text-align: center;
+}
+
+.w4-stat-num {
+  font-size: 21px;
+  font-weight: 700;
+  color: var(--title);
+}
+
+.w4-stat-label {
+  font-size: 12px;
+  color: var(--body);
+  margin-top: 4px;
+}
+
+/* ---------- profile ---------- */
+.w4-profile-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.w4-avatar-circle {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  background: var(--cream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-warm);
+  overflow: hidden;
+}
+
+.w4-profile-name {
+  font-size: 21px;
+  font-weight: 700;
+  color: var(--title);
+  margin-top: 12px;
+}
+
+.w4-profile-email {
+  font-size: 13px;
+  color: var(--body);
+  margin-top: 4px;
+  word-break: break-all;
+}
+
+.w4-profile-stats {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 14px;
+  flex-wrap: wrap;
+}
+
+.w4-pstat {
+  background: var(--card);
+  border-radius: 16px;
+  box-shadow: var(--shadow-warm);
+  padding: 10px 14px;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--title);
+  white-space: nowrap;
+}
+
+.w4-menu {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.w4-stub-panel {
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-warm);
+  padding: 16px 18px;
+  margin-top: 12px;
+  font-size: 14px;
+  color: var(--body);
+}
+
+.w4-stub-panel .w4-card-title { margin-bottom: 6px; }
+
+/* ---------- auth ---------- */
+.w4-auth-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 6px 0 2px;
+}
+
+.w4-auth-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--title);
+  margin-top: 10px;
+}
+
+.w4-auth-sub {
+  font-size: 13.5px;
+  color: var(--body);
+  margin-top: 4px;
+}
+
+.w4-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--title);
+  margin: 12px 0 6px;
+}
+
+.w4-input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: var(--cream);
+  border-radius: 16px;
+  padding: 14px 16px;
+  font-family: var(--font);
+  font-size: 15px;
+  color: var(--title);
+}
+
+.w4-input::placeholder { color: #b9a98f; }
+
+.w4-input:focus { box-shadow: 0 0 0 2px var(--orange); }
+
+.w4-err {
+  color: #e5484d;
+  font-size: 13px;
+  font-weight: 500;
+  margin: 10px 0 0;
+}
+
+.w4-auth-submit { margin-top: 20px; }
+
+.w4-link {
+  display: block;
+  width: 100%;
+  background: none;
+  border: none;
+  color: var(--blue-dark);
+  font-family: var(--font);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 12px 8px;
+  text-align: center;
+}
+
+.w4-back {
+  text-align: left;
+  text-decoration: none;
+  padding: 4px 0 0;
+  width: auto;
+}
+
+/* ---------- lesson complete ---------- */
+.w4-complete {
+  position: relative;
+  overflow: hidden;
+}
+
+.w4-complete-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 26px;
+  position: relative;
+  z-index: 1;
+}
+
+.w4-big-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--title);
+  margin-top: 14px;
+}
+
+.w4-complete-sub {
+  font-size: 14.5px;
+  color: var(--body);
+  margin-top: 6px;
+}
+
+.w4-streak-card {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.w4-streak-line {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--title);
+}
+
+.w4-complete-cta { width: 100%; margin-top: 22px; }
+
+.w4-confetti {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.w4-confetti-piece {
+  position: absolute;
+  top: -14px;
+  animation-name: w4-confetti-fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes w4-confetti-fall {
+  to { transform: translateY(110vh) rotate(720deg); }
+}
