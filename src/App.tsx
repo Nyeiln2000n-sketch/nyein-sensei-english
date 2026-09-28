@@ -200,6 +200,14 @@ export default function App() {
           const cur = prev[prev.length - 1];
           const curTab = cur ? tabForRoute(cur.name) : null;
           if (curTab && curTab !== tabId) returnTabRef.current = curTab;
+          // Owner order: every tab switch returns the new tab to the very
+          // top — a tab never keeps another tab's scroll position, so the
+          // user never has to fix the view by hand.
+          try {
+            window.scrollTo(0, 0);
+          } catch {
+            /* ignore */
+          }
           return [{ name, params }];
         }
         // Auth is a gate, not a stack: entering it replaces everything so

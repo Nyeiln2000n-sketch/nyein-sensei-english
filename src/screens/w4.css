@@ -252,7 +252,9 @@
   border-radius: 16px;
   padding: 14px 16px;
   font-family: var(--font);
-  font-size: 15px;
+  /* 16px minimum: iOS Safari auto-zooms on focus when inputs are smaller —
+     owner order is NO zoom, ever. */
+  font-size: 16px;
   color: var(--title);
 }
 

@@ -554,7 +554,9 @@ function LibraryTab({
               background: 'transparent',
               padding: '12px 0',
               fontFamily: FONT,
-              fontSize: 15,
+              /* 16px minimum: iOS Safari auto-zooms on smaller inputs —
+                 owner order is NO zoom, ever. */
+              fontSize: 16,
               color: C.title,
             }}
           />

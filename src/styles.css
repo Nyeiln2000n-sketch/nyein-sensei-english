@@ -34,6 +34,10 @@ html,
 body {
   margin: 0;
   padding: 0;
+  /* Owner order: the page never shifts — no horizontal drift, no
+     rubber-band scroll chaining between screens. */
+  overflow-x: clip;
+  overscroll-behavior: none;
 }
 
 body {
@@ -819,7 +823,9 @@ img {
   border-radius: 14px;
   padding: 13px 15px;
   font-family: var(--font);
-  font-size: 15px;
+  /* 16px minimum: iOS Safari auto-zooms on focus when inputs are smaller —
+     owner order is NO zoom, ever. */
+  font-size: 16px;
   color: var(--title);
   background: #fffdf9;
 }
