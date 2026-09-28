@@ -31,6 +31,10 @@
 - [x] T-004 Fallback sin WebGL = PNG estático
 - [x] T-005 Las 6 poses (wave/think/encourage/amazed/reading/celebrate) según contexto
 - [x] T-006 QA iPhone: 60fps, sin calentamiento, sin drenar batería
+- [x] T-007 `CatScene3D`: gato 3D REAL procedural (primitivas Three.js, sin PNG) — cuerpo/cabeza esferas, orejas conos, brazos cápsula (derecho articulado para saludar), cola segmentada, ojos/parpadeo, rayas, bigotes
+- [x] T-008 Rig de animación: `greet` al entrar (salto + 3 saludos de pata + inclinación de cabeza + parpadeos, ~2.4s → idle), `idle` (respiración, parpadeo 3-5s, cola, orejas), `tap` (squash-and-stretch gelatinoso + saltito)
+- [x] T-009 `Cat3D` en SplashScreen con `greetOnMount` + `sparkle`: el gato saluda SÍ O SÍ en cada arranque frío; `Mascot3D` (PNG) queda como fallback automático (sin WebGL / reduced-motion)
+- [x] T-010 Rendimiento: ~10k triángulos, materiales planos sin texturas, DPR [1,2], code-split React.lazy (chunk separado), reduced-motion no carga el chunk
 
 ## FASE 3 — Vectorización y anti-repetición 🟢 COMPLETADO (6 duplicados exactos + 65 frases reescritas, dedup-check en verde)
 - [x] V-001 `tools/vectorize/index.py`: índice vectorial de TODO (palabras, frases, lecciones, actividades, ejercicios, sesiones)

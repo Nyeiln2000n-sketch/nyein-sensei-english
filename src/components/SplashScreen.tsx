@@ -7,7 +7,7 @@
 
 import { useCallback, useEffect, useRef } from 'react';
 import type { GoFn, NavParams, RouteName } from '../routes';
-import MascotScene3D from './Mascot3D';
+import Cat3D from './Cat3D';
 import './w2.css';
 
 /* deterministic decorative dots (no randomness on re-render) */
@@ -104,9 +104,10 @@ export default function SplashScreen({
         />
       ))}
 
-      {/* the living 3D cat, waving — branded mini-loader while chunk loads */}
+      {/* the REAL 3D cat, waving hello on every cold start —
+          branded mini-loader while the three.js chunk loads */}
       <div className="w2-enter" style={{ position: 'relative', zIndex: 1 }}>
-        <MascotScene3D pose="wave" size={220} sparkle loader="brand" />
+        <Cat3D size={220} sparkle loader="brand" greetOnMount interactive />
       </div>
 
       <h1
