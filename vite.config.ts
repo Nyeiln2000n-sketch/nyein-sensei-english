@@ -44,7 +44,8 @@ export default defineConfig({
         // 1000 per-word images (~49MB) must NOT be precached: they load
         // lazily on demand via WordImage (with a letter-tile fallback).
         // Precaching them would bloat the install and break iOS PWA limits.
-        globIgnores: ['**/word-images/**'],
+        // Same for the 28 premium topic cards (~6MB): on-demand only.
+        globIgnores: ['**/word-images/**', '**/topic-cards/**'],
         runtimeCaching: [
           {
             urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i,
@@ -63,6 +64,17 @@ export default defineConfig({
             options: {
               cacheName: 'word-images',
               expiration: { maxEntries: 300, maxAgeSeconds: 60 * 60 * 24 * 30 },
+              cacheableResponse: { statuses: [0, 200] },
+            },
+          },
+          // Premium topic cards (28 images, ~6MB total): cached lazily on
+          // first view like the word images — never forced into install.
+          {
+            urlPattern: /\/topic-cards\/.*$/i,
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'topic-cards',
+              expiration: { maxEntries: 60, maxAgeSeconds: 60 * 60 * 24 * 30 },
               cacheableResponse: { statuses: [0, 200] },
             },
           },

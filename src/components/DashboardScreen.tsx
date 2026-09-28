@@ -7,17 +7,21 @@
 //   (5 items), "ဒီနေ့ တိုးတက်မှု" stat cards, motivational quote card.
 // All copy is Myanmar-first. No auto-speak (AUDIO_CONTRACT rule 1).
 
-import { useCallback, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import {
   ArrowRight,
+  BarChart3,
   Bell,
   BookOpen,
   BookOpenText,
   CheckCircle2,
+  Crown,
   Flame,
   Gamepad2,
   Gem,
+  Heart,
   Mic,
+  Star,
   Trophy,
   Zap,
 } from 'lucide-react';
@@ -70,6 +74,19 @@ export default function DashboardScreen({ go }: { go: GoFn; params?: NavParams }
   // feels fresh every morning.
   const dayNum = Math.floor(Date.now() / 86400000);
   const cards = Array.from({ length: 5 }, (_, i) => topics[(dayNum + i) % topics.length]);
+
+  // Preload the 5 visible carousel illustrations so the first paint is
+  // instant (cards rotate daily, so this re-runs once per day).
+  useEffect(() => {
+    cards.forEach((t) => {
+      const src = topicImageSrc(t.id);
+      if (src) {
+        const im = new Image();
+        im.src = src;
+      }
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [dayNum]);
 
   const trackRef = useRef<HTMLDivElement>(null);
   const [active, setActive] = useState(0);
@@ -187,13 +204,11 @@ export default function DashboardScreen({ go }: { go: GoFn; params?: NavParams }
         </div>
         <div className="dash-pills">
           <span className="stat-pill" aria-label={`ရက်ဆက် ${streak} ရက်`}>
-            <span className="flame-pulse" aria-hidden="true">
-              🔥
-            </span>
+            <Flame size={16} color="#FF7A1A" aria-hidden="true" />
             <span>{streak}</span>
           </span>
           <span className="stat-pill" aria-label={`စိန် ${gems} လုံး`}>
-            <span aria-hidden="true">💎</span>
+            <Gem size={16} color="#3FB0F0" aria-hidden="true" />
             <span>{gems}</span>
           </span>
           <button
@@ -211,11 +226,12 @@ export default function DashboardScreen({ go }: { go: GoFn; params?: NavParams }
         </div>
       </div>
 
-      {/* greeting hero: time-of-day Myanmar greeting + waving cat */}
-      <div className="card greet-hero">
+      {/* greeting hero: time-of-day Myanmar greeting + waving cat over a
+          scenic photographic backdrop (premium reference style) */}
+      <div className="card greet-hero greet-hero-scenic">
         <div className="greet-text">
           <h1 className="greet-title">{greeting}</h1>
-          <p className="greet-sub">ဒီနေ့လည်း အတူတူ လေ့လာကြမယ်! 💪</p>
+          <p className="greet-sub">ဒီနေ့လည်း အတူတူ လေ့လာကြမယ်!</p>
         </div>
         <div className="greet-cat">
           <div className="cat-greet greet-cat-holder">
@@ -231,7 +247,7 @@ export default function DashboardScreen({ go }: { go: GoFn; params?: NavParams }
       <div className="card level-card" aria-label={`အဆင့် ${level}၊ ${levelCur} / ${XP_PER_LEVEL} XP`}>
         <div className="level-row">
           <span className="level-crown" aria-hidden="true">
-            👑
+            <Crown size={20} color="#F5A623" />
           </span>
           <span className="level-name">အဆင့် {level}</span>
           <span className="level-xp">
@@ -276,7 +292,10 @@ export default function DashboardScreen({ go }: { go: GoFn; params?: NavParams }
                 ) : null;
               })()}
               <div className="daily-card-shade" aria-hidden="true" />
-              <span className="daily-badge">⭐ နေ့စဉ်သင်ခန်းစာ</span>
+              <span className="daily-badge">
+                <Star size={13} color="#F5A623" fill="#F5A623" aria-hidden="true" />
+                &nbsp;နေ့စဉ်သင်ခန်းစာ
+              </span>
               <span className="daily-count" aria-hidden="true">
                 {i + 1}/{cards.length}
               </span>
@@ -344,7 +363,10 @@ export default function DashboardScreen({ go }: { go: GoFn; params?: NavParams }
       {/* today's progress stat cards */}
       <section aria-label="ဒီနေ့ တိုးတက်မှု">
         <div className="progress-head">
-          <h2 className="section-title-sm">📊 ဒီနေ့ တိုးတက်မှု</h2>
+          <h2 className="section-title-sm">
+            <BarChart3 size={17} color="#2FA8DE" aria-hidden="true" />
+            &nbsp;ဒီနေ့ တိုးတက်မှု
+          </h2>
           <button
             type="button"
             className="link-sm"
@@ -385,7 +407,10 @@ export default function DashboardScreen({ go }: { go: GoFn; params?: NavParams }
         />
         <blockquote className="quote-text">
           <p>“{quote.my}”</p>
-          <footer className="quote-en">{quote.en} 💛</footer>
+          <footer className="quote-en">
+            {quote.en}{' '}
+            <Heart size={13} color="#FF8A9D" fill="#FF8A9D" aria-hidden="true" />
+          </footer>
         </blockquote>
       </figure>
 

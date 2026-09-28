@@ -156,6 +156,8 @@
 - [x] D-003 Set mascota premium regenerado (6 PNG 1600px, estilo render 3D Pixar, mismo personaje: waving+winking héroe, celebrate, thinking, encourage, amazed, reading) — fondo transparente vía floodfill
 - [x] D-004 Animación `.cat-greet` enriquecida (jelly bounce 1.9s + sparkle burst) + llama de racha animada; respeta prefers-reduced-motion
 - [x] D-005 Dinamismo + a11y: haptics (navigator.vibrate guardado), aria-labels Myanmar, targets ≥44px auditados, inputs 16px, AUDIO_CONTRACT intacto, sin auto-speak nuevo
+- [x] D-007 28 topic cards premium (public/topic-cards/<id>.jpg, estilo fotográfico premium según referencia de Nyein, sin texto ni caras, <300KB c/u) — topic-images.ts ahora mapea a estas cards; ilustración por palabra queda solo como fallback
+- [x] D-008 Pulido dashboard hacia referencia: héroe con fondo escénico fotográfico (travel.jpg + velo crema), tarjeta Nivel/XP superpuesta al héroe, iconos lucide en lugar de emoji (racha, gemas, corona, estrella, stats, cita), quick-actions en rejilla 3×2, carrusel más alto (250px), precarga de las 5 imágenes del carrusel, SW excluye topic-cards/** del precache + runtime cache dedicado
 - [x] C-011 320 frases nuevas (phrases-f.ts 200 A1→A2 + phrases-g.ts 120 A2→B1, con Myanmar) → 820 frases totales, cero repetición
 - [x] C-012 Bug crítico en tools/vectorize/index.py corregido (faltaba prefijo f en regex: el índice capturaba 0 palabras/frases y dedup-check pasaba en vacío) — ahora indexa 1848 items reales, verde
 - [x] J-013 NUEVO formato shadowing: escucha (tap-to-speak) + repite al mic con puntuación (sr/vad/manual, patrón PracticeScreen)

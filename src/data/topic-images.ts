@@ -1,12 +1,46 @@
-// Topic → representative word illustration.
+// Topic → full-bleed premium card illustration.
 //
-// Each dashboard daily-lesson card shows a full-bleed illustration picked
-// from the already-generated per-word images (public/word-images/), so the
-// carousel feels alive without downloading any new art. The mapped word is
-// a strong visual for the topic; every topic id below resolves to an image
-// that exists in src/data/word-images.json (verified 2026-09-29).
+// Each dashboard daily-lesson card shows a photographic-style illustration
+// from public/topic-cards/<topic-id>.jpg (generated to match the premium
+// reference art). The per-word illustration is kept ONLY as a fallback for
+// topic ids without a dedicated card.
 import { wordImageSrc } from '../components/WordImage';
 
+/** Topic ids that have a dedicated premium card in public/topic-cards/. */
+const TOPIC_CARDS = new Set([
+  'family',
+  'friends',
+  'work',
+  'shopping',
+  'travel',
+  'health',
+  'school',
+  'food',
+  'nature',
+  'sports',
+  'technology',
+  'business',
+  'emotions',
+  'daily-life',
+  'emergencies',
+  'home',
+  'clothing',
+  'animals',
+  'time',
+  'weather',
+  'restaurant',
+  'airport',
+  'office',
+  'doctor',
+  'computer',
+  'market',
+  'seasons',
+  'personality',
+]);
+
+/** Fallback: a strong per-word visual for the topic (used only when the
+    dedicated card is missing). Every word below exists in
+    src/data/word-images.json. */
 const TOPIC_WORD: Record<string, string> = {
   family: 'family',
   friends: 'friend',
@@ -40,6 +74,7 @@ const TOPIC_WORD: Record<string, string> = {
 
 /** Public URL of the illustration for a topic, or null when unmapped. */
 export function topicImageSrc(topicId: string): string | null {
+  if (TOPIC_CARDS.has(topicId)) return `/topic-cards/${topicId}.jpg`;
   const word = TOPIC_WORD[topicId];
   return word ? wordImageSrc(word) : null;
 }
