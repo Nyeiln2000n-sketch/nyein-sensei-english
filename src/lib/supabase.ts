@@ -11,8 +11,17 @@
 
 import type { LessonResult, Progress } from '../types';
 
-const URL = import.meta.env.VITE_SUPABASE_URL as string | undefined;
-const ANON_KEY = import.meta.env.VITE_SUPABASE_ANON_KEY as string | undefined;
+// Build-time globals injected by vite.config.ts `define` (mapped from
+// VITE_SUPABASE_* or the Supabase Vercel integration's SUPABASE_* names).
+declare const __SUPABASE_URL__: string;
+declare const __SUPABASE_ANON_KEY__: string;
+
+const URL = (__SUPABASE_URL__ ||
+  (import.meta.env.VITE_SUPABASE_URL as string | undefined) ||
+  undefined) as string | undefined;
+const ANON_KEY = (__SUPABASE_ANON_KEY__ ||
+  (import.meta.env.VITE_SUPABASE_ANON_KEY as string | undefined) ||
+  undefined) as string | undefined;
 
 export const supabaseEnabled = Boolean(URL && ANON_KEY);
 
