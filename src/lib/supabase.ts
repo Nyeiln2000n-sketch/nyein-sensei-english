@@ -13,7 +13,7 @@
 //   progress(user_id, word_key, known, reps)
 // See supabase/schema.sql.
 
-import { getAccessToken } from './auth';
+import { ensureFreshAccessToken } from './auth';
 
 // Build-time globals injected by vite.config.ts `define` (mapped from
 // VITE_SUPABASE_* or the Supabase Vercel integration's SUPABASE_* names).
@@ -40,8 +40,9 @@ export class SupabaseNetworkError extends Error {
 }
 
 /**
- * Authenticated PostgREST call. Uses the session Bearer token when signed in
- * (so RLS sees auth.uid()), otherwise the anon key.
+ * Authenticated PostgREST call. Uses a FRESH session Bearer token when signed
+ * in (refreshed proactively before expiry, so RLS sees auth.uid()), otherwise
+ * the anon key.
  *
  * Returns the raw Response — the caller inspects res.ok / res.status so RLS
  * denials (403) and other failures stay visible. Throws SupabaseNetworkError
@@ -51,7 +52,7 @@ export async function supabaseRest(path: string, init: RequestInit = {}): Promis
   if (!supabaseEnabled) {
     throw new SupabaseNetworkError(path, 'Supabase ကို မချိတ်ဆက်ရသေးပါ။');
   }
-  const token = getAccessToken() ?? (ANON_KEY as string);
+  const token = (await ensureFreshAccessToken()) ?? (ANON_KEY as string);
   try {
     return await fetch(`${URL}/rest/v1/${path}`, {
       ...init,

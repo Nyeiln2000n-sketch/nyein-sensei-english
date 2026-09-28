@@ -1,6 +1,6 @@
 // SlowToggle — A-003: learner-controlled slow speech for learning mode.
 // A persistent turtle toggle ("ဖြည်းဖြည်း") that makes every tap-to-speak
-// utterance slower by default (rate 0.72 instead of 0.95). Screens that
+// utterance clearly slower (rate 0.55 instead of 0.95). Screens that
 // pass an explicit `slow` option are unaffected.
 import { useState } from 'react';
 import { Turtle } from 'lucide-react';

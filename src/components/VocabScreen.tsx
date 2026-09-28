@@ -386,7 +386,7 @@ export default function VocabScreen({ go, params }: { go: GoFn; params?: NavPara
               </button>
               <button
                 type="button"
-                className="playlist-btn main"
+                className="playlist-btn playlist-primary"
                 onClick={togglePlay}
                 aria-label={plPlaying ? 'ရပ်ရန်' : 'ဖွင့်ရန်'}
               >

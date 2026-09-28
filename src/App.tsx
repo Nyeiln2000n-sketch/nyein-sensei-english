@@ -12,7 +12,8 @@ import ProfileScreen from './components/ProfileScreen';
 import LessonCompleteScreen from './components/LessonCompleteScreen';
 import AuthScreen from './components/AuthScreen';
 import { TabBar, type TabId } from './components/ui';
-import { getSession, onAuthChange, verifySignupLicense } from './lib/auth';
+import { ensureFreshAccessToken, getSession, onAuthChange, verifySignupLicense } from './lib/auth';
+import { endCloudSession, initCloudSession } from './lib/cloudSync';
 
 const ONBOARDED_KEY = 'nyein-sensei-onboarded';
 
@@ -91,11 +92,34 @@ export default function App() {
   // Session logic: subscribe to auth changes and keep the current email in
   // state. Screens own their own copy needs via ../lib/auth; this
   // subscription keeps the shell fresh and drives the mandatory-auth gate.
+  //
+  // It also owns the cloud-session lifecycle (S-002/S-006/S-007): a cold
+  // start with a persisted session refreshes the token if stale and then
+  // boots the cloud session (load → local→cloud merge → outbox flush);
+  // null→session transitions (sign-in/sign-up) boot it; session→null
+  // (sign-out / dead refresh token) ends it. The null→session edge is
+  // tracked so token REFRESHES (which also emit) don't re-run the merge.
   const [email, setEmail] = useState<string | null>(() => getSession()?.user?.email ?? null);
   const authed = email !== null;
+  const wasAuthedRef = useRef<boolean>(getSession() !== null);
 
   useEffect(() => {
-    return onAuthChange((s) => setEmail(s?.user?.email ?? null));
+    // Cold start: a persisted session from a previous visit resumes here.
+    if (getSession()) {
+      void ensureFreshAccessToken().then((token) => {
+        if (token) void initCloudSession();
+      });
+    }
+    return onAuthChange((s) => {
+      const nowAuthed = s !== null;
+      setEmail(s?.user?.email ?? null);
+      if (nowAuthed && !wasAuthedRef.current) {
+        void initCloudSession();
+      } else if (!nowAuthed && wasAuthedRef.current) {
+        endCloudSession();
+      }
+      wasAuthedRef.current = nowAuthed;
+    });
   }, []);
 
   const route = stack[stack.length - 1];

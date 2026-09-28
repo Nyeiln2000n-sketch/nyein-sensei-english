@@ -47,12 +47,18 @@ export function onAuthChange(cb: Listener): () => void {
 }
 
 function persist(session: AuthSession): void {
+  // Normalize expiry: Supabase returns expires_in (seconds from issue);
+  // keep an absolute expires_at so we can refresh proactively.
   try {
-    localStorage.setItem(SESSION_KEY, JSON.stringify(session));
+    const s = { ...session };
+    if (typeof s.expires_at !== 'number' && typeof s.expires_in === 'number') {
+      s.expires_at = Math.floor(Date.now() / 1000) + s.expires_in;
+    }
+    localStorage.setItem(SESSION_KEY, JSON.stringify(s));
+    emit(s);
   } catch {
     /* ignore storage errors */
   }
-  emit(session);
 }
 
 function clearLocal(): void {
@@ -97,6 +103,13 @@ async function authRequest(path: string, body: unknown): Promise<AuthSession> {
 /** Create a new account with email + password. */
 export async function signUp(email: string, password: string): Promise<AuthSession> {
   const session = await authRequest('signup', { email, password });
+  if (!session.access_token) {
+    // Email confirmation is ON (or the project requires verification):
+    // there is no usable session yet — do NOT persist a broken one.
+    throw new Error(
+      'အကောင့်ဖွင့်ပြီးပါပြီ။ အီးမေးလ်ထဲက အတည်ပြုလင့်ခ်ကို နှိပ်ပြီးမှ ဝင်ရောက်ပါ။',
+    );
+  }
   persist(session);
   return session;
 }
@@ -141,6 +154,85 @@ export function getSession(): AuthSession | null {
 /** Bearer token for authenticated API calls, or null when signed out. */
 export function getAccessToken(): string | null {
   return getSession()?.access_token ?? null;
+}
+
+// ---- Token refresh (S-002) ----
+//
+// Supabase access tokens expire (default 3600s). Every authenticated call
+// must go through ensureFreshAccessToken() so RLS-protected writes never
+// use a stale JWT. Refresh happens proactively 60s before expiry; concurrent
+// callers share one in-flight refresh. A dead refresh token clears the local
+// session (the auth gate then routes back to the sign-in screen).
+
+const REFRESH_SKEW_SEC = 60;
+let refreshInFlight: Promise<AuthSession | null> | null = null;
+
+/** Exchange the refresh token for a new session. Clears the local session when the refresh token is dead. */
+export async function refreshSession(): Promise<AuthSession | null> {
+  const session = getSession();
+  const refreshToken = session?.refresh_token;
+  if (!URL || !ANON_KEY || !refreshToken) {
+    if (session && !refreshToken) {
+      // No way to renew — the session is unusable; force a clean re-login.
+      clearLocal();
+    }
+    return null;
+  }
+  if (refreshInFlight) return refreshInFlight;
+  refreshInFlight = (async (): Promise<AuthSession | null> => {
+    let res: Response;
+    try {
+      res = await fetch(`${URL}/auth/v1/token?grant_type=refresh_token`, {
+        method: 'POST',
+        headers: {
+          apikey: ANON_KEY,
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ refresh_token: refreshToken }),
+      });
+    } catch {
+      return null; // network down — keep the old session; callers fall back gracefully
+    }
+    if (!res.ok) {
+      // Refresh token rejected/expired — session is dead, force re-login.
+      clearLocal();
+      return null;
+    }
+    const data = (await res.json().catch(() => null)) as AuthSession | null;
+    if (!data?.access_token) {
+      clearLocal();
+      return null;
+    }
+    persist(data);
+    return data;
+  })();
+  try {
+    return await refreshInFlight;
+  } finally {
+    refreshInFlight = null;
+  }
+}
+
+/**
+ * The current valid Bearer token: the stored one when it is fresh, a newly
+ * refreshed one when it is expiring/expired, or null when there is no usable
+ * session. Never throws for auth reasons — callers treat null as signed-out.
+ */
+export async function ensureFreshAccessToken(): Promise<string | null> {
+  const session = getSession();
+  if (!session?.access_token) return null;
+  const expiresAt =
+    typeof session.expires_at === 'number'
+      ? session.expires_at
+      : typeof session.expires_in === 'number'
+        ? Math.floor(Date.now() / 1000) + session.expires_in
+        : null;
+  const nowSec = Math.floor(Date.now() / 1000);
+  if (expiresAt === null || expiresAt - nowSec > REFRESH_SKEW_SEC) {
+    return session.access_token;
+  }
+  const refreshed = await refreshSession();
+  return refreshed?.access_token ?? null;
 }
 
 // ---- Signup license-key gate ----

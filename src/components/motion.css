@@ -471,7 +471,7 @@ button:disabled:active {
   transform: scale(0.94);
 }
 
-.playlist-btn.main {
+.playlist-btn.playlist-primary {
   width: 68px;
   height: 68px;
   background: var(--orange);

@@ -96,7 +96,9 @@ function issueUtterance(
 ): void {
   const utter = new SpeechSynthesisUtterance(text);
   utter.lang = 'en-US';
-  utter.rate = slow ? 0.72 : 0.95;
+  // A-003: slow rate is deliberately much slower (0.55 vs 0.95) so the
+  // learner can clearly hear the difference on the turtle toggle.
+  utter.rate = slow ? 0.55 : 0.95;
   utter.pitch = 1;
   const voice = pickEnglishVoice(cachedVoices);
   if (voice) utter.voice = voice;
