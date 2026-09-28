@@ -13,12 +13,13 @@
 // instructions for enabling the microphone on iPhone.
 
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { X, Mic, Volume2 } from 'lucide-react';
+import { X, Mic, Volume2, Check, History } from 'lucide-react';
 import type { GoFn, NavParams } from '../routes';
-import type { TopicId, Phrase } from '../types';
-import { phrasesByTopic, allPhrases, sample } from '../data';
+import type { TopicId, Phrase, Word } from '../types';
+import { phrasesByTopic, allPhrases, sample, allWords } from '../data';
 import { speak } from '../lib/audio';
 import { recordAnswer } from '../lib/storage';
+import { dueWords, recordWordReview, wordKey } from '../lib/review';
 import {
   Screen, TopBar, MascotRow, Card, PillButton, FeedbackStrip, W3ErrorBoundary, C, FONT,
 } from './w3-shared';
@@ -42,6 +43,182 @@ interface VadHandle {
   stream: MediaStream;
   ctx: AudioContext;
   raf: number;
+}
+
+/**
+ * C-008 — "ဒီနေ့ ပြန်လေ့လာရန်" spaced-repetition queue (SM-2-lite).
+ * Compact card at the TOP of Tab 3: due words (1/3/7/14/30-day ladder)
+ * as tappable rows with a speaker button (speak() ONLY in the tap handler
+ * — AUDIO_CONTRACT) and remembered/forgot buttons that feed the scheduler
+ * and remove the row from the list. Zero-state is mascot-friendly.
+ */
+function ReviewQueue() {
+  const [due, setDue] = useState<Word[]>(() => {
+    try {
+      return dueWords(allWords);
+    } catch {
+      return [];
+    }
+  });
+
+  const mark = (word: Word, remembered: boolean) => {
+    try {
+      recordWordReview(wordKey(word.topic, word.en), remembered);
+    } catch {
+      /* review is best-effort */
+    }
+    setDue((list) => list.filter((w) => w !== word));
+  };
+
+  const visible = due.slice(0, 8);
+
+  return (
+    <section aria-label="ဒီနေ့ ပြန်လေ့လာရန်" style={{ marginBottom: 14 }}>
+      {due.length === 0 ? (
+        <Card style={{ padding: '16px 14px' }}>
+          <MascotRow
+            pose="celebrate"
+            size={56}
+            text={
+              <>
+                <div style={{ fontWeight: 800, fontSize: 15, color: C.title }}>
+                  ဒီနေ့ ပြန်လေ့လာစရာ မရှိဘူး
+                </div>
+                <div style={{ fontSize: 13, marginTop: 4 }}>
+                  အသစ်တွေ လေ့လာထားလိုက်ပါ — မှားတာ/မေ့တာတွေ ဒီမှာ ပြန်ပေါ်လာမယ်
+                </div>
+              </>
+            }
+          />
+        </Card>
+      ) : (
+        <Card style={{ padding: '16px 14px', background: '#FFFDF7' }}>
+          <div
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: 8,
+              marginBottom: 10,
+              padding: '0 4px',
+            }}
+          >
+            <History size={20} color={C.orangeDark} aria-hidden="true" />
+            <span style={{ fontFamily: FONT, fontWeight: 800, fontSize: 16, color: C.title }}>
+              ဒီနေ့ ပြန်လေ့လာရန်
+            </span>
+            <span
+              style={{
+                background: C.orange,
+                color: '#fff',
+                borderRadius: 999,
+                fontSize: 13,
+                fontWeight: 800,
+                padding: '2px 10px',
+                marginLeft: 'auto',
+              }}
+              aria-label={`${due.length} လုံး လိုအပ်နေတယ်`}
+            >
+              {due.length} လုံး
+            </span>
+          </div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+            {visible.map((w) => (
+              <div
+                key={wordKey(w.topic, w.en)}
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: 10,
+                  background: C.white,
+                  borderRadius: 16,
+                  padding: '10px 12px',
+                  boxShadow: '0 4px 10px rgba(0,0,0,0.05)',
+                }}
+              >
+                <button
+                  type="button"
+                  onClick={() => speak(w.en)}
+                  aria-label={`အသံနားထောင်ရန်: ${w.en}`}
+                  style={{
+                    width: 40,
+                    height: 40,
+                    borderRadius: '50%',
+                    border: 'none',
+                    background: '#E8F4FF',
+                    color: C.blueDark,
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    cursor: 'pointer',
+                    flexShrink: 0,
+                  }}
+                >
+                  <Volume2 size={18} />
+                </button>
+                <div style={{ flex: 1, minWidth: 0 }}>
+                  <div style={{ fontWeight: 700, fontSize: 15, color: C.title }}>
+                    {w.en}
+                    {w.phonetic && (
+                      <span style={{ fontWeight: 500, fontSize: 12, color: C.text, marginLeft: 8 }}>
+                        /{w.phonetic}/
+                      </span>
+                    )}
+                  </div>
+                  <div style={{ fontSize: 13, color: C.text }}>{w.my}</div>
+                </div>
+                <button
+                  type="button"
+                  onClick={() => mark(w, true)}
+                  aria-label={`မှတ်မိတယ်: ${w.en}`}
+                  style={{
+                    border: 'none',
+                    borderRadius: 999,
+                    background: C.greenBg,
+                    color: C.greenText,
+                    fontFamily: FONT,
+                    fontWeight: 700,
+                    fontSize: 12,
+                    padding: '8px 10px',
+                    cursor: 'pointer',
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: 4,
+                    flexShrink: 0,
+                  }}
+                >
+                  <Check size={15} strokeWidth={3} />
+                  မှတ်မိတယ်
+                </button>
+                <button
+                  type="button"
+                  onClick={() => mark(w, false)}
+                  aria-label={`မေ့သွားတယ်: ${w.en}`}
+                  style={{
+                    border: 'none',
+                    borderRadius: 999,
+                    background: C.redBg,
+                    color: C.redDark,
+                    fontFamily: FONT,
+                    fontWeight: 700,
+                    fontSize: 12,
+                    padding: '8px 10px',
+                    cursor: 'pointer',
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: 4,
+                    flexShrink: 0,
+                  }}
+                >
+                  <X size={15} strokeWidth={3} />
+                  မေ့သွားတယ်
+                </button>
+              </div>
+            ))}
+          </div>
+        </Card>
+      )}
+    </section>
+  );
 }
 
 export default function PracticeScreen({ go, params }: { go: GoFn; params?: NavParams }) {
@@ -328,6 +505,9 @@ export default function PracticeScreen({ go, params }: { go: GoFn; params?: NavP
       />
 
       <MascotRow pose="wave" size={72} text="စာကြောင်းကို ထပ်ပြောပါ:" />
+
+      {/* C-008: spaced-repetition queue ABOVE the pronunciation block */}
+      <ReviewQueue />
 
       <W3ErrorBoundary>
       <Card style={{ textAlign: 'center', padding: '28px 20px' }} key={phrase.en}>

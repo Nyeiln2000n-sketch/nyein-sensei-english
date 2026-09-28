@@ -31,6 +31,7 @@ import { getProgress, getStreak, getXP } from '../lib/storage';
 import { topics } from '../data/topics';
 import { topicImageSrc } from '../data/topic-images';
 import { ProgressBar, Screen } from './ui';
+import WordOfDayCard from './WordOfDayCard';
 
 /** 300 XP per level — same convention as ProfileScreen's အဆင့် chip. */
 const XP_PER_LEVEL = 300;
@@ -256,6 +257,9 @@ export default function DashboardScreen({ go }: { go: GoFn; params?: NavParams }
         </div>
         <ProgressBar value={levelCur} max={XP_PER_LEVEL} />
       </div>
+
+      {/* C-009: word of the day (deterministic per calendar day) */}
+      <WordOfDayCard go={go} />
 
       {/* daily-lesson snap carousel */}
       <section className="daily-section" aria-label="နေ့စဉ်သင်ခန်းစာ">

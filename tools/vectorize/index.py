@@ -52,11 +52,12 @@ _EXAMPLE_RE = re.compile(rf"example:\s*{_QUOTED}")
 _TURN_RE = re.compile(
     rf"\{{\s*speaker:\s*{_QUOTED},\s*en:\s*{_QUOTED},\s*my:\s*{_QUOTED}\s*\}}"
 )
-# Dialogue / story header ids.
-_DIALOGUE_ID_RE = re.compile(r"id:\s*'(dialogue:[^']+)'")
-_STORY_ID_RE = re.compile(r"id:\s*'(story:[^']+)'")
-# Story paragraph: { en: '...', my: '...' } (no speaker, no topic)
-_PARA_RE = re.compile(rf"\{{\s*en:\s*{_QUOTED},\s*my:\s*{_QUOTED}\s*\}}")
+# Dialogue / story header ids (match 'family-1' style dialogue ids and
+# 'story-a1-1' style story ids; these parsers only run on dialogues*/stories* files).
+_DIALOGUE_ID_RE = re.compile(r"id:\s*'([a-z][a-z0-9-]*-\d+)'")
+_STORY_ID_RE = re.compile(r"id:\s*'(story-[a-z0-9-]+)'")
+# Story paragraph: { en: '...', my: '...' } (no speaker, no topic; trailing comma tolerated)
+_PARA_RE = re.compile(rf"\{{\s*en:\s*{_QUOTED},\s*my:\s*{_QUOTED}\s*,?\s*\}}")
 _TOPIC_FIELD_RE = re.compile(r"topic:\s*'([^']+)'")
 _TOPIC_RE = re.compile(
     rf"\{{\s*id:\s*{_QUOTED},\s*nameMy:\s*{_QUOTED},"
@@ -262,7 +263,7 @@ def build_index() -> dict:
                     })
             continue
 
-        if fname.startswith("dialogues-"):
+        if fname.startswith("dialogues-") or fname == "dialogues.ts":
             for d in parse_dialogues(path):
                 index["items"].append({
                     "id": d["id"],

@@ -1,5 +1,7 @@
-import type { Word, Phrase, TopicId, Level } from '../types';
+import type { Word, Phrase, TopicId, Level, Dialogue, Story } from '../types';
 import { topics, topicMeta } from './topics';
+import { dialogues } from './dialogues';
+import { stories } from './stories';
 import { familyWords } from './words-family';
 import { friendsWords } from './words-friends';
 import { workWords } from './words-work';
@@ -91,4 +93,20 @@ export function sample<T>(arr: T[], n: number): T[] {
     [copy[i], copy[j]] = [copy[j], copy[i]];
   }
   return copy.slice(0, n);
+}
+
+/** Real-situation dialogues, 2 per topic (56 total). */
+export const allDialogues: Dialogue[] = dialogues;
+
+/** Dialogues filtered by topic. */
+export function dialoguesByTopic(topic: TopicId): Dialogue[] {
+  return allDialogues.filter((d) => d.topic === topic);
+}
+
+/** Graded mini-stories A1 → B1 (12 total). */
+export const allStories: Story[] = stories;
+
+/** Stories filtered by CEFR level. */
+export function storiesByLevel(level: 'A1' | 'A2' | 'B1'): Story[] {
+  return allStories.filter((s) => s.level === level);
 }

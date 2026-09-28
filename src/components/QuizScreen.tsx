@@ -14,6 +14,7 @@ import type { TopicId, Level, Word, Phrase } from '../types';
 import { topicMeta, wordsByTopic, phrasesByTopic, allPhrases, allWords, sample } from '../data';
 import { speak } from '../lib/audio';
 import { addXP, recordAnswer, markLessonComplete, getTopicMastery, recordTopicResult } from '../lib/storage';
+import { recordWordsReview } from '../lib/review';
 import {
   Screen, TopBar, PillButton, IconCircle, MascotRow, Card, ProgressBar,
   FeedbackStrip, ChoiceCard, W3ErrorBoundary, C, FONT, type MascotPose,
@@ -38,6 +39,21 @@ type Round =
   | { kind: 'challenge'; inner: Round };
 
 type RoundKind = Round['kind'];
+
+/**
+ * C-008: collect every Word a round tests so quiz answers feed the
+ * spaced-repetition scheduler (correct → remembered:true, wrong → false).
+ * Phrase-only rounds (order, shadowing…) contribute no words.
+ */
+function wordsInRound(r: Round): Word[] {
+  if (r.kind === 'challenge') return wordsInRound(r.inner);
+  const words: Word[] = [];
+  if ('word' in r && r.word) words.push(r.word);
+  if ('words' in r && r.words) words.push(...r.words);
+  if ('pairs' in r && r.pairs) words.push(...r.pairs);
+  if ('intruder' in r && r.intruder) words.push(r.intruder);
+  return words;
+}
 
 const TOTAL_ROUNDS = 9;
 
@@ -518,6 +534,12 @@ export default function QuizScreen({ go, params }: { go: GoFn; params?: NavParam
   const handleAnswer = (correct: boolean) => {
     recordAnswer(correct);
     recordTopicResult(topic, correct);
+    // C-008: quiz answers feed the spaced-repetition ladder (1→3→7→14→30d).
+    try {
+      recordWordsReview(wordsInRound(round), correct);
+    } catch {
+      /* review is best-effort */
+    }
     if (correct) {
       const newCombo = combo + 1;
       setCombo(newCombo);
@@ -1839,6 +1861,12 @@ function DailyChallengeRun({ topic, level, go }: { topic: TopicId; level: Level;
   const handleAnswer = (correct: boolean) => {
     recordAnswer(correct);
     setCount((c) => c + 1);
+    // C-008: challenge answers also feed the spaced-repetition ladder.
+    try {
+      if (round) recordWordsReview(wordsInRound(round), correct);
+    } catch {
+      /* review is best-effort */
+    }
     if (correct) {
       setScore((s) => s + 10 + Math.min(streak, 5) * 2);
       const ns = streak + 1;

@@ -19,6 +19,7 @@ import type { GoFn, NavParams } from '../routes';
 import type { TopicId, Word } from '../types';
 import { topics, wordsByTopic, allWords } from '../data';
 import { getStreak } from '../lib/storage';
+import { recordWordReview, wordKey } from '../lib/review';
 import { speak, stopSpeaking } from '../lib/audio';
 import { useWindowing } from '../lib/useWindowing';
 import { SkeletonList } from './Skeleton';
@@ -228,8 +229,17 @@ export default function VocabScreen({ go, params }: { go: GoFn; params?: NavPara
 
   /* ---------------- end playlist ---------------- */
 
+  // C-008: advancing a flashcard counts as a successful recall — the
+  // learner only taps "next" after reading the card, so it feeds the
+  // spaced-repetition ladder (1 → 3 → 7 → 14 → 30 days).
   const nextCard = () => {
     if (deck.length === 0) return;
+    try {
+      const cur = deck[idx];
+      if (cur) recordWordReview(wordKey(cur.topic, cur.en), true);
+    } catch {
+      /* review is best-effort */
+    }
     setIdx((i) => (i + 1) % deck.length);
   };
 

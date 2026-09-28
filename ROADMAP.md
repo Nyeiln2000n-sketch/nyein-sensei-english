@@ -54,12 +54,12 @@
 - [x] C-001 600 → 1000 palabras (20 temas × 50, todas únicas, verificadas con V-001)
 - [x] C-002 320 → 600 frases (únicas, con contexto real)
 - [x] C-003 20 → 30 temas (nuevos: Viajes ✈️, Restaurante, Emergencias, Tecnología…)
-- [ ] C-004 Cada palabra: ejemplo real + Myanmar + fonética + audio
-- [ ] C-005 Diálogos por tema (2-3 por tema, situaciones reales)
-- [ ] C-006 Mini-historias por nivel (A1→B1)
+- [x] C-004 Cada palabra: ejemplo real + Myanmar + fonética + audio (1000/1000 palabras con phonetic/example/exampleMy, 2026-09-29)
+- [x] C-005 Diálogos por tema (2-3 por tema, situaciones reales) (56 diálogos: 2×28 temas, src/data/dialogues.ts, 2026-09-29)
+- [x] C-006 Mini-historias por nivel (A1→B1) (12 historias: 4×A1/A2/B1, src/data/stories.ts, 2026-09-29)
 - [x] C-007 Frases de trabajo (oficina, reuniones, email) — rumbo B1 profesional
-- [ ] C-008 Repaso espaciado: colas 1/3/7/14/30 días integradas en Practicar
-- [ ] C-009 "Palabra del día" con tarjeta visual
+- [x] C-008 Repaso espaciado: colas 1/3/7/14/30 días integradas en Practicar (src/lib/review.ts SM-2-lite + ReviewQueue en PracticeScreen, verificado 2026-09-29)
+- [x] C-009 "Palabra del día" con tarjeta visual (WordOfDayCard en dashboard + ilustración WordImage, 2026-09-29)
 - [x] C-010 Verificación: índice vectorial confirma 0 duplicados tras expansión
 
 ## FASE 5 — Actividades y modos de juego 🟢 COMPLETADO (2026-09-29: 12 plantillas, dictado/diálogo/historia nuevos, rotación anti-patrón, dificultad adaptativa, celebración 3D)
