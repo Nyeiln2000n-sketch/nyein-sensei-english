@@ -35,6 +35,13 @@ export default function LibraryScreen({ onBack }: Props) {
     <div className="screen">
       <AppBar title="🔊 အသံစာကြည့်တိုက်" onBack={onBack} />
 
+      <div className="library-hero">
+        <MascotBubble
+          img="/mascot-reading.png"
+          text={`📚 စကားလုံး ${allWords.length} + စကားစု ${allPhrases.length} — နှိပ်ပြီး အသံနားထောင်ပါ 🔊`}
+        />
+      </div>
+
       <input
         className="input"
         type="search"
@@ -82,7 +89,7 @@ export default function LibraryScreen({ onBack }: Props) {
       <SectionTitle>{`📚 ${items.length} ခု တွေ့တယ်`}</SectionTitle>
 
       {items.length === 0 && (
-        <MascotBubble text="မတွေ့ဘူး 😿 တစ်ခြားစကားလုံး စမ်းကြည့်ပါနော်" img="/mascot.png" />
+        <MascotBubble text="မတွေ့ဘူး 😿 တစ်ခြားစကားလုံး စမ်းကြည့်ပါနော်" img="/mascot-reading.png" />
       )}
 
       <div className="word-list">

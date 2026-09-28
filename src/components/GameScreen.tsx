@@ -14,22 +14,35 @@ interface Props {
 
 export default function GameScreen({ game, topic, onExit }: Props) {
   return (
-    <Sky>
-      <div className="screen">
-        {game === 'memory' && <MemoryGame topic={topic} onExit={onExit} />}
-        {game === 'reverse' && <ReverseGame topic={topic} onExit={onExit} />}
-      </div>
-    </Sky>
+    <>
+      {game === 'memory' && <MemoryGame topic={topic} onExit={onExit} />}
+      {game === 'reverse' && <ReverseGame topic={topic} onExit={onExit} />}
+    </>
   );
 }
 
 function GameResult({ earned, onExit }: { earned: number; onExit: () => void }) {
   return (
-    <div>
-      <img src="/mascot-celebrate.png" alt="ဂုဏ်ယူပါတယ်" style={{ width: 140, height: 140 }} />
-      <h1>ဂိမ်းပြီးဆုံးပါပြီ!</h1>
-      <div className="stat-card"><b>+{earned}</b><span>XP ရရှိမှု</span></div>
-      <button className="btn-chunky btn-green" onClick={onExit}>ပြီးပြီ</button>
+    <div className="screen">
+      <Sky>
+        <div style={{ textAlign: 'center', padding: '24px 16px 20px' }}>
+          <img
+            src="/mascot-celebrate.png"
+            alt="ဂုဏ်ယူပါတယ်"
+            style={{ width: 140, height: 140, objectFit: 'contain', display: 'block', margin: '0 auto' }}
+          />
+          <h1 style={{ margin: '12px 0 0' }}>ဂိမ်းပြီးဆုံးပါပြီ!</h1>
+        </div>
+      </Sky>
+      <div style={{ padding: 16, display: 'flex', flexDirection: 'column', gap: 16 }}>
+        <div className="stat-card" style={{ textAlign: 'center' }}>
+          <b>+{earned}</b>
+          <span>XP ရရှိမှု</span>
+        </div>
+        <button className="btn-chunky btn-green" style={{ width: '100%' }} onClick={onExit}>
+          ပြီးပြီ
+        </button>
+      </div>
     </div>
   );
 }
@@ -80,27 +93,31 @@ function MemoryGame({ topic, onExit }: { topic: TopicId; onExit: () => void }) {
   }
 
   return (
-    <div>
-      <div className="appbar">
-        <button className="btn-soft" onClick={onExit} aria-label="back">✕</button>
-        <ProgressBar value={found.length} total={deck.length} />
-        <span>{moves} ကြိမ်</span>
-      </div>
-      <div className="section-title">🃏 မှတ်ဉာဏ်ကတ်ဂိမ်း · {meta.nameMy}</div>
-      <MascotBubble img="/mascot.png" text="ကတ် ၂ ခု လှန်ပြီး English–မြန်မာ တွဲဖက်ရှာပါ" />
-      <div>
-        {deck.map((c) => {
-          const face = open.includes(c.uid) || found.includes(c.uid);
-          return (
-            <button
-              key={c.uid}
-              className={`chip-word${found.includes(c.uid) ? ' matched' : ''}${open.includes(c.uid) && !found.includes(c.uid) ? ' selected' : ''}`}
-              onClick={() => flip(c)}
-            >
-              {face ? c.text : '?'}
-            </button>
-          );
-        })}
+    <div className="screen">
+      <Sky>
+        <div className="appbar">
+          <button className="btn-soft" onClick={onExit} aria-label="back">✕</button>
+          <ProgressBar value={found.length} total={deck.length} />
+          <span>{moves} ကြိမ်</span>
+        </div>
+        <div className="section-title">🃏 မှတ်ဉာဏ်ကတ်ဂိမ်း · {meta.nameMy}</div>
+        <MascotBubble img="/mascot-thinking.png" text="ကတ် ၂ ခု လှန်ပြီး English–မြန်မာ တွဲဖက်ရှာပါ" />
+      </Sky>
+      <div style={{ padding: '16px 16px 24px' }}>
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10, margin: '12px 0' }}>
+          {deck.map((c) => {
+            const face = open.includes(c.uid) || found.includes(c.uid);
+            return (
+              <button
+                key={c.uid}
+                className={`chip-word${found.includes(c.uid) ? ' matched' : ''}${open.includes(c.uid) && !found.includes(c.uid) ? ' selected' : ''}`}
+                onClick={() => flip(c)}
+              >
+                {face ? c.text : '?'}
+              </button>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
@@ -148,36 +165,41 @@ function ReverseGame({ topic, onExit }: { topic: TopicId; onExit: () => void }) 
   const ok = picked === word.en;
 
   return (
-    <div>
-      <div className="appbar">
-        <button className="btn-soft" onClick={onExit} aria-label="back">✕</button>
-        <ProgressBar value={idx} total={words.length} />
-        <span>{idx + 1}/{words.length}</span>
+    <div className="screen">
+      <Sky>
+        <div className="appbar">
+          <button className="btn-soft" onClick={onExit} aria-label="back">✕</button>
+          <ProgressBar value={idx} total={words.length} />
+          <span>{idx + 1}/{words.length}</span>
+        </div>
+        <div className="section-title">🔄 ပြောင်းပြန်ဘာသာပြန် · {meta.nameMy}</div>
+        <MascotBubble img="/mascot.png" text="ဒီစကားလုံးကို English လို ဘာသာပြန်ပါ" />
+      </Sky>
+      <div style={{ padding: '16px 16px 24px' }}>
+        <div className="card" style={{ fontSize: 20, fontWeight: 700, textAlign: 'center' }}>
+          “{word.my}”
+        </div>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 2, marginTop: 12 }}>
+          {options.map((o) => (
+            <button
+              key={o.en}
+              className={
+                'choice' +
+                (picked && o.en === word.en ? ' correct' : '') +
+                (picked === o.en && o.en !== word.en ? ' wrong' : '')
+              }
+              disabled={!!picked}
+              onClick={() => pick(o.en)}
+            >
+              {o.en}
+            </button>
+          ))}
+        </div>
+        <div className="bubble">{idx + 1}/{words.length} · မှန်ကန်မှု {score}</div>
+        {picked && (
+          <FeedbackPanel ok={ok} title={ok ? 'တော်လိုက်တာ! 🎉' : `အဖြေမှန်: ${word.en} →`} onNext={next} />
+        )}
       </div>
-      <div className="section-title">🔄 ပြောင်းပြန်ဘာသာပြန် · {meta.nameMy}</div>
-      <MascotBubble img="/mascot.png" text="ဒီစကားလုံးကို English လို ဘာသာပြန်ပါ" />
-      <div className="card">“{word.my}”</div>
-      <div>
-        {options.map((o) => (
-          <button
-            key={o.en}
-            className={
-              'card' +
-              (picked && o.en === word.en ? ' correct' : '') +
-              (picked === o.en && o.en !== word.en ? ' wrong' : '')
-            }
-            style={{ width: '100%' }}
-            disabled={!!picked}
-            onClick={() => pick(o.en)}
-          >
-            {o.en}
-          </button>
-        ))}
-      </div>
-      <div className="bubble">{idx + 1}/{words.length} · မှန်ကန်မှု {score}</div>
-      {picked && (
-        <FeedbackPanel ok={ok} title={ok ? 'တော်လိုက်တာ! 🎉' : `အဖြေမှန်: ${word.en} →`} onNext={next} />
-      )}
     </div>
   );
 }

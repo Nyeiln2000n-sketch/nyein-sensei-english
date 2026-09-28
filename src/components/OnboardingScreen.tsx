@@ -12,13 +12,11 @@ export default function OnboardingScreen({
   return (
     <div className="screen" style={{ justifyContent: 'center' }}>
       <Sky>
-        <div className="center">
-          <img
-            src="/mascot.png"
-            alt="Nyein Sensei English မက်စကော့"
-            style={{ width: 190, height: 190, objectFit: 'contain', animation: 'floaty 3.2s ease-in-out infinite' }}
-          />
-        </div>
+        <img
+          src="/mascot.png"
+          alt="Nyein Sensei English မက်စကော့"
+          className="onboard-mascot"
+        />
       </Sky>
 
       <div className="center" style={{ marginTop: 26 }}>

@@ -17,9 +17,10 @@ function doneCount(id: TopicId): number {
   return LEVELS.filter((l) => isLessonComplete(id, l)).length;
 }
 
-/** Snake offset so the lesson path winds left / center / right down the page. */
+/** Snake offset so the lesson path winds left / center / right down the page.
+ *  84px keeps the widest node (40px radius) inside a 390px viewport: 84 + 40 = 124 < 195. */
 function pathOffset(i: number): number {
-  const pattern = [0, 96, 0, -96];
+  const pattern = [0, 84, 0, -84];
   return pattern[i % pattern.length] ?? 0;
 }
 
@@ -29,8 +30,10 @@ const linkRow: CSSProperties = {
   gap: 12,
   width: '100%',
   textAlign: 'left',
-  marginBottom: 10,
+  marginBottom: 16,
 };
+
+const linkSub: CSSProperties = { color: 'var(--muted)', fontSize: 15 };
 
 export default function HomeScreen({ onOpenTopics, onOpenLibrary, onOpenStats, onOpenTopic }: Props) {
   const xp = getXP();
@@ -66,7 +69,7 @@ export default function HomeScreen({ onOpenTopics, onOpenLibrary, onOpenStats, o
           return (
             <div
               key={t.id}
-              style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '6px 0' }}
+              style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '10px 0' }}
             >
               <button
                 className={cls}
@@ -81,19 +84,19 @@ export default function HomeScreen({ onOpenTopics, onOpenLibrary, onOpenStats, o
                   )}
                 </span>
               </button>
-              {isCurrent && (
-                <div
-                  style={{
-                    transform: `translateX(${offset}px)`,
-                    marginTop: 6,
-                    fontSize: 13,
-                    fontWeight: 800,
-                    color: 'var(--orange-dark)',
-                  }}
-                >
-                  {t.nameMy}
-                </div>
-              )}
+              {/* always rendered so rows never jump; hidden unless this is the current node */}
+              <div
+                style={{
+                  transform: `translateX(${offset}px)`,
+                  marginTop: 6,
+                  fontSize: 14,
+                  fontWeight: 800,
+                  color: 'var(--orange-dark)',
+                  visibility: isCurrent ? 'visible' : 'hidden',
+                }}
+              >
+                {t.nameMy}
+              </div>
             </div>
           );
         })}
@@ -104,7 +107,7 @@ export default function HomeScreen({ onOpenTopics, onOpenLibrary, onOpenStats, o
         <span style={{ fontSize: 42 }}>{current.icon}</span>
         <div style={{ flex: 1, minWidth: 0 }}>
           <div style={{ fontWeight: 800, fontSize: 16 }}>ဆက်လေ့လာရန်</div>
-          <div style={{ color: 'var(--muted)', fontSize: 13, marginBottom: 6 }}>
+          <div style={{ color: 'var(--muted)', fontSize: 15, marginBottom: 6 }}>
             {current.nameMy} · {currentDone}/3 ပြီးစီး
           </div>
           <ProgressBar value={currentDone} total={3} />
@@ -119,26 +122,26 @@ export default function HomeScreen({ onOpenTopics, onOpenLibrary, onOpenStats, o
         style={{
           display: 'grid',
           gridTemplateColumns: 'repeat(3, 1fr)',
-          gap: 10,
+          gap: 16,
           marginBottom: 16,
         }}
       >
         <div className="stat-card">
           <div style={{ fontSize: 22 }}>💎</div>
           <div style={{ fontWeight: 800, fontSize: 18 }}>{xp}</div>
-          <div style={{ fontSize: 12, color: 'var(--muted)' }}>XP စုစုပေါင်း</div>
+          <div style={{ fontSize: 15, color: 'var(--muted)' }}>XP စုစုပေါင်း</div>
         </div>
         <div className="stat-card">
           <div style={{ fontSize: 22 }}>📚</div>
           <div style={{ fontWeight: 800, fontSize: 18 }}>
             {completed}/{total}
           </div>
-          <div style={{ fontSize: 12, color: 'var(--muted)' }}>ပြီးစီးသင်ခန်းစာ</div>
+          <div style={{ fontSize: 15, color: 'var(--muted)' }}>ပြီးစီးသင်ခန်းစာ</div>
         </div>
         <div className="stat-card">
           <div style={{ fontSize: 22 }}>🔥</div>
           <div style={{ fontWeight: 800, fontSize: 18 }}>{streak}</div>
-          <div style={{ fontSize: 12, color: 'var(--muted)' }}>ရက်ဆက်တိုက်</div>
+          <div style={{ fontSize: 15, color: 'var(--muted)' }}>ရက်ဆက်တိုက်</div>
         </div>
       </div>
 
@@ -147,28 +150,28 @@ export default function HomeScreen({ onOpenTopics, onOpenLibrary, onOpenStats, o
       <button className="card" style={linkRow} onClick={onOpenTopics}>
         <span style={{ fontSize: 28 }}>📚</span>
         <span style={{ flex: 1 }}>
-          <span style={{ display: 'block', fontWeight: 800 }}>အကြောင်းအရာအားလုံး</span>
-          <small style={{ color: 'var(--muted)' }}>အကြောင်းအရာ ၂၀ · သင်ခန်းစာ ၆၀</small>
+          <span style={{ display: 'block', fontWeight: 800, fontSize: 16 }}>အကြောင်းအရာအားလုံး</span>
+          <span style={{ ...linkSub, display: 'block' }}>အကြောင်းအရာ ၂၀ · သင်ခန်းစာ ၆၀</span>
         </span>
-        <span>→</span>
+        <span style={{ fontSize: 18 }}>→</span>
       </button>
 
       <button className="card" style={linkRow} onClick={onOpenLibrary}>
         <span style={{ fontSize: 28 }}>🔊</span>
         <span style={{ flex: 1 }}>
-          <span style={{ display: 'block', fontWeight: 800 }}>အသံစာကြည့်တိုက်</span>
-          <small style={{ color: 'var(--muted)' }}>စကားလုံးအားလုံး နားထောင်ရန်</small>
+          <span style={{ display: 'block', fontWeight: 800, fontSize: 16 }}>အသံစာကြည့်တိုက်</span>
+          <span style={{ ...linkSub, display: 'block' }}>စကားလုံးအားလုံး နားထောင်ရန်</span>
         </span>
-        <span>→</span>
+        <span style={{ fontSize: 18 }}>→</span>
       </button>
 
       <button className="card" style={{ ...linkRow, marginBottom: 0 }} onClick={onOpenStats}>
         <span style={{ fontSize: 28 }}>🏆</span>
         <span style={{ flex: 1 }}>
-          <span style={{ display: 'block', fontWeight: 800 }}>တိုးတက်မှု</span>
-          <small style={{ color: 'var(--muted)' }}>XP နဲ့ streak ကြည့်ရန်</small>
+          <span style={{ display: 'block', fontWeight: 800, fontSize: 16 }}>တိုးတက်မှု</span>
+          <span style={{ ...linkSub, display: 'block' }}>XP နဲ့ streak ကြည့်ရန်</span>
         </span>
-        <span>→</span>
+        <span style={{ fontSize: 18 }}>→</span>
       </button>
     </div>
   );

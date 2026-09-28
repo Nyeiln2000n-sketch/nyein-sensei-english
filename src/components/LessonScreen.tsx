@@ -36,6 +36,33 @@ function buildRounds(topic: TopicId, level: Level): Round[] {
   return rounds;
 }
 
+function roundInstruction(round: Round): string {
+  switch (round.kind) {
+    case 'quiz':
+      return `“${round.word.en}” ရဲ့အဓိပ္ပာယ်က ဘာလဲ?`;
+    case 'translation':
+      return `“${round.word.my}” ကို English လို ဘယ်လိုပြောမလဲ?`;
+    case 'listening':
+      return 'ကြားရတဲ့စကားလုံးကို ရွေးပါ';
+    case 'order':
+      return 'စကားစုကို အစဉ်လိုက်စီပါ';
+    case 'match':
+      return 'တွဲဖက်များကို ရှာပါ 🔗';
+  }
+}
+
+/* The mascot reacts to the round: thinking pose for listening / hard rounds. */
+function roundMascot(round: Round): string {
+  switch (round.kind) {
+    case 'listening':
+    case 'order':
+    case 'match':
+      return '/mascot-thinking.png';
+    default:
+      return '/mascot.png';
+  }
+}
+
 export default function LessonScreen({ topic, level, onExit }: Props) {
   const meta = topicMeta(topic);
   const rounds = useMemo(() => buildRounds(topic, level), [topic, level]);
@@ -71,39 +98,56 @@ export default function LessonScreen({ topic, level, onExit }: Props) {
 
   if (done) {
     return (
-      <Sky>
-        <div className="screen">
-          <img src="/mascot-celebrate.png" alt="ဂုဏ်ယူပါတယ်" style={{ width: 140, height: 140 }} />
-          <h1>ပြီးဆုံးပါပြီ!</h1>
-          <p>{meta.nameMy} · အဆင့် {level}</p>
-          <div>
-            <div className="stat-card"><b>+{earned}</b><span>XP ရရှိမှု</span></div>
-            <div className="stat-card"><b>{correctCount}/{rounds.length}</b><span>မှန်ကန်မှု</span></div>
+      <div className="screen">
+        <Sky>
+          <div style={{ textAlign: 'center', padding: '24px 16px 20px' }}>
+            <img
+              src="/mascot-celebrate.png"
+              alt="ဂုဏ်ယူပါတယ်"
+              style={{ width: 140, height: 140, objectFit: 'contain', display: 'block', margin: '0 auto' }}
+            />
+            <h1 style={{ margin: '12px 0 4px' }}>ပြီးဆုံးပါပြီ!</h1>
+            <p style={{ margin: 0 }}>{meta.nameMy} · အဆင့် {level}</p>
           </div>
-          <button className="btn-chunky btn-green" onClick={onExit}>ပြီးပြီ</button>
+        </Sky>
+        <div style={{ padding: 16, display: 'flex', flexDirection: 'column', gap: 16 }}>
+          <div style={{ display: 'flex', gap: 12 }}>
+            <div className="stat-card" style={{ flex: 1, textAlign: 'center' }}>
+              <b>+{earned}</b>
+              <span>XP ရရှိမှု</span>
+            </div>
+            <div className="stat-card" style={{ flex: 1, textAlign: 'center' }}>
+              <b>{correctCount}/{rounds.length}</b>
+              <span>မှန်ကန်မှု</span>
+            </div>
+          </div>
+          <button className="btn-chunky btn-green" style={{ width: '100%' }} onClick={onExit}>
+            ပြီးပြီ
+          </button>
         </div>
-      </Sky>
+      </div>
     );
   }
 
   return (
-    <Sky>
-      <div className="screen">
+    <div className="screen">
+      <Sky>
         <div className="appbar">
           <button className="btn-soft" onClick={onExit} aria-label="quit">✕</button>
           <ProgressBar value={idx + 1} total={rounds.length} />
           <span>{idx + 1}/{rounds.length}</span>
         </div>
-        {combo >= 3 && <div className="combo-badge pop-in">🔥 {combo} ဆက်တိုက်!</div>}
-        <div key={idx}>
-          {round.kind === 'quiz' && <QuizRound round={round} onAnswer={handleAnswer} onNext={next} />}
-          {round.kind === 'translation' && <TranslationRound round={round} onAnswer={handleAnswer} onNext={next} />}
-          {round.kind === 'listening' && <ListeningRound round={round} onAnswer={handleAnswer} onNext={next} />}
-          {round.kind === 'order' && <OrderRound round={round} onAnswer={handleAnswer} onNext={next} />}
-          {round.kind === 'match' && <MatchRound round={round} onAnswer={handleAnswer} onNext={next} />}
-        </div>
+        <MascotBubble img={roundMascot(round)} text={roundInstruction(round)} />
+      </Sky>
+      <div key={idx} style={{ padding: '16px 16px 24px' }}>
+        {combo >= 3 && <div className="combo-badge pop-in" style={{ marginBottom: 8 }}>🔥 {combo} ဆက်တိုက်!</div>}
+        {round.kind === 'quiz' && <QuizRound round={round} onAnswer={handleAnswer} onNext={next} />}
+        {round.kind === 'translation' && <TranslationRound round={round} onAnswer={handleAnswer} onNext={next} />}
+        {round.kind === 'listening' && <ListeningRound round={round} onAnswer={handleAnswer} onNext={next} />}
+        {round.kind === 'order' && <OrderRound round={round} onAnswer={handleAnswer} onNext={next} />}
+        {round.kind === 'match' && <MatchRound round={round} onAnswer={handleAnswer} onNext={next} />}
       </div>
-    </Sky>
+    </div>
   );
 }
 
@@ -123,9 +167,20 @@ function useAutoSpeak(text: string, deps: unknown[] = []) {
 
 export function FeedbackPanel({ ok, title, onNext }: { ok: boolean; title: string; onNext: () => void }) {
   return (
-    <div className="card" style={ok ? { background: '#dcfce7' } : { background: '#fee2e2' }}>
-      <div className="section-title">{title}</div>
-      <button className={`btn-chunky ${ok ? 'btn-green' : 'btn-soft'}`} onClick={onNext}>
+    <div className={`feedback-panel pop-in ${ok ? 'ok' : 'no'}`}>
+      <div className="feedback-row">
+        <img
+          src={ok ? '/mascot-celebrate.png' : '/mascot-encourage.png'}
+          alt="မက်စကော့"
+          className="feedback-mascot"
+        />
+        <div className="feedback-title">{title}</div>
+      </div>
+      <button
+        className={`btn-chunky ${ok ? 'btn-green' : 'btn-soft'}`}
+        style={{ width: '100%' }}
+        onClick={onNext}
+      >
         {ok ? 'ဆက်သွားမယ်' : 'ထပ်ကြိုးစားမယ်'}
       </button>
     </div>
@@ -148,15 +203,14 @@ function Options({
   render: (o: { key: string }) => string;
 }) {
   return (
-    <div>
+    <div style={{ display: 'flex', flexDirection: 'column', gap: 2, marginTop: 12 }}>
       {options.map((o) => {
         const isCorrect = locked && o.key === correctKey;
         const isWrong = locked && pickedKey === o.key && o.key !== correctKey;
         return (
           <button
             key={o.key}
-            className={'card' + (isCorrect ? ' correct' : '') + (isWrong ? ' wrong' : '')}
-            style={{ width: '100%' }}
+            className={'choice' + (isCorrect ? ' correct' : '') + (isWrong ? ' wrong' : '')}
             disabled={locked}
             onClick={() => onPick(o.key)}
           >
@@ -186,8 +240,9 @@ function QuizRound({ round, onAnswer, onNext }: { round: Extract<Round, { kind: 
   const ok = picked === round.word.en;
   return (
     <div>
-      <MascotBubble img="/mascot.png" text={`“${round.word.en}” ရဲ့အဓိပ္ပာယ်က ဘာလဲ?`} />
-      <button className="btn-chunky btn-soft" onClick={() => speak(round.word.en)}>🔊 နားထောင်မယ်</button>
+      <button className="btn-chunky btn-soft" style={{ width: '100%' }} onClick={() => speak(round.word.en)}>
+        🔊 နားထောင်မယ်
+      </button>
       <Options
         options={round.options.map((o) => ({ ...o, key: o.en }))}
         onPick={pick}
@@ -211,7 +266,6 @@ function TranslationRound({ round, onAnswer, onNext }: { round: Extract<Round, {
   const ok = picked === round.word.en;
   return (
     <div>
-      <MascotBubble img="/mascot.png" text={`“${round.word.my}” ကို English လို ဘယ်လိုပြောမလဲ?`} />
       <Options
         options={round.options.map((o) => ({ ...o, key: o.en }))}
         onPick={pick}
@@ -233,8 +287,9 @@ function ListeningRound({ round, onAnswer, onNext }: { round: Extract<Round, { k
   const ok = picked === round.word.en;
   return (
     <div>
-      <MascotBubble img="/mascot.png" text="ကြားရတဲ့စကားလုံးကို ရွေးပါ" />
-      <button className="btn-chunky btn-soft" onClick={() => speak(round.word.en)}>🔊 <small>ထပ်နားထောင်မယ်</small></button>
+      <button className="btn-chunky btn-soft" style={{ width: '100%' }} onClick={() => speak(round.word.en)}>
+        🔊 <small>ထပ်နားထောင်မယ်</small>
+      </button>
       <Options
         options={round.options.map((o) => ({ ...o, key: o.en }))}
         onPick={pick}
@@ -262,15 +317,16 @@ function OrderRound({ round, onAnswer, onNext }: { round: Extract<Round, { kind:
   };
   return (
     <div>
-      <MascotBubble img="/mascot.png" text="စကားစုကို အစဉ်လိုက်စီပါ" />
       <div className="bubble">💡 {round.phrase.my}</div>
-      <div className="card">
-        {chosen.length === 0 && !checked && <span>စကားလုံးများ နှိပ်ပါ…</span>}
-        {chosen.map((i, k) => (
-          <span key={k} className="chip-word">{round.shuffled[i]}</span>
-        ))}
+      <div className="card" style={{ minHeight: 64, marginTop: 12 }}>
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10 }}>
+          {chosen.length === 0 && !checked && <span>စကားလုံးများ နှိပ်ပါ…</span>}
+          {chosen.map((i, k) => (
+            <span key={k} className="chip-word">{round.shuffled[i]}</span>
+          ))}
+        </div>
       </div>
-      <div>
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10, margin: '12px 0' }}>
         {round.shuffled.map((t, i) => (
           <button
             key={i}
@@ -283,9 +339,13 @@ function OrderRound({ round, onAnswer, onNext }: { round: Extract<Round, { kind:
         ))}
       </div>
       {!checked && (
-        <div>
-          <button className="btn-chunky btn-soft" onClick={() => setChosen(chosen.slice(0, -1))}>↩ ဖျက်မယ်</button>
-          <button className="btn-chunky btn-green" disabled={chosen.length !== target.length} onClick={check}>စစ်ဆေးမယ်</button>
+        <div style={{ display: 'flex', gap: 12 }}>
+          <button className="btn-chunky btn-soft" style={{ flex: 1 }} onClick={() => setChosen(chosen.slice(0, -1))}>
+            ↩ ဖျက်မယ်
+          </button>
+          <button className="btn-chunky btn-green" style={{ flex: 1 }} disabled={chosen.length !== target.length} onClick={check}>
+            စစ်ဆေးမယ်
+          </button>
         </div>
       )}
       {checked && (
@@ -336,8 +396,7 @@ function MatchRound({ round, onAnswer, onNext }: { round: Extract<Round, { kind:
 
   return (
     <div>
-      <MascotBubble img="/mascot.png" text="တွဲဖက်များကို ရှာပါ 🔗" />
-      <div className={mistake ? 'shake' : ''}>
+      <div className={mistake ? 'shake' : ''} style={{ display: 'flex', flexWrap: 'wrap', gap: 10, margin: '12px 0' }}>
         {cards.map((c) => (
           <button
             key={c.id}
@@ -349,7 +408,9 @@ function MatchRound({ round, onAnswer, onNext }: { round: Extract<Round, { kind:
         ))}
       </div>
       {allMatched && (
-        <button className="btn-chunky btn-green" onClick={onNext}>ပြီးပြီ! ဆက်သွားမယ် →</button>
+        <button className="btn-chunky btn-green" style={{ width: '100%' }} onClick={onNext}>
+          ပြီးပြီ! ဆက်သွားမယ် →
+        </button>
       )}
     </div>
   );

@@ -47,31 +47,32 @@ export default function TopicDetailScreen({ topicId, onBack, onStartLesson, onSt
         style={{
           textAlign: 'center',
           padding: '28px 16px',
+          marginBottom: 16,
           background: `linear-gradient(135deg, ${meta.color}40, var(--card))`,
         }}
       >
         <div style={{ fontSize: 72, lineHeight: 1.2 }}>{meta.icon}</div>
         <h1 style={{ margin: '8px 0 4px', fontSize: 26, fontWeight: 800 }}>{meta.nameMy}</h1>
-        <div style={{ color: 'var(--muted)', fontSize: 14 }}>
+        <div style={{ color: 'var(--muted)', fontSize: 15 }}>
           {meta.nameEn} · {words.length} စကားလုံး · {phrases.length} စကားစု
         </div>
       </div>
 
       {/* three lesson levels */}
       <SectionTitle title="📚 သင်ခန်းစာများ" />
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 10, marginBottom: 4 }}>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 12, marginBottom: 4 }}>
         {LEVELS.map((l) => {
           const done = isLessonComplete(topicId, l.level);
           return (
             <button
               key={l.level}
               className={done ? 'btn-chunky btn-green' : 'btn-chunky'}
-              style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 2 }}
+              style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 2, padding: '14px 8px' }}
               onClick={() => onStartLesson(topicId, l.level)}
             >
               <span style={{ fontSize: 26 }}>{done ? '✓' : l.level}</span>
-              <span style={{ fontWeight: 800 }}>{l.label}</span>
-              <small style={{ opacity: 0.8 }}>{l.sub}</small>
+              <span style={{ fontWeight: 800, fontSize: 15 }}>{l.label}</span>
+              <span style={{ opacity: 0.8, fontSize: 13 }}>{l.sub}</span>
             </button>
           );
         })}
@@ -79,7 +80,7 @@ export default function TopicDetailScreen({ topicId, onBack, onStartLesson, onSt
 
       {/* game modes — lesson rounds live inside LessonScreen; GameScreen handles memory/reverse */}
       <SectionTitle title="🎮 ဂိမ်းများ" />
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 10 }}>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 12 }}>
         {GAMES.map((g) => (
           <button
             key={g.id}
@@ -88,8 +89,8 @@ export default function TopicDetailScreen({ topicId, onBack, onStartLesson, onSt
             onClick={() => onStartGame(g.id, topicId)}
           >
             <span style={{ fontSize: 36 }}>{g.icon}</span>
-            <span style={{ fontWeight: 800 }}>{g.label}</span>
-            <small style={{ color: 'var(--muted)', textAlign: 'center' }}>{g.desc}</small>
+            <span style={{ fontWeight: 800, fontSize: 16 }}>{g.label}</span>
+            <span style={{ color: 'var(--muted)', textAlign: 'center', fontSize: 14 }}>{g.desc}</span>
           </button>
         ))}
       </div>
@@ -113,10 +114,10 @@ export default function TopicDetailScreen({ topicId, onBack, onStartLesson, onSt
             onClick={() => speak(w.en)}
           >
             <span style={{ flex: 1, minWidth: 0 }}>
-              <span style={{ display: 'block', fontWeight: 700 }}>{w.en}</span>
-              <span style={{ display: 'block', fontSize: 13, color: 'var(--muted)' }}>{w.my}</span>
+              <span style={{ display: 'block', fontWeight: 700, fontSize: 16 }}>{w.en}</span>
+              <span style={{ display: 'block', fontSize: 15, color: 'var(--muted)' }}>{w.my}</span>
             </span>
-            <span style={{ fontSize: 20 }}>🔊</span>
+            <span style={{ fontSize: 20, flexShrink: 0 }}>🔊</span>
           </button>
         ))}
       </div>

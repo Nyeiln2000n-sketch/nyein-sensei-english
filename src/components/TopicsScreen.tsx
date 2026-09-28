@@ -13,7 +13,7 @@ const LEVELS: Level[] = [1, 2, 3];
 export default function TopicsScreen({ onBack, onOpenTopic }: Props) {
   return (
     <div className="screen">
-      <div style={{ marginBottom: 8 }}>
+      <div style={{ marginBottom: 12 }}>
         <button className="btn-soft" onClick={onBack} aria-label="back">
           ‹ နောက်သို့
         </button>
@@ -21,7 +21,7 @@ export default function TopicsScreen({ onBack, onOpenTopic }: Props) {
 
       <SectionTitle title="📚 အကြောင်းအရာ ၂၀" />
 
-      <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
         {topics.map((t) => {
           const words = wordsByTopic(t.id);
           const done = LEVELS.filter((l) => isLessonComplete(t.id, l)).length;
@@ -49,7 +49,7 @@ export default function TopicsScreen({ onBack, onOpenTopic }: Props) {
               </span>
               <span style={{ flex: 1, minWidth: 0 }}>
                 <span style={{ display: 'block', fontWeight: 800, fontSize: 16 }}>{t.nameMy}</span>
-                <span style={{ display: 'block', fontSize: 12, color: 'var(--muted)' }}>
+                <span style={{ display: 'block', fontSize: 14, color: 'var(--muted)' }}>
                   {t.nameEn} · {words.length} စကားလုံး
                 </span>
                 <span style={{ display: 'block', marginTop: 6 }}>
@@ -69,7 +69,7 @@ export default function TopicsScreen({ onBack, onOpenTopic }: Props) {
                   />
                 ))}
               </span>
-              <span style={{ fontWeight: 800, fontSize: 13, flexShrink: 0 }}>{done}/3</span>
+              <span style={{ fontWeight: 800, fontSize: 14, flexShrink: 0 }}>{done}/3</span>
             </button>
           );
         })}

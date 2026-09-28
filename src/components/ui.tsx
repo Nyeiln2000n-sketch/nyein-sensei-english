@@ -115,15 +115,19 @@ export function MascotBubble({ text, img = '/mascot.png' }: { text: ReactNode; i
   );
 }
 
-/* ---------- sky scene wrapper ---------- */
+/* ---------- sky scene wrapper ----------
+   Scenery renders inside .sky-scene (absolute, own overflow:hidden) so it
+   can never clip the content children, which flow naturally on top. */
 export function Sky({ children }: { children: ReactNode }) {
   return (
     <div className="sky">
-      <div className="sky-sun" aria-hidden />
-      <div className="sky-cloud c1" aria-hidden />
-      <div className="sky-cloud c2" aria-hidden />
-      <div className="sky-hill h1" aria-hidden />
-      <div className="sky-hill h2" aria-hidden />
+      <div className="sky-scene" aria-hidden>
+        <div className="sky-sun" />
+        <div className="sky-cloud c1" />
+        <div className="sky-cloud c2" />
+        <div className="sky-hill h1" />
+        <div className="sky-hill h2" />
+      </div>
       {children}
     </div>
   );

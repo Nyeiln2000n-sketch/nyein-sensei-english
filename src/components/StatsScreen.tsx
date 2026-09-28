@@ -23,23 +23,19 @@ export default function StatsScreen({ onBack }: Props) {
     progress.totalAnswered > 0
       ? Math.round((progress.totalCorrect / progress.totalAnswered) * 100)
       : 0;
-  const mascotImg = progress.streakDays > 0 ? '/mascot-celebrate.png' : '/mascot.png';
-  const isActiveToday = progress.lastActiveDate === todayKey();
-  const todayIdx = todayWeekdayIndex();
-
   const message =
     progress.streakDays > 0
       ? `ကြည့်စမ်း! 🔥 ${progress.streakDays} ရက်ဆက်တိုက် ကြိုးစားနေပြီ — ဒီလိုပဲ ဆက်သွားပါ 💪`
       : 'ဒီနေ့ကစပြီး စကားလုံးလေးတစ်လုံးနဲ့ အတူတူ စလိုက်ရအောင် 🌱';
 
+  const isActiveToday = progress.lastActiveDate === todayKey();
+  const todayIdx = todayWeekdayIndex();
+
   return (
     <div className="screen">
       <AppBar title="🏆 တိုးတက်မှု" onBack={onBack} />
       <Sky>
-        <div className="stats-hero">
-          <img src={mascotImg} alt="မာဆကုတ်" className="stats-mascot" />
-          <MascotBubble text={message} img={mascotImg} />
-        </div>
+        <MascotBubble text={message} img="/mascot-amazed.png" />
 
         <div className="stat-grid">
           <div className="stat-card">
