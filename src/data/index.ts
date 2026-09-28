@@ -20,12 +20,23 @@ import { clothingWords } from './words-clothing';
 import { animalsWords } from './words-animals';
 import { timeWords } from './words-time';
 import { weatherWords } from './words-weather';
+import { restaurantWords } from './words-restaurant';
+import { airportWords } from './words-airport';
+import { officeWords } from './words-office';
+import { doctorWords } from './words-doctor';
+import { computerWords } from './words-computer';
+import { marketWords } from './words-market';
+import { seasonsWords } from './words-seasons';
+import { personalityWords } from './words-personality';
 import { phrasesA } from './phrases-a';
 import { phrasesB } from './phrases-b';
+import { phrasesC } from './phrases-c';
+import { phrasesD } from './phrases-d';
+import { phrasesE } from './phrases-e';
 
 export { topics, topicMeta };
 
-/** Every vocabulary entry in the app (600 words, 20 topics). */
+/** Every vocabulary entry in the app (1000 words, 28 topics). */
 export const allWords: Word[] = [
   ...familyWords,
   ...friendsWords,
@@ -47,10 +58,18 @@ export const allWords: Word[] = [
   ...animalsWords,
   ...timeWords,
   ...weatherWords,
+  ...restaurantWords,
+  ...airportWords,
+  ...officeWords,
+  ...doctorWords,
+  ...computerWords,
+  ...marketWords,
+  ...seasonsWords,
+  ...personalityWords,
 ];
 
-/** Every everyday phrase in the app (320 phrases, 20 topics). */
-export const allPhrases: Phrase[] = [...phrasesA, ...phrasesB];
+/** Every everyday phrase in the app (500 phrases, 28 topics). */
+export const allPhrases: Phrase[] = [...phrasesA, ...phrasesB, ...phrasesC, ...phrasesD, ...phrasesE];
 
 /** Words filtered by topic and optionally difficulty level. */
 export function wordsByTopic(topic: TopicId, level?: Level): Word[] {

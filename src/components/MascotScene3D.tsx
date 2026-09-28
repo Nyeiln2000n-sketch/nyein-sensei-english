@@ -131,9 +131,12 @@ export default function MascotScene3D({
   const wrapRef = useRef<HTMLDivElement>(null);
   const pointer = useRef({ x: 0, y: 0 });
   const [inView, setInView] = useState(true);
-  const [pageVisible, setPageVisible] = useState(
-    typeof document === 'undefined' ? true : !document.hidden,
-  );
+  // Assume visible on mount so WebGL-capable browsers (including headless
+  // QA, where document.hidden starts true) render the live scene
+  // immediately; the visibilitychange listener below corrects this if the
+  // tab is actually hidden. The IntersectionObserver still gates offscreen
+  // mascots, so background GPU work stays bounded.
+  const [pageVisible, setPageVisible] = useState(true);
   const [glOk, setGlOk] = useState(true);
 
   // Pause WebGL work when the mascot scrolls offscreen.
@@ -162,6 +165,7 @@ export default function MascotScene3D({
       src={poseFile}
       alt="မက်စကော့"
       draggable={false}
+      className="mascot-fallback-float"
       style={{ width: '100%', height: '100%', objectFit: 'contain', display: 'block' }}
     />
   );
@@ -170,6 +174,10 @@ export default function MascotScene3D({
     <div
       ref={wrapRef}
       className={className}
+      /* DOM hook for QA: "live-3d" when the WebGL scene is mounted,
+         "static" when the PNG fallback is shown (offscreen / hidden tab /
+         WebGL failure / chunk still loading). */
+      data-mascot-mode={live ? 'live-3d' : 'static'}
       style={{ width: size, height: size, position: 'relative' }}
       onPointerMove={(e) => {
         const r = e.currentTarget.getBoundingClientRect();

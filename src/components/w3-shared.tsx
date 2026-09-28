@@ -44,7 +44,9 @@ export function Screen({ children }: { children: ReactNode }) {
         fontFamily: FONT,
         display: 'flex',
         flexDirection: 'column',
-        padding: '0 16px 40px',
+        // PWA standalone (viewport-fit=cover): keep headers clear of the
+        // notch / Dynamic Island on every screen using this container.
+        padding: 'max(env(safe-area-inset-top, 0px), 12px) 16px 40px',
       }}
     >
       {children}

@@ -259,7 +259,7 @@ export function StatPill({
   value,
   onClick,
 }: {
-  emoji: string;
+  emoji: ReactNode;
   value: ReactNode;
   onClick?: () => void;
 }) {

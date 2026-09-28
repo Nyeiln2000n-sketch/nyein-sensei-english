@@ -3,13 +3,14 @@
 // rows. Progress is honest per segment: basic -> completed levels (n/3),
 // vocab -> word count, conv -> phrase count.
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { ChevronRight } from 'lucide-react';
 import type { GoFn, NavParams } from '../routes';
 import type { Level, Topic } from '../types';
 import { phrasesByTopic, topics, wordsByTopic } from '../data/index';
 import { isLessonComplete } from '../lib/storage';
 import { Screen, SegmentedControl } from './ui';
+import { SkeletonList } from './Skeleton';
 
 type Segment = 'basic' | 'vocab' | 'conv';
 
@@ -34,6 +35,13 @@ function onTap(t: Topic, seg: Segment, go: GoFn) {
 
 export default function LessonsScreen({ go, params }: { go: GoFn; params?: NavParams }) {
   const [seg, setSeg] = useState<Segment>(params?.segment ?? 'basic');
+  // Skeleton shimmer on first mount (data is local/sync; this covers the
+  // screen-enter transition with a branded loading state).
+  const [ready, setReady] = useState(false);
+  useEffect(() => {
+    const t = window.setTimeout(() => setReady(true), 350);
+    return () => window.clearTimeout(t);
+  }, []);
 
   return (
     <Screen>
@@ -59,7 +67,10 @@ export default function LessonsScreen({ go, params }: { go: GoFn; params?: NavPa
       />
 
       <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
-        {topics.map((t, i) => {
+        {!ready ? (
+          <SkeletonList rows={8} />
+        ) : (
+        topics.map((t, i) => {
           const prog = segmentProgress(t, seg);
           return (
             <button
@@ -134,8 +145,11 @@ export default function LessonsScreen({ go, params }: { go: GoFn; params?: NavPa
               <ChevronRight size={18} color="#D9C8AE" style={{ flexShrink: 0 }} />
             </button>
           );
-        })}
+        }))}
       </div>
+
+      {/* keeps the last row clear of the floating tab bar */}
+      <div className="tab-pad-end" aria-hidden="true" />
     </Screen>
   );
 }

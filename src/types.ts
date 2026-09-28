@@ -21,7 +21,15 @@ export type TopicId =
   | 'clothing'
   | 'animals'
   | 'time'
-  | 'weather';
+  | 'weather'
+  | 'restaurant'
+  | 'airport'
+  | 'office'
+  | 'doctor'
+  | 'computer'
+  | 'market'
+  | 'seasons'
+  | 'personality';
 
 export interface Word {
   en: string;

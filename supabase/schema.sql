@@ -1,51 +1,54 @@
--- Nyein Sensei English — Supabase schema
+-- Nyein Sensei English — Supabase schema (v2: cloud-save contract)
+--
 -- Run this in the Supabase SQL editor (or via supabase db push).
+--
+-- v2 replaces the old device_id-based design: login is MANDATORY, every row
+-- belongs to auth.users via auth.uid(), and Supabase is the source of truth
+-- for signed-in users (localStorage is purely an offline cache + outbox).
+--
+-- Tables:
+--   profiles(id uuid PK = auth.users.id, xp, gems, streak, level, last_active date, updated_at)
+--   progress(user_id, word_key, known, reps)
+--   lesson_completions(user_id, lesson_id, score, completed_at)
+--   vocabulary_stats(user_id, word_key, correct, wrong)
 
--- Profiles: one row per learner (linked to auth.users when auth is used;
--- device_id allows anonymous per-device profiles too).
+-- Profiles: one row per learner, keyed by the auth user id.
 create table if not exists profiles (
-  id uuid primary key default gen_random_uuid(),
-  user_id uuid references auth.users(id) on delete cascade,
-  device_id text unique,
-  display_name text default 'သင်ယူသူ',
-  created_at timestamptz not null default now(),
+  id uuid primary key references auth.users(id) on delete cascade,
+  xp integer not null default 0,
+  gems integer not null default 0,
+  streak integer not null default 0,
+  level integer not null default 1,
+  last_active date,
   updated_at timestamptz not null default now()
 );
 
--- Progress: aggregate learner stats (synced from the client).
+-- Progress: per-word known/reps (favorites / spaced repetition).
 create table if not exists progress (
-  profile_id uuid primary key references profiles(id) on delete cascade,
-  xp integer not null default 0,
-  streak_days integer not null default 0,
-  last_active_date date,
-  best_combo integer not null default 0,
-  total_correct integer not null default 0,
-  total_answered integer not null default 0,
-  updated_at timestamptz not null default now()
+  user_id uuid not null references auth.users(id) on delete cascade,
+  word_key text not null,
+  known boolean not null default false,
+  reps integer not null default 0,
+  primary key (user_id, word_key)
 );
 
 -- Lesson completions: one row per completed lesson attempt.
 create table if not exists lesson_completions (
   id uuid primary key default gen_random_uuid(),
-  profile_id uuid not null references profiles(id) on delete cascade,
-  topic_id text not null,
-  lesson_index integer not null,
-  difficulty integer not null default 1,
+  user_id uuid not null references auth.users(id) on delete cascade,
+  lesson_id text not null,
   score integer not null default 0,
-  total integer not null default 0,
-  xp_earned integer not null default 0,
   completed_at timestamptz not null default now()
 );
-create index if not exists lesson_completions_profile_idx on lesson_completions(profile_id, completed_at desc);
+create index if not exists lesson_completions_user_idx on lesson_completions(user_id, completed_at desc);
 
--- Vocabulary stats: spaced-repetition style per-word stats.
+-- Vocabulary stats: per-word correct/wrong totals.
 create table if not exists vocabulary_stats (
-  profile_id uuid not null references profiles(id) on delete cascade,
-  word_en text not null,
-  seen_count integer not null default 0,
-  correct_count integer not null default 0,
-  last_seen_at timestamptz,
-  primary key (profile_id, word_en)
+  user_id uuid not null references auth.users(id) on delete cascade,
+  word_key text not null,
+  correct integer not null default 0,
+  wrong integer not null default 0,
+  primary key (user_id, word_key)
 );
 
 -- Keep updated_at fresh.
@@ -60,67 +63,72 @@ drop trigger if exists profiles_touch on profiles;
 create trigger profiles_touch before update on profiles
   for each row execute function touch_updated_at();
 
-drop trigger if exists progress_touch on progress;
-create trigger progress_touch before update on progress
-  for each row execute function touch_updated_at();
-
--- Row Level Security: a profile's rows are visible only to its owner.
---
--- Two supported setups:
---   1. Authenticated users (recommended): enable Supabase Auth (email/phone)
---      and sign in from the app. Policies match auth.uid() = user_id.
---   2. Anonymous devices: policies ALSO accept a `device_id` JWT claim
---      (current_setting('request.jwt.claims')->>'device_id'). The plain anon
---      key does NOT carry this claim, so anonymous sync requires either a
---      custom JWT minted by your own backend (with the device_id claim) or
---      a Postgres function with SECURITY DEFINER. Until one of these is in
---      place, the app keeps working 100% offline on localStorage — sync calls
---      simply no-op. See README.md ("Supabase setup") for details.
+-- Row Level Security: every row belongs to its authenticated owner.
 alter table profiles enable row level security;
 alter table progress enable row level security;
 alter table lesson_completions enable row level security;
 alter table vocabulary_stats enable row level security;
 
-create policy "owners can manage their profile"
+drop policy if exists "owners manage own profile" on profiles;
+create policy "owners manage own profile"
   on profiles for all
-  using (auth.uid() = user_id or device_id = current_setting('request.jwt.claims', true)::json->>'device_id')
-  with check (auth.uid() = user_id or device_id = current_setting('request.jwt.claims', true)::json->>'device_id');
+  using (auth.uid() = id)
+  with check (auth.uid() = id);
 
-create policy "owners can manage their progress"
+drop policy if exists "owners manage own progress" on progress;
+create policy "owners manage own progress"
   on progress for all
-  using (exists (
-    select 1 from profiles p
-    where p.id = progress.profile_id
-      and (p.user_id = auth.uid() or p.device_id = current_setting('request.jwt.claims', true)::json->>'device_id')
-  ))
-  with check (exists (
-    select 1 from profiles p
-    where p.id = progress.profile_id
-      and (p.user_id = auth.uid() or p.device_id = current_setting('request.jwt.claims', true)::json->>'device_id')
-  ));
+  using (auth.uid() = user_id)
+  with check (auth.uid() = user_id);
 
-create policy "owners can manage their lesson completions"
+drop policy if exists "owners manage own lesson completions" on lesson_completions;
+create policy "owners manage own lesson completions"
   on lesson_completions for all
-  using (exists (
-    select 1 from profiles p
-    where p.id = lesson_completions.profile_id
-      and (p.user_id = auth.uid() or p.device_id = current_setting('request.jwt.claims', true)::json->>'device_id')
-  ))
-  with check (exists (
-    select 1 from profiles p
-    where p.id = lesson_completions.profile_id
-      and (p.user_id = auth.uid() or p.device_id = current_setting('request.jwt.claims', true)::json->>'device_id')
-  ));
+  using (auth.uid() = user_id)
+  with check (auth.uid() = user_id);
 
-create policy "owners can manage their vocabulary stats"
+drop policy if exists "owners manage own vocabulary stats" on vocabulary_stats;
+create policy "owners manage own vocabulary stats"
   on vocabulary_stats for all
-  using (exists (
-    select 1 from profiles p
-    where p.id = vocabulary_stats.profile_id
-      and (p.user_id = auth.uid() or p.device_id = current_setting('request.jwt.claims', true)::json->>'device_id')
-  ))
-  with check (exists (
-    select 1 from profiles p
-    where p.id = vocabulary_stats.profile_id
-      and (p.user_id = auth.uid() or p.device_id = current_setting('request.jwt.claims', true)::json->>'device_id')
-  ));
+  using (auth.uid() = user_id)
+  with check (auth.uid() = user_id);
+
+-- ---------------------------------------------------------------------------
+-- Signup license-key gate.
+--
+-- The license key lives ONLY in Supabase Vault as the secret
+-- 'signup_license_key' (set it via the Vault UI / SQL editor — it is NEVER
+-- stored in client code or in this repo):
+--
+--   select vault.create_secret('<THE-KEY>', 'signup_license_key');
+--
+-- The app verifies a user-typed key through this RPC with the anon key:
+--   POST /rest/v1/rpc/verify_signup_license   {"input_key": "..."}  → true/false
+-- ---------------------------------------------------------------------------
+
+create or replace function public.verify_signup_license(input_key text)
+returns boolean
+language plpgsql
+security definer
+set search_path = public
+as $$
+declare
+  stored text;
+begin
+  if input_key is null or btrim(input_key) = '' then
+    return false;
+  end if;
+  select decrypted_secret into stored
+  from vault.decrypted_secrets
+  where name = 'signup_license_key'
+  limit 1;
+  if stored is null then
+    return false;
+  end if;
+  return stored = btrim(input_key)
+     and length(stored) = length(btrim(input_key));
+end;
+$$;
+
+revoke all on function public.verify_signup_license(text) from public;
+grant execute on function public.verify_signup_license(text) to anon, authenticated;

@@ -1,5 +1,5 @@
 import type { Level, Progress, TopicId } from '../types';
-import { syncProgressToSupabase } from './supabase';
+import { queueProfilePatch, recordLessonCompletion as cloudRecordLessonCompletion, resetCloudProfile } from './cloudSync';
 
 const KEY = 'nyein-sensei-progress-v1';
 
@@ -56,9 +56,33 @@ function commit(p: Progress, sync = true): void {
   cache = p;
   saveProgress(p);
   if (sync) {
-    // best-effort cloud sync; never blocks the UI
-    syncProgressToSupabase(p).catch(() => {});
+    // Write-through to the cloud (debounced ~2s batching inside cloudSync).
+    // Local cache is already updated, so the UI stays instant; the cloud
+    // write never blocks. Login is mandatory, so this always targets the
+    // signed-in user's cloud profile.
+    queueProfilePatch(progressToPatch(p));
   }
+}
+
+/** Replace the whole local cache (used by cloudSync after load/merge). */
+export function replaceProgress(p: Progress): void {
+  cache = { ...emptyProgress, ...p, completedLessons: p.completedLessons ?? {} };
+  saveProgress(cache);
+}
+
+function progressToPatch(p: Progress) {
+  let level = 1;
+  for (const key of Object.keys(p.completedLessons ?? {})) {
+    const m = /:(\d+)$/.exec(key);
+    if (m) level = Math.max(level, Number(m[1]));
+  }
+  return {
+    xp: p.xp,
+    gems: Math.floor(p.xp / 100),
+    streak: p.streakDays,
+    level,
+    last_active: p.lastActiveDate,
+  };
 }
 
 export function getXP(): number {
@@ -105,14 +129,9 @@ export function markLessonComplete(topicId: TopicId, level: Level): void {
   };
   cache = next;
   saveProgress(next);
-  syncProgressToSupabase(next, {
-    topicId,
-    lessonIndex: level,
-    difficulty: level,
-    score: 1,
-    total: 1,
-    xpEarned: 0,
-  }).catch(() => {});
+  // Write-through: local cache is already updated above; these never block.
+  queueProfilePatch(progressToPatch(next));
+  cloudRecordLessonCompletion(key, 1);
 }
 
 export function isLessonComplete(topicId: TopicId, level: Level): boolean {
@@ -121,4 +140,6 @@ export function isLessonComplete(topicId: TopicId, level: Level): boolean {
 
 export function resetProgress(): void {
   commit({ ...emptyProgress }, false);
+  // "Start over" also resets the cloud profile (queued, debounced).
+  resetCloudProfile();
 }

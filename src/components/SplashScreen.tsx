@@ -1,10 +1,13 @@
-// SCREEN 1 — Splash (mockup screen 1). Warm illustrated hero: peach/cream
-// gradient, floating blurred blobs + confetti dots (CSS), the living 3D orange
-// cat large and waving. CTA -> 'home' (App marks onboarded); login -> 'auth'.
+// SCREEN 1 — Splash. ALWAYS first on cold start (~2.2s, tap-to-skip):
+// living 3D cat (branded mini-loader while the three.js chunk loads), brand
+// name, animated loader bar, Myanmar tagline. Then App's onDone() decides the
+// next screen from the session (mandatory login: valid session ? Home : Auth).
+// Tap anywhere to skip; the login link jumps straight to Auth.
+// NO guest entry path — the old "start learning" CTA is gone.
 
-import type { GoFn, NavParams } from '../routes';
+import { useCallback, useEffect, useRef } from 'react';
+import type { GoFn, NavParams, RouteName } from '../routes';
 import MascotScene3D from './Mascot3D';
-import { PillButton } from './ui';
 import './w2.css';
 
 /* deterministic decorative dots (no randomness on re-render) */
@@ -22,10 +25,40 @@ const DOTS: { left: string; top: string; size: number; color: string; delay: str
 ];
 
 const FONT = "'Poppins','Noto Sans Myanmar',sans-serif";
+const SPLASH_MS = 2200;
 
-export default function SplashScreen({ go }: { go: GoFn; params?: NavParams }) {
+export default function SplashScreen({
+  onDone,
+}: {
+  go: GoFn;
+  params?: NavParams;
+  onDone: (next?: RouteName) => void;
+}) {
+  const doneRef = useRef(false);
+
+  const finish = useCallback(
+    (next?: RouteName) => {
+      if (doneRef.current) return;
+      doneRef.current = true;
+      onDone(next);
+    },
+    [onDone],
+  );
+
+  // Auto-advance after the branded hold. No audio here (AUDIO_CONTRACT).
+  useEffect(() => {
+    const reduced =
+      typeof window !== 'undefined' &&
+      typeof window.matchMedia === 'function' &&
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const t = window.setTimeout(() => finish(), reduced ? 400 : SPLASH_MS);
+    return () => window.clearTimeout(t);
+  }, [finish]);
+
   return (
     <div
+      className="splash-enter"
+      onClick={() => finish()}
       style={{
         maxWidth: 430,
         margin: '0 auto',
@@ -35,11 +68,13 @@ export default function SplashScreen({ go }: { go: GoFn; params?: NavParams }) {
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
-        padding: 'calc(32px + env(safe-area-inset-top)) 30px calc(36px + env(safe-area-inset-bottom))',
+        padding:
+          'calc(32px + env(safe-area-inset-top, 0px)) 30px calc(36px + env(safe-area-inset-bottom, 0px))',
         position: 'relative',
         overflow: 'hidden',
         fontFamily: FONT,
         color: '#666666',
+        cursor: 'pointer',
       }}
     >
       {/* floating blurred blobs */}
@@ -69,9 +104,9 @@ export default function SplashScreen({ go }: { go: GoFn; params?: NavParams }) {
         />
       ))}
 
-      {/* the living 3D cat, waving */}
+      {/* the living 3D cat, waving — branded mini-loader while chunk loads */}
       <div className="w2-enter" style={{ position: 'relative', zIndex: 1 }}>
-        <MascotScene3D pose="wave" size={220} sparkle />
+        <MascotScene3D pose="wave" size={220} sparkle loader="brand" />
       </div>
 
       <h1
@@ -90,27 +125,38 @@ export default function SplashScreen({ go }: { go: GoFn; params?: NavParams }) {
         Nyein Sensei English
       </h1>
       <p
-        className="w2-enter-1"
-        style={{ position: 'relative', zIndex: 1, fontWeight: 500, fontSize: 15, margin: '10px 0 0', textAlign: 'center' }}
-      >
-        Learn English Step by Step
-      </p>
-      <p
         className="w2-enter-2"
-        style={{ position: 'relative', zIndex: 1, fontSize: 15, margin: '8px 0 0', textAlign: 'center', lineHeight: 1.7 }}
+        style={{ position: 'relative', zIndex: 1, fontSize: 15, margin: '10px 0 0', textAlign: 'center', lineHeight: 1.7 }}
       >
         ပျော်ပျော်ရွှင်ရွှင် အင်္ဂလိပ်စာ လေ့လာကြမယ်!
       </p>
 
-      <div className="w2-enter-3" style={{ position: 'relative', zIndex: 1, width: '100%', marginTop: 34 }}>
-        <PillButton color="orange" onClick={() => go('home')}>
-          စတင်လေ့လာမယ်
-        </PillButton>
-        <div style={{ textAlign: 'center', marginTop: 10 }}>
-          <button type="button" className="link" onClick={() => go('auth')}>
-            အကောင့်ရှိပြီးသားလား? လော့ဂ်အင်ဝင်ရန်
-          </button>
-        </div>
+      {/* branded loader bar (fills during the hold) */}
+      <div
+        className="w2-enter-2 brand-loader-bar"
+        style={{ position: 'relative', zIndex: 1, marginTop: 26 }}
+        aria-hidden="true"
+      >
+        <div className="brand-loader-fill" />
+      </div>
+      <div
+        className="w2-enter-3"
+        style={{ position: 'relative', zIndex: 1, fontSize: 13, marginTop: 12, color: '#A89E90' }}
+      >
+        ထိပြီး ကျော်သွားနိုင်ပါတယ်
+      </div>
+
+      <div className="w2-enter-3" style={{ position: 'relative', zIndex: 1, marginTop: 14 }}>
+        <button
+          type="button"
+          className="link"
+          onClick={(e) => {
+            e.stopPropagation();
+            finish('auth');
+          }}
+        >
+          အကောင့်ရှိပြီးသားလား? လော့ဂ်အင်ဝင်ရန်
+        </button>
       </div>
     </div>
   );

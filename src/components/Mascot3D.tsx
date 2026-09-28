@@ -8,10 +8,15 @@
 // and the canonical component already swaps the live <Canvas> for a static
 // <img> when offscreen or when WebGL fails.
 //
+// loader="brand": branded mini-loader (cat + spinner) as the Suspense
+// fallback — used on the Splash screen so the 3D chunk load never shows a
+// blank or bare image.
+//
 // Same public API as MascotScene3D: { pose, size?, sparkle?, className? }.
 
 import { Suspense, lazy } from 'react';
 import type { MascotPose } from './MascotScene3D';
+import BrandLoader from './BrandLoader';
 
 export type { MascotPose } from './MascotScene3D';
 
@@ -31,6 +36,8 @@ interface Mascot3DProps {
   size?: number;
   sparkle?: boolean;
   className?: string;
+  /** 'png' (default): static pose PNG · 'brand': branded cat+spinner loader */
+  loader?: 'png' | 'brand';
 }
 
 export default function Mascot3D({
@@ -38,23 +45,28 @@ export default function Mascot3D({
   size = 128,
   sparkle,
   className,
+  loader = 'png',
 }: Mascot3DProps) {
   return (
     <Suspense
       fallback={
-        <img
-          src={POSE_FILES[pose]}
-          alt=""
-          aria-hidden="true"
-          draggable={false}
-          className={className}
-          style={{
-            width: size,
-            height: size,
-            objectFit: 'contain',
-            display: 'block',
-          }}
-        />
+        loader === 'brand' ? (
+          <BrandLoader compact size={size} />
+        ) : (
+          <img
+            src={POSE_FILES[pose]}
+            alt=""
+            aria-hidden="true"
+            draggable={false}
+            className={`mascot-fallback-float${className ? ` ${className}` : ''}`}
+            style={{
+              width: size,
+              height: size,
+              objectFit: 'contain',
+              display: 'block',
+            }}
+          />
+        )
       }
     >
       <MascotScene3DLazy

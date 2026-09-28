@@ -1,7 +1,18 @@
 // PracticeScreen — mockup screen 6, Tab 3 "Practicar": pronunciation practice.
-// Mic button uses the Web Speech API; falls back to listen-and-repeat audio
-// when speech recognition is unavailable.
-import { useEffect, useMemo, useRef, useState } from 'react';
+//
+// Mic input has THREE modes (iPhone fix, 2026-09-29):
+//   1. 'sr'     — Web Speech recognition available: transcribe + score (as before).
+//   2. 'vad'    — iOS Safari has NO webkitSpeechRecognition, but DOES have
+//                 getUserMedia: voice-activity fallback. Tap the mic ->
+//                 AnalyserNode watches real voice volume, the mic animates
+//                 while listening, speech-then-silence ends the take ->
+//                 encouraging Myanmar-first feedback + the phrase stays
+//                 revealed for self-comparison (unscored).
+//   3. 'manual' — no mic at all: "repeat aloud, then tap ✓" self-practice.
+// The mic button is NEVER dead. Permission denial shows short Myanmar-first
+// instructions for enabling the microphone on iPhone.
+
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { X, Mic, Volume2 } from 'lucide-react';
 import type { GoFn, NavParams } from '../routes';
 import type { TopicId, Phrase } from '../types';
@@ -13,6 +24,8 @@ import {
 } from './w3-shared';
 
 type Verdict = { ok: boolean; heard: string } | null;
+type MicMode = 'sr' | 'vad' | 'manual';
+type VadPhase = 'idle' | 'starting' | 'listening' | 'done';
 
 function normalize(s: string): string {
   return s.toLowerCase().replace(/[.,!?'“”"’-]/g, '').replace(/\s+/g, ' ').trim();
@@ -23,6 +36,12 @@ function matchesSpoken(phraseEn: string, transcript: string): boolean {
   const t = normalize(transcript);
   if (!p || !t) return false;
   return t.includes(p) || p.includes(t);
+}
+
+interface VadHandle {
+  stream: MediaStream;
+  ctx: AudioContext;
+  raf: number;
 }
 
 export default function PracticeScreen({ go, params }: { go: GoFn; params?: NavParams }) {
@@ -39,11 +58,61 @@ export default function PracticeScreen({ go, params }: { go: GoFn; params?: NavP
   const [error, setError] = useState<string | null>(null);
   const recogRef = useRef<any>(null);
 
+  // --- mic mode detection (runs once; feature-detect, no UA sniffing) ---
+  const mode: MicMode = useMemo(() => {
+    if (typeof window === 'undefined') return 'manual';
+    const w = window as any;
+    if (w.SpeechRecognition || w.webkitSpeechRecognition) return 'sr';
+    if (navigator.mediaDevices && typeof navigator.mediaDevices.getUserMedia === 'function') {
+      return 'vad';
+    }
+    return 'manual';
+  }, []);
   const SR: any =
     typeof window !== 'undefined'
       ? (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition
       : null;
-  const supported = !!SR;
+
+  // --- voice-activity fallback state (iOS) ---
+  const [vadPhase, setVadPhase] = useState<VadPhase>('idle');
+  const [vadDenied, setVadDenied] = useState(false);
+  const [vadHeard, setVadHeard] = useState(false);
+  const [selfDone, setSelfDone] = useState(false);
+  const vadRef = useRef<VadHandle | null>(null);
+  const vadBusyRef = useRef(false);
+  const meterRef = useRef<HTMLDivElement>(null);
+
+  const stopVad = useCallback(() => {
+    const v = vadRef.current;
+    vadRef.current = null;
+    if (v) {
+      try {
+        cancelAnimationFrame(v.raf);
+      } catch {
+        /* ignore */
+      }
+      try {
+        v.stream.getTracks().forEach((t) => t.stop());
+      } catch {
+        /* ignore */
+      }
+      try {
+        void v.ctx.close();
+      } catch {
+        /* ignore */
+      }
+    }
+    if (meterRef.current) meterRef.current.style.transform = 'scaleX(0)';
+  }, []);
+
+  const finishVad = useCallback(
+    (heard: boolean) => {
+      stopVad();
+      setVadHeard(heard);
+      setVadPhase('done');
+    },
+    [stopVad],
+  );
 
   useEffect(() => {
     return () => {
@@ -52,17 +121,24 @@ export default function PracticeScreen({ go, params }: { go: GoFn; params?: NavP
       } catch {
         /* ignore */
       }
+      stopVad();
     };
-  }, []);
+  }, [stopVad]);
 
   const nextPhrase = () => {
+    stopVad();
     setVerdict(null);
     setError(null);
+    setVadPhase('idle');
+    setVadDenied(false);
+    setVadHeard(false);
+    setSelfDone(false);
+    setListening(false);
     setPos((p) => p + 1);
   };
 
   const startListening = () => {
-    if (!supported) return;
+    if (mode !== 'sr' || !SR) return;
     setError(null);
     setVerdict(null);
     try {
@@ -94,6 +170,102 @@ export default function PracticeScreen({ go, params }: { go: GoFn; params?: NavP
       setListening(false);
     }
   };
+
+  /**
+   * iOS voice-activity fallback: no speech recognition on iPhone Safari, so
+   * we detect REAL voice volume via getUserMedia + AnalyserNode instead of
+   * transcribing. Speech-then-silence ends the take -> encouraging feedback
+   * (unscored) + the phrase stays revealed for self-comparison.
+   *
+   * getUserMedia is called synchronously in the tap's async function (user
+   * activation present) — the iOS permission prompt works. No speak() here,
+   * so the AUDIO_CONTRACT is untouched.
+   */
+  const startVad = async () => {
+    if (vadBusyRef.current || vadRef.current) return;
+    vadBusyRef.current = true;
+    setError(null);
+    setVadDenied(false);
+    setVadHeard(false);
+    setVadPhase('starting');
+    try {
+      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      const AC =
+        window.AudioContext || (window as any).webkitAudioContext;
+      const ctx: AudioContext = new AC();
+      if (ctx.state === 'suspended') {
+        try {
+          await ctx.resume();
+        } catch {
+          /* ignore */
+        }
+      }
+      const src = ctx.createMediaStreamSource(stream);
+      const analyser = ctx.createAnalyser();
+      analyser.fftSize = 512;
+      src.connect(analyser);
+      const buf = new Uint8Array(analyser.fftSize);
+      const THRESH = 0.09; // voice RMS threshold
+      const SILENCE_MS = 1400; // end take after this much silence once heard
+      const MAX_MS = 20000; // hard cap per take
+      const t0 = Date.now();
+      let heard = false;
+      let lastLoud = 0;
+      const loop = () => {
+        analyser.getByteTimeDomainData(buf);
+        let sum = 0;
+        for (let i = 0; i < buf.length; i++) {
+          const v = (buf[i] - 128) / 128;
+          sum += v * v;
+        }
+        const rms = Math.sqrt(sum / buf.length);
+        // Live volume meter via direct DOM write (no re-render at 60fps).
+        if (meterRef.current) {
+          meterRef.current.style.transform = `scaleX(${Math.min(1, rms * 5).toFixed(3)})`;
+        }
+        const now = Date.now();
+        if (rms > THRESH) {
+          heard = true;
+          lastLoud = now;
+        }
+        if (heard && now - lastLoud > SILENCE_MS) {
+          finishVad(true);
+          return;
+        }
+        if (now - t0 > MAX_MS) {
+          finishVad(heard);
+          return;
+        }
+        const raf = requestAnimationFrame(loop);
+        if (vadRef.current) vadRef.current.raf = raf;
+      };
+      vadRef.current = { stream, ctx, raf: requestAnimationFrame(loop) };
+      setVadPhase('listening');
+    } catch (e: any) {
+      if (e && (e.name === 'NotAllowedError' || e.name === 'SecurityError')) {
+        setVadDenied(true);
+      } else {
+        setError('မိုက်ခရိုဖုန်း ဖွင့်လို့ မရခဲ့ဘူး — ထပ်စမ်းကြည့်ပါ');
+      }
+      setVadPhase('idle');
+    } finally {
+      vadBusyRef.current = false;
+    }
+  };
+
+  const micBusy = mode === 'sr' ? listening : vadPhase === 'starting' || vadPhase === 'listening';
+  const micLabel =
+    mode === 'vad'
+      ? vadPhase === 'starting'
+        ? 'မိုက်ခရိုဖုန်း ဖွင့်နေတယ်…'
+        : vadPhase === 'listening'
+          ? 'နားထောင်နေတယ်… ပြောပါ!'
+          : vadPhase === 'done'
+            ? 'ပြီးပြီ! 🎉'
+            : 'ဖမ်းရန် နှိပ်ပါ'
+      : listening
+        ? 'နားထောင်နေတယ်… ပြောပါ!'
+        : 'ဖမ်းရန် နှိပ်ပါ';
 
   return (
     <Screen>
@@ -161,55 +333,114 @@ export default function PracticeScreen({ go, params }: { go: GoFn; params?: NavP
         </button>
       </Card>
 
-      <div
-        style={{
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          margin: '22px 0 8px',
-        }}
-      >
-        <button
-          type="button"
-          onClick={startListening}
-          disabled={!supported || listening}
-          aria-label="အသံဖမ်းရန်"
+      {/* mic area: live in SR and iOS voice-activity modes */}
+      {(mode === 'sr' || mode === 'vad') && (
+        <div
           style={{
-            width: 84,
-            height: 84,
-            borderRadius: '50%',
-            border: 'none',
-            background: supported ? C.orange : '#D8CCB6',
-            borderBottom: `5px solid ${supported ? C.orangeDark : '#B9A98F'}`,
-            color: '#fff',
             display: 'flex',
+            flexDirection: 'column',
             alignItems: 'center',
-            justifyContent: 'center',
-            cursor: supported && !listening ? 'pointer' : 'default',
-            boxShadow: '0 10px 24px rgba(255,183,77,0.45)',
-            animation: listening ? 'w3-pulse 1s ease-in-out infinite' : undefined,
-            opacity: supported ? 1 : 0.7,
+            margin: '22px 0 8px',
           }}
         >
-          <Mic size={36} />
-        </button>
-        <div style={{ marginTop: 10, fontSize: 14, fontWeight: 700, color: C.text }}>
-          {listening ? 'နားထောင်နေတယ်… ပြောပါ!' : 'ဖမ်းရန် နှိပ်ပါ'}
-        </div>
-      </div>
-
-      {!supported && (
-        <Card style={{ marginTop: 12, background: '#FFF6D6' }}>
-          <div style={{ fontSize: 15, color: C.text, lineHeight: 1.6, marginBottom: 12 }}>
-            သင့်ဘရောက်ဇာမှာ အသံဖမ်းစနစ် မရနိုင်ပါ — အသံနားထောင်ပြီး လိုက်ပြောပြီး လေ့ကျင့်ပါ
+          <button
+            type="button"
+            onClick={mode === 'sr' ? startListening : startVad}
+            disabled={micBusy}
+            aria-label="အသံဖမ်းရန်"
+            style={{
+              width: 84,
+              height: 84,
+              borderRadius: '50%',
+              border: 'none',
+              background: C.orange,
+              borderBottom: `5px solid ${C.orangeDark}`,
+              color: '#fff',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              cursor: micBusy ? 'default' : 'pointer',
+              boxShadow: '0 10px 24px rgba(255,183,77,0.45)',
+              animation: micBusy ? 'w3-pulse 1s ease-in-out infinite' : undefined,
+            }}
+          >
+            <Mic size={36} />
+          </button>
+          <div style={{ marginTop: 10, fontSize: 14, fontWeight: 700, color: C.text }}>
+            {micLabel}
           </div>
-          <PillButton color="orange" onClick={() => speak(phrase.en, { slow: true })}>
-            <span style={{ display: 'inline-flex', alignItems: 'center', gap: 8 }}>
-              <Volume2 size={20} />
-              အသံနားထောင်ပြီး လိုက်ပြောပါ
-            </span>
+          {mode === 'vad' && vadPhase === 'listening' && (
+            <div className="vad-meter" aria-hidden="true">
+              <div ref={meterRef} className="vad-meter-fill" />
+            </div>
+          )}
+        </div>
+      )}
+
+      {/* iOS voice-activity result: encouraging + phrase stays revealed above
+          for self-comparison (unscored — we can't transcribe without SR) */}
+      {mode === 'vad' && vadPhase === 'done' && (
+        <div style={{ marginTop: 12 }}>
+          <FeedbackStrip
+            ok={vadHeard}
+            title={vadHeard ? 'တော်လိုက်တာ! 🎉' : 'အသံမကြားလိုက်ရဘူး'}
+            sub={
+              vadHeard
+                ? 'စာကြောင်းနဲ့ ယှဉ်ကြည့်ပါ ✓ — “' + phrase.en + '”'
+                : 'ထပ်ကြိုးစားကြည့်ပါ — မိုက်ခရိုဖုန်းနား ကပ်ပြောပါ'
+            }
+          />
+          <div style={{ marginTop: 10, display: 'flex', justifyContent: 'center' }}>
+            <PillButton color="orange" onClick={() => { setVadPhase('idle'); setVadDenied(false); }}>
+              ထပ်ပြောမယ်
+            </PillButton>
+          </div>
+        </div>
+      )}
+
+      {/* mic permission denied: short Myanmar-first iPhone instructions */}
+      {mode === 'vad' && vadDenied && (
+        <Card style={{ marginTop: 12, background: '#FFF6D6' }}>
+          <div style={{ fontSize: 16, fontWeight: 700, color: C.title, marginBottom: 8 }}>
+            🎤 မိုက်ခရိုဖုန်း ခွင့်ပြုချက် လိုအပ်ပါတယ်
+          </div>
+          <div style={{ fontSize: 14, color: C.text, lineHeight: 1.7, marginBottom: 12 }}>
+            iPhone Settings → Safari → Microphone ကို Allow လုပ်ပေးပါ။
+            ပြီးရင် ဒီစာမျက်နှာကို ပြန်ဖွင့်ပြီး ထပ်စမ်းပါ။
+          </div>
+          <PillButton color="orange" onClick={startVad}>
+            ထပ်စမ်းမယ်
           </PillButton>
         </Card>
+      )}
+
+      {/* manual mode: no mic hardware at all — repeat aloud, then tap ✓ */}
+      {mode === 'manual' && (
+        <Card style={{ marginTop: 12, background: '#FFF6D6' }}>
+          <div style={{ fontSize: 15, color: C.text, lineHeight: 1.6, marginBottom: 12 }}>
+            သင့်ဖုန်းမှာ အသံဖမ်းစနစ် မရနိုင်ပါ — အသံနားထောင်ပြီး လိုက်ပြောပါ၊ ပြီးရင် ✓ နှိပ်ပါ
+          </div>
+          <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
+            <PillButton color="orange" onClick={() => speak(phrase.en, { slow: true })}>
+              <span style={{ display: 'inline-flex', alignItems: 'center', gap: 8 }}>
+                <Volume2 size={20} />
+                အသံနားထောင်ပြီး လိုက်ပြောပါ
+              </span>
+            </PillButton>
+            <PillButton color="green" onClick={() => setSelfDone(true)}>
+              ✓ ပြောပြီးပြီ
+            </PillButton>
+          </div>
+        </Card>
+      )}
+      {mode === 'manual' && selfDone && (
+        <div style={{ marginTop: 12 }}>
+          <FeedbackStrip
+            ok
+            title="တော်လိုက်တာ! 🎉"
+            sub="နောက်စာကြောင်းကို ဆက်လေ့ကျင့်ပါ"
+          />
+        </div>
       )}
 
       {error && (

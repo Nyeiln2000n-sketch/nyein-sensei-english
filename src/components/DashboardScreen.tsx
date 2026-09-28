@@ -18,20 +18,16 @@ export default function DashboardScreen({ go }: { go: GoFn; params?: NavParams }
 
   return (
     <Screen>
-      {/* header: avatar + title + stat pills */}
+      {/* header: floating cat (no chip bg — transparent float) + title + stat pills */}
       <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
         <div
           style={{
             width: 46,
             height: 46,
-            borderRadius: '50%',
-            background: '#FFEFD6',
-            overflow: 'hidden',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
             flexShrink: 0,
-            boxShadow: '0 4px 12px rgba(190, 130, 60, 0.15)',
           }}
         >
           <MascotScene3D pose="wave" size={44} />
@@ -40,7 +36,7 @@ export default function DashboardScreen({ go }: { go: GoFn; params?: NavParams }
           Nyein Sensei English
         </div>
         <div style={{ marginLeft: 'auto', display: 'flex', gap: 8 }}>
-          <StatPill emoji="🔥" value={streak} />
+          <StatPill emoji={<span className="flame-pulse">🔥</span>} value={streak} />
           <StatPill emoji="💎" value={gems} />
         </div>
       </div>
@@ -110,6 +106,9 @@ export default function DashboardScreen({ go }: { go: GoFn; params?: NavParams }
         subtitle="ရိုးရှင်းသော ဖွဲ့စည်းပုံများ"
         onClick={() => go('quiz', { mode: 'grammar' })}
       />
+
+      {/* keeps the last row clear of the floating tab bar */}
+      <div className="tab-pad-end" aria-hidden="true" />
     </Screen>
   );
 }

@@ -41,7 +41,9 @@ export default function ProfileScreen({ go, params }: { go: GoFn; params?: NavPa
       await signOut();
     } finally {
       setLeaving(false);
-      go('splash');
+      // Mandatory login: after sign-out the user only ever sees the Auth
+      // screen (App's auth gate also enforces this).
+      go('auth');
     }
   }
 
@@ -57,7 +59,7 @@ export default function ProfileScreen({ go, params }: { go: GoFn; params?: NavPa
         <span className="w4-chip" style={{ marginTop: 8 }}>အဆင့် {level}</span>
 
         <div className="w4-profile-stats">
-          <span className="w4-pstat">🔥 {streak} ရက်</span>
+          <span className="w4-pstat"><span className="flame-pulse">🔥</span> {streak} ရက်</span>
           <span className="w4-pstat">💎 {gems} စိန်</span>
           <span className="w4-pstat">🏆 အဆင့် {rank}</span>
         </div>
@@ -138,6 +140,8 @@ export default function ProfileScreen({ go, params }: { go: GoFn; params?: NavPa
         </div>
       )}
       </W4ErrorBoundary>
+      {/* keeps the last row clear of the floating tab bar */}
+      <div className="tab-pad-end" aria-hidden="true" />
     </Screen>
   );
 }

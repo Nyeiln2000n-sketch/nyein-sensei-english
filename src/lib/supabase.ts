@@ -1,15 +1,18 @@
-// Supabase client with graceful localStorage fallback.
+// Supabase REST client with graceful localStorage fallback.
 //
-// When VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY are configured, progress
-// is synced to Supabase (see supabase/schema.sql). When they are absent —
-// e.g. local dev or a plain static deploy — every call below becomes a safe
-// no-op and the app keeps working fully offline on localStorage.
+// Uses the Supabase REST API directly via fetch so the app has zero extra
+// dependencies. URL/ANON_KEY resolution: build-time globals injected by
+// vite.config.ts `define` (mapped from VITE_SUPABASE_* or the Supabase Vercel
+// integration's SUPABASE_* names), falling back to import.meta.env.
 //
-// NOTE: this uses the Supabase REST API directly via fetch so the app has
-// zero extra dependencies. `npm i @supabase/supabase-js` any time for the
-// official client; the table/RLS contract stays the same.
+// NOTE: the device_id-based sync from the old schema is gone — cloud save
+// now lives in src/lib/cloudSync.ts against the per-user contract:
+//   profiles(id uuid PK = auth.users.id, xp, gems, streak, level, last_active, updated_at)
+//   lesson_completions(user_id, lesson_id, score, completed_at)
+//   vocabulary_stats(user_id, word_key, correct, wrong)
+//   progress(user_id, word_key, known, reps)
+// See supabase/schema.sql.
 
-import type { LessonResult, Progress } from '../types';
 import { getAccessToken } from './auth';
 
 // Build-time globals injected by vite.config.ts `define` (mapped from
@@ -26,83 +29,46 @@ const ANON_KEY = (__SUPABASE_ANON_KEY__ ||
 
 export const supabaseEnabled = Boolean(URL && ANON_KEY);
 
-function deviceId(): string {
-  const KEY = 'nyein-sensei-device-id';
-  let id = localStorage.getItem(KEY);
-  if (!id) {
-    id = `dev_${Math.random().toString(36).slice(2)}${Date.now().toString(36)}`;
-    try {
-      localStorage.setItem(KEY, id);
-    } catch {
-      /* ignore */
-    }
+/** Error thrown when the HTTP layer itself fails (offline / DNS / CORS). */
+export class SupabaseNetworkError extends Error {
+  endpoint: string;
+  constructor(endpoint: string, message: string) {
+    super(message);
+    this.name = 'SupabaseNetworkError';
+    this.endpoint = endpoint;
   }
-  return id;
 }
 
-async function rest(path: string, init: RequestInit = {}): Promise<Response | null> {
-  if (!supabaseEnabled) return null;
+/**
+ * Authenticated PostgREST call. Uses the session Bearer token when signed in
+ * (so RLS sees auth.uid()), otherwise the anon key.
+ *
+ * Returns the raw Response — the caller inspects res.ok / res.status so RLS
+ * denials (403) and other failures stay visible. Throws SupabaseNetworkError
+ * only when the request never reached the server (offline).
+ */
+export async function supabaseRest(path: string, init: RequestInit = {}): Promise<Response> {
+  if (!supabaseEnabled) {
+    throw new SupabaseNetworkError(path, 'Supabase ကို မချိတ်ဆက်ရသေးပါ။');
+  }
+  const token = getAccessToken() ?? (ANON_KEY as string);
   try {
-    // When the user is signed in, use their session access token so RLS
-    // policies see the authenticated user; otherwise fall back to the anon key.
-    const token = getAccessToken() ?? (ANON_KEY as string);
     return await fetch(`${URL}/rest/v1/${path}`, {
       ...init,
       headers: {
         apikey: ANON_KEY as string,
         Authorization: `Bearer ${token}`,
         'Content-Type': 'application/json',
-        // resolution=merge-duplicates: upsert on conflict (device_id / profile_id).
-        // return=representation: PostgREST returns the upserted row so we can
-        // read the profile id — without this the response body is empty.
+        // resolution=merge-duplicates: upsert on conflict.
+        // return=representation: PostgREST returns the written rows.
         Prefer: 'resolution=merge-duplicates,return=representation',
         ...(init.headers ?? {}),
       },
     });
-  } catch {
-    return null; // offline — stay silent, localStorage remains source of truth
-  }
-}
-
-/** Best-effort sync of aggregate progress + one lesson completion. */
-export async function syncProgressToSupabase(progress: Progress, lesson?: LessonResult): Promise<void> {
-  if (!supabaseEnabled) return;
-
-  // Upsert profile row for this device.
-  const profileRes = await rest('profiles', {
-    method: 'POST',
-    body: JSON.stringify({ device_id: deviceId() }),
-  });
-  if (!profileRes || !profileRes.ok) return;
-  const profiles = (await profileRes.json()) as Array<{ id: string }>;
-  const profileId = profiles[0]?.id;
-  if (!profileId) return;
-
-  await rest('progress', {
-    method: 'POST',
-    body: JSON.stringify({
-      profile_id: profileId,
-      xp: progress.xp,
-      streak_days: progress.streakDays,
-      last_active_date: progress.lastActiveDate,
-      best_combo: progress.bestCombo,
-      total_correct: progress.totalCorrect,
-      total_answered: progress.totalAnswered,
-    }),
-  });
-
-  if (lesson) {
-    await rest('lesson_completions', {
-      method: 'POST',
-      body: JSON.stringify({
-        profile_id: profileId,
-        topic_id: lesson.topicId,
-        lesson_index: lesson.lessonIndex,
-        difficulty: lesson.difficulty,
-        score: lesson.score,
-        total: lesson.total,
-        xp_earned: lesson.xpEarned,
-      }),
-    });
+  } catch (err) {
+    throw new SupabaseNetworkError(
+      path,
+      err instanceof Error ? err.message : 'အင်တာနက် ချိတ်ဆက်မှု မရပါ။',
+    );
   }
 }

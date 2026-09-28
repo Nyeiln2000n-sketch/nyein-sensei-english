@@ -21,6 +21,14 @@ export const topics: Topic[] = [
   { id: 'animals', nameMy: 'တိရစ္ဆာန်', nameEn: 'Animals', icon: '🐘', color: '#ffd6a5' },
   { id: 'time', nameMy: 'အချိန်', nameEn: 'Time', icon: '⏰', color: '#d0bfff' },
   { id: 'weather', nameMy: 'ရာသီဥတု', nameEn: 'Weather', icon: '🌤️', color: '#a5d8ff' },
+  { id: 'restaurant', nameMy: 'စားသောက်ဆိုင်', nameEn: 'Restaurant', icon: '🍽️', color: '#e8590c' },
+  { id: 'airport', nameMy: 'လေဆိပ်နှင့် ဟိုတယ်', nameEn: 'Airport & Hotel', icon: '🛫', color: '#1971c2' },
+  { id: 'office', nameMy: 'ရုံးလုပ်ငန်း', nameEn: 'Office & Meetings', icon: '🏢', color: '#5f3dc4' },
+  { id: 'doctor', nameMy: 'ဆရာဝန်နှင့် ဆေးဆိုင်', nameEn: 'Doctor & Pharmacy', icon: '🩺', color: '#0c8599' },
+  { id: 'computer', nameMy: 'ကွန်ပျူတာနှင့် အင်တာနက်', nameEn: 'Computers & Internet', icon: '💻', color: '#7048e8' },
+  { id: 'market', nameMy: 'ဈေးနှင့်ဈေးဆစ်ခြင်း', nameEn: 'Market & Bargaining', icon: '🏪', color: '#d6336c' },
+  { id: 'seasons', nameMy: 'ရာသီများ', nameEn: 'Seasons & Climate', icon: '🍂', color: '#2f9e44' },
+  { id: 'personality', nameMy: 'စရိုက်လက္ခဏာ', nameEn: 'Personality', icon: '🌟', color: '#f08c00' },
 ];
 
 /** Backwards-compatible alias. */

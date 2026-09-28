@@ -143,6 +143,8 @@ export default function AchievementsScreen({ go, params }: { go: GoFn; params?: 
         </>
       )}
       </W4ErrorBoundary>
+      {/* keeps the last row clear of the floating tab bar */}
+      <div className="tab-pad-end" aria-hidden="true" />
     </Screen>
   );
 }
