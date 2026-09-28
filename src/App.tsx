@@ -99,6 +99,41 @@ export default function App() {
 
   const route = stack[stack.length - 1];
 
+  // Owner order: EVERY page opens from the very top on EVERY navigation —
+  // tab taps, pushed full-screen flows (quiz, vocab, practice, lesson
+  // complete), back navigation, and splash dismissal. Previously the reset
+  // only fired on tab taps, so entering a flow preserved the previous
+  // screen's scroll offset and the new page could open mid-page or with its
+  // header visually cut off. Keyed on `tick`, which bumps on every single
+  // navigation (go / popOrExit / dismissSplash).
+  useEffect(() => {
+    // Manual restoration: the browser must never "helpfully" restore a stale
+    // scroll offset on popstate inside the SPA.
+    try {
+      if ('scrollRestoration' in window.history) window.history.scrollRestoration = 'manual';
+    } catch {
+      /* ignore */
+    }
+    const reset = () => {
+      try {
+        window.scrollTo(0, 0);
+        document.documentElement.scrollTop = 0;
+        const body = document.body as HTMLElement | null;
+        if (body) body.scrollTop = 0;
+      } catch {
+        /* ignore */
+      }
+    };
+    reset();
+    // iOS Safari can apply/restore scroll asynchronously after the route
+    // renders; a second pass on the next frame wins that race.
+    const raf = requestAnimationFrame(() => {
+      reset();
+    });
+    return () => cancelAnimationFrame(raf);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [tick]);
+
   // Mandatory-auth gate (owner order): login is required — a signed-out user
   // only ever sees Splash + Auth. Any protected route without a session is
   // replaced with the Auth screen.
@@ -200,14 +235,8 @@ export default function App() {
           const cur = prev[prev.length - 1];
           const curTab = cur ? tabForRoute(cur.name) : null;
           if (curTab && curTab !== tabId) returnTabRef.current = curTab;
-          // Owner order: every tab switch returns the new tab to the very
-          // top — a tab never keeps another tab's scroll position, so the
-          // user never has to fix the view by hand.
-          try {
-            window.scrollTo(0, 0);
-          } catch {
-            /* ignore */
-          }
+          // Scroll reset is centralized in the route-change effect in App
+          // (fires on every navigation, not just tab taps).
           return [{ name, params }];
         }
         // Auth is a gate, not a stack: entering it replaces everything so
