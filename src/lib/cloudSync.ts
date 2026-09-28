@@ -268,6 +268,13 @@ export interface OutboxOp {
   id: string;
   ts: number;
   op: OutboxOpType;
+  /**
+   * Owner account id, stamped at enqueue time. flushOutbox() replays an op
+   * only when it matches the current session — a different user signing in
+   * on this device must never replay (or write) another user's queued
+   * mutations. Pre-upgrade ops have no stamp and are treated as foreign.
+   */
+  uid?: string;
   lesson_id?: string;
   score?: number;
   word_key?: string;
@@ -291,10 +298,13 @@ function writeOutbox(ops: OutboxOp[]): void {
   }
 }
 
-function enqueue(op: Omit<OutboxOp, 'id' | 'ts'>): void {
+function enqueue(op: Omit<OutboxOp, 'id' | 'ts' | 'uid'>): void {
   const ops = readOutbox();
   ops.push({
     ...op,
+    // Stamp the owner account: flushOutbox() drops ops whose uid doesn't
+    // match the current session, so cross-account replays are impossible.
+    uid: userId() ?? undefined,
     id: `op_${Date.now().toString(36)}_${Math.random().toString(36).slice(2, 8)}`,
     ts: Date.now(),
   });
@@ -557,14 +567,29 @@ async function replayOp(uid: string, op: OutboxOp): Promise<boolean> {
 /**
  * Replay the offline outbox in order. Runs on boot when signed in and on the
  * 'online' event. Ops that still fail stay queued; nothing is lost.
+ *
+ * Ops stamped with a different account's uid (or no stamp at all) are
+ * DROPPED, never replayed: replaying them would write one user's progress
+ * into another user's cloud rows. Their events remain in the local cache,
+ * and the sign-in merge re-derives word stats / profile / lesson backfill
+ * from it for the owning account, so dropping is lossless.
  */
 export async function flushOutbox(): Promise<void> {
   const uid = userId();
   if (!uid || !supabaseEnabled || !online()) return;
   const ops = readOutbox();
   if (ops.length === 0) return;
+  const mine = ops.filter((op) => op.uid === uid);
+  if (mine.length !== ops.length) {
+    console.warn(
+      `[cloudSync] flushOutbox: dropping ${ops.length - mine.length} outbox op(s) ` +
+        'owned by another account (or unstamped) — not replayed under this session',
+    );
+    writeOutbox(mine);
+  }
+  if (mine.length === 0) return;
   const remaining: OutboxOp[] = [];
-  for (const op of coalesceOps(ops)) {
+  for (const op of coalesceOps(mine)) {
     const ok = await replayOp(uid, op);
     if (!ok) remaining.push(op);
   }
@@ -594,8 +619,15 @@ function laterDate(a: string | null, b: string | null): string | null {
  * the cloud as the source of truth:
  *   xp / streak / gems / level → max(cloud, local)
  *   last_active → the later date
- *   lesson completions → per-lesson max (union), missing cloud rows backfilled
- *   word stats → sum(correct, wrong) per word
+ *   lesson completions → per-lesson max (union); missing cloud rows are
+ *     backfilled, EXCLUDING events that still sit in the outbox as
+ *     lesson_completion ops (flushOutbox replays those right after the merge —
+ *     backfilling them too would post every offline completion twice)
+ *   word stats → max(correct, wrong) per word. Both sides hold ABSOLUTE
+ *     totals (write-through keeps local == cloud after every successful
+ *     sync), so summing would double every counter on each sign-in.
+ * Only rows the merge actually changed are upserted — a steady-state sign-in
+ * sends no word-stat / word-progress / profile writes at all.
  * The merged result is written back to the local cache synchronously.
  */
 export async function migrateLocalToCloud(uid: string, cloud: CloudState): Promise<CloudState> {
@@ -611,30 +643,50 @@ export async function migrateLocalToCloud(uid: string, cloud: CloudState): Promi
 
   // Union of lesson completions (per-key max); backfill rows the cloud lacks
   // so the cloud stays a faithful source of truth afterwards.
+  //
+  // Offline completions live in TWO places: the local count (bumped
+  // synchronously by storage.markLessonComplete) AND one lesson_completion
+  // outbox op per event. flushOutbox() replays those ops right after this
+  // merge, so the backfill must exclude them — otherwise every offline
+  // completion is posted twice. Only ops owned by this session are excluded;
+  // foreign/unstamped ops are dropped by flushOutbox, so their events are
+  // covered here exactly once.
+  const pendingLessonOps: Record<string, number> = {};
+  for (const op of readOutbox()) {
+    if (op.op === 'lesson_completion' && op.uid === uid && op.lesson_id) {
+      pendingLessonOps[op.lesson_id] = (pendingLessonOps[op.lesson_id] ?? 0) + 1;
+    }
+  }
   const completions: Record<string, number> = { ...cloud.completions };
   for (const [key, count] of Object.entries(local.completedLessons ?? {})) {
     completions[key] = Math.max(completions[key] ?? 0, count);
   }
   for (const [key, count] of Object.entries(local.completedLessons ?? {})) {
-    const missing = count - (cloud.completions[key] ?? 0);
+    const missing = count - (cloud.completions[key] ?? 0) - (pendingLessonOps[key] ?? 0);
     for (let i = 0; i < missing; i++) {
       await postLessonCompletionRow(uid, key, 1);
     }
   }
 
-  // Word stats: sum correct/wrong per word, then upsert merged totals.
+  // Word stats: max() per counter, then upsert only the rows the merge
+  // actually changed. Summing here doubled every correct/wrong total on
+  // EVERY sign-in, because write-through keeps the local cache as absolute
+  // totals equal to the cloud after each successful sync.
   const wordStats: CloudState['wordStats'] = { ...cloud.wordStats };
   const localStats = getLocalWordStats();
   for (const [key, s] of Object.entries(localStats)) {
     const c = wordStats[key] ?? { correct: 0, wrong: 0 };
-    wordStats[key] = { correct: c.correct + s.correct, wrong: c.wrong + s.wrong };
+    wordStats[key] = { correct: Math.max(c.correct, s.correct), wrong: Math.max(c.wrong, s.wrong) };
   }
   for (const [key, s] of Object.entries(wordStats)) {
-    await upsertWordStat(uid, key, s.correct, s.wrong);
+    const c = cloud.wordStats[key];
+    if (!c || c.correct !== s.correct || c.wrong !== s.wrong) {
+      await upsertWordStat(uid, key, s.correct, s.wrong);
+    }
   }
   writeJsonMap(WORD_STATS_KEY, wordStats);
 
-  // Word progress: known = OR, reps = max.
+  // Word progress: known = OR, reps = max. Upsert only changed rows.
   const wordProgress: CloudState['wordProgress'] = { ...cloud.wordProgress };
   const localProg = getLocalWordProgress();
   for (const [key, w] of Object.entries(localProg)) {
@@ -642,19 +694,25 @@ export async function migrateLocalToCloud(uid: string, cloud: CloudState): Promi
     wordProgress[key] = { known: c.known || w.known, reps: Math.max(c.reps, w.reps) };
   }
   for (const [key, w] of Object.entries(wordProgress)) {
-    await upsertWordProgress(uid, key, w.known, w.reps);
+    const c = cloud.wordProgress[key];
+    if (!c || c.known !== w.known || c.reps !== w.reps) {
+      await upsertWordProgress(uid, key, w.known, w.reps);
+    }
   }
   writeJsonMap(WORD_PROGRESS_KEY, wordProgress);
 
-  // Merged profile → cloud, and back into the local cache synchronously.
+  // Merged profile → cloud (only fields the merge changed), and back into
+  // the local cache synchronously.
   lastKnownCloudGems = mergedProfile.gems;
-  await sendProfilePatch(uid, {
-    xp: mergedProfile.xp,
-    gems: mergedProfile.gems,
-    streak: mergedProfile.streak,
-    level: mergedProfile.level,
-    last_active: mergedProfile.lastActive,
-  });
+  const profileDelta: ProfilePatch = {};
+  if (mergedProfile.xp !== cloud.profile.xp) profileDelta.xp = mergedProfile.xp;
+  if (mergedProfile.gems !== cloud.profile.gems) profileDelta.gems = mergedProfile.gems;
+  if (mergedProfile.streak !== cloud.profile.streak) profileDelta.streak = mergedProfile.streak;
+  if (mergedProfile.level !== cloud.profile.level) profileDelta.level = mergedProfile.level;
+  if (mergedProfile.lastActive !== cloud.profile.lastActive) profileDelta.last_active = mergedProfile.lastActive;
+  if (Object.keys(profileDelta).length > 0) {
+    await sendProfilePatch(uid, profileDelta);
+  }
 
   const merged: Progress = {
     ...local,
@@ -733,6 +791,11 @@ export function endCloudSession(): void {
     clearTimeout(patchTimer);
     patchTimer = null;
   }
+  // Dropping the debounced patch here is NOT data loss: every queued patch
+  // was derived from the local cache, which storage.ts updates synchronously
+  // BEFORE queueProfilePatch() runs. The next sign-in merge takes
+  // max(cloud, local) over xp/gems/streak/level and the later last_active,
+  // so the same values are picked back up and persisted then.
   pendingPatch = {};
 }
 

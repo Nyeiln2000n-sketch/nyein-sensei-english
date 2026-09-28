@@ -14,12 +14,12 @@
 // CLOUD-SYNC WORKER: pass onVerifyKey={verifySignupLicense} from App.tsx
 // (imported from src/lib/auth.ts). No key is ever hardcoded client-side.
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import type { FormEvent } from 'react';
 import type { GoFn, NavParams } from '../routes';
 import MascotScene3D from '../components/Mascot3D';
 import { PillButton, Screen } from '../components/ui';
-import { getSession, signIn, signUp } from '../lib/auth';
+import { consumeSessionExpiredNotice, getSession, signIn, signUp } from '../lib/auth';
 import './w4.css';
 import { W4ErrorBoundary } from './w4error';
 
@@ -52,6 +52,14 @@ export default function AuthScreen({ go, params, onVerifyKey }: AuthScreenProps)
 
   const isSignin = mode === 'signin';
   const authed = !!getSession();
+
+  // S-002: one-shot "session expired" notice — set in auth.ts when the
+  // refresh token died server-side (dead session forced a re-login). Shown
+  // once, Myanmar-first.
+  const [expiredNotice, setExpiredNotice] = useState(false);
+  useEffect(() => {
+    if (consumeSessionExpiredNotice()) setExpiredNotice(true);
+  }, []);
 
   function switchMode(next: 'signin' | 'signup') {
     setMode(next);
@@ -127,6 +135,12 @@ export default function AuthScreen({ go, params, onVerifyKey }: AuthScreenProps)
           {isSignin ? 'ပြန်လည်ကြိုဆိုပါတယ်! 👋' : 'အကောင့်အသစ် ဖွင့်လိုက်ပါ 🎉'}
         </div>
       </div>
+
+      {expiredNotice && (
+        <p className="w4-err" role="status">
+          ⏰ သင့်လက်မှတ်သက်တမ်း ကုန်သွားပါပြီ။ ထပ်မံဝင်ရောက်ပေးပါ။
+        </p>
+      )}
 
       {/* ---------- SIGNUP STEP 1: license key ---------- */}
       {!isSignin && keyStep === 'key' && (

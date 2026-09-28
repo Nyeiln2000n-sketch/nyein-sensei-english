@@ -88,6 +88,14 @@ export default function App() {
   /** Swallows the popstate fired by our own in-app history.back(). */
   const swallowPop = useRef(false);
   const prevRouteRef = useRef<RouteName>('splash');
+  /**
+   * S-002: resolves only after the cold-start token refresh (when needed)
+   * settles. dismissSplash waits for it before choosing Home vs Auth, so a
+   * stale persisted session can never flash the Home screen — even when the
+   * user tap-skips the splash before the refresh finishes. Resolved
+   * immediately when there is no persisted session.
+   */
+  const bootAuthCheckRef = useRef<Promise<void> | null>(null);
 
   // Session logic: subscribe to auth changes and keep the current email in
   // state. Screens own their own copy needs via ../lib/auth; this
@@ -105,10 +113,20 @@ export default function App() {
 
   useEffect(() => {
     // Cold start: a persisted session from a previous visit resumes here.
+    // The boot auth check resolves after the (possibly needed) token refresh
+    // settles — dismissSplash waits for it so a dead-but-persisted session
+    // routes to Auth instead of flashing Home. A dead refresh token clears
+    // the session inside refreshSession(), firing the auth listener below.
     if (getSession()) {
-      void ensureFreshAccessToken().then((token) => {
-        if (token) void initCloudSession();
-      });
+      bootAuthCheckRef.current = ensureFreshAccessToken()
+        .then((token) => {
+          if (token) void initCloudSession();
+        })
+        .catch(() => {
+          /* ensureFreshAccessToken never throws for auth reasons; defensive */
+        });
+    } else {
+      bootAuthCheckRef.current = Promise.resolve();
     }
     return onAuthChange((s) => {
       const nowAuthed = s !== null;
@@ -213,7 +231,14 @@ export default function App() {
 
   /** Splash dismissal: replaces the whole stack (never pushes), so in-app
    *  back-navigation can never re-trigger the splash. Destination follows
-   *  the mandatory-auth flow: valid session ? Home : Auth. */
+   *  the mandatory-auth flow: valid session ? Home : Auth.
+   *
+   *  S-002: with no explicit `next`, the decision waits for the cold-start
+   *  auth check (bootAuthCheckRef) — a stale persisted session whose refresh
+   *  is still in flight (or just died) must not route to Home on stale
+   *  getSession() data. The splash simply holds a little longer; the usual
+   *  case resolves well inside the 2.2s branded hold. An explicit `next`
+   *  (e.g. the splash login link → Auth) navigates immediately. */
   const dismissSplash = useCallback((next?: RouteName) => {
     coldSplashDone = true;
     try {
@@ -221,9 +246,17 @@ export default function App() {
     } catch {
       /* ignore */
     }
-    const dest: RouteName = next ?? (getSession() ? 'home' : 'auth');
-    setStack([{ name: dest }]);
-    setTick((t) => t + 1);
+    const decide = () => {
+      const dest: RouteName = next ?? (getSession() ? 'home' : 'auth');
+      setStack([{ name: dest }]);
+      setTick((t) => t + 1);
+    };
+    const pending = next ? null : bootAuthCheckRef.current;
+    if (pending) {
+      void pending.then(decide);
+    } else {
+      decide();
+    }
   }, []);
 
   const go: GoFn = useCallback(

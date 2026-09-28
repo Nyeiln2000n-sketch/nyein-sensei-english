@@ -126,8 +126,12 @@ export async function signOut(): Promise<void> {
   const session = getSession();
   if (URL && ANON_KEY && session?.access_token) {
     try {
+      // Best-effort: never let a hanging logout request block local clear.
+      // (AbortSignal.timeout missing on very old browsers throws — caught
+      // below, local clear still runs.)
       await fetch(`${URL}/auth/v1/logout`, {
         method: 'POST',
+        signal: AbortSignal.timeout(8000),
         headers: {
           apikey: ANON_KEY,
           Authorization: `Bearer ${session.access_token}`,
@@ -167,6 +171,31 @@ export function getAccessToken(): string | null {
 const REFRESH_SKEW_SEC = 60;
 let refreshInFlight: Promise<AuthSession | null> | null = null;
 
+// ---- Expired-session notice (S-002) ----
+//
+// When the server rejects the refresh token (dead session), the local
+// session is cleared and the auth gate routes to the Auth screen. This
+// transient one-shot flag lets the Auth screen explain WHY the user landed
+// there ("session expired — sign in again") instead of silently bouncing.
+// It is set ONLY for a server-rejected (dead) session, never for transient
+// network failures. Reading it clears it, so it can never show twice.
+let sessionExpiredNotice = false;
+
+/**
+ * One-shot read of the expired-session notice: returns true when the
+ * session died server-side since the last read, then clears the flag.
+ */
+export function consumeSessionExpiredNotice(): boolean {
+  const v = sessionExpiredNotice;
+  sessionExpiredNotice = false;
+  return v;
+}
+
+/** Flag that the session died server-side (dead refresh token). */
+function markSessionExpired(): void {
+  sessionExpiredNotice = true;
+}
+
 /** Exchange the refresh token for a new session. Clears the local session when the refresh token is dead. */
 export async function refreshSession(): Promise<AuthSession | null> {
   const session = getSession();
@@ -174,6 +203,7 @@ export async function refreshSession(): Promise<AuthSession | null> {
   if (!URL || !ANON_KEY || !refreshToken) {
     if (session && !refreshToken) {
       // No way to renew — the session is unusable; force a clean re-login.
+      markSessionExpired();
       clearLocal();
     }
     return null;
@@ -195,11 +225,13 @@ export async function refreshSession(): Promise<AuthSession | null> {
     }
     if (!res.ok) {
       // Refresh token rejected/expired — session is dead, force re-login.
+      markSessionExpired();
       clearLocal();
       return null;
     }
     const data = (await res.json().catch(() => null)) as AuthSession | null;
     if (!data?.access_token) {
+      markSessionExpired();
       clearLocal();
       return null;
     }

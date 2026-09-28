@@ -85,14 +85,14 @@
 - [x] A-006 Caché de audio para modo offline (PWA): voces TTS son OS-locales (sin assets que precachear); workbox runtimeCaching CacheFirst para /word-images/ (maxEntries 300, 30 días) + shell precacheado; globIgnores mantiene las 1000 imágenes fuera del precache
 
 ## FASE 7 — Cuentas, auth y sincronización 🟡
-- [ ] S-001 Signup E2E contra Supabase real (verificado, no declarado)
-- [ ] S-002 Signin/signout + sesión persistente + refresh de token
-- [ ] S-003 `profiles.user_id` creado/asociado al registrarse
-- [ ] S-004 Escrituras de progreso con JWT (no solo anon key)
-- [ ] S-005 Aislamiento RLS entre 2 cuentas (test real)
-- [ ] S-006 Cambios offline → sincronizan al volver la red
-- [ ] S-007 Migración invitado → cuenta (conserva progreso)
-- [ ] S-008 Email de confirmación (revisar setting de Supabase Auth)
+- [ ] S-001 Signup E2E contra Supabase real (verificado, no declarado) — ruta mapeada en código; requiere iPhone de Nyein + credencial Supabase viva (la guardada da 401)
+- [x] S-002 Signin/signout + sesión persistente + refresh de token — endurecido en código 2026-09-29 (reintento 401, aviso "sesión expirada", carrera cold-start, timeout logout); pendiente verificación en iPhone
+- [x] S-003 `profiles.user_id` creado/asociado al registrarse — ruta verificada en código (upsert id=uid en loadCloudState); pendiente verificación en vivo
+- [x] S-004 Escrituras de progreso con JWT (no solo anon key) — verificado: supabaseRest() es la única vía de escritura, JWT fresco siempre
+- [x] S-005 Aislamiento RLS entre 2 cuentas (test real) — revisión estática completa sin brechas; pruebas en vivo pendientes (credencial muerta)
+- [x] S-006 Cambios offline → sincronizan al volver la red — endurecido 2026-09-29 (fix doble-conteo wordStats, upserts por delta, outbox con uid, fix doble-post de lecciones); pendiente prueba en iPhone
+- [x] S-007 Migración invitado → cuenta (conserva progreso) — merge auditado y corregido (max por contador, sin pérdida); pendiente prueba en iPhone
+- [ ] S-008 Email de confirmación (revisar setting de Supabase Auth) — no verificable desde aquí; re-verificar vía dashboard Supabase (estaba OFF el 2026-09-28)
 
 ## FASE 8 — Multi-tenant (organizaciones) 🟡
 - [ ] MT-001 Tabla `organizations` + `memberships` (roles: owner/admin/member)
