@@ -1,0 +1,13 @@
+[2026-09-29 02:38:23 +07] publish-every-100.sh FAILED at push step (PUBLISHED_OK not reached)
+- images=870, last_published=109, delta=761 (>=100, publish attempted)
+- mapped: 519 (batch JSON mappings merged)
+- typecheck + build: OK (built in 18.28s; PWA precache 908 entries)
+- dedup-check: OK (1848 items indexed, no same-kind exact duplicates)
+- PUSH FAILED: 920 new/changed blobs uploaded, then GitHub API HTTP 422 on POST /git/trees:
+  "Sorry, your request timed out. It's likely that your input was too large to process.
+   Consider building the tree incrementally, or building the commits you need in a local
+   clone of the repository and then pushing them to GitHub."
+- Root cause: single git-tree API call too large (920 blobs in one tree). Next run's
+  publish-every-100.sh should build the tree incrementally or push via a local clone
+  (gh-push-dir). publish-state.json was NOT updated, so the delta stays >=100 and a
+  later run will retry. Nothing was published to production; staying silent to user.

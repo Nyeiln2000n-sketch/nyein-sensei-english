@@ -150,5 +150,24 @@
 - [x] R-011 Branding consistente (splash/auth/loaders/PWA) + paleta
 - [x] R-012 prefers-reduced-motion, 60fps (solo transform/opacity)
 
+## FASE 13 — Nivel Duolingo (dashboard premium + contenido masivo) 🟢 COMPLETADO (pendiente push + QA visual iPhone)
+- [x] D-001 Dashboard reconstruido según referencia: header (avatar, racha 🔥, gemas, campana), héroe con saludo por hora del día (myanmar), Nivel/XP bar (300 XP/nivel), carrusel "နေ့စဉ်သင်ခန်းစာ" snap + dots, 6 acciones rápidas (incl. nuevo စိန်ခေါ်မှု), tarjetas "ဒီနေ့ တိုးတက်မှု", cita motivacional rotativa — todo Myanmar-first
+- [x] D-002 Tab bar NATIVA iOS: full-width pegada abajo, hairline superior, blur nativo, safe-area-inset-bottom, 5 tabs ≥52px, sin pill flotante; scroll-to-top y fixes de viewport intactos
+- [x] D-003 Set mascota premium regenerado (6 PNG 1600px, estilo render 3D Pixar, mismo personaje: waving+winking héroe, celebrate, thinking, encourage, amazed, reading) — fondo transparente vía floodfill
+- [x] D-004 Animación `.cat-greet` enriquecida (jelly bounce 1.9s + sparkle burst) + llama de racha animada; respeta prefers-reduced-motion
+- [x] D-005 Dinamismo + a11y: haptics (navigator.vibrate guardado), aria-labels Myanmar, targets ≥44px auditados, inputs 16px, AUDIO_CONTRACT intacto, sin auto-speak nuevo
+- [x] C-011 320 frases nuevas (phrases-f.ts 200 A1→A2 + phrases-g.ts 120 A2→B1, con Myanmar) → 820 frases totales, cero repetición
+- [x] C-012 Bug crítico en tools/vectorize/index.py corregido (faltaba prefijo f en regex: el índice capturaba 0 palabras/frases y dedup-check pasaba en vacío) — ahora indexa 1848 items reales, verde
+- [x] J-013 NUEVO formato shadowing: escucha (tap-to-speak) + repite al mic con puntuación (sr/vad/manual, patrón PracticeScreen)
+- [x] J-014 NUEVO formato conversation: completa la conversación (elige la respuesta natural)
+- [x] J-015 NUEVO formato storyListen: micro-historia con audio por línea + comprensión
+- [x] J-016 NUEVO modo daily challenge: 60s contrarreloj con racha, entrada en dashboard; plantillas Fase 5 intactas
+- [x] W-001 Pipeline de imágenes por palabra: tools/word-images/ (slugify, optimize, README), WordImage.tsx (lazy + fallback tile con inicial, sin emoji), word-images.json
+- [x] W-002 1000/1000 palabras con imagen propia (flat vector, crema #FFF8F1, 320px, ≤60KB) — 4 workers en paralelo, batches mergeados, 0 PNG faltantes
+- [x] W-003 VocabScreen con imagen por palabra (flashcard + filas del diccionario de audio)
+- [ ] 3D-001 Caza del gato 3D premium con rig (puede saludar con pata) y licencia limpia — EN CURSO (Quaternius rechazado por Nyein; VERDICT.md desactualizado); solo previews en hidden_files, jamás integrar sin su aprobación
+- [ ] D-006 QA visual iPhone: dashboard, nuevos formatos, imágenes de palabras, tab bar nativa
+- [ ] W-004 Optimizar PWA: 1000 imágenes precacheadas = ~49MB — evaluar excluir word-images del precache SW (lazy network)
+
 ---
-**Total: 138 tareas.** Cada una = un enjambre que construye + verifica. El proyecto crece por oleadas, sin parar, sin repetir.
+**Total: 153 tareas.** Cada una = un enjambre que construye + verifica. El proyecto crece por oleadas, sin parar, sin repetir.

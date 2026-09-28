@@ -7,8 +7,8 @@
 // difficulty (harder templates + same-topic distractors after 2+ consecutive
 // correct; easier templates + mixed-topic distractors after a miss).
 // 'grammar' and 'phrases' modes keep their original fixed builders.
-import { useEffect, useMemo, useRef, useState } from 'react';
-import { X, Volume2 } from 'lucide-react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { X, Volume2, Mic } from 'lucide-react';
 import type { GoFn, NavParams } from '../routes';
 import type { TopicId, Level, Word, Phrase } from '../types';
 import { topicMeta, wordsByTopic, phrasesByTopic, allPhrases, allWords, sample } from '../data';
@@ -31,7 +31,11 @@ type Round =
   | { kind: 'story'; story: Phrase[]; testEn: string; shownMy: string; answer: boolean }
   | { kind: 'truefalse'; word: Word; shownMy: string; answer: boolean }
   | { kind: 'oddOneOut'; words: Word[]; intruder: Word }
-  | { kind: 'fillBlank'; phrase: Phrase; display: string; answer: string; options: string[] };
+  | { kind: 'fillBlank'; phrase: Phrase; display: string; answer: string; options: string[] }
+  | { kind: 'shadowing'; phrase: Phrase }
+  | { kind: 'conversation'; lines: Phrase[]; reply: Phrase; options: Phrase[] }
+  | { kind: 'storyListen'; story: Phrase[]; question: Phrase; answer: Phrase; options: Phrase[] }
+  | { kind: 'challenge'; inner: Round };
 
 type RoundKind = Round['kind'];
 
@@ -144,7 +148,7 @@ function makeQuizCtx(topic: TopicId, level: Level, seed: number): QuizCtx {
   };
 }
 
-const HARD_KINDS: ReadonlySet<string> = new Set(['order', 'dictation', 'dialogue', 'story']);
+const HARD_KINDS: ReadonlySet<string> = new Set(['order', 'dictation', 'dialogue', 'story', 'shadowing', 'conversation', 'storyListen']);
 const EASY_KINDS: ReadonlySet<string> = new Set(['quiz', 'truefalse', 'listening']);
 
 function orderablePhrases(ctx: QuizCtx): Phrase[] {
@@ -179,6 +183,10 @@ const canBuild: Record<RoundKind, (ctx: QuizCtx) => boolean> = {
   truefalse: (c) => c.words.length >= 1 && (c.allTopicWords.length >= 2 || c.easyWords.length >= 1),
   oddOneOut: (c) => c.allTopicWords.length >= 3 && c.easyWords.length >= 1,
   fillBlank: (c) => blankablePhrase(c) !== null,
+  shadowing: (c) => c.phrasePool.length >= 1,
+  conversation: (c) => c.topicPhrases.length >= 3,
+  storyListen: (c) => c.topicPhrases.length >= 4,
+  challenge: (c) => c.words.length >= 1,
 };
 
 function pickWord(ctx: QuizCtx): Word {
@@ -291,6 +299,34 @@ function makeRound(ctx: QuizCtx, kind: RoundKind, hard: boolean): Round | null {
       }
       return { kind, phrase: b.phrase, display: b.display, answer: b.answer, options: sampleR([b.answer, ...d], d.length + 1, ctx.rng) };
     }
+    case 'shadowing':
+      return { kind, phrase: sampleR(ctx.phrasePool, 1, ctx.rng)[0] };
+    case 'conversation': {
+      const lines = sampleR(ctx.topicPhrases, 2, ctx.rng);
+      const lineEns = new Set(lines.map((p) => p.en));
+      const reply = sampleR(ctx.topicPhrases.filter((p) => !lineEns.has(p.en)), 1, ctx.rng)[0];
+      const distract = sampleR(ctx.otherPhrases.filter((x) => x.en !== reply.en), 2, ctx.rng);
+      return { kind, lines, reply, options: sampleR([reply, ...distract], 3, ctx.rng) };
+    }
+    case 'storyListen': {
+      const story = sampleR(ctx.topicPhrases, 4, ctx.rng);
+      const answer = sampleR(story, 1, ctx.rng)[0];
+      const others = sampleR(ctx.otherPhrases.filter((x) => x.en !== answer.en), 3, ctx.rng);
+      const question: Phrase = {
+        en: 'Which sentence did you hear in the story?',
+        my: 'ဇာတ်လမ်းထဲမှာ ကြားခဲ့တဲ့စာကြောင်းကို ရွေးပါ',
+        topic: ctx.topic,
+      };
+      return { kind, story, question, answer, options: sampleR([answer, ...others], 4, ctx.rng) };
+    }
+    case 'challenge': {
+      // Timed streak mode wraps a fast single-answer template (never itself).
+      const inners: RoundKind[] = ['quiz', 'translation', 'listening', 'phraseChoice', 'truefalse'];
+      const ik = sampleR(inners, 1, ctx.rng)[0];
+      const inner = makeRound(ctx, ik, hard);
+      if (!inner) return null;
+      return { kind, inner };
+    }
   }
 }
 
@@ -307,7 +343,9 @@ function chooseKind(
   runLen: number,
   streak: number,
 ): RoundKind | null {
-  let cands = (Object.keys(canBuild) as RoundKind[]).filter((k) => canBuild[k](ctx));
+  // 'challenge' never appears in the normal adaptive mix — it has its own
+  // timed flow (DailyChallengeRun) launched with mode='challenge'.
+  let cands = (Object.keys(canBuild) as RoundKind[]).filter((k) => k !== 'challenge' && canBuild[k](ctx));
   if (cands.length === 0) return null;
   if (lastKind && runLen >= 2) {
     const filtered = cands.filter((k) => k !== lastKind);
@@ -358,7 +396,10 @@ function roundPose(round: Round): MascotPose {
     case 'fillBlank':
       return 'thinking';
     case 'story':
+    case 'storyListen':
       return 'reading';
+    case 'challenge':
+      return 'thinking';
     default:
       return 'wave';
   }
@@ -422,6 +463,22 @@ function QuestionBubble({ round }: { round: Round }) {
       return (
         <MascotRow pose={roundPose(round)} size={72} text={my('ကွက်လပ်မှာ ဖြည့်ရမယ့်စကားလုံးကို ရွေးပါ')} />
       );
+    case 'shadowing':
+      return (
+        <MascotRow pose={roundPose(round)} size={72} text={my('နားထောင်ပြီး လိုက်ပြောပါ 🎤')} />
+      );
+    case 'conversation':
+      return (
+        <MascotRow pose={roundPose(round)} size={72} text={my('စကားပြောကို သဘာဝကျအောင် အဆုံးသတ်ပါ')} />
+      );
+    case 'storyListen':
+      return (
+        <MascotRow pose={roundPose(round)} size={72} text={my('ဇာတ်လမ်းနားထောင်ပြီး မေးခွန်းဖြေပါ')} />
+      );
+    case 'challenge':
+      return (
+        <MascotRow pose={roundPose(round)} size={72} text={my('အမြန်ဖြေပါ! ⏱')} />
+      );
   }
 }
 
@@ -431,6 +488,8 @@ export default function QuizScreen({ go, params }: { go: GoFn; params?: NavParam
   const mode = params?.mode;
   const meta = topicMeta(topic);
   const adaptive = mode !== 'grammar' && mode !== 'phrases';
+  // Fase 6: daily challenge — timed 60-second streak mode, its own flow.
+  const challenge = mode === 'challenge';
 
   // Seeded per-attempt context; built once per lesson attempt.
   const ctxRef = useRef<QuizCtx | null>(null);
@@ -497,6 +556,11 @@ export default function QuizScreen({ go, params }: { go: GoFn; params?: NavParam
     document.body.scrollTop = 0;
   }, [idx]);
 
+  // Fase 6: daily challenge runs its own timed flow (no lesson rounds).
+  if (challenge) {
+    return <DailyChallengeRun topic={topic} level={level} go={go} />;
+  }
+
   if (!round) {
     return (
       <Screen>
@@ -556,6 +620,9 @@ export default function QuizScreen({ go, params }: { go: GoFn; params?: NavParam
         {round.kind === 'truefalse' && <TrueFalseRound round={round} onAnswer={handleAnswer} onNext={next} />}
         {round.kind === 'oddOneOut' && <OddOneOutRound round={round} onAnswer={handleAnswer} onNext={next} />}
         {round.kind === 'fillBlank' && <FillBlankRound round={round} onAnswer={handleAnswer} onNext={next} />}
+        {round.kind === 'shadowing' && <ShadowingRound round={round} onAnswer={handleAnswer} onNext={next} />}
+        {round.kind === 'conversation' && <ConversationRound round={round} onAnswer={handleAnswer} onNext={next} />}
+        {round.kind === 'storyListen' && <StoryListenRound round={round} onAnswer={handleAnswer} onNext={next} />}
       </div>
       </W3ErrorBoundary>
     </Screen>
@@ -1151,5 +1218,685 @@ function FillBlankRound({
         <RoundFeedback ok={picked === round.answer} correctText={round.phrase.en} onNext={onNext} />
       )}
     </div>
+  );
+}
+
+/* ---------- Fase 6 rounds: shadowing, conversation, story-listening, daily challenge ---------- */
+
+/** Normalize + fuzzy-match spoken input (same approach as PracticeScreen). */
+function normSpoken(s: string): string {
+  return s
+    .toLowerCase()
+    .replace(/[.,!?'“”"’-]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+function matchesSpokenQuiz(phraseEn: string, transcript: string): boolean {
+  const p = normSpoken(phraseEn);
+  const t = normSpoken(transcript);
+  if (!p || !t) return false;
+  return t.includes(p) || p.includes(t);
+}
+
+type ShadowMicMode = 'sr' | 'vad' | 'manual';
+type ShadowPhase = 'idle' | 'starting' | 'listening' | 'done';
+
+/**
+ * Shadowing round: tap to hear the phrase (AUDIO_CONTRACT: speak only in the
+ * tap handler), then repeat it into the mic. Three mic modes, mirroring
+ * PracticeScreen — (1) 'sr': Web Speech transcription + real scoring,
+ * (2) 'vad': iOS voice-activity fallback, participation credit, unscored
+ * encouragement, (3) 'manual': self-practice with a ✓ button. The mic is
+ * never dead.
+ */
+function ShadowingRound({
+  round, onAnswer, onNext,
+}: {
+  round: Extract<Round, { kind: 'shadowing' }>;
+  onAnswer: (c: boolean) => void;
+  onNext: () => void;
+}) {
+  const phrase = round.phrase;
+  const [result, setResult] = useState<{ ok: boolean; heard?: string } | null>(null);
+  const [error, setError] = useState<string | null>(null);
+  const [listening, setListening] = useState(false);
+  const [phase, setPhase] = useState<ShadowPhase>('idle');
+  const [vadDenied, setVadDenied] = useState(false);
+  const recogRef = useRef<any>(null);
+  const vadRef = useRef<{ stream: MediaStream; ctx: AudioContext; raf: number } | null>(null);
+  const vadBusyRef = useRef(false);
+  const meterRef = useRef<HTMLDivElement>(null);
+  const answeredRef = useRef(false);
+
+  const micMode: ShadowMicMode = useMemo(() => {
+    if (typeof window === 'undefined') return 'manual';
+    const w = window as any;
+    if (w.SpeechRecognition || w.webkitSpeechRecognition) return 'sr';
+    if (navigator.mediaDevices && typeof navigator.mediaDevices.getUserMedia === 'function')
+      return 'vad';
+    return 'manual';
+  }, []);
+  const SR: any =
+    typeof window !== 'undefined'
+      ? (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition
+      : null;
+
+  const stopVad = useCallback(() => {
+    const v = vadRef.current;
+    vadRef.current = null;
+    if (v) {
+      try {
+        cancelAnimationFrame(v.raf);
+      } catch {
+        /* ignore */
+      }
+      try {
+        v.stream.getTracks().forEach((t) => t.stop());
+      } catch {
+        /* ignore */
+      }
+      try {
+        void v.ctx.close();
+      } catch {
+        /* ignore */
+      }
+    }
+    if (meterRef.current) meterRef.current.style.transform = 'scaleX(0)';
+  }, []);
+
+  // Each round answers exactly once (quiz flow needs one verdict).
+  const answerOnce = (ok: boolean, heard?: string) => {
+    if (answeredRef.current) return;
+    answeredRef.current = true;
+    setResult({ ok, heard });
+    onAnswer(ok);
+  };
+
+  useEffect(
+    () => () => {
+      try {
+        recogRef.current?.stop();
+      } catch {
+        /* ignore */
+      }
+      stopVad();
+    },
+    [stopVad],
+  );
+
+  const startListening = () => {
+    if (micMode !== 'sr' || !SR || result) return;
+    setError(null);
+    try {
+      const recog = new SR();
+      recogRef.current = recog;
+      recog.lang = 'en-US';
+      recog.interimResults = false;
+      recog.maxAlternatives = 1;
+      recog.onresult = (e: any) => {
+        const transcript: string = e.results?.[0]?.[0]?.transcript ?? '';
+        const ok = matchesSpokenQuiz(phrase.en, transcript);
+        setListening(false);
+        answerOnce(ok, transcript);
+      };
+      recog.onerror = (e: any) => {
+        setListening(false);
+        if (e?.error === 'not-allowed' || e?.error === 'service-not-allowed') {
+          setError('မိုက်ခရိုဖုန်း ခွင့်ပြုချက် လိုအပ်ပါတယ် — ဘရောက်ဇာ ဆက်တင်မှာ ဖွင့်ပေးပါ');
+        } else {
+          setError('အသံဖမ်းလို့ မရခဲ့ဘူး — ထပ်စမ်းကြည့်ပါ');
+        }
+      };
+      recog.onend = () => setListening(false);
+      recog.start();
+      setListening(true);
+    } catch {
+      setError('အသံဖမ်းလို့ မရခဲ့ဘူး — ထပ်စမ်းကြည့်ပါ');
+      setListening(false);
+    }
+  };
+
+  const finishVad = (heard: boolean) => {
+    stopVad();
+    setPhase('done');
+    // No transcription on iOS — participation credit for a real take.
+    answerOnce(true);
+    if (!heard) setError('အသံမကြားလိုက်ရဘူး — မိုက်ခရိုဖုန်းနား ကပ်ပြောပါ');
+  };
+
+  const startVad = async () => {
+    if (vadBusyRef.current || vadRef.current || result) return;
+    vadBusyRef.current = true;
+    setError(null);
+    setVadDenied(false);
+    setPhase('starting');
+    try {
+      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      const AC = window.AudioContext || (window as any).webkitAudioContext;
+      const ctx: AudioContext = new AC();
+      if (ctx.state === 'suspended') {
+        try {
+          await ctx.resume();
+        } catch {
+          /* ignore */
+        }
+      }
+      const src = ctx.createMediaStreamSource(stream);
+      const analyser = ctx.createAnalyser();
+      analyser.fftSize = 512;
+      src.connect(analyser);
+      const buf = new Uint8Array(analyser.fftSize);
+      const THRESH = 0.09;
+      const SILENCE_MS = 1400;
+      const MAX_MS = 20000;
+      const t0 = Date.now();
+      let heard = false;
+      let lastLoud = 0;
+      const loop = () => {
+        analyser.getByteTimeDomainData(buf);
+        let sum = 0;
+        for (let i = 0; i < buf.length; i++) {
+          const v = (buf[i] - 128) / 128;
+          sum += v * v;
+        }
+        const rms = Math.sqrt(sum / buf.length);
+        if (meterRef.current) {
+          meterRef.current.style.transform = `scaleX(${Math.min(1, rms * 5).toFixed(3)})`;
+        }
+        const now = Date.now();
+        if (rms > THRESH) {
+          heard = true;
+          lastLoud = now;
+        }
+        if (heard && now - lastLoud > SILENCE_MS) {
+          finishVad(true);
+          return;
+        }
+        if (now - t0 > MAX_MS) {
+          finishVad(heard);
+          return;
+        }
+        const raf = requestAnimationFrame(loop);
+        if (vadRef.current) vadRef.current.raf = raf;
+      };
+      vadRef.current = { stream, ctx, raf: requestAnimationFrame(loop) };
+      setPhase('listening');
+    } catch (e: any) {
+      if (e && (e.name === 'NotAllowedError' || e.name === 'SecurityError')) {
+        setVadDenied(true);
+      } else {
+        setError('မိုက်ခရိုဖုန်း ဖွင့်လို့ မရခဲ့ဘူး — ထပ်စမ်းကြည့်ပါ');
+      }
+      setPhase('idle');
+    } finally {
+      vadBusyRef.current = false;
+    }
+  };
+
+  const micBusy = micMode === 'sr' ? listening : phase === 'starting' || phase === 'listening';
+  const micLabel =
+    result != null
+      ? 'ပြီးပြီ! 🎉'
+      : micMode === 'vad'
+        ? phase === 'starting'
+          ? 'မိုက်ခရိုဖုန်း ဖွင့်နေတယ်…'
+          : phase === 'listening'
+            ? 'နားထောင်နေတယ်… ပြောပါ!'
+            : 'ဖမ်းရန် နှိပ်ပါ'
+        : listening
+          ? 'နားထောင်နေတယ်… ပြောပါ!'
+          : 'ဖမ်းရန် နှိပ်ပါ';
+
+  return (
+    <div>
+      <style>{`@keyframes w3-pulse { 0% { transform: scale(1); } 50% { transform: scale(1.08); } 100% { transform: scale(1); } }`}</style>
+      <Card style={{ textAlign: 'center', padding: '24px 20px', marginBottom: 14 }}>
+        <div style={{ fontWeight: 800, fontSize: 22, color: C.title, lineHeight: 1.4 }}>
+          “{phrase.en}”
+        </div>
+        <div style={{ fontSize: 15, color: C.text, marginTop: 8 }}>{phrase.my}</div>
+        {phrase.phonetic && (
+          <div style={{ fontSize: 14, fontWeight: 700, color: C.blueDark, marginTop: 6 }}>
+            [{phrase.phonetic}]
+          </div>
+        )}
+        <button
+          type="button"
+          onClick={() => speak(phrase.en, { slow: true })}
+          style={{
+            marginTop: 14,
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: 8,
+            border: '2px solid #F1E4CE',
+            background: C.bg,
+            borderRadius: 999,
+            padding: '8px 18px',
+            fontFamily: FONT,
+            fontWeight: 700,
+            fontSize: 14,
+            color: C.title,
+            cursor: 'pointer',
+          }}
+        >
+          <Volume2 size={18} color={C.blueDark} />
+          အသံနားထောင်မယ်
+        </button>
+      </Card>
+
+      {(micMode === 'sr' || micMode === 'vad') && (
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '18px 0 8px' }}>
+          <button
+            type="button"
+            onClick={micMode === 'sr' ? startListening : startVad}
+            disabled={micBusy || result != null}
+            aria-label="အသံဖမ်းရန်"
+            style={{
+              width: 84,
+              height: 84,
+              borderRadius: '50%',
+              border: 'none',
+              background: C.orange,
+              borderBottom: `5px solid ${C.orangeDark}`,
+              color: '#fff',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              cursor: micBusy || result != null ? 'default' : 'pointer',
+              boxShadow: '0 10px 24px rgba(255,183,77,0.45)',
+              animation: micBusy ? 'w3-pulse 1s ease-in-out infinite' : undefined,
+              opacity: result != null ? 0.5 : 1,
+            }}
+          >
+            <Mic size={36} />
+          </button>
+          <div style={{ marginTop: 10, fontSize: 14, fontWeight: 700, color: C.text }}>{micLabel}</div>
+          {micMode === 'vad' && phase === 'listening' && (
+            <div className="vad-meter" aria-hidden="true">
+              <div ref={meterRef} className="vad-meter-fill" />
+            </div>
+          )}
+        </div>
+      )}
+
+      {micMode === 'manual' && result == null && (
+        <Card style={{ marginTop: 4, background: '#FFF6D6' }}>
+          <div style={{ fontSize: 15, color: C.text, lineHeight: 1.6, marginBottom: 12 }}>
+            သင့်ဖုန်းမှာ အသံဖမ်းစနစ် မရနိုင်ပါ — အသံနားထောင်ပြီး လိုက်ပြောပါ၊ ပြီးရင် ✓ နှိပ်ပါ
+          </div>
+          <PillButton color="green" onClick={() => answerOnce(true)}>
+            ✓ ပြောပြီးပြီ
+          </PillButton>
+        </Card>
+      )}
+
+      {micMode === 'vad' && vadDenied && (
+        <Card style={{ marginTop: 12, background: '#FFF6D6' }}>
+          <div style={{ fontSize: 16, fontWeight: 700, color: C.title, marginBottom: 8 }}>
+            🎤 မိုက်ခရိုဖုန်း ခွင့်ပြုချက် လိုအပ်ပါတယ်
+          </div>
+          <div style={{ fontSize: 14, color: C.text, lineHeight: 1.7, marginBottom: 12 }}>
+            iPhone Settings → Safari → Microphone ကို Allow လုပ်ပေးပါ။
+            ပြီးရင် ထပ်စမ်းပါ။
+          </div>
+          <PillButton color="orange" onClick={startVad}>
+            ထပ်စမ်းမယ်
+          </PillButton>
+        </Card>
+      )}
+
+      {error && (
+        <div
+          style={{
+            marginTop: 12,
+            background: C.redBg,
+            border: `2px solid ${C.red}`,
+            borderRadius: 20,
+            padding: '12px 14px',
+            fontSize: 14,
+            color: C.redDark,
+            lineHeight: 1.6,
+          }}
+        >
+          {error}
+        </div>
+      )}
+
+      {result && (
+        <RoundFeedback
+          ok={result.ok}
+          correctText={result.heard ? `ကြားရတယ်: “${result.heard}”` : phrase.en}
+          onNext={onNext}
+        />
+      )}
+    </div>
+  );
+}
+
+/**
+ * Complete-the-conversation: a short 2-line exchange with the reply missing.
+ * Pick the natural reply (Myanmar hint shown, like the 'dialogue' round).
+ */
+function ConversationRound({
+  round, onAnswer, onNext,
+}: {
+  round: Extract<Round, { kind: 'conversation' }>;
+  onAnswer: (c: boolean) => void;
+  onNext: () => void;
+}) {
+  const { picked, pick, locked } = useChoice(round.reply.en, onAnswer);
+  const speakers = ['🅰️', '🅱️'];
+  return (
+    <div>
+      <Card style={{ marginBottom: 12 }}>
+        {round.lines.map((l, i) => (
+          <div key={l.en} style={{ marginBottom: 10 }}>
+            <div style={{ fontWeight: 800, fontSize: 16, color: C.title, lineHeight: 1.45 }}>
+              {speakers[i % speakers.length]} {l.en}
+            </div>
+            <div style={{ fontSize: 14, color: C.text }}>{l.my}</div>
+          </div>
+        ))}
+        <div style={{ marginTop: 10, paddingTop: 10, borderTop: '1px dashed #F1E4CE' }}>
+          <div style={{ fontSize: 14, color: C.text, marginBottom: 2 }}>↳ {round.reply.my}</div>
+          <div style={{ fontWeight: 800, fontSize: 17, color: '#B9A98F' }}>___ ?</div>
+        </div>
+      </Card>
+      {round.options.map((o) => (
+        <ChoiceCard
+          key={o.en}
+          label={o.en}
+          state={!locked ? 'default' : o.en === round.reply.en ? 'correct' : picked === o.en ? 'wrong' : 'default'}
+          onPick={() => pick(o.en)}
+          disabled={locked}
+        />
+      ))}
+      {locked && <SpeakRow text={round.reply.en} label="အသံနားထောင်မယ်" />}
+      {locked && (
+        <RoundFeedback ok={picked === round.reply.en} correctText={round.reply.en} onNext={onNext} />
+      )}
+    </div>
+  );
+}
+
+/**
+ * Story-listening: a 4-sentence micro-story, each line tap-to-hear
+ * (AUDIO_CONTRACT: speak only inside the tap handler), then one
+ * comprehension question — "which sentence did you hear in the story?"
+ */
+function StoryListenRound({
+  round, onAnswer, onNext,
+}: {
+  round: Extract<Round, { kind: 'storyListen' }>;
+  onAnswer: (c: boolean) => void;
+  onNext: () => void;
+}) {
+  const { picked, pick, locked } = useChoice(round.answer.en, onAnswer);
+  return (
+    <div>
+      <Card style={{ marginBottom: 12 }}>
+        <div style={{ fontSize: 14, fontWeight: 700, color: C.text, marginBottom: 10 }}>
+          🔊 တစ်ကြောင်းချင်း နှိပ်ပြီး နားထောင်ပါ
+        </div>
+        {round.story.map((p, i) => (
+          <div
+            key={p.en}
+            style={{
+              display: 'flex',
+              gap: 10,
+              alignItems: 'flex-start',
+              marginBottom: i < round.story.length - 1 ? 12 : 0,
+            }}
+          >
+            <button
+              type="button"
+              onClick={() => speak(p.en)}
+              aria-label="နားထောင်မယ်"
+              style={{
+                flexShrink: 0,
+                width: 40,
+                height: 40,
+                borderRadius: '50%',
+                border: '2px solid #F1E4CE',
+                background: C.white,
+                color: C.blueDark,
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                cursor: 'pointer',
+              }}
+            >
+              <Volume2 size={18} />
+            </button>
+            <div>
+              <div style={{ fontWeight: 800, fontSize: 15, color: C.title, lineHeight: 1.45 }}>
+                {i + 1}. {p.en}
+              </div>
+              <div style={{ fontSize: 14, color: C.text }}>{p.my}</div>
+            </div>
+          </div>
+        ))}
+      </Card>
+      <Card style={{ marginBottom: 12 }}>
+        <div style={{ fontWeight: 800, fontSize: 16, color: C.title }}>❓ {round.question.my}</div>
+      </Card>
+      {round.options.map((o) => (
+        <ChoiceCard
+          key={o.en}
+          label={o.en}
+          state={!locked ? 'default' : o.en === round.answer.en ? 'correct' : picked === o.en ? 'wrong' : 'default'}
+          onPick={() => pick(o.en)}
+          disabled={locked}
+        />
+      ))}
+      {locked && (
+        <RoundFeedback ok={picked === round.answer.en} correctText={round.answer.en} onNext={onNext} />
+      )}
+    </div>
+  );
+}
+
+/**
+ * Renders the fast single-answer template wrapped by a 'challenge' round.
+ */
+function ChallengeInner({
+  round, onAnswer, onNext,
+}: {
+  round: Extract<Round, { kind: 'challenge' }>;
+  onAnswer: (c: boolean) => void;
+  onNext: () => void;
+}) {
+  const inner = round.inner;
+  return (
+    <>
+      {inner.kind === 'quiz' && <QuizRound round={inner} onAnswer={onAnswer} onNext={onNext} />}
+      {inner.kind === 'translation' && <TranslationRound round={inner} onAnswer={onAnswer} onNext={onNext} />}
+      {inner.kind === 'listening' && <ListeningRound round={inner} onAnswer={onAnswer} onNext={onNext} />}
+      {inner.kind === 'phraseChoice' && <PhraseChoiceRound round={inner} onAnswer={onAnswer} onNext={onNext} />}
+      {inner.kind === 'truefalse' && <TrueFalseRound round={inner} onAnswer={onAnswer} onNext={onNext} />}
+    </>
+  );
+}
+
+const CHALLENGE_SECONDS = 60;
+
+/**
+ * Daily challenge — timed 60-second streak mode. Rapid-fire questions built
+ * from the existing fast templates (quiz / translation / listening /
+ * phraseChoice / truefalse), wrapped in 'challenge' rounds. Score = 10 per
+ * correct + 2 per streak step (capped); XP is banked once when time runs out.
+ */
+function DailyChallengeRun({ topic, level, go }: { topic: TopicId; level: Level; go: GoFn }) {
+  const ctxRef = useRef<QuizCtx | null>(null);
+  if (ctxRef.current === null) ctxRef.current = makeQuizCtx(topic, level, Date.now());
+
+  const [round, setRound] = useState<Round | null>(() => makeRound(ctxRef.current!, 'challenge', false));
+  const [timeLeft, setTimeLeft] = useState(CHALLENGE_SECONDS);
+  const [score, setScore] = useState(0);
+  const [streak, setStreak] = useState(0);
+  const [best, setBest] = useState(0);
+  const [count, setCount] = useState(0);
+  const [done, setDone] = useState(false);
+  const scoredRef = useRef(false);
+
+  useEffect(() => {
+    if (done) return;
+    if (timeLeft <= 0) {
+      setDone(true);
+      return;
+    }
+    const t = window.setTimeout(() => setTimeLeft((s) => s - 1), 1000);
+    return () => window.clearTimeout(t);
+  }, [timeLeft, done]);
+
+  useEffect(() => {
+    if (done && !scoredRef.current) {
+      scoredRef.current = true;
+      addXP(score);
+    }
+  }, [done, score]);
+
+  const handleAnswer = (correct: boolean) => {
+    recordAnswer(correct);
+    setCount((c) => c + 1);
+    if (correct) {
+      setScore((s) => s + 10 + Math.min(streak, 5) * 2);
+      const ns = streak + 1;
+      setStreak(ns);
+      setBest((b) => Math.max(b, ns));
+    } else {
+      setStreak(0);
+    }
+  };
+
+  const advance = () => {
+    const r = makeRound(ctxRef.current!, 'challenge', streak >= 3);
+    if (r) setRound(r);
+    else setDone(true);
+  };
+
+  const restart = () => {
+    ctxRef.current = makeQuizCtx(topic, level, Date.now());
+    setRound(makeRound(ctxRef.current, 'challenge', false));
+    setTimeLeft(CHALLENGE_SECONDS);
+    setScore(0);
+    setStreak(0);
+    setBest(0);
+    setCount(0);
+    scoredRef.current = false;
+    setDone(false);
+  };
+
+  const closeBtn = (
+    <button
+      type="button"
+      onClick={() => go('back')}
+      aria-label="ပိတ်ရန်"
+      style={{
+        width: 40, height: 40, borderRadius: '50%', border: 'none',
+        background: C.white, color: C.text, display: 'flex',
+        alignItems: 'center', justifyContent: 'center', cursor: 'pointer',
+        boxShadow: '0 4px 10px rgba(0,0,0,0.08)',
+      }}
+    >
+      <X size={20} />
+    </button>
+  );
+
+  if (!round || round.kind !== 'challenge') {
+    return (
+      <Screen>
+        <TopBar left={<span />} center={<div />} right={<span />} />
+        <Card style={{ textAlign: 'center', padding: 24 }}>
+          <div style={{ fontSize: 16, fontWeight: 700, color: C.title, marginBottom: 16 }}>
+            ဒီအကြောင်းအရာမှာ လေ့ကျင့်စရာမရှိသေးပါ
+          </div>
+          <PillButton color="green" onClick={() => go('back')}>
+            ပြန်သွားမယ်
+          </PillButton>
+        </Card>
+      </Screen>
+    );
+  }
+
+  if (done) {
+    return (
+      <Screen>
+        <TopBar
+          left={closeBtn}
+          center={
+            <span style={{ fontSize: 18, fontWeight: 800, color: C.title }}>
+              နေ့စဉ်စိန်ခေါ်မှု
+            </span>
+          }
+        />
+        <MascotRow
+          pose={score > 0 ? 'celebrate' : 'encourage'}
+          size={88}
+          text={
+            score > 0 ? 'အချိန်ကုန်ပြီ — တော်လိုက်တာ! 🎉' : 'အချိန်ကုန်ပြီ — နောက်တစ်ခါ ထပ်ကြိုးစားပါ 💪'
+          }
+        />
+        <Card style={{ textAlign: 'center', padding: 24, marginBottom: 14 }}>
+          <div style={{ fontSize: 15, fontWeight: 700, color: C.text }}>ရမှတ်</div>
+          <div style={{ fontSize: 52, fontWeight: 800, color: C.title, lineHeight: 1.2 }}>{score}</div>
+          <div style={{ display: 'flex', justifyContent: 'center', gap: 24, marginTop: 12 }}>
+            <div>
+              <div style={{ fontSize: 22, fontWeight: 800, color: C.title }}>{count}</div>
+              <div style={{ fontSize: 13, fontWeight: 700, color: C.text }}>မေးခွန်း</div>
+            </div>
+            <div>
+              <div style={{ fontSize: 22, fontWeight: 800, color: C.title }}>🔥{best}</div>
+              <div style={{ fontSize: 13, fontWeight: 700, color: C.text }}>အကောင်းဆုံး streak</div>
+            </div>
+          </div>
+        </Card>
+        <div style={{ display: 'flex', gap: 10 }}>
+          <div style={{ flex: 1 }}>
+            <PillButton color="blue" onClick={() => go('back')}>
+              ပြန်သွားမယ်
+            </PillButton>
+          </div>
+          <div style={{ flex: 1 }}>
+            <PillButton color="green" onClick={restart}>
+              ထပ်ကစားမယ်
+            </PillButton>
+          </div>
+        </div>
+      </Screen>
+    );
+  }
+
+  return (
+    <Screen>
+      <TopBar
+        left={closeBtn}
+        center={
+          <div
+            style={{
+              background: timeLeft <= 10 ? C.redBg : C.white,
+              border: `2px solid ${timeLeft <= 10 ? C.red : '#F1E4CE'}`,
+              borderRadius: 999,
+              padding: '6px 18px',
+              fontWeight: 800,
+              fontSize: 18,
+              color: timeLeft <= 10 ? C.redDark : C.title,
+            }}
+          >
+            ⏱ {timeLeft}
+          </div>
+        }
+        right={<span style={{ fontWeight: 800, fontSize: 16, color: C.title }}>🔥{streak}</span>}
+      />
+      <div style={{ fontSize: 13, fontWeight: 700, color: C.text, marginBottom: 6 }}>
+        နေ့စဉ်စိန်ခေါ်မှု · ရမှတ် {score}
+      </div>
+      <QuestionBubble round={round.inner} />
+      <W3ErrorBoundary>
+        <div key={count}>
+          <ChallengeInner round={round} onAnswer={handleAnswer} onNext={advance} />
+        </div>
+      </W3ErrorBoundary>
+    </Screen>
   );
 }

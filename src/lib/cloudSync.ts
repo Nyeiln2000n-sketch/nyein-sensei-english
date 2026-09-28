@@ -231,6 +231,15 @@ export async function loadCloudState(uid: string): Promise<CloudState | null> {
 const WORD_STATS_KEY = 'nse_wordstats';
 const WORD_PROGRESS_KEY = 'nse_wordprogress';
 
+/** One entry in the local per-word progress cache. `lastReview` is LOCAL-ONLY
+ *  (YYYY-MM-DD) — never sent to the cloud; the `progress` table has no
+ *  column for it. */
+export interface WordProgressEntry {
+  known: boolean;
+  reps: number;
+  lastReview?: string;
+}
+
 function readJsonMap<T>(key: string): Record<string, T> {
   try {
     const raw = localStorage.getItem(key);
@@ -442,9 +451,38 @@ async function upsertWordProgress(uid: string, wordKey: string, known: boolean, 
 
 /** Write-through per-word known/reps (favorites / spaced repetition). */
 export function setWordKnown(wordKey: string, known: boolean): void {
-  const map = readJsonMap<{ known: boolean; reps: number }>(WORD_PROGRESS_KEY);
+  const map = readJsonMap<WordProgressEntry>(WORD_PROGRESS_KEY);
   const cur = map[wordKey] ?? { known: false, reps: 0 };
-  const next = { known, reps: cur.reps + 1 };
+  const next: WordProgressEntry = { known, reps: cur.reps + 1, lastReview: cur.lastReview };
+  map[wordKey] = next;
+  writeJsonMap(WORD_PROGRESS_KEY, map);
+
+  const uid = userId();
+  if (!uid || !supabaseEnabled || !online()) {
+    enqueue({ op: 'word_known', word_key: wordKey });
+    return;
+  }
+  void (async () => {
+    const ok = await upsertWordProgress(uid, wordKey, next.known, next.reps);
+    if (!ok) enqueue({ op: 'word_known', word_key: wordKey });
+  })();
+}
+
+/**
+ * Write-through spaced-repetition review. Stamps a local-only `lastReview`
+ * date (today, YYYY-MM-DD — never sent to the cloud), bumps reps by 1, and
+ * preserves `known`. The cloud upsert body is EXACTLY the same as
+ * setWordKnown: { user_id, word_key, known, reps } on the `progress` table,
+ * or a 'word_known' outbox op when offline/unsigned.
+ *
+ * `correct` is accepted for API symmetry with recordWordStat — a review's
+ * self-assessed outcome lives in vocabulary_stats, not here.
+ */
+export function recordReview(wordKey: string, correct: boolean): void {
+  void correct;
+  const map = readJsonMap<WordProgressEntry>(WORD_PROGRESS_KEY);
+  const cur = map[wordKey] ?? { known: false, reps: 0 };
+  const next: WordProgressEntry = { known: cur.known, reps: cur.reps + 1, lastReview: todayKey() };
   map[wordKey] = next;
   writeJsonMap(WORD_PROGRESS_KEY, map);
 
@@ -465,7 +503,7 @@ export function getLocalWordStats(): Record<string, { correct: number; wrong: nu
 }
 
 /** Local per-word known/reps (offline cache). */
-export function getLocalWordProgress(): Record<string, { known: boolean; reps: number }> {
+export function getLocalWordProgress(): Record<string, WordProgressEntry> {
   return readJsonMap(WORD_PROGRESS_KEY);
 }
 

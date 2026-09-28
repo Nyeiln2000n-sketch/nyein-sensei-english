@@ -80,6 +80,8 @@ export interface Phrase {
   en: string;
   my: string;
   topic: TopicId;
+  /** Learner-friendly phonetic hint for tricky pronunciation (e.g. "SNOOZ"). */
+  phonetic?: string;
 }
 
 export interface Topic {

@@ -30,7 +30,6 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
 const q = new URLSearchParams(location.search);
 const ANIM = q.get('anim') || 'greet';   // Idle | Dance | Yes | No | Walk | Jump | greet
-const T = parseFloat(q.get('t') || '0'); // not used; screenshots are time-based
 
 const app = document.getElementById('app');
 const renderer = new THREE.WebGLRenderer({ antialias:true });
@@ -44,7 +43,6 @@ app.appendChild(renderer.domElement);
 
 const scene = new THREE.Scene();
 scene.background = new THREE.Color('#FFF8F1');
-scene.fog = new THREE.Fog('#FFF8F1', 9, 16);
 
 const camera = new THREE.PerspectiveCamera(32, innerWidth/innerHeight, 0.1, 60);
 
@@ -77,93 +75,90 @@ disc.rotation.x = -Math.PI/2; disc.position.y = -0.002; disc.receiveShadow = tru
 
 // ---- brand recolor ----
 const BRAND = {
-  Cat_Main:      '#FF9E3D',  // warm brand orange
-  Cat_Secondary: '#C96A12',  // darker orange stripes
-  Ears:          '#F4A9BC',  // soft pink inner ear
+  Cat_Main:      '#FF9E3D',
+  Cat_Secondary: '#C96A12',
+  Ears:          '#F4A9BC',
   Eye_White:     '#FFFFFF',
   Eye_Black:     '#2b2118',
 };
 
 const loader = new GLTFLoader();
-const gltf = await loader.loadAsync('quaternius_cat.glb');
+const gltf = await loader.loadAsync('quaternius_cat_fixed.glb');
 const cat = gltf.scene;
 cat.traverse(o => {
   if (o.isMesh) {
     o.castShadow = true; o.receiveShadow = false;
-    o.frustumCulled = false; // skinned mesh: avoid wrong-bounds culling
+    o.frustumCulled = false;
     const m = o.material;
     if (m && m.name && BRAND[m.name]) { m.color.set(BRAND[m.name]); m.roughness = 0.85; m.metalness = 0; }
   }
+  if (o.isSkinnedMesh) {
+    // Critical: bones are not descendants of the mesh; 'detached' bind mode is required
+    // for correct skinning with this file's hierarchy.
+    o.bindMode = 'detached';
+  }
 });
 scene.add(cat);
+scene.updateMatrixWorld(true);
 
-// frame the cat
-const bbox = new THREE.Box3().setFromObject(cat);
-const center = bbox.getCenter(new THREE.Vector3());
+// ---- frame the cat (bind-pose bounds from raw geometry) ----
+const bbox = new THREE.Box3();
+cat.traverse(o => { if (o.isSkinnedMesh) {
+  const b = o.geometry.boundingBox.clone().applyMatrix4(o.matrixWorld);
+  bbox.union(b);
+}});
 const size = bbox.getSize(new THREE.Vector3());
+const center = bbox.getCenter(new THREE.Vector3());
 const radius = Math.max(size.x, size.y, size.z);
-console.log('BBOX min', bbox.min.toArray(), 'max', bbox.max.toArray(), 'size', size.toArray());
-window.__dbg = {
-  bboxMin: bbox.min.toArray(), bboxMax: bbox.max.toArray(),
-  camPos: camera.position.toArray(), camTarget: [center.x, center.y + radius*0.08, center.z],
-  meshes: [], clipNames: Object.keys(clips),
-};
-cat.traverse(o => { if (o.isMesh) window.__dbg.meshes.push({ name:o.name, visible:o.visible, geoVerts: o.geometry.attributes.position.count, isSkinned: !!o.isSkinnedMesh, mat: o.material && o.material.name }); });
-camera.position.set(center.x + radius*1.35, center.y + radius*0.72, center.z + radius*2.6);
-camera.lookAt(center.x, center.y + radius*0.08, center.z);
+console.log('BBOX ' + JSON.stringify({ min: bbox.min.toArray(), max: bbox.max.toArray() }));
+camera.position.set(center.x + radius*1.6, center.y + radius*0.9, center.z + radius*3.2);
+camera.lookAt(center.x, center.y + radius*0.05, center.z);
 
-// (the single mesh IS the cat — do not hide it)
-
+// ---- animations ----
 const mixer = new THREE.AnimationMixer(cat);
 const clips = {};
 for (const c of gltf.animations) {
-  const short = c.name.split('|').pop();
+  // strip "CharacterArmature|" prefix if present
+  const short = c.name.includes('|') ? c.name.split('|').pop() : c.name;
   clips[short] = c;
+  clips[c.name] = c;
 }
-const label = document.getElementById('anim');
-function play(name, { loop=false, fade=0.35 } = {}) {
-  const clip = clips[name]; if (!clip) return null;
-  const a = mixer.clipAction(clip);
-  a.reset();
-  a.setLoop(loop ? THREE.LoopRepeat : THREE.LoopOnce, loop ? Infinity : 1);
-  a.clampWhenFinished = !loop;
-  a.fadeIn(fade).play();
-  label.textContent = 'clip: ' + name + (loop ? ' (loop)' : '');
-  return a;
+console.log('CLIPS ' + JSON.stringify(Object.keys(clips)));
+
+let current = null;
+function play(name, opts={}) {
+  const clip = clips[name];
+  if (!clip) { console.warn('missing clip', name); return; }
+  if (current) current.stop();
+  current = mixer.clipAction(clip);
+  current.setLoop(opts.loop === false ? THREE.LoopOnce : THREE.LoopRepeat);
+  current.clampWhenFinished = !!opts.clamp;
+  current.reset().play();
+  document.getElementById('anim').textContent = '▶ ' + name;
 }
 
-const clock = new THREE.Clock();
-let phase = 'boot';
-const bootT = performance.now();
-
+// Greeting: Jump (hello bounce) -> Yes (nod) -> Idle
 if (ANIM === 'greet') {
-  // GREETING: happy hop + bow (Yes) then settle into Idle
-  const jump = play('Jump', { loop:false, fade:0.15 });
-  setTimeout(() => play('Yes', { loop:false, fade:0.3 }), 650);
-  setTimeout(() => play('Idle', { loop:true, fade:0.6 }), 2300);
-  phase = 'greet';
+  play('Jump', { loop:false });
+  // chain via finished events
+  let step = 0;
+  mixer.addEventListener('finished', () => {
+    step++;
+    if (step === 1) play('Yes', { loop:false });
+    else if (step === 2) play('Idle');
+  });
+} else if (clips[ANIM]) {
+  play(ANIM);
 } else {
-  play(ANIM, { loop: ANIM==='Idle', fade:0.2 });
-  phase = ANIM;
+  play('Idle');
 }
 
-// gentle idle breathing on the whole cat
-const baseY = cat.position.y;
-function tick() {
+// ---- render loop ----
+const clock = new THREE.Clock();
+(function tick(){
   requestAnimationFrame(tick);
   const dt = Math.min(clock.getDelta(), 0.05);
-  const t = clock.elapsedTime;
   mixer.update(dt);
-  const s = 1 + Math.sin(t * 2.1) * 0.012;
-  cat.scale.set(2 - s > 1 ? 1/Math.sqrt(s) : 1, s, 1); // subtle breathe
-  cat.scale.x = cat.scale.z = 1/Math.sqrt(s);
   renderer.render(scene, camera);
-}
-tick();
-addEventListener('resize', () => {
-  camera.aspect = innerWidth/innerHeight; camera.updateProjectionMatrix();
-  renderer.setSize(innerWidth, innerHeight);
-});
-</script>
-</body>
-</html>
+})();
+</script></body></html>

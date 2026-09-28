@@ -22,6 +22,7 @@ import { getStreak } from '../lib/storage';
 import { speak, stopSpeaking } from '../lib/audio';
 import { useWindowing } from '../lib/useWindowing';
 import { SkeletonList } from './Skeleton';
+import WordImage from './WordImage';
 import {
   Screen, TopBar, Card, PillButton, ProgressBar, IconCircle, W3ErrorBoundary, C, FONT,
 } from './w3-shared';
@@ -312,7 +313,6 @@ export default function VocabScreen({ go, params }: { go: GoFn; params?: NavPara
         <Flashcards
           deck={deck}
           idx={idx}
-          topicIcon={meta.icon}
           favs={favs}
           onToggleFav={toggleFav}
           onNext={nextCard}
@@ -424,17 +424,17 @@ export default function VocabScreen({ go, params }: { go: GoFn; params?: NavPara
 /* ---------- flashcards tab ---------- */
 
 function Flashcards({
-  deck, idx, topicIcon, favs, onToggleFav, onNext,
+  deck, idx, favs, onToggleFav, onNext,
 }: {
   deck: Word[];
   idx: number;
-  topicIcon: string;
   favs: string[];
   onToggleFav: (en: string) => void;
   onNext: () => void;
 }) {
   const word = deck[idx];
   const isFav = favs.includes(word.en);
+  const example = word.example; // optional: taught example sentence
 
   // PRODUCTION RULE: no auto-speak in useEffect (breaks the iOS user-gesture
   // rule). The user taps the blue audio button to hear the word.
@@ -451,8 +451,11 @@ function Flashcards({
       </div>
 
       <Card key={word.en} style={{ textAlign: 'center', padding: '32px 20px' }}>
-        <div style={{ fontSize: 120, lineHeight: 1.2 }} role="img" aria-label="topic art">
-          {topicIcon}
+        {/* Per-word illustration (WordImage): shows the word's own picture
+            when generated, otherwise a brand-palette tile with its initial
+            letter (no emoji — project rule). */}
+        <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <WordImage word={word.en} size={140} />
         </div>
         <div
           style={{
@@ -467,6 +470,11 @@ function Flashcards({
           {word.en}
         </div>
         <div style={{ fontSize: 20, color: C.text, marginTop: 8 }}>{word.my}</div>
+        {word.phonetic && (
+          <div style={{ fontSize: 16, color: '#666666', marginTop: 6 }}>
+            /{word.phonetic}/
+          </div>
+        )}
       </Card>
 
       <div
@@ -497,6 +505,63 @@ function Flashcards({
           <Star size={24} fill={isFav ? '#fff' : 'none'} />
         </button>
       </div>
+
+      {/* Taught example sentence strip (optional fields; rendered only when
+          the data worker has filled them in). The audio button fires
+          speak() synchronously inside the tap handler per AUDIO_CONTRACT. */}
+      {example && (
+        <div
+          style={{
+            background: '#FFF8F1',
+            borderRadius: 16,
+            padding: '12px 14px',
+            margin: '0 0 16px',
+            display: 'flex',
+            alignItems: 'center',
+            gap: 10,
+            textAlign: 'left',
+            boxShadow: '0 4px 12px rgba(0,0,0,0.04)',
+          }}
+        >
+          <div style={{ flex: 1, minWidth: 0 }}>
+            <div
+              style={{
+                fontSize: 15,
+                fontWeight: 700,
+                color: C.title,
+                lineHeight: 1.5,
+              }}
+            >
+              {example}
+            </div>
+            {word.exampleMy && (
+              <div style={{ fontSize: 13, color: C.text, marginTop: 4 }}>
+                {word.exampleMy}
+              </div>
+            )}
+          </div>
+          <button
+            type="button"
+            onClick={() => speak(example)}
+            aria-label="ဥပမာအသံ နားထောင်ရန်"
+            style={{
+              width: 40,
+              height: 40,
+              borderRadius: '50%',
+              border: 'none',
+              background: C.blue,
+              color: '#fff',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              cursor: 'pointer',
+              flexShrink: 0,
+            }}
+          >
+            <Volume2 size={18} />
+          </button>
+        </div>
+      )}
 
       <PillButton color="green" onClick={onNext}>
         နောက်ကတ် →
@@ -606,6 +671,7 @@ function LibraryTab({
                   boxShadow: '0 4px 12px rgba(0,0,0,0.05)',
                 }}
               >
+                <WordImage word={w.en} size={44} />
                 <button
                   type="button"
                   onClick={() => speak(w.en)}
@@ -620,7 +686,24 @@ function LibraryTab({
                   <Volume2 size={18} />
                 </button>
                 <div style={{ flex: 1, minWidth: 0 }}>
-                  <div style={{ fontWeight: 700, fontSize: 15, color: C.title }}>{w.en}</div>
+                  <div style={{ fontWeight: 700, fontSize: 15, color: C.title }}>
+                    {w.en}
+                    {/* Learner-friendly phonetic hint, kept text-only so the
+                        row stays light (no extra buttons, no blur, no layout
+                        change — windowing unaffected). */}
+                    {w.phonetic && (
+                      <span
+                        style={{
+                          fontWeight: 500,
+                          fontSize: 13,
+                          color: '#666666',
+                          marginLeft: 8,
+                        }}
+                      >
+                        /{w.phonetic}/
+                      </span>
+                    )}
+                  </div>
                   <div style={{ fontSize: 13, color: C.text }}>{w.my}</div>
                 </div>
                 <button

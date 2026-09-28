@@ -33,6 +33,8 @@ import { phrasesB } from './phrases-b';
 import { phrasesC } from './phrases-c';
 import { phrasesD } from './phrases-d';
 import { phrasesE } from './phrases-e';
+import { phrasesF } from './phrases-f';
+import { phrasesG } from './phrases-g';
 
 export { topics, topicMeta };
 
@@ -68,8 +70,8 @@ export const allWords: Word[] = [
   ...personalityWords,
 ];
 
-/** Every everyday phrase in the app (500 phrases, 28 topics). */
-export const allPhrases: Phrase[] = [...phrasesA, ...phrasesB, ...phrasesC, ...phrasesD, ...phrasesE];
+/** Every everyday phrase in the app (820 phrases, 28 topics). */
+export const allPhrases: Phrase[] = [...phrasesA, ...phrasesB, ...phrasesC, ...phrasesD, ...phrasesE, ...phrasesF, ...phrasesG];
 
 /** Words filtered by topic and optionally difficulty level. */
 export function wordsByTopic(topic: TopicId, level?: Level): Word[] {

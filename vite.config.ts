@@ -41,6 +41,10 @@ export default defineConfig({
       },
       workbox: {
         globPatterns: ['**/*.{js,css,html,svg,png,woff2}'],
+        // 1000 per-word images (~49MB) must NOT be precached: they load
+        // lazily on demand via WordImage (with a letter-tile fallback).
+        // Precaching them would bloat the install and break iOS PWA limits.
+        globIgnores: ['**/word-images/**'],
         runtimeCaching: [
           {
             urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i,

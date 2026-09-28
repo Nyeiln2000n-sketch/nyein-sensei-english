@@ -22,7 +22,9 @@
   --radius: 22px;
   --font: 'Poppins', 'Noto Sans Myanmar', system-ui, -apple-system, sans-serif;
   --shadow-warm: 0 6px 20px rgba(255, 183, 77, 0.16), 0 2px 6px rgba(63, 58, 52, 0.07);
-  --tabbar-h: 68px;
+  /* Native iOS tab bar height (bar content + 8px top padding; bottom padding
+     adds the safe-area inset separately). */
+  --tabbar-h: 76px;
 }
 
 * {
@@ -671,44 +673,50 @@ img {
   color: #b8b0a4;
 }
 
-/* ---------------- floating tab bar ---------------- */
+/* ---------------- native iOS tab bar ---------------- */
+/* True native bar: full-width, attached to the bottom edge — no side
+   margins, no radius, 1px hairline on top, translucent native background.
+   (backdrop-filter is allowed here per AUDIO_CONTRACT.md: the single tab
+   bar is one of the two blur-approved surfaces.) */
 
 .tabbar {
   position: fixed;
-  bottom: calc(10px + env(safe-area-inset-bottom, 0px));
-  left: 50%;
-  transform: translateX(-50%);
-  width: min(440px, calc(100% - 32px));
-  background: #fff;
-  border-radius: 28px;
-  box-shadow: 0 10px 30px rgba(63, 58, 52, 0.16);
+  left: 0;
+  right: 0;
+  bottom: 0;
   display: flex;
-  padding: 8px;
+  background: rgba(255, 248, 241, 0.92);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border-top: 1px solid rgba(63, 58, 52, 0.09);
+  padding: 8px 4px calc(8px + env(safe-area-inset-bottom, 0px));
   z-index: 50;
 }
 
-.tab {
+.tabbar .tab {
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 3px;
   border: none;
   background: none;
-  padding: 9px 4px;
-  border-radius: 20px;
-  color: #c9c2b8;
+  /* ≥44px touch target on every tab */
+  min-height: 52px;
+  padding: 6px 4px;
+  color: #b9b1a4;
   font-family: var(--font);
-  font-size: 10.5px;
+  font-size: 11px;
   font-weight: 600;
   cursor: pointer;
 }
 
-.tab.active {
+.tabbar .tab.active {
   color: var(--orange-dark);
 }
 
-.tab:active {
+.tabbar .tab:active {
   transform: scale(0.96);
 }
 
@@ -949,4 +957,449 @@ img {
   height: 100%;
   display: block;
   object-fit: contain;
+}
+
+/* ---------------- dashboard (Duolingo-style, mockup reference) ------------- */
+
+.dash-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dash-avatar {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: var(--shadow-warm);
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.dash-title {
+  font-weight: 700;
+  font-size: 17px;
+  color: var(--title);
+  line-height: 1.25;
+  display: flex;
+  flex-direction: column;
+}
+
+.dash-subtitle {
+  font-size: 12.5px;
+  font-weight: 500;
+  color: var(--body);
+}
+
+.dash-pills {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dash-bell {
+  width: 44px;
+  height: 44px;
+  position: relative;
+}
+
+.dash-bell-dot {
+  position: absolute;
+  top: 9px;
+  right: 10px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #ff6b6b;
+  border: 2px solid #fff;
+}
+
+/* greeting hero */
+
+.greet-hero {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 14px 16px 18px;
+  overflow: hidden;
+}
+
+.greet-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.greet-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--title);
+  line-height: 1.3;
+}
+
+.greet-sub {
+  margin: 6px 0 0;
+  font-size: 14px;
+  color: var(--body);
+  line-height: 1.5;
+}
+
+.greet-cat {
+  position: relative;
+  width: 128px;
+  height: 128px;
+  flex-shrink: 0;
+}
+
+.greet-cat-holder {
+  width: 128px;
+  height: 128px;
+}
+
+.learn-bubble {
+  position: absolute;
+  top: 2px;
+  right: -2px;
+  background: #fff;
+  border-radius: 14px;
+  border-bottom-right-radius: 4px;
+  box-shadow: var(--shadow-warm);
+  padding: 6px 10px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--title);
+  font-family: 'Poppins', system-ui, sans-serif;
+  white-space: nowrap;
+  transform: rotate(6deg);
+}
+
+/* အဆင့် / XP card */
+
+.level-card {
+  padding: 14px 16px;
+}
+
+.level-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.level-crown {
+  font-size: 22px;
+  line-height: 1;
+}
+
+.level-name {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--title);
+}
+
+.level-xp {
+  margin-left: auto;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--body);
+  white-space: nowrap;
+}
+
+/* daily-lesson snap carousel */
+
+.daily-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.daily-track {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  margin: 0 -20px;
+  padding: 2px 20px 6px;
+}
+
+.daily-track::-webkit-scrollbar {
+  display: none;
+}
+
+.daily-card {
+  position: relative;
+  flex: 0 0 80%;
+  scroll-snap-align: center;
+  border-radius: 24px;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 16px;
+  box-shadow: var(--shadow-warm);
+  color: #fff;
+  overflow: hidden;
+}
+
+.daily-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(255, 255, 255, 0.94);
+  color: var(--title);
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 5px 11px;
+}
+
+.daily-count {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  font-size: 13px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.92);
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.35);
+}
+
+.daily-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.daily-card-title {
+  color: #fff;
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 1.25;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+}
+
+.daily-card-sub {
+  margin: 0;
+  font-size: 13.5px;
+  color: rgba(255, 255, 255, 0.92);
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
+}
+
+.daily-cta {
+  margin-top: 10px;
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  border-radius: 999px;
+  background: #fff;
+  color: var(--title);
+  font-family: var(--font);
+  font-size: 15px;
+  font-weight: 700;
+  /* ≥44px touch target */
+  min-height: 46px;
+  padding: 10px 22px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+}
+
+.daily-cta:active {
+  transform: scale(0.96);
+}
+
+.daily-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+
+.daily-dot {
+  border: none;
+  background: none;
+  cursor: pointer;
+  /* 44px hit area, small visual dot */
+  width: 44px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.daily-dot::after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #e3d6c2;
+  transition: width 0.2s ease, background 0.2s ease;
+}
+
+.daily-dot.active::after {
+  width: 22px;
+  border-radius: 999px;
+  background: var(--orange-dark);
+}
+
+/* quick-action icon grid */
+
+.quick-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 6px;
+}
+
+.quick-btn {
+  border: none;
+  background: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  font-family: var(--font);
+  /* ≥44px touch target */
+  min-height: 76px;
+  padding: 8px 2px;
+  border-radius: 16px;
+}
+
+.quick-btn:active {
+  transform: scale(0.94);
+}
+
+.quick-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  box-shadow: var(--shadow-warm);
+}
+
+.quick-label {
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--title);
+  line-height: 1.3;
+  text-align: center;
+}
+
+/* today's progress */
+
+.progress-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.section-title-sm {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--title);
+}
+
+.link-sm {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: none;
+  border: none;
+  color: var(--blue-dark);
+  font-family: var(--font);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 10px 4px;
+  min-height: 44px;
+}
+
+.stat-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.stat-card-sm {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: var(--shadow-warm);
+  padding: 12px 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.stat-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.stat-value {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--title);
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.stat-label {
+  font-size: 11.5px;
+  color: var(--body);
+  white-space: nowrap;
+}
+
+/* motivational quote card */
+
+.quote-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 0;
+  background: linear-gradient(135deg, #fff 0%, var(--cream) 100%);
+}
+
+.quote-cat {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #fff;
+  box-shadow: var(--shadow-warm);
+  flex-shrink: 0;
+}
+
+.quote-text {
+  margin: 0;
+  flex: 1;
+  min-width: 0;
+}
+
+.quote-text p {
+  margin: 0;
+  font-size: 14.5px;
+  font-weight: 600;
+  color: var(--title);
+  line-height: 1.55;
+}
+
+.quote-en {
+  margin-top: 4px;
+  font-size: 12.5px;
+  color: var(--body);
+  font-family: 'Poppins', system-ui, sans-serif;
 }

@@ -9647,6 +9647,6333 @@
    "line": 66
   },
   {
+   "id": "phrase:daily-life:0500",
+   "kind": "phrase",
+   "en": "I woke up late again.",
+   "en_norm": "i woke up late again",
+   "my_norm": "ကျွန်တော် ထပ်ပြီး နောက်ကျမှ နိုးတယ်။",
+   "fingerprint": "f342f711159757b4",
+   "vocab_sig": [
+    "again",
+    "late",
+    "woke"
+   ],
+   "template_sig": "i W up W W .",
+   "tags": [
+    "daily-life",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 7
+  },
+  {
+   "id": "phrase:daily-life:0501",
+   "kind": "phrase",
+   "en": "I hit the snooze button twice.",
+   "en_norm": "i hit the snooze button twice",
+   "my_norm": "နှိုးစက်ကို နှစ်ကြိမ် snooze နှိပ်လိုက်တယ်။",
+   "fingerprint": "b91c9f6522103c14",
+   "vocab_sig": [
+    "button",
+    "hit",
+    "snooze",
+    "twice"
+   ],
+   "template_sig": "i W the W W W .",
+   "tags": [
+    "daily-life",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 8
+  },
+  {
+   "id": "phrase:daily-life:0502",
+   "kind": "phrase",
+   "en": "The kettle is boiling.",
+   "en_norm": "the kettle is boiling",
+   "my_norm": "ရေနွေးအိုး ပွက်ပွက်ဆူနေပြီ။",
+   "fingerprint": "0fd80175390b391d",
+   "vocab_sig": [
+    "boiling",
+    "kettle"
+   ],
+   "template_sig": "the W is W .",
+   "tags": [
+    "daily-life",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 9
+  },
+  {
+   "id": "phrase:daily-life:0503",
+   "kind": "phrase",
+   "en": "I need to wake up earlier.",
+   "en_norm": "i need to wake up earlier",
+   "my_norm": "စောစော ထဖို့ လိုတယ်။",
+   "fingerprint": "252aed0722cc69d1",
+   "vocab_sig": [
+    "earlier",
+    "need",
+    "wake"
+   ],
+   "template_sig": "i W to W up W .",
+   "tags": [
+    "daily-life",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 10
+  },
+  {
+   "id": "phrase:daily-life:0504",
+   "kind": "phrase",
+   "en": "Don't forget to lock the door.",
+   "en_norm": "don t forget to lock the door",
+   "my_norm": "တံခါး သော့ခတ်ဖို့ မမေ့နဲ့။",
+   "fingerprint": "5c68ff05e8d268d0",
+   "vocab_sig": [
+    "door",
+    "forget",
+    "lock"
+   ],
+   "template_sig": "don ' t W to W the W .",
+   "tags": [
+    "daily-life",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 11
+  },
+  {
+   "id": "phrase:daily-life:0505",
+   "kind": "phrase",
+   "en": "I watered the plants this morning.",
+   "en_norm": "i watered the plants this morning",
+   "my_norm": "ဒီမနက် အပင်တွေကို ရေလောင်းခဲ့တယ်။",
+   "fingerprint": "9713504b520ab433",
+   "vocab_sig": [
+    "morning",
+    "plants",
+    "watered"
+   ],
+   "template_sig": "i W the W this W .",
+   "tags": [
+    "daily-life",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 12
+  },
+  {
+   "id": "phrase:daily-life:0506",
+   "kind": "phrase",
+   "en": "The laundry is almost dry.",
+   "en_norm": "the laundry is almost dry",
+   "my_norm": "အဝတ်တွေ ခြောက်ခါနီးပြီ။",
+   "fingerprint": "5e874e369265c9b8",
+   "vocab_sig": [
+    "almost",
+    "dry",
+    "laundry"
+   ],
+   "template_sig": "the W is W W .",
+   "tags": [
+    "daily-life",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 13
+  },
+  {
+   "id": "phrase:daily-life:0507",
+   "kind": "phrase",
+   "en": "I set the table for dinner.",
+   "en_norm": "i set the table for dinner",
+   "my_norm": "ညစာအတွက် စားပွဲ ခင်းထားပြီ။",
+   "fingerprint": "e763f1e85fc83e72",
+   "vocab_sig": [
+    "dinner",
+    "set",
+    "table"
+   ],
+   "template_sig": "i W the W for W .",
+   "tags": [
+    "daily-life",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 14
+  },
+  {
+   "id": "phrase:daily-life:0508",
+   "kind": "phrase",
+   "en": "Let me charge my phone first.",
+   "en_norm": "let me charge my phone first",
+   "my_norm": "ဖုန်းကို အရင် အားသွင်းမယ်။",
+   "fingerprint": "96da75fbc2c37481",
+   "vocab_sig": [
+    "charge",
+    "first",
+    "phone"
+   ],
+   "template_sig": "let me W my W W .",
+   "tags": [
+    "daily-life",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 15
+  },
+  {
+   "id": "phrase:daily-life:0509",
+   "kind": "phrase",
+   "en": "We take turns washing the dishes.",
+   "en_norm": "we take turns washing the dishes",
+   "my_norm": "ပန်းကန်ဆေးတာ အလှည့်ကျ လုပ်တယ်။",
+   "fingerprint": "a495a3ef819bdf2b",
+   "vocab_sig": [
+    "dishes",
+    "take",
+    "turns",
+    "washing"
+   ],
+   "template_sig": "we W W W the W .",
+   "tags": [
+    "daily-life",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 16
+  },
+  {
+   "id": "phrase:daily-life:0510",
+   "kind": "phrase",
+   "en": "I ironed my shirt for tomorrow.",
+   "en_norm": "i ironed my shirt for tomorrow",
+   "my_norm": "မနက်ဖြန်အတွက် ရှပ်အင်္ကျီ မီးပူတိုက်ထားပြီ။",
+   "fingerprint": "6d0f6b5001989eda",
+   "vocab_sig": [
+    "ironed",
+    "shirt",
+    "tomorrow"
+   ],
+   "template_sig": "i W my W for W .",
+   "tags": [
+    "daily-life",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 17
+  },
+  {
+   "id": "phrase:daily-life:0511",
+   "kind": "phrase",
+   "en": "The trash needs to go out tonight.",
+   "en_norm": "the trash needs to go out tonight",
+   "my_norm": "အမှိုက်ကို ဒီည ထုတ်ပစ်ရမယ်။",
+   "fingerprint": "bafefb5dc8ad0c73",
+   "vocab_sig": [
+    "go",
+    "needs",
+    "tonight",
+    "trash"
+   ],
+   "template_sig": "the W W to W out W .",
+   "tags": [
+    "daily-life",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 18
+  },
+  {
+   "id": "phrase:daily-life:0512",
+   "kind": "phrase",
+   "en": "I fed the cat before leaving.",
+   "en_norm": "i fed the cat before leaving",
+   "my_norm": "မထွက်ခင် ကြောင်ကို အစာကျွေးခဲ့တယ်။",
+   "fingerprint": "0940f1431c2586ca",
+   "vocab_sig": [
+    "cat",
+    "fed",
+    "leaving"
+   ],
+   "template_sig": "i W the W before W .",
+   "tags": [
+    "daily-life",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 19
+  },
+  {
+   "id": "phrase:daily-life:0513",
+   "kind": "phrase",
+   "en": "Can you pass me the towel?",
+   "en_norm": "can you pass me the towel",
+   "my_norm": "တဘက် ပေးပါလား။",
+   "fingerprint": "1873d0853522d132",
+   "vocab_sig": [
+    "pass",
+    "towel"
+   ],
+   "template_sig": "can you W me the W ?",
+   "tags": [
+    "daily-life",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 20
+  },
+  {
+   "id": "phrase:daily-life:0514",
+   "kind": "phrase",
+   "en": "I always brush my teeth after breakfast.",
+   "en_norm": "i always brush my teeth after breakfast",
+   "my_norm": "မနက်စာစားပြီးတိုင်း သွားတိုက်တယ်။",
+   "fingerprint": "aaa92986dacc3d3d",
+   "vocab_sig": [
+    "always",
+    "breakfast",
+    "brush",
+    "teeth"
+   ],
+   "template_sig": "i W W my W after W .",
+   "tags": [
+    "daily-life",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 21
+  },
+  {
+   "id": "phrase:daily-life:0515",
+   "kind": "phrase",
+   "en": "The shower is too cold.",
+   "en_norm": "the shower is too cold",
+   "my_norm": "ရေချိုးခန်း ရေက အေးလွန်းတယ်။",
+   "fingerprint": "26b1cb4f4eeadfbc",
+   "vocab_sig": [
+    "cold",
+    "shower"
+   ],
+   "template_sig": "the W is too W .",
+   "tags": [
+    "daily-life",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 22
+  },
+  {
+   "id": "phrase:daily-life:0516",
+   "kind": "phrase",
+   "en": "I need a haircut this weekend.",
+   "en_norm": "i need a haircut this weekend",
+   "my_norm": "ဒီအပတ်ကုန် ဆံပင်ညှပ်ရမယ်။",
+   "fingerprint": "cc1f83f53d1f3b13",
+   "vocab_sig": [
+    "haircut",
+    "need",
+    "weekend"
+   ],
+   "template_sig": "i W a W this W .",
+   "tags": [
+    "daily-life",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 23
+  },
+  {
+   "id": "phrase:daily-life:0517",
+   "kind": "phrase",
+   "en": "Let's clean the house together.",
+   "en_norm": "let s clean the house together",
+   "my_norm": "အိမ်ကို အတူ သန့်ရှင်းကြရအောင်။",
+   "fingerprint": "f320cf26892d45f4",
+   "vocab_sig": [
+    "clean",
+    "house",
+    "together"
+   ],
+   "template_sig": "let ' s W the W W .",
+   "tags": [
+    "daily-life",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 24
+  },
+  {
+   "id": "phrase:daily-life:0518",
+   "kind": "phrase",
+   "en": "I folded all the clothes.",
+   "en_norm": "i folded all the clothes",
+   "my_norm": "အဝတ်တွေ အားလုံး ခေါက်ထားပြီ။",
+   "fingerprint": "d98354283b8c98cd",
+   "vocab_sig": [
+    "all",
+    "clothes",
+    "folded"
+   ],
+   "template_sig": "i W W the W .",
+   "tags": [
+    "daily-life",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 25
+  },
+  {
+   "id": "phrase:daily-life:0519",
+   "kind": "phrase",
+   "en": "The fridge is almost empty.",
+   "en_norm": "the fridge is almost empty",
+   "my_norm": "ရေခဲသေတ္တာ ဗလာနီးပါး ဖြစ်နေပြီ။",
+   "fingerprint": "5bc0e781b61a5f43",
+   "vocab_sig": [
+    "almost",
+    "empty",
+    "fridge"
+   ],
+   "template_sig": "the W is W W .",
+   "tags": [
+    "daily-life",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 26
+  },
+  {
+   "id": "phrase:daily-life:0520",
+   "kind": "phrase",
+   "en": "I should buy some groceries today.",
+   "en_norm": "i should buy some groceries today",
+   "my_norm": "ဒီနေ့ ဈေးဝယ်စရာ ဝယ်သင့်တယ်။",
+   "fingerprint": "f25de52c46fb4f5c",
+   "vocab_sig": [
+    "buy",
+    "groceries",
+    "some",
+    "today"
+   ],
+   "template_sig": "i should W W W W .",
+   "tags": [
+    "daily-life",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 27
+  },
+  {
+   "id": "phrase:daily-life:0521",
+   "kind": "phrase",
+   "en": "We ran out of rice yesterday.",
+   "en_norm": "we ran out of rice yesterday",
+   "my_norm": "မနေ့က ဆန် ကုန်သွားပြီ။",
+   "fingerprint": "9eb2e1f7c9d38f93",
+   "vocab_sig": [
+    "ran",
+    "rice",
+    "yesterday"
+   ],
+   "template_sig": "we W out of W W .",
+   "tags": [
+    "daily-life",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 28
+  },
+  {
+   "id": "phrase:daily-life:0522",
+   "kind": "phrase",
+   "en": "I'll cook dinner tonight.",
+   "en_norm": "i ll cook dinner tonight",
+   "my_norm": "ဒီည ညစာ ကျွန်တော် ချက်မယ်။",
+   "fingerprint": "419764ba11a9ff1c",
+   "vocab_sig": [
+    "cook",
+    "dinner",
+    "tonight"
+   ],
+   "template_sig": "i ' ll W W W .",
+   "tags": [
+    "daily-life",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 29
+  },
+  {
+   "id": "phrase:daily-life:0523",
+   "kind": "phrase",
+   "en": "Dinner is ready — come and eat!",
+   "en_norm": "dinner is ready come and eat",
+   "my_norm": "ညစာ ရပြီ လာစားကြ",
+   "fingerprint": "2a95072e9ec3e2b3",
+   "vocab_sig": [
+    "come",
+    "dinner",
+    "eat",
+    "ready"
+   ],
+   "template_sig": "W is W — W and W !",
+   "tags": [
+    "daily-life",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 30
+  },
+  {
+   "id": "phrase:daily-life:0524",
+   "kind": "phrase",
+   "en": "Who wants dessert?",
+   "en_norm": "who wants dessert",
+   "my_norm": "အချိုပွဲ ဘယ်သူစားချင်လဲ။",
+   "fingerprint": "dca2074e1173eec9",
+   "vocab_sig": [
+    "dessert",
+    "wants"
+   ],
+   "template_sig": "who W W ?",
+   "tags": [
+    "daily-life",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 31
+  },
+  {
+   "id": "phrase:daily-life:0525",
+   "kind": "phrase",
+   "en": "I usually go to bed at ten.",
+   "en_norm": "i usually go to bed at ten",
+   "my_norm": "များသောအားဖြင့် ဆယ်နာရီမှာ အိပ်တယ်။",
+   "fingerprint": "a9aeeefbefa926d7",
+   "vocab_sig": [
+    "bed",
+    "go",
+    "ten",
+    "usually"
+   ],
+   "template_sig": "i W W to W at W .",
+   "tags": [
+    "daily-life",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 32
+  },
+  {
+   "id": "phrase:daily-life:0526",
+   "kind": "phrase",
+   "en": "I couldn't sleep last night.",
+   "en_norm": "i couldn t sleep last night",
+   "my_norm": "မနေ့ညက အိပ်မပျော်ခဲ့ဘူး။",
+   "fingerprint": "2474945aec00a33d",
+   "vocab_sig": [
+    "couldn",
+    "last",
+    "night",
+    "sleep"
+   ],
+   "template_sig": "i W ' t W W W .",
+   "tags": [
+    "daily-life",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 33
+  },
+  {
+   "id": "phrase:daily-life:0527",
+   "kind": "phrase",
+   "en": "Turn off the lights, please.",
+   "en_norm": "turn off the lights please",
+   "my_norm": "မီးပိတ်ပေးပါ။",
+   "fingerprint": "5cc92f85fe5891c0",
+   "vocab_sig": [
+    "lights",
+    "turn"
+   ],
+   "template_sig": "W off the W , please .",
+   "tags": [
+    "daily-life",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 34
+  },
+  {
+   "id": "phrase:daily-life:0528",
+   "kind": "phrase",
+   "en": "I had a strange dream.",
+   "en_norm": "i had a strange dream",
+   "my_norm": "ထူးဆန်းတဲ့ အိပ်မက် မက်ခဲ့တယ်။",
+   "fingerprint": "162849e38cc3bfde",
+   "vocab_sig": [
+    "dream",
+    "strange"
+   ],
+   "template_sig": "i had a W W .",
+   "tags": [
+    "daily-life",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 35
+  },
+  {
+   "id": "phrase:daily-life:0529",
+   "kind": "phrase",
+   "en": "My alarm didn't go off.",
+   "en_norm": "my alarm didn t go off",
+   "my_norm": "နှိုးစက် မမြည်ခဲ့ဘူး။",
+   "fingerprint": "f3c9f6f5efb8d5ae",
+   "vocab_sig": [
+    "alarm",
+    "didn",
+    "go"
+   ],
+   "template_sig": "my W W ' t W off .",
+   "tags": [
+    "daily-life",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 36
+  },
+  {
+   "id": "phrase:daily-life:0530",
+   "kind": "phrase",
+   "en": "I'm running late for work.",
+   "en_norm": "i m running late for work",
+   "my_norm": "အလုပ်ကို နောက်ကျနေပြီ။",
+   "fingerprint": "c1d85860998247c1",
+   "vocab_sig": [
+    "late",
+    "running",
+    "work"
+   ],
+   "template_sig": "i ' m W W for W .",
+   "tags": [
+    "daily-life",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 37
+  },
+  {
+   "id": "phrase:daily-life:0531",
+   "kind": "phrase",
+   "en": "I'll skip breakfast today.",
+   "en_norm": "i ll skip breakfast today",
+   "my_norm": "ဒီနေ့ မနက်စာ မစားတော့ဘူး။",
+   "fingerprint": "f99b35e80db0bd34",
+   "vocab_sig": [
+    "breakfast",
+    "skip",
+    "today"
+   ],
+   "template_sig": "i ' ll W W W .",
+   "tags": [
+    "daily-life",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 38
+  },
+  {
+   "id": "phrase:daily-life:0532",
+   "kind": "phrase",
+   "en": "Can you wake me up at seven?",
+   "en_norm": "can you wake me up at seven",
+   "my_norm": "ခုနစ်နာရီမှာ နှိုးပေးနိုင်မလား။",
+   "fingerprint": "2331cd79de1cde62",
+   "vocab_sig": [
+    "seven",
+    "wake"
+   ],
+   "template_sig": "can you W me up at W ?",
+   "tags": [
+    "daily-life",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 39
+  },
+  {
+   "id": "phrase:daily-life:0533",
+   "kind": "phrase",
+   "en": "I left my keys at home.",
+   "en_norm": "i left my keys at home",
+   "my_norm": "သော့တွေ အိမ်မှာ ကျန်ခဲ့တယ်။",
+   "fingerprint": "9303b856db524d34",
+   "vocab_sig": [
+    "home",
+    "keys",
+    "left"
+   ],
+   "template_sig": "i W my W at W .",
+   "tags": [
+    "daily-life",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 40
+  },
+  {
+   "id": "phrase:daily-life:0534",
+   "kind": "phrase",
+   "en": "The baby is sleeping now.",
+   "en_norm": "the baby is sleeping now",
+   "my_norm": "ကလေး အခု အိပ်နေတယ်။",
+   "fingerprint": "f5568798097191c3",
+   "vocab_sig": [
+    "baby",
+    "now",
+    "sleeping"
+   ],
+   "template_sig": "the W is W W .",
+   "tags": [
+    "daily-life",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 41
+  },
+  {
+   "id": "phrase:daily-life:0535",
+   "kind": "phrase",
+   "en": "Don't make too much noise.",
+   "en_norm": "don t make too much noise",
+   "my_norm": "အသံ အရမ်း မဆူပါနဲ့။",
+   "fingerprint": "11d7a21b6f2be1cc",
+   "vocab_sig": [
+    "make",
+    "much",
+    "noise"
+   ],
+   "template_sig": "don ' t W too W W .",
+   "tags": [
+    "daily-life",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 42
+  },
+  {
+   "id": "phrase:daily-life:0536",
+   "kind": "phrase",
+   "en": "I need to fix the leaking tap.",
+   "en_norm": "i need to fix the leaking tap",
+   "my_norm": "ရေယိုနေတဲ့ ဘုံဘိုင်ကို ပြင်ရမယ်။",
+   "fingerprint": "8352ae546ec47e1b",
+   "vocab_sig": [
+    "fix",
+    "leaking",
+    "need",
+    "tap"
+   ],
+   "template_sig": "i W to W the W W .",
+   "tags": [
+    "daily-life",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 43
+  },
+  {
+   "id": "phrase:daily-life:0537",
+   "kind": "phrase",
+   "en": "The power went out again.",
+   "en_norm": "the power went out again",
+   "my_norm": "မီးပြတ် ထပ်ပြတ်သွားပြီ။",
+   "fingerprint": "2376e585318a7bee",
+   "vocab_sig": [
+    "again",
+    "power",
+    "went"
+   ],
+   "template_sig": "the W W out W .",
+   "tags": [
+    "daily-life",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 44
+  },
+  {
+   "id": "phrase:daily-life:0538",
+   "kind": "phrase",
+   "en": "Call the electrician tomorrow.",
+   "en_norm": "call the electrician tomorrow",
+   "my_norm": "မနက်ဖြန် လျှပ်စစ်သမား ခေါ်ပါ။",
+   "fingerprint": "6eeb91623f6e713e",
+   "vocab_sig": [
+    "call",
+    "electrician",
+    "tomorrow"
+   ],
+   "template_sig": "W the W W .",
+   "tags": [
+    "daily-life",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 45
+  },
+  {
+   "id": "phrase:daily-life:0539",
+   "kind": "phrase",
+   "en": "Our internet is very slow today.",
+   "en_norm": "our internet is very slow today",
+   "my_norm": "ဒီနေ့ အင်တာနက် အရမ်း နှေးတယ်။",
+   "fingerprint": "e989786b696280f7",
+   "vocab_sig": [
+    "internet",
+    "slow",
+    "today"
+   ],
+   "template_sig": "our W is very W W .",
+   "tags": [
+    "daily-life",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 46
+  },
+  {
+   "id": "phrase:travel:0540",
+   "kind": "phrase",
+   "en": "Which platform does the train leave from?",
+   "en_norm": "which platform does the train leave from",
+   "my_norm": "ရထား ဘယ်ပလက်ဖောင်းက ထွက်မလဲ။",
+   "fingerprint": "4d401b367ac23973",
+   "vocab_sig": [
+    "leave",
+    "platform",
+    "train"
+   ],
+   "template_sig": "which W does the W W from ?",
+   "tags": [
+    "travel",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 48
+  },
+  {
+   "id": "phrase:travel:0541",
+   "kind": "phrase",
+   "en": "Does this bus go downtown?",
+   "en_norm": "does this bus go downtown",
+   "my_norm": "ဒီဘတ်စ်က မြို့လယ်ကို သွားလား။",
+   "fingerprint": "db56d07243e243e4",
+   "vocab_sig": [
+    "bus",
+    "downtown",
+    "go"
+   ],
+   "template_sig": "does this W W W ?",
+   "tags": [
+    "travel",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 49
+  },
+  {
+   "id": "phrase:travel:0542",
+   "kind": "phrase",
+   "en": "Please take me to this address.",
+   "en_norm": "please take me to this address",
+   "my_norm": "ဒီလိပ်စာကို ပို့ပေးပါ။",
+   "fingerprint": "e84889cb0defb3d9",
+   "vocab_sig": [
+    "address",
+    "take"
+   ],
+   "template_sig": "please W me to this W .",
+   "tags": [
+    "travel",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 50
+  },
+  {
+   "id": "phrase:travel:0543",
+   "kind": "phrase",
+   "en": "How long does the ride take?",
+   "en_norm": "how long does the ride take",
+   "my_norm": "ဘယ်လောက် ကြာမလဲ။",
+   "fingerprint": "19ee2bb5876ca2ef",
+   "vocab_sig": [
+    "long",
+    "ride",
+    "take"
+   ],
+   "template_sig": "how W does the W W ?",
+   "tags": [
+    "travel",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 51
+  },
+  {
+   "id": "phrase:travel:0544",
+   "kind": "phrase",
+   "en": "No need for change, thanks.",
+   "en_norm": "no need for change thanks",
+   "my_norm": "အကြွေ မလိုပါဘူး၊ ကျေးဇူးပါ။",
+   "fingerprint": "8e2f9c1467ec671d",
+   "vocab_sig": [
+    "change",
+    "need",
+    "thanks"
+   ],
+   "template_sig": "no W for W , W .",
+   "tags": [
+    "travel",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 52
+  },
+  {
+   "id": "phrase:travel:0545",
+   "kind": "phrase",
+   "en": "My flight was delayed by two hours.",
+   "en_norm": "my flight was delayed by two hours",
+   "my_norm": "လေယာဉ် နှစ်နာရီ နောက်ကျသွားတယ်။",
+   "fingerprint": "ed929ec239bfd858",
+   "vocab_sig": [
+    "delayed",
+    "flight",
+    "hours"
+   ],
+   "template_sig": "my W was W by two W .",
+   "tags": [
+    "travel",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 53
+  },
+  {
+   "id": "phrase:travel:0546",
+   "kind": "phrase",
+   "en": "Where is the baggage claim?",
+   "en_norm": "where is the baggage claim",
+   "my_norm": "ခရီးဆောင်အိတ် ထုတ်ယူတဲ့နေရာ ဘယ်မှာလဲ။",
+   "fingerprint": "4ab3a00ff4dfc746",
+   "vocab_sig": [
+    "baggage",
+    "claim"
+   ],
+   "template_sig": "where is the W W ?",
+   "tags": [
+    "travel",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 54
+  },
+  {
+   "id": "phrase:travel:0547",
+   "kind": "phrase",
+   "en": "I need to catch my connecting flight.",
+   "en_norm": "i need to catch my connecting flight",
+   "my_norm": "ဆက်စပ်လေယာဉ်ကို မီဖို့ လိုတယ်။",
+   "fingerprint": "faa8825f5af8441a",
+   "vocab_sig": [
+    "catch",
+    "connecting",
+    "flight",
+    "need"
+   ],
+   "template_sig": "i W to W my W W .",
+   "tags": [
+    "travel",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 55
+  },
+  {
+   "id": "phrase:travel:0548",
+   "kind": "phrase",
+   "en": "The hotel lobby is on the ground floor.",
+   "en_norm": "the hotel lobby is on the ground floor",
+   "my_norm": "ဟိုတယ် လော်ဘီက မြေညီထပ်မှာ။",
+   "fingerprint": "aeb3fe4f804c0d32",
+   "vocab_sig": [
+    "floor",
+    "ground",
+    "hotel",
+    "lobby"
+   ],
+   "template_sig": "the W W is on the W W .",
+   "tags": [
+    "travel",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 56
+  },
+  {
+   "id": "phrase:travel:0549",
+   "kind": "phrase",
+   "en": "Could I have a wake-up call at six?",
+   "en_norm": "could i have a wake up call at six",
+   "my_norm": "ခြောက်နာရီမှာ နှိုးပေးတဲ့ ဖုန်း ရနိုင်မလား။",
+   "fingerprint": "2afd0990190505d5",
+   "vocab_sig": [
+    "call",
+    "six",
+    "wake"
+   ],
+   "template_sig": "could i have a W - up W at W ?",
+   "tags": [
+    "travel",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 57
+  },
+  {
+   "id": "phrase:travel:0550",
+   "kind": "phrase",
+   "en": "Is breakfast included in the price?",
+   "en_norm": "is breakfast included in the price",
+   "my_norm": "ဈေးနှုန်းမှာ မနက်စာ ပါလား။",
+   "fingerprint": "5fbe6a9f72e4453e",
+   "vocab_sig": [
+    "breakfast",
+    "included",
+    "price"
+   ],
+   "template_sig": "is W W in the W ?",
+   "tags": [
+    "travel",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 58
+  },
+  {
+   "id": "phrase:travel:0551",
+   "kind": "phrase",
+   "en": "I'd like a room with a sea view.",
+   "en_norm": "i d like a room with a sea view",
+   "my_norm": "ပင်လယ်မြင်ကွင်းပါတဲ့ အခန်း လိုချင်တယ်။",
+   "fingerprint": "203e3a9a93d08f99",
+   "vocab_sig": [
+    "room",
+    "sea",
+    "view"
+   ],
+   "template_sig": "i ' d like a W with a W W .",
+   "tags": [
+    "travel",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 59
+  },
+  {
+   "id": "phrase:travel:0552",
+   "kind": "phrase",
+   "en": "The air conditioner isn't working.",
+   "en_norm": "the air conditioner isn t working",
+   "my_norm": "အဲကွန်း အလုပ်မလုပ်ဘူး။",
+   "fingerprint": "4ad54c7f95a106de",
+   "vocab_sig": [
+    "air",
+    "conditioner",
+    "isn",
+    "working"
+   ],
+   "template_sig": "the W W W ' t W .",
+   "tags": [
+    "travel",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 60
+  },
+  {
+   "id": "phrase:travel:0553",
+   "kind": "phrase",
+   "en": "Can I have an extra blanket?",
+   "en_norm": "can i have an extra blanket",
+   "my_norm": "စောင် ထပ်တစ်ထည် ရနိုင်မလား။",
+   "fingerprint": "1458cc51328fd2ff",
+   "vocab_sig": [
+    "blanket",
+    "extra"
+   ],
+   "template_sig": "can i have an W W ?",
+   "tags": [
+    "travel",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 61
+  },
+  {
+   "id": "phrase:travel:0554",
+   "kind": "phrase",
+   "en": "What time is check-out?",
+   "en_norm": "what time is check out",
+   "my_norm": "အခန်းအပ်ချိန် ဘယ်အချိန်လဲ။",
+   "fingerprint": "9e2abb27791a5ac5",
+   "vocab_sig": [
+    "check",
+    "time"
+   ],
+   "template_sig": "what W is W - out ?",
+   "tags": [
+    "travel",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 62
+  },
+  {
+   "id": "phrase:travel:0555",
+   "kind": "phrase",
+   "en": "Please clean my room today.",
+   "en_norm": "please clean my room today",
+   "my_norm": "ဒီနေ့ အခန်း သန့်ရှင်းပေးပါ။",
+   "fingerprint": "4e4a772bb1e900c5",
+   "vocab_sig": [
+    "clean",
+    "room",
+    "today"
+   ],
+   "template_sig": "please W my W W .",
+   "tags": [
+    "travel",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 63
+  },
+  {
+   "id": "phrase:travel:0556",
+   "kind": "phrase",
+   "en": "Is there a swimming pool here?",
+   "en_norm": "is there a swimming pool here",
+   "my_norm": "ဒီမှာ ရေကူးကန် ရှိလား။",
+   "fingerprint": "953fa35fe890231a",
+   "vocab_sig": [
+    "pool",
+    "swimming"
+   ],
+   "template_sig": "is there a W W here ?",
+   "tags": [
+    "travel",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 64
+  },
+  {
+   "id": "phrase:travel:0557",
+   "kind": "phrase",
+   "en": "Where can I rent a motorbike?",
+   "en_norm": "where can i rent a motorbike",
+   "my_norm": "ဆိုင်ကယ် ဘယ်မှာ ငှားလို့ရမလဲ။",
+   "fingerprint": "c5095cf0cfca60c2",
+   "vocab_sig": [
+    "motorbike",
+    "rent"
+   ],
+   "template_sig": "where can i W a W ?",
+   "tags": [
+    "travel",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 65
+  },
+  {
+   "id": "phrase:travel:0558",
+   "kind": "phrase",
+   "en": "How much is the rental per day?",
+   "en_norm": "how much is the rental per day",
+   "my_norm": "တစ်ရက် ငှားခ ဘယ်လောက်လဲ။",
+   "fingerprint": "376b671eeaade6d4",
+   "vocab_sig": [
+    "day",
+    "much",
+    "per",
+    "rental"
+   ],
+   "template_sig": "how W is the W W W ?",
+   "tags": [
+    "travel",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 66
+  },
+  {
+   "id": "phrase:travel:0559",
+   "kind": "phrase",
+   "en": "I need a map of the city.",
+   "en_norm": "i need a map of the city",
+   "my_norm": "မြို့ပြမြေပုံ လိုအပ်တယ်။",
+   "fingerprint": "a81e367b2f38c5d8",
+   "vocab_sig": [
+    "city",
+    "map",
+    "need"
+   ],
+   "template_sig": "i W a W of the W .",
+   "tags": [
+    "travel",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 67
+  },
+  {
+   "id": "phrase:travel:0560",
+   "kind": "phrase",
+   "en": "Is it safe to walk at night?",
+   "en_norm": "is it safe to walk at night",
+   "my_norm": "ညဘက် လမ်းလျှောက်တာ ဘေးကင်းလား။",
+   "fingerprint": "5e24d8c09df537e9",
+   "vocab_sig": [
+    "night",
+    "safe",
+    "walk"
+   ],
+   "template_sig": "is it W to W at W ?",
+   "tags": [
+    "travel",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 68
+  },
+  {
+   "id": "phrase:travel:0561",
+   "kind": "phrase",
+   "en": "Where is the nearest pharmacy?",
+   "en_norm": "where is the nearest pharmacy",
+   "my_norm": "အနီးဆုံး ဆေးဆိုင် ဘယ်မှာလဲ။",
+   "fingerprint": "e59fea2c75e1224c",
+   "vocab_sig": [
+    "nearest",
+    "pharmacy"
+   ],
+   "template_sig": "where is the W W ?",
+   "tags": [
+    "travel",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 69
+  },
+  {
+   "id": "phrase:travel:0562",
+   "kind": "phrase",
+   "en": "Can you recommend a good restaurant?",
+   "en_norm": "can you recommend a good restaurant",
+   "my_norm": "ကောင်းတဲ့ စားသောက်ဆိုင် အကြံပြုပေးနိုင်မလား။",
+   "fingerprint": "9d7ed441ac01860f",
+   "vocab_sig": [
+    "good",
+    "recommend",
+    "restaurant"
+   ],
+   "template_sig": "can you W a W W ?",
+   "tags": [
+    "travel",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 70
+  },
+  {
+   "id": "phrase:travel:0563",
+   "kind": "phrase",
+   "en": "How do I get to the museum?",
+   "en_norm": "how do i get to the museum",
+   "my_norm": "ပြတိုက်ကို ဘယ်လို သွားရမလဲ။",
+   "fingerprint": "1f66eec8d36f0cc2",
+   "vocab_sig": [
+    "get",
+    "museum"
+   ],
+   "template_sig": "how do i W to the W ?",
+   "tags": [
+    "travel",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 71
+  },
+  {
+   "id": "phrase:travel:0564",
+   "kind": "phrase",
+   "en": "Is it far from here?",
+   "en_norm": "is it far from here",
+   "my_norm": "ဒီကနေ ဝေးလား။",
+   "fingerprint": "a7f9880e4e8af210",
+   "vocab_sig": [
+    "far"
+   ],
+   "template_sig": "is it W from here ?",
+   "tags": [
+    "travel",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 72
+  },
+  {
+   "id": "phrase:travel:0565",
+   "kind": "phrase",
+   "en": "You can walk — it's very close.",
+   "en_norm": "you can walk it s very close",
+   "my_norm": "လမ်းလျှောက်လို့ရတယ် အရမ်း နီးတယ်။",
+   "fingerprint": "903c744d664314d4",
+   "vocab_sig": [
+    "close",
+    "walk"
+   ],
+   "template_sig": "you can W — it ' s very W .",
+   "tags": [
+    "travel",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 73
+  },
+  {
+   "id": "phrase:travel:0566",
+   "kind": "phrase",
+   "en": "Take the second street on the left.",
+   "en_norm": "take the second street on the left",
+   "my_norm": "ဘယ်ဘက် ဒုတိယလမ်းကို ချိုးပါ။",
+   "fingerprint": "c598f453f0dd9db2",
+   "vocab_sig": [
+    "left",
+    "second",
+    "street",
+    "take"
+   ],
+   "template_sig": "W the W W on the W .",
+   "tags": [
+    "travel",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 74
+  },
+  {
+   "id": "phrase:travel:0567",
+   "kind": "phrase",
+   "en": "Go straight, then turn right.",
+   "en_norm": "go straight then turn right",
+   "my_norm": "တည့်တည့် သွား၊ ပြီးရင် ညာဘက် ချိုးပါ။",
+   "fingerprint": "ca903df2feb511d7",
+   "vocab_sig": [
+    "go",
+    "right",
+    "straight",
+    "then",
+    "turn"
+   ],
+   "template_sig": "W W , W W W .",
+   "tags": [
+    "travel",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 75
+  },
+  {
+   "id": "phrase:travel:0568",
+   "kind": "phrase",
+   "en": "The station is behind the mall.",
+   "en_norm": "the station is behind the mall",
+   "my_norm": "ဘူတာရုံက ဈေးဝယ်စင်တာရဲ့ နောက်မှာ။",
+   "fingerprint": "7a32637c083600b3",
+   "vocab_sig": [
+    "behind",
+    "mall",
+    "station"
+   ],
+   "template_sig": "the W is W the W .",
+   "tags": [
+    "travel",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 76
+  },
+  {
+   "id": "phrase:travel:0569",
+   "kind": "phrase",
+   "en": "I'm lost — can you help me?",
+   "en_norm": "i m lost can you help me",
+   "my_norm": "လမ်းပျောက်နေတယ် ကူညီပေးနိုင်မလား။",
+   "fingerprint": "2dbfd76e906303f8",
+   "vocab_sig": [
+    "help",
+    "lost"
+   ],
+   "template_sig": "i ' m W — can you W me ?",
+   "tags": [
+    "travel",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 77
+  },
+  {
+   "id": "phrase:travel:0570",
+   "kind": "phrase",
+   "en": "Could you show me on the map?",
+   "en_norm": "could you show me on the map",
+   "my_norm": "မြေပုံပေါ်မှာ ပြပေးနိုင်မလား။",
+   "fingerprint": "d7540adf03841ec1",
+   "vocab_sig": [
+    "map",
+    "show"
+   ],
+   "template_sig": "could you W me on the W ?",
+   "tags": [
+    "travel",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 78
+  },
+  {
+   "id": "phrase:travel:0571",
+   "kind": "phrase",
+   "en": "What is the Wi-Fi password?",
+   "en_norm": "what is the wi fi password",
+   "my_norm": "Wi Fi စကားဝှက် ဘာလဲ။",
+   "fingerprint": "1f98c6724126f86a",
+   "vocab_sig": [
+    "fi",
+    "password",
+    "wi"
+   ],
+   "template_sig": "what is the W - W W ?",
+   "tags": [
+    "travel",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 79
+  },
+  {
+   "id": "phrase:travel:0572",
+   "kind": "phrase",
+   "en": "My phone has no signal here.",
+   "en_norm": "my phone has no signal here",
+   "my_norm": "ဒီမှာ ဖုန်း လိုင်းမမိဘူး။",
+   "fingerprint": "2ae9cdcaeb991806",
+   "vocab_sig": [
+    "phone",
+    "signal"
+   ],
+   "template_sig": "my W has no W here .",
+   "tags": [
+    "travel",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 80
+  },
+  {
+   "id": "phrase:travel:0573",
+   "kind": "phrase",
+   "en": "Where can I buy a local SIM card?",
+   "en_norm": "where can i buy a local sim card",
+   "my_norm": "ဒေသခံ SIM ကတ် ဘယ်မှာ ဝယ်လို့ရမလဲ။",
+   "fingerprint": "d7ece423c371b379",
+   "vocab_sig": [
+    "buy",
+    "card",
+    "local",
+    "sim"
+   ],
+   "template_sig": "where can i W a W W W ?",
+   "tags": [
+    "travel",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 81
+  },
+  {
+   "id": "phrase:travel:0574",
+   "kind": "phrase",
+   "en": "I need to exchange some money.",
+   "en_norm": "i need to exchange some money",
+   "my_norm": "ပိုက်ဆံ လဲဖို့ လိုတယ်။",
+   "fingerprint": "4366a6822e9b5ff9",
+   "vocab_sig": [
+    "exchange",
+    "money",
+    "need",
+    "some"
+   ],
+   "template_sig": "i W to W W W .",
+   "tags": [
+    "travel",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 82
+  },
+  {
+   "id": "phrase:travel:0575",
+   "kind": "phrase",
+   "en": "What is the exchange rate today?",
+   "en_norm": "what is the exchange rate today",
+   "my_norm": "ဒီနေ့ ငွေလဲနှုန်း ဘယ်လောက်လဲ။",
+   "fingerprint": "a23c2d80b462d0ff",
+   "vocab_sig": [
+    "exchange",
+    "rate",
+    "today"
+   ],
+   "template_sig": "what is the W W W ?",
+   "tags": [
+    "travel",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 83
+  },
+  {
+   "id": "phrase:travel:0576",
+   "kind": "phrase",
+   "en": "Do you have a city tour?",
+   "en_norm": "do you have a city tour",
+   "my_norm": "မြို့ပတ် ခရီးစဉ် ရှိလား။",
+   "fingerprint": "e5a3c1b83524e719",
+   "vocab_sig": [
+    "city",
+    "tour"
+   ],
+   "template_sig": "do you have a W W ?",
+   "tags": [
+    "travel",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 84
+  },
+  {
+   "id": "phrase:travel:0577",
+   "kind": "phrase",
+   "en": "What time does the tour start?",
+   "en_norm": "what time does the tour start",
+   "my_norm": "ခရီးစဉ် ဘယ်အချိန် စမလဲ။",
+   "fingerprint": "2497527f3281852e",
+   "vocab_sig": [
+    "start",
+    "time",
+    "tour"
+   ],
+   "template_sig": "what W does the W W ?",
+   "tags": [
+    "travel",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 85
+  },
+  {
+   "id": "phrase:travel:0578",
+   "kind": "phrase",
+   "en": "I want to visit the floating market.",
+   "en_norm": "i want to visit the floating market",
+   "my_norm": "ရေပေါ်ဈေးကို သွားလည်ချင်တယ်။",
+   "fingerprint": "2a1ed629eee33638",
+   "vocab_sig": [
+    "floating",
+    "market",
+    "visit",
+    "want"
+   ],
+   "template_sig": "i W to W the W W .",
+   "tags": [
+    "travel",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 86
+  },
+  {
+   "id": "phrase:travel:0579",
+   "kind": "phrase",
+   "en": "That was an amazing trip!",
+   "en_norm": "that was an amazing trip",
+   "my_norm": "ခရီးစဉ် အရမ်း မိုက်ခဲ့တယ်",
+   "fingerprint": "1a396e6149ac54c3",
+   "vocab_sig": [
+    "amazing",
+    "trip"
+   ],
+   "template_sig": "that was an W W !",
+   "tags": [
+    "travel",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 87
+  },
+  {
+   "id": "phrase:shopping:0580",
+   "kind": "phrase",
+   "en": "Can you give me a better price?",
+   "en_norm": "can you give me a better price",
+   "my_norm": "ဈေး ပိုကောင်းတာ ပေးနိုင်မလား။",
+   "fingerprint": "68b50fdfd131893a",
+   "vocab_sig": [
+    "better",
+    "give",
+    "price"
+   ],
+   "template_sig": "can you W me a W W ?",
+   "tags": [
+    "shopping",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 89
+  },
+  {
+   "id": "phrase:shopping:0581",
+   "kind": "phrase",
+   "en": "Do you have this in a larger size?",
+   "en_norm": "do you have this in a larger size",
+   "my_norm": "ဒါကို ပိုကြီးတဲ့ အရွယ် ရှိလား။",
+   "fingerprint": "4a40fd58f964de66",
+   "vocab_sig": [
+    "larger",
+    "size"
+   ],
+   "template_sig": "do you have this in a W W ?",
+   "tags": [
+    "shopping",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 90
+  },
+  {
+   "id": "phrase:shopping:0582",
+   "kind": "phrase",
+   "en": "Can I try it on?",
+   "en_norm": "can i try it on",
+   "my_norm": "စမ်းဝတ်ကြည့်လို့ရလား။",
+   "fingerprint": "d460f4b7c0bd9128",
+   "vocab_sig": [
+    "try"
+   ],
+   "template_sig": "can i W it on ?",
+   "tags": [
+    "shopping",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 91
+  },
+  {
+   "id": "phrase:shopping:0583",
+   "kind": "phrase",
+   "en": "Where are the fitting rooms?",
+   "en_norm": "where are the fitting rooms",
+   "my_norm": "စမ်းဝတ်ခန်းတွေ ဘယ်မှာလဲ။",
+   "fingerprint": "a87c48f786e2e2a2",
+   "vocab_sig": [
+    "fitting",
+    "rooms"
+   ],
+   "template_sig": "where are the W W ?",
+   "tags": [
+    "shopping",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 92
+  },
+  {
+   "id": "phrase:shopping:0584",
+   "kind": "phrase",
+   "en": "I'd like to return this shirt.",
+   "en_norm": "i d like to return this shirt",
+   "my_norm": "ဒီရှပ်အင်္ကျီကို ပြန်အပ်ချင်တယ်။",
+   "fingerprint": "a1ed6e87784e3f37",
+   "vocab_sig": [
+    "return",
+    "shirt"
+   ],
+   "template_sig": "i ' d like to W this W .",
+   "tags": [
+    "shopping",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 93
+  },
+  {
+   "id": "phrase:shopping:0585",
+   "kind": "phrase",
+   "en": "The zipper is broken.",
+   "en_norm": "the zipper is broken",
+   "my_norm": "ဇစ်ပျက်နေတယ်။",
+   "fingerprint": "0c981e4d3779ead8",
+   "vocab_sig": [
+    "broken",
+    "zipper"
+   ],
+   "template_sig": "the W is W .",
+   "tags": [
+    "shopping",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 94
+  },
+  {
+   "id": "phrase:shopping:0586",
+   "kind": "phrase",
+   "en": "Do you accept mobile payment?",
+   "en_norm": "do you accept mobile payment",
+   "my_norm": "မိုဘိုင်းငွေပေးချေမှု လက်ခံလား။",
+   "fingerprint": "a7d8ac79139b9709",
+   "vocab_sig": [
+    "accept",
+    "mobile",
+    "payment"
+   ],
+   "template_sig": "do you W W W ?",
+   "tags": [
+    "shopping",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 95
+  },
+  {
+   "id": "phrase:shopping:0587",
+   "kind": "phrase",
+   "en": "Can I get a receipt, please?",
+   "en_norm": "can i get a receipt please",
+   "my_norm": "ပြေစာ ရနိုင်မလား။",
+   "fingerprint": "45ae9800c7714d0d",
+   "vocab_sig": [
+    "get",
+    "receipt"
+   ],
+   "template_sig": "can i W a W , please ?",
+   "tags": [
+    "shopping",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 96
+  },
+  {
+   "id": "phrase:shopping:0588",
+   "kind": "phrase",
+   "en": "Is this the last piece?",
+   "en_norm": "is this the last piece",
+   "my_norm": "ဒါ နောက်ဆုံးတစ်ခု လား။",
+   "fingerprint": "678fb24f91163178",
+   "vocab_sig": [
+    "last",
+    "piece"
+   ],
+   "template_sig": "is this the W W ?",
+   "tags": [
+    "shopping",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 97
+  },
+  {
+   "id": "phrase:shopping:0589",
+   "kind": "phrase",
+   "en": "I'll pay in cash.",
+   "en_norm": "i ll pay in cash",
+   "my_norm": "ငွေသားနဲ့ ပေးမယ်။",
+   "fingerprint": "f906e7f5256f0530",
+   "vocab_sig": [
+    "cash",
+    "pay"
+   ],
+   "template_sig": "i ' ll W in W .",
+   "tags": [
+    "shopping",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 98
+  },
+  {
+   "id": "phrase:shopping:0590",
+   "kind": "phrase",
+   "en": "That color doesn't suit me.",
+   "en_norm": "that color doesn t suit me",
+   "my_norm": "အဲဒီအရောင်က ကျွန်တော့်နဲ့ မလိုက်ဘူး။",
+   "fingerprint": "b51d47775ebaeacd",
+   "vocab_sig": [
+    "color",
+    "doesn",
+    "suit"
+   ],
+   "template_sig": "that W W ' t W me .",
+   "tags": [
+    "shopping",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 99
+  },
+  {
+   "id": "phrase:shopping:0591",
+   "kind": "phrase",
+   "en": "Do you have it in blue?",
+   "en_norm": "do you have it in blue",
+   "my_norm": "အပြာရောင် ရှိလား။",
+   "fingerprint": "27ce2f0a3872d8a8",
+   "vocab_sig": [
+    "blue"
+   ],
+   "template_sig": "do you have it in W ?",
+   "tags": [
+    "shopping",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 100
+  },
+  {
+   "id": "phrase:shopping:0592",
+   "kind": "phrase",
+   "en": "It's a bit too tight.",
+   "en_norm": "it s a bit too tight",
+   "my_norm": "နည်းနည်း ကျပ်လွန်းတယ်။",
+   "fingerprint": "40f37a85d9c70d08",
+   "vocab_sig": [
+    "bit",
+    "tight"
+   ],
+   "template_sig": "it ' s a W too W .",
+   "tags": [
+    "shopping",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 101
+  },
+  {
+   "id": "phrase:shopping:0593",
+   "kind": "phrase",
+   "en": "It's too loose for me.",
+   "en_norm": "it s too loose for me",
+   "my_norm": "ကျွန်တော့်အတွက် ပွလွန်းတယ်။",
+   "fingerprint": "a13e1e0ba6185346",
+   "vocab_sig": [
+    "loose"
+   ],
+   "template_sig": "it ' s too W for me .",
+   "tags": [
+    "shopping",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 102
+  },
+  {
+   "id": "phrase:shopping:0594",
+   "kind": "phrase",
+   "en": "How about this one?",
+   "en_norm": "how about this one",
+   "my_norm": "ဒီတစ်ခုက ဘယ်လိုလဲ။",
+   "fingerprint": "3cb96a079dfe577d",
+   "vocab_sig": [],
+   "template_sig": "how about this one ?",
+   "tags": [
+    "shopping",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 103
+  },
+  {
+   "id": "phrase:shopping:0595",
+   "kind": "phrase",
+   "en": "I'm just looking, thank you.",
+   "en_norm": "i m just looking thank you",
+   "my_norm": "ကြည့်ရုံပါ၊ ကျေးဇူးတင်ပါတယ်။",
+   "fingerprint": "2f731cbf052c1509",
+   "vocab_sig": [
+    "looking",
+    "thank"
+   ],
+   "template_sig": "i ' m just W , W you .",
+   "tags": [
+    "shopping",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 104
+  },
+  {
+   "id": "phrase:shopping:0596",
+   "kind": "phrase",
+   "en": "Do you have any new arrivals?",
+   "en_norm": "do you have any new arrivals",
+   "my_norm": "အသစ်ရောက်တာ ရှိလား။",
+   "fingerprint": "3b5cb86767b3a022",
+   "vocab_sig": [
+    "any",
+    "arrivals",
+    "new"
+   ],
+   "template_sig": "do you have W W W ?",
+   "tags": [
+    "shopping",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 105
+  },
+  {
+   "id": "phrase:shopping:0597",
+   "kind": "phrase",
+   "en": "When does the sale end?",
+   "en_norm": "when does the sale end",
+   "my_norm": "လျှော့ဈေး ဘယ်တော့ ပြီးမလဲ။",
+   "fingerprint": "941b9f60316eb0d1",
+   "vocab_sig": [
+    "end",
+    "sale"
+   ],
+   "template_sig": "when does the W W ?",
+   "tags": [
+    "shopping",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 106
+  },
+  {
+   "id": "phrase:shopping:0598",
+   "kind": "phrase",
+   "en": "Everything is fifty percent off!",
+   "en_norm": "everything is fifty percent off",
+   "my_norm": "အားလုံး ငါးဆယ် ရာခိုင်နှုန်း လျှော့တယ်",
+   "fingerprint": "8101ff975ae89f27",
+   "vocab_sig": [
+    "everything",
+    "fifty",
+    "percent"
+   ],
+   "template_sig": "W is W W off !",
+   "tags": [
+    "shopping",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 107
+  },
+  {
+   "id": "phrase:shopping:0599",
+   "kind": "phrase",
+   "en": "That's still too expensive.",
+   "en_norm": "that s still too expensive",
+   "my_norm": "အဲဒါတောင် ဈေးကြီးသေးတယ်။",
+   "fingerprint": "c3335ee96970e311",
+   "vocab_sig": [
+    "expensive",
+    "still"
+   ],
+   "template_sig": "that ' s W too W .",
+   "tags": [
+    "shopping",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 108
+  },
+  {
+   "id": "phrase:shopping:0600",
+   "kind": "phrase",
+   "en": "I'll think about it.",
+   "en_norm": "i ll think about it",
+   "my_norm": "စဉ်းစားကြည့်ဦးမယ်။",
+   "fingerprint": "340bf874fe62495b",
+   "vocab_sig": [
+    "think"
+   ],
+   "template_sig": "i ' ll W about it .",
+   "tags": [
+    "shopping",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 109
+  },
+  {
+   "id": "phrase:shopping:0601",
+   "kind": "phrase",
+   "en": "Can you wrap it as a gift?",
+   "en_norm": "can you wrap it as a gift",
+   "my_norm": "လက်ဆောင်အနေနဲ့ ထုပ်ပေးနိုင်မလား။",
+   "fingerprint": "339745813aa1898c",
+   "vocab_sig": [
+    "gift",
+    "wrap"
+   ],
+   "template_sig": "can you W it as a W ?",
+   "tags": [
+    "shopping",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 110
+  },
+  {
+   "id": "phrase:shopping:0602",
+   "kind": "phrase",
+   "en": "This bag is too small.",
+   "en_norm": "this bag is too small",
+   "my_norm": "ဒီအိတ် သေးလွန်းတယ်။",
+   "fingerprint": "06f3cb6a64de96e6",
+   "vocab_sig": [
+    "bag",
+    "small"
+   ],
+   "template_sig": "this W is too W .",
+   "tags": [
+    "shopping",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 111
+  },
+  {
+   "id": "phrase:shopping:0603",
+   "kind": "phrase",
+   "en": "Do you deliver to my home?",
+   "en_norm": "do you deliver to my home",
+   "my_norm": "အိမ်ကို ပို့ပေးလား။",
+   "fingerprint": "98af0c176b5ddc06",
+   "vocab_sig": [
+    "deliver",
+    "home"
+   ],
+   "template_sig": "do you W to my W ?",
+   "tags": [
+    "shopping",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 112
+  },
+  {
+   "id": "phrase:shopping:0604",
+   "kind": "phrase",
+   "en": "How long is the warranty?",
+   "en_norm": "how long is the warranty",
+   "my_norm": "အာမခံ ဘယ်လောက် ကြာလဲ။",
+   "fingerprint": "dea7376e492e70f1",
+   "vocab_sig": [
+    "long",
+    "warranty"
+   ],
+   "template_sig": "how W is the W ?",
+   "tags": [
+    "shopping",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 113
+  },
+  {
+   "id": "phrase:shopping:0605",
+   "kind": "phrase",
+   "en": "The battery doesn't last long.",
+   "en_norm": "the battery doesn t last long",
+   "my_norm": "ဘက်ထရီ ကြာကြာ မခံဘူး။",
+   "fingerprint": "ff78aaf7e10cd10b",
+   "vocab_sig": [
+    "battery",
+    "doesn",
+    "last",
+    "long"
+   ],
+   "template_sig": "the W W ' t W W .",
+   "tags": [
+    "shopping",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 114
+  },
+  {
+   "id": "phrase:shopping:0606",
+   "kind": "phrase",
+   "en": "Can I see the display model?",
+   "en_norm": "can i see the display model",
+   "my_norm": "ပြသထားတဲ့ မော်ဒယ် ကြည့်လို့ရလား။",
+   "fingerprint": "2e2e3aa8b30f4623",
+   "vocab_sig": [
+    "display",
+    "model",
+    "see"
+   ],
+   "template_sig": "can i W the W W ?",
+   "tags": [
+    "shopping",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 115
+  },
+  {
+   "id": "phrase:shopping:0607",
+   "kind": "phrase",
+   "en": "Is this brand reliable?",
+   "en_norm": "is this brand reliable",
+   "my_norm": "ဒီတံဆိပ်က စိတ်ချရလား။",
+   "fingerprint": "92e1f2619c723368",
+   "vocab_sig": [
+    "brand",
+    "reliable"
+   ],
+   "template_sig": "is this W W ?",
+   "tags": [
+    "shopping",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 116
+  },
+  {
+   "id": "phrase:shopping:0608",
+   "kind": "phrase",
+   "en": "I saw it cheaper online.",
+   "en_norm": "i saw it cheaper online",
+   "my_norm": "အွန်လိုင်းမှာ ပိုဈေးချိုတာ တွေ့ခဲ့တယ်။",
+   "fingerprint": "9c8e0faa2039547b",
+   "vocab_sig": [
+    "cheaper",
+    "online",
+    "saw"
+   ],
+   "template_sig": "i W it W W .",
+   "tags": [
+    "shopping",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 117
+  },
+  {
+   "id": "phrase:shopping:0609",
+   "kind": "phrase",
+   "en": "Do you price-match?",
+   "en_norm": "do you price match",
+   "my_norm": "ဈေးတူအောင် ညှိပေးလား။",
+   "fingerprint": "59ff12798000f8df",
+   "vocab_sig": [
+    "match",
+    "price"
+   ],
+   "template_sig": "do you W - W ?",
+   "tags": [
+    "shopping",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 118
+  },
+  {
+   "id": "phrase:shopping:0610",
+   "kind": "phrase",
+   "en": "I need two kilos of apples.",
+   "en_norm": "i need two kilos of apples",
+   "my_norm": "ပန်းသီး နှစ်ကီလို လိုတယ်။",
+   "fingerprint": "0601381dc47ec7a4",
+   "vocab_sig": [
+    "apples",
+    "kilos",
+    "need"
+   ],
+   "template_sig": "i W two W of W .",
+   "tags": [
+    "shopping",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 119
+  },
+  {
+   "id": "phrase:shopping:0611",
+   "kind": "phrase",
+   "en": "Are these mangoes sweet?",
+   "en_norm": "are these mangoes sweet",
+   "my_norm": "ဒီသရက်သီးတွေ ချိုလား။",
+   "fingerprint": "416599d7b2786729",
+   "vocab_sig": [
+    "mangoes",
+    "sweet"
+   ],
+   "template_sig": "are these W W ?",
+   "tags": [
+    "shopping",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 120
+  },
+  {
+   "id": "phrase:shopping:0612",
+   "kind": "phrase",
+   "en": "Give me half a kilo, please.",
+   "en_norm": "give me half a kilo please",
+   "my_norm": "ကီလိုဝက် ပေးပါ။",
+   "fingerprint": "c501e470c3e28f53",
+   "vocab_sig": [
+    "give",
+    "half",
+    "kilo"
+   ],
+   "template_sig": "W me W a W , please .",
+   "tags": [
+    "shopping",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 121
+  },
+  {
+   "id": "phrase:shopping:0613",
+   "kind": "phrase",
+   "en": "Can you throw in a few extra?",
+   "en_norm": "can you throw in a few extra",
+   "my_norm": "နည်းနည်း ထပ်ထည့်ပေးနိုင်မလား။",
+   "fingerprint": "78dd0d48c9b838be",
+   "vocab_sig": [
+    "extra",
+    "few",
+    "throw"
+   ],
+   "template_sig": "can you W in a W W ?",
+   "tags": [
+    "shopping",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 122
+  },
+  {
+   "id": "phrase:shopping:0614",
+   "kind": "phrase",
+   "en": "Is this fish from today?",
+   "en_norm": "is this fish from today",
+   "my_norm": "ဒီငါး ဒီနေ့ကလား။",
+   "fingerprint": "de9d132c8fb27aad",
+   "vocab_sig": [
+    "fish",
+    "today"
+   ],
+   "template_sig": "is this W from W ?",
+   "tags": [
+    "shopping",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 123
+  },
+  {
+   "id": "phrase:shopping:0615",
+   "kind": "phrase",
+   "en": "The vegetables look very fresh.",
+   "en_norm": "the vegetables look very fresh",
+   "my_norm": "ဟင်းသီးဟင်းရွက်တွေ လတ်ဆတ်ပုံရတယ်။",
+   "fingerprint": "797e0f213cbe2cbf",
+   "vocab_sig": [
+    "fresh",
+    "look",
+    "vegetables"
+   ],
+   "template_sig": "the W W very W .",
+   "tags": [
+    "shopping",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 124
+  },
+  {
+   "id": "phrase:shopping:0616",
+   "kind": "phrase",
+   "en": "I'll come back tomorrow morning.",
+   "en_norm": "i ll come back tomorrow morning",
+   "my_norm": "မနက်ဖြန် မနက် ပြန်လာမယ်။",
+   "fingerprint": "735623da7ebe5f1f",
+   "vocab_sig": [
+    "back",
+    "come",
+    "morning",
+    "tomorrow"
+   ],
+   "template_sig": "i ' ll W W W W .",
+   "tags": [
+    "shopping",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 125
+  },
+  {
+   "id": "phrase:shopping:0617",
+   "kind": "phrase",
+   "en": "Do you open on Sundays?",
+   "en_norm": "do you open on sundays",
+   "my_norm": "တနင်္ဂနွေနေ့ ဖွင့်လား။",
+   "fingerprint": "92479dead1c816a4",
+   "vocab_sig": [
+    "open",
+    "sundays"
+   ],
+   "template_sig": "do you W on W ?",
+   "tags": [
+    "shopping",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 126
+  },
+  {
+   "id": "phrase:shopping:0618",
+   "kind": "phrase",
+   "en": "When do you close today?",
+   "en_norm": "when do you close today",
+   "my_norm": "ဒီနေ့ ဘယ်အချိန် ပိတ်လဲ။",
+   "fingerprint": "c22d43333b56ae82",
+   "vocab_sig": [
+    "close",
+    "today"
+   ],
+   "template_sig": "when do you W W ?",
+   "tags": [
+    "shopping",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 127
+  },
+  {
+   "id": "phrase:shopping:0619",
+   "kind": "phrase",
+   "en": "Thanks for the good deal!",
+   "en_norm": "thanks for the good deal",
+   "my_norm": "ဈေးကောင်းပေးတာ ကျေးဇူးတင်ပါတယ်",
+   "fingerprint": "8d02155078b4136d",
+   "vocab_sig": [
+    "deal",
+    "good",
+    "thanks"
+   ],
+   "template_sig": "W for the W W !",
+   "tags": [
+    "shopping",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 128
+  },
+  {
+   "id": "phrase:restaurant:0620",
+   "kind": "phrase",
+   "en": "Could we have separate checks?",
+   "en_norm": "could we have separate checks",
+   "my_norm": "ဘီလ် ခွဲရှင်းလို့ရမလား။",
+   "fingerprint": "6906ae4b523dfbb2",
+   "vocab_sig": [
+    "checks",
+    "separate"
+   ],
+   "template_sig": "could we have W W ?",
+   "tags": [
+    "restaurant",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 130
+  },
+  {
+   "id": "phrase:restaurant:0621",
+   "kind": "phrase",
+   "en": "This steak is undercooked.",
+   "en_norm": "this steak is undercooked",
+   "my_norm": "ဒီအမဲသား မကျက်သေးဘူး။",
+   "fingerprint": "3eeb4995a79c07c5",
+   "vocab_sig": [
+    "steak",
+    "undercooked"
+   ],
+   "template_sig": "this W is W .",
+   "tags": [
+    "restaurant",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 131
+  },
+  {
+   "id": "phrase:restaurant:0622",
+   "kind": "phrase",
+   "en": "Could you heat this up, please?",
+   "en_norm": "could you heat this up please",
+   "my_norm": "ဒါကို နွေးအောင် လုပ်ပေးနိုင်မလား။",
+   "fingerprint": "6ed50efad56d24b9",
+   "vocab_sig": [
+    "heat"
+   ],
+   "template_sig": "could you W this up , please ?",
+   "tags": [
+    "restaurant",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 132
+  },
+  {
+   "id": "phrase:restaurant:0623",
+   "kind": "phrase",
+   "en": "I'll have the same as her.",
+   "en_norm": "i ll have the same as her",
+   "my_norm": "သူမနဲ့ အတူတူ ယူမယ်။",
+   "fingerprint": "5651ed62c2c75570",
+   "vocab_sig": [
+    "same"
+   ],
+   "template_sig": "i ' ll have the W as her .",
+   "tags": [
+    "restaurant",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 133
+  },
+  {
+   "id": "phrase:restaurant:0624",
+   "kind": "phrase",
+   "en": "Do you have a children's menu?",
+   "en_norm": "do you have a children s menu",
+   "my_norm": "ကလေးမီနူး ရှိလား။",
+   "fingerprint": "c32b292d9ad0e416",
+   "vocab_sig": [
+    "children",
+    "menu"
+   ],
+   "template_sig": "do you have a W ' s W ?",
+   "tags": [
+    "restaurant",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 134
+  },
+  {
+   "id": "phrase:restaurant:0625",
+   "kind": "phrase",
+   "en": "We'd like some extra napkins.",
+   "en_norm": "we d like some extra napkins",
+   "my_norm": "တစ်ရှူးစက္ကူ ထပ်နည်းနည်း လိုချင်တယ်။",
+   "fingerprint": "97a8fce4648dd1b3",
+   "vocab_sig": [
+    "extra",
+    "napkins",
+    "some"
+   ],
+   "template_sig": "we ' d like W W W .",
+   "tags": [
+    "restaurant",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 135
+  },
+  {
+   "id": "phrase:restaurant:0626",
+   "kind": "phrase",
+   "en": "The soup is a bit cold.",
+   "en_norm": "the soup is a bit cold",
+   "my_norm": "ဟင်းချို နည်းနည်း အေးနေတယ်။",
+   "fingerprint": "dc9ca1e3a90de4e2",
+   "vocab_sig": [
+    "bit",
+    "cold",
+    "soup"
+   ],
+   "template_sig": "the W is a W W .",
+   "tags": [
+    "restaurant",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 136
+  },
+  {
+   "id": "phrase:restaurant:0627",
+   "kind": "phrase",
+   "en": "Can I get this to go?",
+   "en_norm": "can i get this to go",
+   "my_norm": "ဒါကို ပါဆယ် ထုပ်လို့ရလား။",
+   "fingerprint": "1b9cc481a6575ea3",
+   "vocab_sig": [
+    "get",
+    "go"
+   ],
+   "template_sig": "can i W this to W ?",
+   "tags": [
+    "restaurant",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 137
+  },
+  {
+   "id": "phrase:restaurant:0628",
+   "kind": "phrase",
+   "en": "Do you serve breakfast all day?",
+   "en_norm": "do you serve breakfast all day",
+   "my_norm": "မနက်စာ တစ်နေ့လုံး ရောင်းလား။",
+   "fingerprint": "a4d7843fe3b50370",
+   "vocab_sig": [
+    "all",
+    "breakfast",
+    "day",
+    "serve"
+   ],
+   "template_sig": "do you W W W W ?",
+   "tags": [
+    "restaurant",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 138
+  },
+  {
+   "id": "phrase:restaurant:0629",
+   "kind": "phrase",
+   "en": "What time do you close tonight?",
+   "en_norm": "what time do you close tonight",
+   "my_norm": "ဒီည ဘယ်အချိန် ပိတ်လဲ။",
+   "fingerprint": "ed6cc66e8ec5438d",
+   "vocab_sig": [
+    "close",
+    "time",
+    "tonight"
+   ],
+   "template_sig": "what W do you W W ?",
+   "tags": [
+    "restaurant",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 139
+  },
+  {
+   "id": "phrase:restaurant:0630",
+   "kind": "phrase",
+   "en": "Is there a queue?",
+   "en_norm": "is there a queue",
+   "my_norm": "တန်းစီရမလား။",
+   "fingerprint": "403e8674c5096310",
+   "vocab_sig": [
+    "queue"
+   ],
+   "template_sig": "is there a W ?",
+   "tags": [
+    "restaurant",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 140
+  },
+  {
+   "id": "phrase:restaurant:0631",
+   "kind": "phrase",
+   "en": "We have a reservation under \"Aung\".",
+   "en_norm": "we have a reservation under aung",
+   "my_norm": "Aung နာမည်နဲ့ ကြိုတင်မှာထားတယ်။",
+   "fingerprint": "bf93438b668954e5",
+   "vocab_sig": [
+    "aung",
+    "reservation",
+    "under"
+   ],
+   "template_sig": "we have a W W \" W \" .",
+   "tags": [
+    "restaurant",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 141
+  },
+  {
+   "id": "phrase:restaurant:0632",
+   "kind": "phrase",
+   "en": "Our table isn't ready yet.",
+   "en_norm": "our table isn t ready yet",
+   "my_norm": "ငါတို့စားပွဲ အဆင်သင့် မဖြစ်သေးဘူး။",
+   "fingerprint": "7011991b9705f342",
+   "vocab_sig": [
+    "isn",
+    "ready",
+    "table",
+    "yet"
+   ],
+   "template_sig": "our W W ' t W W .",
+   "tags": [
+    "restaurant",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 142
+  },
+  {
+   "id": "phrase:restaurant:0633",
+   "kind": "phrase",
+   "en": "Could we move to a quieter table?",
+   "en_norm": "could we move to a quieter table",
+   "my_norm": "ပိုတိတ်ဆိတ်တဲ့ စားပွဲပြောင်းလို့ရမလား။",
+   "fingerprint": "76ea538ecaa38a54",
+   "vocab_sig": [
+    "move",
+    "quieter",
+    "table"
+   ],
+   "template_sig": "could we W to a W W ?",
+   "tags": [
+    "restaurant",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 143
+  },
+  {
+   "id": "phrase:restaurant:0634",
+   "kind": "phrase",
+   "en": "The menu is only in Thai.",
+   "en_norm": "the menu is only in thai",
+   "my_norm": "မီနူးက ထိုင်းလိုပဲ ရှိတယ်။",
+   "fingerprint": "f4700ae65593d4cd",
+   "vocab_sig": [
+    "menu",
+    "only",
+    "thai"
+   ],
+   "template_sig": "the W is W in W .",
+   "tags": [
+    "restaurant",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 144
+  },
+  {
+   "id": "phrase:restaurant:0635",
+   "kind": "phrase",
+   "en": "Could you explain this dish?",
+   "en_norm": "could you explain this dish",
+   "my_norm": "ဒီဟင်း ရှင်းပြပေးနိုင်မလား။",
+   "fingerprint": "80efa3fd318a201a",
+   "vocab_sig": [
+    "dish",
+    "explain"
+   ],
+   "template_sig": "could you W this W ?",
+   "tags": [
+    "restaurant",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 145
+  },
+  {
+   "id": "phrase:restaurant:0636",
+   "kind": "phrase",
+   "en": "What's in the set lunch?",
+   "en_norm": "what s in the set lunch",
+   "my_norm": "နေ့လည်စာ ဆက်မှာ ဘာတွေ ပါလဲ။",
+   "fingerprint": "fbc7b843d1b98d81",
+   "vocab_sig": [
+    "lunch",
+    "set"
+   ],
+   "template_sig": "what ' s in the W W ?",
+   "tags": [
+    "restaurant",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 146
+  },
+  {
+   "id": "phrase:restaurant:0637",
+   "kind": "phrase",
+   "en": "I'll skip the appetizer.",
+   "en_norm": "i ll skip the appetizer",
+   "my_norm": "အစပြုအစာ မယူတော့ဘူး။",
+   "fingerprint": "31bbc2b4742d61b6",
+   "vocab_sig": [
+    "appetizer",
+    "skip"
+   ],
+   "template_sig": "i ' ll W the W .",
+   "tags": [
+    "restaurant",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 147
+  },
+  {
+   "id": "phrase:restaurant:0638",
+   "kind": "phrase",
+   "en": "The main course was excellent.",
+   "en_norm": "the main course was excellent",
+   "my_norm": "အဓိကဟင်း အရမ်း ကောင်းတယ်။",
+   "fingerprint": "0487d24724c4e8d9",
+   "vocab_sig": [
+    "course",
+    "excellent",
+    "main"
+   ],
+   "template_sig": "the W W was W .",
+   "tags": [
+    "restaurant",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 148
+  },
+  {
+   "id": "phrase:restaurant:0639",
+   "kind": "phrase",
+   "en": "I'm too full for dessert.",
+   "en_norm": "i m too full for dessert",
+   "my_norm": "အချိုပွဲစားဖို့ ဗိုက်ပြည့်နေပြီ။",
+   "fingerprint": "12102d8547a4f657",
+   "vocab_sig": [
+    "dessert",
+    "full"
+   ],
+   "template_sig": "i ' m too W for W .",
+   "tags": [
+    "restaurant",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 149
+  },
+  {
+   "id": "phrase:restaurant:0640",
+   "kind": "phrase",
+   "en": "Could I have the recipe?",
+   "en_norm": "could i have the recipe",
+   "my_norm": "ချက်နည်းတောင်း ရနိုင်မလား။",
+   "fingerprint": "9d54de12c3f70c5e",
+   "vocab_sig": [
+    "recipe"
+   ],
+   "template_sig": "could i have the W ?",
+   "tags": [
+    "restaurant",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 150
+  },
+  {
+   "id": "phrase:restaurant:0641",
+   "kind": "phrase",
+   "en": "This tastes just like home.",
+   "en_norm": "this tastes just like home",
+   "my_norm": "အိမ်အရသာ အတိုင်းပဲ။",
+   "fingerprint": "e4485c64050bfcc8",
+   "vocab_sig": [
+    "home",
+    "tastes"
+   ],
+   "template_sig": "this W just like W .",
+   "tags": [
+    "restaurant",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 151
+  },
+  {
+   "id": "phrase:restaurant:0642",
+   "kind": "phrase",
+   "en": "The portion is huge!",
+   "en_norm": "the portion is huge",
+   "my_norm": "ဟင်းပွဲ အရမ်း ကြီးတယ်",
+   "fingerprint": "f256690313afb6bf",
+   "vocab_sig": [
+    "huge",
+    "portion"
+   ],
+   "template_sig": "the W is W !",
+   "tags": [
+    "restaurant",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 152
+  },
+  {
+   "id": "phrase:restaurant:0643",
+   "kind": "phrase",
+   "en": "We enjoyed the live music.",
+   "en_norm": "we enjoyed the live music",
+   "my_norm": "တိုက်ရိုက်ဂီတကို သဘောကျတယ်။",
+   "fingerprint": "a0a6bb0c93e9d5be",
+   "vocab_sig": [
+    "enjoyed",
+    "live",
+    "music"
+   ],
+   "template_sig": "we W the W W .",
+   "tags": [
+    "restaurant",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 153
+  },
+  {
+   "id": "phrase:restaurant:0644",
+   "kind": "phrase",
+   "en": "Please call us a taxi.",
+   "en_norm": "please call us a taxi",
+   "my_norm": "တက္ကစီ ခေါ်ပေးပါ။",
+   "fingerprint": "573323df30d7dd86",
+   "vocab_sig": [
+    "call",
+    "taxi"
+   ],
+   "template_sig": "please W us a W .",
+   "tags": [
+    "restaurant",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 154
+  },
+  {
+   "id": "phrase:restaurant:0645",
+   "kind": "phrase",
+   "en": "The service was a bit slow.",
+   "en_norm": "the service was a bit slow",
+   "my_norm": "ဝန်ဆောင်မှု နည်းနည်း နှေးတယ်။",
+   "fingerprint": "f60db38a3872f200",
+   "vocab_sig": [
+    "bit",
+    "service",
+    "slow"
+   ],
+   "template_sig": "the W was a W W .",
+   "tags": [
+    "restaurant",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 155
+  },
+  {
+   "id": "phrase:restaurant:0646",
+   "kind": "phrase",
+   "en": "We'll definitely come back.",
+   "en_norm": "we ll definitely come back",
+   "my_norm": "သေချာပေါက် ပြန်လာမယ်။",
+   "fingerprint": "7613b207aaf8c543",
+   "vocab_sig": [
+    "back",
+    "come",
+    "definitely"
+   ],
+   "template_sig": "we ' ll W W W .",
+   "tags": [
+    "restaurant",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 156
+  },
+  {
+   "id": "phrase:restaurant:0647",
+   "kind": "phrase",
+   "en": "Can I pay with my phone?",
+   "en_norm": "can i pay with my phone",
+   "my_norm": "ဖုန်းနဲ့ ပေးလို့ရလား။",
+   "fingerprint": "a61798c4bcc07798",
+   "vocab_sig": [
+    "pay",
+    "phone"
+   ],
+   "template_sig": "can i W with my W ?",
+   "tags": [
+    "restaurant",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 157
+  },
+  {
+   "id": "phrase:restaurant:0648",
+   "kind": "phrase",
+   "en": "The change is yours.",
+   "en_norm": "the change is yours",
+   "my_norm": "အကြွေ ယူထားလိုက်ပါ။",
+   "fingerprint": "239bf89ae221acb3",
+   "vocab_sig": [
+    "change"
+   ],
+   "template_sig": "the W is yours .",
+   "tags": [
+    "restaurant",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 158
+  },
+  {
+   "id": "phrase:restaurant:0649",
+   "kind": "phrase",
+   "en": "Is service charge included?",
+   "en_norm": "is service charge included",
+   "my_norm": "ဝန်ဆောင်ခပါပြီးလား။",
+   "fingerprint": "53ff6bfbba0c1d13",
+   "vocab_sig": [
+    "charge",
+    "included",
+    "service"
+   ],
+   "template_sig": "is W W W ?",
+   "tags": [
+    "restaurant",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 159
+  },
+  {
+   "id": "phrase:restaurant:0650",
+   "kind": "phrase",
+   "en": "Could we split the bill three ways?",
+   "en_norm": "could we split the bill three ways",
+   "my_norm": "ဘီလ် သုံးယောက် ခွဲရှင်းလို့ရမလား။",
+   "fingerprint": "9099c2a0df162251",
+   "vocab_sig": [
+    "bill",
+    "split",
+    "ways"
+   ],
+   "template_sig": "could we W the W three W ?",
+   "tags": [
+    "restaurant",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 160
+  },
+  {
+   "id": "phrase:restaurant:0651",
+   "kind": "phrase",
+   "en": "I didn't order this.",
+   "en_norm": "i didn t order this",
+   "my_norm": "ဒါ ကျွန်တော် မမှာခဲ့ဘူး။",
+   "fingerprint": "282a747507a43e9b",
+   "vocab_sig": [
+    "didn",
+    "order"
+   ],
+   "template_sig": "i W ' t W this .",
+   "tags": [
+    "restaurant",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 161
+  },
+  {
+   "id": "phrase:restaurant:0652",
+   "kind": "phrase",
+   "en": "There's a hair in my soup!",
+   "en_norm": "there s a hair in my soup",
+   "my_norm": "ဟင်းချိုထဲမှာ အမွှေးပါနေတယ်",
+   "fingerprint": "252d47187c0d6740",
+   "vocab_sig": [
+    "hair",
+    "soup"
+   ],
+   "template_sig": "there ' s a W in my W !",
+   "tags": [
+    "restaurant",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 162
+  },
+  {
+   "id": "phrase:restaurant:0653",
+   "kind": "phrase",
+   "en": "Could you bring more rice?",
+   "en_norm": "could you bring more rice",
+   "my_norm": "ထမင်း ထပ်ယူလာပေးနိုင်မလား။",
+   "fingerprint": "a769b51fb32e13c0",
+   "vocab_sig": [
+    "bring",
+    "more",
+    "rice"
+   ],
+   "template_sig": "could you W W W ?",
+   "tags": [
+    "restaurant",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 163
+  },
+  {
+   "id": "phrase:restaurant:0654",
+   "kind": "phrase",
+   "en": "Less ice in my drink, please.",
+   "en_norm": "less ice in my drink please",
+   "my_norm": "အအေးမှာ ရေခဲ လျှော့ထည့်ပေးပါ။",
+   "fingerprint": "3d24c41491382213",
+   "vocab_sig": [
+    "drink",
+    "ice",
+    "less"
+   ],
+   "template_sig": "W W in my W , please .",
+   "tags": [
+    "restaurant",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 164
+  },
+  {
+   "id": "phrase:restaurant:0655",
+   "kind": "phrase",
+   "en": "No sugar in my tea.",
+   "en_norm": "no sugar in my tea",
+   "my_norm": "လက်ဖက်ရည်မှာ သကြား မထည့်ပါနဲ့။",
+   "fingerprint": "b0bc09344b1235e5",
+   "vocab_sig": [
+    "sugar",
+    "tea"
+   ],
+   "template_sig": "no W in my W .",
+   "tags": [
+    "restaurant",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 165
+  },
+  {
+   "id": "phrase:restaurant:0656",
+   "kind": "phrase",
+   "en": "Make it extra spicy!",
+   "en_norm": "make it extra spicy",
+   "my_norm": "ပိုစပ်အောင် လုပ်ပေးပါ",
+   "fingerprint": "e02327b51f4262b9",
+   "vocab_sig": [
+    "extra",
+    "make",
+    "spicy"
+   ],
+   "template_sig": "W it W W !",
+   "tags": [
+    "restaurant",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 166
+  },
+  {
+   "id": "phrase:restaurant:0657",
+   "kind": "phrase",
+   "en": "I'm vegetarian — no meat, please.",
+   "en_norm": "i m vegetarian no meat please",
+   "my_norm": "သတ်သတ်လွတ် စားတယ် အသား မထည့်ပါနဲ့။",
+   "fingerprint": "098a904991355402",
+   "vocab_sig": [
+    "meat",
+    "vegetarian"
+   ],
+   "template_sig": "i ' m W — no W , please .",
+   "tags": [
+    "restaurant",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 167
+  },
+  {
+   "id": "phrase:restaurant:0658",
+   "kind": "phrase",
+   "en": "Does this contain peanuts?",
+   "en_norm": "does this contain peanuts",
+   "my_norm": "ဒီမှာ မြေပဲ ပါလား။",
+   "fingerprint": "4ea1ffe1ed3ccc03",
+   "vocab_sig": [
+    "contain",
+    "peanuts"
+   ],
+   "template_sig": "does this W W ?",
+   "tags": [
+    "restaurant",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 168
+  },
+  {
+   "id": "phrase:restaurant:0659",
+   "kind": "phrase",
+   "en": "The bill seems wrong.",
+   "en_norm": "the bill seems wrong",
+   "my_norm": "ဘီလ် မှားနေပုံရတယ်။",
+   "fingerprint": "b823f07fae6fd6eb",
+   "vocab_sig": [
+    "bill",
+    "seems",
+    "wrong"
+   ],
+   "template_sig": "the W W W .",
+   "tags": [
+    "restaurant",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 169
+  },
+  {
+   "id": "phrase:airport:0660",
+   "kind": "phrase",
+   "en": "How long is the layover?",
+   "en_norm": "how long is the layover",
+   "my_norm": "လေယာဉ်ပြောင်း စောင့်ချိန် ဘယ်လောက် ကြာလဲ။",
+   "fingerprint": "50c83dba9b659608",
+   "vocab_sig": [
+    "layover",
+    "long"
+   ],
+   "template_sig": "how W is the W ?",
+   "tags": [
+    "airport",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 171
+  },
+  {
+   "id": "phrase:airport:0661",
+   "kind": "phrase",
+   "en": "My gate changed to B12.",
+   "en_norm": "my gate changed to b12",
+   "my_norm": "ဂိတ် B12 ကို ပြောင်းသွားပြီ။",
+   "fingerprint": "c53d8f1cb1eb9def",
+   "vocab_sig": [
+    "b12",
+    "changed",
+    "gate"
+   ],
+   "template_sig": "my W W to W .",
+   "tags": [
+    "airport",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 172
+  },
+  {
+   "id": "phrase:airport:0662",
+   "kind": "phrase",
+   "en": "Is there free Wi-Fi here?",
+   "en_norm": "is there free wi fi here",
+   "my_norm": "ဒီမှာ အခမဲ့ Wi Fi ရှိလား။",
+   "fingerprint": "74fc27867b7523e7",
+   "vocab_sig": [
+    "fi",
+    "free",
+    "wi"
+   ],
+   "template_sig": "is there W W - W here ?",
+   "tags": [
+    "airport",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 173
+  },
+  {
+   "id": "phrase:airport:0663",
+   "kind": "phrase",
+   "en": "Where can I exchange money?",
+   "en_norm": "where can i exchange money",
+   "my_norm": "ငွေ ဘယ်မှာ လဲလို့ရမလဲ။",
+   "fingerprint": "02676c7c760969a0",
+   "vocab_sig": [
+    "exchange",
+    "money"
+   ],
+   "template_sig": "where can i W W ?",
+   "tags": [
+    "airport",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 174
+  },
+  {
+   "id": "phrase:airport:0664",
+   "kind": "phrase",
+   "en": "My luggage didn't arrive.",
+   "en_norm": "my luggage didn t arrive",
+   "my_norm": "ခရီးဆောင်အိတ် ရောက်မလာဘူး။",
+   "fingerprint": "846a06419c09534b",
+   "vocab_sig": [
+    "arrive",
+    "didn",
+    "luggage"
+   ],
+   "template_sig": "my W W ' t W .",
+   "tags": [
+    "airport",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 175
+  },
+  {
+   "id": "phrase:airport:0665",
+   "kind": "phrase",
+   "en": "Where is the lost and found?",
+   "en_norm": "where is the lost and found",
+   "my_norm": "ပျောက်ဆုံးပစ္စည်းဌာန ဘယ်မှာလဲ။",
+   "fingerprint": "e840e9a977698bb2",
+   "vocab_sig": [
+    "found",
+    "lost"
+   ],
+   "template_sig": "where is the W and W ?",
+   "tags": [
+    "airport",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 176
+  },
+  {
+   "id": "phrase:airport:0666",
+   "kind": "phrase",
+   "en": "I need to report a missing bag.",
+   "en_norm": "i need to report a missing bag",
+   "my_norm": "ပျောက်နေတဲ့ အိတ် တိုင်ကြားရမယ်။",
+   "fingerprint": "de0dde73ebd2c4bb",
+   "vocab_sig": [
+    "bag",
+    "missing",
+    "need",
+    "report"
+   ],
+   "template_sig": "i W to W a W W .",
+   "tags": [
+    "airport",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 177
+  },
+  {
+   "id": "phrase:airport:0667",
+   "kind": "phrase",
+   "en": "Has my flight been delayed?",
+   "en_norm": "has my flight been delayed",
+   "my_norm": "လေယာဉ် နောက်ကျပြီလား။",
+   "fingerprint": "eb0d226b6021a44f",
+   "vocab_sig": [
+    "delayed",
+    "flight"
+   ],
+   "template_sig": "has my W been W ?",
+   "tags": [
+    "airport",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 178
+  },
+  {
+   "id": "phrase:airport:0668",
+   "kind": "phrase",
+   "en": "The boarding starts in ten minutes.",
+   "en_norm": "the boarding starts in ten minutes",
+   "my_norm": "ဆယ်မိနစ်အတွင်း လေယာဉ်တက်မယ်။",
+   "fingerprint": "5bfe46715cb9b121",
+   "vocab_sig": [
+    "boarding",
+    "minutes",
+    "starts",
+    "ten"
+   ],
+   "template_sig": "the W W in W W .",
+   "tags": [
+    "airport",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 179
+  },
+  {
+   "id": "phrase:airport:0669",
+   "kind": "phrase",
+   "en": "Make sure your seatbelt is fastened.",
+   "en_norm": "make sure your seatbelt is fastened",
+   "my_norm": "ထိုင်ခုံခါးပတ် ပတ်ထားတာ သေချာပါစေ။",
+   "fingerprint": "691462076065cb79",
+   "vocab_sig": [
+    "fastened",
+    "make",
+    "seatbelt",
+    "sure"
+   ],
+   "template_sig": "W W your W is W .",
+   "tags": [
+    "airport",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 180
+  },
+  {
+   "id": "phrase:airport:0670",
+   "kind": "phrase",
+   "en": "We are now boarding group two.",
+   "en_norm": "we are now boarding group two",
+   "my_norm": "အခု အုပ်စု နှစ် တက်နေပြီ။",
+   "fingerprint": "832f13ce7e4ee23c",
+   "vocab_sig": [
+    "boarding",
+    "group",
+    "now"
+   ],
+   "template_sig": "we are W W W two .",
+   "tags": [
+    "airport",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 181
+  },
+  {
+   "id": "phrase:airport:0671",
+   "kind": "phrase",
+   "en": "My seat is by the aisle.",
+   "en_norm": "my seat is by the aisle",
+   "my_norm": "ကျွန်တော့်ထိုင်ခုံက လမ်းကြောင်းဘေးမှာ။",
+   "fingerprint": "f4908a68ed6ab737",
+   "vocab_sig": [
+    "aisle",
+    "seat"
+   ],
+   "template_sig": "my W is by the W .",
+   "tags": [
+    "airport",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 182
+  },
+  {
+   "id": "phrase:airport:0672",
+   "kind": "phrase",
+   "en": "Can I switch to a window seat?",
+   "en_norm": "can i switch to a window seat",
+   "my_norm": "ပြတင်းပေါက်ဘေး ခုံ လဲလို့ရလား။",
+   "fingerprint": "66fa12fbe1b5f62b",
+   "vocab_sig": [
+    "seat",
+    "switch",
+    "window"
+   ],
+   "template_sig": "can i W to a W W ?",
+   "tags": [
+    "airport",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 183
+  },
+  {
+   "id": "phrase:airport:0673",
+   "kind": "phrase",
+   "en": "How long is the flight?",
+   "en_norm": "how long is the flight",
+   "my_norm": "လေယာဉ် ဘယ်လောက် ကြာမလဲ။",
+   "fingerprint": "e026d8445a477345",
+   "vocab_sig": [
+    "flight",
+    "long"
+   ],
+   "template_sig": "how W is the W ?",
+   "tags": [
+    "airport",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 184
+  },
+  {
+   "id": "phrase:airport:0674",
+   "kind": "phrase",
+   "en": "Could I have some water?",
+   "en_norm": "could i have some water",
+   "my_norm": "ရေ နည်းနည်း ရနိုင်မလား။",
+   "fingerprint": "0f01bcbd03efa712",
+   "vocab_sig": [
+    "some",
+    "water"
+   ],
+   "template_sig": "could i have W W ?",
+   "tags": [
+    "airport",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 185
+  },
+  {
+   "id": "phrase:airport:0675",
+   "kind": "phrase",
+   "en": "Do you have any magazines?",
+   "en_norm": "do you have any magazines",
+   "my_norm": "မဂ္ဂဇင်း ရှိလား။",
+   "fingerprint": "6f30db124f0e0eb4",
+   "vocab_sig": [
+    "any",
+    "magazines"
+   ],
+   "template_sig": "do you have W W ?",
+   "tags": [
+    "airport",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 186
+  },
+  {
+   "id": "phrase:airport:0676",
+   "kind": "phrase",
+   "en": "I feel a bit airsick.",
+   "en_norm": "i feel a bit airsick",
+   "my_norm": "လေယာဉ်မူးသလို ခံစားရတယ်။",
+   "fingerprint": "28995836bba33a01",
+   "vocab_sig": [
+    "airsick",
+    "bit",
+    "feel"
+   ],
+   "template_sig": "i W a W W .",
+   "tags": [
+    "airport",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 187
+  },
+  {
+   "id": "phrase:airport:0677",
+   "kind": "phrase",
+   "en": "The plane just landed.",
+   "en_norm": "the plane just landed",
+   "my_norm": "လေယာဉ် အခု ဆင်းသက်ပြီ။",
+   "fingerprint": "eb37c35ad505319e",
+   "vocab_sig": [
+    "landed",
+    "plane"
+   ],
+   "template_sig": "the W just W .",
+   "tags": [
+    "airport",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 188
+  },
+  {
+   "id": "phrase:airport:0678",
+   "kind": "phrase",
+   "en": "Welcome to Bangkok!",
+   "en_norm": "welcome to bangkok",
+   "my_norm": "ဘန်ကောက်ကို ကြိုဆိုပါတယ်",
+   "fingerprint": "d00611cddb7b3ffb",
+   "vocab_sig": [
+    "bangkok",
+    "welcome"
+   ],
+   "template_sig": "W to W !",
+   "tags": [
+    "airport",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 189
+  },
+  {
+   "id": "phrase:airport:0679",
+   "kind": "phrase",
+   "en": "Follow the signs to immigration.",
+   "en_norm": "follow the signs to immigration",
+   "my_norm": "လဝကရုံးကို ဆိုင်းဘုတ်အတိုင်း သွားပါ။",
+   "fingerprint": "ee30b6063bf4de8a",
+   "vocab_sig": [
+    "follow",
+    "immigration",
+    "signs"
+   ],
+   "template_sig": "W the W to W .",
+   "tags": [
+    "airport",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 190
+  },
+  {
+   "id": "phrase:market:0680",
+   "kind": "phrase",
+   "en": "Is this today's stock?",
+   "en_norm": "is this today s stock",
+   "my_norm": "ဒါ ဒီနေ့ပစ္စည်းလား။",
+   "fingerprint": "dc4dfcb80bbc691b",
+   "vocab_sig": [
+    "stock",
+    "today"
+   ],
+   "template_sig": "is this W ' s W ?",
+   "tags": [
+    "market",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 192
+  },
+  {
+   "id": "phrase:market:0681",
+   "kind": "phrase",
+   "en": "These chilies are very spicy.",
+   "en_norm": "these chilies are very spicy",
+   "my_norm": "ဒီငရုတ်သီးတွေ အရမ်း စပ်တယ်။",
+   "fingerprint": "9706fa3057aa110e",
+   "vocab_sig": [
+    "chilies",
+    "spicy"
+   ],
+   "template_sig": "these W are very W .",
+   "tags": [
+    "market",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 193
+  },
+  {
+   "id": "phrase:market:0682",
+   "kind": "phrase",
+   "en": "How much for a bunch?",
+   "en_norm": "how much for a bunch",
+   "my_norm": "တစ်စည်း ဘယ်လောက်လဲ။",
+   "fingerprint": "b0445b6dbdb99615",
+   "vocab_sig": [
+    "bunch",
+    "much"
+   ],
+   "template_sig": "how W for a W ?",
+   "tags": [
+    "market",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 194
+  },
+  {
+   "id": "phrase:market:0683",
+   "kind": "phrase",
+   "en": "The tomatoes are too soft.",
+   "en_norm": "the tomatoes are too soft",
+   "my_norm": "ခရမ်းချဉ်သီးတွေ ပျော့လွန်းတယ်။",
+   "fingerprint": "4349b5f95797f033",
+   "vocab_sig": [
+    "soft",
+    "tomatoes"
+   ],
+   "template_sig": "the W are too W .",
+   "tags": [
+    "market",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 195
+  },
+  {
+   "id": "phrase:market:0684",
+   "kind": "phrase",
+   "en": "Pick the ripe ones for me.",
+   "en_norm": "pick the ripe ones for me",
+   "my_norm": "မှည့်တာတွေ ရွေးပေးပါ။",
+   "fingerprint": "723d866c842978da",
+   "vocab_sig": [
+    "ones",
+    "pick",
+    "ripe"
+   ],
+   "template_sig": "W the W W for me .",
+   "tags": [
+    "market",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 196
+  },
+  {
+   "id": "phrase:market:0685",
+   "kind": "phrase",
+   "en": "I want the morning catch.",
+   "en_norm": "i want the morning catch",
+   "my_norm": "မနက်က ဖမ်းမိတာတွေ လိုချင်တယ်။",
+   "fingerprint": "4f5fa73b7a34f4a5",
+   "vocab_sig": [
+    "catch",
+    "morning",
+    "want"
+   ],
+   "template_sig": "i W the W W .",
+   "tags": [
+    "market",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 197
+  },
+  {
+   "id": "phrase:market:0686",
+   "kind": "phrase",
+   "en": "Can you clean the fish?",
+   "en_norm": "can you clean the fish",
+   "my_norm": "ငါးကို သန့်ရှင်းပေးနိုင်မလား။",
+   "fingerprint": "a3d4e615e45f9c2a",
+   "vocab_sig": [
+    "clean",
+    "fish"
+   ],
+   "template_sig": "can you W the W ?",
+   "tags": [
+    "market",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 198
+  },
+  {
+   "id": "phrase:market:0687",
+   "kind": "phrase",
+   "en": "Cut it into small pieces.",
+   "en_norm": "cut it into small pieces",
+   "my_norm": "အတုံးသေးသေး လှီးပေးပါ။",
+   "fingerprint": "4a0b426c733dae14",
+   "vocab_sig": [
+    "cut",
+    "pieces",
+    "small"
+   ],
+   "template_sig": "W it into W W .",
+   "tags": [
+    "market",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 199
+  },
+  {
+   "id": "phrase:market:0688",
+   "kind": "phrase",
+   "en": "That's my regular stall.",
+   "en_norm": "that s my regular stall",
+   "my_norm": "အဲဒါ ကျွန်တော် အမြဲဝယ်တဲ့ ဆိုင်။",
+   "fingerprint": "d886abd8f6555311",
+   "vocab_sig": [
+    "regular",
+    "stall"
+   ],
+   "template_sig": "that ' s my W W .",
+   "tags": [
+    "market",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 200
+  },
+  {
+   "id": "phrase:market:0689",
+   "kind": "phrase",
+   "en": "She always gives me a good price.",
+   "en_norm": "she always gives me a good price",
+   "my_norm": "သူ အမြဲ ဈေးကောင်း ပေးတယ်။",
+   "fingerprint": "8e296c094adf8557",
+   "vocab_sig": [
+    "always",
+    "gives",
+    "good",
+    "price"
+   ],
+   "template_sig": "she W W me a W W .",
+   "tags": [
+    "market",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 201
+  },
+  {
+   "id": "phrase:market:0690",
+   "kind": "phrase",
+   "en": "The market is very crowded today.",
+   "en_norm": "the market is very crowded today",
+   "my_norm": "ဒီနေ့ ဈေး အရမ်း စည်ကားတယ်။",
+   "fingerprint": "5986858d48c18481",
+   "vocab_sig": [
+    "crowded",
+    "market",
+    "today"
+   ],
+   "template_sig": "the W is very W W .",
+   "tags": [
+    "market",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 202
+  },
+  {
+   "id": "phrase:market:0691",
+   "kind": "phrase",
+   "en": "Let's go early to get the best picks.",
+   "en_norm": "let s go early to get the best picks",
+   "my_norm": "အကောင်းဆုံးတွေ ရဖို့ စောစော သွားကြရအောင်။",
+   "fingerprint": "c96d17c100f48ed1",
+   "vocab_sig": [
+    "best",
+    "early",
+    "get",
+    "go",
+    "picks"
+   ],
+   "template_sig": "let ' s W W to W the W W .",
+   "tags": [
+    "market",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 203
+  },
+  {
+   "id": "phrase:market:0692",
+   "kind": "phrase",
+   "en": "I bought too much — help me carry!",
+   "en_norm": "i bought too much help me carry",
+   "my_norm": "အရမ်း များများ ဝယ်မိတယ် သယ်ပေးပါ",
+   "fingerprint": "f3c7acb528118b44",
+   "vocab_sig": [
+    "bought",
+    "carry",
+    "help",
+    "much"
+   ],
+   "template_sig": "i W too W — W me W !",
+   "tags": [
+    "market",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 204
+  },
+  {
+   "id": "phrase:market:0693",
+   "kind": "phrase",
+   "en": "Can you break a thousand?",
+   "en_norm": "can you break a thousand",
+   "my_norm": "တစ်ထောင်ကို ခွဲပေးနိုင်မလား။",
+   "fingerprint": "5c64873895ef35fe",
+   "vocab_sig": [
+    "break",
+    "thousand"
+   ],
+   "template_sig": "can you W a W ?",
+   "tags": [
+    "market",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 205
+  },
+  {
+   "id": "phrase:market:0694",
+   "kind": "phrase",
+   "en": "Put it in a separate bag.",
+   "en_norm": "put it in a separate bag",
+   "my_norm": "သီးသန့် အိတ်ထဲ ထည့်ပေးပါ။",
+   "fingerprint": "ad3c3f85b338c359",
+   "vocab_sig": [
+    "bag",
+    "put",
+    "separate"
+   ],
+   "template_sig": "W it in a W W .",
+   "tags": [
+    "market",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 206
+  },
+  {
+   "id": "phrase:market:0695",
+   "kind": "phrase",
+   "en": "I don't need a bag — I brought my own.",
+   "en_norm": "i don t need a bag i brought my own",
+   "my_norm": "အိတ် မလိုဘူး ကိုယ့်အိတ် ယူလာတယ်။",
+   "fingerprint": "6522e48d766190e5",
+   "vocab_sig": [
+    "bag",
+    "brought",
+    "need",
+    "own"
+   ],
+   "template_sig": "i don ' t W a W — i W my W .",
+   "tags": [
+    "market",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 207
+  },
+  {
+   "id": "phrase:market:0696",
+   "kind": "phrase",
+   "en": "These eggs are farm fresh.",
+   "en_norm": "these eggs are farm fresh",
+   "my_norm": "ဒီကြက်ဥတွေ လယ်ကွက်လတ်လတ်ဆတ်ဆတ်။",
+   "fingerprint": "6f905d36d64a517d",
+   "vocab_sig": [
+    "eggs",
+    "farm",
+    "fresh"
+   ],
+   "template_sig": "these W are W W .",
+   "tags": [
+    "market",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 208
+  },
+  {
+   "id": "phrase:market:0697",
+   "kind": "phrase",
+   "en": "How many eggs in a tray?",
+   "en_norm": "how many eggs in a tray",
+   "my_norm": "တစ်ဗန်း ဘယ်နှလုံး ပါလဲ။",
+   "fingerprint": "7894a7ee741bab64",
+   "vocab_sig": [
+    "eggs",
+    "many",
+    "tray"
+   ],
+   "template_sig": "how W W in a W ?",
+   "tags": [
+    "market",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 209
+  },
+  {
+   "id": "phrase:market:0698",
+   "kind": "phrase",
+   "en": "The flowers smell wonderful.",
+   "en_norm": "the flowers smell wonderful",
+   "my_norm": "ပန်းတွေ အနံ့ အရမ်း မွှေးတယ်။",
+   "fingerprint": "7eaaa3d903bb4835",
+   "vocab_sig": [
+    "flowers",
+    "smell",
+    "wonderful"
+   ],
+   "template_sig": "the W W W .",
+   "tags": [
+    "market",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 210
+  },
+  {
+   "id": "phrase:market:0699",
+   "kind": "phrase",
+   "en": "I'll take a dozen bananas.",
+   "en_norm": "i ll take a dozen bananas",
+   "my_norm": "ငှက်ပျောသီး တစ်ဒါဇင် ယူမယ်။",
+   "fingerprint": "06c765e95a1aa500",
+   "vocab_sig": [
+    "bananas",
+    "dozen",
+    "take"
+   ],
+   "template_sig": "i ' ll W a W W .",
+   "tags": [
+    "market",
+    "phrase"
+   ],
+   "file": "src/data/phrases-f.ts",
+   "line": 211
+  },
+  {
+   "id": "phrase:work:0700",
+   "kind": "phrase",
+   "en": "Let's schedule a follow-up meeting.",
+   "en_norm": "let s schedule a follow up meeting",
+   "my_norm": "နောက်ဆက်တွဲ အစည်းအဝေး စီစဉ်ကြရအောင်။",
+   "fingerprint": "fd0d84b6cf97c6b1",
+   "vocab_sig": [
+    "follow",
+    "meeting",
+    "schedule"
+   ],
+   "template_sig": "let ' s W a W - up W .",
+   "tags": [
+    "work",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 7
+  },
+  {
+   "id": "phrase:work:0701",
+   "kind": "phrase",
+   "en": "I'll send you the updated file.",
+   "en_norm": "i ll send you the updated file",
+   "my_norm": "အပ်ဒိတ်လုပ်ထားတဲ့ ဖိုင် ပို့ပေးမယ်။",
+   "fingerprint": "aef9821e49912f05",
+   "vocab_sig": [
+    "file",
+    "send",
+    "updated"
+   ],
+   "template_sig": "i ' ll W you the W W .",
+   "tags": [
+    "work",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 8
+  },
+  {
+   "id": "phrase:work:0702",
+   "kind": "phrase",
+   "en": "The client said yes to our proposal.",
+   "en_norm": "the client said yes to our proposal",
+   "my_norm": "ဖောက်သည် ငါတို့အဆိုပြုချက်ကို သဘောတူပြီ။",
+   "fingerprint": "40beeb6caeb04cdc",
+   "vocab_sig": [
+    "client",
+    "proposal",
+    "said"
+   ],
+   "template_sig": "the W W yes to our W .",
+   "tags": [
+    "work",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 9
+  },
+  {
+   "id": "phrase:work:0703",
+   "kind": "phrase",
+   "en": "We need to finish this by Friday.",
+   "en_norm": "we need to finish this by friday",
+   "my_norm": "သောကြာနေ့နောက်ဆုံးထား ပြီးရမယ်။",
+   "fingerprint": "4bdb805eccdacea6",
+   "vocab_sig": [
+    "finish",
+    "friday",
+    "need"
+   ],
+   "template_sig": "we W to W this by W .",
+   "tags": [
+    "work",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 10
+  },
+  {
+   "id": "phrase:work:0704",
+   "kind": "phrase",
+   "en": "Can we move the meeting to Monday?",
+   "en_norm": "can we move the meeting to monday",
+   "my_norm": "အစည်းအဝေးကို တနင်္လာနေ့ ရွှေ့လို့ရမလား။",
+   "fingerprint": "22858561102fe0bb",
+   "vocab_sig": [
+    "meeting",
+    "monday",
+    "move"
+   ],
+   "template_sig": "can we W the W to W ?",
+   "tags": [
+    "work",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 11
+  },
+  {
+   "id": "phrase:work:0705",
+   "kind": "phrase",
+   "en": "I'm working from home today.",
+   "en_norm": "i m working from home today",
+   "my_norm": "ဒီနေ့ အိမ်ကနေ အလုပ်လုပ်တယ်။",
+   "fingerprint": "b1ce30a1ae721695",
+   "vocab_sig": [
+    "home",
+    "today",
+    "working"
+   ],
+   "template_sig": "i ' m W from W W .",
+   "tags": [
+    "work",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 12
+  },
+  {
+   "id": "phrase:work:0706",
+   "kind": "phrase",
+   "en": "Please CC me on the email.",
+   "en_norm": "please cc me on the email",
+   "my_norm": "အီးမေးလ်မှာ ကျွန်တော့်ကို CC ထည့်ပေးပါ။",
+   "fingerprint": "813fbf9293f26b18",
+   "vocab_sig": [
+    "cc",
+    "email"
+   ],
+   "template_sig": "please W me on the W .",
+   "tags": [
+    "work",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 13
+  },
+  {
+   "id": "phrase:work:0707",
+   "kind": "phrase",
+   "en": "The Wi-Fi in the meeting room is down.",
+   "en_norm": "the wi fi in the meeting room is down",
+   "my_norm": "အစည်းအဝေးခန်း Wi Fi ပျက်နေတယ်။",
+   "fingerprint": "34f1a71e7d6f5876",
+   "vocab_sig": [
+    "fi",
+    "meeting",
+    "room",
+    "wi"
+   ],
+   "template_sig": "the W - W in the W W is down .",
+   "tags": [
+    "work",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 14
+  },
+  {
+   "id": "phrase:work:0708",
+   "kind": "phrase",
+   "en": "I have a performance review tomorrow.",
+   "en_norm": "i have a performance review tomorrow",
+   "my_norm": "မနက်ဖြန် စွမ်းဆောင်ရည် သုံးသပ်ချက် ရှိတယ်။",
+   "fingerprint": "e160693b95cbeed8",
+   "vocab_sig": [
+    "performance",
+    "review",
+    "tomorrow"
+   ],
+   "template_sig": "i have a W W W .",
+   "tags": [
+    "work",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 15
+  },
+  {
+   "id": "phrase:work:0709",
+   "kind": "phrase",
+   "en": "Let's take a five-minute break.",
+   "en_norm": "let s take a five minute break",
+   "my_norm": "ငါးမိနစ် နားကြရအောင်။",
+   "fingerprint": "1ebba0a5bee72f4a",
+   "vocab_sig": [
+    "break",
+    "five",
+    "minute",
+    "take"
+   ],
+   "template_sig": "let ' s W a W - W W .",
+   "tags": [
+    "work",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 16
+  },
+  {
+   "id": "phrase:work:0710",
+   "kind": "phrase",
+   "en": "Could you summarize the main points?",
+   "en_norm": "could you summarize the main points",
+   "my_norm": "အဓိကအချက်တွေ အကျဉ်းချုပ် ပြောပေးနိုင်မလား။",
+   "fingerprint": "b977839e130879ce",
+   "vocab_sig": [
+    "main",
+    "points",
+    "summarize"
+   ],
+   "template_sig": "could you W the W W ?",
+   "tags": [
+    "work",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 17
+  },
+  {
+   "id": "phrase:work:0711",
+   "kind": "phrase",
+   "en": "I'll take notes during the call.",
+   "en_norm": "i ll take notes during the call",
+   "my_norm": "ဖုန်းပြောနေတုန်း မှတ်စု ယူမယ်။",
+   "fingerprint": "8c99b15f36d3e23e",
+   "vocab_sig": [
+    "call",
+    "during",
+    "notes",
+    "take"
+   ],
+   "template_sig": "i ' ll W W W the W .",
+   "tags": [
+    "work",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 18
+  },
+  {
+   "id": "phrase:work:0712",
+   "kind": "phrase",
+   "en": "Let's stick to the agenda.",
+   "en_norm": "let s stick to the agenda",
+   "my_norm": "အစီအစဉ်အတိုင်း ဆက်ကြရအောင်။",
+   "fingerprint": "24043bba33e7b7c8",
+   "vocab_sig": [
+    "agenda",
+    "stick"
+   ],
+   "template_sig": "let ' s W to the W .",
+   "tags": [
+    "work",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 19
+  },
+  {
+   "id": "phrase:work:0713",
+   "kind": "phrase",
+   "en": "We are running out of time.",
+   "en_norm": "we are running out of time",
+   "my_norm": "အချိန် ကုန်ခါနီးပြီ။",
+   "fingerprint": "9d486e8964089aa2",
+   "vocab_sig": [
+    "running",
+    "time"
+   ],
+   "template_sig": "we are W out of W .",
+   "tags": [
+    "work",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 20
+  },
+  {
+   "id": "phrase:work:0714",
+   "kind": "phrase",
+   "en": "Can we extend the deadline?",
+   "en_norm": "can we extend the deadline",
+   "my_norm": "နောက်ဆုံးရက် တိုးလို့ရမလား။",
+   "fingerprint": "b5fed971d48decb8",
+   "vocab_sig": [
+    "deadline",
+    "extend"
+   ],
+   "template_sig": "can we W the W ?",
+   "tags": [
+    "work",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 21
+  },
+  {
+   "id": "phrase:work:0715",
+   "kind": "phrase",
+   "en": "The project is on track.",
+   "en_norm": "the project is on track",
+   "my_norm": "ပရောဂျက် လမ်းကြောင်းမှန်ပေါ်မှာ။",
+   "fingerprint": "b0209d92ddd903c3",
+   "vocab_sig": [
+    "project",
+    "track"
+   ],
+   "template_sig": "the W is on W .",
+   "tags": [
+    "work",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 22
+  },
+  {
+   "id": "phrase:work:0716",
+   "kind": "phrase",
+   "en": "We hit a small problem yesterday.",
+   "en_norm": "we hit a small problem yesterday",
+   "my_norm": "မနေ့က ပြဿနာသေး တစ်ခု တွေ့ခဲ့တယ်။",
+   "fingerprint": "7834b5af89662906",
+   "vocab_sig": [
+    "hit",
+    "problem",
+    "small",
+    "yesterday"
+   ],
+   "template_sig": "we W a W W W .",
+   "tags": [
+    "work",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 23
+  },
+  {
+   "id": "phrase:work:0717",
+   "kind": "phrase",
+   "en": "Let's brainstorm some new ideas.",
+   "en_norm": "let s brainstorm some new ideas",
+   "my_norm": "အကြံသစ်တွေ ဝိုင်းစဉ်းစားကြရအောင်။",
+   "fingerprint": "cde89504fed03eba",
+   "vocab_sig": [
+    "brainstorm",
+    "ideas",
+    "new",
+    "some"
+   ],
+   "template_sig": "let ' s W W W W .",
+   "tags": [
+    "work",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 24
+  },
+  {
+   "id": "phrase:work:0718",
+   "kind": "phrase",
+   "en": "Who is in charge of this task?",
+   "en_norm": "who is in charge of this task",
+   "my_norm": "ဒီအလုပ်ကို ဘယ်သူ တာဝန်ယူလဲ။",
+   "fingerprint": "7ef733e41b13a261",
+   "vocab_sig": [
+    "charge",
+    "task"
+   ],
+   "template_sig": "who is in W of this W ?",
+   "tags": [
+    "work",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 25
+  },
+  {
+   "id": "phrase:work:0719",
+   "kind": "phrase",
+   "en": "I'll handle the presentation slides.",
+   "en_norm": "i ll handle the presentation slides",
+   "my_norm": "တင်ပြချက် စလိုက်တွေ ကျွန်တော် ကိုင်မယ်။",
+   "fingerprint": "2ee9a0aeecddcf33",
+   "vocab_sig": [
+    "handle",
+    "presentation",
+    "slides"
+   ],
+   "template_sig": "i ' ll W the W W .",
+   "tags": [
+    "work",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 26
+  },
+  {
+   "id": "phrase:work:0720",
+   "kind": "phrase",
+   "en": "The numbers don't add up.",
+   "en_norm": "the numbers don t add up",
+   "my_norm": "ဂဏန်းတွေ မကိုက်ညီဘူး။",
+   "fingerprint": "f8ddfb19776dec3c",
+   "vocab_sig": [
+    "add",
+    "numbers"
+   ],
+   "template_sig": "the W don ' t W up .",
+   "tags": [
+    "work",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 27
+  },
+  {
+   "id": "phrase:work:0721",
+   "kind": "phrase",
+   "en": "We need to cut costs this quarter.",
+   "en_norm": "we need to cut costs this quarter",
+   "my_norm": "ဒီသုံးလပတ် ကုန်ကျစရိတ် လျှော့ရမယ်။",
+   "fingerprint": "a6a9cbf69bf61aea",
+   "vocab_sig": [
+    "costs",
+    "cut",
+    "need",
+    "quarter"
+   ],
+   "template_sig": "we W to W W this W .",
+   "tags": [
+    "work",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 28
+  },
+  {
+   "id": "phrase:work:0722",
+   "kind": "phrase",
+   "en": "Our sales went up last month.",
+   "en_norm": "our sales went up last month",
+   "my_norm": "ပြီးခဲ့တဲ့လ အရောင်းတက်တယ်။",
+   "fingerprint": "4db3b87a9b6fc5e7",
+   "vocab_sig": [
+    "last",
+    "month",
+    "sales",
+    "went"
+   ],
+   "template_sig": "our W W up W W .",
+   "tags": [
+    "work",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 29
+  },
+  {
+   "id": "phrase:work:0723",
+   "kind": "phrase",
+   "en": "The new hire starts on Monday.",
+   "en_norm": "the new hire starts on monday",
+   "my_norm": "ဝန်ထမ်းသစ် တနင်္လာနေ့ စမယ်။",
+   "fingerprint": "ad921937a0171c7b",
+   "vocab_sig": [
+    "hire",
+    "monday",
+    "new",
+    "starts"
+   ],
+   "template_sig": "the W W W on W .",
+   "tags": [
+    "work",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 30
+  },
+  {
+   "id": "phrase:work:0724",
+   "kind": "phrase",
+   "en": "I need to take a day off.",
+   "en_norm": "i need to take a day off",
+   "my_norm": "တစ်ရက် ခွင့်ယူရမယ်။",
+   "fingerprint": "ff57b7f063e4b3f6",
+   "vocab_sig": [
+    "day",
+    "need",
+    "take"
+   ],
+   "template_sig": "i W to W a W off .",
+   "tags": [
+    "work",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 31
+  },
+  {
+   "id": "phrase:work:0725",
+   "kind": "phrase",
+   "en": "My shift ends at six.",
+   "en_norm": "my shift ends at six",
+   "my_norm": "ကျွန်တော့်အလှည့် ခြောက်နာရီ ပြီးတယ်။",
+   "fingerprint": "aaf0c4121f1e70cc",
+   "vocab_sig": [
+    "ends",
+    "shift",
+    "six"
+   ],
+   "template_sig": "my W W at W .",
+   "tags": [
+    "work",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 32
+  },
+  {
+   "id": "phrase:work:0726",
+   "kind": "phrase",
+   "en": "Overtime is not allowed this week.",
+   "en_norm": "overtime is not allowed this week",
+   "my_norm": "ဒီအပတ် အချိန်ပို မရဘူး။",
+   "fingerprint": "e129c7df28aae941",
+   "vocab_sig": [
+    "allowed",
+    "overtime",
+    "week"
+   ],
+   "template_sig": "W is not W this W .",
+   "tags": [
+    "work",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 33
+  },
+  {
+   "id": "phrase:work:0727",
+   "kind": "phrase",
+   "en": "Please submit your timesheet.",
+   "en_norm": "please submit your timesheet",
+   "my_norm": "အလုပ်ချိန်စာရင်း တင်ပေးပါ။",
+   "fingerprint": "2f20cd014c1232d7",
+   "vocab_sig": [
+    "submit",
+    "timesheet"
+   ],
+   "template_sig": "please W your W .",
+   "tags": [
+    "work",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 34
+  },
+  {
+   "id": "phrase:work:0728",
+   "kind": "phrase",
+   "en": "The office party is next Friday.",
+   "en_norm": "the office party is next friday",
+   "my_norm": "ရုံးပါတီက နောက်သောကြာနေ့။",
+   "fingerprint": "dd140e94e3e2fbdf",
+   "vocab_sig": [
+    "friday",
+    "next",
+    "office",
+    "party"
+   ],
+   "template_sig": "the W W is W W .",
+   "tags": [
+    "work",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 35
+  },
+  {
+   "id": "phrase:work:0729",
+   "kind": "phrase",
+   "en": "I got promoted last month!",
+   "en_norm": "i got promoted last month",
+   "my_norm": "ပြီးခဲ့တလ ရာထူးတိုးခဲ့တယ်",
+   "fingerprint": "8dc41f18fef6f3de",
+   "vocab_sig": [
+    "got",
+    "last",
+    "month",
+    "promoted"
+   ],
+   "template_sig": "i W W W W !",
+   "tags": [
+    "work",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 36
+  },
+  {
+   "id": "phrase:office:0730",
+   "kind": "phrase",
+   "en": "The printer needs more paper.",
+   "en_norm": "the printer needs more paper",
+   "my_norm": "ပရင်တာမှာ စက္ကူ ထပ်ထည့်ရမယ်။",
+   "fingerprint": "12ecd727df83c96f",
+   "vocab_sig": [
+    "more",
+    "needs",
+    "paper",
+    "printer"
+   ],
+   "template_sig": "the W W W W .",
+   "tags": [
+    "office",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 38
+  },
+  {
+   "id": "phrase:office:0731",
+   "kind": "phrase",
+   "en": "Can you book the conference room?",
+   "en_norm": "can you book the conference room",
+   "my_norm": "အစည်းအဝေးခန်း ကြိုတင်ယူပေးနိုင်မလား။",
+   "fingerprint": "30c6f7b8aee230a5",
+   "vocab_sig": [
+    "book",
+    "conference",
+    "room"
+   ],
+   "template_sig": "can you W the W W ?",
+   "tags": [
+    "office",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 39
+  },
+  {
+   "id": "phrase:office:0732",
+   "kind": "phrase",
+   "en": "I left my badge at home.",
+   "en_norm": "i left my badge at home",
+   "my_norm": "ဝန်ထမ်းကတ် အိမ်မှာ ကျန်ခဲ့တယ်။",
+   "fingerprint": "8a602c2858ebd9c3",
+   "vocab_sig": [
+    "badge",
+    "home",
+    "left"
+   ],
+   "template_sig": "i W my W at W .",
+   "tags": [
+    "office",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 40
+  },
+  {
+   "id": "phrase:office:0733",
+   "kind": "phrase",
+   "en": "The elevator is out of service.",
+   "en_norm": "the elevator is out of service",
+   "my_norm": "ဓာတ်လှေခါး သုံးမရဘူး။",
+   "fingerprint": "12372a4a4b3502f5",
+   "vocab_sig": [
+    "elevator",
+    "service"
+   ],
+   "template_sig": "the W is out of W .",
+   "tags": [
+    "office",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 41
+  },
+  {
+   "id": "phrase:office:0734",
+   "kind": "phrase",
+   "en": "Let's grab coffee downstairs.",
+   "en_norm": "let s grab coffee downstairs",
+   "my_norm": "အောက်ထပ် ကော်ဖီ သွားသောက်ကြရအောင်။",
+   "fingerprint": "02c9dd1333c00418",
+   "vocab_sig": [
+    "coffee",
+    "downstairs",
+    "grab"
+   ],
+   "template_sig": "let ' s W W W .",
+   "tags": [
+    "office",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 42
+  },
+  {
+   "id": "phrase:office:0735",
+   "kind": "phrase",
+   "en": "The meeting room is occupied.",
+   "en_norm": "the meeting room is occupied",
+   "my_norm": "အစည်းအဝေးခန်း လူပြည့်နေတယ်။",
+   "fingerprint": "b4b0cff77240d746",
+   "vocab_sig": [
+    "meeting",
+    "occupied",
+    "room"
+   ],
+   "template_sig": "the W W is W .",
+   "tags": [
+    "office",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 43
+  },
+  {
+   "id": "phrase:office:0736",
+   "kind": "phrase",
+   "en": "Can I borrow your charger?",
+   "en_norm": "can i borrow your charger",
+   "my_norm": "အားသွင်းကြိုး ငှားလို့ရမလား။",
+   "fingerprint": "79205e55b282fd9f",
+   "vocab_sig": [
+    "borrow",
+    "charger"
+   ],
+   "template_sig": "can i W your W ?",
+   "tags": [
+    "office",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 44
+  },
+  {
+   "id": "phrase:office:0737",
+   "kind": "phrase",
+   "en": "My computer keeps freezing.",
+   "en_norm": "my computer keeps freezing",
+   "my_norm": "ကွန်ပျူတာ ခဏခဏ ရပ်နေတယ်။",
+   "fingerprint": "9aee65e15c9e5196",
+   "vocab_sig": [
+    "computer",
+    "freezing",
+    "keeps"
+   ],
+   "template_sig": "my W W W .",
+   "tags": [
+    "office",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 45
+  },
+  {
+   "id": "phrase:office:0738",
+   "kind": "phrase",
+   "en": "I need to update my password.",
+   "en_norm": "i need to update my password",
+   "my_norm": "စကားဝှက် အပ်ဒိတ် လုပ်ရမယ်။",
+   "fingerprint": "d114e2aefcee0417",
+   "vocab_sig": [
+    "need",
+    "password",
+    "update"
+   ],
+   "template_sig": "i W to W my W .",
+   "tags": [
+    "office",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 46
+  },
+  {
+   "id": "phrase:office:0739",
+   "kind": "phrase",
+   "en": "The shared drive is full.",
+   "en_norm": "the shared drive is full",
+   "my_norm": "မျှသုံးဒရိုက် ပြည့်နေတယ်။",
+   "fingerprint": "4d863092dd44a91e",
+   "vocab_sig": [
+    "drive",
+    "full",
+    "shared"
+   ],
+   "template_sig": "the W W is W .",
+   "tags": [
+    "office",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 47
+  },
+  {
+   "id": "phrase:office:0740",
+   "kind": "phrase",
+   "en": "Please don't disturb me this afternoon.",
+   "en_norm": "please don t disturb me this afternoon",
+   "my_norm": "ဒီနေ့လည်မှာ မနှောင့်ယှက်ပါနဲ့။",
+   "fingerprint": "3c19265008537e17",
+   "vocab_sig": [
+    "afternoon",
+    "disturb"
+   ],
+   "template_sig": "please don ' t W me this W .",
+   "tags": [
+    "office",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 48
+  },
+  {
+   "id": "phrase:office:0741",
+   "kind": "phrase",
+   "en": "I'm in a meeting — text me instead.",
+   "en_norm": "i m in a meeting text me instead",
+   "my_norm": "အစည်းအဝေးတက်နေတယ် စာပို့ပါ။",
+   "fingerprint": "2233255a0c394ad9",
+   "vocab_sig": [
+    "instead",
+    "meeting",
+    "text"
+   ],
+   "template_sig": "i ' m in a W — W me W .",
+   "tags": [
+    "office",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 49
+  },
+  {
+   "id": "phrase:office:0742",
+   "kind": "phrase",
+   "en": "The new policy starts next month.",
+   "en_norm": "the new policy starts next month",
+   "my_norm": "မူဝါဒသစ် နောက်လ စမယ်။",
+   "fingerprint": "b18545ffd1b39683",
+   "vocab_sig": [
+    "month",
+    "new",
+    "next",
+    "policy",
+    "starts"
+   ],
+   "template_sig": "the W W W W W .",
+   "tags": [
+    "office",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 50
+  },
+  {
+   "id": "phrase:office:0743",
+   "kind": "phrase",
+   "en": "HR sent an important announcement.",
+   "en_norm": "hr sent an important announcement",
+   "my_norm": "HR က အရေးကြီး ကြေညာချက် ပို့တယ်။",
+   "fingerprint": "96b72ef0180392e3",
+   "vocab_sig": [
+    "announcement",
+    "hr",
+    "important",
+    "sent"
+   ],
+   "template_sig": "W W an W W .",
+   "tags": [
+    "office",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 51
+  },
+  {
+   "id": "phrase:office:0744",
+   "kind": "phrase",
+   "en": "Let's order lunch together.",
+   "en_norm": "let s order lunch together",
+   "my_norm": "နေ့လည်စာ အတူ မှာကြရအောင်။",
+   "fingerprint": "9d7f8c9c3fd5d2a3",
+   "vocab_sig": [
+    "lunch",
+    "order",
+    "together"
+   ],
+   "template_sig": "let ' s W W W .",
+   "tags": [
+    "office",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 52
+  },
+  {
+   "id": "phrase:office:0745",
+   "kind": "phrase",
+   "en": "The cafeteria food is quite good.",
+   "en_norm": "the cafeteria food is quite good",
+   "my_norm": "စားသောက်ဆောင် အစားအသောက် တော်တော် ကောင်းတယ်။",
+   "fingerprint": "ad0655ea6d637c1b",
+   "vocab_sig": [
+    "cafeteria",
+    "food",
+    "good",
+    "quite"
+   ],
+   "template_sig": "the W W is W W .",
+   "tags": [
+    "office",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 53
+  },
+  {
+   "id": "phrase:office:0746",
+   "kind": "phrase",
+   "en": "I have back-to-back meetings today.",
+   "en_norm": "i have back to back meetings today",
+   "my_norm": "ဒီနေ့ အစည်းအဝေး ဆက်တိုက်။",
+   "fingerprint": "ada1ac04405f4164",
+   "vocab_sig": [
+    "back",
+    "meetings",
+    "today"
+   ],
+   "template_sig": "i have W - to - W W W .",
+   "tags": [
+    "office",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 54
+  },
+  {
+   "id": "phrase:office:0747",
+   "kind": "phrase",
+   "en": "Can you cover for me tomorrow?",
+   "en_norm": "can you cover for me tomorrow",
+   "my_norm": "မနက်ဖြန် ကျွန်တော့်အစား တာဝန်ယူပေးနိုင်မလား။",
+   "fingerprint": "dff6cd190ecbd2ed",
+   "vocab_sig": [
+    "cover",
+    "tomorrow"
+   ],
+   "template_sig": "can you W for me W ?",
+   "tags": [
+    "office",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 55
+  },
+  {
+   "id": "phrase:office:0748",
+   "kind": "phrase",
+   "en": "The boss wants to see you.",
+   "en_norm": "the boss wants to see you",
+   "my_norm": "သူဌေးက မင်းကို တွေ့ချင်တယ်။",
+   "fingerprint": "761be46981bff33c",
+   "vocab_sig": [
+    "boss",
+    "see",
+    "wants"
+   ],
+   "template_sig": "the W W to W you .",
+   "tags": [
+    "office",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 56
+  },
+  {
+   "id": "phrase:office:0749",
+   "kind": "phrase",
+   "en": "Let's celebrate after work!",
+   "en_norm": "let s celebrate after work",
+   "my_norm": "အလုပ်ပြီးရင် ဂုဏ်ပြုကြရအောင်",
+   "fingerprint": "51b7751f965c8e0a",
+   "vocab_sig": [
+    "celebrate",
+    "work"
+   ],
+   "template_sig": "let ' s W after W !",
+   "tags": [
+    "office",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 57
+  },
+  {
+   "id": "phrase:business:0750",
+   "kind": "phrase",
+   "en": "Let's discuss the terms first.",
+   "en_norm": "let s discuss the terms first",
+   "my_norm": "စည်းမျဉ်းတွေ အရင် ဆွေးနွေးကြရအောင်။",
+   "fingerprint": "0d986769251fc623",
+   "vocab_sig": [
+    "discuss",
+    "first",
+    "terms"
+   ],
+   "template_sig": "let ' s W the W W .",
+   "tags": [
+    "business",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 59
+  },
+  {
+   "id": "phrase:business:0751",
+   "kind": "phrase",
+   "en": "Our budget is quite tight this year.",
+   "en_norm": "our budget is quite tight this year",
+   "my_norm": "ဒီနှစ် ဘတ်ဂျက် အရမ်း တင်းကျပ်တယ်။",
+   "fingerprint": "f9add4987caf012d",
+   "vocab_sig": [
+    "budget",
+    "quite",
+    "tight",
+    "year"
+   ],
+   "template_sig": "our W is W W this W .",
+   "tags": [
+    "business",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 60
+  },
+  {
+   "id": "phrase:business:0752",
+   "kind": "phrase",
+   "en": "Can you send me the invoice?",
+   "en_norm": "can you send me the invoice",
+   "my_norm": "ငွေတောင်းခံလွှာ ပို့ပေးနိုင်မလား။",
+   "fingerprint": "97a7326e77cf676e",
+   "vocab_sig": [
+    "invoice",
+    "send"
+   ],
+   "template_sig": "can you W me the W ?",
+   "tags": [
+    "business",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 61
+  },
+  {
+   "id": "phrase:business:0753",
+   "kind": "phrase",
+   "en": "The presentation went really well.",
+   "en_norm": "the presentation went really well",
+   "my_norm": "တင်ပြချက် အရမ်း အဆင်ပြေခဲ့တယ်။",
+   "fingerprint": "ef51d0378e0479d6",
+   "vocab_sig": [
+    "presentation",
+    "really",
+    "well",
+    "went"
+   ],
+   "template_sig": "the W W W W .",
+   "tags": [
+    "business",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 62
+  },
+  {
+   "id": "phrase:business:0754",
+   "kind": "phrase",
+   "en": "We need a better strategy.",
+   "en_norm": "we need a better strategy",
+   "my_norm": "ပိုကောင်းတဲ့ နည်းဗျူဟာ လိုတယ်။",
+   "fingerprint": "04dae152ef253e20",
+   "vocab_sig": [
+    "better",
+    "need",
+    "strategy"
+   ],
+   "template_sig": "we W a W W .",
+   "tags": [
+    "business",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 63
+  },
+  {
+   "id": "phrase:business:0755",
+   "kind": "phrase",
+   "en": "Let's sign the contract today.",
+   "en_norm": "let s sign the contract today",
+   "my_norm": "ဒီနေ့ စာချုပ် ချုပ်ကြရအောင်။",
+   "fingerprint": "72d957f9c233598e",
+   "vocab_sig": [
+    "contract",
+    "sign",
+    "today"
+   ],
+   "template_sig": "let ' s W the W W .",
+   "tags": [
+    "business",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 64
+  },
+  {
+   "id": "phrase:business:0756",
+   "kind": "phrase",
+   "en": "When can you deliver the goods?",
+   "en_norm": "when can you deliver the goods",
+   "my_norm": "ကုန်ပစ္စည်း ဘယ်တော့ ပို့နိုင်မလဲ။",
+   "fingerprint": "691fc7c1017d396c",
+   "vocab_sig": [
+    "deliver",
+    "goods"
+   ],
+   "template_sig": "when can you W the W ?",
+   "tags": [
+    "business",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 65
+  },
+  {
+   "id": "phrase:business:0757",
+   "kind": "phrase",
+   "en": "Payment is due within thirty days.",
+   "en_norm": "payment is due within thirty days",
+   "my_norm": "ရက်ပေါင်း သုံးဆယ်အတွင်း ငွေပေးရမယ်။",
+   "fingerprint": "e69304c86cc2e3d8",
+   "vocab_sig": [
+    "days",
+    "due",
+    "payment",
+    "thirty",
+    "within"
+   ],
+   "template_sig": "W is W W W W .",
+   "tags": [
+    "business",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 66
+  },
+  {
+   "id": "phrase:business:0758",
+   "kind": "phrase",
+   "en": "We offer a full refund.",
+   "en_norm": "we offer a full refund",
+   "my_norm": "အပြည့် ပြန်အမ်းငွေ ပေးတယ်။",
+   "fingerprint": "ee09a91e7411ab73",
+   "vocab_sig": [
+    "full",
+    "offer",
+    "refund"
+   ],
+   "template_sig": "we W a W W .",
+   "tags": [
+    "business",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 67
+  },
+  {
+   "id": "phrase:business:0759",
+   "kind": "phrase",
+   "en": "That's our final offer.",
+   "en_norm": "that s our final offer",
+   "my_norm": "ဒါ ငါတို့ နောက်ဆုံး ကမ်းလှမ်းချက်။",
+   "fingerprint": "afaf4aa815a1bfac",
+   "vocab_sig": [
+    "final",
+    "offer"
+   ],
+   "template_sig": "that ' s our W W .",
+   "tags": [
+    "business",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 68
+  },
+  {
+   "id": "phrase:business:0760",
+   "kind": "phrase",
+   "en": "Can we meet halfway on the price?",
+   "en_norm": "can we meet halfway on the price",
+   "my_norm": "ဈေးကို အလယ်မှာ တွေ့ကြရအောင်။",
+   "fingerprint": "089b10200d046e25",
+   "vocab_sig": [
+    "halfway",
+    "meet",
+    "price"
+   ],
+   "template_sig": "can we W W on the W ?",
+   "tags": [
+    "business",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 69
+  },
+  {
+   "id": "phrase:business:0761",
+   "kind": "phrase",
+   "en": "I need to check with my team.",
+   "en_norm": "i need to check with my team",
+   "my_norm": "အဖွဲ့နဲ့ တိုင်ပင်ရဦးမယ်။",
+   "fingerprint": "04ec35c79fb7cf64",
+   "vocab_sig": [
+    "check",
+    "need",
+    "team"
+   ],
+   "template_sig": "i W to W with my W .",
+   "tags": [
+    "business",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 70
+  },
+  {
+   "id": "phrase:business:0762",
+   "kind": "phrase",
+   "en": "Let's put it in writing.",
+   "en_norm": "let s put it in writing",
+   "my_norm": "စာနဲ့ ရေးမှတ်ကြရအောင်။",
+   "fingerprint": "07416f6631581e8c",
+   "vocab_sig": [
+    "put",
+    "writing"
+   ],
+   "template_sig": "let ' s W it in W .",
+   "tags": [
+    "business",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 71
+  },
+  {
+   "id": "phrase:business:0763",
+   "kind": "phrase",
+   "en": "The deal is almost closed.",
+   "en_norm": "the deal is almost closed",
+   "my_norm": "အပေးအယူ ပိတ်ခါနီးပြီ။",
+   "fingerprint": "d6ab21441199ad06",
+   "vocab_sig": [
+    "almost",
+    "closed",
+    "deal"
+   ],
+   "template_sig": "the W is W W .",
+   "tags": [
+    "business",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 72
+  },
+  {
+   "id": "phrase:business:0764",
+   "kind": "phrase",
+   "en": "We lost the bid this time.",
+   "en_norm": "we lost the bid this time",
+   "my_norm": "ဒီတစ်ခါ လေလံရှုံးသွားတယ်။",
+   "fingerprint": "ab8ee2eac7b71a10",
+   "vocab_sig": [
+    "bid",
+    "lost",
+    "time"
+   ],
+   "template_sig": "we W the W this W .",
+   "tags": [
+    "business",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 73
+  },
+  {
+   "id": "phrase:business:0765",
+   "kind": "phrase",
+   "en": "Our competitors lowered their prices.",
+   "en_norm": "our competitors lowered their prices",
+   "my_norm": "ပြိုင်ဘက်တွေ ဈေးချလိုက်တယ်။",
+   "fingerprint": "3e3a779d9ec33e34",
+   "vocab_sig": [
+    "competitors",
+    "lowered",
+    "prices"
+   ],
+   "template_sig": "our W W their W .",
+   "tags": [
+    "business",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 74
+  },
+  {
+   "id": "phrase:business:0766",
+   "kind": "phrase",
+   "en": "Customer feedback has been positive.",
+   "en_norm": "customer feedback has been positive",
+   "my_norm": "ဖောက်သည် တုံ့ပြန်ချက် အပြုသဘော ဆောင်တယ်။",
+   "fingerprint": "949015e75676d6d4",
+   "vocab_sig": [
+    "customer",
+    "feedback",
+    "positive"
+   ],
+   "template_sig": "W W has been W .",
+   "tags": [
+    "business",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 75
+  },
+  {
+   "id": "phrase:business:0767",
+   "kind": "phrase",
+   "en": "We should expand to new markets.",
+   "en_norm": "we should expand to new markets",
+   "my_norm": "ဈေးကွက်သစ်တွေ ချဲ့သင့်တယ်။",
+   "fingerprint": "53c9e4ae35c2c7db",
+   "vocab_sig": [
+    "expand",
+    "markets",
+    "new"
+   ],
+   "template_sig": "we should W to W W .",
+   "tags": [
+    "business",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 76
+  },
+  {
+   "id": "phrase:business:0768",
+   "kind": "phrase",
+   "en": "The launch date is confirmed.",
+   "en_norm": "the launch date is confirmed",
+   "my_norm": "ဖွင့်ပွဲရက် အတည်ပြုပြီ။",
+   "fingerprint": "a0c4d70208d89fbf",
+   "vocab_sig": [
+    "confirmed",
+    "date",
+    "launch"
+   ],
+   "template_sig": "the W W is W .",
+   "tags": [
+    "business",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 77
+  },
+  {
+   "id": "phrase:business:0769",
+   "kind": "phrase",
+   "en": "Let's review the numbers together.",
+   "en_norm": "let s review the numbers together",
+   "my_norm": "ဂဏန်းတွေ အတူ ပြန်စစ်ကြရအောင်။",
+   "fingerprint": "a32f2ae07e11c4b0",
+   "vocab_sig": [
+    "numbers",
+    "review",
+    "together"
+   ],
+   "template_sig": "let ' s W the W W .",
+   "tags": [
+    "business",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 78
+  },
+  {
+   "id": "phrase:friends:0770",
+   "kind": "phrase",
+   "en": "What are you up to this weekend?",
+   "en_norm": "what are you up to this weekend",
+   "my_norm": "ဒီအပတ်ကုန် ဘာလုပ်မလဲ။",
+   "fingerprint": "cc39d1ff53bcc090",
+   "vocab_sig": [
+    "weekend"
+   ],
+   "template_sig": "what are you up to this W ?",
+   "tags": [
+    "friends",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 80
+  },
+  {
+   "id": "phrase:friends:0771",
+   "kind": "phrase",
+   "en": "Long time no see!",
+   "en_norm": "long time no see",
+   "my_norm": "ကြာပြီ မတွေ့တာ",
+   "fingerprint": "063dad045bc4c117",
+   "vocab_sig": [
+    "long",
+    "see",
+    "time"
+   ],
+   "template_sig": "W W no W !",
+   "tags": [
+    "friends",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 81
+  },
+  {
+   "id": "phrase:friends:0772",
+   "kind": "phrase",
+   "en": "How have you been lately?",
+   "en_norm": "how have you been lately",
+   "my_norm": "မကြာသေးခင်က ဘယ်လို နေလဲ။",
+   "fingerprint": "4d45ff3e1283cdab",
+   "vocab_sig": [
+    "lately"
+   ],
+   "template_sig": "how have you been W ?",
+   "tags": [
+    "friends",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 82
+  },
+  {
+   "id": "phrase:friends:0773",
+   "kind": "phrase",
+   "en": "Let's catch up over coffee.",
+   "en_norm": "let s catch up over coffee",
+   "my_norm": "ကော်ဖီသောက်ရင်း စကားပြောကြရအောင်။",
+   "fingerprint": "5d39504b5f05f499",
+   "vocab_sig": [
+    "catch",
+    "coffee"
+   ],
+   "template_sig": "let ' s W up over W .",
+   "tags": [
+    "friends",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 83
+  },
+  {
+   "id": "phrase:friends:0774",
+   "kind": "phrase",
+   "en": "That sounds like fun — count me in!",
+   "en_norm": "that sounds like fun count me in",
+   "my_norm": "ပျော်စရာ ကောင်းပုံရတယ် ကျွန်တော်ပါ ပါတယ်",
+   "fingerprint": "e3dd0b3489e03933",
+   "vocab_sig": [
+    "count",
+    "fun",
+    "sounds"
+   ],
+   "template_sig": "that W like W — W me in !",
+   "tags": [
+    "friends",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 84
+  },
+  {
+   "id": "phrase:friends:0775",
+   "kind": "phrase",
+   "en": "Are you free on Saturday?",
+   "en_norm": "are you free on saturday",
+   "my_norm": "စနေနေ့ အားလား။",
+   "fingerprint": "82caa62fbdb5783b",
+   "vocab_sig": [
+    "free",
+    "saturday"
+   ],
+   "template_sig": "are you W on W ?",
+   "tags": [
+    "friends",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 85
+  },
+  {
+   "id": "phrase:friends:0776",
+   "kind": "phrase",
+   "en": "I had a great time yesterday.",
+   "en_norm": "i had a great time yesterday",
+   "my_norm": "မနေ့က အရမ်း ပျော်ခဲ့တယ်။",
+   "fingerprint": "c1ae1318452594c1",
+   "vocab_sig": [
+    "great",
+    "time",
+    "yesterday"
+   ],
+   "template_sig": "i had a W W W .",
+   "tags": [
+    "friends",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 86
+  },
+  {
+   "id": "phrase:friends:0777",
+   "kind": "phrase",
+   "en": "Thanks for inviting me!",
+   "en_norm": "thanks for inviting me",
+   "my_norm": "ဖိတ်ခေါ်တာ ကျေးဇူးတင်ပါတယ်",
+   "fingerprint": "4e76bba2ed77f2ce",
+   "vocab_sig": [
+    "inviting",
+    "thanks"
+   ],
+   "template_sig": "W for W me !",
+   "tags": [
+    "friends",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 87
+  },
+  {
+   "id": "phrase:friends:0778",
+   "kind": "phrase",
+   "en": "Sorry I'm late — traffic was terrible.",
+   "en_norm": "sorry i m late traffic was terrible",
+   "my_norm": "နောက်ကျတာ တောင်းပန်တယ် လမ်းပိတ်တာ ဆိုးတယ်။",
+   "fingerprint": "2ea6b810e780a69f",
+   "vocab_sig": [
+    "late",
+    "sorry",
+    "terrible",
+    "traffic"
+   ],
+   "template_sig": "W i ' m W — W was W .",
+   "tags": [
+    "friends",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 88
+  },
+  {
+   "id": "phrase:friends:0779",
+   "kind": "phrase",
+   "en": "No worries, we just started.",
+   "en_norm": "no worries we just started",
+   "my_norm": "စိတ်မပူနဲ့၊ အခု စတာ။",
+   "fingerprint": "0968d56655e3d446",
+   "vocab_sig": [
+    "started",
+    "worries"
+   ],
+   "template_sig": "no W , we just W .",
+   "tags": [
+    "friends",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 89
+  },
+  {
+   "id": "phrase:friends:0780",
+   "kind": "phrase",
+   "en": "Let's take a selfie!",
+   "en_norm": "let s take a selfie",
+   "my_norm": "ဆယ်ဖီ ရိုက်ကြရအောင်",
+   "fingerprint": "1152dd386e835f01",
+   "vocab_sig": [
+    "selfie",
+    "take"
+   ],
+   "template_sig": "let ' s W a W !",
+   "tags": [
+    "friends",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 90
+  },
+  {
+   "id": "phrase:friends:0781",
+   "kind": "phrase",
+   "en": "You look great today!",
+   "en_norm": "you look great today",
+   "my_norm": "ဒီနေ့ လှနေတာပဲ",
+   "fingerprint": "b7e2492765a06c2b",
+   "vocab_sig": [
+    "great",
+    "look",
+    "today"
+   ],
+   "template_sig": "you W W W !",
+   "tags": [
+    "friends",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 91
+  },
+  {
+   "id": "phrase:friends:0782",
+   "kind": "phrase",
+   "en": "I love your new haircut.",
+   "en_norm": "i love your new haircut",
+   "my_norm": "ဆံပင်ညှပ်ပုံ အသစ် ကြိုက်တယ်။",
+   "fingerprint": "b5b5a2287be58b58",
+   "vocab_sig": [
+    "haircut",
+    "love",
+    "new"
+   ],
+   "template_sig": "i W your W W .",
+   "tags": [
+    "friends",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 92
+  },
+  {
+   "id": "phrase:friends:0783",
+   "kind": "phrase",
+   "en": "What do you think of this movie?",
+   "en_norm": "what do you think of this movie",
+   "my_norm": "ဒီရုပ်ရှင် ဘယ်လို ထင်လဲ။",
+   "fingerprint": "efbe3111d83d0e49",
+   "vocab_sig": [
+    "movie",
+    "think"
+   ],
+   "template_sig": "what do you W of this W ?",
+   "tags": [
+    "friends",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 93
+  },
+  {
+   "id": "phrase:friends:0784",
+   "kind": "phrase",
+   "en": "Have you seen the new episode?",
+   "en_norm": "have you seen the new episode",
+   "my_norm": "အပိုင်းသစ် ကြည့်ပြီးပြီလား။",
+   "fingerprint": "7188a9a890149716",
+   "vocab_sig": [
+    "episode",
+    "new",
+    "seen"
+   ],
+   "template_sig": "have you W the W W ?",
+   "tags": [
+    "friends",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 94
+  },
+  {
+   "id": "phrase:friends:0785",
+   "kind": "phrase",
+   "en": "Let's plan a trip together.",
+   "en_norm": "let s plan a trip together",
+   "my_norm": "အတူ ခရီးစဉ် စီစဉ်ကြရအောင်။",
+   "fingerprint": "d91150a79ff06519",
+   "vocab_sig": [
+    "plan",
+    "together",
+    "trip"
+   ],
+   "template_sig": "let ' s W a W W .",
+   "tags": [
+    "friends",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 95
+  },
+  {
+   "id": "phrase:friends:0786",
+   "kind": "phrase",
+   "en": "I'll bring the snacks.",
+   "en_norm": "i ll bring the snacks",
+   "my_norm": "အဆာပြေ ကျွန်တော် ယူလာမယ်။",
+   "fingerprint": "a10008eb187f2961",
+   "vocab_sig": [
+    "bring",
+    "snacks"
+   ],
+   "template_sig": "i ' ll W the W .",
+   "tags": [
+    "friends",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 96
+  },
+  {
+   "id": "phrase:friends:0787",
+   "kind": "phrase",
+   "en": "Don't forget your swimsuit!",
+   "en_norm": "don t forget your swimsuit",
+   "my_norm": "ရေကူးဝတ်စုံ မမေ့နဲ့",
+   "fingerprint": "48ce407016cab130",
+   "vocab_sig": [
+    "forget",
+    "swimsuit"
+   ],
+   "template_sig": "don ' t W your W !",
+   "tags": [
+    "friends",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 97
+  },
+  {
+   "id": "phrase:friends:0788",
+   "kind": "phrase",
+   "en": "It was nice meeting your family.",
+   "en_norm": "it was nice meeting your family",
+   "my_norm": "မင်းမိသားစုနဲ့ တွေ့ရတာ ဝမ်းသာတယ်။",
+   "fingerprint": "9bb7eebf1cd9d188",
+   "vocab_sig": [
+    "family",
+    "meeting",
+    "nice"
+   ],
+   "template_sig": "it was W W your W .",
+   "tags": [
+    "friends",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 98
+  },
+  {
+   "id": "phrase:friends:0789",
+   "kind": "phrase",
+   "en": "Let's do this again soon!",
+   "en_norm": "let s do this again soon",
+   "my_norm": "မကြာခင် ထပ်လုပ်ကြရအောင်",
+   "fingerprint": "9baa6e623fb3d16c",
+   "vocab_sig": [
+    "again",
+    "soon"
+   ],
+   "template_sig": "let ' s do this W W !",
+   "tags": [
+    "friends",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 99
+  },
+  {
+   "id": "phrase:emergencies:0790",
+   "kind": "phrase",
+   "en": "Hello? I can't hear you very well.",
+   "en_norm": "hello i can t hear you very well",
+   "my_norm": "ဟလို ကောင်းကောင်း မကြားရဘူး။",
+   "fingerprint": "59e9be4ad6d617c8",
+   "vocab_sig": [
+    "hear",
+    "hello",
+    "well"
+   ],
+   "template_sig": "W ? i can ' t W you very W .",
+   "tags": [
+    "emergencies",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 101
+  },
+  {
+   "id": "phrase:emergencies:0791",
+   "kind": "phrase",
+   "en": "Can you speak a little slower?",
+   "en_norm": "can you speak a little slower",
+   "my_norm": "နည်းနည်း နှေးနှေး ပြောပေးနိုင်မလား။",
+   "fingerprint": "e14ac629b8d66cfa",
+   "vocab_sig": [
+    "little",
+    "slower",
+    "speak"
+   ],
+   "template_sig": "can you W a W W ?",
+   "tags": [
+    "emergencies",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 102
+  },
+  {
+   "id": "phrase:emergencies:0792",
+   "kind": "phrase",
+   "en": "I'll call you right back.",
+   "en_norm": "i ll call you right back",
+   "my_norm": "ချက်ချင်း ပြန်ခေါ်မယ်။",
+   "fingerprint": "17704bd247909cfd",
+   "vocab_sig": [
+    "back",
+    "call",
+    "right"
+   ],
+   "template_sig": "i ' ll W you W W .",
+   "tags": [
+    "emergencies",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 103
+  },
+  {
+   "id": "phrase:emergencies:0793",
+   "kind": "phrase",
+   "en": "Please leave a message after the beep.",
+   "en_norm": "please leave a message after the beep",
+   "my_norm": "ဘီးသံပြီးရင် မက်ဆေ့ချန်ထားပါ။",
+   "fingerprint": "22085620f3c69015",
+   "vocab_sig": [
+    "beep",
+    "leave",
+    "message"
+   ],
+   "template_sig": "please W a W after the W .",
+   "tags": [
+    "emergencies",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 104
+  },
+  {
+   "id": "phrase:emergencies:0794",
+   "kind": "phrase",
+   "en": "Is this a good time to talk?",
+   "en_norm": "is this a good time to talk",
+   "my_norm": "စကားပြောဖို့ အဆင်ပြေလား။",
+   "fingerprint": "2e276691509db8ff",
+   "vocab_sig": [
+    "good",
+    "talk",
+    "time"
+   ],
+   "template_sig": "is this a W W to W ?",
+   "tags": [
+    "emergencies",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 105
+  },
+  {
+   "id": "phrase:emergencies:0795",
+   "kind": "phrase",
+   "en": "Sorry, I have to hang up now.",
+   "en_norm": "sorry i have to hang up now",
+   "my_norm": "တောင်းပန်တယ်၊ အခု ဖုန်းချရမယ်။",
+   "fingerprint": "e07dc145425cfdd7",
+   "vocab_sig": [
+    "hang",
+    "now",
+    "sorry"
+   ],
+   "template_sig": "W , i have to W up W .",
+   "tags": [
+    "emergencies",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 106
+  },
+  {
+   "id": "phrase:emergencies:0796",
+   "kind": "phrase",
+   "en": "The line is very bad today.",
+   "en_norm": "the line is very bad today",
+   "my_norm": "ဒီနေ့ လိုင်း အရမ်း ဆိုးတယ်။",
+   "fingerprint": "6254f171746242b2",
+   "vocab_sig": [
+    "bad",
+    "line",
+    "today"
+   ],
+   "template_sig": "the W is very W W .",
+   "tags": [
+    "emergencies",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 107
+  },
+  {
+   "id": "phrase:emergencies:0797",
+   "kind": "phrase",
+   "en": "Can you text me the address?",
+   "en_norm": "can you text me the address",
+   "my_norm": "လိပ်စာကို စာပို့ပေးနိုင်မလား။",
+   "fingerprint": "0c712571b64f5d56",
+   "vocab_sig": [
+    "address",
+    "text"
+   ],
+   "template_sig": "can you W me the W ?",
+   "tags": [
+    "emergencies",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 108
+  },
+  {
+   "id": "phrase:emergencies:0798",
+   "kind": "phrase",
+   "en": "My phone is about to die.",
+   "en_norm": "my phone is about to die",
+   "my_norm": "ဖုန်း အားကုန်ခါနီးပြီ။",
+   "fingerprint": "7789d1a5e8114f90",
+   "vocab_sig": [
+    "die",
+    "phone"
+   ],
+   "template_sig": "my W is about to W .",
+   "tags": [
+    "emergencies",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 109
+  },
+  {
+   "id": "phrase:emergencies:0799",
+   "kind": "phrase",
+   "en": "I'll send you my location.",
+   "en_norm": "i ll send you my location",
+   "my_norm": "ကျွန်တော့်တည်နေရာ ပို့ပေးမယ်။",
+   "fingerprint": "c0876cff290bfa20",
+   "vocab_sig": [
+    "location",
+    "send"
+   ],
+   "template_sig": "i ' ll W you my W .",
+   "tags": [
+    "emergencies",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 110
+  },
+  {
+   "id": "phrase:health:0800",
+   "kind": "phrase",
+   "en": "I need to see a doctor this week.",
+   "en_norm": "i need to see a doctor this week",
+   "my_norm": "ဒီအပတ် ဆရာဝန် ပြရမယ်။",
+   "fingerprint": "f824986d6d9bd1a4",
+   "vocab_sig": [
+    "doctor",
+    "need",
+    "see",
+    "week"
+   ],
+   "template_sig": "i W to W a W this W .",
+   "tags": [
+    "health",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 112
+  },
+  {
+   "id": "phrase:health:0801",
+   "kind": "phrase",
+   "en": "I've had this cough for days.",
+   "en_norm": "i ve had this cough for days",
+   "my_norm": "ရက်အတော်ကြာ ချောင်းဆိုးနေတယ်။",
+   "fingerprint": "5a6cfd0e685b2c8b",
+   "vocab_sig": [
+    "cough",
+    "days"
+   ],
+   "template_sig": "i ' ve had this W for W .",
+   "tags": [
+    "health",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 113
+  },
+  {
+   "id": "phrase:health:0802",
+   "kind": "phrase",
+   "en": "My back hurts from sitting too long.",
+   "en_norm": "my back hurts from sitting too long",
+   "my_norm": "အကြာကြီး ထိုင်တာကြောင့် ခါးနာတယ်။",
+   "fingerprint": "b5ee0c823de706d0",
+   "vocab_sig": [
+    "back",
+    "hurts",
+    "long",
+    "sitting"
+   ],
+   "template_sig": "my W W from W too W .",
+   "tags": [
+    "health",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 114
+  },
+  {
+   "id": "phrase:health:0803",
+   "kind": "phrase",
+   "en": "I should drink more water.",
+   "en_norm": "i should drink more water",
+   "my_norm": "ရေ ပိုသောက်သင့်တယ်။",
+   "fingerprint": "c6f4c3a505495cce",
+   "vocab_sig": [
+    "drink",
+    "more",
+    "water"
+   ],
+   "template_sig": "i should W W W .",
+   "tags": [
+    "health",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 115
+  },
+  {
+   "id": "phrase:health:0804",
+   "kind": "phrase",
+   "en": "Let's go for a morning walk.",
+   "en_norm": "let s go for a morning walk",
+   "my_norm": "မနက်ခင်း လမ်းလျှောက်ကြရအောင်။",
+   "fingerprint": "ae07b873e5004b6c",
+   "vocab_sig": [
+    "go",
+    "morning",
+    "walk"
+   ],
+   "template_sig": "let ' s W for a W W .",
+   "tags": [
+    "health",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 116
+  },
+  {
+   "id": "phrase:health:0805",
+   "kind": "phrase",
+   "en": "I started jogging last week.",
+   "en_norm": "i started jogging last week",
+   "my_norm": "ပြီးခဲ့တဲ့အပတ် ပြေးတာ စခဲ့တယ်။",
+   "fingerprint": "8d3625bfdb23120c",
+   "vocab_sig": [
+    "jogging",
+    "last",
+    "started",
+    "week"
+   ],
+   "template_sig": "i W W W W .",
+   "tags": [
+    "health",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 117
+  },
+  {
+   "id": "phrase:health:0806",
+   "kind": "phrase",
+   "en": "You look tired — get some rest.",
+   "en_norm": "you look tired get some rest",
+   "my_norm": "ပင်ပန်းပုံရတယ် နားပါ။",
+   "fingerprint": "93749e3d4f8c5b33",
+   "vocab_sig": [
+    "get",
+    "look",
+    "rest",
+    "some",
+    "tired"
+   ],
+   "template_sig": "you W W — W W W .",
+   "tags": [
+    "health",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 118
+  },
+  {
+   "id": "phrase:health:0807",
+   "kind": "phrase",
+   "en": "I need to eat healthier food.",
+   "en_norm": "i need to eat healthier food",
+   "my_norm": "ပိုကျန်းမာတဲ့ အစားအစာ စားရမယ်။",
+   "fingerprint": "3f2e01d9f70754f4",
+   "vocab_sig": [
+    "eat",
+    "food",
+    "healthier",
+    "need"
+   ],
+   "template_sig": "i W to W W W .",
+   "tags": [
+    "health",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 119
+  },
+  {
+   "id": "phrase:health:0808",
+   "kind": "phrase",
+   "en": "Too much coffee is bad for you.",
+   "en_norm": "too much coffee is bad for you",
+   "my_norm": "ကော်ဖီ အရမ်း များများ မကောင်းဘူး။",
+   "fingerprint": "33477bc100c581fb",
+   "vocab_sig": [
+    "bad",
+    "coffee",
+    "much"
+   ],
+   "template_sig": "too W W is W for you .",
+   "tags": [
+    "health",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 120
+  },
+  {
+   "id": "phrase:health:0809",
+   "kind": "phrase",
+   "en": "I feel much better today.",
+   "en_norm": "i feel much better today",
+   "my_norm": "ဒီနေ့ အရမ်း သက်သာတယ်။",
+   "fingerprint": "059fdf0eff51caf4",
+   "vocab_sig": [
+    "better",
+    "feel",
+    "much",
+    "today"
+   ],
+   "template_sig": "i W W W W .",
+   "tags": [
+    "health",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 121
+  },
+  {
+   "id": "phrase:technology:0810",
+   "kind": "phrase",
+   "en": "My phone battery dies too fast.",
+   "en_norm": "my phone battery dies too fast",
+   "my_norm": "ဖုန်း ဘက်ထရီ အရမ်း မြန်မြန် ကုန်တယ်။",
+   "fingerprint": "489096a2b611191e",
+   "vocab_sig": [
+    "battery",
+    "dies",
+    "fast",
+    "phone"
+   ],
+   "template_sig": "my W W W too W .",
+   "tags": [
+    "technology",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 123
+  },
+  {
+   "id": "phrase:technology:0811",
+   "kind": "phrase",
+   "en": "The app keeps crashing.",
+   "en_norm": "the app keeps crashing",
+   "my_norm": "အက်ပ် ခဏခဏ ပိတ်သွားတယ်။",
+   "fingerprint": "b078b47f385f79d5",
+   "vocab_sig": [
+    "app",
+    "crashing",
+    "keeps"
+   ],
+   "template_sig": "the W W W .",
+   "tags": [
+    "technology",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 124
+  },
+  {
+   "id": "phrase:technology:0812",
+   "kind": "phrase",
+   "en": "Can you help me install this?",
+   "en_norm": "can you help me install this",
+   "my_norm": "ဒါ ထည့်သွင်းပေးဖို့ ကူညီပေးနိုင်မလား။",
+   "fingerprint": "dc3690fb78325f44",
+   "vocab_sig": [
+    "help",
+    "install"
+   ],
+   "template_sig": "can you W me W this ?",
+   "tags": [
+    "technology",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 125
+  },
+  {
+   "id": "phrase:technology:0813",
+   "kind": "phrase",
+   "en": "I forgot my Wi-Fi password.",
+   "en_norm": "i forgot my wi fi password",
+   "my_norm": "Wi Fi စကားဝှက် မေ့သွားပြီ။",
+   "fingerprint": "8ede4ea720031aa2",
+   "vocab_sig": [
+    "fi",
+    "forgot",
+    "password",
+    "wi"
+   ],
+   "template_sig": "i W my W - W W .",
+   "tags": [
+    "technology",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 126
+  },
+  {
+   "id": "phrase:technology:0814",
+   "kind": "phrase",
+   "en": "The screen is cracked.",
+   "en_norm": "the screen is cracked",
+   "my_norm": "စခရင် ကွဲသွားပြီ။",
+   "fingerprint": "38cc4e00a0306377",
+   "vocab_sig": [
+    "cracked",
+    "screen"
+   ],
+   "template_sig": "the W is W .",
+   "tags": [
+    "technology",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 127
+  },
+  {
+   "id": "phrase:technology:0815",
+   "kind": "phrase",
+   "en": "I need more storage space.",
+   "en_norm": "i need more storage space",
+   "my_norm": "သိုလှောင်ခန်း ပိုလိုတယ်။",
+   "fingerprint": "8a2406ea10b403e6",
+   "vocab_sig": [
+    "more",
+    "need",
+    "space",
+    "storage"
+   ],
+   "template_sig": "i W W W W .",
+   "tags": [
+    "technology",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 128
+  },
+  {
+   "id": "phrase:technology:0816",
+   "kind": "phrase",
+   "en": "Turn on airplane mode.",
+   "en_norm": "turn on airplane mode",
+   "my_norm": "လေယာဉ်မုဒ် ဖွင့်ပါ။",
+   "fingerprint": "2b5698279993f1bb",
+   "vocab_sig": [
+    "airplane",
+    "mode",
+    "turn"
+   ],
+   "template_sig": "W on W W .",
+   "tags": [
+    "technology",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 129
+  },
+  {
+   "id": "phrase:technology:0817",
+   "kind": "phrase",
+   "en": "The update will take ten minutes.",
+   "en_norm": "the update will take ten minutes",
+   "my_norm": "အပ်ဒိတ်က ဆယ်မိနစ် ကြာမယ်။",
+   "fingerprint": "1f283496f06e9bdd",
+   "vocab_sig": [
+    "minutes",
+    "take",
+    "ten",
+    "update"
+   ],
+   "template_sig": "the W will W W W .",
+   "tags": [
+    "technology",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 130
+  },
+  {
+   "id": "phrase:technology:0818",
+   "kind": "phrase",
+   "en": "I backed up all my photos.",
+   "en_norm": "i backed up all my photos",
+   "my_norm": "ဓာတ်ပုံတွေ အားလုံး အရန်သိမ်းထားပြီ။",
+   "fingerprint": "a1da82f78532668b",
+   "vocab_sig": [
+    "all",
+    "backed",
+    "photos"
+   ],
+   "template_sig": "i W up W my W .",
+   "tags": [
+    "technology",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 131
+  },
+  {
+   "id": "phrase:technology:0819",
+   "kind": "phrase",
+   "en": "This charger works much faster.",
+   "en_norm": "this charger works much faster",
+   "my_norm": "ဒီအားသွင်းကြိုးက ပိုမြန်တယ်။",
+   "fingerprint": "866b158ae5fd0c65",
+   "vocab_sig": [
+    "charger",
+    "faster",
+    "much",
+    "works"
+   ],
+   "template_sig": "this W W W W .",
+   "tags": [
+    "technology",
+    "phrase"
+   ],
+   "file": "src/data/phrases-g.ts",
+   "line": 132
+  },
+  {
    "id": "topic:family",
    "kind": "topic",
    "en": "Family",
@@ -28171,8 +34498,11 @@
  "meta": {
   "kinds": {
    "word": 1000,
-   "phrase": 500,
-   "topic": 28
+   "phrase": 820,
+   "topic": 28,
+   "example": 0,
+   "dialogue": 0,
+   "story": 0
   },
   "data_dir": "src/data"
  }

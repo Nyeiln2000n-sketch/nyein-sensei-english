@@ -114,10 +114,16 @@ button:disabled:active {
 @keyframes motion-flame {
   0%,
   100% {
-    transform: scale(1) rotate(-4deg);
+    transform: scale(1) rotate(-4deg) skewX(0deg);
+  }
+  25% {
+    transform: scale(1.1, 1.18) rotate(2deg) skewX(-3deg);
   }
   50% {
-    transform: scale(1.22) rotate(4deg);
+    transform: scale(1.22, 1.08) rotate(4deg) skewX(3deg);
+  }
+  75% {
+    transform: scale(1.08, 1.2) rotate(-2deg) skewX(-2deg);
   }
 }
 
@@ -488,23 +494,54 @@ button:disabled:active {
   margin-top: 10px;
 }
 
-/* ---------------- cat greeting: happy jelly bounce + wave wiggle (splash) ------- */
+/* ---------------- cat greeting: happy jelly bounce + wave wiggle + sparkle burst ---- */
 /* Plays once on mount over her own cat PNG (wave pose); the Float idle inside
-   MascotScene3D takes over afterwards. Reduced-motion kills it (see below). */
+   MascotScene3D takes over afterwards. Reduced-motion kills it (see below).
+   The ::before sparkle burst fires in sync with the biggest squash — pure CSS,
+   pointer-events none, so it never intercepts taps. */
 
 @keyframes cat-greet {
-  0%   { transform: scale(.5) translateY(60px); opacity: 0; }
-  35%  { transform: scale(1.12, .88) translateY(0); opacity: 1; }
-  50%  { transform: scale(.92, 1.08) translateY(-34px) rotate(-5deg); }
-  65%  { transform: scale(1.05, .95) translateY(0) rotate(4deg); }
-  78%  { transform: scale(.97, 1.03) translateY(-12px) rotate(-3deg); }
-  90%  { transform: scale(1.01, .99) translateY(0) rotate(1.5deg); }
+  0%   { transform: scale(.35) translateY(90px) rotate(-10deg); opacity: 0; }
+  28%  { transform: scale(1.22, .78) translateY(0) rotate(0deg); opacity: 1; }
+  40%  { transform: scale(.88, 1.12) translateY(-52px) rotate(-6deg); }
+  53%  { transform: scale(1.1, .92) translateY(0) rotate(5deg); }
+  66%  { transform: scale(.94, 1.06) translateY(-24px) rotate(-3deg); }
+  78%  { transform: scale(1.04, .96) translateY(0) rotate(2deg); }
+  89%  { transform: scale(.99, 1.01) translateY(-8px) rotate(-1deg); }
   100% { transform: none; }
 }
 
 .cat-greet {
-  animation: cat-greet 1.6s cubic-bezier(.2, .9, .25, 1) 1;
+  animation: cat-greet 1.9s cubic-bezier(.2, .9, .25, 1) 1;
   transform-origin: 50% 90%;
+  position: relative;
+}
+
+/* sparkle burst: six gold/white star glints that pop around the cat at the
+   peak of the bounce, then fade — transform/opacity only. */
+.cat-greet::before {
+  content: '';
+  position: absolute;
+  inset: -26px;
+  pointer-events: none;
+  background:
+    radial-gradient(circle, #ffd76a 0 3px, transparent 4px) 12% 22%,
+    radial-gradient(circle, #fff 0 2.5px, transparent 3.5px) 82% 18%,
+    radial-gradient(circle, #ffb74d 0 3px, transparent 4px) 90% 62%,
+    radial-gradient(circle, #fff 0 2.5px, transparent 3.5px) 8% 68%,
+    radial-gradient(circle, #5cc8ff 0 2.5px, transparent 3.5px) 50% 6%,
+    radial-gradient(circle, #ffd76a 0 2.5px, transparent 3.5px) 55% 94%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transform: scale(.4);
+  animation: cat-greet-sparkle 1.9s ease-out 1;
+}
+
+@keyframes cat-greet-sparkle {
+  0%, 18%  { opacity: 0; transform: scale(.4); }
+  38%       { opacity: 1; transform: scale(1.15); }
+  70%       { opacity: .85; transform: scale(1.05); }
+  100%      { opacity: 0; transform: scale(1.3); }
 }
 
 /* ---------------- prefers-reduced-motion ------------------------------------ */

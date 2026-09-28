@@ -37,11 +37,27 @@ _SQ = r"'(?:[^'\\]|\\.)*'"
 _DQ = r'"(?:[^"\\]|\\.)*"'
 _QUOTED = rf"({_SQ}|{_DQ})"
 # Match a single entry object: { en: '...' / "...", my: '...', ... }
+# Trailing extra fields (phonetic, example, exampleMy, ...) are tolerated so
+# enriched word entries keep indexing.
 _ENTRY_RE = re.compile(
     rf"\{{\s*en:\s*{_QUOTED},\s*my:\s*{_QUOTED}"
     rf"(?:,\s*topic:\s*{_QUOTED})?"
-    rf"(?:,\s*level:\s*(\d+))?\s*\}}"
+    rf"(?:,\s*level:\s*(\d+))?"
+    rf"(?:,\s*[a-zA-Z_][a-zA-Z0-9_]*:\s*(?:{_QUOTED}|\d+))*"
+    rf"\s*\}}"
 )
+# example: '...' / "..." inside a word entry (captured separately per match).
+_EXAMPLE_RE = re.compile(rf"example:\s*{_QUOTED}")
+# Dialogue turn: { speaker: '...', en: '...', my: '...' }
+_TURN_RE = re.compile(
+    rf"\{{\s*speaker:\s*{_QUOTED},\s*en:\s*{_QUOTED},\s*my:\s*{_QUOTED}\s*\}}"
+)
+# Dialogue / story header ids.
+_DIALOGUE_ID_RE = re.compile(r"id:\s*'(dialogue:[^']+)'")
+_STORY_ID_RE = re.compile(r"id:\s*'(story:[^']+)'")
+# Story paragraph: { en: '...', my: '...' } (no speaker, no topic)
+_PARA_RE = re.compile(rf"\{{\s*en:\s*{_QUOTED},\s*my:\s*{_QUOTED}\s*\}}")
+_TOPIC_FIELD_RE = re.compile(r"topic:\s*'([^']+)'")
 _TOPIC_RE = re.compile(
     rf"\{{\s*id:\s*{_QUOTED},\s*nameMy:\s*{_QUOTED},"
     rf"\s*nameEn:\s*{_QUOTED}"
@@ -64,12 +80,15 @@ def parse_words(path: str) -> list:
             for i in (1, 2, 3, 4)
         )
         line = text.count("\n", 0, m.start()) + 1
+        ex_m = _EXAMPLE_RE.search(m.group(0))
+        example = _unescape(ex_m.group(0)[len("example:"):].strip()) if ex_m else None
         items.append({
             "kind": "word",
             "en": en,
             "my": my,
             "topic": topic,
             "level": int(level) if level else None,
+            "example": example,
             "file": os.path.relpath(path, REPO),
             "line": line,
         })
@@ -112,6 +131,67 @@ def parse_topics(path: str) -> list:
             "nameMy": name_my,
             "nameEn": name_en,
             "file": os.path.relpath(path, REPO),
+            "line": line,
+        })
+    return items
+
+
+def parse_dialogues(path: str) -> list:
+    """One item per dialogue: id + topic + all turn English concatenated.
+
+    Turns are grouped to the dialogue header (`id: 'dialogue:...'`) that
+    precedes them in file order.
+    """
+    with open(path, encoding="utf-8") as fh:
+        text = fh.read()
+    rel = os.path.relpath(path, REPO)
+    headers = [(m.start(), _unescape(m.group(1))) for m in _DIALOGUE_ID_RE.finditer(text)]
+    turns = [
+        (m.start(), _unescape(m.group(2)))
+        for m in _TURN_RE.finditer(text)
+    ]
+    items = []
+    for i, (hpos, did) in enumerate(headers):
+        end = headers[i + 1][0] if i + 1 < len(headers) else len(text)
+        dlg_turns = [en for (tpos, en) in turns if hpos < tpos < end]
+        topic_m = _TOPIC_FIELD_RE.search(text, hpos, end)
+        topic = topic_m.group(1) if topic_m else None
+        line = text.count("\n", 0, hpos) + 1
+        full_en = " ".join(dlg_turns)
+        items.append({
+            "kind": "dialogue",
+            "id": did,
+            "en": full_en,
+            "topic": topic,
+            "turn_count": len(dlg_turns),
+            "file": rel,
+            "line": line,
+        })
+    return items
+
+
+def parse_stories(path: str) -> list:
+    """One item per story: id + all paragraph English concatenated."""
+    with open(path, encoding="utf-8") as fh:
+        text = fh.read()
+    rel = os.path.relpath(path, REPO)
+    headers = [(m.start(), _unescape(m.group(1))) for m in _STORY_ID_RE.finditer(text)]
+    paras = [
+        (m.start(), _unescape(m.group(1)))
+        for m in _PARA_RE.finditer(text)
+    ]
+    items = []
+    for i, (hpos, sid) in enumerate(headers):
+        end = headers[i + 1][0] if i + 1 < len(headers) else len(text)
+        story_paras = [en for (ppos, en) in paras if hpos < ppos < end]
+        line = text.count("\n", 0, hpos) + 1
+        full_en = " ".join(story_paras)
+        items.append({
+            "kind": "story",
+            "id": sid,
+            "en": full_en,
+            "para_count": len(story_paras),
+            "file": rel,
             "line": line,
         })
     return items
@@ -166,6 +246,54 @@ def build_index() -> dict:
                     "file": w["file"],
                     "line": w["line"],
                 })
+                if w.get("example"):
+                    index["items"].append({
+                        "id": f"example:{w['topic']}:{slugify(w['en'])}",
+                        "kind": "example",
+                        "en": w["example"],
+                        "en_norm": normalize_en(w["example"]),
+                        "my_norm": "",
+                        "fingerprint": fingerprint(w["example"]),
+                        "vocab_sig": vocab_signature(w["example"]),
+                        "template_sig": template_signature(w["example"]),
+                        "tags": [w["topic"], "example"],
+                        "file": w["file"],
+                        "line": w["line"],
+                    })
+            continue
+
+        if fname.startswith("dialogues-"):
+            for d in parse_dialogues(path):
+                index["items"].append({
+                    "id": d["id"],
+                    "kind": "dialogue",
+                    "en": d["en"],
+                    "en_norm": normalize_en(d["en"]),
+                    "my_norm": "",
+                    "fingerprint": fingerprint(d["en"]),
+                    "vocab_sig": vocab_signature(d["en"]),
+                    "template_sig": template_signature(d["en"]),
+                    "tags": [d["topic"], "dialogue"] if d["topic"] else ["dialogue"],
+                    "file": d["file"],
+                    "line": d["line"],
+                })
+            continue
+
+        if fname.startswith("stories-") or fname == "stories.ts":
+            for s in parse_stories(path):
+                index["items"].append({
+                    "id": s["id"],
+                    "kind": "story",
+                    "en": s["en"],
+                    "en_norm": normalize_en(s["en"]),
+                    "my_norm": "",
+                    "fingerprint": fingerprint(s["en"]),
+                    "vocab_sig": vocab_signature(s["en"]),
+                    "template_sig": template_signature(s["en"]),
+                    "tags": ["story"],
+                    "file": s["file"],
+                    "line": s["line"],
+                })
             continue
 
         if fname.startswith("phrases-"):
@@ -191,6 +319,9 @@ def build_index() -> dict:
             "word": sum(1 for i in index["items"] if i["kind"] == "word"),
             "phrase": sum(1 for i in index["items"] if i["kind"] == "phrase"),
             "topic": sum(1 for i in index["items"] if i["kind"] == "topic"),
+            "example": sum(1 for i in index["items"] if i["kind"] == "example"),
+            "dialogue": sum(1 for i in index["items"] if i["kind"] == "dialogue"),
+            "story": sum(1 for i in index["items"] if i["kind"] == "story"),
         },
         "data_dir": "src/data",
     }
@@ -206,7 +337,9 @@ def main() -> None:
     kinds = index["meta"]["kinds"]
     print(f"Indexed {n} items "
           f"({kinds['word']} words, {kinds['phrase']} phrases, "
-          f"{kinds['topic']} topics) -> tools/vectorize/content-index.json")
+          f"{kinds['topic']} topics, {kinds['example']} examples, "
+          f"{kinds['dialogue']} dialogues, {kinds['story']} stories) "
+          f"-> tools/vectorize/content-index.json")
 
 
 if __name__ == "__main__":

@@ -69,7 +69,7 @@ export function TabBar({
     { id: 'profile', icon: User },
   ];
   return (
-    <nav className="tabbar" aria-label="main navigation">
+    <nav className="tabbar" aria-label="ပင်မလမ်းညွှန်">
       {tabs.map((t) => {
         const Icon = t.icon;
         const isActive = active === t.id;
@@ -79,10 +79,18 @@ export function TabBar({
             type="button"
             className={`tab${isActive ? ' active' : ''}`}
             aria-current={isActive ? 'page' : undefined}
-            onClick={() => onTab(t.id)}
+            aria-label={text[t.id]}
+            onClick={() => {
+              try {
+                navigator.vibrate?.(10);
+              } catch {
+                /* haptics unsupported — ignore */
+              }
+              onTab(t.id);
+            }}
           >
-            <Icon size={22} strokeWidth={isActive ? 2.5 : 2} />
-            <span>{text[t.id]}</span>
+            <Icon size={22} strokeWidth={isActive ? 2.5 : 2} aria-hidden="true" />
+            <span aria-hidden="true">{text[t.id]}</span>
           </button>
         );
       })}
