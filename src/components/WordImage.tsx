@@ -25,6 +25,24 @@ export function wordImageSrc(word: string): string | null {
   return rel ? `/${rel.replace(/^\//, '')}` : null;
 }
 
+// Smart look-ahead cache: warm the browser cache for a word's image so it
+// appears instantly when the learner flips to it. Deduped per session and a
+// no-op when the word has no image. Called from flashcard navigation —
+// never on a timer, so it costs nothing when idle.
+const preloaded = new Set<string>();
+export function preloadWordImage(word: string): void {
+  try {
+    const src = wordImageSrc(word);
+    if (!src || preloaded.has(src)) return;
+    preloaded.add(src);
+    const img = new Image();
+    img.decoding = 'async';
+    img.src = src;
+  } catch {
+    /* image preloading is best-effort */
+  }
+}
+
 export default function WordImage({
   word,
   size = 64,

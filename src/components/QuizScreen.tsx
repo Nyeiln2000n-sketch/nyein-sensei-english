@@ -1262,6 +1262,10 @@ function ShadowingRound({
   const [listening, setListening] = useState(false);
   const [phase, setPhase] = useState<ShadowPhase>('idle');
   const [vadDenied, setVadDenied] = useState(false);
+  // A-004: hear the native phrase (tap-to-speak) BEFORE recording. First
+  // mic tap plays the phrase + shows a hint; the next tap records.
+  const [listened, setListened] = useState(false);
+  const [micHint, setMicHint] = useState(false);
   const recogRef = useRef<any>(null);
   const vadRef = useRef<{ stream: MediaStream; ctx: AudioContext; raf: number } | null>(null);
   const vadBusyRef = useRef(false);
@@ -1434,6 +1438,28 @@ function ShadowingRound({
   };
 
   const micBusy = micMode === 'sr' ? listening : phase === 'starting' || phase === 'listening';
+
+  // A-004: hear the phrase BEFORE recording — first mic tap plays it and
+  // shows a hint, the next tap starts the mic. Reset per round.
+  useEffect(() => {
+    setListened(false);
+    setMicHint(false);
+  }, [round.phrase.en]);
+
+  const pressMic = () => {
+    if (micBusy || result != null) return;
+    if (!listened) {
+      // Still inside the user gesture — AUDIO_CONTRACT legal.
+      speak(phrase.en, { slow: true });
+      setListened(true);
+      setMicHint(true);
+      window.setTimeout(() => setMicHint(false), 4500);
+      return;
+    }
+    setMicHint(false);
+    if (micMode === 'sr') startListening();
+    else if (micMode === 'vad') void startVad();
+  };
   const micLabel =
     result != null
       ? 'ပြီးပြီ! 🎉'
@@ -1462,7 +1488,11 @@ function ShadowingRound({
         )}
         <button
           type="button"
-          onClick={() => speak(phrase.en, { slow: true })}
+          onClick={() => {
+            setListened(true);
+            setMicHint(false);
+            speak(phrase.en, { slow: true });
+          }}
           style={{
             marginTop: 14,
             display: 'inline-flex',
@@ -1488,7 +1518,7 @@ function ShadowingRound({
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '18px 0 8px' }}>
           <button
             type="button"
-            onClick={micMode === 'sr' ? startListening : startVad}
+            onClick={pressMic}
             disabled={micBusy || result != null}
             aria-label="အသံဖမ်းရန်"
             style={{
@@ -1511,6 +1541,24 @@ function ShadowingRound({
             <Mic size={36} />
           </button>
           <div style={{ marginTop: 10, fontSize: 14, fontWeight: 700, color: C.text }}>{micLabel}</div>
+          {micHint && (
+            <div
+              style={{
+                marginTop: 8,
+                background: '#FFF3D6',
+                border: '2px solid #FFB74D',
+                borderRadius: 14,
+                padding: '8px 14px',
+                fontSize: 13,
+                fontWeight: 700,
+                color: C.title,
+                lineHeight: 1.6,
+                textAlign: 'center',
+              }}
+            >
+              အရင် အသံနားထောင်ပြီး လိုက်ပြောပါ — ပြီးမှ ထပ်နှိပ်ပြီး ဖမ်းပါ
+            </div>
+          )}
           {micMode === 'vad' && phase === 'listening' && (
             <div className="vad-meter" aria-hidden="true">
               <div ref={meterRef} className="vad-meter-fill" />
@@ -1589,12 +1637,44 @@ function ConversationRound({
   return (
     <div>
       <Card style={{ marginBottom: 12 }}>
+        {/* A-002: every dialogue line is tap-to-hear (AUDIO_CONTRACT: speak
+            only inside the tap handler). */}
         {round.lines.map((l, i) => (
-          <div key={l.en} style={{ marginBottom: 10 }}>
-            <div style={{ fontWeight: 800, fontSize: 16, color: C.title, lineHeight: 1.45 }}>
-              {speakers[i % speakers.length]} {l.en}
+          <div
+            key={l.en}
+            style={{
+              display: 'flex',
+              gap: 10,
+              alignItems: 'flex-start',
+              marginBottom: i < round.lines.length - 1 ? 10 : 0,
+            }}
+          >
+            <button
+              type="button"
+              onClick={() => speak(l.en)}
+              aria-label="နားထောင်မယ်"
+              style={{
+                flexShrink: 0,
+                width: 36,
+                height: 36,
+                borderRadius: '50%',
+                border: '2px solid #F1E4CE',
+                background: C.white,
+                color: C.blueDark,
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                cursor: 'pointer',
+              }}
+            >
+              <Volume2 size={16} />
+            </button>
+            <div>
+              <div style={{ fontWeight: 800, fontSize: 16, color: C.title, lineHeight: 1.45 }}>
+                {speakers[i % speakers.length]} {l.en}
+              </div>
+              <div style={{ fontSize: 14, color: C.text }}>{l.my}</div>
             </div>
-            <div style={{ fontSize: 14, color: C.text }}>{l.my}</div>
           </div>
         ))}
         <div style={{ marginTop: 10, paddingTop: 10, borderTop: '1px dashed #F1E4CE' }}>

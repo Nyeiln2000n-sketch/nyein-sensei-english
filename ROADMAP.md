@@ -76,13 +76,13 @@
 - [x] J-011 Dificultad adaptativa por racha de aciertos
 - [x] J-012 Celebración 3D + confeti al completar (pantalla 10)
 
-## FASE 6 — Audio 🟡
-- [ ] A-001 Verificar Web Speech en iPhone real con Nyein (sin declarar hasta que ella lo oiga)
-- [ ] A-002 Botón audio en cada palabra/frase (ya existe, verificar en nuevo diseño)
-- [ ] A-003 Velocidad lenta en modo aprendizaje
-- [ ] A-004 Pronunciación: reproducir frase nativa antes de grabar
-- [ ] A-005 Fallback si speechSynthesis no responde (reintento + mensaje)
-- [ ] A-006 Caché de audio para modo offline (PWA)
+## FASE 6 — Audio 🟢 (A-001 queda pendiente del iPhone de Nyein)
+- [ ] A-001 Verificar Web Speech en iPhone real con Nyein — pending Nyein's iPhone (NUNCA declarar audio "arreglado/working" sin que ella lo oiga en su teléfono)
+- [x] A-002 Botón audio en cada palabra/frase verificado en el diseño mockup: Quiz (12 rondas con tap-to-speak; per-line audio añadido a ConversationRound 2026-09-29), Vocab (flashcards + filas de biblioteca + playlist "Escuchar todo"), Pronunciación (PracticeScreen). Todo speak() solo en tap handlers (AUDIO_CONTRACT)
+- [x] A-003 Velocidad lenta en modo aprendizaje: toggle 🐢 "ဖြည်းဖြည်း" persistente en VocabScreen (`isSlowDefault`/`setSlowDefault` en audio.ts, rate 0.72); drills ya usan slow:true explícito
+- [x] A-004 Pronunciación: la frase nativa suena ANTES de grabar — PracticeScreen + ShadowingRound (Quiz): primer tap al mic reproduce la frase + pista "အရင် အသံနားထောင်ပြီး လိုက်ပြောပါ"; solo el segundo tap graba
+- [x] A-005 Fallback si speechSynthesis no responde: reintento automático 1× + watchdog 2.5s + banner visible Myanmar-first global (`SpeechFallbackNotice` en App.tsx), debounced 10s
+- [x] A-006 Caché de audio para modo offline (PWA): voces TTS son OS-locales (sin assets que precachear); workbox runtimeCaching CacheFirst para /word-images/ (maxEntries 300, 30 días) + shell precacheado; globIgnores mantiene las 1000 imágenes fuera del precache
 
 ## FASE 7 — Cuentas, auth y sincronización 🟡
 - [ ] S-001 Signup E2E contra Supabase real (verificado, no declarado)

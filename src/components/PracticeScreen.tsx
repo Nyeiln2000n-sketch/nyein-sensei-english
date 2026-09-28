@@ -85,6 +85,11 @@ export default function PracticeScreen({ go, params }: { go: GoFn; params?: NavP
   const [vadDenied, setVadDenied] = useState(false);
   const [vadHeard, setVadHeard] = useState(false);
   const [selfDone, setSelfDone] = useState(false);
+  // A-004: the learner must hear the native phrase (tap-to-speak) BEFORE
+  // any recording starts. First mic tap plays the phrase and shows a hint;
+  // the second tap actually records.
+  const [listened, setListened] = useState(false);
+  const [micHint, setMicHint] = useState(false);
   const vadRef = useRef<VadHandle | null>(null);
   const vadBusyRef = useRef(false);
   const meterRef = useRef<HTMLDivElement>(null);
@@ -141,6 +146,8 @@ export default function PracticeScreen({ go, params }: { go: GoFn; params?: NavP
     setVadHeard(false);
     setSelfDone(false);
     setListening(false);
+    setListened(false);
+    setMicHint(false);
     setPos((p) => p + 1);
   };
 
@@ -261,6 +268,26 @@ export default function PracticeScreen({ go, params }: { go: GoFn; params?: NavP
   };
 
   const micBusy = mode === 'sr' ? listening : vadPhase === 'starting' || vadPhase === 'listening';
+
+  /**
+   * A-004 listen-before-record: the first mic tap always plays the native
+   * phrase (still inside the user gesture — AUDIO_CONTRACT legal) and
+   * shows a gentle hint; only the next tap starts recording. Recording
+   * never begins before the learner has heard the phrase.
+   */
+  const pressMic = () => {
+    if (micBusy) return;
+    if (!listened) {
+      speak(phrase.en, { slow: true });
+      setListened(true);
+      setMicHint(true);
+      window.setTimeout(() => setMicHint(false), 4500);
+      return;
+    }
+    setMicHint(false);
+    if (mode === 'sr') startListening();
+    else if (mode === 'vad') void startVad();
+  };
   const micLabel =
     mode === 'vad'
       ? vadPhase === 'starting'
@@ -318,7 +345,11 @@ export default function PracticeScreen({ go, params }: { go: GoFn; params?: NavP
         <div style={{ fontSize: 16, color: C.text, marginTop: 10 }}>{phrase.my}</div>
         <button
           type="button"
-          onClick={() => speak(phrase.en, { slow: true })}
+          onClick={() => {
+            setListened(true);
+            setMicHint(false);
+            speak(phrase.en, { slow: true });
+          }}
           style={{
             marginTop: 14,
             display: 'inline-flex',
@@ -352,7 +383,7 @@ export default function PracticeScreen({ go, params }: { go: GoFn; params?: NavP
         >
           <button
             type="button"
-            onClick={mode === 'sr' ? startListening : startVad}
+            onClick={pressMic}
             disabled={micBusy}
             aria-label="အသံဖမ်းရန်"
             style={{
@@ -376,6 +407,24 @@ export default function PracticeScreen({ go, params }: { go: GoFn; params?: NavP
           <div style={{ marginTop: 10, fontSize: 14, fontWeight: 700, color: C.text }}>
             {micLabel}
           </div>
+          {micHint && (
+            <div
+              style={{
+                marginTop: 8,
+                background: '#FFF3D6',
+                border: '2px solid #FFB74D',
+                borderRadius: 14,
+                padding: '8px 14px',
+                fontSize: 13,
+                fontWeight: 700,
+                color: C.title,
+                lineHeight: 1.6,
+                textAlign: 'center',
+              }}
+            >
+              အရင် အသံနားထောင်ပြီး လိုက်ပြောပါ — ပြီးမှ ထပ်နှိပ်ပြီး ဖမ်းပါ
+            </div>
+          )}
           {mode === 'vad' && vadPhase === 'listening' && (
             <div className="vad-meter" aria-hidden="true">
               <div ref={meterRef} className="vad-meter-fill" />

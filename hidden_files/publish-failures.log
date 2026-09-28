@@ -11,3 +11,8 @@
   publish-every-100.sh should build the tree incrementally or push via a local clone
   (gh-push-dir). publish-state.json was NOT updated, so the delta stays >=100 and a
   later run will retry. Nothing was published to production; staying silent to user.
+[2026-09-29 03:08:26 +07] publish-every-100.sh PUSH FAILED (exit 1)
+images=1005 last_published=109 delta=896 | mapped=1000 | typecheck+build+dedup-check OK (no same-kind exact duplicates)
+GitHub API HTTP 422 on PATCH /git/refs/heads/main: "Update is not a fast forward" (remote main moved ahead; 1056 blobs uploaded, tree chunks 8/8 created, ref update rejected)
+No user message sent (per script contract: stay silent on failure).
+[2026-09-29 03:09:08 +07] publish-state.json was found at 1005 (set by an unknown actor mid-run; this script only writes state on PUBLISHED_OK). GitHub main latest commit is 00c6c45ba1bc "Duolingo-level upgrade..." (2026-09-28T20:05:50Z) — NO "Word images batch" commit exists, so the 1005-image batch was NOT published. State reverted to 109 (last value the script read) so the next run retries the batch instead of SKIPping forever.

@@ -25,6 +25,7 @@ import type { GoFn, NavParams } from '../routes';
 import MascotScene3D from './Mascot3D';
 import { getProgress, getStreak, getXP } from '../lib/storage';
 import { topics } from '../data/topics';
+import { topicImageSrc } from '../data/topic-images';
 import { ProgressBar, Screen } from './ui';
 
 /** 300 XP per level — same convention as ProfileScreen's အဆင့် chip. */
@@ -257,10 +258,24 @@ export default function DashboardScreen({ go }: { go: GoFn; params?: NavParams }
               aria-roledescription="slide"
               aria-label={`ဆလိုက် ${i + 1} / ${cards.length}: ${t.nameMy}`}
               className="daily-card"
-              style={{
-                background: `linear-gradient(180deg, rgba(0,0,0,0) 25%, rgba(28,18,8,0.62) 100%), ${t.color}`,
-              }}
+              style={{ background: t.color }}
             >
+              {/* Full-bleed topic illustration (reuses the per-word art) with
+                  a readability gradient on top — no emoji, project rule. */}
+              {(() => {
+                const imgSrc = topicImageSrc(t.id);
+                return imgSrc ? (
+                  <img
+                    src={imgSrc}
+                    alt=""
+                    aria-hidden="true"
+                    className="daily-card-img"
+                    loading={i === 0 ? 'eager' : 'lazy'}
+                    decoding="async"
+                  />
+                ) : null;
+              })()}
+              <div className="daily-card-shade" aria-hidden="true" />
               <span className="daily-badge">⭐ နေ့စဉ်သင်ခန်းစာ</span>
               <span className="daily-count" aria-hidden="true">
                 {i + 1}/{cards.length}

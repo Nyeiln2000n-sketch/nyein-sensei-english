@@ -51,6 +51,21 @@ export default defineConfig({
             handler: 'CacheFirst',
             options: { cacheName: 'google-fonts-cache', expiration: { maxEntries: 10, maxAgeSeconds: 60 * 60 * 24 * 365 } },
           },
+          // A-006 offline audio/learning strategy: Web Speech voices are
+          // OS-local (no network assets to precache — offline TTS works out
+          // of the box once the OS voices exist), but the learning
+          // experience also needs the per-word images. They are cached
+          // lazily on first view (CacheFirst, capped) so the full
+          // 1000-image set (~49MB) is never forced into the install.
+          {
+            urlPattern: /\/word-images\/.*$/i,
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'word-images',
+              expiration: { maxEntries: 300, maxAgeSeconds: 60 * 60 * 24 * 30 },
+              cacheableResponse: { statuses: [0, 200] },
+            },
+          },
         ],
       },
     }),

@@ -22,7 +22,8 @@ import { getStreak } from '../lib/storage';
 import { speak, stopSpeaking } from '../lib/audio';
 import { useWindowing } from '../lib/useWindowing';
 import { SkeletonList } from './Skeleton';
-import WordImage from './WordImage';
+import WordImage, { preloadWordImage } from './WordImage';
+import SlowToggle from './SlowToggle';
 import {
   Screen, TopBar, Card, PillButton, ProgressBar, IconCircle, W3ErrorBoundary, C, FONT,
 } from './w3-shared';
@@ -269,6 +270,12 @@ export default function VocabScreen({ go, params }: { go: GoFn; params?: NavPara
         }
       />
 
+      {/* A-003: slow-speech toggle for learning mode — applies to every
+          tap-to-speak on this screen (persisted learner preference). */}
+      <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: 10 }}>
+        <SlowToggle />
+      </div>
+
       {/* tab toggle */}
       <div
         style={{
@@ -438,6 +445,16 @@ function Flashcards({
 
   // PRODUCTION RULE: no auto-speak in useEffect (breaks the iOS user-gesture
   // rule). The user taps the blue audio button to hear the word.
+
+  // Smart look-ahead: while the learner studies this card, warm the image
+  // cache for the next two cards so flipping feels instant. Preloading is
+  // silent (no audio, no state change) and safe under the audio contract.
+  useEffect(() => {
+    if (deck.length === 0) return;
+    const n = deck.length;
+    preloadWordImage(deck[(idx + 1) % n].en);
+    preloadWordImage(deck[(idx + 2) % n].en);
+  }, [deck, idx]);
 
   return (
     <div>
