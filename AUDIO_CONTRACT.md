@@ -89,6 +89,22 @@ reload.
 
 ---
 
+---
+
+### Addendum FASE 6 (A-005): retry y watchdog permitidos fuera del gesto
+`src/lib/audio.ts` ahora reintenta una utterance fallida (`onerror` del
+utterance, o watchdog de 2.5s si el motor queda en silencio) y muestra un
+banner visible Myanmar-first (`SpeechFallbackNotice`). Esto NO rompe la
+regla 1: el reintento solo ocurre DESPUÉS de un intento que SÍ empezó en el
+gesto del usuario (el pipeline de iOS ya está desbloqueado — mismo
+precedente que la playlist "Escuchar todo"). Nunca inicies el PRIMER
+`speak()` de un flujo fuera de un tap handler.
+
+### Addendum FASE 6 (A-003): preferencia de velocidad lenta
+`isSlowDefault()`/`setSlowDefault()` en `audio.ts` (persistido en
+localStorage). `speak()` usa `opts.slow ?? isSlowDefault()`; rate lento =
+0.72. Un `slow: true` explícito en el call-site siempre gana.
+
 *Owner: bug-fix swarm, Worker B — 2026-09-28. These rules stay in effect for
 all future screen work, including the mockup rebuild and the multi-tenant
 build.*
