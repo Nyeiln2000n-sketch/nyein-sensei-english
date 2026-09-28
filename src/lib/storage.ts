@@ -143,3 +143,75 @@ export function resetProgress(): void {
   // "Start over" also resets the cloud profile (queued, debounced).
   resetCloudProfile();
 }
+
+// ---- per-topic mastery (adaptive quiz difficulty signal) ----
+// NOTE: intentionally LOCAL-ONLY — never cloud-synced. Mastery is a cheap
+// derived signal rebuilt from quiz rounds, not user data worth syncing.
+const MASTERY_KEY = 'nse_mastery';
+const MASTERY_CAP = 40;
+
+interface MasteryEntry {
+  seen: number;
+  correct: number;
+}
+
+type MasteryMap = { [topicId: string]: MasteryEntry };
+
+function loadMastery(): MasteryMap {
+  try {
+    const raw = localStorage.getItem(MASTERY_KEY);
+    if (!raw) return {};
+    const parsed = JSON.parse(raw) as Partial<Record<string, MasteryEntry>>;
+    const map: MasteryMap = {};
+    for (const [k, v] of Object.entries(parsed)) {
+      if (v && typeof v.seen === 'number' && typeof v.correct === 'number') {
+        map[k] = { seen: Math.max(0, v.seen), correct: Math.max(0, v.correct) };
+      }
+    }
+    return map;
+  } catch {
+    return {};
+  }
+}
+
+function saveMastery(map: MasteryMap): void {
+  try {
+    const keys = Object.keys(map);
+    if (keys.length > MASTERY_CAP) {
+      // Drop the least-evidenced topics until we fit the cap.
+      keys
+        .sort((a, b) => (map[a]?.seen ?? 0) - (map[b]?.seen ?? 0))
+        .slice(0, keys.length - MASTERY_CAP)
+        .forEach((k) => {
+          delete map[k];
+        });
+    }
+    localStorage.setItem(MASTERY_KEY, JSON.stringify(map));
+  } catch {
+    /* storage full / private mode — ignore */
+  }
+}
+
+/**
+ * Laplace-smoothed mastery rate for a topic: (correct + 2) / (seen + 4).
+ * Unseen topics default to 0.5; the value converges to the observed rate
+ * as the user answers more rounds for the topic.
+ */
+export function getTopicMastery(topicId: TopicId): number {
+  const entry = loadMastery()[topicId as string];
+  const seen = entry?.seen ?? 0;
+  const correct = entry?.correct ?? 0;
+  return (correct + 2) / (seen + 4);
+}
+
+/** Record the outcome of one quiz round for a topic. */
+export function recordTopicResult(topicId: TopicId, correct: boolean): void {
+  const map = loadMastery();
+  const key = topicId as string;
+  const entry = map[key] ?? { seen: 0, correct: 0 };
+  map[key] = {
+    seen: entry.seen + 1,
+    correct: entry.correct + (correct ? 1 : 0),
+  };
+  saveMastery(map);
+}

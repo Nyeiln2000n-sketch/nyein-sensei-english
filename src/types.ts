@@ -36,6 +36,44 @@ export interface Word {
   my: string;
   topic: TopicId;
   level: Difficulty;
+  /** Learner-friendly phonetic hint (e.g. "rais" for rice). */
+  phonetic?: string;
+  /** Real example sentence using the word in context. */
+  example?: string;
+  /** Myanmar translation of the example sentence. */
+  exampleMy?: string;
+}
+
+export interface DialogueTurn {
+  /** Speaker label, Myanmar-first (e.g. "ဆိုင်ရှင်", "ဝယ်သူ"). */
+  speaker: string;
+  en: string;
+  my: string;
+}
+
+export interface Dialogue {
+  id: string;
+  topic: TopicId;
+  /** Myanmar title (primary). */
+  titleMy: string;
+  titleEn: string;
+  level: Difficulty;
+  /** Where the dialogue happens, Myanmar-first. */
+  situationMy: string;
+  turns: DialogueTurn[];
+}
+
+export interface StoryParagraph {
+  en: string;
+  my: string;
+}
+
+export interface Story {
+  id: string;
+  level: 'A1' | 'A2' | 'B1';
+  titleEn: string;
+  titleMy: string;
+  paragraphs: StoryParagraph[];
 }
 
 export interface Phrase {

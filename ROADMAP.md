@@ -58,19 +58,19 @@
 - [ ] C-009 "Palabra del día" con tarjeta visual
 - [x] C-010 Verificación: índice vectorial confirma 0 duplicados tras expansión
 
-## FASE 5 — Actividades y modos de juego 🟡
-- [ ] J-001 Modo quiz (opción múltiple) con las 12 plantillas
-- [ ] J-002 Modo flashcard con estrella/favoritos
-- [ ] J-003 Modo pronunciación (escuchar → repetir → grabar)
-- [ ] J-004 Modo ordenar frase (gramática)
-- [ ] J-005 Modo listening (escucha y elige)
-- [ ] J-006 Modo memoria (parejas)
-- [ ] J-007 Modo escritura (dictado)
-- [ ] J-008 NUEVO: modo diálogo interactivo (completar conversación)
-- [ ] J-009 NUEVO: modo historia (lee y responde)
-- [ ] J-010 Rotación anti-patrón: el orden de modos nunca se siente igual
-- [ ] J-011 Dificultad adaptativa por racha de aciertos
-- [ ] J-012 Celebración 3D + confeti al completar (pantalla 10)
+## FASE 5 — Actividades y modos de juego 🟢 COMPLETADO (2026-09-29: 12 plantillas, dictado/diálogo/historia nuevos, rotación anti-patrón, dificultad adaptativa, celebración 3D)
+- [x] J-001 Modo quiz (opción múltiple) con las 12 plantillas
+- [x] J-002 Modo flashcard con estrella/favoritos
+- [x] J-003 Modo pronunciación (escuchar → repetir → grabar)
+- [x] J-004 Modo ordenar frase (gramática)
+- [x] J-005 Modo listening (escucha y elige)
+- [x] J-006 Modo memoria (parejas)
+- [x] J-007 Modo escritura (dictado)
+- [x] J-008 NUEVO: modo diálogo interactivo (completar conversación)
+- [x] J-009 NUEVO: modo historia (lee y responde)
+- [x] J-010 Rotación anti-patrón: el orden de modos nunca se siente igual
+- [x] J-011 Dificultad adaptativa por racha de aciertos
+- [x] J-012 Celebración 3D + confeti al completar (pantalla 10)
 
 ## FASE 6 — Audio 🟡
 - [ ] A-001 Verificar Web Speech en iPhone real con Nyein (sin declarar hasta que ella lo oiga)

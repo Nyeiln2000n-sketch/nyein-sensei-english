@@ -1,17 +1,20 @@
 // SCREEN 10 — LessonComplete (mockup screen 10 "Final de lección").
-// One-shot CSS confetti BURST (brand palette), celebrate cat, streak card
-// with pulsing flame, blue "Continuar" pill, link to stats.
+// One-shot CSS confetti BURST (brand palette), LIVE 3D celebrate mascot,
+// streak card with pulsing flame, blue "Continuar" pill, link to stats.
 //
-// QA note (2026-09-29): the 3D canvas rendered an opaque square behind the
-// mascot on this screen, so the mascot uses the pixel-verified transparent
-// PNG here (public/mascot-celebrate.png, RGBA) with the CSS idle float —
-// guaranteed no box. The 3D mascot stays everywhere else.
+// J-012: static PNG replaced with Mascot3D (pose="celebrate") — React.lazy
+// code-split, Suspense fallback renders the pose PNG at the same size so
+// the user still sees the celebrate cat with zero layout shift while the
+// three.js chunk loads. The canonical component's Canvas uses alpha:true
+// (transparent, no opaque box) and falls back to the static PNG when
+// offscreen or when WebGL fails.
 
 import { useMemo } from 'react';
 import type { CSSProperties } from 'react';
 import type { GoFn, NavParams } from '../routes';
 import { PillButton, Screen } from '../components/ui';
 import { getStreak } from '../lib/storage';
+import Mascot3D from '../components/Mascot3D';
 import './w4.css';
 import { W4ErrorBoundary } from './w4error';
 
@@ -74,14 +77,7 @@ export default function LessonCompleteScreen({ go, params }: { go: GoFn; params?
       </div>
 
       <div className="w4-complete-body">
-        <img
-          src="/mascot-celebrate.png"
-          alt=""
-          aria-hidden="true"
-          draggable={false}
-          className="mascot-fallback-float"
-          style={{ width: 160, height: 160, objectFit: 'contain', display: 'block' }}
-        />
+        <Mascot3D pose="celebrate" size={200} sparkle />
 
         <h1 className="w4-big-title">တော်လိုက်တာ!</h1>
         <p className="w4-complete-sub">ဒီနေ့ သင်ခန်းစာ ပြီးဆုံးသွားပြီ</p>
