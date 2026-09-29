@@ -176,7 +176,8 @@
 - [x] W-003 VocabScreen con imagen por palabra (flashcard + filas del diccionario de audio)
 - [ ] 3D-001 Caza del gato 3D premium con rig (puede saludar con pata) y licencia limpia — EN CURSO (Quaternius rechazado por Nyein; VERDICT.md desactualizado); solo previews en hidden_files, jamás integrar sin su aprobación
 - [ ] D-006 QA visual iPhone: dashboard, nuevos formatos, imágenes de palabras, tab bar nativa
-- [ ] W-004 Optimizar PWA: 1000 imágenes precacheadas = ~49MB — evaluar excluir word-images del precache SW (lazy network)
+- [x] W-004 Optimizar PWA: 1000 imágenes precacheadas = ~49MB — evaluar excluir word-images del precache SW (lazy network)
+  - VERIFICADO (2026-09-29, auditoría directa de dist/sw.js + vite.config.ts — sin cambios de código necesarios): `globIgnores: ['**/word-images/**', '**/topic-cards/**', '**/splash/**']` excluye los 39MB de word-images (1000 imgs) y las 28 topic cards del precache — el manifest del SW contiene solo 26 entradas (app shell, iconos, 6 PNG de la mascota, manifest.webmanifest). Carga bajo demanda vía `runtimeCaching` CacheFirst: `word-images` (300 entradas, 30 días), `topic-cards` (60 entradas, 30 días), `google-fonts-cache` (1 año). NavigationRoute → index.html intacto. dist/word-images (39MB) existe en el CDN pero jamás entra en el precache del SW.
 
 ---
 **Total: 153 tareas.** Cada una = un enjambre que construye + verifica. El proyecto crece por oleadas, sin parar, sin repetir.
