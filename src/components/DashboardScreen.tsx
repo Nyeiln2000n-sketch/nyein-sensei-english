@@ -10,6 +10,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import {
   ArrowRight,
+  Award,
   BarChart3,
   Bell,
   BookOpen,
@@ -199,6 +200,15 @@ export default function DashboardScreen({ go }: { go: GoFn; params?: NavParams }
       badgeBg: '#E7D9FA',
       badgeColor: '#8B5CF6',
       onPress: () => go('dictation'),
+    },
+    // FASE 14 Ola 4 — CEFR certification exams (A1–C2)
+    {
+      key: 'cefrExam',
+      label: 'CEFR စာမေးပွဲ',
+      icon: Award,
+      badgeBg: '#FFF3C4',
+      badgeColor: '#D9A400',
+      onPress: () => go('cefrExam'),
     },
   ];
 

@@ -22,6 +22,7 @@ const PlanChoiceScreen = lazy(() => import('./components/PlanChoiceScreen'));
 // FASE 14 Ola 2 (E2-001→E2-005): new exercise formats, code-split like the rest.
 const ConjugationDrillScreen = lazy(() => import('./components/ConjugationDrillScreen'));
 const TenseQuizScreen = lazy(() => import('./components/TenseQuizScreen'));
+const CertificationExamScreen = lazy(() => import('./components/CertificationExamScreen'));
 const SentenceBuilderScreen = lazy(() => import('./components/SentenceBuilderScreen'));
 const DictationScreen = lazy(() => import('./components/DictationScreen'));
 const DialoguesStoriesScreen = lazy(() => import('./components/DialoguesStoriesScreen'));
@@ -424,6 +425,7 @@ export default function App() {
             )}
             {route.name === 'conjugationDrill' && <ConjugationDrillScreen {...screenProps} />}
             {route.name === 'tenseQuiz' && <TenseQuizScreen {...screenProps} />}
+            {route.name === 'cefrExam' && <CertificationExamScreen {...screenProps} />}
             {route.name === 'sentenceBuilder' && <SentenceBuilderScreen {...screenProps} />}
             {route.name === 'dictation' && <DictationScreen {...screenProps} />}
             {route.name === 'conv' && <DialoguesStoriesScreen {...screenProps} />}

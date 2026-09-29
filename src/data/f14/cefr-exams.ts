@@ -1953,9 +1953,9 @@ export const cefrExams: CEFRExam[] = [
       {
         prompt: 'Choose the correct phrase: "___ the storm, we would have arrived on time."',
         promptMy: 'မှန်ကန်သောစကားစုကို ရွေးပါ — "___ the storm, we would have arrived on time."',
-        options: ['Had it not been for', 'If it was not for', 'But for', 'Were it not for'],
+        options: ['Had it not be for', 'If it was not for', 'But for', 'Were it not for'],
         answer: 2,
-        explanationMy: '"But for + နာမ်" ဆိုတာ "... မရှိခဲ့ရင်" လို့ အဓိပ္ပာယ်ရပြီး third conditional မှာ သုံးပါတယ်။',
+        explanationMy: '"But for + နာမ်" ဆိုတာ "... မရှိခဲ့ရင်" လို့ အဓိပ္ပာယ်ရပြီး third conditional မှာ သုံးပါတယ်။ "Had it not be for" က သဒ္ဒါမှားပါတယ် (been လိုအပ်တယ်)။',
       },
       {
         prompt: 'Choose the correct phrase: "Not until the results were published ___ the error."',
@@ -1975,8 +1975,8 @@ export const cefrExams: CEFRExam[] = [
         prompt: 'Choose the correct phrase: "___ , the experiment would have failed."',
         promptMy: 'မှန်ကန်သောစကားစုကို ရွေးပါ — "___ , the experiment would have failed."',
         options: ['Had it not been for her help', 'Were it not for her help', 'If it was not for her help', 'But for her not helping'],
-        answer: 1,
-        explanationMy: '"Were it not for" ဆိုတာ အတိတ်စိတ်ကူးယဉ် အခြေအနေအတွက် သုံးတဲ့ inversion ပုံစံပါ။',
+        answer: 0,
+        explanationMy: '"Had it not been for + နာမ်" ဆိုတာ အတိတ်က မဖြစ်ခဲ့တဲ့ အခြေအနေအတွက် third conditional inversion ဖြစ်ပါတယ်။ "Were it not for" က ပစ္စုပ္ပန်/အနာဂတ် စိတ်ကူးယဉ် အခြေအနေအတွက်သာ သုံးပါတယ်။',
       },
       {
         prompt: 'Choose the correct phrase: "The more you practice, ___."',
@@ -2009,7 +2009,7 @@ export const cefrExams: CEFRExam[] = [
       {
         prompt: 'Choose the correct word: "___ the evidence, the jury acquitted him."',
         promptMy: 'မှန်ကန်သောစကားလုံးကို ရွေးပါ — "___ the evidence, the jury acquitted him."',
-        options: ['Despite', 'Although', 'Notwithstanding', 'In spite'],
+        options: ['Despite of', 'Although', 'Notwithstanding', 'In spite of the fact'],
         answer: 2,
         explanationMy: '"Notwithstanding" သည် "despite" နဲ့ အတူတူ နာမ်တိုက်ရိုက်လိုက်နိုင်တဲ့ တရားဝင်စကားလုံးပါ။',
       },

@@ -22289,7 +22289,7 @@
   {
    "id": "14-d-neg-02",
    "kind": "dialogue",
-   "en": "Student exchanges create lifelong bonds between countries. We propose two thousand places annually. Two thousand is ambitious but achievable, provided universities on both sides commit housing. Housing and tuition waivers we can guarantee. Living costs remain the students responsibility. Living costs will exclude talented students from modest backgrounds. We need means-tested stipends. You are right: excellence is evenly distributed, opportunity is not. We will fund five hundred stipends. Generous and wise. Shall we also include teacher exchanges? They multiply the impact. Teacher exchanges are an excellent addition. One hundred placements in the first year. Then our education ministers will sign next month. A generation will thank us.",
+   "en": "Student exchanges create lifelong bonds between countries. We propose two thousand places annually. Two thousand is ambitious but achievable, provided universities on both sides commit housing. Housing and tuition waivers we can guarantee. Living costs remain the students' responsibility. Living costs will exclude talented students from modest backgrounds. We need means-tested stipends. You are right: excellence is evenly distributed, opportunity is not. We will fund five hundred stipends. Generous and wise. Shall we also include teacher exchanges? They multiply the impact. Teacher exchanges are an excellent addition. One hundred placements in the first year. Then our education ministers will sign next month. A generation will thank us.",
    "en_norm": "student exchanges create lifelong bonds between countries we propose two thousand places annually two thousand is ambitious but achievable provided universities on both sides commit housing housing and tuition waivers we can guarantee living costs remain the students responsibility living costs will exclude talented students from modest backgrounds we need means tested stipends you are right excellence is evenly distributed opportunity is not we will fund five hundred stipends generous and wise shall we also include teacher exchanges they multiply the impact teacher exchanges are an excellent addition one hundred placements in the first year then our education ministers will sign next month a generation will thank us",
    "my_norm": "",
    "fingerprint": "5c7bd51190d25334",
@@ -22356,7 +22356,7 @@
     "wise",
     "year"
    ],
-   "template_sig": "W W W W W between W . we W two W W W . two W is W but W , W W on W W W W . W and W W we can W . W W W the W W . W W will W W W from W W . we W W - W W . you are W : W is W W , W is not . we will W W W W . W and W . shall we also W W W ? they W the W . W W are an W W . one W W in the W W . W our W W will W W W . a W will W us .",
+   "template_sig": "W W W W W between W . we W two W W W . two W is W but W , W W on W W W W . W and W W we can W . W W W the W ' W . W W will W W W from W W . we W W - W W . you are W : W is W W , W is not . we will W W W W . W and W . shall we also W W W ? they W the W . W W are an W W . one W W in the W W . W our W W will W W W . a W will W us .",
    "tags": [
     "diplomacy",
     "dialogue"
@@ -90099,7 +90099,7 @@
    "kind": "phrase",
    "en": "He struck out with three investors.",
    "en_norm": "he struck out with three investors",
-   "my_norm": "ရင်းနှီးမြှုပ်နှံသူ ၃ ယောက်နဲ့ သူ အဆင်မပြေခဲ့ဘူး။",
+   "my_norm": "ရင်းနှီးမြှုပ်နှံသူ သုံးယောက်လုံးဆီက ရင်းနှီးငွေ မရခဲ့ဘူး။",
    "fingerprint": "82ae15f446647ded",
    "vocab_sig": [
     "investors",
@@ -106157,7 +106157,7 @@
    "kind": "phrase",
    "en": "We would be delighted to welcome you to our annual conference. (formal) / We'd love to have you at our yearly conference. (informal)",
    "en_norm": "we would be delighted to welcome you to our annual conference formal we d love to have you at our yearly conference informal",
-   "my_norm": "ကျွန်ုပ်တို့၏ နှစ်ပတ်လည်ညီလာခံသို့ ကြိုဆိုရသည့်အတွက် ဝမ်းမြောက်မိပါမည်။ တရားဝင် နှစ်စဉ်ညီလာခံမှာ သင့်ကိုတွေ့ရတာ ဝမ်းသာမှာပါ။ ပေါ့ပေါ့ပါးပါး",
+   "my_norm": "ကျွနုပ်တို့၏ နှစ်ပတ်လည်ညီလာခံသို့ ကြိုဆိုရသည့်အတွက် ဝမ်းမြောက်မိပါမည်။ တရားဝင် နှစ်စဉ်ညီလာခံမှာ သင့်ကိုတွေ့ရတာ ဝမ်းသာမှာပါ။ ပေါ့ပေါ့ပါးပါး",
    "fingerprint": "29c32aca834d06ac",
    "vocab_sig": [
     "annual",
@@ -106310,7 +106310,7 @@
    "kind": "phrase",
    "en": "We remain at your disposal for any further assistance. (formal) / We're here if you need more help. (informal)",
    "en_norm": "we remain at your disposal for any further assistance formal we re here if you need more help informal",
-   "my_norm": "ထပ်မံအကူအညီ လိုအပ်ပါက ကျွန်ုပ်တို့ အသင့်ရှိနေပါသည်။ တရားဝင် ထပ်ကူညီစရာလိုရင် ပြောပါ။ ပေါ့ပေါ့ပါးပါး",
+   "my_norm": "ထပ်မံအကူအညီ လိုအပ်ပါက ကျွနုပ်တို့ အသင့်ရှိနေပါသည်။ တရားဝင် ထပ်ကူညီစရာလိုရင် ပြောပါ။ ပေါ့ပေါ့ပါးပါး",
    "fingerprint": "e860c0a0e3efe5b9",
    "vocab_sig": [
     "any",
@@ -106781,7 +106781,7 @@
    "kind": "phrase",
    "en": "Per our earlier discussion, (formal) / Like we talked about, (informal)",
    "en_norm": "per our earlier discussion formal like we talked about informal",
-   "my_norm": "ကျွန်ုပ်တို့ အစောက ဆွေးနွေးခဲ့သည့်အတိုင်း၊ တရားဝင် ပြောခဲ့သလိုပဲ၊ ပေါ့ပေါ့ပါးပါး",
+   "my_norm": "ကျွနုပ်တို့ အစောက ဆွေးနွေးခဲ့သည့်အတိုင်း၊ တရားဝင် ပြောခဲ့သလိုပဲ၊ ပေါ့ပေါ့ပါးပါး",
    "fingerprint": "637033b89f9c0dcb",
    "vocab_sig": [
     "discussion",
@@ -106854,7 +106854,7 @@
    "kind": "phrase",
    "en": "Allow me to introduce our new regional director. (formal) / Meet our new regional director! (informal)",
    "en_norm": "allow me to introduce our new regional director formal meet our new regional director informal",
-   "my_norm": "ကျွန်ုပ်တို့၏ ဒေသဆိုင်ရာဒါရိုက်တာအသစ်ကို မိတ်ဆက်ပေးပါရစေ။ တရားဝင် ဒေသဆိုင်ရာဒါရိုက်တာအသစ်နဲ့ တွေ့ဆုံပါ ပေါ့ပေါ့ပါးပါး",
+   "my_norm": "ကျွနုပ်တို့၏ ဒေသဆိုင်ရာဒါရိုက်တာအသစ်ကို မိတ်ဆက်ပေးပါရစေ။ တရားဝင် ဒေသဆိုင်ရာဒါရိုက်တာအသစ်နဲ့ တွေ့ဆုံပါ ပေါ့ပေါ့ပါးပါး",
    "fingerprint": "6451e4826941bd52",
    "vocab_sig": [
     "allow",
@@ -106981,7 +106981,7 @@
    "kind": "phrase",
    "en": "We sincerely value your continued patronage. (formal) / Thanks for sticking with us! (informal)",
    "en_norm": "we sincerely value your continued patronage formal thanks for sticking with us informal",
-   "my_norm": "သင်၏ဆက်လက် အားပေးမှုကို စစ်မှန်စွာ တန်ဖိုးထားပါသည်။ တရားဝင် ကျွန်ုပ်တို့နဲ့ ဆက်ရှိနေပေးတာ ကျေးဇူးပါ ပေါ့ပေါ့ပါးပါး",
+   "my_norm": "သင်၏ဆက်လက် အားပေးမှုကို စစ်မှန်စွာ တန်ဖိုးထားပါသည်။ တရားဝင် ကျွနုပ်တို့နဲ့ ဆက်ရှိနေပေးတာ ကျေးဇူးပါ ပေါ့ပေါ့ပါးပါး",
    "fingerprint": "40ea678a0187dc7f",
    "vocab_sig": [
     "continued",
@@ -107514,7 +107514,7 @@
    "kind": "phrase",
    "en": "Let us not lose sight of our strategic objectives. (formal) / Let's keep our eyes on the big goals. (informal)",
    "en_norm": "let us not lose sight of our strategic objectives formal let s keep our eyes on the big goals informal",
-   "my_norm": "ကျွန်ုပ်တို့၏ မဟာဗျူဟာမြောက် ရည်မှန်းချက်များကို မျက်ခြေမပြတ်စေကြပါစို့။ တရားဝင် ကြီးမားတဲ့ ပန်းတိုင်တွေကို မျက်စိမလွတ်စေနဲ့။ ပေါ့ပေါ့ပါးပါး",
+   "my_norm": "ကျွနုပ်တို့၏ မဟာဗျူဟာမြောက် ရည်မှန်းချက်များကို မျက်ခြေမပြတ်စေကြပါစို့။ တရားဝင် ကြီးမားတဲ့ ပန်းတိုင်တွေကို မျက်စိမလွတ်စေနဲ့။ ပေါ့ပေါ့ပါးပါး",
    "fingerprint": "72e65c1384fb69ba",
    "vocab_sig": [
     "big",
@@ -107592,7 +107592,7 @@
    "kind": "phrase",
    "en": "In the interest of time, I will keep my remarks brief. (formal) / To keep it short — (informal)",
    "en_norm": "in the interest of time i will keep my remarks brief formal to keep it short informal",
-   "my_norm": "အချိန်ကို ချွေတာသောအားဖြင့် ကျွန်ုပ်၏မှတ်ချက်များကို အကျဉ်းချုပ်ထားပါမည်။ တရားဝင် အတိုချုပ်ပြောရရင် ပေါ့ပေါ့ပါးပါး",
+   "my_norm": "အချိန်ကို ချွေတာသောအားဖြင့် ကျွနုပ်၏မှတ်ချက်များကို အကျဉ်းချုပ်ထားပါမည်။ တရားဝင် အတိုချုပ်ပြောရရင် ပေါ့ပေါ့ပါးပါး",
    "fingerprint": "37d7d5b236eeb254",
    "vocab_sig": [
     "brief",
@@ -107617,7 +107617,7 @@
    "kind": "phrase",
    "en": "I would like to place on record my appreciation. (formal) / I want to say thanks officially. (neutral)",
    "en_norm": "i would like to place on record my appreciation formal i want to say thanks officially neutral",
-   "my_norm": "ကျွန်ုပ်၏ကျေးဇူးတင်မှုကို မှတ်တမ်းတင်လိုပါသည်။ တရားဝင် တရားဝင် ကျေးဇူးတင်စကား ပြောချင်တယ်။ သာမန်",
+   "my_norm": "ကျွနုပ်၏ကျေးဇူးတင်မှုကို မှတ်တမ်းတင်လိုပါသည်။ တရားဝင် တရားဝင် ကျေးဇူးတင်စကား ပြောချင်တယ်။ သာမန်",
    "fingerprint": "b0014cc55bd32589",
    "vocab_sig": [
     "appreciation",
@@ -107670,7 +107670,7 @@
    "kind": "phrase",
    "en": "May I request a brief caucus with my team? (formal) / Can I have a quick word with my team? (informal)",
    "en_norm": "may i request a brief caucus with my team formal can i have a quick word with my team informal",
-   "my_norm": "ကျွန်ုပ်၏အဖွဲ့နှင့် ခဏတာ ဆွေးနွေးခွင့် တောင်းခံနိုင်မည်လော။ တရားဝင် အဖွဲ့နဲ့ ခဏစကားပြောလို့ရမလား။ ပေါ့ပေါ့ပါးပါး",
+   "my_norm": "ကျွနုပ်၏အဖွဲ့နှင့် ခဏတာ ဆွေးနွေးခွင့် တောင်းခံနိုင်မည်လော။ တရားဝင် အဖွဲ့နဲ့ ခဏစကားပြောလို့ရမလား။ ပေါ့ပေါ့ပါးပါး",
    "fingerprint": "5515c8a5068acf5f",
    "vocab_sig": [
     "brief",
@@ -107867,7 +107867,7 @@
    "kind": "phrase",
    "en": "Your position is noted, though we remain unconvinced. (formal) / Noted, but we're not convinced. (neutral)",
    "en_norm": "your position is noted though we remain unconvinced formal noted but we re not convinced neutral",
-   "my_norm": "သင်၏ရပ်တည်ချက်ကို မှတ်သားထားသော်လည်း၊ ကျွန်ုပ်တို့ ယုံကြည်မှု မရှိသေးပါ။ တရားဝင် မှတ်ထားပြီ၊ ဒါပေမဲ့ မယုံကြည်သေးဘူး။ သာမန်",
+   "my_norm": "သင်၏ရပ်တည်ချက်ကို မှတ်သားထားသော်လည်း၊ ကျွနုပ်တို့ ယုံကြည်မှု မရှိသေးပါ။ တရားဝင် မှတ်ထားပြီ၊ ဒါပေမဲ့ မယုံကြည်သေးဘူး။ သာမန်",
    "fingerprint": "2592f324bc06bcc5",
    "vocab_sig": [
     "convinced",
@@ -107996,7 +107996,7 @@
    "kind": "phrase",
    "en": "Our delegation cannot endorse the current draft. (formal) / We can't back this draft. (neutral)",
    "en_norm": "our delegation cannot endorse the current draft formal we can t back this draft neutral",
-   "my_norm": "ကျွန်ုပ်တို့ ကိုယ်စားလှယ်အဖွဲ့သည် လက်ရှိမူကြမ်းကို ထောက်ခံ၍ မရနိုင်ပါ။ တရားဝင် ဒီမူကြမ်းကို ထောက်ခံလို့မရဘူး။ သာမန်",
+   "my_norm": "ကျွနုပ်တို့ ကိုယ်စားလှယ်အဖွဲ့သည် လက်ရှိမူကြမ်းကို ထောက်ခံ၍ မရနိုင်ပါ။ တရားဝင် ဒီမူကြမ်းကို ထောက်ခံလို့မရဘူး။ သာမန်",
    "fingerprint": "4232c44aa49cfba3",
    "vocab_sig": [
     "back",
@@ -108355,7 +108355,7 @@
    "kind": "phrase",
    "en": "We shall reserve our position pending further developments. (formal) / We'll wait and see how it goes. (informal)",
    "en_norm": "we shall reserve our position pending further developments formal we ll wait and see how it goes informal",
-   "my_norm": "ထပ်မံဖြစ်ပေါ်မှုများကို စောင့်ဆိုင်း၍ ကျွန်ုပ်တို့၏ရပ်တည်ချက်ကို ချန်ထားပါမည်။ တရားဝင် ဘယ်လိုဖြစ်မလဲ စောင့်ကြည့်ကြစို့။ ပေါ့ပေါ့ပါးပါး",
+   "my_norm": "ထပ်မံဖြစ်ပေါ်မှုများကို စောင့်ဆိုင်း၍ ကျွနုပ်တို့၏ရပ်တည်ချက်ကို ချန်ထားပါမည်။ တရားဝင် ဘယ်လိုဖြစ်မလဲ စောင့်ကြည့်ကြစို့။ ပေါ့ပေါ့ပါးပါး",
    "fingerprint": "74b024337d298a7f",
    "vocab_sig": [
     "developments",
@@ -108459,7 +108459,7 @@
    "kind": "phrase",
    "en": "Allow me to apologise unreservedly for my remarks. (formal) / I take back what I said — sorry. (informal)",
    "en_norm": "allow me to apologise unreservedly for my remarks formal i take back what i said sorry informal",
-   "my_norm": "ကျွန်ုပ်၏မှတ်ချက်များအတွက် ခြွင်းချက်မရှိ တောင်းပန်ပါရစေ။ တရားဝင် ပြောခဲ့တာတွေ ပြန်ရုပ်သိမ်းတယ် တောင်းပန်ပါတယ်။ ပေါ့ပေါ့ပါးပါး",
+   "my_norm": "ကျွနုပ်၏မှတ်ချက်များအတွက် ခြွင်းချက်မရှိ တောင်းပန်ပါရစေ။ တရားဝင် ပြောခဲ့တာတွေ ပြန်ရုပ်သိမ်းတယ် တောင်းပန်ပါတယ်။ ပေါ့ပေါ့ပါးပါး",
    "fingerprint": "a150377bc86b9544",
    "vocab_sig": [
     "allow",
@@ -108486,7 +108486,7 @@
    "kind": "phrase",
    "en": "There is no excuse for my behaviour, and I am truly sorry. (formal) / No excuses — I'm really sorry. (informal)",
    "en_norm": "there is no excuse for my behaviour and i am truly sorry formal no excuses i m really sorry informal",
-   "my_norm": "ကျွန်ုပ်၏အပြုအမူအတွက် ဆင်ခြေမရှိပါ၊ စစ်မှန်စွာ တောင်းပန်ပါသည်။ တရားဝင် ဆင်ခြေမပေးဘူး တကယ်တောင်းပန်ပါတယ်။ ပေါ့ပေါ့ပါးပါး",
+   "my_norm": "ကျွနုပ်၏အပြုအမူအတွက် ဆင်ခြေမရှိပါ၊ စစ်မှန်စွာ တောင်းပန်ပါသည်။ တရားဝင် ဆင်ခြေမပေးဘူး တကယ်တောင်းပန်ပါတယ်။ ပေါ့ပေါ့ပါးပါး",
    "fingerprint": "9b740bc1514e9ed8",
    "vocab_sig": [
     "behaviour",
@@ -108618,7 +108618,7 @@
    "kind": "phrase",
    "en": "We acknowledge our shortcomings and will do better. (formal) / We messed up and we'll do better. (informal)",
    "en_norm": "we acknowledge our shortcomings and will do better formal we messed up and we ll do better informal",
-   "my_norm": "ကျွန်ုပ်တို့၏အားနည်းချက်များကို အသိအမှတ်ပြု၍ ပိုကောင်းအောင် လုပ်ပါမည်။ တရားဝင် ငါတို့ မှားခဲ့တယ်၊ ပိုကောင်းအောင် လုပ်မယ်။ ပေါ့ပေါ့ပါးပါး",
+   "my_norm": "ကျွနုပ်တို့၏အားနည်းချက်များကို အသိအမှတ်ပြု၍ ပိုကောင်းအောင် လုပ်ပါမည်။ တရားဝင် ငါတို့ မှားခဲ့တယ်၊ ပိုကောင်းအောင် လုပ်မယ်။ ပေါ့ပေါ့ပါးပါး",
    "fingerprint": "2c0f5efec507822f",
    "vocab_sig": [
     "acknowledge",
@@ -108689,7 +108689,7 @@
    "kind": "phrase",
    "en": "We humbly ask for your forgiveness. (formal) / Please forgive us. (neutral)",
    "en_norm": "we humbly ask for your forgiveness formal please forgive us neutral",
-   "my_norm": "ကျွန်ုပ်တို့ နှိမ့်ချစွာ ခွင့်လွှတ်မှုကို တောင်းခံပါသည်။ တရားဝင် ခွင့်လွှတ်ပေးပါ။ သာမန်",
+   "my_norm": "ကျွနုပ်တို့ နှိမ့်ချစွာ ခွင့်လွှတ်မှုကို တောင်းခံပါသည်။ တရားဝင် ခွင့်လွှတ်ပေးပါ။ သာမန်",
    "fingerprint": "3825d86aaa9ecea6",
    "vocab_sig": [
     "ask",
@@ -108712,7 +108712,7 @@
    "kind": "phrase",
    "en": "I regret my words and retract them wholeheartedly. (formal) / I take it all back — sorry. (informal)",
    "en_norm": "i regret my words and retract them wholeheartedly formal i take it all back sorry informal",
-   "my_norm": "ကျွန်ုပ်၏စကားများကို နောင်တရ၍ စိတ်ရင်းဖြင့် ပြန်ရုပ်သိမ်းပါသည်။ တရားဝင် အားလုံးပြန်ရုပ်သိမ်းတယ် တောင်းပန်ပါတယ်။ ပေါ့ပေါ့ပါးပါး",
+   "my_norm": "ကျွနုပ်၏စကားများကို နောင်တရ၍ စိတ်ရင်းဖြင့် ပြန်ရုပ်သိမ်းပါသည်။ တရားဝင် အားလုံးပြန်ရုပ်သိမ်းတယ် တောင်းပန်ပါတယ်။ ပေါ့ပေါ့ပါးပါး",
    "fingerprint": "9a911f7210d08d69",
    "vocab_sig": [
     "all",
@@ -108812,7 +108812,7 @@
    "kind": "phrase",
    "en": "Please do not think ill of us for this lapse. (formal) / Don't hold this against us, please. (informal)",
    "en_norm": "please do not think ill of us for this lapse formal don t hold this against us please informal",
-   "my_norm": "ဤချို့ယွင်းမှုအတွက် ကျွန်ုပ်တို့အပေါ် အဆိုးမမြင်ပါနှင့်။ တရားဝင် ဒါကို ငါတို့အပေါ် အပြစ်မတင်ပါနဲ့။ ပေါ့ပေါ့ပါးပါး",
+   "my_norm": "ဤချို့ယွင်းမှုအတွက် ကျွနုပ်တို့အပေါ် အဆိုးမမြင်ပါနှင့်။ တရားဝင် ဒါကို ငါတို့အပေါ် အပြစ်မတင်ပါနဲ့။ ပေါ့ပေါ့ပါးပါး",
    "fingerprint": "774c8398fef8ee37",
    "vocab_sig": [
     "against",
@@ -108836,7 +108836,7 @@
    "kind": "phrase",
    "en": "We express our remorse in the strongest terms. (formal) / We feel terrible about it. (neutral)",
    "en_norm": "we express our remorse in the strongest terms formal we feel terrible about it neutral",
-   "my_norm": "ကျွန်ုပ်တို့၏နောင်တကို အပြင်းထန်ဆုံး စကားလုံးများဖြင့် ဖော်ပြပါသည်။ တရားဝင် ဒါနဲ့ပတ်သက်ပြီး အရမ်းစိတ်မကောင်းဘူး။ သာမန်",
+   "my_norm": "ကျွနုပ်တို့၏နောင်တကို အပြင်းထန်ဆုံး စကားလုံးများဖြင့် ဖော်ပြပါသည်။ တရားဝင် ဒါနဲ့ပတ်သက်ပြီး အရမ်းစိတ်မကောင်းဘူး။ သာမန်",
    "fingerprint": "637cee224e611a17",
    "vocab_sig": [
     "express",
@@ -108885,7 +108885,7 @@
    "kind": "phrase",
    "en": "We are chastened by this experience and have learned from it. (formal) / This taught us a lesson, honestly. (informal)",
    "en_norm": "we are chastened by this experience and have learned from it formal this taught us a lesson honestly informal",
-   "my_norm": "ဤအတွေ့အကြုံက ကျွန်ုပ်တို့ကို သင်ခန်းစာပေးခဲ့ပြီး သင်ယူခဲ့ပါသည်။ တရားဝင် ပွင့်ပွင့်ပြောရရင် ဒါက ငါတို့ကို သင်ခန်းစာပေးသွားတယ်။ ပေါ့ပေါ့ပါးပါး",
+   "my_norm": "ဤအတွေ့အကြုံက ကျွနုပ်တို့ကို သင်ခန်းစာပေးခဲ့ပြီး သင်ယူခဲ့ပါသည်။ တရားဝင် ပွင့်ပွင့်ပြောရရင် ဒါက ငါတို့ကို သင်ခန်းစာပေးသွားတယ်။ ပေါ့ပေါ့ပါးပါး",
    "fingerprint": "ba5cb2cfa4e7f56a",
    "vocab_sig": [
     "chastened",
@@ -109498,7 +109498,7 @@
    "kind": "phrase",
    "en": "Should it please the committee, we will proceed. (formal) / If the committee agrees, we'll go ahead. (neutral)",
    "en_norm": "should it please the committee we will proceed formal if the committee agrees we ll go ahead neutral",
-   "my_norm": "ကော်မတီ၏ သဘောတူညီမှုရရှိပါက ကျွန်ုပ်တို့ ဆက်လက်ဆောင်ရွက်ပါမည်။ တရားဝင် ကော်မတီ သဘောတူရင် ဆက်လုပ်မယ်။ သာမန်",
+   "my_norm": "ကော်မတီ၏ သဘောတူညီမှုရရှိပါက ကျွနုပ်တို့ ဆက်လက်ဆောင်ရွက်ပါမည်။ တရားဝင် ကော်မတီ သဘောတူရင် ဆက်လုပ်မယ်။ သာမန်",
    "fingerprint": "566a2539eca4ff4e",
    "vocab_sig": [
     "agrees",
@@ -109651,7 +109651,7 @@
    "kind": "phrase",
    "en": "Let's leverage our core competencies. (informal, business jargon) / Let's use our main strengths. (neutral)",
    "en_norm": "let s leverage our core competencies informal business jargon let s use our main strengths neutral",
-   "my_norm": "ကျွန်ုပ်တို့၏ အဓိကစွမ်းရည်များကို အသုံးချကြစို့။ စီးပွားရေးသုံး ဗန်းစကား ကျွန်ုပ်တို့ရဲ့ အဓိကအားသာချက်တွေကို သုံးကြစို့။ သာမန်",
+   "my_norm": "ကျွနုပ်တို့၏ အဓိကစွမ်းရည်များကို အသုံးချကြစို့။ စီးပွားရေးသုံး ဗန်းစကား ကျွနုပ်တို့ရဲ့ အဓိကအားသာချက်တွေကို သုံးကြစို့။ သာမန်",
    "fingerprint": "844e490fe665c9f6",
    "vocab_sig": [
     "business",
@@ -109760,7 +109760,7 @@
    "kind": "phrase",
    "en": "That's outside my wheelhouse. (informal, jargon) / That's not my area of expertise. (neutral)",
    "en_norm": "that s outside my wheelhouse informal jargon that s not my area of expertise neutral",
-   "my_norm": "အဲဒါ ကျွန်ုပ်၏ကျွမ်းကျင်မှုနယ်ပယ် အပြင်ဘက်ဖြစ်ပါသည်။ ဗန်းစကား အဲဒါ ငါ့ကျွမ်းကျင်တဲ့နယ်မဟုတ်ဘူး။ သာမန်",
+   "my_norm": "အဲဒါ ကျွနုပ်၏ကျွမ်းကျင်မှုနယ်ပယ် အပြင်ဘက်ဖြစ်ပါသည်။ ဗန်းစကား အဲဒါ ငါ့ကျွမ်းကျင်တဲ့နယ်မဟုတ်ဘူး။ သာမန်",
    "fingerprint": "c193c2ecd34dcf38",
    "vocab_sig": [
     "area",
@@ -109995,7 +109995,7 @@
    "kind": "phrase",
    "en": "We need a paradigm shift in our approach. (formal, academic jargon) / We need a completely new way of thinking. (neutral)",
    "en_norm": "we need a paradigm shift in our approach formal academic jargon we need a completely new way of thinking neutral",
-   "my_norm": "ကျွန်ုပ်တို့၏ချဉ်းကပ်မှုတွင် အခြေခံပြောင်းလဲမှု လိုအပ်ပါသည်။ ပညာရပ်သုံး ဗန်းစကား လုံးဝအသစ်သော စဉ်းစားနည်းတစ်ခု လိုတယ်။ သာမန်",
+   "my_norm": "ကျွနုပ်တို့၏ချဉ်းကပ်မှုတွင် အခြေခံပြောင်းလဲမှု လိုအပ်ပါသည်။ ပညာရပ်သုံး ဗန်းစကား လုံးဝအသစ်သော စဉ်းစားနည်းတစ်ခု လိုတယ်။ သာမန်",
    "fingerprint": "010591e6bfc4114e",
    "vocab_sig": [
     "academic",
@@ -110102,7 +110102,7 @@
    "kind": "phrase",
    "en": "We need to synergise our efforts. (formal, corporate jargon) / We need to work well together. (neutral)",
    "en_norm": "we need to synergise our efforts formal corporate jargon we need to work well together neutral",
-   "my_norm": "ကျွန်ုပ်တို့၏ကြိုးစားမှုများ ပူးပေါင်းဆောင်ရွက်ရန် လိုပါသည်။ ကုမ္ပဏီသုံး ဗန်းစကား အတူတူ ကောင်းကောင်းလုပ်ဖို့ လိုတယ်။ သာမန်",
+   "my_norm": "ကျွနုပ်တို့၏ကြိုးစားမှုများ ပူးပေါင်းဆောင်ရွက်ရန် လိုပါသည်။ ကုမ္ပဏီသုံး ဗန်းစကား အတူတူ ကောင်းကောင်းလုပ်ဖို့ လိုတယ်။ သာမန်",
    "fingerprint": "55e88871098f8d52",
    "vocab_sig": [
     "corporate",
@@ -110256,7 +110256,7 @@
    "kind": "phrase",
    "en": "That's above my pay grade. (informal, workplace idiom) / That's beyond my authority to decide. (neutral)",
    "en_norm": "that s above my pay grade informal workplace idiom that s beyond my authority to decide neutral",
-   "my_norm": "၎င်းမှာ ကျွန်ုပ်၏ဆုံးဖြတ်ပိုင်ခွင့် အပြင်ဘက်ဖြစ်ပါသည်။ လုပ်ငန်းခွင်သုံး စကားပုံ အဲဒါ ငါဆုံးဖြတ်နိုင်တဲ့ အတိုင်းအတာထက် ကျော်တယ်။ သာမန်",
+   "my_norm": "၎င်းမှာ ကျွနုပ်၏ဆုံးဖြတ်ပိုင်ခွင့် အပြင်ဘက်ဖြစ်ပါသည်။ လုပ်ငန်းခွင်သုံး စကားပုံ အဲဒါ ငါဆုံးဖြတ်နိုင်တဲ့ အတိုင်းအတာထက် ကျော်တယ်။ သာမန်",
    "fingerprint": "bbc2e0e812c2bb3d",
    "vocab_sig": [
     "above",
@@ -111433,7 +111433,7 @@
    "kind": "phrase",
    "en": "I shall be taking my business elsewhere. (formal) / I'm taking my business somewhere else. (neutral)",
    "en_norm": "i shall be taking my business elsewhere formal i m taking my business somewhere else neutral",
-   "my_norm": "ကျွန်ုပ်၏စီးပွားရေးကို အခြားနေရာသို့ ပြောင်းရွှေ့ပါမည်။ တရားဝင် ငါ့စီးပွားရေးကို တခြားနေရာ ပြောင်းမယ်။ သာမန်",
+   "my_norm": "ကျွနုပ်၏စီးပွားရေးကို အခြားနေရာသို့ ပြောင်းရွှေ့ပါမည်။ တရားဝင် ငါ့စီးပွားရေးကို တခြားနေရာ ပြောင်းမယ်။ သာမန်",
    "fingerprint": "4678bac2df231715",
    "vocab_sig": [
     "business",
@@ -111582,7 +111582,7 @@
    "kind": "phrase",
    "en": "My greatest strength is my ability to work under pressure. (neutral) / I'm great at handling pressure. (informal)",
    "en_norm": "my greatest strength is my ability to work under pressure neutral i m great at handling pressure informal",
-   "my_norm": "ကျွန်ုပ်၏အကြီးမားဆုံး အားသာချက်မှာ ဖိအားအောက်တွင် အလုပ်လုပ်နိုင်ခြင်းဖြစ်ပါသည်။ သာမန် ဖိအားကို ကိုင်တွယ်တာ ငါတော်တယ်။ ပေါ့ပေါ့ပါးပါး",
+   "my_norm": "ကျွနုပ်၏အကြီးမားဆုံး အားသာချက်မှာ ဖိအားအောက်တွင် အလုပ်လုပ်နိုင်ခြင်းဖြစ်ပါသည်။ သာမန် ဖိအားကို ကိုင်တွယ်တာ ငါတော်တယ်။ ပေါ့ပေါ့ပါးပါး",
    "fingerprint": "a0aabd726f348a88",
    "vocab_sig": [
     "ability",
@@ -111609,7 +111609,7 @@
    "kind": "phrase",
    "en": "I would describe myself as a proactive team player. (neutral) / I'd say I'm someone who takes initiative in a team. (informal)",
    "en_norm": "i would describe myself as a proactive team player neutral i d say i m someone who takes initiative in a team informal",
-   "my_norm": "ကျွန်ုပ်ကိုယ်ကို တက်ကြွသော အဖွဲ့ဝင်တစ်ဦးဟု ဖော်ပြလိုပါသည်။ သာမန် အဖွဲ့ထဲမှာ ကိုယ်တိုင်ဦးဆောင်လုပ်တတ်သူလို့ ပြောရမယ်။ ပေါ့ပေါ့ပါးပါး",
+   "my_norm": "ကျွနုပ်ကိုယ်ကို တက်ကြွသော အဖွဲ့ဝင်တစ်ဦးဟု ဖော်ပြလိုပါသည်။ သာမန် အဖွဲ့ထဲမှာ ကိုယ်တိုင်ဦးဆောင်လုပ်တတ်သူလို့ ပြောရမယ်။ ပေါ့ပေါ့ပါးပါး",
    "fingerprint": "3350e75fd737f9be",
    "vocab_sig": [
     "describe",
@@ -111722,7 +111722,7 @@
    "kind": "phrase",
    "en": "My salary expectations are in line with industry standards. (formal) / I expect a normal salary for this kind of job. (informal)",
    "en_norm": "my salary expectations are in line with industry standards formal i expect a normal salary for this kind of job informal",
-   "my_norm": "ကျွန်ုပ်၏လစာမျှော်မှန်းချက်သည် လုပ်ငန်းစံနှုန်းများနှင့် ကိုက်ညီပါသည်။ တရားဝင် ဒီလိုအလုပ်မျိုးအတွက် ပုံမှန်လစာ မျှော်လင့်တယ်။ ပေါ့ပေါ့ပါးပါး",
+   "my_norm": "ကျွနုပ်၏လစာမျှော်မှန်းချက်သည် လုပ်ငန်းစံနှုန်းများနှင့် ကိုက်ညီပါသည်။ တရားဝင် ဒီလိုအလုပ်မျိုးအတွက် ပုံမှန်လစာ မျှော်လင့်တယ်။ ပေါ့ပေါ့ပါးပါး",
    "fingerprint": "3e5502b43793d05a",
    "vocab_sig": [
     "expect",
@@ -111881,7 +111881,7 @@
    "kind": "phrase",
    "en": "My track record demonstrates consistent achievement. (formal) / I've consistently done well in the past. (neutral)",
    "en_norm": "my track record demonstrates consistent achievement formal i ve consistently done well in the past neutral",
-   "my_norm": "ကျွန်ုပ်၏မှတ်တမ်းသည် တသမတ်တည်း အောင်မြင်မှုကို ပြသပါသည်။ တရားဝင် အတိတ်မှာ အမြဲတမ်း ကောင်းကောင်းလုပ်ခဲ့တယ်။ သာမန်",
+   "my_norm": "ကျွနုပ်၏မှတ်တမ်းသည် တသမတ်တည်း အောင်မြင်မှုကို ပြသပါသည်။ တရားဝင် အတိတ်မှာ အမြဲတမ်း ကောင်းကောင်းလုပ်ခဲ့တယ်။ သာမန်",
    "fingerprint": "732163f0ae120920",
    "vocab_sig": [
     "achievement",
@@ -112066,7 +112066,7 @@
    "kind": "phrase",
    "en": "My long-term goal is to assume a leadership role. (formal) / Eventually I want to lead a team. (informal)",
    "en_norm": "my long term goal is to assume a leadership role formal eventually i want to lead a team informal",
-   "my_norm": "ကျွန်ုပ်၏ရေရှည်ပန်းတိုင်မှာ ခေါင်းဆောင်မှုရာထူး ရယူရန်ဖြစ်ပါသည်။ တရားဝင် နောက်ဆုံး အဖွဲ့တစ်ဖွဲ့ကို ဦးဆောင်ချင်တယ်။ ပေါ့ပေါ့ပါးပါး",
+   "my_norm": "ကျွနုပ်၏ရေရှည်ပန်းတိုင်မှာ ခေါင်းဆောင်မှုရာထူး ရယူရန်ဖြစ်ပါသည်။ တရားဝင် နောက်ဆုံး အဖွဲ့တစ်ဖွဲ့ကို ဦးဆောင်ချင်တယ်။ ပေါ့ပေါ့ပါးပါး",
    "fingerprint": "1707fbe64e31d077",
    "vocab_sig": [
     "assume",
@@ -112145,7 +112145,7 @@
    "kind": "phrase",
    "en": "I consider myself a results-driven professional. (formal) / I focus on getting results. (neutral)",
    "en_norm": "i consider myself a results driven professional formal i focus on getting results neutral",
-   "my_norm": "ကျွန်ုပ်ကိုယ်ကို ရလဒ်ကိုဦးတည်သော ပညာရှင်တစ်ဦးဟု ယူဆပါသည်။ တရားဝင် ရလဒ်ရဖို့ကို အာရုံစိုက်တယ်။ သာမန်",
+   "my_norm": "ကျွနုပ်ကိုယ်ကို ရလဒ်ကိုဦးတည်သော ပညာရှင်တစ်ဦးဟု ယူဆပါသည်။ တရားဝင် ရလဒ်ရဖို့ကို အာရုံစိုက်တယ်။ သာမန်",
    "fingerprint": "20005b7adf4b8c16",
    "vocab_sig": [
     "consider",
@@ -112195,7 +112195,7 @@
    "kind": "phrase",
    "en": "Thank you for considering my application. (formal) / Thanks for looking at my application! (informal)",
    "en_norm": "thank you for considering my application formal thanks for looking at my application informal",
-   "my_norm": "ကျွန်ုပ်၏လျှောက်လွှာကို စဉ်းစားပေးသည့်အတွက် ကျေးဇူးတင်ပါသည်။ တရားဝင် လျှောက်လွှာကို ကြည့်ပေးတာ ကျေးဇူးပါ ပေါ့ပေါ့ပါးပါး",
+   "my_norm": "ကျွနုပ်၏လျှောက်လွှာကို စဉ်းစားပေးသည့်အတွက် ကျေးဇူးတင်ပါသည်။ တရားဝင် လျှောက်လွှာကို ကြည့်ပေးတာ ကျေးဇူးပါ ပေါ့ပေါ့ပါးပါး",
    "fingerprint": "6dcdb92e200b9ab9",
    "vocab_sig": [
     "application",
@@ -112375,7 +112375,7 @@
    "kind": "phrase",
    "en": "May I extend an invitation to our product launch? (formal) / Want to come to our product launch? (informal)",
    "en_norm": "may i extend an invitation to our product launch formal want to come to our product launch informal",
-   "my_norm": "ကျွန်ုပ်တို့၏ထုတ်ကုန်မိတ်ဆက်ပွဲသို့ ဖိတ်ကြားခွင့်ပြုပါမည်လော။ တရားဝင် ထုတ်ကုန်မိတ်ဆက်ပွဲကို လာချင်လား။ ပေါ့ပေါ့ပါးပါး",
+   "my_norm": "ကျွနုပ်တို့၏ထုတ်ကုန်မိတ်ဆက်ပွဲသို့ ဖိတ်ကြားခွင့်ပြုပါမည်လော။ တရားဝင် ထုတ်ကုန်မိတ်ဆက်ပွဲကို လာချင်လား။ ပေါ့ပေါ့ပါးပါး",
    "fingerprint": "4dada16b83ae0274",
    "vocab_sig": [
     "come",
@@ -112449,7 +112449,7 @@
    "kind": "phrase",
    "en": "Please convey my regards to your colleagues. (formal) / Say hi to your colleagues for me! (informal)",
    "en_norm": "please convey my regards to your colleagues formal say hi to your colleagues for me informal",
-   "my_norm": "သင်၏လုပ်ဖော်ကိုင်ဖက်များအား ကျွန်ုပ်၏နှုတ်ခွန်းဆက်သမှုကို ပေးပို့ပေးပါ။ တရားဝင် လုပ်ဖော်ကိုင်ဖက်တွေကို နှုတ်ဆက်ပေးပါ ပေါ့ပေါ့ပါးပါး",
+   "my_norm": "သင်၏လုပ်ဖော်ကိုင်ဖက်များအား ကျွနုပ်၏နှုတ်ခွန်းဆက်သမှုကို ပေးပို့ပေးပါ။ တရားဝင် လုပ်ဖော်ကိုင်ဖက်တွေကို နှုတ်ဆက်ပေးပါ ပေါ့ပေါ့ပါးပါး",
    "fingerprint": "dff3fe7067f83ffc",
    "vocab_sig": [
     "colleagues",
@@ -113003,7 +113003,7 @@
    "kind": "phrase",
    "en": "I don't believe we've been introduced. (formal) / I don't think we've met. (neutral)",
    "en_norm": "i don t believe we ve been introduced formal i don t think we ve met neutral",
-   "my_norm": "ကျွန်ုပ်တို့ မိတ်ဆက်ပေးခြင်း မခံရသေးဟု ထင်ပါသည်။ တရားဝင် ငါတို့ မတွေ့ဖူးဘူးထင်တယ်။ သာမန်",
+   "my_norm": "ကျွနုပ်တို့ မိတ်ဆက်ပေးခြင်း မခံရသေးဟု ထင်ပါသည်။ တရားဝင် ငါတို့ မတွေ့ဖူးဘူးထင်တယ်။ သာမန်",
    "fingerprint": "49e856d1b11689f5",
    "vocab_sig": [
     "believe",
@@ -113119,7 +113119,7 @@
    "kind": "phrase",
    "en": "Have we met before? I can't quite place you. (neutral) / You look familiar — do I know you? (informal)",
    "en_norm": "have we met before i can t quite place you neutral you look familiar do i know you informal",
-   "my_norm": "ကျွန်ုပ်တို့ အရင်တွေ့ဖူးပါသလား။ သေချာမမှတ်မိပါ။ သာမန် မျက်နှာရင်းတယ် ငါသိလား။ ပေါ့ပေါ့ပါးပါး",
+   "my_norm": "ကျွနုပ်တို့ အရင်တွေ့ဖူးပါသလား။ သေချာမမှတ်မိပါ။ သာမန် မျက်နှာရင်းတယ် ငါသိလား။ ပေါ့ပေါ့ပါးပါး",
    "fingerprint": "325e9be90b82f6ec",
    "vocab_sig": [
     "familiar",
@@ -113290,7 +113290,7 @@
    "kind": "phrase",
    "en": "Do give my best to your family. (formal) / Say hi to the family for me! (informal)",
    "en_norm": "do give my best to your family formal say hi to the family for me informal",
-   "my_norm": "သင်၏မိသားစုအား ကျွန်ုပ်၏အကောင်းဆုံးဆုမွန်များ ပေးပို့ပေးပါ။ တရားဝင် မိသားစုကို နှုတ်ဆက်ပေးပါ ပေါ့ပေါ့ပါးပါး",
+   "my_norm": "သင်၏မိသားစုအား ကျွနုပ်၏အကောင်းဆုံးဆုမွန်များ ပေးပို့ပေးပါ။ တရားဝင် မိသားစုကို နှုတ်ဆက်ပေးပါ ပေါ့ပေါ့ပါးပါး",
    "fingerprint": "c52b749136c15408",
    "vocab_sig": [
     "best",
@@ -113359,7 +113359,7 @@
    "kind": "phrase",
    "en": "This is my colleague, Dr Evans. (formal) / This is my coworker Dave. (informal)",
    "en_norm": "this is my colleague dr evans formal this is my coworker dave informal",
-   "my_norm": "ဤသူမှာ ကျွန်ုပ်၏လုပ်ဖော်ကိုင်ဖက် ဒေါက်တာအီဗန်စ်ဖြစ်ပါသည်။ တရားဝင် ဒါ ငါ့လုပ်ဖော်ကိုင်ဖက် ဒေ့ဗ်ပါ။ ပေါ့ပေါ့ပါးပါး",
+   "my_norm": "ဤသူမှာ ကျွနုပ်၏လုပ်ဖော်ကိုင်ဖက် ဒေါက်တာအီဗန်စ်ဖြစ်ပါသည်။ တရားဝင် ဒါ ငါ့လုပ်ဖော်ကိုင်ဖက် ဒေ့ဗ်ပါ။ ပေါ့ပေါ့ပါးပါး",
    "fingerprint": "ca0ae87af956fa36",
    "vocab_sig": [
     "colleague",
@@ -114081,7 +114081,7 @@
    "kind": "phrase",
    "en": "Our opening position is a 10% reduction in fees. (formal) / We're starting by asking for 10% off. (informal)",
    "en_norm": "our opening position is a 10 reduction in fees formal we re starting by asking for 10 off informal",
-   "my_norm": "ကျွန်ုပ်တို့၏အစပိုင်းရပ်တည်ချက်မှာ အခကြေးငွေ ၁၀ လျှော့ချရန်ဖြစ်ပါသည်။ တရားဝင် ၁၀ လျှော့ပေးဖို့ တောင်းဆိုပြီး စတာပါ။ ပေါ့ပေါ့ပါးပါး",
+   "my_norm": "ကျွနုပ်တို့၏အစပိုင်းရပ်တည်ချက်မှာ အခကြေးငွေ ၁၀ လျှော့ချရန်ဖြစ်ပါသည်။ တရားဝင် ၁၀ လျှော့ပေးဖို့ တောင်းဆိုပြီး စတာပါ။ ပေါ့ပေါ့ပါးပါး",
    "fingerprint": "747e598814690663",
    "vocab_sig": [
     "10",
@@ -114133,7 +114133,7 @@
    "kind": "phrase",
    "en": "That figure is non-negotiable from our side. (formal) / We won't budge on that number. (informal)",
    "en_norm": "that figure is non negotiable from our side formal we won t budge on that number informal",
-   "my_norm": "ထိုကိန်းဂဏန်းသည် ကျွန်ုပ်တို့ဘက်မှ ညှိနှိုင်း၍မရပါ။ တရားဝင် အဲဒီဂဏန်းမှာ ငါတို့ မရွေ့ဘူး။ ပေါ့ပေါ့ပါးပါး",
+   "my_norm": "ထိုကိန်းဂဏန်းသည် ကျွနုပ်တို့ဘက်မှ ညှိနှိုင်း၍မရပါ။ တရားဝင် အဲဒီဂဏန်းမှာ ငါတို့ မရွေ့ဘူး။ ပေါ့ပေါ့ပါးပါး",
    "fingerprint": "5451108bf8782672",
    "vocab_sig": [
     "budge",
@@ -114236,7 +114236,7 @@
    "kind": "phrase",
    "en": "Our final offer stands at two million. (formal) / Two million — take it or leave it. (informal)",
    "en_norm": "our final offer stands at two million formal two million take it or leave it informal",
-   "my_norm": "ကျွန်ုပ်တို့၏နောက်ဆုံးကမ်းလှမ်းချက်မှာ သန်း ၂၀ ဖြစ်ပါသည်။ တရားဝင် သန်း ၂၀ ယူမလား မယူဘူးလား။ ပေါ့ပေါ့ပါးပါး",
+   "my_norm": "ကျွနုပ်တို့၏နောက်ဆုံးကမ်းလှမ်းချက်မှာ သန်း ၂၀ ဖြစ်ပါသည်။ တရားဝင် သန်း ၂၀ ယူမလား မယူဘူးလား။ ပေါ့ပေါ့ပါးပါး",
    "fingerprint": "ffdc3d23a8e53003",
    "vocab_sig": [
     "final",
@@ -114336,7 +114336,7 @@
    "kind": "phrase",
    "en": "I must consult my principals before committing. (formal) / I need to check with my bosses first. (informal)",
    "en_norm": "i must consult my principals before committing formal i need to check with my bosses first informal",
-   "my_norm": "ကတိမပြုမီ ကျွန်ုပ်၏အထက်လူကြီးများနှင့် တိုင်ပင်ရပါမည်။ တရားဝင် အရင် အထက်လူကြီးတွေနဲ့ တိုင်ပင်ရမယ်။ ပေါ့ပေါ့ပါးပါး",
+   "my_norm": "ကတိမပြုမီ ကျွနုပ်၏အထက်လူကြီးများနှင့် တိုင်ပင်ရပါမည်။ တရားဝင် အရင် အထက်လူကြီးတွေနဲ့ တိုင်ပင်ရမယ်။ ပေါ့ပေါ့ပါးပါး",
    "fingerprint": "3312c82813aacbd4",
    "vocab_sig": [
     "bosses",
@@ -114388,7 +114388,7 @@
    "kind": "phrase",
    "en": "That demand exceeds our mandate. (formal) / We can't agree to that — it's beyond our authority. (neutral)",
    "en_norm": "that demand exceeds our mandate formal we can t agree to that it s beyond our authority neutral",
-   "my_norm": "ထိုတောင်းဆိုချက်သည် ကျွန်ုပ်တို့၏လုပ်ပိုင်ခွင့်ကို ကျော်လွန်ပါသည်။ တရားဝင် အဲဒါကို သဘောမတူနိုင်ဘူး လုပ်ပိုင်ခွင့်ထက် ကျော်တယ်။ သာမန်",
+   "my_norm": "ထိုတောင်းဆိုချက်သည် ကျွနုပ်တို့၏လုပ်ပိုင်ခွင့်ကို ကျော်လွန်ပါသည်။ တရားဝင် အဲဒါကို သဘောမတူနိုင်ဘူး လုပ်ပိုင်ခွင့်ထက် ကျော်တယ်။ သာမန်",
    "fingerprint": "06fa4b343f61b1a3",
    "vocab_sig": [
     "agree",
@@ -114607,7 +114607,7 @@
    "kind": "phrase",
    "en": "This represents our best and final position. (formal) / This is the best we can do, final. (informal)",
    "en_norm": "this represents our best and final position formal this is the best we can do final informal",
-   "my_norm": "ဤသည်မှာ ကျွန်ုပ်တို့၏အကောင်းဆုံးနှင့် နောက်ဆုံးရပ်တည်ချက်ဖြစ်ပါသည်။ တရားဝင် ဒါ ငါတို့လုပ်နိုင်ဆုံး၊ နောက်ဆုံးပဲ။ ပေါ့ပေါ့ပါးပါး",
+   "my_norm": "ဤသည်မှာ ကျွနုပ်တို့၏အကောင်းဆုံးနှင့် နောက်ဆုံးရပ်တည်ချက်ဖြစ်ပါသည်။ တရားဝင် ဒါ ငါတို့လုပ်နိုင်ဆုံး၊ နောက်ဆုံးပဲ။ ပေါ့ပေါ့ပါးပါး",
    "fingerprint": "7d56d3c8c935e499",
    "vocab_sig": [
     "best",
@@ -116187,7 +116187,7 @@
    "kind": "phrase",
    "en": "We are delighted to unveil our new headquarters. (formal) / We're thrilled to show you our new HQ! (informal)",
    "en_norm": "we are delighted to unveil our new headquarters formal we re thrilled to show you our new hq informal",
-   "my_norm": "ကျွန်ုပ်တို့၏ရုံးချုပ်အသစ်ကို ဖွင့်လှစ်ပြသရသည့်အတွက် ဝမ်းမြောက်မိပါသည်။ တရားဝင် ရုံးချုပ်အသစ်ကို ပြရတာ စိတ်လှုပ်ရှားပါတယ် ပေါ့ပေါ့ပါးပါး",
+   "my_norm": "ကျွနုပ်တို့၏ရုံးချုပ်အသစ်ကို ဖွင့်လှစ်ပြသရသည့်အတွက် ဝမ်းမြောက်မိပါသည်။ တရားဝင် ရုံးချုပ်အသစ်ကို ပြရတာ စိတ်လှုပ်ရှားပါတယ် ပေါ့ပေါ့ပါးပါး",
    "fingerprint": "522c0ddea12edea8",
    "vocab_sig": [
     "delighted",
@@ -116752,7 +116752,7 @@
    "kind": "phrase",
    "en": "I am afraid that is beyond my authority. (formal) / I can't do that — it's not up to me. (informal)",
    "en_norm": "i am afraid that is beyond my authority formal i can t do that it s not up to me informal",
-   "my_norm": "ဝမ်းနည်းစွာပင်၊ ၎င်းမှာ ကျွန်ုပ်၏လုပ်ပိုင်ခွင့် အပြင်ဘက်ဖြစ်ပါသည်။ တရားဝင် အဲဒါ မလုပ်ပေးနိုင်ဘူး ငါ့ဆုံးဖြတ်ချက် မဟုတ်ဘူး။ ပေါ့ပေါ့ပါးပါး",
+   "my_norm": "ဝမ်းနည်းစွာပင်၊ ၎င်းမှာ ကျွနုပ်၏လုပ်ပိုင်ခွင့် အပြင်ဘက်ဖြစ်ပါသည်။ တရားဝင် အဲဒါ မလုပ်ပေးနိုင်ဘူး ငါ့ဆုံးဖြတ်ချက် မဟုတ်ဘူး။ ပေါ့ပေါ့ပါးပါး",
    "fingerprint": "142f26a8b5811d01",
    "vocab_sig": [
     "afraid",
@@ -116798,7 +116798,7 @@
    "kind": "phrase",
    "en": "Your satisfaction is our utmost priority. (formal) / We really want you to be happy. (informal)",
    "en_norm": "your satisfaction is our utmost priority formal we really want you to be happy informal",
-   "my_norm": "သင်၏ကျေနပ်မှုသည် ကျွန်ုပ်တို့၏အဓိကဦးစားပေးဖြစ်ပါသည်။ တရားဝင် သင်ပျော်ရွှင်စေချင်တာ တကယ်ပါ။ ပေါ့ပေါ့ပါးပါး",
+   "my_norm": "သင်၏ကျေနပ်မှုသည် ကျွနုပ်တို့၏အဓိကဦးစားပေးဖြစ်ပါသည်။ တရားဝင် သင်ပျော်ရွှင်စေချင်တာ တကယ်ပါ။ ပေါ့ပေါ့ပါးပါး",
    "fingerprint": "89422250f4323233",
    "vocab_sig": [
     "formal",
@@ -116823,7 +116823,7 @@
    "kind": "phrase",
    "en": "I will escalate your case to my supervisor. (formal) / I'll pass this up to my boss. (informal)",
    "en_norm": "i will escalate your case to my supervisor formal i ll pass this up to my boss informal",
-   "my_norm": "သင်၏ကိစ္စကို ကျွန်ုပ်၏အထက်လူကြီးထံ တိုင်ကြားပါမည်။ တရားဝင် ဒါကို ငါ့အထက်လူကြီးဆီ ပို့ပေးမယ်။ ပေါ့ပေါ့ပါးပါး",
+   "my_norm": "သင်၏ကိစ္စကို ကျွနုပ်၏အထက်လူကြီးထံ တိုင်ကြားပါမည်။ တရားဝင် ဒါကို ငါ့အထက်လူကြီးဆီ ပို့ပေးမယ်။ ပေါ့ပေါ့ပါးပါး",
    "fingerprint": "38fd52e808255f34",
    "vocab_sig": [
     "boss",
@@ -116992,7 +116992,7 @@
    "kind": "phrase",
    "en": "Your feedback is invaluable to us. (formal) / Your feedback really helps us! (informal)",
    "en_norm": "your feedback is invaluable to us formal your feedback really helps us informal",
-   "my_norm": "သင်၏အကြံပြုချက်သည် ကျွန်ုပ်တို့အတွက် အလွန်တန်ဖိုးရှိပါသည်။ တရားဝင် သင့်အကြံပြုချက်က ငါတို့ကို တကယ်ကူညီတယ် ပေါ့ပေါ့ပါးပါး",
+   "my_norm": "သင်၏အကြံပြုချက်သည် ကျွနုပ်တို့အတွက် အလွန်တန်ဖိုးရှိပါသည်။ တရားဝင် သင့်အကြံပြုချက်က ငါတို့ကို တကယ်ကူညီတယ် ပေါ့ပေါ့ပါးပါး",
    "fingerprint": "014da0859a0f627f",
    "vocab_sig": [
     "feedback",
@@ -117041,7 +117041,7 @@
    "kind": "phrase",
    "en": "We regret any confusion regarding our pricing. (formal) / Sorry our prices were confusing! (informal)",
    "en_norm": "we regret any confusion regarding our pricing formal sorry our prices were confusing informal",
-   "my_norm": "ကျွန်ုပ်တို့၏ဈေးနှုန်းနှင့် ပတ်သက်၍ ရှုပ်ထွေးမှုအတွက် ဝမ်းနည်းမိပါသည်။ တရားဝင် ဈေးနှုန်းတွေ ရှုပ်ထွေးစေတာ တောင်းပန်တယ် ပေါ့ပေါ့ပါးပါး",
+   "my_norm": "ကျွနုပ်တို့၏ဈေးနှုန်းနှင့် ပတ်သက်၍ ရှုပ်ထွေးမှုအတွက် ဝမ်းနည်းမိပါသည်။ တရားဝင် ဈေးနှုန်းတွေ ရှုပ်ထွေးစေတာ တောင်းပန်တယ် ပေါ့ပေါ့ပါးပါး",
    "fingerprint": "3d37ec3db99bbb93",
    "vocab_sig": [
     "any",
@@ -117117,7 +117117,7 @@
    "kind": "phrase",
    "en": "Our opening hours are from nine to five. (neutral) / We're open nine to five. (informal)",
    "en_norm": "our opening hours are from nine to five neutral we re open nine to five informal",
-   "my_norm": "ကျွန်ုပ်တို့၏ဖွင့်ချိန်မှာ မနက် ၉ နာရီမှ ညနေ ၅ နာရီအထိဖြစ်ပါသည်။ သာမန် ၉ နာရီကနေ ၅ နာရီအထိ ဖွင့်တယ်။ ပေါ့ပေါ့ပါးပါး",
+   "my_norm": "ကျွနုပ်တို့၏ဖွင့်ချိန်မှာ မနက် ၉ နာရီမှ ညနေ ၅ နာရီအထိဖြစ်ပါသည်။ သာမန် ၉ နာရီကနေ ၅ နာရီအထိ ဖွင့်တယ်။ ပေါ့ပေါ့ပါးပါး",
    "fingerprint": "fa522292609d9223",
    "vocab_sig": [
     "five",
@@ -117191,7 +117191,7 @@
    "kind": "phrase",
    "en": "Your call is important to us. (neutral, scripted) / Thanks for holding — almost there! (informal)",
    "en_norm": "your call is important to us neutral scripted thanks for holding almost there informal",
-   "my_norm": "သင်၏ဖုန်းခေါ်ဆိုမှုသည် ကျွန်ုပ်တို့အတွက် အရေးကြီးပါသည်။ သာမန်၊ ပုံသေစကား စောင့်ပေးတာ ကျေးဇူးပါ ခဏပဲ ပေါ့ပေါ့ပါးပါး",
+   "my_norm": "သင်၏ဖုန်းခေါ်ဆိုမှုသည် ကျွနုပ်တို့အတွက် အရေးကြီးပါသည်။ သာမန်၊ ပုံသေစကား စောင့်ပေးတာ ကျေးဇူးပါ ခဏပဲ ပေါ့ပေါ့ပါးပါး",
    "fingerprint": "67c417c1b43a06fe",
    "vocab_sig": [
     "almost",
@@ -117555,7 +117555,7 @@
    "kind": "phrase",
    "en": "Your thoughtfulness touched my heart. (formal) / That was so thoughtful of you! (informal)",
    "en_norm": "your thoughtfulness touched my heart formal that was so thoughtful of you informal",
-   "my_norm": "သင်၏ဂရုစိုက်မှုသည် ကျွန်ုပ်၏နှလုံးသားကို ထိခိုက်စေခဲ့ပါသည်။ တရားဝင် သင် အရမ်းဂရုစိုက်တတ်တယ် ပေါ့ပေါ့ပါးပါး",
+   "my_norm": "သင်၏ဂရုစိုက်မှုသည် ကျွနုပ်၏နှလုံးသားကို ထိခိုက်စေခဲ့ပါသည်။ တရားဝင် သင် အရမ်းဂရုစိုက်တတ်တယ် ပေါ့ပေါ့ပါးပါး",
    "fingerprint": "fbb1b793ec5647b9",
    "vocab_sig": [
     "formal",
@@ -117600,7 +117600,7 @@
    "kind": "phrase",
    "en": "Please convey my thanks to your team. (formal) / Tell your team I said thanks! (informal)",
    "en_norm": "please convey my thanks to your team formal tell your team i said thanks informal",
-   "my_norm": "သင်၏အဖွဲ့အား ကျွန်ုပ်၏ကျေးဇူးတင်စကား ပေးပို့ပေးပါ။ တရားဝင် အဖွဲ့ကို ကျေးဇူးတင်တယ်လို့ ပြောပေးပါ ပေါ့ပေါ့ပါးပါး",
+   "my_norm": "သင်၏အဖွဲ့အား ကျွနုပ်၏ကျေးဇူးတင်စကား ပေးပို့ပေးပါ။ တရားဝင် အဖွဲ့ကို ကျေးဇူးတင်တယ်လို့ ပြောပေးပါ ပေါ့ပေါ့ပါးပါး",
    "fingerprint": "80900e8b243eab25",
    "vocab_sig": [
     "convey",
@@ -117673,7 +117673,7 @@
    "kind": "phrase",
    "en": "Your support means a great deal to me. (neutral) / Your support means everything to me! (informal)",
    "en_norm": "your support means a great deal to me neutral your support means everything to me informal",
-   "my_norm": "သင်၏ပံ့ပိုးမှုသည် ကျွန်ုပ်အတွက် အလွန်အရေးကြီးပါသည်။ သာမန် သင့်ပံ့ပိုးမှုက ငါ့အတွက် အရာရာပါ ပေါ့ပေါ့ပါးပါး",
+   "my_norm": "သင်၏ပံ့ပိုးမှုသည် ကျွနုပ်အတွက် အလွန်အရေးကြီးပါသည်။ သာမန် သင့်ပံ့ပိုးမှုက ငါ့အတွက် အရာရာပါ ပေါ့ပေါ့ပါးပါး",
    "fingerprint": "dfe18cbcd13e602b",
    "vocab_sig": [
     "deal",
@@ -117724,7 +117724,7 @@
    "kind": "phrase",
    "en": "We are indebted to our volunteers. (formal) / We owe our volunteers so much! (informal)",
    "en_norm": "we are indebted to our volunteers formal we owe our volunteers so much informal",
-   "my_norm": "ကျွန်ုပ်တို့၏စေတနာ့ဝန်ထမ်းများအပေါ် ကျေးဇူးတင်နေပါသည်။ တရားဝင် စေတနာ့ဝန်ထမ်းတွေအပေါ် အကြွေးအများကြီး တင်တယ် ပေါ့ပေါ့ပါးပါး",
+   "my_norm": "ကျွနုပ်တို့၏စေတနာ့ဝန်ထမ်းများအပေါ် ကျေးဇူးတင်နေပါသည်။ တရားဝင် စေတနာ့ဝန်ထမ်းတွေအပေါ် အကြွေးအများကြီး တင်တယ် ပေါ့ပေါ့ပါးပါး",
    "fingerprint": "7801ed2609ed82d0",
    "vocab_sig": [
     "formal",
@@ -117747,7 +117747,7 @@
    "kind": "phrase",
    "en": "My gratitude knows no bounds. (formal) / I'm beyond grateful! (informal)",
    "en_norm": "my gratitude knows no bounds formal i m beyond grateful informal",
-   "my_norm": "ကျွန်ုပ်၏ကျေးဇူးတင်မှုသည် အတိုင်းအဆမရှိပါ။ တရားဝင် ကျေးဇူးတင်လွန်းလို့ စကားမရှိဘူး ပေါ့ပေါ့ပါးပါး",
+   "my_norm": "ကျွနုပ်၏ကျေးဇူးတင်မှုသည် အတိုင်းအဆမရှိပါ။ တရားဝင် ကျေးဇူးတင်လွန်းလို့ စကားမရှိဘူး ပေါ့ပေါ့ပါးပါး",
    "fingerprint": "c290a22faa95ea01",
    "vocab_sig": [
     "beyond",
@@ -117843,7 +117843,7 @@
    "kind": "phrase",
    "en": "It is I who must apologise. (formal, written) / I'm the one who should apologise. (neutral, spoken)",
    "en_norm": "it is i who must apologise formal written i m the one who should apologise neutral spoken",
-   "my_norm": "တောင်းပန်ရမည့်သူမှာ ကျွန်ုပ်ဖြစ်ပါသည်။ တရားဝင်၊ စာရေးသုံး တောင်းပန်ရမှာက ငါပါ။ သာမန်၊ အပြောသုံး",
+   "my_norm": "တောင်းပန်ရမည့်သူမှာ ကျွနုပ်ဖြစ်ပါသည်။ တရားဝင်၊ စာရေးသုံး တောင်းပန်ရမှာက ငါပါ။ သာမန်၊ အပြောသုံး",
    "fingerprint": "1e3a1b27dc9defac",
    "vocab_sig": [
     "apologise",
@@ -118388,7 +118388,7 @@
    "kind": "phrase",
    "en": "I hereby tender my resignation. (formal, written) / I'm quitting. (informal, spoken)",
    "en_norm": "i hereby tender my resignation formal written i m quitting informal spoken",
-   "my_norm": "ဤနေရာတွင် ကျွန်ုပ်၏အလုပ်ထွက်စာကို တင်သွင်းပါသည်။ တရားဝင်၊ စာရေးသုံး အလုပ်ထွက်ပြီ။ ပေါ့ပေါ့ပါးပါး၊ အပြောသုံး",
+   "my_norm": "ဤနေရာတွင် ကျွနုပ်၏အလုပ်ထွက်စာကို တင်သွင်းပါသည်။ တရားဝင်၊ စာရေးသုံး အလုပ်ထွက်ပြီ။ ပေါ့ပေါ့ပါးပါး၊ အပြောသုံး",
    "fingerprint": "24bec51f9d6d71e9",
    "vocab_sig": [
     "formal",
@@ -590585,7 +590585,7 @@
   {
    "id": "example:daily-life:morning",
    "kind": "example",
-   "en": "Good morning, how are you.",
+   "en": "Good morning! How are you?",
    "en_norm": "good morning how are you",
    "my_norm": "",
    "fingerprint": "2681a1b146d90622",
@@ -590593,7 +590593,7 @@
     "good",
     "morning"
    ],
-   "template_sig": "W W , how are you .",
+   "template_sig": "W W ! how are you ?",
    "tags": [
     "daily-life",
     "example"
@@ -591038,18 +591038,19 @@
   {
    "id": "example:daily-life:chore",
    "kind": "example",
-   "en": "Doing one chore keeps the home tidy.",
-   "en_norm": "doing one chore keeps the home tidy",
+   "en": "Doing one chore a day keeps the home tidy.",
+   "en_norm": "doing one chore a day keeps the home tidy",
    "my_norm": "",
-   "fingerprint": "c7f99995e4c30917",
+   "fingerprint": "1ba541729f9dd841",
    "vocab_sig": [
     "chore",
+    "day",
     "doing",
     "home",
     "keeps",
     "tidy"
    ],
-   "template_sig": "W one W W the W W .",
+   "template_sig": "W one W a W W the W W .",
    "tags": [
     "daily-life",
     "example"
@@ -591116,16 +591117,16 @@
   {
    "id": "example:daily-life:stroll",
    "kind": "example",
-   "en": "We stroll in the park slowly.",
-   "en_norm": "we stroll in the park slowly",
+   "en": "We often stroll in the park.",
+   "en_norm": "we often stroll in the park",
    "my_norm": "",
-   "fingerprint": "fd4a349998f01da8",
+   "fingerprint": "69d30c8ba36609ea",
    "vocab_sig": [
+    "often",
     "park",
-    "slowly",
     "stroll"
    ],
-   "template_sig": "we W in the W W .",
+   "template_sig": "we W W in the W .",
    "tags": [
     "daily-life",
     "example"
@@ -591307,16 +591308,17 @@
   {
    "id": "example:daily-life:dinner",
    "kind": "example",
-   "en": "We have dinner together nightly.",
-   "en_norm": "we have dinner together nightly",
+   "en": "We have dinner together every night.",
+   "en_norm": "we have dinner together every night",
    "my_norm": "",
-   "fingerprint": "cc4640413f7d3fb2",
+   "fingerprint": "0397cfefe88e7647",
    "vocab_sig": [
     "dinner",
-    "nightly",
+    "every",
+    "night",
     "together"
    ],
-   "template_sig": "we have W W W .",
+   "template_sig": "we have W W W W .",
    "tags": [
     "daily-life",
     "example"
@@ -591423,16 +591425,16 @@
   {
    "id": "example:daily-life:mirror",
    "kind": "example",
-   "en": "Look at the mirror and smile.",
-   "en_norm": "look at the mirror and smile",
+   "en": "Look in the mirror and smile.",
+   "en_norm": "look in the mirror and smile",
    "my_norm": "",
-   "fingerprint": "f6d127c84a99e9b3",
+   "fingerprint": "ba7070f4fac6d942",
    "vocab_sig": [
     "look",
     "mirror",
     "smile"
    ],
-   "template_sig": "W at the W and W .",
+   "template_sig": "W in the W and W .",
    "tags": [
     "daily-life",
     "example"
@@ -591499,19 +591501,20 @@
   {
    "id": "example:daily-life:routine",
    "kind": "example",
-   "en": "A good morning routine starts the day well.",
-   "en_norm": "a good morning routine starts the day well",
+   "en": "A good morning routine makes the whole day better.",
+   "en_norm": "a good morning routine makes the whole day better",
    "my_norm": "",
-   "fingerprint": "d08f16e067ff16bd",
+   "fingerprint": "b46f0864bf6a4580",
    "vocab_sig": [
+    "better",
     "day",
     "good",
+    "makes",
     "morning",
     "routine",
-    "starts",
-    "well"
+    "whole"
    ],
-   "template_sig": "a W W W W the W W .",
+   "template_sig": "a W W W W the W W W .",
    "tags": [
     "daily-life",
     "example"

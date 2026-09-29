@@ -17,6 +17,7 @@ export type RouteName =
   | 'planChoice'
   | 'conjugationDrill'
   | 'tenseQuiz'
+  | 'cefrExam'
   | 'sentenceBuilder'
   | 'dictation'
   | 'conv';

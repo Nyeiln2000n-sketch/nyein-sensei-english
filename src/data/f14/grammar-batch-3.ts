@@ -77,7 +77,7 @@ export const grammarRulesC1C2: GrammarRuleC1C2[] = [
     examples: [
       { english: 'Be that as it may, we must finish by Friday.', myanmar: 'ဒါပေမဲ့ ငါတို့သောကြာနေ့ထိ ပြီးရမယ်။' },
       { english: 'Long live the King!', myanmar: 'ဘုရင်သက်တော်ရှည်ပါစေ!' },
-      { english: 'Suffice it to say, the meeting was a disaster.', myanmar: 'အတိုချုပ်ပြောရရင် အစည်းအဝေးက ပျက်စီးခဲ့တယ်။' },
+      { english: 'Suffice it to say, the negotiations did not go as planned.', myanmar: 'အတိုချုပ်ပြောရရင် ညှိနှိုင်းမှုတွေ စီစဉ်ထားသလို ဖြစ်မလာခဲ့ဘူး။' },
       { english: 'Come what may, I will keep my promise.', myanmar: 'ဘာဖြစ်ဖြစ်လာပါစေ ငါ့ကတိကို တည်မယ်။' },
     ],
     drills: [
@@ -837,7 +837,7 @@ export const grammarRulesC1C2: GrammarRuleC1C2[] = [
       { english: 'It was too good an offer to refuse.', myanmar: 'ငြင်းဖို့ခက်တဲ့ အရမ်းကောင်းတဲ့ ကမ်းလှမ်းချက်ပါ။' },
       { english: 'He is too proud a man to admit his mistake.', myanmar: 'သူက အမှားဝန်ခံဖို့ မာနအရမ်းကြီးတဲ့ လူပါ။' },
       { english: 'That\'s a strange enough coincidence to be suspicious.', myanmar: 'သံသယဖြစ်စရာ ထူးဆန်းတဲ့ တိုက်ဆိုင်မှုပါ။' },
-      { english: 'She was fool enough to believe him.', myanmar: 'သူ့ကိုယုံဖို့ သူမမိုက်မဲ ခဲ့တယ်။' },
+      { english: 'She was fool enough to believe him.', myanmar: 'သူ့ကို ယုံလောက်အောင် မိုက်မဲခဲ့တယ်။' },
     ],
     drills: [
       { prompt: 'It was too ___ a chance to miss.', answer: 'good', options: ['good', 'well', 'better', 'best'] },

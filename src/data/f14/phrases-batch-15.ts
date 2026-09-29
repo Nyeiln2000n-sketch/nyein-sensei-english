@@ -245,7 +245,7 @@ export const phrasesBatch15: Phrase[] = [
   { en: 'The sudden tax audit was a real curveball.', my: 'ရုတ်တရက် အခွန်စစ်ဆေးမှုက မထင်မှတ်တဲ့ အခက်အခဲပါ။', topic: 'business', cefr: 'C1' },
   { en: 'The interviewer threw me a curveball.', my: 'အင်တာဗျူးသူက ကျွန်တော့်ကို မထင်မှတ်တဲ့မေးခွန်း မေးခဲ့တယ်။', topic: 'work', cefr: 'C1' },
   { en: 'His resignation came out of left field.', my: 'သူ့နှုတ်ထွက်စာက လုံးဝမထင်မှတ်ဘဲ ဖြစ်ခဲ့တယ်။', topic: 'work', cefr: 'C1' },
-  { en: 'He struck out with three investors.', my: 'ရင်းနှီးမြှုပ်နှံသူ ၃ ယောက်နဲ့ သူ အဆင်မပြေခဲ့ဘူး။', topic: 'business', cefr: 'C1' },
+  { en: 'He struck out with three investors.', my: 'ရင်းနှီးမြှုပ်နှံသူ သုံးယောက်လုံးဆီက ရင်းနှီးငွေ မရခဲ့ဘူး။', topic: 'business', cefr: 'C1' },
   { en: 'The new ad hit a home run.', my: 'ကြော်ငြာအသစ်က အရမ်းအောင်မြင်သွားတယ်။', topic: 'business', cefr: 'C1' },
   { en: 'Delays are par for the course in construction.', my: 'ဆောက်လုပ်ရေးမှာ ကြန့်ကြာတာက ပုံမှန်ပါပဲ။', topic: 'work', cefr: 'C1' },
   { en: 'His work isn\'t up to par lately.', my: 'သူ့အလုပ် နောက်ပိုင်း စံနှုန်းမမီဘူး။', topic: 'work', cefr: 'C1' },

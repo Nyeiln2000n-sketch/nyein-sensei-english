@@ -444,12 +444,12 @@ export const dialoguesBatch6: Dialogue[] = [
     turns: [
       { speaker: 'ပြောရေးဆိုခွင့်ရှိသူ', en: 'Good afternoon. I will make a brief statement, then take your questions.', my: 'မင်္ဂလာနေ့လည်ခင်းပါ။ အကျဉ်းချုပ်ထုတ်ပြန်ချက်တစ်ခု ပြောမယ်၊ ပြီးတော့ မေးခွန်းတွေ ဖြေမယ်။' },
       { speaker: 'ပြောရေးဆိုခွင့်ရှိသူ', en: 'Effective next quarter, the minimum wage rises by eight percent nationwide.', my: 'နောက်သုံးလပတ်မှာ အကျိုးသက်ရောက်မှုရှိပြီး တစ်နိုင်ငံလုံး အနည်းဆုံးလုပ်ခက ရှစ်ရာခိုင်နှုန်း တိုးမယ်။' },
-      { speaker: 'သတင်းထောက်', en: 'Critics say this will cost jobs. Your response?', my: 'ဝေဖန်သူတွေက ဒါက အလုပ်အကိုင်တွေ ဆုံးရှုံးစေမယ်လို့ ပြောတယ်။ တုံ့ပြန်ချက်။' },
+      { speaker: 'သတင်းထောက်', en: 'Critics say this will cost jobs. Your response?', my: 'ဝေဖန်သူတွေက ဒါက အလုပ်အကိုင်တွေ ဆုံးရှုံးစေမယ်လို့ ပြောတယ်။ သင် ဘယ်လိုတုံ့ပြန်မလဲ။' },
       { speaker: 'ပြောရေးဆိုခွင့်ရှိသူ', en: 'We studied eleven comparable economies. In nine of them, employment grew after similar rises.', my: 'ကျွန်တော်တို့ နှိုင်းယှဉ်နိုင်တဲ့စီးပွားရေး ဆယ့်တစ်ခုကို လေ့လာခဲ့တယ်။ ကိုးခုမှာ အလားတူတိုးမြှင့်မှုအပြီး အလုပ်အကိုင် တိုးတက်ခဲ့တယ်။' },
       { speaker: 'သတင်းထောက်', en: 'What about small businesses in rural areas? They say they were not consulted.', my: 'ကျေးလက်ဒေသက အသေးစားလုပ်ငန်းတွေကရော။ သူတို့နဲ့ တိုင်ပင်ခဲ့တာ မရှိဘူးလို့ ပြောတယ်။' },
       { speaker: 'ပြောရေးဆိုခွင့်ရှိသူ', en: 'A fair point — and that is why rural enterprises get a twelve-month transition period.', my: 'တရားမျှတတဲ့အချက်ပါ — အဲဒါကြောင့်ပဲ ကျေးလက်လုပ်ငန်းတွေက ဆယ့်နှစ်လ အကူးအပြောင်းကာလ ရရှိမှာပါ။' },
       { speaker: 'သတင်းထောက်', en: 'Last question — will you rule out further increases this year?', my: 'နောက်ဆုံးမေးခွန်း — ဒီနှစ်မှာ ထပ်တိုးမှာ မဟုတ်ဘူးလို့ အာမခံနိုင်လား။' },
-      { speaker: 'ပြောရေးဆိုခွင့်ရှိသူ', en: 'I never rule out doing the right thing. Thank you — that concludes the briefing.', my: 'မှန်ကန်တဲ့အရာကို လုပ်မှာ မဟုတ်ဘူးလို့ ဘယ်တော့မှ အာမမခံနိုင်ဘူး။ ကျေးဇူးတင်ပါတယ် — ရှင်းလင်းပွဲ ဒီမှာပြီးပြီ။' },
+      { speaker: 'ပြောရေးဆိုခွင့်ရှိသူ', en: 'I never rule out doing the right thing. Thank you — that concludes the briefing.', my: 'မှန်ကန်တဲ့အရာကို လုပ်ဖို့ ဘယ်တော့မှ မပယ်ချဘူး။ ကျေးဇူးတင်ပါတယ် — ရှင်းလင်းပွဲ ဒီမှာပြီးပြီ။' },
     ],
   },
   {
@@ -845,7 +845,7 @@ export const dialoguesBatch6: Dialogue[] = [
       { speaker: 'CTO', en: 'So our strategy is simple: we automate the routine so our people can do the irreplaceable.', my: 'ဒါကြောင့် ကျွန်တော်တို့မဟာဗျူဟာက ရိုးရှင်းတယ် — ပုံမှန်အလုပ်တွေကို အလိုအလျောက်လုပ်ပြီး လူတွေက အစားထိုးမရတဲ့အလုပ်တွေ လုပ်နိုင်အောင်။' },
       { speaker: 'CTO', en: 'No layoffs from automation. Retraining, redeployment, and a share in the productivity gains.', my: 'အလိုအလျောက်စနစ်ကြောင့် အလုပ်ဖြုတ်တာ မရှိ။ ပြန်လည်လေ့ကျင့်မှု၊ ပြန်လည်နေရာချထားမှု၊ ထုတ်လုပ်မှုအမြတ်မှာ ဝေစုပါ။' },
       { speaker: 'ပရိသတ်', en: '(applause) A tech leader treating people as the strategy, not the cost.', my: '(လက်ခုပ်သံ) လူတွေကို ကုန်ကျစရိတ်မဟုတ်ဘဲ မဟာဗျူဟာအဖြစ် ဆက်ဆံတဲ့ နည်းပညာခေါင်းဆောင်။' },
-      { speaker: 'CTO', en: 'The future belongs to companies that use AI to become more human, not less. Thank you.', my: 'အနာဂတ်က AI ကို သုံးပြီး လူသားပိုဆန်လာတဲ�ကုမ္ပဏီတွေအတွက်ပါ၊ လျော့သွားတာမဟုတ်ဘူး။ ကျေးဇူးတင်ပါတယ်။' },
+      { speaker: 'CTO', en: 'The future belongs to companies that use AI to become more human, not less. Thank you.', my: 'အနာဂတ်က AI ကို သုံးပြီး လူသားပိုဆန်လာတဲ့ကုမ္ပဏီတွေအတွက်ပါ၊ လျော့သွားတာမဟုတ်ဘူး။ ကျေးဇူးတင်ပါတယ်။' },
     ],
   },
   {

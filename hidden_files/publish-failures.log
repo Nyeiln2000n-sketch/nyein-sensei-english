@@ -58,3 +58,11 @@ New finding: /rate_limit shows core quota FULL (5000/5000) — the 403s are SECO
   chunked publish of +200 images aborted at typecheck on src/data/f14/phrases-batch-19.ts (TS syntax errors at lines 189-194: "';' expected" / "Declaration or statement expected" — likely malformed batch data file).
   No push was made; no state advanced.
 [2026-09-29 20:37:32 +0000] repaired src/data/f14/phrases-batch-19.ts: removed premature ]; at old lines 52 and 146 (worker had concatenated 3 array dumps under one export const); tsc clean; coordinator notified to audit other Ola 4 batch files for the same pattern.
+[2026-09-30 05:45:00 +0700] publish-word-images-batch: BUILD FAILED during batch publish (Workbox PWA step).
+  images=6944 last_published=2266 delta=4678 chunk_max=200
+  chunked: publishing 2466 images (+200 new), 4478 deferred to next run; mapped: 2237.
+  npm run build errored: vite-plugin-pwa workbox maximumFileSizeToCacheInBytes default 2 MiB; assets/index-Cf-Y4rwW.js is 7.18 MB and won't be precached. Build aborted before push.
+  No push was made; publish-state.json unchanged at 2266.
+  Root cause: main JS bundle grew past the Workbox precache default limit (needs manualChunks code-splitting or workbox.maximumFileSizeToCacheInBytes raise in vite.config.ts).
+[2026-09-29 22:38:23 +0000] repaired vite.config.ts: raised workbox maximumFileSizeToCacheInBytes 5MB -> 12MB (main JS chunk hit 7.18MB after Ola 4 content growth); build verification running in background.
+[2026-09-29 22:39:51 +0000] VERIFIED: npm run build green after workbox limit raise (built 49s, precache 64 entries / 10.9MB, main chunk 7.18MB). Publish pipeline unblocked for next run.

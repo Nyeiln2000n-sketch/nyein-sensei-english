@@ -1448,7 +1448,7 @@ export const storiesBatch4: Story[] = [
       },
       {
         en: 'Hardin\'s conclusion was bleak: only coercion — laws, quotas, privatization — could save shared resources. But political scientist Elinor Ostrom proved him partly wrong, winning a Nobel Prize for showing that communities can govern commons themselves.',
-        my: 'ဟာဒင်ရဲ့နိဂုံးက မှောင်မဲ�ယ် — အတင်းအကျပ် — ဥပဒေတွေ၊ သတ်မှတ်ချက်တွေ၊ ပုဂ္ဂလိကပိုင်ပြုမှု — ကသာ ဘုံအရင်းအမြစ်တွေ ကယ်နိုင်မယ်တဲ့။ ဒါပေမယ့် နိုင်ငံရေးသိပ္ပံပညာရှင် အယ်လီနော အော့စ်ထရွမ်းက သူ့ကို တစ်စိတ်တစ်ပိုင်း မှားတယ်ဆိုတာ သက်သေပြခဲ့တယ်၊ လူမှုအသိုင်းအဝိုင်းတွေက ဘုံတွေကို ကိုယ်တိုင် အုပ်ချုပ်နိုင်တယ်ဆိုတာ ပြသပြီး နိုဘယ်ဆု ရရှိခဲ့တယ်။',
+        my: 'ဟာဒင်ရဲ့နိဂုံးက မှောင်မဲတယ် — အတင်းအကျပ် — ဥပဒေတွေ၊ သတ်မှတ်ချက်တွေ၊ ပုဂ္ဂလိကပိုင်ပြုမှု — ကသာ ဘုံအရင်းအမြစ်တွေ ကယ်နိုင်မယ်တဲ့။ ဒါပေမယ့် နိုင်ငံရေးသိပ္ပံပညာရှင် အယ်လီနော အော့စ်ထရွမ်းက သူ့ကို တစ်စိတ်တစ်ပိုင်း မှားတယ်ဆိုတာ သက်သေပြခဲ့တယ်၊ လူမှုအသိုင်းအဝိုင်းတွေက ဘုံတွေကို ကိုယ်တိုင် အုပ်ချုပ်နိုင်တယ်ဆိုတာ ပြသပြီး နိုဘယ်ဆု ရရှိခဲ့တယ်။',
       },
       {
         en: 'Ostrom studied real villages managing forests, fisheries, and irrigation for centuries. Successful commons, she found, share features: clear boundaries, graduated punishments, and collective decision-making by the users themselves.',
