@@ -1,342 +1,6 @@
 {
  "todo": [
   {
-   "word": "astrophysics",
-   "slug": "astrophysics"
-  },
-  {
-   "word": "nucleosynthesis",
-   "slug": "nucleosynthesis"
-  },
-  {
-   "word": "supernova remnant",
-   "slug": "supernova-remnant"
-  },
-  {
-   "word": "planetary nebula",
-   "slug": "planetary-nebula"
-  },
-  {
-   "word": "globular cluster",
-   "slug": "globular-cluster"
-  },
-  {
-   "word": "open cluster",
-   "slug": "open-cluster"
-  },
-  {
-   "word": "dwarf galaxy",
-   "slug": "dwarf-galaxy"
-  },
-  {
-   "word": "spiral galaxy",
-   "slug": "spiral-galaxy"
-  },
-  {
-   "word": "elliptical galaxy",
-   "slug": "elliptical-galaxy"
-  },
-  {
-   "word": "irregular galaxy",
-   "slug": "irregular-galaxy"
-  },
-  {
-   "word": "interstellar medium",
-   "slug": "interstellar-medium"
-  },
-  {
-   "word": "molecular cloud",
-   "slug": "molecular-cloud"
-  },
-  {
-   "word": "brown dwarf",
-   "slug": "brown-dwarf"
-  },
-  {
-   "word": "rogue planet",
-   "slug": "rogue-planet"
-  },
-  {
-   "word": "hot jupiter",
-   "slug": "hot-jupiter"
-  },
-  {
-   "word": "super-earth",
-   "slug": "superearth"
-  },
-  {
-   "word": "habitable zone",
-   "slug": "habitable-zone"
-  },
-  {
-   "word": "transit method",
-   "slug": "transit-method"
-  },
-  {
-   "word": "radial velocity method",
-   "slug": "radial-velocity-method"
-  },
-  {
-   "word": "gravitational lensing",
-   "slug": "gravitational-lensing"
-  },
-  {
-   "word": "gravitational waves",
-   "slug": "gravitational-waves"
-  },
-  {
-   "word": "seti",
-   "slug": "seti"
-  },
-  {
-   "word": "drake equation",
-   "slug": "drake-equation"
-  },
-  {
-   "word": "aphelion",
-   "slug": "aphelion"
-  },
-  {
-   "word": "perihelion",
-   "slug": "perihelion"
-  },
-  {
-   "word": "apogee",
-   "slug": "apogee"
-  },
-  {
-   "word": "perigee",
-   "slug": "perigee"
-  },
-  {
-   "word": "sidereal day",
-   "slug": "sidereal-day"
-  },
-  {
-   "word": "synodic month",
-   "slug": "synodic-month"
-  },
-  {
-   "word": "lunar eclipse",
-   "slug": "lunar-eclipse"
-  },
-  {
-   "word": "solar eclipse",
-   "slug": "solar-eclipse"
-  },
-  {
-   "word": "penumbra",
-   "slug": "penumbra"
-  },
-  {
-   "word": "umbra",
-   "slug": "umbra"
-  },
-  {
-   "word": "occultation",
-   "slug": "occultation"
-  },
-  {
-   "word": "conjunction",
-   "slug": "conjunction"
-  },
-  {
-   "word": "opposition",
-   "slug": "opposition"
-  },
-  {
-   "word": "retrograde motion",
-   "slug": "retrograde-motion"
-  },
-  {
-   "word": "zodiac",
-   "slug": "zodiac"
-  },
-  {
-   "word": "ecliptic",
-   "slug": "ecliptic"
-  },
-  {
-   "word": "celestial equator",
-   "slug": "celestial-equator"
-  },
-  {
-   "word": "right ascension",
-   "slug": "right-ascension"
-  },
-  {
-   "word": "declination",
-   "slug": "declination"
-  },
-  {
-   "word": "subduction zone",
-   "slug": "subduction-zone"
-  },
-  {
-   "word": "mid-ocean ridge",
-   "slug": "midocean-ridge"
-  },
-  {
-   "word": "rift valley",
-   "slug": "rift-valley"
-  },
-  {
-   "word": "fault line",
-   "slug": "fault-line"
-  },
-  {
-   "word": "strike-slip fault",
-   "slug": "strikeslip-fault"
-  },
-  {
-   "word": "normal fault",
-   "slug": "normal-fault"
-  },
-  {
-   "word": "reverse fault",
-   "slug": "reverse-fault"
-  },
-  {
-   "word": "seismograph",
-   "slug": "seismograph"
-  },
-  {
-   "word": "seismology",
-   "slug": "seismology"
-  },
-  {
-   "word": "richter scale",
-   "slug": "richter-scale"
-  },
-  {
-   "word": "epicenter",
-   "slug": "epicenter"
-  },
-  {
-   "word": "hypocenter",
-   "slug": "hypocenter"
-  },
-  {
-   "word": "p-wave",
-   "slug": "pwave"
-  },
-  {
-   "word": "s-wave",
-   "slug": "swave"
-  },
-  {
-   "word": "liquefaction",
-   "slug": "liquefaction"
-  },
-  {
-   "word": "magma chamber",
-   "slug": "magma-chamber"
-  },
-  {
-   "word": "lava tube",
-   "slug": "lava-tube"
-  },
-  {
-   "word": "caldera",
-   "slug": "caldera"
-  },
-  {
-   "word": "stratovolcano",
-   "slug": "stratovolcano"
-  },
-  {
-   "word": "shield volcano",
-   "slug": "shield-volcano"
-  },
-  {
-   "word": "volcanic ash",
-   "slug": "volcanic-ash"
-  },
-  {
-   "word": "pyroclastic flow",
-   "slug": "pyroclastic-flow"
-  },
-  {
-   "word": "lahar",
-   "slug": "lahar"
-  },
-  {
-   "word": "fumarole",
-   "slug": "fumarole"
-  },
-  {
-   "word": "weathering",
-   "slug": "weathering"
-  },
-  {
-   "word": "deposition",
-   "slug": "deposition-2"
-  },
-  {
-   "word": "sedimentation",
-   "slug": "sedimentation"
-  },
-  {
-   "word": "lithification",
-   "slug": "lithification"
-  },
-  {
-   "word": "metamorphism",
-   "slug": "metamorphism"
-  },
-  {
-   "word": "igneous rock",
-   "slug": "igneous-rock"
-  },
-  {
-   "word": "sedimentary rock",
-   "slug": "sedimentary-rock"
-  },
-  {
-   "word": "metamorphic rock",
-   "slug": "metamorphic-rock"
-  },
-  {
-   "word": "shale",
-   "slug": "shale"
-  },
-  {
-   "word": "slate",
-   "slug": "slate"
-  },
-  {
-   "word": "quartz",
-   "slug": "quartz"
-  },
-  {
-   "word": "feldspar",
-   "slug": "feldspar"
-  },
-  {
-   "word": "mica",
-   "slug": "mica"
-  },
-  {
-   "word": "calcite",
-   "slug": "calcite"
-  },
-  {
-   "word": "gypsum",
-   "slug": "gypsum"
-  },
-  {
-   "word": "pyrite",
-   "slug": "pyrite"
-  },
-  {
-   "word": "hematite",
-   "slug": "hematite"
-  },
-  {
-   "word": "magnetite",
-   "slug": "magnetite"
-  },
-  {
    "word": "ore",
    "slug": "ore"
   },
@@ -890,9 +554,13 @@
   "angular momentum",
   "anhydrous",
   "antimatter",
+  "aphelion",
+  "apogee",
   "aromatic compound",
   "artificial selection",
+  "astrometry",
   "astronomical unit",
+  "astrophysics",
   "atp",
   "aurora",
   "autoimmune",
@@ -907,8 +575,11 @@
   "blueshift",
   "boson",
   "bronchioles",
+  "brown dwarf",
   "brownian motion",
   "buffer solution",
+  "calcite",
+  "caldera",
   "cambium",
   "capacitance",
   "capacitor",
@@ -919,6 +590,8 @@
   "carrying capacity",
   "cartilage",
   "catabolism",
+  "celestial equator",
+  "celestial mechanics",
   "centrifugal force",
   "centripetal force",
   "chelate",
@@ -930,6 +603,7 @@
   "colloid",
   "conductance",
   "congenital",
+  "conjunction",
   "convergent evolution",
   "copolymer",
   "coronal mass ejection",
@@ -942,6 +616,8 @@
   "dark energy",
   "dark matter",
   "decarboxylation",
+  "declination",
+  "deposition",
   "desiccant",
   "diaphragm",
   "diffraction",
@@ -951,18 +627,23 @@
   "distillation",
   "divergent evolution",
   "doppler effect",
+  "drake equation",
+  "dwarf galaxy",
+  "ecliptic",
   "ecological niche",
   "electrolysis",
   "electromagnetism",
   "electron transport chain",
   "electronegativity",
   "electrostatic",
+  "elliptical galaxy",
   "emulsion",
   "enantiomer",
   "endemic",
   "endoskeleton",
   "enthalpy",
   "entropy",
+  "epicenter",
   "epidemiology",
   "erythrocyte",
   "escape velocity",
@@ -974,6 +655,8 @@
   "eutrophication",
   "exoplanet",
   "exosphere",
+  "fault line",
+  "feldspar",
   "fermion",
   "fertilization",
   "fetus",
@@ -981,29 +664,39 @@
   "flammable",
   "formaldehyde",
   "fossil record",
+  "fumarole",
   "gene flow",
   "genetic drift",
+  "geocentric",
   "geostationary orbit",
   "germination",
   "gestation",
   "gibbs free energy",
+  "globular cluster",
   "gluon",
   "glycerol",
   "glycolysis",
+  "gravitational lensing",
+  "gravitational waves",
+  "habitable zone",
   "hadron",
   "halogen",
   "harmonic motion",
   "heat engine",
+  "heliocentric",
   "hereditary",
   "higgs boson",
   "histology",
   "homeostasis",
   "homologous structures",
+  "hot jupiter",
   "hubble constant",
   "hydrogen bond",
   "hydrolysis",
   "hydroxide",
   "hygroscopic",
+  "hypocenter",
+  "igneous rock",
   "immiscible",
   "immunization",
   "immunotherapy",
@@ -1013,9 +706,11 @@
   "inertia",
   "inflammation",
   "interference",
+  "interstellar medium",
   "ionic bond",
   "ionization",
   "ionosphere",
+  "irregular galaxy",
   "isomer",
   "isothermal process",
   "ketone",
@@ -1023,12 +718,18 @@
   "krebs cycle",
   "lactation",
   "lagrange point",
+  "lahar",
   "lanthanide",
+  "lava tube",
   "lepton",
   "leukocyte",
   "ligand",
   "light-year",
+  "liquefaction",
+  "lithification",
+  "lunar eclipse",
   "lymphocyte",
+  "magma chamber",
   "magnetosphere",
   "main sequence",
   "marrow",
@@ -1038,10 +739,15 @@
   "metabolism",
   "metallic bond",
   "metalloid",
+  "metamorphic rock",
+  "metamorphism",
   "metastasis",
   "methanol",
+  "mica",
+  "mid-ocean ridge",
   "miscible",
   "molarity",
+  "molecular cloud",
   "monomer",
   "muon",
   "natural selection",
@@ -1051,19 +757,28 @@
   "nitrate",
   "nitrite",
   "noble gas",
+  "normal fault",
+  "nucleosynthesis",
   "nymph",
+  "occultation",
   "oncology",
+  "open cluster",
+  "opposition",
   "orbital mechanics",
   "oscillation",
   "oxidation state",
   "oxide",
   "oxidizing agent",
+  "p-wave",
   "paleontology",
   "pandemic",
   "parallax",
   "parsec",
   "pathology",
   "pauli exclusion principle",
+  "penumbra",
+  "perigee",
+  "perihelion",
   "peroxide",
   "phagocyte",
   "phenol",
@@ -1073,6 +788,7 @@
   "photovoltaic",
   "phylogenetic tree",
   "placenta",
+  "planetary nebula",
   "plasma state",
   "polarization",
   "pollination",
@@ -1081,9 +797,12 @@
   "primary succession",
   "protostar",
   "pulsar",
+  "pyroclastic flow",
   "quantum tunneling",
   "quark",
+  "quartz",
   "quasar",
+  "radial velocity method",
   "radiometric dating",
   "radiotherapy",
   "red giant",
@@ -1093,31 +812,55 @@
   "refraction",
   "resistivity",
   "resonance",
+  "retrograde motion",
+  "reverse fault",
+  "richter scale",
+  "rift valley",
+  "right ascension",
   "roche limit",
+  "rogue planet",
+  "s-wave",
   "saponification",
   "saturated solution",
   "secondary succession",
+  "sedimentary rock",
+  "sedimentation",
+  "seismograph",
+  "seismology",
   "semiconductor",
+  "seti",
+  "shale",
+  "shield volcano",
+  "sidereal day",
+  "slate",
+  "solar eclipse",
   "solar flare",
   "solar wind",
   "solenoid",
   "speciation",
   "spectroscopy",
+  "spiral galaxy",
   "standard model",
   "stomata",
   "stratigraphy",
   "stratosphere",
+  "stratovolcano",
+  "strike-slip fault",
   "string theory",
+  "subduction zone",
   "sublimation",
   "sulfate",
   "sulfite",
+  "super-earth",
   "superconductivity",
   "superconductor",
+  "supernova remnant",
   "superposition",
   "supersaturated",
   "surfactant",
   "suspension",
   "synchronous orbit",
+  "synodic month",
   "taxonomy",
   "thermocouple",
   "thermodynamics",
@@ -1126,19 +869,24 @@
   "titration",
   "torque",
   "transistor",
+  "transit method",
   "transition metal",
   "troposphere",
+  "umbra",
   "umbrella species",
   "uncertainty principle",
   "urea",
   "van der waals forces",
   "vestigial structures",
   "viscosity",
+  "volcanic ash",
   "wave function",
   "wave-particle duality",
+  "weathering",
   "white dwarf",
   "wormhole",
   "xylem",
+  "zodiac",
   "zoonotic",
   "zygote"
  ],
