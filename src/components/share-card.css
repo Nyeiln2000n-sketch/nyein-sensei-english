@@ -1,0 +1,90 @@
+/* G-006 — ShareProgressCard styles: brand orange pill + icon buttons. */
+
+.share-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.share-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.share-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #ffb74d 0%, #ff9e3d 100%);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 3px 0 #e07f1f;
+  transition: transform 0.08s ease, box-shadow 0.08s ease, opacity 0.2s ease;
+}
+
+.share-btn:active {
+  transform: translateY(2px);
+  box-shadow: 0 1px 0 #e07f1f;
+}
+
+.share-btn:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.share-icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #f0e4d3;
+  border-radius: 50%;
+  background: #fff;
+  color: #e8933c;
+  cursor: pointer;
+  transition: transform 0.08s ease, opacity 0.2s ease;
+}
+
+.share-icon-btn:active {
+  transform: scale(0.92);
+}
+
+.share-icon-btn:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.share-status {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.4;
+  text-align: right;
+  max-width: 240px;
+}
+
+.share-status-info {
+  color: #8a7b6b;
+}
+
+.share-status-ok {
+  color: #2f9e44;
+}
+
+.share-status-error {
+  color: #d6336c;
+}
+
+/* Layout helper for the dashboard progress-head actions slot. */
+.progress-head-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

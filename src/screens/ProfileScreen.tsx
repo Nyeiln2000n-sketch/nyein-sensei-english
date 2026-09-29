@@ -5,15 +5,31 @@
 // (byte-identical logic — this file only rewrites the presentation).
 
 import { useEffect, useState } from 'react';
-import { Award, CircleQuestionMark, LogOut, Settings, Users } from 'lucide-react';
+import { Award, Baby, CircleQuestionMark, LogOut, Settings, Users } from 'lucide-react';
 import type { GoFn, NavParams } from '../routes';
 import MascotScene3D from '../components/Mascot3D';
+import ReminderSettings from '../components/ReminderSettings';
 import { MenuRow, PillButton, Screen } from '../components/ui';
 import { getSession, signOut } from '../lib/auth';
-import { getProgress, resetProgress } from '../lib/storage';
+import { getProgress, getTotalGems, resetProgress } from '../lib/storage';
 import { describeTenant, getActiveTenant, listMyOrgs, type Organization } from '../lib/tenant';
 import './w4.css';
 import { W4ErrorBoundary } from './w4error';
+
+// G-007 — Modo niños: accesibilidad visual (textos ~130%, botones más
+// grandes). Persiste en localStorage y aplica la clase `kids-mode` en <html>.
+// NOTA: la cuenta sigue siendo necesaria (login obligatorio, R-013) — el
+// "sin cuentas" del roadmap NO se implementa; este modo solo cambia el
+// tamaño visual de la interfaz.
+const KIDS_MODE_KEY = 'nse-kids-mode';
+
+function loadKidsMode(): boolean {
+  try {
+    return localStorage.getItem(KIDS_MODE_KEY) === '1';
+  } catch {
+    return false;
+  }
+}
 
 function rankFor(xp: number): string {
   if (xp >= 1000) return 'စိန်';
@@ -29,7 +45,7 @@ export default function ProfileScreen({ go, params }: { go: GoFn; params?: NavPa
   const email = session?.user?.email ?? null;
   const progress = getProgress();
   const streak = progress.streakDays;
-  const gems = Math.floor(progress.xp / 100);
+  const gems = getTotalGems();
   const level = Math.floor(progress.xp / 300) + 1;
   const rank = rankFor(progress.xp);
 
@@ -37,6 +53,8 @@ export default function ProfileScreen({ go, params }: { go: GoFn; params?: NavPa
   const [panel, setPanel] = useState<null | 'settings' | 'help'>(null);
   // Org management entry: fetched quietly; hidden entirely on error/offline.
   const [orgs, setOrgs] = useState<Organization[] | null>(null);
+  // G-007 — Modo niños (toggle + clase kids-mode en <html>, persistido).
+  const [kidsMode, setKidsMode] = useState<boolean>(loadKidsMode);
 
   useEffect(() => {
     let alive = true;
@@ -51,6 +69,16 @@ export default function ProfileScreen({ go, params }: { go: GoFn; params?: NavPa
       alive = false;
     };
   }, []);
+
+  // Aplica/quita la clase kids-mode en <html> y la persiste.
+  useEffect(() => {
+    document.documentElement.classList.toggle('kids-mode', kidsMode);
+    try {
+      localStorage.setItem(KIDS_MODE_KEY, kidsMode ? '1' : '0');
+    } catch {
+      /* almacenamiento lleno / modo privado — se ignora */
+    }
+  }, [kidsMode]);
 
   async function handleSignOut() {
     setLeaving(true);
@@ -138,6 +166,34 @@ export default function ProfileScreen({ go, params }: { go: GoFn; params?: NavPa
       {panel === 'settings' && (
         <div className="w4-stub-panel">
           <div className="w4-card-title">⚙️ ဆက်တင်များ</div>
+
+          {/* G-007 — Modo niños: textos grandes, botones grandes (5+ años). */}
+          <div className="nse-setting-row">
+            <span className="nse-setting-icon" aria-hidden="true">
+              <Baby size={20} />
+            </span>
+            <span className="nse-setting-text">
+              <span className="nse-setting-title">ကလေးမိုဒ်</span>
+              <span className="nse-setting-sub">
+                စာလုံးကြီးကြီး၊ ခလုတ်ကြီးကြီး (၅ နှစ်အထက်)
+              </span>
+            </span>
+            <button
+              type="button"
+              role="switch"
+              aria-checked={kidsMode}
+              aria-label="ကလေးမိုဒ်"
+              className="nse-switch"
+              data-on={kidsMode}
+              onClick={() => setKidsMode((v) => !v)}
+            >
+              <span className="nse-switch-knob" aria-hidden="true" />
+            </button>
+          </div>
+
+          {/* G-005 — Recordatorios amables (opt-in, local/in-app). */}
+          <ReminderSettings />
+
           <p style={{ margin: '0 0 12px' }}>
             တိုးတက်မှုအားလုံးကို ပြန်လည်သတ်မှတ်ချင်ရင် အောက်က ခလုတ်ကို နှိပ်ပါ။
           </p>

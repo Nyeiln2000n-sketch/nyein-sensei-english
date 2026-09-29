@@ -21,6 +21,9 @@ const InviteAcceptScreen = lazy(() => import('./components/InviteAcceptScreen'))
 const PlanChoiceScreen = lazy(() => import('./components/PlanChoiceScreen'));
 import SpeechFallbackNotice from './components/SpeechFallbackNotice';
 import InstallPrompt from './components/InstallPrompt';
+// FASE 11 (Worker C): daily gentle reminder banner — mounted once at root
+// so it is visible on any screen.
+import { ReminderBanner } from './components/ReminderSettings';
 import { TabBar, type TabId } from './components/ui';
 import { ensureFreshAccessToken, getSession, onAuthChange, verifySignupLicense } from './lib/auth';
 import { endCloudSession, initCloudSession } from './lib/cloudSync';
@@ -423,6 +426,8 @@ export default function App() {
       <SpeechFallbackNotice />
       {/* P-003: iOS "add to home screen" teaching card (iOS only). */}
       <InstallPrompt />
+      {/* Worker C reminder: daily gentle in-app reminder banner (any screen). */}
+      <ReminderBanner />
     </div>
   );
 }

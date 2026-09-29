@@ -100,6 +100,9 @@ export interface Progress {
   totalCorrect: number;
   totalAnswered: number;
   completedLessons: Record<string, number>; // `${topicId}:${level}` -> completions
+  // G-002: explicit lesson gem awards, on top of the XP-derived floor(xp/100).
+  // Optional so older saved payloads merge cleanly via emptyProgress.
+  bonusGems?: number;
 }
 
 export interface LessonResult {

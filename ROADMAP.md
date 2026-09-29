@@ -126,14 +126,16 @@
 - [x] Q-007 Manejo de errores con pantallas amables (sin pantallas blancas)
   - NOTA (2026-09-29): cada pantalla/ruta envuelta en ErrorBoundary con key por ruta en App.tsx (tabs, Auth, Splash, Quiz/Vocab, LessonComplete, Org/Invite/Plan) + ErrorBoundary top-level en main.tsx. Fallback existente Myanmar-first, sin pantallas blancas. typecheck + build limpios.
 
-## FASE 11 — Crecimiento y vida 🟡
-- [ ] G-001 Racha diaria con celebración (🔥)
-- [ ] G-002 Gemas/diamantes por lección (💎)
-- [ ] G-003 Niveles (Nivel 1, 2…) por XP
-- [ ] G-004 Medallas reales desbloqueadas por hitos (conecta Logros)
-- [ ] G-005 Recordatorios amables (notificaciones opt-in)
-- [ ] G-006 Compartir progreso (tarjeta imagen)
-- [ ] G-007 Modo niños: textos grandes, sin cuentas (5+ años)
+## FASE 11 — Crecimiento y vida 🟢 (código completo 2026-09-29 ~12:00 +07; QA visual iPhone pendiente)
+- [x] G-001 Racha diaria con celebración (🔥) — existía tarjeta de racha + confetti en LessonComplete; añadido `src/lib/celebration.ts` + `CelebrationOverlay.tsx`: celebración especial al alcanzar hitos 3/7/14/30/100 días (detección before/after en QuizScreen → LessonComplete). Sin spam retroactivo.
+- [x] G-002 Gemas/diamantes por lección (💎) — existía gems=floor(xp/100); añadido `awardLessonGems()` en storage.ts: +5 base + bonus por racha (1/3/7/14/30 días); `getTotalGems()` usado en Dashboard y Profile; sync a nube en `progressToPatch` (monotónico, max-semantics).
+- [x] G-003 Niveles (Nivel 1, 2…) por XP — existía level=floor(xp/300)+1 en Dashboard/Profile; añadida celebración "¡Nivel N!" vía celebration queue al subir de nivel tras una lección.
+- [x] G-004 Medallas reales desbloqueadas por hitos (conecta Logros) — existían 6 medallas; ahora 9 (`MEDALS` en celebration.ts: +racha 14, precisión 90%, 100 lecciones); celebración "Nueva medalla" la primera vez; AchievementsScreen renderiza desde la fuente compartida.
+- [x] G-005 Recordatorios amables (notificaciones opt-in)
+  - NOTA (2026-09-29, Worker C): implementado. `src/lib/reminders.ts` (prefs en localStorage: activado/desactivado, hora default 19:00, marca de "ya mostrado hoy"), `src/components/ReminderSettings.tsx` (toggle + selector de hora con Bell/BellOff, montado en el panel Ajustes de ProfileScreen) y `ReminderBanner` (banner amable in-app Myanmar-first "ဒီနေ့ လေ့ကျင့်ဖို့ မမေ့နဲ့နော်") — montado en App.tsx por Worker A, visible en cualquier pantalla. HONESTO: sin servidor push — todo es local/in-app; el permiso de Notification se pide SOLO desde el toggle (gesto del usuario, requerido por iOS). typecheck limpio.
+- [x] G-006 Compartir progreso (tarjeta imagen) — `src/components/ShareProgressCard.tsx`: tarjeta PNG 1080×1350 en canvas (fondo crema, banda naranja, título birmano "ငါ့တိုးတက်မှု", mascota aprobada, grid racha/XP/nivel/gemas, medallas); Web Share API level 2 → descarga PNG → copiar texto (fallbacks Myanmar-first); botón en Dashboard.
+- [x] G-007 Modo niños: textos grandes, sin cuentas (5+ años)
+  - NOTA (2026-09-29, Worker C): "sin cuentas" NO se implementa — CONFLICTA con R-013 (login obligatorio, sin modo invitado, regla inamovible). Modo niños = accesibilidad visual: toggle "ကလေးမိုဒ်" (Baby) en Ajustes de ProfileScreen, persiste en localStorage (`nse-kids-mode`) y aplica la clase `kids-mode` en <html>; textos ~130%, botones más grandes (min-height/touch targets), más espaciado (estilos al final de `src/styles.css`). La cuenta sigue siendo necesaria.
 
 ## FASE 12 — Cloud real + Splash + Branding 🟢 COMPLETADO (pendiente push + QA visual iPhone)
 - [x] R-001 Supabase = fuente de verdad al iniciar sesión (carga perfil, completions, stats) — `src/lib/cloudSync.ts` `loadCloudState()`; verificado con typecheck+build+smoke test (sin sesión real firmada no se puede verificar RLS de escritura)

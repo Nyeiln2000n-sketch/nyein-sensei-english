@@ -4,21 +4,15 @@
 // and a stats segment restyled from StatsScreen logic.
 
 import { useMemo, useState } from 'react';
-import type { ReactNode } from 'react';
-import { Award, BookOpen, Medal, Mic, Star, Trophy } from 'lucide-react';
 import type { GoFn, NavParams } from '../routes';
 import MascotScene3D from '../components/Mascot3D';
 import { ProgressBar, Screen, SegmentedControl } from '../components/ui';
 import { getProgress } from '../lib/storage';
+// FASE 11 G-004: medals driven by the shared celebration module (9 total).
+import { MEDALS, buildMedalStats, dequeueCelebrations } from '../lib/celebration';
+import CelebrationOverlay from '../components/CelebrationOverlay';
 import './w4.css';
 import { W4ErrorBoundary } from './w4error';
-
-interface MedalDef {
-  id: string;
-  name: string;
-  icon: ReactNode;
-  unlocked: boolean;
-}
 
 const TOTAL_LESSONS = 100;
 
@@ -40,28 +34,32 @@ export default function AchievementsScreen({ go, params }: { go: GoFn; params?: 
   const accuracy =
     totalAnswered > 0 ? Math.round((totalCorrect / totalAnswered) * 100) : 0;
 
-  const practiceUsed = useMemo(() => {
-    try {
-      return localStorage.getItem('nyein-practice-used') === '1' || totalAnswered >= 20;
-    } catch {
-      return totalAnswered >= 20;
-    }
-  }, [totalAnswered]);
-
-  const medals: MedalDef[] = [
-    { id: 'day1', name: 'ပထမနေ့', icon: <Medal size={26} />, unlocked: streak >= 1 },
-    { id: 'l10', name: 'သင်ခန်းစာ ၁၀', icon: <BookOpen size={26} />, unlocked: lessonsDone >= 10 },
-    { id: 'v50', name: 'ဝေါဟာရ ၅၀', icon: <Star size={26} />, unlocked: totalAnswered >= 50 },
-    { id: 'speak', name: 'စကားပြော', icon: <Mic size={26} />, unlocked: practiceUsed },
-    { id: 's3', name: '၃ ရက်ဆက်', icon: <Award size={26} />, unlocked: streak >= 3 },
-    { id: 's7', name: '၇ ရက်ဆက်', icon: <Trophy size={26} />, unlocked: streak >= 7 },
-  ];
+  // G-004: single source of truth — 9 medals from lib/celebration.
+  const medalStats = useMemo(() => buildMedalStats(progress), [progress]);
+  const medals = useMemo(
+    () =>
+      MEDALS.map((m) => ({
+        id: m.id,
+        name: m.nameMm,
+        icon: <m.icon size={26} />,
+        unlocked: m.check(medalStats),
+      })),
+    [medalStats],
+  );
   const unlockedCount = medals.filter((m) => m.unlocked).length;
   const isActiveToday = progress.lastActiveDate === todayKey();
+
+  // FASE 11: render any celebrations not yet shown (usually none — the
+  // lesson-complete screen drains the queue first).
+  const [pendingEvents] = useState(() => dequeueCelebrations());
+  const [showCelebrations, setShowCelebrations] = useState(true);
 
   return (
     <Screen>
       <W4ErrorBoundary>
+      {pendingEvents.length > 0 && showCelebrations && (
+        <CelebrationOverlay events={pendingEvents} onDone={() => setShowCelebrations(false)} />
+      )}
       {/* header card */}
       <div className="w4-head-card">
         <MascotScene3D pose="amazed" size={56} />

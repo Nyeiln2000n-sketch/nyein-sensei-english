@@ -13,7 +13,9 @@ import type { GoFn, NavParams } from '../routes';
 import type { TopicId, Level, Word, Phrase } from '../types';
 import { topicMeta, wordsByTopic, phrasesByTopic, allPhrases, allWords, sample } from '../data';
 import { speak } from '../lib/audio';
-import { addXP, recordAnswer, markLessonComplete, getTopicMastery, recordTopicResult } from '../lib/storage';
+import { addXP, recordAnswer, markLessonComplete, getTopicMastery, recordTopicResult, getProgress, awardLessonGems } from '../lib/storage';
+import type { Progress } from '../types';
+import { enqueueLessonEvents, lessonGemsAward } from '../lib/celebration';
 import { recordWordsReview } from '../lib/review';
 import {
   Screen, TopBar, PillButton, IconCircle, MascotRow, Card, ProgressBar,
@@ -515,6 +517,12 @@ export default function QuizScreen({ go, params }: { go: GoFn; params?: NavParam
   // stored per-topic mastery (local-only signal from lib/storage).
   const seedStreak = getTopicMastery(topic) >= 0.75 ? 2 : 0;
 
+  // G-001/G-003/G-004: snapshot progress at lesson start so milestone
+  // detection can compare before/after in next(). Lazily seeded once per
+  // lesson attempt (same pattern as ctxRef above).
+  const beforeRef = useRef<Progress | null>(null);
+  if (beforeRef.current === null) beforeRef.current = getProgress();
+
   const [rounds, setRounds] = useState<Round[]>(() => {
     const ctx = ctxRef.current!;
     if (!adaptive) return buildRounds(topic, level, mode);
@@ -553,8 +561,17 @@ export default function QuizScreen({ go, params }: { go: GoFn; params?: NavParam
     // Fixed modes keep their original completion rule (rounds may be < 9 on tiny topics).
     const done = adaptive ? idx + 1 >= TOTAL_ROUNDS : idx + 1 >= rounds.length;
     if (done) {
+      const before = beforeRef.current ?? getProgress();
       addXP(earned);
+      // G-002: explicit gem award per completed lesson (+5 base + streak bonus).
+      const gems = lessonGemsAward(getProgress().streakDays);
+      awardLessonGems(gems);
       markLessonComplete(topic, level);
+      // G-001/G-003/G-004: detect streak milestones, level-ups and newly
+      // unlocked medals by comparing before/after; LessonCompleteScreen
+      // dequeues and renders them via CelebrationOverlay.
+      enqueueLessonEvents(before, getProgress(), gems);
+      beforeRef.current = null;
       go('lessonComplete', { topic });
       return;
     }

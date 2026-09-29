@@ -11,6 +11,7 @@ const emptyProgress: Progress = {
   totalCorrect: 0,
   totalAnswered: 0,
   completedLessons: {},
+  bonusGems: 0,
 };
 
 function todayKey(): string {
@@ -78,7 +79,8 @@ function progressToPatch(p: Progress) {
   }
   return {
     xp: p.xp,
-    gems: Math.floor(p.xp / 100),
+    // G-002: cloud gems = XP-derived + explicit lesson bonuses (monotonic).
+    gems: Math.floor(p.xp / 100) + (p.bonusGems ?? 0),
     streak: p.streakDays,
     level,
     last_active: p.lastActiveDate,
@@ -101,6 +103,24 @@ export function getAnswerStats(): { total: number; correct: number } {
 export function addXP(n: number): void {
   const p = getProgress();
   commit({ ...p, xp: p.xp + n });
+}
+
+// ---- G-002: explicit gem economy ----
+
+/** Total gems = XP-derived floor(xp/100) + explicit lesson bonuses. */
+export function getTotalGems(): number {
+  const p = getProgress();
+  return Math.floor(p.xp / 100) + (p.bonusGems ?? 0);
+}
+
+/**
+ * Award explicit gems for a completed lesson (G-002).
+ * Stored on the profile and synced to the cloud through progressToPatch.
+ */
+export function awardLessonGems(n: number): void {
+  if (n <= 0) return;
+  const p = getProgress();
+  commit({ ...p, bonusGems: (p.bonusGems ?? 0) + n });
 }
 
 /** Record one answered question and update the daily streak. */

@@ -27,7 +27,8 @@ import {
 } from 'lucide-react';
 import type { GoFn, NavParams } from '../routes';
 import MascotScene3D from './Mascot3D';
-import { getProgress, getStreak, getXP } from '../lib/storage';
+import { getProgress, getStreak, getTotalGems, getXP } from '../lib/storage';
+import ShareProgressButton from './ShareProgressCard';
 import { topics } from '../data/topics';
 import { topicImageSrc } from '../data/topic-images';
 import { ProgressBar, Screen } from './ui';
@@ -64,7 +65,7 @@ export default function DashboardScreen({ go }: { go: GoFn; params?: NavParams }
   const streak = getStreak();
   const xp = getXP();
   const progress = getProgress();
-  const gems = Math.floor(xp / 100);
+  const gems = getTotalGems();
   const doneLessons = Object.keys(progress.completedLessons ?? {}).length;
   const level = Math.floor(xp / XP_PER_LEVEL) + 1;
   const levelCur = xp % XP_PER_LEVEL;
@@ -371,14 +372,18 @@ export default function DashboardScreen({ go }: { go: GoFn; params?: NavParams }
             <BarChart3 size={17} color="#2FA8DE" aria-hidden="true" />
             &nbsp;ဒီနေ့ တိုးတက်မှု
           </h2>
-          <button
-            type="button"
-            className="link-sm"
-            onClick={() => go('lessons')}
-            aria-label="သင်ခန်းစာအားလုံး ကြည့်ရန်"
-          >
-            အားလုံးကြည့်ရန် <ArrowRight size={14} aria-hidden="true" />
-          </button>
+          <div className="progress-head-actions">
+            {/* G-006: share the progress card (Web Share / download / copy) */}
+            <ShareProgressButton />
+            <button
+              type="button"
+              className="link-sm"
+              onClick={() => go('lessons')}
+              aria-label="သင်ခန်းစာအားလုံး ကြည့်ရန်"
+            >
+              အားလုံးကြည့်ရန် <ArrowRight size={14} aria-hidden="true" />
+            </button>
+          </div>
         </div>
         <div className="stat-cards">
           {stats.map((s) => (

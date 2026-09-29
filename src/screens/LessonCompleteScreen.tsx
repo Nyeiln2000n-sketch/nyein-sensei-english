@@ -9,11 +9,13 @@
 // (transparent, no opaque box) and falls back to the static PNG when
 // offscreen or when WebGL fails.
 
-import { useMemo } from 'react';
+import { useMemo, useState } from 'react';
 import type { CSSProperties } from 'react';
 import type { GoFn, NavParams } from '../routes';
 import { PillButton, Screen } from '../components/ui';
 import { getStreak } from '../lib/storage';
+import { dequeueCelebrations } from '../lib/celebration';
+import CelebrationOverlay from '../components/CelebrationOverlay';
 import Mascot3D from '../components/Mascot3D';
 import './w4.css';
 import { W4ErrorBoundary } from './w4error';
@@ -34,6 +36,10 @@ interface Piece {
 export default function LessonCompleteScreen({ go, params }: { go: GoFn; params?: NavParams }) {
   void params;
   const streak = getStreak();
+  // FASE 11: drain queued celebrations (streak milestones, level-ups, newly
+  // unlocked medals, lesson gems) and render them one at a time.
+  const [events] = useState(() => dequeueCelebrations());
+  const [showCelebrations, setShowCelebrations] = useState(true);
 
   const pieces = useMemo<Piece[]>(
     () =>
@@ -54,6 +60,9 @@ export default function LessonCompleteScreen({ go, params }: { go: GoFn; params?
   return (
     <Screen className="w4-complete">
       <W4ErrorBoundary>
+      {events.length > 0 && showCelebrations && (
+        <CelebrationOverlay events={events} onDone={() => setShowCelebrations(false)} />
+      )}
       <div className="w4-confetti" aria-hidden="true">
         {pieces.map((p, i) => (
           <span

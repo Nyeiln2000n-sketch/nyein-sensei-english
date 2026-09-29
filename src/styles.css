@@ -1460,3 +1460,459 @@ img {
   color: var(--body);
   font-family: 'Poppins', system-ui, sans-serif;
 }
+
+/* ==========================================================================
+   G-005 / G-007 — Ajustes: switch, filas de ajustes, recordatorios
+   ========================================================================== */
+
+.nse-setting-box {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: var(--shadow-warm);
+  padding: 16px;
+  margin: 14px 0;
+}
+
+.nse-setting-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.nse-setting-nested {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #f3ece1;
+}
+
+.nse-setting-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  background: var(--cream);
+  color: var(--orange-dark);
+  flex-shrink: 0;
+}
+
+.nse-setting-text {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.nse-setting-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--title);
+}
+
+.nse-setting-sub {
+  font-size: 13px;
+  color: var(--body);
+  margin-top: 2px;
+}
+
+.nse-setting-hint,
+.nse-setting-note {
+  margin: 12px 0 0;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.nse-setting-hint {
+  color: #b45309;
+  background: #fff7ed;
+  border-radius: 12px;
+  padding: 10px 12px;
+}
+
+.nse-setting-note {
+  color: var(--body);
+}
+
+/* Switch accesible (role="switch" + data-on). */
+.nse-switch {
+  position: relative;
+  width: 54px;
+  height: 32px;
+  border-radius: 999px;
+  border: none;
+  background: #e5d9c3;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background 0.2s ease;
+  padding: 0;
+}
+
+.nse-switch[data-on='true'] {
+  background: var(--green-dark);
+}
+
+.nse-switch:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.nse-switch-knob {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(63, 58, 52, 0.25);
+  transition: transform 0.2s ease;
+}
+
+.nse-switch[data-on='true'] .nse-switch-knob {
+  transform: translateX(22px);
+}
+
+.nse-time-input {
+  font-family: var(--font);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--title);
+  background: var(--page-bg);
+  border: 1px solid #eee2cf;
+  border-radius: 12px;
+  padding: 10px 12px;
+}
+
+/* ---------------- banner de recordatorio amable (in-app) ---------------- */
+
+.reminder-banner {
+  position: fixed;
+  top: calc(env(safe-area-inset-top, 0px) + 12px);
+  left: 16px;
+  right: 16px;
+  z-index: 60;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 12px 32px rgba(245, 157, 42, 0.28), 0 2px 8px rgba(63, 58, 52, 0.1);
+  padding: 14px 14px 14px 16px;
+  border: 1px solid #ffe3ba;
+  animation: reminder-in 0.35s ease;
+}
+
+@keyframes reminder-in {
+  from {
+    transform: translateY(-12px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.reminder-banner-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--cream);
+  color: var(--orange-dark);
+  flex-shrink: 0;
+}
+
+.reminder-banner-text {
+  flex: 1;
+  min-width: 0;
+  font-size: 14.5px;
+  font-weight: 600;
+  color: var(--title);
+  line-height: 1.5;
+}
+
+.reminder-banner-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: var(--page-bg);
+  color: var(--body);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+/* ==========================================================================
+   G-007 — Modo niños: textos ~130%, botones más grandes, más espaciado.
+   Accesibilidad visual para 5+ años. La cuenta sigue siendo obligatoria
+   (login, R-013): esto solo cambia la presentación.
+   ========================================================================== */
+
+html.kids-mode body {
+  font-size: 19px;
+  line-height: 1.6;
+}
+
+/* Botones y controles más grandes */
+html.kids-mode .pill-btn {
+  font-size: 21px;
+  padding: 20px 24px;
+  min-height: 64px;
+}
+
+html.kids-mode .quiz-option {
+  font-size: 20px;
+  padding: 20px 18px;
+  min-height: 76px;
+}
+
+html.kids-mode .seg-btn {
+  font-size: 17px;
+  padding: 14px 8px;
+}
+
+html.kids-mode .input,
+html.kids-mode .w4-input,
+html.kids-mode .nse-time-input {
+  font-size: 21px;
+  padding: 16px;
+  min-height: 60px;
+}
+
+html.kids-mode .nse-switch {
+  width: 68px;
+  height: 40px;
+}
+
+html.kids-mode .nse-switch-knob {
+  width: 34px;
+  height: 34px;
+}
+
+html.kids-mode .nse-switch[data-on='true'] .nse-switch-knob {
+  transform: translateX(28px);
+}
+
+/* Menús y filas con más aire */
+html.kids-mode .menu-row {
+  padding: 20px 18px;
+  gap: 18px;
+}
+
+html.kids-mode .menu-icon-badge {
+  width: 60px;
+  height: 60px;
+  border-radius: 18px;
+}
+
+html.kids-mode .menu-row-title,
+html.kids-mode .nse-setting-title {
+  font-size: 21px;
+}
+
+html.kids-mode .menu-row-sub,
+html.kids-mode .nse-setting-sub {
+  font-size: 17px;
+}
+
+html.kids-mode .list-row {
+  font-size: 19px;
+  padding: 20px 18px;
+}
+
+/* Navegación */
+html.kids-mode .tabbar .tab {
+  font-size: 14px;
+  min-height: 64px;
+}
+
+html.kids-mode .topbar-title {
+  font-size: 23px;
+}
+
+/* Títulos y textos de contenido */
+html.kids-mode .section-title {
+  font-size: 26px;
+}
+
+html.kids-mode .dash-title {
+  font-size: 22px;
+}
+
+html.kids-mode .dash-subtitle {
+  font-size: 16px;
+}
+
+html.kids-mode .greet-title {
+  font-size: 31px;
+}
+
+html.kids-mode .greet-sub {
+  font-size: 18px;
+}
+
+html.kids-mode .quiz-count {
+  font-size: 18px;
+}
+
+html.kids-mode .bubble {
+  font-size: 18px;
+}
+
+html.kids-mode .stat-pill {
+  font-size: 18px;
+  padding: 12px 20px;
+}
+
+html.kids-mode .learn-bubble,
+html.kids-mode .daily-badge,
+html.kids-mode .daily-count,
+html.kids-mode .level-xp {
+  font-size: 16px;
+}
+
+html.kids-mode .level-name {
+  font-size: 19px;
+}
+
+/* Vocabulario y frases */
+html.kids-mode .vocab-word {
+  font-size: 44px;
+}
+
+html.kids-mode .vocab-my {
+  font-size: 22px;
+}
+
+html.kids-mode .phrase-text {
+  font-size: 34px;
+}
+
+html.kids-mode .phrase-my {
+  font-size: 19px;
+}
+
+html.kids-mode .tap-caption {
+  font-size: 18px;
+}
+
+/* Celebración / splash */
+html.kids-mode .splash-title {
+  font-size: 38px;
+}
+
+html.kids-mode .splash-sub,
+html.kids-mode .celebrate-sub {
+  font-size: 19px;
+}
+
+html.kids-mode .celebrate-title {
+  font-size: 36px;
+}
+
+/* Pantallas w4 (perfil, auth, achievements, lesson-complete) */
+html.kids-mode .w4-head-title {
+  font-size: 25px;
+}
+
+html.kids-mode .w4-head-sub {
+  font-size: 16px;
+}
+
+html.kids-mode .w4-profile-name {
+  font-size: 27px;
+}
+
+html.kids-mode .w4-profile-email {
+  font-size: 17px;
+}
+
+html.kids-mode .w4-chip {
+  font-size: 15px;
+  padding: 8px 18px;
+}
+
+html.kids-mode .w4-pstat {
+  font-size: 17px;
+}
+
+html.kids-mode .w4-card-title {
+  font-size: 19px;
+}
+
+html.kids-mode .w4-stub-panel {
+  font-size: 18px;
+  padding: 22px;
+}
+
+html.kids-mode .w4-stat-num {
+  font-size: 27px;
+}
+
+html.kids-mode .w4-stat-label {
+  font-size: 15px;
+}
+
+html.kids-mode .w4-big-title {
+  font-size: 36px;
+}
+
+html.kids-mode .w4-streak-line {
+  font-size: 23px;
+}
+
+html.kids-mode .w4-auth-title {
+  font-size: 26px;
+}
+
+html.kids-mode .w4-auth-sub,
+html.kids-mode .w4-sub-title,
+html.kids-mode .w4-complete-sub {
+  font-size: 17px;
+}
+
+html.kids-mode .w4-medal-name {
+  font-size: 15px;
+}
+
+html.kids-mode .w4-org-row {
+  font-size: 19px;
+}
+
+html.kids-mode .w4-label {
+  font-size: 16px;
+}
+
+/* Ajustes propios + banner de recordatorio */
+html.kids-mode .nse-setting-box {
+  padding: 20px;
+}
+
+html.kids-mode .nse-setting-icon {
+  width: 54px;
+  height: 54px;
+}
+
+html.kids-mode .nse-setting-hint,
+html.kids-mode .nse-setting-note {
+  font-size: 16px;
+}
+
+html.kids-mode .reminder-banner-text {
+  font-size: 18px;
+}
+
+/* Movimiento reducido: el banner aparece sin animación. */
+@media (prefers-reduced-motion: reduce) {
+  .reminder-banner {
+    animation: none;
+  }
+}
