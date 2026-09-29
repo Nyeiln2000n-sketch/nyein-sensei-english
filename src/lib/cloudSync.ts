@@ -18,6 +18,38 @@ import type { Progress } from '../types';
 import { getSession } from './auth';
 import { supabaseEnabled, supabaseRest } from './supabase';
 import { loadProgress, replaceProgress } from './storage';
+import { getActiveTenant, tenantScopeParam, type ActiveTenant } from './tenant';
+
+// ---------- tenant scoping (FASE 8) ----------
+//
+// Every learning table (progress, lesson_completions, vocabulary_stats)
+// carries a nullable org_id column: NULL = personal rows, uuid = org rows.
+// The profiles table has NO org_id (per-user) and is never scoped.
+//
+// Semantics:
+// - The active tenant is read at CALL TIME from getActiveTenant().
+// - The local cache (localStorage nse_* keys) always holds the ACTIVE
+//   tenant's data. Personal rows (org_id NULL) never mix with org rows:
+//   on tenant switch the cache is REPLACED by the new tenant's cloud state,
+//   never merged (see resyncForTenant).
+// - Outbox ops are stamped with the tenant active at enqueue time and replay
+//   against THEIR stamped org_id — a user may switch tenants while ops are
+//   pending.
+
+/** org_id value for writes under the active tenant: the org uuid, or null when personal. */
+function activeOrgId(t: ActiveTenant = getActiveTenant()): string | null {
+  return t.kind === 'org' ? t.orgId : null;
+}
+
+/** PostgREST filter fragment for tenant-scoped reads: `&org_id=is.null` / `&org_id=eq.<uuid>`. */
+function scopeParam(t: ActiveTenant = getActiveTenant()): string {
+  return `&org_id=${tenantScopeParam(t)}`;
+}
+
+/** Normalize a possibly-undefined org_id stamp to null = personal. */
+function normOrgId(v: string | null | undefined): string | null {
+  return v ?? null;
+}
 
 // ---------- error transparency ----------
 
@@ -147,6 +179,8 @@ function todayKey(): string {
  */
 export async function loadCloudState(uid: string): Promise<CloudState | null> {
   const op = 'loadCloudState';
+  const tenant = getActiveTenant();
+  const scope = scopeParam(tenant);
 
   let rows = await call(op, `profiles?id=eq.${encodeURIComponent(uid)}&select=*`);
   let profile = Array.isArray(rows) ? rows[0] : null;
@@ -179,7 +213,7 @@ export async function loadCloudState(uid: string): Promise<CloudState | null> {
   const completions: Record<string, number> = {};
   const lessonRows = await call(
     op,
-    `lesson_completions?user_id=eq.${encodeURIComponent(uid)}&select=lesson_id&order=completed_at`,
+    `lesson_completions?user_id=eq.${encodeURIComponent(uid)}${scope}&select=lesson_id&order=completed_at`,
   );
   if (Array.isArray(lessonRows)) {
     for (const r of lessonRows) {
@@ -191,7 +225,7 @@ export async function loadCloudState(uid: string): Promise<CloudState | null> {
   const wordStats: CloudState['wordStats'] = {};
   const statRows = await call(
     op,
-    `vocabulary_stats?user_id=eq.${encodeURIComponent(uid)}&select=word_key,correct,wrong`,
+    `vocabulary_stats?user_id=eq.${encodeURIComponent(uid)}${scope}&select=word_key,correct,wrong`,
   );
   if (Array.isArray(statRows)) {
     for (const r of statRows) {
@@ -203,7 +237,7 @@ export async function loadCloudState(uid: string): Promise<CloudState | null> {
   const wordProgress: CloudState['wordProgress'] = {};
   const progRows = await call(
     op,
-    `progress?user_id=eq.${encodeURIComponent(uid)}&select=word_key,known,reps`,
+    `progress?user_id=eq.${encodeURIComponent(uid)}${scope}&select=word_key,known,reps`,
   );
   if (Array.isArray(progRows)) {
     for (const r of progRows) {
@@ -275,6 +309,26 @@ export interface OutboxOp {
    * mutations. Pre-upgrade ops have no stamp and are treated as foreign.
    */
   uid?: string;
+  /**
+   * Tenant scope of this op: the org uuid when enqueued under an org, null
+   * when enqueued under the personal scope. Stamped at enqueue time; the
+   * replay writes the op into THIS scope even if the active tenant changed
+   * afterwards. Pre-upgrade ops have no stamp and replay as personal
+   * (org_id null) — the behavior before FASE 8 existed.
+   */
+  org_id?: string | null;
+  /**
+   * Word totals stamped at enqueue time. replayOp() prefers these snapshots
+   * over the local cache: the cache holds the ACTIVE tenant's data, but an
+   * op may replay after the user switched to another tenant — re-deriving
+   * from the cache then would post the wrong tenant's totals into the op's
+   * stamped scope. Pre-upgrade ops have no snapshot and fall back to the
+   * cache (only correct when the tenant hasn't changed since enqueue).
+   */
+  correct?: number;
+  wrong?: number;
+  known?: boolean;
+  reps?: number;
   lesson_id?: string;
   score?: number;
   word_key?: string;
@@ -298,13 +352,16 @@ function writeOutbox(ops: OutboxOp[]): void {
   }
 }
 
-function enqueue(op: Omit<OutboxOp, 'id' | 'ts' | 'uid'>): void {
+function enqueue(op: Omit<OutboxOp, 'id' | 'ts' | 'uid' | 'org_id'>): void {
   const ops = readOutbox();
   ops.push({
     ...op,
     // Stamp the owner account: flushOutbox() drops ops whose uid doesn't
     // match the current session, so cross-account replays are impossible.
     uid: userId() ?? undefined,
+    // Stamp the tenant: the op replays into THIS scope later, even if the
+    // user has switched to another tenant by flush time.
+    org_id: activeOrgId(),
     id: `op_${Date.now().toString(36)}_${Math.random().toString(36).slice(2, 8)}`,
     ts: Date.now(),
   });
@@ -396,10 +453,15 @@ export function resetCloudProfile(): void {
 
 // ---------- write-through mutations ----------
 
-async function postLessonCompletionRow(uid: string, lessonId: string, score: number): Promise<boolean> {
+async function postLessonCompletionRow(
+  uid: string,
+  lessonId: string,
+  score: number,
+  orgId: string | null = activeOrgId(),
+): Promise<boolean> {
   const rows = await call('recordLessonCompletion', 'lesson_completions', {
     method: 'POST',
-    body: JSON.stringify({ user_id: uid, lesson_id: lessonId, score }),
+    body: JSON.stringify({ user_id: uid, lesson_id: lessonId, score, org_id: orgId }),
   });
   return rows !== null;
 }
@@ -420,10 +482,16 @@ export function recordLessonCompletion(lessonId: string, score: number): void {
   })();
 }
 
-async function upsertWordStat(uid: string, wordKey: string, correct: number, wrong: number): Promise<boolean> {
-  const rows = await call('recordWordStat', 'vocabulary_stats?on_conflict=user_id,word_key', {
+async function upsertWordStat(
+  uid: string,
+  wordKey: string,
+  correct: number,
+  wrong: number,
+  orgId: string | null = activeOrgId(),
+): Promise<boolean> {
+  const rows = await call('recordWordStat', 'vocabulary_stats?on_conflict=user_id,word_key,org_key', {
     method: 'POST',
-    body: JSON.stringify({ user_id: uid, word_key: wordKey, correct, wrong }),
+    body: JSON.stringify({ user_id: uid, word_key: wordKey, correct, wrong, org_id: orgId }),
   });
   return rows !== null;
 }
@@ -442,19 +510,28 @@ export function recordWordStat(wordKey: string, correct: boolean): void {
 
   const uid = userId();
   if (!uid || !supabaseEnabled || !online()) {
-    enqueue({ op: 'word_stat', word_key: wordKey });
+    // Snapshot the absolute totals on the op: replay uses them instead of
+    // re-deriving from the local cache, so the op is correct even if the
+    // active tenant changed before the flush.
+    enqueue({ op: 'word_stat', word_key: wordKey, correct: next.correct, wrong: next.wrong });
     return;
   }
   void (async () => {
     const ok = await upsertWordStat(uid, wordKey, next.correct, next.wrong);
-    if (!ok) enqueue({ op: 'word_stat', word_key: wordKey });
+    if (!ok) enqueue({ op: 'word_stat', word_key: wordKey, correct: next.correct, wrong: next.wrong });
   })();
 }
 
-async function upsertWordProgress(uid: string, wordKey: string, known: boolean, reps: number): Promise<boolean> {
-  const rows = await call('setWordKnown', 'progress?on_conflict=user_id,word_key', {
+async function upsertWordProgress(
+  uid: string,
+  wordKey: string,
+  known: boolean,
+  reps: number,
+  orgId: string | null = activeOrgId(),
+): Promise<boolean> {
+  const rows = await call('setWordKnown', 'progress?on_conflict=user_id,word_key,org_key', {
     method: 'POST',
-    body: JSON.stringify({ user_id: uid, word_key: wordKey, known, reps }),
+    body: JSON.stringify({ user_id: uid, word_key: wordKey, known, reps, org_id: orgId }),
   });
   return rows !== null;
 }
@@ -469,12 +546,12 @@ export function setWordKnown(wordKey: string, known: boolean): void {
 
   const uid = userId();
   if (!uid || !supabaseEnabled || !online()) {
-    enqueue({ op: 'word_known', word_key: wordKey });
+    enqueue({ op: 'word_known', word_key: wordKey, known: next.known, reps: next.reps });
     return;
   }
   void (async () => {
     const ok = await upsertWordProgress(uid, wordKey, next.known, next.reps);
-    if (!ok) enqueue({ op: 'word_known', word_key: wordKey });
+    if (!ok) enqueue({ op: 'word_known', word_key: wordKey, known: next.known, reps: next.reps });
   })();
 }
 
@@ -498,12 +575,12 @@ export function recordReview(wordKey: string, correct: boolean): void {
 
   const uid = userId();
   if (!uid || !supabaseEnabled || !online()) {
-    enqueue({ op: 'word_known', word_key: wordKey });
+    enqueue({ op: 'word_known', word_key: wordKey, known: next.known, reps: next.reps });
     return;
   }
   void (async () => {
     const ok = await upsertWordProgress(uid, wordKey, next.known, next.reps);
-    if (!ok) enqueue({ op: 'word_known', word_key: wordKey });
+    if (!ok) enqueue({ op: 'word_known', word_key: wordKey, known: next.known, reps: next.reps });
   })();
 }
 
@@ -521,7 +598,9 @@ export function getLocalWordProgress(): Record<string, WordProgressEntry> {
 
 function coalesceOps(ops: OutboxOp[]): OutboxOp[] {
   // profile_patch intents are re-derived from current local cache at flush
-  // time — one is enough. word_stat/word_known: keep the latest per word.
+  // time — one is enough. word_stat/word_known: keep the latest per
+  // word AND tenant (an op stamped with one org must never absorb the
+  // same word queued under another tenant — they are different cloud rows).
   // lesson_completion rows are genuinely additive — keep them all, in order.
   const out: OutboxOp[] = [];
   let profilePatch: OutboxOp | null = null;
@@ -529,7 +608,7 @@ function coalesceOps(ops: OutboxOp[]): OutboxOp[] {
   for (const op of ops) {
     if (op.op === 'profile_patch') profilePatch = op;
     else if ((op.op === 'word_stat' || op.op === 'word_known') && op.word_key) {
-      latestWord.set(`${op.op}:${op.word_key}`, op);
+      latestWord.set(`${op.op}:${op.word_key}:${normOrgId(op.org_id) ?? 'personal'}`, op);
     } else out.push(op);
   }
   if (profilePatch) out.unshift(profilePatch);
@@ -538,8 +617,13 @@ function coalesceOps(ops: OutboxOp[]): OutboxOp[] {
 }
 
 async function replayOp(uid: string, op: OutboxOp): Promise<boolean> {
+  // Each op replays against ITS stamped org_id — NOT the currently-active
+  // tenant. A user may have switched tenants while the op was queued; the
+  // stamped scope is where the event actually happened.
+  const orgId = normOrgId(op.org_id);
   switch (op.op) {
     case 'profile_patch': {
+      // profiles is per-user (no org_id) — tenant-independent.
       const p = loadProgress();
       return sendProfilePatch(uid, {
         xp: p.xp,
@@ -550,16 +634,22 @@ async function replayOp(uid: string, op: OutboxOp): Promise<boolean> {
       });
     }
     case 'lesson_completion':
-      return postLessonCompletionRow(uid, op.lesson_id ?? '', op.score ?? 0);
+      return postLessonCompletionRow(uid, op.lesson_id ?? '', op.score ?? 0, orgId);
     case 'word_stat': {
+      // Prefer the totals stamped at enqueue time; fall back to the local
+      // cache for pre-upgrade ops (no snapshot) — see OutboxOp docs.
       const s = getLocalWordStats()[op.word_key ?? ''];
-      if (!s) return true;
-      return upsertWordStat(uid, op.word_key as string, s.correct, s.wrong);
+      const correct = op.correct ?? s?.correct;
+      const wrong = op.wrong ?? s?.wrong;
+      if (correct === undefined || wrong === undefined) return true;
+      return upsertWordStat(uid, op.word_key as string, correct, wrong, orgId);
     }
     case 'word_known': {
       const w = getLocalWordProgress()[op.word_key ?? ''];
-      if (!w) return true;
-      return upsertWordProgress(uid, op.word_key as string, w.known, w.reps);
+      const known = op.known ?? w?.known;
+      const reps = op.reps ?? w?.reps;
+      if (known === undefined || reps === undefined) return true;
+      return upsertWordProgress(uid, op.word_key as string, known, reps, orgId);
     }
   }
 }
@@ -573,6 +663,9 @@ async function replayOp(uid: string, op: OutboxOp): Promise<boolean> {
  * into another user's cloud rows. Their events remain in the local cache,
  * and the sign-in merge re-derives word stats / profile / lesson backfill
  * from it for the owning account, so dropping is lossless.
+ *
+ * Each surviving op replays against ITS stamped org_id (replayOp), not the
+ * currently-active tenant — pending org work survives tenant switches.
  */
 export async function flushOutbox(): Promise<void> {
   const uid = userId();
@@ -615,8 +708,20 @@ function laterDate(a: string | null, b: string | null): string | null {
 }
 
 /**
- * Merge the local offline cache into the cloud on sign-in, then continue with
- * the cloud as the source of truth:
+ * TENANT-SCOPED merge semantics (FASE 8):
+ *
+ * The local cache ALWAYS holds the ACTIVE tenant's data. This merge runs only
+ * on sign-in (initCloudSession), when the cache and the cloud belong to the
+ * same tenant (the one active at sign-in). All reads and writes below are
+ * scoped to that tenant via org_id — personal rows (org_id NULL) never mix
+ * with org rows.
+ *
+ * On TENANT SWITCH use resyncForTenant() instead: it replaces the local
+ * cache with the new tenant's cloud state WITHOUT merging — the cache held
+ * the previous tenant's data, and merging it into the new tenant's cloud
+ * would contaminate one tenant with another's rows.
+ *
+ * Merge (within one tenant) — unchanged from before, only scoped:
  *   xp / streak / gems / level → max(cloud, local)
  *   last_active → the later date
  *   lesson completions → per-lesson max (union); missing cloud rows are
@@ -631,6 +736,7 @@ function laterDate(a: string | null, b: string | null): string | null {
  * The merged result is written back to the local cache synchronously.
  */
 export async function migrateLocalToCloud(uid: string, cloud: CloudState): Promise<CloudState> {
+  const orgId = activeOrgId(); // the tenant being merged; fixed for this run
   const local = loadProgress();
 
   const mergedProfile: CloudProfileState = {
@@ -648,12 +754,18 @@ export async function migrateLocalToCloud(uid: string, cloud: CloudState): Promi
   // synchronously by storage.markLessonComplete) AND one lesson_completion
   // outbox op per event. flushOutbox() replays those ops right after this
   // merge, so the backfill must exclude them — otherwise every offline
-  // completion is posted twice. Only ops owned by this session are excluded;
-  // foreign/unstamped ops are dropped by flushOutbox, so their events are
-  // covered here exactly once.
+  // completion is posted twice. Only ops owned by this session AND stamped
+  // with the active tenant are excluded: an op stamped with another tenant
+  // replays into that tenant's rows, so this tenant's backfill must still
+  // cover its own events exactly once.
   const pendingLessonOps: Record<string, number> = {};
   for (const op of readOutbox()) {
-    if (op.op === 'lesson_completion' && op.uid === uid && op.lesson_id) {
+    if (
+      op.op === 'lesson_completion' &&
+      op.uid === uid &&
+      normOrgId(op.org_id) === orgId &&
+      op.lesson_id
+    ) {
       pendingLessonOps[op.lesson_id] = (pendingLessonOps[op.lesson_id] ?? 0) + 1;
     }
   }
@@ -664,7 +776,7 @@ export async function migrateLocalToCloud(uid: string, cloud: CloudState): Promi
   for (const [key, count] of Object.entries(local.completedLessons ?? {})) {
     const missing = count - (cloud.completions[key] ?? 0) - (pendingLessonOps[key] ?? 0);
     for (let i = 0; i < missing; i++) {
-      await postLessonCompletionRow(uid, key, 1);
+      await postLessonCompletionRow(uid, key, 1, orgId);
     }
   }
 
@@ -681,7 +793,7 @@ export async function migrateLocalToCloud(uid: string, cloud: CloudState): Promi
   for (const [key, s] of Object.entries(wordStats)) {
     const c = cloud.wordStats[key];
     if (!c || c.correct !== s.correct || c.wrong !== s.wrong) {
-      await upsertWordStat(uid, key, s.correct, s.wrong);
+      await upsertWordStat(uid, key, s.correct, s.wrong, orgId);
     }
   }
   writeJsonMap(WORD_STATS_KEY, wordStats);
@@ -696,7 +808,7 @@ export async function migrateLocalToCloud(uid: string, cloud: CloudState): Promi
   for (const [key, w] of Object.entries(wordProgress)) {
     const c = cloud.wordProgress[key];
     if (!c || c.known !== w.known || c.reps !== w.reps) {
-      await upsertWordProgress(uid, key, w.known, w.reps);
+      await upsertWordProgress(uid, key, w.known, w.reps, orgId);
     }
   }
   writeJsonMap(WORD_PROGRESS_KEY, wordProgress);
@@ -735,6 +847,65 @@ function sumCorrect(stats: Record<string, { correct: number; wrong: number }>): 
 }
 function sumAnswered(stats: Record<string, { correct: number; wrong: number }>): number {
   return Object.values(stats).reduce((a, s) => a + s.correct + s.wrong, 0);
+}
+
+// ---------- tenant switch ----------
+
+/**
+ * REPLACE the tenant-scoped local caches with a freshly loaded cloud state.
+ * Used on tenant switch (NOT on sign-in — that uses migrateLocalToCloud).
+ *
+ * Per-user fields (xp, streak, last_active on the progress cache) are kept:
+ * profiles has no org_id, so the profile row belongs to the user, not to a
+ * tenant. Everything tenant-scoped (completions, word stats, word progress)
+ * is replaced wholesale — no merging, because the cache held the PREVIOUS
+ * tenant's data and merging it into the new tenant's cloud would mix rows
+ * across tenants.
+ */
+function applyCloudStateToLocalCache(cloud: CloudState): void {
+  writeJsonMap(WORD_STATS_KEY, cloud.wordStats);
+  const progressEntries: Record<string, WordProgressEntry> = {};
+  for (const [key, w] of Object.entries(cloud.wordProgress)) {
+    progressEntries[key] = { known: w.known, reps: w.reps };
+  }
+  writeJsonMap(WORD_PROGRESS_KEY, progressEntries);
+
+  const local = loadProgress();
+  replaceProgress({
+    ...local,
+    completedLessons: { ...cloud.completions },
+    totalCorrect: sumCorrect(cloud.wordStats),
+    totalAnswered: sumAnswered(cloud.wordStats),
+  });
+}
+
+/**
+ * Call AFTER the user switches the active tenant (see setActiveTenant):
+ * reloads the cloud state for the NEW scope, adopts it as the local cache
+ * (replacing the previous tenant's data — never merging), and flushes the
+ * outbox. Pending outbox ops replay against THEIR stamped org_id, so work
+ * queued under the previous tenant is never lost or mis-scoped.
+ *
+ * Safe to call when nothing changed: a same-tenant resync just re-reads and
+ * re-applies the current scope's cloud state.
+ */
+export async function resyncForTenant(): Promise<void> {
+  registerListeners();
+  const uid = userId();
+  if (!uid) {
+    reportError('resyncForTenant', 'auth', null, 'အကောင့်ထဲ ဝင်ထားခြင်း မရှိပါ — ပြန်ဝင်ကြည့်ပါ');
+    return;
+  }
+  clearSyncError();
+  // Flush BEFORE swapping the cache: profile_patch replay re-derives from
+  // the local cache (per-user, tenant-independent), and word/lesson ops
+  // carry their own tenant stamp + totals snapshots, so they land in the
+  // right scope regardless of which cache is loaded.
+  await flushOutbox();
+  const cloud = await loadCloudState(uid);
+  if (!cloud) return; // failure already reported; local cache stays as-is
+  applyCloudStateToLocalCache(cloud);
+  await flushOutbox();
 }
 
 // ---------- session lifecycle ----------

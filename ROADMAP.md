@@ -95,14 +95,14 @@
 - [ ] S-008 Email de confirmación (revisar setting de Supabase Auth) — no verificable desde aquí; re-verificar vía dashboard Supabase (estaba OFF el 2026-09-28)
 
 ## FASE 8 — Multi-tenant (organizaciones) 🟡
-- [ ] MT-001 Tabla `organizations` + `memberships` (roles: owner/admin/member)
-- [ ] MT-002 Datos de aprendizaje por tenant (`org_id` en progreso/completions)
-- [ ] MT-003 RLS tenant-aware (imposible leer datos de otro tenant)
-- [ ] MT-004 Switch de organización en la UI
-- [ ] MT-005 Invitaciones por email/enlace
-- [ ] MT-006 Panel admin: miembros, roles, quitar
-- [ ] MT-007 Tests de aislamiento entre tenants (2 orgs × 2 usuarios)
-- [ ] MT-008 Plan personal vs organización en el onboarding
+- [x] MT-001 Tabla `organizations` + `memberships` (roles: owner/admin/member) — SQL en supabase/migrations/20260929_fase8_multitenant.sql + RPCs (create_org, accept_org_invite, set_org_member_role, remove_org_member); aplicación live pendiente
+- [x] MT-002 Datos de aprendizaje por tenant (`org_id` en progreso/completions) — cloudSync.ts tenant-scoped (lecturas filtradas, escrituras selladas, outbox con org_id); migración añade org_id + unique (user_id, word_key, org_key); aplicación live pendiente
+- [x] MT-003 RLS tenant-aware (imposible leer datos de otro tenant) — políticas legacy endurecidas a org_id is null + políticas tenant; revisión estática OK; verificación live pendiente (ver supabase/MT-007-tenant-isolation-checks.sql)
+- [x] MT-004 Switch de organización en la UI — OrgScreen con switcher personal/org + resyncForTenant (reemplazo de caché, no merge)
+- [x] MT-005 Invitaciones por email/enlace — crear/listar/revocar + deep-link #/invite/<token> con puerta de auth
+- [x] MT-006 Panel admin: miembros, roles, quitar — OrgScreen detalle por org con permisos (canManageMembers), confirmación al quitar
+- [x] MT-007 Tests de aislamiento entre tenants (2 orgs × 2 usuarios) — unit tests verdes (npm run test:tenant 32/32); matriz live 2×2 documentada y pendiente de aplicar en Supabase (supabase/MT-007-tenant-isolation.md + .sql)
+- [x] MT-008 Plan personal vs organización en el onboarding — PlanChoiceScreen tras signup (personal → home, organización → orgs)
 
 ## FASE 9 — PWA y móvil 🟡
 - [ ] P-001 Manifest + iconos (incl. maskable) verificados

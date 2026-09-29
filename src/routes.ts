@@ -11,7 +11,10 @@ export type RouteName =
   | 'profile'
   | 'quiz'
   | 'vocab'
-  | 'lessonComplete';
+  | 'lessonComplete'
+  | 'orgs'
+  | 'invite'
+  | 'planChoice';
 
 export interface NavParams {
   topic?: string;
@@ -19,6 +22,8 @@ export interface NavParams {
   segment?: 'basic' | 'vocab' | 'conv';
   mode?: string;
   from?: RouteName;
+  /** Org-invite deep-link token (#/invite/<token>). */
+  token?: string;
 }
 
 export type GoFn = (name: RouteName | 'back', params?: NavParams) => void;

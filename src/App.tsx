@@ -11,6 +11,9 @@ import AchievementsScreen from './components/AchievementsScreen';
 import ProfileScreen from './components/ProfileScreen';
 import LessonCompleteScreen from './components/LessonCompleteScreen';
 import AuthScreen from './components/AuthScreen';
+import OrgScreen from './components/OrgScreen';
+import InviteAcceptScreen from './components/InviteAcceptScreen';
+import PlanChoiceScreen from './components/PlanChoiceScreen';
 import { TabBar, type TabId } from './components/ui';
 import { ensureFreshAccessToken, getSession, onAuthChange, verifySignupLicense } from './lib/auth';
 import { endCloudSession, initCloudSession } from './lib/cloudSync';
@@ -37,6 +40,9 @@ const FULLSCREEN_ROUTES: RouteName[] = [
   'practice',
   'lessonComplete',
   'auth',
+  'orgs',
+  'invite',
+  'planChoice',
 ];
 
 interface Route {
@@ -74,6 +80,16 @@ function showTabs(name: RouteName): boolean {
   return name === 'home' || name === 'lessons' || name === 'achievements' || name === 'profile';
 }
 
+/** Reads a #/invite/<token> deep link from the URL hash, if present. */
+function parseInviteHash(): string | null {
+  try {
+    const m = window.location.hash.match(/^#\/invite\/([0-9a-fA-F]{48})$/);
+    return m ? m[1] : null;
+  } catch {
+    return null;
+  }
+}
+
 export default function App() {
   // Owner order: EVERY cold start opens the Splash first (~2s, tap-to-skip,
   // living 3D cat) — even for returning/onboarded users.
@@ -88,6 +104,25 @@ export default function App() {
   /** Swallows the popstate fired by our own in-app history.back(). */
   const swallowPop = useRef(false);
   const prevRouteRef = useRef<RouteName>('splash');
+  /**
+   * Org-invite deep link (#/invite/<token>): consumed once, routed to the
+   * invite screen only when signed in. While signed out the token stays
+   * pending: the user goes through the Auth gate first, and a redirect
+   * effect below sends them to the invite screen after sign-in.
+   */
+  const pendingInviteRef = useRef<string | null>(parseInviteHash());
+  const consumePendingInvite = useCallback((): string | null => {
+    const tok = pendingInviteRef.current;
+    pendingInviteRef.current = null;
+    if (tok) {
+      try {
+        window.history.replaceState(null, '', window.location.pathname + window.location.search);
+      } catch {
+        /* keep the hash — harmless */
+      }
+    }
+    return tok;
+  }, []);
   /**
    * S-002: resolves only after the cold-start token refresh (when needed)
    * settles. dismissSplash waits for it before choosing Home vs Auth, so a
@@ -247,7 +282,17 @@ export default function App() {
       /* ignore */
     }
     const decide = () => {
-      const dest: RouteName = next ?? (getSession() ? 'home' : 'auth');
+      // Signed-in invite deep link: land on the invite screen instead of Home.
+      // (Signed-out keeps the token pending → auth gate → redirect effect.)
+      const tok = pendingInviteRef.current;
+      const signedIn = !!getSession();
+      if (!next && tok && signedIn) {
+        consumePendingInvite();
+        setStack([{ name: 'invite', params: { token: tok } }]);
+        setTick((t) => t + 1);
+        return;
+      }
+      const dest: RouteName = next ?? (signedIn ? 'home' : 'auth');
       setStack([{ name: dest }]);
       setTick((t) => t + 1);
     };
@@ -311,6 +356,22 @@ export default function App() {
 
   void coldSplashDone;
 
+  // Invite deep link, signed-out path: the token stayed pending through the
+  // Auth gate (dismissSplash deliberately left it alone). Once auth lands on
+  // Home — or on planChoice for a fresh signup (MT-008) — route to the
+  // invite screen.
+  useEffect(() => {
+    if (
+      authed &&
+      (route.name === 'home' || route.name === 'planChoice') &&
+      pendingInviteRef.current
+    ) {
+      const tok = consumePendingInvite();
+      if (tok) go('invite', { token: tok });
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [authed, route.name]);
+
   const screenProps = { go, params: route.params };
 
   return (
@@ -326,6 +387,13 @@ export default function App() {
         {route.name === 'achievements' && <AchievementsScreen {...screenProps} />}
         {route.name === 'profile' && <ProfileScreen {...screenProps} />}
         {route.name === 'lessonComplete' && <LessonCompleteScreen {...screenProps} />}
+        {route.name === 'orgs' && <OrgScreen {...screenProps} />}
+        {route.name === 'invite' && <InviteAcceptScreen {...screenProps} />}
+        {route.name === 'planChoice' && (
+          <PlanChoiceScreen
+            onDone={(choice) => go(choice === 'personal' ? 'home' : 'orgs')}
+          />
+        )}
       </main>
 
       {showTabs(route.name) && (

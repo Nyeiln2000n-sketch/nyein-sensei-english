@@ -24,6 +24,7 @@
     "dev": "vite",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
+    "test:tenant": "node tools/tenant-test/run.mjs",
     "dedup-check": "python3 tools/vectorize/check.py"
   },
   "type": "module",

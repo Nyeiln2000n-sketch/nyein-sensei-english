@@ -4,13 +4,14 @@
 // NO language row. Sign-out clears the session via src/lib/auth.ts
 // (byte-identical logic — this file only rewrites the presentation).
 
-import { useState } from 'react';
-import { Award, CircleQuestionMark, LogOut, Settings } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import { Award, CircleQuestionMark, LogOut, Settings, Users } from 'lucide-react';
 import type { GoFn, NavParams } from '../routes';
 import MascotScene3D from '../components/Mascot3D';
 import { MenuRow, PillButton, Screen } from '../components/ui';
 import { getSession, signOut } from '../lib/auth';
 import { getProgress, resetProgress } from '../lib/storage';
+import { describeTenant, getActiveTenant, listMyOrgs, type Organization } from '../lib/tenant';
 import './w4.css';
 import { W4ErrorBoundary } from './w4error';
 
@@ -34,6 +35,22 @@ export default function ProfileScreen({ go, params }: { go: GoFn; params?: NavPa
 
   const [leaving, setLeaving] = useState(false);
   const [panel, setPanel] = useState<null | 'settings' | 'help'>(null);
+  // Org management entry: fetched quietly; hidden entirely on error/offline.
+  const [orgs, setOrgs] = useState<Organization[] | null>(null);
+
+  useEffect(() => {
+    let alive = true;
+    void listMyOrgs()
+      .then((o) => {
+        if (alive) setOrgs(o);
+      })
+      .catch(() => {
+        /* fail silently — the row hides */
+      });
+    return () => {
+      alive = false;
+    };
+  }, []);
 
   async function handleSignOut() {
     setLeaving(true);
@@ -74,6 +91,16 @@ export default function ProfileScreen({ go, params }: { go: GoFn; params?: NavPa
           subtitle="ဆုတံဆိပ်များနှင့် စာရင်းအင်း"
           onClick={() => go('achievements')}
         />
+        {orgs !== null && (
+          <MenuRow
+            icon={Users}
+            badgeBg="#E3F4FF"
+            badgeColor="#3FB0F0"
+            title="အဖွဲ့အစည်းများ"
+            subtitle={`လက်ရှိ: ${describeTenant(getActiveTenant(), orgs)}`}
+            onClick={() => go('orgs')}
+          />
+        )}
         <MenuRow
           icon={Settings}
           badgeBg="#E3F4FF"

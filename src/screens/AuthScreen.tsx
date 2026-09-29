@@ -104,10 +104,12 @@ export default function AuthScreen({ go, params, onVerifyKey }: AuthScreenProps)
     try {
       if (isSignin) {
         await signIn(trimmed, password);
+        go('home');
       } else {
         await signUp(trimmed, password);
+        // MT-008: new accounts pick a plan once — personal or organization.
+        go('planChoice');
       }
-      go('home');
     } catch (err) {
       setError(err instanceof Error ? err.message : 'တစ်ခုခု မှားယွင်းနေပါတယ်။ ထပ်စမ်းကြည့်ပါ။');
     } finally {

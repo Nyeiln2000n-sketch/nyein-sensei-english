@@ -369,3 +369,204 @@
     transform: translate(var(--dx, 0px), 62vh) rotate(var(--rot, 720deg));
   }
 }
+
+/* ---------------- org management (OrgScreen) ---------------- */
+
+.w4-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 0 16px;
+}
+
+.w4-hint {
+  margin: 8px 0 0;
+  font-size: 13px;
+  color: #a68d68;
+  line-height: 1.5;
+}
+
+.w4-tenant-list,
+.w4-org-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.w4-tenant-row,
+.w4-org-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 2px solid transparent;
+  background: var(--cream);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--title);
+  cursor: pointer;
+  text-align: left;
+}
+
+.w4-tenant-row.active {
+  border-color: var(--orange);
+  background: #fff;
+}
+
+.w4-tenant-row:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.w4-tenant-name {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.w4-org-item {
+  border-radius: 14px;
+  background: var(--cream);
+  overflow: hidden;
+}
+
+.w4-org-item .w4-org-row {
+  background: transparent;
+}
+
+.w4-org-row .rot {
+  transform: rotate(90deg);
+}
+
+.w4-org-detail {
+  padding: 4px 12px 12px;
+  border-top: 1px dashed #e8d9bd;
+}
+
+.w4-sub-title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 12px 0 6px;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--title);
+}
+
+.w4-member-row,
+.w4-invite-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 0;
+  border-bottom: 1px solid #f0e4cc;
+  font-size: 14px;
+}
+
+.w4-member-id {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--title);
+}
+
+.w4-select {
+  border: 2px solid #e8d9bd;
+  border-radius: 10px;
+  background: #fff;
+  padding: 6px 8px;
+  font-size: 13px;
+  color: var(--title);
+  max-width: 140px;
+}
+
+.w4-icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 10px;
+  background: #fff;
+  color: #b0492f;
+  cursor: pointer;
+}
+
+.w4-confirm-inline {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.w4-danger-btn {
+  border: none;
+  border-radius: 10px;
+  background: #e5484d;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.w4-ghost-btn {
+  border: 2px solid #e8d9bd;
+  border-radius: 10px;
+  background: transparent;
+  color: var(--title);
+  font-size: 13px;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+
+.w4-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.w4-row .pill-btn {
+  margin-top: 0;
+}
+
+.w4-invite-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: #e3f4ff;
+  color: #1c6ea4;
+  font-size: 12.5px;
+}
+
+.w4-link-text {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.spin {
+  animation: w4-spin 1s linear infinite;
+}
+
+@keyframes w4-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
