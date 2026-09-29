@@ -29,6 +29,12 @@ export const topics: Topic[] = [
   { id: 'market', nameMy: 'ဈေးနှင့်ဈေးဆစ်ခြင်း', nameEn: 'Market & Bargaining', icon: '🏪', color: '#d6336c' },
   { id: 'seasons', nameMy: 'ရာသီများ', nameEn: 'Seasons & Climate', icon: '🍂', color: '#2f9e44' },
   { id: 'personality', nameMy: 'စရိုက်လက္ခဏာ', nameEn: 'Personality', icon: '🌟', color: '#f08c00' },
+  { id: 'science', nameMy: 'သိပ္ပံ', nameEn: 'Science', icon: '🔬', color: '#228be6' },
+  { id: 'law', nameMy: 'ဥပဒေ', nameEn: 'Law', icon: '⚖️', color: '#5f3dc4' },
+  { id: 'medicine', nameMy: 'ဆေးပညာ', nameEn: 'Medicine', icon: '💊', color: '#0c8599' },
+  { id: 'art', nameMy: 'အနုပညာ', nameEn: 'Art', icon: '🎨', color: '#e64980' },
+  { id: 'philosophy', nameMy: 'ဒဿနိကဗေဒ', nameEn: 'Philosophy', icon: '💭', color: '#7048e8' },
+  { id: 'environment', nameMy: 'သဘာဝပတ်ဝန်းကျင်', nameEn: 'Environment', icon: '🌍', color: '#2f9e44' },
 ];
 
 /** Backwards-compatible alias. */

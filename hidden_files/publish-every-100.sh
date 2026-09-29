@@ -8,8 +8,20 @@ STATE_FILE="$REPO_DIR/hidden_files/publish-state.json"
 IMG_DIR="$REPO_DIR/public/word-images"
 QUARANTINE="$REPO_DIR/hidden_files/png-quarantine"
 CHUNK_MAX=200
+COOLDOWN_FILE="$REPO_DIR/hidden_files/publish-cooldown-until"
 mkdir -p "$QUARANTINE"
 cd "$REPO_DIR" || exit 1
+
+# GitHub secondary rate limits (abuse detection) don't show in /rate_limit
+# and are re-triggered by every retry. After a 403/429 we back off quietly
+# for 60 minutes so the limit can fully clear instead of self-perpetuating.
+if [ -f "$COOLDOWN_FILE" ]; then
+  until_ts=$(cat "$COOLDOWN_FILE" 2>/dev/null || echo 0)
+  if [ "$(date +%s)" -lt "$until_ts" ]; then
+    echo "SKIP: GitHub API cooldown active until $(date -d "@$until_ts" '+%Y-%m-%d %H:%M %Z') — letting the secondary rate limit clear."
+    exit 0
+  fi
+fi
 
 # Always restore quarantined PNGs on exit (success or failure) so files
 # never get stranded outside the images dir.
@@ -59,13 +71,31 @@ print('mapped:', len(total))
 "
 
 npm run typecheck >/tmp/pub-check.log 2>&1 || { echo "TYPECHECK FAILED"; tail -20 /tmp/pub-check.log; exit 1; }
-npm run build >>/tmp/pub-check.log 2>&1 || { echo "BUILD FAILED"; tail -20 /tmp/pub-check.log; exit 1; }
+# The image workers rename temp files (media-generation-*.png -> final name)
+# concurrently; if Vite lists the dir then the file vanishes mid-build it
+# fails with ENOENT. That race is transient: wait 30s and retry once.
+build_attempt=1
+while true; do
+  if npm run build >>/tmp/pub-check.log 2>&1; then break; fi
+  if [ "$build_attempt" -eq 1 ] && grep -q "ENOENT" /tmp/pub-check.log; then
+    echo "BUILD hit ENOENT (concurrent image-worker rename) — retrying once after 30s settle"
+    sleep 30
+    build_attempt=2
+  else
+    echo "BUILD FAILED"; tail -20 /tmp/pub-check.log; exit 1
+  fi
+done
 npm run dedup-check >>/tmp/pub-check.log 2>&1 || { echo "DEDUP FAILED"; tail -20 /tmp/pub-check.log; exit 1; }
 
 "$HOME/workspace/skills/github/bin/gh-push-dir" --repo Nyeiln2000n-sketch/nyein-sensei-english \
   --dir . --branch main \
   --message "Word images batch: $push_count total (+$((push_count - last)) new)" >>/tmp/pub-check.log 2>&1 \
-  || { echo "PUSH FAILED"; tail -20 /tmp/pub-check.log; exit 1; }
+  || { echo "PUSH FAILED"; tail -20 /tmp/pub-check.log;
+       if grep -qE "HTTP 40[39]|HTTP 429" /tmp/pub-check.log; then
+         date -d "+60 minutes" +%s > "$COOLDOWN_FILE"
+         echo "cooldown set for 60 min (GitHub API secondary rate limit)"
+       fi
+       exit 1; }
 
 python3 -c "import json;json.dump({'published_images':$push_count},open('$STATE_FILE','w'))"
 echo "PUBLISHED_OK images=$push_count (+$((push_count - last)) new this run)"

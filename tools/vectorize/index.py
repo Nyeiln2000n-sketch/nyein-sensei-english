@@ -57,7 +57,7 @@ _TURN_RE = re.compile(
 # Dialogue / story header ids (match 'family-1' style dialogue ids and
 # 'story-a1-1' style story ids; these parsers only run on dialogues*/stories* files).
 _DIALOGUE_ID_RE = re.compile(r"id:\s*'([a-z][a-z0-9-]*-\d+)'")
-_STORY_ID_RE = re.compile(r"id:\s*'(story-[a-z0-9-]+)'")
+_STORY_ID_RE = re.compile(r"id:\s*'((?:story|f14-s)-[a-z0-9-]+)'")
 # Story paragraph: { en: '...', my: '...' } (no speaker, no topic; trailing comma tolerated)
 _PARA_RE = re.compile(rf"\{{\s*en:\s*{_QUOTED},\s*my:\s*{_QUOTED}\s*,?\s*\}}")
 _TOPIC_FIELD_RE = re.compile(r"topic:\s*'([^']+)'")

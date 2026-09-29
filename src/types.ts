@@ -35,7 +35,13 @@ export type TopicId =
   | 'computer'
   | 'market'
   | 'seasons'
-  | 'personality';
+  | 'personality'
+  | 'science'
+  | 'law'
+  | 'medicine'
+  | 'art'
+  | 'philosophy'
+  | 'environment';
 
 export interface Word {
   en: string;

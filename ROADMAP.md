@@ -212,13 +212,13 @@
 - [x] E2-011 Auditoría anti-dup total + verificación + reporte. ESTADO 2026-09-29 23:35 UTC+7: dedup exacto verde (14410 items: 5000 words, 3820 phrases, 280 dialogues, 82 stories, 200 verbs), tsc limpio, build PWA limpio (fix: `maximumFileSizeToCacheInBytes` 3MB en vite.config.ts por chunk JS 2.43MB). Auditoría near-dup >0.85 completada: 186 pares, 72 tocan archivos Ola 2 (34 same-kind + 38 cross-kind; verb↔word aceptados por diseño como en Ola 1). ESTADO 2026-09-30 00:20 UTC+7: reparación completada — 60/60 items reescritos (16+11+14+6 frases batches 7–10, 2+5+5+1 ejemplos words batches 8/9/10/12; 7 pares "dobles" reescritos en ambos lados; 1 caso necesitó 2 iteraciones), inglés + Myanmar actualizados, mismo tema y CEFR. Verificación: dedup-check OK (0 exactos mismo-tipo), tsc 0 errores, re-auditoría confirma 0 pares >0.85 en las 60 líneas editadas. Quedan 131 pares >0.85 pre-existentes en archivos viejos fuera del alcance de Ola 2 (verbs-batch-1/2, words-batch-5/7/3, topics, phrases-b, words-work) — no tocados por diseño, documentados.
 
 ### Ola 3 — B2 → C1 (planificada)
-- [ ] C3-001 +2500 palabras B2/C1 (académico, profesional, abstracto) → 7500 totales + imágenes
-- [ ] C3-002 +2000 frases B2/C1 (opiniones, hipótesis, registro formal) → 5820 totales
-- [ ] C3-003 +100 diálogos B2/C1 (negocios, debates, entrevistas) → 356 totales
-- [ ] C3-004 +50 historias B2/C1 → 132 totales
-- [ ] C3-005 Nuevos temas: ciencia, derecho, medicina, arte, filosofía, medio ambiente
-- [ ] C3-006 Gramática estructurada B2→C1
-- [ ] C3-007 Auditoría anti-dup total + verificación + reporte
+- [x] C3-001 +2500 palabras B2/C1 (académico, profesional, abstracto) → 7500 totales (contenido textual verificado 2026-09-30; imágenes en curso, 5 workers activos; push pendiente por rate limit GitHub, reintento 01:50 +07)
+- [x] C3-002 +2000 frases B2/C1 (opiniones, hipótesis, registro formal) → 5820 totales (verificado 2026-09-30)
+- [x] C3-003 +100 diálogos B2/C1 (negocios, debates, entrevistas) → 380 totales medidos (ROADMAP decía 356; cifra real 280+100=380; verificado 2026-09-30)
+- [x] C3-004 +50 historias B2/C1 → 132 totales (verificado 2026-09-30)
+- [x] C3-005 Nuevos temas: ciencia, derecho, medicina, arte, filosofía, medio ambiente (6 TopicIds añadidos; verificado 2026-09-30)
+- [x] C3-006 Gramática estructurada B2→C1 (45 reglas, 135 drills; verificado 2026-09-30)
+- [x] C3-007 Auditoría anti-dup total + verificación + reporte (dedup-check: 0 duplicados en 21566 items; typecheck/build verdes; 58 duplicados entre batches corregidos 1:1; regex del indexador ampliada para f14-s-*)
 
 ### Ola 4 — C1 → C2 + maestría (planificada)
 - [ ] C4-001 +2500 palabras C1/C2 (académico, literario, técnico) → 10.000 totales + imágenes

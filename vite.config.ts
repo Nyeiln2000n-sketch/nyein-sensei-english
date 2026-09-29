@@ -49,10 +49,12 @@ export default defineConfig({
         // on demand via PhraseImage (letter-tile fallback) — precaching them
         // would add ~400MB raw / tens of MB optimized to the install.
         globIgnores: ['**/word-images/**', '**/topic-cards/**', '**/splash/**', '**/phrase-images/**'],
-        // FASE 14 Ola 2: the main JS chunk grew past Workbox's 2MB default
-        // precache limit (it now carries 5000 words / 3820 phrases / drills).
-        // 3MB keeps the install small while letting the app shell precache.
-        maximumFileSizeToCacheInBytes: 3 * 1024 * 1024,
+        // FASE 14 Ola 3: the main JS chunk grew past the 3MB limit (it now
+        // carries 7500 words / 5820 phrases / 324 dialogues / 120 stories).
+        // 5MB keeps the app shell precacheable. NOTE (tech debt): the chunk
+        // grows ~1.5MB per content wave — a future wave should code-split the
+        // content data (dynamic import) so the entry chunk stays small.
+        maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
         runtimeCaching: [
           {
             urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i,

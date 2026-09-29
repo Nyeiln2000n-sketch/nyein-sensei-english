@@ -23,7 +23,7 @@ export const airportWords: Word[] = [
   { en: 'overhead', my: 'အပေါ်ဘက်သိုလှောင်ခန်း', topic: 'airport', level: 3, phonetic: 'o-vur-hed', example: 'Put your bag in the overhead bin.', exampleMy: 'သင့်ရဲ့ အိတ်ကို အပေါ်ဘက်သိုလှောင်ခန်းမှာ ထားပါ။' },
   { en: 'cabin', my: 'လေယာဉ်အတွင်းခန်း', topic: 'airport', level: 2, phonetic: 'ka-bin', example: 'The cabin is quiet and clean.', exampleMy: 'လေယာဉ်အတွင်းခန်းက တိတ်ဆိတ်ပြီး သန့်ရှင်းပါတယ်။' },
   { en: 'layover', my: 'အကြားရပ်နားခြင်း', topic: 'airport', level: 3, phonetic: 'lay-o-vur', example: 'We have a long layover in Bangkok.', exampleMy: 'ဘန်ကောက်မှာ ကျွန်တော်တို့မှာ ကြာမြင့်တဲ့ အကြားရပ်နားချိန် ရှိပါတယ်။' },
-  { en: 'transit', my: 'ဖြတ်သန်းပျံသန်းခြင်း', topic: 'airport', level: 3, phonetic: 'tran-sit', example: 'We wait in transit for two hours.', exampleMy: 'ကျွန်တော်တို့ ဖြတ်သန်းနေရာမှာ နှစ်နာရီ စောင့်ရပါတယ်။' },
+  { en: 'transit', my: 'ဖြတ်သန်းနေရာ', topic: 'airport', level: 3, phonetic: 'tran-sit', example: 'We wait in transit for two hours.', exampleMy: 'ကျွန်တော်တို့ ဖြတ်သန်းနေရာမှာ နှစ်နာရီ စောင့်ရပါတယ်။' },
   { en: 'shuttle', my: 'ရှပ်တယ်ဘတ်စ်ကား', topic: 'airport', level: 2, phonetic: 'sha-tul', example: 'The shuttle takes us to the hotel.', exampleMy: 'ရှပ်တယ်ဘတ်စ်ကားက ကျွန်တော်တို့ကို ဟိုတယ်ကို ပို့ပေးပါတယ်။' },
   { en: 'baggage', my: 'ခရီးဆောင်ပစ္စည်း', topic: 'airport', level: 2, phonetic: 'ba-gij', example: 'My baggage is very heavy.', exampleMy: 'ကျွန်မရဲ့ ခရီးဆောင်ပစ္စည်းက အရမ်းလေးပါတယ်။' },
   { en: 'backpack', my: 'ကျောပိုးအိတ်', topic: 'airport', level: 1, phonetic: 'bak-pak', example: 'I carry a small backpack.', exampleMy: 'ကျွန်မ အိတ်သေးသေးလေးတစ်လုံး လွယ်ထားပါတယ်။' },

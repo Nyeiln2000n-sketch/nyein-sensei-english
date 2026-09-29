@@ -19,7 +19,7 @@ export const animalsWords: Word[] = [
   { en: 'frog', my: 'ဖား', topic: 'animals', level: 2, phonetic: 'frog', example: 'The frog jumps into the water.', exampleMy: 'ဖားက ရေထဲကို ခုန်ဆင်းသွားပါတယ်။' },
   { en: 'bee', my: 'ပျား', topic: 'animals', level: 1, phonetic: 'bii', example: 'The bee makes sweet honey.', exampleMy: 'ပျားက ချိုတဲ့ ပျားရည်ကို လုပ်ပါတယ်။' },
   { en: 'ant', my: 'ပုရွက်ဆိတ်', topic: 'animals', level: 2, phonetic: 'ant', example: 'The ant carries a small leaf.', exampleMy: 'ပုရွက်ဆိတ်က အရွက်သေးသေးလေး သယ်နေပါတယ်။' },
-  { en: 'spider', my: 'ပင့်ကူ', topic: 'animals', level: 2, phonetic: 'spai-dur', example: 'The spider spins a thin web.', exampleMy: 'ပင့်ကူက ပါးလွှာတဲ့ အိမ်ယာကို ယက်ပါတယ်။' },
+  { en: 'spider', my: 'ပင့်ကူ', topic: 'animals', level: 2, phonetic: 'spai-dur', example: 'The spider spins a thin web.', exampleMy: 'ပင့်ကူက ပါးလွှာတဲ့ ပင့်ကူအိမ်ကို ယက်ပါတယ်။' },
   { en: 'cute', my: 'ချစ်စရာကောင်းသော', topic: 'animals', level: 1, phonetic: 'kyuut', example: 'The baby cat is so cute.', exampleMy: 'ကြောင်ကလေးက အရမ်း ချစ်စရာကောင်းပါတယ်။' },
   { en: 'wild', my: 'တောရိုင်းသော', topic: 'animals', level: 2, phonetic: 'wai-ld', example: 'Tigers are wild animals.', exampleMy: 'ကျားတွေက တောရိုင်းတိရစ္ဆာန်တွေ ဖြစ်ပါတယ်။' },
   { en: 'pet', my: 'အိမ်မွေးတိရစ္ဆာန်', topic: 'animals', level: 1, phonetic: 'pet', example: 'I have a pet rabbit.', exampleMy: 'ကျွန်မမှာ အိမ်မွေးယုန်တစ်ကောင် ရှိပါတယ်။' },
@@ -29,7 +29,7 @@ export const animalsWords: Word[] = [
   { en: 'bear', my: 'ဝက်ဝံ', topic: 'animals', level: 2, phonetic: 'bair', example: 'The bear sleeps in winter.', exampleMy: 'ဝက်ဝံက ဆောင်းရာသီမှာ အိပ်ပါတယ်။' },
   { en: 'panda', my: 'ပန်ဒါ', topic: 'animals', level: 2, phonetic: 'pan-da', example: 'The panda eats bamboo leaves.', exampleMy: 'ပန်ဒါက ဝါးရွက်တွေ စားပါတယ်။' },
   { en: 'crocodile', my: 'မိကျောင်း', topic: 'animals', level: 3, phonetic: 'kro-ku-dai-l', example: 'The crocodile waits quietly in the river.', exampleMy: 'မိကျောင်းက မြစ်ထဲမှာ တိတ်တိတ်လေး စောင့်နေပါတယ်။' },
-  { en: 'parrot', my: 'ကြက်တူရွေး', topic: 'animals', level: 2, phonetic: 'pa-rot', example: 'The parrot can copy my words.', exampleMy: 'ကြက်တူရွေးက ကျွန်မရဲ့ စကားတွေကို အတုခိုးပြောနိုင်ပါတယ်။' },
+  { en: 'parrot', my: 'ကြက်တူရွေး', topic: 'animals', level: 2, phonetic: 'pa-rot', example: 'The parrot can repeat my words.', exampleMy: 'ကြက်တူရွေးက ကျွန်မရဲ့ စကားတွေကို အတုခိုးပြောနိုင်ပါတယ်။' },
   { en: 'buffalo', my: 'ကျွဲ', topic: 'animals', level: 2, phonetic: 'bu-fa-lou', example: 'The buffalo works in the field.', exampleMy: 'ကျွဲက လယ်ကွင်းမှာ အလုပ်လုပ်ပါတယ်။' },
   { en: 'vet', my: 'တိရစ္ဆာန်ဆရာဝန်', topic: 'animals', level: 3, phonetic: 'vet', example: 'The vet checks my sick dog.', exampleMy: 'တိရစ္ဆာန်ဆရာဝန်က ကျွန်မရဲ့ နေမကောင်းတဲ့ ခွေးကို စစ်ဆေးပါတယ်။' },
 ];

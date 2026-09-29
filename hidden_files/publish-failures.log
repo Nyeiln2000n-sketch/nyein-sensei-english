@@ -36,3 +36,19 @@ PUSH FAILED: GitHub API HTTP 403 on POST /git/blobs — API rate limit exceeded 
 Root cause of F F F streak: gh-push-dir uploads every new blob in one run (~1200-1400 PNGs) -> GitHub API 502 / 422 tree-too-large / 403 rate limit.
 Fix: each run publishes at most CHUNK_MAX=200 new images (excess PNGs moved to hidden_files/png-quarantine during the push, restored on EXIT via trap + crash-recovery at start); publish-state.json advances to the chunk's high-water mark; word-images.json mapping merged then filtered to PNGs actually in the chunk (no dangling references). Logic tested in isolation (chunk 350->300, restore 350, mapping filter 4->2). Next runs drain the backlog ~200 per 30 min.
 2026-09-29 17:05:53 UTC | PUSH FAILED | GitHub API HTTP 403 on POST /git/blobs: rate limit exceeded for user ID 334643275 (request BD5C:A8B57:E6955:104048:6ABBEFEA, 2026-09-29 17:05:47 UTC). images=2879 last_published=1466 delta=1413 mapped=1633. Typecheck/build/dedup-check all passed; only the push failed.
+[2026-09-30T00:36+07] publish-word-images-batch: PUSH FAILED — GitHub API HTTP 403 rate limit exceeded (POST /git/blobs, user ID 334643275, request 71F1:212C97:10926A0:36D2B71:6ABBF740, GitHub timestamp 2026-09-29 17:37:05 UTC). Batch state: images=2879, last_published=1466, delta=1413, chunked +200 new images (1666 published mappings, 1633 mapped, 1213 deferred to next run). Build OK (15.57s), dedup-check OK (14,410 items, no same-kind duplicates). Nothing pushed; Vercel deploy NOT triggered. Terminal GitHub API rate-limit stop — do not retry via API until reset.
+
+[2026-09-30 00:38 +07] REPAIR #2 by main agent: added 60-min GitHub API cooldown to publish-every-100.sh.
+New finding: /rate_limit shows core quota FULL (5000/5000) — the 403s are SECONDARY (abuse-detection) limits, re-triggered by every 30-min retry pushing 200 blobs with 8 parallel threads. Fix: on HTTP 403/429 the script writes hidden_files/publish-cooldown-until (+60 min); runs inside the cooldown window exit 0 with SKIP (no hammering, no F-streak growth). Cooldown set immediately at repair time; next quiet retry after ~01:38 +07. Verified the SKIP path prints and exits 0.
+[2026-09-30 01:14 +07] Ola 3 content push FAILED: GitHub API HTTP 403 rate limit on POST /git/blobs (user ID 334643275). Gates were green (typecheck/build/dedup 0/21566). Single deferred retry scheduled via runonce cron; no loop.
+---
+[2026-09-30 01:42:27 +07 / 2026-09-29 18:42:27 UTC] publish-every-100.sh FAILED at build step
+- First run: SKIP (GitHub API secondary rate-limit cooldown until 2026-09-29 18:38 UTC). Retried after cooldown cleared.
+- Retry run: images=3803, last_published=1466, delta=2337, chunk_max=200
+  chunked: publishing 1666 images (+200 new), 2137 deferred to next run; mapped: 1587
+- `npm run build` failed with ENOENT in Vite copyDir:
+  no such file or directory, stat 'public/word-images/media-generation-anarchism-0-44f70576-05dc-4150-84f5-a66235b24967.png'
+- Root cause (observed): race with the concurrent image generator. The file 'anarchism.png' exists under public/word-images/ (directory mtime 18:41 UTC, count grew 3803 -> 3843 during the run), but the UUID-suffixed filename the build tried to stat does not. Something renamed/deleted the file between the script's count/merge and Vite's publicDir copy.
+- publish-state.json NOT updated on failure (still {"published_images": 1466}); no push was made, so no partial publish went live. Next scheduled run will retry the same batch.
+- Suggested for main agent: make the publish script snapshot/copy the image set to a temp dir before typecheck+build, or pause the image generator during the build, or have Vite build ignore missing files.
+[2026-09-29 18:45:27 +0000] repaired publish-every-100.sh: build now retries once after 30s settle when failing with ENOENT (image-worker temp-file rename race); verified with bash -n.
