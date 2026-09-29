@@ -104,13 +104,13 @@
 - [x] MT-007 Tests de aislamiento entre tenants (2 orgs × 2 usuarios) — unit tests verdes (npm run test:tenant 32/32); matriz live 2×2 documentada y pendiente de aplicar en Supabase (supabase/MT-007-tenant-isolation.md + .sql)
 - [x] MT-008 Plan personal vs organización en el onboarding — PlanChoiceScreen tras signup (personal → home, organización → orgs)
 
-## FASE 9 — PWA y móvil 🟡
-- [ ] P-001 Manifest + iconos (incl. maskable) verificados
-- [ ] P-002 Service worker: offline real de la app
-- [ ] P-003 Pantalla de instalación "Añadir a inicio" (iOS)
-- [ ] P-004 Safe-area en todos los bordes (notch/Dynamic Island)
-- [ ] P-005 60fps en iPhone: auditar animaciones pesadas
-- [ ] P-006 Pantalla splash nativa del PWA
+## FASE 9 — PWA y móvil ✅ (código completo 2026-09-29 ~09:30 +07; prueba en iPhone pendiente)
+- [x] P-001 Manifest + iconos (incl. maskable) verificados — icon-192/512 y maskable-512 con tamaños correctos, apple-touch-icon 180px, short_name/theme_color OK; eliminado manifest.json duplicado obsoleto (se usa el generado por el plugin)
+- [x] P-002 Service worker: offline real de la app — verificado en dist/sw.js: NavigationRoute → index.html, precache del shell, runtime CacheFirst para word-images/topic-cards/fonts; word-images (~49MB) excluidas del precache por diseño (caché bajo demanda)
+- [x] P-003 Pantalla de instalación "Añadir a inicio" (iOS) — nuevo InstallPrompt.tsx: solo iOS Safari (iOS no tiene beforeinstallprompt), Myanmar-first, pasos Compartir → Add to Home Screen, descartable con localStorage, aparece 45s después del onboarding
+- [x] P-004 Safe-area en todos los bordes (notch/Dynamic Island) — verificado: env(safe-area-inset-*) en tabbar, headers, banners y viewport-fit=cover
+- [x] P-005 60fps en iPhone: auditar animaciones pesadas — auditoría hecha: todas las animaciones son transform/opacity (GPU), sin blur ni sombras animadas; único backdrop-filter es la tab bar permitido por contrato. Sin cambios necesarios
+- [x] P-006 Pantalla splash nativa del PWA — 8 apple-touch-startup-image generados (7 iPhones + iPad portrait, mascota sobre fondo crema), enlazados en index.html con media queries; excluidos del precache del SW
 
 ## FASE 10 — Calidad, testing y rendimiento 🟡
 - [ ] Q-001 Suite E2E (signup → lección → medalla → sync)

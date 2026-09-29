@@ -7,6 +7,7 @@ import QuizScreen from './components/QuizScreen';
 import VocabScreen from './components/VocabScreen';
 import PracticeScreen from './components/PracticeScreen';
 import SpeechFallbackNotice from './components/SpeechFallbackNotice';
+import InstallPrompt from './components/InstallPrompt';
 import AchievementsScreen from './components/AchievementsScreen';
 import ProfileScreen from './components/ProfileScreen';
 import LessonCompleteScreen from './components/LessonCompleteScreen';
@@ -405,6 +406,8 @@ export default function App() {
 
       {/* A-005: one global, Myanmar-first banner when speech fails. */}
       <SpeechFallbackNotice />
+      {/* P-003: iOS "add to home screen" teaching card (iOS only). */}
+      <InstallPrompt />
     </div>
   );
 }

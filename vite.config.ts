@@ -45,7 +45,7 @@ export default defineConfig({
         // lazily on demand via WordImage (with a letter-tile fallback).
         // Precaching them would bloat the install and break iOS PWA limits.
         // Same for the 28 premium topic cards (~6MB): on-demand only.
-        globIgnores: ['**/word-images/**', '**/topic-cards/**'],
+        globIgnores: ['**/word-images/**', '**/topic-cards/**', '**/splash/**'],
         runtimeCaching: [
           {
             urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i,
