@@ -44,3 +44,44 @@ jobs:
       # Conditional: passes silently when no `test` script exists in package.json
       - name: Unit tests (if present)
         run: npm run --if-present test
+
+  visual-regression:
+    name: visual regression (public screens)
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Setup Chrome
+        id: chrome
+        uses: browser-actions/setup-chrome@v1
+
+      # Captures the 3 public screens (splash, auth-signin, license-step) and
+      # diffs them against the committed baselines with pixelmatch.
+      # Post-login screens are excluded: login is mandatory and the signup
+      # license key is held only by the app owner, so CI cannot reach them.
+      - name: Visual regression
+        run: npm run visual-regression
+        env:
+          CHROME_PATH: ${{ steps.chrome.outputs.chrome-path }}
+
+      - name: Upload diff images on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: visual-regression-diffs
+          path: tools/visual-regression/current/diff-*.png
+          if-no-files-found: ignore

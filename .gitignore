@@ -34,3 +34,5 @@ pnpm-debug.log*
 
 # vercel
 .vercel/
+# visual-regression transient captures
+tools/visual-regression/current/

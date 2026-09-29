@@ -13,6 +13,9 @@
     "@types/react-dom": "^18.3.1",
     "@types/three": "^0.186.0",
     "@vitejs/plugin-react": "^4.3.4",
+    "pixelmatch": "^7.2.0",
+    "playwright-core": "^1.63.0",
+    "pngjs": "^7.0.0",
     "typescript": "^5.6.3",
     "vite": "^6.0.3",
     "vite-plugin-pwa": "^0.21.1",
@@ -27,7 +30,11 @@
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
     "test:tenant": "node tools/tenant-test/run.mjs",
-    "dedup-check": "python3 tools/vectorize/check.py"
+    "dedup-check": "python3 tools/vectorize/check.py",
+    "visual:baseline": "node tools/visual-regression/capture.mjs --baseline",
+    "visual:capture": "node tools/visual-regression/capture.mjs",
+    "visual:compare": "node tools/visual-regression/compare.mjs",
+    "visual-regression": "npm run visual:capture && npm run visual:compare"
   },
   "type": "module",
   "version": "1.0.0"
