@@ -588919,16 +588919,16 @@
    "line": 12
   },
   {
-   "id": "word:computer:plug",
+   "id": "word:computer:plug-in",
    "kind": "word",
-   "en": "plug",
-   "en_norm": "plug",
-   "my_norm": "ပလပ်ခုံ",
-   "fingerprint": "0daf0c9ca37fec6e",
+   "en": "plug in",
+   "en_norm": "plug in",
+   "my_norm": "ပလပ်ထိုးသည်",
+   "fingerprint": "175f1fa991bc6900",
    "vocab_sig": [
     "plug"
    ],
-   "template_sig": "W",
+   "template_sig": "W in",
    "tags": [
     "computer",
     "word"
@@ -588937,7 +588937,7 @@
    "line": 13
   },
   {
-   "id": "example:computer:plug",
+   "id": "example:computer:plug-in",
    "kind": "example",
    "en": "Plug the charger into the wall.",
    "en_norm": "plug the charger into the wall",
@@ -589493,16 +589493,16 @@
    "line": 27
   },
   {
-   "id": "word:computer:login",
+   "id": "word:computer:log-in",
    "kind": "word",
-   "en": "login",
-   "en_norm": "login",
-   "my_norm": "ဝင်ရောက်ခြင်း",
-   "fingerprint": "428821350e969149",
+   "en": "log in",
+   "en_norm": "log in",
+   "my_norm": "ဝင်ရောက်သည်",
+   "fingerprint": "7f0348c1e2dd94ac",
    "vocab_sig": [
-    "login"
+    "log"
    ],
-   "template_sig": "W",
+   "template_sig": "W in",
    "tags": [
     "computer",
     "word"
@@ -589511,18 +589511,18 @@
    "line": 28
   },
   {
-   "id": "example:computer:login",
+   "id": "example:computer:log-in",
    "kind": "example",
-   "en": "I cannot login to my account.",
-   "en_norm": "i cannot login to my account",
+   "en": "I cannot log in to my account.",
+   "en_norm": "i cannot log in to my account",
    "my_norm": "",
-   "fingerprint": "2170f0a5f3ca7152",
+   "fingerprint": "daa6747ec7150b32",
    "vocab_sig": [
     "account",
     "cannot",
-    "login"
+    "log"
    ],
-   "template_sig": "i W W to my W .",
+   "template_sig": "i W W in to my W .",
    "tags": [
     "computer",
     "example"
@@ -589531,16 +589531,16 @@
    "line": 28
   },
   {
-   "id": "word:computer:logout",
+   "id": "word:computer:log-out",
    "kind": "word",
-   "en": "logout",
-   "en_norm": "logout",
-   "my_norm": "ထွက်ခြင်း",
-   "fingerprint": "00270cf63f93c307",
+   "en": "log out",
+   "en_norm": "log out",
+   "my_norm": "ထွက်သည်",
+   "fingerprint": "6a832af49de9b6b9",
    "vocab_sig": [
-    "logout"
+    "log"
    ],
-   "template_sig": "W",
+   "template_sig": "W out",
    "tags": [
     "computer",
     "word"
@@ -589549,18 +589549,18 @@
    "line": 29
   },
   {
-   "id": "example:computer:logout",
+   "id": "example:computer:log-out",
    "kind": "example",
-   "en": "Remember to logout after use.",
-   "en_norm": "remember to logout after use",
+   "en": "Remember to log out after use.",
+   "en_norm": "remember to log out after use",
    "my_norm": "",
-   "fingerprint": "5d809f13e2e96996",
+   "fingerprint": "99e7542084e9f843",
    "vocab_sig": [
-    "logout",
+    "log",
     "remember",
     "use"
    ],
-   "template_sig": "W to W after W .",
+   "template_sig": "W to W out after W .",
    "tags": [
     "computer",
     "example"
@@ -589800,16 +589800,16 @@
    "line": 35
   },
   {
-   "id": "word:computer:backup",
+   "id": "word:computer:back-up",
    "kind": "word",
-   "en": "backup",
-   "en_norm": "backup",
+   "en": "back up",
+   "en_norm": "back up",
    "my_norm": "အရန်သိမ်းသည်",
-   "fingerprint": "54d00d867758cef8",
+   "fingerprint": "1cd0a91b4f077ba4",
    "vocab_sig": [
-    "backup"
+    "back"
    ],
-   "template_sig": "W",
+   "template_sig": "W up",
    "tags": [
     "computer",
     "word"
@@ -589818,20 +589818,19 @@
    "line": 36
   },
   {
-   "id": "example:computer:backup",
+   "id": "example:computer:back-up",
    "kind": "example",
-   "en": "I backup my photos every week safely.",
-   "en_norm": "i backup my photos every week safely",
+   "en": "I back up my photos every week.",
+   "en_norm": "i back up my photos every week",
    "my_norm": "",
-   "fingerprint": "3563937a9f7737d3",
+   "fingerprint": "c5bdc4b99f68c2b9",
    "vocab_sig": [
-    "backup",
+    "back",
     "every",
     "photos",
-    "safely",
     "week"
    ],
-   "template_sig": "i W my W W W W .",
+   "template_sig": "i W up my W W W .",
    "tags": [
     "computer",
     "example"
@@ -590379,7 +590378,7 @@
    "kind": "word",
    "en": "signal",
    "en_norm": "signal",
-   "my_norm": "ဆစ်ဂနယ်အမှတ်",
+   "my_norm": "ဆစ်ဂနယ်",
    "fingerprint": "d041924c15885af6",
    "vocab_sig": [
     "signal"

@@ -210,8 +210,6 @@
  "loan": "word-images/loan.png",
  "lobby": "word-images/lobby.png",
  "local": "word-images/local.png",
- "login": "word-images/login.png",
- "logout": "word-images/logout.png",
  "lonely": "word-images/lonely.png",
  "long": "word-images/long.png",
  "lose": "word-images/lose.png",
@@ -225,5 +223,7 @@
  "map": "word-images/map.png",
  "market": "word-images/market.png",
  "match": "word-images/match.png",
- "math": "word-images/math.png"
+ "math": "word-images/math.png",
+ "log in": "word-images/login.png",
+ "log out": "word-images/logout.png"
 }
