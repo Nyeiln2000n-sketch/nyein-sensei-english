@@ -1,20 +1,26 @@
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { Suspense, lazy, useCallback, useEffect, useRef, useState } from 'react';
 import type { RouteName, NavParams, GoFn } from './routes';
+// FASE 10 Q-006: screens are code-split (React.lazy) — first paint ships only
+// the shell + splash. three.js stays lazy inside Mascot3D (own ~900kB chunk).
 import SplashScreen from './components/SplashScreen';
-import DashboardScreen from './components/DashboardScreen';
-import LessonsScreen from './components/LessonsScreen';
-import QuizScreen from './components/QuizScreen';
-import VocabScreen from './components/VocabScreen';
-import PracticeScreen from './components/PracticeScreen';
+import BrandLoader from './components/BrandLoader';
+import { ErrorBoundary } from './components/ErrorBoundary';
+const DashboardScreen = lazy(() => import('./components/DashboardScreen'));
+const LessonsScreen = lazy(() => import('./components/LessonsScreen'));
+const QuizScreen = lazy(() => import('./components/QuizScreen'));
+const VocabScreen = lazy(() => import('./components/VocabScreen'));
+const PracticeScreen = lazy(() => import('./components/PracticeScreen'));
+const AchievementsScreen = lazy(() => import('./components/AchievementsScreen'));
+const ProfileScreen = lazy(() => import('./components/ProfileScreen'));
+const LessonCompleteScreen = lazy(
+  () => import('./components/LessonCompleteScreen'),
+);
+const AuthScreen = lazy(() => import('./components/AuthScreen'));
+const OrgScreen = lazy(() => import('./components/OrgScreen'));
+const InviteAcceptScreen = lazy(() => import('./components/InviteAcceptScreen'));
+const PlanChoiceScreen = lazy(() => import('./components/PlanChoiceScreen'));
 import SpeechFallbackNotice from './components/SpeechFallbackNotice';
 import InstallPrompt from './components/InstallPrompt';
-import AchievementsScreen from './components/AchievementsScreen';
-import ProfileScreen from './components/ProfileScreen';
-import LessonCompleteScreen from './components/LessonCompleteScreen';
-import AuthScreen from './components/AuthScreen';
-import OrgScreen from './components/OrgScreen';
-import InviteAcceptScreen from './components/InviteAcceptScreen';
-import PlanChoiceScreen from './components/PlanChoiceScreen';
 import { TabBar, type TabId } from './components/ui';
 import { ensureFreshAccessToken, getSession, onAuthChange, verifySignupLicense } from './lib/auth';
 import { endCloudSession, initCloudSession } from './lib/cloudSync';
@@ -378,23 +384,32 @@ export default function App() {
   return (
     <div className="app" key={tick} data-email={email ?? ''}>
       <main className="main">
-        {route.name === 'splash' && <SplashScreen {...screenProps} onDone={dismissSplash} />}
-        {route.name === 'auth' && <AuthScreen {...screenProps} onVerifyKey={verifySignupLicense} />}
-        {route.name === 'home' && <DashboardScreen {...screenProps} />}
-        {route.name === 'lessons' && <LessonsScreen {...screenProps} />}
-        {route.name === 'quiz' && <QuizScreen {...screenProps} />}
-        {route.name === 'vocab' && <VocabScreen {...screenProps} />}
-        {route.name === 'practice' && <PracticeScreen {...screenProps} />}
-        {route.name === 'achievements' && <AchievementsScreen {...screenProps} />}
-        {route.name === 'profile' && <ProfileScreen {...screenProps} />}
-        {route.name === 'lessonComplete' && <LessonCompleteScreen {...screenProps} />}
-        {route.name === 'orgs' && <OrgScreen {...screenProps} />}
-        {route.name === 'invite' && <InviteAcceptScreen {...screenProps} />}
-        {route.name === 'planChoice' && (
-          <PlanChoiceScreen
-            onDone={(choice) => go(choice === 'personal' ? 'home' : 'orgs')}
-          />
-        )}
+        {/*
+          FASE 10 Q-007: every screen root sits behind an ErrorBoundary,
+          keyed per route so a crashed screen mounts a fresh boundary —
+          no white screens. Fallback copy is Myanmar-first (ErrorBoundary).
+        */}
+        <ErrorBoundary key={route.name}>
+          <Suspense fallback={<BrandLoader />}>
+            {route.name === 'splash' && <SplashScreen {...screenProps} onDone={dismissSplash} />}
+            {route.name === 'auth' && <AuthScreen {...screenProps} onVerifyKey={verifySignupLicense} />}
+            {route.name === 'home' && <DashboardScreen {...screenProps} />}
+            {route.name === 'lessons' && <LessonsScreen {...screenProps} />}
+            {route.name === 'quiz' && <QuizScreen {...screenProps} />}
+            {route.name === 'vocab' && <VocabScreen {...screenProps} />}
+            {route.name === 'practice' && <PracticeScreen {...screenProps} />}
+            {route.name === 'achievements' && <AchievementsScreen {...screenProps} />}
+            {route.name === 'profile' && <ProfileScreen {...screenProps} />}
+            {route.name === 'lessonComplete' && <LessonCompleteScreen {...screenProps} />}
+            {route.name === 'orgs' && <OrgScreen {...screenProps} />}
+            {route.name === 'invite' && <InviteAcceptScreen {...screenProps} />}
+            {route.name === 'planChoice' && (
+              <PlanChoiceScreen
+                onDone={(choice) => go(choice === 'personal' ? 'home' : 'orgs')}
+              />
+            )}
+          </Suspense>
+        </ErrorBoundary>
       </main>
 
       {showTabs(route.name) && (

@@ -114,12 +114,16 @@
 
 ## FASE 10 — Calidad, testing y rendimiento 🟡
 - [ ] Q-001 Suite E2E (signup → lección → medalla → sync)
-- [ ] Q-002 Tests de RLS/tenant isolation automatizados
+  - NOTA (2026-09-29): NO completado como E2E. Bloqueado: signup requiere la license key manual (solo la tiene Nyein) y las pantallas tras login solo son verificables en su iPhone. Lo que SÍ existe: suite unitaria vitest `npm test` — 36 tests verdes en src/lib/review.test.ts (SM-2: ladder, fail-reset, ease bounds, dueWords ordenados, streak, eviction), src/lib/tenant.test.ts (roles/permisos, slugify, invite tokens, scope params) y src/lib/wordOfDay.test.ts (determinismo/rotación). CI ya corre `npm test` (ci.yml usa `npm run --if-present test`). El E2E real sigue pendiente de la key + Nyein.
+- [x] Q-002 Tests de RLS/tenant isolation automatizados
 - [ ] Q-003 Regresión visual: capturas por pantalla en cada push
-- [ ] Q-004 `npm run dedup-check` en CI (Fase 3)
+- [x] Q-004 `npm run dedup-check` en CI (Fase 3)
 - [ ] Q-005 Lighthouse móvil ≥ 90
-- [ ] Q-006 Bundle: code-splitting por pantalla (three.js lazy)
-- [ ] Q-007 Manejo de errores con pantallas amables (sin pantallas blancas)
+  - NOTA (2026-09-29): NO alcanzado. Best-effort honesto con 4 corridas completas: Accessibility 91, Best Practices 100, SEO 100. Performance: 47 (medido con el chunk 3D bloqueado; sin bloqueo, la corrida no completa). Hallazgos: (1) w4.css cargado vía lazy chunk suprimía FCP — corregido moviendo su import a main.tsx (eager); (2) el canvas WebGL del mascote 3D suprime LCP — fix propuesto (no aplicado): diferir la carga 3D con requestIdleCallback + PNG estático primero. TBT ~5s en CPU throttled: el ≥90 real requeriría cirugía mayor (diferir three.js, más splitting). No declarar ≥90.
+- [x] Q-006 Bundle: code-splitting por pantalla (three.js lazy)
+  - NOTA (2026-09-29): verificado con build. Entry 200.78 kB (gzip 63.86), shared 347.77 kB (gzip 73.07), pantallas lazy 4.66–38.28 kB c/u, three.js en chunk separado 897.33 kB (gzip 241.29) vía React.lazy en Mascot3D. Splash eager para first paint. typecheck + build limpios.
+- [x] Q-007 Manejo de errores con pantallas amables (sin pantallas blancas)
+  - NOTA (2026-09-29): cada pantalla/ruta envuelta en ErrorBoundary con key por ruta en App.tsx (tabs, Auth, Splash, Quiz/Vocab, LessonComplete, Org/Invite/Plan) + ErrorBoundary top-level en main.tsx. Fallback existente Myanmar-first, sin pantallas blancas. typecheck + build limpios.
 
 ## FASE 11 — Crecimiento y vida 🟡
 - [ ] G-001 Racha diaria con celebración (🔥)

@@ -7,7 +7,7 @@
     "react-dom": "^18.3.1",
     "three": "^0.186.1"
   },
-  "description": "Nyein Sensei English \u2014 Duolingo-style English learning app for Myanmar speakers (Burmese UI). PWA, offline-first, Supabase-ready.",
+  "description": "Nyein Sensei English — Duolingo-style English learning app for Myanmar speakers (Burmese UI). PWA, offline-first, Supabase-ready.",
   "devDependencies": {
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
@@ -15,7 +15,8 @@
     "@vitejs/plugin-react": "^4.3.4",
     "typescript": "^5.6.3",
     "vite": "^6.0.3",
-    "vite-plugin-pwa": "^0.21.1"
+    "vite-plugin-pwa": "^0.21.1",
+    "vitest": "^5.0.2"
   },
   "name": "nyein-sensei-english",
   "private": true,
@@ -23,6 +24,7 @@
     "build": "tsc --noEmit && vite build",
     "dev": "vite",
     "preview": "vite preview",
+    "test": "vitest run",
     "typecheck": "tsc --noEmit",
     "test:tenant": "node tools/tenant-test/run.mjs",
     "dedup-check": "python3 tools/vectorize/check.py"
