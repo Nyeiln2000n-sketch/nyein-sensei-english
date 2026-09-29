@@ -5,7 +5,7 @@ export const phrasesC: Phrase[] = [
   // restaurant — စားသောက်ဆိုင်
   { en: 'A table for two, please.', my: 'လူနှစ်ယောက်အတွက် စားပွဲတစ်လုံး ရနိုင်မလား။', topic: 'restaurant' },
   { en: 'Could we see the menu?', my: 'မီနူးကို ကြည့်လို့ရမလား။', topic: 'restaurant' },
-  { en: 'What do you recommend today?', my: 'ဒီနေ့ ဘာကို အကြံပြုလဲ။', topic: 'restaurant' },
+  { en: "What is the chef's special tonight?", my: 'ဒီည စားဖိုမှူးရဲ့ ထူးခြားချက်က ဘာလဲ။', topic: 'restaurant' },
   { en: "I'll have the chicken soup.", my: 'ကျွန်တော် ကြက်သားဟင်းချို ယူမယ်။', topic: 'restaurant' },
   { en: 'Is this dish spicy?', my: 'ဒီဟင်းက စပ်လား။', topic: 'restaurant' },
   { en: 'No onions, please.', my: 'ကြက်သွန်မထည့်ပါနဲ့။', topic: 'restaurant' },

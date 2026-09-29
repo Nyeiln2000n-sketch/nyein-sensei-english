@@ -180,5 +180,54 @@
 - [x] W-004 Optimizar PWA: 1000 imágenes precacheadas = ~49MB — evaluar excluir word-images del precache SW (lazy network)
   - VERIFICADO (2026-09-29, auditoría directa de dist/sw.js + vite.config.ts — sin cambios de código necesarios): `globIgnores: ['**/word-images/**', '**/topic-cards/**', '**/splash/**']` excluye los 39MB de word-images (1000 imgs) y las 28 topic cards del precache — el manifest del SW contiene solo 26 entradas (app shell, iconos, 6 PNG de la mascota, manifest.webmanifest). Carga bajo demanda vía `runtimeCaching` CacheFirst: `word-images` (300 entradas, 30 días), `topic-cards` (60 entradas, 30 días), `google-fonts-cache` (1 año). NavigationRoute → index.html intacto. dist/word-images (39MB) existe en el CDN pero jamás entra en el precache del SW.
 
+## FASE 14 — Currículo multi-año A1 → C2 🟡 OLA 1 EN CURSO
+**Visión (pedido explícito de Nyein 2026-09-29, reforzado):** la mayor librería de inglés existente en el mundo — un programa tan grande que tome ~1 AÑO completar y pueda llevar a C2. Más palabras, frases, diálogos, historias, verbos, gramática, ejercicios y actividades, todo de alto nivel profesional y ameno. **Calidad = unicidad:** cero duplicados exactos Y cero near-dups semánticos en todo el corpus (existente + nuevo). **Todo visual:** cada palabra nueva con imagen propia (pipeline tools/word-images/, flat vector crema #FFF8F1); el contenido aprovecha animaciones/mascota existentes.
+
+**Criterios de calidad profesional (todas las olas):** inglés natural de hablante nativo, Myanmar correcto y natural, cero repetición (tools/vectorize: dedup-check + auditoría near-dup semántica >0.85 → reescribir/eliminar), cada palabra con fonética + ejemplo + traducción Myanmar + imagen propia, contenido nuevo fluye automáticamente a quiz/vocabulario/práctica con el mismo schema. Al completar cada ola: typecheck + build + dedup-check verde + auditoría near-dup → ROADMAP actualizado → reporte al parent para publicar.
+
+**Totales objetivo FASE 14:** ~10.000 palabras · ~8.000 frases · 500 diálogos · 200 historias · 200 verbos irregulares · 12 tiempos verbales · gramática A1→C2.
+
+### Ola 1 — Datos + arquitectura CEFR + auditoría total 🟡 EN CURSO
+- [x] C2-001 Schema CEFR: campo `cefr` opcional en Word/Phrase (A1–C2), `Story.level` ampliado a CEFR completo, helpers `cefrOfWord`/`cefrOfPhrase`/`wordsByCEFR`/`phrasesByCEFR` — 100% backward compatible, los modos de juego actuales no cambian (hecho 2026-09-29)
+- [x] C2-002 +2000 palabras (A1→B1, fonética + ejemplo + Myanmar) → 3000 palabras totales (19 batches escritos y conectados en `src/data/index.ts`; dedup-fix en curso)
+- [x] C2-003 +1500 frases (A2→B2, con Myanmar) → 2320 frases totales (6 batches escritos y conectados; dedup-fix en curso)
+- [x] C2-004 +124 diálogos graduados (A1→B1) → 180 diálogos totales (nota: batch 2 trajo 74 en vez de 50 por cuotas por tema; supera la meta de +100)
+- [x] C2-005 +30 historias graduadas (A2/B1/B2) → 42 historias totales
+- [x] C2-006 Sistema de verbos: 200 irregulares con conjugación completa (base/past/participle/present3s/gerund + ejemplos presente/pasado/futuro) + tabla de 12 tiempos verbales como datos estructurados — auditados: 200/200 bases únicas, todos genuinamente irregulares, formas verificadas (arise/arose/arisen, lie/lay/lain vs lay/laid/laid, dive/dove-dived…)
+- [ ] C2-007 Imágenes: 2000 PNG palabras + 1500 PNG frases nuevas (una por palabra Y por frase nueva, pipeline tools/word-images/ extendido, flat vector crema #FFF8F1, ≤60KB) → word-images.json + phrase-images.json actualizados
+- [ ] C2-008 AUDITORÍA ANTI-DUP TOTAL: corpus existente (~2916 items) + nuevo, en todas las dimensiones (palabras, frases, diálogos, historias, ejercicios, refs de audio, imágenes) — 0 duplicados exactos y 0 near-dups semánticos; reescribir/eliminar y documentar cuántos. ESTADO 2026-09-29: tools/vectorize extendido (walk recursivo src/data/**/f14 + kind verb; 8770 items indexados). dedup-check encontró 560 grupos exactos mismo-tipo (493 word, 58 example, 9 phrase; 0 en diálogos/historias/verbos) — 5 workers corrigiendo 624 reemplazos con claim atómico. Pendiente: gate final + reporte near-dup (>0.85) + correcciones.
+- [ ] C2-009 Verificación: `dedup-check` verde, `typecheck` + `build` limpios, reporte al parent para publicar
+
+### Ola 2 — Formatos nuevos + B1→B2 (planificada)
+- [ ] E2-001 Drill de conjugación de verbos (elige la forma correcta: past/participle/3s/gerund)
+- [ ] E2-002 Construir frases (ordenar palabras / sentence builder por nivel CEFR)
+- [ ] E2-003 Dictado (escucha y escribe, por niveles)
+- [ ] E2-004 Quiz de tiempos verbales con tabla interactiva de los 12 tiempos
+- [ ] E2-005 Pantalla dedicada para navegar diálogos e historias
+- [ ] E2-006 +2000 palabras (B1→B2) → 5000 totales + 2000 imágenes
+- [ ] E2-007 +1500 frases (B1→B2) → 3820 totales
+- [ ] E2-008 +100 diálogos (B1/B2) → 256 totales
+- [ ] E2-009 +40 historias (B1/B2) → 82 totales
+- [ ] E2-010 Gramática estructurada A1→B1 (datos: reglas + ejemplos + drills)
+- [ ] E2-011 Auditoría anti-dup total + verificación + reporte
+
+### Ola 3 — B2 → C1 (planificada)
+- [ ] C3-001 +2500 palabras B2/C1 (académico, profesional, abstracto) → 7500 totales + imágenes
+- [ ] C3-002 +2000 frases B2/C1 (opiniones, hipótesis, registro formal) → 5820 totales
+- [ ] C3-003 +100 diálogos B2/C1 (negocios, debates, entrevistas) → 356 totales
+- [ ] C3-004 +50 historias B2/C1 → 132 totales
+- [ ] C3-005 Nuevos temas: ciencia, derecho, medicina, arte, filosofía, medio ambiente
+- [ ] C3-006 Gramática estructurada B2→C1
+- [ ] C3-007 Auditoría anti-dup total + verificación + reporte
+
+### Ola 4 — C1 → C2 + maestría (planificada)
+- [ ] C4-001 +2500 palabras C1/C2 (académico, literario, técnico) → 10.000 totales + imágenes
+- [ ] C4-002 +2180 frases C1/C2 (idioms, phrasal verbs avanzados, matices de registro) → 8000 totales
+- [ ] C4-003 +144 diálogos C1/C2 (presentaciones, negociaciones, discursos) → 500 totales
+- [ ] C4-004 +68 historias C1/C2 → 200 totales
+- [ ] C4-005 Gramática estructurada C1→C2
+- [ ] C4-006 Certificación interna por banda CEFR (examen final por nivel)
+- [ ] C4-007 Auditoría anti-dup total + verificación + reporte final FASE 14
+
 ---
-**Total: 153 tareas.** Cada una = un enjambre que construye + verifica. El proyecto crece por oleadas, sin parar, sin repetir.
+**Total: 187 tareas.** Cada una = un enjambre que construye + verifica. El proyecto crece por oleadas, sin parar, sin repetir.

@@ -1,6 +1,12 @@
 export type Difficulty = 1 | 2 | 3;
 export type Level = Difficulty;
 
+/** CEFR proficiency levels — FASE 14 curriculum ladder A0/A1 → C2. */
+export type CEFR = 'A1' | 'A2' | 'B1' | 'B2' | 'C1' | 'C2';
+
+/** Maps legacy numeric difficulty to CEFR (level 1 → A1, 2 → A2, 3 → B1). */
+export const difficultyToCEFR: Record<Difficulty, CEFR> = { 1: 'A1', 2: 'A2', 3: 'B1' };
+
 export type TopicId =
   | 'family'
   | 'friends'
@@ -36,6 +42,8 @@ export interface Word {
   my: string;
   topic: TopicId;
   level: Difficulty;
+  /** CEFR band for this word — FASE 14. Optional: when absent, falls back to `level` via `difficultyToCEFR`. Games keep working unchanged. */
+  cefr?: CEFR;
   /** Learner-friendly phonetic hint (e.g. "rais" for rice). */
   phonetic?: string;
   /** Real example sentence using the word in context. */
@@ -70,7 +78,7 @@ export interface StoryParagraph {
 
 export interface Story {
   id: string;
-  level: 'A1' | 'A2' | 'B1';
+  level: CEFR;
   titleEn: string;
   titleMy: string;
   paragraphs: StoryParagraph[];
@@ -82,6 +90,47 @@ export interface Phrase {
   topic: TopicId;
   /** Learner-friendly phonetic hint for tricky pronunciation (e.g. "SNOOZ"). */
   phonetic?: string;
+  /** CEFR band — FASE 14. Optional; defaults to 'A1' via `cefrOfPhrase`. */
+  cefr?: CEFR;
+}
+
+/** A bilingual verb example sentence (for conjugation drills — FASE 14 Ola 2). */
+export interface VerbExample {
+  en: string;
+  my: string;
+}
+
+/** Irregular (and key regular) English verb with full conjugation data — FASE 14.
+ *  Structured data ready for future drills (conjugation, sentence building, dictation). */
+export interface Verb {
+  /** Base form (infinitive without "to"). */
+  base: string;
+  past: string;
+  participle: string;
+  /** 3rd person singular present (e.g. "goes"). */
+  present3s: string;
+  /** Gerund / present participle (e.g. "going"). */
+  gerund: string;
+  /** Myanmar meaning. */
+  my: string;
+  /** Learner-friendly phonetic hint. */
+  phonetic?: string;
+  cefr: CEFR;
+  /** Real example sentences in present / past / future. */
+  examples: { present: VerbExample; past: VerbExample; future: VerbExample };
+}
+
+/** One row of the English tense table — FASE 14. */
+export interface Tense {
+  id: string;
+  nameEn: string;
+  /** Myanmar name/explanation. */
+  nameMy: string;
+  /** Formula in Myanmar-first notation (e.g. "will + V1"). */
+  formula: string;
+  /** When to use it, in Myanmar. */
+  usageMy: string;
+  example: VerbExample;
 }
 
 export interface Topic {

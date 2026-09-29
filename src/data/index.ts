@@ -1,4 +1,6 @@
-import type { Word, Phrase, TopicId, Level, Dialogue, Story } from '../types';
+import type { Word, Phrase, TopicId, Level, Dialogue, Story, CEFR, Verb, Tense } from '../types';
+import { difficultyToCEFR } from '../types';
+import { f14Words, f14Phrases, f14Dialogues, f14Stories, f14Verbs, tenses } from './f14';
 import { topics, topicMeta } from './topics';
 import { dialogues } from './dialogues';
 import { stories } from './stories';
@@ -40,7 +42,7 @@ import { phrasesG } from './phrases-g';
 
 export { topics, topicMeta };
 
-/** Every vocabulary entry in the app (1000 words, 28 topics). */
+/** Every vocabulary entry in the app (3000 words: 1000 base + 2000 FASE 14, 28 topics). */
 export const allWords: Word[] = [
   ...familyWords,
   ...friendsWords,
@@ -70,10 +72,11 @@ export const allWords: Word[] = [
   ...marketWords,
   ...seasonsWords,
   ...personalityWords,
+  ...f14Words,
 ];
 
-/** Every everyday phrase in the app (820 phrases, 28 topics). */
-export const allPhrases: Phrase[] = [...phrasesA, ...phrasesB, ...phrasesC, ...phrasesD, ...phrasesE, ...phrasesF, ...phrasesG];
+/** Every everyday phrase in the app (2320 phrases: 820 base + 1500 FASE 14, 28 topics). */
+export const allPhrases: Phrase[] = [...phrasesA, ...phrasesB, ...phrasesC, ...phrasesD, ...phrasesE, ...phrasesF, ...phrasesG, ...f14Phrases];
 
 /** Words filtered by topic and optionally difficulty level. */
 export function wordsByTopic(topic: TopicId, level?: Level): Word[] {
@@ -95,18 +98,49 @@ export function sample<T>(arr: T[], n: number): T[] {
   return copy.slice(0, n);
 }
 
-/** Real-situation dialogues, 2 per topic (56 total). */
-export const allDialogues: Dialogue[] = dialogues;
+/** Real-situation dialogues (180: 56 base + 124 FASE 14). */
+export const allDialogues: Dialogue[] = [...dialogues, ...f14Dialogues];
 
 /** Dialogues filtered by topic. */
 export function dialoguesByTopic(topic: TopicId): Dialogue[] {
   return allDialogues.filter((d) => d.topic === topic);
 }
 
-/** Graded mini-stories A1 → B1 (12 total). */
-export const allStories: Story[] = stories;
+/** Graded mini-stories (42: 12 base + 30 FASE 14, A1 → C2 ladder). */
+export const allStories: Story[] = [...stories, ...f14Stories];
 
 /** Stories filtered by CEFR level. */
-export function storiesByLevel(level: 'A1' | 'A2' | 'B1'): Story[] {
+export function storiesByLevel(level: CEFR): Story[] {
   return allStories.filter((s) => s.level === level);
 }
+
+/** CEFR band of a word: explicit `cefr` wins, otherwise derived from numeric `level`. */
+export function cefrOfWord(w: Word): CEFR {
+  return w.cefr ?? difficultyToCEFR[w.level];
+}
+
+/** CEFR band of a phrase: explicit `cefr` wins, legacy phrases default to A1. */
+export function cefrOfPhrase(p: Phrase): CEFR {
+  return p.cefr ?? 'A1';
+}
+
+/** Words at a given CEFR band (FASE 14 ladder). */
+export function wordsByCEFR(cefr: CEFR): Word[] {
+  return allWords.filter((w) => cefrOfWord(w) === cefr);
+}
+
+/** Phrases at a given CEFR band (FASE 14 ladder). */
+export function phrasesByCEFR(cefr: CEFR): Phrase[] {
+  return allPhrases.filter((p) => cefrOfPhrase(p) === cefr);
+}
+
+/** Every verb in the app (200 irregulars, FASE 14 Ola 1) with full conjugation data. */
+export const allVerbs: Verb[] = f14Verbs;
+
+/** Look up a verb by its base form. */
+export function verbByBase(base: string): Verb | undefined {
+  return allVerbs.find((v) => v.base === base.toLowerCase());
+}
+
+/** The 12 English tenses as structured data (FASE 14 Ola 1). */
+export { tenses };

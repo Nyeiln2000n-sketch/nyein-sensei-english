@@ -3,7 +3,7 @@ import type { Word } from '../types';
 // Friends — သူငယ်ချင်း (30 words)
 export const friendsWords: Word[] = [
   { en: 'friend', my: 'သူငယ်ချင်း', topic: 'friends', level: 1, phonetic: 'frend', example: 'She is my best friend.', exampleMy: 'သူမကျွန်တော့်အရင်းနှီးဆုံးသူငယ်ချင်းပါ။' },
-  { en: 'best friend', my: 'အရင်းနှီးဆုံးသူငယ်ချင်း', topic: 'friends', level: 1, phonetic: 'best frend', example: 'He is my best friend.', exampleMy: 'သူကျွန်တော့်အရင်းနှီးဆုံးသူငယ်ချင်းပါ။' },
+  { en: 'best friend', my: 'အရင်းနှီးဆုံးသူငယ်ချင်း', topic: 'friends', level: 1, phonetic: 'best frend', example: 'He trusts his best friend completely.', exampleMy: 'သူ သူ့အရင်းနှီးဆုံးသူငယ်ချင်းကို လုံးဝ ယုံကြည်တယ်။' },
   { en: 'buddy', my: 'မိတ်ဆွေ', topic: 'friends', level: 2, phonetic: 'bu-di', example: 'My buddy helps me study.', exampleMy: 'ကျွန်တော့်မိတ်ဆွေက စာလေ့လာရာကူညီတယ်။' },
   { en: 'neighbor', my: 'အိမ်နီးချင်း', topic: 'friends', level: 2, phonetic: 'nei-ber', example: 'Our neighbor is very kind.', exampleMy: 'ကျွန်တော်တို့အိမ်နီးချင်းက အရမ်းကြင်နာတယ်။' },
   { en: 'party', my: 'ပါတီ', topic: 'friends', level: 1, phonetic: 'par-ti', example: 'We went to a party.', exampleMy: 'ပါတီတစ်ခုကိုသွားခဲ့တယ်။' },

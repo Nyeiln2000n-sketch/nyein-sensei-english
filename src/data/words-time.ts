@@ -18,7 +18,7 @@ export const timeWords: Word[] = [
   { en: 'always', my: 'အမြဲတမ်း', topic: 'time', level: 1, phonetic: 'ol-weiz', example: 'She always smiles at me.', exampleMy: 'သူ ကျွန်မကို အမြဲ ပြုံးပြပါတယ်။' },
   { en: 'never', my: 'ဘယ်တော့မှ', topic: 'time', level: 1, phonetic: 'ne-vor', example: 'I never eat spicy food.', exampleMy: 'ကျွန်မ စပ်တဲ့ အစားအစာ ဘယ်တော့မှ မစားပါဘူး။' },
   { en: 'sometimes', my: 'တခါတရံ', topic: 'time', level: 1, phonetic: 'sam-taimz', example: 'Sometimes it rains in March.', exampleMy: 'မတ်လမှာ တခါတရံ မိုးရွာပါတယ်။' },
-  { en: 'often', my: 'မကြာခဏ', topic: 'time', level: 1, phonetic: 'of-tan', example: 'We often eat dinner together.', exampleMy: 'ကျွန်မတို့ မကြာခဏ အတူ ညစာ စားကြပါတယ်။' },
+  { en: 'often', my: 'မကြာခဏ', topic: 'time', level: 1, phonetic: 'of-tan', example: 'She often walks to the market.', exampleMy: 'သူ မကြာခဏ ဈေးကို လမ်းလျှောက်သွားတယ်။' },
   { en: 'every', my: 'တိုင်း', topic: 'time', level: 1, phonetic: 'ev-ree', example: 'Every day is a new chance.', exampleMy: 'နေ့တိုင်းက အခွင့်အရေး အသစ်ပါ။' },
   { en: 'clock', my: 'နာရီ', topic: 'time', level: 1, phonetic: 'klok', example: 'The clock on the wall shows ten.', exampleMy: 'နာရီက ဆယ်နာရီ ပြနေပါတယ်။' },
   { en: 'calendar', my: 'ပြက္ခဒိန်', topic: 'time', level: 2, phonetic: 'ka-len-dor', example: 'Mark the date on your calendar.', exampleMy: 'သင့်ရဲ့ ပြက္ခဒိန်မှာ ရက်ကို မှတ်ထားပါ။' },

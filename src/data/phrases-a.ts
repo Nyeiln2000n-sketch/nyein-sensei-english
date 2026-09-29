@@ -3,7 +3,7 @@ import type { Phrase } from '../types';
 // 160 everyday phrases (part 1 of 2) — topics: family → sports
 export const phrasesA: Phrase[] = [
   // family — မိသားစု
-  { en: 'I love my family.', my: 'ကျွန်တော့် မိသားစုကို ချစ်တယ်။', topic: 'family' },
+  { en: 'My family always supports me.', my: 'ကျွန်တော့် မိသားစုက ကျွန်တော့်ကို အမြဲတမ်း အားပေးတယ်။', topic: 'family' },
   { en: 'This is my father.', my: 'ဒါ ကျွန်တော့်အဖေ ဖြစ်ပါတယ်။', topic: 'family' },
   { en: 'Mom takes care of us.', my: 'အမေက ငါတို့ကို ဂရုစိုက်တယ်။', topic: 'family' },
   { en: 'There are two brothers in my family.', my: 'ကျွန်တော့်မိသားစုမှာ အစ်ကို နှစ်ယောက် ရှိတယ်။', topic: 'family' },
@@ -27,7 +27,7 @@ export const phrasesA: Phrase[] = [
   { en: 'Do you want to play?', my: 'ကစားချင်လား။', topic: 'friends' },
   { en: 'That was funny!', my: 'အဲဒါ ရယ်စရာကောင်းတယ်!', topic: 'friends' },
   { en: 'Happy birthday to you!', my: 'မွေးနေ့မှာ ပျော်ရွှင်ပါစေ!', topic: 'friends' },
-  { en: 'Can you help me?', my: 'ငါ့ကို ကူညီပေးနိုင်လား။', topic: 'friends' },
+  { en: 'You can count on me.', my: 'ငါ့ကို ယုံကြည်အားထားနိုင်တယ်။', topic: 'friends' },
   { en: 'I trust you.', my: 'မင်းကို ယုံကြည်တယ်။', topic: 'friends' },
   { en: 'How about lunch together?', my: 'နေ့လည်စာ အတူစားရင်ကောင်းမလား။', topic: 'friends' },
   { en: 'See you soon!', my: 'မကြာမီ တွေ့မယ်!', topic: 'friends' },
@@ -38,7 +38,7 @@ export const phrasesA: Phrase[] = [
   { en: 'Can you call tonight?', my: 'ဒီည ဖုန်းခေါ်နိုင်မလား။', topic: 'friends' },
   // work — အလုပ်
   { en: 'I go to work.', my: 'ကျွန်တော် အလုပ်သွားတယ်။', topic: 'work' },
-  { en: 'My boss is very kind.', my: 'ကျွန်တော့်သူဌေးက အရမ်း သဘောကောင်းတယ်။', topic: 'work' },
+  { en: 'My boss praised our team.', my: 'ကျွန်တော့်သူဌေးက ငါတို့အဖွဲ့ကို ချီးမွမ်းတယ်။', topic: 'work' },
   { en: 'We have a meeting.', my: 'ငါတို့ အစည်းအဝေးရှိတယ်။', topic: 'work' },
   { en: 'Please send the email.', my: 'အီးမေးလ် ပို့ပေးပါ။', topic: 'work' },
   { en: 'The deadline is Friday.', my: 'နောက်ဆုံးရက်က သောကြာနေ့ ဖြစ်တယ်။', topic: 'work' },
@@ -167,7 +167,7 @@ export const phrasesA: Phrase[] = [
   { en: 'The score is 2-1.', my: 'ရမှတ်က ၂-၁ ဖြစ်တယ်။', topic: 'sports' },
   { en: "Let's go cycling.", my: 'စက်ဘီး စီးကြရအောင်။', topic: 'sports' },
   { en: 'Jump high!', my: 'မြင့်မြင့် ခုန်ပါ!', topic: 'sports' },
-  { en: 'Catch the ball.', my: 'ဘောလုံးကို ဖမ်းပါ။', topic: 'sports' },
+  { en: 'Pass the ball quickly!', my: 'ဘောလုံးကို မြန်မြန် ပေးပါ!', topic: 'sports' },
   { en: 'Sports are fun.', my: 'အားကစားက ပျော်စရာကောင်းတယ်။', topic: 'sports' },
   { en: 'Exercise is healthy.', my: 'လေ့ကျင့်ခန်းက ကျန်းမာရေးအတွက် ကောင်းတယ်။', topic: 'sports' },
   { en: 'Who won the match?', my: 'ဘယ်သူ ပြိုင်ပွဲနိုင်လဲ။', topic: 'sports' },

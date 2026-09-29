@@ -1,4 +1,4 @@
-"""Build the content index: walk src/data/*.ts and write content-index.json.
+"""Build the content index: walk src/data/**/*.ts (recursive) and write content-index.json.
 
 Run from the repo root:
     python3 tools/vectorize/index.py
@@ -48,6 +48,8 @@ _ENTRY_RE = re.compile(
 )
 # example: '...' / "..." inside a word entry (captured separately per match).
 _EXAMPLE_RE = re.compile(rf"example:\s*{_QUOTED}")
+# Verb entry: { base: 'go', past: 'went', ... } (only parsed in verbs-* files).
+_VERB_RE = re.compile(r"\{\s*base:\s*'((?:[^'\\]|\\.)*)'")
 # Dialogue turn: { speaker: '...', en: '...', my: '...' }
 _TURN_RE = re.compile(
     rf"\{{\s*speaker:\s*{_QUOTED},\s*en:\s*{_QUOTED},\s*my:\s*{_QUOTED}\s*\}}"
@@ -90,6 +92,23 @@ def parse_words(path: str) -> list:
             "topic": topic,
             "level": int(level) if level else None,
             "example": example,
+            "file": os.path.relpath(path, REPO),
+            "line": line,
+        })
+    return items
+
+
+def parse_verbs(path: str) -> list:
+    """Extract irregular-verb base forms from a verbs-* file (kind: verb)."""
+    with open(path, encoding="utf-8") as fh:
+        text = fh.read()
+    items = []
+    for m in _VERB_RE.finditer(text):
+        base = _unescape("'" + m.group(1) + "'")
+        line = text.count("\n", 0, m.start()) + 1
+        items.append({
+            "kind": "verb",
+            "en": base,
             "file": os.path.relpath(path, REPO),
             "line": line,
         })
@@ -208,10 +227,15 @@ def build_index() -> dict:
     index = {"items": []}
     counter = {"phrase": 0}
 
-    for fname in sorted(os.listdir(DATA_DIR)):
-        if not fname.endswith(".ts"):
-            continue
-        path = os.path.join(DATA_DIR, fname)
+    # Recursive: src/data/*.ts plus src/data/f14/*.ts (FASE 14 batches).
+    ts_files = []
+    for root, _dirs, files in os.walk(DATA_DIR):
+        for f in files:
+            if f.endswith(".ts"):
+                ts_files.append(os.path.join(root, f))
+
+    for path in sorted(ts_files):
+        fname = os.path.basename(path)
         rel = os.path.relpath(path, REPO)
 
         if fname == "topics.ts":
@@ -297,6 +321,23 @@ def build_index() -> dict:
                 })
             continue
 
+        if fname.startswith("verbs-"):
+            for v in parse_verbs(path):
+                index["items"].append({
+                    "id": f"verb:{slugify(v['en'])}",
+                    "kind": "verb",
+                    "en": v["en"],
+                    "en_norm": normalize_en(v["en"]),
+                    "my_norm": "",
+                    "fingerprint": fingerprint(v["en"]),
+                    "vocab_sig": vocab_signature(v["en"]),
+                    "template_sig": template_signature(v["en"]),
+                    "tags": ["verb"],
+                    "file": v["file"],
+                    "line": v["line"],
+                })
+            continue
+
         if fname.startswith("phrases-"):
             parsed, counter["phrase"] = parse_phrases(path, counter["phrase"])
             for p in parsed:
@@ -323,6 +364,7 @@ def build_index() -> dict:
             "example": sum(1 for i in index["items"] if i["kind"] == "example"),
             "dialogue": sum(1 for i in index["items"] if i["kind"] == "dialogue"),
             "story": sum(1 for i in index["items"] if i["kind"] == "story"),
+            "verb": sum(1 for i in index["items"] if i["kind"] == "verb"),
         },
         "data_dir": "src/data",
     }
@@ -339,7 +381,8 @@ def main() -> None:
     print(f"Indexed {n} items "
           f"({kinds['word']} words, {kinds['phrase']} phrases, "
           f"{kinds['topic']} topics, {kinds['example']} examples, "
-          f"{kinds['dialogue']} dialogues, {kinds['story']} stories) "
+          f"{kinds['dialogue']} dialogues, {kinds['story']} stories, "
+          f"{kinds['verb']} verbs) "
           f"-> tools/vectorize/content-index.json")
 
 

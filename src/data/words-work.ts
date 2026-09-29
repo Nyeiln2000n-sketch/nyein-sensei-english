@@ -9,7 +9,7 @@ export const workWords: Word[] = [
   { en: 'colleague', my: 'လုပ်ဖော်ကိုင်ဖက်', topic: 'work', level: 2, phonetic: 'ko-liig', example: 'My colleague helps me a lot.', exampleMy: 'ကျွန်မရဲ့ လုပ်ဖော်ကိုင်ဖက်က အများကြီး ကူညီပါတယ်။' },
   { en: 'meeting', my: 'အစည်းအဝေး', topic: 'work', level: 1, phonetic: 'mii-ting', example: 'We have a meeting at ten.', exampleMy: 'ကျွန်မတို့ ဆယ်နာရီမှာ အစည်းအဝေး ရှိပါတယ်။' },
   { en: 'email', my: 'အီးမေးလ်', topic: 'work', level: 1, phonetic: 'ii-meil', example: 'I send emails every morning.', exampleMy: 'ကျွန်မ မနက်တိုင်း အီးမေးလ်တွေ ပို့ပါတယ်။' },
-  { en: 'computer', my: 'ကွန်ပျူတာ', topic: 'work', level: 1, phonetic: 'kom-pyuu-tor', example: 'Turn on the computer.', exampleMy: 'ကွန်ပျူတာကို ဖွင့်လိုက်ပါ။' },
+  { en: 'computer', my: 'ကွန်ပျူတာ', topic: 'work', level: 1, phonetic: 'kom-pyuu-tor', example: 'My computer runs very fast.', exampleMy: 'ကျွန်မရဲ့ ကွန်ပျူတာက အရမ်း မြန်တယ်။' },
   { en: 'desk', my: 'စားပွဲ', topic: 'work', level: 1, phonetic: 'desk', example: 'My desk is very clean.', exampleMy: 'ကျွန်မရဲ့ စားပွဲက အရမ်း သန့်ရှင်းပါတယ်။' },
   { en: 'chair', my: 'ထိုင်ခုံ', topic: 'work', level: 1, phonetic: 'chair', example: 'Sit on the chair.', exampleMy: 'ထိုင်ခုံပေါ်မှာ ထိုင်ပါ။' },
   { en: 'paper', my: 'စာရွက်', topic: 'work', level: 1, phonetic: 'pei-por', example: 'Give me a piece of paper.', exampleMy: 'ကျွန်မကို စာရွက် တစ်ရွက် ပေးပါ။' },

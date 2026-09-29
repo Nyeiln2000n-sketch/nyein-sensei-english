@@ -170,17 +170,26 @@ def slugify(word: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", word.lower().strip()).strip("-")
 
 
-def load_words() -> list[dict]:
-    """Parse all words-*.ts files; returns [{en, my, topic, level}] in file order."""
+def load_words(source: str = "all") -> list[dict]:
+    """Parse words-*.ts files; returns [{en, my, topic, level}] in file order.
+
+    source: 'all' (default), 'f14' (only FASE 14 batches), 'base' (only base corpus).
+    """
     words: list[dict] = []
-    for path in sorted(DATA_DIR.glob("words-*.ts")):
+    base_paths = sorted(DATA_DIR.glob("words-*.ts"))
+    f14_paths = sorted((DATA_DIR / "f14").glob("words-batch-*.ts"))
+    paths = {"all": base_paths + f14_paths, "f14": f14_paths, "base": base_paths}[source]
+    for path in paths:
         text = path.read_text(encoding="utf-8")
         topic = path.stem.replace("words-", "")
         for m in re.finditer(
-            r"\{\s*en:\s*'([^']+)'\s*,\s*my:\s*'([^']+)'\s*,\s*topic:\s*'([^']+)'\s*,\s*level:\s*(\d)",
+            r"\{\s*en:\s*'((?:[^'\\]|\\.)*)'\s*,\s*my:\s*'((?:[^'\\]|\\.)*)'"
+            r"\s*,\s*topic:\s*'([^']+)'\s*,\s*level:\s*(\d)",
             text,
         ):
             en, my, t, level = m.groups()
+            en = en.replace("\\'", "'")
+            my = my.replace("\\'", "'")
             words.append({"en": en, "my": my, "topic": t or topic, "level": int(level)})
     return words
 
@@ -283,7 +292,7 @@ def cmd_register(args: argparse.Namespace) -> int:
 
 
 def cmd_prompts(args: argparse.Namespace) -> int:
-    words = priority_order(load_words())
+    words = priority_order(load_words(args.source))
     mapping = load_mapping()
     batch = []
     for w in words:
@@ -320,6 +329,8 @@ def main() -> int:
 
     p_pr = sub.add_parser("prompts", help="emit generation prompts for next missing words as JSON")
     p_pr.add_argument("--n", type=int, default=20)
+    p_pr.add_argument("--source", choices=["all", "f14", "base"], default="all",
+                      help="restrict backlog to FASE 14 batches, base corpus, or all")
 
     args = ap.parse_args()
     return {
