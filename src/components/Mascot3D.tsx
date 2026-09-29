@@ -12,11 +12,55 @@
 // fallback — used on the Splash screen so the 3D chunk load never shows a
 // blank or bare image.
 //
+// ROADMAP Q-005 (safe variant): the lazy three.js chunk (~900kB, ~240kB
+// gzip) is NOT requested until the browser is idle — requestIdleCallback
+// with a setTimeout fallback — or the rIC timeout (3s) elapses. Until then
+// only the static pose PNG renders. Before this, the lazy component
+// mounted immediately (e.g. on the Splash), so the chunk download + parse
+// + WebGL init suppressed LCP on mobile. Visual output is unchanged: the
+// same approved PNGs render first, then swap to the live 3D mascot.
+//
 // Same public API as MascotScene3D: { pose, size?, sparkle?, className? }.
 
-import { Suspense, lazy } from 'react';
+import { Suspense, lazy, useEffect, useState } from 'react';
 import type { MascotPose } from './MascotScene3D';
 import BrandLoader from './BrandLoader';
+
+/** Resolves once the browser is idle. Shared module-wide so the first
+ *  Mascot3D to reach idle unlocks every instance. requestIdleCallback
+ *  with { timeout: 3000 } caps the wait; browsers without rIC fall back
+ *  to a 1.5s timer. */
+let idlePromise: Promise<void> | null = null;
+function whenIdle(): Promise<void> {
+  if (!idlePromise) {
+    idlePromise = new Promise<void>((resolve) => {
+      if (typeof window === 'undefined') {
+        resolve();
+        return;
+      }
+      if ('requestIdleCallback' in window) {
+        (window as any).requestIdleCallback(() => resolve(), { timeout: 3000 });
+      } else {
+        globalThis.setTimeout(() => resolve(), 1500);
+      }
+    });
+  }
+  return idlePromise;
+}
+
+function useIdleReady(): boolean {
+  const [ready, setReady] = useState(false);
+  useEffect(() => {
+    let alive = true;
+    whenIdle().then(() => {
+      if (alive) setReady(true);
+    });
+    return () => {
+      alive = false;
+    };
+  }, []);
+  return ready;
+}
 
 export type { MascotPose } from './MascotScene3D';
 
@@ -47,28 +91,30 @@ export default function Mascot3D({
   className,
   loader = 'png',
 }: Mascot3DProps) {
+  // Q-005: don't even start the three.js chunk until the browser is idle —
+  // the static fallback renders in the meantime (no layout shift, same size).
+  const idle = useIdleReady();
+  const fallback =
+    loader === 'brand' ? (
+      <BrandLoader compact size={size} />
+    ) : (
+      <img
+        src={POSE_FILES[pose]}
+        alt=""
+        aria-hidden="true"
+        draggable={false}
+        className={`mascot-fallback-float${className ? ` ${className}` : ''}`}
+        style={{
+          width: size,
+          height: size,
+          objectFit: 'contain',
+          display: 'block',
+        }}
+      />
+    );
+  if (!idle) return <>{fallback}</>;
   return (
-    <Suspense
-      fallback={
-        loader === 'brand' ? (
-          <BrandLoader compact size={size} />
-        ) : (
-          <img
-            src={POSE_FILES[pose]}
-            alt=""
-            aria-hidden="true"
-            draggable={false}
-            className={`mascot-fallback-float${className ? ` ${className}` : ''}`}
-            style={{
-              width: size,
-              height: size,
-              objectFit: 'contain',
-              display: 'block',
-            }}
-          />
-        )
-      }
-    >
+    <Suspense fallback={fallback}>
       <MascotScene3DLazy
         pose={pose}
         size={size}
