@@ -1,558 +1,43 @@
 {
- "todo": [
-  {
-   "word": "ore",
-   "slug": "ore"
-  },
-  {
-   "word": "water table",
-   "slug": "water-table"
-  },
-  {
-   "word": "moraine",
-   "slug": "moraine"
-  },
-  {
-   "word": "sinkhole",
-   "slug": "sinkhole"
-  },
-  {
-   "word": "karst",
-   "slug": "karst"
-  },
-  {
-   "word": "stalactite",
-   "slug": "stalactite"
-  },
-  {
-   "word": "stalagmite",
-   "slug": "stalagmite"
-  },
-  {
-   "word": "ice core",
-   "slug": "ice-core"
-  },
-  {
-   "word": "dendrochronology",
-   "slug": "dendrochronology"
-  },
-  {
-   "word": "carbon cycle",
-   "slug": "carbon-cycle"
-  },
-  {
-   "word": "nitrogen cycle",
-   "slug": "nitrogen-cycle"
-  },
-  {
-   "word": "el niño",
-   "slug": "el-nio"
-  },
-  {
-   "word": "la niña",
-   "slug": "la-nia"
-  },
-  {
-   "word": "jet stream",
-   "slug": "jet-stream"
-  },
-  {
-   "word": "coriolis effect",
-   "slug": "coriolis-effect"
-  },
-  {
-   "word": "atmospheric pressure",
-   "slug": "atmospheric-pressure"
-  },
-  {
-   "word": "anemometer",
-   "slug": "anemometer"
-  },
-  {
-   "word": "hygrometer",
-   "slug": "hygrometer"
-  },
-  {
-   "word": "weather balloon",
-   "slug": "weather-balloon"
-  },
-  {
-   "word": "remote sensing",
-   "slug": "remote-sensing"
-  },
-  {
-   "word": "topographic map",
-   "slug": "topographic-map"
-  },
-  {
-   "word": "sonar",
-   "slug": "sonar"
-  },
-  {
-   "word": "peer review",
-   "slug": "peer-review"
-  },
-  {
-   "word": "experimental group",
-   "slug": "experimental-group"
-  },
-  {
-   "word": "independent variable",
-   "slug": "independent-variable"
-  },
-  {
-   "word": "dependent variable",
-   "slug": "dependent-variable"
-  },
-  {
-   "word": "confounding variable",
-   "slug": "confounding-variable"
-  },
-  {
-   "word": "double-blind study",
-   "slug": "doubleblind-study"
-  },
-  {
-   "word": "sample size",
-   "slug": "sample-size"
-  },
-  {
-   "word": "statistical significance",
-   "slug": "statistical-significance"
-  },
-  {
-   "word": "p-value",
-   "slug": "pvalue"
-  },
-  {
-   "word": "confidence interval",
-   "slug": "confidence-interval"
-  },
-  {
-   "word": "margin of error",
-   "slug": "margin-of-error"
-  },
-  {
-   "word": "regression analysis",
-   "slug": "regression-analysis"
-  },
-  {
-   "word": "standard deviation",
-   "slug": "standard-deviation"
-  },
-  {
-   "word": "variance",
-   "slug": "variance"
-  },
-  {
-   "word": "median",
-   "slug": "median"
-  },
-  {
-   "word": "selection bias",
-   "slug": "selection-bias"
-  },
-  {
-   "word": "confirmation bias",
-   "slug": "confirmation-bias"
-  },
-  {
-   "word": "reproducibility",
-   "slug": "reproducibility"
-  },
-  {
-   "word": "falsifiability",
-   "slug": "falsifiability"
-  },
-  {
-   "word": "occam\\",
-   "slug": "occam"
-  },
-  {
-   "word": "null hypothesis",
-   "slug": "null-hypothesis"
-  },
-  {
-   "word": "alternative hypothesis",
-   "slug": "alternative-hypothesis"
-  },
-  {
-   "word": "paradigm",
-   "slug": "paradigm"
-  },
-  {
-   "word": "paradigm shift",
-   "slug": "paradigm-shift"
-  },
-  {
-   "word": "literature review",
-   "slug": "literature-review"
-  },
-  {
-   "word": "meta-analysis",
-   "slug": "metaanalysis"
-  },
-  {
-   "word": "systematic review",
-   "slug": "systematic-review"
-  },
-  {
-   "word": "preprint",
-   "slug": "preprint"
-  },
-  {
-   "word": "impact factor",
-   "slug": "impact-factor"
-  },
-  {
-   "word": "h-index",
-   "slug": "hindex"
-  },
-  {
-   "word": "grant proposal",
-   "slug": "grant-proposal"
-  },
-  {
-   "word": "ethics committee",
-   "slug": "ethics-committee"
-  },
-  {
-   "word": "informed consent",
-   "slug": "informed-consent"
-  },
-  {
-   "word": "anonymization",
-   "slug": "anonymization"
-  },
-  {
-   "word": "data integrity",
-   "slug": "data-integrity"
-  },
-  {
-   "word": "retraction",
-   "slug": "retraction"
-  },
-  {
-   "word": "replication crisis",
-   "slug": "replication-crisis"
-  },
-  {
-   "word": "longitudinal study",
-   "slug": "longitudinal-study"
-  },
-  {
-   "word": "cross-sectional study",
-   "slug": "crosssectional-study"
-  },
-  {
-   "word": "cohort study",
-   "slug": "cohort-study"
-  },
-  {
-   "word": "case-control study",
-   "slug": "casecontrol-study"
-  },
-  {
-   "word": "randomized controlled trial",
-   "slug": "randomized-controlled-trial"
-  },
-  {
-   "word": "qualitative research",
-   "slug": "qualitative-research"
-  },
-  {
-   "word": "quantitative research",
-   "slug": "quantitative-research"
-  },
-  {
-   "word": "autoclave",
-   "slug": "autoclave"
-  },
-  {
-   "word": "incubator",
-   "slug": "incubator"
-  },
-  {
-   "word": "fume hood",
-   "slug": "fume-hood"
-  },
-  {
-   "word": "laminar flow hood",
-   "slug": "laminar-flow-hood"
-  },
-  {
-   "word": "micropipette",
-   "slug": "micropipette"
-  },
-  {
-   "word": "volumetric flask",
-   "slug": "volumetric-flask"
-  },
-  {
-   "word": "erlenmeyer flask",
-   "slug": "erlenmeyer-flask"
-  },
-  {
-   "word": "graduated cylinder",
-   "slug": "graduated-cylinder"
-  },
-  {
-   "word": "burette",
-   "slug": "burette"
-  },
-  {
-   "word": "separatory funnel",
-   "slug": "separatory-funnel"
-  },
-  {
-   "word": "reflux condenser",
-   "slug": "reflux-condenser"
-  },
-  {
-   "word": "rotary evaporator",
-   "slug": "rotary-evaporator"
-  },
-  {
-   "word": "ultracentrifuge",
-   "slug": "ultracentrifuge"
-  },
-  {
-   "word": "electrophoresis",
-   "slug": "electrophoresis"
-  },
-  {
-   "word": "gel electrophoresis",
-   "slug": "gel-electrophoresis"
-  },
-  {
-   "word": "pcr",
-   "slug": "pcr"
-  },
-  {
-   "word": "dna sequencing",
-   "slug": "dna-sequencing"
-  },
-  {
-   "word": "crispr",
-   "slug": "crispr"
-  },
-  {
-   "word": "gene editing",
-   "slug": "gene-editing"
-  },
-  {
-   "word": "cloning",
-   "slug": "cloning"
-  },
-  {
-   "word": "stem cell",
-   "slug": "stem-cell"
-  },
-  {
-   "word": "cell culture",
-   "slug": "cell-culture"
-  },
-  {
-   "word": "cryopreservation",
-   "slug": "cryopreservation"
-  },
-  {
-   "word": "spectrophotometer",
-   "slug": "spectrophotometer"
-  },
-  {
-   "word": "ph meter",
-   "slug": "ph-meter"
-  },
-  {
-   "word": "x-ray crystallography",
-   "slug": "xray-crystallography"
-  },
-  {
-   "word": "electron microscopy",
-   "slug": "electron-microscopy"
-  },
-  {
-   "word": "scanning electron microscope",
-   "slug": "scanning-electron-microscope"
-  },
-  {
-   "word": "atomic force microscopy",
-   "slug": "atomic-force-microscopy"
-  },
-  {
-   "word": "radio telescope",
-   "slug": "radio-telescope"
-  },
-  {
-   "word": "refracting telescope",
-   "slug": "refracting-telescope"
-  },
-  {
-   "word": "reflecting telescope",
-   "slug": "reflecting-telescope"
-  },
-  {
-   "word": "interferometer",
-   "slug": "interferometer"
-  },
-  {
-   "word": "particle accelerator",
-   "slug": "particle-accelerator"
-  },
-  {
-   "word": "cyclotron",
-   "slug": "cyclotron"
-  },
-  {
-   "word": "synchrotron",
-   "slug": "synchrotron"
-  },
-  {
-   "word": "geiger counter",
-   "slug": "geiger-counter"
-  },
-  {
-   "word": "cloud chamber",
-   "slug": "cloud-chamber"
-  },
-  {
-   "word": "vacuum chamber",
-   "slug": "vacuum-chamber"
-  },
-  {
-   "word": "glove box",
-   "slug": "glove-box"
-  },
-  {
-   "word": "desiccator",
-   "slug": "desiccator"
-  },
-  {
-   "word": "crucible",
-   "slug": "crucible"
-  },
-  {
-   "word": "safety goggles",
-   "slug": "safety-goggles"
-  },
-  {
-   "word": "lab coat",
-   "slug": "lab-coat"
-  },
-  {
-   "word": "biohazard",
-   "slug": "biohazard"
-  },
-  {
-   "word": "sterile technique",
-   "slug": "sterile-technique"
-  },
-  {
-   "word": "agar plate",
-   "slug": "agar-plate"
-  },
-  {
-   "word": "gram stain",
-   "slug": "gram-stain"
-  },
-  {
-   "word": "microtome",
-   "slug": "microtome"
-  }
- ],
+ "todo": [],
  "skipped": [
-  {
-   "word": "ligament",
-   "reason": "ligament.png already produced by concurrent wave (17:59, optimized); skipped to avoid overwrite/duplicate"
-  },
-  {
-   "word": "synovial fluid",
-   "reason": "synovial-fluid.png already produced by concurrent anatomy wave; skipped to avoid overwrite"
-  },
-  {
-   "word": "alveoli",
-   "reason": "alveoli.png already produced by concurrent anatomy wave; skipped to avoid overwrite"
-  },
-  {
-   "word": "hemoglobin",
-   "reason": "hemoglobin.png already produced by concurrent wave; skipped to avoid overwrite/duplicate"
-  },
-  {
-   "word": "platelet",
-   "reason": "platelet.png already produced by concurrent wave; skipped to avoid overwrite/duplicate"
-  },
-  {
-   "word": "carcinoma",
-   "reason": "carcinoma.png already produced by concurrent wave; skipped to avoid overwrite/duplicate"
-  },
-  {
-   "word": "sarcoma",
-   "reason": "sarcoma.png already produced by concurrent wave; skipped to avoid overwrite/duplicate"
-  },
-  {
-   "word": "lymphoma",
-   "reason": "lymphoma.png already produced by concurrent wave; skipped to avoid overwrite/duplicate"
-  },
-  {
-   "word": "leukemia",
-   "reason": "leukemia.png already produced by concurrent wave; skipped to avoid overwrite/duplicate"
-  },
-  {
-   "word": "melanoma",
-   "reason": "melanoma.png already produced by concurrent wave; skipped to avoid overwrite/duplicate"
-  },
   {
    "word": "cosmology",
    "reason": "cosmology.png already produced by concurrent wave; skipped to avoid overwrite/duplicate"
   },
   {
-   "word": "granite",
-   "reason": "granite.png already produced by concurrent wave; skipped to avoid overwrite/duplicate"
-  },
-  {
-   "word": "basalt",
-   "reason": "basalt.png already produced by concurrent wave; skipped to avoid overwrite/duplicate"
-  },
-  {
-   "word": "limestone",
-   "reason": "limestone.png already produced by concurrent wave; skipped to avoid overwrite/duplicate"
-  },
-  {
-   "word": "sandstone",
-   "reason": "sandstone.png already produced by concurrent wave; skipped to avoid overwrite/duplicate"
-  },
-  {
-   "word": "marble",
-   "reason": "marble.png already produced by concurrent wave; skipped to avoid overwrite/duplicate"
-  },
-  {
-   "word": "citation",
-   "reason": "citation.png already produced by concurrent wave; skipped to avoid overwrite/duplicate"
+   "word": "variance",
+   "reason": "variance.png produced by concurrent wave; skipped to avoid overwrite"
   }
  ],
  "done": [
   "absolute zero",
   "accretion disk",
   "acetone",
+  "acidification",
   "actinide",
   "adaptive radiation",
   "adiabatic process",
   "aerobic respiration",
+  "agar plate",
   "aldehyde",
   "alkali metal",
   "alkane",
   "alkene",
   "alkyne",
   "allotrope",
+  "alternative hypothesis",
   "amalgam",
   "amide",
   "amine",
   "ammonia",
   "anabolism",
   "anaerobic respiration",
+  "anemometer",
+  "angiogenesis",
   "angular momentum",
   "anhydrous",
+  "anonymization",
   "antimatter",
   "aphelion",
   "apogee",
@@ -561,82 +46,115 @@
   "astrometry",
   "astronomical unit",
   "astrophysics",
+  "atmospheric pressure",
+  "atomic force microscopy",
   "atp",
   "aurora",
+  "autoclave",
   "autoimmune",
   "azeotrope",
+  "basalt",
   "benzene",
   "bicarbonate",
   "binomial nomenclature",
+  "biohazard",
   "biomagnification",
   "bioremediation",
   "black hole",
+  "blinded experiment",
   "blood plasma",
   "blueshift",
   "boson",
+  "brachytherapy",
+  "bronchiole",
   "bronchioles",
   "brown dwarf",
   "brownian motion",
   "buffer solution",
+  "burette",
+  "bursa",
   "calcite",
   "caldera",
   "cambium",
   "capacitance",
   "capacitor",
+  "carbon cycle",
   "carbon dating",
   "carbonate",
   "carboxylic acid",
+  "carcinogen",
   "carnot cycle",
-  "carrying capacity",
-  "cartilage",
   "catabolism",
   "celestial equator",
   "celestial mechanics",
+  "cell culture",
   "centrifugal force",
   "centripetal force",
+  "cerebrospinal fluid",
   "chelate",
-  "chemotherapy",
   "chiral",
   "chlorophyll",
   "chromatography",
+  "citation",
+  "cloning",
+  "cloud chamber",
   "coevolution",
   "colloid",
   "conductance",
+  "confidence interval",
+  "confirmation bias",
+  "confounding variable",
   "congenital",
   "conjunction",
   "convergent evolution",
   "copolymer",
+  "coriolis effect",
   "coronal mass ejection",
   "corrosive",
   "cosmic microwave background",
   "covalent bond",
+  "crispr",
+  "cross-sectional study",
+  "crucible",
   "cryogenics",
+  "cryopreservation",
   "curvature",
   "cyanide",
+  "cyclotron",
+  "cytokine storm",
   "dark energy",
   "dark matter",
+  "data integrity",
   "decarboxylation",
   "declination",
-  "deposition",
+  "dendrochronology",
+  "density dependence",
+  "dependent variable",
   "desiccant",
-  "diaphragm",
+  "desiccator",
   "diffraction",
   "diode",
   "disease vector",
   "dissociation",
   "distillation",
   "divergent evolution",
+  "dna sequencing",
   "doppler effect",
+  "double-blind study",
   "drake equation",
   "dwarf galaxy",
   "ecliptic",
   "ecological niche",
+  "el niño",
   "electrolysis",
   "electromagnetism",
+  "electron microscopy",
   "electron transport chain",
   "electronegativity",
+  "electrophoresis",
   "electrostatic",
   "elliptical galaxy",
+  "embryogenesis",
   "emulsion",
   "enantiomer",
   "endemic",
@@ -644,49 +162,62 @@
   "enthalpy",
   "entropy",
   "epicenter",
-  "epidemiology",
+  "erlenmeyer flask",
   "erythrocyte",
   "escape velocity",
   "ester",
   "esterification",
   "ethanol",
   "ether",
+  "ethics committee",
   "etiology",
-  "eutrophication",
   "exoplanet",
   "exosphere",
+  "experimental group",
+  "falsifiability",
   "fault line",
   "feldspar",
   "fermion",
   "fertilization",
   "fetus",
+  "fibrin",
   "filtration",
   "flammable",
   "formaldehyde",
   "fossil record",
   "fumarole",
+  "fume hood",
+  "gel electrophoresis",
+  "gene editing",
   "gene flow",
   "genetic drift",
   "geocentric",
   "geostationary orbit",
   "germination",
-  "gestation",
   "gibbs free energy",
   "globular cluster",
+  "glove box",
   "gluon",
   "glycerol",
   "glycolysis",
+  "graduated cylinder",
+  "granite",
+  "grant proposal",
   "gravitational lensing",
   "gravitational waves",
+  "gypsum",
+  "h-index",
   "habitable zone",
   "hadron",
   "halogen",
   "harmonic motion",
   "heat engine",
   "heliocentric",
+  "hematite",
+  "hematopoiesis",
   "hereditary",
   "higgs boson",
-  "histology",
+  "histopathology",
   "homeostasis",
   "homologous structures",
   "hot jupiter",
@@ -694,18 +225,23 @@
   "hydrogen bond",
   "hydrolysis",
   "hydroxide",
+  "hygrometer",
   "hygroscopic",
   "hypocenter",
+  "ice core",
   "igneous rock",
   "immiscible",
   "immunization",
-  "immunotherapy",
+  "impact factor",
   "impedance",
+  "incubator",
+  "independent variable",
   "inductor",
   "inert gas",
   "inertia",
   "inflammation",
   "interference",
+  "interferometer",
   "interstellar medium",
   "ionic bond",
   "ionization",
@@ -713,27 +249,42 @@
   "irregular galaxy",
   "isomer",
   "isothermal process",
+  "jet stream",
+  "karst",
   "ketone",
   "kinetic theory",
   "krebs cycle",
+  "la niña",
+  "lab coat",
   "lactation",
   "lagrange point",
   "lahar",
+  "laminar flow hood",
   "lanthanide",
   "lava tube",
   "lepton",
   "leukocyte",
   "ligand",
   "light-year",
+  "limestone",
   "liquefaction",
+  "literature review",
   "lithification",
+  "longitudinal study",
   "lunar eclipse",
   "lymphocyte",
+  "lyophilization",
   "magma chamber",
+  "magnetite",
   "magnetosphere",
   "main sequence",
+  "marble",
+  "margin of error",
   "marrow",
   "mass spectrometry",
+  "median",
+  "mediastinum",
+  "meniscus",
   "meristem",
   "mesosphere",
   "metabolism",
@@ -744,42 +295,59 @@
   "metastasis",
   "methanol",
   "mica",
+  "micropipette",
+  "microtome",
   "mid-ocean ridge",
   "miscible",
   "molarity",
   "molecular cloud",
   "monomer",
+  "moraine",
   "muon",
+  "myoglobin",
   "natural selection",
+  "neoplasm",
   "neutralization",
   "neutrino",
   "neutron star",
   "nitrate",
   "nitrite",
+  "nitrogen cycle",
   "noble gas",
   "normal fault",
   "nucleosynthesis",
+  "null hypothesis",
   "nymph",
+  "occam\\",
   "occultation",
+  "oncogene",
   "oncology",
   "open cluster",
   "opposition",
   "orbital mechanics",
+  "ore",
   "oscillation",
   "oxidation state",
   "oxide",
   "oxidizing agent",
+  "p-value",
   "p-wave",
   "paleontology",
   "pandemic",
+  "paradigm",
+  "paradigm shift",
   "parallax",
   "parsec",
-  "pathology",
+  "particle accelerator",
+  "pathogenesis",
   "pauli exclusion principle",
+  "pcr",
+  "peer review",
   "penumbra",
   "perigee",
   "perihelion",
   "peroxide",
+  "ph meter",
   "phagocyte",
   "phenol",
   "phloem",
@@ -794,53 +362,88 @@
   "pollination",
   "polymer",
   "polymerization",
+  "preprint",
   "primary succession",
+  "prospective study",
   "protostar",
   "pulsar",
+  "pyrite",
   "pyroclastic flow",
+  "qualitative research",
+  "quantitative research",
   "quantum tunneling",
   "quark",
   "quartz",
   "quasar",
   "radial velocity method",
+  "radio telescope",
   "radiometric dating",
   "radiotherapy",
   "red giant",
   "redox reaction",
   "redshift",
   "reducing agent",
+  "reflecting telescope",
+  "reflux condenser",
+  "refracting telescope",
   "refraction",
+  "registered report",
+  "regression analysis",
+  "remote sensing",
+  "replication crisis",
+  "reproducibility",
+  "research ethics",
   "resistivity",
   "resonance",
+  "retraction",
   "retrograde motion",
+  "retrospective study",
   "reverse fault",
   "richter scale",
   "rift valley",
   "right ascension",
   "roche limit",
   "rogue planet",
+  "rotary evaporator",
   "s-wave",
+  "safety goggles",
+  "sample size",
+  "sandstone",
   "saponification",
   "saturated solution",
+  "scanning electron microscope",
+  "scoping review",
   "secondary succession",
   "sedimentary rock",
   "sedimentation",
   "seismograph",
   "seismology",
+  "selection bias",
   "semiconductor",
+  "separatory funnel",
   "seti",
   "shale",
   "shield volcano",
   "sidereal day",
+  "siltation",
+  "sinkhole",
   "slate",
   "solar eclipse",
   "solar flare",
   "solar wind",
   "solenoid",
+  "sonar",
   "speciation",
+  "spectrophotometer",
   "spectroscopy",
   "spiral galaxy",
+  "stalactite",
+  "stalagmite",
+  "standard deviation",
   "standard model",
+  "statistical significance",
+  "stem cell",
+  "sterile technique",
   "stomata",
   "stratigraphy",
   "stratosphere",
@@ -860,6 +463,7 @@
   "surfactant",
   "suspension",
   "synchronous orbit",
+  "synchrotron",
   "synodic month",
   "taxonomy",
   "thermocouple",
@@ -867,32 +471,41 @@
   "thermosphere",
   "tidal locking",
   "titration",
+  "topographic map",
   "torque",
   "transistor",
   "transit method",
   "transition metal",
   "troposphere",
+  "ultracentrifuge",
   "umbra",
   "umbrella species",
   "uncertainty principle",
   "urea",
+  "vacuum chamber",
   "van der waals forces",
   "vestigial structures",
   "viscosity",
   "volcanic ash",
+  "volumetric flask",
+  "water table",
   "wave function",
   "wave-particle duality",
+  "weather balloon",
   "weathering",
   "white dwarf",
   "wormhole",
+  "x-ray crystallography",
   "xylem",
   "zodiac",
+  "zoonosis",
   "zoonotic",
   "zygote"
  ],
  "failed": [
   "crystallization",
   "event horizon",
+  "geiger counter",
   "quantum entanglement",
   "relativistic",
   "singularity",

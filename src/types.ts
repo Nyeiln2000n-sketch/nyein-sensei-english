@@ -41,7 +41,12 @@ export type TopicId =
   | 'medicine'
   | 'art'
   | 'philosophy'
-  | 'environment';
+  | 'environment'
+  | 'academia'
+  | 'literature'
+  | 'diplomacy'
+  | 'rhetoric'
+  | 'frontier-science';
 
 export interface Word {
   en: string;

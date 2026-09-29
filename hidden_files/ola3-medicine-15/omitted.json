@@ -1,0 +1,34 @@
+[
+ {
+  "word": "amniocentesis",
+  "reason": "media service content/integrity denial - DO NOT RETRY with same prompt"
+ },
+ {
+  "word": "lumpectomy",
+  "reason": "media service content/integrity denial - DO NOT RETRY with same prompt"
+ },
+ {
+  "word": "secondhand smoke",
+  "reason": "media service content/integrity denial - DO NOT RETRY with same prompt"
+ },
+ {
+  "word": "episiotomy",
+  "reason": "media service content/integrity denial - DO NOT RETRY with same prompt"
+ },
+ {
+  "word": "binge eating disorder",
+  "reason": "media service content/integrity denial - DO NOT RETRY with same prompt"
+ },
+ {
+  "word": "corneal transplant",
+  "reason": "media service quarantine - DO NOT RETRY"
+ },
+ {
+  "word": "blood transfusion",
+  "reason": "media service quarantine - DO NOT RETRY"
+ },
+ {
+  "word": "peritoneal dialysis",
+  "reason": "media service quarantine - DO NOT RETRY"
+ }
+]

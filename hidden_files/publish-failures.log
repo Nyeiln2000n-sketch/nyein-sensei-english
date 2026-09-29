@@ -52,3 +52,9 @@ New finding: /rate_limit shows core quota FULL (5000/5000) — the 403s are SECO
 - publish-state.json NOT updated on failure (still {"published_images": 1466}); no push was made, so no partial publish went live. Next scheduled run will retry the same batch.
 - Suggested for main agent: make the publish script snapshot/copy the image set to a temp dir before typecheck+build, or pause the image generator during the build, or have Vite build ignore missing files.
 [2026-09-29 18:45:27 +0000] repaired publish-every-100.sh: build now retries once after 30s settle when failing with ENOENT (image-worker temp-file rename race); verified with bash -n.
+[2026-09-30 02:28 +07] Push menor (3 PNG arte + manifiesto batch-8 500/500) FAILED: GitHub API HTTP 403 secondary rate limit. Contenido verificado localmente (320x320, ≤35KB, manifiesto 500/500). Lo llevará el publicador incremental.
+[2026-09-29 20:34:44 UTC] publish-word-images-batch: TYPECHECK FAILED during batch publish.
+  images=5365 last_published=1666 delta=3699 chunk_max=200
+  chunked publish of +200 images aborted at typecheck on src/data/f14/phrases-batch-19.ts (TS syntax errors at lines 189-194: "';' expected" / "Declaration or statement expected" — likely malformed batch data file).
+  No push was made; no state advanced.
+[2026-09-29 20:37:32 +0000] repaired src/data/f14/phrases-batch-19.ts: removed premature ]; at old lines 52 and 146 (worker had concatenated 3 array dumps under one export const); tsc clean; coordinator notified to audit other Ola 4 batch files for the same pattern.

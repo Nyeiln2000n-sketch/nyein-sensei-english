@@ -35,6 +35,11 @@ export const topics: Topic[] = [
   { id: 'art', nameMy: 'အနုပညာ', nameEn: 'Art', icon: '🎨', color: '#e64980' },
   { id: 'philosophy', nameMy: 'ဒဿနိကဗေဒ', nameEn: 'Philosophy', icon: '💭', color: '#7048e8' },
   { id: 'environment', nameMy: 'သဘာဝပတ်ဝန်းကျင်', nameEn: 'Environment', icon: '🌍', color: '#2f9e44' },
+  { id: 'academia', nameMy: 'ပညာရပ်ဆိုင်ရာ', nameEn: 'Academia', icon: '🎓', color: '#1c7ed6' },
+  { id: 'literature', nameMy: 'စာပေ', nameEn: 'Literature', icon: '📚', color: '#9c36b5' },
+  { id: 'diplomacy', nameMy: 'သံတမန်ရေး', nameEn: 'Diplomacy', icon: '🤝', color: '#0c8599' },
+  { id: 'rhetoric', nameMy: 'စကားပြောအနုပညာ', nameEn: 'Rhetoric & Speech', icon: '🎤', color: '#e67700' },
+  { id: 'frontier-science', nameMy: 'ခေတ်သစ်သိပ္ပံ', nameEn: 'Frontier Science', icon: '🚀', color: '#3b5bdb' },
 ];
 
 /** Backwards-compatible alias. */

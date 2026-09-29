@@ -1,0 +1,4 @@
+{
+  "text": "{\"error_format_version\":1,\"error\":{\"code\":\"internal\",\"retryable\":false,\"detail\":\"An unexpected error occurred.\",\"downstream_status\":500}}",
+  "attachments": []
+}
