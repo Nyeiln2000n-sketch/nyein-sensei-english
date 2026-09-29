@@ -30,7 +30,7 @@ function segmentProgress(t: Topic, seg: Segment): { text: string; done: boolean 
 function onTap(t: Topic, seg: Segment, go: GoFn) {
   if (seg === 'basic') go('quiz', { topic: t.id, level: 1 });
   else if (seg === 'vocab') go('vocab', { topic: t.id });
-  else go('quiz', { topic: t.id, mode: 'phrases' });
+  else go('conv', { topic: t.id });
 }
 
 export default function LessonsScreen({ go, params }: { go: GoFn; params?: NavParams }) {

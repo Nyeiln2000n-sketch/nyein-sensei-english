@@ -45,7 +45,14 @@ export default defineConfig({
         // lazily on demand via WordImage (with a letter-tile fallback).
         // Precaching them would bloat the install and break iOS PWA limits.
         // Same for the 28 premium topic cards (~6MB): on-demand only.
-        globIgnores: ['**/word-images/**', '**/topic-cards/**', '**/splash/**'],
+        // FASE 14 Ola 2: phrase images (~1007 mapped, ~1350 files) also load
+        // on demand via PhraseImage (letter-tile fallback) — precaching them
+        // would add ~400MB raw / tens of MB optimized to the install.
+        globIgnores: ['**/word-images/**', '**/topic-cards/**', '**/splash/**', '**/phrase-images/**'],
+        // FASE 14 Ola 2: the main JS chunk grew past Workbox's 2MB default
+        // precache limit (it now carries 5000 words / 3820 phrases / drills).
+        // 3MB keeps the install small while letting the app shell precache.
+        maximumFileSizeToCacheInBytes: 3 * 1024 * 1024,
         runtimeCaching: [
           {
             urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i,

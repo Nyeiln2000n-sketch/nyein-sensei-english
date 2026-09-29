@@ -19,6 +19,12 @@ const AuthScreen = lazy(() => import('./components/AuthScreen'));
 const OrgScreen = lazy(() => import('./components/OrgScreen'));
 const InviteAcceptScreen = lazy(() => import('./components/InviteAcceptScreen'));
 const PlanChoiceScreen = lazy(() => import('./components/PlanChoiceScreen'));
+// FASE 14 Ola 2 (E2-001→E2-005): new exercise formats, code-split like the rest.
+const ConjugationDrillScreen = lazy(() => import('./components/ConjugationDrillScreen'));
+const TenseQuizScreen = lazy(() => import('./components/TenseQuizScreen'));
+const SentenceBuilderScreen = lazy(() => import('./components/SentenceBuilderScreen'));
+const DictationScreen = lazy(() => import('./components/DictationScreen'));
+const DialoguesStoriesScreen = lazy(() => import('./components/DialoguesStoriesScreen'));
 import SpeechFallbackNotice from './components/SpeechFallbackNotice';
 import InstallPrompt from './components/InstallPrompt';
 // FASE 11 (Worker C): daily gentle reminder banner — mounted once at root
@@ -53,6 +59,11 @@ const FULLSCREEN_ROUTES: RouteName[] = [
   'orgs',
   'invite',
   'planChoice',
+  'conjugationDrill',
+  'tenseQuiz',
+  'sentenceBuilder',
+  'dictation',
+  'conv',
 ];
 
 interface Route {
@@ -411,6 +422,11 @@ export default function App() {
                 onDone={(choice) => go(choice === 'personal' ? 'home' : 'orgs')}
               />
             )}
+            {route.name === 'conjugationDrill' && <ConjugationDrillScreen {...screenProps} />}
+            {route.name === 'tenseQuiz' && <TenseQuizScreen {...screenProps} />}
+            {route.name === 'sentenceBuilder' && <SentenceBuilderScreen {...screenProps} />}
+            {route.name === 'dictation' && <DictationScreen {...screenProps} />}
+            {route.name === 'conv' && <DialoguesStoriesScreen {...screenProps} />}
           </Suspense>
         </ErrorBoundary>
       </main>

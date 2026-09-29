@@ -16,3 +16,23 @@ images=1005 last_published=109 delta=896 | mapped=1000 | typecheck+build+dedup-c
 GitHub API HTTP 422 on PATCH /git/refs/heads/main: "Update is not a fast forward" (remote main moved ahead; 1056 blobs uploaded, tree chunks 8/8 created, ref update rejected)
 No user message sent (per script contract: stay silent on failure).
 [2026-09-29 03:09:08 +07] publish-state.json was found at 1005 (set by an unknown actor mid-run; this script only writes state on PUBLISHED_OK). GitHub main latest commit is 00c6c45ba1bc "Duolingo-level upgrade..." (2026-09-28T20:05:50Z) — NO "Word images batch" commit exists, so the 1005-image batch was NOT published. State reverted to 109 (last value the script read) so the next run retries the batch instead of SKIPping forever.
+[2026-09-29 15:05:45 +0000] publish-word-images-batch FAILED
+output: images=1829 last_published=1466 delta=363 mapped=1804
+TYPECHECK FAILED: tsc --noEmit
+  src/components/DialoguesStoriesScreen.tsx(35,7): error TS2739: Record<"all"|CEFR,string> missing C1, C2
+  src/components/SentenceBuilderScreen.tsx(316,17): error TS2552: Cannot find name 'setSession' (did you mean 'session'?)
+
+--- 2026-09-29T22:34:10+07 attempt=1 ---
+images=2254 last_published=1466 delta=788 / mapped: 1804 / DEDUP FAILED / duplicate word fingerprints: candid (friends/batch-9:55 vs personality/batch-11:342), impulsive (batch-10:498 vs batch-11:457), ecstatic (batch-9:447 vs batch-11:382), diligent (batch-10:493 vs batch-11:369), expedite (batch-11:220 vs batch-10:175), content (batch-9:448 vs batch-11:352), extract (batch-10:386 vs batch-11:225). No publish executed; state.json unchanged.
+
+[2026-09-29 16:14:19 +0000] PUBLISH PUSH FAILED: GitHub API HTTP 502 on POST /git/trees after successful typecheck, build (PWA v0.21.2, 881 precache entries), and dedup-check (14410 items, 0 duplicates). 2768 blobs uploaded, 4 vanished skipped. images=2665, last_published=1466, delta=1199, mapped=1804. State NOT updated (no publish recorded).
+--- 2026-09-29 23:34+07 run (publish-word-images-batch) ---
+images=2859 last_published=1466 delta=1393 mapped=1804
+build/typecheck/dedup-check: OK (14410 items indexed, 0 same-kind duplicates)
+PUSH FAILED: GitHub API HTTP 403 on POST /git/blobs — API rate limit exceeded for user ID 334643275 (2026-09-29 16:40:44 UTC, request id 3241:D7B62:A0DAB:B3CF4:6ABBEA0C). publish-state.json NOT updated; next run should retry the push when rate limit resets.
+
+
+[2026-09-29 23:45 +07] REPAIR by main agent: publish-every-100.sh rewritten for CHUNKED pushes.
+Root cause of F F F streak: gh-push-dir uploads every new blob in one run (~1200-1400 PNGs) -> GitHub API 502 / 422 tree-too-large / 403 rate limit.
+Fix: each run publishes at most CHUNK_MAX=200 new images (excess PNGs moved to hidden_files/png-quarantine during the push, restored on EXIT via trap + crash-recovery at start); publish-state.json advances to the chunk's high-water mark; word-images.json mapping merged then filtered to PNGs actually in the chunk (no dangling references). Logic tested in isolation (chunk 350->300, restore 350, mapping filter 4->2). Next runs drain the backlog ~200 per 30 min.
+2026-09-29 17:05:53 UTC | PUSH FAILED | GitHub API HTTP 403 on POST /git/blobs: rate limit exceeded for user ID 334643275 (request BD5C:A8B57:E6955:104048:6ABBEFEA, 2026-09-29 17:05:47 UTC). images=2879 last_published=1466 delta=1413 mapped=1633. Typecheck/build/dedup-check all passed; only the push failed.

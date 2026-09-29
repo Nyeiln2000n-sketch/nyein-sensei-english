@@ -14,7 +14,12 @@ export type RouteName =
   | 'lessonComplete'
   | 'orgs'
   | 'invite'
-  | 'planChoice';
+  | 'planChoice'
+  | 'conjugationDrill'
+  | 'tenseQuiz'
+  | 'sentenceBuilder'
+  | 'dictation'
+  | 'conv';
 
 export interface NavParams {
   topic?: string;
