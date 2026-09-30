@@ -592007,12 +592007,12 @@
   {
    "id": "example:doctor:nausea",
    "kind": "example",
-   "en": "I feel nausea after the long trip.",
-   "en_norm": "i feel nausea after the long trip",
+   "en": "I felt nausea after the long trip.",
+   "en_norm": "i felt nausea after the long trip",
    "my_norm": "",
-   "fingerprint": "24962eb49bc8ddaf",
+   "fingerprint": "7cfbe082f0a29907",
    "vocab_sig": [
-    "feel",
+    "felt",
     "long",
     "nausea",
     "trip"
@@ -592278,17 +592278,17 @@
   {
    "id": "example:doctor:flu",
    "kind": "example",
-   "en": "Drink water and rest for flu.",
-   "en_norm": "drink water and rest for flu",
+   "en": "Drink water and rest when you have the flu.",
+   "en_norm": "drink water and rest when you have the flu",
    "my_norm": "",
-   "fingerprint": "998909e793561206",
+   "fingerprint": "a57817dbf7e48374",
    "vocab_sig": [
     "drink",
     "flu",
     "rest",
     "water"
    ],
-   "template_sig": "W W and W for W .",
+   "template_sig": "W W and W when you have the W .",
    "tags": [
     "doctor",
     "example"
@@ -592317,16 +592317,17 @@
   {
    "id": "example:doctor:vomit",
    "kind": "example",
-   "en": "The baby might vomit after milk.",
-   "en_norm": "the baby might vomit after milk",
+   "en": "The baby might vomit after drinking milk.",
+   "en_norm": "the baby might vomit after drinking milk",
    "my_norm": "",
-   "fingerprint": "356a47988f030ad4",
+   "fingerprint": "c6152a7e8b173e0b",
    "vocab_sig": [
     "baby",
+    "drinking",
     "milk",
     "vomit"
    ],
-   "template_sig": "the W might W after W .",
+   "template_sig": "the W might W after W W .",
    "tags": [
     "doctor",
     "example"
@@ -592392,15 +592393,15 @@
   {
    "id": "example:doctor:shiver",
    "kind": "example",
-   "en": "I shiver when I have fever.",
-   "en_norm": "i shiver when i have fever",
+   "en": "I shiver when I have a fever.",
+   "en_norm": "i shiver when i have a fever",
    "my_norm": "",
-   "fingerprint": "d07abc3d6393532e",
+   "fingerprint": "489e9c102e59b6f0",
    "vocab_sig": [
     "fever",
     "shiver"
    ],
-   "template_sig": "i W when i have W .",
+   "template_sig": "i W when i have a W .",
    "tags": [
     "doctor",
     "example"
@@ -592619,16 +592620,17 @@
   {
    "id": "example:doctor:bruise",
    "kind": "example",
-   "en": "The bruise will fade in days.",
-   "en_norm": "the bruise will fade in days",
+   "en": "The bruise will fade in a few days.",
+   "en_norm": "the bruise will fade in a few days",
    "my_norm": "",
-   "fingerprint": "921f638f6413add6",
+   "fingerprint": "5bc0abda6aba8d4d",
    "vocab_sig": [
     "bruise",
     "days",
-    "fade"
+    "fade",
+    "few"
    ],
-   "template_sig": "the W will W in W .",
+   "template_sig": "the W will W in a W W .",
    "tags": [
     "doctor",
     "example"
@@ -592774,13 +592776,13 @@
   {
    "id": "example:doctor:syrup",
    "kind": "example",
-   "en": "Take one spoon of syrup daily.",
-   "en_norm": "take one spoon of syrup daily",
+   "en": "Take one spoonful of syrup daily.",
+   "en_norm": "take one spoonful of syrup daily",
    "my_norm": "",
-   "fingerprint": "fcb62955f6b38a30",
+   "fingerprint": "f2d56b5d4ba4e724",
    "vocab_sig": [
     "daily",
-    "spoon",
+    "spoonful",
     "syrup",
     "take"
    ],
