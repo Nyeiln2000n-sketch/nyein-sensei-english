@@ -606501,16 +606501,16 @@
   {
    "id": "example:personality:tolerant",
    "kind": "example",
-   "en": "She is tolerant with new students.",
-   "en_norm": "she is tolerant with new students",
+   "en": "She is tolerant of new students.",
+   "en_norm": "she is tolerant of new students",
    "my_norm": "",
-   "fingerprint": "a9ea267bcfdd98f5",
+   "fingerprint": "684e1442522d1bf9",
    "vocab_sig": [
     "new",
     "students",
     "tolerant"
    ],
-   "template_sig": "she is W with W W .",
+   "template_sig": "she is W of W W .",
    "tags": [
     "personality",
     "example"
@@ -607068,10 +607068,10 @@
   {
    "id": "example:personality:humble",
    "kind": "example",
-   "en": "Great people stay humble always.",
-   "en_norm": "great people stay humble always",
+   "en": "Great people always stay humble.",
+   "en_norm": "great people always stay humble",
    "my_norm": "",
-   "fingerprint": "59b507eacd298cbe",
+   "fingerprint": "287c6001c1086016",
    "vocab_sig": [
     "always",
     "great",
@@ -607865,10 +607865,10 @@
   {
    "id": "example:personality:sociable",
    "kind": "example",
-   "en": "He meets new people easily and is sociable.",
-   "en_norm": "he meets new people easily and is sociable",
+   "en": "He is sociable and meets new people easily.",
+   "en_norm": "he is sociable and meets new people easily",
    "my_norm": "",
-   "fingerprint": "ecbb5ac8a9144cb3",
+   "fingerprint": "e06c5020f8751f29",
    "vocab_sig": [
     "easily",
     "meets",
@@ -607876,7 +607876,7 @@
     "people",
     "sociable"
    ],
-   "template_sig": "he W W W W and is W .",
+   "template_sig": "he is W and W W W W .",
    "tags": [
     "personality",
     "example"
