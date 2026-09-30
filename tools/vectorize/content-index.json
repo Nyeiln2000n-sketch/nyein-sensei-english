@@ -595221,7 +595221,7 @@
    "kind": "word",
    "en": "nervous",
    "en_norm": "nervous",
-   "my_norm": "စိတ်လှုပ်ရှားသော",
+   "my_norm": "စိတ်ပူပန်သော",
    "fingerprint": "fb3a7850111f293b",
    "vocab_sig": [
     "nervous"
@@ -595385,16 +595385,15 @@
   {
    "id": "example:emotions:heart",
    "kind": "example",
-   "en": "My heart beats fast.",
-   "en_norm": "my heart beats fast",
+   "en": "She has a kind heart.",
+   "en_norm": "she has a kind heart",
    "my_norm": "",
-   "fingerprint": "db67ccbeac2c31d1",
+   "fingerprint": "6120fb6cab6e2465",
    "vocab_sig": [
-    "beats",
-    "fast",
-    "heart"
+    "heart",
+    "kind"
    ],
-   "template_sig": "my W W W .",
+   "template_sig": "she has a W W .",
    "tags": [
     "emotions",
     "example"
@@ -595520,7 +595519,7 @@
    "kind": "word",
    "en": "hope",
    "en_norm": "hope",
-   "my_norm": "မျှော်လင့်ချက်",
+   "my_norm": "မျှော်လင့်သည်",
    "fingerprint": "c29277f55fb31aeb",
    "vocab_sig": [
     "hope"
