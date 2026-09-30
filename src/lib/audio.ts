@@ -13,26 +13,44 @@
 let cachedVoices: SpeechSynthesisVoice[] = [];
 let resumeTimer: number | null = null;
 
-/* ---------- A-003: slow-speech default (learning mode toggle) ---------- */
+/* ---------- A-003: speech rate (learning mode) ---------- */
+// 2026-10-01: cambiado de booleano a velocidad numérica por petición de
+// Nyein — la tortuga (0.55) seguía siendo rápida para algunos. Ahora hay
+// 3 velocidades: 0.35 (muy lento), 0.6 (lento), 1.0 (normal).
 
-const SLOW_KEY = 'nse_slow_speech';
+const RATE_KEY = 'nse_speech_rate';
 
-/** True when the learner enabled "speak slowly" (persisted). */
-export function isSlowDefault(): boolean {
+/** Velocidad actual persistida (0.35 | 0.6 | 1.0). Por defecto 1.0. */
+export function getSpeechRate(): number {
   try {
-    return localStorage.getItem(SLOW_KEY) === '1';
+    const v = parseFloat(localStorage.getItem(RATE_KEY) || '1');
+    if (v === 0.35 || v === 0.6 || v === 1) return v;
+    // Migración desde el antiguo booleano.
+    if (localStorage.getItem('nse_slow_speech') === '1') return 0.6;
+    return 1;
   } catch {
-    return false;
+    return 1;
   }
 }
 
-/** Persist the learner's slow-speech preference. */
-export function setSlowDefault(v: boolean): void {
+/** Persiste la velocidad elegida por el usuario. */
+export function setSpeechRate(r: number): void {
   try {
-    localStorage.setItem(SLOW_KEY, v ? '1' : '0');
+    localStorage.setItem(RATE_KEY, String(r));
+    localStorage.removeItem('nse_slow_speech');
   } catch {
     /* ignore */
   }
+}
+
+/** True cuando la velocidad es menor que la normal (compatibilidad). */
+export function isSlowDefault(): boolean {
+  return getSpeechRate() < 1;
+}
+
+/** Compatibilidad: true → 0.6, false → 1.0. */
+export function setSlowDefault(v: boolean): void {
+  setSpeechRate(v ? 0.6 : 1);
 }
 
 /* ---------- A-005: failure detection, retry + visible notice ---------- */
@@ -89,16 +107,15 @@ function untrackUtterance(seq: number, st: UtterState): void {
 
 function issueUtterance(
   text: string,
-  slow: boolean,
+  rate: number,
   seq: number,
   st: UtterState,
   quiet: boolean | undefined,
 ): void {
   const utter = new SpeechSynthesisUtterance(text);
   utter.lang = 'en-US';
-  // A-003: slow rate is deliberately much slower (0.55 vs 0.95) so the
-  // learner can clearly hear the difference on the turtle toggle.
-  utter.rate = slow ? 0.55 : 0.95;
+  // 2026-10-01: velocidad numérica (0.35 | 0.6 | 1.0) elegida por el usuario.
+  utter.rate = rate;
   utter.pitch = 1;
   const voice = pickEnglishVoice(cachedVoices);
   if (voice) utter.voice = voice;
@@ -117,12 +134,12 @@ function issueUtterance(
         /* ignore */
       }
       try {
-        issueUtterance(text, slow, seq, st, quiet);
+        issueUtterance(text, rate, seq, st, quiet);
       } catch {
         untrackUtterance(seq, st);
         notifyIssue('failed', quiet);
       }
-      scheduleWatchdog(text, slow, seq, st, quiet);
+      scheduleWatchdog(text, rate, seq, st, quiet);
     } else {
       untrackUtterance(seq, st);
       notifyIssue('failed', quiet);
@@ -137,7 +154,7 @@ function issueUtterance(
 // retry once, then surface a visible Myanmar-first message.
 function scheduleWatchdog(
   text: string,
-  slow: boolean,
+  rate: number,
   seq: number,
   st: UtterState,
   quiet: boolean | undefined,
@@ -151,12 +168,12 @@ function scheduleWatchdog(
       if (!cur.retried) {
         cur.retried = true;
         try {
-          issueUtterance(text, slow, seq, cur, quiet);
+          issueUtterance(text, rate, seq, cur, quiet);
         } catch {
           untrackUtterance(seq, cur);
           notifyIssue('failed', quiet);
         }
-        scheduleWatchdog(text, slow, seq, cur, quiet);
+        scheduleWatchdog(text, rate, seq, cur, quiet);
       } else {
         untrackUtterance(seq, cur);
         notifyIssue('failed', quiet);
@@ -257,12 +274,14 @@ export function speak(text: string, opts: { slow?: boolean; quiet?: boolean } = 
   try {
     // Never queue: cancel any in-flight utterance first.
     window.speechSynthesis.cancel();
-    const slow = opts.slow ?? isSlowDefault();
+    // 2026-10-01: opts.slow (booleano explícito) → 0.6/1.0; si no, la
+    // velocidad numérica elegida por el usuario.
+    const rate = opts.slow === true ? 0.6 : opts.slow === false ? 1 : getSpeechRate();
     const seq = ++speakSeq;
     const st: UtterState = { ended: false, retried: false };
     trackUtterance(seq, st);
-    issueUtterance(text, slow, seq, st, opts.quiet);
-    scheduleWatchdog(text, slow, seq, st, opts.quiet);
+    issueUtterance(text, rate, seq, st, opts.quiet);
+    scheduleWatchdog(text, rate, seq, st, opts.quiet);
     return Promise.resolve(true);
   } catch {
     notifyIssue('failed', opts.quiet);
@@ -290,4 +309,76 @@ export function stopSpeaking(): void {
 /** True when the browser can speak at all. */
 export function canSpeak(): boolean {
   return supported();
+}
+
+/* ---------- 2026-10-01: segundo plano y pantalla bloqueada ---------- */
+// Nyein pidió escuchar la lista como mantras (durmiendo / ejercicio).
+// - Wake Lock: evita que la pantalla se apague sola durante la playlist.
+// - Media Session: muestra qué suena en la pantalla de bloqueo (donde el
+//   navegador lo soporta).
+// LÍMITE HONESTO (iOS): si ella BLOQUEA manualmente el iPhone, iOS suspende
+// speechSynthesis y la lista se pausa. No hay forma de evitarlo en una PWA;
+// es una restricción de Apple, no un bug. Con la pantalla encendida (aunque
+// esté en otra app o con el teléfono en el bolsillo sin bloquear), sigue.
+
+let wakeLock: { release: () => Promise<void>; addEventListener?: (t: string, cb: () => void) => void } | null = null;
+
+/** Pide que la pantalla no se apague (para playlists largas). */
+export async function requestWakeLock(): Promise<void> {
+  try {
+    const nav = navigator as Navigator & {
+      wakeLock?: { request: (t: string) => Promise<{ release: () => Promise<void> }> };
+    };
+    if (!nav.wakeLock?.request) return;
+    if (wakeLock) return; // ya activo
+    wakeLock = await nav.wakeLock.request('screen');
+    wakeLock.addEventListener?.('release', () => {
+      wakeLock = null;
+    });
+  } catch {
+    /* no soportado o denegado: seguir sin wake lock */
+  }
+}
+
+/** Libera el wake lock si estaba activo. */
+export async function releaseWakeLock(): Promise<void> {
+  try {
+    await wakeLock?.release();
+  } catch {
+    /* ignore */
+  }
+  wakeLock = null;
+}
+
+/** Informa al sistema qué se está reproduciendo (pantalla de bloqueo). */
+export function setMediaSession(title: string, artist?: string): void {
+  try {
+    const nav = navigator as Navigator & {
+      mediaSession?: {
+        metadata: unknown;
+        setActionHandler?: (a: string, h: (() => void) | null) => void;
+      };
+    };
+    if (!nav.mediaSession) return;
+    const MS = (window as unknown as { MediaMetadata?: new (o: object) => object }).MediaMetadata;
+    if (MS) {
+      (nav.mediaSession as { metadata: object | null }).metadata = new MS({
+        title,
+        artist: artist || 'Nyein Sensei English',
+        album: 'Vocabulario',
+      });
+    }
+  } catch {
+    /* ignore */
+  }
+}
+
+/** Limpia la metadata de la sesión multimedia. */
+export function clearMediaSession(): void {
+  try {
+    const nav = navigator as Navigator & { mediaSession?: { metadata: unknown } };
+    if (nav.mediaSession) (nav.mediaSession as { metadata: unknown }).metadata = null;
+  } catch {
+    /* ignore */
+  }
 }

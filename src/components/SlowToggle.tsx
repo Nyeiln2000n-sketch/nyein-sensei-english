@@ -1,71 +1,76 @@
-// SlowToggle — A-003: learner-controlled slow speech for learning mode.
-// A persistent turtle toggle ("ဖြည်းဖြည်း") that makes every tap-to-speak
-// utterance clearly slower (rate 0.55 instead of 0.95). Screens that
-// pass an explicit `slow` option are unaffected.
+// SlowToggle — selector de velocidad de voz (2026-10-01).
+// Antes era un interruptor tortuga sí/no (0.55). Nyein pidió más control y
+// una velocidad aún más lenta: ahora hay 3 niveles persistidos.
+//  - 0.35 = muy lento 🐢🐢 (para principiantes)
+//  - 0.6  = lento 🐢
+//  - 1.0  = normal ▶
 import { useState } from 'react';
-import { Turtle } from 'lucide-react';
-import { isSlowDefault, setSlowDefault } from '../lib/audio';
+import { Turtle, Rabbit } from 'lucide-react';
+import { getSpeechRate, setSpeechRate } from '../lib/audio';
 import { C, FONT } from './w3-shared';
 
-export default function SlowToggle() {
-  const [slow, setSlow] = useState<boolean>(() => isSlowDefault());
+const SPEEDS = [
+  { rate: 0.35, label: 'muy lento' },
+  { rate: 0.6, label: 'lento' },
+  { rate: 1, label: 'normal' },
+] as const;
 
-  const toggle = () => {
-    const next = !slow;
-    setSlow(next);
-    setSlowDefault(next);
+export default function SlowToggle() {
+  const [rate, setRate] = useState<number>(() => getSpeechRate());
+
+  const pick = (r: number) => {
+    setRate(r);
+    setSpeechRate(r);
   };
 
   return (
-    <button
-      type="button"
-      onClick={toggle}
-      aria-pressed={slow}
-      aria-label={slow ? 'အသံ ပုံမှန်အတိုင်း ပြန်ပြောင်းမယ်' : 'အသံ ဖြည်းဖြည်းချင်း နားထောင်မယ်'}
+    <div
+      role="group"
+      aria-label="Velocidad de la voz"
       style={{
         display: 'inline-flex',
         alignItems: 'center',
-        gap: 8,
-        border: 'none',
+        background: '#fff',
         borderRadius: 999,
-        padding: '8px 14px',
-        fontFamily: FONT,
-        fontWeight: 800,
-        fontSize: 13,
-        cursor: 'pointer',
-        background: slow ? C.blue : '#fff',
-        color: slow ? '#fff' : C.text,
+        padding: 4,
         boxShadow: '0 4px 12px rgba(0,0,0,0.06)',
-        transition: 'background 0.2s',
       }}
     >
-      <Turtle size={17} />
-      ဖြည်းဖြည်း
-      <span
-        aria-hidden="true"
-        style={{
-          width: 30,
-          height: 17,
-          borderRadius: 999,
-          background: slow ? '#fff' : '#E5D9C3',
-          position: 'relative',
-          display: 'inline-block',
-        }}
-      >
-        <span
-          style={{
-            position: 'absolute',
-            top: 2,
-            left: slow ? 15 : 2,
-            width: 13,
-            height: 13,
-            borderRadius: '50%',
-            background: slow ? C.blue : '#fff',
-            boxShadow: '0 1px 3px rgba(0,0,0,0.25)',
-            transition: 'left 0.2s',
-          }}
-        />
-      </span>
-    </button>
+      {SPEEDS.map((s) => {
+        const active = rate === s.rate;
+        return (
+          <button
+            key={s.rate}
+            type="button"
+            onClick={() => pick(s.rate)}
+            aria-pressed={active}
+            aria-label={`Velocidad ${s.label}`}
+            title={`Velocidad: ${s.label}`}
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: 6,
+              border: 'none',
+              borderRadius: 999,
+              padding: '8px 12px',
+              fontFamily: FONT,
+              fontWeight: 800,
+              fontSize: 13,
+              cursor: 'pointer',
+              background: active ? C.blue : 'transparent',
+              color: active ? '#fff' : C.text,
+              transition: 'background 0.2s',
+            }}
+          >
+            {s.rate === 1 ? (
+              <Rabbit size={16} />
+            ) : (
+              <Turtle size={16} />
+            )}
+            {s.rate === 0.35 ? '🐢🐢' : s.rate === 0.6 ? '🐢' : 'normal'}
+          </button>
+        );
+      })}
+    </div>
   );
 }

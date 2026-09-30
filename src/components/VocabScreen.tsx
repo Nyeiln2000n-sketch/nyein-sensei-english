@@ -20,7 +20,7 @@ import type { TopicId, Word } from '../types';
 import { topics, wordsByTopic, loadAllWords } from '../data';
 import { getStreak } from '../lib/storage';
 import { recordWordReview, wordKey } from '../lib/review';
-import { speak, stopSpeaking } from '../lib/audio';
+import { speak, stopSpeaking, requestWakeLock, releaseWakeLock, setMediaSession, clearMediaSession } from '../lib/audio';
 import { useWindowing } from '../lib/useWindowing';
 import { SkeletonList } from './Skeleton';
 import WordImage, { preloadWordImage } from './WordImage';
@@ -133,6 +133,8 @@ function VocabGame({ go, params, words }: { go: GoFn; params?: NavParams; words:
     setPlIdx(i);
     setPlDone(false);
     setActiveEn(w.en);
+    // 2026-10-01: mostrar la palabra actual en la pantalla de bloqueo.
+    setMediaSession(w.en, w.my);
     // The hardened audio.ts speak(): sync call keeps the iOS gesture chain
     // for tap-driven controls; chained utterances from the poll reuse the
     // same voice cache + resume guard (owner-ordered playlist exception to
@@ -149,6 +151,9 @@ function VocabGame({ go, params, words }: { go: GoFn; params?: NavParams; words:
     setPlPlaying(false);
     setPlDone(false);
     setActiveEn(null);
+    // 2026-10-01: liberar wake lock y limpiar media session al terminar.
+    void releaseWakeLock();
+    clearMediaSession();
   }, [stopPoll]);
 
   const startPoll = useCallback(() => {
@@ -183,6 +188,8 @@ function VocabGame({ go, params, words }: { go: GoFn; params?: NavParams; words:
     setPlActive(true);
     setPlPlaying(true);
     setPlDone(false);
+    // 2026-10-01: la pantalla no se apaga sola durante la lista (mantras).
+    void requestWakeLock();
     speakAt(0); // synchronous in the tap handler (AUDIO_CONTRACT)
     startPoll();
   }, [scopeList, speakAt, startPoll]);
@@ -232,20 +239,9 @@ function VocabGame({ go, params, words }: { go: GoFn; params?: NavParams; words:
     endPlaylist();
   }, [topic, endPlaylist]);
 
-  // Scroll the highlighted word into view when it is rendered.
-  useEffect(() => {
-    if (!activeEn) return;
-    try {
-      const esc =
-        typeof CSS !== 'undefined' && typeof CSS.escape === 'function'
-          ? CSS.escape(activeEn)
-          : activeEn.replace(/"/g, '\\"');
-      const el = document.querySelector(`[data-word-row="${esc}"]`);
-      if (el) (el as HTMLElement).scrollIntoView({ block: 'nearest', behavior: 'auto' });
-    } catch {
-      /* ignore */
-    }
-  }, [activeEn]);
+  // 2026-10-01: auto-scroll ELIMINADO por petición de Nyein — la pantalla
+  // se movía sola con cada palabra y no le dejaba desplazarse libremente.
+  // La palabra activa sigue resaltada, pero la pantalla ya no se mueve.
 
   const plList = plRef.current.list;
   const plWord = plList[plIdx];
