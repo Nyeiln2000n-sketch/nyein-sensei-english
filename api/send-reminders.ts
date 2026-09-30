@@ -32,7 +32,7 @@ const { Client } = require('pg') as typeof import('pg');
 const webpush = require('web-push') as typeof import('web-push');
 
 const VAPID_PUBLIC_KEY =
-  'BEu5o2W8sK3dF7hJ1mN4pQ6rT8uV0wX2yZ4aB6cD8eF0gH2iJ4kL6mN8oP0qR2sT4uV6wX8yZ0';
+  'BJ7yi_jEO_bdMs8qUxf1f16pmeri2oyUY6OjG9m4HsYFug1TASaRI_qdkJQu4LJbp8luuX3H8dL5kTGNf4FvrwU';
 const VAPID_SUBJECT = 'https://nyein-sensei-english.vercel.app/';
 const TITLE = 'Nyein Sensei English 🐱';
 
