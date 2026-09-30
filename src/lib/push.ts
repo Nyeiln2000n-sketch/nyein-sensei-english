@@ -129,23 +129,34 @@ async function saveSubscriptionRow(row: PushRow): Promise<boolean> {
 /**
  * Crea la suscripción push y la guarda en Supabase.
  * Llamar SOLO desde un gesto del usuario con permiso ya concedido.
- * Devuelve true si quedó suscrita y guardada.
+ * Devuelve {ok, step} para diagnóstico.
  */
-export async function subscribePush(userId: string): Promise<boolean> {
-  if (!isPushSupported()) return false;
+export async function subscribePush(userId: string): Promise<{ ok: boolean; step: string }> {
+  if (!isPushSupported()) return { ok: false, step: 'unsupported' };
   try {
     const reg = await swRegistration();
-    if (!reg) return false;
-    let sub = await reg.pushManager.getSubscription();
-    if (!sub) {
-      sub = await reg.pushManager.subscribe({
-        userVisibleOnly: true,
-        applicationServerKey: urlBase64ToUint8Array(VAPID_PUBLIC_KEY),
-      });
+    if (!reg) return { ok: false, step: 'no-sw' };
+    let sub: PushSubscription | null = null;
+    try {
+      sub = await reg.pushManager.getSubscription();
+    } catch {
+      return { ok: false, step: 'getsub-fail' };
     }
-    return await saveSubscriptionRow(subscriptionToRow(userId, sub));
+    if (!sub) {
+      try {
+        sub = await reg.pushManager.subscribe({
+          userVisibleOnly: true,
+          applicationServerKey: urlBase64ToUint8Array(VAPID_PUBLIC_KEY),
+        });
+      } catch {
+        return { ok: false, step: 'subscribe-fail' };
+      }
+    }
+    const saved = await saveSubscriptionRow(subscriptionToRow(userId, sub));
+    if (!saved) return { ok: false, step: 'save-fail' };
+    return { ok: true, step: 'ok' };
   } catch {
-    return false;
+    return { ok: false, step: 'unknown' };
   }
 }
 

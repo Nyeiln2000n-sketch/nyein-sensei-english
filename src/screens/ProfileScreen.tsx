@@ -273,10 +273,31 @@ function TestPushButton() {
       }
       if (pushState !== 'subscribed') {
         setMsg('ခွင့်ပြုချက် တောင်းနေသည်…');
-        const ok = await subscribePush(userId);
-        if (!ok) {
+        // 2026-10-01: iOS exige pedir permiso ANTES de suscribirse.
+        try {
+          const perm = await Notification.requestPermission();
+          if (perm !== 'granted') {
+            setState('error');
+            setMsg('ခွင့်မပြုခဲ့ပါ။ Settings > Notifications မှာ ဖွင့်ပေးပါ။');
+            return;
+          }
+        } catch {
           setState('error');
           setMsg('ခွင့်မပြုခဲ့ပါ။ Settings > Notifications မှာ ဖွင့်ပေးပါ။');
+          return;
+        }
+        const result = await subscribePush(userId);
+        if (!result.ok) {
+          setState('error');
+          const stepMsg: Record<string, string> = {
+            'unsupported': 'ဒီဘရောက်ဇာက notification မရပါ။ Home Screen မှာ install လုပ်ပါ။',
+            'no-sw': 'Service worker အဆင်သင့် မဖြစ်သေးပါ။ အက်ပ်ကို ပြန်ဖွင့်ပါ။ (no-sw)',
+            'getsub-fail': 'စာရင်းစစ်မရပါ။ ပြန်ကြိုးစားပါ။ (getsub)',
+            'subscribe-fail': 'စာရင်းသွင်းမရပါ။ iOS 16.4+ နှင့် Home Screen install လိုအပ်သည်။ (sub)',
+            'save-fail': 'ဆာဗာမှာ သိမ်းမရပါ။ အင်တာနက် စစ်ပါ။ (save)',
+            'unknown': 'အမှား မသိပါ။ ပြန်ကြိုးစားပါ۔',
+          };
+          setMsg(stepMsg[result.step] || `အမှား (${result.step})`);
           return;
         }
       }
