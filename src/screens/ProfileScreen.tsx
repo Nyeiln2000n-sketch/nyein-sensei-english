@@ -315,7 +315,10 @@ function TestPushButton() {
         setMsg('ပို့ပြီးပါပြီ! ဖုန်းကို ကြည့်ပါ။ 🔔');
       } else {
         setState('error');
-        setMsg('မပို့နိုင်ပါ။ Notification ခွင့်ပြုထားသလား စစ်ပါ။');
+        // 2026-10-01: mostrar el error real del servidor para diagnosticar.
+        const srvErr = data.error ? ` [${data.error}]` : '';
+        const sentInfo = typeof data.sent === 'number' ? ` (enviados ${data.sent}/${data.total || '?'})` : '';
+        setMsg(`မပို့နိုင်ပါ${srvErr}${sentInfo}။ Notification ခွင့်ပြုထားသလား စစ်ပါ။`);
       }
     } catch {
       setState('error');
