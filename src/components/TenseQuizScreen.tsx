@@ -80,6 +80,7 @@ function Segmented({
             onClick={() => onChange(t.id)}
             style={{
               flex: 1,
+              minWidth: 0 /* FIX-responsive 2026-09-30 */,
               minHeight: 48,
               border: 'none',
               borderRadius: 999,

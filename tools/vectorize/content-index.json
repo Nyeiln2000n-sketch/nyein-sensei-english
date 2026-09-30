@@ -619493,17 +619493,17 @@
   {
    "id": "example:weather:degree",
    "kind": "example",
-   "en": "Today is thirty-five degrees.",
-   "en_norm": "today is thirty five degrees",
+   "en": "It is thirty-five degrees today.",
+   "en_norm": "it is thirty five degrees today",
    "my_norm": "",
-   "fingerprint": "40dcd8fca9df7c14",
+   "fingerprint": "c078f66f2f34ac7f",
    "vocab_sig": [
     "degrees",
     "five",
     "thirty",
     "today"
    ],
-   "template_sig": "W is W - W W .",
+   "template_sig": "it is W - W W W .",
    "tags": [
     "weather",
     "example"
@@ -619743,7 +619743,7 @@
    "kind": "word",
    "en": "outside",
    "en_norm": "outside",
-   "my_norm": "အပြင်မှာ",
+   "my_norm": "အပြင်",
    "fingerprint": "31207a2065f46a5b",
    "vocab_sig": [
     "outside"
@@ -619781,7 +619781,7 @@
    "kind": "word",
    "en": "inside",
    "en_norm": "inside",
-   "my_norm": "အထဲမှာ",
+   "my_norm": "အထဲ",
    "fingerprint": "106b086224a4d945",
    "vocab_sig": [
     "inside"

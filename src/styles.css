@@ -1347,7 +1347,19 @@ img {
   text-align: center;
 }
 
-/* today's progress */
+/* today's progress — premium card (rediseño 2026-09-30 pedido por Nyein) */
+.progress-card {
+  padding: 18px;
+  margin-bottom: 14px;
+}
+
+.progress-card .progress-head {
+  margin-bottom: 12px;
+}
+
+.progress-card .stat-cards {
+  margin: 0;
+}
 
 .progress-head {
   display: flex;

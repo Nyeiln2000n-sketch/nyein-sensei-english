@@ -390,6 +390,8 @@ button:disabled:active {
 
 .playlist-scope button {
   flex: 1;
+  min-width: 0; /* FIX-responsive 2026-09-30: la píldora "ဒီအခန်း (N)" se salía del borde en iPhone 16 */
+  white-space: nowrap;
   border: none;
   background: transparent;
   border-radius: 999px;

@@ -332,12 +332,16 @@ function VocabGame({ go, params, words }: { go: GoFn; params?: NavParams; words:
             onClick={() => setTab(key)}
             style={{
               flex: 1,
+              minWidth: 0 /* FIX-responsive 2026-09-30: el texto birmano no se
+                parte; sin min-width la pestaña naranja se salía del borde
+                derecho en iPhone 16 */,
               border: 'none',
               borderRadius: 999,
-              padding: '10px 8px',
+              padding: '10px 6px',
               fontFamily: FONT,
               fontWeight: 800,
               fontSize: 15,
+              whiteSpace: 'nowrap',
               cursor: 'pointer',
               background: tab === key ? C.orange : 'transparent',
               color: tab === key ? '#fff' : C.text,
@@ -648,6 +652,9 @@ function LibraryTab({
         <div
           style={{
             flex: 1,
+            minWidth: 0 /* FIX-responsive 2026-09-30: sin esto el input
+              (min-width intrínseco) empuja la píldora y el botón estrella
+              se sale del borde derecho en iPhone 16 */,
             display: 'flex',
             alignItems: 'center',
             gap: 8,
@@ -664,6 +671,7 @@ function LibraryTab({
             placeholder="စကားလုံး ရှာရန်…"
             style={{
               flex: 1,
+              minWidth: 0 /* FIX-responsive: el input nunca debe imponer su ancho */,
               border: 'none',
               outline: 'none',
               background: 'transparent',

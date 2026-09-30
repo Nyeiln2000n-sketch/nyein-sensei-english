@@ -412,25 +412,23 @@ export default function DashboardScreen({ go }: { go: GoFn; params?: NavParams }
         })}
       </nav>
 
-      {/* today's progress stat cards */}
-      <section aria-label="ဒီနေ့ တိုးတက်မှု">
+      {/* today's progress — premium card (rediseño 2026-09-30 pedido por Nyein):
+          header limpio (título + ver todo), 3 stat cards, y fila de
+          compartir elegante a todo ancho. Sin elementos apretados. */}
+      <section aria-label="ဒီနေ့ တိုးတက်မှု" className="card progress-card">
         <div className="progress-head">
           <h2 className="section-title-sm">
             <BarChart3 size={17} color="#2FA8DE" aria-hidden="true" />
             &nbsp;ဒီနေ့ တိုးတက်မှု
           </h2>
-          <div className="progress-head-actions">
-            {/* G-006: share the progress card (Web Share / download / copy) */}
-            <ShareProgressButton />
-            <button
-              type="button"
-              className="link-sm"
-              onClick={() => go('lessons')}
-              aria-label="သင်ခန်းစာအားလုံး ကြည့်ရန်"
-            >
-              အားလုံးကြည့်ရန် <ArrowRight size={14} aria-hidden="true" />
-            </button>
-          </div>
+          <button
+            type="button"
+            className="link-sm"
+            onClick={() => go('lessons')}
+            aria-label="သင်ခန်းစာအားလုံး ကြည့်ရန်"
+          >
+            အားလုံးကြည့်ရန် <ArrowRight size={14} aria-hidden="true" />
+          </button>
         </div>
         <div className="stat-cards">
           {stats.map((s) => (
@@ -449,6 +447,8 @@ export default function DashboardScreen({ go }: { go: GoFn; params?: NavParams }
             </div>
           ))}
         </div>
+        {/* G-006: share the progress card (Web Share / download / copy) */}
+        <ShareProgressButton />
       </section>
 
       {/* motivational quote card */}

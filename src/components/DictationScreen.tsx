@@ -380,6 +380,7 @@ function DictationInner({ go }: { go: GoFn }) {
                 }}
                 style={{
                   flex: 1,
+                  minWidth: 0 /* FIX-responsive 2026-09-30 */,
                   minHeight: 44,
                   borderRadius: 14,
                   border: active ? `2.5px solid ${C.greenDark}` : '2px solid #F1E4CE',

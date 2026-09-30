@@ -224,6 +224,7 @@ export default function DialoguesStoriesScreen({
                   onClick={() => setTab(key)}
                   style={{
                     flex: 1,
+                    minWidth: 0 /* FIX-responsive 2026-09-30: pestañas que no se salgan del borde */,
                     border: 'none',
                     borderRadius: 999,
                     padding: '12px 8px',
@@ -247,6 +248,7 @@ export default function DialoguesStoriesScreen({
                 display: 'flex',
                 alignItems: 'center',
                 gap: 8,
+                minWidth: 0 /* FIX-responsive 2026-09-30 */,
                 background: C.white,
                 borderRadius: 999,
                 padding: '0 16px',
@@ -261,6 +263,7 @@ export default function DialoguesStoriesScreen({
                 placeholder={tab === 'dialogues' ? 'စကားပြော ရှာရန်…' : 'ဇာတ်လမ်း ရှာရန်…'}
                 style={{
                   flex: 1,
+                  minWidth: 0 /* FIX-responsive 2026-09-30: el input nunca impone su ancho */,
                   border: 'none',
                   outline: 'none',
                   background: 'transparent',
@@ -274,14 +277,18 @@ export default function DialoguesStoriesScreen({
               />
             </div>
 
-            {/* CEFR level filter */}
+            {/* CEFR level filter — FIX-responsive 2026-09-30: píldoras
+                compactas para que las 5 (အားလုံး+A1+A2+B1+B2) quepan sin
+                scroll ni corte a 360px. Antes B2 se cortaba en el borde
+                derecho del iPhone 16. */}
             <div
               style={{
                 display: 'flex',
-                gap: 8,
+                gap: 6,
                 marginBottom: 10,
                 overflowX: 'auto',
                 paddingBottom: 2,
+                scrollbarWidth: 'none',
               }}
               role="group"
               aria-label="အဆင့် ရွေးချယ်ရန်"
@@ -295,13 +302,14 @@ export default function DialoguesStoriesScreen({
                   style={{
                     border: 'none',
                     borderRadius: 999,
-                    padding: '10px 18px',
+                    padding: '8px 13px',
                     fontFamily: FONT,
                     fontWeight: 800,
-                    fontSize: 15,
+                    fontSize: 14,
                     cursor: 'pointer',
                     minHeight: 44,
                     whiteSpace: 'nowrap',
+                    flexShrink: 0,
                     background: level === l ? C.blue : C.white,
                     color: level === l ? '#fff' : C.text,
                     boxShadow: '0 4px 12px rgba(0,0,0,0.05)',
@@ -312,7 +320,9 @@ export default function DialoguesStoriesScreen({
               ))}
             </div>
 
-            {/* topic filter (dialogues only) */}
+            {/* topic filter (dialogues only) — FIX-responsive 2026-09-30:
+                fade en el borde derecho para que el scroll horizontal se vea
+                intencional (antes parecía "cortado" en iPhone 16). */}
             {tab === 'dialogues' && (
               <div
                 style={{
@@ -321,6 +331,11 @@ export default function DialoguesStoriesScreen({
                   marginBottom: 12,
                   overflowX: 'auto',
                   paddingBottom: 2,
+                  scrollbarWidth: 'none',
+                  WebkitMaskImage:
+                    'linear-gradient(to right, #000 88%, transparent 100%)',
+                  maskImage:
+                    'linear-gradient(to right, #000 88%, transparent 100%)',
                 }}
                 role="group"
                 aria-label="အကြောင်းအရာ ရွေးချယ်ရန်"
