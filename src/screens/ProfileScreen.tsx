@@ -239,6 +239,71 @@ export default function ProfileScreen({ go, params }: { go: GoFn; params?: NavPa
       >
         v {APP_VERSION}
       </div>
+      {/* Botón de prueba push — añadido 2026-10-01 para que Nyein verifique
+          las notificaciones en su iPhone sin esperar al cron horario. */}
+      <TestPushButton />
     </Screen>
+  );
+}
+
+/** Envía una notificación de prueba a las suscripciones push del usuario actual. */
+function TestPushButton() {
+  const [state, setState] = useState<'idle' | 'sending' | 'done' | 'error'>('idle');
+  const [msg, setMsg] = useState('');
+  async function sendTest() {
+    if (state === 'sending') return;
+    setState('sending');
+    setMsg('');
+    try {
+      const session = getSession();
+      const userId = session?.user?.id || '';
+      if (!userId) {
+        setState('error');
+        setMsg('No hay sesión activa.');
+        return;
+      }
+      const res = await fetch('/api/test-push', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ user_id: userId }),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (data.ok && data.sent > 0) {
+        setState('done');
+        setMsg('¡Notificación enviada! Revisa tu pantalla. 🔔');
+      } else {
+        setState('error');
+        setMsg(data.error || 'No se pudo enviar. ¿Aceptaste las notificaciones?');
+      }
+    } catch {
+      setState('error');
+      setMsg('Error de red.');
+    }
+  }
+  return (
+    <div style={{ padding: '0 20px 24px', textAlign: 'center' }}>
+      <button
+        type="button"
+        onClick={sendTest}
+        disabled={state === 'sending'}
+        style={{
+          background: '#5CC8FF',
+          color: '#fff',
+          border: 'none',
+          borderRadius: 14,
+          padding: '12px 24px',
+          fontSize: 15,
+          fontWeight: 700,
+          opacity: state === 'sending' ? 0.6 : 1,
+        }}
+      >
+        {state === 'sending' ? 'Enviando…' : '🔔 Probar notificación'}
+      </button>
+      {msg ? (
+        <div style={{ marginTop: 8, fontSize: 13, color: state === 'done' ? '#2E7D32' : '#C62828' }}>
+          {msg}
+        </div>
+      ) : null}
+    </div>
   );
 }
