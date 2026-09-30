@@ -165,20 +165,51 @@ export default async function handler(req: any, res: any): Promise<void> {
     return;
   }
 
-  const client = new Client({
-    connectionString: connStr,
-    ssl: { rejectUnauthorized: false },
-  });
+  // Conecta probando configuraciones SSL en cascada (el certificado de
+  // Supabase no lo verifica Node por defecto). Devuelve el cliente
+  // conectado o null.
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  async function connectWorking(): Promise<{ client: InstanceType<typeof Client>; used: string } | null> {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const configs: Array<{ name: string; cfg: any }> = [
+      { name: 'rejectUnauthorized:false', cfg: { ssl: { rejectUnauthorized: false } } },
+      { name: 'ssl:true', cfg: { ssl: true } },
+      { name: 'sin-ssl', cfg: {} },
+    ];
+    for (const { name, cfg } of configs) {
+      const c = new Client({ connectionString: connStr, ...cfg });
+      try {
+        await c.connect();
+        await c.query('select 1');
+        return { client: c, used: name };
+      } catch {
+        try {
+          await c.end();
+        } catch {
+          /* best-effort */
+        }
+      }
+    }
+    return null;
+  }
+
+  const connected = await connectWorking();
+  if (!connected) {
+    res.status(500).json({ error: 'no se pudo conectar a Postgres (SSL)' });
+    return;
+  }
+  const client = connected.client;
 
   try {
-    await client.connect();
     // Esquema idempotente: el primer arranque crea la tabla.
     await client.query(SCHEMA_SQL);
     // Programador idempotente: pg_cron llama aquí cada hora.
     const scheduler = await ensureScheduler(client, process.env.REMINDER_SECRET);
 
     if (isInit) {
-      res.status(200).json({ ok: true, initialized: true, scheduler });
+      res
+        .status(200)
+        .json({ ok: true, initialized: true, scheduler, ssl: connected.used });
       return;
     }
 
