@@ -68,6 +68,10 @@ export default function SplashScreen({
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
+        width: '100%',
+        /* FIX-responsive 2026-10-01 (r3): mismo bug que .w3-screen — sin
+           min-width:0 WebKit usa el min-content como ancho mínimo. */
+        minWidth: 0,
         padding:
           'calc(32px + env(safe-area-inset-top, 0px)) 30px calc(36px + env(safe-area-inset-bottom, 0px))',
         position: 'relative',

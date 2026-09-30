@@ -35,7 +35,7 @@ export const airportWords: Word[] = [
   { en: 'kiosk', my: 'ကိုယ်တိုင်ဝန်ဆောင်မှုစက်', topic: 'airport', level: 3, phonetic: 'ki-osk', example: 'Use the kiosk to print your ticket.', exampleMy: 'လက်မှတ်ထုတ်ဖို့ ကိုယ်တိုင်ဝန်ဆောင်မှုစက်ကို သုံးပါ။' },
   { en: 'counter', my: 'ကောင်တာ', topic: 'airport', level: 1, phonetic: 'kaun-tur', example: 'The counter opens at seven.', exampleMy: 'ကောင်တာက ခုနစ်နာရီမှာ ဖွင့်ပါတယ်။' },
   { en: 'screening', my: 'လုံခြုံရေးစစ်ဆေးမှု', topic: 'airport', level: 2, phonetic: 'skri-ning', example: 'Screening takes only five minutes.', exampleMy: 'လုံခြုံရေးစစ်ဆေးမှုက ငါးမိနစ်ပဲ ကြာပါတယ်။' },
-  { en: 'weight', my: 'အလေးချိန်', topic: 'airport', level: 1, phonetic: 'way-t', example: 'Check the weight of your bag.', exampleMy: 'သင့်ရဲ့ အိတ်ရဲ့ အလေးချိန်ကို စစ်ပါ။' },
+  { en: 'weight', my: 'အလေးချိန်', topic: 'airport', level: 1, phonetic: 'way-t', example: 'Check the weight of your bag.', exampleMy: 'သင့်အိတ်ရဲ့ အလေးချိန်ကို စစ်ပါ။' },
   { en: 'overweight', my: 'အလေးချိန်ကျော်လွန်သော', topic: 'airport', level: 2, phonetic: 'o-vur-way-t', example: 'My bag is overweight today.', exampleMy: 'ဒီနေ့ ကျွန်မရဲ့ အိတ်က အလေးချိန်ကျော်လွန်နေပါတယ်။' },
   { en: 'fragile', my: 'ကွဲနိုင်သော', topic: 'airport', level: 2, phonetic: 'fra-jai-l', example: 'This box is fragile, handle carefully.', exampleMy: 'ဒီသေတ္တာက ကွဲနိုင်တာမို့ ဂရုစိုက်ကိုင်ပါ။' },
   { en: 'lost', my: 'ပျောက်ဆုံးသော', topic: 'airport', level: 1, phonetic: 'lost', example: 'I lost my passport yesterday.', exampleMy: 'မနေ့က ကျွန်မရဲ့ ပတ်စ်ပို့ ပျောက်သွားခဲ့တယ်။' },
