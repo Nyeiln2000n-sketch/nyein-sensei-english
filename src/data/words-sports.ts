@@ -3,7 +3,7 @@ import type { Word } from '../types';
 // Sports — အားကစား (30 words)
 export const sportsWords: Word[] = [
   { en: 'sport', my: 'အားကစား', topic: 'sports', level: 1, phonetic: 'sport', example: 'Football is my favorite sport.', exampleMy: 'ဘောလုံးက ကျွန်မရဲ့ အကြိုက်ဆုံး အားကစားပါ။' },
-  { en: 'football', my: 'ဘောလုံး', topic: 'sports', level: 1, phonetic: 'fut-bol', example: 'They play football every Sunday.', exampleMy: 'သူတို့ တနင်္ဂနွေတိုင်း ဘောလုံး ကစားကြပါတယ်။' },
+  { en: 'football', my: 'ဘောလုံးကစား', topic: 'sports', level: 1, phonetic: 'fut-bol', example: 'They play football every Sunday.', exampleMy: 'သူတို့ တနင်္ဂနွေတိုင်း ဘောလုံး ကစားကြပါတယ်။' },
   { en: 'basketball', my: 'ဘတ်စကက်ဘော', topic: 'sports', level: 2, phonetic: 'baas-kit-bol', example: 'He is good at basketball.', exampleMy: 'သူ ဘတ်စကက်ဘော ကောင်းကောင်း ကစားပါတယ်။' },
   { en: 'tennis', my: 'တင်းနစ်', topic: 'sports', level: 2, phonetic: 'te-nis', example: 'We play tennis after school.', exampleMy: 'ကျွန်မတို့ ကျောင်းပြီးမှ တင်းနစ် ကစားကြပါတယ်။' },
   { en: 'badminton', my: 'ကြက်တောင်ရိုက်', topic: 'sports', level: 2, phonetic: 'bad-min-tan', example: 'My sister loves badminton.', exampleMy: 'ကျွန်မရဲ့ ညီမက ကြက်တောင်ရိုက် အရမ်း ကြိုက်ပါတယ်။' },
@@ -27,7 +27,7 @@ export const sportsWords: Word[] = [
   { en: 'catch', my: 'ဖမ်းသည်', topic: 'sports', level: 1, phonetic: 'kach', example: 'I cannot catch the ball.', exampleMy: 'ကျွန်မ ဘောလုံးကို မဖမ်းနိုင်ပါဘူး။' },
   { en: 'fun', my: 'ပျော်စရာကောင်းသော', topic: 'sports', level: 1, phonetic: 'fan', example: 'Playing games is so much fun.', exampleMy: 'ဂိမ်းကစားတာ အရမ်း ပျော်စရာကောင်းပါတယ်။' },
   { en: 'play', my: 'ကစားသည်', topic: 'sports', level: 1, phonetic: 'plei', example: 'Let us play outside today.', exampleMy: 'ဒီနေ့ အပြင်မှာ ကစားကြစို့။' },
-  { en: 'race', my: 'ပြိုင်ပွဲ', topic: 'sports', level: 2, phonetic: 'reis', example: 'They joined a bike race.', exampleMy: 'သူတို့ စက်ဘီးပြိုင်ပွဲ တစ်ခုမှာ ပါဝင်ပါတယ်။' },
+  { en: 'race', my: 'ပြေးပြိုင်ပွဲ', topic: 'sports', level: 2, phonetic: 'reis', example: 'They joined a bike race.', exampleMy: 'သူတို့ စက်ဘီးပြိုင်ပွဲ တစ်ခုမှာ ပါဝင်ပါတယ်။' },
   { en: 'medal', my: 'ဆုတံဆိပ်', topic: 'sports', level: 2, phonetic: 'me-dal', example: 'She won a gold medal.', exampleMy: 'သူ ရွှေဆုတံဆိပ် တစ်ခု ရပါတယ်။' },
   { en: 'champion', my: 'ချန်ပီယံ', topic: 'sports', level: 3, phonetic: 'cham-pi-yan', example: 'He became the champion after a long fight.', exampleMy: 'ရှည်လျားတဲ့ တိုက်ပွဲအပြီးမှာ သူ ချန်ပီယံ ဖြစ်လာပါတယ်။' },
   { en: 'training', my: 'လေ့ကျင့်မှု', topic: 'sports', level: 2, phonetic: 'trei-ning', example: 'Training starts at five every evening.', exampleMy: 'လေ့ကျင့်မှုက ညနေတိုင်း ငါးနာရီမှာ စပါတယ်။' },

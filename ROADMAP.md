@@ -231,3 +231,10 @@
 
 ---
 **Total: 187 tareas.** Cada una = un enjambre que construye + verifica. El proyecto crece por oleadas, sin parar, sin repetir.
+
+## FASE 15 — Code-splitting del bundle (mini, deuda técnica pagada) 🟢 COMPLETADO 2026-09-30
+- [x] F15-001 Corpus fuera del entry chunk: 13 bundles en `src/data/bundles/` (palabras base, 4× f14-words, frases base, 3× f14-phrases, diálogos, historias, gramática+exámenes, verbos+tenses); loaders cached con dynamic import en `src/data/lazy.ts` (`once()` comparte promesa); `src/data/index.ts` es ahora un barrel fino (topics + helpers puros, sin datos estáticos); `src/data/f14/index.ts` eliminado (era el agregador estático de 7.18MB)
+- [x] F15-002 11 pantallas convertidas a carga perezosa con wrapper + Skeleton: QuizScreen (+DailyChallengeRun), VocabScreen, PracticeScreen (+ReviewQueue), LessonsScreen, DictationScreen, SentenceBuilderScreen, DialoguesStoriesScreen, CertificationExamScreen, ConjugationDrillScreen, TenseQuizScreen; WordOfDayCard/getWordOfDay ahora async; test actualizado
+- [x] F15-003 Chunk inicial: 7,183.49 kB → 208.41 kB (gzip 1,485.67 → 66.02 kB), −97%, objetivo <1.5MB superado; mayor chunk on-demand: diálogos 1.34MB; `maximumFileSizeToCacheInBytes` vuelve a 5MB (límite de 12MB retirado)
+- [x] F15-004 Gates verdes: typecheck limpio, build PWA verde (precache 77 entradas), dedup-check 0 duplicados en 28.963 items, vitest 36/36
+- [x] F15-005 Push a main + deploy Vercel READY

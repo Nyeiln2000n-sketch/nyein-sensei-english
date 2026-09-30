@@ -8,7 +8,10 @@ import { useEffect, useMemo, useState } from 'react';
 import { X, Volume2, RotateCcw, Award } from 'lucide-react';
 import type { GoFn, NavParams } from '../routes';
 import type { CEFR } from '../types';
-import { cefrExams } from '../data/f14';
+import { loadExams } from '../data';
+import { useCorpus } from '../data/useCorpus';
+import { SkeletonList } from './Skeleton';
+import type { CEFRExam } from '../data/f14/cefr-exams';
 import type { ExamQuestion } from '../data/f14/cefr-exams';
 import { speak } from '../lib/audio';
 import {
@@ -92,12 +95,34 @@ function CloseButton({ go }: { go: GoFn }) {
   );
 }
 
+// FASE 15 — code-splitting wrapper: exam data loads lazily; skeleton until ready.
 export default function CertificationExamScreen({
   go,
   params,
 }: {
   go: GoFn;
   params?: NavParams;
+}) {
+  const exams = useCorpus(loadExams);
+  if (!exams) {
+    return (
+      <Screen>
+        <TopBar left={<span />} center={<div />} right={<span />} />
+        <SkeletonList />
+      </Screen>
+    );
+  }
+  return <CertificationExamGame go={go} params={params} exams={exams} />;
+}
+
+function CertificationExamGame({
+  go,
+  params,
+  exams: cefrExams,
+}: {
+  go: GoFn;
+  params?: NavParams;
+  exams: CEFRExam[];
 }) {
   void params;
   const [examBand, setExamBand] = useState<CEFR | null>(null);

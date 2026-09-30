@@ -11,7 +11,8 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { X, Volume2, Mic } from 'lucide-react';
 import type { GoFn, NavParams } from '../routes';
 import type { TopicId, Level, Word, Phrase } from '../types';
-import { topicMeta, wordsByTopic, phrasesByTopic, allPhrases, allWords, sample } from '../data';
+import { topicMeta, wordsByTopic, phrasesByTopic, sample, loadAllWords, loadAllPhrases } from '../data';
+import { SkeletonList } from './Skeleton';
 import { speak } from '../lib/audio';
 import { addXP, recordAnswer, markLessonComplete, getTopicMastery, recordTopicResult, getProgress, awardLessonGems } from '../lib/storage';
 import type { Progress } from '../types';
@@ -86,15 +87,15 @@ function sampleR<T>(arr: T[], n: number, rng: Rng): T[] {
 
 /* ---------- original fixed builders (grammar/phrases modes — unchanged) ---------- */
 
-function buildRounds(topic: TopicId, level: Level, mode?: string): Round[] {
-  const words = sample(wordsByTopic(topic, level), 10);
-  const topicPhrases = phrasesByTopic(topic);
+function buildRounds(topic: TopicId, level: Level, wordCorpus: Word[], phraseCorpus: Phrase[], mode?: string): Round[] {
+  const words = sample(wordsByTopic(wordCorpus, topic, level), 10);
+  const topicPhrases = phrasesByTopic(phraseCorpus, topic);
   const phrases = sample(
-    topicPhrases.length >= TOTAL_ROUNDS ? topicPhrases : [...topicPhrases, ...allPhrases],
+    topicPhrases.length >= TOTAL_ROUNDS ? topicPhrases : [...topicPhrases, ...phraseCorpus],
     TOTAL_ROUNDS,
   );
   const pick = (exclude: Word, n: number) =>
-    sample(wordsByTopic(topic).filter((w) => w.en !== exclude.en), n);
+    sample(wordsByTopic(wordCorpus, topic).filter((w) => w.en !== exclude.en), n);
   const orderRound = (p: Phrase): Round => {
     const toks = p.en.replace(/[.,!?]/g, '').split(' ');
     return { kind: 'order', phrase: p, shuffled: sample(toks, toks.length) };
@@ -111,7 +112,7 @@ function buildRounds(topic: TopicId, level: Level, mode?: string): Round[] {
     for (const p of ps.slice(0, 5)) rounds.push(orderRound(p));
     for (const p of ps.slice(5, 9)) {
       const others = sample(
-        allPhrases.filter((x) => x.en !== p.en),
+        phraseCorpus.filter((x) => x.en !== p.en),
         3,
       );
       rounds.push({ kind: 'phraseChoice', phrase: p, options: sample([p, ...others], 4) });
@@ -150,19 +151,19 @@ interface QuizCtx {
   otherPhrases: Phrase[];
 }
 
-function makeQuizCtx(topic: TopicId, level: Level, seed: number): QuizCtx {
+function makeQuizCtx(topic: TopicId, level: Level, seed: number, words: Word[], phrases: Phrase[]): QuizCtx {
   const rng = mulberry32(seed);
-  const topicPhrases = phrasesByTopic(topic);
+  const topicPhrases = phrasesByTopic(phrases, topic);
   return {
     topic,
     level,
     rng,
-    words: sampleR(wordsByTopic(topic, level), 12, rng),
-    allTopicWords: wordsByTopic(topic),
-    easyWords: allWords.filter((w) => w.topic !== topic),
+    words: sampleR(wordsByTopic(words, topic, level), 12, rng),
+    allTopicWords: wordsByTopic(words, topic),
+    easyWords: words.filter((w) => w.topic !== topic),
     topicPhrases,
-    phrasePool: topicPhrases.length >= 3 ? topicPhrases : [...topicPhrases, ...allPhrases],
-    otherPhrases: allPhrases.filter((p) => p.topic !== topic),
+    phrasePool: topicPhrases.length >= 3 ? topicPhrases : [...topicPhrases, ...phrases],
+    otherPhrases: phrases.filter((p) => p.topic !== topic),
   };
 }
 
@@ -500,7 +501,41 @@ function QuestionBubble({ round }: { round: Round }) {
   }
 }
 
+// FASE 15 — code-splitting wrapper: the ~7MB corpus loads lazily, so the
+// entry chunk stays small. Shows a branded skeleton while chunks arrive.
 export default function QuizScreen({ go, params }: { go: GoFn; params?: NavParams }) {
+  const [corpus, setCorpus] = useState<{ words: Word[]; phrases: Phrase[] } | null>(null);
+  useEffect(() => {
+    let cancelled = false;
+    Promise.all([loadAllWords(), loadAllPhrases()]).then(([words, phrases]) => {
+      if (!cancelled) setCorpus({ words, phrases });
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+  if (!corpus) {
+    return (
+      <Screen>
+        <TopBar left={<span />} center={<div />} right={<span />} />
+        <SkeletonList />
+      </Screen>
+    );
+  }
+  return <QuizGame go={go} params={params} words={corpus.words} phrases={corpus.phrases} />;
+}
+
+function QuizGame({
+  go,
+  params,
+  words,
+  phrases,
+}: {
+  go: GoFn;
+  params?: NavParams;
+  words: Word[];
+  phrases: Phrase[];
+}) {
   const topic: TopicId = (params?.topic as TopicId | undefined) ?? 'family';
   const level: Level = params?.level ?? 1;
   const mode = params?.mode;
@@ -511,7 +546,7 @@ export default function QuizScreen({ go, params }: { go: GoFn; params?: NavParam
 
   // Seeded per-attempt context; built once per lesson attempt.
   const ctxRef = useRef<QuizCtx | null>(null);
-  if (ctxRef.current === null) ctxRef.current = makeQuizCtx(topic, level, Date.now());
+  if (ctxRef.current === null) ctxRef.current = makeQuizCtx(topic, level, Date.now(), words, phrases);
 
   // J-011: returning masters start warmer — seed the in-session streak from
   // stored per-topic mastery (local-only signal from lib/storage).
@@ -525,7 +560,7 @@ export default function QuizScreen({ go, params }: { go: GoFn; params?: NavParam
 
   const [rounds, setRounds] = useState<Round[]>(() => {
     const ctx = ctxRef.current!;
-    if (!adaptive) return buildRounds(topic, level, mode);
+    if (!adaptive) return buildRounds(topic, level, words, phrases, mode);
     const first = buildAdaptiveRound(ctx, [], null, 0, seedStreak);
     return first ? [first] : [];
   });
@@ -597,7 +632,7 @@ export default function QuizScreen({ go, params }: { go: GoFn; params?: NavParam
 
   // Fase 6: daily challenge runs its own timed flow (no lesson rounds).
   if (challenge) {
-    return <DailyChallengeRun topic={topic} level={level} go={go} />;
+    return <DailyChallengeRun topic={topic} level={level} go={go} words={words} phrases={phrases} />;
   }
 
   if (!round) {
@@ -1845,9 +1880,9 @@ const CHALLENGE_SECONDS = 60;
  * phraseChoice / truefalse), wrapped in 'challenge' rounds. Score = 10 per
  * correct + 2 per streak step (capped); XP is banked once when time runs out.
  */
-function DailyChallengeRun({ topic, level, go }: { topic: TopicId; level: Level; go: GoFn }) {
+function DailyChallengeRun({ topic, level, go, words, phrases }: { topic: TopicId; level: Level; go: GoFn; words: Word[]; phrases: Phrase[] }) {
   const ctxRef = useRef<QuizCtx | null>(null);
-  if (ctxRef.current === null) ctxRef.current = makeQuizCtx(topic, level, Date.now());
+  if (ctxRef.current === null) ctxRef.current = makeQuizCtx(topic, level, Date.now(), words, phrases);
 
   const [round, setRound] = useState<Round | null>(() => makeRound(ctxRef.current!, 'challenge', false));
   const [timeLeft, setTimeLeft] = useState(CHALLENGE_SECONDS);
@@ -1901,7 +1936,7 @@ function DailyChallengeRun({ topic, level, go }: { topic: TopicId; level: Level;
   };
 
   const restart = () => {
-    ctxRef.current = makeQuizCtx(topic, level, Date.now());
+    ctxRef.current = makeQuizCtx(topic, level, Date.now(), words, phrases);
     setRound(makeRound(ctxRef.current, 'challenge', false));
     setTimeLeft(CHALLENGE_SECONDS);
     setScore(0);

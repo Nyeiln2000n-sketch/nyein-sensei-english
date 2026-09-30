@@ -19,10 +19,9 @@ import type * as React from 'react';
 import { ArrowLeft, Volume2, Search } from 'lucide-react';
 import type { GoFn, NavParams } from '../routes';
 import type { CEFR, Dialogue, Story, TopicId } from '../types';
-import { topics } from '../data';
-import { dialogues } from '../data/dialogues';
-import { stories } from '../data/stories';
-import { f14Dialogues, f14Stories } from '../data/f14';
+import { topics, loadDialogues, loadStories } from '../data';
+import { useCorpus } from '../data/useCorpus';
+import { SkeletonList } from './Skeleton';
 import { difficultyToCEFR } from '../types';
 import { speak, stopSpeaking } from '../lib/audio';
 import { useWindowing } from '../lib/useWindowing';
@@ -55,17 +54,6 @@ function dialogueCEFR(d: Dialogue): CEFR {
   return difficultyToCEFR[d.level];
 }
 
-/** Merge two lists, deduplicated by id (zero-duplication rule). */
-function dedupeById<T extends { id: string }>(a: T[], b: T[]): T[] {
-  const seen = new Set<string>();
-  const out: T[] = [];
-  for (const item of [...a, ...b]) {
-    if (seen.has(item.id)) continue;
-    seen.add(item.id);
-    out.push(item);
-  }
-  return out;
-}
 
 type Selection =
   | { kind: 'dialogue'; id: string }
@@ -79,8 +67,10 @@ export default function DialoguesStoriesScreen({
   go: GoFn;
   params?: NavParams;
 }) {
-  const allDialogues = useMemo(() => dedupeById(dialogues, f14Dialogues), []);
-  const allStories = useMemo(() => dedupeById(stories, f14Stories), []);
+  // FASE 15 — corpus loads lazily (dialogues + stories are on-demand chunks).
+  const allDialogues = useCorpus(loadDialogues) ?? [];
+  const allStories = useCorpus(loadStories) ?? [];
+  const corpusReady = allDialogues.length > 0 && allStories.length > 0;
 
   const [tab, setTab] = useState<'dialogues' | 'stories'>('dialogues');
   const [selected, setSelected] = useState<Selection>(null);
@@ -158,6 +148,15 @@ export default function DialoguesStoriesScreen({
     if (selected) setSelected(null);
     else go('back');
   };
+
+  if (!corpusReady) {
+    return (
+      <Screen>
+        <TopBar left={<span />} center={<div />} right={<span />} />
+        <SkeletonList />
+      </Screen>
+    );
+  }
 
   return (
     <Screen>

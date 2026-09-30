@@ -8,7 +8,9 @@ import { useState } from 'react';
 import { X, Volume2, RotateCcw } from 'lucide-react';
 import type { GoFn, NavParams } from '../routes';
 import type { Verb } from '../types';
-import { f14Verbs } from '../data/f14';
+import { loadVerbs } from '../data';
+import { useCorpus } from '../data/useCorpus';
+import { SkeletonList } from './Skeleton';
 import { speak } from '../lib/audio';
 import { addXP, recordAnswer } from '../lib/storage';
 import {
@@ -68,11 +70,11 @@ function sample<T>(arr: T[], n: number): T[] {
   return copy.slice(0, n);
 }
 
-function buildRounds(): DrillRound[] {
+function buildRounds(verbs: Verb[]): DrillRound[] {
   const usedBases = new Set<string>();
   const rounds: DrillRound[] = [];
   // E2: verb pool must never repeat a verb within one drill session.
-  const pool = sample(f14Verbs, f14Verbs.length);
+  const pool = sample(verbs, verbs.length);
   for (const verb of pool) {
     if (rounds.length >= TOTAL_ROUNDS) break;
     if (usedBases.has(verb.base)) continue;
@@ -82,7 +84,7 @@ function buildRounds(): DrillRound[] {
     // (many irregular verbs share forms, e.g. put→put).
     const seen = new Set<string>([answer]);
     const distract: string[] = [];
-    for (const other of sample(f14Verbs, f14Verbs.length)) {
+    for (const other of sample(verbs, verbs.length)) {
       if (distract.length >= 3) break;
       if (other.base === verb.base) continue;
       const v = formValue(other, form.key);
@@ -98,6 +100,7 @@ function buildRounds(): DrillRound[] {
   return rounds;
 }
 
+// FASE 15 — code-splitting wrapper: verb data loads lazily; skeleton until ready.
 export default function ConjugationDrillScreen({
   go,
   params,
@@ -105,8 +108,29 @@ export default function ConjugationDrillScreen({
   go: GoFn;
   params?: NavParams;
 }) {
+  const verbs = useCorpus(loadVerbs);
+  if (!verbs) {
+    return (
+      <Screen>
+        <TopBar left={<span />} center={<div />} right={<span />} />
+        <SkeletonList />
+      </Screen>
+    );
+  }
+  return <ConjugationDrillGame go={go} params={params} verbs={verbs} />;
+}
+
+function ConjugationDrillGame({
+  go,
+  params,
+  verbs,
+}: {
+  go: GoFn;
+  params?: NavParams;
+  verbs: Verb[];
+}) {
   void params;
-  const [rounds] = useState<DrillRound[]>(buildRounds);
+  const [rounds] = useState<DrillRound[]>(() => buildRounds(verbs));
   const [idx, setIdx] = useState(0);
   const [picked, setPicked] = useState<string | null>(null);
   const [earned, setEarned] = useState(0);

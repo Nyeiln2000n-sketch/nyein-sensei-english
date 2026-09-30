@@ -1,0 +1,22 @@
+// FASE 15 code-splitting: FASE 14 word bundle 1 (lazy-loaded).
+import type { Word } from '../../types';
+import { familyWordsF14 } from '../f14/words-batch-1';
+import { friendsWordsF14 } from '../f14/words-batch-1';
+import { workWordsF14 } from '../f14/words-batch-1';
+import { shoppingWordsF14 } from '../f14/words-batch-1';
+import { travelWordsF14 } from '../f14/words-batch-2';
+import { healthWordsF14 } from '../f14/words-batch-2';
+import { schoolWordsF14 } from '../f14/words-batch-2';
+import { foodWordsF14 } from '../f14/words-batch-3';
+import { natureWordsF14 } from '../f14/words-batch-3';
+import { sportsWordsF14 } from '../f14/words-batch-3';
+import { technologyWordsF14 } from '../f14/words-batch-4';
+import { businessWordsF14 } from '../f14/words-batch-4';
+import { emotionsWordsF14 } from '../f14/words-batch-4';
+import { dailyLifeWordsF14 } from '../f14/words-batch-5';
+import { emergenciesWordsF14 } from '../f14/words-batch-5';
+import { homeWordsF14 } from '../f14/words-batch-5';
+import { clothingWordsF14 } from '../f14/words-batch-6';
+import { animalsWordsF14 } from '../f14/words-batch-6';
+import { timeWordsF14 } from '../f14/words-batch-6';
+export const f14Words1: Word[] = [...familyWordsF14, ...friendsWordsF14, ...workWordsF14, ...shoppingWordsF14, ...travelWordsF14, ...healthWordsF14, ...schoolWordsF14, ...foodWordsF14, ...natureWordsF14, ...sportsWordsF14, ...technologyWordsF14, ...businessWordsF14, ...emotionsWordsF14, ...dailyLifeWordsF14, ...emergenciesWordsF14, ...homeWordsF14, ...clothingWordsF14, ...animalsWordsF14, ...timeWordsF14];

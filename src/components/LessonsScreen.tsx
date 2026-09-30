@@ -6,8 +6,8 @@
 import { useEffect, useState } from 'react';
 import { ChevronRight } from 'lucide-react';
 import type { GoFn, NavParams } from '../routes';
-import type { Level, Topic } from '../types';
-import { phrasesByTopic, topics, wordsByTopic } from '../data/index';
+import type { Level, Topic, Word, Phrase } from '../types';
+import { phrasesByTopic, topics, wordsByTopic, loadAllWords, loadAllPhrases } from '../data/index';
 import { isLessonComplete } from '../lib/storage';
 import { Screen, SegmentedControl } from './ui';
 import { SkeletonList } from './Skeleton';
@@ -16,15 +16,15 @@ type Segment = 'basic' | 'vocab' | 'conv';
 
 const LEVELS: Level[] = [1, 2, 3];
 
-function segmentProgress(t: Topic, seg: Segment): { text: string; done: boolean } {
+function segmentProgress(t: Topic, seg: Segment, words: Word[], phrases: Phrase[]): { text: string; done: boolean } {
   if (seg === 'basic') {
     const doneLevels = LEVELS.filter((l) => isLessonComplete(t.id, l)).length;
     return { text: `${doneLevels}/3`, done: doneLevels === 3 };
   }
   if (seg === 'vocab') {
-    return { text: `${wordsByTopic(t.id).length} စကားလုံး`, done: false };
+    return { text: `${wordsByTopic(words, t.id).length} စကားလုံး`, done: false };
   }
-  return { text: `${phrasesByTopic(t.id).length} စကားစု`, done: false };
+  return { text: `${phrasesByTopic(phrases, t.id).length} စကားစု`, done: false };
 }
 
 function onTap(t: Topic, seg: Segment, go: GoFn) {
@@ -33,15 +33,41 @@ function onTap(t: Topic, seg: Segment, go: GoFn) {
   else go('conv', { topic: t.id });
 }
 
+// FASE 15 — code-splitting wrapper: corpus loads lazily; skeleton until ready.
 export default function LessonsScreen({ go, params }: { go: GoFn; params?: NavParams }) {
-  const [seg, setSeg] = useState<Segment>(params?.segment ?? 'basic');
-  // Skeleton shimmer on first mount (data is local/sync; this covers the
-  // screen-enter transition with a branded loading state).
-  const [ready, setReady] = useState(false);
+  const [corpus, setCorpus] = useState<{ words: Word[]; phrases: Phrase[] } | null>(null);
   useEffect(() => {
-    const t = window.setTimeout(() => setReady(true), 350);
-    return () => window.clearTimeout(t);
+    let cancelled = false;
+    Promise.all([loadAllWords(), loadAllPhrases()]).then(([words, phrases]) => {
+      if (!cancelled) setCorpus({ words, phrases });
+    });
+    return () => {
+      cancelled = true;
+    };
   }, []);
+  if (!corpus) {
+    return (
+      <Screen>
+        <SkeletonList />
+      </Screen>
+    );
+  }
+  return <LessonsGame go={go} params={params} words={corpus.words} phrases={corpus.phrases} />;
+}
+
+function LessonsGame({
+  go,
+  params,
+  words,
+  phrases,
+}: {
+  go: GoFn;
+  params?: NavParams;
+  words: Word[];
+  phrases: Phrase[];
+}) {
+  const [seg, setSeg] = useState<Segment>(params?.segment ?? 'basic');
+  const ready = true;
 
   return (
     <Screen>
@@ -71,7 +97,7 @@ export default function LessonsScreen({ go, params }: { go: GoFn; params?: NavPa
           <SkeletonList rows={8} />
         ) : (
         topics.map((t, i) => {
-          const prog = segmentProgress(t, seg);
+          const prog = segmentProgress(t, seg, words, phrases);
           return (
             <button
               key={t.id}

@@ -11,7 +11,9 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { X, Volume2 } from 'lucide-react';
 import type { GoFn, NavParams } from '../routes';
 import type { CEFR, Phrase } from '../types';
-import { phrasesByCEFR, sample } from '../data';
+import { phrasesByCEFR, sample, loadAllPhrases } from '../data';
+import { useCorpus } from '../data/useCorpus';
+import { SkeletonList } from './Skeleton';
 import { speak } from '../lib/audio';
 import { addXP, recordAnswer } from '../lib/storage';
 import {
@@ -40,8 +42,8 @@ function tokenize(en: string): string[] {
     .filter((t) => t.length > 0);
 }
 
-function buildSession(level: CEFR): Phrase[] {
-  const pool = phrasesByCEFR(level).filter(
+function buildSession(phrases: Phrase[], level: CEFR): Phrase[] {
+  const pool = phrasesByCEFR(phrases, level).filter(
     (p) => p.my.trim().length > 0 && tokenize(p.en).length >= 2,
   );
   return sample(pool, ROUNDS);
@@ -215,12 +217,14 @@ function BuilderRound({
 
 function BuilderGame({
   level,
+  phrases,
   onExit,
 }: {
   level: CEFR;
+  phrases: Phrase[];
   onExit: () => void;
 }) {
-  const [session, setSession] = useState(() => buildSession(level));
+  const [session, setSession] = useState<Phrase[]>(() => buildSession(phrases, level));
   const [idx, setIdx] = useState(0);
   const [earned, setEarned] = useState(0);
   const [combo, setCombo] = useState(0);
@@ -313,7 +317,7 @@ function BuilderGame({
               color="green"
               onClick={() => {
                 xpAddedRef.current = false;
-                setSession(buildSession(level));
+                setSession(buildSession(phrases, level));
                 setIdx(0);
                 setEarned(0);
                 setCombo(0);
@@ -358,9 +362,18 @@ function BuilderGame({
 
 /* ---------- level selector + screen ---------- */
 
+// FASE 15 — corpus loads lazily; skeleton until ready.
 function SentenceBuilderInner({ go }: { go: GoFn }) {
   const [level, setLevel] = useState<CEFR>('A1');
   const [attempt, setAttempt] = useState(0);
+  const phrases = useCorpus(loadAllPhrases);
+  if (!phrases) {
+    return (
+      <Screen>
+        <SkeletonList />
+      </Screen>
+    );
+  }
 
   return (
     <Screen>
@@ -426,7 +439,7 @@ function SentenceBuilderInner({ go }: { go: GoFn }) {
       </div>
 
       <W3ErrorBoundary>
-        <BuilderGame key={`${level}-${attempt}`} level={level} onExit={() => go('back')} />
+        <BuilderGame key={`${level}-${attempt}`} level={level} phrases={phrases} onExit={() => go('back')} />
       </W3ErrorBoundary>
     </Screen>
   );

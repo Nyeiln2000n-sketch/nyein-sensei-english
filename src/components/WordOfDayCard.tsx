@@ -6,16 +6,28 @@
 // and a "လေ့လာရန်" CTA that jumps to vocab for that word's topic.
 // Myanmar-first copy. Zero emoji as icons.
 
-import { useMemo } from 'react';
+import { useEffect, useState } from 'react';
 import { Sun, Volume2, ArrowRight } from 'lucide-react';
 import type { GoFn } from '../routes';
+import type { Word } from '../types';
 import { getWordOfDay } from '../lib/wordOfDay';
 import { speak } from '../lib/audio';
 import WordImage from './WordImage';
 import { Card, C, FONT } from './w3-shared';
 
 export default function WordOfDayCard({ go }: { go: GoFn }) {
-  const word = useMemo(() => getWordOfDay(), []);
+  // FASE 15: word corpus loads lazily; show a quiet placeholder until ready.
+  const [word, setWord] = useState<Word | null>(null);
+  useEffect(() => {
+    let cancelled = false;
+    getWordOfDay().then((w) => {
+      if (!cancelled) setWord(w);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+  if (!word) return null;
 
   return (
     <section aria-label="ဒီနေ့ရဲ့ စကားလုံး" style={{ marginTop: 14 }}>

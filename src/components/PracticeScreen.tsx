@@ -16,7 +16,8 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { X, Mic, Volume2, Check, History } from 'lucide-react';
 import type { GoFn, NavParams } from '../routes';
 import type { TopicId, Phrase, Word } from '../types';
-import { phrasesByTopic, allPhrases, sample, allWords } from '../data';
+import { phrasesByTopic, sample, loadAllWords, loadAllPhrases } from '../data';
+import { SkeletonList } from './Skeleton';
 import { speak } from '../lib/audio';
 import { recordAnswer } from '../lib/storage';
 import { dueWords, recordWordReview, wordKey } from '../lib/review';
@@ -52,10 +53,10 @@ interface VadHandle {
  * — AUDIO_CONTRACT) and remembered/forgot buttons that feed the scheduler
  * and remove the row from the list. Zero-state is mascot-friendly.
  */
-function ReviewQueue() {
+function ReviewQueue({ words }: { words: Word[] }) {
   const [due, setDue] = useState<Word[]>(() => {
     try {
-      return dueWords(allWords);
+      return dueWords(words);
     } catch {
       return [];
     }
@@ -221,12 +222,45 @@ function ReviewQueue() {
   );
 }
 
+// FASE 15 — code-splitting wrapper: corpus loads lazily; skeleton until ready.
 export default function PracticeScreen({ go, params }: { go: GoFn; params?: NavParams }) {
+  const [corpus, setCorpus] = useState<{ words: Word[]; phrases: Phrase[] } | null>(null);
+  useEffect(() => {
+    let cancelled = false;
+    Promise.all([loadAllWords(), loadAllPhrases()]).then(([words, phrases]) => {
+      if (!cancelled) setCorpus({ words, phrases });
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+  if (!corpus) {
+    return (
+      <Screen>
+        <TopBar left={<span />} center={<div />} right={<span />} />
+        <SkeletonList />
+      </Screen>
+    );
+  }
+  return <PracticeGame go={go} params={params} words={corpus.words} phrases={corpus.phrases} />;
+}
+
+function PracticeGame({
+  go,
+  params,
+  words,
+  phrases,
+}: {
+  go: GoFn;
+  params?: NavParams;
+  words: Word[];
+  phrases: Phrase[];
+}) {
   const topic: TopicId = (params?.topic as TopicId | undefined) ?? 'family';
   const pool = useMemo<Phrase[]>(() => {
-    const tp = phrasesByTopic(topic);
-    return tp.length > 0 ? tp : allPhrases;
-  }, [topic]);
+    const tp = phrasesByTopic(phrases, topic);
+    return tp.length > 0 ? tp : phrases;
+  }, [topic, phrases]);
   const queue = useMemo(() => sample(pool, pool.length), [pool]);
   const [pos, setPos] = useState(0);
   const phrase = queue[pos % queue.length];
@@ -507,7 +541,7 @@ export default function PracticeScreen({ go, params }: { go: GoFn; params?: NavP
       <MascotRow pose="wave" size={72} text="စာကြောင်းကို ထပ်ပြောပါ:" />
 
       {/* C-008: spaced-repetition queue ABOVE the pronunciation block */}
-      <ReviewQueue />
+      <ReviewQueue words={words} />
 
       <W3ErrorBoundary>
       <Card style={{ textAlign: 'center', padding: '28px 20px' }} key={phrase.en}>

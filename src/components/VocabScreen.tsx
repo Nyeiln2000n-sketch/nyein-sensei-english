@@ -17,7 +17,7 @@ import {
 } from 'lucide-react';
 import type { GoFn, NavParams } from '../routes';
 import type { TopicId, Word } from '../types';
-import { topics, wordsByTopic, allWords } from '../data';
+import { topics, wordsByTopic, loadAllWords } from '../data';
 import { getStreak } from '../lib/storage';
 import { recordWordReview, wordKey } from '../lib/review';
 import { speak, stopSpeaking } from '../lib/audio';
@@ -54,11 +54,34 @@ function toggleFavStored(en: string): string[] {
   return next;
 }
 
+// FASE 15 — code-splitting wrapper: corpus loads lazily; skeleton until ready.
 export default function VocabScreen({ go, params }: { go: GoFn; params?: NavParams }) {
+  const [words, setWords] = useState<Word[] | null>(null);
+  useEffect(() => {
+    let cancelled = false;
+    loadAllWords().then((w) => {
+      if (!cancelled) setWords(w);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+  if (!words) {
+    return (
+      <Screen>
+        <TopBar left={<span />} center={<div />} right={<span />} />
+        <SkeletonList />
+      </Screen>
+    );
+  }
+  return <VocabGame go={go} params={params} words={words} />;
+}
+
+function VocabGame({ go, params, words }: { go: GoFn; params?: NavParams; words: Word[] }) {
   const topic: TopicId = (params?.topic as TopicId | undefined) ?? 'family';
   const meta = topics.find((t) => t.id === topic) ?? topics[0];
   const [tab, setTab] = useState<'cards' | 'library'>('cards');
-  const deck = useMemo(() => wordsByTopic(topic), [topic]);
+  const deck = useMemo(() => wordsByTopic(words, topic), [topic, words]);
   const [idx, setIdx] = useState(0);
   const [favs, setFavs] = useState<string[]>(() => loadFavs());
   const word = deck[idx];
@@ -90,10 +113,10 @@ export default function VocabScreen({ go, params }: { go: GoFn; params?: NavPara
   });
   const pollRef = useRef<number | null>(null);
 
-  const libraryWords = useMemo(() => wordsByTopic(topic), [topic]);
+  const libraryWords = useMemo(() => wordsByTopic(words, topic), [topic, words]);
   const scopeList = useMemo<Word[]>(
-    () => (scope === 'all' ? allWords : libraryWords),
-    [scope, libraryWords],
+    () => (scope === 'all' ? words : libraryWords),
+    [scope, libraryWords, words],
   );
 
   const stopPoll = useCallback(() => {
@@ -352,7 +375,7 @@ export default function VocabScreen({ go, params }: { go: GoFn; params?: NavPara
                 className={scope === 'all' ? 'active' : ''}
                 onClick={() => setScope('all')}
               >
-                အားလုံး ({allWords.length})
+                အားလုံး ({words.length})
               </button>
               <button
                 type="button"

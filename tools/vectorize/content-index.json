@@ -611537,16 +611537,17 @@
   {
    "id": "example:seasons:monsoon",
    "kind": "example",
-   "en": "It rains a lot in monsoon.",
-   "en_norm": "it rains a lot in monsoon",
+   "en": "It rains a lot during the monsoon.",
+   "en_norm": "it rains a lot during the monsoon",
    "my_norm": "",
-   "fingerprint": "a4e72df81cb9e13c",
+   "fingerprint": "4254134030089c14",
    "vocab_sig": [
+    "during",
     "lot",
     "monsoon",
     "rains"
    ],
-   "template_sig": "it W a W in W .",
+   "template_sig": "it W a W W the W .",
    "tags": [
     "seasons",
     "example"
@@ -611803,17 +611804,16 @@
   {
    "id": "example:seasons:dew",
    "kind": "example",
-   "en": "Dew drops shine in the morning.",
-   "en_norm": "dew drops shine in the morning",
+   "en": "Dewdrops shine in the morning.",
+   "en_norm": "dewdrops shine in the morning",
    "my_norm": "",
-   "fingerprint": "37e6c2a4899e74a8",
+   "fingerprint": "645a0c08acdd6618",
    "vocab_sig": [
-    "dew",
-    "drops",
+    "dewdrops",
     "morning",
     "shine"
    ],
-   "template_sig": "W W W in the W .",
+   "template_sig": "W W in the W .",
    "tags": [
     "seasons",
     "example"
@@ -612189,16 +612189,16 @@
   {
    "id": "example:seasons:rainfall",
    "kind": "example",
-   "en": "This year rainfall is very high.",
-   "en_norm": "this year rainfall is very high",
+   "en": "This year's rainfall is very high.",
+   "en_norm": "this year s rainfall is very high",
    "my_norm": "",
-   "fingerprint": "b18fcc5179c1f99f",
+   "fingerprint": "5e27a7f8ce0f4bf2",
    "vocab_sig": [
     "high",
     "rainfall",
     "year"
    ],
-   "template_sig": "this W W is very W .",
+   "template_sig": "this W ' s W is very W .",
    "tags": [
     "seasons",
     "example"
@@ -612557,7 +612557,7 @@
    "kind": "word",
    "en": "hood",
    "en_norm": "hood",
-   "my_norm": "ခေါင်းစွပ်ဦးထုပ်",
+   "my_norm": "ခေါင်းစွပ်",
    "fingerprint": "2314555c88c801b1",
    "vocab_sig": [
     "hood"
@@ -612880,17 +612880,16 @@
   {
    "id": "example:seasons:snowdrift",
    "kind": "example",
-   "en": "A snowdrift blocked the small road.",
-   "en_norm": "a snowdrift blocked the small road",
+   "en": "A snowdrift blocked the road.",
+   "en_norm": "a snowdrift blocked the road",
    "my_norm": "",
-   "fingerprint": "5ffae5a489c1a4f0",
+   "fingerprint": "a24dd812fb752112",
    "vocab_sig": [
     "blocked",
     "road",
-    "small",
     "snowdrift"
    ],
-   "template_sig": "a W W the W W .",
+   "template_sig": "a W W the W .",
    "tags": [
     "seasons",
     "example"
@@ -613105,7 +613104,7 @@
    "kind": "word",
    "en": "tropical",
    "en_norm": "tropical",
-   "my_norm": "အပူပိုင်းဒေသ",
+   "my_norm": "အပူပိုင်း",
    "fingerprint": "16483ee69d874060",
    "vocab_sig": [
     "tropical"
@@ -613143,7 +613142,7 @@
    "kind": "word",
    "en": "subtropical",
    "en_norm": "subtropical",
-   "my_norm": "အပူအအေးသမဒေသ",
+   "my_norm": "အပူအအေးသမမျှဒေသ",
    "fingerprint": "69c89fbcdb06005a",
    "vocab_sig": [
     "subtropical"
@@ -613182,7 +613181,7 @@
    "kind": "word",
    "en": "temperate",
    "en_norm": "temperate",
-   "my_norm": "သမပိုင်းရာသီဥတု",
+   "my_norm": "သမပိုင်း",
    "fingerprint": "20f52b106bdf3451",
    "vocab_sig": [
     "temperate"
@@ -613261,7 +613260,7 @@
    "kind": "word",
    "en": "solstice",
    "en_norm": "solstice",
-   "my_norm": "နေ့အရှည် အတို ဆုံးနေ့",
+   "my_norm": "နေ့အရှည်ဆုံး သို့မဟုတ် အတိုဆုံးနေ့",
    "fingerprint": "9dc462edb656a0d9",
    "vocab_sig": [
     "solstice"
@@ -613695,15 +613694,15 @@
   {
    "id": "example:shopping:cash",
    "kind": "example",
-   "en": "Can I pay with cash?",
-   "en_norm": "can i pay with cash",
+   "en": "Can I pay in cash?",
+   "en_norm": "can i pay in cash",
    "my_norm": "",
-   "fingerprint": "1219f2cdae9d4f02",
+   "fingerprint": "6914c28add9de926",
    "vocab_sig": [
     "cash",
     "pay"
    ],
-   "template_sig": "can i W with W ?",
+   "template_sig": "can i W in W ?",
    "tags": [
     "shopping",
     "example"
@@ -613771,16 +613770,17 @@
   {
    "id": "example:shopping:discount",
    "kind": "example",
-   "en": "This shirt has a big discount.",
-   "en_norm": "this shirt has a big discount",
+   "en": "I got a big discount on this shirt.",
+   "en_norm": "i got a big discount on this shirt",
    "my_norm": "",
-   "fingerprint": "9b2090cf4b04cb11",
+   "fingerprint": "b73d9dc2602b2b31",
    "vocab_sig": [
     "big",
     "discount",
+    "got",
     "shirt"
    ],
-   "template_sig": "this W has a W W .",
+   "template_sig": "i W a W W on this W .",
    "tags": [
     "shopping",
     "example"
@@ -613793,7 +613793,7 @@
    "kind": "word",
    "en": "sale",
    "en_norm": "sale",
-   "my_norm": "ရောင်းချခြင်း",
+   "my_norm": "အရောင်းပွဲ",
    "fingerprint": "1f7101fe71011ba0",
    "vocab_sig": [
     "sale"
@@ -614017,7 +614017,7 @@
    "kind": "word",
    "en": "try",
    "en_norm": "try",
-   "my_norm": "စမ်းသပ်သည်",
+   "my_norm": "စမ်းကြည့်သည်",
    "fingerprint": "1e262cd7d110812f",
    "vocab_sig": [
     "try"
@@ -614127,7 +614127,7 @@
    "kind": "word",
    "en": "receipt",
    "en_norm": "receipt",
-   "my_norm": "ပြေစာစာရွက်",
+   "my_norm": "ပြေစာ",
    "fingerprint": "6f32860910ca0fb2",
    "vocab_sig": [
     "receipt"
@@ -614353,7 +614353,7 @@
    "kind": "word",
    "en": "secondhand",
    "en_norm": "secondhand",
-   "my_norm": "အဟောင်းစား",
+   "my_norm": "သုံးပြီးသား",
    "fingerprint": "31db311bb57291cf",
    "vocab_sig": [
     "secondhand"
@@ -614408,16 +614408,18 @@
   {
    "id": "example:shopping:quality",
    "kind": "example",
-   "en": "This shop has good quality.",
-   "en_norm": "this shop has good quality",
+   "en": "This shop sells good-quality products.",
+   "en_norm": "this shop sells good quality products",
    "my_norm": "",
-   "fingerprint": "be777e1611b0133b",
+   "fingerprint": "3986e2ca4a56b7aa",
    "vocab_sig": [
     "good",
+    "products",
     "quality",
+    "sells",
     "shop"
    ],
-   "template_sig": "this W has W W .",
+   "template_sig": "this W W W - W W .",
    "tags": [
     "shopping",
     "example"
@@ -614446,16 +614448,16 @@
   {
    "id": "example:shopping:bargain",
    "kind": "example",
-   "en": "She tries to bargain for the price.",
-   "en_norm": "she tries to bargain for the price",
+   "en": "She tries to bargain over the price.",
+   "en_norm": "she tries to bargain over the price",
    "my_norm": "",
-   "fingerprint": "134eba91302eb1af",
+   "fingerprint": "8882b9ceebbec059",
    "vocab_sig": [
     "bargain",
     "price",
     "tries"
    ],
-   "template_sig": "she W to W for the W .",
+   "template_sig": "she W to W over the W .",
    "tags": [
     "shopping",
     "example"
@@ -614545,7 +614547,7 @@
    "kind": "word",
    "en": "football",
    "en_norm": "football",
-   "my_norm": "ဘောလုံး",
+   "my_norm": "ဘောလုံးကစား",
    "fingerprint": "6382deaf1f5dc6e7",
    "vocab_sig": [
     "football"
@@ -615453,7 +615455,7 @@
    "kind": "word",
    "en": "race",
    "en_norm": "race",
-   "my_norm": "ပြိုင်ပွဲ",
+   "my_norm": "ပြေးပြိုင်ပွဲ",
    "fingerprint": "129ce50dd90bf244",
    "vocab_sig": [
     "race"

@@ -50,13 +50,15 @@ export default defineConfig({
         // would add ~400MB raw / tens of MB optimized to the install.
         globIgnores: ['**/word-images/**', '**/topic-cards/**', '**/splash/**', '**/phrase-images/**'],
         // FASE 14 Ola 3: the main JS chunk grew past the 3MB limit (it now
-        // carries 7500 words / 5820 phrases / 324 dialogues / 120 stories).
+        // carried 7500 words / 5820 phrases / 324 dialogues / 120 stories).
         // FASE 14 Ola 4: chunk reached 7.18MB (10k words / 8k phrases /
-        // 500 dialogues / 200 stories). 12MB keeps the app shell precacheable.
-        // NOTE (tech debt): the chunk grows ~1.5MB per content wave — a future
-        // wave should code-split the content data (dynamic import) so the
-        // entry chunk stays small.
-        maximumFileSizeToCacheInBytes: 12 * 1024 * 1024,
+        // 500 dialogues / 200 stories). 12MB kept the app shell precacheable.
+        // FASE 15: code-splitting paid the debt — the corpus now loads via
+        // dynamic import() as on-demand chunks (largest: dialogues ~1.35MB),
+        // so the entry chunk is back to ~208KB. The limit returns to 5MB:
+        // if a future chunk crosses it, split the data further instead of
+        // raising this number.
+        maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
         runtimeCaching: [
           {
             urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i,

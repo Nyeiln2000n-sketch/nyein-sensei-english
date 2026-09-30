@@ -1,38 +1,45 @@
-import { describe, it, expect } from 'vitest';
-import { getWordOfDay } from './wordOfDay';
-import { allWords } from '../data';
+import { describe, it, expect, beforeAll } from 'vitest';
+import { pickWordOfDay } from './wordOfDay';
+import { loadAllWords } from '../data';
+import type { Word } from '../types';
 
-describe('getWordOfDay', () => {
-  it('is deterministic: same instant always yields the same word', () => {
-    const d = new Date(2026, 8, 29, 9, 44);
-    expect(getWordOfDay(d)).toBe(getWordOfDay(new Date(d.getTime())));
+let words: Word[] = [];
+
+describe('pickWordOfDay', () => {
+  beforeAll(async () => {
+    words = await loadAllWords();
   });
 
-  it('returns the identical reference from allWords for the same day', () => {
+  it('is deterministic: same instant always yields the same word', () => {
+    const d = new Date(2026, 8, 29, 9, 44);
+    expect(pickWordOfDay(words, d)).toBe(pickWordOfDay(words, new Date(d.getTime())));
+  });
+
+  it('returns the identical reference from the corpus for the same day', () => {
     const morning = new Date(2026, 8, 29, 7, 0);
     const evening = new Date(2026, 8, 29, 23, 59);
-    expect(getWordOfDay(morning)).toBe(getWordOfDay(evening));
-    expect(allWords).toContain(getWordOfDay(morning));
+    expect(pickWordOfDay(words, morning)).toBe(pickWordOfDay(words, evening));
+    expect(words).toContain(pickWordOfDay(words, morning));
   });
 
   it('varies across days (the word rotates, it is not stuck)', () => {
     const seen = new Set<string>();
     for (let i = 0; i < 60; i++) {
       const d = new Date(2026, 0, 1 + i, 12, 0);
-      seen.add(getWordOfDay(d).en);
+      seen.add(pickWordOfDay(words, d).en);
     }
     expect(seen.size).toBeGreaterThan(1);
   });
 
-  it('every picked word is a member of allWords', () => {
+  it('every picked word is a member of the corpus', () => {
     for (let i = 0; i < 30; i++) {
-      const w = getWordOfDay(new Date(2026, 4, 1 + i, 12, 0));
-      expect(allWords).toContain(w);
+      const w = pickWordOfDay(words, new Date(2026, 4, 1 + i, 12, 0));
+      expect(words).toContain(w);
     }
   });
 
-  it('defaults to today when called without arguments', () => {
+  it('defaults to today when called without a date', () => {
     const now = new Date();
-    expect(getWordOfDay()).toBe(getWordOfDay(now));
+    expect(pickWordOfDay(words)).toBe(pickWordOfDay(words, now));
   });
 });

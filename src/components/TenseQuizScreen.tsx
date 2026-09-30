@@ -8,7 +8,9 @@ import { useState } from 'react';
 import { X, Volume2, RotateCcw, Table2, Brain } from 'lucide-react';
 import type { GoFn, NavParams } from '../routes';
 import type { Tense } from '../types';
-import { tenses } from '../data/f14';
+import { loadTenses } from '../data';
+import { useCorpus } from '../data/useCorpus';
+import { SkeletonList } from './Skeleton';
 import { speak } from '../lib/audio';
 import { addXP, recordAnswer } from '../lib/storage';
 import {
@@ -34,7 +36,7 @@ function sample<T>(arr: T[], n: number): T[] {
   return copy.slice(0, n);
 }
 
-function buildRounds(): TenseRound[] {
+function buildRounds(tenses: Tense[]): TenseRound[] {
   return sample(tenses, tenses.length)
     .slice(0, TOTAL_ROUNDS)
     .map((tense) => ({
@@ -103,6 +105,7 @@ function Segmented({
   );
 }
 
+// FASE 15 — code-splitting wrapper: tense data loads lazily; skeleton until ready.
 export default function TenseQuizScreen({
   go,
   params,
@@ -110,9 +113,30 @@ export default function TenseQuizScreen({
   go: GoFn;
   params?: NavParams;
 }) {
+  const tenses = useCorpus(loadTenses);
+  if (!tenses) {
+    return (
+      <Screen>
+        <TopBar left={<span />} center={<div />} right={<span />} />
+        <SkeletonList />
+      </Screen>
+    );
+  }
+  return <TenseQuizGame go={go} params={params} tenses={tenses} />;
+}
+
+function TenseQuizGame({
+  go,
+  params,
+  tenses,
+}: {
+  go: GoFn;
+  params?: NavParams;
+  tenses: Tense[];
+}) {
   void params;
   const [mode, setMode] = useState<Mode>('table');
-  const [rounds] = useState<TenseRound[]>(buildRounds);
+  const [rounds] = useState<TenseRound[]>(() => buildRounds(tenses));
   const [idx, setIdx] = useState(0);
   const [picked, setPicked] = useState<string | null>(null);
   const [earned, setEarned] = useState(0);
