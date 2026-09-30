@@ -176,13 +176,16 @@ export default async function handler(req: any, res: any): Promise<void> {
       { name: 'ssl:true', cfg: { ssl: true } },
       { name: 'sin-ssl', cfg: {} },
     ];
+    const errs: string[] = [];
     for (const { name, cfg } of configs) {
       const c = new Client({ connectionString: connStr, ...cfg });
       try {
         await c.connect();
         await c.query('select 1');
+        if (errs.length) (globalThis as any).__pgErrs = errs;
         return { client: c, used: name };
-      } catch {
+      } catch (e) {
+        errs.push(`${name}: ${(e as Error).message.slice(0, 140)}`);
         try {
           await c.end();
         } catch {
@@ -190,12 +193,16 @@ export default async function handler(req: any, res: any): Promise<void> {
         }
       }
     }
+    (globalThis as any).__pgErrs = errs;
     return null;
   }
 
   const connected = await connectWorking();
   if (!connected) {
-    res.status(500).json({ error: 'no se pudo conectar a Postgres (SSL)' });
+    res.status(500).json({
+      error: 'no se pudo conectar a Postgres',
+      attempts: (globalThis as any).__pgErrs || [],
+    });
     return;
   }
   const client = connected.client;
