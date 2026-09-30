@@ -605537,16 +605537,16 @@
   {
    "id": "example:office:remote",
    "kind": "example",
-   "en": "She works remote from her home.",
-   "en_norm": "she works remote from her home",
+   "en": "She works remotely from home.",
+   "en_norm": "she works remotely from home",
    "my_norm": "",
-   "fingerprint": "d7619a0b21327394",
+   "fingerprint": "1e9fca3314ded8dc",
    "vocab_sig": [
     "home",
-    "remote",
+    "remotely",
     "works"
    ],
-   "template_sig": "she W W from her W .",
+   "template_sig": "she W W from W .",
    "tags": [
     "office",
     "example"
