@@ -221,13 +221,13 @@
 - [x] C3-007 Auditoría anti-dup total + verificación + reporte (dedup-check: 0 duplicados en 21566 items; typecheck/build verdes; 58 duplicados entre batches corregidos 1:1; regex del indexador ampliada para f14-s-*)
 
 ### Ola 4 — C1 → C2 + maestría (planificada)
-- [ ] C4-001 +2500 palabras C1/C2 (académico, literario, técnico) → 10.000 totales + imágenes
-- [ ] C4-002 +2180 frases C1/C2 (idioms, phrasal verbs avanzados, matices de registro) → 8000 totales
-- [ ] C4-003 +144 diálogos C1/C2 (presentaciones, negociaciones, discursos) → 500 totales
-- [ ] C4-004 +68 historias C1/C2 → 200 totales
-- [ ] C4-005 Gramática estructurada C1→C2
-- [ ] C4-006 Certificación interna por banda CEFR (examen final por nivel)
-- [ ] C4-007 Auditoría anti-dup total + verificación + reporte final FASE 14
+- [x] C4-001 — ✅ 2.500 palabras C1/C2 (batches 18-22, 500 c/u) cableadas en f14/index.ts; 2.500/2.500 PNG 320px ≤60KB + manifiestos batch-10…14; dedup 0/28.963 +2500 palabras C1/C2 (académico, literario, técnico) → 10.000 totales + imágenes
+- [x] C4-002 — ✅ 2.180 frases C1/C2 (batches 15-18: 500 c/u + batch-19: 180) cableadas; QA experta: 62 "ကျွန်ုပ်" + 1 traducción invertida corregidos +2180 frases C1/C2 (idioms, phrasal verbs avanzados, matices de registro) → 8000 totales
+- [x] C4-003 — ✅ 144 diálogos C1/C2 (batches 6-8, 48 c/u) cableados; QA: 4 corrupciones encoding + 7 fixes Myanmar/inglés +144 diálogos C1/C2 (presentaciones, negociaciones, discursos) → 500 totales
+- [x] C4-004 — ✅ 68 historias C1/C2 (batch-4) cableadas; QA: 1 corrupción encoding corregida +68 historias C1/C2 → 200 totales
+- [x] C4-005 — ✅ 51 reglas C1→C2 (grammar-batch-3, Myanmar-first) exportadas; QA: 1 ejemplo duplicado reemplazado Gramática estructurada C1→C2
+- [x] C4-006 — ✅ 6 exámenes CEFR A1→C2 (241 preguntas) + pantalla CertificationExamScreen (tarjeta CEFR စာမေးပွဲ en Dashboard, mejor puntaje por banda en localStorage) Certificación interna por banda CEFR (examen final por nivel)
+- [x] C4-007 — ✅ dedup-check 0 duplicados (28.963 items: 10.000 palabras, 8.000 frases, 524 diálogos, 200 historias); typecheck + build verdes Auditoría anti-dup total + verificación + reporte final FASE 14
 
 ---
 **Total: 187 tareas.** Cada una = un enjambre que construye + verifica. El proyecto crece por oleadas, sin parar, sin repetir.
