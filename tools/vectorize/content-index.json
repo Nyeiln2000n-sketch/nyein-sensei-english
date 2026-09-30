@@ -593910,7 +593910,7 @@
    "kind": "word",
    "en": "hurt",
    "en_norm": "hurt",
-   "my_norm": "နာကျင်သော",
+   "my_norm": "နာကျင်သည်",
    "fingerprint": "49002d515d1605d8",
    "vocab_sig": [
     "hurt"
@@ -594134,7 +594134,7 @@
    "kind": "word",
    "en": "siren",
    "en_norm": "siren",
-   "my_norm": "အချက်ပြသံ",
+   "my_norm": "ဆိုင်ရင်သံ",
    "fingerprint": "dae735d9574223b6",
    "vocab_sig": [
     "siren"
@@ -594392,7 +594392,7 @@
    "kind": "word",
    "en": "first aid",
    "en_norm": "first aid",
-   "my_norm": "အရေးပေါ်ရှေးဦးသူနာပြုစုခြင်း",
+   "my_norm": "ရှေးဦးသူနာပြုစုခြင်း",
    "fingerprint": "a232163263c32f90",
    "vocab_sig": [
     "aid",
@@ -594585,7 +594585,7 @@
    "kind": "word",
    "en": "extinguisher",
    "en_norm": "extinguisher",
-   "my_norm": "မီးသတ်ဆေး",
+   "my_norm": "မီးသတ်ဆေးဗူး",
    "fingerprint": "85514aae5059a8f8",
    "vocab_sig": [
     "extinguisher"
