@@ -36,6 +36,11 @@ html,
 body {
   margin: 0;
   padding: 0;
+  /* FIX-responsive 2026-10-01 (r3): iOS Safari infla el tamaño del texto
+     automáticamente; eso cambia el min-content birmano y puede ensanchar
+     el layout. 100% = respeta el tamaño diseñado. */
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
   /* Owner order: the page never shifts — no horizontal drift, no
      rubber-band scroll chaining between screens. */
   overflow-x: clip;
@@ -100,6 +105,11 @@ img {
   flex-direction: column;
   gap: 16px;
   flex: 1;
+  width: 100%;
+  /* FIX-responsive 2026-10-01 (r3): igual que .w3-screen — el propio
+     contenedor es flex item; sin min-width:0 WebKit usa el min-content
+     birmano y ensancha la página. */
+  min-width: 0;
 }
 
 /* FIX-responsive ronda 2 (2026-10-01): los contenedores de página son
@@ -109,6 +119,16 @@ img {
    .w3-screen es el contenedor equivalente de w3-shared.tsx. */
 .screen > *,
 .w3-screen > * {
+  min-width: 0;
+}
+
+/* FIX-responsive 2026-10-01 (r3): la cadena flex completa (.app > .main >
+   .screen/.w3-screen) debe poder encogerse. Sin esto, WebKit en iOS
+   propaga el min-content del texto birmano hacia arriba y la página
+   queda ~16px más ancha que el viewport. */
+#root,
+.app,
+.main {
   min-width: 0;
 }
 

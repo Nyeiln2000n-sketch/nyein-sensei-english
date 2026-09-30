@@ -45,6 +45,13 @@ export function Screen({ children }: { children: ReactNode }) {
         fontFamily: FONT,
         display: 'flex',
         flexDirection: 'column',
+        width: '100%',
+        /* FIX-responsive 2026-10-01 (r3): el contenedor Screen también es un
+           flex item de .main. Sin min-width:0, WebKit (iOS Safari) usa el
+           min-content del texto birmano como ancho mínimo y ensancha toda
+           la pantalla ~16px a la derecha. La regla r2 solo cubría a los
+           hijos directos, no al propio contenedor. */
+        minWidth: 0,
         // PWA standalone (viewport-fit=cover): keep headers clear of the
         // notch / Dynamic Island on every screen using this container.
         padding: 'max(env(safe-area-inset-top, 0px), 12px) 16px 40px',
