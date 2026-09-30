@@ -24,7 +24,7 @@ import { getReminderPrefs } from './reminders';
  * /api/send-reminders) — NUNCA en el repo.
  */
 export const VAPID_PUBLIC_KEY =
-  'BJ7yi_jEO_bdMs8qUxf1f16pmeri2oyUY6OjG9m4HsYFug1TASaRI_qdkJQu4LJbp8luuX3H8dL5kTGNf4FvrwU';
+  'BIHkAIwQyGiTWEXOqoshFAzB2vIacPkVOb0ZRWFzYyKT9ZSs2R1regLMs1copZdI_K_DepF1mbJi4O6ebBzQRwU';
 
 export type PushState = 'unsupported' | 'denied' | 'subscribed' | 'unsubscribed' | 'prompt';
 
