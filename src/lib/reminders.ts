@@ -1,15 +1,19 @@
 // G-005 — Recordatorios amables (notificaciones opt-in).
 //
-// HONESTO: no hay servidor push, ni service worker, ni FCM. Los
-// recordatorios son LOCALES e IN-APP: cuando la app se abre (máximo una
-// vez al día), si el opt-in está activado, el permiso de Notification fue
-// concedido y el usuario aún no practicó hoy, se muestra un banner amable
-// dentro de la app. Si hay permiso, también se dispara una notificación
-// local del sistema (new Notification) en ese mismo momento.
+// Dos capas:
+//  1. PUSH NATIVO (nuevo, src/lib/push.ts + src/sw.ts + Edge Function
+//     send-daily-reminder): con permiso concedido y opt-in activado, el
+//     servidor envía cada día a la hora elegida una notificación aunque la
+//     app esté cerrada. Requiere la PWA instalada en iOS 16.4+.
+//  2. LOCAL/IN-APP (respaldo): cuando la app se abre (máximo una vez al
+//     día), si el opt-in está activado, el permiso de Notification fue
+//     concedido y el usuario aún no practicó hoy, se muestra un banner amable
+//     dentro de la app. Si hay permiso, también se dispara una notificación
+//     local del sistema (new Notification) en ese mismo momento.
 //
 // Reglas de permiso (requeridas por iOS): Notification.requestPermission()
-// SOLO se llama desde el toggle de opt-in (gesto directo del usuario) —
-// nunca automáticamente al abrir la app.
+// SOLO se llama desde un gesto directo del usuario (el toggle de opt-in o
+// el botón del PushPrompt) — nunca automáticamente al abrir la app.
 
 export interface ReminderPrefs {
   /** Opt-in activado por el usuario desde el toggle. */
@@ -22,7 +26,7 @@ export interface ReminderPrefs {
 
 export const REMINDER_DEFAULTS: ReminderPrefs = {
   enabled: false,
-  hour: 19,
+  hour: 20,
   minute: 0,
 };
 

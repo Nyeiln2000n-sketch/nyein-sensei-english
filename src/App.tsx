@@ -28,6 +28,8 @@ const DictationScreen = lazy(() => import('./components/DictationScreen'));
 const DialoguesStoriesScreen = lazy(() => import('./components/DialoguesStoriesScreen'));
 import SpeechFallbackNotice from './components/SpeechFallbackNotice';
 import InstallPrompt from './components/InstallPrompt';
+// NOTIF-PUSH: prompt amable de permiso push (una vez, tras login, Myanmar-first).
+import PushPrompt from './components/PushPrompt';
 // FASE 11 (Worker C): daily gentle reminder banner — mounted once at root
 // so it is visible on any screen.
 import { ReminderBanner } from './components/ReminderSettings';
@@ -444,6 +446,8 @@ export default function App() {
       <SpeechFallbackNotice />
       {/* P-003: iOS "add to home screen" teaching card (iOS only). */}
       <InstallPrompt />
+      {/* NOTIF-PUSH: one-time gentle push-permission prompt (after login). */}
+      <PushPrompt />
       {/* Worker C reminder: daily gentle in-app reminder banner (any screen). */}
       <ReminderBanner />
     </div>

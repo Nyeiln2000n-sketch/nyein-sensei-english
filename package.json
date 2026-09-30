@@ -5,7 +5,13 @@
     "lucide-react": "^1.48.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "three": "^0.186.1"
+    "three": "^0.186.1",
+    "workbox-cacheable-response": "^7.4.1",
+    "workbox-core": "^7.4.1",
+    "workbox-expiration": "^7.4.1",
+    "workbox-precaching": "^7.4.1",
+    "workbox-routing": "^7.4.1",
+    "workbox-strategies": "^7.4.1"
   },
   "description": "Nyein Sensei English — Duolingo-style English learning app for Myanmar speakers (Burmese UI). PWA, offline-first, Supabase-ready.",
   "devDependencies": {

@@ -21,7 +21,16 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.svg', 'icon.svg', 'maskable-icon.svg', 'icon-192.png', 'icon-512.png', 'maskable-512.png', 'apple-touch-icon.png'],
+      // NOTIF-PUSH: custom service worker (src/sw.ts) so the app can handle
+      // Web Push events. `injectManifest` keeps the precache manifest
+      // injection (__WB_MANIFEST) from the `workbox` block below, but
+      // `workbox.runtimeCaching` is IGNORED in this mode — the runtime
+      // routes now live in src/sw.ts (google fonts, word-images,
+      // topic-cards). Keep both places in sync.
+      strategies: 'injectManifest',
+      srcDir: 'src',
+      filename: 'sw.ts',
+      includeAssets: ['favicon.svg', 'icon.svg', 'maskable-icon.svg', 'icon-192.png', 'icon-512.png', 'maskable-512.png', 'apple-touch-icon.png', 'mascot.png'],
       manifest: {
         name: 'Nyein Sensei English',
         short_name: 'Nyein English',

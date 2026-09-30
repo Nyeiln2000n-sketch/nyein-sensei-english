@@ -21,6 +21,13 @@ import {
   setReminderTime,
   todayKey,
 } from '../lib/reminders';
+import { getSession } from '../lib/auth';
+import {
+  isPushSupported,
+  subscribePush,
+  syncPushPrefs,
+  unsubscribePush,
+} from '../lib/push';
 import { getProgress } from '../lib/storage';
 
 function pad2(n: number): string {
@@ -38,10 +45,12 @@ export default function ReminderSettings() {
 
   async function toggle() {
     if (busy) return;
+    const userId = getSession()?.user?.id;
     if (enabled) {
-      // Desactivar: sin permiso, sin preguntas.
+      // Desactivar: sin permiso, sin preguntas. También cancela el push.
       setEnabled(false);
       setReminderEnabled(false);
+      if (userId) void unsubscribePush(userId);
       return;
     }
     // Activar: este click es el gesto del usuario → aquí sí se puede pedir permiso.
@@ -50,6 +59,11 @@ export default function ReminderSettings() {
       if (isNotificationSupported()) {
         const p = await requestReminderPermission();
         setPermission(p);
+        // NOTIF-PUSH: con permiso concedido, suscribir el push nativo para
+        // que el recordatorio llegue aunque la app esté cerrada.
+        if (p === 'granted' && userId && isPushSupported()) {
+          await subscribePush(userId);
+        }
       }
       setEnabled(true);
       setReminderEnabled(true);
@@ -63,6 +77,9 @@ export default function ReminderSettings() {
     if (!m) return;
     setTime(`${pad2(Number(m[1]))}:${m[2]}`);
     setReminderTime(Number(m[1]), Number(m[2]));
+    // NOTIF-PUSH: propaga la nueva hora a la suscripción push del servidor.
+    const userId = getSession()?.user?.id;
+    if (userId) void syncPushPrefs(userId);
   }
 
   const needsPermissionHint =
@@ -116,8 +133,9 @@ export default function ReminderSettings() {
         </p>
       )}
       <p className="nse-setting-note">
-        ဒီသတိပေးချက်တွေက သင့်ဖုန်းထဲမှာပဲ အလုပ်လုပ်ပါတယ် — ဆာဗာကနေ ပို့တာ
-        မဟုတ်ဘူး။
+        {isPushSupported()
+          ? 'အက်ပ် ပိတ်ထားရင်တောင် သတိပေးချက် ဖုန်းမှာ ပေါ်လာမယ် — နေ့တိုင်း သတ်မှတ်ထားတဲ့ အချိန်မှာ ပို့ပေးမယ်။'
+          : 'ဒီသတိပေးချက်တွေက သင့်ဖုန်းထဲမှာပဲ အလုပ်လုပ်ပါတယ် — ဆာဗာကနေ ပို့တာ မဟုတ်ဘူး။'}
       </p>
     </div>
   );
