@@ -5,7 +5,7 @@
 // y se añaden aquí (o se sirven desde el manifest del generador).
 
 const STORAGE_BASE =
-  'https://zkdykbauxblzikwyfjc.supabase.co/storage/v1/object/public/podcast-episodes';
+  'https://zkedykbauxblzikwyfjc.supabase.co/storage/v1/object/public/podcast-episodes';
 
 export interface PodcastEpisode {
   /** Número de episodio (1-150). */

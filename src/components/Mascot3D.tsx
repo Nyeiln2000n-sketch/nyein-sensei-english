@@ -67,12 +67,12 @@ export type { MascotPose } from './MascotScene3D';
 const MascotScene3DLazy = lazy(() => import('./MascotScene3D'));
 
 const POSE_FILES: Record<MascotPose, string> = {
-  wave: '/mascot.png',
-  celebrate: '/mascot-celebrate.png',
-  thinking: '/mascot-thinking.png',
-  encourage: '/mascot-encourage.png',
-  amazed: '/mascot-amazed.png',
-  reading: '/mascot-reading.png',
+  wave: '/mascot.webp',
+  celebrate: '/mascot-celebrate.webp',
+  thinking: '/mascot-thinking.webp',
+  encourage: '/mascot-encourage.webp',
+  amazed: '/mascot-amazed.webp',
+  reading: '/mascot-reading.webp',
 };
 
 interface Mascot3DProps {

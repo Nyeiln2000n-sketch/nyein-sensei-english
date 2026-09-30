@@ -165,7 +165,7 @@ export default function PodcastScreen({ go: _go, params: _params }: { go: GoFn; 
             position: 'fixed',
             left: 16,
             right: 16,
-            bottom: 92,
+            bottom: 'calc(108px + env(safe-area-inset-bottom, 0px))',
             maxWidth: 398,
             margin: '0 auto',
             background: '#2B2118',

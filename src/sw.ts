@@ -84,6 +84,23 @@ registerRoute(
   }),
 );
 
+// PERF 2026-10-01: corpus data chunks (corpus-*.js) load on-demand via
+// dynamic import() — cached lazily on first use, never precached (was
+// ~7MB forced download on first visit).
+registerRoute(
+  ({ url }) => /\/assets\/corpus-.*\.js$/i.test(url.pathname),
+  new CacheFirst({
+    cacheName: 'corpus-data',
+    plugins: [
+      new ExpirationPlugin({
+        maxEntries: 30,
+        maxAgeSeconds: 60 * 60 * 24 * 30,
+      }),
+      new CacheableResponsePlugin({ statuses: [0, 200] }),
+    ],
+  }),
+);
+
 // ---------------------------------------------------------------------------
 // Web Push — recordatorio diario estilo Duolingo.
 // ---------------------------------------------------------------------------

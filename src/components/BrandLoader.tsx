@@ -24,7 +24,7 @@ export default function BrandLoader({ compact, size = 128, caption }: BrandLoade
         role="status"
         aria-label="ခဏစောင့်ပါ"
       >
-        <img src="/mascot.png" alt="" aria-hidden="true" draggable={false} />
+        <img src="/mascot.webp" alt="" aria-hidden="true" draggable={false} />
         <span className="brand-spinner brand-spinner-sm" aria-hidden="true" />
       </div>
     );
@@ -33,7 +33,7 @@ export default function BrandLoader({ compact, size = 128, caption }: BrandLoade
   return (
     <div className="brand-loader" role="status" aria-label="ခဏစောင့်ပါ">
       <img
-        src="/mascot.png"
+        src="/mascot.webp"
         className="brand-loader-cat"
         alt="Nyein Sensei English"
         draggable={false}

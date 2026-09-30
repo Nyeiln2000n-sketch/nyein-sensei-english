@@ -108,10 +108,77 @@ function VocabGame({ go, params, words }: { go: GoFn; params?: NavParams; words:
   const [plIdx, setPlIdx] = useState(0);
   const [plDone, setPlDone] = useState(false);
   const [activeEn, setActiveEn] = useState<string | null>(null);
+  // 2026-10-01: Nyein quiere continuar donde iba — guardar/restaurar posición.
+  const [savedPos, setSavedPos] = useState<{ scope: 'all' | 'topic'; topic: string; idx: number } | null>(null);
   const plRef = useRef<{ list: Word[]; idx: number; playing: boolean }>({
     list: [], idx: 0, playing: false,
   });
   const pollRef = useRef<number | null>(null);
+  // 2026-10-01: audio silencioso en loop para que iOS no suspenda la página
+  // en segundo plano mientras speechSynthesis habla.
+  const silentRef = useRef<HTMLAudioElement | null>(null);
+
+  const POS_KEY = 'nse-playlist-pos';
+
+  const loadSavedPos = useCallback(() => {
+    try {
+      const raw = localStorage.getItem(POS_KEY);
+      if (!raw) return null;
+      const p = JSON.parse(raw);
+      if (typeof p.idx === 'number' && p.idx > 0) return p;
+      return null;
+    } catch {
+      return null;
+    }
+  }, []);
+
+  const savePos = useCallback((idx: number) => {
+    try {
+      localStorage.setItem(POS_KEY, JSON.stringify({ scope, topic, idx, ts: Date.now() }));
+      setSavedPos({ scope, topic, idx });
+    } catch {
+      /* ignore */
+    }
+  }, [scope, topic]);
+
+  const clearSavedPos = useCallback(() => {
+    try {
+      localStorage.removeItem(POS_KEY);
+    } catch {
+      /* ignore */
+    }
+    setSavedPos(null);
+  }, []);
+
+  // Cargar posición guardada al montar.
+  useEffect(() => {
+    setSavedPos(loadSavedPos());
+  }, [loadSavedPos]);
+
+  /** Inicia el audio silencioso para mantener la página viva en segundo plano. */
+  const startSilentAudio = useCallback(() => {
+    try {
+      if (!silentRef.current) {
+        const el = document.createElement('audio');
+        el.loop = true;
+        // WAV silencioso de 1 segundo en base64 (válido en iOS).
+        el.src = 'data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQAAAAA=';
+        el.volume = 0.01;
+        silentRef.current = el;
+      }
+      void silentRef.current.play().catch(() => {});
+    } catch {
+      /* ignore */
+    }
+  }, []);
+
+  const stopSilentAudio = useCallback(() => {
+    try {
+      silentRef.current?.pause();
+    } catch {
+      /* ignore */
+    }
+  }, []);
 
   const libraryWords = useMemo(() => wordsByTopic(words, topic), [topic, words]);
   const scopeList = useMemo<Word[]>(
@@ -144,9 +211,14 @@ function VocabGame({ go, params, words }: { go: GoFn; params?: NavParams; words:
 
   const endPlaylist = useCallback(() => {
     stopPoll();
+    // 2026-10-01: guardar dónde iba para continuar después.
+    if (plRef.current.idx > 0 && plRef.current.list.length > 0) {
+      savePos(plRef.current.idx);
+    }
     plRef.current.playing = false;
     plRef.current.list = [];
     stopSpeaking();
+    stopSilentAudio();
     setPlActive(false);
     setPlPlaying(false);
     setPlDone(false);
@@ -154,7 +226,7 @@ function VocabGame({ go, params, words }: { go: GoFn; params?: NavParams; words:
     // 2026-10-01: liberar wake lock y limpiar media session al terminar.
     void releaseWakeLock();
     clearMediaSession();
-  }, [stopPoll]);
+  }, [stopPoll, savePos, stopSilentAudio]);
 
   const startPoll = useCallback(() => {
     stopPoll();
@@ -170,6 +242,8 @@ function VocabGame({ go, params, words }: { go: GoFn; params?: NavParams; words:
             setPlPlaying(false);
             setPlDone(true);
             stopPoll();
+            // 2026-10-01: terminó la lista — borrar posición guardada.
+            clearSavedPos();
           } else {
             speakAt(n);
           }
@@ -178,21 +252,24 @@ function VocabGame({ go, params, words }: { go: GoFn; params?: NavParams; words:
         /* ignore */
       }
     }, 350);
-  }, [speakAt, stopPoll]);
+  }, [speakAt, stopPoll, clearSavedPos]);
 
-  const startPlaylist = useCallback(() => {
+  const startPlaylist = useCallback((fromIdx: number = 0) => {
     const list = scopeList;
     if (list.length === 0) return;
     stopSpeaking();
-    plRef.current = { list, idx: 0, playing: true };
+    const startAt = Math.min(Math.max(0, fromIdx), list.length - 1);
+    plRef.current = { list, idx: startAt, playing: true };
     setPlActive(true);
     setPlPlaying(true);
     setPlDone(false);
     // 2026-10-01: la pantalla no se apaga sola durante la lista (mantras).
     void requestWakeLock();
-    speakAt(0); // synchronous in the tap handler (AUDIO_CONTRACT)
+    // 2026-10-01: audio silencioso para segundo plano en iOS.
+    startSilentAudio();
+    speakAt(startAt); // synchronous in the tap handler (AUDIO_CONTRACT)
     startPoll();
-  }, [scopeList, speakAt, startPoll]);
+  }, [scopeList, speakAt, startPoll, startSilentAudio]);
 
   const togglePlay = useCallback(() => {
     const s = plRef.current;
@@ -202,13 +279,17 @@ function VocabGame({ go, params, words }: { go: GoFn; params?: NavParams; words:
       setPlPlaying(false);
       stopSpeaking();
       stopPoll();
+      stopSilentAudio();
+      // 2026-10-01: al pausar, guardar posición para continuar después.
+      savePos(s.idx);
     } else {
       s.playing = true;
       setPlPlaying(true);
+      startSilentAudio();
       speakAt(s.idx); // tap-synchronous re-prime
       startPoll();
     }
-  }, [speakAt, startPoll, stopPoll]);
+  }, [speakAt, startPoll, stopPoll, savePos, startSilentAudio, stopSilentAudio]);
 
   const step = useCallback(
     (d: number) => {
@@ -365,10 +446,25 @@ function VocabGame({ go, params, words }: { go: GoFn; params?: NavParams; words:
         {/* ---------- "listen to all" playlist entry ---------- */}
         {!plActive ? (
           <div style={{ marginBottom: 12 }}>
-            <button type="button" className="playlist-cta" onClick={startPlaylist}>
+            <button type="button" className="playlist-cta" onClick={() => startPlaylist(0)}>
               <span style={{ fontSize: 22 }}>🎧</span>
               အားလုံး နားထောင်မယ်
             </button>
+            {savedPos && savedPos.idx > 0 && (
+              <button
+                type="button"
+                className="playlist-cta"
+                style={{ marginTop: 8, background: '#A5E6A7' }}
+                onClick={() => {
+                  if (savedPos.scope !== scope) setScope(savedPos.scope);
+                  startPlaylist(savedPos.idx);
+                  clearSavedPos();
+                }}
+              >
+                <span style={{ fontSize: 22 }}>▶️</span>
+                ဆက်လက် နားထောင်မယ် ({savedPos.idx + 1} ကနေ)
+              </button>
+            )}
             <div className="playlist-scope" role="group" aria-label="ဖွင့်မည့်အပိုင်း">
               <button
                 type="button"

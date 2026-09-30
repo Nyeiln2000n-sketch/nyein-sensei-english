@@ -246,7 +246,8 @@ export default function ProfileScreen({ go, params }: { go: GoFn; params?: NavPa
   );
 }
 
-/** Envía una notificación de prueba a las suscripciones push del usuario actual. */
+/** Envía una notificación de prueba a las suscripciones push del usuario actual.
+ *  Si no hay suscripción, primero intenta crearla (pide permiso) y luego envía. */
 function TestPushButton() {
   const [state, setState] = useState<'idle' | 'sending' | 'done' | 'error'>('idle');
   const [msg, setMsg] = useState('');
@@ -257,27 +258,47 @@ function TestPushButton() {
     try {
       const session = getSession();
       const userId = session?.user?.id || '';
-      if (!userId) {
+      if (!userId || !session?.access_token) {
         setState('error');
-        setMsg('No hay sesión activa.');
+        setMsg('အကောင့်ဝင်ထားခြင်း မရှိပါ။');
         return;
+      }
+      // Sin suscripción no hay a dónde enviar — intentar crearla primero.
+      const { getPushState, subscribePush } = await import('../lib/push');
+      const pushState = await getPushState().catch(() => 'unsupported' as const);
+      if (pushState === 'unsupported') {
+        setState('error');
+        setMsg('ဒီဘရောက်ဇာက notification မရပါ။ Home Screen မှာ install လုပ်ပါ။');
+        return;
+      }
+      if (pushState !== 'subscribed') {
+        setMsg('ခွင့်ပြုချက် တောင်းနေသည်…');
+        const ok = await subscribePush(userId);
+        if (!ok) {
+          setState('error');
+          setMsg('ခွင့်မပြုခဲ့ပါ။ Settings > Notifications မှာ ဖွင့်ပေးပါ။');
+          return;
+        }
       }
       const res = await fetch('/api/test-push', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ user_id: userId }),
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${session.access_token}`,
+        },
+        body: JSON.stringify({}),
       });
       const data = await res.json().catch(() => ({}));
       if (data.ok && data.sent > 0) {
         setState('done');
-        setMsg('¡Notificación enviada! Revisa tu pantalla. 🔔');
+        setMsg('ပို့ပြီးပါပြီ! ဖုန်းကို ကြည့်ပါ။ 🔔');
       } else {
         setState('error');
-        setMsg(data.error || 'No se pudo enviar. ¿Aceptaste las notificaciones?');
+        setMsg('မပို့နိုင်ပါ။ Notification ခွင့်ပြုထားသလား စစ်ပါ။');
       }
     } catch {
       setState('error');
-      setMsg('Error de red.');
+      setMsg('အင်တာနက် အမှား။');
     }
   }
   return (
@@ -297,7 +318,7 @@ function TestPushButton() {
           opacity: state === 'sending' ? 0.6 : 1,
         }}
       >
-        {state === 'sending' ? 'Enviando…' : '🔔 Probar notificación'}
+        {state === 'sending' ? 'ပို့နေသည်…' : '🔔 စမ်းသပ် notification'}
       </button>
       {msg ? (
         <div style={{ marginTop: 8, fontSize: 13, color: state === 'done' ? '#2E7D32' : '#C62828' }}>

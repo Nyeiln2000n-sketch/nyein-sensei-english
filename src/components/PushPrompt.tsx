@@ -145,7 +145,7 @@ export default function PushPrompt() {
       </button>
       <div style={{ display: 'flex', gap: 14, alignItems: 'center' }}>
         <img
-          src="/mascot.png"
+          src="/mascot.webp"
           alt=""
           width={64}
           height={64}

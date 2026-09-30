@@ -23,14 +23,32 @@ export default defineConfig({
       registerType: 'autoUpdate',
       // NOTIF-PUSH: custom service worker (src/sw.ts) so the app can handle
       // Web Push events. `injectManifest` keeps the precache manifest
-      // injection (__WB_MANIFEST) from the `workbox` block below, but
-      // `workbox.runtimeCaching` is IGNORED in this mode — the runtime
-      // routes now live in src/sw.ts (google fonts, word-images,
-      // topic-cards). Keep both places in sync.
+      // injection (__WB_MANIFEST); the glob config lives under the
+      // `injectManifest` key above (workbox.* globs are IGNORED in this
+      // mode). `workbox.runtimeCaching` is also IGNORED — the runtime
+      // routes live in src/sw.ts (google fonts, word-images, topic-cards,
+      // corpus-data). Keep both places in sync.
       strategies: 'injectManifest',
       srcDir: 'src',
       filename: 'sw.ts',
-      includeAssets: ['favicon.svg', 'icon.svg', 'maskable-icon.svg', 'icon-192.png', 'icon-512.png', 'maskable-512.png', 'apple-touch-icon.png', 'mascot.png'],
+      // PERF 2026-10-01: en modo injectManifest, workbox.globPatterns /
+      // globIgnores se IGNORAN — el manifest lo genera workbox-build con las
+      // opciones de `injectManifest`. Los globs van aquí.
+      injectManifest: {
+        globPatterns: ['**/*.{js,css,html,svg,png,woff2}'],
+        globIgnores: [
+          '**/word-images/**',
+          '**/topic-cards/**',
+          '**/splash/**',
+          '**/phrase-images/**',
+          // Los chunks del corpus (~7MB) cargan on-demand vía import()
+          // dinámico — no precachearlos (era ~9.5MB en primera visita).
+          // Se cachean lazy vía la ruta runtime 'corpus-data' en src/sw.ts.
+          '**/corpus-*.js',
+        ],
+        maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
+      },
+      includeAssets: ['favicon.svg', 'icon.svg', 'maskable-icon.svg', 'icon-192.png', 'icon-512.png', 'maskable-512.png', 'apple-touch-icon.png', 'mascot.png', 'mascot.webp'],
       manifest: {
         name: 'Nyein Sensei English',
         short_name: 'Nyein English',
@@ -57,7 +75,18 @@ export default defineConfig({
         // FASE 14 Ola 2: phrase images (~1007 mapped, ~1350 files) also load
         // on demand via PhraseImage (letter-tile fallback) — precaching them
         // would add ~400MB raw / tens of MB optimized to the install.
-        globIgnores: ['**/word-images/**', '**/topic-cards/**', '**/splash/**', '**/phrase-images/**'],
+        // PERF 2026-10-01: los chunks de datos del corpus (corpus-*.js, ~7MB)
+        // cargan on-demand vía import() dinámico — NO deben precachearse.
+        // Precacharlos forzaba ~9.5MB de descarga en la primera visita,
+        // compitiendo con la carga de la página en móviles. Se cachean lazy
+        // vía la ruta runtime 'corpus-data' en src/sw.ts.
+        globIgnores: [
+          '**/word-images/**',
+          '**/topic-cards/**',
+          '**/splash/**',
+          '**/phrase-images/**',
+          'assets/corpus-*.js',
+        ],
         // FASE 14 Ola 3: the main JS chunk grew past the 3MB limit (it now
         // carried 7500 words / 5820 phrases / 324 dialogues / 120 stories).
         // FASE 14 Ola 4: chunk reached 7.18MB (10k words / 8k phrases /

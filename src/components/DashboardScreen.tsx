@@ -249,7 +249,7 @@ export default function DashboardScreen({ go }: { go: GoFn; params?: NavParams }
       {/* header row: cat avatar + title + streak/gems pills + bell */}
       <div className="dash-header">
         <img
-          src="/mascot.png"
+          src="/mascot.webp"
           alt="Nyein Sensei"
           width={46}
           height={46}
@@ -462,7 +462,7 @@ export default function DashboardScreen({ go }: { go: GoFn; params?: NavParams }
       {/* motivational quote card */}
       <figure className="card quote-card">
         <img
-          src="/mascot.png"
+          src="/mascot.webp"
           alt=""
           aria-hidden="true"
           width={64}

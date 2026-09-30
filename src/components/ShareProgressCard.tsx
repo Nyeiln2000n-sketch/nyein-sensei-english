@@ -159,7 +159,7 @@ export async function renderShareCard(s: ShareStats): Promise<Blob> {
   ctx.lineWidth = 10;
   ctx.stroke();
   try {
-    const mascot = await loadImage('/mascot-celebrate.png');
+    const mascot = await loadImage('/mascot-celebrate.webp');
     const size = 330;
     ctx.drawImage(mascot, medCX - size / 2, medCY - size / 2, size, size);
   } catch {
