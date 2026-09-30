@@ -102,6 +102,16 @@ img {
   flex: 1;
 }
 
+/* FIX-responsive ronda 2 (2026-10-01): los contenedores de página son
+   flex-column; sin min-width:0 sus hijos imponen su min-content (texto
+   birmano irrompible, botones de ancho fijo) y la página se ensancha —
+   el contenido se corta en el borde derecho en iPhones angostos.
+   .w3-screen es el contenedor equivalente de w3-shared.tsx. */
+.screen > *,
+.w3-screen > * {
+  min-width: 0;
+}
+
 .screen.no-top-safe {
   padding-top: 16px;
 }

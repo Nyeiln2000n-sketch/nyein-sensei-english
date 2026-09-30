@@ -15,6 +15,7 @@ import { getProgress, getTotalGems, resetProgress } from '../lib/storage';
 import { describeTenant, getActiveTenant, listMyOrgs, type Organization } from '../lib/tenant';
 import './w4.css';
 import { W4ErrorBoundary } from './w4error';
+import { APP_VERSION } from '../appVersion';
 
 // G-007 — Modo niños: accesibilidad visual (textos ~130%, botones más
 // grandes). Persiste en localStorage y aplica la clase `kids-mode` en <html>.
@@ -225,6 +226,19 @@ export default function ProfileScreen({ go, params }: { go: GoFn; params?: NavPa
       </W4ErrorBoundary>
       {/* keeps the last row clear of the floating tab bar */}
       <div className="tab-pad-end" aria-hidden="true" />
+      {/* FIX-responsive ronda 2: marcador de versión discreto para que Nyein
+          confirme qué build sirve su PWA instalada. */}
+      <div
+        style={{
+          textAlign: 'center',
+          fontSize: 11,
+          color: '#C9BBA0',
+          padding: '4px 0 8px',
+        }}
+        aria-label={`Versión de la app: ${APP_VERSION}`}
+      >
+        v {APP_VERSION}
+      </div>
     </Screen>
   );
 }

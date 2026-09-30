@@ -35,6 +35,7 @@ export const C = {
 export function Screen({ children }: { children: ReactNode }) {
   return (
     <div
+      className="w3-screen"
       style={{
         maxWidth: 430,
         margin: '0 auto',

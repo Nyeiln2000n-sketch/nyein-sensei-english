@@ -126,93 +126,129 @@ function ReviewQueue({ words }: { words: Word[] }) {
             {visible.map((w) => (
               <div
                 key={wordKey(w.topic, w.en)}
+                /* FIX-responsive ronda 2 (2026-10-01): la fila de una sola
+                   línea no cabe en 360–393px — el texto se solapaba con los
+                   botones (Chromium) y el botón ✗ se cortaba en el borde
+                   derecho (iPhone 16 de Nyein). Reflow a dos líneas con el
+                   mismo lenguaje visual: línea 1 = altavoz + palabra,
+                   línea 2 = los dos botones a medio ancho cada uno. */
                 style={{
                   display: 'flex',
-                  alignItems: 'center',
+                  flexDirection: 'column',
                   gap: 10,
                   background: C.white,
                   borderRadius: 16,
-                  padding: '10px 12px',
+                  padding: '12px',
                   boxShadow: '0 4px 10px rgba(0,0,0,0.05)',
+                  minWidth: 0,
                 }}
               >
-                <button
-                  type="button"
-                  onClick={() => speak(w.en)}
-                  aria-label={`အသံနားထောင်ရန်: ${w.en}`}
+                <div
                   style={{
-                    width: 40,
-                    height: 40,
-                    borderRadius: '50%',
-                    border: 'none',
-                    background: '#E8F4FF',
-                    color: C.blueDark,
                     display: 'flex',
                     alignItems: 'center',
-                    justifyContent: 'center',
-                    cursor: 'pointer',
-                    flexShrink: 0,
+                    gap: 10,
+                    minWidth: 0,
                   }}
                 >
-                  <Volume2 size={18} />
-                </button>
-                <div style={{ flex: 1, minWidth: 0 }}>
-                  <div style={{ fontWeight: 700, fontSize: 15, color: C.title }}>
-                    {w.en}
-                    {w.phonetic && (
-                      <span style={{ fontWeight: 500, fontSize: 12, color: C.text, marginLeft: 8 }}>
-                        /{w.phonetic}/
-                      </span>
-                    )}
+                  <button
+                    type="button"
+                    onClick={() => speak(w.en)}
+                    aria-label={`အသံနားထောင်ရန်: ${w.en}`}
+                    style={{
+                      width: 40,
+                      height: 40,
+                      borderRadius: '50%',
+                      border: 'none',
+                      background: '#E8F4FF',
+                      color: C.blueDark,
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      cursor: 'pointer',
+                      flexShrink: 0,
+                    }}
+                  >
+                    <Volume2 size={18} />
+                  </button>
+                  <div
+                    style={{
+                      flex: 1,
+                      minWidth: 0,
+                      overflowWrap: 'anywhere',
+                    }}
+                  >
+                    <div style={{ fontWeight: 700, fontSize: 15, color: C.title }}>
+                      {w.en}
+                      {w.phonetic && (
+                        <span style={{ fontWeight: 500, fontSize: 12, color: C.text, marginLeft: 8 }}>
+                          /{w.phonetic}/
+                        </span>
+                      )}
+                    </div>
+                    <div style={{ fontSize: 13, color: C.text }}>{w.my}</div>
                   </div>
-                  <div style={{ fontSize: 13, color: C.text }}>{w.my}</div>
                 </div>
-                <button
-                  type="button"
-                  onClick={() => mark(w, true)}
-                  aria-label={`မှတ်မိတယ်: ${w.en}`}
+                <div
                   style={{
-                    border: 'none',
-                    borderRadius: 999,
-                    background: C.greenBg,
-                    color: C.greenText,
-                    fontFamily: FONT,
-                    fontWeight: 700,
-                    fontSize: 12,
-                    padding: '8px 10px',
-                    cursor: 'pointer',
-                    display: 'inline-flex',
-                    alignItems: 'center',
-                    gap: 4,
-                    flexShrink: 0,
+                    display: 'flex',
+                    gap: 8,
+                    minWidth: 0,
                   }}
                 >
-                  <Check size={15} strokeWidth={3} />
-                  မှတ်မိတယ်
-                </button>
-                <button
-                  type="button"
-                  onClick={() => mark(w, false)}
-                  aria-label={`မေ့သွားတယ်: ${w.en}`}
-                  style={{
-                    border: 'none',
-                    borderRadius: 999,
-                    background: C.redBg,
-                    color: C.redDark,
-                    fontFamily: FONT,
-                    fontWeight: 700,
-                    fontSize: 12,
-                    padding: '8px 10px',
-                    cursor: 'pointer',
-                    display: 'inline-flex',
-                    alignItems: 'center',
-                    gap: 4,
-                    flexShrink: 0,
-                  }}
-                >
-                  <X size={15} strokeWidth={3} />
-                  မေ့သွားတယ်
-                </button>
+                  <button
+                    type="button"
+                    onClick={() => mark(w, true)}
+                    aria-label={`မှတ်မိတယ်: ${w.en}`}
+                    style={{
+                      flex: 1,
+                      minWidth: 0,
+                      border: 'none',
+                      borderRadius: 999,
+                      background: C.greenBg,
+                      color: C.greenText,
+                      fontFamily: FONT,
+                      fontWeight: 700,
+                      fontSize: 12,
+                      padding: '10px 8px',
+                      cursor: 'pointer',
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      gap: 4,
+                      whiteSpace: 'nowrap',
+                    }}
+                  >
+                    <Check size={15} strokeWidth={3} />
+                    မှတ်မိတယ်
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => mark(w, false)}
+                    aria-label={`မေ့သွားတယ်: ${w.en}`}
+                    style={{
+                      flex: 1,
+                      minWidth: 0,
+                      border: 'none',
+                      borderRadius: 999,
+                      background: C.redBg,
+                      color: C.redDark,
+                      fontFamily: FONT,
+                      fontWeight: 700,
+                      fontSize: 12,
+                      padding: '10px 8px',
+                      cursor: 'pointer',
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      gap: 4,
+                      whiteSpace: 'nowrap',
+                    }}
+                  >
+                    <X size={15} strokeWidth={3} />
+                    မေ့သွားတယ်
+                  </button>
+                </div>
               </div>
             ))}
           </div>
