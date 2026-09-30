@@ -602670,16 +602670,16 @@
   {
    "id": "example:market:worth",
    "kind": "example",
-   "en": "This mango is worth the money.",
-   "en_norm": "this mango is worth the money",
+   "en": "These mangoes are worth the money.",
+   "en_norm": "these mangoes are worth the money",
    "my_norm": "",
-   "fingerprint": "d14c4c9688ca9f1c",
+   "fingerprint": "6245390fad4b64bd",
    "vocab_sig": [
-    "mango",
+    "mangoes",
     "money",
     "worth"
    ],
-   "template_sig": "this W is W the W .",
+   "template_sig": "these W are W the W .",
    "tags": [
     "market",
     "example"
@@ -602807,7 +602807,7 @@
    "kind": "word",
    "en": "bill",
    "en_norm": "bill",
-   "my_norm": "ဘေလ်စာရွက်",
+   "my_norm": "ဘေလ်",
    "fingerprint": "623210167553939c",
    "vocab_sig": [
     "bill"
@@ -602897,17 +602897,18 @@
   {
    "id": "example:market:note",
    "kind": "example",
-   "en": "He paid with a ten thousand note.",
-   "en_norm": "he paid with a ten thousand note",
+   "en": "He paid with a ten-thousand-kyat note.",
+   "en_norm": "he paid with a ten thousand kyat note",
    "my_norm": "",
-   "fingerprint": "1b60ef054fac64ee",
+   "fingerprint": "3015898aaca6811b",
    "vocab_sig": [
+    "kyat",
     "note",
     "paid",
     "ten",
     "thousand"
    ],
-   "template_sig": "he W with a W W W .",
+   "template_sig": "he W with a W - W - W W .",
    "tags": [
     "market",
     "example"
