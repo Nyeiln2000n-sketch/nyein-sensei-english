@@ -596867,16 +596867,17 @@
   {
    "id": "example:family:marry",
    "kind": "example",
-   "en": "They will marry next year.",
-   "en_norm": "they will marry next year",
+   "en": "They will get married next year.",
+   "en_norm": "they will get married next year",
    "my_norm": "",
-   "fingerprint": "65e26c22236a0b91",
+   "fingerprint": "007ff9fe143c07f3",
    "vocab_sig": [
-    "marry",
+    "get",
+    "married",
     "next",
     "year"
    ],
-   "template_sig": "they will W W W .",
+   "template_sig": "they will W W W W .",
    "tags": [
     "family",
     "example"
