@@ -14,6 +14,52 @@ function epTitle(ep: PodcastEpisode): string {
   return `Ep ${ep.n}: ${ep.titleMy}`;
 }
 
+/** Portada del episodio con fallback al icono de micrófono si falla la imagen. */
+function EpCover({
+  ep,
+  size,
+  radius,
+  children,
+}: {
+  ep: PodcastEpisode;
+  size: number;
+  radius: number;
+  children?: React.ReactNode;
+}) {
+  const [failed, setFailed] = useState(false);
+  return (
+    <div
+      style={{
+        width: size,
+        height: size,
+        borderRadius: radius,
+        overflow: 'hidden',
+        flexShrink: 0,
+        position: 'relative',
+        background: 'linear-gradient(135deg, #FFB74D, #FF8A3D)',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+      }}
+    >
+      {!failed ? (
+        <img
+          src={ep.cover}
+          alt=""
+          width={size}
+          height={size}
+          style={{ objectFit: 'cover', display: 'block' }}
+          onError={() => setFailed(true)}
+          loading="lazy"
+        />
+      ) : (
+        <Mic size={size * 0.4} color="rgba(255,255,255,0.92)" />
+      )}
+      {children}
+    </div>
+  );
+}
+
 export default function PodcastScreen({ go: _go, params: _params }: { go: GoFn; params?: NavParams }) {
   const [player, setPlayer] = useState<PlayerState>(() => podcastPlayer.getState());
   const [expanded, setExpanded] = useState(false);
@@ -95,23 +141,33 @@ export default function PodcastScreen({ go: _go, params: _params }: { go: GoFn; 
                 width: '100%',
               }}
             >
-              <div
-                style={{
-                  width: 52,
-                  height: 52,
-                  borderRadius: 12,
-                  background: isPlaying
-                    ? 'linear-gradient(135deg, #5CC8FF, #3D9BE9)'
-                    : 'linear-gradient(135deg, #FFB74D, #FF8A3D)',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  flexShrink: 0,
-                  color: '#fff',
-                }}
-              >
-                {isPlaying ? <Pause size={22} /> : <Play size={22} style={{ marginLeft: 2 }} />}
-              </div>
+              <EpCover ep={ep} size={56} radius={12}>
+                <div
+                  style={{
+                    position: 'absolute',
+                    inset: 0,
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    background: isPlaying ? 'rgba(0,0,0,0.35)' : 'rgba(0,0,0,0.18)',
+                  }}
+                >
+                  <div
+                    style={{
+                      width: 30,
+                      height: 30,
+                      borderRadius: '50%',
+                      background: 'rgba(255,255,255,0.92)',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      color: '#E56B23',
+                    }}
+                  >
+                    {isPlaying ? <Pause size={15} /> : <Play size={15} style={{ marginLeft: 2 }} />}
+                  </div>
+                </div>
+              </EpCover>
               <div style={{ minWidth: 0, flex: 1 }}>
                 <div
                   style={{
@@ -183,23 +239,26 @@ export default function PodcastScreen({ go: _go, params: _params }: { go: GoFn; 
           }}
         >
           <div
-            style={{
-              width: 36,
-              height: 36,
-              borderRadius: 10,
-              background: 'linear-gradient(135deg, #FFB74D, #FF8A3D)',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              flexShrink: 0,
-              color: '#fff',
-            }}
+            style={{ position: 'relative', flexShrink: 0 }}
             onClick={(e) => {
               e.stopPropagation();
               podcastPlayer.toggle(current.slug, episodeUrl(current), epTitle(current));
             }}
           >
-            {player.playing ? <Pause size={18} /> : <Play size={18} style={{ marginLeft: 2 }} />}
+            <EpCover ep={current} size={38} radius={10}>
+              <div
+                style={{
+                  position: 'absolute',
+                  inset: 0,
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  background: 'rgba(0,0,0,0.25)',
+                }}
+              >
+                {player.playing ? <Pause size={15} color="#fff" /> : <Play size={15} color="#fff" style={{ marginLeft: 2 }} />}
+              </div>
+            </EpCover>
           </div>
           <div style={{ minWidth: 0, flex: 1, textAlign: 'left' }}>
             <div
@@ -318,19 +377,8 @@ function FullPlayer({
 
       {/* Arte del episodio */}
       <div style={{ display: 'flex', justifyContent: 'center', margin: '24px 0' }}>
-        <div
-          style={{
-            width: 220,
-            height: 220,
-            borderRadius: 24,
-            background: 'linear-gradient(135deg, #FFB74D 0%, #FF8A3D 55%, #E56B23 100%)',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            boxShadow: '0 16px 48px rgba(255,138,61,0.35)',
-          }}
-        >
-          <Mic size={88} color="rgba(255,255,255,0.92)" />
+        <div style={{ boxShadow: '0 16px 48px rgba(255,138,61,0.35)', borderRadius: 24 }}>
+          <EpCover ep={ep} size={220} radius={24} />
         </div>
       </div>
 
