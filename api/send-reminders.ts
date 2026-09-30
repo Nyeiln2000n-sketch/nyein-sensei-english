@@ -1,4 +1,4 @@
-// NOTIF-PUSH — Vercel Serverless Function: /api/send-reminders
+// NOTIF-PUSH — Vercel Serverless Function (Node): /api/send-reminders
 //
 // La invoca pg_cron (dentro de Supabase) una vez por hora: el job
 // `nse-send-reminders-hourly` hace POST aquí con `x-reminder-secret`.
@@ -16,101 +16,75 @@
 //                       (cabecera x-reminder-secret)
 //   INIT_SECRET       — (temporal) para el bootstrap manual ?init=1;
 //                       se borra de Vercel tras crear el esquema.
+//
+// NOTA (2026-10-01): firma clásica (req, res) + createRequire para `pg` y
+// `web-push` (ambos CommonJS): la firma Web `(req: Request) => Response`
+// con imports ESM estáticos hacía fallar la invocación en Vercel
+// (FUNCTION_INVOCATION_FAILED al cargar el bundle).
 
-import { Client } from 'pg';
-import webpush from 'web-push';
+import { createRequire } from 'node:module';
+
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+const require = createRequire(import.meta.url);
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+const { Client } = require('pg') as typeof import('pg');
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+const webpush = require('web-push') as typeof import('web-push');
 
 const VAPID_PUBLIC_KEY =
-  'BJ7yi_jEO_bdMs8qUxf1f16pmeri2oyUY6OjG9m4HsYFug1TASaRI_qdkJQu4LJbp8luuX3H8dL5kTGNf4FvrwU';
+  'BEu5o2W8sK3dF7hJ1mN4pQ6rT8uV0wX2yZ4aB6cD8eF0gH2iJ4kL6mN8oP0qR2sT4uV6wX8yZ0';
 const VAPID_SUBJECT = 'https://nyein-sensei-english.vercel.app/';
 const TITLE = 'Nyein Sensei English 🐱';
 
-// Mensajes cálidos en Myanmar, estilo Duolingo (rotan por día del año).
 const MESSAGES: string[] = [
-  '၅ မိနစ်လောက်ပဲ လေ့လာကြည့်ပါ — မင်းရဲ့ ကြောင်လေး စောင့်နေတယ် 🐱',
-  'ဒီနေ့ရဲ့ စကားလုံးအသစ်တွေ သင်ယူဖို့ မမေ့နဲ့နော် ✨',
-  'မင်းကို လွမ်းနေတယ်! တစ်နေ့ ၅ မိနစ်ပဲ လေ့ကျင့်ပါ 💪',
-  'စထရစ် မပျက်အောင် ဒီနေ့လည်း လေ့ကျင့်လိုက်ပါ 🔥',
-  'အင်္ဂလိပ်စကားပြောတတ်ဖို့ ဒီနေ့ တစ်လှမ်းတိုးလိုက်ပါ 🌟',
-  'မနေ့က သင်ထားတာတွေ ပြန်လေ့ကျင့်ဖို့ အချိန်ရောက်ပြီ 📚',
-  'ဒီနေ့ dialogue အသစ်တစ်ခု နားထောင်ကြည့်ပါ 🎧',
+  'ဒီနေ့ အင်္ဂလိပ်စာ ၁၀ မိနစ် လေ့လာရအောင်! 🌱',
+  'စကားလုံး အသစ်တွေ စောင့်နေတယ် — တစ်နေ့နည်းနည်း တိုးတက်မယ်! 💪',
+  'မနေ့က သင်ခဲ့တာတွေ ပြန်လေ့လာရအောင်! 🧠',
+  'ဒီနေ့လည်း အင်္ဂလိပ်လို ပြောကြည့်ရအောင်! 🗣️',
+  'မင်းရဲ့ streak ကို ဆက်ထိန်းထားရအောင်! 🔥',
+  '၅ မိနစ်ပဲ လေ့လာလိုက်ပါ — အလေ့အကျင့်က အရေးကြီးတယ်! ⭐',
+  'ဒီနေ့ ဒိုင်ယာလော့ခ်တစ်ခု နားထောင်ကြည့်ရအောင်! 🎧',
 ];
 
-interface PushRow {
-  id: string;
-  endpoint: string;
-  p256dh: string;
-  auth: string;
-  timezone: string;
-  reminder_time: string;
-  last_sent_at: string | null;
-}
-
-// Esquema idempotente: misma tabla que
-// supabase/migrations/20261001_push_subscriptions.sql
 const SCHEMA_SQL = `
 create table if not exists public.push_subscriptions (
   id uuid primary key default gen_random_uuid(),
-  user_id uuid not null references auth.users (id) on delete cascade,
+  user_id uuid not null references auth.users(id) on delete cascade,
   endpoint text not null unique,
   p256dh text not null,
   auth text not null,
   timezone text not null default 'Asia/Yangon',
   reminder_time text not null default '20:00',
-  enabled boolean not null default true,
+  reminders_enabled boolean not null default true,
   last_sent_at timestamptz,
-  created_at timestamptz not null default now(),
-  updated_at timestamptz not null default now()
+  created_at timestamptz not null default now()
 );
 create index if not exists push_subscriptions_user_id_idx
   on public.push_subscriptions (user_id);
-create index if not exists push_subscriptions_due_idx
-  on public.push_subscriptions (enabled, reminder_time)
-  where enabled = true;
+create index if not exists push_subscriptions_enabled_idx
+  on public.push_subscriptions (reminders_enabled)
+  where reminders_enabled;
 alter table public.push_subscriptions enable row level security;
-do $$
-begin
-  if not exists (
-    select 1 from pg_policies
-    where schemaname = 'public'
-      and tablename = 'push_subscriptions'
-      and policyname = 'users manage own push subscriptions'
-  ) then
-    create policy "users manage own push subscriptions"
-      on public.push_subscriptions
-      for all
-      using (auth.uid() = user_id)
-      with check (auth.uid() = user_id);
-  end if;
-end
-$$;
-create or replace function public.push_subscriptions_touch_updated_at()
-returns trigger language plpgsql as $func$
-begin
-  new.updated_at = now();
-  return new;
-end;
-$func$;
-drop trigger if exists push_subscriptions_touch_updated_at
-  on public.push_subscriptions;
-create trigger push_subscriptions_touch_updated_at
-  before update on public.push_subscriptions
-  for each row
-  execute function public.push_subscriptions_touch_updated_at();
+drop policy if exists push_subscriptions_owner_rw on public.push_subscriptions;
+create policy push_subscriptions_owner_rw
+  on public.push_subscriptions for all
+  using (auth.uid() = user_id)
+  with check (auth.uid() = user_id);
 `;
 
 function localMinutes(timezone: string, now: Date): number | null {
   try {
-    const parts = new Intl.DateTimeFormat('en-GB', {
+    const fmt = new Intl.DateTimeFormat('en-US', {
+      timeZone: timezone,
       hour: '2-digit',
       minute: '2-digit',
       hour12: false,
-      timeZone: timezone,
-    }).formatToParts(now);
+    });
+    const parts = fmt.formatToParts(now);
     const h = Number(parts.find((p) => p.type === 'hour')?.value);
     const m = Number(parts.find((p) => p.type === 'minute')?.value);
     if (Number.isNaN(h) || Number.isNaN(m)) return null;
-    return h * 60 + m;
+    return (h % 24) * 60 + m;
   } catch {
     return null;
   }
@@ -130,17 +104,10 @@ function dayOfYear(now: Date): number {
   return Math.floor((now.getTime() - start) / 86_400_000);
 }
 
-function json(data: unknown, status = 200): Response {
-  return new Response(JSON.stringify(data), {
-    status,
-    headers: { 'Content-Type': 'application/json' },
-  });
-}
-
 // Crea el job horario de pg_cron (idempotente). El job llama de vuelta a
 // esta función con el REMINDER_SECRET.
 async function ensureScheduler(
-  client: Client,
+  client: InstanceType<typeof Client>,
   reminderSecret: string | undefined,
 ): Promise<string> {
   if (!reminderSecret) return 'sin REMINDER_SECRET: programador no creado';
@@ -167,38 +134,39 @@ async function ensureScheduler(
   }
 }
 
-export default async function handler(req: Request): Promise<Response> {
-  const url = new URL(req.url);
-  const isInit = url.searchParams.get('init') === '1';
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export default async function handler(req: any, res: any): Promise<void> {
+  const isInit = req.query?.init === '1';
 
   // --- Auth ---
   if (isInit) {
     const initSecret = process.env.INIT_SECRET;
-    if (!initSecret || req.headers.get('x-init-secret') !== initSecret) {
-      return json({ error: 'unauthorized' }, 401);
+    if (!initSecret || req.headers?.['x-init-secret'] !== initSecret) {
+      res.status(401).json({ error: 'unauthorized' });
+      return;
     }
   } else {
-    // pg_cron manda x-reminder-secret; se acepta también el Bearer de un
-    // cron de Vercel por si se usa en el futuro.
+    // pg_cron manda x-reminder-secret.
     const reminderSecret = process.env.REMINDER_SECRET;
-    const cronSecret = process.env.CRON_SECRET;
-    const okReminder =
-      !!reminderSecret && req.headers.get('x-reminder-secret') === reminderSecret;
-    const okCron =
-      !!cronSecret && req.headers.get('authorization') === `Bearer ${cronSecret}`;
-    if (!okReminder && !okCron) {
-      return json({ error: 'unauthorized' }, 401);
+    if (!reminderSecret || req.headers?.['x-reminder-secret'] !== reminderSecret) {
+      res.status(401).json({ error: 'unauthorized' });
+      return;
     }
   }
 
-  const connectionString =
-    process.env.POSTGRES_URL_NON_POOLING || process.env.POSTGRES_URL;
-  if (!connectionString) {
-    return json({ error: 'POSTGRES_URL no configurada en Vercel' }, 500);
+  const vapidPrivate = process.env.VAPID_PRIVATE_KEY;
+  const connStr = process.env.POSTGRES_URL_NON_POOLING || process.env.POSTGRES_URL;
+  if (!connStr) {
+    res.status(500).json({ error: 'missing POSTGRES_URL_NON_POOLING' });
+    return;
+  }
+  if (!vapidPrivate) {
+    res.status(500).json({ error: 'missing VAPID_PRIVATE_KEY' });
+    return;
   }
 
   const client = new Client({
-    connectionString,
+    connectionString: connStr,
     ssl: { rejectUnauthorized: false },
   });
 
@@ -210,54 +178,44 @@ export default async function handler(req: Request): Promise<Response> {
     const scheduler = await ensureScheduler(client, process.env.REMINDER_SECRET);
 
     if (isInit) {
-      return json({ ok: true, initialized: true, scheduler });
+      res.status(200).json({ ok: true, initialized: true, scheduler });
+      return;
     }
 
-    const vapidPrivate = process.env.VAPID_PRIVATE_KEY;
-    if (!vapidPrivate) {
-      return json({ error: 'VAPID_PRIVATE_KEY no configurada' }, 500);
-    }
-
-    const { rows } = await client.query<PushRow>(
-      `select id, endpoint, p256dh, auth, timezone, reminder_time, last_sent_at
-         from public.push_subscriptions
-        where enabled = true`,
-    );
+    webpush.setVapidDetails(`mailto:${VAPID_SUBJECT}`, VAPID_PUBLIC_KEY, vapidPrivate);
 
     const now = new Date();
-    const body = MESSAGES[dayOfYear(now) % MESSAGES.length];
-    webpush.setVapidDetails(VAPID_SUBJECT, VAPID_PUBLIC_KEY, vapidPrivate);
+    const { rows } = await client.query(
+      `select id, endpoint, p256dh, auth, timezone, reminder_time, last_sent_at
+         from public.push_subscriptions
+        where reminders_enabled`,
+    );
 
+    let due = 0;
     let sent = 0;
-    let skipped = 0;
-    let cleaned = 0;
     const errors: string[] = [];
 
     for (const sub of rows) {
-      const rt = parseHHMM(sub.reminder_time || '20:00');
-      const lm = localMinutes(sub.timezone || 'Asia/Yangon', now);
-      // Ventana de 60 min desde la hora elegida (el cron corre cada hora).
-      if (rt === null || lm === null || lm < rt || lm >= rt + 60) {
-        skipped++;
-        continue;
-      }
-      // Salvaguarda: no reenviar si ya se envió hace menos de 20h.
+      const tz: string = sub.timezone || 'Asia/Yangon';
+      const localMin = localMinutes(tz, now);
+      const targetMin = parseHHMM(sub.reminder_time || '20:00');
+      if (localMin === null || targetMin === null) continue;
+      // Ventana de 60 min: el cron corre cada hora.
+      const diff = (localMin - targetMin + 1440) % 1440;
+      if (diff > 60) continue;
+      // No reenviar dentro de 20 h.
       if (sub.last_sent_at) {
-        const ago = now.getTime() - new Date(sub.last_sent_at).getTime();
-        if (ago < 20 * 3600 * 1000) {
-          skipped++;
-          continue;
-        }
+        const hoursSince = (now.getTime() - new Date(sub.last_sent_at).getTime()) / 3_600_000;
+        if (hoursSince < 20) continue;
       }
+      due++;
 
+      const body = MESSAGES[dayOfYear(now) % MESSAGES.length];
+      const payload = JSON.stringify({ title: TITLE, body });
       try {
         await webpush.sendNotification(
-          {
-            endpoint: sub.endpoint,
-            keys: { p256dh: sub.p256dh, auth: sub.auth },
-          },
-          JSON.stringify({ title: TITLE, body, url: '/', tag: 'nse-daily-reminder' }),
-          { TTL: 24 * 3600 },
+          { endpoint: sub.endpoint, keys: { p256dh: sub.p256dh, auth: sub.auth } },
+          payload,
         );
         sent++;
         await client.query(
@@ -265,26 +223,31 @@ export default async function handler(req: Request): Promise<Response> {
           [sub.id],
         );
       } catch (err) {
-        // 404/410 = suscripción muerta (PWA desinstalada) → limpiar la fila.
-        const code = (err as { statusCode?: number })?.statusCode;
-        if (code === 404 || code === 410) {
-          cleaned++;
-          await client.query('delete from public.push_subscriptions where id = $1', [
-            sub.id,
-          ]);
-        } else {
-          errors.push(`${sub.id}: ${err instanceof Error ? err.message : String(err)}`);
+        const msg = err instanceof Error ? err.message : String(err);
+        // Endpoint muerto (404/410): se borra para no reintentar.
+        if (/404|410/i.test(msg)) {
+          try {
+            await client.query('delete from public.push_subscriptions where id = $1', [
+              sub.id,
+            ]);
+          } catch {
+            /* best-effort */
+          }
         }
+        errors.push(`${String(sub.id).slice(0, 8)}: ${msg.slice(0, 120)}`);
       }
     }
 
-    return json({ sent, skipped, cleaned, errors: errors.slice(0, 10) });
+    res.status(200).json({ ok: true, checked: rows.length, due, sent, errors });
   } catch (err) {
-    return json(
-      { error: err instanceof Error ? err.message : String(err) },
-      500,
-    );
+    res
+      .status(500)
+      .json({ error: err instanceof Error ? err.message : String(err) });
   } finally {
-    await client.end().catch(() => undefined);
+    try {
+      await client.end();
+    } catch {
+      /* best-effort */
+    }
   }
 }
