@@ -165,20 +165,37 @@ export default async function handler(req: any, res: any): Promise<void> {
     return;
   }
 
+  // pg fusiona la connectionString DESPUÉS de la config explícita
+  // (Object.assign({}, config, parse(url))): si la URL trae ?sslmode=...,
+  // ese valor pisa cualquier `ssl` que pasemos. Por eso parseamos la URL
+  // a mano y pasamos host/port/user/password/database + ssl explícitos.
+  function pgConfig(url: string): Record<string, unknown> {
+    const u = new URL(url);
+    return {
+      host: u.hostname,
+      port: Number(u.port) || 5432,
+      user: decodeURIComponent(u.username),
+      password: decodeURIComponent(u.password),
+      database: u.pathname.replace(/^\//, '') || 'postgres',
+      ssl: { rejectUnauthorized: false },
+    };
+  }
+
   // Conecta probando configuraciones SSL en cascada (el certificado de
   // Supabase no lo verifica Node por defecto). Devuelve el cliente
   // conectado o null.
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   async function connectWorking(): Promise<{ client: InstanceType<typeof Client>; used: string } | null> {
+    const base = pgConfig(connStr as string);
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const configs: Array<{ name: string; cfg: any }> = [
       { name: 'rejectUnauthorized:false', cfg: { ssl: { rejectUnauthorized: false } } },
       { name: 'ssl:true', cfg: { ssl: true } },
-      { name: 'sin-ssl', cfg: {} },
+      { name: 'sin-ssl', cfg: { ssl: false } },
     ];
     const errs: string[] = [];
     for (const { name, cfg } of configs) {
-      const c = new Client({ connectionString: connStr, ...cfg });
+      const c = new Client({ ...base, ...cfg });
       try {
         await c.connect();
         await c.query('select 1');
