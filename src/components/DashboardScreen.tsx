@@ -168,6 +168,14 @@ export default function DashboardScreen({ go }: { go: GoFn; params?: NavParams }
       badgeColor: '#D9A400',
       onPress: () => go('achievements'),
     },
+    {
+      key: 'podcast',
+      label: 'ပေါ့ဒ်ကတ်',
+      icon: Headphones,
+      badgeBg: '#FFE3B3',
+      badgeColor: '#E8933C',
+      onPress: () => go('podcast'),
+    },
     // FASE 14 Ola 2 — new exercise formats (E2-001→E2-004)
     {
       key: 'conjugationDrill',

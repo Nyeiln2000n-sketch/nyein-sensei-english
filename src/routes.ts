@@ -20,7 +20,8 @@ export type RouteName =
   | 'cefrExam'
   | 'sentenceBuilder'
   | 'dictation'
-  | 'conv';
+  | 'conv'
+  | 'podcast';
 
 export interface NavParams {
   topic?: string;

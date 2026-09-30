@@ -11,6 +11,7 @@ const QuizScreen = lazy(() => import('./components/QuizScreen'));
 const VocabScreen = lazy(() => import('./components/VocabScreen'));
 const PracticeScreen = lazy(() => import('./components/PracticeScreen'));
 const AchievementsScreen = lazy(() => import('./components/AchievementsScreen'));
+const PodcastScreen = lazy(() => import('./components/PodcastScreen'));
 const ProfileScreen = lazy(() => import('./components/ProfileScreen'));
 const LessonCompleteScreen = lazy(
   () => import('./components/LessonCompleteScreen'),
@@ -78,6 +79,7 @@ const TAB_ROUTES: Record<TabId, RouteName> = {
   home: 'home',
   lessons: 'lessons',
   practice: 'practice',
+  podcast: 'podcast',
   achievements: 'achievements',
   profile: 'profile',
 };
@@ -90,6 +92,8 @@ function tabForRoute(name: RouteName): TabId | null {
       return 'lessons';
     case 'practice':
       return 'practice';
+    case 'podcast':
+      return 'podcast';
     case 'achievements':
       return 'achievements';
     case 'profile':
@@ -101,7 +105,7 @@ function tabForRoute(name: RouteName): TabId | null {
 
 /** Tabs stay visible on tab screens + quiz/vocab flows hide them. */
 function showTabs(name: RouteName): boolean {
-  return name === 'home' || name === 'lessons' || name === 'achievements' || name === 'profile';
+  return name === 'home' || name === 'lessons' || name === 'achievements' || name === 'profile' || name === 'podcast';
 }
 
 /** Reads a #/invite/<token> deep link from the URL hash, if present. */
@@ -416,6 +420,7 @@ export default function App() {
             {route.name === 'vocab' && <VocabScreen {...screenProps} />}
             {route.name === 'practice' && <PracticeScreen {...screenProps} />}
             {route.name === 'achievements' && <AchievementsScreen {...screenProps} />}
+            {route.name === 'podcast' && <PodcastScreen {...screenProps} />}
             {route.name === 'profile' && <ProfileScreen {...screenProps} />}
             {route.name === 'lessonComplete' && <LessonCompleteScreen {...screenProps} />}
             {route.name === 'orgs' && <OrgScreen {...screenProps} />}

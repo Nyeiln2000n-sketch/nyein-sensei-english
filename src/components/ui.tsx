@@ -13,6 +13,7 @@ import {
   Mic,
   Trophy,
   User,
+  Podcast,
   X,
   ChevronRight,
   ArrowLeft,
@@ -42,7 +43,7 @@ export function Screen({
 
 /* ---------------- bottom tab bar ---------------- */
 
-export type TabId = 'home' | 'lessons' | 'practice' | 'achievements' | 'profile';
+export type TabId = 'home' | 'lessons' | 'practice' | 'podcast' | 'achievements' | 'profile';
 
 export function TabBar({
   active,
@@ -57,6 +58,7 @@ export function TabBar({
     home: 'ပင်မ',
     lessons: 'သင်ခန်းစာ',
     practice: 'လေ့ကျင့်',
+    podcast: 'ပေါ့ဒ်ကတ်',
     achievements: 'ဆုများ',
     profile: 'ပရိုဖိုင်',
   };
@@ -65,6 +67,7 @@ export function TabBar({
     { id: 'home', icon: House },
     { id: 'lessons', icon: BookOpen },
     { id: 'practice', icon: Mic },
+    { id: 'podcast', icon: Podcast },
     { id: 'achievements', icon: Trophy },
     { id: 'profile', icon: User },
   ];
