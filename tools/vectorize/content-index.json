@@ -609158,7 +609158,7 @@
    "kind": "word",
    "en": "takeaway",
    "en_norm": "takeaway",
-   "my_norm": "ပါဆယ်ယူသွားခြင်း",
+   "my_norm": "ပါဆယ်",
    "fingerprint": "f90ed49e423f68aa",
    "vocab_sig": [
     "takeaway"
@@ -609688,7 +609688,7 @@
    "kind": "word",
    "en": "cuisine",
    "en_norm": "cuisine",
-   "my_norm": "ဟင်းလျာအမျိုးအစားပုံစံ",
+   "my_norm": "ဟင်းလျာပုံစံ",
    "fingerprint": "2753cb15f1d6d34c",
    "vocab_sig": [
     "cuisine"
@@ -610162,15 +610162,15 @@
   {
    "id": "example:restaurant:split",
    "kind": "example",
-   "en": "Let us split the bill.",
-   "en_norm": "let us split the bill",
+   "en": "Let's split the bill.",
+   "en_norm": "let s split the bill",
    "my_norm": "",
-   "fingerprint": "7168cae8e041a3db",
+   "fingerprint": "958d05ad606227e1",
    "vocab_sig": [
     "bill",
     "split"
    ],
-   "template_sig": "let us W the W .",
+   "template_sig": "let ' s W the W .",
    "tags": [
     "restaurant",
     "example"
