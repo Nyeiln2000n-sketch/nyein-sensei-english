@@ -1,20 +1,21 @@
 // NOTIF-PUSH — Vercel Serverless Function: /api/send-reminders
 //
-// La invoca el Cron de Vercel una vez por hora (ver vercel.json).
-// Lee las suscripciones de `push_subscriptions` en Supabase Postgres
-// (conexión directa con POSTGRES_URL_NON_POOLING que inyecta la
-// integración de Supabase en Vercel) y envía el recordatorio diario
-// vía Web Push (VAPID) a quienes les toque según su hora local.
+// La invoca pg_cron (dentro de Supabase) una vez por hora: el job
+// `nse-send-reminders-hourly` hace POST aquí con `x-reminder-secret`.
+// (El plan Hobby de Vercel solo permite crons diarios, por eso el
+// programador vive en Postgres y no en vercel.json.)
+//
+// Lee las suscripciones de `push_subscriptions` por conexión directa a
+// Postgres (la integración Supabase↔Vercel inyecta POSTGRES_URL_*),
+// crea la tabla y el job de pg_cron solas si no existen (idempotente),
+// y envía el recordatorio diario vía Web Push (VAPID).
 //
 // Secrets (variables de entorno en Vercel, NUNCA en el repo):
 //   VAPID_PRIVATE_KEY — privada VAPID (generada 2026-10-01)
-//   CRON_SECRET       — la expone Vercel sola cuando hay crons activos;
-//                       el cron la manda como `Authorization: Bearer ...`
+//   REMINDER_SECRET   — secreto compartido con el job de pg_cron
+//                       (cabecera x-reminder-secret)
 //   INIT_SECRET       — (temporal) para el bootstrap manual ?init=1;
 //                       se borra de Vercel tras crear el esquema.
-//
-// La función crea el esquema si no existe (idempotente), así que el
-// primer arranque deja la tabla lista sin pasos manuales en Supabase.
 
 import { Client } from 'pg';
 import webpush from 'web-push';
@@ -136,6 +137,36 @@ function json(data: unknown, status = 200): Response {
   });
 }
 
+// Crea el job horario de pg_cron (idempotente). El job llama de vuelta a
+// esta función con el REMINDER_SECRET.
+async function ensureScheduler(
+  client: Client,
+  reminderSecret: string | undefined,
+): Promise<string> {
+  if (!reminderSecret) return 'sin REMINDER_SECRET: programador no creado';
+  try {
+    await client.query('create extension if not exists pg_cron');
+    await client.query('create extension if not exists pg_net');
+    await client.query(`do $$
+      begin
+        if exists (select 1 from cron.job where jobname = 'nse-send-reminders-hourly') then
+          perform cron.unschedule('nse-send-reminders-hourly');
+        end if;
+      end $$`);
+    const command =
+      `select net.http_post(url := 'https://nyein-sensei-english.vercel.app/api/send-reminders', ` +
+      `headers := jsonb_build_object('x-reminder-secret', '${reminderSecret}'), body := '{}'::jsonb);`;
+    await client.query('select cron.schedule($1, $2, $3)', [
+      'nse-send-reminders-hourly',
+      '0 * * * *',
+      command,
+    ]);
+    return 'ok: job nse-send-reminders-hourly cada hora';
+  } catch (err) {
+    return `error: ${err instanceof Error ? err.message : String(err)}`;
+  }
+}
+
 export default async function handler(req: Request): Promise<Response> {
   const url = new URL(req.url);
   const isInit = url.searchParams.get('init') === '1';
@@ -147,10 +178,15 @@ export default async function handler(req: Request): Promise<Response> {
       return json({ error: 'unauthorized' }, 401);
     }
   } else {
-    // Vercel Cron manda Authorization: Bearer <CRON_SECRET> automáticamente.
+    // pg_cron manda x-reminder-secret; se acepta también el Bearer de un
+    // cron de Vercel por si se usa en el futuro.
+    const reminderSecret = process.env.REMINDER_SECRET;
     const cronSecret = process.env.CRON_SECRET;
-    const auth = req.headers.get('authorization') ?? '';
-    if (!cronSecret || auth !== `Bearer ${cronSecret}`) {
+    const okReminder =
+      !!reminderSecret && req.headers.get('x-reminder-secret') === reminderSecret;
+    const okCron =
+      !!cronSecret && req.headers.get('authorization') === `Bearer ${cronSecret}`;
+    if (!okReminder && !okCron) {
       return json({ error: 'unauthorized' }, 401);
     }
   }
@@ -170,9 +206,11 @@ export default async function handler(req: Request): Promise<Response> {
     await client.connect();
     // Esquema idempotente: el primer arranque crea la tabla.
     await client.query(SCHEMA_SQL);
+    // Programador idempotente: pg_cron llama aquí cada hora.
+    const scheduler = await ensureScheduler(client, process.env.REMINDER_SECRET);
 
     if (isInit) {
-      return json({ ok: true, initialized: true });
+      return json({ ok: true, initialized: true, scheduler });
     }
 
     const vapidPrivate = process.env.VAPID_PRIVATE_KEY;

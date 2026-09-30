@@ -1,13 +1,16 @@
 # Notificaciones push nativas — guía de activación
 
-> **RUTA ACTIVA (2026-10-01):** el envío corre en **Vercel**, no en Supabase.
-> La función serverless `api/send-reminders.ts` + el Cron de Vercel
-> (`vercel.json`, cada hora) leen `push_subscriptions` por conexión directa
-> a Postgres (la integración Supabase↔Vercel ya inyecta `POSTGRES_URL_*`),
-> crean la tabla solas si no existe y mandan el push con la VAPID privada
-> (variable de entorno `VAPID_PRIVATE_KEY` en Vercel).
-> Los pasos manuales de abajo (Edge Function de Supabase + pg_cron) quedaron
-> como referencia; ya no se usan.
+> **RUTA ACTIVA (2026-10-01):** el envío corre en **Vercel**, no en una Edge
+> Function de Supabase. La función serverless `api/send-reminders.ts` lee
+> `push_subscriptions` por conexión directa a Postgres (la integración
+> Supabase↔Vercel ya inyecta `POSTGRES_URL_*`), crea la tabla sola si no
+> existe y manda el push con la VAPID privada (variable de entorno
+> `VAPID_PRIVATE_KEY` en Vercel). El programador es **pg_cron dentro de
+> Supabase** (job `nse-send-reminders-hourly`, cada hora — el plan Hobby de
+> Vercel solo permite crons diarios, por eso no usa el cron de Vercel);
+> la propia función crea el job en su primer arranque.
+> Los pasos manuales de abajo (Edge Function de Supabase + pg_cron manual)
+> quedaron como referencia; ya no se usan.
 
 ## Lo que ya está hecho ✅
 
