@@ -19,8 +19,9 @@ import { getReminderPrefs } from './reminders';
 
 /**
  * VAPID public key del proyecto (base64url, 65 bytes sin comprimir).
- * Generada 2026-10-01 solo para Nyein Sensei English. La privada está como
- * secreto VAPID_PRIVATE_KEY de la Edge Function en Supabase — NUNCA en el repo.
+ * Generada 2026-10-01 solo para Nyein Sensei English. La privada vive SOLO
+ * como variable de entorno VAPID_PRIVATE_KEY en Vercel (la usa la función
+ * /api/send-reminders) — NUNCA en el repo.
  */
 export const VAPID_PUBLIC_KEY =
   'BJ7yi_jEO_bdMs8qUxf1f16pmeri2oyUY6OjG9m4HsYFug1TASaRI_qdkJQu4LJbp8luuX3H8dL5kTGNf4FvrwU';

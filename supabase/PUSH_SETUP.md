@@ -1,7 +1,13 @@
 # Notificaciones push nativas — guía de activación
 
-Las notificaciones diarias estilo Duolingo ya están programadas en la app.
-Falta activar 3 cosas en Supabase (una sola vez). Sigue los pasos en orden.
+> **RUTA ACTIVA (2026-10-01):** el envío corre en **Vercel**, no en Supabase.
+> La función serverless `api/send-reminders.ts` + el Cron de Vercel
+> (`vercel.json`, cada hora) leen `push_subscriptions` por conexión directa
+> a Postgres (la integración Supabase↔Vercel ya inyecta `POSTGRES_URL_*`),
+> crean la tabla solas si no existe y mandan el push con la VAPID privada
+> (variable de entorno `VAPID_PRIVATE_KEY` en Vercel).
+> Los pasos manuales de abajo (Edge Function de Supabase + pg_cron) quedaron
+> como referencia; ya no se usan.
 
 ## Lo que ya está hecho ✅
 
