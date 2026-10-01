@@ -27,10 +27,14 @@ const CertificationExamScreen = lazy(() => import('./components/CertificationExa
 const SentenceBuilderScreen = lazy(() => import('./components/SentenceBuilderScreen'));
 const DictationScreen = lazy(() => import('./components/DictationScreen'));
 const DialoguesStoriesScreen = lazy(() => import('./components/DialoguesStoriesScreen'));
-import SpeechFallbackNotice from './components/SpeechFallbackNotice';
+// PERF 2026-10-01 (Q-005): estos componentes no son críticos para el primer
+// render — cargan lazy para adelgazar el chunk inicial (~10KB gz).
+// SpeechFallbackNotice renderiza null hasta que hay un problema de voz;
+// PushPrompt solo aparece tras login.
+const SpeechFallbackNotice = lazy(() => import('./components/SpeechFallbackNotice'));
 import InstallPrompt from './components/InstallPrompt';
 // NOTIF-PUSH: prompt amable de permiso push (una vez, tras login, Myanmar-first).
-import PushPrompt from './components/PushPrompt';
+const PushPrompt = lazy(() => import('./components/PushPrompt'));
 // FASE 11 (Worker C): daily gentle reminder banner — mounted once at root
 // so it is visible on any screen.
 import { ReminderBanner } from './components/ReminderSettings';
@@ -448,11 +452,15 @@ export default function App() {
       )}
 
       {/* A-005: one global, Myanmar-first banner when speech fails. */}
-      <SpeechFallbackNotice />
+      <Suspense fallback={null}>
+        <SpeechFallbackNotice />
+      </Suspense>
       {/* P-003: iOS "add to home screen" teaching card (iOS only). */}
       <InstallPrompt />
       {/* NOTIF-PUSH: one-time gentle push-permission prompt (after login). */}
-      <PushPrompt />
+      <Suspense fallback={null}>
+        <PushPrompt />
+      </Suspense>
       {/* Worker C reminder: daily gentle in-app reminder banner (any screen). */}
       <ReminderBanner />
     </div>

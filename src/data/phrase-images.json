@@ -523,7 +523,6 @@
   "no onions, please.": "phrase-images/no-onions-please.png",
   "could i get some more water?": "phrase-images/could-i-get-some-more-water.png",
   "the bill, please.": "phrase-images/the-bill-please.png",
-  "please keep the tip.": "phrase-images/please-keep-the-tip.png",
   "i'm allergic to peanuts.": "phrase-images/i-m-allergic-to-peanuts.png",
   "can we sit by the window?": "phrase-images/can-we-sit-by-the-window.png",
   "this is too salty for me.": "phrase-images/this-is-too-salty-for-me.png",
@@ -632,7 +631,6 @@
   "they open the night market at six.": "phrase-images/they-open-the-night-market-at-six.png",
   "what a bargain!": "phrase-images/what-a-bargain.png",
   "no plastic bag, thanks — i brought my own.": "phrase-images/no-plastic-bag-thanks-i-brought-my-own.png",
-  "keep the change.": "phrase-images/keep-the-change.png",
   "see you next market day!": "phrase-images/see-you-next-market-day.png",
   "these chilies are very spicy.": "phrase-images/these-chilies-are-very-spicy.png",
   "how much for a bunch?": "phrase-images/how-much-for-a-bunch.png",
@@ -1005,5 +1003,6 @@
   "the soup is a bit cold.": "phrase-images/media-generation-the-soup-is-a-bit-cold-0-bfe6e1b7-cff0-4eae-b80a-c5dfbcaf077a.png",
   "this tastes just like home.": "phrase-images/media-generation-this-tastes-just-like-home-0-1cd1e82f-a44b-4e65-a8f3-ce420b10ff87.png",
   "what time do you close tonight?": "phrase-images/media-generation-what-time-do-you-close-tonight-0-54017d0d-586b-4d90-a114-0ce8d91d8d22.png",
-  "could we split the bill three ways?": "phrase-images/could-we-split-the-bill-three-ways.png"
+  "could we split the bill three ways?": "phrase-images/could-we-split-the-bill-three-ways.png",
+  "keep the change, please.": "phrase-images/please-keep-the-tip.png"
 }

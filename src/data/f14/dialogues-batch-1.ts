@@ -558,7 +558,7 @@ export const dialoguesBatch1: Dialogue[] = [
       { speaker: 'ဒေသခံ', en: 'No, about ten minutes on foot.', my: 'မဝေးဘူး၊ လမ်းလျှောက်ရင် ဆယ်မိနစ်လောက်ပါ။' },
       { speaker: 'ခရီးသွား', en: 'Is there a bus too?', my: 'ဘတ်စ်ကားလည်း ရှိလား။' },
       { speaker: 'ဒေသခံ', en: 'Yes, bus number five stops nearby.', my: 'ရှိတယ်၊ နံပါတ် ငါးဘတ်စ်ကားက အနီးမှာရပ်တယ်။' },
-      { speaker: 'ခရီးသွား', en: 'Thank you very much!', my: 'ကျေးဇူးအများကြီးတင်ပါတယ်။' },
+      { speaker: 'ခရီးသွား', en: 'Thank you so much!', my: 'ကျေးဇူးအများကြီးတင်ပါတယ်။' },
     ],
   },
   {
@@ -749,7 +749,7 @@ export const dialoguesBatch1: Dialogue[] = [
     turns: [
       { speaker: 'ကျောင်းသား', en: 'Can I borrow this book?', my: 'ဒီစာအုပ်ငှားလို့ရမလား။' },
       { speaker: 'စာကြည့်တိုက်မှူး', en: 'Do you have a library card?', my: 'စာကြည့်တိုက်ကတ်ရှိလား။' },
-      { speaker: 'ကျောင်းသား', en: 'Yes, here it is.', my: 'ဟုတ်တယ်၊ ဒီမှာပါ။' },
+      { speaker: 'ကျောင်းသား', en: 'Yes, this is it.', my: 'ဟုတ်တယ်၊ ဒါပါ။' },
       { speaker: 'စာကြည့်တိုက်မှူး', en: 'You can keep it for two weeks.', my: 'နှစ်ပတ်ထားလို့ရတယ်။' },
       { speaker: 'ကျောင်းသား', en: 'What if I am late?', my: 'နောက်ကျရင် ဘာဖြစ်မလဲ။' },
       { speaker: 'စာကြည့်တိုက်မှူး', en: 'One dollar per day.', my: 'တစ်ရက် တစ်ဒေါ်လာပါ။' },

@@ -1091,7 +1091,7 @@
   {
    "id": "ime-",
    "kind": "dialogue",
-   "en": "Are you free tomorrow? Yes, in the afternoon. Let us meet at two o clock. Where shall we meet? At the coffee shop. Okay. See you tomorrow.",
+   "en": "Are you free tomorrow? Yes, in the afternoon. Let us meet at two o'clock. Where shall we meet? At the coffee shop. Okay. See you tomorrow.",
    "en_norm": "are you free tomorrow yes in the afternoon let us meet at two o clock where shall we meet at the coffee shop okay see you tomorrow",
    "my_norm": "",
    "fingerprint": "75dc78e339524b75",
@@ -1107,7 +1107,7 @@
     "shop",
     "tomorrow"
    ],
-   "template_sig": "are you W W ? yes , in the W . let us W at two W W . where shall we W ? at the W W . W . W you W .",
+   "template_sig": "are you W W ? yes , in the W . let us W at two W ' W . where shall we W ? at the W W . W . W you W .",
    "tags": [
     "time",
     "dialogue"
@@ -1350,10 +1350,10 @@
   {
    "id": "octor-",
    "kind": "dialogue",
-   "en": "Good morning. What is wrong? I have a headache and fever. How long have you felt this? Since yesterday morning. Let me check your temperature. Is it very high? A little. Take this medicine. Thank you, doctor.",
-   "en_norm": "good morning what is wrong i have a headache and fever how long have you felt this since yesterday morning let me check your temperature is it very high a little take this medicine thank you doctor",
+   "en": "Good morning. What is wrong? I have a headache and fever. How long have you felt like this? Since yesterday morning. Let me check your temperature. Is it very high? A little. Take this medicine. Thank you, doctor.",
+   "en_norm": "good morning what is wrong i have a headache and fever how long have you felt like this since yesterday morning let me check your temperature is it very high a little take this medicine thank you doctor",
    "my_norm": "",
-   "fingerprint": "efae9ea917f3a34d",
+   "fingerprint": "ed8af495c425cd17",
    "vocab_sig": [
     "check",
     "doctor",
@@ -1373,7 +1373,7 @@
     "wrong",
     "yesterday"
    ],
-   "template_sig": "W W . what is W ? i have a W and W . how W have you W this ? W W W . let me W your W . is it very W ? a W . W this W . W you , W .",
+   "template_sig": "W W . what is W ? i have a W and W . how W have you W like this ? W W W . let me W your W . is it very W ? a W . W this W . W you , W .",
    "tags": [
     "doctor",
     "dialogue"
@@ -2685,10 +2685,10 @@
   {
    "id": "14-travel-",
    "kind": "dialogue",
-   "en": "Excuse me, how do I get to the beach? Go straight, then turn left. Is it far from here? No, about ten minutes on foot. Is there a bus too? Yes, bus number five stops nearby. Thank you very much!",
-   "en_norm": "excuse me how do i get to the beach go straight then turn left is it far from here no about ten minutes on foot is there a bus too yes bus number five stops nearby thank you very much",
+   "en": "Excuse me, how do I get to the beach? Go straight, then turn left. Is it far from here? No, about ten minutes on foot. Is there a bus too? Yes, bus number five stops nearby. Thank you so much!",
+   "en_norm": "excuse me how do i get to the beach go straight then turn left is it far from here no about ten minutes on foot is there a bus too yes bus number five stops nearby thank you so much",
    "my_norm": "",
-   "fingerprint": "4629c67124c566cc",
+   "fingerprint": "130f1be98b8b3348",
    "vocab_sig": [
     "beach",
     "bus",
@@ -2710,7 +2710,7 @@
     "then",
     "turn"
    ],
-   "template_sig": "W me , how do i W to the W ? W W , W W W . is it W from here ? no , about W W on W . is there a W too ? yes , W W W W W . W you very W !",
+   "template_sig": "W me , how do i W to the W ? W W , W W W . is it W from here ? no , about W W on W . is there a W too ? yes , W W W W W . W you so W !",
    "tags": [
     "travel",
     "dialogue"
@@ -3071,10 +3071,10 @@
   {
    "id": "14-school-",
    "kind": "dialogue",
-   "en": "Can I borrow this book? Do you have a library card? Yes, here it is. You can keep it for two weeks. What if I am late? One dollar per day. I will return it on time!",
-   "en_norm": "can i borrow this book do you have a library card yes here it is you can keep it for two weeks what if i am late one dollar per day i will return it on time",
+   "en": "Can I borrow this book? Do you have a library card? Yes, this is it. You can keep it for two weeks. What if I am late? One dollar per day. I will return it on time!",
+   "en_norm": "can i borrow this book do you have a library card yes this is it you can keep it for two weeks what if i am late one dollar per day i will return it on time",
    "my_norm": "",
-   "fingerprint": "bcc26ac09b84b4f7",
+   "fingerprint": "fa3e1fe3ee432a1a",
    "vocab_sig": [
     "book",
     "borrow",
@@ -3089,7 +3089,7 @@
     "time",
     "weeks"
    ],
-   "template_sig": "can i W this W ? do you have a W W ? yes , here it is . you can W it for two W . what if i am W ? one W W W . i will W it on W !",
+   "template_sig": "can i W this W ? do you have a W W ? yes , this is it . you can W it for two W . what if i am W ? one W W W . i will W it on W !",
    "tags": [
     "school",
     "dialogue"
@@ -5063,10 +5063,10 @@
   {
    "id": "14-time-",
    "kind": "dialogue",
-   "en": "Excuse me, when is the next train to Mandalay? At nine fifteen, from platform two. How long does the trip take? About eleven hours. Is there a night train? Yes, at eight in the evening. It arrives in the morning. I’ll take the night train. One ticket, please.",
-   "en_norm": "excuse me when is the next train to mandalay at nine fifteen from platform two how long does the trip take about eleven hours is there a night train yes at eight in the evening it arrives in the morning i ll take the night train one ticket please",
+   "en": "Excuse me, could you tell me the train times to Mandalay? At nine fifteen, from platform two. How long does the trip take? About eleven hours. Is there a night train? Yes, at eight in the evening. It arrives in the morning. I’ll take the night train. One ticket, please.",
+   "en_norm": "excuse me could you tell me the train times to mandalay at nine fifteen from platform two how long does the trip take about eleven hours is there a night train yes at eight in the evening it arrives in the morning i ll take the night train one ticket please",
    "my_norm": "",
-   "fingerprint": "35c458160686e1fe",
+   "fingerprint": "849294241dc368e8",
    "vocab_sig": [
     "arrives",
     "eight",
@@ -5078,16 +5078,17 @@
     "long",
     "mandalay",
     "morning",
-    "next",
     "night",
     "nine",
     "platform",
     "take",
+    "tell",
     "ticket",
+    "times",
     "train",
     "trip"
    ],
-   "template_sig": "W me , when is the W W to W ? at W W , from W two . how W does the W W ? about W W . is there a W W ? yes , at W in the W . it W in the W . i ’ ll W the W W . one W , please .",
+   "template_sig": "W me , could you W me the W W to W ? at W W , from W two . how W does the W W ? about W W . is there a W W ? yes , at W in the W . it W in the W . i ’ ll W the W W . one W , please .",
    "tags": [
     "time",
     "dialogue"
@@ -11122,10 +11123,10 @@
   {
    "id": "14-b3-phone-1",
    "kind": "dialogue",
-   "en": "Hello, I need to book a repair for my refrigerator. What seems to be the problem? It is not cooling properly. The food goes bad quickly. I see. When would you like the technician to visit? Tomorrow morning, if possible. We have a slot at nine. Is that convenient? Yes, nine is perfect. How much is the visit? The visit costs 15,000 kyats, plus parts if needed. That is fair. Please book it for me.",
-   "en_norm": "hello i need to book a repair for my refrigerator what seems to be the problem it is not cooling properly the food goes bad quickly i see when would you like the technician to visit tomorrow morning if possible we have a slot at nine is that convenient yes nine is perfect how much is the visit the visit costs 15 000 kyats plus parts if needed that is fair please book it for me",
+   "en": "Hello, I need to book a repair for my refrigerator. What seems to be wrong with it? It is not cooling properly. The food goes bad quickly. I see. When would you like the technician to visit? Tomorrow morning, if possible. We have a slot at nine. Is that convenient? Yes, nine is perfect. How much is the visit? The visit costs 15,000 kyats, plus parts if needed. That is fair. Please book it for me.",
+   "en_norm": "hello i need to book a repair for my refrigerator what seems to be wrong with it it is not cooling properly the food goes bad quickly i see when would you like the technician to visit tomorrow morning if possible we have a slot at nine is that convenient yes nine is perfect how much is the visit the visit costs 15 000 kyats plus parts if needed that is fair please book it for me",
    "my_norm": "",
-   "fingerprint": "a8f918e737568081",
+   "fingerprint": "35043fb84676990a",
    "vocab_sig": [
     "000",
     "15",
@@ -11148,7 +11149,6 @@
     "perfect",
     "plus",
     "possible",
-    "problem",
     "properly",
     "quickly",
     "refrigerator",
@@ -11158,9 +11158,10 @@
     "slot",
     "technician",
     "tomorrow",
-    "visit"
+    "visit",
+    "wrong"
    ],
-   "template_sig": "W , i W to W a W for my W . what W to be the W ? it is not W W . the W W W W . i W . when would you like the W to W ? W W , if W . we have a W at W . is that W ? yes , W is W . how W is the W ? the W W W , W W , W W if W . that is W . please W it for me .",
+   "template_sig": "W , i W to W a W for my W . what W to be W with it ? it is not W W . the W W W W . i W . when would you like the W to W ? W W , if W . we have a W at W . is that W ? yes , W is W . how W is the W ? the W W W , W W , W W if W . that is W . please W it for me .",
    "tags": [
     "technology",
     "dialogue"
@@ -11274,10 +11275,10 @@
   {
    "id": "14-b3-phone-1",
    "kind": "dialogue",
-   "en": "Hello, I need help with my account, but I am in a hurry. I understand. Would you like us to call you back later? Yes, please. That would be very helpful. What is the best number to reach you? 0979555123. Please call after two o'clock. Noted. What is the issue about, briefly? I was charged twice for the same service. I will prepare everything, so the callback will be quick. Thank you. I appreciate it.",
-   "en_norm": "hello i need help with my account but i am in a hurry i understand would you like us to call you back later yes please that would be very helpful what is the best number to reach you 0979555123 please call after two o clock noted what is the issue about briefly i was charged twice for the same service i will prepare everything so the callback will be quick thank you i appreciate it",
+   "en": "Hello, I need help with my account, but I am in a hurry. I understand. Would you like us to call you back later? Yes, please. That would be very helpful. What is the best number to reach you? 0979555123. Please call after two o'clock. Noted. What is the issue about, briefly? I was charged twice for the same service. I will prepare everything, so the callback will be quick. Thank you, I appreciate your help.",
+   "en_norm": "hello i need help with my account but i am in a hurry i understand would you like us to call you back later yes please that would be very helpful what is the best number to reach you 0979555123 please call after two o clock noted what is the issue about briefly i was charged twice for the same service i will prepare everything so the callback will be quick thank you i appreciate your help",
    "my_norm": "",
-   "fingerprint": "4e9310f493a2253b",
+   "fingerprint": "1053c2237d4ff657",
    "vocab_sig": [
     "0979555123",
     "account",
@@ -11309,7 +11310,7 @@
     "twice",
     "understand"
    ],
-   "template_sig": "W , i W W with my W , but i am in a W . i W . would you like us to W you W W ? yes , please . that would be very W . what is the W W to W you ? W . please W after two W ' W . W . what is the W about , W ? i was W W for the W W . i will W W , so the W will be W . W you . i W it .",
+   "template_sig": "W , i W W with my W , but i am in a W . i W . would you like us to W you W W ? yes , please . that would be very W . what is the W W to W you ? W . please W after two W ' W . W . what is the W about , W ? i was W W for the W W . i will W W , so the W will be W . W you , i W your W .",
    "tags": [
     "business",
     "dialogue"
@@ -95810,7 +95811,7 @@
    "kind": "phrase",
    "en": "Sit tight, the mechanic will be here in ten minutes.",
    "en_norm": "sit tight the mechanic will be here in ten minutes",
-   "my_norm": "ငြိမ်ငြိမ်စောင့်နေပါ၊ စက်ပြင်ဆရာက ဆယ်မိနစ်အတွင်း ရောက်လာမှာပါ။",
+   "my_norm": "စောင့်နေပါ၊ စက်ပြင်ဆရာက ဆယ်မိနစ်အတွင်း ရောက်လာမှာပါ။",
    "fingerprint": "f0a5acaa4e23a3c6",
    "vocab_sig": [
     "mechanic",
@@ -146580,7 +146581,7 @@
    "kind": "phrase",
    "en": "The hallway light flickers sometimes.",
    "en_norm": "the hallway light flickers sometimes",
-   "my_norm": "လှေကားခန်းမီးက တခါတလေ မှိတ်တုတ်မှိတ်တုတ်ဖြစ်တယ်။",
+   "my_norm": "စင်္ကြံမီးက တခါတလေ မှိတ်တုတ်မှိတ်တုတ်ဖြစ်တယ်။",
    "fingerprint": "354c51699bd49b2d",
    "vocab_sig": [
     "flickers",
@@ -153123,7 +153124,7 @@
    "kind": "phrase",
    "en": "Reservations are required for weekend dining.",
    "en_norm": "reservations are required for weekend dining",
-   "my_norm": "စနေ၊ တနင်္ဂနွေ စားဖို့ ကြိုတင် ဘွတ်ကင်လုပ်ရမယ်။",
+   "my_norm": "စနေ၊ တနင်္ဂနွေ စားဖို့ ကြိုတင် ဘိုကင်လုပ်ရမယ်။",
    "fingerprint": "b096c357a26d29e1",
    "vocab_sig": [
     "dining",
@@ -153397,7 +153398,7 @@
    "kind": "phrase",
    "en": "Where do I collect my luggage?",
    "en_norm": "where do i collect my luggage",
-   "my_norm": "ကျွန်တော့်လက်ဆွဲအိတ်ကို ဘယ်မှာ ထုတ်ယူရမလဲ။",
+   "my_norm": "ကျွန်တော့်ခရီးဆောင်အိတ်ကို ဘယ်မှာ ထုတ်ယူရမလဲ။",
    "fingerprint": "f07d5a1ead93f8eb",
    "vocab_sig": [
     "collect",
@@ -154067,7 +154068,7 @@
    "kind": "phrase",
    "en": "I booked an aisle seat for extra legroom.",
    "en_norm": "i booked an aisle seat for extra legroom",
-   "my_norm": "ခြေထောက်ဆန့်ဖို့ နေရာပိုရအောင် လမ်းကြားခုံကို ဘွတ်ကင် လုပ်ထားတယ်။",
+   "my_norm": "ခြေထောက်ဆန့်ဖို့ နေရာပိုရအောင် လမ်းကြားခုံကို ဘိုကင် လုပ်ထားတယ်။",
    "fingerprint": "3acfd421f197af97",
    "vocab_sig": [
     "aisle",
@@ -187215,10 +187216,10 @@
   {
    "id": "tory-f14-b2-1",
    "kind": "story",
-   "en": "When the new student from Japan joined the class, nobody knew how to talk to her. Her Myanmar was limited, and most students were too shy to try English. Hsu decided to be brave. During lunch break, she sat next to Yuki and offered her some traditional snacks, using simple English and lots of gestures. Yuki's face lit up with relief and gratitude. From that day on, the two girls spent every break together, teaching each other words in three languages. By the end of the semester, Yuki gave a short speech in Myanmar at the school assembly. Hsu realized that friendship needs only kindness, not perfect language. Hsu and Yuki are still best friends years later, and both speak three languages fluently. Their friendship began with snacks, smiles, and courage. Their proud teachers very often warmly invite them to kindly welcome nervous new foreign students at their beloved school.",
-   "en_norm": "when the new student from japan joined the class nobody knew how to talk to her her myanmar was limited and most students were too shy to try english hsu decided to be brave during lunch break she sat next to yuki and offered her some traditional snacks using simple english and lots of gestures yuki s face lit up with relief and gratitude from that day on the two girls spent every break together teaching each other words in three languages by the end of the semester yuki gave a short speech in myanmar at the school assembly hsu realized that friendship needs only kindness not perfect language hsu and yuki are still best friends years later and both speak three languages fluently their friendship began with snacks smiles and courage their proud teachers very often warmly invite them to kindly welcome nervous new foreign students at their beloved school",
+   "en": "When the new student from Japan joined the class, nobody knew how to talk to her. Her Myanmar was limited, and most students were too shy to try English. Hsu decided to be brave. During lunch break, she sat next to Yuki and offered her some traditional snacks, using simple English and lots of gestures. Yuki's face lit up with relief and gratitude. From that day on, the two girls spent every break together, teaching each other words in three languages. By the end of the semester, Yuki gave a short speech in Myanmar at the school assembly. Hsu realized that friendship needs only kindness, not perfect language. Hsu and Yuki are still best friends years later, and both speak three languages fluently. Their friendship began with snacks, smiles, and courage. Their proud teachers often invite them to welcome nervous new foreign students at their beloved school.",
+   "en_norm": "when the new student from japan joined the class nobody knew how to talk to her her myanmar was limited and most students were too shy to try english hsu decided to be brave during lunch break she sat next to yuki and offered her some traditional snacks using simple english and lots of gestures yuki s face lit up with relief and gratitude from that day on the two girls spent every break together teaching each other words in three languages by the end of the semester yuki gave a short speech in myanmar at the school assembly hsu realized that friendship needs only kindness not perfect language hsu and yuki are still best friends years later and both speak three languages fluently their friendship began with snacks smiles and courage their proud teachers often invite them to welcome nervous new foreign students at their beloved school",
    "my_norm": "",
-   "fingerprint": "a3a90a5551e5905f",
+   "fingerprint": "f42678f278841b07",
    "vocab_sig": [
     "assembly",
     "began",
@@ -187249,7 +187250,6 @@
     "invite",
     "japan",
     "joined",
-    "kindly",
     "kindness",
     "knew",
     "language",
@@ -187296,13 +187296,12 @@
     "traditional",
     "try",
     "using",
-    "warmly",
     "welcome",
     "words",
     "years",
     "yuki"
    ],
-   "template_sig": "when the W W from W W the W , W W how to W to her . her W was W , and W W were too W to W W . W W to be W . W W W , she W W to W and W her W W W , W W W and W of W . W ' s W W up with W and W . from that W on , the two W W W W W , W W W W in three W . by the W of the W , W W a W W in W at the W W . W W that W W W W , not W W . W and W are W W W W W , and W W three W W . their W W with W , W , and W . their W W very W W W them to W W W W W W at their W W .",
+   "template_sig": "when the W W from W W the W , W W how to W to her . her W was W , and W W were too W to W W . W W to be W . W W W , she W W to W and W her W W W , W W W and W of W . W ' s W W up with W and W . from that W on , the two W W W W W , W W W W in three W . by the W of the W , W W a W W in W at the W W . W W that W W W W , not W W . W and W are W W W W W , and W W three W W . their W W with W , W , and W . their W W W W them to W W W W W at their W W .",
    "tags": [
     "story"
    ],
@@ -215881,7 +215880,7 @@
    "kind": "word",
    "en": "deadbolt",
    "en_norm": "deadbolt",
-   "my_norm": "တံခါးသော့ခိုင်မာသော",
+   "my_norm": "တံခါးအပိုသော့",
    "fingerprint": "2f69ca657a86d5eb",
    "vocab_sig": [
     "deadbolt"
@@ -253522,7 +253521,7 @@
    "kind": "word",
    "en": "quarry",
    "en_norm": "quarry",
-   "my_norm": "သားကောင်အဖြစ်",
+   "my_norm": "သားကောင်",
    "fingerprint": "0ae90cdacdb49230",
    "vocab_sig": [
     "quarry"
@@ -267649,7 +267648,7 @@
   {
    "id": "word:work:okr",
    "kind": "word",
-   "en": "okr",
+   "en": "OKR",
    "en_norm": "okr",
    "my_norm": "ရည်မှန်းချက်ရလဒ်စနစ်",
    "fingerprint": "a7c85e04eacc24e4",
@@ -267667,14 +267666,14 @@
   {
    "id": "example:work:okr",
    "kind": "example",
-   "en": "Set clear okr each quarter.",
-   "en_norm": "set clear okr each quarter",
+   "en": "Set clear OKRs each quarter.",
+   "en_norm": "set clear okrs each quarter",
    "my_norm": "",
-   "fingerprint": "0c012f950a253aae",
+   "fingerprint": "0c0da676b1837fac",
    "vocab_sig": [
     "clear",
     "each",
-    "okr",
+    "okrs",
     "quarter",
     "set"
    ],
@@ -284861,7 +284860,7 @@
    "kind": "word",
    "en": "rogue planet",
    "en_norm": "rogue planet",
-   "my_norm": "ရွှေ့ပြောင်းဂြိုဟ်",
+   "my_norm": "လွင့်မျောဂြိုဟ်",
    "fingerprint": "19fb8c3ced861f2e",
    "vocab_sig": [
     "planet",
@@ -322464,7 +322463,7 @@
    "kind": "word",
    "en": "splenectomy",
    "en_norm": "splenectomy",
-   "my_norm": "သရက်ရွက်ဖြတ်ထုတ်ခြင်း",
+   "my_norm": "သရက်ဖြတ်ထုတ်ခြင်း",
    "fingerprint": "c97dcd793de1aeac",
    "vocab_sig": [
     "splenectomy"
@@ -474673,18 +474672,18 @@
   {
    "id": "example:rhetoric:innuendo",
    "kind": "example",
-   "en": "The article was full of innuendo about the ministers wealth.",
-   "en_norm": "the article was full of innuendo about the ministers wealth",
+   "en": "The article was full of innuendo about the minister's wealth.",
+   "en_norm": "the article was full of innuendo about the minister s wealth",
    "my_norm": "",
-   "fingerprint": "c1439162d44f10bc",
+   "fingerprint": "6f080c3809905693",
    "vocab_sig": [
     "article",
     "full",
     "innuendo",
-    "ministers",
+    "minister",
     "wealth"
    ],
-   "template_sig": "the W was W of W about the W W .",
+   "template_sig": "the W was W of W about the W ' s W .",
    "tags": [
     "rhetoric",
     "example"
@@ -540018,7 +540017,7 @@
   {
    "id": "word:computer:qr-code",
    "kind": "word",
-   "en": "qr code",
+   "en": "QR code",
    "en_norm": "qr code",
    "my_norm": "ကျူအာကုဒ်",
    "fingerprint": "f6deff009574373a",
@@ -540037,7 +540036,7 @@
   {
    "id": "example:computer:qr-code",
    "kind": "example",
-   "en": "Scan the qr code to see the full menu.",
+   "en": "Scan the QR code to see the full menu.",
    "en_norm": "scan the qr code to see the full menu",
    "my_norm": "",
    "fingerprint": "b9aacc1738a34b62",
@@ -567097,7 +567096,7 @@
    "kind": "phrase",
    "en": "Where is the receipt?",
    "en_norm": "where is the receipt",
-   "my_norm": "ပြေစာစာရွက် ဘယ်မှာလဲ။",
+   "my_norm": "ပြေစာ ဘယ်မှာလဲ။",
    "fingerprint": "fe83bd91388d85af",
    "vocab_sig": [
     "receipt"
@@ -569128,15 +569127,16 @@
   {
    "id": "phrase:technology:7343",
    "kind": "phrase",
-   "en": "The wifi is slow.",
-   "en_norm": "the wifi is slow",
+   "en": "The Wi-Fi is slow.",
+   "en_norm": "the wi fi is slow",
    "my_norm": "ဝိုင်ဖိုင်က နှေးတယ်။",
-   "fingerprint": "2ec0e9e51254e2b4",
+   "fingerprint": "26ef8ac0ac691253",
    "vocab_sig": [
+    "fi",
     "slow",
-    "wifi"
+    "wi"
    ],
-   "template_sig": "the W is W .",
+   "template_sig": "the W - W is W .",
    "tags": [
     "technology",
     "phrase"
@@ -570108,7 +570108,7 @@
    "kind": "phrase",
    "en": "Enjoy the rest of your day!",
    "en_norm": "enjoy the rest of your day",
-   "my_norm": "ဒီနေ့ရဲ့ ကျန်အချိန်ကို ပျော်ပျော်ရွှင်ရွှင် ဖြတ်သန်းပါ",
+   "my_norm": "ဒီနေ့ ကျန်တဲ့အချိန်ကို ပျော်ပျော်ရွှင်ရွှင် ဖြတ်သန်းပါ",
    "fingerprint": "d76976faf16c1c0c",
    "vocab_sig": [
     "day",
@@ -572281,15 +572281,15 @@
   {
    "id": "phrase:restaurant:7509",
    "kind": "phrase",
-   "en": "Please keep the tip.",
-   "en_norm": "please keep the tip",
-   "my_norm": "သီးသန့်ဆုကို ယူထားလိုက်ပါ။",
-   "fingerprint": "ff7481ee71f3bff4",
+   "en": "Keep the change, please.",
+   "en_norm": "keep the change please",
+   "my_norm": "ကျန်ငွေကို ယူထားလိုက်ပါ။",
+   "fingerprint": "ad6970ed6157002b",
    "vocab_sig": [
-    "keep",
-    "tip"
+    "change",
+    "keep"
    ],
-   "template_sig": "please W the W .",
+   "template_sig": "W the W , please .",
    "tags": [
     "restaurant",
     "phrase"
@@ -572472,7 +572472,7 @@
    "kind": "phrase",
    "en": "Everything tastes fresh.",
    "en_norm": "everything tastes fresh",
-   "my_norm": "အရာရာတိုင်း လတ်ဆတ်အရသာရှိတယ်။",
+   "my_norm": "စားစရာအားလုံး လတ်ဆတ်တယ်။",
    "fingerprint": "141ebfac4c2e609a",
    "vocab_sig": [
     "everything",
@@ -572492,7 +572492,7 @@
    "kind": "phrase",
    "en": "Where is the check-in counter?",
    "en_norm": "where is the check in counter",
-   "my_norm": "လေယာဉ်လက်မှတ်အတည်ပြုကောင်တာ ဘယ်မှာလဲ။",
+   "my_norm": "check in ကောင်တာ ဘယ်မှာလဲ။",
    "fingerprint": "0340d75dc765cb5f",
    "vocab_sig": [
     "check",
@@ -572684,7 +572684,7 @@
    "kind": "phrase",
    "en": "I have a connecting flight.",
    "en_norm": "i have a connecting flight",
-   "my_norm": "ကျွန်တော့်မှာ ဆက်လက်ပျံသန်းမယ့် လေယာဉ် ရှိတယ်။",
+   "my_norm": "ကျွန်တော့်မှာ ဆက်စီးရမယ့် လေယာဉ် ရှိတယ်။",
    "fingerprint": "0c17fb39e4b6ba69",
    "vocab_sig": [
     "connecting",
@@ -572722,7 +572722,7 @@
    "kind": "phrase",
    "en": "Is this the right terminal?",
    "en_norm": "is this the right terminal",
-   "my_norm": "ဒါ မှန်ကန်တဲ့ လေဆိပ်အဆောက်အဦးလား။",
+   "my_norm": "ဒါ တာမီနယ် မှန်လား။",
    "fingerprint": "5544c57b2d564fe5",
    "vocab_sig": [
     "right",
@@ -572741,7 +572741,7 @@
    "kind": "phrase",
    "en": "My passport is expired!",
    "en_norm": "my passport is expired",
-   "my_norm": "ကျွန်တော့်ပတ်စ်ပို့ သက်တမ်းကုန်နေပြီ",
+   "my_norm": "ကျွန်တော့် ပတ်စပို့ သက်တမ်းကုန်နေပြီ",
    "fingerprint": "a44e371dde507fc1",
    "vocab_sig": [
     "expired",
@@ -572779,7 +572779,7 @@
    "kind": "phrase",
    "en": "Don't forget your boarding pass.",
    "en_norm": "don t forget your boarding pass",
-   "my_norm": "လေယာဉ်တက်လက်မှတ်ကို မမေ့နဲ့။",
+   "my_norm": "boarding pass ကို မမေ့နဲ့။",
    "fingerprint": "f3448fec6db81c6b",
    "vocab_sig": [
     "boarding",
@@ -572915,7 +572915,7 @@
    "kind": "phrase",
    "en": "The deadline moved to Friday.",
    "en_norm": "the deadline moved to friday",
-   "my_norm": "နောက်ဆုံးရက်ကို သောကြာနေ့သို့ ရွှေ့လိုက်ပြီ။",
+   "my_norm": "နောက်ဆုံးရက်ကို သောကြာနေ့ကို ရွှေ့လိုက်ပြီ။",
    "fingerprint": "fd4e9fa2f40a841c",
    "vocab_sig": [
     "deadline",
@@ -572973,7 +572973,7 @@
    "kind": "phrase",
    "en": "Great teamwork, everyone!",
    "en_norm": "great teamwork everyone",
-   "my_norm": "အားလုံး ပူးပေါင်းဆောင်ရွက်မှု အရမ်းကောင်းတယ်",
+   "my_norm": "အားလုံး အဖွဲ့လိုက်လုပ်တာ အရမ်းကောင်းတယ်",
    "fingerprint": "07e7288ee6457b33",
    "vocab_sig": [
     "everyone",
@@ -572993,7 +572993,7 @@
    "kind": "phrase",
    "en": "I'll follow up tomorrow.",
    "en_norm": "i ll follow up tomorrow",
-   "my_norm": "မနက်ဖြန် ထပ်ဆက်သွယ်မယ်။",
+   "my_norm": "မနက်ဖြန် follow up လုပ်မယ်။",
    "fingerprint": "90aae6728fcf423f",
    "vocab_sig": [
     "follow",
@@ -573012,7 +573012,7 @@
    "kind": "phrase",
    "en": "Please review this document.",
    "en_norm": "please review this document",
-   "my_norm": "ဒီစာရွက်စာတမ်းကို ပြန်သုံးသပ်ပေးပါ။",
+   "my_norm": "ဒီ document ကို ပြန်ကြည့်ပေးပါ။",
    "fingerprint": "c89595a5ba79a7b4",
    "vocab_sig": [
     "document",
@@ -573167,7 +573167,7 @@
    "kind": "phrase",
    "en": "Don't miss the deadline.",
    "en_norm": "don t miss the deadline",
-   "my_norm": "နောက်ဆုံးရက်ကို မလွတ်စေနဲ့။",
+   "my_norm": "နောက်ဆုံးရက်ကို မကျော်စေနဲ့။",
    "fingerprint": "87374f2dda3e9f73",
    "vocab_sig": [
     "deadline",
@@ -573341,7 +573341,7 @@
    "kind": "phrase",
    "en": "The doctor will see you shortly.",
    "en_norm": "the doctor will see you shortly",
-   "my_norm": "ဆရာဝန်က မကြာမီ လာကြည့်ပါမယ်။",
+   "my_norm": "ဆရာဝန်နဲ့ မကြာခင် တွေ့ရပါမယ်။",
    "fingerprint": "5e5709d6fd30a61d",
    "vocab_sig": [
     "doctor",
@@ -573380,7 +573380,7 @@
    "kind": "phrase",
    "en": "How long have you been sick?",
    "en_norm": "how long have you been sick",
-   "my_norm": "ဘယ်လောက်ကြာပြီနေမကောင်းဖြစ်နေတာ။",
+   "my_norm": "နေမကောင်းဖြစ်နေတာ ဘယ်လောက်ကြာပြီလဲ။",
    "fingerprint": "56e3aa2cd4a69bac",
    "vocab_sig": [
     "long",
@@ -573419,7 +573419,7 @@
    "kind": "phrase",
    "en": "Don't scratch the rash!",
    "en_norm": "don t scratch the rash",
-   "my_norm": "အနီဖုကိုမကုတ်ပါနဲ့",
+   "my_norm": "အနီဖုကို မကုတ်ပါနဲ့",
    "fingerprint": "93e59257e49527d0",
    "vocab_sig": [
     "rash",
@@ -573498,7 +573498,7 @@
    "kind": "phrase",
    "en": "Is the dentist in today?",
    "en_norm": "is the dentist in today",
-   "my_norm": "ဒီနေ့သွားဆရာဝန်ရှိလား။",
+   "my_norm": "ဒီနေ့ သွားဆရာဝန် လာလား။",
    "fingerprint": "cc96933c10283201",
    "vocab_sig": [
     "dentist",
@@ -573635,7 +573635,7 @@
    "kind": "phrase",
    "en": "I hope you feel better soon!",
    "en_norm": "i hope you feel better soon",
-   "my_norm": "အမြန်နေကောင်းလာပါစေလို့ဆုတောင်းပါတယ်။",
+   "my_norm": "အမြန်နေကောင်းပါစေ။",
    "fingerprint": "0ae47e38c9048cbf",
    "vocab_sig": [
     "better",
@@ -573673,15 +573673,16 @@
   {
    "id": "phrase:computer:7581",
    "kind": "phrase",
-   "en": "What's your wifi password?",
-   "en_norm": "what s your wifi password",
+   "en": "What's your Wi-Fi password?",
+   "en_norm": "what s your wi fi password",
    "my_norm": "ဝိုင်ဖိုင်စကားဝှက်ကဘာလဲ။",
-   "fingerprint": "5cbb3e48995adaa2",
+   "fingerprint": "4f6f7d3e976a204f",
    "vocab_sig": [
+    "fi",
     "password",
-    "wifi"
+    "wi"
    ],
-   "template_sig": "what ' s your W W ?",
+   "template_sig": "what ' s your W - W W ?",
    "tags": [
     "computer",
     "phrase"
@@ -573694,7 +573695,7 @@
    "kind": "phrase",
    "en": "I forgot my username.",
    "en_norm": "i forgot my username",
-   "my_norm": "အသုံးပြုသူအမည်မေ့သွားတယ်။",
+   "my_norm": "username မေ့သွားတယ်။",
    "fingerprint": "ad7894133c2c5c90",
    "vocab_sig": [
     "forgot",
@@ -573733,7 +573734,7 @@
    "kind": "phrase",
    "en": "Swipe up to unlock.",
    "en_norm": "swipe up to unlock",
-   "my_norm": "လော့ခ်ဖြေဖို့အပေါ်ဆွဲတင်ပါ။",
+   "my_norm": "လော့ခ်ဖွင့်ဖို့ အပေါ်ကို ဆွဲတင်ပါ။",
    "fingerprint": "a6dff52f00ecba05",
    "vocab_sig": [
     "swipe",
@@ -573810,7 +573811,7 @@
    "kind": "phrase",
    "en": "My storage is almost full.",
    "en_norm": "my storage is almost full",
-   "my_norm": "သိုလှောင်ခန်းပြည့်တော့မယ်။",
+   "my_norm": "storage ပြည့်တော့မယ်။",
    "fingerprint": "b6465192d17b602c",
    "vocab_sig": [
     "almost",
@@ -573908,7 +573909,7 @@
    "kind": "phrase",
    "en": "This video keeps freezing.",
    "en_norm": "this video keeps freezing",
-   "my_norm": "ဒီဗီဒီယိုရပ်ရပ်သွားတယ်။",
+   "my_norm": "ဒီဗီဒီယို ဖရီးဇ်ဖြစ်နေတယ်။",
    "fingerprint": "ce096bf25801e412",
    "vocab_sig": [
     "freezing",
@@ -573928,7 +573929,7 @@
    "kind": "phrase",
    "en": "Restart your laptop and try again.",
    "en_norm": "restart your laptop and try again",
-   "my_norm": "လက်ပ်တော့ပြန်စပြီးထပ်စမ်းကြည့်ပါ။",
+   "my_norm": "လက်ပ်တော့ကို restart ချပြီး ထပ်စမ်းကြည့်ပါ။",
    "fingerprint": "1ddcd25f8119580e",
    "vocab_sig": [
     "again",
@@ -574027,7 +574028,7 @@
    "kind": "phrase",
    "en": "Log out when you finish.",
    "en_norm": "log out when you finish",
-   "my_norm": "ပြီးရင်ထွက်လိုက်ပါ။",
+   "my_norm": "ပြီးရင် log out လုပ်လိုက်ပါ။",
    "fingerprint": "9ef6717e94de9b38",
    "vocab_sig": [
     "finish",
@@ -574220,7 +574221,7 @@
    "kind": "phrase",
    "en": "Taste one before you buy.",
    "en_norm": "taste one before you buy",
-   "my_norm": "မဝယ်ခင်အရသာခံစားကြည့်ပါ။",
+   "my_norm": "မဝယ်ခင် မြည်းကြည့်ပါ။",
    "fingerprint": "2d7a70e0e16b3e4f",
    "vocab_sig": [
     "buy",
@@ -574399,15 +574400,16 @@
   {
    "id": "phrase:market:7618",
    "kind": "phrase",
-   "en": "Keep the change.",
-   "en_norm": "keep the change",
-   "my_norm": "အကြွေကိုယူထားလိုက်ပါ။",
-   "fingerprint": "692e907bd132c912",
+   "en": "Can you lower the price a little?",
+   "en_norm": "can you lower the price a little",
+   "my_norm": "ဈေးနည်းနည်းလျှော့ပေးပါလား။",
+   "fingerprint": "299d553e5e271404",
    "vocab_sig": [
-    "change",
-    "keep"
+    "little",
+    "lower",
+    "price"
    ],
-   "template_sig": "W the W .",
+   "template_sig": "can you W the W a W ?",
    "tags": [
     "market",
     "phrase"
@@ -574545,7 +574547,7 @@
    "kind": "phrase",
    "en": "Can I borrow your raincoat for a minute?",
    "en_norm": "can i borrow your raincoat for a minute",
-   "my_norm": "ခင်ဗျားမိုးကာအင်္ကျီ ခဏငှားလို့ရမလား။",
+   "my_norm": "ခင်ဗျားရဲ့ မိုးကာအင်္ကျီ ခဏငှားလို့ရမလား။",
    "fingerprint": "9c76595ce50ad396",
    "vocab_sig": [
     "borrow",
@@ -574565,7 +574567,7 @@
    "kind": "phrase",
    "en": "How much rainfall did we get last night?",
    "en_norm": "how much rainfall did we get last night",
-   "my_norm": "မနေ့ညက မိုးရေချိန်ဘယ်လောက်ရခဲ့လဲ။",
+   "my_norm": "မနေ့ညက မိုးရေချိန် ဘယ်လောက်ရှိခဲ့လဲ။",
    "fingerprint": "548839f96115c19e",
    "vocab_sig": [
     "get",
@@ -574587,7 +574589,7 @@
    "kind": "phrase",
    "en": "This morning was misty and very quiet.",
    "en_norm": "this morning was misty and very quiet",
-   "my_norm": "ဒီမနက်က မြူမှုန်ဆိုင်းပြီး တိတ်ဆိတ်နေတယ်။",
+   "my_norm": "ဒီမနက်က မြူမှုန်ဆိုင်းပြီး တိတ်ဆိတ်နေခဲ့တယ်။",
    "fingerprint": "3bf4d36ec56d9cb7",
    "vocab_sig": [
     "misty",
@@ -574607,7 +574609,7 @@
    "kind": "phrase",
    "en": "I love the crisp air of autumn mornings.",
    "en_norm": "i love the crisp air of autumn mornings",
-   "my_norm": "ဆောင်းဦးမနက်ခင်းရဲ့ ကြည်လင်အေးမြတဲ့လေကို ကျွန်မကြိုက်တယ်။",
+   "my_norm": "ဆောင်းဦးမနက်ခင်းရဲ့ ကြည်လင်အေးမြတဲ့ လေကို ကျွန်မ ကြိုက်တယ်။",
    "fingerprint": "f9d4226cc0effa49",
    "vocab_sig": [
     "air",
@@ -574629,7 +574631,7 @@
    "kind": "phrase",
    "en": "The snow will melt by the end of March.",
    "en_norm": "the snow will melt by the end of march",
-   "my_norm": "နှင်းတွေ မတ်လအကုန်မှာ ပျော်သွားမယ်။",
+   "my_norm": "နှင်းတွေ မတ်လအကုန်မှာ အရည်ပျော်သွားမယ်။",
    "fingerprint": "6b205e485a23c935",
    "vocab_sig": [
     "end",
@@ -574797,7 +574799,7 @@
    "kind": "phrase",
    "en": "She wore mittens, a cap, and a warm hood.",
    "en_norm": "she wore mittens a cap and a warm hood",
-   "my_norm": "သူမက လက်အိတ်၊ ဦးထုပ်၊ ခေါင်းစွပ်နွေးထွေးတာတွေ ဝတ်ခဲ့တယ်။",
+   "my_norm": "သူမက လက်အိတ်၊ ဦးထုပ်နဲ့ နွေးတဲ့ ခေါင်းစွပ် ဝတ်ခဲ့တယ်။",
    "fingerprint": "4962fff84d06ae11",
    "vocab_sig": [
     "cap",
@@ -574819,7 +574821,7 @@
    "kind": "phrase",
    "en": "Tropical countries never see snow.",
    "en_norm": "tropical countries never see snow",
-   "my_norm": "အပူပိုင်းဒေသနိုင်ငံတွေမှာ နှင်းဘယ်တော့မှ မမြင်ရဘူး။",
+   "my_norm": "အပူပိုင်းဒေသနိုင်ငံတွေမှာ နှင်း ဘယ်တော့မှ မကျဘူး။",
    "fingerprint": "4cb7be4a27de2e85",
    "vocab_sig": [
     "countries",
@@ -574926,7 +574928,7 @@
    "kind": "phrase",
    "en": "Snowmelt feeds the rivers each spring.",
    "en_norm": "snowmelt feeds the rivers each spring",
-   "my_norm": "နွေဦးတိုင်း နှင်းပျော်ရေက မြစ်တွေကို ရေပေးတယ်။",
+   "my_norm": "နွေဦးတိုင်း နှင်းပျော်ရေက မြစ်တွေထဲ စီးဝင်တယ်။",
    "fingerprint": "f1d77c65102e9d66",
    "vocab_sig": [
     "each",
@@ -574970,7 +574972,7 @@
    "kind": "phrase",
    "en": "The climate here stays mild all year.",
    "en_norm": "the climate here stays mild all year",
-   "my_norm": "ဒီကရာသီဥတုက တစ်နှစ်လုံး သင့်တင့်နေတယ်။",
+   "my_norm": "ဒီက ရာသီဥတုက တစ်နှစ်လုံး သင့်တင့်နေတယ်။",
    "fingerprint": "08757c7489c23c61",
    "vocab_sig": [
     "all",
@@ -574992,7 +574994,7 @@
    "kind": "phrase",
    "en": "Dew covered the whole garden this morning.",
    "en_norm": "dew covered the whole garden this morning",
-   "my_norm": "ဒီမနက် နှင်းစက်တွေ ဥယျာဉ်တစ်ခုလုံး ဖုံးနေတယ်။",
+   "my_norm": "ဒီမနက် နှင်းစက်တွေ ဥယျာဉ်တစ်ခုလုံး ဖုံးနေခဲ့တယ်။",
    "fingerprint": "c5b14eacc14b3989",
    "vocab_sig": [
     "covered",
@@ -575014,7 +575016,7 @@
    "kind": "phrase",
    "en": "The haze hid the mountains completely.",
    "en_norm": "the haze hid the mountains completely",
-   "my_norm": "မြူမှိုင်းက တောင်တန်းတွေကို လုံးဝဖုံးကွယ်ထားတယ်။",
+   "my_norm": "မြူမှိုင်းက တောင်တန်းတွေကို လုံးဝ ဖုံးအုပ်ထားတယ်။",
    "fingerprint": "0fa8a1bc9dd06ac4",
    "vocab_sig": [
     "completely",
@@ -575033,16 +575035,17 @@
   {
    "id": "phrase:seasons:7648",
    "kind": "phrase",
-   "en": "Autumn leaves are beautiful, are they not?",
-   "en_norm": "autumn leaves are beautiful are they not",
-   "my_norm": "ရွက်ကြွေရာသီရဲ့ သစ်ရွက်တွေလှတယ်၊ ဟုတ်တယ်နော်။",
-   "fingerprint": "39a824270485b2fd",
+   "en": "Autumn leaves are beautiful, aren't they?",
+   "en_norm": "autumn leaves are beautiful aren t they",
+   "my_norm": "ရွက်ကြွေရာသီရဲ့ သစ်ရွက်တွေ လှတယ်၊ ဟုတ်တယ်နော်။",
+   "fingerprint": "e73ea5913ab36d9a",
    "vocab_sig": [
+    "aren",
     "autumn",
     "beautiful",
     "leaves"
    ],
-   "template_sig": "W W are W , are they not ?",
+   "template_sig": "W W are W , W ' t they ?",
    "tags": [
     "seasons",
     "phrase"
@@ -575053,17 +575056,17 @@
   {
    "id": "phrase:seasons:7649",
    "kind": "phrase",
-   "en": "Let us wait until the drizzle stops.",
-   "en_norm": "let us wait until the drizzle stops",
+   "en": "Let's wait until the drizzle stops.",
+   "en_norm": "let s wait until the drizzle stops",
    "my_norm": "မိုးဖွဲဖွဲရွာတာ ရပ်တဲ့အထိ စောင့်ကြစို့။",
-   "fingerprint": "b9745bdbebaeb8e4",
+   "fingerprint": "72a3aa29855bd14e",
    "vocab_sig": [
     "drizzle",
     "stops",
     "until",
     "wait"
    ],
-   "template_sig": "let us W W the W W .",
+   "template_sig": "let ' s W W the W W .",
    "tags": [
     "seasons",
     "phrase"
@@ -575116,7 +575119,7 @@
    "kind": "phrase",
    "en": "My manager is strict but always fair.",
    "en_norm": "my manager is strict but always fair",
-   "my_norm": "ကျွန်မမန်နေဂျာက တင်းကျပ်ပေမယ့် အမြဲတရားမျှတတယ်။",
+   "my_norm": "ကျွန်မ မန်နေဂျာက တင်းကျပ်ပေမယ့် အမြဲ တရားမျှတတယ်။",
    "fingerprint": "55d199ae097cee5b",
    "vocab_sig": [
     "always",
@@ -575321,7 +575324,7 @@
    "kind": "phrase",
    "en": "She gave the team a sincere apology.",
    "en_norm": "she gave the team a sincere apology",
-   "my_norm": "သူမက အသင်းကို ရိုးသားပွင့်လင်းတဲ့ တောင်းပန်စကားပြောခဲ့တယ်။",
+   "my_norm": "သူမက အသင်းကို စိတ်ရင်းနဲ့ တောင်းပန်ခဲ့တယ်။",
    "fingerprint": "99d63b2bc98f7912",
    "vocab_sig": [
     "apology",
@@ -575342,7 +575345,7 @@
    "kind": "phrase",
    "en": "A responsible worker always finishes on time.",
    "en_norm": "a responsible worker always finishes on time",
-   "my_norm": "တာဝန်ယူတတ်တဲ့ ဝန်ထမ်းက အမြဲအချိန်မှန်ပြီးတယ်။",
+   "my_norm": "တာဝန်ယူတတ်တဲ့ ဝန်ထမ်းက အမြဲ အချိန်မှန်ပြီးတယ်။",
    "fingerprint": "bb88c40d2ef831bc",
    "vocab_sig": [
     "always",
@@ -575506,7 +575509,7 @@
    "kind": "phrase",
    "en": "That was a foolish thing to say.",
    "en_norm": "that was a foolish thing to say",
-   "my_norm": "အဲဒါ ပြောဖို့မိုက်မဲတဲ့ စကားပဲ။",
+   "my_norm": "အဲဒါ ပြောဖို့ မိုက်မဲတဲ့ စကားပဲ။",
    "fingerprint": "2462961fce3fe04a",
    "vocab_sig": [
     "foolish",
@@ -575547,7 +575550,7 @@
    "kind": "phrase",
    "en": "She keeps all her files neatly organized.",
    "en_norm": "she keeps all her files neatly organized",
-   "my_norm": "သူမက ဖိုင်တွေအားလုံး စနစ်တကျသိမ်းထားတယ်။",
+   "my_norm": "သူမက ဖိုင်တွေ အားလုံး စနစ်တကျ သိမ်းထားတယ်။",
    "fingerprint": "f8b35b4fce880c44",
    "vocab_sig": [
     "all",
@@ -575695,7 +575698,7 @@
    "kind": "phrase",
    "en": "I woke up late again.",
    "en_norm": "i woke up late again",
-   "my_norm": "ကျွန်တော် ထပ်ပြီး နောက်ကျမှ နိုးတယ်။",
+   "my_norm": "ကျွန်တော် ဒီနေ့လည်း နိုးတာ နောက်ကျတယ်။",
    "fingerprint": "f342f711159757b4",
    "vocab_sig": [
     "again",
@@ -575715,7 +575718,7 @@
    "kind": "phrase",
    "en": "I hit the snooze button twice.",
    "en_norm": "i hit the snooze button twice",
-   "my_norm": "နှိုးစက်ကို နှစ်ကြိမ် snooze နှိပ်လိုက်တယ်။",
+   "my_norm": "နှိုးစက်ကို နှစ်ခါ ထပ်နှိပ်လိုက်တယ်။",
    "fingerprint": "b91c9f6522103c14",
    "vocab_sig": [
     "button",
@@ -576096,7 +576099,7 @@
    "kind": "phrase",
    "en": "I should buy some groceries today.",
    "en_norm": "i should buy some groceries today",
-   "my_norm": "ဒီနေ့ ဈေးဝယ်စရာ ဝယ်သင့်တယ်။",
+   "my_norm": "ဒီနေ့ ဈေးဝယ်စရာတွေ ဝယ်သင့်တယ်။",
    "fingerprint": "f25de52c46fb4f5c",
    "vocab_sig": [
     "buy",
@@ -576258,7 +576261,7 @@
    "kind": "phrase",
    "en": "I woke up in a cold sweat.",
    "en_norm": "i woke up in a cold sweat",
-   "my_norm": "ချွေးစေးတွေနဲ့ နိုးလာတယ်။",
+   "my_norm": "ချွေးအေးတွေနဲ့ နိုးလာတယ်။",
    "fingerprint": "d87cbc4113bb1848",
    "vocab_sig": [
     "cold",
@@ -576338,7 +576341,7 @@
    "kind": "phrase",
    "en": "Can you wake me up at seven?",
    "en_norm": "can you wake me up at seven",
-   "my_norm": "ခုနစ်နာရီမှာ နှိုးပေးနိုင်မလား။",
+   "my_norm": "ခုနစ်နာရီမှာ နှိုးပေးလို့ရမလား။",
    "fingerprint": "2331cd79de1cde62",
    "vocab_sig": [
     "seven",
@@ -576439,7 +576442,7 @@
    "kind": "phrase",
    "en": "The power went out again.",
    "en_norm": "the power went out again",
-   "my_norm": "မီးပြတ် ထပ်ပြတ်သွားပြီ။",
+   "my_norm": "မီး ထပ်ပြတ်သွားပြီ။",
    "fingerprint": "2376e585318a7bee",
    "vocab_sig": [
     "again",
@@ -576679,7 +576682,7 @@
    "kind": "phrase",
    "en": "Could I have a wake-up call at six?",
    "en_norm": "could i have a wake up call at six",
-   "my_norm": "ခြောက်နာရီမှာ နှိုးပေးတဲ့ ဖုန်း ရနိုင်မလား။",
+   "my_norm": "ခြောက်နာရီမှာ ဖုန်းဆက်ပြီး နှိုးပေးနိုင်မလား။",
    "fingerprint": "2afd0990190505d5",
    "vocab_sig": [
     "call",
@@ -576877,7 +576880,7 @@
    "kind": "phrase",
    "en": "I need a map of the city.",
    "en_norm": "i need a map of the city",
-   "my_norm": "မြို့ပြမြေပုံ လိုအပ်တယ်။",
+   "my_norm": "မြို့မြေပုံ လိုအပ်တယ်။",
    "fingerprint": "a81e367b2f38c5d8",
    "vocab_sig": [
     "city",
@@ -578292,7 +578295,7 @@
    "kind": "phrase",
    "en": "Our table isn't ready yet.",
    "en_norm": "our table isn t ready yet",
-   "my_norm": "ငါတို့စားပွဲ အဆင်သင့် မဖြစ်သေးဘူး။",
+   "my_norm": "ငါတို့ စားပွဲ အဆင်သင့် မဖြစ်သေးဘူး။",
    "fingerprint": "7011991b9705f342",
    "vocab_sig": [
     "isn",
@@ -578467,7 +578470,7 @@
    "kind": "phrase",
    "en": "This tastes just like home.",
    "en_norm": "this tastes just like home",
-   "my_norm": "အိမ်အရသာ အတိုင်းပဲ။",
+   "my_norm": "အိမ် အရသာ အတိုင်းပဲ။",
    "fingerprint": "e4485c64050bfcc8",
    "vocab_sig": [
     "home",
@@ -578991,17 +578994,17 @@
   {
    "id": "phrase:airport:7848",
    "kind": "phrase",
-   "en": "The boarding starts in ten minutes.",
-   "en_norm": "the boarding starts in ten minutes",
+   "en": "Boarding starts in ten minutes.",
+   "en_norm": "boarding starts in ten minutes",
    "my_norm": "ဆယ်မိနစ်အတွင်း လေယာဉ်တက်မယ်။",
-   "fingerprint": "5bfe46715cb9b121",
+   "fingerprint": "d2d058922633652d",
    "vocab_sig": [
     "boarding",
     "minutes",
     "starts",
     "ten"
    ],
-   "template_sig": "the W W in W W .",
+   "template_sig": "W W in W W .",
    "tags": [
     "airport",
     "phrase"
@@ -579325,7 +579328,7 @@
    "kind": "phrase",
    "en": "I want the morning catch.",
    "en_norm": "i want the morning catch",
-   "my_norm": "မနက်က ဖမ်းမိတာတွေ လိုချင်တယ်။",
+   "my_norm": "မနက်က ဖမ်းထားတာတွေ လိုချင်တယ်။",
    "fingerprint": "4f5fa73b7a34f4a5",
    "vocab_sig": [
     "catch",
@@ -579487,7 +579490,7 @@
    "kind": "phrase",
    "en": "Can you break a thousand?",
    "en_norm": "can you break a thousand",
-   "my_norm": "တစ်ထောင်ကို ခွဲပေးနိုင်မလား။",
+   "my_norm": "တစ်ထောင်တန် ခွဲပေးနိုင်မလား။",
    "fingerprint": "5c64873895ef35fe",
    "vocab_sig": [
     "break",
@@ -579547,7 +579550,7 @@
    "kind": "phrase",
    "en": "These eggs are farm fresh.",
    "en_norm": "these eggs are farm fresh",
-   "my_norm": "ဒီကြက်ဥတွေ လယ်ကွက်လတ်လတ်ဆတ်ဆတ်။",
+   "my_norm": "ဒီကြက်ဥတွေ လတ်လတ်ဆတ်ဆတ်။",
    "fingerprint": "6f905d36d64a517d",
    "vocab_sig": [
     "eggs",
@@ -579805,17 +579808,15 @@
   {
    "id": "phrase:work:7889",
    "kind": "phrase",
-   "en": "Let's take a five-minute break.",
-   "en_norm": "let s take a five minute break",
-   "my_norm": "ငါးမိနစ် နားကြရအောင်။",
-   "fingerprint": "1ebba0a5bee72f4a",
+   "en": "Shall we pick this up after lunch?",
+   "en_norm": "shall we pick this up after lunch",
+   "my_norm": "နေ့လည်စာစားပြီးမှ ဆက်ကြရအောင်။",
+   "fingerprint": "8a8a5729d97a02ae",
    "vocab_sig": [
-    "break",
-    "five",
-    "minute",
-    "take"
+    "lunch",
+    "pick"
    ],
-   "template_sig": "let ' s W a W - W W .",
+   "template_sig": "shall we W this up after W ?",
    "tags": [
     "work",
     "phrase"
@@ -579869,7 +579870,7 @@
    "kind": "phrase",
    "en": "Let's stick to the agenda.",
    "en_norm": "let s stick to the agenda",
-   "my_norm": "အစီအစဉ်အတိုင်း ဆက်ကြရအောင်။",
+   "my_norm": "အစီအစဉ်အတိုင်းပဲ ဆက်သွားကြရအောင်။",
    "fingerprint": "24043bba33e7b7c8",
    "vocab_sig": [
     "agenda",
@@ -579945,7 +579946,7 @@
    "kind": "phrase",
    "en": "We hit a small problem yesterday.",
    "en_norm": "we hit a small problem yesterday",
-   "my_norm": "မနေ့က ပြဿနာသေး တစ်ခု တွေ့ခဲ့တယ်။",
+   "my_norm": "မနေ့က ပြဿနာအသေးစား တစ်ခု တွေ့ခဲ့တယ်။",
    "fingerprint": "7834b5af89662906",
    "vocab_sig": [
     "hit",
@@ -580128,7 +580129,7 @@
    "kind": "phrase",
    "en": "My shift ends at six.",
    "en_norm": "my shift ends at six",
-   "my_norm": "ကျွန်တော့်အလှည့် ခြောက်နာရီ ပြီးတယ်။",
+   "my_norm": "ကျွန်တော့် shift ခြောက်နာရီမှာ ပြီးတယ်။",
    "fingerprint": "aaf0c4121f1e70cc",
    "vocab_sig": [
     "ends",
@@ -580168,7 +580169,7 @@
    "kind": "phrase",
    "en": "Please submit your timesheet.",
    "en_norm": "please submit your timesheet",
-   "my_norm": "အလုပ်ချိန်စာရင်း တင်ပေးပါ။",
+   "my_norm": "timesheet တင်ပေးပါ။",
    "fingerprint": "2f20cd014c1232d7",
    "vocab_sig": [
     "submit",
@@ -580368,7 +580369,7 @@
    "kind": "phrase",
    "en": "My computer keeps freezing.",
    "en_norm": "my computer keeps freezing",
-   "my_norm": "ကွန်ပျူတာ ခဏခဏ ရပ်နေတယ်။",
+   "my_norm": "ကွန်ပျူတာ ဖရီးဇ်ဖြစ်နေတယ်။",
    "fingerprint": "9aee65e15c9e5196",
    "vocab_sig": [
     "computer",
@@ -580408,7 +580409,7 @@
    "kind": "phrase",
    "en": "The shared drive is full.",
    "en_norm": "the shared drive is full",
-   "my_norm": "မျှသုံးဒရိုက် ပြည့်နေတယ်။",
+   "my_norm": "shared drive ပြည့်နေတယ်။",
    "fingerprint": "4d863092dd44a91e",
    "vocab_sig": [
     "drive",
@@ -580428,7 +580429,7 @@
    "kind": "phrase",
    "en": "Please don't disturb me this afternoon.",
    "en_norm": "please don t disturb me this afternoon",
-   "my_norm": "ဒီနေ့လည်မှာ မနှောင့်ယှက်ပါနဲ့။",
+   "my_norm": "ဒီနေ့ နေ့လည်ခင်း မနှောင့်ယှက်ပါနဲ့။",
    "fingerprint": "3c19265008537e17",
    "vocab_sig": [
     "afternoon",
@@ -580551,7 +580552,7 @@
    "kind": "phrase",
    "en": "I have back-to-back meetings today.",
    "en_norm": "i have back to back meetings today",
-   "my_norm": "ဒီနေ့ အစည်းအဝေး ဆက်တိုက်။",
+   "my_norm": "ဒီနေ့ အစည်းအဝေး ဆက်တိုက်ရှိတယ်။",
    "fingerprint": "ada1ac04405f4164",
    "vocab_sig": [
     "back",
@@ -580610,7 +580611,7 @@
    "kind": "phrase",
    "en": "Let's celebrate after work!",
    "en_norm": "let s celebrate after work",
-   "my_norm": "အလုပ်ပြီးရင် ဂုဏ်ပြုကြရအောင်",
+   "my_norm": "အလုပ်ပြီးရင် ဆင်နွှဲကြရအောင်",
    "fingerprint": "51b7751f965c8e0a",
    "vocab_sig": [
     "celebrate",
@@ -580629,7 +580630,7 @@
    "kind": "phrase",
    "en": "Let's discuss the terms first.",
    "en_norm": "let s discuss the terms first",
-   "my_norm": "စည်းမျဉ်းတွေ အရင် ဆွေးနွေးကြရအောင်။",
+   "my_norm": "စည်းကမ်းချက်တွေ အရင် ဆွေးနွေးကြရအောင်။",
    "fingerprint": "0d986769251fc623",
    "vocab_sig": [
     "discuss",
@@ -580670,7 +580671,7 @@
    "kind": "phrase",
    "en": "Can you send me the invoice?",
    "en_norm": "can you send me the invoice",
-   "my_norm": "ငွေတောင်းခံလွှာ ပို့ပေးနိုင်မလား။",
+   "my_norm": "invoice ပို့ပေးနိုင်မလား။",
    "fingerprint": "97a7326e77cf676e",
    "vocab_sig": [
     "invoice",
@@ -580830,7 +580831,7 @@
    "kind": "phrase",
    "en": "Can we meet halfway on the price?",
    "en_norm": "can we meet halfway on the price",
-   "my_norm": "ဈေးကို အလယ်မှာ တွေ့ကြရအောင်။",
+   "my_norm": "ဈေးကို အလယ်အလတ် ညှိနှိုင်းကြရအောင်။",
    "fingerprint": "089b10200d046e25",
    "vocab_sig": [
     "halfway",
@@ -581067,7 +581068,7 @@
    "kind": "phrase",
    "en": "How have you been lately?",
    "en_norm": "how have you been lately",
-   "my_norm": "မကြာသေးခင်က ဘယ်လို နေလဲ။",
+   "my_norm": "ဒီရက်ပိုင်း ဘယ်လိုနေလဲ။",
    "fingerprint": "4d45ff3e1283cdab",
    "vocab_sig": [
     "lately"
@@ -581203,7 +581204,7 @@
    "kind": "phrase",
    "en": "No worries, we just started.",
    "en_norm": "no worries we just started",
-   "my_norm": "စိတ်မပူနဲ့၊ အခု စတာ။",
+   "my_norm": "ရပါတယ်၊ အခု စတာပါ။",
    "fingerprint": "0968d56655e3d446",
    "vocab_sig": [
     "started",
@@ -581779,7 +581780,7 @@
    "kind": "phrase",
    "en": "Too much coffee is bad for you.",
    "en_norm": "too much coffee is bad for you",
-   "my_norm": "ကော်ဖီ အရမ်း များများ မကောင်းဘူး။",
+   "my_norm": "ကော်ဖီ အလွန်အကျွံ သောက်တာ မကောင်းဘူး။",
    "fingerprint": "33477bc100c581fb",
    "vocab_sig": [
     "bad",
@@ -581920,7 +581921,7 @@
    "kind": "phrase",
    "en": "I need more storage space.",
    "en_norm": "i need more storage space",
-   "my_norm": "သိုလှောင်ခန်း ပိုလိုတယ်။",
+   "my_norm": "storage ပိုလိုတယ်။",
    "fingerprint": "8a2406ea10b403e6",
    "vocab_sig": [
     "more",
@@ -616525,7 +616526,7 @@
    "kind": "word",
    "en": "update",
    "en_norm": "update",
-   "my_norm": "အပ်ဒိတ်",
+   "my_norm": "အပ်ဒိတ်လုပ်သည်",
    "fingerprint": "2937013f21818106",
    "vocab_sig": [
     "update"

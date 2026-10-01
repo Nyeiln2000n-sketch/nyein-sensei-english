@@ -170,7 +170,7 @@ export const grammarRulesB2C1: GrammarRuleB2C1[] = [
       'suggest, demand, insist, require, recommend, request နောက်မှာ (that) + အကြောင်းအရာ + ကြိယာအခြေခံပုံစံ (V1) သုံးတယ်၊ -s မထည့်ရဘူး။ I suggest he go (သူ့သွားဖို့အကြံပြုတယ်)။ တရားဝင်အရေးအသား၊ အီးမေးလ်တွေမှာသုံးတယ်။',
     examples: [
       { english: 'I suggest that he arrive on time.', myanmar: 'သူ အချိန်မှန်ရောက်ဖို့ အကြံပြုပါတယ်။' },
-      { english: 'The manager demanded that she finish the report today.', myanmar: 'မန်နေဂျာက သူမ ဒီနေ့အစီရင်ခံစာပြီးအောင်လုပ်ဖို့ တောင်းဆိုခဲ့တယ်။' },
+      { english: 'The manager demanded that she finish the report today.', myanmar: 'မန်နေဂျာက သူမကို ဒီနေ့ အစီရင်ခံစာ အပြီးသတ်ဖို့ အမိန့်ပေးခဲ့တယ်။' },
       { english: 'It is essential that every student be present.', myanmar: 'ကျောင်းသားတိုင်း တက်ရောက်ဖို့ မရှိမဖြစ်လိုအပ်ပါတယ်။' },
       { english: 'They insisted that we stay for dinner.', myanmar: 'သူတို့ ငါတို့ညစာစားဖို့ အတင်းတောင်းဆိုခဲ့ကြတယ်။' },
     ],
@@ -322,7 +322,7 @@ export const grammarRulesB2C1: GrammarRuleB2C1[] = [
       'ကြိယာ/နာမဝိသေသနကို နာမ်အဖြစ်ပြောင်းပြီး တရားဝင်အရေးအသားလုပ်တယ်။ decide → decision, develop → development, important → importance။ The development of the project took two years. (decide ရှည်ရှည်ရေးတာထက် တိုပြီးတရားဝင်တယ်)။',
     examples: [
       { english: 'The government announced the construction of a new bridge.', myanmar: 'အစိုးရက တံတားအသစ်တည်ဆောက်မှုကို ကြေညာခဲ့တယ်။' },
-      { english: 'His failure to arrive on time caused problems.', myanmar: 'သူ အချိန်မှန်မရောက်နိုင်မှုက ပြဿနာတွေဖြစ်စေခဲ့တယ်။' },
+      { english: 'His failure to arrive on time caused problems.', myanmar: 'သူ အချိန်မှန် မရောက်ရှိမှုက ပြဿနာတွေ ဖြစ်စေခဲ့တယ်။' },
       { english: 'The discovery of oil changed the country\'s economy.', myanmar: 'ရေနံတွေ့ရှိမှုက နိုင်ငံရဲ့စီးပွားရေးကို ပြောင်းလဲစေခဲ့တယ်။' },
       { english: 'Regular exercise leads to an improvement in health.', myanmar: 'ပုံမှန်လေ့ကျင့်ခန်းက ကျန်းမာရေးတိုးတက်မှုကို ဖြစ်စေတယ်။' },
     ],
@@ -378,7 +378,7 @@ export const grammarRulesB2C1: GrammarRuleB2C1[] = [
     explanationMyanmar:
       'ထပ်နေတဲ့၊ နားလည်ပြီးသားစကားလုံးတွေကို ဖြုတ်ရေးတယ်။ She can play piano, and he can too. (too နောက်မှာ play piano ဖြုတ်ထားတယ်)။ စကားပြောနဲ့အရေးအသားကို သဘာဝကျ၊ တိုစေတယ်။',
     examples: [
-      { english: 'I wanted to go, but I couldn\'t.', myanmar: 'ငါသွားချင်ခဲ့တယ်၊ ဒါပေမဲ့ မသွားနိုင်ခဲ့ဘူး။ (couldn\'t go ဖြုတ်ထားတယ်)' },
+      { english: 'I wanted to go, but I couldn\'t.', myanmar: 'ငါသွားချင်ခဲ့တယ်၊ ဒါပေမဲ့ မသွားနိုင်ခဲ့ဘူး။' },
       { english: 'She speaks three languages, and her brother does too.', myanmar: 'သူမ ဘာသာစကားသုံးမျိုးပြောတတ်တယ်၊ သူ့ညီလည်းပဲ။' },
       { english: 'Have you finished? — I have.', myanmar: 'ပြီးပြီလား။ — ပြီးပြီ။' },
       { english: 'Some people like tea, others prefer coffee.', myanmar: 'တချို့လူတွေက လက်ဖက်ရည်ကြိုက်တယ်၊ တချို့က ကော်ဖီကိုပိုကြိုက်တယ်။' },

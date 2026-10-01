@@ -113,7 +113,7 @@ export const storiesBatch2: Story[] = [
   paragraphs: [
     {
       en: 'Ko Thet booked a hotel room online for his business trip to Mandalay. When he arrived late at night, the receptionist could not find his reservation.',
-      my: 'ကိုသက်က မန္တလေးစီးပွားရေးခရီးအတွက် ဟိုတယ်အခန်းကို အွန်လိုင်းက booking လုပ်ခဲ့တယ်။ ညနက်မှ ရောက်တဲ့အခါ ဧည့်ခံက သူ့ booking ကို ရှာမတွေ့ဘူး။',
+      my: 'ကိုသက်က မန္တလေးစီးပွားရေးခရီးအတွက် ဟိုတယ်အခန်းကို အွန်လိုင်းက ဘိုကင်လုပ်ခဲ့တယ်။ ညနက်မှ ရောက်တဲ့အခါ ဧည့်ခံက သူ့ဘိုကင်ကို ရှာမတွေ့ဘူး။',
     },
     {
       en: 'He showed the confirmation email on his phone, but the hotel had no record of it. Ko Thet was tired and frustrated.',
@@ -129,11 +129,11 @@ export const storiesBatch2: Story[] = [
     },
     {
       en: 'The next morning, he left a five-star review online. He learned that mistakes happen, but good service can fix them.',
-      my: 'နောက်တစ်နေ့မနက်မှာ သူက အွန်လိုင်းမှာ ကြယ်ငါးပွင့် review ရေးခဲ့တယ်။ အမှားတွေ ဖြစ်တတ်ပေမယ့် ဝန်ဆောင်မှုကောင်းက ပြင်နိုင်တယ်ဆိုတာ သင်ယူခဲ့တယ်။',
+      my: 'နောက်တစ်နေ့မနက်မှာ သူက အွန်လိုင်းမှာ ကြယ်ငါးပွင့် ရီဗျူးရေးခဲ့တယ်။ အမှားတွေ ဖြစ်တတ်ပေမယ့် ဝန်ဆောင်မှုကောင်းက ပြင်နိုင်တယ်ဆိုတာ သင်ယူခဲ့တယ်။',
     },
     {
       en: 'Ko Thet slept wonderfully in the comfortable upgraded room. The next morning, he thanked the manager personally and promised to stay at the same hotel on every future trip to Mandalay. He told his business partners about the wonderful service, and two of them booked the same hotel for their next visit to the city.',
-      my: 'ကိုသက်က သက်တောင့်သက်သာရှိတဲ့ မြှင့်ပေးထားတဲ့အခန်းမှာ အရမ်းကောင်းကောင်း အိပ်စက်တယ်။ နောက်တစ်နေ့မနက်မှာ မန်နေဂျာကို ကိုယ်တိုင်ကျေးဇူးတင်ပြီး နောင်မန္တလေးခရီးတိုင်းမှာ ဒီဟိုတယ်မှာပဲ တည်းမယ်လို့ ကတိပေးတယ်။ သူက စီးပွားဖက်တွေကို အံ့ဩစရာကောင်းတဲ့ ဝန်ဆောင်မှုအကြောင်း ပြောပြပြီး သူတို့ထဲက နှစ်ယောက်က မြို့ကို နောက်လာတဲ့အခါ ဒီဟိုတယ်မှာပဲ booking လုပ်တယ်။',
+      my: 'ကိုသက်က သက်တောင့်သက်သာရှိတဲ့ မြှင့်ပေးထားတဲ့အခန်းမှာ အရမ်းကောင်းကောင်း အိပ်စက်တယ်။ နောက်တစ်နေ့မနက်မှာ မန်နေဂျာကို ကိုယ်တိုင်ကျေးဇူးတင်ပြီး နောင်မန္တလေးခရီးတိုင်းမှာ ဒီဟိုတယ်မှာပဲ တည်းမယ်လို့ ကတိပေးတယ်။ သူက စီးပွားဖက်တွေကို အံ့ဩစရာကောင်းတဲ့ ဝန်ဆောင်မှုအကြောင်း ပြောပြပြီး သူတို့ထဲက နှစ်ယောက်က မြို့ကို နောက်လာတဲ့အခါ ဒီဟိုတယ်မှာပဲ ဘိုကင်လုပ်တယ်။',
     },
   ],
 },
@@ -1184,7 +1184,7 @@ export const storiesBatch2: Story[] = [
       my: 'စာသင်နှစ်အဆုံးမှာ ယုကိက ကျောင်းစုဝေးပွဲမှာ မြန်မာလို မိန့်ခွန်းတိုလေး ပြောတယ်။ ခင်မင်မှုမှာ ပြီးပြည့်စုံတဲ့ဘာသာစကား မလိုဘဲ စေတနာပဲ လိုတယ်ဆိုတာ ဆု သဘောပေါက်တယ်။',
     },
     {
-      en: 'Hsu and Yuki are still best friends years later, and both speak three languages fluently. Their friendship began with snacks, smiles, and courage. Their proud teachers very often warmly invite them to kindly welcome nervous new foreign students at their beloved school.',
+      en: 'Hsu and Yuki are still best friends years later, and both speak three languages fluently. Their friendship began with snacks, smiles, and courage. Their proud teachers often invite them to welcome nervous new foreign students at their beloved school.',
       my: 'ဆုနဲ့ ယုကိက နှစ်တွေကြာပြီးနောက် အခုထိ အရင်းနှီးဆုံးသူငယ်ချင်းတွေဖြစ်ပြီး နှစ်ယောက်လုံး ဘာသာစကားသုံးမျိုး ကျွမ်းကျင်စွာ ပြောတယ်။ သူတို့ခင်မင်မှုက မုန့်၊ အပြုံး၊ သတ္တိနဲ့ စခဲ့တယ်။ သူတို့ဆရာတွေက ကျောင်းမှာ နိုင်ငံခြားကျောင်းသားအသစ်တွေကို ကြိုဆိုဖို့ သူတို့ကို မကြာခဏ ဖိတ်တယ်။',
     },
   ],

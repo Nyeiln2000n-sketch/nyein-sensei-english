@@ -29,7 +29,7 @@ export const phrasesBatch16: Phrase[] = [
   { en: "The boss plays favorites, and everyone in the office knows it.", my: 'သူဌေးက မျက်နှာလိုက်တယ်၊ ရုံးကလူတိုင်းသိတယ်။', topic: 'office', cefr: 'C1' },
   { en: "That idea is a non-starter — the board will never approve it.", my: 'အဲဒီအတွေးက အစထဲက မဖြစ်နိုင်ဘူး — ဘုတ်အဖွဲ့က ဘယ်တော့မှ အတည်ပြုမှာ မဟုတ်ဘူး။', topic: 'business', cefr: 'C2' },
   // idioms: everyday life (26-50)
-  { en: "Sit tight, the mechanic will be here in ten minutes.", my: 'ငြိမ်ငြိမ်စောင့်နေပါ၊ စက်ပြင်ဆရာက ဆယ်မိနစ်အတွင်း ရောက်လာမှာပါ။', topic: 'daily-life', cefr: 'C1' },
+  { en: "Sit tight, the mechanic will be here in ten minutes.", my: 'စောင့်နေပါ၊ စက်ပြင်ဆရာက ဆယ်မိနစ်အတွင်း ရောက်လာမှာပါ။', topic: 'daily-life', cefr: 'C1' },
   { en: "The new assistant is really on the ball.", my: 'လက်ထောက်အသစ်က အလုပ်မှာ အလွန်တော်ပြီး သွက်သွက်လက်လက် ရှိတယ်။', topic: 'work', cefr: 'C1' },
   { en: "He got off the hook because there was no evidence.", my: 'သက်သေအထောက်အထားမရှိလို့ သူက အပြစ်ဒဏ်က လွတ်သွားတယ်။', topic: 'law', cefr: 'C2' },
   { en: "Pull yourself together — the interview is in an hour.", my: 'စိတ်ကိုထိန်းလိုက် — အင်တာဗျူးက တစ်နာရီအတွင်း စတော့မှာ။', topic: 'emotions', cefr: 'C1' },

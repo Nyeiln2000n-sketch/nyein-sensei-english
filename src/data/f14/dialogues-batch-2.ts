@@ -718,7 +718,7 @@ export const dialoguesBatch2: Dialogue[] = [
     level: 1,
     situationMy: 'ခရီးသည်က ဘူတာရုံမှာ ရထားအချိန်မေးနေတာ',
     turns: [
-      { speaker: 'ခရီးသည်', en: 'Excuse me, when is the next train to Mandalay?', my: 'ခွင့်လွှတ်ပါ၊ မန္တလေးကို နောက်ထပ် ရထားက ဘယ်အချိန်လဲ။' },
+      { speaker: 'ခရီးသည်', en: 'Excuse me, could you tell me the train times to Mandalay?', my: 'ခွင့်လွှတ်ပါ၊ မန္တလေးရထားရဲ့ အချိန်ဇယားကို ပြောပြနိုင်မလား။' },
       { speaker: 'ဝန်ထမ်း', en: 'At nine fifteen, from platform two.', my: 'ကိုးနာရီ ဆယ့်ငါးမိနစ်မှာ၊ ပလက်ဖောင်း နှစ်ကနေ။' },
       { speaker: 'ခရီးသည်', en: 'How long does the trip take?', my: 'ခရီး ဘယ်လောက် ကြာလဲ။' },
       { speaker: 'ဝန်ထမ်း', en: 'About eleven hours.', my: 'ဆယ့်တစ်နာရီလောက် ကြာတယ်။' },

@@ -514,7 +514,7 @@ export const grammarRulesC1C2: GrammarRuleC1C2[] = [
       { english: 'Mandalay, the last royal capital, attracts many tourists.', myanmar: 'မန္တလေး (နောက်ဆုံးမင်းနေပြည်တော်) က ခရီးသွားများစွာကို ဆွဲဆောင်တယ်။' },
       { english: 'Her husband, a quiet man, rarely speaks.', myanmar: 'သူ့ယောကျ်ား (တိတ်ဆိတ်တဲ့လူ) က ရှားရှားပါးပါးပဲ စကားပြောတယ်။' },
       { english: 'We visited Bagan, an ancient city of temples.', myanmar: 'ငါတို့ပုဂံ (ရှေးဟောင်းဘုရားမြို့) ကို သွားလည်ခဲ့တယ်။' },
-      { english: 'The CEO, Ms. Aye, announced the merger.', myanmar: 'CEO (ဒေါ်အေး) က ပေါင်းစည်းမှုကို ကြေညာခဲ့တယ်။' },
+      { english: 'The CEO, Ms. Aye, announced the merger.', myanmar: 'စီအီးအို (ဒေါ်အေး) က ပေါင်းစည်းမှုကို ကြေညာခဲ့တယ်။' },
     ],
     drills: [
       { prompt: 'Yangon, the ___ city, is very crowded.', answer: 'largest', options: ['largest', 'larger', 'large', 'largely'] },
@@ -682,10 +682,10 @@ export const grammarRulesC1C2: GrammarRuleC1C2[] = [
     explanationMyanmar:
       'Promise, decide, refuse, agree = control verbs (subject က ကိုယ်တိုင်လုပ်မယ့်သူ): I promised to help (= ငါကူညီမယ်)။ Seem, appear, happen = raising verbs (subject က အောက်က predicate ရဲ့အကြောင်းအရာ): He seems to be ill (= သူနေမကောင်းပုံရတယ် — seem ရဲ့ subject အစစ်မဟုတ်)။',
     examples: [
-      { english: 'She refused to answer the question.', myanmar: 'သူမ မေးခွန်းကိုဖြေဖို့ ငြင်းခဲ့တယ်။ (control — သူမကိုယ်တိုင်)' },
-      { english: 'They appear to be satisfied with the result.', myanmar: 'သူတို့ရလဒ်ကို ကျေနပ်ပုံရတယ်။ (raising)' },
-      { english: 'I agreed to lend him my notes.', myanmar: 'ငါ့မှတ်စုတွေ ငှားဖို့ သဘောတူခဲ့တယ်။ (control)' },
-      { english: 'The plan proved to be unrealistic.', myanmar: 'အစီအစဉ်က လက်တွေ့မကျဘူး ဆိုတာ ထင်ရှားခဲ့တယ်။ (raising)' },
+      { english: 'She refused to answer the question.', myanmar: 'သူမ မေးခွန်းကို ဖြေဖို့ ငြင်းခဲ့တယ်။' },
+      { english: 'They appear to be satisfied with the result.', myanmar: 'သူတို့ ရလဒ်ကို ကျေနပ်ပုံရတယ်။' },
+      { english: 'I agreed to lend him my notes.', myanmar: 'ငါ့မှတ်စုတွေ ငှားဖို့ သဘောတူခဲ့တယ်။' },
+      { english: 'The plan proved to be unrealistic.', myanmar: 'အစီအစဉ်က လက်တွေ့မကျဘူးဆိုတာ ထင်ရှားခဲ့တယ်။' },
     ],
     drills: [
       { prompt: 'She decided ___ abroad.', answer: 'to study', options: ['to study', 'study', 'studying', 'studied'] },
@@ -741,7 +741,7 @@ export const grammarRulesC1C2: GrammarRuleC1C2[] = [
     examples: [
       { english: 'The project succeeded, notwithstanding the budget cuts.', myanmar: 'ဘတ်ဂျက်ဖြတ်တောက်မှုတွေ ရှိပေမဲ့ စီမံကိန်းအောင်မြင်ခဲ့တယ်။' },
       { english: 'Admittedly, the first attempt was a failure.', myanmar: 'ဝန်ခံရရင် ပထမကြိုးစားမှုက ကျရှုံးခဲ့တယ်။' },
-      { english: 'He was promoted; subsequently, his responsibilities doubled.', myanmar: 'သူရာထူးတိုး ခဲ့တယ်၊ နောက်ပိုင်း သူ့တာဝန်တွေ နှစ်ဆဖြစ်သွားတယ်။' },
+      { english: 'He was promoted; subsequently, his responsibilities doubled.', myanmar: 'သူ ရာထူးတိုးခဲ့တယ်၊ နောက်ပိုင်းမှာ သူ့တာဝန်တွေ နှစ်ဆဖြစ်သွားတယ်။' },
       { english: 'Urban areas grew quickly; conversely, rural towns declined.', myanmar: 'မြို့ပြတွေ လျင်မြန်စွာ ကြီးထွားခဲ့တယ်၊ ဆန့်ကျင်ဘက်အနေနဲ့ ကျေးလက်မြို့တွေ ကျဆင်းခဲ့တယ်။' },
     ],
     drills: [
@@ -853,7 +853,7 @@ export const grammarRulesC1C2: GrammarRuleC1C2[] = [
     explanationMyanmar:
       'အချို့ကြိယာတွေနောက် gerund ပဲလိုက်တယ်။ Admit, deny, risk, postpone, avoid, enjoy, finish, mind, practise, suggest, consider. "He narrowly avoided being hit" လို passive gerund chain တွေဖြစ်။ "Try doing" vs "try to do" လို အဓိပ္ပာယ်ကွာတာတွေ သတိထား။',
     examples: [
-      { english: 'She risked losing everything by investing in the startup.', myanmar: 'startup မှာ ရင်းနှီးမြှုပ်နှံပြီး အကုန်ဆုံးရှုံးဖို့ စွန့်စားခဲ့တယ်။' },
+      { english: 'She risked losing everything by investing in the startup.', myanmar: 'စတာ့တပ်မှာ ရင်းနှီးမြှုပ်နှံပြီး အကုန်ဆုံးရှုံးဖို့ စွန့်စားခဲ့တယ်။' },
       { english: 'They postponed signing the contract until Monday.', myanmar: 'စာချုပ်လက်မှတ်ထိုးတာကို တနင်္လာနေ့ထိ ရွှေ့ဆိုင်းခဲ့တယ်။' },
       { english: 'He narrowly avoided being hit by the car.', myanmar: 'ကားတိုက်ခံရဖို့ နည်းနည်းလေး လွဲခဲ့တယ်။' },
       { english: 'Would you mind opening the window?', myanmar: 'ပြတင်းပေါက် ဖွင့်ပေးဖို့ စိတ်မဆိုးဘူးလား။' },

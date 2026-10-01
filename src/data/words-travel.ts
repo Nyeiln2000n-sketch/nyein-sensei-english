@@ -29,7 +29,7 @@ export const travelWords: Word[] = [
   { en: 'go', my: 'သွားသည်', topic: 'travel', level: 1, phonetic: 'gou', example: 'We go to school together.', exampleMy: 'ကျွန်မတို့ အတူ ကျောင်းသွားကြပါတယ်။' },
   { en: 'come', my: 'လာသည်', topic: 'travel', level: 1, phonetic: 'kam', example: 'Come here right now.', exampleMy: 'အခု ဒီကို လာပါ။' },
   { en: 'arrive', my: 'ရောက်ရှိသည်', topic: 'travel', level: 2, phonetic: 'a-raiv', example: 'We arrive at noon.', exampleMy: 'ကျွန်မတို့ နေ့လည်မှာ ရောက်ပါတယ်။' },
-  { en: 'depart', my: 'ထွက်ခွာသည်', topic: 'travel', level: 2, phonetic: 'di-paat', example: 'The bus departs at eight.', exampleMy: 'ဘတ်စ်ကားက ရှစ်နာရီမှာ ထွက်ခွာပါတယ်။' },
+  { en: 'depart', my: 'ထွက်ခွာသည်', topic: 'travel', level: 3, phonetic: 'di-paat', example: 'The bus departs at eight.', exampleMy: 'ဘတ်စ်ကားက ရှစ်နာရီမှာ ထွက်ခွာပါတယ်။' },
   { en: 'stay', my: 'နေထိုင်သည်', topic: 'travel', level: 1, phonetic: 'stei', example: 'I stay at home today.', exampleMy: 'ကျွန်မ ဒီနေ့ အိမ်မှာ နေပါတယ်။' },
   { en: 'journey', my: 'ခရီးရှည်', topic: 'travel', level: 3, phonetic: 'jur-nee', example: 'Our long journey taught us many new things.', exampleMy: 'ကျွန်မတို့ရဲ့ ရှည်လျားတဲ့ ခရီးက အရာအသစ်တွေ အများကြီး သင်ပေးပါတယ်။' },
 ];

@@ -156,7 +156,7 @@ export const verbsBatch2: Verb[] = [
     },
   },
   {
-    base: 'relay', past: 'relaid', participle: 'relaid', present3s: 'relays', gerund: 'relaying',
+    base: 'relay', past: 'relayed', participle: 'relayed', present3s: 'relays', gerund: 'relaying',
     my: 'တစ်ဆင့်ပေးပို့သည်', phonetic: 'ree-LAY', cefr: 'A2',
     examples: {
       present: { en: 'He relays the news to us.', my: 'သူ သတင်းကို ကျွန်တော်တို့ဆီ တစ်ဆင့်ပေးတယ်။' },
@@ -512,7 +512,7 @@ export const verbsBatch2: Verb[] = [
     examples: {
       present: { en: 'She spends little money.', my: 'သူမ ပိုက်ဆံသိပ်မသုံးဘူး။' },
       past: { en: 'We spent the day at the beach.', my: 'ကျွန်တော်တို့ ကမ်းခြေမှာ တစ်နေ့တာကုန်ခဲ့တယ်။' },
-      future: { en: 'He will spend time with family.', my: 'သူ မိသားစုနဲ့ အချိန်ဖြုန်းမယ်။' },
+      future: { en: 'He will spend time with family.', my: 'သူ မိသားစုနဲ့ အချိန်ပေးမယ်။' },
     },
   },
   {

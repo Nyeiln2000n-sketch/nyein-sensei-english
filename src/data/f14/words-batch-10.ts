@@ -56,7 +56,7 @@ export const wordsBatch10: Word[] = [
   { en: "detector", my: "ထောက်လှမ်းစက်", topic: "home", level: 3, cefr: "B1", phonetic: "di-tek-ter", example: "Test your smoke detector monthly.", exampleMy: "မင်းမီးခိုးထောက်လှမ်းစက်ကို လတိုင်းစစ်ပါ။" },
   { en: "fire extinguisher", my: "မီးသတ်ဆေး", topic: "home", level: 3, cefr: "B1", phonetic: "fai-er iks-ting-gwi-sher", example: "Keep a fire extinguisher handy.", exampleMy: "မီးသတ်ဆေးကို လက်လှမ်းမီအောင်ထားပါ။" },
   { en: "security system", my: "လုံခြုံရေးစနစ်", topic: "home", level: 3, cefr: "B1", phonetic: "si-kyoor-i-tee sis-tuhm", example: "A security system deters thieves.", exampleMy: "လုံခြုံရေးစနစ်က သူခိုးတွေကို ဟန့်တားတယ်။" },
-  { en: "deadbolt", my: "တံခါးသော့ခိုင်မာသော", topic: "home", level: 3, cefr: "B2", phonetic: "ded-bowlt", example: "Lock the deadbolt at night.", exampleMy: "ညဘက်မှာ တံခါးသော့ခိုင်မာတာကိုသော့ခတ်ပါ။" },
+  { en: "deadbolt", my: "တံခါးအပိုသော့", topic: "home", level: 3, cefr: "B2", phonetic: "ded-bowlt", example: "Lock the deadbolt at night.", exampleMy: "ညဘက်မှာ တံခါးအပိုသော့ကိုသော့ခတ်ပါ။" },
   { en: "peep hole", my: "တံခါးကြည့်ပေါက်", topic: "home", level: 3, cefr: "B2", phonetic: "peep howl", example: "Check the peep hole first.", exampleMy: "အရင်တံခါးကြည့်ပေါက်ကနေစစ်ပါ။" },
   { en: "curb appeal", my: "အပြင်အဆင်ဆွဲဆောင်မှု", topic: "home", level: 3, cefr: "B2", phonetic: "kurb uh-peel", example: "Fresh paint boosts curb appeal.", exampleMy: "ဆေးအသစ်က အပြင်အဆင်ဆွဲဆောင်မှုတိုးတက်စေတယ်။" },
   { en: "landscaping", my: "ဥယျာဉ်အလှဆင်ခြင်း", topic: "home", level: 3, cefr: "B2", phonetic: "land-skai-ping", example: "Landscaping raised the home's value.", exampleMy: "ဥယျာဉ်အလှဆင်ခြင်းက အိမ်တန်ဖိုးတက်စေခဲ့တယ်။" },

@@ -28,7 +28,7 @@ export interface PodcastEpisode {
 
 /** Portada por defecto según número de episodio. */
 export function episodeCover(n: number): string {
-  return `/podcast-covers/ep-${n}.jpg`;
+  return `/podcast-covers/ep-${n}.webp`;
 }
 
 export function episodeUrl(ep: PodcastEpisode): string {
@@ -38,6 +38,36 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 16,
+    slug: 'english-with-aung-and-may-ep-16-days-of-the-week-2026-10-01',
+    titleMy: 'ရက်ပြောနည်း — တစ်ပတ်ရဲ့ ၇ ရက်',
+    titleOrig: 'วันในสัปดาห์ — Days of the Week',
+    descMy: 'အင်္ဂလိပ်လို ရက်သတ္တပတ် ရက်များနဲ့ မေးဖြေနည်း။ "What day is it today?" / "It is Thursday." / "See you on Friday." / "I want to go to the market on Saturday."',
+    phrases: ['Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday.', 'What day is it today?', 'It is Thursday.', 'See you on Friday.', 'I want to go to the market on Saturday.'],
+    durationSecs: 598,
+    cover: '/podcast-covers/ep-16.webp',
+  },
+  {
+    n: 15,
+    slug: 'english-with-aung-and-may-ep-15-telling-time-minutes-2026-10-01',
+    titleMy: 'အချိန်ပြောနည်း — မိနစ်ပိုင်း',
+    titleOrig: 'บอกเวลานาที — Telling Time: Minutes',
+    descMy: 'အင်္ဂလိပ်လို မိနစ်ပိုင်းနဲ့ အချိန်ပြောနည်း။ \"It is half past four.\" / \"It is a quarter past two.\" / \"It is a quarter to six.\" / \"It is ten past nine.\"',
+    phrases: ['It is half past four.', 'It is a quarter past two.', 'It is a quarter to six.', 'It is ten past nine.'],
+    durationSecs: 523,
+    cover: '/podcast-covers/ep-15.webp',
+  },
+  {
+    n: 14,
+    slug: 'english-with-aung-and-may-ep-14-telling-time-hours-2026-10-01',
+    titleMy: 'အချိန်ပြောနည်း — နာရီပိုင်း',
+    titleOrig: 'บอกเวลาชั่วโมง — Telling Time: Hours',
+    descMy: 'အင်္ဂလိပ်လို အချိန်မေးပြီး နာရီအတိအကျ ဖြေနည်း။ "What time is it?" / "It is three o\'clock." / "It is noon." / "It is midnight."',
+    phrases: ['What time is it?', "It is three o'clock.", 'It is noon.', 'It is midnight.'],
+    durationSecs: 466,
+    cover: '/podcast-covers/ep-14.webp',
+  },
+  {
     n: 13,
     slug: 'ep-13-phone-numbers-2026-09-30',
     titleMy: 'ဖုန်းနံပါတ်များ',
@@ -45,7 +75,7 @@ export const PODCAST_EPISODES: PodcastEpisode[] = [
     descMy: 'အင်္ဂလိပ်လို ဖုန်းနံပါတ်ပြောနည်း။ "What is your phone number?" လို့ မေးပြီး "My number is..." လို့ ဖြေမယ်။',
     phrases: ['What is your phone number?', 'My number is...', 'Double five'],
     durationSecs: 479,
-    cover: '/podcast-covers/ep-13.jpg',
+    cover: '/podcast-covers/ep-13.webp',
   },
   {
     n: 12,
@@ -55,7 +85,7 @@ export const PODCAST_EPISODES: PodcastEpisode[] = [
     descMy: '၁၁ ကနေ ၁၀၀ အထိ အင်္ဂလိပ်လို ရေတွက်နည်း။ ဈေးဝယ်တဲ့အခါ ဈေးနှုန်းမေးဖို့ အရေးကြီးတယ်။',
     phrases: ['Eleven', 'Twelve', 'Twenty', 'One hundred'],
     durationSecs: 588,
-    cover: '/podcast-covers/ep-12.jpg',
+    cover: '/podcast-covers/ep-12.webp',
   },
   {
     n: 11,
@@ -65,7 +95,7 @@ export const PODCAST_EPISODES: PodcastEpisode[] = [
     descMy: '၁ ကနေ ၁၀ အထိ ရေတွက်ပြီး "How many?" လို့ မေးတတ်မယ်။',
     phrases: ['One, two, three...', 'How many?'],
     durationSecs: 586,
-    cover: '/podcast-covers/ep-11.jpg',
+    cover: '/podcast-covers/ep-11.webp',
   },
   {
     n: 10,
@@ -75,7 +105,7 @@ export const PODCAST_EPISODES: PodcastEpisode[] = [
     descMy: 'Module 1 ရဲ့ ကြိယာ ၉ ခုလုံးကို ဈေး၊ စားသောက်ဆိုင်၊ တက္ကစီ ဆိုတဲ့ အခြေအနေအမှန်တွေမှာ ပြန်လည်လေ့ကျင့်မယ်။',
     phrases: ['I want...', 'I like...', 'Can you...?', 'How much?'],
     durationSecs: 628,
-    cover: '/podcast-covers/ep-10.jpg',
+    cover: '/podcast-covers/ep-10.webp',
   },
   {
     n: 9,
@@ -85,7 +115,7 @@ export const PODCAST_EPISODES: PodcastEpisode[] = [
     descMy: '"Do" ကြိယာနဲ့ အလုပ်အကိုင်၊ နေ့စဉ်ဘဝ၊ ဒီနေ့ဘာလုပ်မလဲဆိုတာ ပြောတတ်မယ်။',
     phrases: ['What do you do?', 'I work in an office.', 'What do you want to do today?'],
     durationSecs: 551,
-    cover: '/podcast-covers/ep-9.jpg',
+    cover: '/podcast-covers/ep-9.webp',
   },
   {
     n: 8,
@@ -95,7 +125,7 @@ export const PODCAST_EPISODES: PodcastEpisode[] = [
     descMy: 'အကူအညီတောင်းတဲ့အခါ "Can you help me?" လို့ ပြောတတ်မယ်။',
     phrases: ['Can you help me?', 'I can speak a little English.', "I can't find my hotel."],
     durationSecs: 668,
-    cover: '/podcast-covers/ep-8.jpg',
+    cover: '/podcast-covers/ep-8.webp',
   },
   {
     n: 7,
@@ -105,7 +135,7 @@ export const PODCAST_EPISODES: PodcastEpisode[] = [
     descMy: 'ဟိုတယ်၊ ဆိုင်တွေမှာ လိုတဲ့ပစ္စည်း "Do you have...?" လို့ မေးတတ်မယ်။',
     phrases: ['Do you have a map?', 'I have a question.', "I don't have cash."],
     durationSecs: 566,
-    cover: '/podcast-covers/ep-7.jpg',
+    cover: '/podcast-covers/ep-7.webp',
   },
   {
     n: 6,
@@ -115,7 +145,7 @@ export const PODCAST_EPISODES: PodcastEpisode[] = [
     descMy: 'ညဈေးမှာ ဈေးမေး၊ ဈေးဆစ်၊ ဝယ်မယ်။ "How much is this?"',
     phrases: ['How much is this?', 'It is too expensive.', 'I will take it.'],
     durationSecs: 692,
-    cover: '/podcast-covers/ep-6.jpg',
+    cover: '/podcast-covers/ep-6.webp',
   },
   {
     n: 5,
@@ -125,7 +155,7 @@ export const PODCAST_EPISODES: PodcastEpisode[] = [
     descMy: 'စားသောက်ဆိုင်မှာ အစားအသောက်မှာမယ်၊ ဘေလ်တောင်းမယ်။',
     phrases: ['I want to eat noodles.', 'The bill, please.', 'It is delicious!'],
     durationSecs: 647,
-    cover: '/podcast-covers/ep-5.jpg',
+    cover: '/podcast-covers/ep-5.webp',
   },
   {
     n: 4,
@@ -135,7 +165,7 @@ export const PODCAST_EPISODES: PodcastEpisode[] = [
     descMy: 'လမ်းမေး၊ တက္ကစီစီးတဲ့အခါ "I want to go to..." လို့ ပြောတတ်မယ်။',
     phrases: ['Where do you want to go?', 'I want to go to the market.', "Let's go!"],
     durationSecs: 503,
-    cover: '/podcast-covers/ep-4.jpg',
+    cover: '/podcast-covers/ep-4.webp',
   },
   {
     n: 3,
@@ -145,7 +175,7 @@ export const PODCAST_EPISODES: PodcastEpisode[] = [
     descMy: 'ကြိုက်တာ မကြိုက်တာ အင်္ဂလိပ်လို ပြောတတ်မယ်။',
     phrases: ['I like rice.', "I don't like spicy food.", 'Do you like coffee?'],
     durationSecs: 448,
-    cover: '/podcast-covers/ep-3.jpg',
+    cover: '/podcast-covers/ep-3.webp',
   },
   {
     n: 2,
@@ -155,7 +185,7 @@ export const PODCAST_EPISODES: PodcastEpisode[] = [
     descMy: 'အင်္ဂလိပ်မှာ အသုံးအဝင်ဆုံး ကြိယာ ၂ ခု။',
     phrases: ['I want coffee.', 'I need help.', 'Do you want tea?'],
     durationSecs: 591,
-    cover: '/podcast-covers/ep-2.jpg',
+    cover: '/podcast-covers/ep-2.webp',
   },
   {
     n: 1,
@@ -165,6 +195,6 @@ export const PODCAST_EPISODES: PodcastEpisode[] = [
     descMy: 'ပထမဆုံး အပိုင်း။ နှုတ်ဆက်ပြီး ကိုယ့်ကိုယ်ကို မိတ်ဆက်မယ်။',
     phrases: ['Hello.', 'Good morning.', 'My name is Nyein.'],
     durationSecs: 212,
-    cover: '/podcast-covers/ep-1.jpg',
+    cover: '/podcast-covers/ep-1.webp',
   },
 ];

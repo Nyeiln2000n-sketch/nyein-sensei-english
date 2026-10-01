@@ -41,7 +41,7 @@ export const dialoguesBatch6: Dialogue[] = [
   {
     id: 'f14-d-pres-003',
     topic: 'business',
-    titleMy: 'ရင်းနှီးမြှုပ်နှံသူတွေရှေ့ စီးပွားရေးတင်ပြချက် (C1)',
+    titleMy: 'ရင်းနှီးမြှုပ်နှံသူတွေရှေ့ စီးပွားရေးတင်ပြချက်',
     titleEn: 'The Series A Investor Pitch',
     level: 3,
     situationMy: 'တည်ထောင်သူက ဗင်ချာကယ်ပီတယ်ကုမ္ပဏီတွေရှေ့မှာ Series A တင်ပြနေတယ်',
@@ -383,7 +383,7 @@ export const dialoguesBatch6: Dialogue[] = [
   {
     id: 'f14-d-pres-022',
     topic: 'business',
-    titleMy: 'မဟာဗျူဟာမိတ်ဖက်ဆီသို့ တင်ပြချက် (C1)',
+    titleMy: 'မဟာဗျူဟာမိတ်ဖက်ဆီသို့ တင်ပြချက်',
     titleEn: 'Pitching a Strategic Corporate Partnership',
     level: 3,
     situationMy: 'စီးပွားရေးဖွံ့ဖြိုးမှုအရာရှိက ကုမ္ပဏီကြီးတစ်ခု၏အမှုဆောင်အဖွဲ့ထံ ပူးပေါင်းဆောင်ရွက်မှု တင်ပြနေတယ်',

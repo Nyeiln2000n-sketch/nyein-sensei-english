@@ -112,7 +112,7 @@ export const phrasesBatch4: Phrase[] = [
   { en: 'She decorated the nursery with stars.', my: 'သူမ ကလေးခန်းကို ကြယ်တွေနဲ့ အလှဆင်ခဲ့တယ်။', topic: 'home', cefr: 'B1' },
   { en: 'The spare room is now my office.', my: 'အပိုခန်းက အခု ကျွန်တော့်ရုံးခန်းဖြစ်သွားတယ်။', topic: 'home', cefr: 'B1' },
   { en: 'We bought a bigger dining table.', my: 'ညစာစားပွဲ ပိုကြီးတာ ဝယ်ခဲ့တယ်။', topic: 'home', cefr: 'B1' },
-  { en: 'The hallway light flickers sometimes.', my: 'လှေကားခန်းမီးက တခါတလေ မှိတ်တုတ်မှိတ်တုတ်ဖြစ်တယ်။', topic: 'home', cefr: 'B1' },
+  { en: 'The hallway light flickers sometimes.', my: 'စင်္ကြံမီးက တခါတလေ မှိတ်တုတ်မှိတ်တုတ်ဖြစ်တယ်။', topic: 'home', cefr: 'B1' },
   { en: 'I labeled all the moving boxes.', my: 'ရွှေ့ပြောင်းတဲ့ သေတ္တာအားလုံး တံဆိပ်ကပ်ခဲ့တယ်။', topic: 'home', cefr: 'B1' },
   { en: 'The new curtains block the sunlight.', my: 'လိုက်ကာအသစ်တွေက နေရောင်ကို ကာကွယ်တယ်။', topic: 'home', cefr: 'B1' },
   { en: 'Our wifi works best in the living room.', my: 'ကျွန်တော်တို့ wifi ဧည့်ခန်းမှာ အကောင်းဆုံးအလုပ်လုပ်တယ်။', topic: 'home', cefr: 'B1' },

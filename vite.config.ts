@@ -41,6 +41,13 @@ export default defineConfig({
           '**/topic-cards/**',
           '**/splash/**',
           '**/phrase-images/**',
+          // PERF 2026-10-01: las 5 poses PNG del gato (~1.3MB) no se usan
+          // en código — no precachearlas. Quedan en public/ por si se usan.
+          'mascot-amazed.png',
+          'mascot-celebrate.png',
+          'mascot-encourage.png',
+          'mascot-reading.png',
+          'mascot-thinking.png',
           // Los chunks del corpus (~7MB) cargan on-demand vía import()
           // dinámico — no precachearlos (era ~9.5MB en primera visita).
           // Se cachean lazy vía la ruta runtime 'corpus-data' en src/sw.ts.

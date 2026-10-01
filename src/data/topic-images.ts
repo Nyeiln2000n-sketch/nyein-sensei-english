@@ -74,6 +74,8 @@ const TOPIC_WORD: Record<string, string> = {
 
 /** Public URL of the illustration for a topic, or null when unmapped. */
 export function topicImageSrc(topicId: string): string | null {
+  // PERF 2026-10-01: time.jpg (806KB) → time.webp (86KB). Others stay .jpg.
+  if (topicId === 'time') return '/topic-cards/time.webp';
   if (TOPIC_CARDS.has(topicId)) return `/topic-cards/${topicId}.jpg`;
   const word = TOPIC_WORD[topicId];
   return word ? wordImageSrc(word) : null;

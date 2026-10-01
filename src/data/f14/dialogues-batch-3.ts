@@ -1767,7 +1767,7 @@ export const dialoguesBatch3: Dialogue[] = [
     situationMy: 'ဖောက်သည်က ရေခဲသေတ္တာပြင်ဖို့ ဝန်ဆောင်မှု booking လုပ်နေတာ',
     turns: [
       { speaker: 'ဖောက်သည်', en: 'Hello, I need to book a repair for my refrigerator.', my: 'ဟယ်လို၊ ရေခဲသေတ္တာ ပြင်ဖို့ booking လုပ်ဖို့လိုတယ်။' },
-      { speaker: 'ဝန်ထမ်း', en: 'What seems to be the problem?', my: 'ပြဿနာက ဘာဖြစ်နေလဲ။' },
+      { speaker: 'ဝန်ထမ်း', en: 'What seems to be wrong with it?', my: 'ဘာဖြစ်နေတာလဲ။' },
       { speaker: 'ဖောက်သည်', en: 'It is not cooling properly. The food goes bad quickly.', my: 'သေချာအေးမနေဘူး။ အစားအစာတွေ မြန်မြန်ပုပ်သွားတယ်။' },
       { speaker: 'ဝန်ထမ်း', en: 'I see. When would you like the technician to visit?', my: 'နားလည်ပြီ။ နည်းပညာရှင် ဘယ်တော့ လာစေချင်လဲ။' },
       { speaker: 'ဖောက်သည်', en: 'Tomorrow morning, if possible.', my: 'ဖြစ်နိုင်ရင် မနက်ဖြန် မနက်။' },
@@ -1829,7 +1829,7 @@ export const dialoguesBatch3: Dialogue[] = [
       { speaker: 'အကူအညီ', en: 'Noted. What is the issue about, briefly?', my: 'မှတ်ထားပြီ။ ပြဿနာက ဘာအကြောင်းလဲ၊ အကျဉ်းချုပ်။' },
       { speaker: 'ဖောက်သည်', en: 'I was charged twice for the same service.', my: 'ဝန်ဆောင်မှုတစ်ခုတည်းအတွက် နှစ်ခါ ကောက်ခံထားတယ်။' },
       { speaker: 'အကူအညီ', en: 'I will prepare everything, so the callback will be quick.', my: 'အရာအားလုံး ကြိုပြင်ဆင်ထားပါမယ်၊ ပြန်ဆက်တဲ့ဖုန်းက မြန်မယ်။' },
-      { speaker: 'ဖောက်သည်', en: 'Thank you. I appreciate it.', my: 'ကျေးဇူးပါ။ ကျေးဇူးတင်ပါတယ်။' },
+      { speaker: 'ဖောက်သည်', en: 'Thank you, I appreciate your help.', my: 'ကျေးဇူးပါ။ ကူညီပေးတဲ့အတွက် ကျေးဇူးတင်ပါတယ်။' },
     ],
   },
 ];

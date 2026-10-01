@@ -445,7 +445,7 @@ export const verbsBatch1: Verb[] = [
   },
   {
     base: 'fling', past: 'flung', participle: 'flung', present3s: 'flings', gerund: 'flinging',
-    my: 'လွှင့်ပစ်သည်', phonetic: 'fling', cefr: 'A2',
+    my: 'ပစ်လွှတ်သည်', phonetic: 'fling', cefr: 'A2',
     examples: {
       present: { en: 'He flings the ball far.', my: 'သူ ဘောလုံးကို ဝေးဝေးပစ်တယ်။' },
       past: { en: 'She flung the door open.', my: 'သူမ တံခါးကို တွန်းဖွင့်ခဲ့တယ်။' },
