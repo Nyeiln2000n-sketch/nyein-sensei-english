@@ -66,7 +66,7 @@ _TURN_RE = re.compile(
 # Dialogue / story header ids (match 'family-1' style dialogue ids and
 # 'story-a1-1' style story ids; these parsers only run on dialogues*/stories* files).
 _DIALOGUE_ID_RE = re.compile(r"id:\s*'([a-z][a-z0-9-]*-\d+)'")
-_STORY_ID_RE = re.compile(r"id:\s*'((?:story|f14-s)-[a-z0-9-]+)'")
+_STORY_ID_RE = re.compile(r"id:\s*'((?:story|f14-s|hl-s)-[a-z0-9-]+)'")
 # Story paragraph: { en: '...', my: '...' } (no speaker, no topic; trailing comma tolerated)
 # Optional Thai field (OLA 4a, additive-only) is tolerated so enriched
 # paragraphs keep indexing exactly like before: th after my.

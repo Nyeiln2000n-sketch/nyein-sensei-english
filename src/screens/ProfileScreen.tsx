@@ -10,6 +10,7 @@ import { Award, Baby, CircleQuestionMark, LogOut, Settings, Users } from 'lucide
 import type { GoFn, NavParams } from '../routes';
 import MascotScene3D from '../components/Mascot3D';
 import ReminderSettings from '../components/ReminderSettings';
+import OfflineSection from '../components/OfflineSection';
 import { MenuRow, PillButton, Screen } from '../components/ui';
 import { useLang, tNum } from '../lib/i18n';
 import { getSession, signOut } from '../lib/auth';
@@ -174,37 +175,12 @@ export default function ProfileScreen({ go, params }: { go: GoFn; params?: NavPa
         <div className="w4-stub-panel">
           <div className="w4-card-title">{t('profile.settings_title')}</div>
 
-          {/* G-007 — Modo niños: textos grandes, botones grandes (5+ años). */}
+          {/* 1 — Idioma (orden de Nyein 2026-10-02): lo primero en ajustes,
+              con banderas para elegir. */}
           <div className="nse-setting-row">
             <span className="nse-setting-icon" aria-hidden="true">
-              <Baby size={20} />
+              {lang === 'th' ? '🇹🇭' : '🇲🇲'}
             </span>
-            <span className="nse-setting-text">
-              <span className="nse-setting-title">{t('profile.kids_mode')}</span>
-              <span className="nse-setting-sub">
-                {t('profile.kids_mode_description')}
-              </span>
-            </span>
-            <button
-              type="button"
-              role="switch"
-              aria-checked={kidsMode}
-              aria-label={t('profile.kids_mode')}
-              className="nse-switch"
-              data-on={kidsMode}
-              onClick={() => setKidsMode((v) => !v)}
-            >
-              <span className="nse-switch-knob" aria-hidden="true" />
-            </button>
-          </div>
-
-          {/* G-005 — Recordatorios amables (opt-in, local/in-app). */}
-          <ReminderSettings />
-
-          {/* OLA 0 — Selector de idioma (birmano / tailandés). UI en birmano
-              por defecto; el toggle mismo se etiqueta en birmano. */}
-          <div className="nse-setting-row">
-            <span className="nse-setting-icon" aria-hidden="true">🌐</span>
             <span className="nse-setting-text">
               <span className="nse-setting-title">{t('settings.language')}</span>
               <span className="nse-setting-sub">
@@ -227,15 +203,47 @@ export default function ProfileScreen({ go, params }: { go: GoFn; params?: NavPa
                     borderRadius: 999,
                     padding: '8px 14px',
                     fontWeight: 700,
+                    fontSize: 15,
                     cursor: 'pointer',
                     background: lang === l ? '#F59D2A' : '#F3EFE7',
                     color: lang === l ? '#fff' : '#6B5B45',
                   }}
                 >
-                  {t(`settings.language.${l}`)}
+                  {l === 'my' ? '🇲🇲' : '🇹🇭'} {t(`settings.language.${l}`)}
                 </button>
               ))}
             </div>
+          </div>
+
+          {/* 2 — Notificaciones y recordatorios (G-005, opt-in local). */}
+          <ReminderSettings />
+
+          {/* 3 — Modo offline (orden de Nyein 2026-10-02): descargar paquetes
+              para usar sin internet. Sección aditiva en ajustes. */}
+          <OfflineSection />
+
+          {/* 4 — Modo niños: textos grandes, botones grandes (5+ años). */}
+          <div className="nse-setting-row">
+            <span className="nse-setting-icon" aria-hidden="true">
+              <Baby size={20} />
+            </span>
+            <span className="nse-setting-text">
+              <span className="nse-setting-title">{t('profile.kids_mode')}</span>
+              <span className="nse-setting-sub">
+                {t('profile.kids_mode_description')}
+              </span>
+            </span>
+            <button
+              type="button"
+              role="switch"
+              aria-checked={kidsMode}
+              aria-label={t('profile.kids_mode')}
+              className="nse-switch"
+              data-on={kidsMode}
+              onClick={() => setKidsMode((v) => !v)}
+            >
+              <span className="nse-switch-knob" aria-hidden="true" />
+            </button>
           </div>
 
           <p style={{ margin: '0 0 12px' }}>

@@ -65,12 +65,24 @@ export default function PodcastScreen({ go: _go, params: _params }: { go: GoFn; 
   const { t, lang } = useLang();
   const [player, setPlayer] = useState<PlayerState>(() => podcastPlayer.getState());
   const [expanded, setExpanded] = useState(false);
+  const [offlineNotice, setOfflineNotice] = useState(false);
+
+  useEffect(() => {
+    if (!offlineNotice) return;
+    const id = window.setTimeout(() => setOfflineNotice(false), 4000);
+    return () => window.clearTimeout(id);
+  }, [offlineNotice]);
 
   useEffect(() => podcastPlayer.subscribe(setPlayer), []);
 
   const current = PODCAST_EPISODES.find((e) => e.slug === player.slug) ?? null;
 
   const playEp = (ep: PodcastEpisode) => {
+    // Degradación elegante offline: el podcast necesita red sí o sí.
+    if (typeof navigator !== 'undefined' && 'onLine' in navigator && !navigator.onLine) {
+      setOfflineNotice(true);
+      return;
+    }
     podcastPlayer.play(ep.slug, episodeUrl(ep), epTitle(ep, lang));
     setExpanded(true);
   };
@@ -119,6 +131,23 @@ export default function PodcastScreen({ go: _go, params: _params }: { go: GoFn; 
       </div>
 
       {/* Lista de episodios */}
+      {offlineNotice && (
+        <div
+          role="status"
+          style={{
+            background: '#FFF4E0',
+            border: '1px solid #F59D2A',
+            borderRadius: 14,
+            padding: '12px 14px',
+            marginBottom: 12,
+            fontSize: 13,
+            fontWeight: 600,
+            color: '#8A5A00',
+          }}
+        >
+          📶 {t('podcast.need_internet')}
+        </div>
+      )}
       <div style={{ display: 'flex', flexDirection: 'column', gap: 10, minWidth: 0 }}>
         {PODCAST_EPISODES.map((ep) => {
           const isCurrent = player.slug === ep.slug;

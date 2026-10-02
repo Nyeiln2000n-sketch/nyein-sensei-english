@@ -39,6 +39,7 @@ import { topicImageSrc } from '../data/topic-images';
 import { ProgressBar, Screen } from './ui';
 import WordOfDayCard from './WordOfDayCard';
 import { useLang, displayLang, tNum } from '../lib/i18n';
+import { openLanguagePicker } from './LanguagePickerModal';
 import type { LangKey } from '../i18n/my';
 import type { TParams } from '../lib/i18n';
 
@@ -283,6 +284,19 @@ export default function DashboardScreen({ go }: { go: GoFn; params?: NavParams }
           >
             <Bell size={20} />
             <span className="dash-bell-dot" aria-hidden="true" />
+          </button>
+          {/* Botón de bandera: abre el selector de idioma (orden de Nyein 2026-10-02). */}
+          <button
+            type="button"
+            className="icon-btn"
+            aria-label={t('settings.language')}
+            onClick={() => {
+              buzz();
+              openLanguagePicker();
+            }}
+            style={{ fontSize: 20, width: 40, height: 40 }}
+          >
+            {lang === 'th' ? '🇹🇭' : '🇲🇲'}
           </button>
         </div>
       </div>
