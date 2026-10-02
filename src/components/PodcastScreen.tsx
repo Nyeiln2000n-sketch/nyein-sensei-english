@@ -9,9 +9,10 @@ import { Screen, C, FONT } from './w3-shared';
 import { PODCAST_EPISODES, episodeUrl, type PodcastEpisode } from '../data/podcast';
 import { podcastPlayer, fmtTime, type PlayerState } from '../lib/podcastPlayer';
 import type { GoFn, NavParams } from '../routes';
+import { useLang, displayLang, tNum } from '../lib/i18n';
 
-function epTitle(ep: PodcastEpisode): string {
-  return `Ep ${ep.n}: ${ep.titleMy}`;
+function epTitle(ep: PodcastEpisode, lang: 'my' | 'th'): string {
+  return `Ep ${ep.n}: ${displayLang({ my: ep.titleMy, th: ep.titleOrig }, lang)}`;
 }
 
 /** Portada del episodio con fallback al icono de micrófono si falla la imagen. */
@@ -61,6 +62,7 @@ function EpCover({
 }
 
 export default function PodcastScreen({ go: _go, params: _params }: { go: GoFn; params?: NavParams }) {
+  const { t, lang } = useLang();
   const [player, setPlayer] = useState<PlayerState>(() => podcastPlayer.getState());
   const [expanded, setExpanded] = useState(false);
 
@@ -69,7 +71,7 @@ export default function PodcastScreen({ go: _go, params: _params }: { go: GoFn; 
   const current = PODCAST_EPISODES.find((e) => e.slug === player.slug) ?? null;
 
   const playEp = (ep: PodcastEpisode) => {
-    podcastPlayer.play(ep.slug, episodeUrl(ep), epTitle(ep));
+    podcastPlayer.play(ep.slug, episodeUrl(ep), epTitle(ep, lang));
     setExpanded(true);
   };
 
@@ -111,7 +113,7 @@ export default function PodcastScreen({ go: _go, params: _params }: { go: GoFn; 
             English with Aung and May
           </div>
           <div style={{ fontSize: 12, opacity: 0.8, marginTop: 4 }}>
-            {PODCAST_EPISODES.length} အပိုင်း · Aung နဲ့ May
+            {t('podcast.var_episode_aung_and_may', { count: tNum(PODCAST_EPISODES.length) })}
           </div>
         </div>
       </div>
@@ -179,7 +181,7 @@ export default function PodcastScreen({ go: _go, params: _params }: { go: GoFn; 
                     whiteSpace: 'nowrap',
                   }}
                 >
-                  Ep {ep.n}: {ep.titleMy}
+                  Ep {ep.n}: {displayLang({ my: ep.titleMy, th: ep.titleOrig }, lang)}
                 </div>
                 <div
                   style={{
@@ -191,7 +193,7 @@ export default function PodcastScreen({ go: _go, params: _params }: { go: GoFn; 
                     marginTop: 2,
                   }}
                 >
-                  {ep.titleOrig}
+                  {lang === 'th' ? ep.titleMy : ep.titleOrig}
                 </div>
                 <div style={{ fontSize: 11, color: '#B0A08A', marginTop: 4 }}>
                   ⏱ {fmtTime(ep.durationSecs)} · {ep.phrases.slice(0, 2).join(' · ')}
@@ -242,7 +244,7 @@ export default function PodcastScreen({ go: _go, params: _params }: { go: GoFn; 
             style={{ position: 'relative', flexShrink: 0 }}
             onClick={(e) => {
               e.stopPropagation();
-              podcastPlayer.toggle(current.slug, episodeUrl(current), epTitle(current));
+              podcastPlayer.toggle(current.slug, episodeUrl(current), epTitle(current, lang));
             }}
           >
             <EpCover ep={current} size={38} radius={10}>
@@ -270,7 +272,7 @@ export default function PodcastScreen({ go: _go, params: _params }: { go: GoFn; 
                 whiteSpace: 'nowrap',
               }}
             >
-              Ep {current.n}: {current.titleMy}
+              Ep {current.n}: {displayLang({ my: current.titleMy, th: current.titleOrig }, lang)}
             </div>
             <div style={{ fontSize: 11, opacity: 0.7 }}>
               {fmtTime(player.currentTime)} / {fmtTime(player.duration || current.durationSecs)}
@@ -315,6 +317,7 @@ function FullPlayer({
   player: PlayerState;
   onClose: () => void;
 }) {
+  const { t, lang } = useLang();
   const barRef = useRef<HTMLDivElement>(null);
   const [, force] = useState(0);
   // Refrescar la barra cada segundo mientras suena.
@@ -383,8 +386,8 @@ function FullPlayer({
       </div>
 
       <div style={{ textAlign: 'center', marginBottom: 8 }}>
-        <div style={{ fontSize: 20, fontWeight: 800 }}>Ep {ep.n}: {ep.titleMy}</div>
-        <div style={{ fontSize: 13, opacity: 0.65, marginTop: 4 }}>{ep.titleOrig}</div>
+        <div style={{ fontSize: 20, fontWeight: 800 }}>Ep {ep.n}: {displayLang({ my: ep.titleMy, th: ep.titleOrig }, lang)}</div>
+        <div style={{ fontSize: 13, opacity: 0.65, marginTop: 4 }}>{lang === 'th' ? ep.titleMy : ep.titleOrig}</div>
       </div>
 
       <p style={{ fontSize: 13, opacity: 0.8, textAlign: 'center', lineHeight: 1.5, margin: '8px 0 20px' }}>
@@ -485,7 +488,7 @@ function FullPlayer({
         </button>
         <button
           type="button"
-          onClick={() => podcastPlayer.toggle(ep.slug, episodeUrl(ep), epTitle(ep))}
+          onClick={() => podcastPlayer.toggle(ep.slug, episodeUrl(ep), epTitle(ep, lang))}
           aria-label={st.playing ? 'Pausar' : 'Reproducir'}
           style={{
             width: 76,
@@ -536,13 +539,13 @@ function FullPlayer({
           }}
         >
           <Gauge size={16} />
-          {st.rate}x မြန်နှုန်း
+          {t('podcast.varx_speed', { rate: tNum(st.rate) })}
         </button>
       </div>
 
       <div style={{ flex: 1 }} />
       <div style={{ textAlign: 'center', fontSize: 11, opacity: 0.45 }}>
-        နောက်ခံတွင် ဆက်လက်ဖွင့်ထားနိုင်သည် 🎧
+        {t('podcast.background_play_note')}
       </div>
     </div>
   );

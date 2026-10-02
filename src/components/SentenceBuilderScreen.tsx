@@ -8,6 +8,8 @@
 // PRODUCTION RULE: speak() is called ONLY synchronously inside tap/click
 // handlers (AUDIO_CONTRACT) — never automatically on render or check.
 import { useEffect, useMemo, useRef, useState } from 'react';
+import { useLang, displayLang } from '../lib/i18n';
+import type { LangKey } from '../i18n/my';
 import { X, Volume2 } from 'lucide-react';
 import type { GoFn, NavParams } from '../routes';
 import type { CEFR, Phrase } from '../types';
@@ -24,13 +26,14 @@ import {
 const LEVELS: CEFR[] = ['A1', 'A2', 'B1', 'B2'];
 const ROUNDS = 8;
 
-const LEVEL_MY: Record<CEFR, string> = {
-  A1: 'အခြေခံ',
-  A2: 'အလယ်အလတ်',
-  B1: 'အဆင့်မြင့်',
-  B2: 'ကျွမ်းကျင်',
-  C1: 'C1',
-  C2: 'C2',
+/** OLA 1 i18n — etiqueta de nivel por CEFR. */
+const LEVEL_LABEL_KEY: Record<CEFR, LangKey> = {
+  A1: 'dictation.basic',
+  A2: 'dictation.intermediate',
+  B1: 'dictation.advanced',
+  B2: 'dictation.proficient',
+  C1: 'dictation.c1',
+  C2: 'dictation.c2',
 };
 
 /** Split an English sentence into word tokens (same normalization as QuizScreen's order rounds). */
@@ -60,6 +63,7 @@ function BuilderRound({
   onAnswer: (c: boolean) => void;
   onNext: () => void;
 }) {
+  const { t, lang } = useLang();
   const target = useMemo(() => tokenize(phrase.en), [phrase]);
   const shuffled = useMemo(() => sample(target, target.length), [target]);
   const [chosen, setChosen] = useState<number[]>([]);
@@ -101,7 +105,7 @@ function BuilderRound({
       <Card style={{ minHeight: 88, marginBottom: 12 }}>
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, alignItems: 'center', minHeight: 48 }}>
           {chosen.length === 0 && !checked && (
-            <span style={{ color: '#B9A98F', fontSize: 15 }}>အောက်က စကားလုံးများ နှိပ်ပါ…</span>
+            <span style={{ color: '#B9A98F', fontSize: 15 }}>{t('sentence.below_words_tap')}</span>
           )}
           {chosen.map((tileIdx, pos) => (
             <button
@@ -109,7 +113,7 @@ function BuilderRound({
               type="button"
               onClick={() => removeAt(pos)}
               disabled={checked}
-              aria-label="ပြန်ဖြုတ်ရန်"
+              aria-label={t('sentence.remove')}
               style={{ ...tile, borderColor: C.blue }}
             >
               {shuffled[tileIdx]}
@@ -134,7 +138,7 @@ function BuilderRound({
               padding: '0 8px',
             }}
           >
-            ရှင်းမယ်
+            {t('sentence.clear')}
           </button>
         )}
       </Card>
@@ -159,7 +163,7 @@ function BuilderRound({
 
       {!checked && (
         <PillButton color="green" onClick={check} disabled={!allPlaced}>
-          စစ်ဆေးမယ်
+          {t('dictation.check')}
         </PillButton>
       )}
 
@@ -167,15 +171,15 @@ function BuilderRound({
         <div style={{ marginTop: 4 }}>
           <FeedbackStrip
             ok={correct}
-            title={correct ? 'မှန်တယ်! 🎉' : 'ထပ်ကြိုးစားကြည့်ပါ'}
-            sub={correct ? undefined : `အဖြေမှန်: ${target.join(' ')}`}
+            title={correct ? t('exam.correct') : t('exam.try_again')}
+            sub={correct ? undefined : t('sentence.correct_answer_is', { answer: target.join(' ') })}
           />
           {/* Reveal: English + Myanmar + tap-to-hear (AUDIO_CONTRACT: speak only in the tap handler). */}
           <Card style={{ marginTop: 12 }}>
             <div style={{ fontWeight: 800, fontSize: 18, color: C.title, lineHeight: 1.6 }}>
               {target.join(' ')}
             </div>
-            <div style={{ fontSize: 15, color: C.text, marginTop: 6 }}>{phrase.my}</div>
+            <div style={{ fontSize: 15, color: C.text, marginTop: 6 }}>{displayLang(phrase, lang)}</div>
             <div style={{ marginTop: 12 }}>
               <button
                 type="button"
@@ -198,13 +202,13 @@ function BuilderRound({
                 }}
               >
                 <Volume2 size={22} color={C.blueDark} />
-                အသံနားထောင်မယ်
+                {t('dictation.listen_audio')}
               </button>
             </div>
           </Card>
           <div style={{ marginTop: 12 }}>
             <PillButton color="blue" onClick={onNext}>
-              နောက်တစ်ခု
+              {t('celebration.next')}
             </PillButton>
           </div>
         </div>
@@ -224,6 +228,7 @@ function BuilderGame({
   phrases: Phrase[];
   onExit: () => void;
 }) {
+  const { t, lang } = useLang();
   const [session, setSession] = useState<Phrase[]>(() => buildSession(phrases, level));
   const [idx, setIdx] = useState(0);
   const [earned, setEarned] = useState(0);
@@ -269,10 +274,10 @@ function BuilderGame({
     return (
       <Card style={{ textAlign: 'center', padding: 24 }}>
         <div style={{ fontSize: 16, fontWeight: 700, color: C.title, marginBottom: 16 }}>
-          ဒီအဆင့်မှာ ဝါကျမရှိသေးပါ
+          {t('dictation.at_this_level')}
         </div>
         <PillButton color="green" onClick={onExit}>
-          ပြန်သွားမယ်
+          {t('exam.go_back')}
         </PillButton>
       </Card>
     );
@@ -286,9 +291,9 @@ function BuilderGame({
           size={72}
           text={
             <div>
-              <div style={{ fontWeight: 800, fontSize: 18, color: C.title }}>ပြီးဆုံးပါပြီ! 🎉</div>
+              <div style={{ fontWeight: 800, fontSize: 18, color: C.title }}>{t('dictation.completed')}</div>
               <div style={{ fontSize: 15, color: C.text, marginTop: 4 }}>
-                အဆင့် {level} · ဝါကျ {session.length} ကြောင်း
+                {t('dictation.level_sentence_count', { level, count: session.length })}
               </div>
             </div>
           }
@@ -304,12 +309,12 @@ function BuilderGame({
             margin: '12px 0 16px',
           }}
         >
-          ⭐ +{earned} XP ရရှိခဲ့တယ်
+          {t('dictation.xp_earned', { earned })}
         </div>
         <div style={{ display: 'flex', gap: 10 }}>
           <div style={{ flex: 1 }}>
             <PillButton color="blue" onClick={onExit}>
-              ပြန်သွားမယ်
+              {t('exam.go_back')}
             </PillButton>
           </div>
           <div style={{ flex: 1 }}>
@@ -324,7 +329,7 @@ function BuilderGame({
                 setFinished(false);
               }}
             >
-              ထပ်လုပ်မယ်
+              {t('dictation.retry')}
             </PillButton>
           </div>
         </div>
@@ -340,16 +345,16 @@ function BuilderGame({
         text={
           <div>
             <div style={{ fontWeight: 800, fontSize: 18, color: C.title, lineHeight: 1.6 }}>
-              “{phrase.my}”
+              “{displayLang(phrase, lang)}”
             </div>
             <div style={{ fontSize: 15, color: C.text, marginTop: 4 }}>
-              English စကားစုကို အစဉ်လိုက်စီပါ
+              {t('sentence.english_arrange_in_order')}
             </div>
           </div>
         }
       />
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 12 }}>
-        <IconCircle bg={C.blue} size={56} onClick={() => speak(phrase.en)} label="အသံနားထောင်မယ်">
+        <IconCircle bg={C.blue} size={56} onClick={() => speak(phrase.en)} label={t('dictation.listen_audio')}>
           <Volume2 size={26} />
         </IconCircle>
       </div>
@@ -364,6 +369,7 @@ function BuilderGame({
 
 // FASE 15 — corpus loads lazily; skeleton until ready.
 function SentenceBuilderInner({ go }: { go: GoFn }) {
+  const { t } = useLang();
   const [level, setLevel] = useState<CEFR>('A1');
   const [attempt, setAttempt] = useState(0);
   const phrases = useCorpus(loadAllPhrases);
@@ -382,7 +388,7 @@ function SentenceBuilderInner({ go }: { go: GoFn }) {
           <button
             type="button"
             onClick={() => go('back')}
-            aria-label="ပိတ်ရန်"
+            aria-label={t('exam.close')}
             style={{
               width: 40, height: 40, borderRadius: '50%', border: 'none',
               background: C.white, color: C.text, display: 'flex',
@@ -394,7 +400,7 @@ function SentenceBuilderInner({ go }: { go: GoFn }) {
           </button>
         }
         center={
-          <div style={{ fontWeight: 800, fontSize: 17, color: C.title }}>ဝါကျစီစဉ်မယ်</div>
+          <div style={{ fontWeight: 800, fontSize: 17, color: C.title }}>{t('dashboard.arrange_sentences')}</div>
         }
         right={<span />}
       />
@@ -402,7 +408,7 @@ function SentenceBuilderInner({ go }: { go: GoFn }) {
       {/* CEFR level selector */}
       <div style={{ marginBottom: 14 }}>
         <div style={{ fontSize: 13, fontWeight: 700, color: C.text, marginBottom: 8 }}>
-          အဆင့်ရွေးပါ
+          {t('dictation.choose_level')}
         </div>
         <div style={{ display: 'flex', gap: 8 }}>
           {LEVELS.map((l) => {
@@ -431,7 +437,7 @@ function SentenceBuilderInner({ go }: { go: GoFn }) {
               >
                 <div>{l}</div>
                 <div style={{ fontSize: 11, fontWeight: 700, color: active ? C.greenText : C.text }}>
-                  {LEVEL_MY[l]}
+                  {t(LEVEL_LABEL_KEY[l])}
                 </div>
               </button>
             );

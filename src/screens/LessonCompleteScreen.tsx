@@ -9,6 +9,7 @@
 // (transparent, no opaque box) and falls back to the static PNG when
 // offscreen or when WebGL fails.
 
+import { useLang } from '../lib/i18n';
 import { useMemo, useState } from 'react';
 import type { CSSProperties } from 'react';
 import type { GoFn, NavParams } from '../routes';
@@ -34,6 +35,7 @@ interface Piece {
 }
 
 export default function LessonCompleteScreen({ go, params }: { go: GoFn; params?: NavParams }) {
+  const { t } = useLang();
   void params;
   const streak = getStreak();
   // FASE 11: drain queued celebrations (streak milestones, level-ups, newly
@@ -88,22 +90,22 @@ export default function LessonCompleteScreen({ go, params }: { go: GoFn; params?
       <div className="w4-complete-body">
         <Mascot3D pose="celebrate" size={200} sparkle />
 
-        <h1 className="w4-big-title">တော်လိုက်တာ!</h1>
-        <p className="w4-complete-sub">ဒီနေ့ သင်ခန်းစာ ပြီးဆုံးသွားပြီ</p>
+        <h1 className="w4-big-title">{t('lesson_complete.great')}</h1>
+        <p className="w4-complete-sub">{t('lesson_complete.today_lesson_completed')}</p>
 
         <div className="w4-card w4-streak-card">
-          <div className="w4-streak-line"><span className="flame-pulse">🔥</span> ရက်ဆက် {streak} ရက်</div>
-          <div className="w4-complete-sub">ဆက်လုပ်ပါ!</div>
+          <div className="w4-streak-line"><span className="flame-pulse">🔥</span> {t('lesson_complete.streak_days', { streak })}</div>
+          <div className="w4-complete-sub">{t('lesson_complete.keep_going')}</div>
         </div>
 
         <div className="w4-complete-cta">
           <PillButton color="blue" onClick={() => go('home')}>
-            ဆက်လုပ်မယ်
+            {t('celebration.continue')}
           </PillButton>
         </div>
 
         <button type="button" className="w4-link" onClick={() => go('achievements')}>
-          စာရင်းအင်း ကြည့်မယ်
+          {t('lesson_complete.statistics_view')}
         </button>
       </div>
       </W4ErrorBoundary>

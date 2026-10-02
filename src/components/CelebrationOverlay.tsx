@@ -6,8 +6,11 @@ import { useMemo, useState } from 'react';
 import type { CSSProperties, ReactNode } from 'react';
 import { Flame, Gem, Trophy } from 'lucide-react';
 import type { CelebrationEvent } from '../lib/celebration';
-import { getMedal, mm } from '../lib/celebration';
+import { getMedal } from '../lib/celebration';
 import { PillButton } from './ui';
+import { useLang, tNum } from '../lib/i18n';
+import type { LangKey } from '../i18n/my';
+import type { TParams } from '../lib/i18n';
 import '../screens/w4.css';
 
 const CONFETTI_COLORS = ['#FFB74D', '#5CC8FF', '#A5E6A7', '#FFD98A', '#FF8A80'];
@@ -59,24 +62,24 @@ interface CardContent {
   sub: string;
 }
 
-function contentFor(ev: CelebrationEvent): CardContent {
+function contentFor(ev: CelebrationEvent, t: (key: LangKey, params?: TParams) => string): CardContent {
   switch (ev.kind) {
     case 'streakMilestone':
       return {
         icon: <Flame size={44} color="#FF8A3D" strokeWidth={2.2} />,
         iconBg: '#FFF1E0',
-        title: `ရက်ဆက် ${mm(ev.days)} ရက်!`,
+        title: t('celebration.streak_var_days', { days: tNum(ev.days) }),
         sub:
           ev.days >= 30
-            ? 'တစ်လလုံး မပျက် လေ့လာနိုင်ခဲ့ပြီ။ တကယ် ထူးချွန်တယ် — ဒီလိုပဲ ဆက်သွားပါ။'
-            : `${mm(ev.days)} ရက်ဆက် လေ့လာပြီးပြီ။ အရမ်းတော်တယ် — နောက်တစ်ရက်လည်း ဆက်လုပ်ပါ။`,
+            ? t('celebration.month_streak_perfect')
+            : t('celebration.var_streak_awesome_another_day_also', { days: tNum(ev.days) }),
       };
     case 'levelUp':
       return {
         icon: <Trophy size={44} color="#F5A623" strokeWidth={2.2} />,
         iconBg: '#FFF6E3',
-        title: `အဆင့် ${mm(ev.level)} ရောက်ပြီ!`,
-        sub: `XP စုစုပေါင်း ${mm(ev.xp)} — အဆင့်တက်သွားပြီ။ ဆက်တက်လှမ်းပါ။`,
+        title: t('celebration.level_var_reached', { level: tNum(ev.level) }),
+        sub: t('celebration.xp_total_leveled_up', { xp: tNum(ev.xp) }),
       };
     case 'medalUnlocked': {
       const medal = getMedal(ev.medalId);
@@ -84,18 +87,18 @@ function contentFor(ev: CelebrationEvent): CardContent {
       return {
         icon: <Icon size={44} color="#B8860B" strokeWidth={2.2} />,
         iconBg: '#FFF6E3',
-        title: 'ဆုတံဆိပ် အသစ် ရပြီ!',
-        sub: medal ? `«${medal.nameMm}» ဆုတံဆိပ် ရရှိသွားပြီ။ ဂုဏ်ယူပါတယ်။` : 'ဆုတံဆိပ် အသစ် ရရှိသွားပြီ။',
+        title: t('celebration.medal_new_received'),
+        sub: medal ? t('celebration.var_medal', { name: medal.nameMm }) : t('celebration.medal_new'),
       };
     }
     case 'lessonGems':
       return {
         icon: <Gem size={44} color="#5CC8FF" strokeWidth={2.2} />,
         iconBg: '#E8F6FF',
-        title: `+${mm(ev.gems)} စိန်!`,
+        title: t('celebration.gems_earned', { gems: tNum(ev.gems) }),
         sub: ev.streakBonus
-          ? 'သင်ခန်းစာ ပြီးတဲ့အတွက် ဆု — ရက်ဆက် ဆုကြေးပါ ပါဝင်တယ်။'
-          : 'သင်ခန်းစာ ပြီးမြောက်တဲ့အတွက် စိန်ဆု ရပြီ။',
+          ? t('celebration.lesson_complete_streak_bonus')
+          : t('celebration.lesson_for_completing_gem_reward'),
       };
   }
 }
@@ -144,12 +147,13 @@ export default function CelebrationOverlay({
   events: CelebrationEvent[];
   onDone: () => void;
 }) {
+  const { t } = useLang();
   const [idx, setIdx] = useState(0);
   const ev = events[idx];
   const stepKey = useMemo(() => `${ev?.kind ?? 'none'}-${idx}`, [ev, idx]);
 
   if (!ev) return null;
-  const c = contentFor(ev);
+  const c = contentFor(ev, t);
   const last = idx >= events.length - 1;
 
   const next = () => {
@@ -178,11 +182,11 @@ export default function CelebrationOverlay({
           <p style={{ fontSize: 15, color: '#6B5B45', margin: '0 0 20px', lineHeight: 1.6 }}>{c.sub}</p>
           {events.length > 1 && (
             <div style={{ fontSize: 13, color: '#A08B6B', marginBottom: 12 }}>
-              {mm(idx + 1)} / {mm(events.length)}
+              {tNum(idx + 1)} / {tNum(events.length)}
             </div>
           )}
           <PillButton color="orange" onClick={next}>
-            {last ? 'ဆက်လုပ်မယ်' : 'နောက်တစ်ခု'}
+            {last ? t('celebration.continue') : t('celebration.next')}
           </PillButton>
         </div>
       </div>

@@ -25,6 +25,7 @@ import { useWindowing } from '../lib/useWindowing';
 import { SkeletonList } from './Skeleton';
 import WordImage, { preloadWordImage } from './WordImage';
 import SlowToggle from './SlowToggle';
+import { useLang, displayLang, tNum } from '../lib/i18n';
 import {
   Screen, TopBar, Card, PillButton, ProgressBar, IconCircle, W3ErrorBoundary, C, FONT,
 } from './w3-shared';
@@ -78,6 +79,7 @@ export default function VocabScreen({ go, params }: { go: GoFn; params?: NavPara
 }
 
 function VocabGame({ go, params, words }: { go: GoFn; params?: NavParams; words: Word[] }) {
+  const { t, lang } = useLang();
   const topic: TopicId = (params?.topic as TopicId | undefined) ?? 'family';
   const meta = topics.find((t) => t.id === topic) ?? topics[0];
   const [tab, setTab] = useState<'cards' | 'library'>('cards');
@@ -201,7 +203,7 @@ function VocabGame({ go, params, words }: { go: GoFn; params?: NavParams; words:
     setPlDone(false);
     setActiveEn(w.en);
     // 2026-10-01: mostrar la palabra actual en la pantalla de bloqueo.
-    setMediaSession(w.en, w.my);
+    setMediaSession(w.en, displayLang(w, lang));
     // The hardened audio.ts speak(): sync call keeps the iOS gesture chain
     // for tap-driven controls; chained utterances from the poll reuse the
     // same voice cache + resume guard (owner-ordered playlist exception to
@@ -351,7 +353,7 @@ function VocabGame({ go, params, words }: { go: GoFn; params?: NavParams; words:
     let list = libraryWords;
     if (starOnly) list = list.filter((w) => favs.includes(w.en));
     const q = query.trim().toLowerCase();
-    if (q) list = list.filter((w) => w.en.toLowerCase().includes(q) || w.my.includes(query.trim()));
+    if (q) list = list.filter((w) => w.en.toLowerCase().includes(q) || w.my.includes(query.trim()) || (w.th ?? '').includes(query.trim()));
     return list;
   }, [libraryWords, starOnly, favs, query]);
 
@@ -362,7 +364,7 @@ function VocabGame({ go, params, words }: { go: GoFn; params?: NavParams; words:
           <button
             type="button"
             onClick={() => go('back')}
-            aria-label="နောက်သို့"
+            aria-label={t('dialogues.back')}
             style={{
               width: 40, height: 40, borderRadius: '50%', border: 'none',
               background: C.white, color: C.text, display: 'flex',
@@ -375,7 +377,7 @@ function VocabGame({ go, params, words }: { go: GoFn; params?: NavParams; words:
         }
         center={
           <span style={{ fontSize: 18, fontWeight: 800, color: C.title }}>
-            {meta.icon} {meta.nameMy}
+            {meta.icon} {displayLang({ my: meta.nameMy, th: meta.nameTh }, lang)}
           </span>
         }
       />
@@ -399,8 +401,8 @@ function VocabGame({ go, params, words }: { go: GoFn; params?: NavParams; words:
       >
         {(
           [
-            ['cards', 'ကတ်များ'],
-            ['library', 'အသံစာကြည့်တိုက်'],
+            ['cards', t('vocab.cards')],
+            ['library', t('vocab.audio_library')],
           ] as const
         ).map(([key, label]) => (
           <button
@@ -448,7 +450,7 @@ function VocabGame({ go, params, words }: { go: GoFn; params?: NavParams; words:
           <div style={{ marginBottom: 12 }}>
             <button type="button" className="playlist-cta" onClick={() => startPlaylist(0)}>
               <span style={{ fontSize: 22 }}>🎧</span>
-              အားလုံး နားထောင်မယ်
+              {t('vocab.all_listen')}
             </button>
             {savedPos && savedPos.idx > 0 && (
               <button
@@ -462,23 +464,23 @@ function VocabGame({ go, params, words }: { go: GoFn; params?: NavParams; words:
                 }}
               >
                 <span style={{ fontSize: 22 }}>▶️</span>
-                ဆက်လက် နားထောင်မယ် ({savedPos.idx + 1} ကနေ)
+                {t('vocab.resume_listening', { n: tNum(savedPos.idx + 1) })}
               </button>
             )}
-            <div className="playlist-scope" role="group" aria-label="ဖွင့်မည့်အပိုင်း">
+            <div className="playlist-scope" role="group" aria-label={t('vocab.playlist_scope_label')}>
               <button
                 type="button"
                 className={scope === 'all' ? 'active' : ''}
                 onClick={() => setScope('all')}
               >
-                အားလုံး ({words.length})
+                {t('vocab.all_count', { count: tNum(words.length) })}
               </button>
               <button
                 type="button"
                 className={scope === 'topic' ? 'active' : ''}
                 onClick={() => setScope('topic')}
               >
-                ဒီအခန်း ({libraryWords.length})
+                {t('vocab.var', { count: tNum(libraryWords.length) })}
               </button>
             </div>
           </div>
@@ -489,13 +491,13 @@ function VocabGame({ go, params, words }: { go: GoFn; params?: NavParams; words:
                 type="button"
                 className="playlist-btn close"
                 onClick={endPlaylist}
-                aria-label="ပိတ်ရန်"
+                aria-label={t('exam.close')}
               >
                 <X size={18} />
               </button>
             </div>
             <div className="playlist-word">{plWord?.en ?? '…'}</div>
-            <div className="playlist-my">{plWord?.my ?? ''}</div>
+            <div className="playlist-my">{plWord ? displayLang(plWord, lang) : ''}</div>
             <div className="playlist-progress">
               <div style={{ flex: 1 }}>
                 <ProgressBar value={plIdx + 1} total={Math.max(1, plList.length)} />
@@ -509,7 +511,7 @@ function VocabGame({ go, params, words }: { go: GoFn; params?: NavParams; words:
                 type="button"
                 className="playlist-btn"
                 onClick={() => step(-1)}
-                aria-label="ယခင်စကားလုံး"
+                aria-label={t('vocab.previous_word')}
               >
                 <SkipBack size={22} />
               </button>
@@ -517,7 +519,7 @@ function VocabGame({ go, params, words }: { go: GoFn; params?: NavParams; words:
                 type="button"
                 className="playlist-btn playlist-primary"
                 onClick={togglePlay}
-                aria-label={plPlaying ? 'ရပ်ရန်' : 'ဖွင့်ရန်'}
+                aria-label={plPlaying ? t('vocab.stop') : t('vocab.play')}
               >
                 {plPlaying ? <Pause size={28} /> : <Play size={28} />}
               </button>
@@ -525,17 +527,17 @@ function VocabGame({ go, params, words }: { go: GoFn; params?: NavParams; words:
                 type="button"
                 className="playlist-btn"
                 onClick={() => step(1)}
-                aria-label="နောက်စကားလုံး"
+                aria-label={t('vocab.next_word')}
               >
                 <SkipForward size={22} />
               </button>
             </div>
             {plDone && (
               <div className="playlist-done">
-                အားလုံး ပြီးဆုံးပြီ! 🎉
+                {t('vocab.all')}
                 <div style={{ marginTop: 8 }}>
                   <PillButton color="orange" onClick={startPlaylist}>
-                    🔁 ထပ်နားထောင်မယ်
+                    {t('vocab.listen_again')}
                   </PillButton>
                 </div>
               </div>
@@ -568,6 +570,7 @@ function Flashcards({
   onToggleFav: (en: string) => void;
   onNext: () => void;
 }) {
+  const { t, lang } = useLang();
   const word = deck[idx];
   const isFav = favs.includes(word.en);
   const example = word.example; // optional: taught example sentence
@@ -615,7 +618,7 @@ function Flashcards({
         >
           {word.en}
         </div>
-        <div style={{ fontSize: 20, color: C.text, marginTop: 8 }}>{word.my}</div>
+        <div style={{ fontSize: 20, color: C.text, marginTop: 8 }}>{displayLang(word, lang)}</div>
         {word.phonetic && (
           <div style={{ fontSize: 16, color: '#666666', marginTop: 6 }}>
             /{word.phonetic}/
@@ -632,13 +635,13 @@ function Flashcards({
           margin: '16px 0',
         }}
       >
-        <IconCircle bg={C.blue} size={56} onClick={() => speak(word.en)} label="အသံနားထောင်ရန်">
+        <IconCircle bg={C.blue} size={56} onClick={() => speak(word.en)} label={t('vocab.to_listen')}>
           <Volume2 size={26} />
         </IconCircle>
         <button
           type="button"
           onClick={() => onToggleFav(word.en)}
-          aria-label={isFav ? 'ကြယ်ပွင့်ဖြုတ်ရန်' : 'ကြယ်ပွင့်မှတ်ရန်'}
+          aria-label={isFav ? t('vocab.remove_favorite') : t('vocab.add_favorite')}
           style={{
             width: 56, height: 56, borderRadius: '50%',
             border: isFav ? 'none' : '2px solid #F1E4CE',
@@ -682,14 +685,14 @@ function Flashcards({
             </div>
             {word.exampleMy && (
               <div style={{ fontSize: 13, color: C.text, marginTop: 4 }}>
-                {word.exampleMy}
+                {displayLang({ my: word.exampleMy ?? '', th: word.exampleTh }, lang)}
               </div>
             )}
           </div>
           <button
             type="button"
             onClick={() => speak(example)}
-            aria-label="ဥပမာအသံ နားထောင်ရန်"
+            aria-label={t('vocab.example_audio_to_listen')}
             style={{
               width: 40,
               height: 40,
@@ -710,7 +713,7 @@ function Flashcards({
       )}
 
       <PillButton color="green" onClick={onNext}>
-        နောက်ကတ် →
+        {t('vocab.next_card')}
       </PillButton>
     </div>
   );
@@ -729,12 +732,13 @@ function LibraryTab({
   onToggleStarOnly: () => void;
   onToggleFav: (en: string) => void;
 }) {
+  const { t, lang } = useLang();
   const [query, setQuery] = useState('');
   // Search across the FULL list, then window the result (keeps iOS memory
   // safe while still finding every word).
   const q = query.trim().toLowerCase();
   const searched = q
-    ? words.filter((w) => w.en.toLowerCase().includes(q) || w.my.includes(query.trim()))
+    ? words.filter((w) => w.en.toLowerCase().includes(q) || w.my.includes(query.trim()) || (w.th ?? '').includes(query.trim()))
     : words;
   const { visible, sentinelRef } = useWindowing(searched, 60);
 
@@ -760,7 +764,7 @@ function LibraryTab({
           <input
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="စကားလုံး ရှာရန်…"
+            placeholder={t('vocab.word_to_search')}
             style={{
               flex: 1,
               minWidth: 0 /* FIX-responsive: el input nunca debe imponer su ancho */,
@@ -779,7 +783,7 @@ function LibraryTab({
         <button
           type="button"
           onClick={onToggleStarOnly}
-          aria-label="ကြယ်ပွင့်များသာ"
+          aria-label={t('vocab.favorites_only')}
           style={{
             width: 48, height: 48, borderRadius: '50%', border: 'none',
             background: starOnly ? '#FFC800' : C.white,
@@ -798,7 +802,7 @@ function LibraryTab({
       ) : visible.length === 0 ? (
         <Card style={{ textAlign: 'center', padding: 24 }}>
           <div style={{ fontSize: 15, color: C.text }}>
-            {starOnly ? 'ကြယ်ပွင့်မှတ်ထားတာ မရှိသေးဘူး ⭐' : 'စကားလုံး မတွေ့ပါ'}
+            {starOnly ? t('vocab.none_yet') : t('vocab.word_not_found')}
           </div>
         </Card>
       ) : (
@@ -825,7 +829,7 @@ function LibraryTab({
                 <button
                   type="button"
                   onClick={() => speak(w.en)}
-                  aria-label={`အသံနားထောင်ရန်: ${w.en}`}
+                  aria-label={t('practice.listen_aria_word', { w: w.en })}
                   style={{
                     width: 40, height: 40, borderRadius: '50%', border: 'none',
                     background: '#E8F4FF', color: C.blueDark,
@@ -854,12 +858,12 @@ function LibraryTab({
                       </span>
                     )}
                   </div>
-                  <div style={{ fontSize: 13, color: C.text }}>{w.my}</div>
+                  <div style={{ fontSize: 13, color: C.text }}>{displayLang(w, lang)}</div>
                 </div>
                 <button
                   type="button"
                   onClick={() => onToggleFav(w.en)}
-                  aria-label={isFav ? 'ကြယ်ပွင့်ဖြုတ်ရန်' : 'ကြယ်ပွင့်မှတ်ရန်'}
+                  aria-label={isFav ? t('vocab.remove_favorite') : t('vocab.add_favorite')}
                   style={{
                     border: 'none', background: 'transparent', cursor: 'pointer',
                     color: isFav ? '#FFC800' : '#D9C8AE', flexShrink: 0,

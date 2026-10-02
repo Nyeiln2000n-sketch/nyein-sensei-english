@@ -51,6 +51,8 @@ export type TopicId =
 export interface Word {
   en: string;
   my: string;
+  /** Thai translation (OLA 0 multilingual expansion). Optional: additive only — `my` untouched. */
+  th?: string;
   topic: TopicId;
   level: Difficulty;
   /** CEFR band for this word — FASE 14. Optional: when absent, falls back to `level` via `difficultyToCEFR`. Games keep working unchanged. */
@@ -61,13 +63,19 @@ export interface Word {
   example?: string;
   /** Myanmar translation of the example sentence. */
   exampleMy?: string;
+  /** Thai translation of the example sentence (OLA 0). Optional, additive. */
+  exampleTh?: string;
 }
 
 export interface DialogueTurn {
   /** Speaker label, Myanmar-first (e.g. "ဆိုင်ရှင်", "ဝယ်သူ"). */
   speaker: string;
+  /** Thai speaker label (OLA 0). Optional, additive. */
+  speakerTh?: string;
   en: string;
   my: string;
+  /** Thai translation (OLA 0 multilingual expansion). Optional: additive only — `my` untouched. */
+  th?: string;
 }
 
 export interface Dialogue {
@@ -75,16 +83,22 @@ export interface Dialogue {
   topic: TopicId;
   /** Myanmar title (primary). */
   titleMy: string;
+  /** Thai title (OLA 0). Optional, additive. */
+  titleTh?: string;
   titleEn: string;
   level: Difficulty;
   /** Where the dialogue happens, Myanmar-first. */
   situationMy: string;
+  /** Where the dialogue happens, Thai (OLA 0). Optional, additive. */
+  situationTh?: string;
   turns: DialogueTurn[];
 }
 
 export interface StoryParagraph {
   en: string;
   my: string;
+  /** Thai translation (OLA 0). Optional, additive. */
+  th?: string;
 }
 
 export interface Story {
@@ -92,12 +106,16 @@ export interface Story {
   level: CEFR;
   titleEn: string;
   titleMy: string;
+  /** Thai title (OLA 0). Optional, additive. */
+  titleTh?: string;
   paragraphs: StoryParagraph[];
 }
 
 export interface Phrase {
   en: string;
   my: string;
+  /** Thai translation (OLA 0 multilingual expansion). Optional: additive only — `my` untouched. */
+  th?: string;
   topic: TopicId;
   /** Learner-friendly phonetic hint for tricky pronunciation (e.g. "SNOOZ"). */
   phonetic?: string;
@@ -109,6 +127,8 @@ export interface Phrase {
 export interface VerbExample {
   en: string;
   my: string;
+  /** Thai translation (OLA 0). Optional, additive. */
+  th?: string;
 }
 
 /** Irregular (and key regular) English verb with full conjugation data — FASE 14.
@@ -124,6 +144,8 @@ export interface Verb {
   gerund: string;
   /** Myanmar meaning. */
   my: string;
+  /** Thai meaning (OLA 0). Optional, additive. */
+  th?: string;
   /** Learner-friendly phonetic hint. */
   phonetic?: string;
   cefr: CEFR;
@@ -137,16 +159,22 @@ export interface Tense {
   nameEn: string;
   /** Myanmar name/explanation. */
   nameMy: string;
+  /** Thai name/explanation (OLA 0). Optional, additive. */
+  nameTh?: string;
   /** Formula in Myanmar-first notation (e.g. "will + V1"). */
   formula: string;
   /** When to use it, in Myanmar. */
   usageMy: string;
+  /** When to use it, in Thai (OLA 0). Optional, additive. */
+  usageTh?: string;
   example: VerbExample;
 }
 
 export interface Topic {
   id: TopicId;
   nameMy: string; // Myanmar name
+  /** Thai name (OLA 0). Optional, additive. */
+  nameTh?: string;
   nameEn: string; // English name
   icon: string; // emoji glyph for the topic card
   color: string; // accent color

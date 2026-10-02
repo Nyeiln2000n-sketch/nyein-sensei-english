@@ -9,6 +9,7 @@
 import { useState } from 'react';
 import { Check, User, Users } from 'lucide-react';
 import { PillButton, Screen } from './ui';
+import { useLang } from '../lib/i18n';
 import '../screens/w4.css';
 
 export type PlanChoice = 'personal' | 'org';
@@ -19,6 +20,7 @@ export default function PlanChoiceScreen({
   onDone: (choice: PlanChoice) => void;
 }) {
   const [selected, setSelected] = useState<PlanChoice>('personal');
+  const { t } = useLang();
 
   const plans: {
     value: PlanChoice;
@@ -33,29 +35,29 @@ export default function PlanChoiceScreen({
       icon: User,
       badgeBg: '#ffefd6',
       badgeColor: '#f59d2a',
-      title: 'ကိုယ်ပိုင်',
-      desc: 'တစ်ယောက်တည်း ကိုယ့်အရှိန်နဲ့ သင်ယူမယ်',
+      title: t('org.personal'),
+      desc: t('plan.alone_at_your_own_pace_will_learn'),
     },
     {
       value: 'org',
       icon: Users,
       badgeBg: '#e3f4ff',
       badgeColor: '#2b8fd4',
-      title: 'အဖွဲ့အစည်း',
-      desc: 'အဖွဲ့ (သို့) ကျောင်း ဖွင့်မယ်၊ သို့မဟုတ် ဝင်ရောက်မယ်',
+      title: t('plan.organization'),
+      desc: t('plan.team_or_school_or_will_join'),
     },
   ];
 
   return (
     <Screen>
       <div className="w4-auth-hero">
-        <div className="w4-auth-title">ဘယ်လိုသင်ယူချင်လဲ</div>
-        <div className="w4-auth-sub">နောက်မှလည်း ပြောင်းလို့ရပါတယ်</div>
+        <div className="w4-auth-title">{t('plan.how_do_you_want_to_learn')}</div>
+        <div className="w4-auth-sub">{t('plan.later_also_can_change')}</div>
       </div>
 
       <div
         role="radiogroup"
-        aria-label="အကောင့်အမျိုးအစား ရွေးပါ"
+        aria-label={t('plan.account_type_choose')}
         style={{ display: 'flex', flexDirection: 'column', gap: 12 }}
       >
         {plans.map((p) => {
@@ -150,7 +152,7 @@ export default function PlanChoiceScreen({
 
       <div className="w4-auth-submit" style={{ marginTop: 24 }}>
         <PillButton color="orange" onClick={() => onDone(selected)}>
-          ရှေ့ဆက်မယ်
+          {t('plan.continue')}
         </PillButton>
       </div>
     </Screen>

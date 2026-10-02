@@ -20,6 +20,7 @@ import {
 } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 import MascotScene3D from './Mascot3D';
+import { useLang } from '../lib/i18n';
 
 export type MascotPose =
   | 'wave'
@@ -54,13 +55,14 @@ export function TabBar({
   onTab: (id: TabId) => void;
   labels?: Partial<Record<TabId, string>>;
 }) {
+  const { t } = useLang();
   const fallback: Record<TabId, string> = {
-    home: 'ပင်မ',
-    lessons: 'သင်ခန်းစာ',
-    practice: 'လေ့ကျင့်',
-    podcast: 'ပေါ့ဒ်ကတ်',
-    achievements: 'ဆုများ',
-    profile: 'ပရိုဖိုင်',
+    home: t('nav.home'),
+    lessons: t('dashboard.lesson'),
+    practice: t('nav.practice'),
+    podcast: t('dashboard.podcast'),
+    achievements: t('dashboard.awards'),
+    profile: t('nav.profile'),
   };
   const text = { ...fallback, ...labels };
   const tabs: { id: TabId; icon: LucideIcon }[] = [
@@ -72,7 +74,7 @@ export function TabBar({
     { id: 'profile', icon: User },
   ];
   return (
-    <nav className="tabbar" aria-label="ပင်မလမ်းညွှန်">
+    <nav className="tabbar" aria-label={t('nav.main_nav')}>
       {tabs.map((t) => {
         const Icon = t.icon;
         const isActive = active === t.id;
@@ -116,6 +118,7 @@ export function TopBar({
   onBack?: () => void;
   right?: ReactNode;
 }) {
+  const { t } = useLang();
   if (variant === 'close') {
     return (
       <div className="topbar">
@@ -123,7 +126,7 @@ export function TopBar({
           type="button"
           className="icon-btn"
           onClick={onClose}
-          aria-label="ပိတ်ရန်"
+          aria-label={t('exam.close')}
         >
           <X size={20} />
         </button>
@@ -138,7 +141,7 @@ export function TopBar({
         type="button"
         className="icon-btn"
         onClick={onBack}
-        aria-label="နောက်သို့"
+        aria-label={t('dialogues.back')}
       >
         <ArrowLeft size={20} />
       </button>

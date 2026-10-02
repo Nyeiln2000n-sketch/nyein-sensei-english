@@ -38,6 +38,9 @@ import { topics } from '../data/topics';
 import { topicImageSrc } from '../data/topic-images';
 import { ProgressBar, Screen } from './ui';
 import WordOfDayCard from './WordOfDayCard';
+import { useLang, displayLang, tNum } from '../lib/i18n';
+import type { LangKey } from '../i18n/my';
+import type { TParams } from '../lib/i18n';
 
 /** 300 XP per level — same convention as ProfileScreen's အဆင့် chip. */
 const XP_PER_LEVEL = 300;
@@ -51,22 +54,23 @@ function buzz(): void {
   }
 }
 
-function greetingFor(hour: number): string {
-  if (hour < 12) return 'မင်္ဂလာနံနက်ခင်း!';
-  if (hour < 17) return 'မင်္ဂလာနေ့လည်ခင်း!';
-  return 'မင်္ဂလာညချမ်း!';
+function greetingFor(hour: number, t: (key: LangKey, params?: TParams) => string): string {
+  if (hour < 12) return t('dashboard.good_morning');
+  if (hour < 17) return t('dashboard.good_afternoon');
+  return t('dashboard.good_evening');
 }
 
-const QUOTES: { my: string; en: string }[] = [
-  { my: 'နေ့တိုင်းလေ့ကျင့်ရင် အင်္ဂလိပ်စကား ကျွမ်းကျင်လာမယ်။', en: 'Practice every day.' },
-  { my: 'အမှားလုပ်တာကို မကြောက်ပါနဲ့ — အမှားကပဲ သင်ပေးတယ်။', en: 'Mistakes help us learn!' },
-  { my: 'စကားလုံးတစ်လုံးကနေ စတင်လိုက်ပါ။', en: 'Start with one word.' },
-  { my: 'မင်းလုပ်နိုင်တယ်! ဆက်ကြိုးစားပါ။', en: 'You can do it!' },
-  { my: 'တစ်နေ့ ငါးမိနစ်ပဲ လေ့ကျင့်ပါ။', en: 'Just 5 minutes a day.' },
-  { my: 'ဒီနေ့သင်တာ မနက်ဖြန်မှာ သုံးနိုင်မယ်။', en: 'Learn today, use tomorrow.' },
+const QUOTES: { key: LangKey; en: string }[] = [
+  { key: 'dashboard.if_practice_daily_english', en: 'Practice every day.' },
+  { key: 'dashboard.making_mistakes_dont_fear_mistakes', en: 'Mistakes help us learn!' },
+  { key: 'dashboard.from_one_word', en: 'Start with one word.' },
+  { key: 'dashboard.you_can_do_it', en: 'You can do it!' },
+  { key: 'dashboard.a_day', en: 'Just 5 minutes a day.' },
+  { key: 'dashboard.todays_lesson', en: 'Learn today, use tomorrow.' },
 ];
 
 export default function DashboardScreen({ go }: { go: GoFn; params?: NavParams }) {
+  const { t, lang } = useLang();
   const streak = getStreak();
   const xp = getXP();
   const progress = getProgress();
@@ -75,7 +79,7 @@ export default function DashboardScreen({ go }: { go: GoFn; params?: NavParams }
   const level = Math.floor(xp / XP_PER_LEVEL) + 1;
   const levelCur = xp % XP_PER_LEVEL;
 
-  const greeting = greetingFor(new Date().getHours());
+  const greeting = greetingFor(new Date().getHours(), t);
 
   // Five daily-lesson cards, rotating one slot per day so the carousel
   // feels fresh every morning.
@@ -85,8 +89,8 @@ export default function DashboardScreen({ go }: { go: GoFn; params?: NavParams }
   // Preload the 5 visible carousel illustrations so the first paint is
   // instant (cards rotate daily, so this re-runs once per day).
   useEffect(() => {
-    cards.forEach((t) => {
-      const src = topicImageSrc(t.id);
+    cards.forEach((topic) => {
+      const src = topicImageSrc(topic.id);
       if (src) {
         const im = new Image();
         im.src = src;
@@ -122,7 +126,7 @@ export default function DashboardScreen({ go }: { go: GoFn; params?: NavParams }
   const quickActions = [
     {
       key: 'lessons',
-      label: 'သင်ခန်းစာ',
+      label: t('dashboard.lesson'),
       icon: BookOpen,
       badgeBg: '#FFE3B3',
       badgeColor: '#E8933C',
@@ -138,7 +142,7 @@ export default function DashboardScreen({ go }: { go: GoFn; params?: NavParams }
     },
     {
       key: 'challenge',
-      label: 'စိန်ခေါ်မှု',
+      label: t('dashboard.challenge'),
       icon: Zap,
       badgeBg: '#FFE3B3',
       badgeColor: '#E8933C',
@@ -146,7 +150,7 @@ export default function DashboardScreen({ go }: { go: GoFn; params?: NavParams }
     },
     {
       key: 'practice',
-      label: 'စကားပြော',
+      label: t('dashboard.dialogue'),
       icon: Mic,
       badgeBg: '#E7D9FA',
       badgeColor: '#8B5CF6',
@@ -154,7 +158,7 @@ export default function DashboardScreen({ go }: { go: GoFn; params?: NavParams }
     },
     {
       key: 'vocab',
-      label: 'ဝေါဟာရ',
+      label: t('dashboard.vocabulary'),
       icon: BookOpenText,
       badgeBg: '#D6ECFF',
       badgeColor: '#2FA8DE',
@@ -162,7 +166,7 @@ export default function DashboardScreen({ go }: { go: GoFn; params?: NavParams }
     },
     {
       key: 'achievements',
-      label: 'ဆုများ',
+      label: t('dashboard.awards'),
       icon: Trophy,
       badgeBg: '#FFF3C4',
       badgeColor: '#D9A400',
@@ -170,7 +174,7 @@ export default function DashboardScreen({ go }: { go: GoFn; params?: NavParams }
     },
     {
       key: 'podcast',
-      label: 'ပေါ့ဒ်ကတ်',
+      label: t('dashboard.podcast'),
       icon: Headphones,
       badgeBg: '#FFE3B3',
       badgeColor: '#E8933C',
@@ -179,7 +183,7 @@ export default function DashboardScreen({ go }: { go: GoFn; params?: NavParams }
     // FASE 14 Ola 2 — new exercise formats (E2-001→E2-004)
     {
       key: 'conjugationDrill',
-      label: 'ကြိယာပုံစံ',
+      label: t('dashboard.verb_forms'),
       icon: Repeat2,
       badgeBg: '#FFE3B3',
       badgeColor: '#E8933C',
@@ -187,7 +191,7 @@ export default function DashboardScreen({ go }: { go: GoFn; params?: NavParams }
     },
     {
       key: 'tenseQuiz',
-      label: 'ကာလ ဉာဏ်စမ်း',
+      label: t('dashboard.tense_quiz'),
       icon: Timer,
       badgeBg: '#D6ECFF',
       badgeColor: '#2FA8DE',
@@ -195,7 +199,7 @@ export default function DashboardScreen({ go }: { go: GoFn; params?: NavParams }
     },
     {
       key: 'sentenceBuilder',
-      label: 'ဝါကျစီစဉ်မယ်',
+      label: t('dashboard.arrange_sentences'),
       icon: Puzzle,
       badgeBg: '#D9F5D3',
       badgeColor: '#35A24B',
@@ -203,7 +207,7 @@ export default function DashboardScreen({ go }: { go: GoFn; params?: NavParams }
     },
     {
       key: 'dictation',
-      label: 'နားထောင်ပြီးရေး',
+      label: t('dashboard.dictation'),
       icon: Headphones,
       badgeBg: '#E7D9FA',
       badgeColor: '#8B5CF6',
@@ -212,7 +216,7 @@ export default function DashboardScreen({ go }: { go: GoFn; params?: NavParams }
     // FASE 14 Ola 4 — CEFR certification exams (A1–C2)
     {
       key: 'cefrExam',
-      label: 'CEFR စာမေးပွဲ',
+      label: t('dashboard.cefr_exam'),
       icon: Award,
       badgeBg: '#FFF3C4',
       badgeColor: '#D9A400',
@@ -224,14 +228,14 @@ export default function DashboardScreen({ go }: { go: GoFn; params?: NavParams }
     {
       key: 'lessons',
       value: String(doneLessons),
-      label: 'သင်ခန်းစာ',
+      label: t('dashboard.lesson'),
       icon: <CheckCircle2 size={26} color="#57C96B" />,
       bg: '#D9F5D3',
     },
     {
       key: 'streak',
       value: String(streak),
-      label: 'ရက်ဆက်',
+      label: t('dashboard.streak'),
       icon: <Flame size={26} color="#FF7A1A" />,
       bg: '#FFE3D1',
     },
@@ -260,18 +264,18 @@ export default function DashboardScreen({ go }: { go: GoFn; params?: NavParams }
           <span className="dash-subtitle">English</span>
         </div>
         <div className="dash-pills">
-          <span className="stat-pill" aria-label={`ရက်ဆက် ${streak} ရက်`}>
+          <span className="stat-pill" aria-label={t('dashboard.streak_var_days', { days: tNum(streak) })}>
             <Flame size={16} color="#FF7A1A" aria-hidden="true" />
             <span>{streak}</span>
           </span>
-          <span className="stat-pill" aria-label={`စိန် ${gems} လုံး`}>
+          <span className="stat-pill" aria-label={t('dashboard.gems_var_items', { gems: tNum(gems) })}>
             <Gem size={16} color="#3FB0F0" aria-hidden="true" />
             <span>{gems}</span>
           </span>
           <button
             type="button"
             className="icon-btn dash-bell"
-            aria-label="ဆုများနှင့် အသိပေးချက်များ"
+            aria-label={t('dashboard.awards_and_notifications')}
             onClick={() => {
               buzz();
               go('achievements');
@@ -288,7 +292,7 @@ export default function DashboardScreen({ go }: { go: GoFn; params?: NavParams }
       <div className="card greet-hero greet-hero-scenic">
         <div className="greet-text">
           <h1 className="greet-title">{greeting}</h1>
-          <p className="greet-sub">ဒီနေ့လည်း အတူတူ လေ့လာကြမယ်!</p>
+          <p className="greet-sub">{t('dashboard.today_also_together_lets_learn')}</p>
         </div>
         <div className="greet-cat">
           <div className="cat-greet greet-cat-holder">
@@ -301,12 +305,12 @@ export default function DashboardScreen({ go }: { go: GoFn; params?: NavParams }
       </div>
 
       {/* အဆင့် / XP progress */}
-      <div className="card level-card" aria-label={`အဆင့် ${level}၊ ${levelCur} / ${XP_PER_LEVEL} XP`}>
+      <div className="card level-card" aria-label={t('dashboard.level_xp_progress', { level: tNum(level), cur: tNum(levelCur), per: tNum(XP_PER_LEVEL) })}>
         <div className="level-row">
           <span className="level-crown" aria-hidden="true">
             <Crown size={20} color="#F5A623" />
           </span>
-          <span className="level-name">အဆင့် {level}</span>
+          <span className="level-name">{t('dashboard.level_label', { level: tNum(level) })}</span>
           <span className="level-xp">
             {levelCur} / {XP_PER_LEVEL} XP
           </span>
@@ -318,28 +322,28 @@ export default function DashboardScreen({ go }: { go: GoFn; params?: NavParams }
       <WordOfDayCard go={go} />
 
       {/* daily-lesson snap carousel */}
-      <section className="daily-section" aria-label="နေ့စဉ်သင်ခန်းစာ">
+      <section className="daily-section" aria-label={t('dashboard.daily_lesson_tab')}>
         <div
           ref={trackRef}
           className="daily-track"
           role="region"
           aria-roledescription="carousel"
-          aria-label="နေ့စဉ်သင်ခန်းစာ ရွေးချယ်ရန်"
+          aria-label={t('dashboard.daily_lesson_to_choose')}
           onScroll={onTrackScroll}
         >
-          {cards.map((t, i) => (
+          {cards.map((topic, i) => (
             <article
-              key={t.id}
+              key={topic.id}
               role="group"
               aria-roledescription="slide"
-              aria-label={`ဆလိုက် ${i + 1} / ${cards.length}: ${t.nameMy}`}
+              aria-label={t('dashboard.slide_counter_name', { a: tNum(i + 1), b: tNum(cards.length), name: topic.nameMy })}
               className="daily-card"
-              style={{ background: t.color }}
+              style={{ background: topic.color }}
             >
               {/* Full-bleed topic illustration (reuses the per-word art) with
                   a readability gradient on top — no emoji, project rule. */}
               {(() => {
-                const imgSrc = topicImageSrc(t.id);
+                const imgSrc = topicImageSrc(topic.id);
                 return imgSrc ? (
                   <img
                     src={imgSrc}
@@ -354,37 +358,37 @@ export default function DashboardScreen({ go }: { go: GoFn; params?: NavParams }
               <div className="daily-card-shade" aria-hidden="true" />
               <span className="daily-badge">
                 <Star size={13} color="#F5A623" fill="#F5A623" aria-hidden="true" />
-                &nbsp;နေ့စဉ်သင်ခန်းစာ
+                &nbsp;{t('dashboard.daily_lesson_tab')}
               </span>
               <span className="daily-count" aria-hidden="true">
                 {i + 1}/{cards.length}
               </span>
               <div className="daily-card-body">
-                <h2 className="daily-card-title">{t.nameMy}</h2>
-                <p className="daily-card-sub">{t.nameEn} · စကားလုံးအသစ်များ</p>
+                <h2 className="daily-card-title">{displayLang({ my: topic.nameMy, th: topic.nameTh }, lang)}</h2>
+                <p className="daily-card-sub">{t('dashboard.daily_card_new_words', { name: topic.nameEn })}</p>
                 <button
                   type="button"
                   className="daily-cta"
-                  aria-label={`${t.nameMy} သင်ခန်းစာ စတင်မယ်`}
+                  aria-label={t('dashboard.var_lesson_start', { name: topic.nameMy })}
                   onClick={() => {
                     buzz();
-                    go('quiz', { topic: t.id, level: 1 });
+                    go('quiz', { topic: topic.id, level: 1 });
                   }}
                 >
-                  စတင်မယ် <ArrowRight size={18} aria-hidden="true" />
+                  {t('dashboard.start')} <ArrowRight size={18} aria-hidden="true" />
                 </button>
               </div>
             </article>
           ))}
         </div>
-        <div className="daily-dots" role="tablist" aria-label="ဆလိုက်ရွေးချယ်ရန်">
-          {cards.map((t, i) => (
+        <div className="daily-dots" role="tablist" aria-label={t('dashboard.choose_slide')}>
+          {cards.map((topic, i) => (
             <button
-              key={t.id}
+              key={topic.id}
               type="button"
               role="tab"
               aria-selected={i === active}
-              aria-label={`ဆလိုက် ${i + 1}: ${t.nameMy}`}
+              aria-label={t('dashboard.slide_counter', { a: tNum(i + 1), name: topic.nameMy })}
               className={`daily-dot${i === active ? ' active' : ''}`}
               onClick={() => scrollToCard(i)}
             />
@@ -393,7 +397,7 @@ export default function DashboardScreen({ go }: { go: GoFn; params?: NavParams }
       </section>
 
       {/* quick-action icon grid */}
-      <nav className="quick-grid" aria-label="အမြန်လုပ်ဆောင်ချက်များ">
+      <nav className="quick-grid" aria-label={t('dashboard.quick_actions')}>
         {quickActions.map((a) => {
           const Icon = a.icon;
           return (
@@ -423,19 +427,19 @@ export default function DashboardScreen({ go }: { go: GoFn; params?: NavParams }
       {/* today's progress — premium card (rediseño 2026-09-30 pedido por Nyein):
           header limpio (título + ver todo), 3 stat cards, y fila de
           compartir elegante a todo ancho. Sin elementos apretados. */}
-      <section aria-label="ဒီနေ့ တိုးတက်မှု" className="card progress-card">
+      <section aria-label={t('dashboard.today_progress')} className="card progress-card">
         <div className="progress-head">
           <h2 className="section-title-sm">
             <BarChart3 size={17} color="#2FA8DE" aria-hidden="true" />
-            &nbsp;ဒီနေ့ တိုးတက်မှု
+            &nbsp;{t('dashboard.today_progress')}
           </h2>
           <button
             type="button"
             className="link-sm"
             onClick={() => go('lessons')}
-            aria-label="သင်ခန်းစာအားလုံး ကြည့်ရန်"
+            aria-label={t('dashboard.all_lessons_to_view')}
           >
-            အားလုံးကြည့်ရန် <ArrowRight size={14} aria-hidden="true" />
+            {t('dashboard.view_all')} <ArrowRight size={14} aria-hidden="true" />
           </button>
         </div>
         <div className="stat-cards">
@@ -470,7 +474,7 @@ export default function DashboardScreen({ go }: { go: GoFn; params?: NavParams }
           className="quote-cat mascot-fallback-float"
         />
         <blockquote className="quote-text">
-          <p>“{quote.my}”</p>
+          <p>“{t(quote.key)}”</p>
           <footer className="quote-en">
             {quote.en}{' '}
             <Heart size={13} color="#FF8A9D" fill="#FF8A9D" aria-hidden="true" />

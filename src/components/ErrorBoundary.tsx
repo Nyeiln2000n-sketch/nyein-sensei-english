@@ -1,4 +1,5 @@
 import React from "react";
+import { t } from "../lib/i18n";
 
 interface ErrorBoundaryProps {
   children: React.ReactNode;
@@ -64,11 +65,11 @@ export class ErrorBoundary extends React.Component<
               margin: "0 0 8px",
             }}
           >
-            တစ်ခုခု မှားယွင်းနေပါတယ်
+            {t('error.something_went_wrong')}
           </h1>
           <p style={{ fontSize: 15, color: "#8A7364", margin: "0 0 28px" }}>
             {this.props.fallbackLabel ??
-              "ပင်မစာမျက်နှာသို့ ပြန်သွားရန် နှိပ်ပါ"}
+              t('error.to_home_page_to_go_back_tap')}
           </p>
           <button
             type="button"
@@ -85,7 +86,7 @@ export class ErrorBoundary extends React.Component<
               boxShadow: "0 4px 0 #D97F1A, 0 6px 16px rgba(255,158,46,.35)",
             }}
           >
-            ပင်မသို့ ပြန်သွားမည်
+            {t('error.will_go_back')}
           </button>
         </div>
       );

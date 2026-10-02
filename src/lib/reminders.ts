@@ -15,6 +15,8 @@
 // SOLO se llama desde un gesto directo del usuario (el toggle de opt-in o
 // el botón del PushPrompt) — nunca automáticamente al abrir la app.
 
+import { t } from './i18n';
+
 export interface ReminderPrefs {
   /** Opt-in activado por el usuario desde el toggle. */
   enabled: boolean;
@@ -32,7 +34,10 @@ export const REMINDER_DEFAULTS: ReminderPrefs = {
 
 export const REMINDER_COPY = {
   title: 'Nyein Sensei English',
-  body: 'ဒီနေ့ လေ့ကျင့်ဖို့ မမေ့နဲ့နော် — ၅ မိနစ်လောက်ပဲ လေ့လာကြည့်ပါ',
+  // Getter: el body se resuelve en el idioma activo en cada uso.
+  get body(): string {
+    return t('reminders.today_to_practice');
+  },
 };
 
 const PREFS_KEY = 'nse-reminder-prefs';

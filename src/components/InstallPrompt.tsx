@@ -5,6 +5,7 @@
 import { useEffect, useState } from 'react';
 import { Share, X, Smartphone } from 'lucide-react';
 import { C, FONT } from './w3-shared';
+import { useLang } from '../lib/i18n';
 
 const DISMISS_KEY = 'nse-install-prompt-dismissed-v1';
 
@@ -24,6 +25,7 @@ function isIosSafari(): boolean {
 }
 
 export default function InstallPrompt() {
+  const { t } = useLang();
   const [show, setShow] = useState(false);
 
   useEffect(() => {
@@ -53,7 +55,7 @@ export default function InstallPrompt() {
   return (
     <div
       role="dialog"
-      aria-label="အက်ပ်ကို စခရင်ပေါ်တင်ရန်"
+      aria-label={t('install.add_app_to_screen')}
       style={{
         position: 'fixed',
         left: 16,
@@ -86,11 +88,11 @@ export default function InstallPrompt() {
           <Smartphone size={20} />
         </span>
         <div style={{ fontWeight: 700, fontSize: 15, flex: 1 }}>
-          အက်ပ်ကို စခရင်ပေါ် တင်ထားလိုက်ပါ
+          {t('install.app')}
         </div>
         <button
           onClick={dismiss}
-          aria-label="ပိတ်ရန်"
+          aria-label={t('exam.close')}
           style={{
             border: 'none',
             background: 'transparent',
@@ -104,13 +106,13 @@ export default function InstallPrompt() {
       </div>
       <ol style={{ margin: '0 0 10px', paddingLeft: 20, fontSize: 13.5, lineHeight: 1.55 }}>
         <li>
-          Safari အောက်ခြေက <Share size={14} style={{ verticalAlign: -2 }} /> မျှဝေခလုတ်ကို
-          နှိပ်ပါ
+          {t('install.safari_bottom_share_button')} <Share size={14} style={{ verticalAlign: -2 }} />{' '}
+          {t('install.tap_share_button')}
         </li>
         <li>
-          <b>«Add to Home Screen» / «ပင်မစခရင်သို့ ထည့်ရန်»</b> ကို ရွေးပါ
+          <b>{t('install.add_to_home_screen_to_enter')}</b> {t('install.choose')}
         </li>
-        <li>အပေါ်မှာ <b>Add</b> ကို နှိပ်ပါ — ပြီးပါပြီ</li>
+        <li>{t('install.above')} <b>Add</b> {t('install.tap')}</li>
       </ol>
       <button
         onClick={dismiss}
@@ -127,7 +129,7 @@ export default function InstallPrompt() {
           cursor: 'pointer',
         }}
       >
-        နောက်မှ လုပ်မယ်
+        {t('install.later')}
       </button>
     </div>
   );

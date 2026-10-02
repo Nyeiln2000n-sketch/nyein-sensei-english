@@ -13,6 +13,7 @@ import { MEDALS, buildMedalStats, dequeueCelebrations } from '../lib/celebration
 import CelebrationOverlay from '../components/CelebrationOverlay';
 import './w4.css';
 import { W4ErrorBoundary } from './w4error';
+import { useLang, tNum } from '../lib/i18n';
 
 const TOTAL_LESSONS = 100;
 
@@ -22,6 +23,7 @@ function todayKey(): string {
 }
 
 export default function AchievementsScreen({ go, params }: { go: GoFn; params?: NavParams }) {
+  const { t } = useLang();
   void go;
   void params;
   const [tab, setTab] = useState<'medals' | 'stats'>('medals');
@@ -64,9 +66,9 @@ export default function AchievementsScreen({ go, params }: { go: GoFn; params?: 
       <div className="w4-head-card">
         <MascotScene3D pose="amazed" size={56} />
         <div>
-          <div className="w4-head-title">ဆုတံဆိပ်များ</div>
+          <div className="w4-head-title">{t('achievements.medals')}</div>
           <div className="w4-head-sub">Nyein Sensei English</div>
-          <span className="w4-chip">ကျောင်းသား</span>
+          <span className="w4-chip">{t('achievements.student')}</span>
         </div>
       </div>
 
@@ -74,8 +76,8 @@ export default function AchievementsScreen({ go, params }: { go: GoFn; params?: 
       <div className="w4-seg-wrap">
         <SegmentedControl
           options={[
-            { value: 'medals', label: 'ဆုတံဆိပ်များ' },
-            { value: 'stats', label: 'စာရင်းအင်း' },
+            { value: 'medals', label: t('achievements.medals') },
+            { value: 'stats', label: t('achievements.statistics') },
           ]}
           value={tab}
           onChange={setTab}
@@ -94,14 +96,14 @@ export default function AchievementsScreen({ go, params }: { go: GoFn; params?: 
           </div>
 
           <div className="w4-card">
-            <div className="w4-card-title">စုစုပေါင်း တိုးတက်မှု</div>
+            <div className="w4-card-title">{t('achievements.total_progress')}</div>
             <div className="w4-progress-line">
-              {lessonsDone}/{TOTAL_LESSONS} သင်ခန်းစာ
+              {t('achievements.lessons_progress', { done: tNum(lessonsDone), total: tNum(TOTAL_LESSONS) })}
             </div>
             <ProgressBar value={lessonsDone} max={TOTAL_LESSONS} />
             <div className="w4-progress-note">
-              ⭐ ဆုတံဆိပ် {unlockedCount}/{medals.length} ခု ရရှိပြီးပြီ
-              {streak > 0 && isActiveToday ? ' — ဒီနေ့ လေ့လာပြီးပြီ! 🎉' : ''}
+              {t('achievements.medals_earned', { a: tNum(unlockedCount), b: tNum(medals.length) })}
+              {streak > 0 && isActiveToday ? ` ${t('achievements.today_studied')}` : ''}
             </div>
           </div>
         </>
@@ -110,32 +112,32 @@ export default function AchievementsScreen({ go, params }: { go: GoFn; params?: 
           <div className="w4-stat-grid">
             <div className="w4-stat-card">
               <div className="w4-stat-num">⚡ {progress.xp}</div>
-              <div className="w4-stat-label">XP စုစုပေါင်း</div>
+              <div className="w4-stat-label">{t('share.xp_total')}</div>
             </div>
             <div className="w4-stat-card">
               <div className="w4-stat-num">🔥 {streak}</div>
-              <div className="w4-stat-label">ရက်ဆက်</div>
+              <div className="w4-stat-label">{t('dashboard.streak')}</div>
             </div>
             <div className="w4-stat-card">
               <div className="w4-stat-num">🎯 {accuracy}%</div>
-              <div className="w4-stat-label">မှန်ကန်မှု</div>
+              <div className="w4-stat-label">{t('achievements.accuracy')}</div>
             </div>
             <div className="w4-stat-card">
               <div className="w4-stat-num">🏆 {progress.bestCombo}</div>
-              <div className="w4-stat-label">အကောင်းဆုံး combo</div>
+              <div className="w4-stat-label">{t('achievements.best_combo')}</div>
             </div>
           </div>
 
           <div className="w4-card">
-            <div className="w4-card-title">📝 ဖြေဆိုမှု</div>
+            <div className="w4-card-title">{t('achievements.answers')}</div>
             <div className="w4-progress-line">
-              {totalCorrect}/{totalAnswered} မှန်
+              {t('achievements.correct_ratio', { a: tNum(totalCorrect), b: tNum(totalAnswered) })}
             </div>
             <ProgressBar value={totalAnswered > 0 ? (totalCorrect / totalAnswered) * 100 : 0} max={100} />
             <div className="w4-progress-note">
               {isActiveToday
-                ? 'ဒီနေ့ လေ့လာပြီးပြီ! ဒီလိုပဲ ဆက်သွားပါ 💪'
-                : 'ဒီနေ့ မလေ့လာရသေးဘူး — တစ်ခန်းလေ့လာလိုက်ပါ 💪'}
+                ? t('achievements.today_studied_like_this_keep_going')
+                : t('achievements.today_not_studied_yet')}
             </div>
           </div>
         </>

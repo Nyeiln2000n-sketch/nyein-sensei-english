@@ -29,12 +29,14 @@ import {
   unsubscribePush,
 } from '../lib/push';
 import { getProgress } from '../lib/storage';
+import { useLang } from '../lib/i18n';
 
 function pad2(n: number): string {
   return String(n).padStart(2, '0');
 }
 
 export default function ReminderSettings() {
+  const { t } = useLang();
   const [enabled, setEnabled] = useState<boolean>(() => getReminderPrefs().enabled);
   const [time, setTime] = useState<string>(() => {
     const p = getReminderPrefs();
@@ -92,16 +94,16 @@ export default function ReminderSettings() {
           {enabled ? <Bell size={20} /> : <BellOff size={20} />}
         </span>
         <span className="nse-setting-text">
-          <span className="nse-setting-title">နေ့စဉ် သတိပေးချက်</span>
+          <span className="nse-setting-title">{t('push.daily_reminder')}</span>
           <span className="nse-setting-sub">
-            လေ့ကျင့်ဖို့ မမေ့အောင် နေ့တိုင်း သတိပေးမယ်
+            {t('reminders.to_practice_not_to_forget_every_day')}
           </span>
         </span>
         <button
           type="button"
           role="switch"
           aria-checked={enabled}
-          aria-label="နေ့စဉ် သတိပေးချက်"
+          aria-label={t('push.daily_reminder')}
           className="nse-switch"
           data-on={enabled}
           disabled={busy}
@@ -114,28 +116,28 @@ export default function ReminderSettings() {
       {enabled && (
         <div className="nse-setting-row nse-setting-nested">
           <span className="nse-setting-text">
-            <span className="nse-setting-title">သတိပေးမယ့် အချိန်</span>
+            <span className="nse-setting-title">{t('reminders.reminder_time')}</span>
           </span>
           <input
             type="time"
             className="nse-time-input"
             value={time}
             onChange={(e) => changeTime(e.target.value)}
-            aria-label="သတိပေးမယ့် အချိန်"
+            aria-label={t('reminders.reminder_time')}
           />
         </div>
       )}
 
       {needsPermissionHint && (
         <p className="nse-setting-hint">
-          သတိပေးချက်တွေ ပေါ်လာဖို့ ခွင့်ပြုချက် လိုပါတယ်။ iPhone Settings →
-          Notifications → Nyein Sensei English မှာ ဖွင့်ပေးပါ။
+          {t('reminders.reminders_permission_iphone_settings')}{' '}
+          {t('reminders.notifications_nyein_sensei_english')}
         </p>
       )}
       <p className="nse-setting-note">
         {isPushSupported()
-          ? 'အက်ပ် ပိတ်ထားရင်တောင် သတိပေးချက် ဖုန်းမှာ ပေါ်လာမယ် — နေ့တိုင်း သတ်မှတ်ထားတဲ့ အချိန်မှာ ပို့ပေးမယ်။'
-          : 'ဒီသတိပေးချက်တွေက သင့်ဖုန်းထဲမှာပဲ အလုပ်လုပ်ပါတယ် — ဆာဗာကနေ ပို့တာ မဟုတ်ဘူး။'}
+          ? t('reminders.background_reminder_note')
+          : t('reminders.local_only_note')}
       </p>
     </div>
   );
@@ -147,6 +149,7 @@ export default function ReminderSettings() {
  * El usuario lo puede cerrar con la X.
  */
 export function ReminderBanner() {
+  const { t } = useLang();
   const [message, setMessage] = useState<string | null>(null);
 
   useEffect(() => {
@@ -176,7 +179,7 @@ export function ReminderBanner() {
       <button
         type="button"
         className="reminder-banner-close"
-        aria-label="ပိတ်ရန်"
+        aria-label={t('exam.close')}
         onClick={() => setMessage(null)}
       >
         <X size={18} />

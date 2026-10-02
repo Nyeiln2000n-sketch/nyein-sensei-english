@@ -13,6 +13,7 @@
 import { useEffect, useState } from 'react';
 import { X } from 'lucide-react';
 import { getSession } from '../lib/auth';
+import { useLang } from '../lib/i18n';
 import {
   ensurePushSubscription,
   getPushState,
@@ -50,6 +51,7 @@ function snoozedUntil(): number {
 }
 
 export default function PushPrompt() {
+  const { t } = useLang();
   const [show, setShow] = useState(false);
   const [busy, setBusy] = useState(false);
 
@@ -111,7 +113,7 @@ export default function PushPrompt() {
   return (
     <div
       role="dialog"
-      aria-label="နေ့စဉ် သတိပေးချက်"
+      aria-label={t('push.daily_reminder')}
       style={{
         position: 'fixed',
         left: 16,
@@ -129,7 +131,7 @@ export default function PushPrompt() {
     >
       <button
         onClick={later}
-        aria-label="နောက်မှ"
+        aria-label={t('invite.later')}
         style={{
           position: 'absolute',
           top: 10,
@@ -160,7 +162,7 @@ export default function PushPrompt() {
               fontFamily: "'Noto Sans Myanmar', sans-serif",
             }}
           >
-            နေ့တိုင်း သတိပေးရမလား? 🐱
+            {t('push.every_day')}
           </div>
           <div
             style={{
@@ -171,8 +173,8 @@ export default function PushPrompt() {
               fontFamily: "'Noto Sans Myanmar', sans-serif",
             }}
           >
-            လေ့ကျင့်ဖို့ မမေ့အောင် နေ့တိုင်း သတိပေးမယ်။ စာသင်ချိန်ရောက်ရင်
-            ဖုန်းမှာ အသိပေးစာ ပေါ်လာမယ်။
+            {t('push.to_practice_not_to_forget_every_day')}{' '}
+            {t('push.on_phone')}
           </div>
         </div>
       </div>
@@ -194,7 +196,7 @@ export default function PushPrompt() {
             opacity: busy ? 0.7 : 1,
           }}
         >
-          သတိပေးပါ
+          {t('push.remind_me')}
         </button>
         <button
           onClick={later}
@@ -211,7 +213,7 @@ export default function PushPrompt() {
             fontFamily: "'Noto Sans Myanmar', sans-serif",
           }}
         >
-          နောက်မှ
+          {t('invite.later')}
         </button>
       </div>
     </div>

@@ -13,6 +13,7 @@
 // instructions for enabling the microphone on iPhone.
 
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { useLang, displayLang } from '../lib/i18n';
 import { X, Mic, Volume2, Check, History } from 'lucide-react';
 import type { GoFn, NavParams } from '../routes';
 import type { TopicId, Phrase, Word } from '../types';
@@ -54,6 +55,7 @@ interface VadHandle {
  * and remove the row from the list. Zero-state is mascot-friendly.
  */
 function ReviewQueue({ words }: { words: Word[] }) {
+  const { t, lang } = useLang();
   const [due, setDue] = useState<Word[]>(() => {
     try {
       return dueWords(words);
@@ -74,7 +76,7 @@ function ReviewQueue({ words }: { words: Word[] }) {
   const visible = due.slice(0, 8);
 
   return (
-    <section aria-label="ဒီနေ့ ပြန်လေ့လာရန်" style={{ marginBottom: 14 }}>
+    <section aria-label={t('practice.today_to_review')} style={{ marginBottom: 14 }}>
       {due.length === 0 ? (
         <Card style={{ padding: '16px 14px' }}>
           <MascotRow
@@ -83,10 +85,10 @@ function ReviewQueue({ words }: { words: Word[] }) {
             text={
               <>
                 <div style={{ fontWeight: 800, fontSize: 15, color: C.title }}>
-                  ဒီနေ့ ပြန်လေ့လာစရာ မရှိဘူး
+                  {t('practice.today_to_review_none')}
                 </div>
                 <div style={{ fontSize: 13, marginTop: 4 }}>
-                  အသစ်တွေ လေ့လာထားလိုက်ပါ — မှားတာ/မေ့တာတွေ ဒီမှာ ပြန်ပေါ်လာမယ်
+                  {t('practice.new_ones_go_learn_here_will_reappear')}
                 </div>
               </>
             }
@@ -105,7 +107,7 @@ function ReviewQueue({ words }: { words: Word[] }) {
           >
             <History size={20} color={C.orangeDark} aria-hidden="true" />
             <span style={{ fontFamily: FONT, fontWeight: 800, fontSize: 16, color: C.title }}>
-              ဒီနေ့ ပြန်လေ့လာရန်
+              {t('practice.today_to_review')}
             </span>
             <span
               style={{
@@ -117,9 +119,9 @@ function ReviewQueue({ words }: { words: Word[] }) {
                 padding: '2px 10px',
                 marginLeft: 'auto',
               }}
-              aria-label={`${due.length} လုံး လိုအပ်နေတယ်`}
+              aria-label={t('practice.due_items_needed', { count: due.length })}
             >
-              {due.length} လုံး
+              {t('practice.var_items', { count: due.length })}
             </span>
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
@@ -154,7 +156,7 @@ function ReviewQueue({ words }: { words: Word[] }) {
                   <button
                     type="button"
                     onClick={() => speak(w.en)}
-                    aria-label={`အသံနားထောင်ရန်: ${w.en}`}
+                    aria-label={t('practice.listen_aria_word', { w: w.en })}
                     style={{
                       width: 40,
                       height: 40,
@@ -186,7 +188,7 @@ function ReviewQueue({ words }: { words: Word[] }) {
                         </span>
                       )}
                     </div>
-                    <div style={{ fontSize: 13, color: C.text }}>{w.my}</div>
+                    <div style={{ fontSize: 13, color: C.text }}>{displayLang(w, lang)}</div>
                   </div>
                 </div>
                 <div
@@ -199,7 +201,7 @@ function ReviewQueue({ words }: { words: Word[] }) {
                   <button
                     type="button"
                     onClick={() => mark(w, true)}
-                    aria-label={`မှတ်မိတယ်: ${w.en}`}
+                    aria-label={t('practice.remembered_word', { en: w.en })}
                     style={{
                       flex: 1,
                       minWidth: 0,
@@ -220,12 +222,12 @@ function ReviewQueue({ words }: { words: Word[] }) {
                     }}
                   >
                     <Check size={15} strokeWidth={3} />
-                    မှတ်မိတယ်
+                    {t('practice.remembered')}
                   </button>
                   <button
                     type="button"
                     onClick={() => mark(w, false)}
-                    aria-label={`မေ့သွားတယ်: ${w.en}`}
+                    aria-label={t('practice.forgot_word', { en: w.en })}
                     style={{
                       flex: 1,
                       minWidth: 0,
@@ -246,7 +248,7 @@ function ReviewQueue({ words }: { words: Word[] }) {
                     }}
                   >
                     <X size={15} strokeWidth={3} />
-                    မေ့သွားတယ်
+                    {t('practice.forgot')}
                   </button>
                 </div>
               </div>
@@ -292,6 +294,7 @@ function PracticeGame({
   words: Word[];
   phrases: Phrase[];
 }) {
+  const { t, lang } = useLang();
   const topic: TopicId = (params?.topic as TopicId | undefined) ?? 'family';
   const pool = useMemo<Phrase[]>(() => {
     const tp = phrasesByTopic(phrases, topic);
@@ -418,16 +421,16 @@ function PracticeGame({
       recog.onerror = (e: any) => {
         setListening(false);
         if (e?.error === 'not-allowed' || e?.error === 'service-not-allowed') {
-          setError('မိုက်ခရိုဖုန်း ခွင့်ပြုချက် လိုအပ်ပါတယ် — ဘရောက်ဇာ ဆက်တင်မှာ ဖွင့်ပေးပါ');
+          setError(t('practice.mic_permission_browser_settings'));
         } else {
-          setError('အသံဖမ်းလို့ မရခဲ့ဘူး — ထပ်စမ်းကြည့်ပါ');
+          setError(t('practice.failed_try_again'));
         }
       };
       recog.onend = () => setListening(false);
       recog.start();
       setListening(true);
     } catch {
-      setError('အသံဖမ်းလို့ မရခဲ့ဘူခ — ထပ်စမ်းကြည့်ပါ');
+      setError(t('practice.try_again'));
       setListening(false);
     }
   };
@@ -506,7 +509,7 @@ function PracticeGame({
       if (e && (e.name === 'NotAllowedError' || e.name === 'SecurityError')) {
         setVadDenied(true);
       } else {
-        setError('မိုက်ခရိုဖုန်း ဖွင့်လို့ မရခဲ့ဘူး — ထပ်စမ်းကြည့်ပါ');
+        setError(t('practice.microphone_to_turn_on_failed_try_again'));
       }
       setVadPhase('idle');
     } finally {
@@ -538,15 +541,15 @@ function PracticeGame({
   const micLabel =
     mode === 'vad'
       ? vadPhase === 'starting'
-        ? 'မိုက်ခရိုဖုန်း ဖွင့်နေတယ်…'
+        ? t('practice.microphone_is_on')
         : vadPhase === 'listening'
-          ? 'နားထောင်နေတယ်… ပြောပါ!'
+          ? t('practice.listening_speak')
           : vadPhase === 'done'
-            ? 'ပြီးပြီ! 🎉'
-            : 'ဖမ်းရန် နှိပ်ပါ'
+            ? t('practice.done')
+            : t('practice.to_record_tap')
       : listening
-        ? 'နားထောင်နေတယ်… ပြောပါ!'
-        : 'ဖမ်းရန် နှိပ်ပါ';
+        ? t('practice.listening_speak')
+        : t('practice.to_record_tap');
 
   return (
     <Screen>
@@ -556,7 +559,7 @@ function PracticeGame({
           <button
             type="button"
             onClick={() => go('back')}
-            aria-label="ပိတ်ရန်"
+            aria-label={t('exam.close')}
             style={{
               width: 40, height: 40, borderRadius: '50%', border: 'none',
               background: C.white, color: C.text, display: 'flex',
@@ -569,12 +572,12 @@ function PracticeGame({
         }
         center={
           <span style={{ fontSize: 18, fontWeight: 800, color: C.title }}>
-            စကားပြော လေ့ကျင့်မယ်
+            {t('practice.dialogue_will_practice')}
           </span>
         }
       />
 
-      <MascotRow pose="wave" size={72} text="စာကြောင်းကို ထပ်ပြောပါ:" />
+      <MascotRow pose="wave" size={72} text={t('practice.the_sentence_repeat')} />
 
       {/* C-008: spaced-repetition queue ABOVE the pronunciation block */}
       <ReviewQueue words={words} />
@@ -592,7 +595,7 @@ function PracticeGame({
         >
           “{phrase.en}”
         </div>
-        <div style={{ fontSize: 16, color: C.text, marginTop: 10 }}>{phrase.my}</div>
+        <div style={{ fontSize: 16, color: C.text, marginTop: 10 }}>{displayLang(phrase, lang)}</div>
         <button
           type="button"
           onClick={() => {
@@ -617,7 +620,7 @@ function PracticeGame({
           }}
         >
           <Volume2 size={18} color={C.blueDark} />
-          အသံနားထောင်မယ်
+          {t('dictation.listen_audio')}
         </button>
       </Card>
 
@@ -635,7 +638,7 @@ function PracticeGame({
             type="button"
             onClick={pressMic}
             disabled={micBusy}
-            aria-label="အသံဖမ်းရန်"
+            aria-label={t('practice.record_audio')}
             style={{
               width: 84,
               height: 84,
@@ -672,7 +675,7 @@ function PracticeGame({
                 textAlign: 'center',
               }}
             >
-              အရင် အသံနားထောင်ပြီး လိုက်ပြောပါ — ပြီးမှ ထပ်နှိပ်ပြီး ဖမ်းပါ
+              {t('practice.first_repeat_then')}
             </div>
           )}
           {mode === 'vad' && vadPhase === 'listening' && (
@@ -689,16 +692,16 @@ function PracticeGame({
         <div style={{ marginTop: 12 }}>
           <FeedbackStrip
             ok={vadHeard}
-            title={vadHeard ? 'တော်လိုက်တာ! 🎉' : 'အသံမကြားလိုက်ရဘူး'}
+            title={vadHeard ? t('practice.great') : t('practice.didnt_hear')}
             sub={
               vadHeard
-                ? 'စာကြောင်းနဲ့ ယှဉ်ကြည့်ပါ ✓ — “' + phrase.en + '”'
-                : 'ထပ်ကြိုးစားကြည့်ပါ — မိုက်ခရိုဖုန်းနား ကပ်ပြောပါ'
+                ? t('practice.compare', { en: phrase.en })
+                : t('practice.try_again_near_the_mic_speak_close')
             }
           />
           <div style={{ marginTop: 10, display: 'flex', justifyContent: 'center' }}>
             <PillButton color="orange" onClick={() => { setVadPhase('idle'); setVadDenied(false); }}>
-              ထပ်ပြောမယ်
+              {t('practice.speak_again')}
             </PillButton>
           </div>
         </div>
@@ -708,14 +711,14 @@ function PracticeGame({
       {mode === 'vad' && vadDenied && (
         <Card style={{ marginTop: 12, background: '#FFF6D6' }}>
           <div style={{ fontSize: 16, fontWeight: 700, color: C.title, marginBottom: 8 }}>
-            🎤 မိုက်ခရိုဖုန်း ခွင့်ပြုချက် လိုအပ်ပါတယ်
+            {t('practice.microphone_permission_needed')}
           </div>
           <div style={{ fontSize: 14, color: C.text, lineHeight: 1.7, marginBottom: 12 }}>
-            iPhone Settings → Safari → Microphone ကို Allow လုပ်ပေးပါ။
-            ပြီးရင် ဒီစာမျက်နှာကို ပြန်ဖွင့်ပြီး ထပ်စမ်းပါ။
+            {t('practice.iphone_settings_safari_microphone_allow')}
+            {t('practice.then_this_page_reopen_and')}
           </div>
           <PillButton color="orange" onClick={startVad}>
-            ထပ်စမ်းမယ်
+            {t('org.retry')}
           </PillButton>
         </Card>
       )}
@@ -724,17 +727,17 @@ function PracticeGame({
       {mode === 'manual' && (
         <Card style={{ marginTop: 12, background: '#FFF6D6' }}>
           <div style={{ fontSize: 15, color: C.text, lineHeight: 1.6, marginBottom: 12 }}>
-            သင့်ဖုန်းမှာ အသံဖမ်းစနစ် မရနိုင်ပါ — အသံနားထောင်ပြီး လိုက်ပြောပါ၊ ပြီးရင် ✓ နှိပ်ပါ
+            {t('practice.on_your_phone_recording_unavailable_then_tap')}
           </div>
           <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
             <PillButton color="orange" onClick={() => speak(phrase.en, { slow: true })}>
               <span style={{ display: 'inline-flex', alignItems: 'center', gap: 8 }}>
                 <Volume2 size={20} />
-                အသံနားထောင်ပြီး လိုက်ပြောပါ
+                {t('practice.repeat')}
               </span>
             </PillButton>
             <PillButton color="green" onClick={() => setSelfDone(true)}>
-              ✓ ပြောပြီးပြီ
+              {t('practice.done_speaking')}
             </PillButton>
           </div>
         </Card>
@@ -743,8 +746,8 @@ function PracticeGame({
         <div style={{ marginTop: 12 }}>
           <FeedbackStrip
             ok
-            title="တော်လိုက်တာ! 🎉"
-            sub="နောက်စာကြောင်းကို ဆက်လေ့ကျင့်ပါ"
+            title={t('practice.great')}
+            sub={t('practice.the_next_sentence_keep_practicing')}
           />
         </div>
       )}
@@ -770,13 +773,13 @@ function PracticeGame({
         <div style={{ marginTop: 12 }}>
           <FeedbackStrip
             ok={verdict.ok}
-            title={verdict.ok ? 'မှန်တယ်! 🎉' : 'ထပ်ကြိုးစားကြည့်ပါ'}
+            title={verdict.ok ? t('exam.correct') : t('exam.try_again')}
             sub={
               verdict.ok
                 ? verdict.heard
-                  ? `ကြားရတယ်: “${verdict.heard}”`
+                  ? t('practice.heard_verdict', { heard: verdict.heard })
                   : undefined
-                : `စာကြောင်း: “${phrase.en}”`
+                : t('practice.sentence_quote', { en: phrase.en })
             }
           />
         </div>
@@ -798,7 +801,7 @@ function PracticeGame({
           padding: 8,
         }}
       >
-        နောက်စာကြောင်း →
+        {t('practice.next_sentence')}
       </button>
       </W3ErrorBoundary>
     </Screen>

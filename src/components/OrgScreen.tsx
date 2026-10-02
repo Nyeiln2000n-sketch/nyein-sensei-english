@@ -21,6 +21,7 @@ import {
 } from 'lucide-react';
 import type { GoFn, NavParams } from '../routes';
 import { PillButton, Screen, TopBar } from './ui';
+import { useLang, t as tStatic, tNum } from '../lib/i18n';
 import { getSession } from '../lib/auth';
 import { resyncForTenant } from '../lib/cloudSync';
 import {
@@ -46,16 +47,10 @@ import {
 } from '../lib/tenant';
 import '../screens/w4.css';
 
-const ROLE_LABEL: Record<OrgRole, string> = {
-  owner: 'ပိုင်ရှင်',
-  admin: 'စီမံခန့်ခွဲသူ',
-  member: 'အဖွဲ့ဝင်',
-};
-
 const ROLE_ORDER: OrgRole[] = ['owner', 'admin', 'member'];
 
 function errMsg(err: unknown): string {
-  return err instanceof Error ? err.message : 'တစ်ခုခု မှားယွင်းနေပါတယ်။ ထပ်စမ်းကြည့်ပါ။';
+  return err instanceof Error ? err.message : tStatic('org.something');
 }
 
 interface OrgDetail {
@@ -66,6 +61,13 @@ interface OrgDetail {
 
 export default function OrgScreen({ go, params }: { go: GoFn; params?: NavParams }) {
   void params;
+  const { t } = useLang();
+  // Role labels via i18n so they follow the active language (Thai is extra).
+  const ROLE_LABEL: Record<OrgRole, string> = {
+    owner: t('org.owner'),
+    admin: t('org.admin'),
+    member: t('org.member'),
+  };
   const [orgs, setOrgs] = useState<Organization[]>([]);
   const [memberships, setMemberships] = useState<Membership[]>([]);
   const [loading, setLoading] = useState(true);
@@ -142,12 +144,12 @@ export default function OrgScreen({ go, params }: { go: GoFn; params?: NavParams
   // resyncForTenant flushes pending ops, then REPLACES the local cache with
   // the new tenant's cloud data (never merges — the cache held the previous
   // tenant's rows). No page reload — ever.
-  async function switchTenant(t: ActiveTenant, label: string) {
+  async function switchTenant(tenant: ActiveTenant, label: string) {
     if (switching) return;
     setSwitching(label);
-    setSwitchNote('ပြန်လည်စတင်နေပါတယ်…');
-    setActiveTenant(t);
-    setTenant(t);
+    setSwitchNote(t('org.restarting'));
+    setActiveTenant(tenant);
+    setTenant(tenant);
     try {
       await resyncForTenant();
     } catch (err) {
@@ -210,7 +212,7 @@ export default function OrgScreen({ go, params }: { go: GoFn; params?: NavParams
       setCopied(true);
       window.setTimeout(() => setCopied(false), 2000);
     } catch {
-      setDetailError('လင့်ခ် ကူးယူမရပါ။ ကိုယ်တိုင် ရွေးပြီး ကူးယူပါ။');
+      setDetailError(t('org.link_yourself_choose_and'));
     }
   }
 
@@ -242,34 +244,34 @@ export default function OrgScreen({ go, params }: { go: GoFn; params?: NavParams
 
   return (
     <Screen>
-      <TopBar variant="back" title="အဖွဲ့အစည်းများ" onBack={() => go('back')} />
+      <TopBar variant="back" title={t('org.organizations')} onBack={() => go('back')} />
       <div className="w4-wrap">
         {error && (
           <div className="w4-card" role="alert">
             <div className="w4-err">{error}</div>
             <PillButton color="orange" onClick={() => void load()}>
-              ထပ်စမ်းမယ်
+              {t('org.retry')}
             </PillButton>
           </div>
         )}
 
         {loading ? (
           <div className="w4-card">
-            <Loader2 className="spin" size={20} /> လုပ်ဆောင်နေပါတယ်…
+            <Loader2 className="spin" size={20} /> {t('org.processing')}
           </div>
         ) : (
           <>
             {/* (a) active tenant switcher */}
             <div className="w4-card">
-              <div className="w4-card-title">သင်ယူနေသည့် နေရာ</div>
+              <div className="w4-card-title">{t('org.learning_space')}</div>
               <div className="w4-tenant-list">
                 <button
                   type="button"
                   className={`w4-tenant-row${isPersonalActive ? ' active' : ''}`}
-                  onClick={() => void switchTenant({ kind: 'personal' }, 'ကိုယ်ပိုင်')}
+                  onClick={() => void switchTenant({ kind: 'personal' }, t('org.personal'))}
                   disabled={switching !== null}
                 >
-                  <span className="w4-tenant-name">ကိုယ်ပိုင်</span>
+                  <span className="w4-tenant-name">{t('org.personal')}</span>
                   {isPersonalActive && <Check size={18} />}
                 </button>
                 {orgs.map((o) => {
@@ -291,37 +293,38 @@ export default function OrgScreen({ go, params }: { go: GoFn; params?: NavParams
                 })}
               </div>
               {switchNote && <p className="w4-hint">{switchNote}</p>}
-              <p className="w4-hint">လက်ရှိ: {describeTenant(tenant, orgs)}</p>
+              <p className="w4-hint">{t('org.current_tenant_hint', { tenant: describeTenant(tenant, orgs) })}</p>
             </div>
 
             {/* (b) create org */}
             <div className="w4-card">
               <div className="w4-card-title">
-                <Plus size={16} aria-hidden="true" /> အဖွဲ့အစည်း အသစ်
+                <Plus size={16} aria-hidden="true" /> {t('org.new_organization')}
               </div>
               <label className="w4-label" htmlFor="org-name">
-                အမည်
+                {t('org.name')}
               </label>
               <input
                 id="org-name"
                 className="w4-input"
                 value={createName}
                 onChange={(e) => setCreateName(e.target.value)}
-                placeholder="ဥပမာ — မိသားစု အင်္ဂလိပ်စာ"
+                placeholder={t('org.example_english')}
                 maxLength={80}
               />
               <PillButton color="green" onClick={() => void handleCreate()} disabled={creating || !createName.trim()}>
-                {creating ? 'ဖန်တီးနေပါတယ်…' : 'ဖန်တီးမယ်'}
+                {creating ? t('org.creating') : t('org.create')}
               </PillButton>
             </div>
 
             {/* (c) org list → detail */}
             <div className="w4-card">
               <div className="w4-card-title">
-                <Users size={16} aria-hidden="true" /> ကျွန်ုပ်၏ အဖွဲ့အစည်းများ ({orgs.length})
+                <Users size={16} aria-hidden="true" />{' '}
+                {t('org.my_organizations_count', { count: tNum(orgs.length) })}
               </div>
               {orgs.length === 0 ? (
-                <p className="w4-hint">အဖွဲ့အစည်း မရှိသေးပါ။ အပေါ်ကနေ အသစ်ဖန်တီးနိုင်ပါတယ်။</p>
+                <p className="w4-hint">{t('org.organization_from_above')}</p>
               ) : (
                 <div className="w4-org-list">
                   {orgs.map((o) => {
@@ -343,20 +346,22 @@ export default function OrgScreen({ go, params }: { go: GoFn; params?: NavParams
                           <div className="w4-org-detail">
                             {detailLoading && (
                               <p className="w4-hint">
-                                <Loader2 className="spin" size={16} /> ရယူနေပါတယ်…
+                                <Loader2 className="spin" size={16} /> {t('org.fetching')}
                               </p>
                             )}
                             {detailError && <div className="w4-err" role="alert">{detailError}</div>}
                             {detail && !detailLoading && (
                               <>
                                 {/* members */}
-                                <div className="w4-sub-title">အသင်းဝင်များ ({detail.members.length})</div>
+                                <div className="w4-sub-title">
+                                  {t('org.members_count', { count: tNum(detail.members.length) })}
+                                </div>
                                 {detail.members.map((m) => {
                                   const isMe = meId !== null && m.user_id === meId;
                                   return (
                                     <div key={m.user_id} className="w4-member-row">
                                       <span className="w4-member-id" title={m.user_id}>
-                                        {isMe ? 'ကျွန်ုပ်' : m.user_id.slice(0, 8) + '…'}
+                                        {isMe ? t('org.me') : m.user_id.slice(0, 8) + '…'}
                                       </span>
                                       {canManage && !isMe ? (
                                         <select
@@ -365,7 +370,7 @@ export default function OrgScreen({ go, params }: { go: GoFn; params?: NavParams
                                           onChange={(e) =>
                                             void handleRoleChange(o.id, m.user_id, e.target.value as OrgRole)
                                           }
-                                          aria-label="အခန်းကဏ္ဍ ပြောင်းရန်"
+                                          aria-label={t('org.role_change')}
                                         >
                                           {ROLE_ORDER.map((r) => (
                                             <option key={r} value={r}>
@@ -384,14 +389,14 @@ export default function OrgScreen({ go, params }: { go: GoFn; params?: NavParams
                                               className="w4-danger-btn"
                                               onClick={() => void handleRemove(o.id, m.user_id)}
                                             >
-                                              သေချာလား
+                                              {t('org.are_you_sure')}
                                             </button>
                                             <button
                                               type="button"
                                               className="w4-ghost-btn"
                                               onClick={() => setConfirmRemoveId(null)}
                                             >
-                                              မလုပ်တော့ဘူး
+                                              {t('org.cancel')}
                                             </button>
                                           </span>
                                         ) : (
@@ -399,7 +404,7 @@ export default function OrgScreen({ go, params }: { go: GoFn; params?: NavParams
                                             type="button"
                                             className="w4-icon-btn"
                                             onClick={() => setConfirmRemoveId(m.user_id)}
-                                            aria-label="အဖွဲ့ဝင် ထုတ်ပစ်ရန်"
+                                            aria-label={t('org.member_remove')}
                                           >
                                             <UserMinus size={16} />
                                           </button>
@@ -413,7 +418,7 @@ export default function OrgScreen({ go, params }: { go: GoFn; params?: NavParams
                                 {canManage && (
                                   <>
                                     <div className="w4-sub-title">
-                                      <UserPlus size={14} aria-hidden="true" /> ဖိတ်စာများ
+                                      <UserPlus size={14} aria-hidden="true" /> {t('org.invitations')}
                                     </div>
                                     {detail.invites.length > 0 && (
                                       <div className="w4-invite-list">
@@ -425,7 +430,7 @@ export default function OrgScreen({ go, params }: { go: GoFn; params?: NavParams
                                               type="button"
                                               className="w4-icon-btn"
                                               onClick={() => void handleRevoke(o.id, inv.id)}
-                                              aria-label="ဖိတ်စာ ပယ်ဖျက်ရန်"
+                                              aria-label={t('org.invitation_cancel')}
                                             >
                                               <Trash2 size={16} />
                                             </button>
@@ -434,7 +439,7 @@ export default function OrgScreen({ go, params }: { go: GoFn; params?: NavParams
                                       </div>
                                     )}
                                     <label className="w4-label" htmlFor={`invite-email-${o.id}`}>
-                                      ဖိတ်မည့် အီးမေးလ်
+                                      {t('org.email')}
                                     </label>
                                     <input
                                       id={`invite-email-${o.id}`}
@@ -449,7 +454,7 @@ export default function OrgScreen({ go, params }: { go: GoFn; params?: NavParams
                                         className="w4-select"
                                         value={inviteRole}
                                         onChange={(e) => setInviteRole(e.target.value as OrgRole)}
-                                        aria-label="ဖိတ်စာ အခန်းကဏ္ဍ"
+                                        aria-label={t('org.invitation_role')}
                                       >
                                         {ROLE_ORDER.map((r) => (
                                           <option key={r} value={r}>
@@ -462,7 +467,7 @@ export default function OrgScreen({ go, params }: { go: GoFn; params?: NavParams
                                         onClick={() => void handleInvite(o.id)}
                                         disabled={inviting || !inviteEmail.trim()}
                                       >
-                                        {inviting ? 'ဖိတ်နေပါတယ်…' : 'ဖိတ်မယ်'}
+                                        {inviting ? t('org.inviting') : t('org.invite')}
                                       </PillButton>
                                     </div>
                                     {newInviteLink && (
@@ -473,7 +478,7 @@ export default function OrgScreen({ go, params }: { go: GoFn; params?: NavParams
                                           type="button"
                                           className="w4-icon-btn"
                                           onClick={() => void copyLink(newInviteLink)}
-                                          aria-label="လင့်ခ် ကူးယူရန်"
+                                          aria-label={t('org.link_copy')}
                                         >
                                           {copied ? <Check size={16} /> : <Copy size={16} />}
                                         </button>
@@ -483,8 +488,8 @@ export default function OrgScreen({ go, params }: { go: GoFn; params?: NavParams
                                 )}
                                 {!canManage && (
                                   <p className="w4-hint">
-                                    သင့်အခန်းကဏ္ဍ: {detail.myRole ? ROLE_LABEL[detail.myRole] : '—'} —
-                                    အသင်းဝင်များကို စီမံခန့်ခွဲခွင့် မရှိပါ။
+                                    {t('org.var', { role: detail.myRole ? ROLE_LABEL[detail.myRole] : '—' })}{' '}
+                                    {t('org.manage_permission')}
                                   </p>
                                 )}
                               </>

@@ -22,6 +22,7 @@ from vectors import (  # noqa: E402
     fingerprint,
     normalize_en,
     normalize_my,
+    normalize_th,
     template_signature,
     vocab_signature,
 )
@@ -39,8 +40,12 @@ _QUOTED = rf"({_SQ}|{_DQ})"
 # Match a single entry object: { en: '...' / "...", my: '...', ... }
 # Trailing extra fields (phonetic, example, exampleMy, ...) are tolerated so
 # enriched word entries keep indexing.
+# Optional Thai field (OLA 2/3, additive-only) is captured as group 3 when
+# present right after my: so enriched entries keep indexing exactly like
+# before (groups shift: 1=en, 2=my, 3=th, 4=topic, 5=level).
 _ENTRY_RE = re.compile(
     rf"\{{\s*en:\s*{_QUOTED},\s*my:\s*{_QUOTED}"
+    rf"(?:,\s*th:\s*({_SQ}|{_DQ}))?"
     rf"(?:,\s*topic:\s*{_QUOTED})?"
     rf"(?:,\s*level:\s*(\d+))?"
     rf"(?:,\s*[a-zA-Z_][a-zA-Z0-9_]*:\s*(?:{_QUOTED}|\d+))*"
@@ -51,18 +56,27 @@ _EXAMPLE_RE = re.compile(rf"example:\s*{_QUOTED}")
 # Verb entry: { base: 'go', past: 'went', ... } (only parsed in verbs-* files).
 _VERB_RE = re.compile(r"\{\s*base:\s*'((?:[^'\\]|\\.)*)'")
 # Dialogue turn: { speaker: '...', en: '...', my: '...' }
+# Optional Thai fields (OLA 4a, additive-only) are tolerated so enriched
+# turns keep indexing exactly like before: speakerTh after speaker,
+# th after my.
 _TURN_RE = re.compile(
-    rf"\{{\s*speaker:\s*{_QUOTED},\s*en:\s*{_QUOTED},\s*my:\s*{_QUOTED}\s*\}}"
+    rf"\{{\s*speaker:\s*{_QUOTED}(?:,\s*speakerTh:\s*(?:{_SQ}|{_DQ}))?"
+    rf",\s*en:\s*{_QUOTED},\s*my:\s*{_QUOTED}(?:,\s*th:\s*(?:{_SQ}|{_DQ}))?\s*\}}"
 )
 # Dialogue / story header ids (match 'family-1' style dialogue ids and
 # 'story-a1-1' style story ids; these parsers only run on dialogues*/stories* files).
 _DIALOGUE_ID_RE = re.compile(r"id:\s*'([a-z][a-z0-9-]*-\d+)'")
 _STORY_ID_RE = re.compile(r"id:\s*'((?:story|f14-s)-[a-z0-9-]+)'")
 # Story paragraph: { en: '...', my: '...' } (no speaker, no topic; trailing comma tolerated)
-_PARA_RE = re.compile(rf"\{{\s*en:\s*{_QUOTED},\s*my:\s*{_QUOTED}\s*,?\s*\}}")
+# Optional Thai field (OLA 4a, additive-only) is tolerated so enriched
+# paragraphs keep indexing exactly like before: th after my.
+_PARA_RE = re.compile(
+    rf"\{{\s*en:\s*{_QUOTED},\s*my:\s*{_QUOTED}(?:,\s*th:\s*(?:{_SQ}|{_DQ}))?\s*,?\s*\}}"
+)
 _TOPIC_FIELD_RE = re.compile(r"topic:\s*'([^']+)'")
 _TOPIC_RE = re.compile(
     rf"\{{\s*id:\s*{_QUOTED},\s*nameMy:\s*{_QUOTED},"
+    rf"(?:\s*nameTh:\s*{_QUOTED},)?"
     rf"\s*nameEn:\s*{_QUOTED}"
 )
 
@@ -78,9 +92,9 @@ def parse_words(path: str) -> list:
         text = fh.read()
     items = []
     for m in _ENTRY_RE.finditer(text):
-        en, my, topic, level = (
+        en, my, th, topic, level = (
             _unescape(m.group(i)) if m.group(i) is not None else None
-            for i in (1, 2, 3, 4)
+            for i in (1, 2, 3, 4, 5)
         )
         line = text.count("\n", 0, m.start()) + 1
         ex_m = _EXAMPLE_RE.search(m.group(0))
@@ -89,6 +103,7 @@ def parse_words(path: str) -> list:
             "kind": "word",
             "en": en,
             "my": my,
+            "th": th,
             "topic": topic,
             "level": int(level) if level else None,
             "example": example,
@@ -120,15 +135,16 @@ def parse_phrases(path: str, start_index: int) -> tuple:
         text = fh.read()
     items = []
     for i, m in enumerate(_ENTRY_RE.finditer(text)):
-        en, my, topic, _level = (
+        en, my, th, topic, _level = (
             _unescape(m.group(j)) if m.group(j) is not None else None
-            for j in (1, 2, 3, 4)
+            for j in (1, 2, 3, 4, 5)
         )
         line = text.count("\n", 0, m.start()) + 1
         items.append({
             "kind": "phrase",
             "en": en,
             "my": my,
+            "th": th,
             "topic": topic,
             "level": None,
             "phrase_index": start_index + i,
@@ -263,6 +279,7 @@ def build_index() -> dict:
                     "en": w["en"],
                     "en_norm": normalize_en(w["en"]),
                     "my_norm": normalize_my(w["my"]),
+                    "th_norm": normalize_th(w["th"]),
                     "fingerprint": fingerprint(w["en"]),
                     "vocab_sig": vocab_signature(w["en"]),
                     "template_sig": template_signature(w["en"]),
@@ -347,6 +364,7 @@ def build_index() -> dict:
                     "en": p["en"],
                     "en_norm": normalize_en(p["en"]),
                     "my_norm": normalize_my(p["my"]),
+                    "th_norm": normalize_th(p["th"]),
                     "fingerprint": fingerprint(p["en"]),
                     "vocab_sig": vocab_signature(p["en"]),
                     "template_sig": template_signature(p["en"]),

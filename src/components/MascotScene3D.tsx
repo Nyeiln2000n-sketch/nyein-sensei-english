@@ -12,6 +12,7 @@ import type { ReactNode } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { Billboard, ContactShadows, Float, Sparkles, useTexture } from '@react-three/drei';
 import * as THREE from 'three';
+import { useLang } from '../lib/i18n';
 
 export type MascotPose =
   | 'wave'
@@ -138,6 +139,7 @@ export default function MascotScene3D({
   // mascots, so background GPU work stays bounded.
   const [pageVisible, setPageVisible] = useState(true);
   const [glOk, setGlOk] = useState(true);
+  const { t } = useLang();
 
   // Pause WebGL work when the mascot scrolls offscreen.
   useEffect(() => {
@@ -163,7 +165,7 @@ export default function MascotScene3D({
   const imgFallback = (
     <img
       src={poseFile}
-      alt="မက်စကော့"
+      alt={t('mascot.mascot')}
       draggable={false}
       className="mascot-fallback-float"
       style={{ width: '100%', height: '100%', objectFit: 'contain', display: 'block' }}

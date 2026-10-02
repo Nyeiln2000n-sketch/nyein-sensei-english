@@ -10,6 +10,8 @@
 // handlers (AUDIO_CONTRACT) — never automatically on render, never in
 // useEffect, never on check.
 import { useEffect, useRef, useState } from 'react';
+import { useLang, displayLang } from '../lib/i18n';
+import type { LangKey } from '../i18n/my';
 import { X, Volume2 } from 'lucide-react';
 import type { GoFn, NavParams } from '../routes';
 import type { CEFR, Phrase } from '../types';
@@ -26,13 +28,14 @@ import {
 const LEVELS: CEFR[] = ['A1', 'A2', 'B1', 'B2'];
 const ROUNDS = 8;
 
-const LEVEL_MY: Record<CEFR, string> = {
-  A1: 'အခြေခံ',
-  A2: 'အလယ်အလတ်',
-  B1: 'အဆင့်မြင့်',
-  B2: 'ကျွမ်းကျင်',
-  C1: 'C1',
-  C2: 'C2',
+/** OLA 1 i18n — etiqueta de nivel por CEFR. */
+const LEVEL_LABEL_KEY: Record<CEFR, LangKey> = {
+  A1: 'dictation.basic',
+  A2: 'dictation.intermediate',
+  B1: 'dictation.advanced',
+  B2: 'dictation.proficient',
+  C1: 'dictation.c1',
+  C2: 'dictation.c2',
 };
 
 /** Tolerant normalization: lowercase, drop punctuation, collapse whitespace. */
@@ -62,6 +65,7 @@ function DictationRound({
   onAnswer: (c: boolean) => void;
   onNext: () => void;
 }) {
+  const { t, lang } = useLang();
   const [val, setVal] = useState('');
   const [checked, setChecked] = useState(false);
   const [plays, setPlays] = useState(0);
@@ -84,12 +88,12 @@ function DictationRound({
     <div>
       {/* big listen button — the only place audio starts */}
       <Card style={{ display: 'flex', justifyContent: 'center', padding: 28, marginBottom: 14 }}>
-        <IconCircle bg={C.blue} size={88} onClick={listen} label="အသံနားထောင်မယ်">
+        <IconCircle bg={C.blue} size={88} onClick={listen} label={t('dictation.listen_audio')}>
           <Volume2 size={38} />
         </IconCircle>
       </Card>
       <div style={{ textAlign: 'center', fontSize: 14, fontWeight: 700, color: C.text, marginBottom: 12 }}>
-        {plays === 0 ? 'ခလုတ်နှိပ်ပြီး နားထောင်ပါ 🔊' : `နားထောင်ပြီး — ${plays} ကြိမ် · ထပ်နားထောင်နိုင်တယ်`}
+        {plays === 0 ? t('dictation.tap_the_button_and') : t('dictation.after_listening_var_times_can_listen_again', { plays })}
       </div>
 
       {!checked && (
@@ -101,7 +105,7 @@ function DictationRound({
             onKeyDown={(e) => {
               if (e.key === 'Enter') check();
             }}
-            placeholder="ကြားတာကို English လို ရိုက်ပါ…"
+            placeholder={t('dictation.what_you_heard_english_type')}
             autoCapitalize="off"
             autoCorrect="off"
             spellCheck={false}
@@ -121,7 +125,7 @@ function DictationRound({
             }}
           />
           <PillButton color="green" onClick={check} disabled={!val.trim()}>
-            စစ်ဆေးမယ်
+            {t('dictation.check')}
           </PillButton>
         </div>
       )}
@@ -131,7 +135,7 @@ function DictationRound({
           {/* Echo what the learner typed */}
           <Card style={{ marginBottom: 12, border: `2px solid ${correct ? C.green : C.red}` }}>
             <div style={{ fontSize: 13, fontWeight: 700, color: C.text, marginBottom: 4 }}>
-              သင်ရေးခဲ့တာ
+              {t('dictation.what_you_wrote')}
             </div>
             <div style={{ fontWeight: 800, fontSize: 17, color: C.title, lineHeight: 1.6 }}>
               {val}
@@ -139,15 +143,15 @@ function DictationRound({
           </Card>
           <FeedbackStrip
             ok={correct}
-            title={correct ? 'မှန်တယ်! 🎉' : 'ထပ်ကြိုးစားကြည့်ပါ'}
-            sub={correct ? undefined : `အဖြေမှန်: ${phrase.en}`}
+            title={correct ? t('exam.correct') : t('exam.try_again')}
+            sub={correct ? undefined : t('dictation.correct_answer_is', { en: phrase.en })}
           />
           {/* Reveal: English + Myanmar + tap-to-hear */}
           <Card style={{ marginTop: 12 }}>
             <div style={{ fontWeight: 800, fontSize: 18, color: C.title, lineHeight: 1.6 }}>
               {phrase.en}
             </div>
-            <div style={{ fontSize: 15, color: C.text, marginTop: 6 }}>{phrase.my}</div>
+            <div style={{ fontSize: 15, color: C.text, marginTop: 6 }}>{displayLang(phrase, lang)}</div>
             <div style={{ marginTop: 12 }}>
               <button
                 type="button"
@@ -170,13 +174,13 @@ function DictationRound({
                 }}
               >
                 <Volume2 size={22} color={C.blueDark} />
-                အသံနားထောင်မယ်
+                {t('dictation.listen_audio')}
               </button>
             </div>
           </Card>
           <div style={{ marginTop: 12 }}>
             <PillButton color="blue" onClick={onNext}>
-              နောက်တစ်ခု
+              {t('celebration.next')}
             </PillButton>
           </div>
         </div>
@@ -196,6 +200,7 @@ function DictationGame({
   phrases: Phrase[];
   onExit: () => void;
 }) {
+  const { t } = useLang();
   const [session, setSession] = useState<Phrase[]>(() => buildSession(phrases, level));
   const [idx, setIdx] = useState(0);
   const [earned, setEarned] = useState(0);
@@ -239,10 +244,10 @@ function DictationGame({
     return (
       <Card style={{ textAlign: 'center', padding: 24 }}>
         <div style={{ fontSize: 16, fontWeight: 700, color: C.title, marginBottom: 16 }}>
-          ဒီအဆင့်မှာ ဝါကျမရှိသေးပါ
+          {t('dictation.at_this_level')}
         </div>
         <PillButton color="green" onClick={onExit}>
-          ပြန်သွားမယ်
+          {t('exam.go_back')}
         </PillButton>
       </Card>
     );
@@ -256,9 +261,9 @@ function DictationGame({
           size={72}
           text={
             <div>
-              <div style={{ fontWeight: 800, fontSize: 18, color: C.title }}>ပြီးဆုံးပါပြီ! 🎉</div>
+              <div style={{ fontWeight: 800, fontSize: 18, color: C.title }}>{t('dictation.completed')}</div>
               <div style={{ fontSize: 15, color: C.text, marginTop: 4 }}>
-                အဆင့် {level} · ဝါကျ {session.length} ကြောင်း
+                {t('dictation.level_sentence_count', { level, count: session.length })}
               </div>
             </div>
           }
@@ -274,12 +279,12 @@ function DictationGame({
             margin: '12px 0 16px',
           }}
         >
-          ⭐ +{earned} XP ရရှိခဲ့တယ်
+          {t('dictation.xp_earned', { earned })}
         </div>
         <div style={{ display: 'flex', gap: 10 }}>
           <div style={{ flex: 1 }}>
             <PillButton color="blue" onClick={onExit}>
-              ပြန်သွားမယ်
+              {t('exam.go_back')}
             </PillButton>
           </div>
           <div style={{ flex: 1 }}>
@@ -294,7 +299,7 @@ function DictationGame({
                 setFinished(false);
               }}
             >
-              ထပ်လုပ်မယ်
+              {t('dictation.retry')}
             </PillButton>
           </div>
         </div>
@@ -309,9 +314,9 @@ function DictationGame({
         size={72}
         text={
           <div>
-            <div style={{ fontWeight: 800, fontSize: 17, color: C.title }}>နားထောင်ပြီး ရေးပါ ✍️</div>
+            <div style={{ fontWeight: 800, fontSize: 17, color: C.title }}>{t('dictation.after_listening_write')}</div>
             <div style={{ fontSize: 15, color: C.text, marginTop: 4 }}>
-              အသံခလုတ်နှိပ်ပြီး ကြားတာကို English လို စာလုံးပေါင်းမှန်အောင် ရိုက်ပါ
+              {t('dictation.what_you_heard_english_spell_correctly_type')}
             </div>
           </div>
         }
@@ -327,6 +332,7 @@ function DictationGame({
 
 // FASE 15 — corpus loads lazily; skeleton until ready.
 function DictationInner({ go }: { go: GoFn }) {
+  const { t } = useLang();
   const [level, setLevel] = useState<CEFR>('A1');
   const [attempt, setAttempt] = useState(0);
   const phrases = useCorpus(loadAllPhrases);
@@ -345,7 +351,7 @@ function DictationInner({ go }: { go: GoFn }) {
           <button
             type="button"
             onClick={() => go('back')}
-            aria-label="ပိတ်ရန်"
+            aria-label={t('exam.close')}
             style={{
               width: 40, height: 40, borderRadius: '50%', border: 'none',
               background: C.white, color: C.text, display: 'flex',
@@ -357,7 +363,7 @@ function DictationInner({ go }: { go: GoFn }) {
           </button>
         }
         center={
-          <div style={{ fontWeight: 800, fontSize: 17, color: C.title }}>နားထောင်ပြီးရေး</div>
+          <div style={{ fontWeight: 800, fontSize: 17, color: C.title }}>{t('dashboard.dictation')}</div>
         }
         right={<span />}
       />
@@ -365,7 +371,7 @@ function DictationInner({ go }: { go: GoFn }) {
       {/* CEFR level selector */}
       <div style={{ marginBottom: 14 }}>
         <div style={{ fontSize: 13, fontWeight: 700, color: C.text, marginBottom: 8 }}>
-          အဆင့်ရွေးပါ
+          {t('dictation.choose_level')}
         </div>
         <div style={{ display: 'flex', gap: 8 }}>
           {LEVELS.map((l) => {
@@ -394,7 +400,7 @@ function DictationInner({ go }: { go: GoFn }) {
               >
                 <div>{l}</div>
                 <div style={{ fontSize: 11, fontWeight: 700, color: active ? C.greenText : C.text }}>
-                  {LEVEL_MY[l]}
+                  {t(LEVEL_LABEL_KEY[l])}
                 </div>
               </button>
             );

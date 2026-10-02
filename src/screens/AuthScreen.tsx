@@ -7,7 +7,7 @@
 //   Step 1 — license key ONLY (branded, Myanmar-first). Verified via the
 //            onVerifyKey prop (the cloud-sync worker plugs the Supabase RPC
 //            public.verify_signup_license here). Wrong key ->
-//            "လိုင်စင်ကီး မမှန်ကန်ပါ။ (Clave inválida)", no proceed.
+//            "လိုင်စင်ကီး မမှန်ကန်ပါ။", no proceed.
 //   Step 2 — email + password (existing signup UI).
 // Sign-in stays ONE step (no key asked).
 //
@@ -20,6 +20,7 @@ import type { GoFn, NavParams } from '../routes';
 import MascotScene3D from '../components/Mascot3D';
 import { PillButton, Screen } from '../components/ui';
 import { consumeSessionExpiredNotice, getSession, signIn, signUp } from '../lib/auth';
+import { useLang } from '../lib/i18n';
 import './w4.css';
 import { W4ErrorBoundary } from './w4error';
 
@@ -35,6 +36,7 @@ interface AuthScreenProps {
 }
 
 export default function AuthScreen({ go, params, onVerifyKey }: AuthScreenProps) {
+  const { t } = useLang();
   const verifyKey = onVerifyKey ?? (async () => false);
   const [mode, setMode] = useState<'signin' | 'signup'>(
     params?.mode === 'signup' ? 'signup' : 'signin',
@@ -72,7 +74,7 @@ export default function AuthScreen({ go, params, onVerifyKey }: AuthScreenProps)
     e.preventDefault();
     const k = licenseKey.trim();
     if (!k) {
-      setKeyError('လိုင်စင်ကီး ထည့်ပေးပါ။');
+      setKeyError(t('auth.license_key_required'));
       return;
     }
     setVerifying(true);
@@ -83,10 +85,10 @@ export default function AuthScreen({ go, params, onVerifyKey }: AuthScreenProps)
         setKeyStep('account');
       } else {
         // Owner-specified copy: Myanmar-first phrasing of "Clave inválida".
-        setKeyError('လိုင်စင်ကီး မမှန်ကန်ပါ။ (Clave inválida)');
+        setKeyError(t('auth.license_key_invalid'));
       }
     } catch {
-      setKeyError('အမှားတစ်ခု ဖြစ်နေပါတယ်။ ထပ်စမ်းကြည့်ပါ။');
+      setKeyError(t('auth.generic_error'));
     } finally {
       setVerifying(false);
     }
@@ -97,7 +99,7 @@ export default function AuthScreen({ go, params, onVerifyKey }: AuthScreenProps)
     setError(null);
     const trimmed = email.trim();
     if (!trimmed || !password) {
-      setError('အီးမေးလ်နှင့် စကားဝှက် ထည့်ပေးပါ။');
+      setError(t('auth.enter_email_and_password'));
       return;
     }
     setLoading(true);
@@ -111,7 +113,7 @@ export default function AuthScreen({ go, params, onVerifyKey }: AuthScreenProps)
         go('planChoice');
       }
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'တစ်ခုခု မှားယွင်းနေပါတယ်။ ထပ်စမ်းကြည့်ပါ။');
+      setError(err instanceof Error ? err.message : t('org.something'));
     } finally {
       setLoading(false);
     }
@@ -126,7 +128,7 @@ export default function AuthScreen({ go, params, onVerifyKey }: AuthScreenProps)
           className="w4-link w4-back"
           onClick={() => go(params?.from ?? 'home')}
         >
-          ← နောက်သို့
+          {t('auth.back')}
         </button>
       )}
 
@@ -134,13 +136,13 @@ export default function AuthScreen({ go, params, onVerifyKey }: AuthScreenProps)
         <MascotScene3D pose="wave" size={110} />
         <div className="w4-auth-title">Nyein Sensei English</div>
         <div className="w4-auth-sub">
-          {isSignin ? 'ပြန်လည်ကြိုဆိုပါတယ်! 👋' : 'အကောင့်အသစ် ဖွင့်လိုက်ပါ 🎉'}
+          {isSignin ? t('auth.welcome_back') : t('auth.new_account')}
         </div>
       </div>
 
       {expiredNotice && (
         <p className="w4-err" role="status">
-          ⏰ သင့်လက်မှတ်သက်တမ်း ကုန်သွားပါပြီ။ ထပ်မံဝင်ရောက်ပေးပါ။
+          {t('auth.session_expired')}
         </p>
       )}
 
@@ -149,10 +151,10 @@ export default function AuthScreen({ go, params, onVerifyKey }: AuthScreenProps)
         <div className="w4-card">
           <form onSubmit={handleVerifyKey}>
             <div className="w4-auth-sub" style={{ marginBottom: 4 }}>
-              အကောင့်ဖွင့်ဖို့ လိုင်စင်ကီး လိုအပ်ပါတယ် 🔑
+              {t('auth.to_create_account_license_key_needed')}
             </div>
             <label className="w4-label" htmlFor="w4-license-key">
-              လိုင်စင်ကီး
+              {t('auth.license_key')}
             </label>
             <input
               id="w4-license-key"
@@ -170,7 +172,7 @@ export default function AuthScreen({ go, params, onVerifyKey }: AuthScreenProps)
 
             <div className="w4-auth-submit">
               <PillButton type="submit" color="orange" disabled={verifying}>
-                {verifying ? '⏳ စစ်ဆေးနေပါတယ်…' : 'စစ်ဆေးမယ်'}
+                {verifying ? t('auth.verifying') : t('dictation.check')}
               </PillButton>
             </div>
           </form>
@@ -183,11 +185,11 @@ export default function AuthScreen({ go, params, onVerifyKey }: AuthScreenProps)
           <form onSubmit={handleSubmit}>
             {!isSignin && (
               <div className="w4-auth-sub" style={{ marginBottom: 4 }}>
-                ✅ လိုင်စင်ကီး မှန်ကန်ပါတယ် — အကောင့်အချက်အလက် ထည့်ပါ
+                {t('auth.license_key_valid_account_info_enter')}
               </div>
             )}
             <label className="w4-label" htmlFor="w4-auth-email">
-              အီးမေးလ်
+              {t('auth.email')}
             </label>
             <input
               id="w4-auth-email"
@@ -200,7 +202,7 @@ export default function AuthScreen({ go, params, onVerifyKey }: AuthScreenProps)
             />
 
             <label className="w4-label" htmlFor="w4-auth-password">
-              စကားဝှက်
+              {t('auth.password')}
             </label>
             <input
               id="w4-auth-password"
@@ -216,7 +218,7 @@ export default function AuthScreen({ go, params, onVerifyKey }: AuthScreenProps)
 
             <div className="w4-auth-submit">
               <PillButton type="submit" color="orange" disabled={loading}>
-                {loading ? '⏳ ခဏစောင့်ပါ…' : isSignin ? 'ဝင်မယ်' : 'စာရင်းသွင်းမယ်'}
+                {loading ? t('auth.please_wait') : isSignin ? t('auth.log_in') : t('auth.sign_up')}
               </PillButton>
             </div>
           </form>
@@ -225,7 +227,7 @@ export default function AuthScreen({ go, params, onVerifyKey }: AuthScreenProps)
 
       {!isSignin && keyStep === 'account' && (
         <button type="button" className="w4-link" onClick={() => setKeyStep('key')}>
-          ← လိုင်စင်ကီး ပြန်ထည့်မယ်
+          {t('auth.license_key_re_enter')}
         </button>
       )}
 
@@ -235,8 +237,8 @@ export default function AuthScreen({ go, params, onVerifyKey }: AuthScreenProps)
         onClick={() => switchMode(isSignin ? 'signup' : 'signin')}
       >
         {isSignin
-          ? 'အကောင့်မရှိသေးဘူးလား? စာရင်းသွင်းမယ်'
-          : 'အကောင့်ရှိပြီးသားလား? ဝင်မယ်'}
+          ? t('auth.no_account_yet_sign_up')
+          : t('auth.already_have_account_log_in')}
       </button>
       </W4ErrorBoundary>
     </Screen>

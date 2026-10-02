@@ -5,6 +5,8 @@
 // inside tap handlers). Streak, XP, Myanmar feedback with the right answer.
 // NEW FILE — coordinator wires navigation; do not edit existing screens.
 import { useState } from 'react';
+import { useLang, displayLang } from '../lib/i18n';
+import type { LangKey } from '../i18n/my';
 import { X, Volume2, RotateCcw } from 'lucide-react';
 import type { GoFn, NavParams } from '../routes';
 import type { Verb } from '../types';
@@ -21,33 +23,27 @@ import {
 const TOTAL_ROUNDS = 10;
 
 const FORMS = [
-  {
-    key: 'past',
-    short: 'V2',
-    labelMy: 'အတိတ်ကာလ',
-    questionMy: 'ဒီကြိယာရဲ့ အတိတ်ကာလပုံ (V2) က ဘာလဲ?',
-  },
-  {
-    key: 'participle',
-    short: 'V3',
-    labelMy: 'အတိတ်ပြီးစီးပုံ',
-    questionMy: 'ဒီကြိယာရဲ့ အတိတ်ပြီးစီးပုံ (V3) က ဘာလဲ?',
-  },
-  {
-    key: 'present3s',
-    short: 'V+s',
-    labelMy: '3rd person singular',
-    questionMy: 'he/she/it နဲ့သုံးတဲ့ ပုံ (V+s) က ဘာလဲ?',
-  },
-  {
-    key: 'gerund',
-    short: 'V-ing',
-    labelMy: 'ဆက်လက်ပုံ (-ing)',
-    questionMy: 'ဒီကြိယာရဲ့ -ing ပုံ က ဘာလဲ?',
-  },
+  { key: 'past', short: 'V2' },
+  { key: 'participle', short: 'V3' },
+  { key: 'present3s', short: 'V+s' },
+  { key: 'gerund', short: 'V-ing' },
 ] as const;
 
 type FormKey = (typeof FORMS)[number]['key'];
+
+/** OLA 1 i18n — claves de etiqueta/pregunta por forma verbal. */
+const FORM_LABEL_KEY: Record<FormKey, LangKey> = {
+  past: 'conjugation.past_tense',
+  participle: 'conjugation.past_participle',
+  present3s: 'conjugation.third_person_singular_label',
+  gerund: 'conjugation.continuous_form_ing',
+};
+const FORM_QUESTION_KEY: Record<FormKey, LangKey> = {
+  past: 'conjugation.of_this_verb_past_form_v2_what',
+  participle: 'conjugation.of_this_verb_past_participle_v3_what',
+  present3s: 'conjugation.he_she_it_s_form',
+  gerund: 'conjugation.of_this_verb_ing_form_what',
+};
 
 interface DrillRound {
   verb: Verb;
@@ -129,6 +125,7 @@ function ConjugationDrillGame({
   params?: NavParams;
   verbs: Verb[];
 }) {
+  const { t, lang } = useLang();
   void params;
   const [rounds] = useState<DrillRound[]>(() => buildRounds(verbs));
   const [idx, setIdx] = useState(0);
@@ -180,7 +177,7 @@ function ConjugationDrillGame({
             <button
               type="button"
               onClick={() => go('back')}
-              aria-label="ပိတ်ရန်"
+              aria-label={t('exam.close')}
               style={{
                 width: 44, height: 44, borderRadius: '50%', border: 'none',
                 background: C.white, color: C.text, display: 'flex',
@@ -212,10 +209,10 @@ function ConjugationDrillGame({
               text={
                 <>
                   <div style={{ fontWeight: 800, fontSize: 18, color: C.title, marginBottom: 4 }}>
-                    လေ့ကျင့်ခန်း ပြီးသွားပြီ! 🎉
+                    {t('conjugation.exercise_finished')}
                   </div>
                   <div style={{ fontSize: 15, color: C.text }}>
-                    အဖြေမှန် {correctCount}/{rounds.length} ခု · XP +{earned} · အဆက်တိုက် အများဆုံး {bestStreak}
+                    {t('conjugation.results_summary', { correct: correctCount, total: rounds.length, earned, bestStreak })}
                   </div>
                 </>
               }
@@ -225,13 +222,13 @@ function ConjugationDrillGame({
                 <div style={{ flex: 1 }}>
                   <PillButton color="blue" onClick={restart}>
                     <span style={{ display: 'inline-flex', alignItems: 'center', gap: 8 }}>
-                      <RotateCcw size={18} /> ထပ်လေ့ကျင့်မယ်
+                      <RotateCcw size={18} /> {t('conjugation.practice_again')}
                     </span>
                   </PillButton>
                 </div>
                 <div style={{ flex: 1 }}>
                   <PillButton color="green" onClick={() => go('back')}>
-                    ပြန်သွားမယ်
+                    {t('exam.go_back')}
                   </PillButton>
                 </div>
               </div>
@@ -240,7 +237,7 @@ function ConjugationDrillGame({
         ) : round ? (
           <div>
             <div style={{ fontSize: 13, fontWeight: 700, color: C.text, marginBottom: 6 }}>
-              ကြိယာပုံစံ လေ့ကျင့်ခန်း · {idx + 1}/{rounds.length}
+              {t('conjugation.exercise_progress', { idx: idx + 1, total: rounds.length })}
             </div>
             <MascotRow
               pose="thinking"
@@ -248,10 +245,10 @@ function ConjugationDrillGame({
               text={
                 <>
                   <div style={{ fontWeight: 800, fontSize: 17, color: C.title }}>
-                    {round.form.questionMy}
+                    {t(FORM_QUESTION_KEY[round.form.key])}
                   </div>
                   <div style={{ fontSize: 13, color: C.text, marginTop: 4 }}>
-                    {round.form.short} · {round.form.labelMy}
+                    {round.form.short} · {t(FORM_LABEL_KEY[round.form.key])}
                   </div>
                 </>
               }
@@ -262,7 +259,7 @@ function ConjugationDrillGame({
                 {round.verb.base}
               </div>
               <div style={{ fontSize: 16, color: C.text, marginTop: 4 }}>
-                {round.verb.my}
+                {displayLang(round.verb, lang)}
               </div>
               {round.verb.phonetic && (
                 <div style={{ fontSize: 13, color: '#B9A98F', marginTop: 2 }}>
@@ -274,14 +271,14 @@ function ConjugationDrillGame({
                 <IconCircle
                   bg={C.blue}
                   size={56}
-                  label="ကြိယာကို နားထောင်မယ်"
+                  label={t('conjugation.the_verb_listen')}
                   onClick={() => speak(round.verb.base)}
                 >
                   <Volume2 size={26} />
                 </IconCircle>
               </div>
               <div style={{ fontSize: 13, fontWeight: 700, color: C.text, marginTop: 8 }}>
-                အသံနားထောင်ရန် နှိပ်ပါ
+                {t('conjugation.to_listen_tap')}
               </div>
             </Card>
 
@@ -299,16 +296,16 @@ function ConjugationDrillGame({
               <div>
                 <FeedbackStrip
                   ok={picked === round.answer}
-                  title={picked === round.answer ? 'မှန်တယ်! 🎉' : 'ထပ်ကြိုးစားကြည့်ပါ'}
+                  title={picked === round.answer ? t('exam.correct') : t('exam.try_again')}
                   sub={
                     picked === round.answer
                       ? undefined
-                      : `အဖြေမှန်: ${round.verb.base} → ${round.answer}`
+                      : t('conjugation.correct_answer_is', { base: round.verb.base, answer: round.answer })
                   }
                 />
                 <div style={{ marginTop: 12 }}>
                   <PillButton color="green" onClick={next}>
-                    {idx + 1 >= rounds.length ? 'ရလဒ်ကြည့်မယ်' : 'ဆက်လုပ်မယ်'}
+                    {idx + 1 >= rounds.length ? t('exam.view_results') : t('celebration.continue')}
                   </PillButton>
                 </div>
               </div>
@@ -317,10 +314,10 @@ function ConjugationDrillGame({
         ) : (
           <Card style={{ textAlign: 'center', padding: 24 }}>
             <div style={{ fontSize: 16, fontWeight: 700, color: C.title, marginBottom: 16 }}>
-              လေ့ကျင့်စရာမရှိသေးပါ
+              {t('conjugation.no_exercises_yet')}
             </div>
             <PillButton color="green" onClick={() => go('back')}>
-              ပြန်သွားမယ်
+              {t('exam.go_back')}
             </PillButton>
           </Card>
         )}

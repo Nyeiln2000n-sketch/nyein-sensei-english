@@ -23,6 +23,7 @@ import { topics, loadDialogues, loadStories } from '../data';
 import { useCorpus } from '../data/useCorpus';
 import { SkeletonList } from './Skeleton';
 import { difficultyToCEFR } from '../types';
+import { useLang, displayLang, tNum } from '../lib/i18n';
 import { speak, stopSpeaking } from '../lib/audio';
 import { useWindowing } from '../lib/useWindowing';
 import PhraseImage from './PhraseImage';
@@ -32,9 +33,6 @@ import {
 
 const LEVELS = ['all', 'A1', 'A2', 'B1', 'B2'] as const;
 type LevelFilter = (typeof LEVELS)[number];
-const LEVEL_LABEL: Record<LevelFilter, string> = {
-  all: 'အားလုံး', A1: 'A1', A2: 'A2', B1: 'B1', B2: 'B2',
-};
 
 function levelBadgeStyle(cefr: CEFR): React.CSSProperties {
   switch (cefr) {
@@ -68,6 +66,7 @@ export default function DialoguesStoriesScreen({
   params?: NavParams;
 }) {
   // FASE 15 — corpus loads lazily (dialogues + stories are on-demand chunks).
+  const { t, lang } = useLang();
   const allDialogues = useCorpus(loadDialogues) ?? [];
   const allStories = useCorpus(loadStories) ?? [];
   const corpusReady = allDialogues.length > 0 && allStories.length > 0;
@@ -97,9 +96,15 @@ export default function DialoguesStoriesScreen({
       return (
         d.titleMy.includes(query.trim()) ||
         d.titleEn.toLowerCase().includes(q) ||
+        (d.titleTh ?? '').includes(query.trim()) ||
         d.situationMy.includes(query.trim()) ||
+        (d.situationTh ?? '').includes(query.trim()) ||
         d.turns.some(
-          (t) => t.speaker.includes(query.trim()) || t.en.toLowerCase().includes(q),
+          (t) =>
+            t.speaker.includes(query.trim()) ||
+            (t.speakerTh ?? '').includes(query.trim()) ||
+            t.en.toLowerCase().includes(q) ||
+            (t.th ?? '').includes(query.trim()),
         )
       );
     });
@@ -113,7 +118,8 @@ export default function DialoguesStoriesScreen({
       return (
         s.titleMy.includes(query.trim()) ||
         s.titleEn.toLowerCase().includes(q) ||
-        s.paragraphs.some((p) => p.en.toLowerCase().includes(q))
+        (s.titleTh ?? '').includes(query.trim()) ||
+        s.paragraphs.some((p) => p.en.toLowerCase().includes(q) || (p.th ?? '').includes(query.trim()))
       );
     });
   }, [allStories, query, level]);
@@ -166,7 +172,7 @@ export default function DialoguesStoriesScreen({
             <button
               type="button"
               onClick={handleTopBack}
-              aria-label="နောက်သို့"
+              aria-label={t('dialogues.back')}
               style={{
                 width: 44, height: 44, borderRadius: '50%', border: 'none',
                 background: C.white, color: C.text, display: 'flex',
@@ -179,7 +185,7 @@ export default function DialoguesStoriesScreen({
           }
           center={
             <span style={{ fontSize: 18, fontWeight: 800, color: C.title }}>
-              {selected ? 'ဖတ်ရှုရန်' : 'စကားပြော'}
+              {selected ? t('dialogues.read_detail') : t('dashboard.dialogue')}
             </span>
           }
         />
@@ -212,8 +218,8 @@ export default function DialoguesStoriesScreen({
             >
               {(
                 [
-                  ['dialogues', 'စကားပြောများ'],
-                  ['stories', 'ဇာတ်လမ်းများ'],
+                  ['dialogues', t('dialogues.dialogues')],
+                  ['stories', t('dialogues.stories')],
                 ] as const
               ).map(([key, label]) => (
                 <button
@@ -260,7 +266,7 @@ export default function DialoguesStoriesScreen({
               <input
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
-                placeholder={tab === 'dialogues' ? 'စကားပြော ရှာရန်…' : 'ဇာတ်လမ်း ရှာရန်…'}
+                placeholder={tab === 'dialogues' ? t('dialogues.dialogue_to_search') : t('dialogues.story_to_search')}
                 style={{
                   flex: 1,
                   minWidth: 0 /* FIX-responsive 2026-09-30: el input nunca impone su ancho */,
@@ -278,7 +284,7 @@ export default function DialoguesStoriesScreen({
             </div>
 
             {/* CEFR level filter — FIX-responsive 2026-09-30: píldoras
-                compactas para que las 5 (အားလုံး+A1+A2+B1+B2) quepan sin
+                compactas para que las 5 (all+A1+A2+B1+B2) quepan sin
                 scroll ni corte a 360px. Antes B2 se cortaba en el borde
                 derecho del iPhone 16. */}
             <div
@@ -291,7 +297,7 @@ export default function DialoguesStoriesScreen({
                 scrollbarWidth: 'none',
               }}
               role="group"
-              aria-label="အဆင့် ရွေးချယ်ရန်"
+              aria-label={t('dialogues.level_to_choose')}
             >
               {LEVELS.map((l) => (
                 <button
@@ -315,7 +321,7 @@ export default function DialoguesStoriesScreen({
                     boxShadow: '0 4px 12px rgba(0,0,0,0.05)',
                   }}
                 >
-                  {LEVEL_LABEL[l]}
+                  {l === 'all' ? t('dialogues.all') : l}
                 </button>
               ))}
             </div>
@@ -338,7 +344,7 @@ export default function DialoguesStoriesScreen({
                     'linear-gradient(to right, #000 88%, transparent 100%)',
                 }}
                 role="group"
-                aria-label="အကြောင်းအရာ ရွေးချယ်ရန်"
+                aria-label={t('dialogues.topic_to_choose')}
               >
                 <button
                   type="button"
@@ -359,14 +365,14 @@ export default function DialoguesStoriesScreen({
                     boxShadow: '0 4px 12px rgba(0,0,0,0.05)',
                   }}
                 >
-                  အားလုံး
+                  {t('dialogues.all')}
                 </button>
-                {topics.map((t) => (
+                {topics.map((topic) => (
                   <button
-                    key={t.id}
+                    key={topic.id}
                     type="button"
-                    onClick={() => setTopicFilter(t.id)}
-                    aria-pressed={topicFilter === t.id}
+                    onClick={() => setTopicFilter(topic.id)}
+                    aria-pressed={topicFilter === topic.id}
                     style={{
                       border: 'none',
                       borderRadius: 999,
@@ -377,12 +383,12 @@ export default function DialoguesStoriesScreen({
                       cursor: 'pointer',
                       minHeight: 44,
                       whiteSpace: 'nowrap',
-                      background: topicFilter === t.id ? C.green : C.white,
-                      color: topicFilter === t.id ? C.greenText : C.text,
+                      background: topicFilter === topic.id ? C.green : C.white,
+                      color: topicFilter === topic.id ? C.greenText : C.text,
                       boxShadow: '0 4px 12px rgba(0,0,0,0.05)',
                     }}
                   >
-                    {t.icon} {t.nameMy}
+                    {topic.icon} {displayLang({ my: topic.nameMy, th: topic.nameTh }, lang)}
                   </button>
                 ))}
               </div>
@@ -391,8 +397,8 @@ export default function DialoguesStoriesScreen({
             {/* result count */}
             <div style={{ fontSize: 13, color: C.text, marginBottom: 8 }}>
               {tab === 'dialogues'
-                ? `${filteredDialogues.length} ခု`
-                : `${filteredStories.length} ခု`}
+                ? t('dialogues.dialogue_count', { count: tNum(filteredDialogues.length) })
+                : t('dialogues.story_count', { count: tNum(filteredStories.length) })}
             </div>
 
             {/* dialogue cards */}
@@ -400,7 +406,7 @@ export default function DialoguesStoriesScreen({
               (visibleDialogues.length === 0 ? (
                 <Card style={{ textAlign: 'center', padding: 24 }}>
                   <div style={{ fontSize: 15, color: C.text }}>
-                    စကားပြော မတွေ့ပါ
+                    {t('dialogues.dialogue_not_found')}
                   </div>
                 </Card>
               ) : (
@@ -438,7 +444,7 @@ export default function DialoguesStoriesScreen({
                               lineHeight: 1.5,
                             }}
                           >
-                            {d.titleMy}
+                            {displayLang({ my: d.titleMy, th: d.titleTh }, lang)}
                           </div>
                           <div style={{ fontSize: 13, color: C.text, marginTop: 2 }}>
                             {d.titleEn}
@@ -465,11 +471,11 @@ export default function DialoguesStoriesScreen({
                             </span>
                             {meta && (
                               <span style={{ fontSize: 12, color: C.text }}>
-                                {meta.icon} {meta.nameMy}
+                                {meta.icon} {displayLang({ my: meta.nameMy, th: meta.nameTh }, lang)}
                               </span>
                             )}
                             <span style={{ fontSize: 12, color: C.text }}>
-                              · {d.turns.length} အကြိမ်
+                              {t('dialogues.var_times', { count: tNum(d.turns.length) })}
                             </span>
                           </div>
                         </div>
@@ -488,7 +494,7 @@ export default function DialoguesStoriesScreen({
               (visibleStories.length === 0 ? (
                 <Card style={{ textAlign: 'center', padding: 24 }}>
                   <div style={{ fontSize: 15, color: C.text }}>
-                    ဇာတ်လမ်း မတွေ့ပါ
+                    {t('dialogues.story_not_found')}
                   </div>
                 </Card>
               ) : (
@@ -524,7 +530,7 @@ export default function DialoguesStoriesScreen({
                             lineHeight: 1.5,
                           }}
                         >
-                          {s.titleMy}
+                          {displayLang({ my: s.titleMy, th: s.titleTh }, lang)}
                         </div>
                         <div style={{ fontSize: 13, color: C.text, marginTop: 2 }}>
                           {s.titleEn}
@@ -550,7 +556,7 @@ export default function DialoguesStoriesScreen({
                             {s.level}
                           </span>
                           <span style={{ fontSize: 12, color: C.text }}>
-                            · {s.paragraphs.length} ပိုဒ်
+                            {t('dialogues.var_paragraphs', { count: tNum(s.paragraphs.length) })}
                           </span>
                         </div>
                       </div>
@@ -578,15 +584,16 @@ function DialogueDetail({
   dialogue: Dialogue;
   onBack: () => void;
 }) {
+  const { t, lang } = useLang();
   return (
     <div>
       <Card style={{ marginBottom: 12 }}>
         <div style={{ fontWeight: 800, fontSize: 19, color: C.title, lineHeight: 1.5 }}>
-          {dialogue.titleMy}
+          {displayLang({ my: dialogue.titleMy, th: dialogue.titleTh }, lang)}
         </div>
         <div style={{ fontSize: 14, color: C.text, marginTop: 4 }}>{dialogue.titleEn}</div>
         <div style={{ fontSize: 14, color: C.text, marginTop: 8, lineHeight: 1.6 }}>
-          {dialogue.situationMy}
+          {displayLang({ my: dialogue.situationMy, th: dialogue.situationTh }, lang)}
         </div>
         <span
           style={{
@@ -604,7 +611,7 @@ function DialogueDetail({
       </Card>
 
       <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
-        {dialogue.turns.map((t, i) => (
+        {dialogue.turns.map((turn, i) => (
           <Card key={i} style={{ padding: '14px 16px' }}>
             <div
               style={{
@@ -618,7 +625,7 @@ function DialogueDetail({
                 marginBottom: 8,
               }}
             >
-              {t.speaker}
+              {turn.speaker}
             </div>
             <div
               style={{
@@ -636,18 +643,18 @@ function DialogueDetail({
                     lineHeight: 1.6,
                   }}
                 >
-                  {t.en}
+                  {turn.en}
                 </div>
                 <div style={{ fontSize: 14, color: C.text, marginTop: 4, lineHeight: 1.6 }}>
-                  {t.my}
+                  {displayLang(turn, lang)}
                 </div>
               </div>
               {/* Tap-to-hear: speak() fires synchronously in the tap handler
                   (AUDIO_CONTRACT). 44px target. */}
               <button
                 type="button"
-                onClick={() => speak(t.en)}
-                aria-label={`အသံနားထောင်ရန်: ${t.en}`}
+                onClick={() => speak(turn.en)}
+                aria-label={t('dialogues.listen_aria_with_english', { w: turn.en })}
                 style={{
                   width: 44,
                   height: 44,
@@ -679,6 +686,7 @@ function DialogueDetail({
 /* ---------- story detail ---------- */
 
 function StoryDetail({ story, onBack }: { story: Story; onBack: () => void }) {
+  const { t, lang } = useLang();
   return (
     <div>
       <Card style={{ marginBottom: 12 }}>
@@ -688,7 +696,7 @@ function StoryDetail({ story, onBack }: { story: Story; onBack: () => void }) {
             <div
               style={{ fontWeight: 800, fontSize: 19, color: C.title, lineHeight: 1.5 }}
             >
-              {story.titleMy}
+              {displayLang({ my: story.titleMy, th: story.titleTh }, lang)}
             </div>
             <div style={{ fontSize: 14, color: C.text, marginTop: 4 }}>
               {story.titleEn}
@@ -749,7 +757,7 @@ function StoryDetail({ story, onBack }: { story: Story; onBack: () => void }) {
                     lineHeight: 1.7,
                   }}
                 >
-                  {p.my}
+                  {displayLang(p, lang)}
                 </div>
               </div>
               {/* Tap-to-hear per paragraph: speak() fires synchronously in
@@ -757,7 +765,7 @@ function StoryDetail({ story, onBack }: { story: Story; onBack: () => void }) {
               <button
                 type="button"
                 onClick={() => speak(p.en)}
-                aria-label={`အသံနားထောင်ရန်: ${p.en.slice(0, 40)}`}
+                aria-label={t('dialogues.listen_aria_paragraph', { w: p.en.slice(0, 40) })}
                 style={{
                   width: 44,
                   height: 44,
@@ -789,6 +797,7 @@ function StoryDetail({ story, onBack }: { story: Story; onBack: () => void }) {
 /* ---------- shared in-screen back button ---------- */
 
 function BackButton({ onBack }: { onBack: () => void }) {
+  const { t } = useLang();
   return (
     <button
       type="button"
@@ -812,7 +821,7 @@ function BackButton({ onBack }: { onBack: () => void }) {
       }}
     >
       <ArrowLeft size={20} />
-      နောက်သို့
+      {t('dialogues.back')}
     </button>
   );
 }

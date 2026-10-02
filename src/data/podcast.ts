@@ -38,6 +38,26 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 18,
+    slug: 'english-with-aung-and-may-ep-18-ordinal-numbers-and-dates-2026-10-02',
+    titleMy: 'ရက်စွဲများ — နေ့ရက်ပြောနည်း',
+    titleOrig: 'วันที่ — Ordinal Numbers and Dates',
+    descMy: 'အင်္ဂလိပ်လို first, second, third နဲ့ ရက်စွဲမေးဖြေနည်း။ "What is the date today?" / "It is the fifth of June." / "My birthday is on the twenty-first of December."',
+    phrases: ['What is the date today?', 'It is the fifth of June.', 'My birthday is on the twenty-first of December.', 'First, second, third.', 'It is the third of September.'],
+    durationSecs: 674,
+    cover: '/podcast-covers/ep-18.jpg',
+  },
+  {
+    n: 17,
+    slug: 'english-with-aung-and-may-ep-17-months-of-the-year-2026-10-01',
+    titleMy: 'လများ — တစ်နှစ်ရဲ့ ၁၂ လ',
+    titleOrig: 'เดือนทั้ง 12 — Months of the Year',
+    descMy: 'အင်္ဂလိပ်လို ၁၂ လအပြင် မွေးနေ့မေးဖြေနည်း။ "My birthday is in July." / "When is your birthday?" / "Christmas is in December." / "See you in June."',
+    phrases: ['January, February, March, April, May, June, July, August, September, October, November, December.', 'My birthday is in July.', 'When is your birthday?', 'It is in May.', 'Christmas is in December.', 'See you in June.'],
+    durationSecs: 644,
+    cover: '/podcast-covers/ep-17.webp',
+  },
+  {
     n: 16,
     slug: 'english-with-aung-and-may-ep-16-days-of-the-week-2026-10-01',
     titleMy: 'ရက်ပြောနည်း — တစ်ပတ်ရဲ့ ၇ ရက်',

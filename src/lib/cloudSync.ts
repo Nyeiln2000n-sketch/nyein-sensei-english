@@ -19,6 +19,7 @@ import { getSession } from './auth';
 import { supabaseEnabled, supabaseRest } from './supabase';
 import { loadProgress, replaceProgress } from './storage';
 import { getActiveTenant, tenantScopeParam, type ActiveTenant } from './tenant';
+import { t } from './i18n';
 
 // ---------- tenant scoping (FASE 8) ----------
 //
@@ -893,7 +894,7 @@ export async function resyncForTenant(): Promise<void> {
   registerListeners();
   const uid = userId();
   if (!uid) {
-    reportError('resyncForTenant', 'auth', null, 'အကောင့်ထဲ ဝင်ထားခြင်း မရှိပါ — ပြန်ဝင်ကြည့်ပါ');
+    reportError('resyncForTenant', 'auth', null, t('err_sync.logged_in_none_log_in_again'));
     return;
   }
   clearSyncError();

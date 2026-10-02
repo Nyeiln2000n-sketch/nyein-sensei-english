@@ -18,6 +18,7 @@ import {
 } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 import type { Progress } from '../types';
+import { t } from './i18n';
 
 // ---------------------------------------------------------------- events
 
@@ -81,26 +82,26 @@ export interface MedalDef {
 
 /** G-004: 9 real milestone medals driven by progress (single source of truth). */
 export const MEDALS: MedalDef[] = [
-  { id: 'day1', nameMm: 'ပထမနေ့', icon: Medal, check: (s) => s.streak >= 1 },
-  { id: 'l10', nameMm: 'သင်ခန်းစာ ၁၀', icon: BookOpen, check: (s) => s.lessonsDone >= 10 },
-  { id: 'v50', nameMm: 'ဝေါဟာရ ၅၀', icon: Star, check: (s) => s.totalAnswered >= 50 },
+  { id: 'day1', nameMm: t('celebration.first_day'), icon: Medal, check: (s) => s.streak >= 1 },
+  { id: 'l10', nameMm: t('celebration.lesson'), icon: BookOpen, check: (s) => s.lessonsDone >= 10 },
+  { id: 'v50', nameMm: t('celebration.vocabulary'), icon: Star, check: (s) => s.totalAnswered >= 50 },
   {
     id: 'speak',
-    nameMm: 'စကားပြော',
+    nameMm: t('dashboard.dialogue'),
     icon: Mic,
     check: (s) => s.practiceUsed,
   },
-  { id: 's3', nameMm: '၃ ရက်ဆက်', icon: Award, check: (s) => s.streak >= 3 },
-  { id: 's7', nameMm: '၇ ရက်ဆက်', icon: Trophy, check: (s) => s.streak >= 7 },
-  { id: 's14', nameMm: '၁၄ ရက်ဆက်', icon: Flame, check: (s) => s.streak >= 14 },
+  { id: 's3', nameMm: t('celebration.milestone_3_day_streak'), icon: Award, check: (s) => s.streak >= 3 },
+  { id: 's7', nameMm: t('celebration.milestone_7_day_streak'), icon: Trophy, check: (s) => s.streak >= 7 },
+  { id: 's14', nameMm: t('celebration.milestone_14_day_streak'), icon: Flame, check: (s) => s.streak >= 14 },
   {
     id: 'acc90',
-    nameMm: 'မှန်ကန်မှု ၉၀%',
+    nameMm: t('celebration.accuracy'),
     icon: Target,
     check: (s) =>
       s.totalAnswered >= 20 && s.totalCorrect / s.totalAnswered >= 0.9,
   },
-  { id: 'l100', nameMm: 'သင်ခန်းစာ ၁၀၀', icon: Crown, check: (s) => s.lessonsDone >= 100 },
+  { id: 'l100', nameMm: t('celebration.milestone_100_lessons'), icon: Crown, check: (s) => s.lessonsDone >= 100 },
 ];
 
 export function getMedal(id: string): MedalDef | undefined {

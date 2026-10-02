@@ -14,9 +14,11 @@ import { getWordOfDay } from '../lib/wordOfDay';
 import { speak } from '../lib/audio';
 import WordImage from './WordImage';
 import { Card, C, FONT } from './w3-shared';
+import { useLang, displayLang } from '../lib/i18n';
 
 export default function WordOfDayCard({ go }: { go: GoFn }) {
   // FASE 15: word corpus loads lazily; show a quiet placeholder until ready.
+  const { t, lang } = useLang();
   const [word, setWord] = useState<Word | null>(null);
   useEffect(() => {
     let cancelled = false;
@@ -30,7 +32,7 @@ export default function WordOfDayCard({ go }: { go: GoFn }) {
   if (!word) return null;
 
   return (
-    <section aria-label="ဒီနေ့ရဲ့ စကားလုံး" style={{ marginTop: 14 }}>
+    <section aria-label={t('word_of_day.word')} style={{ marginTop: 14 }}>
       <Card
         style={{
           background: `linear-gradient(135deg, ${C.cream} 0%, #FFF6E3 100%)`,
@@ -70,7 +72,7 @@ export default function WordOfDayCard({ go }: { go: GoFn }) {
               color: C.title,
             }}
           >
-            ဒီနေ့ရဲ့ စကားလုံး
+            {t('word_of_day.word')}
           </span>
         </div>
 
@@ -109,7 +111,7 @@ export default function WordOfDayCard({ go }: { go: GoFn }) {
                 lineHeight: 1.5,
               }}
             >
-              {word.my}
+              {displayLang(word, lang)}
             </div>
           </div>
           {/* the word's own illustration (falls back to a brand tile) */}
@@ -126,7 +128,7 @@ export default function WordOfDayCard({ go }: { go: GoFn }) {
             <button
               type="button"
               onClick={() => speak(word.en)}
-              aria-label={`အသံနားထောင်ရန်: ${word.en}`}
+              aria-label={t('word_of_day.listen_aria', { w: word.en })}
               style={{
                 width: 52,
                 height: 52,
@@ -169,7 +171,7 @@ export default function WordOfDayCard({ go }: { go: GoFn }) {
             </div>
             {word.exampleMy && (
               <div style={{ fontSize: 13, color: C.text, marginTop: 4 }}>
-                {word.exampleMy}
+                {displayLang({ my: word.exampleMy ?? '', th: word.exampleTh }, lang)}
               </div>
             )}
           </div>
@@ -196,7 +198,7 @@ export default function WordOfDayCard({ go }: { go: GoFn }) {
             boxShadow: '0 4px 12px rgba(0,0,0,0.08)',
           }}
         >
-          လေ့လာရန်
+          {t('word_of_day.study_now')}
           <ArrowRight size={17} aria-hidden="true" />
         </button>
       </Card>

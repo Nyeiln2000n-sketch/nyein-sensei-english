@@ -7,6 +7,8 @@
 declare const __SUPABASE_URL__: string;
 declare const __SUPABASE_ANON_KEY__: string;
 
+import { t } from './i18n';
+
 const URL = (__SUPABASE_URL__ ||
   (import.meta.env.VITE_SUPABASE_URL as string | undefined) ||
   undefined) as string | undefined;
@@ -72,7 +74,7 @@ function clearLocal(): void {
 
 async function authRequest(path: string, body: unknown): Promise<AuthSession> {
   if (!URL || !ANON_KEY) {
-    throw new Error('Supabase ကို မချိတ်ဆက်ရသေးပါ။ အင်တာနက်ရှိမရှိ စစ်ဆေးပါ။');
+    throw new Error(t('err_auth.supabase'));
   }
   let res: Response;
   try {
@@ -85,7 +87,7 @@ async function authRequest(path: string, body: unknown): Promise<AuthSession> {
       body: JSON.stringify(body),
     });
   } catch {
-    throw new Error('အင်တာနက် ချိတ်ဆက်မှု မရပါ။ နောက်မှ ထပ်စမ်းကြည့်ပါ။');
+    throw new Error(t('err_auth.internet_connection_later'));
   }
   const data = (await res.json().catch(() => ({}))) as {
     error_description?: string;
@@ -94,7 +96,7 @@ async function authRequest(path: string, body: unknown): Promise<AuthSession> {
   };
   if (!res.ok) {
     throw new Error(
-      data.error_description || data.msg || data.message || 'တစ်ခုခု မှားယွင်းနေပါတယ်။ ထပ်စမ်းကြည့်ပါ။',
+      data.error_description || data.msg || data.message || t('org.something'),
     );
   }
   return data as unknown as AuthSession;
@@ -106,9 +108,7 @@ export async function signUp(email: string, password: string): Promise<AuthSessi
   if (!session.access_token) {
     // Email confirmation is ON (or the project requires verification):
     // there is no usable session yet — do NOT persist a broken one.
-    throw new Error(
-      'အကောင့်ဖွင့်ပြီးပါပြီ။ အီးမေးလ်ထဲက အတည်ပြုလင့်ခ်ကို နှိပ်ပြီးမှ ဝင်ရောက်ပါ။',
-    );
+    throw new Error(t('err_auth.in_the_email_verification_link'));
   }
   persist(session);
   return session;
@@ -298,8 +298,7 @@ export class LicenseServiceError extends Error {
  * key is wrong; throws LicenseServiceError when the service is unavailable.
  */
 export async function verifySignupLicense(inputKey: string): Promise<boolean> {
-  const UNAVAILABLE_MY =
-    'လိုင်စင်စစ်ဆေးရေး ဝန်ဆောင်မှု မရသေးပါ။ အင်တာနက်စစ်ပြီး ခဏနေမှ ထပ်စမ်းကြည့်ပါ။';
+  const UNAVAILABLE_MY = t('err_auth.license_service_unavailable');
   if (!URL || !ANON_KEY) {
     throw new LicenseServiceError(UNAVAILABLE_MY, true);
   }
@@ -322,15 +321,15 @@ export async function verifySignupLicense(inputKey: string): Promise<boolean> {
 
   if (res.status === 404) {
     // RPC not provisioned yet — keep the gate enforced, surface retry state.
-    throw new LicenseServiceError(
-      'လိုင်စင်စစ်ဆေးရေး ဝန်ဆောင်မှု ပြင်ဆင်နေဆဲပါ။ ခဏနေမှ ထပ်စမ်းကြည့်ပါ။',
-      true,
-    );
+    throw new LicenseServiceError(t('err_auth.license_verification_service_in_a_while'), true);
   }
   if (!res.ok) {
     const detail = await res.text().catch(() => '');
     throw new LicenseServiceError(
-      `လိုင်စင်စစ်ဆေးမှု မအောင်မြင်ပါ (HTTP ${res.status})။ ခဏနေမှ ထပ်စမ်းကြည့်ပါ။${detail ? ` [${detail.slice(0, 120)}]` : ''}`,
+      t('err_auth.failed_http_var_in_a_while', {
+        status: res.status,
+        detail: detail ? ` [${detail.slice(0, 120)}]` : '',
+      }),
       true,
     );
   }

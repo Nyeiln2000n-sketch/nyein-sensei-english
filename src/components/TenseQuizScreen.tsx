@@ -5,6 +5,7 @@
 // and the learner picks which tense it is from 4 options. Streak, XP,
 // Myanmar explanations on feedback. NEW FILE — coordinator wires navigation.
 import { useState } from 'react';
+import { useLang, displayLang, tNum } from '../lib/i18n';
 import { X, Volume2, RotateCcw, Table2, Brain } from 'lucide-react';
 import type { GoFn, NavParams } from '../routes';
 import type { Tense } from '../types';
@@ -52,14 +53,15 @@ function Segmented({
   value: Mode;
   onChange: (m: Mode) => void;
 }) {
+  const { t } = useLang();
   const tabs: { id: Mode; label: string; icon: typeof Table2 }[] = [
-    { id: 'table', label: 'ဇယား', icon: Table2 },
-    { id: 'quiz', label: 'ဉာဏ်စမ်း', icon: Brain },
+    { id: 'table', label: t('tense.chart'), icon: Table2 },
+    { id: 'quiz', label: t('tense.quiz'), icon: Brain },
   ];
   return (
     <div
       role="tablist"
-      aria-label="ကာလ လေ့လာမှုပုံစံ"
+      aria-label={t('tense.tense_study_mode')}
       style={{
         display: 'flex',
         background: C.cream,
@@ -135,6 +137,7 @@ function TenseQuizGame({
   params?: NavParams;
   tenses: Tense[];
 }) {
+  const { t, lang } = useLang();
   void params;
   const [mode, setMode] = useState<Mode>('table');
   const [rounds] = useState<TenseRound[]>(() => buildRounds(tenses));
@@ -187,7 +190,7 @@ function TenseQuizGame({
             <button
               type="button"
               onClick={() => go('back')}
-              aria-label="ပိတ်ရန်"
+              aria-label={t('exam.close')}
               style={{
                 width: 44, height: 44, borderRadius: '50%', border: 'none',
                 background: C.white, color: C.text, display: 'flex',
@@ -205,7 +208,7 @@ function TenseQuizGame({
               </div>
             ) : (
               <div style={{ fontFamily: FONT, fontWeight: 800, fontSize: 17, color: C.title }}>
-                ကာလ ၁၂ မျိုး
+                {t('tense.tense_types', { n: tNum(12) })}
               </div>
             )
           }
@@ -226,16 +229,16 @@ function TenseQuizGame({
               text={
                 <>
                   <div style={{ fontWeight: 800, fontSize: 16, color: C.title }}>
-                    ကာလ ၁၂ မျိုးကို ဇယားနဲ့ လေ့လာပါ
+                    {t('tense.tense_with_chart_study', { n: tNum(12) })}
                   </div>
                   <div style={{ fontSize: 14, color: C.text, marginTop: 2 }}>
-                    ဥပမာစာကြောင်းကို နားထောင်ချင်ရင် 🔊 ကို နှိပ်ပါ
+                    {t('tense.if_you_want_to_listen_tap')}
                   </div>
                 </>
               }
             />
-            {tenses.map((t, i) => (
-              <Card key={t.id} style={{ marginBottom: 12, padding: 16 }}>
+            {tenses.map((tn, i) => (
+              <Card key={tn.id} style={{ marginBottom: 12, padding: 16 }}>
                 <div style={{ display: 'flex', alignItems: 'flex-start', gap: 10 }}>
                   <div
                     style={{
@@ -249,10 +252,10 @@ function TenseQuizGame({
                   </div>
                   <div style={{ flex: 1 }}>
                     <div style={{ fontFamily: FONT, fontWeight: 800, fontSize: 17, color: C.title }}>
-                      {t.nameMy}
+                      {displayLang({ my: tn.nameMy, th: tn.nameTh }, lang)}
                     </div>
                     <div style={{ fontSize: 13, fontWeight: 700, color: '#B9A98F' }}>
-                      {t.nameEn}
+                      {tn.nameEn}
                     </div>
                     <div
                       style={{
@@ -267,10 +270,10 @@ function TenseQuizGame({
                         color: C.title,
                       }}
                     >
-                      {t.formula}
+                      {tn.formula}
                     </div>
                     <div style={{ fontSize: 14, color: C.text, marginTop: 8, lineHeight: 1.6 }}>
-                      {t.usageMy}
+                      {displayLang({ my: tn.usageMy, th: tn.usageTh }, lang)}
                     </div>
                     <div
                       style={{
@@ -285,8 +288,8 @@ function TenseQuizGame({
                       {/* AUDIO_CONTRACT: speak() only inside this tap handler */}
                       <button
                         type="button"
-                        onClick={() => speak(t.example.en)}
-                        aria-label={`ဥပမာကို နားထောင်မယ်: ${t.example.en}`}
+                        onClick={() => speak(tn.example.en)}
+                        aria-label={t('tense.listen_example', { en: tn.example.en })}
                         style={{
                           width: 44, height: 44, borderRadius: '50%', border: 'none',
                           background: C.blue, color: '#fff',
@@ -298,9 +301,9 @@ function TenseQuizGame({
                       </button>
                       <div>
                         <div style={{ fontFamily: FONT, fontWeight: 700, fontSize: 15, color: C.title }}>
-                          “{t.example.en}”
+                          “{tn.example.en}”
                         </div>
-                        <div style={{ fontSize: 13, color: C.text }}>{t.example.my}</div>
+                        <div style={{ fontSize: 13, color: C.text }}>{displayLang(tn.example, lang)}</div>
                       </div>
                     </div>
                   </div>
@@ -319,10 +322,10 @@ function TenseQuizGame({
               text={
                 <>
                   <div style={{ fontWeight: 800, fontSize: 18, color: C.title, marginBottom: 4 }}>
-                    ဉာဏ်စမ်း ပြီးသွားပြီ! 🎉
+                    {t('tense.quiz_finished')}
                   </div>
                   <div style={{ fontSize: 15, color: C.text }}>
-                    အဖြေမှန် {correctCount}/{rounds.length} ခု · XP +{earned} · အဆက်တိုက် အများဆုံး {bestStreak}
+                    {t('conjugation.results_summary', { correct: correctCount, total: rounds.length, earned, bestStreak })}
                   </div>
                 </>
               }
@@ -332,13 +335,13 @@ function TenseQuizGame({
                 <div style={{ flex: 1 }}>
                   <PillButton color="blue" onClick={restart}>
                     <span style={{ display: 'inline-flex', alignItems: 'center', gap: 8 }}>
-                      <RotateCcw size={18} /> ထပ်ဖြေမယ်
+                      <RotateCcw size={18} /> {t('exam.retake')}
                     </span>
                   </PillButton>
                 </div>
                 <div style={{ flex: 1 }}>
                   <PillButton color="green" onClick={() => go('back')}>
-                    ပြန်သွားမယ်
+                    {t('exam.go_back')}
                   </PillButton>
                 </div>
               </div>
@@ -349,14 +352,14 @@ function TenseQuizGame({
         {mode === 'quiz' && !finished && round && (
           <div>
             <div style={{ fontSize: 13, fontWeight: 700, color: C.text, marginBottom: 6 }}>
-              ကာလ ဉာဏ်စမ်း · {idx + 1}/{rounds.length}
+              {t('tense.quiz_progress', { idx: idx + 1, total: rounds.length })}
             </div>
             <MascotRow
               pose="thinking"
               size={72}
               text={
                 <div style={{ fontWeight: 800, fontSize: 16, color: C.title }}>
-                  ဒီစာကြောင်းက ဘယ် tense လဲ ရွေးပါ
+                  {t('tense.this_sentence_which_tense_choose')}
                 </div>
               }
             />
@@ -370,7 +373,7 @@ function TenseQuizGame({
                 <button
                   type="button"
                   onClick={() => speak(round.tense.example.en)}
-                  aria-label="စာကြောင်းကို နားထောင်မယ်"
+                  aria-label={t('tense.the_sentence_listen')}
                   style={{
                     minHeight: 52,
                     display: 'inline-flex',
@@ -388,7 +391,7 @@ function TenseQuizGame({
                     cursor: 'pointer',
                   }}
                 >
-                  <Volume2 size={20} /> နားထောင်မယ်
+                  <Volume2 size={20} /> {t('quiz.listen')}
                 </button>
               </div>
             </Card>
@@ -398,7 +401,7 @@ function TenseQuizGame({
                 key={o.id}
                 label={
                   <span>
-                    <span style={{ fontWeight: 800 }}>{o.nameMy}</span>
+                    <span style={{ fontWeight: 800 }}>{displayLang({ my: o.nameMy, th: o.nameTh }, lang)}</span>
                     <span style={{ display: 'block', fontSize: 13, color: C.text, fontWeight: 600 }}>
                       {o.nameEn} · {o.formula}
                     </span>
@@ -414,16 +417,16 @@ function TenseQuizGame({
               <div>
                 <FeedbackStrip
                   ok={picked === round.tense.id}
-                  title={picked === round.tense.id ? 'မှန်တယ်! 🎉' : 'ထပ်ကြိုးစားကြည့်ပါ'}
+                  title={picked === round.tense.id ? t('exam.correct') : t('exam.try_again')}
                   sub={
                     picked === round.tense.id
-                      ? `${round.tense.nameMy} — ${round.tense.formula}`
-                      : `အဖြေမှန်: ${round.tense.nameMy} (${round.tense.formula}) · ${round.tense.usageMy}`
+                      ? `${displayLang({ my: round.tense.nameMy, th: round.tense.nameTh }, lang)} — ${round.tense.formula}`
+                      : t('tense.correct_answer_detail', { name: displayLang({ my: round.tense.nameMy, th: round.tense.nameTh }, lang), formula: round.tense.formula, usage: displayLang({ my: round.tense.usageMy, th: round.tense.usageTh }, lang) })
                   }
                 />
                 <div style={{ marginTop: 12 }}>
                   <PillButton color="green" onClick={next}>
-                    {idx + 1 >= rounds.length ? 'ရလဒ်ကြည့်မယ်' : 'ဆက်လုပ်မယ်'}
+                    {idx + 1 >= rounds.length ? t('exam.view_results') : t('celebration.continue')}
                   </PillButton>
                 </div>
               </div>
@@ -434,10 +437,10 @@ function TenseQuizGame({
         {mode === 'quiz' && !finished && !round && (
           <Card style={{ textAlign: 'center', padding: 24 }}>
             <div style={{ fontSize: 16, fontWeight: 700, color: C.title, marginBottom: 16 }}>
-              ဉာဏ်စမ်းမေးခွန်းမရှိသေးပါ
+              {t('tense.no_quiz_questions')}
             </div>
             <PillButton color="green" onClick={() => go('back')}>
-              ပြန်သွားမယ်
+              {t('exam.go_back')}
             </PillButton>
           </Card>
         )}

@@ -7,6 +7,8 @@ Provides:
                         signatures of English text)
   normalize_my(text)  - Myanmar text: keep as-is (no case), strip
                         punctuation and collapse whitespace
+  normalize_th(text)  - Thai text: keep as-is (no case), strip
+                        punctuation and collapse whitespace (OLA 5)
   fingerprint(text)   - sha256 of normalized English text, first 16 hex chars
   STOPWORDS           - small English stopword set used by signatures
   vocab_signature(text)   - sorted unique content-words of English text
@@ -28,6 +30,11 @@ import unicodedata
 # from fingerprints / Myanmar normalization. Anything that is not a
 # letter/number/whitespace becomes a separator.
 _PUNCT_RE = re.compile(r"[^\w\s\u1000-\u109F]", re.UNICODE)
+
+# OLA 5 — Thai: same idea, Thai block U+0E00–U+0E7F kept as letters.
+# (With re.UNICODE, \w already matches Thai letters; the explicit range
+# documents intent and guards alternate regex engines.)
+_PUNCT_TH_RE = re.compile(r"[^\w\s\u0E00-\u0E7F]", re.UNICODE)
 
 
 def _collapse_ws(text: str) -> str:
@@ -51,6 +58,16 @@ def normalize_en(text: str) -> str:
 def normalize_my(text: str) -> str:
     """Myanmar has no case: keep text as-is, strip punctuation/extra spaces."""
     text = _PUNCT_RE.sub(" ", text)
+    return _collapse_ws(text)
+
+
+def normalize_th(text: str) -> str:
+    """Thai has no case and no word spaces: keep text as-is, strip
+    punctuation/extra spaces. The normalized string supports substring
+    search (same approach as the app's .includes() filter)."""
+    if not text:
+        return ""
+    text = _PUNCT_TH_RE.sub(" ", text)
     return _collapse_ws(text)
 
 

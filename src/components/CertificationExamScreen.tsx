@@ -5,6 +5,7 @@
 // pass/fail result vs passScore, best score in localStorage.
 // Data lives in src/data/f14/cefr-exams.ts — this file only renders.
 import { useEffect, useMemo, useState } from 'react';
+import { useLang, displayLang } from '../lib/i18n';
 import { X, Volume2, RotateCcw, Award } from 'lucide-react';
 import type { GoFn, NavParams } from '../routes';
 import type { CEFR } from '../types';
@@ -78,11 +79,12 @@ const BAND_STYLE: Record<CEFR, { bg: string; dark: string }> = {
 };
 
 function CloseButton({ go }: { go: GoFn }) {
+  const { t } = useLang();
   return (
     <button
       type="button"
       onClick={() => go('back')}
-      aria-label="ပိတ်ရန်"
+      aria-label={t('exam.close')}
       style={{
         width: 44, height: 44, borderRadius: '50%', border: 'none',
         background: C.white, color: C.text, display: 'flex',
@@ -124,6 +126,7 @@ function CertificationExamGame({
   params?: NavParams;
   exams: CEFRExam[];
 }) {
+  const { t, lang } = useLang();
   void params;
   const [examBand, setExamBand] = useState<CEFR | null>(null);
   const [attempt, setAttempt] = useState<ShuffledQ[]>([]);
@@ -203,7 +206,7 @@ function CertificationExamGame({
             left={<CloseButton go={go} />}
             center={
               <div style={{ fontFamily: FONT, fontWeight: 800, fontSize: 17, color: C.title }}>
-                အသိအမှတ်ပြု စာမေးပွဲများ
+                {t('exam.certification_exams')}
               </div>
             }
             right={<span />}
@@ -214,10 +217,10 @@ function CertificationExamGame({
             text={
               <>
                 <div style={{ fontWeight: 800, fontSize: 16, color: C.title }}>
-                  CEFR အဆင့်အလိုက် စာမေးပွဲများ
+                  {t('exam.cefr_by_level_exams')}
                 </div>
                 <div style={{ fontSize: 14, color: C.text, marginTop: 2 }}>
-                  ကိုယ့်အဆင့်ကို ရွေးပြီး စမ်းသပ်ကြည့်ပါ — အောင်မှတ်ရရင် ဆုတံဆိပ်ရမယ် 🏅
+                  {t('exam.pick_level_try_medal')}
                 </div>
               </>
             }
@@ -255,10 +258,10 @@ function CertificationExamGame({
                     </div>
                     <div style={{ flex: 1, minWidth: 0 }}>
                       <div style={{ fontWeight: 800, fontSize: 16, color: C.title }}>
-                        {passed && '🏅 '}{e.titleMy}
+                        {passed && '🏅 '}{displayLang({ my: e.titleMy, th: e.titleTh }, lang)}
                       </div>
                       <div style={{ fontSize: 13.5, color: C.text, marginTop: 4, lineHeight: 1.6 }}>
-                        {e.descriptionMy}
+                        {displayLang({ my: e.descriptionMy, th: e.descriptionTh }, lang)}
                       </div>
                       <div
                         style={{
@@ -266,9 +269,9 @@ function CertificationExamGame({
                           marginTop: 6,
                         }}
                       >
-                        မေးခွန်း {e.questions.length} ခု · အမှတ် {e.passScore}/{e.questions.length} နဲ့ အောင်မယ်
+                        {t('exam.pass_criteria', { total: e.questions.length, pass: e.passScore })}
                         {best !== null && (
-                          <span style={{ color: C.text }}> · အကောင်းဆုံး: {best}/{e.questions.length}</span>
+                          <span style={{ color: C.text }}>{t('exam.best_score', { best, total: e.questions.length })}</span>
                         )}
                       </div>
                     </div>
@@ -302,7 +305,7 @@ function CertificationExamGame({
             left={<CloseButton go={go} />}
             center={
               <div style={{ fontFamily: FONT, fontWeight: 800, fontSize: 17, color: C.title }}>
-                {exam.band} ရလဒ်
+                {t('exam.var_results', { band: exam.band })}
               </div>
             }
             right={<span />}
@@ -314,12 +317,12 @@ function CertificationExamGame({
             text={
               <>
                 <div style={{ fontWeight: 800, fontSize: 18, color: C.title, marginBottom: 4 }}>
-                  {passed ? 'အောင်မြင်ပါပြီ! 🎉' : 'ထပ်ကြိုးစားကြည့်ပါ 💪'}
+                  {passed ? t('exam.passed') : t('exam.try_again_encouraged')}
                 </div>
                 <div style={{ fontSize: 15, color: C.text }}>
                   {passed
-                    ? `${exam.titleMy} ကို အောင်မြင်ခဲ့ပါတယ် — ဂုဏ်ယူပါတယ်!`
-                    : `အမှတ် ${correctCount}/${total} — အောင်မှတ် ${exam.passScore}/${total} လိုအပ်ပါတယ်`}
+                    ? t('exam.passed_congratulations', { title: exam.titleMy })
+                    : t('exam.score_vs_passing', { correct: correctCount, total, pass: exam.passScore })}
                 </div>
               </>
             }
@@ -334,20 +337,20 @@ function CertificationExamGame({
               <span style={{ fontSize: 24, color: C.text }}>/{total}</span>
             </div>
             <div style={{ fontSize: 15, fontWeight: 700, color: passed ? C.greenText : C.text, marginTop: 8 }}>
-              {passed ? `🏅 ${exam.band} ဆုတံဆိပ် ရရှိခဲ့ပါပြီ!` : 'နောက်တစ်ကြိမ် ထပ်ဖြေကြည့်ပါ'}
+              {passed ? t('exam.var_medal_earned', { band: exam.band }) : t('exam.one_more_time_try_answering_again')}
             </div>
           </Card>
           <div style={{ display: 'flex', gap: 10 }}>
             <div style={{ flex: 1 }}>
               <PillButton color="blue" onClick={() => startExam(exam.band)}>
                 <span style={{ display: 'inline-flex', alignItems: 'center', gap: 8 }}>
-                  <RotateCcw size={18} /> ထပ်ဖြေမယ်
+                  <RotateCcw size={18} /> {t('exam.retake')}
                 </span>
               </PillButton>
             </div>
             <div style={{ flex: 1 }}>
               <PillButton color="green" onClick={backToList}>
-                စာမေးပွဲများ
+                {t('exam.exams')}
               </PillButton>
             </div>
           </div>
@@ -365,10 +368,10 @@ function CertificationExamGame({
           <TopBar left={<CloseButton go={go} />} center={<div />} right={<span />} />
           <Card style={{ textAlign: 'center', padding: 24 }}>
             <div style={{ fontSize: 16, fontWeight: 700, color: C.title, marginBottom: 16 }}>
-              မေးခွန်းများ ဖွင့်လို့ မရခဲ့ပါ
+              {t('exam.questions_to_turn_on_failed')}
             </div>
             <PillButton color="green" onClick={backToList}>
-              ပြန်သွားမယ်
+              {t('exam.go_back')}
             </PillButton>
           </Card>
         </Screen>
@@ -389,14 +392,14 @@ function CertificationExamGame({
           right={<span style={{ fontSize: 14, fontWeight: 700, color: C.text }}>{idx + 1}/{total}</span>}
         />
         <div style={{ fontSize: 13, fontWeight: 700, color: C.text, marginBottom: 6 }}>
-          {exam.titleMy} · မေးခွန်း {idx + 1}/{total}
+          {t('exam.exam_question_progress', { title: exam.titleMy, idx: idx + 1, total })}
         </div>
         <MascotRow
           pose="thinking"
           size={72}
           text={
             <div style={{ fontWeight: 800, fontSize: 16, color: C.title }}>
-              အဖြေမှန်ကို ရွေးပါ
+              {t('exam.choose')}
             </div>
           }
         />
@@ -406,14 +409,14 @@ function CertificationExamGame({
             {current.q.prompt}
           </div>
           <div style={{ fontSize: 15, color: C.text, marginTop: 8, lineHeight: 1.6 }}>
-            {current.q.promptMy}
+            {displayLang({ my: current.q.promptMy, th: current.q.promptTh }, lang)}
           </div>
           <div style={{ marginTop: 14 }}>
             {/* AUDIO_CONTRACT: speak() only inside this tap handler */}
             <button
               type="button"
               onClick={() => speak(current.q.prompt)}
-              aria-label="မေးခွန်းကို နားထောင်မယ်"
+              aria-label={t('exam.the_question_listen')}
               style={{
                 minHeight: 48,
                 display: 'inline-flex',
@@ -431,7 +434,7 @@ function CertificationExamGame({
                 cursor: 'pointer',
               }}
             >
-              <Volume2 size={18} /> နားထောင်မယ်
+              <Volume2 size={18} /> {t('quiz.listen')}
             </button>
           </div>
         </Card>
@@ -460,12 +463,12 @@ function CertificationExamGame({
           <div>
             <FeedbackStrip
               ok={picked === correctPos}
-              title={picked === correctPos ? 'မှန်တယ်! 🎉' : 'ထပ်ကြိုးစားကြည့်ပါ'}
-              sub={current.q.explanationMy}
+              title={picked === correctPos ? t('exam.correct') : t('exam.try_again')}
+              sub={displayLang({ my: current.q.explanationMy, th: current.q.explanationTh }, lang)}
             />
             <div style={{ marginTop: 12 }}>
               <PillButton color="green" onClick={next}>
-                {idx + 1 >= total ? 'ရလဒ်ကြည့်မယ်' : 'ဆက်လုပ်မယ်'}
+                {idx + 1 >= total ? t('exam.view_results') : t('celebration.continue')}
               </PillButton>
             </div>
           </div>

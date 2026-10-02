@@ -8,6 +8,7 @@
 // correct; easier templates + mixed-topic distractors after a miss).
 // 'grammar' and 'phrases' modes keep their original fixed builders.
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { useLang, displayLang, t as tStatic } from '../lib/i18n';
 import { X, Volume2, Mic } from 'lucide-react';
 import type { GoFn, NavParams } from '../routes';
 import type { TopicId, Level, Word, Phrase } from '../types';
@@ -32,8 +33,8 @@ type Round =
   | { kind: 'match'; pairs: Word[] }
   | { kind: 'dictation'; word: Word }
   | { kind: 'dialogue'; context: Phrase; reply: Phrase; options: Phrase[] }
-  | { kind: 'story'; story: Phrase[]; testEn: string; shownMy: string; answer: boolean }
-  | { kind: 'truefalse'; word: Word; shownMy: string; answer: boolean }
+  | { kind: 'story'; story: Phrase[]; testEn: string; shown: Phrase; answer: boolean }
+  | { kind: 'truefalse'; word: Word; shown: Word; answer: boolean }
   | { kind: 'oddOneOut'; words: Word[]; intruder: Word }
   | { kind: 'fillBlank'; phrase: Phrase; display: string; answer: string; options: string[] }
   | { kind: 'shadowing'; phrase: Phrase }
@@ -281,20 +282,20 @@ function makeRound(ctx: QuizCtx, kind: RoundKind, hard: boolean): Round | null {
       const test = sampleR(story, 1, ctx.rng)[0];
       const answer = ctx.rng() < 0.5;
       const wrongPool = ctx.topicPhrases.filter((p) => p.en !== test.en);
-      const shownMy = answer
-        ? test.my
-        : sampleR(wrongPool.length > 0 ? wrongPool : ctx.otherPhrases, 1, ctx.rng)[0].my;
-      return { kind, story, testEn: test.en, shownMy, answer };
+      const shown = answer
+        ? test
+        : sampleR(wrongPool.length > 0 ? wrongPool : ctx.otherPhrases, 1, ctx.rng)[0];
+      return { kind, story, testEn: test.en, shown, answer };
     }
     case 'truefalse': {
       const w = pickWord(ctx);
       const answer = ctx.rng() < 0.5;
-      let shownMy = w.my;
+      let shown: Word = w;
       if (!answer) {
         const pool = ctx.allTopicWords.filter((x) => x.en !== w.en);
-        shownMy = sampleR(pool.length > 0 ? pool : ctx.easyWords, 1, ctx.rng)[0].my;
+        shown = sampleR(pool.length > 0 ? pool : ctx.easyWords, 1, ctx.rng)[0];
       }
-      return { kind, word: w, shownMy, answer };
+      return { kind, word: w, shown, answer };
     }
     case 'oddOneOut': {
       const trio = sampleR(ctx.allTopicWords, 3, ctx.rng);
@@ -333,7 +334,7 @@ function makeRound(ctx: QuizCtx, kind: RoundKind, hard: boolean): Round | null {
       const others = sampleR(ctx.otherPhrases.filter((x) => x.en !== answer.en), 3, ctx.rng);
       const question: Phrase = {
         en: 'Which sentence did you hear in the story?',
-        my: 'ဇာတ်လမ်းထဲမှာ ကြားခဲ့တဲ့စာကြောင်းကို ရွေးပါ',
+        my: tStatic('quiz.choose'),
         topic: ctx.topic,
       };
       return { kind, story, question, answer, options: sampleR([answer, ...others], 4, ctx.rng) };
@@ -425,6 +426,7 @@ function roundPose(round: Round): MascotPose {
 }
 
 function QuestionBubble({ round }: { round: Round }) {
+  const { t, lang } = useLang();
   const en = (t: string) => (
     <div style={{ fontWeight: 800, fontSize: 20, color: C.title, marginBottom: 2 }}>{t}</div>
   );
@@ -432,71 +434,71 @@ function QuestionBubble({ round }: { round: Round }) {
   switch (round.kind) {
     case 'quiz':
       return (
-        <MascotRow pose={roundPose(round)} size={72} text={<>{en(`“${round.word.en}”`)}{my('အဓိပ္ပာယ်က ဘာလဲ? ရွေးပါ')}</>} />
+        <MascotRow pose={roundPose(round)} size={72} text={<>{en(`“${round.word.en}”`)}{my(t('quiz.the_meaning_what_choose'))}</>} />
       );
     case 'translation':
       return (
-        <MascotRow pose={roundPose(round)} size={72} text={<>{en(`“${round.word.my}”`)}{my('English လို ဘယ်လိုပြောမလဲ?')}</>} />
+        <MascotRow pose={roundPose(round)} size={72} text={<>{en(`“${displayLang(round.word, lang)}”`)}{my(t('quiz.how_to_say_in_english'))}</>} />
       );
     case 'listening':
       return (
-        <MascotRow pose={roundPose(round)} size={72} text={my('ကြားရတဲ့စကားလုံးကို ရွေးပါ')} />
+        <MascotRow pose={roundPose(round)} size={72} text={my(t('quiz.the_word_you_heard_choose'))} />
       );
     case 'order':
       return (
         <MascotRow
           pose={roundPose(round)}
           size={72}
-          text={<>{my('စကားစုကို အစဉ်လိုက်စီပါ')}<div style={{ fontSize: 15, color: C.text, marginTop: 4 }}>{round.phrase.my}</div></>}
+          text={<>{my(t('quiz.arrange_in_order'))}<div style={{ fontSize: 15, color: C.text, marginTop: 4 }}>{displayLang(round.phrase, lang)}</div></>}
         />
       );
     case 'phraseChoice':
       return (
-        <MascotRow pose={roundPose(round)} size={72} text={<>{en(`“${round.phrase.my}”`)}{my('English လို ဘယ်လိုပြောမလဲ?')}</>} />
+        <MascotRow pose={roundPose(round)} size={72} text={<>{en(`“${displayLang(round.phrase, lang)}”`)}{my(t('quiz.how_to_say_in_english'))}</>} />
       );
     case 'match':
       return (
-        <MascotRow pose={roundPose(round)} size={72} text={my('အတွဲတွေကို ရှာပါ — English နဲ့ မြန်မာ တွဲပါ')} />
+        <MascotRow pose={roundPose(round)} size={72} text={my(t('quiz.find_english_and_myanmar_match'))} />
       );
     case 'dictation':
       return (
-        <MascotRow pose={roundPose(round)} size={72} text={my('အသံနားထောင်ပြီး စကားလုံးကို ရိုက်ထည့်ပါ')} />
+        <MascotRow pose={roundPose(round)} size={72} text={my(t('quiz.the_word'))} />
       );
     case 'dialogue':
       return (
-        <MascotRow pose={roundPose(round)} size={72} text={my('စကားပြောကို အဆုံးသတ်ပါ')} />
+        <MascotRow pose={roundPose(round)} size={72} text={my(t('quiz.complete'))} />
       );
     case 'story':
       return (
-        <MascotRow pose={roundPose(round)} size={72} text={my('ဇာတ်လမ်းလေးဖတ်ပြီး မှန်/မှား ဖြေပါ')} />
+        <MascotRow pose={roundPose(round)} size={72} text={my(t('quiz.answer'))} />
       );
     case 'truefalse':
       return (
-        <MascotRow pose={roundPose(round)} size={72} text={my('အဓိပ္ပာယ်မှန်လား မှားလား ရွေးပါ')} />
+        <MascotRow pose={roundPose(round)} size={72} text={my(t('quiz.is_it_wrong_choose'))} />
       );
     case 'oddOneOut':
       return (
-        <MascotRow pose={roundPose(round)} size={72} text={my('မတူတာကို ရွေးပါ')} />
+        <MascotRow pose={roundPose(round)} size={72} text={my(t('quiz.the_different_one_choose'))} />
       );
     case 'fillBlank':
       return (
-        <MascotRow pose={roundPose(round)} size={72} text={my('ကွက်လပ်မှာ ဖြည့်ရမယ့်စကားလုံးကို ရွေးပါ')} />
+        <MascotRow pose={roundPose(round)} size={72} text={my(t('quiz.in_the_blank_choose'))} />
       );
     case 'shadowing':
       return (
-        <MascotRow pose={roundPose(round)} size={72} text={my('နားထောင်ပြီး လိုက်ပြောပါ 🎤')} />
+        <MascotRow pose={roundPose(round)} size={72} text={my(t('quiz.after_listening_repeat'))} />
       );
     case 'conversation':
       return (
-        <MascotRow pose={roundPose(round)} size={72} text={my('စကားပြောကို သဘာဝကျအောင် အဆုံးသတ်ပါ')} />
+        <MascotRow pose={roundPose(round)} size={72} text={my(t('quiz.naturally_complete'))} />
       );
     case 'storyListen':
       return (
-        <MascotRow pose={roundPose(round)} size={72} text={my('ဇာတ်လမ်းနားထောင်ပြီး မေးခွန်းဖြေပါ')} />
+        <MascotRow pose={roundPose(round)} size={72} text={my(t('quiz.after_listening_to_story_answer_questions'))} />
       );
     case 'challenge':
       return (
-        <MascotRow pose={roundPose(round)} size={72} text={my('အမြန်ဖြေပါ! ⏱')} />
+        <MascotRow pose={roundPose(round)} size={72} text={my(t('quiz.answer_quickly'))} />
       );
   }
 }
@@ -536,6 +538,7 @@ function QuizGame({
   words: Word[];
   phrases: Phrase[];
 }) {
+  const { t } = useLang();
   const topic: TopicId = (params?.topic as TopicId | undefined) ?? 'family';
   const level: Level = params?.level ?? 1;
   const mode = params?.mode;
@@ -641,10 +644,10 @@ function QuizGame({
         <TopBar left={<span />} center={<div />} right={<span />} />
         <Card style={{ textAlign: 'center', padding: 24 }}>
           <div style={{ fontSize: 16, fontWeight: 700, color: C.title, marginBottom: 16 }}>
-            ဒီအကြောင်းအရာမှာ လေ့ကျင့်စရာမရှိသေးပါ
+            {t('quiz.in_this_topic_no_exercises_yet')}
           </div>
           <PillButton color="green" onClick={() => go('back')}>
-            ပြန်သွားမယ်
+            {t('exam.go_back')}
           </PillButton>
         </Card>
       </Screen>
@@ -658,7 +661,7 @@ function QuizGame({
           <button
             type="button"
             onClick={() => go('back')}
-            aria-label="ပိတ်ရန်"
+            aria-label={t('exam.close')}
             style={{
               width: 40, height: 40, borderRadius: '50%', border: 'none',
               background: C.white, color: C.text, display: 'flex',
@@ -677,7 +680,7 @@ function QuizGame({
         right={<span>{idx + 1}/{TOTAL_ROUNDS}</span>}
       />
       <div style={{ fontSize: 13, fontWeight: 700, color: C.text, marginBottom: 6 }}>
-        {meta.nameMy} · အဆင့် {level}
+        {t('quiz.topic_level_header', { name: meta.nameMy, level })}
       </div>
       <QuestionBubble round={round} />
       <W3ErrorBoundary>
@@ -744,16 +747,17 @@ function RoundFeedback({
   correctText: string;
   onNext: () => void;
 }) {
+  const { t } = useLang();
   return (
     <div style={{ marginTop: 4 }}>
       <FeedbackStrip
         ok={ok}
-        title={ok ? 'မှန်တယ်! 🎉' : 'ထပ်ကြိုးစားကြည့်ပါ'}
-        sub={ok ? undefined : `အဖြေမှန်: ${correctText}`}
+        title={ok ? t('exam.correct') : t('exam.try_again')}
+        sub={ok ? undefined : t('quiz.correct_answer_is', { answer: correctText })}
       />
       <div style={{ marginTop: 12 }}>
         <PillButton color="green" onClick={onNext}>
-          ဆက်လုပ်မယ်
+          {t('celebration.continue')}
         </PillButton>
       </div>
     </div>
@@ -771,17 +775,18 @@ function TrueFalseButtons({
   onNext: () => void;
   correctText: string;
 }) {
+  const { t } = useLang();
   const { picked, pick, locked } = useChoice(answer ? 'true' : 'false', onAnswer);
   return (
     <div>
       <ChoiceCard
-        label="မှန်"
+        label={t('quiz.true')}
         state={!locked ? 'default' : answer ? 'correct' : picked === 'true' ? 'wrong' : 'default'}
         onPick={() => pick('true')}
         disabled={locked}
       />
       <ChoiceCard
-        label="မှား"
+        label={t('quiz.false')}
         state={!locked ? 'default' : !answer ? 'correct' : picked === 'false' ? 'wrong' : 'default'}
         onPick={() => pick('false')}
         disabled={locked}
@@ -802,21 +807,22 @@ function QuizRound({
   onAnswer: (c: boolean) => void;
   onNext: () => void;
 }) {
+  const { t, lang } = useLang();
   const { picked, pick, locked } = useChoice(round.word.en, onAnswer);
   return (
     <div>
-      <SpeakRow text={round.word.en} label="နားထောင်မယ်" />
+      <SpeakRow text={round.word.en} label={t('quiz.listen')} />
       {round.options.map((o) => (
         <ChoiceCard
           key={o.en}
-          label={o.my}
+          label={displayLang(o, lang)}
           state={!locked ? 'default' : o.en === round.word.en ? 'correct' : picked === o.en ? 'wrong' : 'default'}
           onPick={() => pick(o.en)}
           disabled={locked}
         />
       ))}
       {locked && (
-        <RoundFeedback ok={picked === round.word.en} correctText={`${round.word.en} = ${round.word.my}`} onNext={onNext} />
+        <RoundFeedback ok={picked === round.word.en} correctText={`${round.word.en} = ${displayLang(round.word, lang)}`} onNext={onNext} />
       )}
     </div>
   );
@@ -829,6 +835,7 @@ function TranslationRound({
   onAnswer: (c: boolean) => void;
   onNext: () => void;
 }) {
+  const { t } = useLang();
   const { picked, pick, locked } = useChoice(round.word.en, onAnswer);
   return (
     <div>
@@ -841,7 +848,7 @@ function TranslationRound({
           disabled={locked}
         />
       ))}
-      {locked && <SpeakRow text={round.word.en} label="အသံနားထောင်မယ်" />}
+      {locked && <SpeakRow text={round.word.en} label={t('dictation.listen_audio')} />}
       {locked && (
         <RoundFeedback ok={picked === round.word.en} correctText={round.word.en} onNext={onNext} />
       )}
@@ -856,28 +863,29 @@ function ListeningRound({
   onAnswer: (c: boolean) => void;
   onNext: () => void;
 }) {
+  const { t, lang } = useLang();
   const { picked, pick, locked } = useChoice(round.word.en, onAnswer);
   return (
     <div>
       <Card style={{ display: 'flex', justifyContent: 'center', padding: 24, marginBottom: 14 }}>
-        <IconCircle bg={C.blue} size={72} onClick={() => speak(round.word.en)} label="ထပ်နားထောင်မယ်">
+        <IconCircle bg={C.blue} size={72} onClick={() => speak(round.word.en)} label={t('quiz.listen_again')}>
           <Volume2 size={32} />
         </IconCircle>
       </Card>
       <div style={{ textAlign: 'center', fontSize: 14, fontWeight: 700, color: C.text, marginBottom: 12 }}>
-        အသံနားထောင်ရန် အပေါ်က ခလုတ်ကို နှိပ်ပါ
+        {t('quiz.to_listen_above_the_button_tap')}
       </div>
       {round.options.map((o) => (
         <ChoiceCard
           key={o.en}
-          label={o.my}
+          label={displayLang(o, lang)}
           state={!locked ? 'default' : o.en === round.word.en ? 'correct' : picked === o.en ? 'wrong' : 'default'}
           onPick={() => pick(o.en)}
           disabled={locked}
         />
       ))}
       {locked && (
-        <RoundFeedback ok={picked === round.word.en} correctText={`${round.word.en} = ${round.word.my}`} onNext={onNext} />
+        <RoundFeedback ok={picked === round.word.en} correctText={`${round.word.en} = ${displayLang(round.word, lang)}`} onNext={onNext} />
       )}
     </div>
   );
@@ -890,6 +898,7 @@ function PhraseChoiceRound({
   onAnswer: (c: boolean) => void;
   onNext: () => void;
 }) {
+  const { t } = useLang();
   const { picked, pick, locked } = useChoice(round.phrase.en, onAnswer);
   return (
     <div>
@@ -902,7 +911,7 @@ function PhraseChoiceRound({
           disabled={locked}
         />
       ))}
-      {locked && <SpeakRow text={round.phrase.en} label="အသံနားထောင်မယ်" />}
+      {locked && <SpeakRow text={round.phrase.en} label={t('dictation.listen_audio')} />}
       {locked && (
         <RoundFeedback ok={picked === round.phrase.en} correctText={round.phrase.en} onNext={onNext} />
       )}
@@ -929,6 +938,7 @@ function OrderRound({
   onAnswer: (c: boolean) => void;
   onNext: () => void;
 }) {
+  const { t } = useLang();
   const target = round.phrase.en.replace(/[.,!?]/g, '').split(' ');
   const [chosen, setChosen] = useState<number[]>([]);
   const [checked, setChecked] = useState(false);
@@ -943,7 +953,7 @@ function OrderRound({
       <Card style={{ minHeight: 76, marginBottom: 12 }}>
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, alignItems: 'center', minHeight: 36 }}>
           {chosen.length === 0 && !checked && (
-            <span style={{ color: '#B9A98F', fontSize: 15 }}>စကားလုံးများ နှိပ်ပါ…</span>
+            <span style={{ color: '#B9A98F', fontSize: 15 }}>{t('quiz.words_tap')}</span>
           )}
           {chosen.map((i, k) => (
             <span key={k} style={{ ...chipStyle, borderColor: C.blue, cursor: 'default' }}>
@@ -969,12 +979,12 @@ function OrderRound({
         <div style={{ display: 'flex', gap: 10 }}>
           <div style={{ flex: 1 }}>
             <PillButton color="blue" onClick={() => setChosen(chosen.slice(0, -1))}>
-              ဖျက်မယ်
+              {t('quiz.delete')}
             </PillButton>
           </div>
           <div style={{ flex: 1 }}>
             <PillButton color="green" onClick={check} disabled={chosen.length !== target.length}>
-              စစ်ဆေးမယ်
+              {t('dictation.check')}
             </PillButton>
           </div>
         </div>
@@ -993,15 +1003,16 @@ function MatchRound({
   onAnswer: (c: boolean) => void;
   onNext: () => void;
 }) {
+  const { t, lang } = useLang();
   type MCard = { id: string; text: string; kind: 'en' | 'my'; word: Word };
   const cards = useMemo<MCard[]>(() => {
     const cs: MCard[] = [];
     round.pairs.forEach((w, i) => {
       cs.push({ id: `en${i}`, text: w.en, kind: 'en', word: w });
-      cs.push({ id: `my${i}`, text: w.my, kind: 'my', word: w });
+      cs.push({ id: `my${i}`, text: displayLang(w, lang), kind: 'my', word: w });
     });
     return sample(cs, cs.length);
-  }, [round]);
+  }, [round, lang]);
   const [first, setFirst] = useState<MCard | null>(null);
   const [matched, setMatched] = useState<string[]>([]);
   const [mistake, setMistake] = useState(false);
@@ -1052,7 +1063,7 @@ function MatchRound({
                 opacity: isMatched ? 0.85 : 1,
               }}
             >
-              {c.text}
+              {c.kind === 'my' ? displayLang(c.word, lang) : c.text}
             </button>
           );
         })}
@@ -1061,12 +1072,12 @@ function MatchRound({
         <div>
           <FeedbackStrip
             ok={perfect}
-            title={perfect ? 'မှန်တယ်! 🎉' : 'ပြီးဆုံးပါပြီ!'}
-            sub={perfect ? undefined : 'အတွဲတချို့ မှားခဲ့တယ် — ထပ်လေ့ကျင့်ပါ'}
+            title={perfect ? t('exam.correct') : t('quiz.completed')}
+            sub={perfect ? undefined : t('quiz.were_wrong_practice_again')}
           />
           <div style={{ marginTop: 12 }}>
             <PillButton color="green" onClick={onNext}>
-              ဆက်လုပ်မယ်
+              {t('celebration.continue')}
             </PillButton>
           </div>
         </div>
@@ -1084,6 +1095,7 @@ function DictationRound({
   onAnswer: (c: boolean) => void;
   onNext: () => void;
 }) {
+  const { t, lang } = useLang();
   const [val, setVal] = useState('');
   const [checked, setChecked] = useState(false);
   const correct = val.trim().toLowerCase() === round.word.en.trim().toLowerCase();
@@ -1095,19 +1107,19 @@ function DictationRound({
   return (
     <div>
       <Card style={{ display: 'flex', justifyContent: 'center', padding: 24, marginBottom: 14 }}>
-        <IconCircle bg={C.blue} size={72} onClick={() => speak(round.word.en)} label="အသံနားထောင်မယ်">
+        <IconCircle bg={C.blue} size={72} onClick={() => speak(round.word.en)} label={t('dictation.listen_audio')}>
           <Volume2 size={32} />
         </IconCircle>
       </Card>
       <div style={{ textAlign: 'center', fontSize: 14, fontWeight: 700, color: C.text, marginBottom: 12 }}>
-        နားထောင်ပြီး စာလုံးပေါင်းမှန်အောင် ရိုက်ပါ
+        {t('quiz.after_listening_spell_correctly_type')}
       </div>
       <input
         type="text"
         value={val}
         onChange={(e) => setVal(e.target.value)}
         disabled={checked}
-        placeholder="English လို ရိုက်ပါ…"
+        placeholder={t('quiz.english_type')}
         autoCapitalize="off"
         autoCorrect="off"
         spellCheck={false}
@@ -1128,11 +1140,11 @@ function DictationRound({
       />
       {!checked && (
         <PillButton color="green" onClick={check} disabled={!val.trim()}>
-          စစ်ဆေးမယ်
+          {t('dictation.check')}
         </PillButton>
       )}
       {checked && (
-        <RoundFeedback ok={correct} correctText={`${round.word.en} = ${round.word.my}`} onNext={onNext} />
+        <RoundFeedback ok={correct} correctText={`${round.word.en} = ${displayLang(round.word, lang)}`} onNext={onNext} />
       )}
     </div>
   );
@@ -1145,14 +1157,15 @@ function DialogueRound({
   onAnswer: (c: boolean) => void;
   onNext: () => void;
 }) {
+  const { t, lang } = useLang();
   const { picked, pick, locked } = useChoice(round.reply.en, onAnswer);
   return (
     <div>
       <Card style={{ marginBottom: 12 }}>
         <div style={{ fontWeight: 800, fontSize: 17, color: C.title }}>{round.context.en}</div>
-        <div style={{ fontSize: 14, color: C.text }}>{round.context.my}</div>
+        <div style={{ fontSize: 14, color: C.text }}>{displayLang(round.context, lang)}</div>
         <div style={{ marginTop: 10, paddingTop: 10, borderTop: '1px dashed #F1E4CE' }}>
-          <div style={{ fontSize: 14, color: C.text, marginBottom: 2 }}>↳ {round.reply.my}</div>
+          <div style={{ fontSize: 14, color: C.text, marginBottom: 2 }}>↳ {displayLang(round.reply, lang)}</div>
           <div style={{ fontWeight: 800, fontSize: 17, color: '#B9A98F' }}>___ ?</div>
         </div>
       </Card>
@@ -1165,7 +1178,7 @@ function DialogueRound({
           disabled={locked}
         />
       ))}
-      {locked && <SpeakRow text={round.reply.en} label="အသံနားထောင်မယ်" />}
+      {locked && <SpeakRow text={round.reply.en} label={t('dictation.listen_audio')} />}
       {locked && (
         <RoundFeedback ok={picked === round.reply.en} correctText={round.reply.en} onNext={onNext} />
       )}
@@ -1180,6 +1193,7 @@ function StoryRound({
   onAnswer: (c: boolean) => void;
   onNext: () => void;
 }) {
+  const { t, lang } = useLang();
   return (
     <div>
       <Card style={{ marginBottom: 12 }}>
@@ -1188,21 +1202,21 @@ function StoryRound({
             <div style={{ fontWeight: 800, fontSize: 15, color: C.title }}>
               {i + 1}. {p.en}
             </div>
-            <div style={{ fontSize: 14, color: C.text }}>{p.my}</div>
+            <div style={{ fontSize: 14, color: C.text }}>{displayLang(p, lang)}</div>
           </div>
         ))}
       </Card>
       <Card style={{ marginBottom: 12 }}>
         <div style={{ fontWeight: 800, fontSize: 17, color: C.title }}>“{round.testEn}”</div>
         <div style={{ fontSize: 15, color: C.text, marginTop: 4 }}>
-          “{round.shownMy}” လို့ အဓိပ္ပာယ်ရတယ်။ မှန်လား?
+          {t('quiz.var_that_is_it_correct', { shown: displayLang(round.shown, lang) })}
         </div>
       </Card>
       <TrueFalseButtons
         answer={round.answer}
         onAnswer={onAnswer}
         onNext={onNext}
-        correctText={round.answer ? 'မှန်' : 'မှား'}
+        correctText={round.answer ? t('quiz.true') : t('quiz.false')}
       />
     </div>
   );
@@ -1215,19 +1229,20 @@ function TrueFalseRound({
   onAnswer: (c: boolean) => void;
   onNext: () => void;
 }) {
+  const { t, lang } = useLang();
   return (
     <div>
       <Card style={{ marginBottom: 12, textAlign: 'center', padding: 20 }}>
         <div style={{ fontWeight: 800, fontSize: 20, color: C.title }}>“{round.word.en}”</div>
         <div style={{ fontSize: 15, color: C.text, marginTop: 6 }}>
-          “{round.shownMy}” လို့ အဓိပ္ပာယ်ရတယ်
+          {t('quiz.var_that_means', { shown: displayLang(round.shown, lang) })}
         </div>
       </Card>
       <TrueFalseButtons
         answer={round.answer}
         onAnswer={onAnswer}
         onNext={onNext}
-        correctText={`${round.word.en} = ${round.word.my}`}
+        correctText={`${round.word.en} = ${displayLang(round.word, lang)}`}
       />
     </div>
   );
@@ -1240,6 +1255,7 @@ function OddOneOutRound({
   onAnswer: (c: boolean) => void;
   onNext: () => void;
 }) {
+  const { t, lang } = useLang();
   const { picked, pick, locked } = useChoice(round.intruder.en, onAnswer);
   return (
     <div>
@@ -1252,11 +1268,11 @@ function OddOneOutRound({
           disabled={locked}
         />
       ))}
-      {locked && <SpeakRow text={round.intruder.en} label="အသံနားထောင်မယ်" />}
+      {locked && <SpeakRow text={round.intruder.en} label={t('dictation.listen_audio')} />}
       {locked && (
         <RoundFeedback
           ok={picked === round.intruder.en}
-          correctText={`${round.intruder.en} = ${round.intruder.my}`}
+          correctText={`${round.intruder.en} = ${displayLang(round.intruder, lang)}`}
           onNext={onNext}
         />
       )}
@@ -1271,12 +1287,13 @@ function FillBlankRound({
   onAnswer: (c: boolean) => void;
   onNext: () => void;
 }) {
+  const { t, lang } = useLang();
   const { picked, pick, locked } = useChoice(round.answer, onAnswer);
   return (
     <div>
       <Card style={{ marginBottom: 12, padding: 20 }}>
         <div style={{ fontWeight: 800, fontSize: 19, color: C.title }}>{round.display}</div>
-        <div style={{ fontSize: 14, color: C.text, marginTop: 6 }}>{round.phrase.my}</div>
+        <div style={{ fontSize: 14, color: C.text, marginTop: 6 }}>{displayLang(round.phrase, lang)}</div>
       </Card>
       {round.options.map((o) => (
         <ChoiceCard
@@ -1287,7 +1304,7 @@ function FillBlankRound({
           disabled={locked}
         />
       ))}
-      {locked && <SpeakRow text={round.phrase.en} label="အသံနားထောင်မယ်" />}
+      {locked && <SpeakRow text={round.phrase.en} label={t('dictation.listen_audio')} />}
       {locked && (
         <RoundFeedback ok={picked === round.answer} correctText={round.phrase.en} onNext={onNext} />
       )}
@@ -1330,6 +1347,7 @@ function ShadowingRound({
   onAnswer: (c: boolean) => void;
   onNext: () => void;
 }) {
+  const { t, lang } = useLang();
   const phrase = round.phrase;
   const [result, setResult] = useState<{ ok: boolean; heard?: string } | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -1420,16 +1438,16 @@ function ShadowingRound({
       recog.onerror = (e: any) => {
         setListening(false);
         if (e?.error === 'not-allowed' || e?.error === 'service-not-allowed') {
-          setError('မိုက်ခရိုဖုန်း ခွင့်ပြုချက် လိုအပ်ပါတယ် — ဘရောက်ဇာ ဆက်တင်မှာ ဖွင့်ပေးပါ');
+          setError(t('practice.mic_permission_browser_settings'));
         } else {
-          setError('အသံဖမ်းလို့ မရခဲ့ဘူး — ထပ်စမ်းကြည့်ပါ');
+          setError(t('practice.failed_try_again'));
         }
       };
       recog.onend = () => setListening(false);
       recog.start();
       setListening(true);
     } catch {
-      setError('အသံဖမ်းလို့ မရခဲ့ဘူး — ထပ်စမ်းကြည့်ပါ');
+      setError(t('practice.failed_try_again'));
       setListening(false);
     }
   };
@@ -1439,7 +1457,7 @@ function ShadowingRound({
     setPhase('done');
     // No transcription on iOS — participation credit for a real take.
     answerOnce(true);
-    if (!heard) setError('အသံမကြားလိုက်ရဘူး — မိုက်ခရိုဖုန်းနား ကပ်ပြောပါ');
+    if (!heard) setError(t('quiz.didnt_hear_near_the_mic_speak_close'));
   };
 
   const startVad = async () => {
@@ -1503,7 +1521,7 @@ function ShadowingRound({
       if (e && (e.name === 'NotAllowedError' || e.name === 'SecurityError')) {
         setVadDenied(true);
       } else {
-        setError('မိုက်ခရိုဖုန်း ဖွင့်လို့ မရခဲ့ဘူး — ထပ်စမ်းကြည့်ပါ');
+        setError(t('practice.microphone_to_turn_on_failed_try_again'));
       }
       setPhase('idle');
     } finally {
@@ -1536,16 +1554,16 @@ function ShadowingRound({
   };
   const micLabel =
     result != null
-      ? 'ပြီးပြီ! 🎉'
+      ? t('practice.done')
       : micMode === 'vad'
         ? phase === 'starting'
-          ? 'မိုက်ခရိုဖုန်း ဖွင့်နေတယ်…'
+          ? t('practice.microphone_is_on')
           : phase === 'listening'
-            ? 'နားထောင်နေတယ်… ပြောပါ!'
-            : 'ဖမ်းရန် နှိပ်ပါ'
+            ? t('practice.listening_speak')
+            : t('practice.to_record_tap')
         : listening
-          ? 'နားထောင်နေတယ်… ပြောပါ!'
-          : 'ဖမ်းရန် နှိပ်ပါ';
+          ? t('practice.listening_speak')
+          : t('practice.to_record_tap');
 
   return (
     <div>
@@ -1554,7 +1572,7 @@ function ShadowingRound({
         <div style={{ fontWeight: 800, fontSize: 22, color: C.title, lineHeight: 1.4 }}>
           “{phrase.en}”
         </div>
-        <div style={{ fontSize: 15, color: C.text, marginTop: 8 }}>{phrase.my}</div>
+        <div style={{ fontSize: 15, color: C.text, marginTop: 8 }}>{displayLang(phrase, lang)}</div>
         {phrase.phonetic && (
           <div style={{ fontSize: 14, fontWeight: 700, color: C.blueDark, marginTop: 6 }}>
             [{phrase.phonetic}]
@@ -1584,7 +1602,7 @@ function ShadowingRound({
           }}
         >
           <Volume2 size={18} color={C.blueDark} />
-          အသံနားထောင်မယ်
+          {t('dictation.listen_audio')}
         </button>
       </Card>
 
@@ -1594,7 +1612,7 @@ function ShadowingRound({
             type="button"
             onClick={pressMic}
             disabled={micBusy || result != null}
-            aria-label="အသံဖမ်းရန်"
+            aria-label={t('practice.record_audio')}
             style={{
               width: 84,
               height: 84,
@@ -1630,7 +1648,7 @@ function ShadowingRound({
                 textAlign: 'center',
               }}
             >
-              အရင် အသံနားထောင်ပြီး လိုက်ပြောပါ — ပြီးမှ ထပ်နှိပ်ပြီး ဖမ်းပါ
+              {t('practice.first_repeat_then')}
             </div>
           )}
           {micMode === 'vad' && phase === 'listening' && (
@@ -1644,10 +1662,10 @@ function ShadowingRound({
       {micMode === 'manual' && result == null && (
         <Card style={{ marginTop: 4, background: '#FFF6D6' }}>
           <div style={{ fontSize: 15, color: C.text, lineHeight: 1.6, marginBottom: 12 }}>
-            သင့်ဖုန်းမှာ အသံဖမ်းစနစ် မရနိုင်ပါ — အသံနားထောင်ပြီး လိုက်ပြောပါ၊ ပြီးရင် ✓ နှိပ်ပါ
+            {t('practice.on_your_phone_recording_unavailable_then_tap')}
           </div>
           <PillButton color="green" onClick={() => answerOnce(true)}>
-            ✓ ပြောပြီးပြီ
+            {t('practice.done_speaking')}
           </PillButton>
         </Card>
       )}
@@ -1655,14 +1673,14 @@ function ShadowingRound({
       {micMode === 'vad' && vadDenied && (
         <Card style={{ marginTop: 12, background: '#FFF6D6' }}>
           <div style={{ fontSize: 16, fontWeight: 700, color: C.title, marginBottom: 8 }}>
-            🎤 မိုက်ခရိုဖုန်း ခွင့်ပြုချက် လိုအပ်ပါတယ်
+            {t('practice.microphone_permission_needed')}
           </div>
           <div style={{ fontSize: 14, color: C.text, lineHeight: 1.7, marginBottom: 12 }}>
-            iPhone Settings → Safari → Microphone ကို Allow လုပ်ပေးပါ။
-            ပြီးရင် ထပ်စမ်းပါ။
+            {t('practice.iphone_settings_safari_microphone_allow')}
+            {t('quiz.then')}
           </div>
           <PillButton color="orange" onClick={startVad}>
-            ထပ်စမ်းမယ်
+            {t('org.retry')}
           </PillButton>
         </Card>
       )}
@@ -1687,7 +1705,7 @@ function ShadowingRound({
       {result && (
         <RoundFeedback
           ok={result.ok}
-          correctText={result.heard ? `ကြားရတယ်: “${result.heard}”` : phrase.en}
+          correctText={result.heard ? t('quiz.heard_result', { heard: result.heard }) : phrase.en}
           onNext={onNext}
         />
       )}
@@ -1706,6 +1724,7 @@ function ConversationRound({
   onAnswer: (c: boolean) => void;
   onNext: () => void;
 }) {
+  const { t, lang } = useLang();
   const { picked, pick, locked } = useChoice(round.reply.en, onAnswer);
   const speakers = ['🅰️', '🅱️'];
   return (
@@ -1726,7 +1745,7 @@ function ConversationRound({
             <button
               type="button"
               onClick={() => speak(l.en)}
-              aria-label="နားထောင်မယ်"
+              aria-label={t('quiz.listen')}
               style={{
                 flexShrink: 0,
                 width: 36,
@@ -1747,12 +1766,12 @@ function ConversationRound({
               <div style={{ fontWeight: 800, fontSize: 16, color: C.title, lineHeight: 1.45 }}>
                 {speakers[i % speakers.length]} {l.en}
               </div>
-              <div style={{ fontSize: 14, color: C.text }}>{l.my}</div>
+              <div style={{ fontSize: 14, color: C.text }}>{displayLang(l, lang)}</div>
             </div>
           </div>
         ))}
         <div style={{ marginTop: 10, paddingTop: 10, borderTop: '1px dashed #F1E4CE' }}>
-          <div style={{ fontSize: 14, color: C.text, marginBottom: 2 }}>↳ {round.reply.my}</div>
+          <div style={{ fontSize: 14, color: C.text, marginBottom: 2 }}>↳ {displayLang(round.reply, lang)}</div>
           <div style={{ fontWeight: 800, fontSize: 17, color: '#B9A98F' }}>___ ?</div>
         </div>
       </Card>
@@ -1765,7 +1784,7 @@ function ConversationRound({
           disabled={locked}
         />
       ))}
-      {locked && <SpeakRow text={round.reply.en} label="အသံနားထောင်မယ်" />}
+      {locked && <SpeakRow text={round.reply.en} label={t('dictation.listen_audio')} />}
       {locked && (
         <RoundFeedback ok={picked === round.reply.en} correctText={round.reply.en} onNext={onNext} />
       )}
@@ -1785,12 +1804,13 @@ function StoryListenRound({
   onAnswer: (c: boolean) => void;
   onNext: () => void;
 }) {
+  const { t, lang } = useLang();
   const { picked, pick, locked } = useChoice(round.answer.en, onAnswer);
   return (
     <div>
       <Card style={{ marginBottom: 12 }}>
         <div style={{ fontSize: 14, fontWeight: 700, color: C.text, marginBottom: 10 }}>
-          🔊 တစ်ကြောင်းချင်း နှိပ်ပြီး နားထောင်ပါ
+          {t('quiz.line_by_line_tap_and')}
         </div>
         {round.story.map((p, i) => (
           <div
@@ -1805,7 +1825,7 @@ function StoryListenRound({
             <button
               type="button"
               onClick={() => speak(p.en)}
-              aria-label="နားထောင်မယ်"
+              aria-label={t('quiz.listen')}
               style={{
                 flexShrink: 0,
                 width: 40,
@@ -1826,13 +1846,13 @@ function StoryListenRound({
               <div style={{ fontWeight: 800, fontSize: 15, color: C.title, lineHeight: 1.45 }}>
                 {i + 1}. {p.en}
               </div>
-              <div style={{ fontSize: 14, color: C.text }}>{p.my}</div>
+              <div style={{ fontSize: 14, color: C.text }}>{displayLang(p, lang)}</div>
             </div>
           </div>
         ))}
       </Card>
       <Card style={{ marginBottom: 12 }}>
-        <div style={{ fontWeight: 800, fontSize: 16, color: C.title }}>❓ {round.question.my}</div>
+        <div style={{ fontWeight: 800, fontSize: 16, color: C.title }}>❓ {displayLang(round.question, lang)}</div>
       </Card>
       {round.options.map((o) => (
         <ChoiceCard
@@ -1881,6 +1901,7 @@ const CHALLENGE_SECONDS = 60;
  * correct + 2 per streak step (capped); XP is banked once when time runs out.
  */
 function DailyChallengeRun({ topic, level, go, words, phrases }: { topic: TopicId; level: Level; go: GoFn; words: Word[]; phrases: Phrase[] }) {
+  const { t } = useLang();
   const ctxRef = useRef<QuizCtx | null>(null);
   if (ctxRef.current === null) ctxRef.current = makeQuizCtx(topic, level, Date.now(), words, phrases);
 
@@ -1951,7 +1972,7 @@ function DailyChallengeRun({ topic, level, go, words, phrases }: { topic: TopicI
     <button
       type="button"
       onClick={() => go('back')}
-      aria-label="ပိတ်ရန်"
+      aria-label={t('exam.close')}
       style={{
         width: 40, height: 40, borderRadius: '50%', border: 'none',
         background: C.white, color: C.text, display: 'flex',
@@ -1969,10 +1990,10 @@ function DailyChallengeRun({ topic, level, go, words, phrases }: { topic: TopicI
         <TopBar left={<span />} center={<div />} right={<span />} />
         <Card style={{ textAlign: 'center', padding: 24 }}>
           <div style={{ fontSize: 16, fontWeight: 700, color: C.title, marginBottom: 16 }}>
-            ဒီအကြောင်းအရာမှာ လေ့ကျင့်စရာမရှိသေးပါ
+            {t('quiz.in_this_topic_no_exercises_yet')}
           </div>
           <PillButton color="green" onClick={() => go('back')}>
-            ပြန်သွားမယ်
+            {t('exam.go_back')}
           </PillButton>
         </Card>
       </Screen>
@@ -1986,7 +2007,7 @@ function DailyChallengeRun({ topic, level, go, words, phrases }: { topic: TopicI
           left={closeBtn}
           center={
             <span style={{ fontSize: 18, fontWeight: 800, color: C.title }}>
-              နေ့စဉ်စိန်ခေါ်မှု
+              {t('quiz.daily_challenge')}
             </span>
           }
         />
@@ -1994,32 +2015,32 @@ function DailyChallengeRun({ topic, level, go, words, phrases }: { topic: TopicI
           pose={score > 0 ? 'celebrate' : 'encourage'}
           size={88}
           text={
-            score > 0 ? 'အချိန်ကုန်ပြီ — တော်လိုက်တာ! 🎉' : 'အချိန်ကုန်ပြီ — နောက်တစ်ခါ ထပ်ကြိုးစားပါ 💪'
+            score > 0 ? t('quiz.great') : t('quiz.time_up_try_again')
           }
         />
         <Card style={{ textAlign: 'center', padding: 24, marginBottom: 14 }}>
-          <div style={{ fontSize: 15, fontWeight: 700, color: C.text }}>ရမှတ်</div>
+          <div style={{ fontSize: 15, fontWeight: 700, color: C.text }}>{t('quiz.score')}</div>
           <div style={{ fontSize: 52, fontWeight: 800, color: C.title, lineHeight: 1.2 }}>{score}</div>
           <div style={{ display: 'flex', justifyContent: 'center', gap: 24, marginTop: 12 }}>
             <div>
               <div style={{ fontSize: 22, fontWeight: 800, color: C.title }}>{count}</div>
-              <div style={{ fontSize: 13, fontWeight: 700, color: C.text }}>မေးခွန်း</div>
+              <div style={{ fontSize: 13, fontWeight: 700, color: C.text }}>{t('quiz.questions')}</div>
             </div>
             <div>
               <div style={{ fontSize: 22, fontWeight: 800, color: C.title }}>🔥{best}</div>
-              <div style={{ fontSize: 13, fontWeight: 700, color: C.text }}>အကောင်းဆုံး streak</div>
+              <div style={{ fontSize: 13, fontWeight: 700, color: C.text }}>{t('quiz.best_streak')}</div>
             </div>
           </div>
         </Card>
         <div style={{ display: 'flex', gap: 10 }}>
           <div style={{ flex: 1 }}>
             <PillButton color="blue" onClick={() => go('back')}>
-              ပြန်သွားမယ်
+              {t('exam.go_back')}
             </PillButton>
           </div>
           <div style={{ flex: 1 }}>
             <PillButton color="green" onClick={restart}>
-              ထပ်ကစားမယ်
+              {t('quiz.play_again')}
             </PillButton>
           </div>
         </div>
@@ -2049,7 +2070,7 @@ function DailyChallengeRun({ topic, level, go, words, phrases }: { topic: TopicI
         right={<span style={{ fontWeight: 800, fontSize: 16, color: C.title }}>🔥{streak}</span>}
       />
       <div style={{ fontSize: 13, fontWeight: 700, color: C.text, marginBottom: 6 }}>
-        နေ့စဉ်စိန်ခေါ်မှု · ရမှတ် {score}
+        {t('quiz.daily_challenge_score', { score })}
       </div>
       <QuestionBubble round={round.inner} />
       <W3ErrorBoundary>

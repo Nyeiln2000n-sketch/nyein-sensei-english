@@ -19,6 +19,8 @@
 // URL/key globals only exist under Vite, and a static import would also
 // break Node ESM resolution (extensionless specifier).
 
+import { t as ti18n } from './i18n';
+
 export type OrgRole = 'owner' | 'admin' | 'member';
 
 export interface Organization {
@@ -69,7 +71,11 @@ async function rest(path: string, init: RequestInit = {}): Promise<Response> {
 async function httpError(res: Response, whatMy: string): Promise<Error> {
   const detail = await res.text().catch(() => '');
   return new Error(
-    `${whatMy} (HTTP ${res.status})။${detail ? ` [${detail.slice(0, 120)}]` : ''}`,
+    ti18n('err_tenant.operation_failed_http', {
+      what: whatMy,
+      status: res.status,
+      detail: detail ? ` [${detail.slice(0, 120)}]` : '',
+    }),
   );
 }
 
@@ -91,7 +97,7 @@ function firstRow<T>(data: unknown): T | null {
 export async function listMyOrgs(): Promise<Organization[]> {
   const res = await rest('organizations?select=*&order=created_at.asc');
   if (!res.ok) {
-    throw await httpError(res, 'အဖွဲ့အစည်းစာရင်း ရယူမရပါ။ ထပ်စမ်းကြည့်ပါ');
+    throw await httpError(res, ti18n('err_tenant.try_again'));
   }
   return readJson<Organization[]>(res);
 }
@@ -102,7 +108,7 @@ export async function listMyMemberships(): Promise<Membership[]> {
     'memberships?select=*,organization:organizations(*)&order=joined_at',
   );
   if (!res.ok) {
-    throw await httpError(res, 'အသင်းဝင်မှု စာရင်း ရယူမရပါ။ ထပ်စမ်းကြည့်ပါ');
+    throw await httpError(res, ti18n('err_tenant.list_try_again'));
   }
   return readJson<Membership[]>(res);
 }
@@ -117,11 +123,11 @@ export async function createOrganization(name: string): Promise<Organization> {
     body: JSON.stringify({ p_name: name }),
   });
   if (!res.ok) {
-    throw await httpError(res, 'အဖွဲ့အစည်း ဖန်တီးမရပါ။ ထပ်စမ်းကြည့်ပါ');
+    throw await httpError(res, ti18n('err_tenant.organization_try_again'));
   }
   const row = firstRow<Organization>(await readJson<unknown>(res));
   if (!row) {
-    throw new Error('အဖွဲ့အစည်း ဖန်တီးမှု အဖြေ မမှန်ပါ။ ထပ်စမ်းကြည့်ပါ။');
+    throw new Error(ti18n('err_tenant.organization_response'));
   }
   return row;
 }
@@ -140,11 +146,11 @@ export async function createInvite(
     body: JSON.stringify({ org_id: orgId, email, role }),
   });
   if (!res.ok) {
-    throw await httpError(res, 'ဖိတ်စာ ဖန်တီးမရပါ။ ထပ်စမ်းကြည့်ပါ');
+    throw await httpError(res, ti18n('err_tenant.invite_create_failed'));
   }
   const row = firstRow<OrgInvite>(await readJson<unknown>(res));
   if (!row) {
-    throw new Error('ဖိတ်စာ ဖန်တီးမှု အဖြေ မမှန်ပါ။ ထပ်စမ်းကြည့်ပါ။');
+    throw new Error(ti18n('err_tenant.invitation_response'));
   }
   return row;
 }
@@ -155,7 +161,7 @@ export async function listInvites(orgId: string): Promise<OrgInvite[]> {
     `org_invites?org_id=eq.${orgId}&used_at=is.null&order=created_at.desc`,
   );
   if (!res.ok) {
-    throw await httpError(res, 'ဖိတ်စာစာရင်း ရယူမရပါ။ ထပ်စမ်းကြည့်ပါ');
+    throw await httpError(res, ti18n('err_tenant.invite_list_try_again'));
   }
   return readJson<OrgInvite[]>(res);
 }
@@ -164,7 +170,7 @@ export async function listInvites(orgId: string): Promise<OrgInvite[]> {
 export async function revokeInvite(inviteId: string): Promise<void> {
   const res = await rest(`org_invites?id=eq.${inviteId}`, { method: 'DELETE' });
   if (!res.ok) {
-    throw await httpError(res, 'ဖိတ်စာ ပယ်ဖျက်မရပါ။ ထပ်စမ်းကြည့်ပါ');
+    throw await httpError(res, ti18n('err_tenant.invitation_try_again'));
   }
 }
 
@@ -189,7 +195,7 @@ export async function acceptInvite(token: string): Promise<string> {
     body: JSON.stringify({ p_token: token }),
   });
   if (!res.ok) {
-    throw await httpError(res, 'ဖိတ်စာ လက်ခံမရပါ။ လင့်ခ်မှန်မမှန် စစ်ဆေးပါ');
+    throw await httpError(res, ti18n('err_tenant.invitation_check'));
   }
   const raw = (await res.text()).trim();
   let val: unknown = raw;
@@ -203,7 +209,7 @@ export async function acceptInvite(token: string): Promise<string> {
     '',
   );
   if (!id) {
-    throw new Error('ဖိတ်စာ လက်ခံမှု အဖြေ မမှန်ပါ။ ထပ်စမ်းကြည့်ပါ။');
+    throw new Error(ti18n('err_tenant.invite_accept_bad_response'));
   }
   return id;
 }
@@ -214,7 +220,7 @@ export async function listMembers(orgId: string): Promise<Membership[]> {
     `memberships?org_id=eq.${orgId}&select=*,organization:organizations(id,name)&order=joined_at`,
   );
   if (!res.ok) {
-    throw await httpError(res, 'အသင်းဝင်များ စာရင်း ရယူမရပါ။ ထပ်စမ်းကြည့်ပါ');
+    throw await httpError(res, ti18n('err_tenant.members_list_try_again'));
   }
   return readJson<Membership[]>(res);
 }
@@ -233,7 +239,7 @@ export async function setMemberRole(
     body: JSON.stringify({ p_org_id: orgId, p_user_id: userId, p_role: role }),
   });
   if (!res.ok) {
-    throw await httpError(res, 'အခန်းကဏ္ဍ ပြောင်းမရပါ။ ထပ်စမ်းကြည့်ပါ');
+    throw await httpError(res, ti18n('err_tenant.role_try_again'));
   }
   return (await readJson<unknown>(res)) === true;
 }
@@ -245,7 +251,7 @@ export async function removeMember(orgId: string, userId: string): Promise<void>
     body: JSON.stringify({ p_org_id: orgId, p_user_id: userId }),
   });
   if (!res.ok) {
-    throw await httpError(res, 'အသင်းဝင် ထုတ်ပယ်မရပါ။ ထပ်စမ်းကြည့်ပါ');
+    throw await httpError(res, ti18n('err_tenant.member_try_again'));
   }
 }
 
@@ -367,6 +373,6 @@ export function tenantScopeParam(t: ActiveTenant): string {
 
 /** Myanmar-first label for a tenant: personal → 'ကိုယ်ပိုင်', else org name. */
 export function describeTenant(t: ActiveTenant, orgs: Organization[]): string {
-  if (t.kind === 'personal') return 'ကိုယ်ပိုင်';
-  return orgs.find((o) => o.id === t.orgId)?.name ?? 'အဖွဲ့အစည်း';
+  if (t.kind === 'personal') return ti18n('org.personal');
+  return orgs.find((o) => o.id === t.orgId)?.name ?? ti18n('plan.organization');
 }

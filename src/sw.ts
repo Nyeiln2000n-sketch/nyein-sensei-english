@@ -112,39 +112,77 @@ interface PushPayload {
   tag?: string;
 }
 
-/** Copy de respaldo en Myanmar si el push llega sin payload. */
-const FALLBACK_COPY = {
+/** Copy de respaldo si el push llega sin payload (birmano = idioma por defecto). */
+const FALLBACK_COPY_MY = {
   title: 'Nyein Sensei English 🐱',
   body: 'ဒီနေ့ လေ့ကျင့်ဖို့ မမေ့နဲ့နော် — ၅ မိနစ်လောက်ပဲ လေ့လာကြည့်ပါ',
   url: '/',
 };
 
+/** Copy de respaldo en tailandés (modo th: cero birmano visible). */
+const FALLBACK_COPY_TH = {
+  title: 'Nyein Sensei English 🐱',
+  body: 'อย่าลืมฝึกภาษาอังกฤษวันนี้ — ลองใช้เวลาแค่ 5 นาที',
+  url: '/',
+};
+
+/**
+ * Lee el idioma activo desde el espejo de IndexedDB que mantiene la app
+ * (el SW no puede leer localStorage). Por defecto 'my'.
+ */
+function loadLangForSW(): Promise<'my' | 'th'> {
+  return new Promise((resolve) => {
+    try {
+      const req = indexedDB.open('nse-prefs', 1);
+      req.onupgradeneeded = () => {
+        req.result.createObjectStore('kv');
+      };
+      req.onsuccess = () => {
+        try {
+          const tx = req.result.transaction('kv', 'readonly');
+          const get = tx.objectStore('kv').get('nse-lang');
+          get.onsuccess = () => resolve(get.result === 'th' ? 'th' : 'my');
+          get.onerror = () => resolve('my');
+        } catch {
+          resolve('my');
+        }
+      };
+      req.onerror = () => resolve('my');
+    } catch {
+      resolve('my');
+    }
+  });
+}
+
 self.addEventListener('push', (event) => {
   const pushEvent = event as PushEvent;
-  let payload: PushPayload = {};
-  try {
-    const data = pushEvent.data;
-    if (data) payload = (data.json() ?? {}) as PushPayload;
-  } catch {
-    payload = {};
-  }
-
-  const title = payload.title ?? FALLBACK_COPY.title;
-  const options: NotificationOptions = {
-    body: payload.body ?? FALLBACK_COPY.body,
-    // La mascota gato como icono de la notificación.
-    icon: '/mascot.png',
-    badge: '/icon-192.png',
-    tag: payload.tag ?? 'nse-daily-reminder',
-    // El tag hace que la notificación nueva reemplace la anterior en vez de
-    // apilarse.
-    data: { url: payload.url ?? FALLBACK_COPY.url },
-    // Android: color de acento naranja de la marca.
-    // (iOS lo ignora sin problema.)
-  };
-
   pushEvent.waitUntil(
-    self.registration.showNotification(title, options),
+    (async () => {
+      let payload: PushPayload = {};
+      try {
+        const data = pushEvent.data;
+        if (data) payload = (data.json() ?? {}) as PushPayload;
+      } catch {
+        payload = {};
+      }
+
+      const fb = (await loadLangForSW()) === 'th' ? FALLBACK_COPY_TH : FALLBACK_COPY_MY;
+      const title = payload.title ?? fb.title;
+      const options: NotificationOptions = {
+        body: payload.body ?? fb.body,
+        // La mascota gato como icono de la notificación.
+        icon: '/mascot.png',
+        badge: '/icon-192.png',
+        tag: payload.tag ?? 'nse-daily-reminder',
+        // El tag hace que la notificación nueva reemplace la anterior en vez de
+        // apilarse.
+        data: { url: payload.url ?? fb.url },
+        // Android: color de acento naranja de la marca.
+        // (iOS lo ignora sin problema.)
+      };
+
+      await self.registration.showNotification(title, options);
+    })(),
   );
 });
 
@@ -153,7 +191,7 @@ self.addEventListener('notificationclick', (event) => {
   clickEvent.notification.close();
   const targetUrl: string =
     (clickEvent.notification.data as { url?: string } | undefined)?.url ??
-    FALLBACK_COPY.url;
+    FALLBACK_COPY_MY.url;
 
   clickEvent.waitUntil(
     (async () => {

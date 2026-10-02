@@ -8,6 +8,7 @@
 import { useCallback, useEffect, useRef } from 'react';
 import type { GoFn, NavParams, RouteName } from '../routes';
 import Mascot3D from './Mascot3D';
+import { useLang } from '../lib/i18n';
 import './w2.css';
 
 /* deterministic decorative dots (no randomness on re-render) */
@@ -34,6 +35,7 @@ export default function SplashScreen({
   params?: NavParams;
   onDone: (next?: RouteName) => void;
 }) {
+  const { t } = useLang();
   const doneRef = useRef(false);
 
   const finish = useCallback(
@@ -133,7 +135,7 @@ export default function SplashScreen({
         className="w2-enter-2"
         style={{ position: 'relative', zIndex: 1, fontSize: 15, margin: '10px 0 0', textAlign: 'center', lineHeight: 1.7 }}
       >
-        ပျော်ပျော်ရွှင်ရွှင် အင်္ဂလိပ်စာ လေ့လာကြမယ်!
+        {t('splash.have_fun_english_lets_learn')}
       </p>
 
       {/* branded loader bar (fills during the hold) */}
@@ -148,7 +150,7 @@ export default function SplashScreen({
         className="w2-enter-3"
         style={{ position: 'relative', zIndex: 1, fontSize: 13, marginTop: 12, color: '#A89E90' }}
       >
-        ထိပြီး ကျော်သွားနိုင်ပါတယ်
+        {t('splash.tap_and_can_skip')}
       </div>
 
       <div className="w2-enter-3" style={{ position: 'relative', zIndex: 1, marginTop: 14 }}>
@@ -160,7 +162,7 @@ export default function SplashScreen({
             finish('auth');
           }}
         >
-          အကောင့်ရှိပြီးသားလား? လော့ဂ်အင်ဝင်ရန်
+          {t('splash.already_have_account_to_log_in')}
         </button>
       </div>
     </div>

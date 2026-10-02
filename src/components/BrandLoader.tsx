@@ -9,6 +9,8 @@
 //
 // Palette: #FFB74D / #5CC8FF / #A5E6A7 / #FFEFD6 / #FFF8F1. Myanmar-first copy.
 
+import { useLang } from '../lib/i18n';
+
 interface BrandLoaderProps {
   compact?: boolean;
   size?: number;
@@ -16,13 +18,14 @@ interface BrandLoaderProps {
 }
 
 export default function BrandLoader({ compact, size = 128, caption }: BrandLoaderProps) {
+  const { t } = useLang();
   if (compact) {
     return (
       <div
         className="brand-loader-compact"
         style={{ width: size, height: size }}
         role="status"
-        aria-label="ခဏစောင့်ပါ"
+        aria-label={t('loader.please_wait')}
       >
         <img src="/mascot.webp" alt="" aria-hidden="true" draggable={false} />
         <span className="brand-spinner brand-spinner-sm" aria-hidden="true" />
@@ -31,7 +34,7 @@ export default function BrandLoader({ compact, size = 128, caption }: BrandLoade
   }
 
   return (
-    <div className="brand-loader" role="status" aria-label="ခဏစောင့်ပါ">
+    <div className="brand-loader" role="status" aria-label={t('loader.please_wait')}>
       <img
         src="/mascot.webp"
         className="brand-loader-cat"
@@ -40,7 +43,7 @@ export default function BrandLoader({ compact, size = 128, caption }: BrandLoade
       />
       <div className="brand-loader-name">Nyein Sensei English</div>
       <span className="brand-spinner" aria-hidden="true" />
-      <div className="brand-loader-caption">{caption ?? 'ခဏစောင့်ပါ…'}</div>
+      <div className="brand-loader-caption">{caption ?? t('loader.please_wait_ellipsis')}</div>
     </div>
   );
 }

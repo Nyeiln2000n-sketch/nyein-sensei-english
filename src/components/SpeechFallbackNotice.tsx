@@ -6,14 +6,15 @@ import { useEffect, useState } from 'react';
 import { VolumeX, X } from 'lucide-react';
 import { onSpeechIssue, type SpeechIssue } from '../lib/audio';
 import { C, FONT } from './w3-shared';
-
-const MSGS: Record<SpeechIssue, string> = {
-  unsupported:
-    'သင့်ဘရောက်ဇာမှာ အသံထွက်စနစ် မရနိုင်ပါ — Safari (သို့) Chrome မှာ ထပ်ဖွင့်ကြည့်ပါ',
-  failed: 'အသံ ထွက်မလာပါ — အသံခလုတ်ကို ထပ်နှိပ်ကြည့်ပါ',
-};
+import { useLang } from '../lib/i18n';
 
 export default function SpeechFallbackNotice() {
+  const { t } = useLang();
+  // Resolved inside the component so the message follows the active language.
+  const MSGS: Record<SpeechIssue, string> = {
+    unsupported: t('speech.no_tts_use_safari_chrome'),
+    failed: t('speech.audio_not_coming_out_the_audio_button_tap_again'),
+  };
   const [issue, setIssue] = useState<SpeechIssue | null>(null);
 
   useEffect(() => onSpeechIssue(setIssue), []);
@@ -69,7 +70,7 @@ export default function SpeechFallbackNotice() {
       <button
         type="button"
         onClick={() => setIssue(null)}
-        aria-label="ပိတ်ရန်"
+        aria-label={t('exam.close')}
         style={{
           border: 'none',
           background: 'transparent',

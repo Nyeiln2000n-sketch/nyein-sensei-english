@@ -14,6 +14,7 @@
 // See supabase/schema.sql.
 
 import { ensureFreshAccessToken, getSession, refreshSession } from './auth';
+import { t } from './i18n';
 
 // Build-time globals injected by vite.config.ts `define` (mapped from
 // VITE_SUPABASE_* or the Supabase Vercel integration's SUPABASE_* names).
@@ -59,7 +60,7 @@ export class SupabaseNetworkError extends Error {
  */
 export async function supabaseRest(path: string, init: RequestInit = {}): Promise<Response> {
   if (!supabaseEnabled) {
-    throw new SupabaseNetworkError(path, 'Supabase ကို မချိတ်ဆက်ရသေးပါ။');
+    throw new SupabaseNetworkError(path, t('err_supabase.supabase'));
   }
   let token = await ensureFreshAccessToken();
   if (token === null && getSession() !== null) {
@@ -89,7 +90,7 @@ export async function supabaseRest(path: string, init: RequestInit = {}): Promis
   } catch (err) {
     throw new SupabaseNetworkError(
       path,
-      err instanceof Error ? err.message : 'အင်တာနက် ချိတ်ဆက်မှု မရပါ။',
+      err instanceof Error ? err.message : t('err_supabase.internet_connection'),
     );
   }
   if (res.status === 401 && usedJwt) {
@@ -102,7 +103,7 @@ export async function supabaseRest(path: string, init: RequestInit = {}): Promis
       } catch (err) {
         throw new SupabaseNetworkError(
           path,
-          err instanceof Error ? err.message : 'အင်တာနက် ချိတ်ဆက်မှု မရပါ။',
+          err instanceof Error ? err.message : t('err_supabase.internet_connection'),
         );
       }
     }

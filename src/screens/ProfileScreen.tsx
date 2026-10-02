@@ -1,7 +1,8 @@
 // SCREEN 8 — Profile (Tab 5 "Perfil", mockup screen 8).
 // Centered celebrate 3D mascot in a cream circle, name, level chip,
 // stats row (streak / gems / rank), menu rows with chevrons.
-// NO language row. Sign-out clears the session via src/lib/auth.ts
+// Language row lives inside the settings panel (OLA 0 i18n).
+// Sign-out clears the session via src/lib/auth.ts
 // (byte-identical logic — this file only rewrites the presentation).
 
 import { useEffect, useState } from 'react';
@@ -10,6 +11,7 @@ import type { GoFn, NavParams } from '../routes';
 import MascotScene3D from '../components/Mascot3D';
 import ReminderSettings from '../components/ReminderSettings';
 import { MenuRow, PillButton, Screen } from '../components/ui';
+import { useLang, tNum } from '../lib/i18n';
 import { getSession, signOut } from '../lib/auth';
 import { getProgress, getTotalGems, resetProgress } from '../lib/storage';
 import { describeTenant, getActiveTenant, listMyOrgs, type Organization } from '../lib/tenant';
@@ -32,14 +34,6 @@ function loadKidsMode(): boolean {
   }
 }
 
-function rankFor(xp: number): string {
-  if (xp >= 1000) return 'စိန်';
-  if (xp >= 600) return 'ရွှေ';
-  if (xp >= 300) return 'ငွေ';
-  if (xp >= 100) return 'ကြေး';
-  return 'စတင်';
-}
-
 export default function ProfileScreen({ go, params }: { go: GoFn; params?: NavParams }) {
   void params;
   const session = getSession();
@@ -48,7 +42,6 @@ export default function ProfileScreen({ go, params }: { go: GoFn; params?: NavPa
   const streak = progress.streakDays;
   const gems = getTotalGems();
   const level = Math.floor(progress.xp / 300) + 1;
-  const rank = rankFor(progress.xp);
 
   const [leaving, setLeaving] = useState(false);
   const [panel, setPanel] = useState<null | 'settings' | 'help'>(null);
@@ -56,6 +49,19 @@ export default function ProfileScreen({ go, params }: { go: GoFn; params?: NavPa
   const [orgs, setOrgs] = useState<Organization[] | null>(null);
   // G-007 — Modo niños (toggle + clase kids-mode en <html>, persistido).
   const [kidsMode, setKidsMode] = useState<boolean>(loadKidsMode);
+  // OLA 0 — idioma de la UI (my por defecto; el toggle vive en ajustes).
+  const { lang, setLang, t } = useLang();
+  // Rank names via i18n so they follow the active language (Thai is extra).
+  function rankFor(xp: number): string {
+    if (xp >= 1000) return t('profile.gems');
+    if (xp >= 600) return t('profile.gold');
+    if (xp >= 300) return t('profile.silver');
+    if (xp >= 100) return t('profile.bronze');
+    return t('profile.start');
+  }
+  // Precomputed so the flame-pulse span keeps its animation on the emoji only.
+  const streakText = t('profile.streak_days', { streak: tNum(streak) });
+  const rank = rankFor(progress.xp);
 
   useEffect(() => {
     let alive = true;
@@ -102,12 +108,12 @@ export default function ProfileScreen({ go, params }: { go: GoFn; params?: NavPa
         </div>
         <div className="w4-profile-name">Nyein Sensei English</div>
         {email && <div className="w4-profile-email">{email}</div>}
-        <span className="w4-chip" style={{ marginTop: 8 }}>အဆင့် {level}</span>
+        <span className="w4-chip" style={{ marginTop: 8 }}>{t('dashboard.level_label', { level: tNum(level) })}</span>
 
         <div className="w4-profile-stats">
-          <span className="w4-pstat"><span className="flame-pulse">🔥</span> {streak} ရက်</span>
-          <span className="w4-pstat">💎 {gems} စိန်</span>
-          <span className="w4-pstat">🏆 အဆင့် {rank}</span>
+          <span className="w4-pstat"><span className="flame-pulse">{streakText.slice(0, 2)}</span>{streakText.slice(2)}</span>
+          <span className="w4-pstat">{t('profile.gems_count', { gems: tNum(gems) })}</span>
+          <span className="w4-pstat">{t('profile.rank_level', { rank })}</span>
         </div>
       </div>
 
@@ -116,8 +122,8 @@ export default function ProfileScreen({ go, params }: { go: GoFn; params?: NavPa
           icon={Award}
           badgeBg="#FFEFD6"
           badgeColor="#F59D2A"
-          title="ငါ့တိုးတက်မှု"
-          subtitle="ဆုတံဆိပ်များနှင့် စာရင်းအင်း"
+          title={t('share.my_progress')}
+          subtitle={t('profile.statistics')}
           onClick={() => go('achievements')}
         />
         {orgs !== null && (
@@ -125,8 +131,8 @@ export default function ProfileScreen({ go, params }: { go: GoFn; params?: NavPa
             icon={Users}
             badgeBg="#E3F4FF"
             badgeColor="#3FB0F0"
-            title="အဖွဲ့အစည်းများ"
-            subtitle={`လက်ရှိ: ${describeTenant(getActiveTenant(), orgs)}`}
+            title={t('org.organizations')}
+            subtitle={t('profile.current_tenant', { tenant: describeTenant(getActiveTenant(), orgs) })}
             onClick={() => go('orgs')}
           />
         )}
@@ -134,14 +140,14 @@ export default function ProfileScreen({ go, params }: { go: GoFn; params?: NavPa
           icon={Settings}
           badgeBg="#E3F4FF"
           badgeColor="#3FB0F0"
-          title="ဆက်တင်များ"
+          title={t('profile.settings')}
           onClick={() => setPanel(panel === 'settings' ? null : 'settings')}
         />
         <MenuRow
           icon={CircleQuestionMark}
           badgeBg="#E7F8E9"
           badgeColor="#3FBF5A"
-          title="အကူအညီ"
+          title={t('profile.help')}
           onClick={() => setPanel(panel === 'help' ? null : 'help')}
         />
         {email ? (
@@ -149,7 +155,7 @@ export default function ProfileScreen({ go, params }: { go: GoFn; params?: NavPa
             icon={LogOut}
             badgeBg="#FFE8E8"
             badgeColor="#E5484D"
-            title={leaving ? 'ထွက်နေပါတယ်…' : 'ထွက်မယ်'}
+            title={leaving ? t('profile.logging_out') : t('profile.log_out')}
             onClick={handleSignOut}
           />
         ) : (
@@ -157,8 +163,8 @@ export default function ProfileScreen({ go, params }: { go: GoFn; params?: NavPa
             icon={LogOut}
             badgeBg="#FFEFD6"
             badgeColor="#F59D2A"
-            title="ဝင်မယ် / အကောင့်ဖွင့်မယ်"
-            subtitle="တိုးတက်မှုကို သိမ်းထားဖို့"
+            title={t('profile.log_in')}
+            subtitle={t('profile.progress_to_save')}
             onClick={() => go('auth')}
           />
         )}
@@ -166,7 +172,7 @@ export default function ProfileScreen({ go, params }: { go: GoFn; params?: NavPa
 
       {panel === 'settings' && (
         <div className="w4-stub-panel">
-          <div className="w4-card-title">⚙️ ဆက်တင်များ</div>
+          <div className="w4-card-title">{t('profile.settings_title')}</div>
 
           {/* G-007 — Modo niños: textos grandes, botones grandes (5+ años). */}
           <div className="nse-setting-row">
@@ -174,16 +180,16 @@ export default function ProfileScreen({ go, params }: { go: GoFn; params?: NavPa
               <Baby size={20} />
             </span>
             <span className="nse-setting-text">
-              <span className="nse-setting-title">ကလေးမိုဒ်</span>
+              <span className="nse-setting-title">{t('profile.kids_mode')}</span>
               <span className="nse-setting-sub">
-                စာလုံးကြီးကြီး၊ ခလုတ်ကြီးကြီး (၅ နှစ်အထက်)
+                {t('profile.kids_mode_description')}
               </span>
             </span>
             <button
               type="button"
               role="switch"
               aria-checked={kidsMode}
-              aria-label="ကလေးမိုဒ်"
+              aria-label={t('profile.kids_mode')}
               className="nse-switch"
               data-on={kidsMode}
               onClick={() => setKidsMode((v) => !v)}
@@ -195,31 +201,68 @@ export default function ProfileScreen({ go, params }: { go: GoFn; params?: NavPa
           {/* G-005 — Recordatorios amables (opt-in, local/in-app). */}
           <ReminderSettings />
 
+          {/* OLA 0 — Selector de idioma (birmano / tailandés). UI en birmano
+              por defecto; el toggle mismo se etiqueta en birmano. */}
+          <div className="nse-setting-row">
+            <span className="nse-setting-icon" aria-hidden="true">🌐</span>
+            <span className="nse-setting-text">
+              <span className="nse-setting-title">{t('settings.language')}</span>
+              <span className="nse-setting-sub">
+                {t('settings.language.my')} / {t('settings.language.th')}
+              </span>
+            </span>
+            <div
+              role="group"
+              aria-label={t('settings.language')}
+              style={{ display: 'flex', gap: 8, flexShrink: 0 }}
+            >
+              {(['my', 'th'] as const).map((l) => (
+                <button
+                  key={l}
+                  type="button"
+                  aria-pressed={lang === l}
+                  onClick={() => setLang(l)}
+                  style={{
+                    border: 'none',
+                    borderRadius: 999,
+                    padding: '8px 14px',
+                    fontWeight: 700,
+                    cursor: 'pointer',
+                    background: lang === l ? '#F59D2A' : '#F3EFE7',
+                    color: lang === l ? '#fff' : '#6B5B45',
+                  }}
+                >
+                  {t(`settings.language.${l}`)}
+                </button>
+              ))}
+            </div>
+          </div>
+
           <p style={{ margin: '0 0 12px' }}>
-            တိုးတက်မှုအားလုံးကို ပြန်လည်သတ်မှတ်ချင်ရင် အောက်က ခလုတ်ကို နှိပ်ပါ။
+            {t('profile.if_you_want_to_reset_below_the_button')}
           </p>
           <PillButton
             color="orange"
             onClick={() => {
-              if (confirm('တိုးတက်မှုအားလုံး ဖျက်ပစ်မှာလား?')) {
+              if (confirm(t('profile.all_progress_delete_it'))) {
                 resetProgress();
                 go('home');
               }
             }}
           >
-            🗑 တိုးတက်မှု ပြန်လည်သတ်မှတ်မယ်
+            {t('profile.progress_reset')}
           </PillButton>
         </div>
       )}
 
       {panel === 'help' && (
         <div className="w4-stub-panel">
-          <div className="w4-card-title">❓ အကူအညီ</div>
+          <div className="w4-card-title">{t('profile.help_title')}</div>
           <p style={{ margin: 0 }}>
-            Nyein Sensei English မှာ နေ့တိုင်း စကားလုံးအသစ်တွေ၊ ပျော်စရာဂိမ်းတွေ၊
-            အသံထွက်လေ့ကျင့်ခန်းတွေနဲ့ အင်္ဂလိပ်စာကို မြန်မာလိုရှင်းပြချက်တွေနဲ့
-            သင်ယူနိုင်ပါတယ်။ မီးပုံလေး 🔥 က ရက်ဆက်လေ့လာနေတဲ့ ရက်အရေအတွက်ပါ —
-            နေ့တိုင်းလာလေ့လာရင် စိန်တွေ 💎 ပိုရမယ်!
+            {t('profile.nyein_sensei_english_every_day')}{' '}
+            {t('profile.speaking_with_myanmar_explanations')}{' '}
+            {t('profile.flame')}{' '}
+            {t('profile.gems_get_more')}
           </p>
         </div>
       )}
@@ -249,6 +292,7 @@ export default function ProfileScreen({ go, params }: { go: GoFn; params?: NavPa
 /** Envía una notificación de prueba a las suscripciones push del usuario actual.
  *  Si no hay suscripción, primero intenta crearla (pide permiso) y luego envía. */
 function TestPushButton() {
+  const { t } = useLang();
   const [state, setState] = useState<'idle' | 'sending' | 'done' | 'error'>('idle');
   const [msg, setMsg] = useState('');
   async function sendTest() {
@@ -260,7 +304,7 @@ function TestPushButton() {
       const userId = session?.user?.id || '';
       if (!userId || !session?.access_token) {
         setState('error');
-        setMsg('အကောင့်ဝင်ထားခြင်း မရှိပါ။');
+        setMsg(t('profile.not_logged_in'));
         return;
       }
       // Sin suscripción no hay a dónde enviar — intentar crearla primero.
@@ -268,36 +312,36 @@ function TestPushButton() {
       const pushState = await getPushState().catch(() => 'unsupported' as const);
       if (pushState === 'unsupported') {
         setState('error');
-        setMsg('ဒီဘရောက်ဇာက notification မရပါ။ Home Screen မှာ install လုပ်ပါ။');
+        setMsg(t('profile.this_browser_notification_home_screen_install'));
         return;
       }
       if (pushState !== 'subscribed') {
-        setMsg('ခွင့်ပြုချက် တောင်းနေသည်…');
+        setMsg(t('profile.permission'));
         // 2026-10-01: iOS exige pedir permiso ANTES de suscribirse.
         try {
           const perm = await Notification.requestPermission();
           if (perm !== 'granted') {
             setState('error');
-            setMsg('ခွင့်မပြုခဲ့ပါ။ Settings > Notifications မှာ ဖွင့်ပေးပါ။');
+            setMsg(t('profile.settings_notifications'));
             return;
           }
         } catch {
           setState('error');
-          setMsg('ခွင့်မပြုခဲ့ပါ။ Settings > Notifications မှာ ဖွင့်ပေးပါ။');
+          setMsg(t('profile.settings_notifications'));
           return;
         }
         const result = await subscribePush(userId);
         if (!result.ok) {
           setState('error');
           const stepMsg: Record<string, string> = {
-            'unsupported': 'ဒီဘရောက်ဇာက notification မရပါ။ Home Screen မှာ install လုပ်ပါ။',
-            'no-sw': 'Service worker အဆင်သင့် မဖြစ်သေးပါ။ အက်ပ်ကို ပြန်ဖွင့်ပါ။ (no-sw)',
-            'getsub-fail': 'စာရင်းစစ်မရပါ။ ပြန်ကြိုးစားပါ။ (getsub)',
-            'subscribe-fail': 'စာရင်းသွင်းမရပါ။ iOS 16.4+ နှင့် Home Screen install လိုအပ်သည်။ (sub)',
-            'save-fail': 'ဆာဗာမှာ သိမ်းမရပါ။ အင်တာနက် စစ်ပါ။ (save)',
-            'unknown': 'အမှား မသိပါ။ ပြန်ကြိုးစားပါ۔',
+            'unsupported': t('profile.this_browser_notification_home_screen_install'),
+            'no-sw': t('profile.service_worker_app_no_sw'),
+            'getsub-fail': t('profile.getsub'),
+            'subscribe-fail': t('profile.ios_home_screen_install_sub'),
+            'save-fail': t('profile.on_server_internet_save'),
+            'unknown': t('profile.error'),
           };
-          setMsg(stepMsg[result.step] || `အမှား (${result.step})`);
+          setMsg(stepMsg[result.step] || t('profile.error_step', { step: result.step }));
           return;
         }
       }
@@ -312,17 +356,17 @@ function TestPushButton() {
       const data = await res.json().catch(() => ({}));
       if (data.ok && data.sent > 0) {
         setState('done');
-        setMsg('ပို့ပြီးပါပြီ! ဖုန်းကို ကြည့်ပါ။ 🔔');
+        setMsg(t('profile.sent_phone'));
       } else {
         setState('error');
         // 2026-10-01: mostrar el error real del servidor para diagnosticar.
         const srvErr = data.error ? ` [${data.error}]` : '';
         const sentInfo = typeof data.sent === 'number' ? ` (enviados ${data.sent}/${data.total || '?'})` : '';
-        setMsg(`မပို့နိုင်ပါ${srvErr}${sentInfo}။ Notification ခွင့်ပြုထားသလား စစ်ပါ။`);
+        setMsg(t('profile.notification', { srvErr, sentInfo }));
       }
     } catch {
       setState('error');
-      setMsg('အင်တာနက် အမှား။');
+      setMsg(t('profile.internet'));
     }
   }
   return (
@@ -342,7 +386,7 @@ function TestPushButton() {
           opacity: state === 'sending' ? 0.6 : 1,
         }}
       >
-        {state === 'sending' ? 'ပို့နေသည်…' : '🔔 စမ်းသပ် notification'}
+        {state === 'sending' ? t('profile.sending') : t('profile.test_notification')}
       </button>
       {msg ? (
         <div style={{ marginTop: 8, fontSize: 13, color: state === 'done' ? '#2E7D32' : '#C62828' }}>

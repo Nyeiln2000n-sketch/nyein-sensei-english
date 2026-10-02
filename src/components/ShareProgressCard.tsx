@@ -9,6 +9,7 @@
 import { useCallback, useRef, useState } from 'react';
 import { Copy, Download, Share2 } from 'lucide-react';
 import { getProgress } from '../lib/storage';
+import { useLang, t as tStatic, tNum } from '../lib/i18n';
 import './share-card.css';
 
 /** 300 XP per level — same convention as DashboardScreen / ProfileScreen. */
@@ -65,9 +66,17 @@ export function collectShareStats(): ShareStats {
 
 export function shareSummaryText(s: ShareStats): string {
   return (
-    `ငါ့တိုးတက်မှု — Nyein Sensei English\n` +
-    `ရက်ဆက်: ${s.streak} ရက် · XP: ${s.xp} · အဆင့်: ${s.level} · ` +
-    `စိန်: ${s.gems} · ဆုတံဆိပ်: ${s.medalsUnlocked}/${s.medalsTotal}`
+    tStatic('share.share_text_header') +
+    tStatic('share.streak_var_days_xp_var_level', {
+      streak: tNum(s.streak),
+      xp: tNum(s.xp),
+      level: tNum(s.level),
+    }) +
+    tStatic('share.stats_line', {
+      gems: tNum(s.gems),
+      medals: tNum(s.medalsUnlocked),
+      medalsTotal: tNum(s.medalsTotal),
+    })
   );
 }
 
@@ -102,7 +111,7 @@ function roundRect(
  * Uses the approved transparent mascot PNG; if it fails to load, the card
  * renders without it (no substitute image is ever used).
  */
-export async function renderShareCard(s: ShareStats): Promise<Blob> {
+export async function renderShareCard(s: ShareStats, lang: 'my' | 'th' = 'my'): Promise<Blob> {
   const W = 1080;
   const H = 1350;
   const canvas = document.createElement('canvas');
@@ -141,7 +150,7 @@ export async function renderShareCard(s: ShareStats): Promise<Blob> {
   ctx.font = `700 44px ${SANS}`;
   ctx.fillText('Nyein Sensei English', 80, 120);
   ctx.font = `800 118px ${MY}`;
-  ctx.fillText('ငါ့တိုးတက်မှု', 76, 268);
+  ctx.fillText(tStatic('share.my_progress'), 76, 268);
   ctx.font = `500 40px ${SANS}`;
   ctx.globalAlpha = 0.92;
   ctx.fillText('My English progress', 82, 340);
@@ -173,7 +182,7 @@ export async function renderShareCard(s: ShareStats): Promise<Blob> {
     ctx.font = `800 150px ${MY}`;
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
-    ctx.fillText('ဆ', medCX, medCY + 8);
+    ctx.fillText(lang === 'th' ? 'ร' : 'ဆ', medCX, medCY + 8);
     ctx.textAlign = 'left';
   }
 
@@ -184,10 +193,10 @@ export async function renderShareCard(s: ShareStats): Promise<Blob> {
     color: string;
   }
   const stats: Stat[] = [
-    { label: 'ရက်ဆက်', value: `${s.streak} ရက်`, color: '#FF7A1A' },
-    { label: 'XP စုစုပေါင်း', value: `${s.xp}`, color: '#2FA8DE' },
-    { label: 'အဆင့် · Level', value: `${s.level}`, color: '#E8933C' },
-    { label: 'စိန် · Gems', value: `${s.gems}`, color: '#8B5CF6' },
+    { label: tStatic('dashboard.streak'), value: tStatic('share.var_days', { days: tNum(s.streak) }), color: '#FF7A1A' },
+    { label: tStatic('share.xp_total'), value: tNum(s.xp), color: '#2FA8DE' },
+    { label: tStatic('share.level_level'), value: tNum(s.level), color: '#E8933C' },
+    { label: tStatic('share.gems_gems'), value: tNum(s.gems), color: '#8B5CF6' },
   ];
   const gridTop = 870;
   const cardW = 440;
@@ -240,10 +249,10 @@ export async function renderShareCard(s: ShareStats): Promise<Blob> {
   ctx.fill();
   ctx.fillStyle = MUTED;
   ctx.font = `500 38px ${MY}`;
-  ctx.fillText('ဆုတံဆိပ်', gridX + 92, stripY + 68);
+  ctx.fillText(tStatic('share.medal'), gridX + 92, stripY + 68);
   ctx.fillStyle = '#B8860B';
   ctx.font = `800 64px ${MY}`;
-  ctx.fillText(`${s.medalsUnlocked}/${s.medalsTotal}`, gridX + 92, stripY + 128);
+  ctx.fillText(`${tNum(s.medalsUnlocked)}/${tNum(s.medalsTotal)}`, gridX + 92, stripY + 128);
   // medal dots
   const dotStartX = gridX + cardW * 2 + gap - 52 - (s.medalsTotal - 1) * 56;
   for (let i = 0; i < s.medalsTotal; i++) {
@@ -295,6 +304,7 @@ type Status = { kind: 'info' | 'ok' | 'error'; text: string } | null;
  * copy text to clipboard. Every step reports Myanmar-first status.
  */
 export default function ShareProgressButton(): React.ReactElement {
+  const { t, lang } = useLang();
   const [busy, setBusy] = useState(false);
   const [status, setStatus] = useState<Status>(null);
   const timer = useRef<number | null>(null);
@@ -309,20 +319,20 @@ export default function ShareProgressButton(): React.ReactElement {
 
   const buildFile = useCallback(async (): Promise<{ file: File; blob: Blob; stats: ShareStats }> => {
     const stats = collectShareStats();
-    const blob = await renderShareCard(stats);
+    const blob = await renderShareCard(stats, lang);
     return { file: new File([blob], 'nyein-progress.png', { type: 'image/png' }), blob, stats };
-  }, []);
+  }, [lang]);
 
   const copyTextFallback = useCallback(
     async (stats: ShareStats): Promise<boolean> => {
       try {
         await navigator.clipboard.writeText(shareSummaryText(stats));
-        setEphemeral({ kind: 'ok', text: 'စာသားကို ကူးယူပြီးပြီ။ မျှဝေနိုင်ပြီ။' });
+        setEphemeral({ kind: 'ok', text: t('share.the_text') });
         return true;
       } catch {
         setEphemeral({
           kind: 'error',
-          text: 'တစ်ခုခုမှားနေတယ်။ နောက်မှပြန်ကြိုးစားပေးပါ။',
+          text: t('share.generic_error'),
         });
         return false;
       }
@@ -334,7 +344,7 @@ export default function ShareProgressButton(): React.ReactElement {
     if (busy) return;
     buzz();
     setBusy(true);
-    setEphemeral({ kind: 'info', text: 'တိုးတက်မှုပုံ ပြင်ဆင်နေတယ်…' });
+    setEphemeral({ kind: 'info', text: t('share.progress_image_preparing') });
     try {
       const { file, blob, stats } = await buildFile();
       const nav = navigator as Navigator & {
@@ -346,10 +356,10 @@ export default function ShareProgressButton(): React.ReactElement {
         try {
           await nav.share({
             files: [file],
-            title: 'ငါ့တိုးတက်မှု — Nyein Sensei English',
+            title: t('share.my_progress_nyein_sensei_english'),
             text: shareSummaryText(stats),
           });
-          setEphemeral({ kind: 'ok', text: 'မျှဝေပြီးပြီ။ ဆက်ကြိုးစားပါ။' });
+          setEphemeral({ kind: 'ok', text: t('share.shared_keep_practicing') });
           return;
         } catch (err) {
           // User cancelled the share sheet — not an error, stay quiet.
@@ -365,7 +375,7 @@ export default function ShareProgressButton(): React.ReactElement {
         downloadBlob(blob, 'nyein-progress.png');
         setEphemeral({
           kind: 'ok',
-          text: 'ဖုန်းက တိုက်ရိုက်မျှဝေမရလို့ ပုံသိမ်းဆည်းပေးလိုက်ပြီ။',
+          text: t('share.phone_cant_share_directly'),
         });
       } catch {
         // Fallback 2: copy a text summary.
@@ -374,7 +384,7 @@ export default function ShareProgressButton(): React.ReactElement {
     } catch {
       setEphemeral({
         kind: 'error',
-        text: 'ပုံဖန်တီးလို့မရဘူး။ နောက်မှပြန်ကြိုးစားပေးပါ။',
+        text: t('share.image_create_failed'),
       });
     } finally {
       setBusy(false);
@@ -385,15 +395,15 @@ export default function ShareProgressButton(): React.ReactElement {
     if (busy) return;
     buzz();
     setBusy(true);
-    setEphemeral({ kind: 'info', text: 'တိုးတက်မှုပုံ ပြင်ဆင်နေတယ်…' });
+    setEphemeral({ kind: 'info', text: t('share.progress_image_preparing') });
     try {
       const { blob } = await buildFile();
       downloadBlob(blob, 'nyein-progress.png');
-      setEphemeral({ kind: 'ok', text: 'ပုံသိမ်းဆည်းပြီးပြီ။' });
+      setEphemeral({ kind: 'ok', text: t('share.image_saved') });
     } catch {
       setEphemeral({
         kind: 'error',
-        text: 'ပုံဖန်တီးလို့မရဘူး။ နောက်မှပြန်ကြိုးစားပေးပါ။',
+        text: t('share.image_create_failed'),
       });
     } finally {
       setBusy(false);
@@ -419,19 +429,19 @@ export default function ShareProgressButton(): React.ReactElement {
           className="share-btn"
           onClick={handleShare}
           disabled={busy}
-          aria-label="တိုးတက်မှုကို မျှဝေမည်"
+          aria-label={t('share.progress_will_share')}
           aria-busy={busy}
         >
           <Share2 size={16} aria-hidden="true" />
-          <span>{busy ? 'ပြင်ဆင်နေတယ်…' : 'မျှဝေမည်'}</span>
+          <span>{busy ? t('share.preparing') : t('share.will_share')}</span>
         </button>
         <button
           type="button"
           className="share-icon-btn"
           onClick={handleDownload}
           disabled={busy}
-          aria-label="တိုးတက်မှုပုံ ဒေါင်းလုဒ်လုပ်မည်"
-          title="ဒေါင်းလုဒ်"
+          aria-label={t('share.progress_image_will_download')}
+          title={t('share.download')}
         >
           <Download size={16} aria-hidden="true" />
         </button>
@@ -440,8 +450,8 @@ export default function ShareProgressButton(): React.ReactElement {
           className="share-icon-btn"
           onClick={handleCopy}
           disabled={busy}
-          aria-label="တိုးတက်မှုစာသား ကူးယူမည်"
-          title="ကူးယူမည်"
+          aria-label={t('share.progress_text_will_copy')}
+          title={t('share.will_copy')}
         >
           <Copy size={16} aria-hidden="true" />
         </button>
