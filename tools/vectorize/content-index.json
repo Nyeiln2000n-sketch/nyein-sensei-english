@@ -364738,7 +364738,7 @@
    "en": "syllogism",
    "en_norm": "syllogism",
    "my_norm": "အဆိုသုံးဆင့်ကျိုးကြောင်း",
-   "th_norm": "ตรรกะสามข้อ",
+   "th_norm": "ตรรกบท",
    "fingerprint": "aae177379bf9d591",
    "vocab_sig": [
     "syllogism"
@@ -370514,7 +370514,7 @@
    "en": "prescriptivism",
    "en_norm": "prescriptivism",
    "my_norm": "ညွှန်ကြားချက်ဝါဒ",
-   "th_norm": "เพรสคริปทิวิสม์",
+   "th_norm": "บัญญัตินิยม",
    "fingerprint": "b2301907b6d1af9b",
    "vocab_sig": [
     "prescriptivism"
@@ -393769,7 +393769,7 @@
    "en": "response paper",
    "en_norm": "response paper",
    "my_norm": "တုံ့ပြန်စာတမ်း",
-   "th_norm": "เอกสารตอบโต้",
+   "th_norm": "เอกสารตอบสนอง",
    "fingerprint": "2854184377970bb7",
    "vocab_sig": [
     "paper",
@@ -399551,7 +399551,7 @@
    "en": "thick description",
    "en_norm": "thick description",
    "my_norm": "စုံလင်ဖော်ပြချက်",
-   "th_norm": "คำอธิบายหนาแน่น",
+   "th_norm": "การบรรยายอย่างหนาแน่น",
    "fingerprint": "d399f12a49b37aa5",
    "vocab_sig": [
     "description",
@@ -404647,7 +404647,7 @@
    "en": "begging the question",
    "en_norm": "begging the question",
    "my_norm": "မေးခွန်းကိုရှောင်တိမ်းမှု",
-   "th_norm": "เบกกิงเดอะเควสชัน",
+   "th_norm": "การอ้างสิ่งที่ต้องพิสูจน์",
    "fingerprint": "487ec7a77d1cfc67",
    "vocab_sig": [
     "begging",
@@ -411574,7 +411574,7 @@
    "en": "closet drama",
    "en_norm": "closet drama",
    "my_norm": "ဖတ်ရန်သီးသန့်ပြဇာတ်",
-   "th_norm": "โคลเซ็ตดรามา",
+   "th_norm": "ละครตู้",
    "fingerprint": "16070f848a994bea",
    "vocab_sig": [
     "closet",
@@ -412906,7 +412906,7 @@
    "en": "whodunit",
    "en_norm": "whodunit",
    "my_norm": "တရားခံရှာမှုခင်းဝတ္ထု",
-   "th_norm": "ฮูดันนิต",
+   "th_norm": "นวนิยายสืบสวน",
    "fingerprint": "657b2f512139f09e",
    "vocab_sig": [
     "whodunit"
@@ -414808,7 +414808,7 @@
    "en": "objective correlative",
    "en_norm": "objective correlative",
    "my_norm": "ခံစားချက်အစားထိုးအရာ",
-   "th_norm": "อ็อบเจกทีฟคอร์เรเลทีฟ",
+   "th_norm": "สัญลักษณ์วัตถุ",
    "fingerprint": "30ab8ee24bc8a021",
    "vocab_sig": [
     "correlative",
@@ -423401,7 +423401,7 @@
    "en": "epic simile",
    "en_norm": "epic simile",
    "my_norm": "မဟာကဗျာဥပမာရှည်",
-   "th_norm": "เอพิกซิมิลี",
+   "th_norm": "อุปมาแบบมหากาพย์",
    "fingerprint": "1f1dc5350a739793",
    "vocab_sig": [
     "epic",
@@ -424524,7 +424524,7 @@
    "en": "dime novel",
    "en_norm": "dime novel",
    "my_norm": "ဈေးပေါစွန့်စားခန်းဝတ္ထု",
-   "th_norm": "ไดม์นอเวล",
+   "th_norm": "นวนิยายราคาถูก",
    "fingerprint": "6a294dd6743dcddd",
    "vocab_sig": [
     "dime",
@@ -425406,7 +425406,7 @@
    "en": "foreground",
    "en_norm": "foreground",
    "my_norm": "ရှေ့တန်းတင်ဖော်ပြသည်",
-   "th_norm": "ฟอร์กราวด์",
+   "th_norm": "ชูให้เด่นชัด",
    "fingerprint": "4215153956b54075",
    "vocab_sig": [
     "foreground"
@@ -426417,7 +426417,7 @@
    "en": "tragic irony",
    "en_norm": "tragic irony",
    "my_norm": "ကြေကွဲဖွယ်သရော်မှု",
-   "th_norm": "ทราจิกไอรอนี",
+   "th_norm": "ประชดโศกนาฏกรรม",
    "fingerprint": "f8c436da802ad8b3",
    "vocab_sig": [
     "irony",
@@ -438135,7 +438135,7 @@
    "en": "attaché",
    "en_norm": "attache",
    "my_norm": "သံရုံးတွဲဘက်",
-   "th_norm": "อัตตาชี",
+   "th_norm": "ผู้ช่วยทูต",
    "fingerprint": "4b98a232f87cd15e",
    "vocab_sig": [
     "attache"
@@ -438938,7 +438938,7 @@
    "en": "agrément",
    "en_norm": "agrement",
    "my_norm": "သံအမတ်ခန့်အပ်ခွင့်ပြုချက်",
-   "th_norm": "อาเกรอมองต์",
+   "th_norm": "การให้ความเห็นชอบ",
    "fingerprint": "31be4b2002298b53",
    "vocab_sig": [
     "agrement"
@@ -447436,7 +447436,7 @@
    "en": "status quo ante",
    "en_norm": "status quo ante",
    "my_norm": "ယခင်အခြေအနေ",
-   "th_norm": "สแตตัสควอแอนเต",
+   "th_norm": "สภาพเดิมก่อนหน้า",
    "fingerprint": "fc3472b54f989cf5",
    "vocab_sig": [
     "ante",
@@ -447610,7 +447610,7 @@
    "en": "addendum",
    "en_norm": "addendum",
    "my_norm": "ဖြည့်စွက်ချက်",
-   "th_norm": "แอดเดนดัม",
+   "th_norm": "ภาคผนวกเพิ่มเติม",
    "fingerprint": "d8e4511aed5fe760",
    "vocab_sig": [
     "addendum"
