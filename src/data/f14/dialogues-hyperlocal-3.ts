@@ -1,0 +1,48 @@
+import type { Dialogue } from '../../types';
+
+export const hyperlocalDialogues3: Dialogue[] = [
+  {
+    id: 'hl-d-005',
+    topic: 'doctor',
+    titleMy: 'ဆရာဝန်နဲ့ပြသခြင်း',
+    titleTh: 'การไปหาหมอ',
+    titleEn: 'At the Doctor',
+    level: 1,
+    situationMy: 'လူနာက ဖျားနာလို့ ဆရာဝန်နဲ့ ပြသနေတယ်',
+    situationTh: 'คนไข้กำลังพบแพทย์เพราะเป็นไข้',
+    turns: [
+      { speaker: 'လူနာ', speakerTh: 'คนไข้', en: 'Good morning, doctor. I have a fever and a headache.', my: 'မင်္ဂလာပါ ဆရာ။ ကျွန်တော် ဖျားပြီး ခေါင်းကိုက်နေပါတယ်။', th: 'สวัสดีตอนเช้าค่ะคุณหมอ ฉันเป็นไข้และปวดหัวค่ะ' },
+      { speaker: 'ဆရာဝန်', speakerTh: 'แพทย์', en: 'Good morning. Since when have you felt this way?', my: 'မင်္ဂလာပါ။ ဒီလိုမျိုး ဖြစ်တာ ဘယ်လောက်ကြာပြီလဲ။', th: 'สวัสดีตอนเช้าครับ เป็นแบบนี้มานานแค่ไหนแล้วครับ' },
+      { speaker: 'လူနာ', speakerTh: 'คนไข้', en: 'Since yesterday evening. I also feel tired all the time.', my: 'မနေ့ညကတည်းကပါ။ အမြဲတမ်း မောပန်းနွမ်းနယ်နေတယ်လို့လည်း ခံစားရပါတယ်။', th: 'ตั้งแต่เมื่อคืนนี้ค่ะ แล้วก็รู้สึกเหนื่อยตลอดเวลาด้วยค่ะ' },
+      { speaker: 'ဆရာဝန်', speakerTh: 'แพทย์', en: 'Let me take your temperature. Hmm, you have a slight fever.', my: 'ခန္ဓာကိုယ်အပူချိန် တိုင်းကြည့်မယ်။ ဟမ်၊ ကိုယ်နည်းနည်း ပူသလိုပဲ။', th: 'ขอวัดไข้หน่อยนะครับ อืม มีไข้นิดหน่อยนะครับ' },
+      { speaker: 'လူနာ', speakerTh: 'คนไข้', en: 'Is it serious, doctor?', my: 'ဆရာ၊ ဒါ စိုးရိမ်စရာလား။', th: 'อาการร้ายแรงไหมคะคุณหมอ' },
+      { speaker: 'ဆရာဝန်', speakerTh: 'แพทย์', en: 'Not at all. It looks like a common cold. Are you allergic to any medicine?', my: 'လုံးဝ မဟုတ်ပါဘူး။ အအေးမိရုံပဲ ဖြစ်နိုင်တယ်။ ဆေးနဲ့ မတည့်တာ ရှိလား။', th: 'ไม่เลยครับ ดูเหมือนจะเป็นแค่หวัดธรรมดา แพ้ยาอะไรไหมครับ' },
+      { speaker: 'လူနာ', speakerTh: 'คนไข้', en: 'No, I am not allergic to anything.', my: 'မဟုတ်ဘူး၊ ဘာဆေးနဲ့မှ မတည့်တာ မရှိပါဘူး။', th: 'ไม่ค่ะ ไม่แพ้ยาอะไรเลยค่ะ' },
+      { speaker: 'ဆရာဝန်', speakerTh: 'แพทย์', en: 'Good. I will write you a prescription. Take one pill three times a day after meals.', my: 'ကောင်းပြီ။ ဆေးဝါးညွှန်းစာတမ်း ရေးပေးမယ်။ ထမင်းစားပြီးတိုင်း ဆေး တစ်လုံးစီ၊ တစ်နေ့ သုံးကြိမ် သောက်ပါ။', th: 'ดีครับ เดี๋ยวหมอจะสั่งยาให้ ทานครั้งละหนึ่งเม็ด วันละสามครั้งหลังอาหารนะครับ' },
+      { speaker: 'လူနာ', speakerTh: 'คนไข้', en: 'For how many days should I take it?', my: 'ဘယ်နှရက် သောက်ရမလဲ။', th: 'ต้องทานกี่วันคะ' },
+      { speaker: 'ဆရာဝန်', speakerTh: 'แพทย์', en: 'For five days. And come back in three days if the fever does not go down.', my: 'ငါးရက် သောက်ပါ။ အဖျားမကျရင် သုံးရက်အကြာမှာ ပြန်လာပြပါ။', th: 'ทานห้าวันครับ แล้วถ้าไข้ไม่ลด กลับมาพบหมออีกครั้งในสามวันนะครับ' },
+    ],
+  },
+  {
+    id: 'hl-d-006',
+    topic: 'office',
+    titleMy: 'ရုံးမှာ စကားပြောခြင်း',
+    titleTh: 'การพูดคุยเล่นในที่ทำงาน',
+    titleEn: 'Small Talk at the Office',
+    level: 2,
+    situationMy: 'လုပ်ဖော်ကိုင်ဖက် နှစ်ဦး တနင်္လာနေ့ မနက်ခင်းမှာ စကားပြောနေကြတယ်',
+    situationTh: 'เพื่อนร่วมงานสองคนกำลังคุยกันเช้าวันจันทร์',
+    turns: [
+      { speaker: 'ကိုထူး', speakerTh: 'ตู', en: 'Good morning! Happy Monday! How was your weekend?', my: 'မင်္ဂလာနံနက်ခင်းပါ။ တနင်္လာနေ့ မင်္ဂလာပါ။ စနေတနင်္ဂနွေ အားလပ်ရက်မှာ ဘယ်လိုနေလဲ။', th: 'สวัสดีตอนเช้าครับ เช้าวันจันทร์ที่สดใสนะครับ สุดสัปดาห์ที่ผ่านมาเป็นยังไงบ้างครับ' },
+      { speaker: 'မစန္ဒာ', speakerTh: 'ซันดา', en: 'Morning! It was great. I went hiking with my family. How about you?', my: 'မင်္ဂလာပါ။ အရမ်းကောင်းခဲ့တယ်။ မိသားစုနဲ့ တောင်တက်သွားခဲ့တယ်။ နင်ရော ဘယ်လိုလဲ။', th: 'สวัสดีค่ะ ดีมากเลยค่ะ ฉันไปเดินป่ากับครอบครัวมา แล้วคุณล่ะคะ' },
+      { speaker: 'ကိုထူး', speakerTh: 'ตู', en: 'Pretty quiet. I stayed home and watched a movie. So, how is the new project going?', my: 'တိတ်ဆိတ်စွာပဲ ဖြတ်သန်းခဲ့တယ်။ အိမ်မှာနေပြီး ရုပ်ရှင်ကြည့်ခဲ့တယ်။ ဒါနဲ့ ပရောဂျက်အသစ် ဘယ်လိုလဲ။', th: 'เงียบๆ ค่ะ อยู่บ้านดูหนัง แล้วโครงการใหม่เป็นยังไงบ้างคะ' },
+      { speaker: 'မစန္ဒာ', speakerTh: 'ซันดา', en: 'It is going well, but the deadline is Friday and we have so much left to do.', my: 'အဆင်ပြေနေပါတယ်၊ ဒါပေမဲ့ နောက်ဆုံးရက် က သောကြာနေ့ ဖြစ်ပြီး လုပ်စရာ အများကြီး ကျန်နေသေးတယ်။', th: 'ไปได้ดีค่ะ แต่กำหนดส่งคือวันศุกร์ และเรายังเหลืองานอีกเยอะเลยค่ะ' },
+      { speaker: 'ကိုထူး', speakerTh: 'ตู', en: 'That sounds tight. Do you need a hand with anything?', my: 'အချိန်က ကျပ်နေတာပေါ့။ တစ်ခုခု ကူညီပေးရမလား။', th: 'ฟังดูเร่งด่วนจัง มีอะไรให้ช่วยไหมคะ' },
+      { speaker: 'မစန္ဒာ', speakerTh: 'ซันดา', en: 'Actually, yes. Could you check the report before I send it?', my: 'အမှန်တော့ ရှိတယ်။ ကျွန်မ ပို့မယ့် အစီရင်ခံစာကို စစ်ပေးနိုင်မလား။', th: 'จริงๆ มีค่ะ ช่วยตรวจรายงานให้หน่อยได้ไหมคะ ก่อนที่ฉันจะส่ง' },
+      { speaker: 'ကိုထူး', speakerTh: 'ตู', en: 'Of course! Send it to me after lunch and I will look at it.', my: 'ရတယ်။ နေ့လယ်စာ စားပြီးမှ ကျွန်တော့်ဆီ ပို့ပေး၊ ကျွန်တော် ကြည့်ပေးမယ်။', th: 'ได้เลยค่ะ ส่งมาหลังอาหารกลางวันนะคะ เดี๋ยวฉันดูให้' },
+      { speaker: 'မစန္ဒာ', speakerTh: 'ซันดา', en: 'Thank you so much! You are a lifesaver. Would you like to join me for lunch today?', my: 'ကျေးဇူးအများကြီးတင်ပါတယ်။ နင်က တကယ့် ကယ်တင်ရှင်ပဲ။ ဒီနေ့ ကျွန်မနဲ့ နေ့လယ်စာ အတူ စားမလား။', th: 'ขอบคุณมากเลยค่ะ คุณช่วยชีวิตฉันไว้จริงๆ วันนี้ไปทานข้าวกลางวันด้วยกันไหมคะ' },
+      { speaker: 'ကိုထူး', speakerTh: 'ตู', en: 'I would love to. Where shall we go?', my: 'ဝမ်းသာစွာနဲ့ လိုက်မယ်။ ဘယ်သွားကြမလဲ။', th: 'ยินดีเลยค่ะ เราไปทานที่ไหนดีคะ' },
+      { speaker: 'မစန္ဒာ', speakerTh: 'ซันดา', en: 'There is a new noodle shop around the corner. Let us try it at twelve.', my: 'ထောင့်မှာ ခေါက်ဆွဲဆိုင် အသစ်တစ်ဆိုင် ရှိတယ်။ ဆယ့်နှစ်နာရီမှာ သွားစမ်းကြည့်ရအောင်။', th: 'มีร้านก๋วยเตี๋ยวเปิดใหม่อยู่ตรงหัวมุม ไปลองกันตอนเที่ยงนะคะ' },
+    ],
+  },
+];
