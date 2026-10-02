@@ -1958,3 +1958,133 @@ html.kids-mode .reminder-banner-text {
     animation: none;
   }
 }
+
+/* ============ Dashboard minimalista (orden de Nyein 2026-10-02) ============
+   Fondo blanco, secciones compactas, iconos en deslizable horizontal.
+   Todo con alcance .dash-minimal: ninguna otra pantalla cambia.
+   Regla responsive: los hijos directos ya tienen min-width:0 por la regla
+   global .screen > * (fix WebKit 2026-10-01); no quitarla. */
+
+.screen.dash-minimal {
+  background: #ffffff;
+  gap: 14px;
+}
+
+/* header ligeramente más compacto */
+.dash-minimal .dash-avatar {
+  width: 40px;
+  height: 40px;
+}
+.dash-minimal .dash-title {
+  font-size: 15px;
+}
+.dash-minimal .dash-subtitle {
+  font-size: 11.5px;
+}
+
+/* hero de saludo ~40% más bajo */
+.dash-minimal .greet-hero {
+  padding: 10px 14px 24px 16px;
+  border-radius: 22px;
+}
+.dash-minimal .greet-title {
+  font-size: 20px;
+}
+.dash-minimal .greet-sub {
+  font-size: 12.5px;
+}
+.dash-minimal .greet-cat,
+.dash-minimal .greet-cat-holder {
+  width: 92px;
+  height: 92px;
+}
+.dash-minimal .learn-bubble {
+  font-size: 10.5px;
+  padding: 5px 8px;
+}
+
+/* nivel/XP en una sola fila compacta */
+.dash-minimal .level-card-compact {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 14px;
+  margin-top: -20px;
+  border-radius: 18px;
+}
+.dash-minimal .level-card-compact .level-name {
+  font-size: 13.5px;
+  white-space: nowrap;
+}
+.dash-minimal .level-card-compact .level-xp {
+  font-size: 12px;
+}
+.dash-minimal .level-bar-inline {
+  flex: 1;
+  min-width: 0;
+}
+
+/* tarjeta palabra del día compacta */
+.wod-compact {
+  -webkit-tap-highlight-color: transparent;
+}
+.wod-compact:active {
+  transform: scale(0.985);
+}
+
+/* actividades: fila deslizable horizontal con snap (antes cuadrícula) */
+.dash-qa-title {
+  margin: 2px 0 -6px;
+}
+.dash-minimal .quick-grid {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  margin: 0 -20px;
+  padding: 6px 20px 10px;
+}
+.dash-minimal .quick-grid::-webkit-scrollbar {
+  display: none;
+}
+.dash-minimal .quick-btn {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  min-width: 74px;
+  min-height: 0;
+  padding: 6px 4px;
+  gap: 5px;
+}
+.dash-minimal .quick-icon {
+  width: 58px;
+  height: 58px;
+}
+.dash-minimal .quick-label {
+  font-size: 11px;
+  max-width: 74px;
+}
+
+/* tarjeta de progreso de hoy más compacta */
+.dash-minimal .progress-card {
+  padding: 14px;
+  border-radius: 20px;
+}
+.dash-minimal .progress-card .progress-head {
+  margin-bottom: 8px;
+}
+.dash-minimal .stat-icon {
+  width: 36px;
+  height: 36px;
+}
+
+/* frase motivacional ligeramente más compacta */
+.dash-minimal .quote-card {
+  padding: 14px;
+  border-radius: 20px;
+}
+.dash-minimal .quote-cat {
+  width: 52px;
+  height: 52px;
+}

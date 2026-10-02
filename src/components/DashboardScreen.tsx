@@ -250,7 +250,7 @@ export default function DashboardScreen({ go }: { go: GoFn; params?: NavParams }
   ];
 
   return (
-    <Screen>
+    <Screen className="dash-minimal">
       {/* header row: cat avatar + title + streak/gems pills + bell */}
       <div className="dash-header">
         <img
@@ -310,7 +310,7 @@ export default function DashboardScreen({ go }: { go: GoFn; params?: NavParams }
         </div>
         <div className="greet-cat">
           <div className="cat-greet greet-cat-holder">
-            <MascotScene3D pose="wave" size={120} sparkle />
+            <MascotScene3D pose="wave" size={92} sparkle />
           </div>
           <div className="learn-bubble" aria-hidden="true">
             Let&apos;s learn!
@@ -318,18 +318,18 @@ export default function DashboardScreen({ go }: { go: GoFn; params?: NavParams }
         </div>
       </div>
 
-      {/* အဆင့် / XP progress */}
-      <div className="card level-card" aria-label={t('dashboard.level_xp_progress', { level: tNum(level), cur: tNum(levelCur), per: tNum(XP_PER_LEVEL) })}>
-        <div className="level-row">
-          <span className="level-crown" aria-hidden="true">
-            <Crown size={20} color="#F5A623" />
-          </span>
-          <span className="level-name">{t('dashboard.level_label', { level: tNum(level) })}</span>
-          <span className="level-xp">
-            {levelCur} / {XP_PER_LEVEL} XP
-          </span>
-        </div>
-        <ProgressBar value={levelCur} max={XP_PER_LEVEL} />
+      {/* အဆင့် / XP progress — compact single row (rediseño minimalista 2026-10-02) */}
+      <div className="card level-card level-card-compact" aria-label={t('dashboard.level_xp_progress', { level: tNum(level), cur: tNum(levelCur), per: tNum(XP_PER_LEVEL) })}>
+        <span className="level-crown" aria-hidden="true">
+          <Crown size={17} color="#F5A623" />
+        </span>
+        <span className="level-name">{t('dashboard.level_label', { level: tNum(level) })}</span>
+        <span className="level-bar-inline" aria-hidden="true">
+          <ProgressBar value={levelCur} max={XP_PER_LEVEL} />
+        </span>
+        <span className="level-xp">
+          {levelCur} / {XP_PER_LEVEL} XP
+        </span>
       </div>
 
       {/* C-009: word of the day (deterministic per calendar day) */}
@@ -410,7 +410,9 @@ export default function DashboardScreen({ go }: { go: GoFn; params?: NavParams }
         </div>
       </section>
 
-      {/* quick-action icon grid */}
+      {/* quick actions — horizontal snap row (rediseño minimalista 2026-10-02,
+          pedido por Nyein: iconos en deslizable, no en cuadrícula) */}
+      <h2 className="section-title-sm dash-qa-title">{t('dashboard.quick_actions')}</h2>
       <nav className="quick-grid" aria-label={t('dashboard.quick_actions')}>
         {quickActions.map((a) => {
           const Icon = a.icon;

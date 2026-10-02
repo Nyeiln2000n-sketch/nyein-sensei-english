@@ -13,7 +13,7 @@ import type { Word } from '../types';
 import { getWordOfDay } from '../lib/wordOfDay';
 import { speak } from '../lib/audio';
 import WordImage from './WordImage';
-import { Card, C, FONT } from './w3-shared';
+import { C, FONT } from './w3-shared';
 import { useLang, displayLang } from '../lib/i18n';
 
 export default function WordOfDayCard({ go }: { go: GoFn }) {
@@ -31,13 +31,29 @@ export default function WordOfDayCard({ go }: { go: GoFn }) {
   }, []);
   if (!word) return null;
 
+  const openTopic = () => go('vocab', { topic: word.topic });
+
   return (
-    <section aria-label={t('word_of_day.word')} style={{ marginTop: 14 }}>
-      <Card
+    <section aria-label={t('word_of_day.word')} style={{ marginTop: 2 }}>
+      <div
+        className="wod-compact"
+        role="button"
+        tabIndex={0}
+        onClick={openTopic}
+        onKeyDown={(e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            openTopic();
+          }
+        }}
+        aria-label={t('word_of_day.study_now')}
         style={{
-          background: `linear-gradient(135deg, ${C.cream} 0%, #FFF6E3 100%)`,
-          border: `2px solid ${C.orange}`,
-          padding: '20px 18px',
+          background: '#FFFFFF',
+          border: '1px solid #F3EFE7',
+          borderRadius: 20,
+          padding: '10px 12px',
+          boxShadow: '0 4px 16px rgba(43, 30, 12, 0.06)',
+          cursor: 'pointer',
         }}
       >
         {/* label row */}
@@ -45,14 +61,14 @@ export default function WordOfDayCard({ go }: { go: GoFn }) {
           style={{
             display: 'flex',
             alignItems: 'center',
-            gap: 8,
-            marginBottom: 12,
+            gap: 6,
+            marginBottom: 8,
           }}
         >
           <span
             style={{
-              width: 34,
-              height: 34,
+              width: 22,
+              height: 22,
               borderRadius: '50%',
               background: C.orange,
               display: 'flex',
@@ -62,31 +78,39 @@ export default function WordOfDayCard({ go }: { go: GoFn }) {
             }}
             aria-hidden="true"
           >
-            <Sun size={19} color="#fff" />
+            <Sun size={13} color="#fff" />
           </span>
           <span
             style={{
               fontFamily: FONT,
               fontWeight: 800,
-              fontSize: 16,
+              fontSize: 12.5,
               color: C.title,
             }}
           >
             {t('word_of_day.word')}
           </span>
+          <ArrowRight
+            size={14}
+            aria-hidden="true"
+            style={{ marginLeft: 'auto', color: '#C9BBA6', flexShrink: 0 }}
+          />
         </div>
 
-        {/* the word */}
-        <div style={{ display: 'flex', alignItems: 'flex-start', gap: 12 }}>
+        {/* word row: image + text + audio */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+          <WordImage word={word.en} size={56} />
           <div style={{ flex: 1, minWidth: 0 }}>
             <div
               style={{
                 fontFamily: FONT,
                 fontWeight: 800,
-                fontSize: 34,
+                fontSize: 19,
                 color: C.title,
-                lineHeight: 1.25,
-                wordBreak: 'break-word',
+                lineHeight: 1.2,
+                whiteSpace: 'nowrap',
+                overflow: 'hidden',
+                textOverflow: 'ellipsis',
               }}
             >
               {word.en}
@@ -94,10 +118,12 @@ export default function WordOfDayCard({ go }: { go: GoFn }) {
             {word.phonetic && (
               <div
                 style={{
-                  fontSize: 15,
+                  fontSize: 11.5,
                   color: '#A07B3F',
-                  marginTop: 4,
                   fontWeight: 600,
+                  whiteSpace: 'nowrap',
+                  overflow: 'hidden',
+                  textOverflow: 'ellipsis',
                 }}
               >
                 /{word.phonetic}/
@@ -105,103 +131,83 @@ export default function WordOfDayCard({ go }: { go: GoFn }) {
             )}
             <div
               style={{
-                fontSize: 18,
+                fontSize: 13,
                 color: C.text,
-                marginTop: 8,
-                lineHeight: 1.5,
+                whiteSpace: 'nowrap',
+                overflow: 'hidden',
+                textOverflow: 'ellipsis',
               }}
             >
               {displayLang(word, lang)}
             </div>
           </div>
-          {/* the word's own illustration (falls back to a brand tile) */}
-          <div
+          <button
+            type="button"
+            onClick={(e) => {
+              e.stopPropagation();
+              speak(word.en);
+            }}
+            aria-label={t('word_of_day.listen_aria', { w: word.en })}
             style={{
+              width: 40,
+              height: 40,
+              borderRadius: '50%',
+              border: 'none',
+              background: C.orange,
+              borderBottom: `3px solid ${C.orangeDark}`,
+              color: '#fff',
               display: 'flex',
-              flexDirection: 'column',
               alignItems: 'center',
-              gap: 10,
+              justifyContent: 'center',
+              cursor: 'pointer',
               flexShrink: 0,
             }}
           >
-            <WordImage word={word.en} size={92} />
-            <button
-              type="button"
-              onClick={() => speak(word.en)}
-              aria-label={t('word_of_day.listen_aria', { w: word.en })}
-              style={{
-                width: 52,
-                height: 52,
-                borderRadius: '50%',
-                border: 'none',
-                background: C.orange,
-                borderBottom: `4px solid ${C.orangeDark}`,
-                color: '#fff',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                cursor: 'pointer',
-                flexShrink: 0,
-              }}
-            >
-              <Volume2 size={24} />
-            </button>
-          </div>
+            <Volume2 size={18} />
+          </button>
         </div>
 
         {/* taught example (only when the data worker filled it in) */}
         {word.example && (
           <div
             style={{
-              marginTop: 12,
-              background: 'rgba(255,255,255,0.75)',
-              borderRadius: 14,
-              padding: '10px 12px',
+              marginTop: 8,
+              background: '#FFF9F0',
+              borderRadius: 12,
+              padding: '7px 10px',
             }}
           >
             <div
               style={{
-                fontSize: 14,
+                fontSize: 12,
                 fontWeight: 700,
                 color: C.title,
-                lineHeight: 1.55,
+                lineHeight: 1.4,
+                display: '-webkit-box',
+                WebkitLineClamp: 2,
+                WebkitBoxOrient: 'vertical',
+                overflow: 'hidden',
               }}
             >
               {word.example}
             </div>
             {word.exampleMy && (
-              <div style={{ fontSize: 13, color: C.text, marginTop: 4 }}>
+              <div
+                style={{
+                  fontSize: 11.5,
+                  color: C.text,
+                  marginTop: 2,
+                  whiteSpace: 'nowrap',
+                  overflow: 'hidden',
+                  textOverflow: 'ellipsis',
+                }}
+              >
                 {displayLang({ my: word.exampleMy ?? '', th: word.exampleTh }, lang)}
               </div>
             )}
           </div>
         )}
-
-        {/* CTA → vocab for this word's topic */}
-        <button
-          type="button"
-          onClick={() => go('vocab', { topic: word.topic })}
-          style={{
-            marginTop: 14,
-            display: 'inline-flex',
-            alignItems: 'center',
-            gap: 8,
-            border: 'none',
-            borderRadius: 999,
-            background: C.white,
-            color: C.orangeDark,
-            fontFamily: FONT,
-            fontWeight: 800,
-            fontSize: 15,
-            padding: '10px 20px',
-            cursor: 'pointer',
-            boxShadow: '0 4px 12px rgba(0,0,0,0.08)',
-          }}
-        >
-          {t('word_of_day.study_now')}
-          <ArrowRight size={17} aria-hidden="true" />
-        </button>
-      </Card>
+      </div>
     </section>
   );
 }
