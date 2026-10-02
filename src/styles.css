@@ -2003,6 +2003,154 @@ html.kids-mode .reminder-banner-text {
   padding: 5px 8px;
 }
 
+/* header: píldoras ~30% más pequeñas y sutiles (orden de Nyein 2026-10-02) */
+.dash-minimal .dash-pills {
+  gap: 6px;
+}
+.dash-minimal .stat-pill {
+  padding: 5px 10px;
+  font-size: 12.5px;
+  gap: 4px;
+  box-shadow: 0 2px 8px rgba(63, 58, 52, 0.08);
+}
+.dash-minimal .dash-bell {
+  width: 34px;
+  height: 34px;
+  box-shadow: 0 2px 8px rgba(63, 58, 52, 0.08);
+}
+.dash-minimal .dash-bell-dot {
+  top: 6px;
+  right: 7px;
+  width: 8px;
+  height: 8px;
+}
+.dash-minimal .dash-flag-btn {
+  width: 34px;
+  height: 34px;
+  font-size: 16px;
+  box-shadow: 0 2px 8px rgba(63, 58, 52, 0.08);
+}
+
+/* gato "Let's learn!" integrado: burbuja arriba, gato totalmente
+   visible debajo (orden de Nyein 2026-10-02) */
+.dash-minimal .greet-cat {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.dash-minimal .learn-bubble {
+  position: static;
+  order: -1;
+  transform: rotate(3deg);
+  margin-bottom: 6px;
+  border-bottom-right-radius: 14px;
+  border-bottom-left-radius: 4px;
+}
+
+/* tarjetas de temas más compactas: ~310px de alto (orden de Nyein 2026-10-02) */
+.dash-minimal .daily-card {
+  flex: 0 0 68%;
+  height: 310px;
+  min-height: 0;
+  border-radius: 20px;
+  padding: 14px;
+}
+.dash-minimal .daily-card-title {
+  font-size: 22px;
+}
+.dash-minimal .daily-cta {
+  min-height: 42px;
+  padding: 8px 18px;
+  font-size: 14px;
+}
+
+/* ============ Hoja inferior de recordatorios (la abre la campana) ============
+   Contiene el panel REAL <ReminderSettings /> (el mismo de Ajustes). */
+.nse-sheet-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background: rgba(43, 30, 12, 0.5);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  animation: nse-sheet-fade 0.2s ease-out;
+}
+.nse-sheet {
+  width: 100%;
+  max-width: 480px;
+  max-height: 85dvh;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  background: #fffdf8;
+  border-radius: 24px 24px 0 0;
+  padding: 10px 20px calc(20px + env(safe-area-inset-bottom));
+  box-shadow: 0 -12px 48px rgba(43, 30, 12, 0.3);
+  animation: nse-sheet-up 0.32s cubic-bezier(0.2, 0.9, 0.3, 1.05);
+}
+.nse-sheet-handle {
+  width: 44px;
+  height: 5px;
+  border-radius: 999px;
+  background: #e5dccb;
+  margin: 4px auto 12px;
+}
+.nse-sheet-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.nse-sheet-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #fff3df;
+  flex-shrink: 0;
+}
+.nse-sheet-title {
+  font-size: 17px;
+  font-weight: 800;
+  color: var(--title);
+}
+.nse-sheet-close {
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: none;
+  background: #f3efe7;
+  color: var(--body);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.nse-sheet-close:active {
+  transform: scale(0.94);
+}
+@keyframes nse-sheet-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes nse-sheet-up {
+  from { opacity: 0; transform: translateY(48px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .nse-sheet-overlay,
+  .nse-sheet {
+    animation: none;
+  }
+}
+
 /* nivel/XP en una sola fila compacta */
 .dash-minimal .level-card-compact {
   display: flex;

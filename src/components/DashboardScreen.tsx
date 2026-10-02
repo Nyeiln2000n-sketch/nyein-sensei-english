@@ -38,6 +38,7 @@ import { topics } from '../data/topics';
 import { topicImageSrc } from '../data/topic-images';
 import { ProgressBar, Screen } from './ui';
 import WordOfDayCard from './WordOfDayCard';
+import ReminderSheet from './ReminderSheet';
 import { useLang, displayLang, tNum } from '../lib/i18n';
 import { openLanguagePicker } from './LanguagePickerModal';
 import type { LangKey } from '../i18n/my';
@@ -102,6 +103,8 @@ export default function DashboardScreen({ go }: { go: GoFn; params?: NavParams }
 
   const trackRef = useRef<HTMLDivElement>(null);
   const [active, setActive] = useState(0);
+  // Hoja de recordatorios que abre la campana (panel real, no achievements).
+  const [remOpen, setRemOpen] = useState(false);
   const onTrackScroll = useCallback(() => {
     const el = trackRef.current;
     if (!el || el.children.length === 0) return;
@@ -266,35 +269,34 @@ export default function DashboardScreen({ go }: { go: GoFn; params?: NavParams }
         </div>
         <div className="dash-pills">
           <span className="stat-pill" aria-label={t('dashboard.streak_var_days', { days: tNum(streak) })}>
-            <Flame size={16} color="#FF7A1A" aria-hidden="true" />
+            <Flame size={13} color="#FF7A1A" aria-hidden="true" />
             <span>{streak}</span>
           </span>
           <span className="stat-pill" aria-label={t('dashboard.gems_var_items', { gems: tNum(gems) })}>
-            <Gem size={16} color="#3FB0F0" aria-hidden="true" />
+            <Gem size={13} color="#3FB0F0" aria-hidden="true" />
             <span>{gems}</span>
           </span>
           <button
             type="button"
             className="icon-btn dash-bell"
-            aria-label={t('dashboard.awards_and_notifications')}
+            aria-label={t('push.daily_reminder')}
             onClick={() => {
               buzz();
-              go('achievements');
+              setRemOpen(true);
             }}
           >
-            <Bell size={20} />
+            <Bell size={16} />
             <span className="dash-bell-dot" aria-hidden="true" />
           </button>
           {/* Botón de bandera: abre el selector de idioma (orden de Nyein 2026-10-02). */}
           <button
             type="button"
-            className="icon-btn"
+            className="icon-btn dash-flag-btn"
             aria-label={t('settings.language')}
             onClick={() => {
               buzz();
               openLanguagePicker();
             }}
-            style={{ fontSize: 20, width: 40, height: 40 }}
           >
             {lang === 'th' ? '🇹🇭' : '🇲🇲'}
           </button>
@@ -500,6 +502,9 @@ export default function DashboardScreen({ go }: { go: GoFn; params?: NavParams }
 
       {/* keeps the last card clear of the native tab bar */}
       <div className="tab-pad-end" aria-hidden="true" />
+
+      {/* Hoja de recordatorios: la abre la campana del header. */}
+      <ReminderSheet open={remOpen} onClose={() => setRemOpen(false)} />
     </Screen>
   );
 }
