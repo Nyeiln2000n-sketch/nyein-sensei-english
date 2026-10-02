@@ -32,6 +32,12 @@ const DialoguesStoriesScreen = lazy(() => import('./components/DialoguesStoriesS
 // SpeechFallbackNotice renderiza null hasta que hay un problema de voz;
 // PushPrompt solo aparece tras login.
 const SpeechFallbackNotice = lazy(() => import('./components/SpeechFallbackNotice'));
+// Selector de idioma con banderas (orden de Nyein 2026-10-02): ventana inicial
+// con 🇲🇲/🇹🇭 en el primer arranque + reapertura desde el login.
+import LanguagePickerModal, {
+  OPEN_LANG_PICKER_EVENT,
+} from './components/LanguagePickerModal';
+import { useLang, LANG_STORAGE_KEY, type Lang } from './lib/i18n';
 import InstallPrompt from './components/InstallPrompt';
 // NOTIF-PUSH: prompt amable de permiso push (una vez, tras login, Myanmar-first).
 const PushPrompt = lazy(() => import('./components/PushPrompt'));
@@ -208,6 +214,40 @@ export default function App() {
   }, []);
 
   const route = stack[stack.length - 1];
+
+  // Selector de idioma con banderas (orden de Nyein 2026-10-02): se muestra
+  // una vez en el primer arranque (sin preferencia guardada). Al elegir se
+  // guarda vía setLang y no vuelve a aparecer solo.
+  const { setLang } = useLang();
+  const [langPickerOpen, setLangPickerOpen] = useState<boolean>(() => {
+    try {
+      return localStorage.getItem(LANG_STORAGE_KEY) === null;
+    } catch {
+      return false;
+    }
+  });
+  const [langPickerDismissible, setLangPickerDismissible] = useState<boolean>(() => {
+    try {
+      return localStorage.getItem(LANG_STORAGE_KEY) !== null;
+    } catch {
+      return true;
+    }
+  });
+  useEffect(() => {
+    const reopen = () => {
+      setLangPickerDismissible(true);
+      setLangPickerOpen(true);
+    };
+    window.addEventListener(OPEN_LANG_PICKER_EVENT, reopen);
+    return () => window.removeEventListener(OPEN_LANG_PICKER_EVENT, reopen);
+  }, []);
+  const pickLang = useCallback(
+    (l: Lang) => {
+      setLang(l);
+      setLangPickerOpen(false);
+    },
+    [setLang],
+  );
 
   // Owner order: EVERY page opens from the very top on EVERY navigation —
   // tab taps, pushed full-screen flows (quiz, vocab, practice, lesson
@@ -463,6 +503,13 @@ export default function App() {
       </Suspense>
       {/* Worker C reminder: daily gentle in-app reminder banner (any screen). */}
       <ReminderBanner />
+      {/* Selector de idioma con banderas: primer arranque + reapertura desde login. */}
+      <LanguagePickerModal
+        open={langPickerOpen}
+        dismissible={langPickerDismissible}
+        onPick={pickLang}
+        onClose={() => setLangPickerOpen(false)}
+      />
     </div>
   );
 }

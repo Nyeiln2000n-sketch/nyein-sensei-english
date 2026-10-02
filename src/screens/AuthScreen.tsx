@@ -21,6 +21,7 @@ import MascotScene3D from '../components/Mascot3D';
 import { PillButton, Screen } from '../components/ui';
 import { consumeSessionExpiredNotice, getSession, signIn, signUp } from '../lib/auth';
 import { useLang } from '../lib/i18n';
+import { openLanguagePicker } from '../components/LanguagePickerModal';
 import './w4.css';
 import { W4ErrorBoundary } from './w4error';
 
@@ -36,7 +37,7 @@ interface AuthScreenProps {
 }
 
 export default function AuthScreen({ go, params, onVerifyKey }: AuthScreenProps) {
-  const { t } = useLang();
+  const { t, lang } = useLang();
   const verifyKey = onVerifyKey ?? (async () => false);
   const [mode, setMode] = useState<'signin' | 'signup'>(
     params?.mode === 'signup' ? 'signup' : 'signin',
@@ -121,6 +122,32 @@ export default function AuthScreen({ go, params, onVerifyKey }: AuthScreenProps)
 
   return (
     <Screen>
+      {/* Botón de bandera: abre el selector de idioma (orden de Nyein 2026-10-02). */}
+      <button
+        type="button"
+        onClick={openLanguagePicker}
+        aria-label={t('settings.language')}
+        style={{
+          position: 'fixed',
+          top: 'calc(env(safe-area-inset-top, 0px) + 12px)',
+          right: 12,
+          zIndex: 60,
+          width: 44,
+          height: 44,
+          borderRadius: '50%',
+          border: '1px solid #F3EFE7',
+          background: '#FFFDF8',
+          fontSize: 24,
+          cursor: 'pointer',
+          boxShadow: '0 2px 10px rgba(43, 30, 12, 0.12)',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          padding: 0,
+        }}
+      >
+        {lang === 'th' ? '🇹🇭' : '🇲🇲'}
+      </button>
       <W4ErrorBoundary>
       {authed && (
         <button
