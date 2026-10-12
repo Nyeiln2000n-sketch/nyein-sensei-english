@@ -42,7 +42,7 @@ export const phrasesD: Phrase[] = [
   { en: "I can't hear you — speak louder!", my: 'မင်းအသံမကြားရဘူး — ပိုကျယ်ကျယ်ပြောပါ!', th: 'ฉันไม่ได้ยินเลย พูดดังๆ หน่อย!', topic: 'computer', cefr: 'A2' },
   { en: 'Where can I charge my phone?', my: 'ဖုန်းဘယ်မှာအားသွင်းလို့ရလဲ။', th: 'ชาร์จโทรศัพท์ได้ที่ไหน', topic: 'computer', cefr: 'A2' },
   { en: 'Type your name here.', my: 'နာမည်ကိုဒီမှာရိုက်ထည့်ပါ။', th: 'พิมพ์ชื่อตรงนี้', topic: 'computer' },
-  { en: 'The signal is weak upstairs.', my: 'အပေါ်ထပ်မှာဆစ်ဂနယ်အားနည်းတယ်။', th: 'ชั้นบนสัญญาณอ่อน', topic: 'computer', cefr: 'B1' },
+  { en: 'The signal is weak upstairs.', my: 'အပေါ်ထပ်မှာ လိုင်းအားနည်းတယ်။', th: 'ชั้นบนสัญญาณอ่อน', topic: 'computer', cefr: 'B1' },
   { en: 'Log out when you finish.', my: 'ပြီးရင် log out လုပ်လိုက်ပါ။', th: 'ออกจากระบบเมื่อเสร็จแล้ว', topic: 'computer', cefr: 'A2' },
   // market — ဈေးနှင့် ဈေးဆစ်ခြင်း
   { en: 'How much for a kilo?', my: 'တစ်ကီလိုဘယ်လောက်လဲ။', th: 'กิโลละเท่าไหร่คะ', topic: 'market' },

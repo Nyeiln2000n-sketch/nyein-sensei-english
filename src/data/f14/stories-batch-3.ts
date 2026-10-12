@@ -38,7 +38,7 @@ export const storiesBatch3: Story[] = [
       },
       {
         en: 'Henrietta never became famous in her lifetime, and she never looked through a telescope. But every map of the universe today is built on the work of her patient eyes.',
-        my: 'ဟန်ရီယက်တာဟာ သူ့သက်တမ်းမှာ ဘယ်တော့မှ ကျော်ကြားမလာခဲ့သလို တယ်လီစကုပ်ထဲကိုလည်း ဘယ်တော့မှ မကြည့်ခဲ့ရဘူး။ ဒါပေမယ့် ဒီနေ့ စကြဝဠာမြေပုံတိုင်းဟာ သူမရဲ့သည်းခံတဲ့မျက်လုံးတွေရဲ့ လုပ်ဆောင်ချက်ပေါ်မှာ တည်ဆောက်ထားတာဖြစ်တယ်။',
+        my: 'ဟန်ရီယက်တာဟာ သူ့သက်တမ်းမှာ ဘယ်တော့မှ ကျော်ကြားမလာခဲ့သလို တယ်လီစကုပ်ထဲကိုလည်း ဘယ်တော့မှ မကြည့်ခဲ့ရဘူး။ ဒါပေမယ့် ဒီနေ့ စကြဝဠာမြေပုံတိုင်းဟာ သူမရဲ့သည်းခံစိတ်နဲ့ ကြည့်ရှုခဲ့တဲ့မျက်လုံးတွေရဲ့ လုပ်ဆောင်မှုအပေါ်မှာ တည်ဆောက်ထားတာဖြစ်တယ်။',
         th: 'เฮนเรียตตาไม่เคยมีชื่อเสียงในชั่วชีวิต และไม่เคยได้ส่องกล้องโทรทรรศน์เลย แต่แผนที่จักรวาลทุกฉบับในวันนี้ล้วนสร้างบนผลงานจากดวงตาอันอดทนของเธอ',
       },
     ],
@@ -78,7 +78,7 @@ export const storiesBatch3: Story[] = [
       {
         en: 'Few people will ever visit Svalbard. Yet every loaf of bread and every bowl of rice we eat depends, in a small way, on the quiet seeds sleeping in that mountain.',
         my: 'ဆဗာလ်ဘာ့ဒ်ကို သွားလည်မယ့်သူ အနည်းငယ်သာရှိလိမ့်မယ်။ ဒါပေမယ့် ကျွန်တော်တို့စားတဲ့ ပေါင်မုန့်တိုင်းနဲ့ ထမင်းပန်းကန်တိုင်းဟာ အဲဒီတောင်ထဲမှာ အိပ်နေတဲ့ တိတ်ဆိတ်တဲ့မျိုးစေ့တွေပေါ်မှာ အနည်းငယ်တော့ မှီခိုနေတယ်။',
-        th: 'มีน้อยคนที่จะได้ไปเยือนสฟาลบาร์ แต่ขนมปังทุกก้อนและข้าวทุกชามที่เรากิน ล้วนพึ่งพาเมล็ดพันธุ์เงียบๆ ที่หลับใหลในภูเขาลูกนั้นอยู่บ้าง',
+        th: 'มีน้อยคนที่จะได้ไปเยือนสฟาลบาร์ แต่ขนมปังทุกก้อนและข้าวทุกชามที่เรากิน ก็ยังพึ่งพาเมล็ดพันธุ์เงียบๆ ที่หลับใหลในภูเขาลูกนั้นอยู่บ้าง',
       },
     ],
   },
@@ -107,7 +107,7 @@ export const storiesBatch3: Story[] = [
       {
         en: 'At the beach, Gandhi bent down and lifted a lump of salty mud. That small gesture broke the law — and it broke the fear that had kept millions silent.',
         my: 'ကမ်းခြေမှာ ဂန္ဒီက ငုံ့ပြီး ဆားငန်တဲ့ရွှံ့တုံးတစ်ခု ကောက်ယူခဲ့တယ်။ အဲဒီသေးငယ်တဲ့လုပ်ရပ်က ဥပဒေကို ချိုးဖောက်ခဲ့တယ် — သန်းပေါင်းများစွာကို တိတ်ဆိတ်စေခဲ့တဲ့ ကြောက်ရွံ့မှုကိုလည်း ချိုးဖျက်ခဲ့တယ်။',
-        th: 'ที่ชายหาด คานธีก้มลงหยิบก้อนโคลนเค็มขึ้นมา ท่าทางเล็กๆ นั้นฝ่าฝืนกฎหมาย และทำลายความกลัวที่ทำให้ผู้คนนับล้านเงียบมานาน',
+        th: 'ที่ชายหาด คานธีก้มลงหยิบก้อนโคลนเค็มขึ้นมา การกระทำเล็กๆ นั้นฝ่าฝืนกฎหมาย และทำลายความกลัวที่ทำให้ผู้คนนับล้านเงียบมานาน',
       },
       {
         en: 'Across India, people began making their own salt. The British arrested more than 60,000 of them, including Gandhi himself, but the movement only grew stronger.',
@@ -117,7 +117,7 @@ export const storiesBatch3: Story[] = [
       {
         en: 'The Salt March did not win independence that year. But it showed the world that peaceful resistance could shake an empire — and it changed history forever.',
         my: 'ဆားချီတက်ပွဲက အဲဒီနှစ်မှာ လွတ်လပ်ရေး မရခဲ့ဘူး။ ဒါပေမယ့် ငြိမ်းချမ်းတဲ့ခုခံမှုက အင်ပါယာတစ်ခုကို လှုပ်ခါနိုင်တယ်ဆိုတာ ကမ္ဘာကို ပြသခဲ့တယ် — သမိုင်းကို ထာဝရပြောင်းလဲခဲ့တယ်။',
-        th: 'การเดินขบวนเกลือไม่ได้เอกราชในปีนั้น แต่มันแสดงให้โลกเห็นว่าการต่อต้านอย่างสันติสั่นสะเทือนจักรวรรดิได้ และมันเปลี่ยนประวัติศาสตร์ตลอดกาล',
+        th: 'การเดินขบวนเกลือยังไม่ได้คว้าเอกราชในปีนั้น แต่มันแสดงให้โลกเห็นว่าการต่อต้านอย่างสันติสั่นสะเทือนจักรวรรดิได้ และมันเปลี่ยนประวัติศาสตร์ตลอดกาล',
       },
     ],
   },
@@ -136,22 +136,22 @@ export const storiesBatch3: Story[] = [
       {
         en: 'Before they even reached the continent, disaster struck. Their ship, the Endurance, became trapped in pack ice. For ten months it drifted with the frozen sea, until the ice crushed it completely.',
         my: 'တိုက်ကို မရောက်ခင်မှာပဲ ကပ်ဘေးဆိုက်ရောက်ခဲ့တယ်။ သူတို့သင်္ဘော အန်းဒူးရန့်စ်က ရေခဲထုပ်တွေကြားမှာ ပိတ်မိသွားတယ်။ ဆယ်လတိုင်တိုင် အေးခဲနေတဲ့ပင်လယ်နဲ့အတူ မျောပါသွားပြီး နောက်ဆုံး ရေခဲက သင်္ဘောကို လုံးဝချေမှုန်းပစ်ခဲ့တယ်။',
-        th: 'ก่อนจะถึงทวีปด้วยซ้ำ หายนะก็มาเยือน เรือเอนดูแรนซ์ติดอยู่ในน้ำแข็งแพ ลอยไปกับทะเลน้ำแข็งนานสิบเดือน จนน้ำแข็งบดขยี้เรือจนแหลก',
+        th: 'ก่อนจะถึงทวีปด้วยซ้ำ หายนะก็มาเยือน เรือเอนดูแรนซ์ติดอยู่ในแพน้ำแข็ง ลอยไปกับทะเลน้ำแข็งนานสิบเดือน จนน้ำแข็งบดขยี้เรือจนแหลก',
       },
       {
         en: 'The crew escaped onto the ice with three small lifeboats, some tents, and very little food. They camped on floating ice in temperatures far below zero, hunting seals to survive.',
         my: 'အဖွဲ့သားတွေက လှေသေးသေးသုံးစင်း၊ တဲအချို့နဲ့ အစားအသောက်အနည်းငယ်နဲ့ ရေခဲပေါ်ကို လွတ်မြောက်ခဲ့တယ်။ သုညအောက် အများကြီးနိမ့်တဲ့အပူချိန်မှာ မျောနေတဲ့ရေခဲပေါ်မှာ တဲထိုးနေထိုင်ပြီး ရှင်သန်ဖို့ ဖျံကောင်တွေကို အမဲလိုက်ရတယ်။',
-        th: 'ลูกเรือหนีขึ้นไปบนน้ำแข็งพร้อมเรือชูชีพเล็กสามลำ เต็นท์ไม่กี่หลัง และอาหารน้อยนิด ตั้งแคมป์บนน้ำแข็งลอยในอุณหภูมิต่ำกว่าศูนย์มาก ล่าแมวน้ำเพื่อเอาชีวิตรอด',
+        th: 'ลูกเรือหนีขึ้นไปบนน้ำแข็งพร้อมเรือชูชีพเล็กสามลำ เต็นท์ไม่กี่หลัง และอาหารน้อยนิด ตั้งแคมป์บนน้ำแข็งลอยในอุณหภูมิที่ต่ำกว่าศูนย์องศาอย่างมาก ล่าแมวน้ำเพื่อเอาชีวิตรอด',
       },
       {
         en: 'Shackleton then made an impossible decision. He took five men and sailed 1,300 kilometers across the stormiest ocean on Earth in an open boat, to find help.',
         my: 'ရှက်ကယ်တန်က မဖြစ်နိုင်တဲ့ဆုံးဖြတ်ချက်တစ်ခု ချခဲ့တယ်။ လူငါးယောက်နဲ့အတူ ပွင့်လင်းလှေတစ်စင်းနဲ့ ကမ္ဘာပေါ်မှာ မုန်တိုင်းအထန်ဆုံးသမုဒ္ဒရာကို ကီလိုမီတာ ၁,၃၀၀ ဖြတ်ပြီး အကူအညီရှာဖို့ ရွက်လွှင့်ခဲ့တယ်။',
-        th: 'แช็กเกิลตันตัดสินใจอย่างไม่น่าเป็นไปได้ เขาพาลูกเรือห้าคนแล่นเรือเปิดประทุน 1,300 กิโลเมตร ข้ามมหาสมุทรที่พายุร้ายที่สุดในโลก เพื่อไปขอความช่วยเหลือ',
+        th: 'แช็กเกิลตันตัดสินใจครั้งที่ดูเป็นไปไม่ได้ เขาพาลูกเรือห้าคนแล่นเรือเปิดประทุน 1,300 กิโลเมตร ข้ามมหาสมุทรที่พายุร้ายที่สุดในโลก เพื่อไปขอความช่วยเหลือ',
       },
       {
         en: 'Against all odds, they reached South Georgia island. Shackleton immediately organized a rescue, and after four months, every single one of his 27 men was brought home alive.',
-        my: 'မျှော်လင့်ချက်အားလုံးကို ဆန့်ကျင်ပြီး သူတို့ ဆောက်သ်ဂျော်ဂျီးယားကျွန်းကို ရောက်ခဲ့တယ်။ ရှက်ကယ်တန်က ချက်ချင်း ကယ်ဆယ်ရေးစီစဉ်ခဲ့ပြီး လေးလအကြာမှာ သူ့လူ ၂၇ ယောက်လုံး အသက်ရှင်လျက် အိမ်ပြန်ရောက်ခဲ့တယ်။',
-        th: 'ฝืนทุกความคาดหมาย พวกเขาถึงเกาะเซาท์จอร์เจีย แช็กเกิลตันจัดทีมกู้ภัยทันที และสี่เดือนต่อมา ลูกเรือทั้ง 27 คนกลับบ้านอย่างมีชีวิตทุกคน',
+        my: 'ခန့်မှန်းချက်အားလုံးကို ဆန့်ကျင်ပြီး သူတို့ ဆောက်သ်ဂျော်ဂျီးယားကျွန်းကို ရောက်ခဲ့တယ်။ ရှက်ကယ်တန်က ချက်ချင်း ကယ်ဆယ်ရေးစီစဉ်ခဲ့ပြီး လေးလအကြာမှာ သူ့လူ ၂၇ ယောက်လုံး အသက်ရှင်လျက် အိမ်ပြန်ရောက်ခဲ့တယ်။',
+        th: 'ฝืนทุกความคาดหมาย พวกเขาถึงเกาะเซาท์จอร์เจีย แช็กเกิลตันจัดทีมกู้ภัยทันที และสี่เดือนต่อมา ลูกเรือทั้ง 27 คนรอดชีวิตกลับบ้านทุกคน',
       },
       {
         en: 'Shackleton never reached his original goal. Yet he is remembered as one of history\'s greatest leaders — because he understood that bringing his people home mattered more than any record.',
@@ -169,23 +169,23 @@ export const storiesBatch3: Story[] = [
     paragraphs: [
       {
         en: 'Two thousand years ago, a merchant named Li Wei loaded his camels in the Chinese city of Chang\'an. His cargo was silk — soft, shining fabric worth more than gold in the far West.',
-        my: 'လွန်ခဲ့တဲ့ နှစ်ထောင်က လီဝေဆိုတဲ့ ကုန်သည်တစ်ဦး တရုတ်နိုင်ငံ ချန်အန်းမြို့မှာ သူ့ကုလားအုပ်တွေကို ကုန်တင်ခဲ့တယ်။ သူ့ကုန်က ပိုးထည် — အနောက်အဝေးမှာ ရွှေထက် တန်ဖိုးကြီးတဲ့ နူးညံ့တောက်ပတဲ့အထည်ဖြစ်တယ်။',
+        my: 'လွန်ခဲ့တဲ့ နှစ်ထောင်က လီဝေဆိုတဲ့ ကုန်သည်တစ်ဦး တရုတ်နိုင်ငံ ချန်အန်းမြို့မှာ သူ့ကုလားအုပ်တွေကို ကုန်တင်ခဲ့တယ်။ သူ့ကုန်က ပိုးထည် — အနောက်ပိုင်းအဝေးမှာ ရွှေထက် တန်ဖိုးကြီးတဲ့ နူးညံ့တောက်ပတဲ့အထည်ဖြစ်တယ်။',
         th: 'สองพันปีก่อน พ่อค้าชื่อหลี่เหว่ยบรรทุกอูฐในเมืองฉางอานของจีน สินค้าของเขาคือผ้าไหม ผ้านุ่มเงางามที่มีค่าเกินกว่าทองคำในแดนตะวันตกอันไกลโพ้น',
       },
       {
         en: 'The journey ahead was enormous: more than 6,000 kilometers of deserts, mountains, and strange cities. It would take him nearly two years to reach the markets of Persia and beyond.',
         my: 'ရှေ့မှာရှိတဲ့ ခရီးက ကြီးမားလှတယ် — သဲကန္တာရတွေ၊ တောင်တွေနဲ့ ထူးဆန်းတဲ့မြို့တွေကို ကီလိုမီတာ ၆,၀၀၀ ကျော် ဖြတ်ရမယ်။ ပါရှားနဲ့အဲဒီထက်ဝေးတဲ့ဈေးတွေကို ရောက်ဖို့ နှစ်နှစ်နီးပါး ကြာလိမ့်မယ်။',
-        th: 'การเดินทางข้างหน้ายิ่งใหญ่ ระยะทางกว่า 6,000 กิโลเมตรผ่านทะเลทราย ภูเขา และเมืองแปลกหน้า จะใช้เวลาเกือบสองปีกว่าจะถึงตลาดเปอร์เซียและไกลกว่านั้น',
+        th: 'การเดินทางข้างหน้ายิ่งใหญ่ ระยะทางกว่า 6,000 กิโลเมตรผ่านทะเลทราย ภูเขา และเมืองแปลกหน้า จะใช้เวลาเกือบสองปีกว่าจะถึงตลาดเปอร์เซียและดินแดนที่ไกลกว่านั้น',
       },
       {
         en: 'In the Taklamakan Desert, his caravan marched for weeks without seeing a single tree. The guides navigated by the stars and by old bones marking the safe path through the sand.',
         my: 'တက္ကလာမကန်သဲကန္တာရမှာ သူ့ကုန်တင်အဖွဲ့က သစ်ပင်တစ်ပင်မှ မမြင်ရဘဲ ရက်သတ္တပတ်ပေါင်းများစွာ ချီတက်ခဲ့တယ်။ လမ်းပြတွေက ကြယ်တွေနဲ့ သဲထဲက လုံခြုံတဲ့လမ်းကို အမှတ်အသားပြုထားတဲ့ အရိုးဟောင်းတွေကို ကြည့်ပြီး လမ်းညွှန်ကြတယ်။',
-        th: 'ในทะเลทรายทาคลามากัน คาราวานเดินทัพหลายสัปดาห์โดยไม่เห็นต้นไม้สักต้น ผู้นำทางใช้ดาวและกระดูกเก่าที่หมายเส้นทางปลอดภัยผ่านทรายนำทาง',
+        th: 'ในทะเลทรายทาคลามากัน คาราวานเดินทางหลายสัปดาห์โดยไม่เห็นต้นไม้สักต้น ผู้นำทางใช้ดาวและกระดูกเก่าที่ปักหมายเส้นทางปลอดภัยผ่านผืนทรายนำทาง',
       },
       {
         en: 'At every oasis city — Kashgar, Samarkand, Bukhara — Li Wei traded more than silk. He exchanged stories, religions, and ideas. Paper, mathematics, and new foods traveled along with his goods.',
         my: 'အိုအေစစ်မြို့တိုင်း — ကာရှ်ဂါ၊ ဆာမာကန်ဒ်၊ ဘူခါရာ — မှာ လီဝေက ပိုးထည်ထက် ပိုတာကို ကုန်သွယ်ခဲ့တယ်။ သူက ဇာတ်လမ်းတွေ၊ ဘာသာတရားတွေနဲ့ အတွေးအခေါ်တွေ ဖလှယ်ခဲ့တယ်။ စက္ကူ၊ သင်္ချာနဲ့ အစားအသောက်အသစ်တွေက သူ့ကုန်ပစ္စည်းတွေနဲ့အတူ ခရီးသွားခဲ့တယ်။',
-        th: 'ที่เมืองโอเอซิสทุกแห่ง คัชการ์ ซามาร์กันด์ บูคารา หลี่เหว่ยค้าเกินกว่าผ้าไหม เขาแลกเปลี่ยนเรื่องเล่า ศาสนา และความคิด กระดาษ คณิตศาสตร์ และอาหารใหม่ๆ เดินทางไปกับสินค้าของเขา',
+        th: 'ที่เมืองโอเอซิสทุกแห่ง — คัชการ์ ซามาร์กันด์ บูคารา — หลี่เหว่ยไม่ได้ค้าแค่ผ้าไหม เขาแลกเปลี่ยนเรื่องเล่า ศาสนา และความคิด กระดาษ คณิตศาสตร์ และอาหารใหม่ๆ เดินทางไปกับสินค้าของเขา',
       },
       {
         en: 'By the time he returned home, Li Wei was wealthy — but he said his true profit was knowledge. He had learned three languages and tasted foods his neighbors could not even imagine.',
@@ -209,12 +209,12 @@ export const storiesBatch3: Story[] = [
       {
         en: 'More than two thousand years ago, the Egyptian city of Alexandria held the greatest library the world had ever seen. Its shelves contained hundreds of thousands of scrolls — almost all human knowledge.',
         my: 'လွန်ခဲ့တဲ့ နှစ်ထောင်ကျော်က အီဂျစ်နိုင်ငံ အလက်ဇန္ဒြီးယားမြို့မှာ ကမ္ဘာက မမြင်ဖူးသေးတဲ့ အကြီးကျယ်ဆုံးစာကြည့်တိုက် တည်ရှိခဲ့တယ်။ သူ့စင်တွေမှာ လိပ်စာရွက်သိန်းပေါင်းများစွာ ရှိတယ် — လူသားအသိပညာအားလုံးနီးပါးပဲ။',
-        th: 'กว่าสองพันปีก่อน เมืองอเล็กซานเดรียของอียิปต์มีห้องสมุดที่ยิ่งใหญ่ที่สุดเท่าที่โลกเคยเห็น ชั้นหนังสือมีม้วนกระดาษหลายแสนม้วน เกือบทั้งหมดของความรู้มนุษย์',
+        th: 'กว่าสองพันปีก่อน เมืองอเล็กซานเดรียของอียิปต์มีห้องสมุดที่ยิ่งใหญ่ที่สุดเท่าที่โลกเคยเห็น ชั้นหนังสือมีม้วนหนังสือหลายแสนม้วน รวบรวมความรู้เกือบทั้งหมดของมนุษยชาติ',
       },
       {
         en: 'The kings of Egypt were determined to collect every book in existence. Ships arriving at the harbor had to hand over their scrolls to be copied — the originals stayed in the library.',
         my: 'အီဂျစ်ဘုရင်တွေက ကမ္ဘာပေါ်ရှိစာအုပ်တိုင်းကို စုဆောင်းဖို့ ဆုံးဖြတ်ထားတယ်။ ဆိပ်ကမ်းကို ဆိုက်ရောက်တဲ့သင်္ဘောတိုင်း သူတို့လိပ်စာရွက်တွေကို ကူးယူဖို့ အပ်ရတယ် — မူရင်းတွေက စာကြည့်တိုက်မှာ ကျန်နေတယ်။',
-        th: 'กษัตริย์อียิปต์มุ่งมั่นรวบรวมหนังสือทุกเล่มในโลก เรือที่เข้าท่าต้องมอบม้วนกระดาษให้คัดลอก ต้นฉบับจะอยู่ในห้องสมุด',
+        th: 'กษัตริย์อียิปต์มุ่งมั่นรวบรวมหนังสือทุกเล่มในโลก เรือที่เข้าท่าต้องมอบม้วนกระดาษให้คัดลอก โดยต้นฉบับต้องอยู่ในห้องสมุด',
       },
       {
         en: 'Scholars from Greece, Persia, and India gathered there to study mathematics, medicine, astronomy, and poetry. It was the world\'s first true research university.',
@@ -229,7 +229,7 @@ export const storiesBatch3: Story[] = [
       {
         en: 'Nobody knows exactly how the library finally disappeared. But its dream survived: that all knowledge should be gathered in one place and shared freely with anyone who seeks it.',
         my: 'စာကြည့်တိုက် နောက်ဆုံးဘယ်လို ပျောက်ကွယ်သွားတယ်ဆိုတာ ဘယ်သူမှ တိတိကျကျမသိဘူး။ ဒါပေမယ့် သူ့အိပ်မက်က ရှင်သန်နေတယ် — အသိပညာအားလုံးကို တစ်နေရာမှာ စုစည်းပြီး ရှာဖွေသူတိုင်းကို လွတ်လပ်စွာ မျှဝေသင့်တယ်ဆိုတဲ့အိပ်မက်ပဲ။',
-        th: 'ไม่มีใครรู้แน่ว่าห้องสมุดหายไปอย่างไรในที่สุด แต่ความฝันของมันยังอยู่ ความรู้ทั้งหมดควรถูกรวบรวมไว้ที่เดียวและแบ่งปันอย่างเสรีกับทุกคนที่แสวงหา',
+        th: 'ไม่มีใครรู้แน่ว่าห้องสมุดหายไปอย่างไรในที่สุด แต่ความฝันของมันยังอยู่ ความรู้ทั้งหมดควรถูกรวบรวมไว้ที่เดียวและแบ่งปันอย่างเสรีแก่ทุกคนที่แสวงหาความรู้',
       },
       {
         en: 'Today, every time you search the internet, you are living inside that ancient dream. The library of Alexandria finally exists — it is just spread across the whole planet.',
@@ -243,7 +243,7 @@ export const storiesBatch3: Story[] = [
     level: 'B2',
     titleEn: 'The Coral Reef Revival',
     titleMy: 'သန္တာကျောက်တန်းများ ပြန်လည်ရှင်သန်ခြင်း',
-    titleTh: 'การฟื้นคืนของแนวปะการัง',
+    titleTh: 'การฟื้นฟูแนวปะการัง',
     paragraphs: [
       {
         en: 'When marine biologist Dr. Aye Chan first dived at the reef near her village, she cried. The coral was white and lifeless — bleached by rising sea temperatures.',
@@ -253,7 +253,7 @@ export const storiesBatch3: Story[] = [
       {
         en: 'Coral bleaching happens when stressed coral expels the tiny algae living inside it. Without those algae, the coral loses both its color and its main source of food.',
         my: 'သန္တာအရောင်ဖျော့ခြင်းဟာ ဖိစီးမှုခံရတဲ့သန္တာက သူ့အတွင်းမှာနေတဲ့ ရေညှိသေးသေးလေးတွေကို ထုတ်ပစ်တဲ့အခါ ဖြစ်တယ်။ အဲဒီရေညှိတွေမရှိတော့ သန္တာက သူ့အရောင်ရော အဓိကအစားအစာအရင်းအမြစ်ပါ ဆုံးရှုံးတယ်။',
-        th: 'การฟอกขาวเกิดเมื่อปะการังที่เครียดขับสาหร่ายจิ๋วที่อาศัยข้างในออกมา ไม่มีสาหร่ายเหล่านั้น ปะการังสูญทั้งสีและแหล่งอาหารหลัก',
+        th: 'การฟอกขาวเกิดเมื่อปะการังที่เครียดขับสาหร่ายจิ๋วที่อาศัยข้างในออกมา ไม่มีสาหร่ายเหล่านั้น ปะการังสูญเสียทั้งสีและแหล่งอาหารหลัก',
       },
       {
         en: 'Instead of giving up, Dr. Aye Chan started a coral nursery. She collected small fragments of surviving coral and grew them on underwater frames, like a garden beneath the sea.',
@@ -273,7 +273,7 @@ export const storiesBatch3: Story[] = [
       {
         en: 'Dr. Aye Chan says the reef taught her patience. "Nature can heal," she tells her students, "but only if we give it time — and a little help."',
         my: 'ဒေါက်တာ အေးချမ်းက ကျောက်တန်းက သူ့ကို သည်းခံမှုသင်ပေးခဲ့တယ်လို့ ပြောတယ်။ "သဘာဝက ကုစားနိုင်တယ်" လို့ သူ့တပည့်တွေကို သူပြောတယ်၊ "ဒါပေမယ့် အချိန်ပေးပြီး အကူအညီအနည်းငယ်ပေးမှသာ ဖြစ်မယ်။"',
-        th: 'ดร.อาย ชาน บอกว่าแนวปะการังสอนความอดทนให้เธอ "ธรรมชาติเยียวยาได้" เธอบอกนักเรียน "แต่ต้องให้เวลา และช่วยนิดหน่อย"',
+        th: 'ดร.อาย ชาน บอกว่าแนวปะการังสอนความอดทนให้เธอ เธอบอกนักเรียนว่า "ธรรมชาติเยียวยาตัวเองได้ แต่ต้องให้เวลามัน และช่วยมันนิดหน่อย"',
       },
     ],
   },
@@ -286,7 +286,7 @@ export const storiesBatch3: Story[] = [
     paragraphs: [
       {
         en: 'Mangrove forests grow where the river meets the sea. Their roots rise out of the muddy water like the fingers of a giant hand, creating a sheltered world for fish, crabs, and birds.',
-        my: 'ဒီရေတောတွေက မြစ်နဲ့ပင်လယ် ဆုံတဲ့နေရာမှာ ပေါက်ရောက်တယ်။ သူတို့အမြစ်တွေက ရွှံ့ရေထဲကနေ ဧရာမလက်ကြီးရဲ့လက်ချောင်းတွေလို ထွက်လာပြီး ငါး၊ ဂဏန်းနဲ့ ငှက်တွေအတွက် အကာအကွယ်ရတဲ့ကမ္ဘာတစ်ခု ဖန်တီးပေးတယ်။',
+        my: 'ဒီရေတောတွေက မြစ်နဲ့ပင်လယ် ဆုံတဲ့နေရာမှာ ပေါက်ရောက်တယ်။ သူတို့အမြစ်တွေက ရွှံ့ရေထဲကနေ ဧရာမလက်ရဲ့လက်ချောင်းတွေလို ထွက်လာပြီး ငါး၊ ဂဏန်းနဲ့ ငှက်တွေအတွက် အကာအကွယ်ရတဲ့ကမ္ဘာတစ်ခု ဖန်တီးပေးတယ်။',
         th: 'ป่าชายเลนเติบโตตรงที่แม่น้ำบรรจบกับทะเล รากของมันโผล่จากน้ำโคลนเหมือนนิ้วมือยักษ์ สร้างโลกที่กำบังให้ปลา ปู และนก',
       },
       {
@@ -297,11 +297,11 @@ export const storiesBatch3: Story[] = [
       {
         en: 'Then developers arrived with a plan for shrimp farms. Tree by tree, the mangroves were cut down. At first, some villagers welcomed the new jobs and quick money.',
         my: 'ပြီးတော့ စီးပွားရေးသမားတွေက ပုစွန်မွေးမြူရေးခြံအစီအစဉ်နဲ့ ရောက်လာတယ်။ တစ်ပင်ပြီးတစ်ပင် ဒီရေတောတွေ ခုတ်လှဲခံရတယ်။ အစပိုင်းမှာ ကျေးရွာသားတချို့က အလုပ်သစ်တွေနဲ့ မြန်မြန်ရတဲ့ငွေကို ကြိုဆိုကြတယ်။',
-        th: 'แล้วนักพัฒนาก็มาพร้อมแผนฟาร์มกุ้ง ต้นแล้วต้นเล่า ป่าชายเลนถูกตัด ตอนแรกชาวบ้านบางคนต้อนรับงานใหม่และเงินเร็ว',
+        th: 'แล้วนายทุนก็มาพร้อมแผนฟาร์มกุ้ง ต้นแล้วต้นเล่า ป่าชายเลนถูกตัด ตอนแรกชาวบ้านบางคนต้อนรับงานใหม่และเงินที่หามาได้ง่ายๆ',
       },
       {
         en: 'But within three years, the price became clear. Without the mangroves, storm waves reached the houses directly. The fish catches dropped sharply, and the shrimp farms polluted the water.',
-        my: 'ဒါပေမယ့် သုံးနှစ်အတွင်းမှာ ပေးရတဲ့ဈေးနှုန်း ရှင်းသွားတယ်။ ဒီရေတောမရှိတော့ မုန်တိုင်းလှိုင်းတွေ အိမ်တွေကို တိုက်ရိုက်ရောက်တယ်။ ငါးဖမ်းရတာ သိသိသာသာကျဆင်းပြီး ပုစွန်ခြံတွေက ရေကို ညစ်ညမ်းစေတယ်။',
+        my: 'ဒါပေမယ့် သုံးနှစ်အတွင်းမှာ ပေးဆပ်ရမယ့်အဖိုးအခ ရှင်းသွားတယ်။ ဒီရေတောမရှိတော့ မုန်တိုင်းလှိုင်းတွေ အိမ်တွေကို တိုက်ရိုက်ရောက်တယ်။ ငါးဖမ်းရတာ သိသိသာသာကျဆင်းပြီး ပုစွန်ခြံတွေက ရေကို ညစ်ညမ်းစေတယ်။',
         th: 'แต่ภายในสามปี ราคาที่ต้องจ่ายชัดเจน ไม่มีป่าชายเลน คลื่นพายุซัดถึงบ้านโดยตรง ปลาที่จับได้ลดลงฮวบ และฟาร์มกุ้งทำให้น้ำเสีย',
       },
       {
@@ -326,12 +326,12 @@ export const storiesBatch3: Story[] = [
       {
         en: 'Sara had dreamed of crossing the Sahara since she was a child. At thirty-four, she finally stood at the edge of the great desert with a small team, twelve camels, and enough water for three weeks.',
         my: 'ဆာရာက ကလေးဘဝကတည်းက ဆာဟာရသဲကန္တာရကို ဖြတ်သန်းဖို့ အိပ်မက်မက်ခဲ့တယ်။ အသက်သုံးဆယ့်လေးမှာ သူက အဖွဲ့ငယ်တစ်ဖွဲ့၊ ကုလားအုပ်ဆယ့်နှစ်ကောင်နဲ့ သုံးပတ်စာရေအလုံအလောက်နဲ့ ဒီကြီးမားတဲ့သဲကန္တာရအစွန်းမှာ နောက်ဆုံးမှာ ရပ်နေပြီ။',
-        th: 'ซาราฝันอยากข้ามซาฮารามาตั้งแต่เด็ก ตอนอายุสามสิบสี่ ในที่สุดเธอก็ยืนอยู่ที่ขอบทะเลทรายใหญ่พร้อมทีมเล็ก อูฐสิบสองตัว และน้ำพอสามสัปดาห์',
+        th: 'ซาราฝันอยากข้ามซาฮารามาตั้งแต่เด็ก ตอนอายุสามสิบสี่ ในที่สุดเธอก็ยืนอยู่ที่ขอบทะเลทรายใหญ่พร้อมทีมเล็ก อูฐสิบสองตัว และน้ำที่พอใช้สามสัปดาห์',
       },
       {
         en: 'Their guide, Hassan, had crossed the desert more than forty times. "The desert is honest," he told Sara. "It gives you exactly what you bring to it — respect, or carelessness."',
         my: 'သူတို့လမ်းပြ ဟာဆန်က သဲကန္တာရကို အကြိမ်လေးဆယ်ကျော် ဖြတ်ဖူးတယ်။ "သဲကန္တာရက ရိုးသားတယ်" လို့ သူက ဆာရာကို ပြောတယ်။ "မင်းယူလာတဲ့အတိုင်း အတိအကျ ပြန်ပေးတယ် — လေးစားမှုဖြစ်ဖြစ်၊ ပေါ့ဆမှုဖြစ်ဖြစ်။"',
-        th: 'ผู้นำทางของพวกเขา ฮัสซัน ข้ามทะเลทรายมากว่าสี่สิบครั้ง "ทะเลทรายซื่อสัตย์" เขาบอกซารา "มันให้สิ่งที่คุณนำมา ความเคารพ หรือความประมาท"',
+        th: 'ผู้นำทางของพวกเขา ฮัสซัน ข้ามทะเลทรายมากว่าสี่สิบครั้ง เขาบอกซาราว่า "ทะเลทรายซื่อสัตย์ มันให้สิ่งที่คุณนำมาเท่านั้น ความเคารพ หรือความประมาท"',
       },
       {
         en: 'For the first days, the beauty overwhelmed her: endless golden dunes, skies so clear the stars seemed close enough to touch, and silence deeper than anything she had known.',
@@ -346,7 +346,7 @@ export const storiesBatch3: Story[] = [
       {
         en: 'When the storm passed, they had lost a third of their water. Hassan stayed calm, rationed every drop, and led them to a hidden well his grandfather had shown him decades earlier.',
         my: 'မုန်တိုင်းပြီးသွားတဲ့အခါ သူတို့ရေရဲ့သုံးပုံတစ်ပုံ ဆုံးရှုံးခဲ့တယ်။ ဟာဆန်က စိတ်အေးအေးထားပြီး ရေတစ်စက်ချင်းကို ခွဲဝေကာ ဆယ်စုနှစ်တွေအကြာက သူ့အဖိုးပြသခဲ့တဲ့ လျှို့ဝှက်ရေတွင်းတစ်ခုဆီ သူတို့ကို ခေါ်ဆောင်သွားတယ်။',
-        th: 'พายุผ่านไป พวกเขาสูญน้ำไปหนึ่งในสาม ฮัสซันใจเย็น แบ่งน้ำทุกหยด และนำพวกเขาไปยังบ่อน้ำลับที่คุณปู่เคยชี้ให้ดูเมื่อหลายสิบปีก่อน',
+        th: 'พายุผ่านไป พวกเขาสูญเสียน้ำไปหนึ่งในสาม ฮัสซันใจเย็น แบ่งน้ำทุกหยด และนำพวกเขาไปยังบ่อน้ำลับที่คุณปู่เคยชี้ให้ดูเมื่อหลายสิบปีก่อน',
       },
       {
         en: 'Three weeks later, Sara walked out of the desert changed. She had crossed 1,500 kilometers of sand — and discovered that the hardest journeys teach the simplest lessons: patience, humility, and trust.',
@@ -365,12 +365,12 @@ export const storiesBatch3: Story[] = [
       {
         en: 'When the small hospital in the mountain town received its first robot assistant, the nurses were nervous. The machine, named NARA, was supposed to deliver medicines and check on patients at night.',
         my: 'တောင်ပေါ်မြို့ငယ်က ဆေးရုံသေးသေးလေး သူ့ပထမဆုံး စက်ရုပ်လက်ထောက်ကို လက်ခံရရှိတဲ့အခါ သူနာပြုတွေ စိုးရိမ်ခဲ့ကြတယ်။ နာရာလို့ နာမည်ပေးထားတဲ့စက်က ဆေးတွေပို့ပေးပြီး ညဘက် လူနာတွေကို စစ်ဆေးဖို့ ရည်ရွယ်ထားတာဖြစ်တယ်။',
-        th: 'เมื่อโรงพยาบาลเล็กในเมืองภูเขาได้รับผู้ช่วยหุ่นยนต์ตัวแรก พยาบาลต่างกังวล เครื่องชื่อนารา มีหน้าที่ส่งยาและตรวจคนไข้ตอนกลางคืน',
+        th: 'เมื่อโรงพยาบาลเล็กในเมืองภูเขาได้รับผู้ช่วยหุ่นยนต์ตัวแรก พยาบาลต่างกังวล เครื่องจักรชื่อนารามีหน้าที่ส่งยาและตรวจคนไข้ตอนกลางคืน',
       },
       {
         en: 'NARA was not impressive to look at — just a white box on wheels with a friendly screen face. But it never got tired, never made a mistake with dosages, and never complained about night shifts.',
         my: 'နာရာက ကြည့်ရတာ အထင်ကြီးစရာမဟုတ်ဘူး — ဘီးတပ်အဖြူရောင်သေတ္တာလေးနဲ့ ဖော်ရွေတဲ့မျက်နှာပြင်လေးပဲ။ ဒါပေမယ့် ဘယ်တော့မှ မပင်ပန်းဘူး၊ ဆေးပမာဏနဲ့ပတ်သက်ပြီး ဘယ်တော့မှ မမှားဘူး၊ ညဆိုင်းတွေကိုလည်း ဘယ်တော့မှ မညည်းညူဘူး။',
-        th: 'นาราดูไม่น่าประทับใจ แค่กล่องขาวบนล้อกับใบหน้าจอเป็นมิตร แต่ไม่เคยเหนื่อย ไม่เคยพลาดขนาดยา และไม่เคยบ่นเรื่องกะดึก',
+        th: 'นาราดูไม่น่าประทับใจ แค่กล่องขาวบนล้อกับหน้าจอที่แสดงใบหน้าเป็นมิตร แต่ไม่เคยเหนื่อย ไม่เคยจ่ายยาผิดขนาด และไม่เคยบ่นเรื่องกะดึก',
       },
       {
         en: 'At first, elderly patients were frightened of it. Then one night, NARA sat beside old Mr. Tun, who could not sleep, and played soft traditional music until he closed his eyes.',
@@ -379,18 +379,18 @@ export const storiesBatch3: Story[] = [
       },
       {
         en: 'Word spread quickly. Children in the pediatric ward began racing NARA down the hallways, and the nurses discovered they had more time for the human side of care — listening, comforting, holding hands.',
-        my: 'သတင်းက မြန်မြန်ပျံ့သွားတယ်။ ကလေးလူနာဆောင်က ကလေးတွေက နာရာနဲ့ စင်္ကြန်လမ်းတွေမှာ ပြိုင်ပြေးလာကြပြီး သူနာပြုတွေက ပြုစုစောင့်ရှောက်မှုရဲ့လူသားဘက်ခြမ်း — နားထောင်တာ၊ နှစ်သိမ့်တာ၊ လက်ကိုင်ထားတာ — အတွက် အချိန်ပိုရတယ်ဆိုတာ တွေ့ရှိခဲ့ကြတယ်။',
-        th: 'ข่าวแพร่เร็ว เด็กๆ ในหอผู้ป่วยเด็กเริ่มแข่งวิ่งกับนาราตามทางเดิน และพยาบาลพบว่ามีเวลามากขึ้นสำหรับด้านมนุษย์ของการดูแล การฟัง การปลอบ การจับมือ',
+        my: 'သတင်းက မြန်မြန်ပျံ့သွားတယ်။ ကလေးလူနာဆောင်က ကလေးတွေက နာရာနဲ့ စင်္ကြန်လမ်းတွေမှာ ပြိုင်ပြေးခဲ့ကြပြီး သူနာပြုတွေက ပြုစုစောင့်ရှောက်မှုရဲ့လူသားဘက်ခြမ်း — နားထောင်တာ၊ နှစ်သိမ့်တာ၊ လက်ကိုင်ထားတာ — အတွက် အချိန်ပိုရတယ်ဆိုတာ တွေ့ရှိခဲ့ကြတယ်။',
+        th: 'ข่าวแพร่เร็ว เด็กๆ ในหอผู้ป่วยเด็กเริ่มแข่งวิ่งกับนาราตามทางเดิน และพยาบาลพบว่ามีเวลามากขึ้นสำหรับการดูแลในแบบมนุษย์ — การฟัง การปลอบโยน การจับมือ',
       },
       {
-        en: 'The hospital director admits the robot was expensive. But patient satisfaction rose sharply, and for the first time in years, no nurse resigned because of exhaustion.',
+        en: 'The hospital director admitted the robot was expensive. But patient satisfaction rose sharply, and for the first time in years, no nurse resigned because of exhaustion.',
         my: 'ဆေးရုံအုပ်ချုပ်ရေးမှူးက စက်ရုပ်က ဈေးကြီးတယ်လို့ ဝန်ခံတယ်။ ဒါပေမယ့် လူနာကျေနပ်မှု သိသိသာသာမြင့်တက်လာပြီး နှစ်ပေါင်းများစွာအတွင်း ပထမဆုံးအကြိမ်အဖြစ် ပင်ပန်းမှုကြောင့် သူနာပြုဘယ်သူမှ အလုပ်မထွက်တော့ဘူး။',
         th: 'ผู้อำนวยการโรงพยาบาลยอมรับว่าหุ่นยนต์แพง แต่ความพึงพอใจคนไข้พุ่งสูง และเป็นครั้งแรกในรอบหลายปีที่ไม่มีพยาบาลลาออกเพราะหมดแรง',
       },
       {
         en: 'NARA will never replace a nurse\'s warm hands. But in that small mountain hospital, it proved something important: technology works best when it gives humans more time to be human.',
         my: 'နာရာက သူနာပြုရဲ့နွေးထွေးတဲ့လက်တွေကို ဘယ်တော့မှ အစားထိုးနိုင်မှာ မဟုတ်ဘူး။ ဒါပေမယ့် အဲဒီတောင်ပေါ်ဆေးရုံသေးသေးလေးမှာ အရေးကြီးတဲ့အရာ သက်သေပြခဲ့တယ် — နည်းပညာက လူသားတွေကို လူသားဆန်ဖို့ အချိန်ပိုပေးတဲ့အခါ အကောင်းဆုံးအလုပ်လုပ်တယ်။',
-        th: 'นาราจะไม่มีวันแทนมืออันอบอุ่นของพยาบาลได้ แต่ในโรงพยาบาลภูเขาเล็กๆ นั้น มันพิสูจน์สิ่งสำคัญ เทคโนโลยีทำงานดีที่สุดเมื่อให้มนุษย์มีเวลามากขึ้นที่จะเป็นมนุษย์',
+        th: 'นาราจะไม่มีวันแทนมืออันอบอุ่นของพยาบาลได้ แต่ในโรงพยาบาลภูเขาเล็กๆ นั้น มันพิสูจน์สิ่งสำคัญ เทคโนโลยีทำงานได้ดีที่สุดเมื่อมันมอบเวลามากขึ้นให้มนุษย์ได้เป็นมนุษย์',
       },
     ],
   },
@@ -408,13 +408,13 @@ export const storiesBatch3: Story[] = [
       },
       {
         en: 'Passersby often stop to watch. His paintings show the street in all its moods: flooded during monsoon, golden at sunset, quiet and silver under festival lights.',
-        my: 'ဖြတ်သန်းသူတွေ မကြာခဏ ရပ်ကြည့်ကြတယ်။ သူ့ပန်းချီတွေက လမ်းကို သူ့စိတ်ခံစားမှုအမျိုးမျိုးနဲ့ ပြတယ် — မိုးရာသီမှာ ရေကြီးတာ၊ နေဝင်ချိန်မှာ ရွှေရောင်တောက်တာ၊ ပွဲတော်မီးရောင်အောက်မှာ တိတ်ဆိတ်ငွေရောင်သန်းတာ။',
-        th: 'คนผ่านไปมามักหยุดดู ภาพของเขาแสดงถนนในทุกอารมณ์ น้ำท่วมฤดูมรสุม ทองยามพระอาทิตย์ตก เงียบและเงินยามแสงไฟเทศกาล',
+        my: 'ဖြတ်သန်းသူတွေ မကြာခဏ ရပ်ကြည့်ကြတယ်။ သူ့ပန်းချီတွေက လမ်းရဲ့ အခြေအနေအမျိုးမျိုးကို ပြတယ် — မိုးရာသီမှာ ရေကြီးတာ၊ နေဝင်ချိန်မှာ ရွှေရောင်တောက်တာ၊ ပွဲတော်မီးရောင်အောက်မှာ တိတ်ဆိတ်ငွေရောင်သန်းတာ။',
+        th: 'คนผ่านไปมามักหยุดดู ภาพของเขาแสดงถนนในทุกอารมณ์ น้ำท่วมในฤดูมรสุม เป็นสีทองยามพระอาทิตย์ตก เงียบสงัดและเป็นสีเงินยามแสงไฟเทศกาล',
       },
       {
         en: 'When a gallery owner offered him an exhibition, U Myint refused politely. "My paintings belong to this corner," he said. "Here, everyone can see them for free."',
         my: 'ပြခန်းပိုင်ရှင်တစ်ဦး ပြပွဲလုပ်ဖို့ ကမ်းလှမ်းတဲ့အခါ ဦးမြင့်က ယဉ်ကျေးစွာ ငြင်းခဲ့တယ်။ "ကျွန်တော့်ပန်းချီတွေက ဒီထောင့်နဲ့ဆိုင်တယ်" လို့ သူပြောတယ်။ "ဒီမှာ လူတိုင်း အခမဲ့ ကြည့်နိုင်တယ်။"',
-        th: 'เมื่อเจ้าของแกลเลอรีเสนอจัดนิทรรศการ อูมินต์ปฏิเสธสุภาพ "ภาพของผมเป็นของมุมนี้" เขาพูด "ที่นี่ทุกคนดูได้ฟรี"',
+        th: 'เมื่อเจ้าของแกลเลอรีเสนอจัดนิทรรศการ อูมินต์ปฏิเสธอย่างสุภาพว่า "ภาพของผมเป็นของมุมนี้ ที่นี่ทุกคนดูได้ฟรี"',
       },
       {
         en: 'Shopkeepers bring him tea. Children sit beside him and draw their own versions of the street. On rainy days, someone always holds an umbrella over his canvas.',
@@ -424,7 +424,7 @@ export const storiesBatch3: Story[] = [
       {
         en: 'Art critics from the capital once called his work "naive." U Myint smiled when he heard this. "Perhaps," he said. "But twenty years of evenings is a kind of honesty no school can teach."',
         my: 'မြို့တော်က အနုပညာဝေဖန်သူတွေက သူ့အလုပ်ကို "ရိုးအီ" လို့ တစ်ခါက ခေါ်ခဲ့တယ်။ ဦးမြင့်က ဒါကြားတဲ့အခါ ပြုံးတယ်။ "ဖြစ်ကောင်းဖြစ်မယ်" လို့ သူပြောတယ်။ "ဒါပေမယ့် ညနေပေါင်း နှစ်နှစ်ဆယ်ဆိုတာ ဘယ်ကျောင်းမှ သင်မပေးနိုင်တဲ့ ရိုးသားမှုတစ်မျိုးပဲ။"',
-        th: 'นักวิจารณ์ศิลปะจากเมืองหลวงเคยเรียกงานของเขาว่า "ไร้เดียงสา" อูมินต์ยิ้มเมื่อได้ยิน "อาจจะ" เขาพูด "แต่ยามเย็นยี่สิบปีคือความซื่อสัตย์แบบที่ไม่มีโรงเรียนไหนสอนได้"',
+        th: 'นักวิจารณ์ศิลปะจากเมืองหลวงเคยเรียกงานของเขาว่า "ไร้เดียงสา" อูมินต์ยิ้มเมื่อได้ยิน เขาพูดว่า "อาจจะ แต่ยามเย็นตลอดยี่สิบปีคือความซื่อสัตย์แบบที่โรงเรียนไหนก็สอนไม่ได้"',
       },
       {
         en: 'Last year, the city tried to move him for a new shopping mall. Three hundred people signed a petition in one day. U Myint still paints on his corner — and the mall was built somewhere else.',
@@ -443,27 +443,27 @@ export const storiesBatch3: Story[] = [
       {
         en: 'At 5 a.m., the research vessel dropped a small yellow submarine into the black water of the Pacific. Inside were two scientists and enough air for twelve hours — their destination was 4,000 meters below.',
         my: 'မနက် ၅ နာရီမှာ သုတေသနသင်္ဘောက အဝါရောင်ရေငုပ်သင်္ဘောသေးသေးလေးကို ပစိဖိတ်သမုဒ္ဒရာရဲ့မှောင်မိုက်တဲ့ရေထဲ ချခဲ့တယ်။ အတွင်းမှာ သိပ္ပံပညာရှင်နှစ်ဦးနဲ့ ဆယ့်နှစ်နာရီစာ လေအလုံအလောက်ရှိတယ် — သူတို့သွားမယ့်နေရာက အောက် မီတာ ၄,၀၀၀ ဖြစ်တယ်။',
-        th: 'ตีห้า เรือวิจัยหย่อนเรือดำน้ำสีเหลืองเล็กลงน้ำดำของแปซิฟิก ข้างในมีนักวิทยาศาสตร์สองคนและอากาศพอสิบสองชั่วโมง ปลายทางอยู่ลึก 4,000 เมตร',
+        th: 'ตีห้า เรือวิจัยหย่อนเรือดำน้ำสีเหลืองเล็กลงน้ำดำของแปซิฟิก ข้างในมีนักวิทยาศาสตร์สองคนและอากาศที่เพียงพอสำหรับสิบสองชั่วโมง ปลายทางอยู่ลึก 4,000 เมตร',
       },
       {
         en: 'As they sank, the light faded quickly. By 1,000 meters, the last blue glow had vanished. The pilot switched on the floodlights, revealing a world of drifting particles like snow in a storm.',
         my: 'သူတို့ နစ်သွားတဲ့အခါ အလင်းက မြန်မြန်မှိန်သွားတယ်။ မီတာ ၁,၀၀၀ ရောက်တဲ့အခါ နောက်ဆုံးအပြာရောင်အလင်းတောင် ပျောက်ကွယ်သွားတယ်။ ပိုင်းလော့က မီးကြီးတွေဖွင့်လိုက်တဲ့အခါ မုန်တိုင်းထဲက နှင်းလိုမျောနေတဲ့ အမှုန်လေးတွေရဲ့ကမ္ဘာတစ်ခု ပေါ်လာတယ်။',
-        th: 'ขณะจมลง แสงจางเร็ว ที่ 1,000 เมตร แสงฟ้าสุดท้ายหายไป นักบินเปิดไฟสปอตไลต์ เผยโลกของอนุภาคลอยเหมือนหิมะในพายุ',
+        th: 'ขณะจมลง แสงจางเร็ว ที่ 1,000 เมตร แสงสีฟ้าสุดท้ายหายไป นักบินเปิดไฟสปอตไลต์ เผยโลกของอนุภาคลอยเหมือนหิมะในพายุ',
       },
       {
         en: 'Their mission was to study hydrothermal vents — cracks in the ocean floor where superheated water erupts. Around these vents, entire communities of strange creatures survive without any sunlight at all.',
         my: 'သူတို့မစ်ရှင်က ဟိုက်ဒရိုသာမယ်ဗင့်တွေ — ပင်လယ်ကြမ်းပြင်က အလွန်ပူတဲ့ရေ ထွက်လာတဲ့ အက်ကြောင်းတွေ — ကို လေ့လာဖို့ဖြစ်တယ်။ ဒီဗင့်တွေပတ်လည်မှာ ထူးဆန်းတဲ့သတ္တဝါတွေရဲ့ အသိုင်းအဝိုင်းတစ်ခုလုံး နေရောင်လုံးဝမရှိဘဲ ရှင်သန်နေတယ်။',
-        th: 'ภารกิจของพวกเขาคือศึกษาช่องน้ำร้อน รอยแตกบนพื้นมหาสมุทรที่น้ำร้อนจัดพุ่งออกมา รอบช่องเหล่านี้ ชุมชนสัตว์แปลกประหลาดทั้งชุมชนอยู่รอดได้โดยไม่มีแสงอาทิตย์เลย',
+        th: 'ภารกิจของพวกเขาคือศึกษาปล่องน้ำร้อนใต้ทะเล รอยแตกบนพื้นมหาสมุทรที่น้ำร้อนจัดพุ่งออกมา รอบปล่องเหล่านี้ สัตว์แปลกประหลาดทั้งชุมชนอยู่รอดได้โดยไม่มีแสงอาทิตย์เลย',
       },
       {
         en: 'The scientists watched giant tube worms, white crabs, and fish with transparent heads. Every species here was unknown to science until a few decades ago — this ecosystem runs on chemistry, not sunshine.',
         my: 'သိပ္ပံပညာရှင်တွေက ဧရာမပြွန်ပိုးကောင်တွေ၊ အဖြူရောင်ဂဏန်းတွေနဲ့ ဦးခေါင်းအကြည်ရောင်ငါးတွေကို ကြည့်နေခဲ့တယ်။ ဒီက မျိုးစိတ်တိုင်းက လွန်ခဲ့တဲ့ ဆယ်စုနှစ်အနည်းငယ်အထိ သိပ္ပံပညာအတွက် မသိသေးဘူး — ဒီဂေဟစနစ်က နေရောင်ခြည်ပေါ်မဟုတ်ဘဲ ဓာတုဗေဒပေါ်မှာ လည်ပတ်နေတယ်။',
-        th: 'นักวิทยาศาสตร์ดูหนอนท่อยักษ์ ปูขาว และปลาหัวใส ทุกสายพันธุ์ที่นี่วิทยาศาสตร์ไม่รู้จักจนไม่กี่สิบปีก่อน ระบบนิเวศนี้ขับเคลื่อนด้วยเคมี ไม่ใช่แสงแดด',
+        th: 'นักวิทยาศาสตร์ดูหนอนท่อยักษ์ ปูขาว และปลาหัวใส ทุกสายพันธุ์ที่นี่วิทยาศาสตร์เพิ่งรู้จักเมื่อไม่กี่สิบปีก่อน ระบบนิเวศนี้ขับเคลื่อนด้วยพลังงานเคมี ไม่ใช่แสงอาทิตย์',
       },
       {
         en: 'Suddenly, an alarm sounded: a thruster had failed. The pilot stayed calm, restarted the system, and guided the submarine away from the vent field with only minutes of safety margin.',
-        my: 'ရုတ်တရက် သတိပေးသံမြည်လာတယ် — တွန်းအားပေးစက်တစ်ခု ပျက်သွားတယ်။ ပိုင်းလော့က စိတ်အေးအေးထားပြီး စနစ်ကို ပြန်စတင်ကာ ဘေးကင်းလုံခြုံမှု မိနစ်အနည်းငယ်သာ ကျန်ချိန်မှာ ရေငုပ်သင်္ဘောကို ဗင့်ကွင်းကနေ ဝေးရာကို ဦးတည်ခဲ့တယ်။',
-        th: 'ทันใดนั้นสัญญาณเตือนดัง เครื่องขับดันเสีย นักบินใจเย็น รีสตาร์ทระบบ และนำเรือดำน้ำออกจากทุ่งช่องน้ำโดยมีเวลาปลอดภัยเหลือแค่ไม่กี่นาที',
+        my: 'ရုတ်တရက် သတိပေးသံမြည်လာတယ် — တွန်းအားပေးစက်တစ်ခု ပျက်သွားတယ်။ ပိုင်းလော့က စိတ်အေးအေးထားပြီး စနစ်ကို ပြန်စတင်ကာ လုံခြုံရေးအနားသတ် မိနစ်အနည်းငယ်သာ ကျန်တော့ချိန်မှာ ရေငုပ်သင်္ဘောကို ဗင့်ကွင်းကနေ ဝေးရာကို ဦးတည်ခဲ့တယ်။',
+        th: 'ทันใดนั้นสัญญาณเตือนดัง เครื่องผลักดัน (ทรัสเตอร์) เสีย นักบินใจเย็น รีสตาร์ทระบบ และนำเรือดำน้ำออกจากบริเวณปล่องน้ำร้อนโดยมีเวลาปลอดภัยเหลือเพียงไม่กี่นาที',
       },
       {
         en: 'Back on the surface, the team celebrated quietly. They had collected samples that might contain new medicines — proof that the deepest, darkest places on Earth still hold secrets worth finding.',
@@ -480,9 +480,9 @@ export const storiesBatch3: Story[] = [
     titleTh: 'แผนที่จีโนม',
     paragraphs: [
       {
-        en: 'Inside every cell of your body lies a instruction book written in a four-letter alphabet. It is called the genome, and it contains about three billion letters — enough to fill two hundred phone books.',
+        en: 'Inside every cell of your body lies an instruction book written in a four-letter alphabet. It is called the genome, and it contains about three billion letters — enough to fill two hundred phone books.',
         my: 'သင့်ခန္ဓာကိုယ်ရဲ့ဆဲလ်တိုင်းအတွင်းမှာ အက္ခရာလေးလုံးနဲ့ ရေးထားတဲ့ ညွှန်ကြားချက်စာအုပ်တစ်အုပ် ရှိတယ်။ ဒါကို ဂျီနိုးမ်လို့ ခေါ်ပြီး အက္ခရာသုံးဘီလီယံခန့် ပါဝင်တယ် — ဖုန်းလမ်းညွှန်စာအုပ် အအုပ်နှစ်ရာစာ လောက်ရှိတယ်။',
-        th: 'ในทุกเซลล์ของร่างกายมีหนังสือคำสั่งเขียนด้วยอักษรสี่ตัว เรียกว่าจีโนม มีตัวอักษรประมาณสามพันล้านตัว พอเติมสมุดโทรศัพท์สองร้อยเล่ม',
+        th: 'ในทุกเซลล์ของร่างกายมีหนังสือคำสั่งเขียนด้วยอักษรสี่ตัว เรียกว่าจีโนม มีตัวอักษรประมาณสามพันล้านตัว มากพอจะบรรจุลงสมุดโทรศัพท์ได้สองร้อยเล่ม',
       },
       {
         en: 'In 1990, scientists from six countries began the Human Genome Project: an attempt to read the entire book for the first time. Many experts said it would take a century. It took thirteen years.',
@@ -521,27 +521,27 @@ export const storiesBatch3: Story[] = [
       {
         en: 'High in the Himalayas, the Khumbu Glacier has been retreating for decades. Where old photographs show a wall of ice, there is now only grey rock and a growing lake of meltwater.',
         my: 'ဟိမဝန္တာတောင်တန်းမြင့်မှာ ခုမ်ဘူရေခဲမြစ်က ဆယ်စုနှစ်ပေါင်းများစွာ ဆုတ်ယုတ်နေတယ်။ ဓာတ်ပုံဟောင်းတွေမှာ ရေခဲနံရံပြထားတဲ့နေရာမှာ အခု မီးခိုးရောင်ကျောက်ဆောင်နဲ့ ကြီးထွားလာတဲ့အရည်ပျော်ရေကန်သာ ရှိတယ်။',
-        th: 'สูงในหิมาลัย ธารน้ำแข็งคุมบูถอยร่นมาหลายทศวรรษ ตรงที่ภาพเก่าแสดงกำแพงน้ำแข็ง ตอนนี้มีแต่หินสีเทาและทะเลสาบน้ำละลายที่โตขึ้น',
+        th: 'สูงในหิมาลัย ธารน้ำแข็งคุมบูถอยร่นมาหลายทศวรรษ ตรงที่ภาพเก่าแสดงกำแพงน้ำแข็ง ตอนนี้มีแต่หินสีเทาและทะเลสาบน้ำละลายที่กำลังขยายใหญ่ขึ้น',
       },
       {
         en: 'Glaciologist Dr. Pasang Sherpa visits the same measurement points every year. "The glacier is losing several meters of thickness annually," he says. "At this rate, my grandchildren may never see it."',
         my: 'ရေခဲမြစ်ပညာရှင် ဒေါက်တာ ပဆန်းရှယ်ပါဟာ တိုင်းတာမှုမှတ်တိုင်းကို နှစ်တိုင်း သွားရောက်တယ်။ "ရေခဲမြစ်က နှစ်တိုင်း အထူ မီတာအတော်များများ ဆုံးရှုံးနေတယ်" လို့ သူပြောတယ်။ "ဒီနှုန်းအတိုင်းဆို ကျွန်တော့်မြေးတွေက ဒါကို ဘယ်တော့မှ မြင်ရမှာ မဟုတ်ဘူး။"',
-        th: 'นักธารน้ำแข็งวิทยา ดร.ปาซัง เชอร์ปา ไปจุดวัดเดิมทุกปี "ธารน้ำแข็งสูญความหนาหลายเมตรต่อปี" เขาพูด "ในอัตรานี้ หลานของผมอาจไม่เคยเห็นมัน"',
+        th: 'นักธารน้ำแข็งวิทยา ดร.ปาซัง เชอร์ปา ไปจุดวัดเดิมทุกปี เขากล่าวว่า "ธารน้ำแข็งสูญเสียความหนาปีละหลายเมตร ในอัตรานี้ หลานของผมอาจไม่เคยเห็นมันเลย"',
       },
       {
         en: 'The melting affects far more than mountain views. Nearly two billion people in Asia depend on rivers fed by Himalayan glaciers for drinking water, farming, and electricity.',
-        my: 'အရည်ပျော်မှုက တောင်ရှုခင်းတွေထက် အများကြီး ပိုသက်ရောက်တယ်။ အာရှမှာ လူနှစ်ဘီလီယံနီးပါးက သောက်ရေ၊ လယ်ယာနဲ့ လျှပ်စစ်အတွက် ဟိမဝန္တာရေခဲမြစ်တွေက အားပေးတဲ့မြစ်တွေပေါ်မှာ မှီခိုနေတယ်။',
+        my: 'အရည်ပျော်မှုက တောင်ရှုခင်းတွေထက် အများကြီး ပိုသက်ရောက်တယ်။ အာရှမှာ လူနှစ်ဘီလီယံနီးပါးက သောက်ရေ၊ လယ်ယာနဲ့ လျှပ်စစ်အတွက် ဟိမဝန္တာရေခဲမြစ်တွေကနေ ရေရရှိတဲ့မြစ်တွေပေါ်မှာ မှီခိုနေတယ်။',
         th: 'การละลายส่งผลไกลกว่าทิวทัศน์ภูเขา คนเกือบสองพันล้านในเอเชียพึ่งแม่น้ำที่ธารน้ำแข็งหิมาลัยหล่อเลี้ยง เพื่อน้ำดื่ม การเกษตร และไฟฟ้า',
       },
       {
         en: 'In the village below, farmers have noticed the change. Springs that once flowed all year now run dry in winter, and sudden floods from glacial lakes have destroyed fields twice in ten years.',
-        my: 'အောက်ဘက်ကျေးရွာမှာ လယ်သမားတွေ ပြောင်းလဲမှုကို သတိထားမိကြတယ်။ တစ်နှစ်လုံး စီးဆင်းခဲ့တဲ့ စမ်းရေတွေက အခု ဆောင်းရာသီမှာ ခန်းခြောက်ပြီး ရေခဲကန်တွေက ရုတ်တရက်ရေကြီးမှုတွေက ဆယ်နှစ်အတွင်း လယ်ကွက်တွေ နှစ်ကြိမ် ဖျက်ဆီးခဲ့တယ်။',
-        th: 'ในหมู่บ้านด้านล่าง ชาวนาสังเกตเห็นการเปลี่ยน น้ำพุที่เคยไหลทั้งปีตอนนี้แห้งในฤดูหนาว และน้ำท่วมฉับพลันจากทะเลสาบธารน้ำแข็งทำลายไร่นาสองครั้งในสิบปี',
+        my: 'အောက်ဘက်ကျေးရွာမှာ လယ်သမားတွေ ပြောင်းလဲမှုကို သတိထားမိကြတယ်။ တစ်နှစ်လုံး စီးဆင်းခဲ့တဲ့ စမ်းရေတွေက အခု ဆောင်းရာသီမှာ ခန်းခြောက်ပြီး ရေခဲကန်တွေက ရုတ်တရက် ရေကြီးမှုတွေက ဆယ်နှစ်အတွင်း လယ်ကွက်တွေ နှစ်ကြိမ် ဖျက်ဆီးခဲ့တယ်။',
+        th: 'ในหมู่บ้านด้านล่าง ชาวนาสังเกตเห็นการเปลี่ยนแปลง น้ำพุที่เคยไหลทั้งปีตอนนี้แห้งในฤดูหนาว และน้ำท่วมฉับพลันจากทะเลสาบธารน้ำแข็งทำลายไร่นาสองครั้งในสิบปี',
       },
       {
         en: 'The villagers are adapting: they build small dams to store monsoon rain, plant hardier crops, and share water through new community rules. "We cannot stop the glacier from melting," says the village head, "but we can learn to live with less water."',
         my: 'ကျေးရွာသားတွေ လိုက်လျောညီထွေဖြစ်အောင် လုပ်နေကြတယ် — မိုးရာသီမိုးရေသိုလှောင်ဖို့ ဆည်သေးသေးလေးတွေ ဆောက်တယ်၊ ခံနိုင်ရည်ရှိတဲ့သီးနှံတွေ စိုက်တယ်၊ အသိုင်းအဝိုင်းစည်းမျဉ်းအသစ်တွေနဲ့ ရေကို မျှဝေတယ်။ "ရေခဲမြစ်အရည်ပျော်တာကို ကျွန်တော်တို့ ရပ်တန့်နိုင်မှာ မဟုတ်ဘူး" လို့ ရွာဥက္ကဋ္ဌက ပြောတယ်၊ "ဒါပေမယ့် ရေနည်းနည်းနဲ့ နေတတ်ဖို့ သင်ယူနိုင်တယ်။"',
-        th: 'ชาวบ้านปรับตัว สร้างเขื่อนเล็กเก็บน้ำฝนมรสุม ปลูกพืชทนทานขึ้น และแบ่งน้ำด้วยกติกาชุมชนใหม่ "เราหยุดธารน้ำแข็งละลายไม่ได้" ผู้ใหญ่บ้านพูด "แต่เราเรียนรู้น้อยน้ำได้"',
+        th: 'ชาวบ้านปรับตัว สร้างเขื่อนเล็กเก็บน้ำฝนมรสุม ปลูกพืชทนทานขึ้น และแบ่งน้ำด้วยกติกาชุมชนใหม่ ผู้ใหญ่บ้านกล่าวว่า "เราหยุดธารน้ำแข็งละลายไม่ได้ แต่เราสามารถเรียนรู้ที่จะอยู่กับน้ำที่น้อยลงได้"',
       },
       {
         en: 'Scientists say the glacier\'s story is a warning written in ice. What happens in these remote mountains will eventually reach every city downstream — connected, as always, by water.',
@@ -575,7 +575,7 @@ export const storiesBatch3: Story[] = [
       {
         en: 'As dawn breaks, the crater appears: a smoking hole nearly a kilometer wide. The smell of sulfur fills the air, and the ground trembles softly under their boots.',
         my: 'အရုဏ်တက်လာတဲ့အခါ မီးတောင်ဝပေါ်လာတယ် — အကျယ် ကီလိုမီတာနီးပါးရှိတဲ့ မီးခိုးထွက်နေတဲ့အပေါက်ကြီးဖြစ်တယ်။ ဆာလဖာအနံ့က လေထုကို ပြည့်စေပြီး မြေကြီးက သူတို့ဖိနပ်အောက်မှာ ညင်ညင်သာသာ တုန်ခါနေတယ်။',
-        th: 'เมื่อรุ่งสาง ปากปล่องปรากฏ หลุมควันกว้างเกือบกิโลเมตร กลิ่นกำมะถันเต็มหายใจ และพื้นสั่นเบาๆ ใต้รองเท้าบูต',
+        th: 'เมื่อรุ่งสาง ปากปล่องปรากฏ หลุมควันกว้างเกือบกิโลเมตร กลิ่นกำมะถันเต็มอากาศ และพื้นสั่นเบาๆ ใต้รองเท้าบูต',
       },
       {
         en: 'Standing at the rim, climbers feel wonderfully small. Below them, the earth is alive and restless — a reminder that the ground we trust is only a thin skin over fire.',
@@ -585,7 +585,7 @@ export const storiesBatch3: Story[] = [
       {
         en: 'Wayan smiles at the sunrise crowd. "The volcano does not care about your photographs," he says. "But if you listen, it will teach you respect."',
         my: 'ဝါယန်က နေထွက်တာကြည့်တဲ့လူအုပ်ကို ပြုံးပြတယ်။ "မီးတောင်က မင်းတို့ဓာတ်ပုံတွေကို ဂရုမစိုက်ဘူး" လို့ သူပြောတယ်။ "ဒါပေမယ့် နားထောင်ရင် လေးစားမှုကို သင်ပေးလိမ့်မယ်။"',
-        th: 'วายันยิ้มให้ฝูงชนดูพระอาทิตย์ขึ้น "ภูเขาไฟไม่สนภาพถ่ายของคุณ" เขาพูด "แต่ถ้าคุณฟัง มันจะสอนความเคารพ"',
+        th: 'วายันยิ้มให้ฝูงชนที่มาดูพระอาทิตย์ขึ้น เขาพูดว่า "ภูเขาไฟไม่สนใจภาพถ่ายของคุณ แต่ถ้าคุณตั้งใจฟัง มันจะสอนให้คุณรู้จักความเคารพ"',
       },
     ],
   },
@@ -599,12 +599,12 @@ export const storiesBatch3: Story[] = [
       {
         en: 'In 1854, a wealthy Englishwoman named Florence Nightingale did something shocking: she traveled to a war zone with 38 nurses to care for wounded soldiers.',
         my: '၁၈၅၄ ခုနှစ်မှာ ဖလော်ရန့်စ် နိုင်တင်ဂေးလ်ဆိုတဲ့ ချမ်းသာတဲ့အင်္ဂလိပ်အမျိုးသမီးတစ်ဦး တုန်လှုပ်ဖွယ်အရာ လုပ်ခဲ့တယ် — ဒဏ်ရာရစစ်သားတွေကို ပြုစုဖို့ သူနာပြု ၃၈ ယောက်နဲ့ စစ်ဇုန်ကို သွားခဲ့တယ်။',
-        th: 'ในปี 1854 หญิงอังกฤษผู้มั่งคั่งชื่อฟลอเรนซ์ ไนติงเกล ทำสิ่งช็อก เธอเดินทางไปเขตสงครามพร้อมพยาบาล 38 คนเพื่อดูแลทหารบาดเจ็บ',
+        th: 'ในปี 1854 หญิงอังกฤษผู้มั่งคั่งชื่อฟลอเรนซ์ ไนติงเกล ทำสิ่งที่น่าตกใจ เธอเดินทางไปเขตสงครามพร้อมพยาบาล 38 คนเพื่อดูแลทหารบาดเจ็บ',
       },
       {
         en: 'The military hospital she found was a nightmare. Wounded men lay on dirty floors, rats ran across the wards, and more soldiers died from infections than from battle wounds.',
         my: 'သူတွေ့ခဲ့တဲ့ စစ်ဆေးရုံက အိပ်မက်ဆိုးတစ်ခုဖြစ်တယ်။ ဒဏ်ရာရသူတွေ ညစ်ပတ်တဲ့ကြမ်းပြင်တွေပေါ်မှာ လှဲနေတယ်၊ ကြွက်တွေက လူနာဆောင်တွေဖြတ်ပြေးတယ်၊ တိုက်ပွဲဒဏ်ရာတွေထက် ကူးစက်ရောဂါတွေကြောင့် သေတဲ့စစ်သားက ပိုများတယ်။',
-        th: 'โรงพยาบาลทหารที่เธอพบคือนรก ทหารบาดเจ็บนอนบนพื้นสกปรก หนูวิ่งข้ามหอผู้ป่วย และทหารตายจากการติดเชื้อมากกว่าบาดแผลรบ',
+        th: 'โรงพยาบาลทหารที่เธอพบคือนรก ทหารบาดเจ็บนอนบนพื้นสกปรก หนูวิ่งข้ามหอผู้ป่วย และทหารตายจากการติดเชื้อมากกว่าบาดแผลจากการรบ',
       },
       {
         en: 'Florence began with the simplest weapons: soap, clean water, and fresh air. She scrubbed the hospital from floor to ceiling and insisted that every wound be washed and bandaged properly.',
@@ -653,7 +653,7 @@ export const storiesBatch3: Story[] = [
       {
         en: 'In 1824, he premiered his Ninth Symphony — the first symphony in history to include a full choir. The famous "Ode to Joy" was written by a man who had not heard applause in years.',
         my: '၁၈၂၄ ခုနှစ်မှာ သူ့ရဲ့နဝမမြောက်ဆင်ဖနီကို ပထမဆုံး တင်ဆက်ခဲ့တယ် — သမိုင်းမှာ သံပြိုင်အဖွဲ့အပြည့်ပါတဲ့ ပထမဆုံးဆင်ဖနီဖြစ်တယ်။ ကျော်ကြားတဲ့ "ဝမ်းမြောက်ခြင်းသီချင်း" ကို နှစ်ပေါင်းများစွာ လက်ခုပ်သံ မကြားရတဲ့လူတစ်ဦးက ရေးခဲ့တာဖြစ်တယ်။',
-        th: 'ในปี 1824 เขาเปิดตัวซิมโฟนีหมายเลขเก้า ซิมโฟนีแรกในประวัติศาสตร์ที่มีคณะนักร้องประสานเสียงเต็ม "เพลงสรรเสริญความสุข" อันโด่งดังเขียนโดยชายที่ไม่ได้ยินเสียงปรบมือมาหลายปี',
+        th: 'ในปี 1824 เขาเปิดตัวซิมโฟนีหมายเลขเก้า ซิมโฟนีแรกในประวัติศาสตร์ที่มีคณะนักร้องประสานเสียงเต็มคณะ "เพลงสรรเสริญความสุข" อันโด่งดังเขียนโดยชายที่ไม่ได้ยินเสียงปรบมือมาหลายปี',
       },
       {
         en: 'At the end of the performance, the audience erupted in cheers — but Beethoven, facing the orchestra, did not hear them. A singer gently turned him around to see the applause.',
@@ -662,7 +662,7 @@ export const storiesBatch3: Story[] = [
       },
       {
         en: 'Beethoven once wrote that his deafness nearly drove him to despair — but that his art would not let him leave the world. His silence gave the world some of its loudest, most joyful sounds.',
-        my: 'ဘီသိုဗင်က သူ့နားမကြားခြင်းက သူ့ကို စိတ်ပျက်အားငယ်မှုဆီ တွန်းပို့လုနီးပါးဖြစ်ခဲ့တယ်လို့ တစ်ခါက ရေးခဲ့တယ် — ဒါပေမယ့် သူ့အနုပညာက သူ့ကို ကမ္ဘာကနေ ထွက်ခွာခွင့် မပေးခဲ့ဘူး။ သူ့ရဲ့တိတ်ဆိတ်မှုက ကမ္ဘာကို သူ့ရဲ့အကျယ်ဆုံး၊ အပျော်ရွှင်ဆုံးအသံတွေ ပေးခဲ့တယ်။',
+        my: 'ဘီသိုဗင်က သူ့နားမကြားခြင်းက သူ့ကို စိတ်ပျက်အားငယ်မှုဆီ တွန်းပို့လုနီးပါးဖြစ်ခဲ့တယ်လို့ တစ်ခါက ရေးခဲ့တယ် — ဒါပေမယ့် သူ့အနုပညာက သူ့ကို ကမ္ဘာကနေ ထွက်ခွာခွင့် မပေးခဲ့ဘူး။ သူ့ရဲ့တိတ်ဆိတ်မှုက ကမ္ဘာကို ကမ္ဘာရဲ့အကျယ်ဆုံး၊ အပျော်ရွှင်ဆုံးအသံတွေ ပေးခဲ့တယ်။',
         th: 'เบโธเฟนเคยเขียนว่าหูหนวกเกือบผลักเขาให้สิ้นหวัง แต่ศิลปะของเขาไม่ยอมให้เขาจากโลกไป ความเงียบของเขามอบเสียงที่ดังและสุขที่สุดบางเสียงให้โลก',
       },
     ],
@@ -691,18 +691,18 @@ export const storiesBatch3: Story[] = [
       },
       {
         en: 'Day 201. Today I walked to the edge of the canyon — a cliff three kilometers deep. Standing there in the thin pink sky, I understood why they call this the Red Planet. It does not feel real.',
-        my: '၂၀၁ ရက်မြောက်နေ့။ ဒီနေ့ ကျွန်တော် ချောက်ကမ်းပါးအစွန်းကို လမ်းလျှောက်သွားခဲ့တယ် — အနက် သုံးကီလိုမီတာရှိတဲ့ ကမ်းပါးဖြစ်တယ်။ ပါးလွှာတဲ့ပန်းရောင်ကောင်းကင်အောက်မှာ အဲဒီမှာ ရပ်နေရင်း ဒါကို အနီရောင်ဂြိုဟ်လို့ ဘာကြောင့်ခေါ်လဲဆိုတာ နားလည်ခဲ့တယ်။ တကယ်လို့ မခံစားရဘူး။',
-        th: 'วันที่ 201 วันนี้ฉันเดินไปที่ขอบหุบเขา หน้าผาลึกสามกิโลเมตร ยืนอยู่ใต้ท้องฟ้าสีชมพูบาง ฉันเข้าใจว่าทำไมเรียกที่นี่ว่าดาวเคราะห์สีแดง มันรู้สึกไม่จริง',
+        my: '၂၀၁ ရက်မြောက်နေ့။ ဒီနေ့ ကျွန်တော် ချောက်ကမ်းပါးအစွန်းကို လမ်းလျှောက်သွားခဲ့တယ် — အနက် သုံးကီလိုမီတာရှိတဲ့ ကမ်းပါးဖြစ်တယ်။ ပါးလွှာတဲ့ပန်းရောင်ကောင်းကင်အောက်မှာ အဲဒီမှာ ရပ်နေရင်း ဒါကို အနီရောင်ဂြိုဟ်လို့ ဘာကြောင့်ခေါ်လဲဆိုတာ နားလည်ခဲ့တယ်။ အမှန်တကယ် ဖြစ်ပျက်နေသလို့ မခံစားရဘူး။',
+        th: 'วันที่ 201 วันนี้ฉันเดินไปที่ขอบหุบเขา หน้าผาลึกสามกิโลเมตร ยืนอยู่ใต้ท้องฟ้าสีชมพูบาง ฉันเข้าใจว่าทำไมเรียกที่นี่ว่าดาวเคราะห์สีแดง มันรู้สึกไม่เหมือนจริง',
       },
       {
         en: 'Day 280. We planted the first potatoes in Martian soil mixed with nutrients from Earth. If they grow, future crews will eat food grown on another world. I check the sprouts every morning like a nervous parent.',
         my: '၂၈၀ ရက်မြောက်နေ့။ ကမ္ဘာကရတဲ့အာဟာရတွေနဲ့ ရောထားတဲ့ အင်္ဂါမြေဆီလွှာမှာ ပထမဆုံးအာလူးတွေ စိုက်ခဲ့တယ်။ သူတို့ကြီးထွားရင် နောင်အဖွဲ့တွေက တခြားကမ္ဘာမှာ စိုက်တဲ့အစားအစာ စားရလိမ့်မယ်။ အညှောက်တွေကို မနက်တိုင်း စိုးရိမ်တဲ့မိဘတစ်ဦးလို စစ်ဆေးတယ်။',
-        th: 'วันที่ 280 เราปลูกมันฝรั่งชุดแรกในดินดาวอังคารผสมสารอาหารจากโลก ถ้ามันโต ลูกเรืออนาคตจะกินอาหารที่ปลูกบนโลกอื่น ฉันตรวจหน่อทุกเช้าเหมือนพ่อแม่กังวล',
+        th: 'วันที่ 280 เราปลูกมันฝรั่งชุดแรกในดินดาวอังคารผสมสารอาหารจากโลก ถ้ามันโต ลูกเรืออนาคตจะกินอาหารที่ปลูกบนโลกอื่น ฉันตรวจหน่อทุกเช้าเหมือนพ่อแม่ที่กังวล',
       },
       {
         en: 'Day 365. One full year on Mars. Looking at Earth tonight — just a blue star in the black sky — I feel further from home than any human in history, and strangely, more at home than ever.',
         my: '၃၆၅ ရက်မြောက်နေ့။ အင်္ဂါဂြိုဟ်မှာ တစ်နှစ်ပြည့်ပြီ။ ဒီည ကမ္ဘာကို ကြည့်ရင်း — မှောင်မိုက်တဲ့ကောင်းကင်က အပြာရောင်ကြယ်လေးတစ်ခုသာ — သမိုင်းမှာ လူသားတိုင်းထက် အိမ်နဲ့ ပိုဝေးတယ်လို့ ခံစားရတယ်၊ ထူးဆန်းတာက ဘယ်တုန်းကထက်မဆို အိမ်မှာနေသလို ပိုခံစားရတယ်။',
-        th: 'วันที่ 365 ครบหนึ่งปีบนดาวอังคาร มองโลกคืนนี้ แค่ดาวสีฟ้าในท้องฟ้าดำ ฉันรู้สึกไกลบ้านกว่ามนุษย์คนใดในประวัติศาสตร์ และแปลกที่รู้สึกเหมือนบ้านกว่าที่เคย',
+        th: 'วันที่ 365 ครบหนึ่งปีบนดาวอังคาร มองโลกคืนนี้ แค่ดาวสีฟ้าในท้องฟ้าดำ ฉันรู้สึกไกลบ้านกว่ามนุษย์คนใดในประวัติศาสตร์ และแปลกที่รู้สึกเหมือนอยู่บ้านมากกว่าที่เคย',
       },
     ],
   },
@@ -721,17 +721,17 @@ export const storiesBatch3: Story[] = [
       {
         en: 'The first installation took two weeks. When the lights came on in the school that first evening, children who had only studied by candlelight stood in silence, staring at the bright bulbs.',
         my: 'ပထမဆုံးတပ်ဆင်မှုက နှစ်ပတ်ကြာတယ်။ အဲဒီပထမညနေမှာ ကျောင်းမှာ မီးလင်းလာတဲ့အခါ ဖယောင်းတိုင်မီးနဲ့သာ စာကျက်ခဲ့ဖူးတဲ့ကလေးတွေက တိတ်ဆိတ်စွာ ရပ်ပြီး တောက်ပတဲ့မီးသီးတွေကို စိုက်ကြည့်နေခဲ့ကြတယ်။',
-        th: 'การติดตั้งครั้งแรกใช้เวลาสองสัปดาห์ เมื่อไฟติดในโรงเรียนเย็นแรก เด็กๆ ที่เคยอ่านหนังสือใต้แสงเทียนยืนเงียบ จ้องหลอดไฟสว่าง',
+        th: 'การติดตั้งครั้งแรกใช้เวลาสองสัปดาห์ เมื่อไฟติดในโรงเรียนเย็นแรก เด็กๆ ที่เคยเรียนหนังสือใต้แสงเทียนยืนเงียบ จ้องมองหลอดไฟที่สว่างจ้า',
       },
       {
         en: 'Soon every house wanted panels. The village formed a cooperative: each family paid a small monthly amount, and young people were trained to install and repair the systems.',
         my: 'မကြာခင် အိမ်တိုင်းက ပြားတွေ လိုချင်လာကြတယ်။ ကျေးရွာက သမဝါယမတစ်ခု ဖွဲ့စည်းခဲ့တယ် — မိသားစုတိုင်းက လစဉ်ကြေး အနည်းငယ် ပေးပြီး လူငယ်တွေကို စနစ်တွေ တပ်ဆင်ပြုပြင်ဖို့ သင်တန်းပေးခဲ့တယ်။',
-        th: 'ไม่นานทุกบ้านอยากได้แผง หมู่บ้านตั้งสหกรณ์ ทุกครอบครัวจ่ายรายเดือนเล็กน้อย และฝึกคนหนุ่มติดตั้งซ่อมระบบ',
+        th: 'ไม่นานทุกบ้านอยากได้แผง หมู่บ้านตั้งสหกรณ์ ทุกครอบครัวจ่ายรายเดือนเล็กน้อย และฝึกคนหนุ่มสาวให้ติดตั้งและซ่อมระบบ',
       },
       {
         en: 'Electricity changed everything quietly. Women started small businesses with sewing machines and refrigerators. Students studied after dark. The health clinic could finally store vaccines safely.',
         my: 'လျှပ်စစ်က အရာအားလုံးကို တိတ်တိတ်လေး ပြောင်းလဲခဲ့တယ်။ အမျိုးသမီးတွေက အပ်ချုပ်စက်နဲ့ ရေခဲသေတ္တာတွေနဲ့ စီးပွားရေးသေးသေးလေးတွေ စတင်ခဲ့တယ်။ ကျောင်းသားတွေ မှောင်ပြီးနောက် စာကျက်နိုင်တယ်။ ကျန်းမာရေးဆေးခန်းက ကာကွယ်ဆေးတွေ နောက်ဆုံး လုံခြုံစွာ သိုလှောင်နိုင်ပြီ။',
-        th: 'ไฟฟ้าเปลี่ยนทุกอย่างเงียบๆ ผู้หญิงเริ่มธุรกิจเล็กด้วยจักรเย็บผ้าและตู้เย็น นักเรียนอ่านหนังสือหลังมืด คลินิกเก็บวัคซีนได้อย่างปลอดภัยในที่สุด',
+        th: 'ไฟฟ้าเปลี่ยนทุกอย่างเงียบๆ ผู้หญิงเริ่มธุรกิจเล็กด้วยจักรเย็บผ้าและตู้เย็น นักเรียนทบทวนบทเรียนได้หลังมืดค่ำ คลินิกเก็บวัคซีนได้อย่างปลอดภัยในที่สุด',
       },
       {
         en: 'Three years later, neighboring villages began copying the model. Ko Min now travels the region teaching others, and Thazi has become famous as "the village that stopped waiting."',
@@ -770,17 +770,17 @@ export const storiesBatch3: Story[] = [
       {
         en: 'Their records became powerful evidence. When a company tried to claim the forest legally, the women\'s notebooks proved the community had protected it for generations — and the court ruled in their favor.',
         my: 'သူတို့မှတ်တမ်းတွေက အားကြီးတဲ့သက်သေဖြစ်လာတယ်။ ကုမ္ပဏီတစ်ခု တောကို ဥပဒေအရ တောင်းဆိုဖို့ ကြိုးစားတဲ့အခါ အမျိုးသမီးတွေရဲ့မှတ်စုစာအုပ်တွေက အသိုင်းအဝိုင်းက မျိုးဆက်ပေါင်းများစွာ ကာကွယ်ခဲ့တယ်ဆိုတာ သက်သေပြခဲ့ပြီး တရားရုံးက သူတို့ဘက်က ဆုံးဖြတ်ခဲ့တယ်။',
-        th: 'บันทึกของพวกเธอกลายเป็นหลักฐานทรงพลัง เมื่อบริษัทพยายามอ้างป่าตามกฎหมาย สมุดของผู้หญิงพิสูจน์ว่าชุมชนปกป้องมันมาหลายชั่วอายุคน และศาลตัดสินให้พวกเธอชนะ',
+        th: 'บันทึกของพวกเธอกลายเป็นหลักฐานทรงพลัง เมื่อบริษัทพยายามอ้างสิทธิ์ในป่าตามกฎหมาย สมุดของผู้หญิงพิสูจน์ว่าชุมชนปกป้องมันมาหลายชั่วอายุคน และศาลตัดสินให้พวกเธอชนะ',
       },
       {
         en: 'Today, at seventy-two, Daw Hla still walks her patrol route every morning. Young rangers from the forestry department now walk with her — and take notes, just as she once did.',
-        my: 'ဒီနေ့ အသက်ခုနှစ်ဆယ့်နှစ်မှာ ဒေါ်လှက မနက်တိုင်း သူ့ကင်းလှည့်လမ်းကို ဆက်လျှောက်နေတယ်။ သစ်တောဌာနက ရေသေ့်ဂျာငယ်တွေက အခု သူနဲ့အတူ လျှောက်တယ် — သူ တစ်ချိန်က လုပ်ခဲ့သလိုပဲ မှတ်စုရေးတယ်။',
+        my: 'ဒီနေ့ အသက်ခုနှစ်ဆယ့်နှစ်မှာ ဒေါ်လှက မနက်တိုင်း သူ့ကင်းလှည့်လမ်းကို ဆက်လျှောက်နေတယ်။ သစ်တောဌာနက တောစောင့်လူငယ်တွေက အခု သူနဲ့အတူ လျှောက်တယ် — သူ တစ်ချိန်က လုပ်ခဲ့သလိုပဲ မှတ်စုရေးတယ်။',
         th: 'วันนี้ตอนอายุเจ็ดสิบสอง ดอฮลายังเดินลาดตระเวนทุกเช้า เจ้าหน้าที่ป่าไม้หนุ่มเดินกับเธอ และจดบันทึก เหมือนที่เธอเคยทำ',
       },
       {
         en: 'She says the forest taught her everything about patience. "A tree does not hurry," she tells visitors, "and neither should those who protect it."',
         my: 'တောက သူ့ကို သည်းခံမှုအကြောင်း အရာအားလုံး သင်ပေးခဲ့တယ်လို့ သူပြောတယ်။ "သစ်ပင်က အလျင်မလိုဘူး" လို့ သူက ဧည့်သည်တွေကို ပြောတယ်၊ "သူ့ကို ကာကွယ်သူတွေလည်း အလျင်မလိုသင့်ဘူး။"',
-        th: 'เธอบอกว่าป่าสอนทุกอย่างเรื่องความอดทน "ต้นไม้ไม่รีบ" เธอบอกผู้มาเยือน "และผู้พิทักษ์มันก็ไม่ควรรีบเช่นกัน"',
+        th: 'เธอบอกว่าป่าสอนทุกอย่างเรื่องความอดทน เธอบอกผู้มาเยือนว่า "ต้นไม้ไม่รีบ และผู้ที่พิทักษ์มันก็ไม่ควรรีบเช่นกัน"',
       },
     ],
   },
@@ -803,7 +803,7 @@ export const storiesBatch3: Story[] = [
       },
       {
         en: 'He reported it to his manager, who told him to "stop making trouble." He wrote to the company directors. Nobody answered. The cheap powder kept flowing into the production line.',
-        my: 'သူက သူ့မန်နေဂျာကို အစီရင်ခံတယ်၊ မန်နေဂျာက "ဒုက္ခမပေးနဲ့" လို့ ပြောတယ်။ ကုမ္ပဏီဒါရိုက်တာတွေကို စာရေးတယ်။ ဘယ်သူမှ မဖြေဘူး။ ဈေးပေါတဲ့နို့မှုန့်က ထုတ်လုပ်မှုလိုင်းထဲ ဆက်စီးဝင်နေတယ်။',
+        my: 'သူက သူ့မန်နေဂျာကို အစီရင်ခံတယ်၊ မန်နေဂျာက "ပြဿနာမရှာနဲ့" လို့ ပြောတယ်။ ကုမ္ပဏီဒါရိုက်တာတွေကို စာရေးတယ်။ ဘယ်သူမှ မဖြေဘူး။ ဈေးပေါတဲ့နို့မှုန့်က ထုတ်လုပ်မှုလိုင်းထဲ ဆက်စီးဝင်နေတယ်။',
         th: 'เขารายงานผู้จัดการ ผู้จัดการบอกให้ "หยุดก่อเรื่อง" เขาเขียนถึงกรรมการบริษัท ไม่มีใครตอบ นมผงราคาถูกยังไหลเข้าสายการผลิต',
       },
       {
@@ -813,13 +813,13 @@ export const storiesBatch3: Story[] = [
       },
       {
         en: 'The story exploded. The factory was fined heavily, the supplier was prosecuted, and Daniel lost his job. For a year, no company would hire him — he was labeled a troublemaker.',
-        my: 'ဇာတ်လမ်းက ပေါက်ကွဲသွားတယ်။ စက်ရုံကို ဒဏ်ကြေးအကြီးအကျယ် ချမှတ်ခံရတယ်၊ ပေးသွင်းသူကို တရားစွဲတယ်၊ ဒန်နီရယ်က အလုပ်ပြုတ်တယ်။ တစ်နှစ်တိုင်တိုင် ဘယ်ကုမ္ပဏီမှ သူ့ကို မခန့်ဘူး — ဒုက္ခပေးသူလို့ တံဆိပ်ကပ်ခံရတယ်။',
+        my: 'သတင်းက အရှိန်အဟုန်နဲ့ ပျံ့နှံ့သွားတယ်။ စက်ရုံကို ဒဏ်ကြေးအကြီးအကျယ် ချမှတ်ခံရတယ်၊ ပေးသွင်းသူကို တရားစွဲတယ်၊ ဒန်နီရယ်က အလုပ်ပြုတ်တယ်။ တစ်နှစ်တိုင်တိုင် ဘယ်ကုမ္ပဏီမှ သူ့ကို မခန့်ဘူး — ဒုက္ခပေးသူလို့ တံဆိပ်ကပ်ခံရတယ်။',
         th: 'เรื่องระเบิด โรงงานถูกปรับหนัก ซัพพลายเออร์ถูกดำเนินคดี และแดเนียลตกงาน หนึ่งปีไม่มีบริษัทไหนจ้าง เขาถูกตราหน้าว่าตัวก่อเรื่อง',
       },
       {
         en: 'Then a food safety organization offered him a senior position. "We need people who speak up," the director told him. Daniel accepted — and finally understood that doing the right thing had been worth the price.',
         my: 'ပြီးတော့ အစားအစာဘေးကင်းရေးအဖွဲ့အစည်းတစ်ခုက သူ့ကို အကြီးတန်းရာထူး ကမ်းလှမ်းခဲ့တယ်။ "ထုတ်ပြောတဲ့သူတွေ ကျွန်တော်တို့လိုအပ်တယ်" လို့ ဒါရိုက်တာက သူ့ကို ပြောတယ်။ ဒန်နီရယ်က လက်ခံခဲ့တယ် — မှန်ကန်တဲ့အရာလုပ်တာက ပေးရတဲ့ဈေးနဲ့ တန်တယ်ဆိုတာ နောက်ဆုံး နားလည်ခဲ့တယ်။',
-        th: 'แล้วองค์กรความปลอดภัยอาหารเสนอตำแหน่งอาวุโสให้ "เราต้องการคนที่กล้าพูด" ผู้อำนวยการบอกเขา แดเนียลรับ และในที่สุดเข้าใจว่าการทำสิ่งที่ถูกคุ้มกับราคา',
+        th: 'แล้วองค์กรความปลอดภัยอาหารเสนอตำแหน่งอาวุโสให้เขา ผู้อำนวยการบอกเขาว่า "เราต้องการคนที่กล้าพูด" แดเนียลรับ และในที่สุดก็เข้าใจว่าการทำสิ่งที่ถูกคุ้มกับราคา',
       },
     ],
   },
@@ -833,7 +833,7 @@ export const storiesBatch3: Story[] = [
       {
         en: 'In a small Paris studio, the artist Elodie Marchand painted beautiful landscapes in the style of the 19th century. Her own work sold for almost nothing — but her copies of famous masters sold for millions.',
         my: 'ပါရီမြို့က စတူဒီယိုသေးသေးလေးမှာ ပန်းချီဆရာ အယ်လိုဒီ မာရှန်းက ၁၉ ရာစုပုံစံနဲ့ လှပတဲ့ရှုခင်းတွေ ရေးဆွဲတယ်။ သူ့ကိုယ်ပိုင်အလုပ်က ဘာမှမတန်ဘူး — ဒါပေမယ့် ကျော်ကြားတဲ့ဆရာကြီးတွေရဲ့ သူ့မိတ္တူကားတွေက သန်းပေါင်းများစွာနဲ့ ရောင်းရတယ်။',
-        th: 'ในสตูดิโอเล็กปารีส ศิลปินเอโลดี มาร์ช็องด์ วาดทิวทัศน์สวยงามสไตล์ศตวรรษที่ 19 งานของเธอเองขายแทบไม่ได้ แต่สำเนาปรมาจารย์ดังขายได้หลายล้าน',
+        th: 'ในสตูดิโอเล็กๆ ในปารีส ศิลปินเอโลดี มาร์ช็องด์ วาดทิวทัศน์สวยงามสไตล์ศตวรรษที่ 19 งานของเธอเองขายแทบไม่ได้ แต่ภาพลอกเลียนแบบปรมาจารย์ชื่อดังของเธอขายได้หลายล้าน',
       },
       {
         en: 'Elodie was not working alone. A dealer supplied her with old canvases, antique frames, and forged certificates. Together, they fooled collectors, galleries, and even museum experts.',
@@ -843,12 +843,12 @@ export const storiesBatch3: Story[] = [
       {
         en: 'For six years, the scheme worked perfectly. Elodie bought a villa, traveled the world, and told herself that the rich buyers deserved to be tricked. Then one painting was examined too carefully.',
         my: 'ခြောက်နှစ်တိုင်တိုင် အစီအစဉ်က ပြီးပြည့်စုံစွာ အလုပ်လုပ်တယ်။ အယ်လိုဒီက ဗီလာတစ်လုံးဝယ်တယ်၊ ကမ္ဘာပတ်တယ်၊ ချမ်းသာတဲ့ဝယ်သူတွေက လှည့်စားခံရထိုက်တယ်လို့ ကိုယ့်ကိုယ်ကို ပြောတယ်။ ပြီးတော့ ပန်းချီကားတစ်ကားကို အလွန်ဂရုတစိုက် စစ်ဆေးခံရတယ်။',
-        th: 'หกปีแผนสำเร็จสมบูรณ์ เอโลดีซื้อวิลลา เที่ยวรอบโลก และบอกตัวเองว่าผู้ซื้อรวยสมควรถูกล่อ แล้วภาพหนึ่งถูกตรวจอย่างละเอียดเกินไป',
+        th: 'หกปี แผนสำเร็จอย่างสมบูรณ์แบบ เอโลดีซื้อวิลลา เที่ยวรอบโลก และบอกตัวเองว่าผู้ซื้อที่ร่ำรวยสมควรถูกหลอก แล้วภาพหนึ่งถูกตรวจอย่างละเอียดเกินไป',
       },
       {
         en: 'A young restorer noticed something strange: a tiny speck of modern titanium white paint hidden under the varnish. That pigment did not exist when the "masterpiece" was supposedly painted.',
         my: 'ပြုပြင်ထိန်းသိမ်းသူငယ်တစ်ဦး ထူးဆန်းတဲ့အရာ သတိထားမိတယ် — အပေါ်ယံအလွှာအောက်မှာ ဝှက်ထားတဲ့ ခေတ်သစ်တိုက်တေနီယမ်အဖြူရောင်ဆေး အမှုန်သေးသေးလေး။ အဲဒီဆိုးဆေးက "လက်ရာ" ရေးဆွဲခဲ့တယ်ဆိုတဲ့အချိန်မှာ မရှိသေးဘူး။',
-        th: 'นักบูรณะหนุ่มสังเกตสิ่งแปลก จุดสีขาวไทเทเนียมสมัยใหม่จิ๋วซ่อนใต้ชั้นวานิช เม็ดสีนั้นไม่มีอยู่ในยุคที่ "ชิ้นเอก" ถูกวาดตามอ้าง',
+        th: 'นักบูรณะหนุ่มสังเกตเห็นสิ่งผิดปกติ จุดสีขาวจิ๋วของสีไทเทเนียมสมัยใหม่ซ่อนอยู่ใต้ชั้นวานิช เม็ดสีนั้นไม่มีอยู่ในยุคที่อ้างว่า "ชิ้นเอก" ถูกวาดขึ้น',
       },
       {
         en: 'The investigation that followed uncovered forty-three forgeries across eleven countries. Elodie was sentenced to four years in prison — and became famous at last, but for all the wrong reasons.',
@@ -858,7 +858,7 @@ export const storiesBatch3: Story[] = [
       {
         en: 'In prison, Elodie began painting her own original landscapes again — this time signing her real name. "I spent years copying genius," she said. "Now I finally have time to find my own."',
         my: 'ထောင်ထဲမှာ အယ်လိုဒီက သူ့ကိုယ်ပိုင်မူရင်းရှုခင်းတွေ ပြန်ရေးဆွဲဖို့ စတင်ခဲ့တယ် — ဒီတစ်ခါ သူ့တကယ့်နာမည်နဲ့ လက်မှတ်ထိုးတယ်။ "ကျွန်မ ပါရမီရှင်တွေကို ကူးယူရင်း နှစ်တွေ ကုန်ခဲ့တယ်" လို့ သူပြောတယ်။ "အခု ကျွန်မကိုယ်ပိုင်ကို ရှာဖို့ အချိန်ရပြီ။"',
-        th: 'ในคุก เอโลดีเริ่มวาดทิวทัศน์ต้นฉบับของตัวเองอีกครั้ง ครั้งนี้เซ็นชื่อจริง "ฉันใช้เวลาหลายปีลอกเลียนอัจฉริยะ" เธอพูด "ตอนนี้ฉันมีเวลาหาตัวเองในที่สุด"',
+        th: 'ในคุก เอโลดีเริ่มวาดทิวทัศน์ต้นฉบับของตัวเองอีกครั้ง ครั้งนี้เซ็นชื่อจริง เธอพูดว่า "ฉันใช้เวลาหลายปีลอกเลียนอัจฉริยะ ตอนนี้ฉันมีเวลาค้นหาตัวเองในที่สุด"',
       },
     ],
   },
@@ -872,7 +872,7 @@ export const storiesBatch3: Story[] = [
       {
         en: 'On a quiet Monday morning in 1990, two men dressed as police officers entered a Boston museum. Ninety minutes later, they left with thirteen artworks worth half a billion dollars — including a Vermeer and three Rembrandts.',
         my: '၁၉၉၀ ပြည့်နှစ် တနင်္လာနေ့ မနက်တိတ်ဆိတ်တစ်ခုမှာ ရဲဝတ်စုံနဲ့လူနှစ်ဦး ဘော်စတွန်ပြတိုက်တစ်ခုထဲ ဝင်လာတယ်။ ကိုးဆယ်မိနစ်အကြာမှာ သူတို့ ဒေါ်လာသန်းငါးရာတန် အနုပညာလက်ရာ ဆယ့်သုံးခု — ဗားမီးယားတစ်ကားနဲ့ ရမ်းဘရန့်သုံးကားအပါအဝင် — ယူပြီး ထွက်သွားတယ်။',
-        th: 'เช้าวันจันทร์เงียบปี 1990 ชายสองคนแต่งชุดตำรวจเข้าพิพิธภัณฑ์บอสตัน เก้าสิบนาทีต่อมา พวกเขาออกไปพร้อมงานศิลปะสิบสามชิ้นมูลค่าครึ่งพันล้านดอลลาร์ รวมเวอร์เมียร์หนึ่งภาพและแรมบรันดต์สามภาพ',
+        th: 'เช้าวันจันทร์อันเงียบสงบปี 1990 ชายสองคนแต่งกายชุดตำรวจเข้าไปในพิพิธภัณฑ์แห่งหนึ่งในบอสตัน เก้าสิบนาทีต่อมา พวกเขาออกไปพร้อมงานศิลปะสิบสามชิ้นมูลค่าครึ่งพันล้านดอลลาร์ รวมเวอร์เมียร์หนึ่งภาพและแรมบรันดต์สามภาพ',
       },
       {
         en: 'It remains the largest art theft in history, and not a single painting has ever been recovered. The museum still hangs empty frames on its walls, waiting for the works to come home.',
@@ -882,7 +882,7 @@ export const storiesBatch3: Story[] = [
       {
         en: 'Retired detective Maria Santos spent twenty years chasing the case. She interviewed gangsters, followed false leads across three continents, and once came within hours of a recovery — only to find an empty warehouse.',
         my: 'အငြိမ်းစားစုံထောက် မာရီယာ ဆန်းတို့စ်က အမှု နောက်ကို နှစ်နှစ်ဆယ် လိုက်ခဲ့တယ်။ ဂိုဏ်းသားတွေကို မေးမြန်းတယ်၊ တိုက်ကြီးသုံးခုဖြတ်ပြီး မှားယွင်းတဲ့သဲလွန်စတွေနောက် လိုက်တယ်၊ တစ်ခါက ပြန်ရဖို့ နာရီအနည်းငယ်သာ လိုတော့တယ် — ဒါပေမယ့် ဂိုဒေါင်အလွတ်သာ တွေ့ခဲ့တယ်။',
-        th: 'นักสืบเกษียณมาเรีย ซานโตส ไล่ล่าคดีมายี่สิบปี เธอสัมภาษณ์นักเลง ตามรอยเท็จข้ามสามทวีป และครั้งหนึ่งใกล้จะได้คืนแค่ไม่กี่ชั่วโมง แต่พบแค่โกดังเปล่า',
+        th: 'อดีตนักสืบมาเรีย ซานโตส ไล่ล่าคดีมายี่สิบปี เธอสัมภาษณ์นักเลง ตามรอยเท็จข้ามสามทวีป และครั้งหนึ่งใกล้จะได้คืนแค่ไม่กี่ชั่วโมง แต่พบแค่โกดังเปล่า',
       },
       {
         en: 'Theories multiply with every year: the paintings were burned, they hang in a secret vault, they were traded for weapons. Each theory has believers — and no proof.',
@@ -897,7 +897,7 @@ export const storiesBatch3: Story[] = [
       {
         en: 'Maria retired last year, but she keeps the case files by her desk. "Art belongs to everyone," she says. "As long as those frames are empty, the story isn\'t over."',
         my: 'မာရီယာက ပြီးခဲ့တဲ့နှစ်မှာ အငြိမ်းစားယူခဲ့ပေမယ့် အမှုတွဲတွေကို သူ့စားပွဲမှာ ထားဆဲဖြစ်တယ်။ "အနုပညာက လူတိုင်းနဲ့ဆိုင်တယ်" လို့ သူပြောတယ်။ "အဲဒီဘောင်တွေ အလွတ်ဖြစ်နေသမျှ ဇာတ်လမ်းက မပြီးသေးဘူး။"',
-        th: 'มาเรียเกษียณปีที่แล้ว แต่เก็บแฟ้มคดีไว้ข้างโต๊ะ "ศิลปะเป็นของทุกคน" เธอพูด "ตราบที่กรอบยังว่าง เรื่องนี้ยังไม่จบ"',
+        th: 'มาเรียเกษียณปีที่แล้ว แต่เก็บแฟ้มคดีไว้ข้างโต๊ะ เธอพูดว่า "ศิลปะเป็นของทุกคน ตราบที่กรอบยังว่าง เรื่องนี้ยังไม่จบ"',
       },
     ],
   },
@@ -911,7 +911,7 @@ export const storiesBatch3: Story[] = [
       {
         en: 'The Paradise Cinema opened in 1958, when the town had no television. For decades, its single screen showed the world to people who had never left the valley — romance, adventure, and distant cities.',
         my: 'ပယ်ရာဒိုက်စ်ရုပ်ရှင်ရုံကို ၁၉၅၈ ခုနှစ်မှာ ဖွင့်ခဲ့တယ်၊ အဲဒီတုန်းက မြို့မှာ တီဗွီမရှိသေးဘူး။ ဆယ်စုနှစ်ပေါင်းများစွာ သူ့ဖန်သားပြင်တစ်ခုတည်းက ချိုင့်ဝှမ်းကနေ ဘယ်တော့မှ မထွက်ဖူးတဲ့သူတွေကို ကမ္ဘာကို ပြသခဲ့တယ် — အချစ်၊ စွန့်စားခန်း၊ ဝေးလံတဲ့မြို့တွေပေါ့။',
-        th: 'โรงหนังพาราไดซ์เปิดปี 1958 เมื่อเมืองยังไม่มีโทรทัศน์ หลายทศวรรษ จอเดียวของมันแสดงโลกให้คนที่ไม่ออกนอกหุบเขา ความรัก การผจญภัย และเมืองไกล',
+        th: 'โรงหนังพาราไดซ์เปิดปี 1958 เมื่อเมืองยังไม่มีโทรทัศน์ ตลอดหลายทศวรรษ จอเดียวของมันแสดงโลกให้คนที่ไม่เคยออกนอกหุบเขา ความรัก การผจญภัย และเมืองไกล',
       },
       {
         en: 'U Sein, the projectionist, has worked there for forty-five years. He can still thread the old film projector by touch, in the dark, without looking — a skill nobody needs anymore.',
@@ -921,7 +921,7 @@ export const storiesBatch3: Story[] = [
       {
         en: 'Streaming arrived, and the audience shrank year by year. Last winter, only eleven people came to the Saturday show. The owners announced the cinema would close in spring.',
         my: 'စထရင်မင်းဝန်ဆောင်မှုတွေ ရောက်လာပြီး ပရိသတ် တစ်နှစ်ပြီးတစ်နှစ် လျော့နည်းသွားတယ်။ ပြီးခဲ့တဲ့ဆောင်းရာသီမှာ စနေနေ့ပွဲမှာ လူဆယ့်တစ်ဦးသာ လာတယ်။ ပိုင်ရှင်တွေက ရုပ်ရှင်ရုံကို နွေဦးမှာ ပိတ်မယ်လို့ ကြေညာခဲ့တယ်။',
-        th: 'สตรีมมิงมาถึง และผู้ชมหดทุกปี ฤดูหนาวที่แล้ว มีแค่สิบเอ็ดคนมาดูรอบวันเสาร์ เจ้าของประกาศว่าโรงหนังจะปิดฤดูใบไม้ผลิ',
+        th: 'สตรีมมิงมาถึง และผู้ชมหดทุกปี ฤดูหนาวที่แล้ว มีแค่สิบเอ็ดคนมาดูรอบวันเสาร์ เจ้าของประกาศว่าโรงหนังจะปิดในฤดูใบไม้ผลิ',
       },
       {
         en: 'The town refused to accept it. Students organized a film festival, the bakery donated popcorn, and retired teachers sold tickets. For one final month, every seat was full.',
@@ -934,7 +934,7 @@ export const storiesBatch3: Story[] = [
         th: 'คืนสุดท้าย อูเซนฉายหนังเรื่องแรกของโรงหนังจากปี 1958 ผู้ชม ปู่ย่าตายายและหลานๆ ด้วยกัน ดูภาพกระพริบในความเงียบสมบูรณ์',
       },
       {
-        en: 'The Paradise is now a community hall, but its projector remains. Once a month, U Sein still threads the film by touch — because some places, the town decided, are worth keeping dark for.',
+        en: 'The Paradise is now a community hall, but its projector remains. Once a month, U Sein still threads the film by touch — because some places, the town decided, are worth keeping dark.',
         my: 'ပယ်ရာဒိုက်စ်က အခု အသိုင်းအဝိုင်းခန်းမဖြစ်နေပြီ၊ ဒါပေမယ့် သူ့ပရိုဂျက်တာက ကျန်ရှိနေတယ်။ လတိုင်း ဦးစိန်က ဖလင်ကို ထိတွေ့မှုနဲ့ တပ်ဆင်နေဆဲဖြစ်တယ် — ဘာလို့လဲဆိုတော့ တချို့နေရာတွေက အမှောင်ချထားဖို့ ထိုက်တန်တယ်လို့ မြို့က ဆုံးဖြတ်ခဲ့လို့ဖြစ်တယ်။',
         th: 'พาราไดซ์ตอนนี้เป็นหอชุมชน แต่เครื่องฉายยังอยู่ ทุกเดือน อูเซนยังร้อยฟิล์มด้วยสัมผัส เพราะบางสถานที่ เมืองตัดสินใจว่าคุ้มที่จะเก็บความมืดไว้',
       },
@@ -955,12 +955,12 @@ export const storiesBatch3: Story[] = [
       {
         en: 'Her idea was simple: a bicycle-powered pump. An old bicycle frame, some pipes, and a clever set of gears could lift water from the well to a storage tank in minutes.',
         my: 'သူ့အတွေးက ရိုးရှင်းတယ် — စက်ဘီးအားသုံး ပန့်ဖြစ်တယ်။ စက်ဘီးဘောင်ဟောင်း၊ ပိုက်အချို့နဲ့ လိမ္မာတဲ့ဂီယာအစုက ရေတွင်းကနေ ရေကို သိုလှောင်ကန်ထဲ မိနစ်အနည်းငယ်အတွင်း တင်နိုင်တယ်။',
-        th: 'ความคิดของเธอเรียบง่าย ปั๊มพลังจักรยาน โครงจักรยานเก่า ท่อไม่กี่ท่อ และชุดเกียร์ฉลาด ยกน้ำจากบ่อขึ้นถังเก็บในไม่กี่นาที',
+        th: 'ความคิดของเธอเรียบง่าย ปั๊มพลังจักรยาน โครงจักรยานเก่า ท่อไม่กี่ท่อ และชุดเกียร์ที่ออกแบบอย่างชาญฉลาด ยกน้ำจากบ่อขึ้นถังเก็บในไม่กี่นาที',
       },
       {
         en: 'The first prototype broke within a week. The second leaked. The third worked — but only if someone pedaled very hard. Nanda kept redesigning, testing each version with the village women.',
         my: 'ပထမဆုံးပုံစံက တစ်ပတ်အတွင်း ပျက်သွားတယ်။ ဒုတိယတစ်ခုက ယိုစိမ့်တယ်။ တတိယတစ်ခုက အလုပ်လုပ်တယ် — ဒါပေမယ့် တစ်ယောက်ယောက် အလွန်ပြင်းပြင်းထန်ထန် နင်းမှသာ။ နန္ဒာက ပြန်လည်ဒီဇိုင်းဆွဲနေတယ်၊ ပုံစံတိုင်းကို ကျေးရွာအမျိုးသမီးတွေနဲ့ စမ်းသပ်တယ်။',
-        th: 'ต้นแบบแรกพังในสัปดาห์ แบบที่สองรั่ว แบบที่สามใช้ได้ แต่ต้องมีคนปั่นแรงมาก นันทาออกแบบใหม่เรื่อยๆ ทดสอบทุกแบบกับผู้หญิงในหมู่บ้าน',
+        th: 'ต้นแบบแรกพังภายในหนึ่งสัปดาห์ แบบที่สองรั่ว แบบที่สามใช้ได้ แต่ต้องมีคนปั่นแรงมาก นันทาออกแบบใหม่เรื่อยๆ ทดสอบทุกแบบกับผู้หญิงในหมู่บ้าน',
       },
       {
         en: 'Version eleven changed everything. A child could pedal it easily, and it filled the tank in twenty minutes. The women suddenly had four extra hours every day.',
@@ -975,7 +975,7 @@ export const storiesBatch3: Story[] = [
       {
         en: 'Nanda\'s pump now exists in three hundred villages. She never patented it. "Ideas that save time belong to everyone," she says, "especially to the women who tested every broken version."',
         my: 'နန္ဒာရဲ့ပန့်က အခု ကျေးရွာသုံးရာမှာ ရှိနေပြီ။ သူက မူပိုင်ခွင့် ဘယ်တော့မှ မယူခဲ့ဘူး။ "အချိန်သက်သာစေတဲ့အတွေးတွေက လူတိုင်းနဲ့ဆိုင်တယ်" လို့ သူပြောတယ်၊ "အထူးသဖြင့် ပျက်နေတဲ့ပုံစံတိုင်းကို စမ်းသပ်ခဲ့တဲ့ အမျိုးသမီးတွေနဲ့ပေါ့။"',
-        th: 'ปั๊มของนันทาตอนนี้มีในสามร้อยหมู่บ้าน เธอไม่เคยจดสิทธิบัตร "ความคิดที่ประหยัดเวลาเป็นของทุกคน" เธอพูด "โดยเฉพาะผู้หญิงที่ทดสอบทุกแบบที่พัง"',
+        th: 'ปั๊มของนันทาตอนนี้มีในสามร้อยหมู่บ้าน เธอไม่เคยจดสิทธิบัตร เธอพูดว่า "ความคิดที่ประหยัดเวลาเป็นของทุกคน โดยเฉพาะผู้หญิงที่ทดสอบทุกแบบที่พัง"',
       },
     ],
   },
@@ -993,8 +993,8 @@ export const storiesBatch3: Story[] = [
       },
       {
         en: 'The work was brutal. In the Sierra Nevada mountains, workers hung from ropes to blast tunnels through solid granite, in snowstorms that buried their camps overnight.',
-        my: 'အလုပ်က ရက်စက်လှတယ်။ ဆီယာရာ နီဗားဒါးတောင်တွေမှာ အလုပ်သမားတွေက ကြိုးတွေနဲ့ တွဲလွဲပြီး နှင်းမုန်တိုင်းတွေကြားမှာ ခိုင်မာတဲ့ကျောက်တုံးတွေကို ဖောက်ပြီး ဥမင်တွေဖောက်ခဲ့ကြတယ်၊ နှင်းမုန်တိုင်းတွေက သူတို့စခန်းတွေကို တစ်ညတည်းမှာ မြုပ်ပစ်တယ်။',
-        th: 'งานโหดร้าย ในเทือกเขาเซียร์ราเนวาดา คนงานห้อยเชือกระเบิดอุโมงค์ผ่านหินแกรนิตแข็ง ท่ามกลางพายุหิมะที่ฝังแคมป์ข้ามคืน',
+        my: 'အလုပ်က ရက်စက်လှတယ်။ ဆီယာရာ နီဗားဒါးတောင်တွေမှာ အလုပ်သမားတွေက ကြိုးတွေမှာ တွဲလောင်းကျပြီး ခိုင်မာတဲ့ကျောက်တုံးတွေကို ဖောက်ကာ ဥမင်တွေ ဖောက်ခဲ့ကြတယ်။ နှင်းမုန်တိုင်းတွေက သူတို့စခန်းတွေကို တစ်ညတည်းမှာ မြုပ်ပစ်တယ်။',
+        th: 'งานนั้นโหดร้าย ในเทือกเขาเซียร์ราเนวาดา คนงานโหนเชือกลงไประเบิดเจาะอุโมงค์ทะลุหินแกรนิตแข็ง ท่ามกลางพายุหิมะที่ฝังแคมป์ของพวกเขาข้ามคืน',
       },
       {
         en: 'The Chinese crews were paid less than everyone else and given the most dangerous jobs. Yet they laid track faster than any other team — sometimes more than ten miles in a single day.',
@@ -1009,12 +1009,12 @@ export const storiesBatch3: Story[] = [
       {
         en: 'The famous photograph of that day shows the company bosses — but not a single Chinese worker, though they had built most of the difficult mountain section.',
         my: 'အဲဒီနေ့က ကျော်ကြားတဲ့ဓာတ်ပုံမှာ ကုမ္ပဏီအကြီးအကဲတွေ ပါဝင်တယ် — ဒါပေမယ့် တရုတ်အလုပ်သမားတစ်ဦးမှ မပါဘူး၊ ခက်ခဲတဲ့တောင်ပိုင်းအများစုကို သူတို့ ဆောက်လုပ်ခဲ့တာတောင်။',
-        th: 'ภาพดังวันนั้นแสดงเจ้านายบริษัท แต่ไม่มีคนงานจีนสักคน ทั้งที่พวกเขาสร้างช่วงภูเขาที่ยากส่วนใหญ่',
+        th: 'ภาพถ่ายอันโด่งดังในวันนั้นแสดงให้เห็นบรรดาผู้บริหารบริษัท แต่ไม่มีคนงานจีนเลยสักคน ทั้งที่พวกเขาเป็นผู้สร้างช่วงภูเขาที่ยากลำบากเกือบทั้งหมด',
       },
       {
         en: 'It took 150 years, but in 2019 the railway finally honored those forgotten builders with a memorial. History, the workers\' descendants said, had finally laid its last piece of track.',
         my: 'နှစ် ၁၅၀ ကြာခဲ့ပေမယ့် ၂၀၁၉ ခုနှစ်မှာ ရထားလမ်းက နောက်ဆုံး မေ့လျော့ခံရတဲ့ဆောက်လုပ်သူတွေကို အထိမ်းအမှတ်နဲ့ ဂုဏ်ပြုခဲ့တယ်။ သမိုင်းက နောက်ဆုံးမှာ သူ့နောက်ဆုံးသံလမ်းအပိုင်းကို ခင်းပြီးပြီလို့ အလုပ်သမားတွေရဲ့မျိုးဆက်တွေက ပြောခဲ့ကြတယ်။',
-        th: 'ใช้เวลา 150 ปี แต่ในปี 2019 ทางรถไฟให้เกียรติผู้สร้างที่ถูกลืมด้วยอนุสรณ์ในที่สุด ประวัติศาสตร์ ลูกหลานคนงานพูด ในที่สุดก็วางรางชิ้นสุดท้าย',
+        th: 'ใช้เวลา 150 ปี แต่ในปี 2019 ทางรถไฟได้มอบเกียรติแก่ผู้สร้างที่ถูกลืมเหล่านั้นด้วยอนุสรณ์สถานในที่สุด ลูกหลานของคนงานกล่าวว่า "ในที่สุดประวัติศาสตร์ก็วางรางท่อนสุดท้ายแล้ว"',
       },
     ],
   },
@@ -1028,12 +1028,12 @@ export const storiesBatch3: Story[] = [
       {
         en: 'During the Second World War, German submarines were sinking Allied ships faster than they could be built. The Germans believed their Enigma cipher was unbreakable — and for years, it nearly was.',
         my: 'ဒုတိယကမ္ဘာစစ်အတွင်း ဂျာမန်ရေငုပ်သင်္ဘောတွေက မဟာမိတ်သင်္ဘောတွေကို ဆောက်တာထက် မြန်မြန် နစ်မြုပ်စေနေတယ်။ ဂျာမန်တွေက သူတို့ရဲ့ အင်နစ်ဂမာလျှို့ဝှက်ကုဒ်ကို ဖြိုခွဲမရနိုင်ဘူးလို့ ယုံကြည်တယ် — နှစ်ပေါင်းများစွာ တကယ်နီးပါး ဖြိုခွဲမရခဲ့ဘူး။',
-        th: 'ช่วงสงครามโลกครั้งที่สอง เรือดำน้ำเยอรมันจมเรือพันธมิตรเร็วกว่าสร้างทดแทน เยอรมันเชื่อว่ารหัสเอนิกมาแตกไม่ได้ และหลายปีมันเกือบเป็นอย่างนั้น',
+        th: 'ช่วงสงครามโลกครั้งที่สอง เรือดำน้ำของเยอรมันจมเรือของฝ่ายพันธมิตรได้เร็วกว่าที่จะสร้างขึ้นมาทดแทนได้ ฝ่ายเยอรมันเชื่อว่ารหัสเอนิกมานั้นไม่มีใครถอดได้ และเป็นเวลาหลายปีมันก็เกือบจะเป็นเช่นนั้นจริง',
       },
       {
         en: 'At a quiet English country house called Bletchley Park, a strange team gathered: mathematicians, chess champions, linguists, and crossword experts. Their leader was a 27-year-old named Alan Turing.',
-        my: 'ဘလက်ချလီပാർ့ခ်ဆိုတဲ့ တိတ်ဆိတ်တဲ့အင်္ဂလိပ်တောအိမ်မှာ ထူးဆန်းတဲ့အဖွဲ့တစ်ဖွဲ့ စုဝေးခဲ့တယ် — သင်္ချာပညာရှင်တွေ၊ စစ်တုရင်ချန်ပီယံတွေ၊ ဘာသာဗေဒပညာရှင်တွေနဲ့ စကားဝှက်ပုစ္ဆာကျွမ်းကျင်သူတွေပေါ့။ သူတို့ခေါင်းဆောင်က အသက် ၂၇ နှစ်အရွယ် အလန် ကျူးရင်းဆိုသူဖြစ်တယ်။',
-        th: 'ที่บ้านชนบทอังกฤษเงียบชื่อเบลตช์ลีย์พาร์ก ทีมแปลกประหลาดรวมตัว นักคณิตศาสตร์ แชมป์หมากรุก นักภาษาศาสตร์ และเซียนครอสเวิร์ด ผู้นำคือชายวัย 27 ชื่ออลัน ทูริง',
+        my: 'ဘလက်ချလီပက်ဆိုတဲ့ တိတ်ဆိတ်တဲ့အင်္ဂလိပ်တောအိမ်မှာ ထူးဆန်းတဲ့အဖွဲ့တစ်ဖွဲ့ စုဝေးခဲ့တယ် — သင်္ချာပညာရှင်တွေ၊ စစ်တုရင်ချန်ပီယံတွေ၊ ဘာသာဗေဒပညာရှင်တွေနဲ့ စကားဝှက်ပုစ္ဆာကျွမ်းကျင်သူတွေပေါ့။ သူတို့ခေါင်းဆောင်က အသက် ၂၇ နှစ်အရွယ် အလန် ကျူးရင်းဆိုသူဖြစ်တယ်။',
+        th: 'ที่บ้านพักชนบทอันเงียบสงบของอังกฤษชื่อเบลตช์ลีย์พาร์ก ทีมงานที่แปลกประหลาดได้มารวมตัวกัน ได้แก่ นักคณิตศาสตร์ แชมป์หมากรุก นักภาษาศาสตร์ และเซียนครอสเวิร์ด ผู้นำคือชายวัย 27 ปีชื่ออลัน ทูริง',
       },
       {
         en: 'Turing realized that no human could test the Enigma\'s 159 million million million possible settings by hand. So he designed a machine — the Bombe — that could test them mechanically, day and night.',
@@ -1047,8 +1047,8 @@ export const storiesBatch3: Story[] = [
       },
       {
         en: 'Historians now believe Bletchley Park shortened the war by two years and saved millions of lives. Yet Turing himself was never thanked — after the war, he was prosecuted for his private life and died at just forty-one.',
-        my: 'သမိုင်းပညာရှင်တွေက အခု ဘလက်ချလီပาร์့ခ်က စစ်ကို နှစ်နှစ်တိုစေခဲ့ပြီး အသက်သန်းပေါင်းများစွာ ကယ်ခဲ့တယ်လို့ ယုံကြည်တယ်။ ဒါပေမယ့် ကျူးရင်းကိုယ်တိုင်က ဘယ်တော့မှ ကျေးဇူးမတင်ခံရဘူး — စစ်ပြီးတော့ သူ့ကိုယ်ပိုင်ဘဝကြောင့် တရားစွဲခံရပြီး အသက်လေးဆယ့်တစ်မှာသာ ကွယ်လွန်ခဲ့တယ်။',
-        th: 'นักประวัติศาสตร์เชื่อตอนนี้ว่าเบลตช์ลีย์พาร์กย่นสงครามสองปีและช่วยชีวิตนับล้าน แต่ทูริงเองไม่เคยได้รับคำขอบคุณ หลังสงครามเขาถูกดำเนินคดีเรื่องชีวิตส่วนตัวและตายตอนแค่สี่สิบเอ็ด',
+        my: 'သမိုင်းပညာရှင်တွေက အခု ဘလက်ချလီပက်က စစ်ကို နှစ်နှစ်တိုစေခဲ့ပြီး အသက်သန်းပေါင်းများစွာ ကယ်ခဲ့တယ်လို့ ယုံကြည်တယ်။ ဒါပေမယ့် ကျူးရင်းကိုယ်တိုင်က ဘယ်တော့မှ ကျေးဇူးမတင်ခံရဘူး — စစ်ပြီးတော့ သူ့ကိုယ်ပိုင်ဘဝကြောင့် တရားစွဲခံရပြီး အသက်လေးဆယ့်တစ်မှာသာ ကွယ်လွန်ခဲ့တယ်။',
+        th: 'ในปัจจุบันนักประวัติศาสตร์เชื่อว่าเบลตช์ลีย์พาร์กช่วยย่นระยะเวลาสงครามลงสองปีและช่วยชีวิตผู้คนนับล้าน แต่ทูริงเองไม่เคยได้รับคำขอบคุณ หลังสงครามเขาถูกดำเนินคดีเพราะเรื่องส่วนตัวและเสียชีวิตในวัยเพียงสี่สิบเอ็ดปี',
       },
       {
         en: 'Decades later, Britain officially apologized, and Turing\'s face now appears on the fifty-pound note. The man who taught machines to think is finally remembered — though far too late.',
@@ -1071,33 +1071,33 @@ export const storiesBatch3: Story[] = [
     paragraphs: [
       {
         en: 'Imagine you are riding in a self-driving car when a child runs into the road. The car cannot stop in time. It must choose: hit the child, or swerve into a wall — killing you, the passenger.',
-        my: 'ကိုယ်တိုင်မောင်းတဲ့ကားတစ်စီးမှာ သင် စီးနေတယ်လို့ စိတ်ကူးကြည့်ပါ၊ ကလေးတစ်ဦး လမ်းပေါ်ကို ပြေးထွက်လာတယ်။ ကား အချိန်မီ ရပ်မရနိုင်ဘူး။ ရွေးချယ်ရမယ် — ကလေးကို တိုက်မလား၊ ဒါမှမဟုတ် နံရံကို ရှောင်တိမ်းပြီး ခရီးသည်ဖြစ်တဲ့ သင့်ကို သတ်မလား။',
-        th: 'ลองนึกว่าคุณนั่งในรถไร้คนขับเมื่อเด็กวิ่งออกมากลางถนน รถหยุดไม่ทัน ต้องเลือก ชนเด็ก หรือหักเข้ากำแพง ฆ่าคุณผู้โดยสาร',
+        my: 'ကိုယ်တိုင်မောင်းတဲ့ကားတစ်စီးမှာ သင် စီးနေတယ်လို့ စိတ်ကူးကြည့်ပါ၊ ကလေးတစ်ဦး လမ်းပေါ်ကို ပြေးထွက်လာတယ်။ ကား အချိန်မီ ရပ်မရနိုင်ဘူး။ ရွေးချယ်ရမယ် — ကလေးကို တိုက်မလား၊ ဒါမှမဟုတ် နံရံဘက်ကို လှည့်တိုက်ပြီး ခရီးသည်ဖြစ်တဲ့ သင့်ကို သတ်မလား။',
+        th: 'ลองนึกว่าคุณนั่งอยู่ในรถไร้คนขับเมื่อมีเด็กวิ่งตัดหน้ารถออกมากลางถนน รถเบรกไม่ทัน จึงต้องเลือกว่าจะชนเด็ก หรือหักหลบเข้าหากำแพงซึ่งจะทำให้คุณผู้โดยสารเสียชีวิต',
       },
       {
         en: 'This is the famous "trolley problem," and it is no longer just philosophy. Engineers programming autonomous vehicles must write actual code that answers it — in millions of cars, every day.',
-        my: 'ဒါဟာ ကျော်ကြားတဲ့ "ထရော်လီပြဿနာ" ဖြစ်ပြီး ဒါဟာ ဒर्शनဗေဒသက်သက် မဟုတ်တော့ဘူး။ ကိုယ်ပိုင်အုပ်ချုပ်တဲ့ကားတွေကို ပရိုဂရမ်ရေးတဲ့ အင်ဂျင်နီယာတွေက ဒါကို ဖြေတဲ့ တကယ့်ကုဒ် ရေးရမယ် — နေ့တိုင်း ကားသန်းပေါင်းများစွာမှာ။',
+        my: 'ဒါဟာ ကျော်ကြားတဲ့ "ထရော်လီပြဿနာ" ဖြစ်ပြီး ဒါဟာ ဒဿနိကဗေဒသက်သက် မဟုတ်တော့ဘူး။ ကိုယ်ပိုင်အုပ်ချုပ်တဲ့ကားတွေကို ပရိုဂရမ်ရေးတဲ့ အင်ဂျင်နီယာတွေက ဒါကို ဖြေတဲ့ တကယ့်ကုဒ် ရေးရမယ် — နေ့တိုင်း ကားသန်းပေါင်းများစွာမှာ။',
         th: 'นี่คือ "ปัญหารถราง" อันโด่งดัง และไม่ใช่แค่ปรัชญาอีกต่อไป วิศวกรเขียนโปรแกรมรถอัตโนมัติต้องเขียนโค้ดจริงที่ตอบมัน ในรถนับล้านทุกวัน',
       },
       {
         en: 'Dr. Lena Vogt leads an ethics team at a major car company. Her job is to translate human values into decision rules. "Nobody wants to think about this," she says, "but the car has to decide in milliseconds."',
         my: 'ဒေါက်တာ လီနာ ဗော့ခ်ျက ကားကုမ္ပဏီကြီးတစ်ခုမှာ ကျင့်ဝတ်အဖွဲ့ကို ဦးဆောင်တယ်။ သူ့အလုပ်က လူ့တန်ဖိုးတွေကို ဆုံးဖြတ်ချက်စည်းမျဉ်းတွေ အဖြစ် ပြောင်းလဲဖို့ဖြစ်တယ်။ "ဘယ်သူမှ ဒါကို တွေးချင်မှာ မဟုတ်ဘူး" လို့ သူပြောတယ်၊ "ဒါပေမယ့် ကားက မီလီစက္ကန့်အတွင်း ဆုံးဖြတ်ရမယ်။"',
-        th: 'ดร.เลนา โฟกต์ นำทีมจริยธรรมที่บริษัทรถใหญ่ งานของเธอคือแปลค่านิยมมนุษย์เป็นกฎการตัดสินใจ "ไม่มีใครอยากคิดเรื่องนี้" เธอพูด "แต่รถต้องตัดสินใจในเสี้ยววินาที"',
+        th: 'ดร.เลนา โฟกต์ นำทีมจริยธรรมของบริษัทผลิตรถยนต์รายใหญ่ งานของเธอคือการแปลงค่านิยมของมนุษย์ให้เป็นกฎการตัดสินใจ เธอกล่าวว่า "ไม่มีใครอยากคิดเรื่องนี้ แต่รถต้องตัดสินใจภายในเสี้ยววินาที"',
       },
       {
         en: 'Surveys show a troubling contradiction: most people want cars that protect pedestrians at all costs — but say they would never buy a car programmed to sacrifice its own passenger.',
         my: 'စစ်တမ်းတွေက စိုးရိမ်ဖွယ်ဆန့်ကျင်ဘက်ကို ပြတယ် — လူအများစုက လမ်းသွားလမ်းလာတွေကို ဘယ်ဈေးနဲ့မဆို ကာကွယ်တဲ့ကားတွေ လိုချင်တယ် — ဒါပေမယ့် ကိုယ့်ခရီးသည်ကို စွန့်လွှတ်ဖို့ ပရိုဂရမ်ရေးထားတဲ့ကားကို ဘယ်တော့မှ မဝယ်ဘူးလို့ ပြောတယ်။',
-        th: 'แบบสำรวจเผยความขัดแย้งน่ากังวล คนส่วนใหญ่ต้องการรถที่ปกป้องคนเดินเท้าไม่ว่าราคาใด แต่บอกว่าจะไม่ซื้อรถที่โปรแกรมให้สละผู้โดยสารตัวเอง',
+        th: 'แบบสำรวจเผยให้เห็นความขัดแย้งที่น่ากังวล คนส่วนใหญ่ต้องการรถที่ปกป้องคนเดินเท้าไม่ว่าจะต้องแลกด้วยอะไรก็ตาม แต่กลับบอกว่าจะไม่ซื้อรถที่ถูกตั้งโปรแกรมให้สละชีวิตผู้โดยสารของตัวเอง',
       },
       {
         en: 'Some engineers argue the dilemma is overblown: self-driving cars, they say, will simply cause far fewer accidents overall. But regulators insist that rare edge cases still need written rules.',
-        my: 'အင်ဂျင်နီယာတချို့က ဒီကျင့်ဝတ်ပြဿနာကို အလွန်အကျွံပြောတယ်လို့ ဆိုတယ် — ကိုယ်တိုင်မောင်းတဲ့ကားတွေက ယေဘုယျအားဖြင့် မတော်တဆမှု အများကြီး နည်းစေလိမ့်မယ်လို့ သူတို့ ပြောတယ်။ ဒါပေမယ့် စည်းမျဉ်းချမှတ်သူတွေက ရှားပါးတဲ့အစွန်းအထင်းအခြေအနေတွေအတွက် ရေးသားထားတဲ့စည်းမျဉ်းတွေ လိုအပ်နေသေးတယ်လို့ တောင်းဆိုတယ်။',
-        th: 'วิศวกรบางคนโต้ว่าปัญหาถูกขยายเกิน รถไร้คนขับจะทำให้อุบัติเหตุน้อยลงมากโดยรวม แต่ผู้กำกับดูแลยืนว่ากรณีขอบหายากยังต้องมีกฎลายลักษณ์อักษร',
+        my: 'အင်ဂျင်နီယာတချို့က ဒီကျင့်ဝတ်ပြဿနာကို အလွန်အကျွံပြောတယ်လို့ ဆိုတယ် — ကိုယ်တိုင်မောင်းတဲ့ကားတွေက ယေဘုယျအားဖြင့် မတော်တဆမှု အများကြီး နည်းစေလိမ့်မယ်လို့ သူတို့ ပြောတယ်။ ဒါပေမယ့် စည်းမျဉ်းချမှတ်သူတွေက ရှားပါးတဲ့အစွန်းအခြေအနေတွေအတွက် ရေးသားထားတဲ့စည်းမျဉ်းတွေ လိုအပ်နေသေးတယ်လို့ တောင်းဆိုတယ်။',
+        th: 'วิศวกรบางคนโต้ว่าประเด็นนี้ถูกพูดเกินจริง รถไร้คนขับจะทำให้อุบัติเหตุลดลงมากโดยรวม แต่หน่วยงานกำกับดูแลยืนยันว่ากรณีสุดขอบ (edge case) ที่พบได้ยากยังต้องมีกฎเป็นลายลักษณ์อักษร',
       },
       {
         en: 'For now, Dr. Vogt\'s team programs cars to brake first, warn loudly, and minimize total harm — without ranking human lives by age or value. "The moment we rank lives," she says quietly, "we have already lost."',
         my: 'အခုတော့ ဒေါက်တာ ဗော့ခ်ျရဲ့အဖွဲ့က ကားတွေကို အရင်ဘရိတ်အုပ်ဖို့၊ ကျယ်ကျယ်သတိပေးဖို့နဲ့ စုစုပေါင်းထိခိုက်မှုကို အနည်းဆုံးဖြစ်အောင် — လူ့အသက်တွေကို အသက်အရွယ် ဒါမှမဟုတ် တန်ဖိုးနဲ့ အဆင့်မသတ်မှတ်ဘဲ — ပရိုဂရမ်ရေးထားတယ်။ "အသက်တွေကို အဆင့်သတ်မှတ်တဲ့အခိုက်မှာ" လို့ သူက တိုးတိုးပြောတယ်၊ "ကျွန်တော်တို့ ရှုံးနှင်ပြီးသား ဖြစ်နေပြီ။"',
-        th: 'ตอนนี้ทีมดร.โฟกต์โปรแกรมรถให้เบรกก่อน เตือนดัง และลดความเสียหายรวม โดยไม่จัดอันดับชีวิตมนุษย์ตามอายุหรือคุณค่า "วินาทีที่เราจัดอันดับชีวิต" เธอพูดเบาๆ "เราแพ้แล้ว"',
+        th: 'ขณะนี้ทีมของดร.โฟกต์ตั้งโปรแกรมให้รถเบรกก่อน ส่งเสียงเตือนดัง และลดความเสียหายโดยรวม โดยไม่จัดอันดับชีวิตมนุษย์ตามอายุหรือคุณค่า เธอกล่าวเบาๆ ว่า "วินาทีที่เราจัดอันดับชีวิตมนุษย์ เราก็แพ้แล้ว"',
       },
     ],
   },
@@ -1116,7 +1116,7 @@ export const storiesBatch3: Story[] = [
       {
         en: 'Country A announced a massive dam to store water for its growing cities. Country B protested: the dam would cut the river\'s flow by half, destroying its rice fields. Country C, furthest downstream, feared its delta would turn to salt.',
         my: 'နိုင်ငံ A က ကြီးထွားလာတဲ့မြို့တွေအတွက် ရေသိုလှောင်ဖို့ ဆည်ကြီးတစ်ခု ဆောက်မယ်လို့ ကြေညာခဲ့တယ်။ နိုင်ငံ B က ကန့်ကွက်တယ် — ဆည်က မြစ်စီးဆင်းမှုကို တစ်ဝက်လျှော့ချပြီး သူ့စပါးခင်းတွေ ဖျက်ဆီးလိမ့်မယ်။ အဝေးဆုံးအောက်ဘက်က နိုင်ငံ C က သူ့မြစ်ဝကျွန်းပေါ်ဒေသ ဆားငန်ကုန်းဖြစ်သွားမှာ စိုးရိမ်တယ်။',
-        th: 'ประเทศ A ประกาศเขื่อนยักษ์เก็บน้ำให้เมืองที่โต ประเทศ B ประท้วง เขื่อนจะตัดการไหลของแม่น้ำครึ่งหนึ่ง ทำลายนาข้าว ประเทศ C ไกลสุดปลายน้ำ กลัวดินดอนสามเหลี่ยมกลายเป็นเกลือ',
+        th: 'ประเทศ A ประกาศสร้างเขื่อนขนาดใหญ่เพื่อกักเก็บน้ำให้เมืองที่กำลังเติบโต ประเทศ B ประท้วงว่าเขื่อนจะลดปริมาณน้ำไหลของแม่น้ำลงครึ่งหนึ่ง ทำลายนาข้าวของตน ส่วนประเทศ C ซึ่งอยู่ปลายน้ำไกลที่สุด เกรงว่าดินดอนสามเหลี่ยมปากแม่น้ำจะกลายเป็นดินเค็ม',
       },
       {
         en: 'Negotiations lasted eleven years. Engineers argued about flow rates; historians argued about ancient treaties; farmers simply watched their wells run dry while diplomats talked.',
@@ -1131,12 +1131,12 @@ export const storiesBatch3: Story[] = [
       {
         en: 'The treaty was signed on a boat in the middle of the river — a symbol, the leaders said, that the water belonged to no single nation. Within five years, crop yields rose in all three countries.',
         my: 'စာချုပ်ကို မြစ်အလယ်က လှေတစ်စင်းပေါ်မှာ လက်မှတ်ရေးထိုးခဲ့ကြတယ် — ရေက နိုင်ငံတစ်ခုတည်းနဲ့ မဆိုင်ဘူးဆိုတဲ့ သင်္ကေတဖြစ်တယ်လို့ ခေါင်းဆောင်တွေက ပြောတယ်။ ငါးနှစ်အတွင်းမှာ နိုင်ငံသုံးနိုင်ငံလုံးမှာ သီးနှံထွက်နှုန်း မြင့်တက်လာတယ်။',
-        th: 'สนธิสัญญาเซ็นบนเรือกลางแม่น้ำ สัญลักษณ์ ผู้นำพูด ว่าน้ำไม่เป็นของชาติเดียว ภายในห้าปี ผลผลิตพืชเพิ่มในทั้งสามประเทศ',
+        th: 'มีการลงนามสนธิสัญญาบนเรือกลางแม่น้ำ ผู้นำกล่าวว่านี่เป็นสัญลักษณ์ที่แสดงว่าน้ำไม่ได้เป็นของชาติใดชาติหนึ่ง ภายในห้าปี ผลผลิตพืชผลเพิ่มขึ้นในทั้งสามประเทศ',
       },
       {
         en: 'Experts now study the River Treaty as a model for the world\'s 260 shared rivers. Its lesson is simple but hard: water conflicts are rarely solved by dividing water — they are solved by multiplying trust.',
         my: 'ကျွမ်းကျင်သူတွေက အခု ဒီမြစ်စာချုပ်ကို ကမ္ဘာ့မျှဝေမြစ် ၂၆၀ အတွက် ပုံစံအဖြစ် လေ့လာနေကြတယ်။ သူ့သင်ခန်းစာက ရိုးရှင်းပေမယ့် ခက်ခဲတယ် — ရေပဋိပက္ခတွေကို ရေခွဲဝေပြီး ဖြေရှင်းတာ ရှားတယ် — ယုံကြည်မှုကို ပွားများစေပြီး ဖြေရှင်းတာဖြစ်တယ်။',
-        th: 'ผู้เชี่ยวชาญตอนนี้ศึกษาสนธิสัญญาแม่น้ำเป็นแบบอย่างให้แม่น้ำร่วม 260 สายของโลก บทเรียนเรียบง่ายแต่ยาก ความขัดแย้งน้ำแก้ยากด้วยการแบ่งน้ำ แก้ด้วยการทวีคูณความไว้ใจ',
+        th: 'ในปัจจุบันผู้เชี่ยวชาญศึกษาสนธิสัญญาแม่น้ำฉบับนี้เป็นแบบอย่างสำหรับแม่น้ำที่หลายประเทศใช้ร่วมกัน 260 สายของโลก บทเรียนนั้นเรียบง่ายแต่ทำได้ยาก ความขัดแย้งเรื่องน้ำมักแก้ไม่ได้ด้วยการแบ่งน้ำ แต่แก้ได้ด้วยการเพิ่มพูนความไว้ใจ',
       },
     ],
   },
@@ -1154,28 +1154,28 @@ export const storiesBatch3: Story[] = [
       },
       {
         en: 'Patient one was a seven-year-old boy with a severe infection. Patient two was a sixty-eight-year-old grandmother, a retired teacher, whose condition was equally critical.',
-        my: 'ပထမလူနာက ပြင်းထန်တဲ့ကူးစက်ရောဂါရှိတဲ့ အသက်ခုနှစ်နှစ်အရွယ် ကောင်လေးဖြစ်တယ်။ ဒုတိယလူနာက အခြေအနေအညီအမျှ စိုးရိမ်ရတဲ့ အသက် ၆၈ နှစ်အရွယ် အဘိုးအငြိမ်းစားဆရာမဖြစ်တယ်။',
+        my: 'ပထမလူနာက ပြင်းထန်တဲ့ကူးစက်ရောဂါရှိတဲ့ အသက်ခုနှစ်နှစ်အရွယ် ကောင်လေးဖြစ်တယ်။ ဒုတိယလူနာက အခြေအနေအညီအမျှ စိုးရိမ်ရတဲ့ အသက် ၆၈ နှစ်အရွယ် အဘွား၊ အငြိမ်းစားဆရာမဖြစ်တယ်။',
         th: 'คนไข้หนึ่งคือเด็กชายเจ็ดขวบติดเชื้อรุนแรง คนไข้สองคือคุณยายวัยหกสิบแปด ครูเกษียณ อาการวิกฤตเท่ากัน',
       },
       {
         en: 'Hospital protocol was clear: in shortages, priority goes to the patient most likely to survive with treatment. By every medical measure, that was the boy. But the grandmother\'s family was begging in the corridor.',
-        my: 'ဆေးရုံလုပ်ထုံးလုပ်နည်းက ရှင်းတယ် — ရှားပါးမှုမှာ ကုသမှုနဲ့ ရှင်သန်နိုင်ခြေအများဆုံးလူနာကို ဦးစားပေးတယ်။ ဆေးပညာတိုင်းတာမှုတိုင်းအရ အဲဒါက ကောင်လေးဖြစ်တယ်။ ဒါပေမယ့် အဘိုးရဲ့မိသားစုက စင်္ကြန်လမ်းမှာ တောင်းပန်နေတယ်။',
-        th: 'ระเบียบโรงพยาบาลชัดเจน ขาดแคลน ให้ความสำคัญกับคนไข้ที่มีโอกาสรอดด้วยการรักษามากสุด ทุกมาตรการแพทย์ นั่นคือเด็กชาย แต่ครอบครัวคุณยายอ้อนวอนในทางเดิน',
+        my: 'ဆေးရုံလုပ်ထုံးလုပ်နည်းက ရှင်းတယ် — ရှားပါးမှုမှာ ကုသမှုနဲ့ ရှင်သန်နိုင်ခြေအများဆုံးလူနာကို ဦးစားပေးတယ်။ ဆေးပညာတိုင်းတာမှုတိုင်းအရ အဲဒါက ကောင်လေးဖြစ်တယ်။ ဒါပေမယ့် အဘွားရဲ့မိသားစုက စင်္ကြန်လမ်းမှာ တောင်းပန်နေတယ်။',
+        th: 'ระเบียบของโรงพยาบาลระบุไว้ชัดเจนว่าในภาวะขาดแคลน ให้จัดลำดับความสำคัญแก่คนไข้ที่มีโอกาสรอดชีวิตด้วยการรักษามากที่สุด ตามเกณฑ์ทางการแพทย์ทุกข้อ คนไข้รายนั้นคือเด็กชาย แต่ครอบครัวของคุณยายกำลังอ้อนวอนอยู่ในโถงทางเดิน',
       },
       {
         en: 'Dr. Khin made the call the protocol demanded — and then did something the protocol did not require. She sat with the grandmother\'s family for an hour, explaining, listening, and grieving with them.',
-        my: 'ဒေါက်တာ ခင်က လုပ်ထုံးလုပ်နည်း တောင်းဆိုတဲ့ဆုံးဖြတ်ချက် ချခဲ့တယ် — ပြီးတော့ လုပ်ထုံးလုပ်နည်း မတောင်းဆိုတဲ့အရာ လုပ်ခဲ့တယ်။ အဘိုးရဲ့မိသားစုနဲ့ တစ်နာရီ ထိုင်နေခဲ့တယ်၊ ရှင်းပြတယ်၊ နားထောင်တယ်၊ သူတို့နဲ့အတူ ဝမ်းနည်းတယ်။',
-        th: 'ดร.คิน ตัดสินใจตามระเบียบต้องการ แล้วทำสิ่งที่ระเบียบไม่ต้องการ เธอนั่งกับครอบครัวคุณยายหนึ่งชั่วโมง อธิบาย ฟัง และโศกเศร้ากับพวกเขา',
+        my: 'ဒေါက်တာ ခင်က လုပ်ထုံးလုပ်နည်း တောင်းဆိုတဲ့ဆုံးဖြတ်ချက် ချခဲ့တယ် — ပြီးတော့ လုပ်ထုံးလုပ်နည်း မတောင်းဆိုတဲ့အရာ လုပ်ခဲ့တယ်။ အဘွားရဲ့မိသားစုနဲ့ တစ်နာရီ ထိုင်နေခဲ့တယ်၊ ရှင်းပြတယ်၊ နားထောင်တယ်၊ သူတို့နဲ့အတူ ဝမ်းနည်းတယ်။',
+        th: 'ดร.คินตัดสินใจตามที่ระเบียบกำหนด แล้วทำสิ่งที่ระเบียบไม่ได้กำหนดไว้ เธอนั่งอยู่กับครอบครัวของคุณยายหนึ่งชั่วโมง คอยอธิบาย รับฟัง และร่วมโศกเศร้าไปกับพวกเขา',
       },
       {
         en: 'The boy survived. The grandmother did not. Dr. Khin still remembers both names, years later, and says the hardest part of medicine is not the science — it is carrying the weight of choices that have no good answer.',
-        my: 'ကောင်လေး ရှင်သန်ခဲ့တယ်။ အဘိုးက မရှင်သန်ခဲ့ဘူး။ ဒေါက်တာ ခင်က နှစ်တွေအကြာမှာတောင် နာမည်နှစ်ခုလုံး မှတ်မိနေဆဲဖြစ်ပြီး ဆေးပညာရဲ့အခက်ခဲဆုံးအပိုင်းက သိပ္ပံမဟုတ်ဘူးလို့ ပြောတယ် — အဖြေကောင်းမရှိတဲ့ရွေးချယ်မှုတွေရဲ့အလေးချိန်ကို သယ်ဆောင်ရတာဖြစ်တယ်။',
+        my: 'ကောင်လေး ရှင်သန်ခဲ့တယ်။ အဘွားက မရှင်သန်ခဲ့ဘူး။ ဒေါက်တာ ခင်က နှစ်တွေအကြာမှာတောင် နာမည်နှစ်ခုလုံး မှတ်မိနေဆဲဖြစ်ပြီး ဆေးပညာရဲ့အခက်ခဲဆုံးအပိုင်းက သိပ္ပံမဟုတ်ဘူးလို့ ပြောတယ် — အဖြေကောင်းမရှိတဲ့ရွေးချယ်မှုတွေရဲ့အလေးချိန်ကို သယ်ဆောင်ရတာဖြစ်တယ်။',
         th: 'เด็กชายรอด คุณยายไม่รอด ดร.คิน ยังจำชื่อทั้งสอง ปีต่อมา และบอกว่าส่วนยากสุดของแพทย์ไม่ใช่วิทยาศาสตร์ คือการแบกน้ำหนักของทางเลือกที่ไม่มีคำตอบดี',
       },
       {
         en: 'She now teaches medical ethics to young doctors, using that night as her first lesson. "Protocols tell you what to do," she says. "But only your humanity tells you how to live with it afterward."',
         my: 'သူက အခု ဆရာဝန်ငယ်တွေကို ဆေးကျင့်ဝတ်သင်ပေးတယ်၊ အဲဒီညကို သူ့ပထမဆုံးသင်ခန်းစာအဖြစ် သုံးတယ်။ "လုပ်ထုံးလုပ်နည်းတွေက ဘာလုပ်ရမလဲဆိုတာ ပြောတယ်" လို့ သူပြောတယ်။ "ဒါပေမယ့် ပြီးတော့ ဘယ်လိုနေထိုင်ရမလဲဆိုတာကိုတော့ သင့်လူသားဆန်မှုကသာ ပြောတယ်။"',
-        th: 'ตอนนี้เธอสอนจริยธรรมแพทย์ให้หมอหนุ่ม ใช้คืนนั้นเป็นบทเรียนแรก "ระเบียบบอกว่าต้องทำอะไร" เธอพูด "แต่มีแค่มนุษยธรรมที่บอกว่าจะอยู่กับมันอย่างไรต่อ"',
+        th: 'ขณะนี้เธอสอนวิชาจริยธรรมทางการแพทย์แก่แพทย์หนุ่ม โดยใช้คืนนั้นเป็นบทเรียนแรก เธอกล่าวว่า "ระเบียบบอกว่าเราต้องทำอะไร แต่มีเพียงความเป็นมนุษย์ในตัวเราเท่านั้นที่จะบอกได้ว่าเราจะใช้ชีวิตอยู่กับมันต่อไปอย่างไร"',
       },
     ],
   },
@@ -1189,7 +1189,7 @@ export const storiesBatch3: Story[] = [
       {
         en: 'Investigative journalist Amara Diallo spent fourteen months tracing money through shell companies, false invoices, and offshore accounts. Her target: a construction empire built on bribes.',
         my: 'စုံစမ်းဖော်ထုတ်တဲ့ သတင်းထောက် အမာရာ ဒီယာလိုက အခွံအကာကုမ္ပဏီတွေ၊ အတုပြေစာတွေနဲ့ ကမ်းလွန်အကောင့်တွေဖြတ်ပြီး ငွေကို ဆယ့်လေးလ ကြာအောင် ခြေရာခံခဲ့တယ်။ သူ့ပစ်မှတ်က လာဘ်ပေးမှုတွေပေါ် တည်ဆောက်ထားတဲ့ ဆောက်လုပ်ရေးအင်ပါယာဖြစ်တယ်။',
-        th: 'นักข่าวสืบสวนอามารา ดิอัลโล ใช้เวลาสิบสี่เดือนตามรอยเงินผ่านบริษัทเปลือก ใบแจ้งหนี้เท็จ และบัญชีนอกชายฝั่ง เป้าหมาย อาณาจักรก่อสร้างที่สร้างบนสินบน',
+        th: 'นักข่าวสืบสวนอามารา ดิอัลโล ใช้เวลาสิบสี่เดือนตามรอยเงินผ่านบริษัทบังหน้า ใบแจ้งหนี้ปลอม และบัญชีต่างประเทศ เป้าหมายของเธอคืออาณาจักรก่อสร้างที่สร้างขึ้นบนการติดสินบน',
       },
       {
         en: 'Three weeks before publication, the threats began. Anonymous calls at midnight. A dead bird on her doorstep. An offer of money — "more than you will earn in ten years" — to drop the story.',
@@ -1204,7 +1204,7 @@ export const storiesBatch3: Story[] = [
       {
         en: 'But victory came with a bill. The company sued her newspaper for defamation, demanding damages that would bankrupt it. Amara herself was followed for months and stopped sleeping through the night.',
         my: 'ဒါပေမယ့် အောင်ပွဲက ဈေးနှုန်းနဲ့အတူ ရောက်လာတယ်။ ကုမ္ပဏီက သူ့သတင်းစာကို အသရေဖျက်မှုနဲ့ တရားစွဲတယ်၊ သတင်းစာ ဒေဝါလီခံရမယ့် လျော်ကြေးတောင်းတယ်။ အမာရာကိုယ်တိုင်က လပေါင်းများစွာ နောက်ယောင်ခံရပြီး ညဘက် အိပ်မပျော်တော့ဘူး။',
-        th: 'แต่ชัยชนะมาพร้อมบิล บริษัทฟ้องหนังสือพิมพ์หมิ่นประมาท เรียกค่าเสียหายที่จะล้มละลายมัน อามาราเองถูกตามหลายเดือนและนอนไม่หลับตลอดคืน',
+        th: 'แต่ชัยชนะมาพร้อมกับราคาที่ต้องจ่าย บริษัทฟ้องหนังสือพิมพ์ของเธอในข้อหาหมิ่นประมาท เรียกค่าเสียหายจำนวนที่จะทำให้หนังสือพิมพ์ล้มละลาย ส่วนอามาราเองถูกติดตามเป็นเวลาหลายเดือนและนอนไม่หลับตลอดทั้งคืน',
       },
       {
         en: 'The lawsuit dragged on for four years. Amara won in the end — every fact in her reporting was proven true — but the newspaper never fully recovered, and she still checks her car before starting it.',
@@ -1233,17 +1233,17 @@ export const storiesBatch3: Story[] = [
       {
         en: 'The system had been trained on ten years of the company\'s hiring data. Since most successful hires had been men from certain universities, the algorithm learned to prefer resumes that looked like theirs.',
         my: 'စနစ်ကို ကုမ္ပဏီရဲ့ဆယ်နှစ်တာအလုပ်ခန့်မှုဒေတာနဲ့ လေ့ကျင့်ထားတယ်။ အောင်မြင်တဲ့ခန့်အပ်မှုအများစုက တချို့တက္ကသိုလ်တွေက အမျိုးသားတွေဖြစ်တာကြောင့် အယ်လဂိုရီသမ်က သူတို့ကိုယ်ရေးအကျဉ်းနဲ့တူတာတွေကို ဦးစားပေးဖို့ သင်ယူခဲ့တယ်။',
-        th: 'ระบบถูกฝึกด้วยข้อมูลจ้างงานสิบปีของบริษัท เนื่องจากผู้ถูกจ้างที่สำเร็จส่วนใหญ่เป็นผู้ชายจากมหาวิทยาลัยบางแห่ง อัลกอริทึมจึงเรียนที่จะชอบเรซูเมที่ดูเหมือนพวกเขา',
+        th: 'ระบบถูกฝึกด้วยข้อมูลการจ้างงานสิบปีของบริษัท เนื่องจากผู้ที่ได้รับการว่าจ้างและประสบความสำเร็จส่วนใหญ่เป็นผู้ชายจากมหาวิทยาลัยเฉพาะบางแห่ง อัลกอริทึมจึงเรียนรู้ที่จะให้ความสำคัญกับเรซูเมที่มีลักษณะคล้ายกับของพวกเขา',
       },
       {
         en: 'Nobody had programmed it to discriminate. The bias emerged on its own, hidden inside millions of calculations — a mirror reflecting the company\'s past, disguised as objective judgment.',
         my: 'ဘယ်သူမှ ခွဲခြားဆက်ဆံဖို့ ပရိုဂရမ်မရေးခဲ့ဘူး။ ဘက်လိုက်မှုက တွက်ချက်မှုသန်းပေါင်းများစွာထဲမှာ ဝှက်ထားပြီး သူ့အလိုလို ထွက်ပေါ်လာတယ် — ကုမ္ပဏီရဲ့အတိတ်ကို ထင်ဟပ်တဲ့မှန်ဖြစ်ပြီး ဓမ္မဓိဋ္ဌာန်ကျတဲ့စီရင်ချက်အဖြစ် အယောင်ဆောင်ထားတယ်။',
-        th: 'ไม่มีใครโปรแกรมให้เลือกปฏิบัติ อคติผุดเอง ซ่อนในคำนวณนับล้าน กระจกสะท้อนอดีตของบริษัท ปลอมเป็นวิจารณญาณที่เป็นกลาง',
+        th: 'ไม่มีใครตั้งโปรแกรมให้มันเลือกปฏิบัติ อคติเกิดขึ้นเอง ซ่อนอยู่ในการคำนวณนับล้านครั้ง เป็นดั่งกระจกสะท้อนอดีตของบริษัทที่ปลอมตัวเป็นวิจารณญาณอันเป็นกลาง',
       },
       {
         en: 'When researchers exposed the pattern, the company was embarrassed — then defensive. "The algorithm only finds the best candidates," a spokesperson said, missing the point entirely.',
         my: 'သုတေသီတွေက ပုံစံကို ဖော်ထုတ်တဲ့အခါ ကုမ္ပဏီက ရှက်ခဲ့တယ် — ပြီးတော့ ခုခံလာတယ်။ "အယ်လဂိုရီသမ်က အကောင်းဆုံးလျှောက်ထားသူတွေကိုသာ ရှာတယ်" လို့ ပြောရေးဆိုခွင့်ရှိသူက ပြောတယ်၊ အဓိကအချက်ကို လုံးဝလွဲချော်နေတယ်။',
-        th: 'เมื่อนักวิจัยเปิดโปงรูปแบบ บริษัทอาย แล้วตั้งรับ "อัลกอริทึมหาแค่ผู้สมัครดีที่สุด" โฆษกพูด พลาดประเด็นสิ้นเชิง',
+        th: 'เมื่อนักวิจัยเปิดโปงรูปแบบดังกล่าว บริษัทก็รู้สึกอับอายแล้วจึงตั้งท่าป้องกันตัว โฆษกกล่าวว่า "อัลกอริทึมเพียงค้นหาผู้สมัครที่ดีที่สุด" ซึ่งพลาดประเด็นไปอย่างสิ้นเชิง',
       },
       {
         en: 'Maya eventually found work at a firm that reviews its hiring tools for fairness every year. She now helps design audits that ask a simple question: who does this system silently leave behind?',
@@ -1265,9 +1265,9 @@ export const storiesBatch3: Story[] = [
     titleTh: 'นักสืบข้อมูล',
     paragraphs: [
       {
-        en: 'Elena Rossi does not carry a gun or a badge. Her weapons are spreadsheets, satellite images, and an stubborn refusal to accept that numbers cannot lie — because, she says, they lie all the time.',
+        en: 'Elena Rossi does not carry a gun or a badge. Her weapons are spreadsheets, satellite images, and a stubborn refusal to accept that numbers cannot lie — because, she says, they lie all the time.',
         my: 'အယ်လီနာ ရော့စီက သေနတ်လည်း မကိုင်၊ တံဆိပ်လည်း မရှိ။ သူ့လက်နက်တွေက စာရင်းဇယားတွေ၊ ဂြိုဟ်တုဓာတ်ပုံတွေနဲ့ ကိန်းဂဏန်းတွေ မလိမ်နိုင်ဘူးဆိုတာကို လက်မခံတဲ့ ခိုင်မာတဲ့ငြင်းဆန်မှုဖြစ်တယ် — ဘာလို့လဲဆိုတော့ သူတို့အမြဲ လိမ်တယ်လို့ သူပြောတယ်။',
-        th: 'เอเลนา รอสซี ไม่พกปืนหรือตรา อาวุธของเธอคือสเปรดชีต ภาพดาวเทียม และการปฏิเสธอย่างดื้อรั้นที่จะยอมรับว่าตัวเลขโกหกไม่ได้ เพราะ เธอพูด มันโกหกตลอดเวลา',
+        th: 'เอเลนา รอสซี ไม่พกปืนหรือตรา อาวุธของเธอคือสเปรดชีต ภาพถ่ายดาวเทียม และการปฏิเสธอย่างหัวชนฝาที่จะยอมรับว่าตัวเลขโกหกไม่ได้ เพราะเธอกล่าวว่าตัวเลขนั้นโกหกอยู่ตลอดเวลา',
       },
       {
         en: 'Her latest case began with a fishing company\'s official reports: modest catches, legal zones, perfect compliance. But Elena noticed the fuel receipts told a different story — the ships were traveling much further than their logs claimed.',
@@ -1277,7 +1277,7 @@ export const storiesBatch3: Story[] = [
       {
         en: 'She cross-referenced the fuel data with satellite tracking, port records, and even the ships\' social media posts by crew members. Piece by piece, a hidden map emerged: illegal fishing in a protected marine reserve.',
         my: 'သူက လောင်စာဒေတာကို ဂြိုဟ်တုခြေရာခံမှု၊ ဆိပ်ကမ်းမှတ်တမ်းတွေနဲ့ သင်္ဘောသားတွေရဲ့ ဆိုရှယ်မီဒီယာပို့စ်တွေနဲ့တောင် နှိုင်းယှဉ်ခဲ့တယ်။ တစ်ခုပြီးတစ်ခု လျှို့ဝှက်မြေပုံတစ်ခု ထွက်ပေါ်လာတယ် — ကာကွယ်ထားတဲ့အဏ္ဏဝါဘေးမဲ့တောမှာ တရားမဝင်ငါးဖမ်းခြင်းဖြစ်တယ်။',
-        th: 'เธอเทียบข้อมูลน้ำมันกับการติดตามดาวเทียม บันทึกท่าเรือ และแม้แต่โพสต์โซเชียลมีเดียของลูกเรือ ทีละชิ้น แผนที่ซ่อนผุด การประมงผิดกฎหมายในเขตสงวนทางทะเล',
+        th: 'เธอนำข้อมูลน้ำมันมาเทียบเคียงกับการติดตามดาวเทียม บันทึกของท่าเรือ และแม้แต่โพสต์โซเชียลมีเดียของลูกเรือ ทีละชิ้นทีละส่วน แผนที่ที่ซ่อนอยู่ก็ปรากฏขึ้น นั่นคือการประมงผิดกฎหมายในเขตสงวนทางทะเล',
       },
       {
         en: 'When Elena published her findings, the company denied everything — until she released the satellite images with timestamps. The evidence was so precise that regulators acted within weeks.',
@@ -1292,7 +1292,7 @@ export const storiesBatch3: Story[] = [
       {
         en: '"Data is the new crime scene," Elena says. "Criminals used to hide in the dark. Now they hide in spreadsheets — but spreadsheets, unlike darkness, can be searched."',
         my: '"ဒေတာက ရာဇဝတ်မှုနေရာအသစ်ဖြစ်တယ်" လို့ အယ်လီနာက ပြောတယ်။ "ရာဇဝတ်သားတွေက အရင်က အမှောင်ထဲမှာ ပုန်းတယ်။ အခု သူတို့ စာရင်းဇယားတွေထဲမှာ ပုန်းတယ် — ဒါပေမယ့် စာရင်းဇယားတွေက အမှောင်နဲ့မတူဘူး၊ ရှာဖွေနိုင်တယ်။"',
-        th: '"ข้อมูลคือที่เกิดเหตุอาชญากรรมใหม่" เอเลนาพูด "อาชญากรเคยซ่อนในความมืด ตอนนี้ซ่อนในสเปรดชีต แต่สเปรดชีตต่างจากความมืด ค้นหาได้"',
+        th: 'เอเลนากล่าวว่า "ข้อมูลคือสถานที่เกิดเหตุอาชญากรรมแห่งใหม่ อาชญากรเคยซ่อนตัวในความมืด ตอนนี้พวกเขาซ่อนตัวในสเปรดชีต แต่สเปรดชีตนั้นต่างจากความมืดตรงที่มันสามารถค้นหาได้"',
       },
     ],
   },
@@ -1311,7 +1311,7 @@ export const storiesBatch3: Story[] = [
       {
         en: 'For a century, this weirdness stayed locked in laboratories. Then engineers asked a bold question: what if we could build computers that calculate using this strangeness itself?',
         my: 'ရာစုနှစ်တစ်ခုတိုင်တိုင် ဒီထူးဆန်းမှုက ဓာတ်ခွဲခန်းတွေထဲမှာ ပိတ်မိနေတယ်။ ပြီးတော့ အင်ဂျင်နီယာတွေက ရဲရင့်တဲ့မေးခွန်းမေးခဲ့တယ် — ဒီထူးဆန်းမှုကိုယ်တိုင်နဲ့ တွက်ချက်တဲ့ကွန်ပျူတာတွေ တည်ဆောက်နိုင်ရင် ဘယ်လိုနေမလဲ။',
-        th: 'หนึ่งศตวรรษ ความแปลกนี้ถูกขังในห้องแล็บ แล้ววิศวกรถามคำถามกล้า ถ้าเราสร้างคอมพิวเตอร์ที่คำนวณโดยใช้ความแปลกนี้เองล่ะ',
+        th: 'เป็นเวลาหนึ่งศตวรรษ ความแปลกประหลาดนี้ถูกกักไว้ในห้องทดลอง จากนั้นวิศวกรก็ตั้งคำถามที่กล้าหาญว่า ถ้าเราสร้างคอมพิวเตอร์ที่คำนวณโดยใช้ความแปลกประหลาดนี้เองล่ะ',
       },
       {
         en: 'A quantum computer does not use ordinary bits — ones and zeros. It uses qubits, which can be one, zero, or both simultaneously. Fifty qubits can represent more states than there are atoms in the Earth.',
@@ -1326,7 +1326,7 @@ export const storiesBatch3: Story[] = [
       {
         en: 'The stakes are enormous. Quantum computers could design life-saving drugs in days, or break the encryption protecting every bank account and government secret on the planet.',
         my: 'အကျိုးဆက်တွေက ကြီးမားလှတယ်။ ကွမ်တမ်ကွန်ပျူတာတွေက အသက်ကယ်ဆေးတွေကို ရက်အနည်းငယ်အတွင်း ဒီဇိုင်းဆွဲနိုင်တယ်၊ ဒါမှမဟုတ် ကမ္ဘာပေါ်က ဘဏ်အကောင့်တိုင်းနဲ့ အစိုးရလျှို့ဝှက်ချက်တိုင်းကို ကာကွယ်ထားတဲ့ စာဝှက်စနစ်ကို ဖြိုခွဲနိုင်တယ်။',
-        th: 'เดิมพันมหาศาล คอมพิวเตอร์ควอนตัมออกแบบยาช่วยชีวิตได้ในไม่กี่วัน หรือทำลายการเข้ารหัสที่ปกป้องทุกบัญชีธนาคารและความลับรัฐบาลบนโลก',
+        th: 'สิ่งที่ต้องแลกนั้นมหาศาล คอมพิวเตอร์ควอนตัมอาจออกแบบยาช่วยชีวิตได้ในไม่กี่วัน หรืออาจเจาะระบบการเข้ารหัสที่ปกป้องบัญชีธนาคารทุกบัญชีและความลับของรัฐบาลทั่วโลก',
       },
       {
         en: 'Physicist Dr. Amara Chen compares the moment to the first steam engines: "We have built the engine. Now humanity must decide where this train is going — before it leaves the station."',
@@ -1349,13 +1349,13 @@ export const storiesBatch3: Story[] = [
       },
       {
         en: 'The attack was not dramatic. There were no masked hackers typing furiously in a dark room. There was only patience: the criminals had studied the bank\'s routines for eight months before striking.',
-        my: 'တိုက်ခိုက်မှုက ဇာတ်နာစရာ မဟုတ်ဘူး။ အမှောင်ခန်းမှာ အသည်းအသန် ရိုက်နေတဲ့ မျက်နှာဖုံးစွပ်ဟက်ကာတွေ မရှိဘူး။ သည်းခံမှုသာ ရှိတယ် — ရာဇဝတ်သားတွေက တိုက်ခိုက်ခင် ရှစ်လကြာ ဘဏ္ဍာရဲ့လုပ်ရိုးလုပ်စဉ်တွေကို လေ့လာခဲ့တယ်။',
-        th: 'การโจมตีไม่ดราม่า ไม่มีแฮกเกอร์สวมหน้ากากพิมพ์อย่างบ้าคลั่งในห้องมืด มีแค่ความอดทน อาชญากรศึกษากิจวัตรธนาคารแปดเดือนก่อนลงมือ',
+        my: 'တိုက်ခိုက်မှုက ဇာတ်လမ်းဆန်ဆန် မဟုတ်ဘူး။ အမှောင်ခန်းမှာ အသည်းအသန် ရိုက်နေတဲ့ မျက်နှာဖုံးစွပ်ဟက်ကာတွေ မရှိဘူး။ သည်းခံမှုသာ ရှိတယ် — ရာဇဝတ်သားတွေက တိုက်ခိုက်ခင် ရှစ်လကြာ ဘဏ်ရဲ့လုပ်ရိုးလုပ်စဉ်တွေကို လေ့လာခဲ့တယ်။',
+        th: 'การโจมตีไม่ได้ดราม่าอย่างในภาพยนตร์ ไม่มีแฮกเกอร์สวมหน้ากากพิมพ์อย่างบ้าคลั่งในห้องมืด มีเพียงความอดทนเท่านั้น อาชญากรศึกษากิจวัตรของธนาคารเป็นเวลาแปดเดือนก่อนลงมือ',
       },
       {
         en: 'They moved the money in small amounts through dozens of accounts in twelve countries, always just below the threshold that triggers automatic alerts. By the time anyone noticed, the trail was cold.',
         my: 'သူတို့ ငွေကို နိုင်ငံဆယ့်နှစ်နိုင်ငံက အကောင့်များစွာဖြတ်ပြီး ပမာဏအနည်းငယ်နဲ့ ရွှေ့ခဲ့တယ်၊ အလိုအလျောက်သတိပေးချက်ထွက်တဲ့အဆင့်အောက်မှာ အမြဲရှိနေတယ်။ တစ်ယောက်ယောက် သတိထားမိတဲ့အခါ ခြေရာက အေးခဲနေပြီ။',
-        th: 'พวกเขาย้ายเงินทีละน้อยผ่านบัญชีหลายสิบในสิบสองประเทศ ต่ำกว่าเกณฑ์เตือนอัตโนมัติเสมอ กว่าจะมีคนสังเกต ร่องรอยเย็นแล้ว',
+        th: 'พวกเขาย้ายเงินทีละน้อยผ่านบัญชีหลายสิบบัญชีในสิบสองประเทศ โดยอยู่ในระดับต่ำกว่าเกณฑ์ที่จะกระตุ้นการเตือนอัตโนมัติเสมอ กว่าจะมีใครสังเกตเห็น ร่องรอยก็จางหายไปแล้ว',
       },
       {
         en: 'Investigator Jonas Weber followed the digital fingerprints for two years. The breakthrough came from a tiny mistake: one transfer carried a note with a spelling error unique to a single suspect\'s messages.',
@@ -1370,7 +1370,7 @@ export const storiesBatch3: Story[] = [
       {
         en: 'The bank now trains every employee — from tellers to the CEO — to spot fake emails. "Our firewalls were excellent," the security chief admits. "It was a human click that opened the door."',
         my: 'ဘဏ်က အခု ဝန်ထမ်းတိုင်း — ငွေကိုင်ကနေ CEO အထိ — အတုအီးမေးလ်တွေ ခွဲခြားဖို့ သင်တန်းပေးတယ်။ "ကျွန်တော်တို့ရဲ့မီးကာနံရံတွေက အလွန်ကောင်းတယ်" လို့ လုံခြုံရေးအကြီးအကဲက ဝန်ခံတယ်။ "တံခါးဖွင့်ပေးခဲ့တာက လူ့ကလစ်တစ်ချက်ဖြစ်တယ်။"',
-        th: 'ธนาคารตอนนี้ฝึกพนักงานทุกคน ตั้งแต่พนักงานเคาน์เตอร์ถึงซีอีโอ ให้จับอีเมลปลอม "ไฟร์วอลล์เรายอดเยี่ยม" หัวหน้าความปลอดภัยยอมรับ "แต่คลิกของมนุษย์ที่เปิดประตู"',
+        th: 'ขณะนี้ธนาคารฝึกอบรมพนักงานทุกคน ตั้งแต่พนักงานเคาน์เตอร์จนถึงซีอีโอ ให้รู้จักสังเกตอีเมลปลอม หัวหน้าฝ่ายความปลอดภัยยอมรับว่า "ไฟร์วอลล์ของเรานั้นยอดเยี่ยม แต่เป็นการคลิกของมนุษย์ที่เปิดประตู"',
       },
     ],
   },
@@ -1389,7 +1389,7 @@ export const storiesBatch3: Story[] = [
       {
         en: 'In 2013, a nineteen-year-old Dutch student named Boyan Slat proposed a radical idea: instead of chasing plastic with ships and nets, let the ocean\'s own currents do the work.',
         my: '၂၀၁၃ ခုနှစ်မှာ ဘိုယန် ဆလတ်ဆိုတဲ့ အသက် ၁၉ နှစ်အရွယ် ဒတ်ချ်ကျောင်းသားတစ်ဦး ရဲရင့်တဲ့အတွေးတစ်ခု တင်ပြခဲ့တယ် — သင်္ဘောနဲ့ ပိုက်ကွန်တွေနဲ့ ပလတ်စတစ်နောက် လိုက်မယ့်အစား သမုဒ္ဒရာရဲ့ကိုယ်ပိုင်ရေစီးကြောင်းတွေကို အလုပ်လုပ်ခိုင်းဖို့ဖြစ်တယ်။',
-        th: 'ในปี 2013 นักเรียนดัตช์วัยสิบเก้าชื่อโบยัน สลัต เสนอความคิดรุนแรง แทนที่จะไล่พลาสติกด้วยเรือและอวน ให้กระแสน้ำของมหาสมุทรทำงานเอง',
+        th: 'ในปี 2013 นักเรียนชาวดัตช์วัยสิบเก้าชื่อโบยัน สลัต เสนอแนวคิดสุดโต่ง แทนที่จะไล่ตามพลาสติกด้วยเรือและอวน ให้กระแสน้ำของมหาสมุทรทำหน้าที่แทน',
       },
       {
         en: 'His design was elegantly simple: a giant floating barrier, shaped like a horseshoe, that drifts with the current and collects plastic in its center — like a coastline that cleans itself.',
@@ -1403,13 +1403,13 @@ export const storiesBatch3: Story[] = [
       },
       {
         en: 'By 2024, the system had removed hundreds of thousands of kilograms of plastic. The team now targets the world\'s most polluted rivers too — because most ocean plastic arrives via rivers.',
-        my: '၂၀၂၄ ခုနှစ်ရောက်တဲ့အခါ စနစ်က ပလတ်စတစ် ကီလိုဂရမ်သိန်းပေါင်းများစွာ ဖယ်ရှားခဲ့ပြီ။ အဖွဲ့က အခု ကမ္ဘာ့အညစ်ညမ်းဆုံးမြစ်တွေကိုလည်း ပစ်မှတ်ထားတယ် — ဘာလို့လဲဆိုတော့ သမုဒ္ဒရာပလတ်စတစ်အများစုက မြစ်တွေကနေ ရောက်လာလို့ဖြစ်တယ်။',
+        my: '၂၀၂၄ ခုနှစ်ရောက်တဲ့အခါ စနစ်က ပလတ်စတစ် ကီလိုဂရမ်သိန်းချီ ဖယ်ရှားခဲ့ပြီ။ အဖွဲ့က အခု ကမ္ဘာ့အညစ်ညမ်းဆုံးမြစ်တွေကိုလည်း ပစ်မှတ်ထားတယ် — ဘာလို့လဲဆိုတော့ သမုဒ္ဒရာပလတ်စတစ်အများစုက မြစ်တွေကနေ ရောက်လာလို့ဖြစ်တယ်။',
         th: 'ถึงปี 2024 ระบบกำจัดพลาสติกหลายแสนกิโลกรัมแล้ว ทีมตอนนี้เล็งแม่น้ำสกปรกสุดของโลกด้วย เพราะพลาสติกมหาสมุทรส่วนใหญ่มาทางแม่น้ำ',
       },
       {
         en: 'Slat admits cleanup alone will never be enough. "We must stop plastic at the source," he says. "But while the world learns that lesson, someone has to pick up what is already out there."',
         my: 'ဆလတ်က သန့်ရှင်းရေးသက်သက်နဲ့ ဘယ်တော့မှ မလုံလောက်ဘူးလို့ ဝန်ခံတယ်။ "အရင်းအမြစ်မှာ ပလတ်စတစ်ကို ရပ်တန့်ရမယ်" လို့ သူပြောတယ်။ "ဒါပေမယ့် ကမ္ဘာက အဲဒီသင်ခန်းစာ သင်ယူနေချိန်မှာ တစ်ယောက်ယောက်က အပြင်မှာ ရှိနေပြီးသားအရာတွေ ကောက်ရမယ်။"',
-        th: 'สลัตยอมรับว่าทำความสะอาดอย่างเดียวไม่พอ "เราต้องหยุดพลาสติกที่ต้นทาง" เขาพูด "แต่ขณะที่โลกเรียนบทเรียนนั้น ต้องมีคนเก็บสิ่งที่อยู่ข้างนอกแล้ว"',
+        th: 'สลัตยอมรับว่าการทำความสะอาดเพียงอย่างเดียวไม่มีวันเพียงพอ เขากล่าวว่า "เราต้องหยุดพลาสติกที่ต้นทาง แต่ขณะที่โลกกำลังเรียนรู้บทเรียนนั้น ก็ต้องมีใครสักคนเก็บสิ่งที่ลอยอยู่ข้างนอกนั้น"',
       },
     ],
   },
@@ -1428,7 +1428,7 @@ export const storiesBatch3: Story[] = [
       {
         en: 'Prediction means saying exactly when and where a quake will strike. No one in history has done this reliably. Forecasting means estimating probabilities — like weather forecasts, but for the shaking ground.',
         my: 'ကြိုတင်ခန့်မှန်းခြင်းဆိုတာ ငလျင်ဘယ်အချိန် ဘယ်နေရာမှာ လှုပ်မလဲဆိုတာ အတိအကျပြောတာဖြစ်တယ်။ သမိုင်းမှာ ဘယ်သူမှ ဒါကို ယုံကြည်စိတ်ချရစွာ မလုပ်ဖူးဘူး။ ခန့်မှန်းခြင်းဆိုတာ ဖြစ်နိုင်ခြေတွေ ခန့်မှန်းတာဖြစ်တယ် — မိုးလေဝသခန့်မှန်းချက်လိုပဲ၊ ဒါပေမယ့် တုန်ခါနေတဲ့မြေအတွက်။',
-        th: 'การทำนายหมายถึงบอกเป๊ะว่าแผ่นดินไหวจะเกิดเมื่อไรที่ไหน ไม่มีใครในประวัติศาสตร์ทำได้เชื่อถือได้ การพยากรณ์หมายถึงประมาณความน่าจะเป็น เหมือนพยากรณ์อากาศ แต่สำหรับพื้นสั่น',
+        th: 'การทำนายหมายถึงการบอกอย่างแม่นยำว่าแผ่นดินไหวจะเกิดเมื่อไรและที่ไหน ซึ่งไม่มีใครในประวัติศาสตร์ทำได้อย่างน่าเชื่อถือ ส่วนการพยากรณ์หมายถึงการประมาณความน่าจะเป็น เหมือนการพยากรณ์อากาศ แต่สำหรับพื้นดินที่สั่นไหว',
       },
       {
         en: 'Japan\'s early-warning system works on a clever trick of physics: the fast, harmless P-waves of a quake arrive seconds before the slow, destructive S-waves. Those seconds are enough to stop trains and shut down factories.',
@@ -1438,7 +1438,7 @@ export const storiesBatch3: Story[] = [
       {
         en: 'In 2011, the system gave Tokyo residents nearly a minute of warning before the great Tohoku quake. A minute is not much — but it was enough for millions to take cover.',
         my: '၂၀၁၁ ခုနှစ်မှာ စနစ်က တိုကျိုနေထိုင်သူတွေကို ကြီးမားတဲ့တိုဟိုခုငလျင်မတိုင်ခင် တစ်မိနစ်နီးပါး သတိပေးခဲ့တယ်။ တစ်မိနစ်ဆိုတာ များများစားစား မဟုတ်ဘူး — ဒါပေမယ့် သန်းပေါင်းများစွာ အကာအကွယ်ယူဖို့ လုံလောက်ခဲ့တယ်။',
-        th: 'ในปี 2011 ระบบให้ชาวโตเกียวเตือนเกือบนาทีหนึ่งก่อนแผ่นดินไหวโทโฮคุใหญ่ หนึ่งนาทีไม่มาก แต่มันพอให้คนนับล้านหลบ',
+        th: 'ในปี 2011 ระบบได้ให้คำเตือนแก่ชาวโตเกียวนานเกือบหนึ่งนาทีก่อนเกิดแผ่นดินไหวครั้งใหญ่ที่โทโฮคุ หนึ่งนาทีอาจดูไม่มาก แต่มันก็เพียงพอให้ผู้คนนับล้านหลบภัย',
       },
       {
         en: 'New research goes further: artificial intelligence now scans millions of tiny tremors to detect patterns humans miss. Some scientists believe reliable days-ahead forecasts may be possible within our lifetime.',
@@ -1448,7 +1448,7 @@ export const storiesBatch3: Story[] = [
       {
         en: 'The scientists remain humble. "The Earth does not owe us warnings," one researcher says. "Our job is to listen more carefully — and to be ready when it finally speaks."',
         my: 'သိပ္ပံပညာရှင်တွေက နှိမ့်ချနေဆဲဖြစ်တယ်။ "ကမ္ဘာမြေက ကျွန်တော်တို့ကို သတိပေးချက်တွေ ပေးဖို့ တာဝန်မရှိဘူး" လို့ သုတေသီတစ်ဦးက ပြောတယ်။ "ကျွန်တော်တို့အလုပ်က ပိုဂရုတစိုက် နားထောင်ဖို့ — နောက်ဆုံး သူ စကားပြောတဲ့အခါ အသင့်ဖြစ်ဖို့ဖြစ်တယ်။"',
-        th: 'นักวิทยาศาสตร์ยังถ่อมตน "โลกไม่ได้ติดหนี้คำเตือนเรา" นักวิจัยคนหนึ่งพูด "งานของเราคือฟังให้ระวังขึ้น และพร้อมเมื่อมันพูดในที่สุด"',
+        th: 'เหล่านักวิทยาศาสตร์ยังคงถ่อมตน นักวิจัยคนหนึ่งกล่าวว่า "โลกไม่ได้ติดค้างคำเตือนใดๆ แก่เรา งานของเราคือฟังอย่างระมัดระวังยิ่งขึ้น และเตรียมพร้อมเมื่อมันส่งสัญญาณในที่สุด"',
       },
     ],
   },
@@ -1467,22 +1467,22 @@ export const storiesBatch3: Story[] = [
       {
         en: 'Hungry elephants raided crops; angry farmers poisoned water holes. Every year, hundreds of elephants and dozens of people died in a conflict that neither side had chosen.',
         my: 'ဆာလောင်နေတဲ့ဆင်တွေက သီးနှံတွေ ဝင်လုတယ်၊ ဒေါသထွက်နေတဲ့လယ်သမားတွေက ရေတွင်းတွေ အဆိပ်ခတ်တယ်။ နှစ်တိုင်း ဆင်ရာပေါင်းများစွာနဲ့ လူများစွာ ဘယ်ဘက်မှ မရွေးချယ်ခဲ့တဲ့ပဋိပက္ခမှာ သေဆုံးခဲ့ကြတယ်။',
-        th: 'ช้างหิวบุกไร่ ชาวนาโกรธวางยาพิษบ่อน้ำ ทุกปี ช้างหลายร้อยและคนหลายสิบตายในความขัดแย้งที่ไม่มีฝ่ายไหนเลือก',
+        th: 'ช้างที่หิวโหยบุกทำลายไร่นา ชาวนาที่โกรธแค้นวางยาพิษในบ่อน้ำ ทุกปีช้างหลายร้อยตัวและผู้คนหลายสิบคนเสียชีวิตในความขัดแย้งที่ไม่มีฝ่ายใดเลือก',
       },
       {
         en: 'Conservationist Dr. Nandar proposed a radical solution: buy back strips of land and reconnect the forests into protected corridors — highways for elephants, crossing safely above or beneath human roads.',
         my: 'ထိန်းသိမ်းရေးပညာရှင် ဒေါက်တာ နန္ဒာက ရဲရင့်တဲ့ဖြေရှင်းချက်တစ်ခု တင်ပြခဲ့တယ် — မြေကွက်ကြားတွေ ပြန်ဝယ်ပြီး တောတွေကို ကာကွယ်ထားတဲ့စင်္ကြန်လမ်းတွေ အဖြစ် ပြန်ဆက်သွယ်ဖို့ — ဆင်တွေအတွက် အဝေးပြေးလမ်းတွေဖြစ်ပြီး လူလမ်းတွေအပေါ် ဒါမှမဟုတ် အောက် လုံခြုံစွာ ဖြတ်သန်းတယ်။',
-        th: 'นักอนุรักษ์ ดร.นันดา เสนอทางแก้รุนแรง ซื้อแถบที่ดินคืนและเชื่อมป่าเป็นทางเดินคุ้มครอง ทางหลวงสำหรับช้าง ข้ามอย่างปลอดภัยเหนือหรือใต้ถนนมนุษย์',
+        th: 'นักอนุรักษ์ ดร.นันดา เสนอแนวทางแก้ปัญหาที่พลิกโฉม นั่นคือซื้อที่ดินแถบแคบๆ คืนและเชื่อมผืนป่าเข้าด้วยกันเป็นทางเดินคุ้มครอง เป็นทางหลวงสำหรับช้างที่ข้ามอย่างปลอดภัยเหนือหรือใต้ถนนของมนุษย์',
       },
       {
         en: 'The first corridor took five years of negotiation with 200 farming families. Instead of forcing sales, the project offered fair prices, new farmland elsewhere, and jobs as corridor rangers.',
         my: 'ပထမဆုံးစင်္ကြန်လမ်းက လယ်သမားမိသားစု ၂၀၀ နဲ့ ငါးနှစ် ညှိနှိုင်းခဲ့ရတယ်။ အတင်းရောင်းခိုင်းမယ့်အစား စီမံကိန်းက တရားမျှတတဲ့ဈေးနှုန်း၊ တခြားနေရာက လယ်ယာသစ်နဲ့ စင်္ကြန်လမ်းစောင့်အလုပ်တွေ ကမ်းလှမ်းခဲ့တယ်။',
-        th: 'ทางเดินแรกใช้เจรจาห้าปีกับครอบครัวชาวนา 200 ครอบครัว แทนที่จะบังคับขาย โครงการเสนอราคายุติธรรม ที่นาทำกินใหม่ที่อื่น และงานเป็นเจ้าหน้าที่ทางเดิน',
+        th: 'ทางเดินสายแรกต้องใช้เวลาเจรจาถึงห้าปีกับครอบครัวชาวนา 200 ครอบครัว แทนที่จะบังคับให้ขาย โครงการเสนอราคาที่เป็นธรรม ที่ดินทำกินแห่งใหม่ที่อื่น และงานในตำแหน่งเจ้าหน้าที่ดูแลทางเดิน',
       },
       {
         en: 'Within two years of opening, camera traps recorded whole herds — mothers, calves, old bulls — walking the corridor at night. Crop raids in the area dropped by eighty percent.',
-        my: 'ဖွင့်ပြီး နှစ်နှစ်အတွင်းမှာ ကင်မရာထောင်ချောက်တွေက အုပ်စုတစ်ခုလုံး — မိခင်တွေ၊ ကလေးတွေ၊ နွားသိုးအိုတွေ — ညဘက် စင်္ကြန်လမ်းလျှောက်တာကို မှတ်တမ်းတင်ခဲ့တယ်။ အဲဒီနေရာမှာ သီးနှံဝင်လုမှုတွေ ၈၀ ရာခိုင်နှုန်း ကျဆင်းသွားတယ်။',
-        th: 'ภายในสองปีหลังเปิด กับดักกล้องบันทึกฝูงทั้งฝูง แม่ ลูก ช้างพลายแก่ เดินทางเดินตอนกลางคืน การบุกไร่ในพื้นที่ลด 80 เปอร์เซ็นต์',
+        my: 'ဖွင့်ပြီး နှစ်နှစ်အတွင်းမှာ ကင်မရာထောင်ချောက်တွေက အုပ်စုတစ်ခုလုံး — မိခင်တွေ၊ ကလေးတွေ၊ ဆင်ထီးအိုတွေ — ညဘက် စင်္ကြန်လမ်းလျှောက်တာကို မှတ်တမ်းတင်ခဲ့တယ်။ အဲဒီနေရာမှာ သီးနှံဝင်လုမှုတွေ ၈၀ ရာခိုင်နှုန်း ကျဆင်းသွားတယ်။',
+        th: 'ภายในสองปีหลังเปิดใช้งาน กล้องดักถ่ายบันทึกภาพฝูงช้างทั้งฝูง ทั้งแม่ช้าง ลูกช้าง และช้างพลายแก่ ที่เดินไปตามทางเดินในตอนกลางคืน การบุกทำลายไร่นาในพื้นที่ลดลง 80 เปอร์เซ็นต์',
       },
       {
         en: 'Dr. Nandar says corridors teach a larger lesson: "We spent a century building walls between us and nature. The future belongs to those who learn to build bridges instead."',
@@ -1501,32 +1501,32 @@ export const storiesBatch3: Story[] = [
       {
         en: 'Every morning, fisherman U Aung sweeps plastic bottles from his boat before he can cast his nets. Twenty years ago, the sea gave him fish. Now, he says, it gives him garbage with occasional fish.',
         my: 'မနက်တိုင်း တံငါသည် ဦးအောင်က ပိုက်ကွန်မချခင် သူ့လှေပေါ်က ပလတ်စတစ်ပုလင်းတွေ လှည်းရတယ်။ လွန်ခဲ့တဲ့ နှစ်နှစ်ဆယ်က ပင်လယ်က သူ့ကို ငါးပေးတယ်။ အခု ပင်လယ်က သူ့ကို တခါတရံငါးပါတဲ့ အမှိုက်ပေးတယ်လို့ သူပြောတယ်။',
-        th: 'ทุกเช้า ชาวประมงอูอองกวาดขวดพลาสติกจากเรือก่อนทอดอวน ยี่สิบปีก่อน ทะเลให้ปลาเขา ตอนนี้ เขาพูด มันให้ขยะกับปลานานๆ ครั้ง',
+        th: 'ทุกเช้า ชาวประมงอูอองกวาดขวดพลาสติกออกจากเรือก่อนจะทอดอวน เมื่อยี่สิบปีก่อน ทะเลให้ปลาแก่เขา แต่ตอนนี้ เขาบอกว่า มันให้ขยะแก่เขา พร้อมกับปลาเพียงนานๆ ครั้ง',
       },
       {
         en: 'The numbers are staggering: at least eight million tons of plastic enter the oceans every year. By 2050, scientists warn, the sea could contain more plastic than fish by weight.',
         my: 'ကိန်းဂဏန်းတွေက တုန်လှုပ်ဖွယ်ဖြစ်တယ် — နှစ်တိုင်း ပလတ်စတစ် အနည်းဆုံး ရှစ်သန်းတန် သမုဒ္ဒရာတွေထဲ ဝင်ရောက်တယ်။ ၂၀၅၀ ပြည့်နှစ်ရောက်တဲ့အခါ ပင်လယ်မှာ ငါးထက် ပလတ်စတစ် အလေးချိန်ပိုများနိုင်တယ်လို့ သိပ္ပံပညာရှင်တွေ သတိပေးတယ်။',
-        th: 'ตัวเลขช็อก อย่างน้อยแปดล้านตันพลาสติกเข้ามหาสมุทรทุกปี ถึงปี 2050 นักวิทยาศาสตร์เตือน ทะเลอาจมีพลาสติกมากกว่าปลาโดยน้ำหนัก',
+        th: 'ตัวเลขน่าตกใจ พลาสติกอย่างน้อยแปดล้านตันไหลลงสู่มหาสมุทรทุกปี นักวิทยาศาสตร์เตือนว่า ภายในปี 2050 ทะเลอาจมีพลาสติกมากกว่าปลาเมื่อวัดโดยน้ำหนัก',
       },
       {
         en: 'The damage is not only visible. Microplastics — fragments smaller than a grain of rice — have been found in rainwater, in drinking water, and in human blood. We are all, literally, part plastic now.',
         my: 'ပျက်စီးမှုက မြင်ရတာသာ မဟုတ်ဘူး။ မိုက်ခရိုပလတ်စတစ်တွေ — ဆန်စေ့ထက် သေးငယ်တဲ့အပိုင်းတွေ — မိုးရေ၊ သောက်ရေနဲ့ လူ့သွေးထဲမှာ တွေ့ရှိခဲ့တယ်။ ကျွန်တော်တို့အားလုံး စာသားအတိုင်း အခု ပလတ်စတစ်အစိတ်အပိုင်းဖြစ်နေပြီ။',
-        th: 'ความเสียหายไม่ใช่แค่ที่เห็น ไมโครพลาสติก ชิ้นเล็กกว่าเม็ดข้าว พบในน้ำฝน น้ำดื่ม และเลือดมนุษย์ เราทุกคน ตอนนี้เป็นพลาสติกส่วนหนึ่งตามตัวอักษร',
+        th: 'ความเสียหายไม่ได้มีแค่ที่มองเห็น ไมโครพลาสติก ซึ่งมีขนาดเล็กกว่าเม็ดข้าว ถูกพบทั้งในน้ำฝน น้ำดื่ม และแม้แต่ในเลือดของมนุษย์ พูดได้เต็มปากว่า ตอนนี้เราทุกคนล้วนมีพลาสติกเป็นส่วนหนึ่งของร่างกายแล้ว',
       },
       {
         en: 'U Aung\'s village decided to fight back. They organized weekly beach cleanups, banned single-use bags at the market, and — most importantly — began sorting and selling recyclable plastic to a regional plant.',
         my: 'ဦးအောင်ရဲ့ကျေးရွာက ပြန်တိုက်ဖို့ ဆုံးဖြတ်ခဲ့တယ်။ အပတ်စဉ် ကမ်းခြေသန့်ရှင်းရေးတွေ စီစဉ်တယ်၊ ဈေးမှာ တစ်ခါသုံးအိတ်တွေ တားမြစ်တယ်၊ အရေးအကြီးဆုံးအနေနဲ့ ပြန်လည်အသုံးပြုနိုင်တဲ့ပလတ်စတစ်တွေ ခွဲခြားပြီး ဒေသခံစက်ရုံကို ရောင်းဖို့ စတင်ခဲ့တယ်။',
-        th: 'หมู่บ้านอูอองตัดสินใจสู้ พวกเขาจัดทำความสะอาดชายหาดทุกสัปดาห์ ห้ามถุงใช้ครั้งเดียวที่ตลาด และสำคัญสุด เริ่มคัดและขายพลาสติกรีไซเคิลให้โรงงานภูมิภาค',
+        th: 'หมู่บ้านของอูอองตัดสินใจลุกขึ้นสู้ พวกเขาจัดกิจกรรมทำความสะอาดชายหาดทุกสัปดาห์ ห้ามใช้ถุงพลาสติกแบบใช้ครั้งเดียวทิ้งที่ตลาด และที่สำคัญที่สุด เริ่มคัดแยกและขายพลาสติกรีไซเคิลให้โรงงานในภูมิภาค',
       },
       {
         en: 'The income surprised everyone: the "garbage business" now pays for the village school\'s new roof. Children who once played among trash now lead the sorting teams.',
         my: 'ဝင်ငွေက လူတိုင်းကို အံ့ဩစေခဲ့တယ် — "အမှိုက်စီးပွားရေး" က အခု ကျေးရွာကျောင်းရဲ့ခေါင်မိုးအသစ်အတွက် ပေးနေပြီ။ အမှိုက်ကြားမှာ ကစားခဲ့တဲ့ကလေးတွေက အခု ခွဲခြားရေးအဖွဲ့တွေ ဦးဆောင်နေတယ်။',
-        th: 'รายได้ทำทุกคนประหลาดใจ "ธุรกิจขยะ" ตอนนี้จ่ายค่าหลังคาโรงเรียนใหม่ของหมู่บ้าน เด็กที่เคยเล่นท่ามกลางขยะตอนนี้นำทีมคัดแยก',
+        th: 'รายได้สร้างความประหลาดใจให้ทุกคน "ธุรกิจขยะ" ช่วยจ่ายค่าหลังคาโรงเรียนหลังใหม่ของหมู่บ้านได้แล้ว เด็กๆ ที่เคยเล่นท่ามกลางกองขยะ ตอนนี้กลายเป็นผู้นำทีมคัดแยกขยะ',
       },
       {
         en: 'One village cannot turn the plastic tide alone. But U Aung is optimistic: "The sea fed my father and my grandfather. If we clean it now, it will feed my grandchildren too."',
         my: 'ကျေးရွာတစ်ခုတည်းက ပလတ်စတစ်ဒီရေကို တစ်ယောက်တည်း လှည့်မရနိုင်ဘူး။ ဒါပေမယ့် ဦးအောင်က အကောင်းမြင်တယ် — "ပင်လယ်က ကျွန်တော့်အဖေနဲ့ အဖိုးကို ကျွေးမွေးခဲ့တယ်။ အခု သန့်ရှင်းရင် ကျွန်တော့်မြေးတွေကိုလည်း ကျွေးမွေးလိမ့်မယ်။"',
-        th: 'หมู่บ้านเดียวหันกระแสพลาสติกคนเดียวไม่ได้ แต่อูอองมองโลกในแง่ดี "ทะเลเลี้ยงพ่อและปู่ผม ถ้าเราทำความสะอาดตอนนี้ มันจะเลี้ยงหลานผมด้วย"',
+        th: 'หมู่บ้านเพียงแห่งเดียวไม่อาจพลิกกระแสมรสุมพลาสติกได้เพียงลำพัง แต่อูอองกล่าวอย่างมองโลกในแง่ดีว่า "ทะเลเลี้ยงดูพ่อและปู่ของผม ถ้าเราช่วยกันทำความสะอาดตั้งแต่ตอนนี้ มันก็จะเลี้ยงดูลูกหลานของผมต่อไปเช่นกัน"',
       },
     ],
   },
@@ -1540,32 +1540,32 @@ export const storiesBatch3: Story[] = [
       {
         en: 'Old fishermen on the great river remember when a single cast of the net could feed a family for a week. Today, they say, you can fish all day and catch barely enough for one meal.',
         my: 'ဒီကြီးမားတဲ့မြစ်က တံငါသည်အိုတွေက ပိုက်ကွန်တစ်ခါချတာနဲ့ မိသားစုကို တစ်ပတ်စာ ကျွေးနိုင်ခဲ့တဲ့အချိန်ကို မှတ်မိကြတယ်။ ဒီနေ့ တစ်နေ့လုံး ငါးဖမ်းပြီး တစ်နပ်စာတောင် အနိုင်နိုင် ရတယ်လို့ သူတို့ ပြောတယ်။',
-        th: 'ชาวประมงแก่บนแม่น้ำใหญ่จำได้ว่าเมื่อทอดอวนครั้งเดียวเลี้ยงครอบครัวได้สัปดาห์ วันนี้ พวกเขาพูด ตกปลาทั้งวันจับแทบไม่พอหนึ่งมื้อ',
+        th: 'ชาวประมงชราบนแม่น้ำสายใหญ่ยังจำได้ว่า แค่ทอดอวนครั้งเดียวก็เลี้ยงครอบครัวได้ทั้งสัปดาห์ แต่วันนี้ พวกเขาบอกว่า แม้ตกปลาทั้งวันก็จับได้แทบไม่พอแม้แต่มื้อเดียว',
       },
       {
         en: 'The causes are tangled like the nets themselves: upstream dams blocking migration, industrial waste poisoning spawning grounds, and — most destructive of all — illegal electric fishing that kills everything in the water.',
         my: 'အကြောင်းရင်းတွေက ပိုက်ကွန်တွေလို ရှုပ်ထွေးနေတယ် — ရွှေ့ပြောင်းမှုကို ပိတ်ဆို့တဲ့ အထက်ဘက်ဆည်တွေ၊ မျိုးပွားရာနေရာတွေ အဆိပ်သင့်စေတဲ့စက်မှုစွန့်ပစ်ပစ္စည်းတွေ၊ အဖျက်ဆီးဆုံးအနေနဲ့ ရေထဲက အရာအားလုံး သတ်တဲ့တရားမဝင်လျှပ်စစ်ငါးဖမ်းခြင်းဖြစ်တယ်။',
-        th: 'สาเหตุพันกันเหมือนอวน เขื่อนต้นน้ำขวางการอพยพ ของเสียอุตสาหกรรมพิษแหล่งวางไข่ และทำลายสุด การตกปลาไฟฟ้าผิดกฎหมายที่ฆ่าทุกอย่างในน้ำ',
+        th: 'สาเหตุพันกันยุ่งเหยิงเหมือนอวน เขื่อนต้นน้ำขวางกั้นการอพยพ ของเสียจากอุตสาหกรรมทำให้แหล่งวางไข่เป็นพิษ และที่ทำลายล้างที่สุดคือ การทำประมงไฟฟ้าผิดกฎหมายที่ฆ่าทุกชีวิตในน้ำ',
       },
       {
         en: 'Dr. Su, a freshwater biologist, has studied the river for twenty years. Her data shows fish populations have fallen by seventy percent — and three native species have not been seen in a decade.',
         my: 'ရေချိုဇီဝဗေဒပညာရှင် ဒေါက်တာ စုက မြစ်ကို နှစ်နှစ်ဆယ် လေ့လာခဲ့တယ်။ သူ့ဒေတာက ငါးဦးရေ ၇၀ ရာခိုင်နှုန်း ကျဆင်းပြီး ဒေသခံမျိုးစိတ်သုံးခု ဆယ်နှစ်တာ မတွေ့ရဘူးဆိုတာ ပြတယ်။',
-        th: 'ดร.ซู นักชีววิทยาน้ำจืด ศึกษาแม่น้ำมายี่สิบปี ข้อมูลของเธอแสดงประชากรปลาลด 70 เปอร์เซ็นต์ และสามสายพันธุ์พื้นเมืองไม่เห็นมาสิบปี',
+        th: 'ดร.ซู นักชีววิทยาน้ำจืด ศึกษาแม่น้ำสายนี้มายี่สิบปี ข้อมูลของเธอชี้ว่าประชากรปลาลดลงถึง 70 เปอร์เซ็นต์ และปลาพื้นเมืองสามสายพันธุ์ไม่มีใครพบเห็นมานานนับสิบปี',
       },
       {
         en: 'The crisis forced an unusual alliance: scientists, fishermen, and even the dam operators sat down together. Their agreement created seasonal fishing bans, protected spawning zones, and fish ladders around two major dams.',
-        my: 'အကျပ်အတည်းက မထူးဆန်းတဲ့မဟာမိတ်တစ်ခု ဖြစ်စေခဲ့တယ် — သိပ္ပံပညာရှင်တွေ၊ တံငါသည်တွေနဲ့ ဆည်အော်ပရေတာတွေတောင် အတူထိုင်ခဲ့ကြတယ်။ သူတို့သဘောတူညီချက်က ရာသီအလိုက် ငါးဖမ်းတားမြစ်ချက်၊ မျိုးပွားရာနေရာကာကွယ်ရေးဇုန်တွေနဲ့ ဆည်ကြီးနှစ်ခုပတ်လည်က ငါးလှေကားတွေ ဖန်တီးခဲ့တယ်။',
-        th: 'วิกฤตบังคับพันธมิตรไม่ธรรมดา นักวิทยาศาสตร์ ชาวประมง แม้แต่ผู้ดำเนินการเขื่อน นั่งด้วยกัน ข้อตกลงของพวกเขาสร้างห้ามตกปลาตามฤดู เขตคุ้มครองวางไข่ และบันไดปลารอบเขื่อนใหญ่สองแห่ง',
+        my: 'အကျပ်အတည်းက ထူးခြားတဲ့မဟာမိတ်တစ်ခု ဖြစ်စေခဲ့တယ် — သိပ္ပံပညာရှင်တွေ၊ တံငါသည်တွေနဲ့ ဆည်လည်ပတ်သူတွေတောင် အတူထိုင်ခဲ့ကြတယ်။ သူတို့သဘောတူညီချက်က ရာသီအလိုက် ငါးဖမ်းတားမြစ်ချက်၊ မျိုးပွားရာနေရာကာကွယ်ရေးဇုန်တွေနဲ့ ဆည်ကြီးနှစ်ခုပတ်လည်က ငါးလှေကားတွေ ဖန်တီးခဲ့တယ်။',
+        th: 'วิกฤตครั้งนี้บีบให้เกิดพันธมิตรที่ไม่ธรรมดา นักวิทยาศาสตร์ ชาวประมง และแม้แต่ผู้บริหารเขื่อน มานั่งร่วมโต๊ะกัน ข้อตกลงของพวกเขากำหนดช่วงห้ามทำประมงตามฤดูกาล เขตคุ้มครองแหล่งวางไข่ และบันไดปลารอบเขื่อนใหญ่สองแห่ง',
       },
       {
         en: 'Recovery is slow — rivers heal on the timescale of decades, not news cycles. But last spring, for the first time in twelve years, fishermen reported seeing the giant catfish return to the deep pools.',
-        my: 'ပြန်လည်နာလန်ထူမှုက နှေးကွေးတယ် — မြစ်တွေက သတင်းစက်ဝန်းအချိန်နဲ့မဟုတ်ဘဲ ဆယ်စုနှစ်အချိန်နဲ့ ကုစားတယ်။ ဒါပေမယ့် ပြီးခဲ့တဲ့နွေဦးမှာ ဆယ့်နှစ်နှစ်အတွင်း ပထမဆုံးအကြိမ်အဖြစ် တံငါသည်တွေက ငါးခူဧရာမတွေ ရေနက်အိုင်တွေကို ပြန်လာတာ တွေ့တယ်လို့ အစီရင်ခံခဲ့ကြတယ်။',
-        th: 'การฟื้นช้า แม่น้ำเยียวยาในเวลาหลายทศวรรษ ไม่ใช่วัฏจักรข่าว แต่ฤดูใบไม้ผลิที่แล้ว ครั้งแรกในสิบสองปี ชาวประมงรายงานเห็นปลาดุกยักษ์กลับสระลึก',
+        my: 'ပြန်လည်နာလန်ထူမှုက နှေးကွေးတယ် — မြစ်တွေက သတင်းစက်ဝန်းတွေရဲ့အချိန်ကာလအတိုင်း မဟုတ်ဘဲ ဆယ်စုနှစ်တွေရဲ့အချိန်ကာလအတိုင်း ကုစားတယ်။ ဒါပေမယ့် ပြီးခဲ့တဲ့နွေဦးမှာ ဆယ့်နှစ်နှစ်အတွင်း ပထမဆုံးအကြိမ်အဖြစ် တံငါသည်တွေက ငါးခူဧရာမတွေ ရေနက်အိုင်တွေကို ပြန်လာတာ တွေ့တယ်လို့ အစီရင်ခံခဲ့ကြတယ်။',
+        th: 'การฟื้นตัวเป็นไปอย่างช้าๆ แม่น้ำต้องใช้เวลาหลายทศวรรษในการเยียวยาตัวเอง ไม่ใช่แค่รอบข่าวรายวัน แต่เมื่อฤดูใบไม้ผลิที่แล้ว เป็นครั้งแรกในรอบสิบสองปี ชาวประมงรายงานว่าเห็นปลาดุกยักษ์กลับมายังแอ่งน้ำลึก',
       },
       {
         en: '"A river without fish is a warning," Dr. Su tells her students. "It means the whole system is breaking. But warnings, unlike funerals, still leave time to act."',
         my: '"ငါးမရှိတဲ့မြစ်က သတိပေးချက်ဖြစ်တယ်" လို့ ဒေါက်တာ စုက သူ့တပည့်တွေကို ပြောတယ်။ "စနစ်တစ်ခုလုံး ပြိုကွဲနေတယ်လို့ ဆိုလိုတယ်။ ဒါပေမယ့် သတိပေးချက်တွေက ဈာပနတွေနဲ့မတူဘူး၊ ဆောင်ရွက်ဖို့ အချိန်ကျန်နေသေးတယ်။"',
-        th: '"แม่น้ำไร้ปลาคือคำเตือน" ดร.ซู บอกนักเรียน "หมายถึงทั้งระบบกำลังพัง แต่คำเตือนต่างจากงานศพ ยังเหลือเวลาลงมือ"',
+        th: 'ดร.ซูบอกนักเรียนของเธอว่า "แม่น้ำที่ไร้ปลาคือคำเตือน หมายความว่าระบบทั้งหมดกำลังพังทลาย แต่คำเตือนต่างจากงานศพ เพราะยังเหลือเวลาให้เราลงมือทำ"',
       },
     ],
   },
@@ -1579,32 +1579,32 @@ export const storiesBatch3: Story[] = [
       {
         en: 'For twenty-eight years, the Berlin Wall cut a city — and a world — in two. Families waved at each other across barbed wire; some risked everything to cross, and many did not survive.',
         my: 'နှစ်နှစ်ဆယ့်ရှစ်နှစ်တိုင်တိုင် ဘာလင်တံတိုင်းက မြို့တစ်မြို့ — ကမ္ဘာတစ်ခုလုံး — ကို နှစ်ခြမ်းပိုင်းခဲ့တယ်။ မိသားစုတွေက ဆူးကြိုးတွေဖြတ်ပြီး အချင်းချင်း လက်ပြနှုတ်ဆက်ကြတယ်၊ တချို့က ဖြတ်သန်းဖို့ အရာအားလုံး စွန့်စားခဲ့ကြပြီး အများအပြားက မရှင်သန်ခဲ့ဘူး။',
-        th: 'ยี่สิบแปดปี กำแพงเบอร์ลินตัดเมือง และโลก เป็นสอง ครอบครัวโบกมือข้ามลวดหนาม บางคนเสี่ยงทุกอย่างเพื่อข้าม และหลายคนไม่รอด',
+        th: 'นานถึงยี่สิบแปดปี กำแพงเบอร์ลินแบ่งเมืองหนึ่ง และโลกทั้งใบ ออกเป็นสองซีก ครอบครัวต่างๆ โบกมือให้กันข้ามรั้วลวดหนาม บางคนยอมเสี่ยงทุกอย่างเพื่อข้ามไป และหลายคนไม่รอดชีวิต',
       },
       {
         en: 'On the evening of November 9, 1989, a government spokesman made a confusing announcement about new travel rules. Asked when the rules would take effect, he shuffled his papers and said, "Immediately, as far as I know."',
         my: '၁၉၈၉ ခုနှစ် နိုဝင်ဘာ ၉ ရက် ညနေမှာ အစိုးရပြောရေးဆိုခွင့်ရှိသူက ခရီးသွားစည်းမျဉ်းအသစ်တွေအကြောင်း ရှုပ်ထွေးတဲ့ကြေညာချက်တစ်ခု ထုတ်ခဲ့တယ်။ စည်းမျဉ်းတွေ ဘယ်အချိန်စတင်မလဲလို့ မေးတဲ့အခါ သူက စာရွက်တွေ လှန်ပြီး "ကျွန်တော်သိသလောက် ချက်ချင်းပဲ" လို့ ပြောတယ်။',
-        th: 'เย็นวันที่ 9 พฤศจิกายน 1989 โฆษกรัฐบาลประกาศสับสนเรื่องกฎเดินทางใหม่ ถูกถามว่ากฎมีผลเมื่อไร เขาคุ้ยกระดาษแล้วพูด "ทันที เท่าที่ผมรู้"',
+        th: 'เย็นวันที่ 9 พฤศจิกายน 1989 โฆษกรัฐบาลออกแถลงการณ์ที่ชวนสับสนเกี่ยวกับกฎการเดินทางฉบับใหม่ เมื่อถูกถามว่ากฎจะมีผลเมื่อใด เขาคุ้ยเอกสารในมือแล้วพูดว่า "ทันที เท่าที่ผมทราบ"',
       },
       {
         en: 'That single improvised sentence changed history. Within hours, thousands of East Berliners gathered at the checkpoints, demanding to cross. The confused border guards, with no orders, eventually opened the gates.',
         my: 'အဲဒီစာကြောင်းတစ်ခုတည်းက သမိုင်းကို ပြောင်းလဲခဲ့တယ်။ နာရီအနည်းငယ်အတွင်းမှာ အရှေ့ဘာလင်လူထောင်ပေါင်းများစွာ စစ်ဆေးရေးဂိတ်တွေမှာ စုဝေးပြီး ဖြတ်သန်းခွင့် တောင်းဆိုခဲ့ကြတယ်။ ရှုပ်ထွေးနေတဲ့နယ်ခြားစောင့်တွေက အမိန့်မရှိဘဲ နောက်ဆုံး တံခါးတွေ ဖွင့်ပေးခဲ့တယ်။',
-        th: 'ประโยคด้นสดเดียวนั้นเปลี่ยนประวัติศาสตร์ ภายในไม่กี่ชั่วโมง ชาวเบอร์ลินตะวันออกหลายพันรวมที่ด่าน เรียกร้องข้าม ทหารชายแดนสับสน ไม่มีคำสั่ง ในที่สุดเปิดประตู',
+        th: 'ประโยคด้นสดเพียงประโยคเดียวนั้นเปลี่ยนประวัติศาสตร์ ภายในไม่กี่ชั่วโมง ชาวเบอร์ลินตะวันออกหลายพันคนรวมตัวกันที่ด่านตรวจ เรียกร้องขอข้ามแดน ทหารชายแดนที่สับสนและไม่มีคำสั่ง ในที่สุดก็เปิดประตู',
       },
       {
         en: 'What followed was pure joy: strangers hugging, champagne passed over the wall, West Berliners climbing on top to welcome the crowds. People took hammers to the concrete — souvenir hunters and history-makers at once.',
         my: 'နောက်ဆက်တွဲက စစ်မှန်တဲ့ဝမ်းမြောက်မှုဖြစ်တယ် — မသိသူတွေ ဖက်ထားတာ၊ တံတိုင်းပေါ်ဖြတ် ရှမ်ပိန်ပေးတာ၊ အနောက်ဘာလင်လူတွေ လူအုပ်ကို ကြိုဆိုဖို့ အပေါ်တက်တာ။ လူတွေက ကွန်ကရစ်ကို တူတွေနဲ့ ထုခဲ့ကြတယ် — အမှတ်တရစုဆောင်းသူတွေနဲ့ သမိုင်းဖန်တီးသူတွေ တစ်ပြိုင်နက်ပဲ။',
-        th: 'ที่ตามมาคือความสุขบริสุทธิ์ คนแปลกหน้ากอด แชมเปญส่งข้ามกำแพง ชาวเบอร์ลินตะวันตกปีนขึ้นไปต้อนรับฝูงชน ผู้คนเอาค้อนทุบตึก นักล่าของที่ระลึกและผู้สร้างประวัติศาสตร์พร้อมกัน',
+        th: 'สิ่งที่ตามมาคือความปิติอย่างบริสุทธิ์ คนแปลกหน้ากอดกัน แชมเปญถูกส่งข้ามกำแพง ชาวเบอร์ลินตะวันตกปีนขึ้นไปต้อนรับฝูงชน ผู้คนเอาค้อนทุบกำแพงคอนกรีต ทั้งนักล่าของที่ระลึกและผู้สร้างประวัติศาสตร์ในคราวเดียวกัน',
       },
       {
         en: 'The Wall had seemed eternal — the very symbol of a divided century. Its fall proved something hopeful: that even the most solid barriers can collapse overnight when people simply stop believing in them.',
         my: 'တံတိုင်းက ထာဝရတည်မယ်လို့ ထင်ရတယ် — ကွဲနေတဲ့ရာစုနှစ်ရဲ့သင်္ကေတကိုယ်တိုင်ဖြစ်တယ်။ သူ့ပြိုလဲမှုက မျှော်လင့်ဖွယ်အရာ သက်သေပြခဲ့တယ် — လူတွေ သူ့ကို ယုံကြည်တာ ရပ်လိုက်တာနဲ့ အခိုင်မာဆုံးအတားအဆီးတွေတောင် တစ်ညတည်း ပြိုလဲနိုင်တယ်ဆိုတာပဲ။',
-        th: 'กำแพงดูนิรันดร์ สัญลักษณ์ของศตวรรษที่แตกแยก การล่มสลายพิสูจน์สิ่งหวัง แม้กำแพงแข็งสุดพังข้ามคืนได้เมื่อผู้คนหยุดเชื่อในมัน',
+        th: 'กำแพงเคยดูเหมือนจะอยู่ไปนิรันดร์ สัญลักษณ์ของศตวรรษที่แตกแยก การล่มสลายของมันพิสูจน์สิ่งที่น่าหวังว่า แม้แต่กำแพงที่แข็งแกร่งที่สุดก็อาจพังทลายได้ในชั่วข้ามคืน เมื่อผู้คนเพียงหยุดเชื่อในมัน',
       },
       {
         en: 'Today, a double line of cobblestones marks where the Wall once stood through Berlin. Tourists walk across it without noticing — which is, perhaps, the best memorial of all.',
         my: 'ဒီနေ့ ကျောက်တုံးနှစ်တန်းက ဘာလင်ဖြတ်ပြီး တံတိုင်းတစ်ချိန်က တည်ရှိခဲ့တဲ့နေရာကို အမှတ်အသားပြုထားတယ်။ ကမ္ဘာလှည့်ခရီးသည်တွေက သတိမထားမိဘဲ ဖြတ်လျှောက်သွားကြတယ် — ဒါဟာ အကောင်းဆုံးအထိမ်းအမှတ်ဖြစ်ကောင်းဖြစ်နိုင်တယ်။',
-        th: 'วันนี้ แนวหินกรวดสองแถวหมายตรงที่กำแพงเคยตั้งผ่านเบอร์ลิน นักท่องเที่ยวเดินข้ามโดยไม่สังเกต ซึ่งบางทีคืออนุสรณ์ดีสุด',
+        th: 'ทุกวันนี้ แนวหินกรวดสองแถวทำเครื่องหมายไว้ตรงจุดที่กำแพงเคยตั้งพาดผ่านเบอร์ลิน นักท่องเที่ยวเดินข้ามไปโดยไม่รู้ตัว ซึ่งบางทีนั่นอาจเป็นอนุสรณ์ที่ดีที่สุด',
       },
     ],
   },
@@ -1618,32 +1618,32 @@ export const storiesBatch3: Story[] = [
       {
         en: 'Wilbur and Orville Wright owned a bicycle shop in Ohio and had no university degrees, no government funding, and no fame. What they had was a question that obsessed them: how do birds stay in the air?',
         my: 'ဝီလ်ဘာနဲ့ အော်ဗီးလ် ရိုက်ညီအစ်ကိုက အိုဟိုင်းယိုးမှာ စက်ဘီးဆိုင်တစ်ဆိုင် ပိုင်တယ်၊ တက္ကသိုလ်ဘွဲ့မရှိ၊ အစိုးရရန်ပုံငွေမရှိ၊ ကျော်ကြားမှုမရှိဘူး။ သူတို့ရှိတာက သူတို့ကို စွဲလမ်းစေတဲ့မေးခွန်းတစ်ခုဖြစ်တယ် — ငှက်တွေ လေထဲမှာ ဘယ်လိုနေနိုင်သလဲ။',
-        th: 'วิลเบอร์และออร์วิลล์ ไรต์ มีร้านจักรยานในโอไฮโอ ไม่มีปริญญามหาวิทยาลัย ไม่มีทุนรัฐ ไม่มีชื่อเสียง สิ่งที่มีคือคำถามที่หมกมุ่น นกอยู่ในอากาศได้อย่างไร',
+        th: 'วิลเบอร์และออร์วิลล์ ไรต์ เป็นเจ้าของร้านจักรยานในโอไฮโอ ไม่มีปริญญามหาวิทยาลัย ไม่มีทุนสนับสนุนจากรัฐ ไม่มีชื่อเสียง สิ่งที่พวกเขามีคือคำถามหนึ่งที่ครอบงำความคิดของพวกเขา นกอยู่บนอากาศได้อย่างไร',
       },
       {
         en: 'While famous inventors built powerful engines and failed, the brothers studied the problem differently. They realized the real challenge was not power, but control — how to steer once you were flying.',
         my: 'ကျော်ကြားတဲ့တီထွင်သူတွေက အားကြီးတဲ့အင်ဂျင်တွေ တည်ဆောက်ပြီး ကျရှုံးနေချိန်မှာ ညီအစ်ကိုက ပြဿနာကို တခြားနည်းနဲ့ လေ့လာခဲ့တယ်။ တကယ့်စိန်ခေါ်မှုက စွမ်းအားမဟုတ်ဘဲ ထိန်းချုပ်မှုဖြစ်တယ်ဆိုတာ သူတို့ သဘောပေါက်ခဲ့တယ် — ပျံသန်းနေချိန်မှာ ဘယ်လိုဦးတည်ရမလဲ။',
-        th: 'ขณะนักประดิษฐ์ดังสร้างเครื่องยนต์ทรงพลังและล้มเหลว พี่น้องศึกษาปัญหาต่างออกไป พวกเขาตระหนักว่าความท้าทายจริงไม่ใช่กำลัง แต่คือการควบคุม จะบังคับทิศอย่างไรเมื่อบินอยู่',
+        th: 'ขณะที่นักประดิษฐ์ชื่อดังสร้างเครื่องยนต์ทรงพลังแล้วล้มเหลว สองพี่น้องกลับมองปัญหาต่างออกไป พวกเขาตระหนักว่าความท้าทายที่แท้จริงไม่ใช่กำลัง แต่คือการควบคุม ว่าจะบังคับทิศทางอย่างไรในขณะที่บินอยู่',
       },
       {
         en: 'They watched buzzards soaring over the hills and noticed the birds twisted their wingtips to turn. The brothers copied this with "wing-warping" — cables that bent the airplane\'s wings, just like a cyclist leaning into a turn.',
         my: 'သူတို့ တောင်ကုန်းတွေပေါ် ပျံဝဲနေတဲ့ လင်းတတွေကို ကြည့်ပြီး ငှက်တွေက လှည့်ဖို့ တောင်ပံဖျားတွေ လိမ်တာကို သတိထားမိတယ်။ ညီအစ်ကိုက ဒါကို "တောင်ပံကွေးခြင်း" နဲ့ ကူးယူခဲ့တယ် — လေယာဉ်တောင်ပံတွေ ကွေးစေတဲ့ကြိုးတွေဖြစ်ပြီး စက်ဘီးစီးသူ အကွေ့မှာ ယိုင်သလိုပဲ။',
-        th: 'พวกเขาดูอีแร้งร่อนเหนือเนินและสังเกตนกบิดปลายปีกเพื่อเลี้ยว พี่น้องลอกเลียนด้วย "การบิดปีก" สายเคเบิลที่งอปีกเครื่องบิน เหมือนนักปั่นจักรยานเอียงเข้าโค้ง',
+        th: 'พวกเขาดูเหยี่ยวร่อนเหนือเนินเขาและสังเกตว่านกบิดปลายปีกเพื่อเลี้ยว สองพี่น้องจึงลอกเลียนแบบด้วยวิธี "บิดปีก" ใช้สายเคเบิลดัดปีกเครื่องบินให้โค้งงอ เหมือนนักปั่นจักรยานที่เอียงตัวเข้าโค้ง',
       },
       {
         en: 'They tested hundreds of wing shapes in a wind tunnel they built themselves — the first serious aeronautical research in history, conducted in a bicycle shop.',
         my: 'သူတို့ကိုယ်တိုင် ဆောက်တဲ့လေဥမင်မှာ တောင်ပံပုံသဏ္ဌာန်ရာပေါင်းများစွာ စမ်းသပ်ခဲ့ကြတယ် — သမိုင်းမှာ ပထမဆုံးလေးနက်တဲ့ လေကြောင်းသုတေသနကို စက်ဘီးဆိုင်မှာ လုပ်ခဲ့တာဖြစ်တယ်။',
-        th: 'พวกเขาทดสอบรูปปีกหลายร้อยแบบในอุโมงค์ลมที่สร้างเอง งานวิจัยการบินจริงจังครั้งแรกในประวัติศาสตร์ ทำในร้านจักรยาน',
+        th: 'พวกเขาทดสอบรูปทรงปีกหลายร้อยแบบในอุโมงค์ลมที่สร้างขึ้นเอง นั่นคืองานวิจัยด้านการบินที่จริงจังครั้งแรกในประวัติศาสตร์ และมันเกิดขึ้นในร้านจักรยาน',
       },
       {
         en: 'On December 17, 1903, at Kitty Hawk, Orville flew for twelve seconds — 36 meters. It was shorter than the wingspan of a modern jet, but it was the first controlled, powered flight in human history.',
         my: '၁၉၀၃ ခုနှစ် ဒီဇင်ဘာ ၁၇ ရက်နေ့မှာ ကစ်တီဟော့ခ်မှာ အော်ဗီးလ်က ၁၂ စက္ကန့် — ၃၆ မီတာ — ပျံသန်းခဲ့တယ်။ ခေတ်သစ်ဂျက်လေယာဉ်ရဲ့တောင်ပံအကျယ်ထက် တိုတယ်၊ ဒါပေမယ့် လူ့သမိုင်းမှာ ပထမဆုံးထိန်းချုပ်ထားတဲ့စွမ်းအားသုံးပျံသန်းမှုဖြစ်တယ်။',
-        th: 'วันที่ 17 ธันวาคม 1903 ที่คิตตีฮอว์ก ออร์วิลล์บินสิบสองวินาที 36 เมตร สั้นกว่าปีกเครื่องบินเจ็ตสมัยใหม่ แต่คือการบินมีกำลังควบคุมครั้งแรกในประวัติศาสตร์มนุษย์',
+        th: 'วันที่ 17 ธันวาคม 1903 ที่คิตตีฮอว์ก ออร์วิลล์บินได้นานสิบสองวินาที เป็นระยะทาง 36 เมตร ซึ่งสั้นกว่าความกว้างปีกของเครื่องบินเจ็ตสมัยใหม่ แต่คือการบินด้วยเครื่องยนต์ที่มีการควบคุมครั้งแรกในประวัติศาสตร์มนุษยชาติ',
       },
       {
-        en: 'The brothers never became celebrities in their own style — they were quiet, methodical men. But every airplane that crosses the sky today is, in a real sense, still flying on their bicycle-shop ideas.',
-        my: 'ညီအစ်ကိုက သူတို့ကိုယ်ပိုင်ပုံစံနဲ့ ဘယ်တော့မှ ထင်ပေါ်ကျော်ကြားမလာခဲ့ဘူး — သူတို့က တိတ်ဆိတ်ပြီး စနစ်ကျတဲ့လူတွေဖြစ်တယ်။ ဒါပေမယ့် ဒီနေ့ ကောင်းကင်ဖြတ်ပျံသန်းတဲ့ လေယာဉ်တိုင်းက တကယ့်သဘောအရ သူတို့ရဲ့စက်ဘီးဆိုင်အတွေးတွေပေါ်မှာ ပျံသန်းနေဆဲဖြစ်တယ်။',
-        th: 'พี่น้องไม่เคยเป็นคนดังในแบบของตัวเอง พวกเขาเงียบ เป็นระบบ แต่เครื่องบินทุกเครื่องที่ข้ามท้องฟ้าวันนี้ ในความหมายจริง ยังบินด้วยความคิดร้านจักรยานของพวกเขา',
+        en: 'The brothers never sought celebrity — they were quiet, methodical men. But every airplane that crosses the sky today is, in a real sense, still flying on their bicycle-shop ideas.',
+        my: 'ညီအစ်ကိုက ဘယ်တော့မှ ကျော်ကြားမှုကို မရှာခဲ့ဘူး — သူတို့က တိတ်ဆိတ်ပြီး စနစ်ကျတဲ့လူတွေဖြစ်တယ်။ ဒါပေမယ့် ဒီနေ့ ကောင်းကင်ဖြတ်ပျံသန်းတဲ့ လေယာဉ်တိုင်းက တကယ့်သဘောအရ သူတို့ရဲ့စက်ဘီးဆိုင်အတွေးတွေပေါ်မှာ ပျံသန်းနေဆဲဖြစ်တယ်။',
+        th: 'สองพี่น้องไม่เคยแสวงหาชื่อเสียง พวกเขาเป็นคนเงียบขรึมและมีระบบระเบียบ แต่เครื่องบินทุกลำที่บินข้ามท้องฟ้าในวันนี้ ในความหมายที่แท้จริง ยังคงบินอยู่ด้วยแนวคิดจากร้านจักรยานของพวกเขา',
       },
     ],
   },
@@ -1657,32 +1657,32 @@ export const storiesBatch3: Story[] = [
       {
         en: 'When Zaha Hadid presented her graduation project in 1977, her professors called it unbuildable. Her drawings showed buildings that flowed like water — curves and waves where the world expected straight lines and boxes.',
         my: 'ဇာဟာ ဟာဒစ်က ၁၉၇၇ ခုနှစ်မှာ သူ့ဘွဲ့ရပရောဂျက် တင်ပြတဲ့အခါ သူ့ဆရာတွေက တည်ဆောက်မရနိုင်ဘူးလို့ ခေါ်တယ်။ သူ့ပုံတွေက ရေလိုစီးဆင်းတဲ့အဆောက်အအုံတွေ ပြတယ် — ကမ္ဘာက ဖြောင့်တန်းတဲ့မျဉ်းတွေနဲ့ သေတ္တာပုံတွေ မျှော်လင့်တဲ့နေရာမှာ ကွေးညွှတ်မှုတွေနဲ့ လှိုင်းတွေပေါ့။',
-        th: 'เมื่อซาฮา ฮาดิด นำเสนอโปรเจกต์จบปี 1977 อาจารย์เรียกมันว่าสร้างไม่ได้ ภาพวาดของเธอแสดงอาคารที่ไหลเหมือนน้ำ เส้นโค้งและคลื่นตรงที่โลกคาดเส้นตรงและกล่อง',
+        th: 'เมื่อซาฮา ฮาดิด นำเสนอโปรเจกต์จบการศึกษาในปี 1977 อาจารย์ของเธอบอกว่าเป็นโครงการที่สร้างไม่ได้ ภาพวาดของเธอแสดงอาคารที่ไหลลื่นเหมือนสายน้ำ เต็มไปด้วยเส้นโค้งและคลื่น ในจุดที่โลกคาดหวังจะเห็นเส้นตรงและทรงกล่อง',
       },
       {
         en: 'For years, she won competitions but saw nothing built. Male colleagues whispered that her designs were fantasies. Hadid kept drawing, insisting that architecture should move people the way music does.',
-        my: 'နှစ်ပေါင်းများစွာ သူက ပြိုင်ပွဲတွေ အနိုင်ရပေမယ့် တည်ဆောက်တာဘာမှ မမြင်ရဘူး။ အမျိုးသားလုပ်ဖော်ကိုင်ဖက်တွေက သူ့ဒီဇိုင်းတွေက စိတ်ကူးယဉ်တွေလို့ တိုးတိုးပြောတယ်။ ဟာဒစ်က ဆက်ရေးဆွဲနေတယ်၊ ဗိသုကာက တေးဂီတလို လူတွေကို လှုပ်ရှားစေသင့်တယ်လို့ တောင်းဆိုတယ်။',
-        th: 'หลายปี เธอชนะประกวดแต่ไม่เห็นอะไรสร้าง เพื่อนร่วมงานชายกระซิบว่าดีไซน์ของเธอคือจินตนาการ ฮาดิดวาดต่อ ยืนว่าสถาปัตยกรรมควรขับเคลื่อนผู้คนเหมือนดนตรี',
+        my: 'နှစ်ပေါင်းများစွာ သူက ပြိုင်ပွဲတွေ အနိုင်ရပေမယ့် တည်ဆောက်တာဘာမှ မမြင်ရဘူး။ အမျိုးသားလုပ်ဖော်ကိုင်ဖက်တွေက သူ့ဒီဇိုင်းတွေက စိတ်ကူးယဉ်တွေလို့ တိုးတိုးပြောတယ်။ ဟာဒစ်က ဆက်ရေးဆွဲနေတယ်၊ ဗိသုကာဟာ တေးဂီတလိုပဲ လူတွေရဲ့နှလုံးသားကို လှုပ်ခတ်စေသင့်တယ်လို့ တောင်းဆိုတယ်။',
+        th: 'หลายปี เธอชนะการประกวดแต่ไม่เคยเห็นผลงานใดถูกสร้างขึ้นจริง เพื่อนร่วมงานชายกระซิบกันว่าดีไซน์ของเธอเป็นแค่เรื่องเพ้อฝัน ฮาดิดยังคงวาดต่อไป ยืนกรานว่าสถาปัตยกรรมควรสะเทือนอารมณ์ผู้คนได้เหมือนดนตรี',
       },
       {
         en: 'Her breakthrough came in 1993 with a fire station in Germany — small, sharp, and utterly unlike anything around it. Suddenly, the "unbuildable" architect had built something, and the world paid attention.',
         my: 'သူ့ထိုးဖောက်မှုက ၁၉၉၃ ခုနှစ်မှာ ဂျာမနီက မီးသတ်စခန်းတစ်ခုနဲ့ ရောက်လာတယ် — သေးငယ်၊ ထက်မြက်၊ ပတ်ဝန်းကျင်ကအရာတွေနဲ့ လုံးဝမတူဘူး။ ရုတ်တရက် "တည်ဆောက်မရနိုင်" တဲ့ဗိသုကာက တစ်ခုခု တည်ဆောက်ခဲ့ပြီး ကမ္ဘာက အာရုံစိုက်လာတယ်။',
-        th: 'จุดเปลี่ยนมาในปี 1993 กับสถานีดับเพลิงในเยอรมนี เล็ก คม และไม่เหมือนอะไรรอบข้างสิ้นเชิง ทันใดนั้น สถาปนิก "สร้างไม่ได้" สร้างอะไรสักอย่าง และโลกสนใจ',
+        th: 'จุดเปลี่ยนมาถึงในปี 1993 กับสถานีดับเพลิงในเยอรมนี อาคารขนาดเล็ก เฉียบคม และไม่เหมือนสิ่งใดรอบข้างอย่างสิ้นเชิง ทันใดนั้น สถาปนิกที่เคยถูกตราหน้าว่า "สร้างไม่ได้" ก็สร้างผลงานขึ้นมาจริงๆ และโลกก็เริ่มหันมาสนใจ',
       },
       {
         en: 'What followed was extraordinary: an opera house in China that rises like a pebble in a lake, a stadium in London that seems to breathe, museums on four continents that look poured rather than built.',
         my: 'နောက်ဆက်တွဲက ထူးခြားတယ် — ရေကန်ထဲက ကျောက်စရစ်လို ထွက်ပေါ်လာတဲ့တရုတ်က အော်ပရာရုံ၊ အသက်ရှူနေသလို ထင်ရတဲ့လန်ဒန်က အားကစားကွင်း၊ တည်ဆောက်ထားတာထက် လောင်းထည့်ထားသလို ထင်ရတဲ့ တိုက်ကြီးလေးခုက ပြတိုက်တွေပေါ့။',
-        th: 'ที่ตามมาน่าทึ่ง โรงอุปรากรในจีนที่ผุดเหมือนก้อนกรวดในทะเลสาบ สนามกีฬาในลอนดอนที่ดูหายใจ พิพิธภัณฑ์สี่ทวีปที่ดูเหมือนเทมากกว่าสร้าง',
+        th: 'สิ่งที่ตามมานั้นน่าทึ่ง โรงอุปรากรในจีนที่ผุดขึ้นเหมือนก้อนกรวดในทะเลสาบ สนามกีฬาในลอนดอนที่ดูราวกับกำลังหายใจ พิพิธภัณฑ์บนสี่ทวีปที่ดูเหมือนถูกเทขึ้นมามากกว่าถูกก่อสร้าง',
       },
       {
         en: 'In 2004, she became the first woman to win the Pritzker Prize — architecture\'s Nobel. She accepted it, she said, for every young woman told that some dreams are not for them.',
         my: '၂၀၀၄ ခုနှစ်မှာ သူက ပရစ်ဇကာဆုရတဲ့ ပထမဆုံးအမျိုးသမီး ဖြစ်လာတယ် — ဗိသုကာရဲ့နိုဘယ်ဆုပေါ့။ တချို့အိပ်မက်တွေက သူတို့အတွက်မဟုတ်ဘူးလို့ ပြောခံရတဲ့ အမျိုးသမီးငယ်တိုင်းအတွက် လက်ခံတယ်လို့ သူပြောတယ်။',
-        th: 'ในปี 2004 เธอเป็นผู้หญิงแรกที่ชนะรางวัลพริตซ์เกอร์ โนเบลแห่งสถาปัตยกรรม เธอรับมัน เธอพูด เพื่อหญิงสาวทุกคนที่ถูกบอกว่าความฝันบางอย่างไม่ใช่ของพวกเธอ',
+        th: 'ในปี 2004 เธอกลายเป็นผู้หญิงคนแรกที่ได้รับรางวัลพริตซ์เกอร์ รางวัลโนเบลแห่งวงการสถาปัตยกรรม เธอกล่าวว่าเธอรับรางวัลนี้ เพื่อหญิงสาวทุกคนที่เคยถูกบอกว่าความฝันบางอย่างไม่ใช่ของพวกเธอ',
       },
       {
         en: 'Hadid died in 2016, but her buildings keep rising — designed years in advance, still startling cities that expected boxes. She proved that the line between fantasy and landmark is simply persistence.',
         my: 'ဟာဒစ်က ၂၀၁၆ ခုနှစ်မှာ ကွယ်လွန်ခဲ့ပေမယ့် သူ့အဆောက်အအုံတွေ ဆက်တက်နေတယ် — နှစ်တွေကြိုတင် ဒီဇိုင်းဆွဲထားတာ၊ သေတ္တာပုံတွေ မျှော်လင့်တဲ့မြို့တွေကို အံ့ဩစေနေဆဲဖြစ်တယ်။ စိတ်ကူးယဉ်နဲ့ အထင်ကရနေရာကြားက မျဉ်းက ဇွဲရှိမှုသာဖြစ်တယ်ဆိုတာ သူသက်သေပြခဲ့တယ်။',
-        th: 'ฮาดิดตายปี 2016 แต่อาคารของเธอยังผุดขึ้น ออกแบบล่วงหน้าหลายปี ยังทำให้เมืองที่คาดกล่องตกใจ เธอพิสูจน์ว่าเส้นระหว่างจินตนาการกับแลนด์มาร์กคือความเพียร',
+        th: 'ฮาดิดเสียชีวิตในปี 2016 แต่อาคารของเธอยังคงผุดขึ้น ออกแบบไว้ล่วงหน้าหลายปี ยังคงทำให้เมืองต่างๆ ที่คาดหวังเพียงทรงกล่องต้องตะลึง เธอพิสูจน์แล้วว่าเส้นแบ่งระหว่างจินตนาการกับแลนด์มาร์กคือความเพียรพยายาม',
       },
     ],
   },
@@ -1695,33 +1695,33 @@ export const storiesBatch3: Story[] = [
     paragraphs: [
       {
         en: 'War photographer James Okoro carried two cameras and one rule: never stage a photograph. "The moment you arrange reality," he said, "you stop being a witness and become a director."',
-        my: 'စစ်သတင်းဓာတ်ပုံဆရာ ဂျိမ်းစ် အိုကိုရိုက ကင်မရာနှစ်လုံးနဲ့ စည်းမျဉ်းတစ်ခုသယ် — ဓာတ်ပုံကို ဘယ်တော့မှ အယောင်မဆောင်။ "တကယ့်အဖြစ်ကို စီစဉ်တဲ့အခိုက်မှာ" လို့ သူပြောတယ်၊ "သင်ဟာ သက်သေမဟုတ်တော့ဘဲ ဒါရိုက်တာ ဖြစ်သွားပြီ။"',
-        th: 'ช่างภาพสงครามเจมส์ โอโคโร พกกล้องสองตัวและกฎหนึ่งข้อ ไม่จัดฉากภาพถ่าย "วินาทีที่คุณจัดความจริง" เขาพูด "คุณหยุดเป็นพยานและกลายเป็นผู้กำกับ"',
+        my: 'စစ်သတင်းဓာတ်ပုံဆရာ ဂျိမ်းစ် အိုကိုရိုက ကင်မရာနှစ်လုံးနဲ့ စည်းမျဉ်းတစ်ခုကို လိုက်နာတယ် — ဓာတ်ပုံကို ဘယ်တော့မှ စီစဉ်ဖန်တီးရိုက်ကူးတာမျိုး မလုပ်။ "တကယ့်အဖြစ်ကို စီစဉ်တဲ့အခိုက်မှာ" လို့ သူပြောတယ်၊ "သင်ဟာ သက်သေမဟုတ်တော့ဘဲ ဒါရိုက်တာ ဖြစ်သွားပြီ။"',
+        th: 'ช่างภาพสงครามเจมส์ โอโคโร พกกล้องสองตัวและยึดกฎเพียงข้อเดียว คือไม่จัดฉากภาพถ่าย เขากล่าวว่า "วินาทีที่คุณจัดฉากความจริง คุณจะหยุดเป็นพยานและกลายเป็นผู้กำกับแทน"',
       },
       {
         en: 'His most famous image was taken in seconds, almost by accident. Fleeing a market that had just been bombed, he turned — and captured a small girl holding her brother\'s hand, both covered in dust, walking calmly through the smoke.',
         my: 'သူ့ရဲ့ကျော်ကြားဆုံးပုံကို စက္ကန့်အနည်းငယ်အတွင်း မတော်တဆလိုလို ရိုက်ခဲ့တယ်။ ဗုံးကြဲခံရပြီးတဲ့ ဈေးကနေ ထွက်ပြေးရင်း သူ လှည့်ကြည့်တယ် — ဖုန်တွေဖုံးနေတဲ့ မောင်နှမနှစ်ဦး အစ်ကိုရဲ့လက်ကို ကိုင်ထားပြီး မီးခိုးတွေကြားမှာ တည်တည်ငြိမ်ငြိမ် လမ်းလျှောက်နေတာကို ဖမ်းယူခဲ့တယ်။',
-        th: 'ภาพดังสุดของเขาถ่ายในไม่กี่วินาที เกือบโดยบังเอิญ หนีจากตลาดที่เพิ่งถูกระเบิด เขาหัน และจับภาพเด็กหญิงเล็กจับมือพี่ชาย ทั้งคู่คลุมด้วยฝุ่น เดินสงบผ่านควัน',
+        th: 'ภาพที่ดังที่สุดของเขาถูกถ่ายในเวลาไม่กี่วินาที เกือบจะเป็นเรื่องบังเอิญ ขณะหนีจากตลาดที่เพิ่งถูกระเบิด เขาหันกลับไป และจับภาพเด็กหญิงตัวเล็กที่จับมือพี่ชาย ทั้งคู่ปกคลุมไปด้วยฝุ่น เดินอย่างสงบผ่านกลุ่มควัน',
       },
       {
         en: 'The photograph appeared on front pages across the world within 48 hours. Donations to relief agencies tripled that month. A single image had done what a thousand reports could not: it made distant suffering feel personal.',
         my: 'ဓာတ်ပုံက ၄၈ နာရီအတွင်း ကမ္ဘာတစ်ဝှမ်းက မျက်နှာဖုံးစာမျက်နှာတွေမှာ ပေါ်လာတယ်။ အဲဒီလ ကယ်ဆယ်ရေးအေဂျင်စီတွေကို လှူဒါန်းမှုတွေ သုံးဆတိုးသွားတယ်။ ပုံတစ်ပုံတည်းက အစီရင်ခံစာထောင်ပေါင်းများစွာ မလုပ်နိုင်တာကို လုပ်ခဲ့တယ် — ဝေးလံတဲ့ဒုက္ခကို ကိုယ်ပိုင်ခံစားရစေတယ်။',
-        th: 'ภาพปรากฏบนหน้าหนึ่งทั่วโลกใน 48 ชั่วโมง เงินบริจาคให้หน่วยบรรเทาทุกข์เพิ่มสามเท่าเดือนนั้น ภาพเดียวทำสิ่งที่รายงานพันฉบับทำไม่ได้ ทำให้ความทุกข์ไกลรู้สึกเป็นส่วนตัว',
+        th: 'ภาพนั้นปรากฏบนหน้าหนึ่งของหนังสือพิมพ์ทั่วโลกภายใน 48 ชั่วโมง เงินบริจาคให้หน่วยบรรเทาทุกข์เพิ่มขึ้นสามเท่าในเดือนนั้น ภาพเพียงภาพเดียวทำในสิ่งที่รายงานนับพันฉบับทำไม่ได้ มันทำให้ความทุกข์ที่อยู่แสนไกลกลายเป็นเรื่องที่สัมผัสได้ใกล้ตัว',
       },
       {
         en: 'But the image also haunted Okoro. The children in it were never identified, and he never learned whether they survived. "Every famous photograph," he says, "is also a question nobody answered."',
         my: 'ဒါပေမယ့် ပုံက အိုကိုရိုကို ခြောက်လှန့်နေဆဲဖြစ်တယ်။ ပုံထဲကကလေးတွေကို ဘယ်တော့မှ ဖော်ထုတ်မရခဲ့သလို သူတို့ ရှင်သန်ခဲ့လားဆိုတာလည်း ဘယ်တော့မှ မသိခဲ့ဘူး။ "ကျော်ကြားတဲ့ဓာတ်ပုံတိုင်းက" လို့ သူပြောတယ်၊ "ဘယ်သူမှ မဖြေတဲ့မေးခွန်းတစ်ခုလည်းဖြစ်တယ်။"',
-        th: 'แต่ภาพก็หลอกหลอนโอโคโร เด็กในภาพไม่เคยถูกระบุ และเขาไม่เคยรู้ว่าพวกเขารอดไหม "ภาพดังทุกภาพ" เขาพูด "ก็คือคำถามที่ไม่มีใครตอบ"',
+        th: 'แต่ภาพนั้นก็ยังคงตามหลอกหลอนโอโคโร เด็กๆ ในภาพไม่เคยถูกระบุตัวตน และเขาไม่เคยรู้ว่าพวกเขารอดชีวิตหรือไม่ เขากล่าวว่า "ภาพที่ดังทุกภาพ ก็คือคำถามที่ยังไม่มีใครตอบ"',
       },
       {
         en: 'He now teaches young photographers in conflict zones, with a warning: a powerful image can stop a war — or start one. "The camera," he tells them, "is the most dangerous weapon you will ever hold. Aim it with conscience."',
         my: 'သူက အခု ပဋိပက္ခဇုန်တွေက ဓာတ်ပုံဆရာငယ်တွေကို သတိပေးချက်နဲ့ သင်ပေးတယ် — အားကြီးတဲ့ပုံတစ်ပုံက စစ်ကို ရပ်တန့်စေနိုင်တယ် — ဒါမှမဟုတ် စတင်စေနိုင်တယ်။ "ကင်မရာက" လို့ သူက သူတို့ကို ပြောတယ်၊ "မင်း ကိုင်ဖူးသမျှထဲမှာ အန္တရာယ်အရှိဆုံးလက်နက်ဖြစ်တယ်။ အသိစိတ်နဲ့ ချိန်ပါ။"',
-        th: 'ตอนนี้เขาสอนช่างภาพหนุ่มในเขตขัดแย้ง พร้อมคำเตือน ภาพทรงพลังหยุดสงครามได้ หรือเริ่มสงครามได้ "กล้อง" เขาบอกพวกเขา "คืออาวุธอันตรายสุดที่คุณจะเคยถือ เล็งมันด้วยมโนธรรม"',
+        th: 'ตอนนี้เขาสอนช่างภาพรุ่นใหม่ในเขตความขัดแย้ง พร้อมคำเตือนว่า ภาพที่ทรงพลังสามารถหยุดสงครามได้ หรือเริ่มสงครามก็ได้ เขาบอกพวกเขาว่า "กล้องคืออาวุธที่อันตรายที่สุดที่คุณจะเคยถือ จงเล็งมันด้วยจิตสำนึก"',
       },
       {
         en: 'The photograph still hangs in journalism schools around the world. Students study its composition — but Okoro hopes they also study its silence, and the responsibility that comes with pressing the shutter.',
         my: 'ဓာတ်ပုံက ကမ္ဘာတစ်ဝှမ်းက သတင်းပညာကျောင်းတွေမှာ ယနေ့တိုင် ချိတ်ထားဆဲဖြစ်တယ်။ ကျောင်းသားတွေက သူ့ဖွဲ့စည်းပုံကို လေ့လာတယ် — ဒါပေမယ့် အိုကိုရိုက သူတို့သူ့တိတ်ဆိတ်မှုနဲ့ ရှပ်တာနှိပ်ခြင်းနဲ့အတူပါလာတဲ့တာဝန်ကိုလည်း လေ့လာမယ်လို့ မျှော်လင့်တယ်။',
-        th: 'ภาพยังแขวนในโรงเรียนวารสารศาสตร์ทั่วโลก นักเรียนศึกษาองค์ประกอบ แต่โอโคโรหวังว่าพวกเขาจะศึกษาความเงียบของมันด้วย และความรับผิดชอบที่มากับการกดชัตเตอร์',
+        th: 'ภาพนั้นยังคงแขวนอยู่ในโรงเรียนวารสารศาสตร์ทั่วโลก นักเรียนศึกษาองค์ประกอบภาพ แต่โอโคโรหวังว่าพวกเขาจะศึกษาความเงียบของมันด้วย และความรับผิดชอบที่มาพร้อมกับการกดชัตเตอร์',
       },
     ],
   },
@@ -1735,32 +1735,32 @@ export const storiesBatch3: Story[] = [
       {
         en: 'Master Chen has practiced calligraphy for sixty years, and he still begins every morning the same way: grinding ink slowly, breathing deeply, and writing the same single character — "patience" — one hundred times.',
         my: 'ဆရာကြီး ချန်က လက်ရေးလှအတတ်ကို နှစ် ၆၀ ကျင့်ခဲ့ပြီး မနက်တိုင်း အတူတူနည်းနဲ့ စတင်ဆဲဖြစ်တယ် — မင်ကို ဖြည်းဖြည်းချင်း ကြိတ်တယ်၊ နက်နက်ရှိုင်းရှိုင်း အသက်ရှူတယ်၊ "သည်းခံမှု" ဆိုတဲ့အက္ခရာတစ်ခုတည်းကို အကြိမ်တစ်ရာ ရေးတယ်။',
-        th: 'ปรมาจารย์เฉินฝึกอักษรวิจิตรหกสิบปี และยังเริ่มทุกเช้าเหมือนเดิม ฝนหมึกช้าๆ หายใจลึกๆ และเขียนอักษรตัวเดียว "ความอดทน" หนึ่งร้อยครั้ง',
+        th: 'ปรมาจารย์เฉินฝึกวิชาอักษรวิจิตรมาหกสิบปี และยังคงเริ่มต้นทุกเช้าเหมือนเดิม ฝนหมึกอย่างช้าๆ หายใจลึกๆ แล้วเขียนอักษรเพียงตัวเดียว คำว่า "ความอดทน" หนึ่งร้อยครั้ง',
       },
       {
         en: 'Students arrive expecting to learn beautiful writing in weeks. Instead, Master Chen makes them hold the brush correctly for a month — just the grip, nothing else. Most quit. The few who stay are transformed.',
-        my: 'တပည့်တွေ ရက်သတ္တပတ်အနည်းငယ်အတွင်း လှပတဲ့လက်ရေး သင်ယူရမယ်လို့ မျှော်လင့်ပြီး ရောက်လာတယ်။ အစား ဆရာကြီး ချန်က သူတို့ကို စုတ်တံကို မှန်မှန်ကန်ကန် တစ်လကိုင်ခိုင်းတယ် — ကိုင်နည်းသက်သက်၊ ဘာမှထပ်မရှိ။ အများစုက ထွက်သွားတယ်။ ကျန်တဲ့အနည်းငယ်က ပြောင်းလဲသွားတယ်။',
-        th: 'นักเรียนมาถึงคาดว่าจะเรียนเขียนสวยในไม่กี่สัปดาห์ แทนที่ ปรมาจารย์เฉินให้พวกเขาจับพู่กันถูกหนึ่งเดือน แค่การจับ ไม่มีอย่างอื่น ส่วนใหญ่เลิก ไม่กี่คนที่อยู่เปลี่ยนไป',
+        my: 'တပည့်တွေ ရက်သတ္တပတ်အနည်းငယ်အတွင်း လှပတဲ့လက်ရေး သင်ယူရမယ်လို့ မျှော်လင့်ပြီး ရောက်လာတယ်။ အဲဒီအစား ဆရာကြီး ချန်က သူတို့ကို စုတ်တံကို မှန်မှန်ကန်ကန် တစ်လကိုင်ခိုင်းတယ် — ကိုင်နည်းသက်သက်၊ ဘာမှထပ်မရှိ။ အများစုက ထွက်သွားတယ်။ ကျန်တဲ့အနည်းငယ်က ပြောင်းလဲသွားတယ်။',
+        th: 'นักเรียนมาถึงโดยคาดว่าจะได้เรียนเขียนสวยในไม่กี่สัปดาห์ แต่ปรมาจารย์เฉินกลับให้พวกเขาฝึกจับพู่กันให้ถูกวิธีเป็นเวลาหนึ่งเดือนเต็ม แค่การจับพู่กัน ไม่มีอย่างอื่น ส่วนใหญ่ล้มเลิกไป มีเพียงไม่กี่คนที่อยู่ต่อ และพวกเขาเปลี่ยนไปอย่างสิ้นเชิง',
       },
       {
         en: '"The brush reveals the mind," he tells them. "An angry stroke looks angry. A hurried line looks hurried. You cannot hide who you are when the ink touches paper."',
         my: '"စုတ်တံက စိတ်ကို ဖော်ပြတယ်" လို့ သူက သူတို့ကို ပြောတယ်။ "ဒေါသထွက်တဲ့ဆွဲချက်က ဒေါသထွက်သလို ထင်ရတယ်။ အလျင်လိုတဲ့မျဉ်းက အလျင်လိုသလို ထင်ရတယ်။ မင်က စက္ကူကို ထိတဲ့အခါ သင်ဘယ်သူလဲဆိုတာ ဝှက်ထားမရဘူး။"',
-        th: '"พู่กันเผยจิตใจ" เขาบอกพวกเขา "เส้นโกรธดูโกรธ เส้นรีบดูรีบ คุณซ่อนไม่ได้ว่าคุณเป็นใครเมื่อหมึกแตะกระดาษ"',
+        th: 'เขาบอกพวกเขาว่า "พู่กันเผยให้เห็นจิตใจ เส้นที่โกรธก็ดูโกรธ เส้นที่รีบก็ดูรีบ คุณไม่อาจซ่อนได้ว่าคุณเป็นใครในวินาทีที่หมึกแตะกระดาษ"',
       },
       {
         en: 'When a technology company offered him a fortune to design a calligraphy font, he refused. "A font repeats perfection," he said. "But calligraphy is the beauty of imperfection — no two strokes are ever the same."',
         my: 'နည်းပညာကုမ္ပဏီတစ်ခုက လက်ရေးလှဖောင့်ဒီဇိုင်းဆွဲဖို့ ကြီးမားတဲ့ငွေ ကမ်းလှမ်းတဲ့အခါ သူ ငြင်းခဲ့တယ်။ "ဖောင့်က ပြီးပြည့်စုံမှုကို ထပ်ခါထပ်ခါ လုပ်တယ်" လို့ သူပြောတယ်။ "ဒါပေမယ့် လက်ရေးလှအတတ်က မပြီးပြည့်စုံမှုရဲ့အလှဖြစ်တယ် — ဆွဲချက်နှစ်ခု ဘယ်တော့မှ အတူတူမဖြစ်ဘူး။"',
-        th: 'เมื่อบริษัทเทคโนโลยีเสนอเงินก้อนโตให้ออกแบบฟอนต์อักษรวิจิตร เขาปฏิเสธ "ฟอนต์ทำซ้ำความสมบูรณ์" เขาพูด "แต่อักษรวิจิตรคือความงามของความไม่สมบูรณ์ ไม่มีเส้นสองเส้นเหมือนกัน"',
+        th: 'เมื่อบริษัทเทคโนโลยีแห่งหนึ่งเสนอเงินก้อนโตให้เขาออกแบบฟอนต์อักษรวิจิตร เขาปฏิเสธ เขาพูดว่า "ฟอนต์ทำซ้ำความสมบูรณ์แบบ แต่อักษรวิจิตรคือความงามของความไม่สมบูรณ์ ไม่มีเส้นสองเส้นใดที่เหมือนกันเลย"',
       },
       {
         en: 'His most devoted student is now seventy years old and has studied with him for forty years. Asked what she has learned, she laughs: "I came to learn writing. I stayed to learn living."',
         my: 'သူ့ရဲ့အသစ္စာရှိဆုံးတပည့်က အခု အသက် ၇၀ ရှိပြီး သူနဲ့ နှစ် ၄၀ ပညာသင်ခဲ့တယ်။ ဘာသင်ယူခဲ့လဲလို့ မေးတဲ့အခါ သူ ရယ်တယ် — "လက်ရေးသင်ဖို့ လာခဲ့တယ်။ နေထိုင်နည်းသင်ဖို့ ကျန်နေခဲ့တယ်။"',
-        th: 'นักเรียนที่อุทิศสุดของเขาตอนนี้อายุเจ็ดสิบและเรียนกับเขาสี่สิบปี ถูกถามว่าเรียนอะไร เธอหัวเราะ "มาเรียนเขียน อยู่เพื่อเรียนใช้ชีวิต"',
+        th: 'นักเรียนที่อุทิศตนที่สุดของเขาตอนนี้อายุเจ็ดสิบปี และเรียนกับเขามาสี่สิบปี เมื่อถูกถามว่าได้เรียนรู้อะไร เธอหัวเราะแล้วตอบว่า "มาเพื่อเรียนเขียน แต่อยู่ต่อเพื่อเรียนรู้การใช้ชีวิต"',
       },
       {
         en: 'Master Chen says he will stop teaching when his hand can no longer hold the brush — which, his students joke, will be approximately never. Some arts, they have learned, are really just long meditations on being human.',
         my: 'ဆရာကြီး ချန်က သူ့လက် စုတ်တံ မကိုင်နိုင်တော့တဲ့အခါ သင်ကြားတာ ရပ်မယ်လို့ ပြောတယ် — သူ့တပည့်တွေ နောက်ပြောင်သလို အဲဒါက ဘယ်တော့မှ မဖြစ်နိုင်သလောက်ပဲ။ တချို့အနုပညာတွေက လူသားဖြစ်ခြင်းအပေါ် ရှည်လျားတဲ့တရားထိုင်ခြင်းသက်သက်ဖြစ်တယ်ဆိုတာ သူတို့ သင်ယူခဲ့ကြတယ်။',
-        th: 'ปรมาจารย์เฉินบอกว่าจะหยุดสอนเมื่อมือถือพู่กันไม่ได้อีก ซึ่งนักเรียนล้อว่าจะประมาณไม่มีวัน ศิลปะบางอย่าง พวกเขาเรียน คือการนั่งสมาธิยาวเรื่องความเป็นมนุษย์',
+        th: 'ปรมาจารย์เฉินบอกว่าจะหยุดสอนเมื่อมือของเขาถือพู่กันไม่ได้อีกต่อไป ซึ่งตามที่นักเรียนของเขาล้อกัน นั่นก็คือแทบจะไม่มีวันมาถึง พวกเขาได้เรียนรู้ว่า ศิลปะบางอย่างแท้จริงแล้วคือการทำสมาธิภาวนาอันยาวนานว่าด้วยการเป็นมนุษย์',
       },
     ],
   },
@@ -1774,32 +1774,32 @@ export const storiesBatch3: Story[] = [
       {
         en: 'The software company Novaline has no office. Its forty employees live in nineteen countries, from Yangon to Buenos Aires, and most have never met in person. Yet last year it became the most profitable firm in its sector.',
         my: 'နိုဗာလိုင်းဆော့ဖ်ဝဲကုမ္ပဏီမှာ ရုံးမရှိဘူး။ သူ့ဝန်ထမ်း ၄၀ က နိုင်ငံ ၁၉ နိုင်ငံမှာ နေထိုင်တယ်၊ ရန်ကုန်ကနေ ဗျူနိုစ်အေးရီးစ်အထိပေါ့၊ အများစုက လူကိုယ်တိုင် ဘယ်တော့မှ မတွေ့ဖူးဘူး။ ဒါပေမယ့် ပြီးခဲ့တဲ့နှစ်မှာ သူ့လုပ်ငန်းခွင်မှာ အမြတ်အများဆုံးကုမ္ပဏီ ဖြစ်လာတယ်။',
-        th: 'บริษัทซอฟต์แวร์โนวาไลน์ไม่มีสำนักงาน พนักงานสี่สิบคนอยู่สิบเก้าประเทศ จากย่างกุ้งถึงบัวโนสไอเรส และส่วนใหญ่ไม่เคยเจอตัวจริง แต่ปีที่แล้วมันกลายเป็นบริษัทกำไรมากสุดในภาค',
+        th: 'บริษัทซอฟต์แวร์โนวาไลน์ไม่มีสำนักงาน พนักงานสี่สิบคนอาศัยอยู่ในสิบเก้าประเทศ จากย่างกุ้งถึงบัวโนสไอเรส และส่วนใหญ่ไม่เคยพบกันตัวต่อตัว แต่ปีที่แล้ว บริษัทกลายเป็นบริษัทที่ทำกำไรสูงสุดในอุตสาหกรรมของตน',
       },
       {
         en: 'Founder Priya Nair designed the company around a radical principle: judge work, never presence. There are no working hours, no meetings before noon in anyone\'s timezone, and no surveillance software watching screens.',
-        my: 'တည်ထောင်သူ ပရီယာ နိုင်းယားက ကုမ္ပဏီကို ရဲရင့်တဲ့အခြေခံမူပေါ် ဒီဇိုင်းဆွဲခဲ့တယ် — အလုပ်ကို စီရင်ပါ၊ တည်ရှိမှုကို မစီရင်ပါနဲ့။ အလုပ်ချိန်မရှိ၊ ဘယ်သူ့အချိန်ဇုန်မှာမှ နေ့လယ် ၁၂ နာရီမတိုင်ခင် အစည်းအဝေးမရှိ၊ ဖန်သားပြင်တွေ စောင့်ကြည့်တဲ့ဆော့ဖ်ဝဲမရှိဘူး။',
-        th: 'ผู้ก่อตั้งปรียา ไนร์ ออกแบบบริษัทบนหลักรุนแรง ตัดสินงาน ไม่ตัดสินการปรากฏ ไม่มีเวลาทำงาน ไม่มีการประชุมก่อนเที่ยงในไทม์โซนใคร และไม่มีซอฟต์แวร์สอดแนมจอ',
+        my: 'တည်ထောင်သူ ပရီယာ နိုင်းယားက ကုမ္ပဏီကို ရဲရင့်တဲ့အခြေခံမူပေါ် ဒီဇိုင်းဆွဲခဲ့တယ် — အလုပ်ကိုသာ ကြည့်ပြီး အကဲဖြတ်ပါ၊ လူကိုယ်တိုင်ရုံးရောက်မှုကို မဟုတ်ပါနဲ့။ အလုပ်ချိန်မရှိ၊ ဘယ်သူ့အချိန်ဇုန်မှာမှ နေ့လယ် ၁၂ နာရီမတိုင်ခင် အစည်းအဝေးမရှိ၊ ဖန်သားပြင်တွေ စောင့်ကြည့်တဲ့ဆော့ဖ်ဝဲမရှိဘူး။',
+        th: 'ผู้ก่อตั้ง ปรียา ไนร์ ออกแบบบริษัทขึ้นบนหลักการที่กล้าหาญ ตัดสินกันที่ผลงาน ไม่ใช่ที่การปรากฏตัว ไม่มีเวลาทำงานตายตัว ไม่มีการประชุมก่อนเที่ยงในไทม์โซนของใคร และไม่มีซอฟต์แวร์สอดแนมหน้าจอ',
       },
       {
         en: 'Instead, everything is written down. Decisions, debates, even disagreements live in shared documents that anyone can read. "Writing forces clarity," Priya says. "Meetings let vague ideas survive."',
         my: 'အစား အရာအားလုံးကို ချရေးတယ်။ ဆုံးဖြတ်ချက်တွေ၊ ဆွေးနွေးမှုတွေ၊ သဘောထားကွဲလွဲမှုတွေတောင် လူတိုင်းဖတ်နိုင်တဲ့မျှဝေစာရွက်စာတမ်းတွေမှာ ရှိနေတယ်။ "ရေးသားခြင်းက ရှင်းလင်းမှုကို အတင်းလုပ်တယ်" လို့ ပရီယာက ပြောတယ်။ "အစည်းအဝေးတွေက မရေရာတဲ့အတွေးတွေ ရှင်သန်ခွင့် ပေးတယ်။"',
-        th: 'แทนที่ ทุกอย่างเขียนลงไป การตัดสินใจ การโต้แย้ง แม้ความขัดแย้ง อยู่ในเอกสารร่วมที่ใครก็อ่านได้ "การเขียนบังคับความชัดเจน" ปรียาพูด "การประชุมปล่อยให้ความคิดคลุมเครือรอด"',
+        th: 'แต่ทุกอย่างถูกเขียนลงไป การตัดสินใจ การโต้แย้ง แม้แต่ความขัดแย้ง ล้วนอยู่ในเอกสารร่วมที่ใครก็อ่านได้ ปรียากล่าวว่า "การเขียนบังคับให้เกิดความชัดเจน ส่วนการประชุมปล่อยให้ความคิดที่คลุมเครืออยู่รอด"',
       },
       {
         en: 'The system is not without costs. New employees often feel lonely, and resolving conflicts over text is notoriously difficult. The company now flies everyone to one location twice a year — the only time the "office" exists.',
-        my: 'စနစ်က ကုန်ကျစရိတ်မရှိတာ မဟုတ်ဘူး။ ဝန်ထမ်းအသစ်တွေ မကြာခဏ အထီးကျန်တယ်လို့ ခံစားရတယ်၊ စာသားပေါ်မှာ ပဋိပက္ခတွေ ဖြေရှင်းတာက နာမည်ကြီး ခက်ခဲတယ်။ ကုမ္ပဏီက အခု လူတိုင်းကို တစ်နှစ်နှစ်ကြိမ် တစ်နေရာတည်းကို လေယာဉ်နဲ့ခေါ်တယ် — "ရုံး" တည်ရှိတဲ့တစ်ခုတည်းသောအချိန်ဖြစ်တယ်။',
-        th: 'ระบบไม่ไร้ต้นทุน พนักงานใหม่มักเหงา และแก้ขัดแย้งผ่านข้อความยากฉาวโฉ่ บริษัทตอนนี้พาทุกคนบินมารวมกันปีละสองครั้ง เวลาเดียวที่ "สำนักงาน" มีอยู่',
+        my: 'စနစ်က ကုန်ကျစရိတ်မရှိတာ မဟုတ်ဘူး။ ဝန်ထမ်းအသစ်တွေ မကြာခဏ အထီးကျန်တယ်လို့ ခံစားရတယ်၊ စာသားပေါ်မှာ ပဋိပက္ခတွေ ဖြေရှင်းတာက နာမည်ဆိုးနဲ့ ခက်ခဲတယ်။ ကုမ္ပဏီက အခု လူတိုင်းကို တစ်နှစ်နှစ်ကြိမ် တစ်နေရာတည်းကို လေယာဉ်နဲ့ခေါ်တယ် — "ရုံး" တည်ရှိတဲ့တစ်ခုတည်းသောအချိန်ဖြစ်တယ်။',
+        th: 'ระบบนี้ก็มีต้นทุนของมัน พนักงานใหม่มักรู้สึกเหงา และการแก้ปัญหาความขัดแย้งผ่านข้อความนั้นขึ้นชื่อว่ายาก บริษัทจึงพาทุกคนบินมารวมตัวกันปีละสองครั้ง ซึ่งเป็นเวลาเดียวที่ "สำนักงาน" มีตัวตนอยู่จริง',
       },
       {
         en: 'Critics predicted the experiment would fail within a year. Five years on, employee turnover is half the industry average, and the company receives 10,000 job applications a month.',
         my: 'ဝေဖန်သူတွေက စမ်းသပ်မှုက တစ်နှစ်အတွင်း ကျရှုံးလိမ့်မယ်လို့ ခန့်မှန်းခဲ့ကြတယ်။ ငါးနှစ်အကြာမှာ ဝန်ထမ်းထွက်ခွာနှုန်းက လုပ်ငန်းပျမ်းမျှရဲ့တစ်ဝက်ဖြစ်ပြီး ကုမ္ပဏီက လတိုင်း အလုပ်လျှောက်လွှာ ၁၀,၀၀၀ ရရှိတယ်။',
-        th: 'นักวิจารณ์ทำนายการทดลองจะล้มในหนึ่งปี ห้าปีผ่าน อัตราพนักงานออกครึ่งหนึ่งของค่าเฉลี่ยอุตสาหกรรม และบริษัทได้รับใบสมัครงาน 10,000 ต่อเดือน',
+        th: 'นักวิจารณ์เคยทำนายว่าการทดลองนี้จะล้มเหลวภายในหนึ่งปี ห้าปีผ่านไป อัตราการลาออกของพนักงานเหลือเพียงครึ่งหนึ่งของค่าเฉลี่ยอุตสาหกรรม และบริษัทได้รับใบสมัครงานถึง 10,000 ใบต่อเดือน',
       },
       {
         en: 'Priya believes the office was never really about work. "It was about control," she says. "We replaced control with trust — and discovered that trust, unlike offices, scales perfectly."',
         my: 'ပရီယာက ရုံးဆိုတာ အလုပ်နဲ့ တကယ်မဆိုင်ဘူးလို့ ယုံကြည်တယ်။ "ထိန်းချုပ်မှုနဲ့ ဆိုင်တယ်" လို့ သူပြောတယ်။ "ကျွန်တော်တို့ ထိန်းချုပ်မှုကို ယုံကြည်မှုနဲ့ အစားထိုးခဲ့တယ် — ယုံကြည်မှုက ရုံးတွေနဲ့မတူဘဲ ပြီးပြည့်စုံစွာ ချဲ့ထွင်နိုင်တယ်ဆိုတာ တွေ့ရှိခဲ့တယ်။"',
-        th: 'ปรียาเชื่อว่าสำนักงานไม่เคยเกี่ยวกับงานจริงๆ "มันเกี่ยวกับการควบคุม" เธอพูด "เราแทนการควบคุมด้วยความไว้ใจ และค้นพบว่าความไว้ใจต่างจากสำนักงาน ขยายได้อย่างสมบูรณ์"',
+        th: 'ปรียาเชื่อว่าสำนักงานไม่เคยเกี่ยวกับงานจริงๆ เธอพูดว่า "มันเกี่ยวกับการควบคุม เราแทนที่การควบคุมด้วยความไว้ใจ และค้นพบว่าความไว้ใจนั้นต่างจากสำนักงาน เพราะมันขยายขนาดได้อย่างสมบูรณ์แบบ"',
       },
     ],
   },
@@ -1813,32 +1813,32 @@ export const storiesBatch3: Story[] = [
       {
         en: 'At the 1960 Rome Olympics, an unknown Ethiopian runner named Abebe Bikila arrived with a problem: his new shoes gave him blisters. So he made a stunning decision — he would run the marathon barefoot.',
         my: '၁၉၆၀ ရောမအိုလံပစ်မှာ အဘဲဘဲ ဘီကီလာဆိုတဲ့ မသိသေးတဲ့အီသီယိုးပီးယားအပြေးသမားတစ်ဦး ပြဿနာတစ်ခုနဲ့ ရောက်လာတယ် — သူ့ဖိနပ်အသစ်တွေက အရေကြည်ဖုတွေ ဖြစ်စေတယ်။ ဒါကြောင့် သူက အံ့ဩဖွယ်ဆုံးဖြတ်ချက်တစ်ခု ချခဲ့တယ် — မာရသွန်ကို ခြေဗလာနဲ့ ပြေးမယ်။',
-        th: 'โอลิมปิกโรม 1960 นักวิ่งเอธิโอเปียไม่รู้จักชื่ออาเบเบ บิกิลา มาพร้อมปัญหา รองเท้าใหม่ทำให้พอง เขาจึงตัดสินใจช็อก จะวิ่งมาราธอนเท้าเปล่า',
+        th: 'ในโอลิมปิกที่โรมปี 1960 นักวิ่งชาวเอธิโอเปียที่ไม่มีใครรู้จักชื่ออาเบเบ บิกิลา มาพร้อมกับปัญหา รองเท้าคู่ใหม่ทำให้เท้าของเขาเป็นตุ่มพอง เขาจึงตัดสินใจอย่างน่าตกใจ ว่าจะวิ่งมาราธอนด้วยเท้าเปล่า',
       },
       {
         en: 'The marathon course wound through Rome at night, past ancient monuments lit by soldiers holding torches. Running barefoot on the cobblestones, Bikila stayed calm while favorites pushed the pace recklessly.',
-        my: 'မာရသွန်လမ်းကြောင်းက ညဘက် ရောမမြို့ကို ဖြတ်ပြီး မီးရှူးကိုင်ထားတဲ့စစ်သားတွေ အလင်းပေးထားတဲ့ရှေးဟောင်းအထိမ်းအမှတ်တွေ ဖြတ်သွားတယ်။ ကျောက်တုံးလမ်းပေါ် ခြေဗလာနဲ့ပြေးရင်း ဘီကီလာက အကြိုက်တွေက အမြန်နှုန်းကို ရဲရဲတင်းတင်း တွန်းနေချိန်မှာ တည်ငြိမ်နေတယ်။',
-        th: 'เส้นทางมาราธอนคดผ่านโรมตอนกลางคืน ผ่านอนุสาวรีย์โบราณที่ทหารถือคบเพลิงให้แสง วิ่งเท้าเปล่าบนหินกรวด บิกิลาใจเย็นขณะที่ตัวเต็งเร่งเพซอย่างบ้าบิ่น',
+        my: 'မာရသွန်လမ်းကြောင်းက ညဘက် ရောမမြို့ကို ဖြတ်ပြီး မီးရှူးကိုင်ထားတဲ့စစ်သားတွေ အလင်းပေးထားတဲ့ရှေးဟောင်းအထိမ်းအမှတ်တွေ ဖြတ်သွားတယ်။ ကျောက်တုံးလမ်းပေါ် ခြေဗလာနဲ့ပြေးရင်း ဘီကီလာက အနိုင်ရဖွယ်ရှိသူတွေက အမြန်နှုန်းကို ရဲရဲတင်းတင်း တွန်းနေချိန်မှာ တည်ငြိမ်နေတယ်။',
+        th: 'เส้นทางมาราธอนคดเคี้ยวผ่านกรุงโรมในยามค่ำคืน ผ่านอนุสาวรีย์โบราณที่มีทหารถือคบเพลิงส่องแสง ขณะวิ่งเท้าเปล่าบนถนนหินกรวด บิกิลายังคงใจเย็นในขณะที่ตัวเต็งเร่งฝีเท้าอย่างบ้าบิ่น',
       },
       {
         en: 'At the 20-kilometer mark, he surged ahead — and never looked back. He crossed the finish line first, in world-record time, beneath the Arch of Constantine. The barefoot runner had conquered Rome.',
         my: 'ကီလိုမီတာ ၂၀ အမှတ်မှာ သူ ရှေ့ကို ခုန်ထွက်သွားတယ် — နောက်ပြန်မလှည့်တော့ဘူး။ ကွန်စတန်တိုင်းခုံးကျော်အောက်မှာ ကမ္ဘာ့စံချိန်အချိန်နဲ့ ပန်းတိုင်ကို ပထမဆုံး ဖြတ်သန်းခဲ့တယ်။ ခြေဗလာအပြေးသမားက ရောမကို အောင်နိုင်ခဲ့ပြီ။',
-        th: 'ที่กิโลเมตร 20 เขาพุ่งนำ และไม่มองหลัง เข้าเส้นชัยก่อน ด้วยเวลาสถิติโลก ใต้ซุ้มคอนสแตนติน นักวิ่งเท้าเปล่าพิชิตโรม',
+        th: 'ที่หลักกิโลเมตรที่ 20 เขาพุ่งแซงขึ้นนำ และไม่หันหลังกลับไปมองอีก เข้าเส้นชัยเป็นคนแรกด้วยเวลาสถิติโลก ใต้ซุ้มประตูคอนสแตนติน นักวิ่งเท้าเปล่าผู้นี้พิชิตกรุงโรมได้สำเร็จ',
       },
       {
         en: 'Four years later in Tokyo, Bikila won again — this time wearing shoes, just six weeks after appendix surgery. No one had ever won two Olympic marathons in a row. He remains the only one who did it starting from nowhere.',
-        my: 'လေးနှစ်အကြာ တိုကျိုမှာ ဘီကီလာက ထပ်အနိုင်ရခဲ့တယ် — ဒီတစ်ခါ ဖိနပ်စီးပြီး အူအတက်ခွဲစိတ်ပြီး ခြောက်ပတ်အကြာမှာပေါ့။ အိုလံပစ်မာရသွန်နှစ်ခု ဆက်တိုက် ဘယ်သူမှ မအနိုင်ရဖူးဘူး။ ဘယ်နေရာမှမစဘဲ ဒါကို လုပ်ခဲ့တဲ့တစ်ဦးတည်းသောသူအဖြစ် သူ ကျန်ရှိနေတယ်။',
-        th: 'สี่ปีต่อมาที่โตเกียว บิกิลาชนะอีก ครั้งนี้ใส่รองเท้า แค่หกสัปดาห์หลังผ่าตัดไส้ติ่ง ไม่มีใครเคยชนะมาราธอนโอลิมปิกสองครั้งติด เขายังเป็นคนเดียวที่ทำโดยเริ่มจากไม่มีอะไร',
+        my: 'လေးနှစ်အကြာ တိုကျိုမှာ ဘီကီလာက ထပ်အနိုင်ရခဲ့တယ် — ဒီတစ်ခါ ဖိနပ်စီးပြီး အူအတက်ခွဲစိတ်ပြီး ခြောက်ပတ်အကြာမှာပေါ့။ အိုလံပစ်မာရသွန်နှစ်ခု ဆက်တိုက် ဘယ်သူမှ မအနိုင်ရဖူးဘူး။ သုညကနေစပြီး ဒါကို လုပ်ခဲ့တဲ့ တစ်ဦးတည်းသောသူအဖြစ် သူ ကျန်ရှိနေဆဲဖြစ်တယ်။',
+        th: 'สี่ปีต่อมาที่โตเกียว บิกิลาชนะอีกครั้ง คราวนี้เขาสวมรองเท้า เพียงหกสัปดาห์หลังการผ่าตัดไส้ติ่ง ไม่มีใครเคยชนะมาราธอนโอลิมปิกสองครั้งติดต่อกัน และเขายังคงเป็นคนเดียวที่ทำได้โดยเริ่มจากจุดที่ไม่มีใครรู้จัก',
       },
       {
         en: 'A car accident later left him paralyzed, ending his running career. Yet Bikila competed in archery and table tennis at the Paralympics, refusing to let misfortune define him.',
-        my: 'နောက်ပိုင်း ကားမတော်တဆမှုတစ်ခုက သူ့ကို လေဖြတ်စေပြီး သူ့အပြေးသမားဘဝ အဆုံးသတ်ခဲ့တယ်။ ဒါပေမယ့် ဘီကီလာက မသန်စွမ်းအိုလံပစ်မှာ လေးပစ်နဲ့ စားပွဲတင်တင်းနစ်ပြိုင်ခဲ့တယ်၊ ကံဆိုးမှုက သူ့ကို အဓိပ္ပာယ်ဖွင့်ခွင့် ငြင်းခဲ့တယ်။',
-        th: 'อุบัติเหตุรถต่อมาทำให้เขาเป็นอัมพาต จบอาชีพวิ่ง แต่บิกิลาแข่งยิงธนูและปิงปองในพาราลิมปิก ปฏิเสธให้โชคร้ายนิยามเขา',
+        my: 'နောက်ပိုင်း ကားမတော်တဆမှုတစ်ခုက သူ့ကို ခြေလက်လှုပ်ရှားမရဖြစ်စေပြီး သူ့အပြေးသမားဘဝ အဆုံးသတ်ခဲ့တယ်။ ဒါပေမယ့် ဘီကီလာက မသန်စွမ်းအိုလံပစ်မှာ လေးပစ်နဲ့ စားပွဲတင်တင်းနစ်ပြိုင်ခဲ့တယ်၊ ကံဆိုးမှုက သူ့ကို အဓိပ္ပာယ်ဖွင့်ခွင့် မပေးခဲ့ဘူး။',
+        th: 'อุบัติเหตุทางรถยนต์ในเวลาต่อมาทำให้เขาเป็นอัมพาต ยุติอาชีพนักวิ่งของเขา แต่บิกิลากลับไปแข่งยิงธนูและปิงปองในพาราลิมปิก ปฏิเสธที่จะให้โชคร้ายมานิยามตัวตนของเขา',
       },
       {
         en: 'He died at just forty-one, but in Ethiopia, every child runner knows his name. Bikila proved that champions are not made by equipment — they are made by the refusal to stop.',
         my: 'သူက အသက် ၄၁ မှာသာ ကွယ်လွန်ခဲ့ပေမယ့် အီသီယိုးပီးယားမှာ ကလေးအပြေးသမားတိုင်း သူ့နာမည်သိတယ်။ ဘီကီလာက ချန်ပီယံတွေကို ပစ္စည်းကိရိယာတွေက ဖန်တီးတာမဟုတ်ဘူးဆိုတာ သက်သေပြခဲ့တယ် — ရပ်တန့်ဖို့ ငြင်းဆန်မှုက ဖန်တီးတာဖြစ်တယ်။',
-        th: 'เขาตายตอนแค่สี่สิบเอ็ด แต่ในเอธิโอเปีย เด็กนักวิ่งทุกคนรู้ชื่อเขา บิกิลาพิสูจน์ว่าแชมป์ไม่ได้สร้างด้วยอุปกรณ์ แต่สร้างด้วยการปฏิเสธที่จะหยุด',
+        th: 'เขาเสียชีวิตตอนอายุเพียงสี่สิบเอ็ดปี แต่ในเอธิโอเปีย เด็กนักวิ่งทุกคนรู้จักชื่อของเขา บิกิลาพิสูจน์แล้วว่าแชมป์ไม่ได้ถูกสร้างด้วยอุปกรณ์ แต่ถูกสร้างด้วยการปฏิเสธที่จะหยุด',
       },
     ],
   },
@@ -1846,38 +1846,38 @@ export const storiesBatch3: Story[] = [
     id: 'f14-s-048',
     level: 'C1',
     titleEn: 'The AI in the Classroom',
-    titleMy: 'စာသင်ခန်းထဲက AI',
+    titleMy: 'စာသင်ခန်းထဲက အေအိုင်',
     titleTh: 'เอไอในห้องเรียน',
     paragraphs: [
       {
         en: 'When teacher Daw May introduced an AI tutor in her rural classroom, she expected resistance. Instead, her students named it "Saya Bot" — Teacher Bot — and began arriving early to ask it questions.',
-        my: 'ဆရာမ ဒေါ်မေက သူ့ကျေးလက်စာသင်ခန်းမှာ AI ကျူတာတစ်ခု မိတ်ဆက်တဲ့အခါ ခုခံမှုကို မျှော်လင့်ခဲ့တယ်။ အစား သူ့တပည့်တွေက "ဆရာဘော့" လို့ နာမည်ပေးပြီး မေးခွန်းတွေမေးဖို့ အစောကြီး ရောက်လာကြတယ်။',
-        th: 'เมื่อครูดอเมแนะนำติวเตอร์เอไอในห้องเรียนชนบท เธอคาดการต่อต้าน แทนที่ นักเรียนตั้งชื่อมันว่า "ซายาบอต" ครูบอต และเริ่มมาเช้าเพื่อถามคำถาม',
+        my: 'ဆရာမ ဒေါ်မေက သူ့ကျေးလက်စာသင်ခန်းမှာ အေအိုင် ကျူတာတစ်ခု မိတ်ဆက်တဲ့အခါ ခုခံမှုကို မျှော်လင့်ခဲ့တယ်။ အဲဒီအစား သူ့တပည့်တွေက "ဆရာဘော့" လို့ နာမည်ပေးပြီး မေးခွန်းတွေမေးဖို့ အစောကြီး ရောက်လာကြတယ်။',
+        th: 'เมื่อครูดอว์เมแนะนำติวเตอร์เอไอในห้องเรียนชนบท เธอคาดว่าจะถูกต่อต้าน แต่กลับกัน นักเรียนกลับตั้งชื่อให้มันว่า "ซายาบอต" หรือครูบอต และเริ่มมาโรงเรียนแต่เช้าเพื่อถามคำถามมัน',
       },
       {
         en: 'The AI\'s greatest strength was patience. It explained fractions for the twentieth time with the same enthusiasm as the first, and never made a struggling student feel stupid.',
-        my: 'AI ရဲ့အကြီးမားဆုံးအားသာချက်က သည်းခံမှုဖြစ်တယ်။ အပိုင်းကိန်းတွေကို အကြိမ်နှစ်ဆယ်မြောက် ရှင်းပြတာတောင် ပထမအကြိမ်လို စိတ်အားထက်သန်မှုအတူတူပဲ၊ ရုန်းကန်နေတဲ့ကျောင်းသားကို ဘယ်တော့မှ မိုက်မဲတယ်လို့ မခံစားစေဘူး။',
-        th: 'จุดแข็งสุดของเอไอคือความอดทน มันอธิบายเศษส่วนครั้งที่ยี่สิบด้วยความกระตือรือร้นเท่าครั้งแรก และไม่เคยทำให้นักเรียนที่ลำบากรู้สึกโง่',
+        my: 'အေအိုင်ရဲ့အကြီးမားဆုံးအားသာချက်က သည်းခံမှုဖြစ်တယ်။ အပိုင်းကိန်းတွေကို အကြိမ်နှစ်ဆယ်မြောက် ရှင်းပြတာတောင် ပထမအကြိမ်လို စိတ်အားထက်သန်မှုအတူတူပဲ၊ ရုန်းကန်နေတဲ့ကျောင်းသားကို ဘယ်တော့မှ မိုက်မဲတယ်လို့ မခံစားစေဘူး။',
+        th: 'จุดแข็งที่สุดของเอไอคือความอดทน มันอธิบายเรื่องเศษส่วนเป็นครั้งที่ยี่สิบด้วยความกระตือรือร้นเท่ากับครั้งแรก และไม่เคยทำให้นักเรียนที่กำลังลำบากรู้สึกว่าตัวเองโง่',
       },
       {
         en: 'Test scores rose sharply within a year. But Daw May noticed something else: her quietest students — the ones who never raised their hands — were asking the AI hundreds of questions they had been too shy to ask her.',
-        my: 'တစ်နှစ်အတွင်းမှာ စာမေးပွဲရမှတ်တွေ သိသိသာသာမြင့်တက်လာတယ်။ ဒါပေမယ့် ဒေါ်မေက တခြားအရာတစ်ခု သတိထားမိတယ် — သူ့ရဲ့အတိတ်ဆိတ်ဆုံးတပည့်တွေ — လက်ဘယ်တော့မှ မထောင်တဲ့သူတွေ — သူ့ကို မေးဖို့ ရှက်ခဲ့တဲ့မေးခွန်းရာပေါင်းများစွာကို AI ကို မေးနေတယ်။',
-        th: 'คะแนนสอบพุ่งในหนึ่งปี แต่ดอเมสังเกตอย่างอื่น นักเรียนเงียบสุดของเธอ คนที่ไม่เคยยกมือ กำลังถามเอไอคำถามหลายร้อยที่อายเกินจะถามเธอ',
+        my: 'တစ်နှစ်အတွင်းမှာ စာမေးပွဲရမှတ်တွေ သိသိသာသာမြင့်တက်လာတယ်။ ဒါပေမယ့် ဒေါ်မေက တခြားအရာတစ်ခု သတိထားမိတယ် — သူ့ရဲ့အတိတ်ဆိတ်ဆုံးတပည့်တွေ — လက်ဘယ်တော့မှ မထောင်တဲ့သူတွေ — သူ့ကို မေးဖို့ ရှက်ခဲ့တဲ့မေးခွန်းရာပေါင်းများစွာကို အေအိုင်ကို မေးနေတယ်။',
+        th: 'คะแนนสอบพุ่งสูงขึ้นภายในหนึ่งปี แต่ดอว์เมสังเกตเห็นอีกอย่างหนึ่ง นักเรียนที่เงียบที่สุดของเธอ คนที่ไม่เคยยกมือเลย กำลังถามเอไอด้วยคำถามนับร้อยข้อที่พวกเขาเคยอายเกินกว่าจะถามเธอ',
       },
       {
         en: 'Not everyone celebrated. Some parents feared the machine would replace teachers; education officials worried about student data. Daw May invited the skeptics to watch a lesson — and most left reassured, if not converted.',
         my: 'လူတိုင်း အောင်ပွဲမခံခဲ့ကြဘူး။ မိဘတချို့က စက်က ဆရာတွေကို အစားထိုးမှာ စိုးရိမ်တယ်၊ ပညာရေးအရာရှိတွေက ကျောင်းသားဒေတာကို စိုးရိမ်တယ်။ ဒေါ်မေက သံသယရှိသူတွေကို သင်ခန်းစာတစ်ခု ကြည့်ဖို့ ဖိတ်ခေါ်ခဲ့တယ် — အများစုက ပြောင်းလဲမသွားပေမယ့် စိတ်အေးလက်အေး ပြန်သွားကြတယ်။',
-        th: 'ไม่ใช่ทุกคนฉลอง ผู้ปกครองบางคนกลัวเครื่องจะแทนครู เจ้าหน้าที่การศึกษาห่วงข้อมูลนักเรียน ดอเมเชิญผู้สงสัยดูบทเรียน และส่วนใหญ่กลับอย่างสบายใจ ถ้าไม่เปลี่ยนใจ',
+        th: 'ไม่ใช่ทุกคนที่จะยินดี ผู้ปกครองบางคนกลัวว่าเครื่องจักรจะมาแทนครู เจ้าหน้าที่การศึกษาก็ห่วงเรื่องข้อมูลของนักเรียน ดอว์เมจึงเชิญผู้ที่สงสัยมาชมการสอน และส่วนใหญ่กลับไปอย่างสบายใจ ถึงแม้จะไม่ได้เปลี่ยนใจก็ตาม',
       },
       {
         en: 'The AI made mistakes too — once confidently teaching that Yangon was the capital of Thailand. Daw May turned the error into a lesson: "Machines can be wrong. Your job is to think, not just to believe."',
-        my: 'AI ကလည်း အမှားတွေ လုပ်ခဲ့တယ် — ရန်ကုန်က ထိုင်းနိုင်ငံရဲ့မြို့တော်ဖြစ်တယ်လို့ ယုံကြည်မှုအပြည့်နဲ့ တစ်ခါ သင်ခဲ့တယ်။ ဒေါ်မေက အမှားကို သင်ခန်းစာအဖြစ် ပြောင်းခဲ့တယ် — "စက်တွေ မှားနိုင်တယ်။ မင်းတို့အလုပ်က တွေးဖို့ဖြစ်တယ်၊ ယုံဖို့သက်သက် မဟုတ်ဘူး။"',
-        th: 'เอไอก็ผิดพลาด เคยสอนอย่างมั่นใจว่าย่างกุ้งเป็นเมืองหลวงของไทย ดอเมเปลี่ยนความผิดเป็นบทเรียน "เครื่องผิดได้ งานของคุณคือคิด ไม่ใช่แค่เชื่อ"',
+        my: 'အေအိုင်ကလည်း အမှားတွေ လုပ်ခဲ့တယ် — ရန်ကုန်က ထိုင်းနိုင်ငံရဲ့မြို့တော်ဖြစ်တယ်လို့ ယုံကြည်မှုအပြည့်နဲ့ တစ်ခါ သင်ခဲ့တယ်။ ဒေါ်မေက အမှားကို သင်ခန်းစာအဖြစ် ပြောင်းခဲ့တယ် — "စက်တွေ မှားနိုင်တယ်။ မင်းတို့အလုပ်က တွေးဖို့ဖြစ်တယ်၊ ယုံဖို့သက်သက် မဟုတ်ဘူး။"',
+        th: 'เอไอก็ทำผิดพลาดเช่นกัน มันเคยสอนอย่างมั่นใจเต็มที่ว่าย่างกุ้งเป็นเมืองหลวงของประเทศไทย ดอว์เมเปลี่ยนความผิดพลาดให้เป็นบทเรียน เธอกล่าวว่า "เครื่องจักรก็ผิดได้ หน้าที่ของพวกเธอคือการคิด ไม่ใช่แค่การเชื่อ"',
       },
       {
         en: 'Two years on, Daw May\'s view is balanced: the AI is a tireless assistant, but the classroom still needs a human heart. "Saya Bot answers questions," she smiles. "I teach children when to ask them."',
-        my: 'နှစ်နှစ်အကြာမှာ ဒေါ်မေရဲ့အမြင်က မျှတတယ် — AI က မမောနိုင်တဲ့လက်ထောက်ဖြစ်ပေမယ့် စာသင်ခန်းက လူ့နှလုံးသား လိုအပ်နေဆဲဖြစ်တယ်။ "ဆရာဘော့က မေးခွန်းတွေ ဖြေတယ်" လို့ သူ ပြုံးပြီး ပြောတယ်။ "ကျွန်မက ကလေးတွေကို ဘယ်အချိန်မေးရမလဲဆိုတာ သင်ပေးတယ်။"',
-        th: 'สองปีผ่าน มุมมองดอเมสมดุล เอไอคือผู้ช่วยไม่เหน็ดเหนื่อย แต่ห้องเรียนยังต้องการหัวใจมนุษย์ "ซายาบอตตอบคำถาม" เธอยิ้ม "ฉันสอนเด็กว่าเมื่อไรควรถาม"',
+        my: 'နှစ်နှစ်အကြာမှာ ဒေါ်မေရဲ့အမြင်က မျှတတယ် — အေအိုင်က မမောနိုင်တဲ့လက်ထောက်ဖြစ်ပေမယ့် စာသင်ခန်းက လူ့နှလုံးသား လိုအပ်နေဆဲဖြစ်တယ်။ "ဆရာဘော့က မေးခွန်းတွေ ဖြေတယ်" လို့ သူ ပြုံးပြီး ပြောတယ်။ "ကျွန်မက ကလေးတွေကို ဘယ်အချိန်မေးရမလဲဆိုတာ သင်ပေးတယ်။"',
+        th: 'สองปีผ่านไป มุมมองของดอว์เมมีความสมดุล เอไอคือผู้ช่วยที่ไม่รู้จักเหน็ดเหนื่อย แต่ห้องเรียนยังคงต้องการหัวใจของมนุษย์ เธอยิ้มแล้วกล่าวว่า "ซายาบอตตอบคำถาม ส่วนฉันสอนเด็กๆ ว่าเมื่อไรควรถาม"',
       },
     ],
   },
@@ -1891,32 +1891,32 @@ export const storiesBatch3: Story[] = [
       {
         en: 'The Inca Trail is only 43 kilometers long, but it climbs from steamy jungle to a freezing mountain pass at 4,215 meters — higher than any point in Western Europe.',
         my: 'အင်ကာလမ်းက ၄၃ ကီလိုမီတာသာ ရှည်တယ်၊ ဒါပေမယ့် ပူပြင်းတဲ့တောနက်ကနေ အေးခဲနေတဲ့တောင်ကြားလမ်း မီတာ ၄,၂၁၅ — အနောက်ဥရောပရဲ့အမြင့်ဆုံးနေရာထက် မြင့်တယ် — အထိ တက်ရတယ်။',
-        th: 'เส้นทางอินคายาวแค่ 43 กิโลเมตร แต่มันปีนจากป่าร้อนชื้นสู่ช่องเขาหนาวเยือกที่ 4,215 เมตร สูงกว่าจุดสูงสุดใดในยุโรปตะวันตก',
+        th: 'เส้นทางอินคามีความยาวเพียง 43 กิโลเมตร แต่เส้นทางไต่ระดับจากป่าดิบร้อนชื้นขึ้นสู่ช่องเขาที่หนาวเยือกที่ระดับ 4,215 เมตร ซึ่งสูงกว่าจุดที่สูงที่สุดใดๆ ในยุโรปตะวันตก',
       },
       {
         en: 'Hikers walk in the footsteps of the Incas themselves, passing stone ruins where messengers once ran with news for the emperor, and terraces where farmers grew corn on impossible slopes.',
         my: 'ခြေလျင်ခရီးသည်တွေက အင်ကာတွေကိုယ်တိုင်ရဲ့ခြေရာမှာ လျှောက်တယ်၊ ဧကရာဇ်အတွက် သတင်းနဲ့ ပြေးခဲ့တဲ့တမန်တွေရဲ့ ကျောက်အပျက်အစီးတွေ၊ မဖြစ်နိုင်တဲ့စောင်းတွေပေါ် လယ်သမားတွေ ပြောင်းစိုက်ခဲ့တဲ့ လှေကားထစ်တွေ ဖြတ်သန်းတယ်။',
-        th: 'นักเดินป่าเดินตามรอยเท้าอินคาเอง ผ่านซากหินที่ผู้ส่งข่าวเคยวิ่งนำข่าวให้จักรพรรดิ และขั้นบันไดที่ชาวนาปลูกข้าวโพดบนลาดเป็นไปไม่ได้',
+        th: 'นักเดินป่าเดินตามรอยเท้าของชาวอินคาเอง ผ่านซากหินที่ผู้ส่งข่าวเคยวิ่งนำข่าวไปถวายจักรพรรดิ และขั้นบันไดนาที่ชาวนาปลูกข้าวโพดบนไหล่เขาที่ดูเป็นไปไม่ได้',
       },
       {
         en: 'On the second day comes Dead Woman\'s Pass — the highest and hardest climb. Porters, carrying 20 kilograms on their backs, overtake exhausted tourists with cheerful ease, a humbling sight.',
         my: 'ဒုတိယနေ့မှာ သေဆုံးအမျိုးသမီးတောင်ကြား — အမြင့်ဆုံးနဲ့ အခက်ခဲဆုံးတက်ခြင်း — ရောက်လာတယ်။ ကျောမှာ ၂၀ ကီလိုဂရမ် သယ်တဲ့ဝန်ထမ်းတွေက ပင်ပန်းနေတဲ့ကမ္ဘာလှည့်ခရီးသည်တွေကို ရွှင်လန်းလွယ်ကူစွာ ကျော်တက်သွားတယ်၊ နှိမ့်ချဖွယ်မြင်ကွင်းဖြစ်တယ်။',
-        th: 'วันที่สองมาถึงช่องหญิงตาย ปีนสูงสุดและยากสุด ลูกหาบ แบก 20 กิโลกรัมบนหลัง แซงนักท่องเที่ยวหมดแรงอย่างร่าเริงง่ายดาย ภาพถ่อมตน',
+        th: 'ในวันที่สองก็มาถึงช่องเขาหญิงตาย การปีนที่สูงและยากที่สุด ลูกหาบที่แบกน้ำหนัก 20 กิโลกรัมไว้บนหลัง แซงหน้านักท่องเที่ยวที่หมดแรงไปอย่างร่าเริงและง่ายดาย เป็นภาพที่ทำให้รู้สึกถ่อมตน',
       },
       {
         en: 'The final morning begins at 3:30 a.m. in darkness. Trekkers climb stone steps by headlamp for two hours, racing to reach the Sun Gate as the first light touches the ruins.',
         my: 'နောက်ဆုံးမနက်က မှောင်မိုက်ထဲမှာ ၃:၃၀ မှာ စတင်တယ်။ ခြေလျင်ခရီးသည်တွေက ဦးခေါင်းမီးနဲ့ ကျောက်လှေကားတွေ နှစ်နာရီ တက်တယ်၊ ပထမဆုံးအလင်း အပျက်အစီးတွေကို ထိတဲ့အချိန် နေတံခါးကို ရောက်ဖို့ ပြိုင်တယ်။',
-        th: 'เช้าสุดท้ายเริ่มตีสามครึ่งในความมืด นักเดินป่าปีนบันไดหินด้วยไฟฉายคาดหัวสองชั่วโมง แข่งถึงประตูพระอาทิตย์เมื่อแสงแรกแตะซาก',
+        th: 'เช้าวันสุดท้ายเริ่มต้นตอนตีสามครึ่งในความมืด นักเดินป่าปีนบันไดหินด้วยไฟฉายคาดหัวเป็นเวลาสองชั่วโมง แข่งกันไปให้ถึงประตูพระอาทิตย์ในขณะที่แสงแรกแตะต้องซากปรักหักพัง',
       },
       {
         en: 'And then it appears: Machu Picchu, floating above the clouds between two sharp peaks. After four days of pain, the ancient city looks less like ruins and more like a reward.',
         my: 'ပြီးတော့ ပေါ်လာတယ် — မာချူးပစ်ချူး၊ တောင်ထိပ်ချွန်နှစ်ခုကြား တိမ်တွေအပေါ် မျောနေတယ်။ လေးရက်တာ နာကျင်မှုပြီးနောက် ရှေးဟောင်းမြို့က အပျက်အစီးတွေထက် ဆုလာဘ်နဲ့ ပိုတူတယ်။',
-        th: 'แล้วมันปรากฏ มาชูปิกชู ลอยเหนือเมฆระหว่างยอดแหลมสองยอด หลังเจ็บปวดสี่วัน เมืองโบราณดูน้อยเหมือนซากและเหมือนรางวัลมากกว่า',
+        th: 'แล้วมันก็ปรากฏขึ้น มาชูปิกชู ลอยอยู่เหนือเมฆระหว่างยอดเขาแหลมสองยอด หลังจากสี่วันแห่งความเจ็บปวด เมืองโบราณดูเหมือนซากปรักหักพังน้อยลง แต่ดูเหมือนรางวัลมากขึ้น',
       },
       {
         en: 'Archaeologists still debate why the Incas built a city in such an unreachable place. Standing there at dawn, most visitors stop debating — some places, they feel, were built simply because they are beautiful.',
         my: 'ရှေးဟောင်းသုတေသီတွေက အင်ကာတွေ ဘာကြောင့် ဒီလောက်ရောက်ဖို့ခက်တဲ့နေရာမှာ မြို့တည်ခဲ့လဲဆိုတာ အခုထိ အငြင်းပွားနေဆဲဖြစ်တယ်။ အရုဏ်မှာ အဲဒီမှာ ရပ်နေရင်း ဧည့်သည်အများစုက အငြင်းပွားတာ ရပ်လိုက်တယ် — တချို့နေရာတွေက လှပလို့သက်သက် တည်ဆောက်ခဲ့တာလို့ သူတို့ ခံစားရတယ်။',
-        th: 'นักโบราณคดียังโต้ว่าทำไมอินคาสร้างเมืองในที่เข้าถึงไม่ได้เช่นนี้ ยืนที่นั่นยามรุ่ง นักท่องเที่ยวส่วนใหญ่หยุดโต้ บางสถานที่ พวกเขารู้สึก สร้างเพียงเพราะสวยงาม',
+        th: 'นักโบราณคดียังคงโต้เถียงกันว่าทำไมชาวอินคาจึงสร้างเมืองในสถานที่ที่เข้าถึงยากเช่นนี้ แต่เมื่อยืนอยู่ที่นั่นในยามรุ่งอรุณ นักท่องเที่ยวส่วนใหญ่ก็หยุดโต้เถียง สถานที่บางแห่ง พวกเขารู้สึกว่า ถูกสร้างขึ้นเพียงเพราะมันสวยงาม',
       },
     ],
   },
@@ -1924,38 +1924,38 @@ export const storiesBatch3: Story[] = [
     id: 'f14-s-050',
     level: 'C1',
     titleEn: 'The Cloud Forest',
-    titleMy: 'တိမ်တောင်',
+    titleMy: 'တိမ်တော',
     titleTh: 'ป่าเมฆ',
     paragraphs: [
       {
         en: 'In the mountains of Costa Rica, there is a forest where it rains even when the sky is clear. Moisture condenses directly from the clouds onto every leaf — scientists call it horizontal rain.',
         my: 'ကော်စတာရီကာရဲ့တောင်တွေမှာ ကောင်းကင်ကြည်နေတောင် မိုးရွာတဲ့တောတစ်ခု ရှိတယ်။ အစိုဓာတ်က တိမ်တွေကနေ အရွက်တိုင်းပေါ် တိုက်ရိုက်စုပုံတယ် — သိပ္ပံပညာရှင်တွေက အလျားလိုက်မိုးလို့ ခေါ်တယ်။',
-        th: 'ในภูเขาคอสตาริกา มีป่าที่ฝนตกแม้ท้องฟ้าใส ความชื้นควบแน่นจากเมฆลงทุกใบโดยตรง นักวิทยาศาสตร์เรียกมันว่าฝนแนวนอน',
+        th: 'ในเทือกเขาของคอสตาริกา มีป่าแห่งหนึ่งที่ฝนตกแม้ในวันที่ท้องฟ้าแจ่มใส ความชื้นควบแน่นจากเมฆลงบนใบไม้ทุกใบโดยตรง นักวิทยาศาสตร์เรียกปรากฏการณ์นี้ว่า "ฝนแนวนอน"',
       },
       {
         en: 'The Monteverde Cloud Forest holds six percent of the world\'s plant species in an area smaller than a city district. Orchids grow on branches, moss covers everything, and new species are still discovered every year.',
         my: 'မွန်တီဗာဒီ တိမ်တောမှာ မြို့နယ်တစ်ခုထက် သေးငယ်တဲ့နေရာမှာ ကမ္ဘာ့အပင်မျိုးစိတ် ၆ ရာခိုင်နှုန်း ရှိတယ်။ သစ်ခွတွေက ကိုင်းတွေပေါ် ပေါက်တယ်၊ ရေညှိက အရာအားလုံး ဖုံးတယ်၊ မျိုးစိတ်အသစ်တွေ နှစ်တိုင်း တွေ့ရှိနေဆဲဖြစ်တယ်။',
-        th: 'ป่าเมฆมอนเตเวร์เดมีพืช 6 เปอร์เซ็นต์ของโลกในพื้นที่เล็กกว่าเขตเมือง กล้วยไม้โตบนกิ่ง มอสคลุมทุกอย่าง และยังพบสายพันธุ์ใหม่ทุกปี',
+        th: 'ป่าเมฆมอนเตเวร์เดเป็นที่อยู่ของพืชถึง 6 เปอร์เซ็นต์ของพืชทั้งโลก ในพื้นที่ที่เล็กกว่าเขตเมืองเขตหนึ่ง กล้วยไม้เติบโตบนกิ่งไม้ มอสปกคลุมทุกสิ่ง และยังคงมีการค้นพบสายพันธุ์ใหม่ทุกปี',
       },
       {
         en: 'Biologist Dr. Sofia Mendez has studied the forest\'s frogs for thirty years. She watched one brilliant golden toad species vanish within a single decade — likely the first documented victim of climate change.',
         my: 'ဇီဝဗေဒပညာရှင် ဒေါက်တာ ဆိုဖီယာ မန်ဒက်ဇ်က တောရဲ့ဖားတွေကို နှစ် ၃၀ လေ့လာခဲ့တယ်။ ရွှေရောင်ဖားမျိုးစိတ်တောက်ပတစ်ခုက ဆယ်စုနှစ်တစ်ခုတည်းအတွင်း ပျောက်ကွယ်သွားတာ သူ ကြည့်ခဲ့တယ် — ရာသီဥတုပြောင်းလဲမှုရဲ့ ပထမဆုံးမှတ်တမ်းတင်ခံရတဲ့သားကောင်ဖြစ်နိုင်တယ်။',
-        th: 'นักชีววิทยา ดร.โซเฟีย เมนเดซ ศึกษากบของป่าสามสิบปี เธอดูกบสีทองสดใสสายพันธุ์หนึ่งหายในทศวรรษเดียว อาจเป็นเหยื่อรายแรกที่บันทึกของเปลี่ยนภูมิอากาศ',
+        th: 'นักชีววิทยา ดร.โซเฟีย เมนเดซ ศึกษากบของป่าแห่งนี้มาสามสิบปี เธอได้เห็นกบสีทองสดใสสายพันธุ์หนึ่งสูญพันธุ์ไปภายในทศวรรษเดียว ซึ่งอาจเป็นเหยื่อรายแรกที่มีการบันทึกไว้ของการเปลี่ยนแปลงสภาพภูมิอากาศ',
       },
       {
         en: 'Yet the forest also offers hope. When local farmers were paid to protect rather than clear the surrounding land, the forest began expanding outward — proof that conservation can work when communities benefit.',
         my: 'ဒါပေမယ့် တောက မျှော်လင့်ချက်လည်း ပေးတယ်။ ဒေသခံလယ်သမားတွေကို ပတ်ဝန်းကျင်မြေကို ရှင်းမယ့်အစား ကာကွယ်ဖို့ ပေးတဲ့အခါ တောက အပြင်ဘက် ချဲ့ထွက်ဖို့ စတင်တယ် — အသိုင်းအဝိုင်းတွေ အကျိုးခံစားရတဲ့အခါ ထိန်းသိမ်းရေးက အလုပ်လုပ်နိုင်တယ်ဆိုတဲ့သက်သေဖြစ်တယ်။',
-        th: 'แต่ป่าก็ให้ความหวัง เมื่อจ่ายให้ชาวนาท้องถิ่นปกป้องแทนถางที่รอบๆ ป่าเริ่มขยายออก พิสูจน์ว่าการอนุรักษ์ได้ผลเมื่อชุมชนได้ประโยชน์',
+        th: 'แต่ป่าแห่งนี้ก็ให้ความหวังเช่นกัน เมื่อมีการจ่ายเงินให้เกษตรกรท้องถิ่นเพื่อปกป้อง แทนที่จะถางพื้นที่รอบๆ ป่าก็เริ่มขยายตัวออกไป ซึ่งเป็นข้อพิสูจน์ว่าการอนุรักษ์ได้ผลเมื่อชุมชนได้รับประโยชน์',
       },
       {
         en: 'Walking the hanging bridges at dawn, visitors pass through layers of cloud while toucans call below. It feels less like a forest and more like walking inside the weather itself.',
         my: 'အရုဏ်မှာ တွဲလွဲတံတားတွေ လျှောက်ရင်း ဧည့်သည်တွေက တိမ်အလွှာတွေ ဖြတ်သန်းတယ်၊ အောက်မှာ တူကန်ငှက်တွေ အော်နေတယ်။ တောနဲ့ထက် မိုးလေဝသကိုယ်တိုင်ထဲ လမ်းလျှောက်နေသလို ခံစားရတယ်။',
-        th: 'เดินสะพานแขวนยามรุ่ง ผู้มาเยือนผ่านชั้นเมฆขณะนกทูแคนร้องด้านล่าง รู้สึกน้อยเหมือนป่าและเหมือนเดินในสภาพอากาศเองมากกว่า',
+        th: 'เมื่อเดินข้ามสะพานแขวนในยามรุ่งอรุณ ผู้มาเยือนเดินผ่านชั้นเมฆในขณะที่นกทูแคนร้องอยู่ด้านล่าง มันให้ความรู้สึกเหมือนป่าน้อยลง แต่เหมือนกำลังเดินอยู่ข้างในตัวสภาพอากาศเสียมากกว่า',
       },
       {
         en: 'Dr. Mendez says the cloud forest taught her that nature\'s greatest treasures are often invisible: "Everyone photographs the quetzal. But the real miracle is the water in the air — the forest drinking the sky."',
         my: 'ဒေါက်တာ မန်ဒက်ဇ်က တိမ်တောက သဘာဝရဲ့အကြီးကျယ်ဆုံးရတနာတွေက မကြာခဏ မမြင်ရဘူးဆိုတာ သင်ပေးခဲ့တယ်လို့ ပြောတယ် — "လူတိုင်း ကွတ်ဇယ်ငှက်ကို ဓာတ်ပုံရိုက်တယ်။ ဒါပေမယ့် တကယ့်အံ့ဖွယ်က လေထဲကရေဖြစ်တယ် — တောက ကောင်းကင်ကို သောက်နေတာဖြစ်တယ်။"',
-        th: 'ดร.เมนเดซ บอกว่าป่าเมฆสอนเธอว่าสมบัติยิ่งใหญ่สุดของธรรมชาติมักมองไม่เห็น "ทุกคนถ่ายภาพนกเควตซัล แต่ปาฏิหาริย์จริงคือน้ำในอากาศ ป่าดื่มท้องฟ้า"',
+        th: 'ดร.เมนเดซบอกว่าป่าเมฆสอนเธอว่าสมบัติที่ยิ่งใหญ่ที่สุดของธรรมชาติมักมองไม่เห็น "ทุกคนถ่ายภาพนกเควตซัล แต่ปาฏิหาริย์ที่แท้จริงคือน้ำในอากาศ คือป่าที่กำลังดื่มท้องฟ้า"',
       },
     ],
   },

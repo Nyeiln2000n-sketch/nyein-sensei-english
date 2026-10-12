@@ -181,7 +181,7 @@ def parse_dialogues(path: str) -> list:
     with open(path, encoding="utf-8") as fh:
         text = fh.read()
     rel = os.path.relpath(path, REPO)
-    headers = [(m.start(), _unescape(m.group(1))) for m in _DIALOGUE_ID_RE.finditer(text)]
+    headers = [(m.start(), _unescape("'" + m.group(1) + "'")) for m in _DIALOGUE_ID_RE.finditer(text)]
     turns = [
         (m.start(), _unescape(m.group(2)))
         for m in _TURN_RE.finditer(text)
@@ -211,7 +211,7 @@ def parse_stories(path: str) -> list:
     with open(path, encoding="utf-8") as fh:
         text = fh.read()
     rel = os.path.relpath(path, REPO)
-    headers = [(m.start(), _unescape(m.group(1))) for m in _STORY_ID_RE.finditer(text)]
+    headers = [(m.start(), _unescape("'" + m.group(1) + "'")) for m in _STORY_ID_RE.finditer(text)]
     paras = [
         (m.start(), _unescape(m.group(1)))
         for m in _PARA_RE.finditer(text)

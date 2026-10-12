@@ -47,7 +47,7 @@ export const grammarRules: GrammarRule[] = [
     explanationMyanmarTh: 'เมื่อต้องการพูดถึงสภาพ อาชีพ ประเทศ หรือที่อยู่ของบุคคลในปัจจุบัน ให้ใช้ am / is / are ประธาน I คู่กับ am ประธานเอกพจน์บุรุษที่สาม he / she / it คู่กับ is และประธาน you / we / they คู่กับ are',
     examples: [
       { english: 'I am a teacher.', myanmar: 'ကျွန်တော် ဆရာတစ်ယောက်ပါ။', myanmarTh: 'ผมเป็นครู', },
-      { english: 'She is happy today.', myanmar: 'သူမ ဒီနေ့ ပျော်နေတယ်။', myanmarTh: 'เธอมีความสุขวันนี้', },
+      { english: 'She is happy today.', myanmar: 'သူမ ဒီနေ့ ပျော်နေတယ်။', myanmarTh: 'วันนี้เธอมีความสุข', },
       { english: 'They are from Myanmar.', myanmar: 'သူတို့ မြန်မာနိုင်ငံကပါ။', myanmarTh: 'พวกเขามาจากเมียนมา', },
       { english: 'The cat is under the table.', myanmar: 'ကြောင်က စားပွဲအောက်မှာရှိတယ်။', myanmarTh: 'แมวอยู่ใต้โต๊ะ', },
     ],
@@ -115,8 +115,8 @@ export const grammarRules: GrammarRule[] = [
       { english: 'We sometimes watch movies.', myanmar: 'ငါတို့ တစ်ခါတစ်ရံ ရုပ်ရှင်ကြည့်တယ်။', myanmarTh: 'พวกเราดูหนังบางครั้ง', },
     ],
     drills: [
-      { prompt: 'He ___ eats breakfast.', answer: 'always', options: ['always', 'ever', 'neverly', 'sometimesly'] },
-      { prompt: 'She is ___ on time.', answer: 'usually', options: ['usually', 'usual', 'use', 'oftenly'] },
+      { prompt: 'He ___ eats breakfast. (100%)', answer: 'always', options: ['always', 'usually', 'sometimes', 'never'] },
+      { prompt: 'She is ___ on time. (90%)', answer: 'usually', options: ['usually', 'always', 'often', 'sometimes'] },
       { prompt: 'I ___ drink coffee.', answer: 'never', options: ['never', 'ever', 'always not', 'no'] },
     ],
   },
@@ -251,10 +251,10 @@ export const grammarRules: GrammarRule[] = [
     level: 'A1',
     title: 'Can / Can\'t: ability',
     titleMyanmar: 'can / can\'t သုံးနည်း',
-    titleMyanmarTh: 'วิธีใช้ can / cannot',
+    titleMyanmarTh: 'วิธีใช้ can / can\'t',
     explanationMyanmar:
       'လုပ်နိုင်စွမ်း၊ ခွင့်ပြုချက်ပြောတဲ့အခါ can + ကြိယာအခြေခံပုံစံသုံးတယ်။ အနုတ်က can\'t (cannot)။ can နောက်မှာ to မထည့်ရဘူး။',
-    explanationMyanmarTh: 'เมื่อพูดถึงความสามารถหรือการอนุญาต ให้ใช้ can + กริยารูปพื้นฐาน รูปปฏิเสธคือ cannot (ย่อว่า can not) หลัง can ห้ามใส่ to',
+    explanationMyanmarTh: 'เมื่อพูดถึงความสามารถหรือการอนุญาต ให้ใช้ can + กริยารูปพื้นฐาน รูปปฏิเสธคือ cannot (ย่อว่า can\'t) หลัง can ห้ามใส่ to',
     examples: [
       { english: 'I can swim.', myanmar: 'ကျွန်တော် ရေကူးတတ်တယ်။', myanmarTh: 'ผมว่ายน้ำได้', },
       { english: 'She can\'t drive.', myanmar: 'သူမ ကားမောင်းတတ်ဘူး။', myanmarTh: 'เธอขับรถไม่ได้', },
@@ -275,7 +275,7 @@ export const grammarRules: GrammarRule[] = [
     titleMyanmarTh: 'บุพบทบอกเวลา in / on / at',
     explanationMyanmar:
       'in = လ၊ နှစ်၊ ရာသီ (in July, in 2025)၊ on = ရက်၊ နေ့ (on Monday, on May 1st)၊ at = အချိန်အတိအကျ (at 7 o\'clock, at night)။',
-    explanationMyanmarTh: 'in ใช้กับเดือน ปี ฤดูกาล (in July in 2025) on ใช้กับวันและวันที่ (on Monday on May 1st) at ใช้กับเวลาที่เจาะจง (at 7 o clock at night)',
+    explanationMyanmarTh: 'in ใช้กับเดือน ปี ฤดูกาล (in July in 2025) on ใช้กับวันและวันที่ (on Monday on May 1st) at ใช้กับเวลาที่เจาะจง (at 7 o\'clock at night)',
     examples: [
       { english: 'My birthday is in June.', myanmar: 'ကျွန်တော့်မွေးနေ့က ဇွန်လမှာပါ။', myanmarTh: 'วันเกิดของผมอยู่ในเดือนมิถุนายน', },
       { english: 'We meet on Friday.', myanmar: 'ငါတို့ သောကြာနေ့မှာ တွေ့ကြမယ်။', myanmarTh: 'พวกเราเจอกันวันศุกร์', },
@@ -296,7 +296,7 @@ export const grammarRules: GrammarRule[] = [
     titleMyanmarTh: 'บุพบทบอกสถานที่ in / on / at',
     explanationMyanmar:
       'in = အထဲ၊ ဧရိယာအကြီး (in the box, in Yangon)၊ on = မျက်နှာပြင်ပေါ် (on the table)၊ at = နေရာအတိအကျ (at the bus stop)။',
-    explanationMyanmarTh: 'in ใช้กับข้างในหรือพื้นที่ใหญ่ (in the box in Yangon) on ใช้กับพื้นผิว (on the table) at ใช้กับจุดที่เจาะจง (at the bus station)',
+    explanationMyanmarTh: 'in ใช้กับข้างในหรือพื้นที่ใหญ่ (in the box in Yangon) on ใช้กับพื้นผิว (on the table) at ใช้กับจุดที่เจาะจง (at the bus stop)',
     examples: [
       { english: 'The keys are in my bag.', myanmar: 'သော့တွေက ကျွန်တော့်အိတ်ထဲမှာပါ။', myanmarTh: 'กุญแจอยู่ในกระเป๋าของผม', },
       { english: 'The book is on the desk.', myanmar: 'စာအုပ်က စားပွဲပေါ်မှာပါ။', myanmarTh: 'หนังสืออยู่บนโต๊ะ', },
@@ -316,8 +316,8 @@ export const grammarRules: GrammarRule[] = [
     titleMyanmar: 'wh- မေးခွန်းများ',
     titleMyanmarTh: 'คำถาม Wh-',
     explanationMyanmar:
-      'what, where, when, who, why, how စတာတွေနဲ့ မေးခွန်းစတယ်။ ပစ္စုပ္ပန်မေးခွန်းမှာ do/does ကို အကြောင်းအရာနောက်မှာထည့်တယ် (Where do you live?)။',
-    explanationMyanmarTh: 'คำถามที่ขึ้นต้นด้วย what where when who why how ในคำถามปัจจุบันกาลให้ใส่ do / does หลังประธาน เช่น Where do you live?',
+      'what, where, when, who, why, how စတာတွေနဲ့ မေးခွန်းစတယ်။ ပစ္စုပ္ပန်မေးခွန်းမှာ do/does ကို မေးခွန်းစကားလုံးနောက်မှာ၊ အကြောင်းအရာရှေ့မှာ ထည့်တယ် (Where do you live?)။',
+    explanationMyanmarTh: 'คำถามที่ขึ้นต้นด้วย what where when who why how ในประโยคคำถามกาลปัจจุบันให้ใส่ do / does หลังคำแสดงคำถามและก่อนประธาน เช่น Where do you live?',
     examples: [
       { english: 'What is your name?', myanmar: 'မင်းနာမည်က ဘာလဲ။', myanmarTh: 'คุณชื่ออะไร', },
       { english: 'Where do you live?', myanmar: 'မင်း ဘယ်မှာနေလဲ။', myanmarTh: 'คุณอยู่ที่ไหน', },
@@ -338,7 +338,7 @@ export const grammarRules: GrammarRule[] = [
     titleMyanmarTh: 'คำถาม Yes / No และการตอบสั้นๆ',
     explanationMyanmar:
       'Do/Does/Did, Am/Is/Are, Can တို့နဲ့ မေးခွန်းစပြီး Yes/No နဲ့ဖြေတယ်။ အဖြေတိုမှာ ကြိယာအကူကို ထပ်သုံးရတယ် (Yes, I do. / No, she isn\'t.)။',
-    explanationMyanmarTh: 'คำถามที่ขึ้นต้นด้วย Do / Does / Did Am / Is / Are Can ตอบด้วย Yes / No ในการตอบสั้นๆ ให้ใช้กริยาช่วยซ้ำ เช่น Yes I do / No she is not',
+    explanationMyanmarTh: 'คำถามที่ขึ้นต้นด้วย Do / Does / Did Am / Is / Are Can ตอบด้วย Yes / No ในการตอบสั้นๆ ให้ใช้กริยาช่วยซ้ำ เช่น Yes, I do / No, she isn\'t',
     examples: [
       { english: 'Do you like coffee? — Yes, I do.', myanmar: 'မင်း ကော်ဖီကြိုက်လား။ — ကြိုက်တယ်။', myanmarTh: 'คุณชอบกาแฟไหม — ชอบ', },
       { english: 'Is she a doctor? — No, she isn\'t.', myanmar: 'သူမ ဆရာဝန်လား။ — မဟုတ်ဘူး။', myanmarTh: 'เธอเป็นหมอใช่ไหม — ไม่ใช่', },
@@ -348,7 +348,7 @@ export const grammarRules: GrammarRule[] = [
     drills: [
       { prompt: 'Do you like tea? — Yes, ___.', answer: 'I do', options: ['I do', 'I like', 'I am', 'me do'] },
       { prompt: 'Is he busy? — No, ___.', answer: 'he isn\'t', options: ['he isn\'t', 'he doesn\'t', 'he not', 'he no'] },
-      { prompt: 'Did you eat? — Yes, ___.', answer: 'I did', options: ['I did', 'I ate', 'I do', 'I eat'] },
+      { prompt: 'Did you eat? — Yes, ___.', answer: 'I did', options: ['I did', 'I eats', 'I do', 'I eat'] },
     ],
   },
   {
@@ -359,7 +359,7 @@ export const grammarRules: GrammarRule[] = [
     titleMyanmarTh: 'ประโยคปฏิเสธ',
     explanationMyanmar:
       'ကြိယာအကူ (do/does/did/am/is/are/can) နောက်မှာ not ထည့်တယ်။ အတိုကောက်ပုံစံတွေ သုံးလေ့ရှိတယ် — don\'t, doesn\'t, didn\'t, isn\'t, can\'t။',
-    explanationMyanmarTh: 'ทำประโยคปฏิเสธโดยใส่ not หลังกริยาช่วย (do / does / did / am / is / are / can) นิยมใช้รูปย่อ เช่น do not does not did not is not can not',
+    explanationMyanmarTh: 'ทำประโยคปฏิเสธโดยใส่ not หลังกริยาช่วย (do / does / did / am / is / are / can) นิยมใช้รูปย่อ เช่น don\'t doesn\'t didn\'t isn\'t can\'t',
     examples: [
       { english: 'I don\'t eat meat.', myanmar: 'ကျွန်တော် အသားမစားဘူး။', myanmarTh: 'ผมไม่กินเนื้อ', },
       { english: 'She doesn\'t watch TV.', myanmar: 'သူမ တီဗွီမကြည့်ဘူး။', myanmarTh: 'เธอไม่ดูทีวี', },
@@ -368,7 +368,7 @@ export const grammarRules: GrammarRule[] = [
     ],
     drills: [
       { prompt: 'I ___ like spicy food.', answer: 'don\'t', options: ['don\'t', 'doesn\'t', 'not', 'isn\'t'] },
-      { prompt: 'She ___ go to school today.', answer: 'didn\'t', options: ['didn\'t', 'doesn\'t', 'don\'t', 'isn\'t'] },
+      { prompt: 'She ___ go to school yesterday.', answer: 'didn\'t', options: ['didn\'t', 'doesn\'t', 'don\'t', 'isn\'t'] },
       { prompt: 'We ___ tired.', answer: 'aren\'t', options: ['aren\'t', 'don\'t', 'isn\'t', 'not'] },
     ],
   },
@@ -398,10 +398,10 @@ export const grammarRules: GrammarRule[] = [
     level: 'A1',
     title: 'Possessive \'s',
     titleMyanmar: 'ပိုင်ဆိုင်မှုပြ \'s',
-    titleMyanmarTh: 'การแสดงความเป็นเจ้าของ (s ต่อท้าย)',
+    titleMyanmarTh: 'การแสดงความเป็นเจ้าของ (\'s ต่อท้าย)',
     explanationMyanmar:
       'ပိုင်ဆိုင်မှုပြဖို့ နာမ်နောက်မှာ \'s ထည့်တယ် (the girl\'s bag = မိန်းကလေးရဲ့အိတ်)။ အများကိန်းနာမ်ဆိုရင် \' ပဲထည့်တယ် (the boys\' room)။',
-    explanationMyanmarTh: 'แสดงความเป็นเจ้าของโดยเติม s ต่อท้ายคำนาม (the girl s bag = กระเป๋าของเด็กผู้หญิง) คำนามพหูพจน์เติมแค่ (the boys room)',
+    explanationMyanmarTh: 'แสดงความเป็นเจ้าของโดยเติม \'s ต่อท้ายคำนาม (the girl\'s bag = กระเป๋าของเด็กผู้หญิง) คำนามพหูพจน์เติมแค่ \' (the boys\' room)',
     examples: [
       { english: 'This is Aung\'s pen.', myanmar: 'ဒါက အောင်ရဲ့ဘောပင်ပါ။', myanmarTh: 'นี่คือปากกาของออง', },
       { english: 'The cat\'s tail is long.', myanmar: 'ကြောင်ရဲ့အမြီးက ရှည်တယ်။', myanmarTh: 'หางแมวยาว', },
@@ -464,7 +464,7 @@ export const grammarRules: GrammarRule[] = [
     titleMyanmarTh: 'ประโยคคำสั่ง',
     explanationMyanmar:
       'အမိန့်၊ ညွှန်ကြားချက်၊ တောင်းဆိုချက်ပေးတဲ့အခါ ကြိယာအခြေခံပုံစံနဲ့စတယ်။ အနုတ်က Don\'t + ကြိယာသုံးတယ်။',
-    explanationMyanmarTh: 'ประโยคคำสั่ง คำแนะนำ คำขอร้อง ให้ขึ้นต้นด้วยกริยารูปพื้นฐาน รูปปฏิเสธใช้ Do not + กริยา',
+    explanationMyanmarTh: 'ประโยคคำสั่ง คำแนะนำ คำขอร้อง ให้ขึ้นต้นด้วยกริยารูปพื้นฐาน รูปปฏิเสธใช้ Don\'t + กริยา',
     examples: [
       { english: 'Open the door, please.', myanmar: 'တံခါးဖွင့်ပေးပါ။', myanmarTh: 'กรุณาเปิดประตู', },
       { english: 'Sit down.', myanmar: 'ထိုင်ပါ။', myanmarTh: 'นั่งลง', },
@@ -484,7 +484,7 @@ export const grammarRules: GrammarRule[] = [
     titleMyanmar: 'some / any သုံးနည်း',
     titleMyanmarTh: 'วิธีใช้ some / any',
     explanationMyanmar:
-      'some က အတည်ပြုဝါကျတွေမှာသုံး (I have some apples.)၊ any က အနုတ်နဲ့မေးခွန်းတွေမှာသုံး (I don\'t have any apples. / Do you have any apples?)။',
+      'some က အတည်ပြုဝါကျတွေမှာသုံး (I have some apples.)၊ any က အနုတ်နဲ့မေးခွန်းတွေမှာသုံး (I don\'t have any apples. / Do you have any apples?)။ ကမ်းလှမ်း/တောင်းဆိုတဲ့မေးခွန်းတွေမှာတော့ some သုံးတယ် (Do you want some tea?)။',
     explanationMyanmarTh: 'some ใช้ในประโยคบอกเล่า (I have some apples) any ใช้ในประโยคปฏิเสธและคำถาม (I do not have any apples / Do you have any apples?)',
     examples: [
       { english: 'I have some friends in Japan.', myanmar: 'ကျွန်တော့်မှာ ဂျပန်မှာ သူငယ်ချင်းတွေရှိတယ်။', myanmarTh: 'ผมมีเพื่อนบางคนในญี่ปุ่น', },
@@ -525,8 +525,7 @@ export const grammarRules: GrammarRule[] = [
     title: 'Like / love / hate + -ing',
     titleMyanmar: 'like / love / hate နောက် -ing',
     titleMyanmarTh: 'like / love / hate ตามด้วยกริยาเติม -ing',
-    explanationMyanmar:
-      'like, love, hate, enjoy နောက်မှာ ကြိယာ-ing ပုံစံလိုက်ရတယ်။ ဥပမာ I like swimming (ရေကူးရတာကြိုက်တယ်)။',
+    explanationMyanmar: 'like, love, hate, enjoy နောက်မှာ ကြိယာ-ing ပုံစံသုံးလေ့ရှိတယ်။ ဥပမာ I like swimming (ရေကူးရတာကြိုက်တယ်)။ (မှတ်ချက် — like, love, hate နောက်မှာ to + ကြိယာလည်းသုံးလို့ရတယ်၊ ဥပမာ I like to swim; ဒီသင်ခန်းစာမှာတော့ -ing ပုံစံကိုပဲလေ့ကျင့်မယ်။)',
     explanationMyanmarTh: 'หลัง like love hate enjoy ต้องตามด้วยกริยาเติม -ing เช่น I like swimming (ผมชอบว่ายน้ำ)',
     examples: [
       { english: 'I like reading novels.', myanmar: 'ကျွန်တော် ဝတ္ထုဖတ်ရတာကြိုက်တယ်။', myanmarTh: 'ผมชอบอ่านนิยาย', },
@@ -535,9 +534,9 @@ export const grammarRules: GrammarRule[] = [
       { english: 'We enjoy cooking together.', myanmar: 'ငါတို့ အတူတူချက်ပြုတ်ရတာပျော်တယ်။', myanmarTh: 'พวกเราชอบทำอาหารด้วยกัน', },
     ],
     drills: [
-      { prompt: 'I like ___. (swim)', answer: 'swimming', options: ['swimming', 'swim', 'to swim', 'swims'] },
-      { prompt: 'She hates ___. (wait)', answer: 'waiting', options: ['waiting', 'wait', 'to wait', 'waits'] },
-      { prompt: 'We enjoy ___. (travel)', answer: 'travelling', options: ['travelling', 'travel', 'to travel', 'travels'] },
+      { prompt: 'I like ___. (swim)', answer: 'swimming', options: ['swimming', 'swim', 'to swimming', 'swims'] },
+      { prompt: 'She hates ___. (wait)', answer: 'waiting', options: ['waiting', 'wait', 'to waiting', 'waits'] },
+      { prompt: 'We enjoy ___. (travel)', answer: 'traveling', options: ['traveling', 'travel', 'to travel', 'travels'] },
     ],
   },
   {
@@ -548,12 +547,12 @@ export const grammarRules: GrammarRule[] = [
     titleMyanmarTh: 'คำสรรพนามที่เป็นกรรม',
     explanationMyanmar:
       'ကြိယာ (သို့) ဝိဘတ်နောက်မှာ me/you/him/her/it/us/them သုံးတယ်။ I → me, he → him, she → her, they → them စသဖြင့် ပြောင်းတယ်။',
-    explanationMyanmarTh: 'หลังกริยาหรือบุพบทให้ใช้ me / you / him / her / it / us / them โดยเปลี่ยนรูปจากประธาน เช่น I → me he → him she → her they → them',
+    explanationMyanmarTh: 'หลังกริยาหรือบุพบทให้ใช้สรรพนามรูปกรรม me / you / him / her / it / us / them โดยเปลี่ยนจากรูปประธาน เช่น I → me, he → him, she → her, they → them',
     examples: [
       { english: 'Please help me.', myanmar: 'ကျွန်တော့်ကို ကူညီပေးပါ။', myanmarTh: 'กรุณาช่วยผม', },
       { english: 'I saw him yesterday.', myanmar: 'ကျွန်တော် သူ့ကို မနေ့ကတွေ့ခဲ့တယ်။', myanmarTh: 'ผมเห็นเขาเมื่อวานนี้', },
       { english: 'She loves them very much.', myanmar: 'သူမ သူတို့ကို အရမ်းချစ်တယ်။', myanmarTh: 'เธอรักพวกเขามาก', },
-      { english: 'Give it to us.', myanmar: 'အဲဒါကို ငါတို့ပေးပါ။', myanmarTh: 'ให้มันแก่พวกเรา', },
+      { english: 'Give it to us.', myanmar: 'အဲဒါကို ငါတို့ကိုပေးပါ။', myanmarTh: 'ให้มันกับพวกเรา', },
     ],
     drills: [
       { prompt: 'Call ___ later. (I)', answer: 'me', options: ['me', 'I', 'my', 'mine'] },
@@ -569,7 +568,7 @@ export const grammarRules: GrammarRule[] = [
     titleMyanmarTh: 'Present Continuous สำหรับแผนในอนาคต',
     explanationMyanmar:
       'စီစဉ်ပြီးသား၊ သေချာပြီးသားအနာဂတ်အစီအစဉ်တွေအတွက် am/is/are + V-ing သုံးတယ်။ အချိန်စကားလုံး (tomorrow, tonight, next week) ပါလေ့ရှိတယ်။',
-    explanationMyanmarTh: 'แผนในอนาคตที่วางไว้แน่นอนแล้วให้ใช้ am / is / are + กริยาเติม -ing มักมีคำบอกเวลากำกับ เช่น tomorrow tonight next week',
+    explanationMyanmarTh: 'แผนในอนาคตที่วางไว้แน่นอนแล้วให้ใช้ am / is / are + กริยาเติม -ing มักมีคำบอกเวลากำกับ เช่น tomorrow, tonight, next week',
     examples: [
       { english: 'I am meeting my friend tomorrow.', myanmar: 'ကျွန်တော် မနက်ဖြန် သူငယ်ချင်းနဲ့တွေ့မယ်။', myanmarTh: 'ผมจะพบเพื่อนพรุ่งนี้', },
       { english: 'She is flying to Bangkok on Monday.', myanmar: 'သူမ တနင်္လာနေ့ ဘန်ကောက်ကို ပျံသန်းမယ်။', myanmarTh: 'เธอกำลังจะบินไปกรุงเทพฯ วันจันทร์', },
@@ -577,9 +576,9 @@ export const grammarRules: GrammarRule[] = [
       { english: 'They are moving to a new house next week.', myanmar: 'သူတို့ နောက်အပတ် အိမ်အသစ်ပြောင်းမယ်။', myanmarTh: 'พวกเขาจะย้ายบ้านใหม่สัปดาห์หน้า', },
     ],
     drills: [
-      { prompt: 'I ___ dinner with my boss tonight.', answer: 'am having', options: ['am having', 'have', 'will have', 'has'] },
+      { prompt: 'I ___ dinner with my boss tonight.', answer: 'am having', options: ['am having', 'having', 'am have', 'has'] },
       { prompt: 'She ___ to Mandalay tomorrow.', answer: 'is going', options: ['is going', 'go', 'goes', 'going'] },
-      { prompt: 'We ___ a test next Monday.', answer: 'are having', options: ['are having', 'have', 'has', 'having'] },
+      { prompt: 'We ___ a test next Monday.', answer: 'are having', options: ['are having', 'is having', 'has', 'having'] },
     ],
   },
   {
@@ -587,12 +586,12 @@ export const grammarRules: GrammarRule[] = [
     level: 'A2',
     title: 'Past Continuous',
     titleMyanmar: 'ဆက်လက်အတိတ်ကာလ',
-    titleMyanmarTh: 'อดีตกาลกำลังดำเนินอยู่',
+    titleMyanmarTh: 'อดีตกาลต่อเนื่อง',
     explanationMyanmar:
       'အတိတ်မှာ လုပ်နေဆဲဖြစ်တဲ့အရာအတွက် was/were + V-ing သုံးတယ်။ တစ်ခုခုဖြစ်နေတုန်း နောက်တစ်ခုဝင်လာတဲ့အခါ၊ နောက်ခံအခြေအနေပြောတဲ့အခါ သုံးတယ်။',
-    explanationMyanmarTh: 'สิ่งที่กำลังดำเนินอยู่ในอดีตให้ใช้ was / were + กริยาเติม -ing ใช้เล่าเหตุการณ์ที่เกิดค้างอยู่เมื่อมีอีกเหตุการณ์แทรกเข้ามา หรือเล่าฉากหลังของเรื่อง',
+    explanationMyanmarTh: 'เหตุการณ์ที่กำลังดำเนินอยู่ในอดีตให้ใช้ was / were + กริยาเติม -ing ใช้เล่าเหตุการณ์ที่กำลังเกิดขึ้นเมื่อมีอีกเหตุการณ์หนึ่งแทรกเข้ามา หรือใช้บรรยายฉากหลังของเรื่อง',
     examples: [
-      { english: 'I was sleeping at 10 pm.', myanmar: 'ကျွန်တော် ည ၁၀ နာရီမှာ အိပ်နေခဲ့တယ်။', myanmarTh: 'ผมนอนตอนสี่ทุ่ม', },
+      { english: 'I was sleeping at 10 pm.', myanmar: 'ကျွန်တော် ည ၁၀ နာရီမှာ အိပ်နေခဲ့တယ်။', myanmarTh: 'ตอนสี่ทุ่มผมกำลังนอน', },
       { english: 'They were playing when it rained.', myanmar: 'မိုးရွာတုန်းက သူတို့ ဆော့နေခဲ့ကြတယ်။', myanmarTh: 'พวกเขากำลังเล่นตอนฝนตก', },
       { english: 'She was cooking while he was reading.', myanmar: 'သူစာဖတ်နေတုန်း သူမချက်ပြုတ်နေခဲ့တယ်။', myanmarTh: 'เธอกำลังทำอาหารขณะที่เขากำลังอ่านหนังสือ', },
       { english: 'We were waiting for the bus.', myanmar: 'ငါတို့ ဘတ်စ်ကားစောင့်နေခဲ့ကြတယ်။', myanmarTh: 'พวกเรากำลังรอรถเมล์', },
@@ -632,7 +631,7 @@ export const grammarRules: GrammarRule[] = [
     titleMyanmarTh: 'อนาคตกาลด้วย will',
     explanationMyanmar:
       'စကားပြောနေတုန်းမှ ဆုံးဖြတ်တဲ့အရာ၊ ကတိ၊ ခန့်မှန်းချက်တွေအတွက် will + V1 သုံးတယ်။ အနုတ်က won\'t (will not)။',
-    explanationMyanmarTh: 'การตัดสินใจในขณะพูด คำสัญญา การคาดการณ์ ให้ใช้ will + กริยารูปพื้นฐาน รูปปฏิเสธคือ will not (ย่อว่า wo not)',
+    explanationMyanmarTh: 'การตัดสินใจในขณะพูด คำสัญญา การคาดการณ์ ให้ใช้ will + กริยารูปพื้นฐาน รูปปฏิเสธคือ will not (ย่อว่า won\'t)',
     examples: [
       { english: 'I will help you.', myanmar: 'ကျွန်တော် မင်းကိုကူညီမယ်။', myanmarTh: 'ผมจะช่วยคุณ', },
       { english: 'It will rain tomorrow.', myanmar: 'မနက်ဖြန် မိုးရွာမယ်။', myanmarTh: 'พรุ่งนี้ฝนจะตก', },
@@ -674,7 +673,7 @@ export const grammarRules: GrammarRule[] = [
     titleMyanmarTh: 'วิธีใช้ the',
     explanationMyanmar:
       'နှစ်ဦးစလုံးသိတဲ့အရာ၊ အရင်ကပြောပြီးသားအရာ၊ ကမ္ဘာမှာတစ်ခုတည်းရှိတဲ့အရာ (the sun, the moon) တို့ရဲ့ရှေ့မှာ the သုံးတယ်။',
-    explanationMyanmarTh: 'หน้าสิ่งที่ทั้งผู้พูดและผู้ฟังรู้จัก สิ่งที่กล่าวถึงแล้ว หรือสิ่งที่มีหนึ่งเดียวในโลก (the sun the moon) ให้ใช้ the',
+    explanationMyanmarTh: 'หน้าสิ่งที่ทั้งผู้พูดและผู้ฟังรู้จัก สิ่งที่กล่าวถึงแล้ว หรือสิ่งที่มีหนึ่งเดียวในโลก (เช่น the sun, the moon) ให้ใช้ the',
     examples: [
       { english: 'The book on the table is mine.', myanmar: 'စားပွဲပေါ်ကစာအုပ်က ကျွန်တော့်ဟာပါ။', myanmarTh: 'หนังสือบนโต๊ะเป็นของผม', },
       { english: 'I saw a dog. The dog was big.', myanmar: 'ခွေးတစ်ကောင်တွေ့ခဲ့တယ်။ အဲဒီခွေးက ကြီးတယ်။', myanmarTh: 'ผมเห็นหมา หมาตัวนั้นตัวใหญ่', },
@@ -745,8 +744,8 @@ export const grammarRules: GrammarRule[] = [
       { english: 'They could see the mountains.', myanmar: 'သူတို့ တောင်တွေကိုမြင်နိုင်ခဲ့တယ်။', myanmarTh: 'พวกเขามองเห็นภูเขา', },
     ],
     drills: [
-      { prompt: 'He ___ read at six.', answer: 'could', options: ['could', 'cans', 'can', 'coulds'] },
-      { prompt: 'We ___ hear the music.', answer: 'couldn\'t', options: ['couldn\'t', 'can\'t', 'don\'t', 'not could'] },
+      { prompt: 'He ___ read when he was six.', answer: 'could', options: ['could', 'cans', 'can', 'coulds'] },
+      { prompt: 'We ___ hear the music last night.', answer: 'couldn\'t', options: ['couldn\'t', 'can\'t', 'don\'t', 'not could'] },
       { prompt: '___ she drive last year?', answer: 'Could', options: ['Could', 'Can', 'Does', 'Did'] },
     ],
   },
@@ -789,7 +788,7 @@ export const grammarRules: GrammarRule[] = [
     drills: [
       { prompt: 'You ___ drink more water.', answer: 'should', options: ['should', 'should to', 'shoulds', 'to should'] },
       { prompt: 'He ___ stay up late.', answer: 'shouldn\'t', options: ['shouldn\'t', 'doesn\'t should', 'not should', 'should not to'] },
-      { prompt: '___ we take a taxi?', answer: 'Should', options: ['Should', 'Do', 'Shall', 'Must'] },
+      { prompt: '___ we take a taxi?', answer: 'Should', options: ['Should', 'Do', 'Would', 'Must'] },
     ],
   },
   {
@@ -803,7 +802,7 @@ export const grammarRules: GrammarRule[] = [
     explanationMyanmarTh: 'How much ใช้ถามคำนามนับไม่ได้หรือราคา (How much is it?) How many ใช้ถามคำนามนับได้ (How many apples?)',
     examples: [
       { english: 'How much is this shirt?', myanmar: 'ဒီအင်္ကျီ ဘယ်လောက်လဲ။', myanmarTh: 'เสื้อตัวนี้เท่าไหร่', },
-      { english: 'How many brothers do you have?', myanmar: 'မင်းမှာ မောင်နှမ ဘယ်နှယောက်ရှိလဲ။', myanmarTh: 'คุณมีพี่น้องกี่คน', },
+      { english: 'How many brothers do you have?', myanmar: 'မင်းမှာ ညီအစ်ကို ဘယ်နှယောက်ရှိလဲ။', myanmarTh: 'คุณมีพี่น้องกี่คน', },
       { english: 'How much sugar do you want?', myanmar: 'မင်း သကြားဘယ်လောက်လိုချင်လဲ။', myanmarTh: 'คุณต้องการน้ำตาลเท่าไหร่', },
       { english: 'How many days are there in March?', myanmar: 'မတ်လမှာ ရက်ဘယ်နှရက်ရှိလဲ။', myanmarTh: 'เดือนมีนาคมมีกี่วัน', },
     ],
@@ -821,10 +820,10 @@ export const grammarRules: GrammarRule[] = [
     titleMyanmarTh: 'กริยาวิเศษณ์บอกลักษณะอาการ',
     explanationMyanmar:
       'ဘယ်လိုလုပ်လဲပြဖို့ နာမဝိသေသန + -ly သုံးတယ် (quick → quickly, careful → carefully)။ ကြိယာနောက်မှာထားတယ်။',
-    explanationMyanmarTh: 'บอกว่าทำอย่างไรโดยเติม -ly ท้ายคำคุณศัพท์ (quick → quickly careful → carefully) วางไว้หลังกริยา',
+    explanationMyanmarTh: 'บอกว่าทำอย่างไรโดยเติม -ly ท้ายคำคุณศัพท์ (quick → quickly, careful → carefully) วางไว้หลังกริยา',
     examples: [
       { english: 'She sings beautifully.', myanmar: 'သူမ သီချင်းကောင်းကောင်းဆိုတယ်။', myanmarTh: 'เธอร้องเพลงไพเราะ', },
-      { english: 'He drives carefully.', myanmar: 'သူ ကားဂရုတစိုက်မောင်းတယ်။', myanmarTh: 'เขาขับรถระวัง', },
+      { english: 'He drives carefully.', myanmar: 'သူ ကားဂရုတစိုက်မောင်းတယ်။', myanmarTh: 'เขาขับรถอย่างระมัดระวัง', },
       { english: 'The baby sleeps quietly.', myanmar: 'ကလေးက တိတ်တိတ်လေးအိပ်တယ်။', myanmarTh: 'ทารกนอนเงียบๆ', },
       { english: 'Please speak slowly.', myanmar: 'ဖြည်းဖြည်းပြောပေးပါ။', myanmarTh: 'กรุณาพูดช้าๆ', },
     ],
@@ -881,7 +880,7 @@ export const grammarRules: GrammarRule[] = [
     level: 'A2',
     title: 'Reflexive pronouns',
     titleMyanmar: 'ကိုယ့်ကိုယ်ကိုယ်ညွှန်နာမ်စားများ',
-    titleMyanmarTh: 'คำสรรพนามสะท้อน',
+    titleMyanmarTh: 'สรรพนามสะท้อนกลับ',
     explanationMyanmar:
       'ကိုယ့်ကိုယ်ကိုယ်လုပ်တဲ့အခါ၊ အလေးပေးပြောတဲ့အခါ myself/yourself/himself/herself/itself/ourselves/yourselves/themselves သုံးတယ်။',
     explanationMyanmarTh: 'เมื่อประธานกระทำต่อตนเอง หรือต้องการเน้นประธาน ให้ใช้ myself / yourself / himself / herself / itself / ourselves / yourselves / themselves',
@@ -889,7 +888,7 @@ export const grammarRules: GrammarRule[] = [
       { english: 'I hurt myself.', myanmar: 'ကျွန်တော် ကိုယ့်ကိုယ်ကိုယ် ထိခိုက်မိတယ်။', myanmarTh: 'ผมทำร้ายตัวเอง', },
       { english: 'She taught herself English.', myanmar: 'သူမ ကိုယ့်ဘာသာ အင်္ဂလိပ်စာသင်ခဲ့တယ်။', myanmarTh: 'เธอสอนภาษาอังกฤษตัวเอง', },
       { english: 'They enjoyed themselves.', myanmar: 'သူတို့ ပျော်ရွှင်ခဲ့ကြတယ်။', myanmarTh: 'พวกเขาสนุกกันเอง', },
-      { english: 'Be careful! Don\'t hurt yourself.', myanmar: 'သတိထား။ ကိုယ့်ကိုယ်ကိုယ် မထိခိုက်စေနဲ့။', myanmarTh: 'ระวัง อย่าทำร้ายตัวเอง', },
+      { english: 'Be careful! Don\'t hurt yourself.', myanmar: 'သတိထား။ ကိုယ့်ကိုယ်ကိုယ် မထိခိုက်စေနဲ့။', myanmarTh: 'ระวัง! อย่าทำร้ายตัวเอง', },
     ],
     drills: [
       { prompt: 'I did it ___.', answer: 'myself', options: ['myself', 'me', 'I', 'my'] },
@@ -930,12 +929,12 @@ export const grammarRules: GrammarRule[] = [
     examples: [
       { english: 'Let\'s go to the beach.', myanmar: 'ကမ်းခြေသွားကြရအောင်။', myanmarTh: 'ไปชายหาดกันเถอะ', },
       { english: 'Shall we eat out tonight?', myanmar: 'ဒီည အပြင်မှာ စားကြရအောင်လား။', myanmarTh: 'คืนนี้ออกไปกินข้าวข้างนอกกันไหม', },
-      { english: 'Why don\'t we watch a movie?', myanmar: 'ရုပ်ရှင်ကြည့်ကြရအောင်လေ။', myanmarTh: 'ทำไมพวกเราไม่ดูหนังกัน', },
+      { english: 'Why don\'t we watch a movie?', myanmar: 'ရုပ်ရှင်ကြည့်ကြရအောင်လေ။', myanmarTh: 'ทำไมเราไม่ไปดูหนังกันล่ะ', },
       { english: 'Let\'s study together.', myanmar: 'အတူတူ စာကျက်ကြရအောင်။', myanmarTh: 'มาเรียนด้วยกันเถอะ', },
     ],
     drills: [
       { prompt: '___ play football!', answer: 'Let\'s', options: ['Let\'s', 'Shall', 'Why', 'Lets'] },
-      { prompt: '___ we go for a walk?', answer: 'Shall', options: ['Shall', 'Do', 'Will', 'Can'] },
+      { prompt: '___ we go for a walk?', answer: 'Shall', options: ['Shall', 'Do', 'Does', 'Would'] },
       { prompt: 'Why ___ we stay home?', answer: 'don\'t', options: ['don\'t', 'not', 'doesn\'t', 'aren\'t'] },
     ],
   },
@@ -997,7 +996,7 @@ export const grammarRules: GrammarRule[] = [
       { english: 'He broke his leg while he was playing football.', myanmar: 'ဘောလုံးကန်နေတုန်း သူ့ခြေထောက်ကျိုးခဲ့တယ်။', myanmarTh: 'เขาขาหักขณะที่กำลังเล่นฟุตบอล', },
     ],
     drills: [
-      { prompt: 'I ___ when you called.', answer: 'was sleeping', options: ['was sleeping', 'slept', 'sleep', 'am sleeping'] },
+      { prompt: 'I ___ when you called.', answer: 'was sleeping', options: ['was sleeping', 'sleeps', 'sleep', 'am sleeping'] },
       { prompt: 'While they ___, it got dark.', answer: 'were walking', options: ['were walking', 'walked', 'walk', 'are walking'] },
       { prompt: 'She ___ the vase while cleaning.', answer: 'broke', options: ['broke', 'was breaking', 'breaks', 'break'] },
     ],
@@ -1020,7 +1019,7 @@ export const grammarRules: GrammarRule[] = [
     drills: [
       { prompt: 'I have ___ done it.', answer: 'just', options: ['just', 'yet', 'already not', 'ever'] },
       { prompt: 'She has ___ left.', answer: 'already', options: ['already', 'yet', 'just not', 'ever'] },
-      { prompt: 'Have you eaten ___?', answer: 'yet', options: ['yet', 'already', 'just', 'ever'] },
+      { prompt: 'Have you eaten ___?', answer: 'yet', options: ['yet', 'since', 'just', 'ever'] },
     ],
   },
   {
@@ -1035,7 +1034,7 @@ export const grammarRules: GrammarRule[] = [
     examples: [
       { english: 'She visited Bagan in 2020.', myanmar: 'သူမ ၂၀၂၀ မှာ ပုဂံသွားလည်ခဲ့တယ်။', myanmarTh: 'เธอไปพุกามในปี 2020', },
       { english: 'She has visited Bagan three times.', myanmar: 'သူမ ပုဂံကို သုံးခါသွားဖူးတယ်။', myanmarTh: 'เธอเคยไปพุกามสามครั้ง', },
-      { english: 'We ate dinner an hour ago.', myanmar: 'ငါတို့ တစ်နာရီက ညစာစားခဲ့တယ်။', myanmarTh: 'พวกเรากินมื้อเย็นเมื่อชั่วโมงที่แล้ว', },
+      { english: 'We ate dinner an hour ago.', myanmar: 'ငါတို့ လွန်ခဲ့တဲ့ တစ်နာရီက ညစာစားခဲ့တယ်။', myanmarTh: 'พวกเรากินมื้อเย็นเมื่อชั่วโมงที่แล้ว', },
       { english: 'We have already eaten dinner.', myanmar: 'ငါတို့ ညစာစားပြီးနှင့်ပြီးပြီ။', myanmarTh: 'พวกเรากินมื้อเย็นเรียบร้อยแล้ว', },
     ],
     drills: [
@@ -1060,7 +1059,7 @@ export const grammarRules: GrammarRule[] = [
       { english: 'I promise I will call you.', myanmar: 'မင်းကို ဖုန်းဆက်မယ်လို့ ကတိပေးတယ်။', myanmarTh: 'ผมสัญญาว่าจะโทรหาคุณ', },
     ],
     drills: [
-      { prompt: 'I\'ve decided. I ___ study medicine.', answer: 'am going to', options: ['am going to', 'will', 'go to', 'shall'] },
+      { prompt: 'I\'ve decided. I ___ study medicine.', answer: 'am going to', options: ['am going to', 'will to', 'go to', 'shall'] },
       { prompt: 'It\'s heavy. I ___ carry it. (deciding now)', answer: 'will', options: ['will', 'am going to', 'go to', 'shall'] },
       { prompt: 'Look at the sky! It ___.', answer: 'is going to rain', options: ['is going to rain', 'will rain to', 'rains', 'rain'] },
     ],
@@ -1083,7 +1082,7 @@ export const grammarRules: GrammarRule[] = [
     drills: [
       { prompt: '___ honesty is important.', answer: '— (no article)', options: ['— (no article)', 'The', 'A', 'An'] },
       { prompt: 'She plays ___ football.', answer: '— (no article)', options: ['— (no article)', 'the', 'a', 'an'] },
-      { prompt: '___ water is cold.', answer: 'The', options: ['The', '— (no article)', 'A', 'An'] },
+      { prompt: '___ water in this glass is cold.', answer: 'The', options: ['The', '— (no article)', 'A', 'An'] },
     ],
   },
   {
@@ -1102,7 +1101,7 @@ export const grammarRules: GrammarRule[] = [
       { english: 'Can I have a little water?', myanmar: 'ရေနည်းနည်း ရနိုင်မလား။', myanmarTh: 'ขอน้ำหน่อยได้ไหม', },
     ],
     drills: [
-      { prompt: 'I have ___ apples.', answer: 'a few', options: ['a few', 'a little', 'few', 'little'] },
+      { prompt: 'I have ___ apples.', answer: 'a few', options: ['a few', 'a little', 'much', 'little'] },
       { prompt: 'She needs ___ help.', answer: 'a little', options: ['a little', 'a few', 'few', 'many'] },
       { prompt: 'We saw ___ birds.', answer: 'a few', options: ['a few', 'a little', 'much', 'little'] },
     ],
@@ -1113,8 +1112,7 @@ export const grammarRules: GrammarRule[] = [
     title: 'Have to: obligation',
     titleMyanmar: 'have to (လုပ်ရမည့်တာဝန်)',
     titleMyanmarTh: 'have to (ภาระหน้าที่)',
-    explanationMyanmar:
-      'ပြင်ပစည်းမျဉ်း၊ အခြေအနေကြောင့်လုပ်ရမယ့်အရာအတွက် have to / has to သုံးတယ်။ အတိတ်ကာလမှာ had to သုံးတယ်။ မေးခွန်းမှာ Do you have to...?။',
+    explanationMyanmar: 'ပြင်ပစည်းမျဉ်း၊ အခြေအနေကြောင့်လုပ်ရမယ့်အရာအတွက် have to / has to သုံးတယ်။ အတိတ်ကာလမှာ had to သုံးတယ်။ မေးခွန်းမှာ Do you have to...?။',
     explanationMyanmarTh: 'สิ่งที่ต้องทำเพราะกฎหรือสถานการณ์ภายนอกใช้ have to / has to อดีตใช้ had to คำถามใช้ Do you have to ...?',
     examples: [
       { english: 'I have to wear a uniform.', myanmar: 'ကျွန်တော် ယူနီဖောင်းဝတ်ရတယ်။', myanmarTh: 'ผมต้องใส่เครื่องแบบ', },
@@ -1140,7 +1138,7 @@ export const grammarRules: GrammarRule[] = [
     examples: [
       { english: 'It may rain this evening.', myanmar: 'ဒီည မိုးရွာနိုင်တယ်။', myanmarTh: 'เย็นนี้ฝนอาจตก', },
       { english: 'She might come to the party.', myanmar: 'သူမ ပါတီကို လာနိုင်တယ်။', myanmarTh: 'เธออาจมางานเลี้ยง', },
-      { english: 'You may sit here.', myanmar: 'မင်း ဒီမှာ ထိုင်နိုင်တယ်။', myanmarTh: 'คุณนั่งตรงนี้ได้', },
+      { english: 'You may sit here.', myanmar: 'မင်း ဒီမှာ ထိုင်လို့ရတယ်။', myanmarTh: 'คุณนั่งตรงนี้ได้', },
       { english: 'They might be late.', myanmar: 'သူတို့ နောက်ကျနိုင်တယ်။', myanmarTh: 'พวกเขาอาจสาย', },
     ],
     drills: [
@@ -1165,7 +1163,7 @@ export const grammarRules: GrammarRule[] = [
       { english: 'We would like to book a room.', myanmar: 'အခန်းတစ်ခန်း ကြိုတင်ယူချင်ပါတယ်။', myanmarTh: 'พวกเราอยากจองห้อง', },
     ],
     drills: [
-      { prompt: 'I would like ___ coffee.', answer: 'some', options: ['some', 'a', 'any', 'much'] },
+      { prompt: 'I would like ___ rice.', answer: 'some', options: ['some', 'a', 'any', 'much'] },
       { prompt: 'Would you like ___ with us?', answer: 'to come', options: ['to come', 'come', 'coming', 'came'] },
       { prompt: 'She would like ___ a doctor.', answer: 'to be', options: ['to be', 'be', 'being', 'is'] },
     ],
@@ -1201,7 +1199,7 @@ export const grammarRules: GrammarRule[] = [
       'လုပ်သူကို အလေးမပေးဘဲ ခံရသူကို အလေးပေးတဲ့အခါ be + V3 (past participle) သုံးတယ်။ ဥပမာ The cake was made by my mother။',
     explanationMyanmarTh: 'เมื่อต้องการเน้นผู้ถูกกระทำมากกว่าผู้กระทำ ให้ใช้ be + กริยาช่อง 3 เช่น The cake was made by my mother',
     examples: [
-      { english: 'The bridge was built in 1990.', myanmar: 'တံတားကို ၁၉၉၀ မှာ ဆောက်လုပ်ခဲ့တယ်။', myanmarTh: 'สะพานสร้างในปี 1990', },
+      { english: 'The bridge was built in 1990.', myanmar: 'တံတားကို ၁၉၉၀ မှာ ဆောက်လုပ်ခဲ့တယ်။', myanmarTh: 'สะพานถูกสร้างในปี 1990', },
       { english: 'English is spoken here.', myanmar: 'ဒီမှာ အင်္ဂလိပ်စကားပြောကြတယ်။', myanmarTh: 'ที่นี่พูดภาษาอังกฤษ', },
       { english: 'The windows were cleaned yesterday.', myanmar: 'ပြတင်းပေါက်တွေကို မနေ့က သန့်ရှင်းရေးလုပ်ခဲ့တယ်။', myanmarTh: 'หน้าต่างถูกทำความสะอาดเมื่อวานนี้', },
       { english: 'This phone was made in Vietnam.', myanmar: 'ဒီဖုန်းကို ဗီယက်နမ်မှာ ထုတ်လုပ်ခဲ့တယ်။', myanmarTh: 'โทรศัพท์นี้ผลิตในเวียดนาม', },
@@ -1209,7 +1207,7 @@ export const grammarRules: GrammarRule[] = [
     drills: [
       { prompt: 'The room ___ every day.', answer: 'is cleaned', options: ['is cleaned', 'cleans', 'cleaned', 'is clean'] },
       { prompt: 'The letter ___ yesterday.', answer: 'was sent', options: ['was sent', 'sent', 'is sent', 'sends'] },
-      { prompt: 'Rice ___ in Myanmar.', answer: 'is grown', options: ['is grown', 'grows', 'grew', 'is grow'] },
+      { prompt: 'Rice ___ in Myanmar.', answer: 'is grown', options: ['is grown', 'grow', 'grew', 'is grow'] },
     ],
   },
   {
@@ -1245,7 +1243,7 @@ export const grammarRules: GrammarRule[] = [
     examples: [
       { english: 'I want to learn English.', myanmar: 'ကျွန်တော် အင်္ဂလိပ်စာသင်ချင်တယ်။', myanmarTh: 'ผมอยากเรียนภาษาอังกฤษ', },
       { english: 'She decided to stay home.', myanmar: 'သူမ အိမ်မှာနေဖို့ ဆုံးဖြတ်ခဲ့တယ်။', myanmarTh: 'เธอตัดสินใจอยู่บ้าน', },
-      { english: 'We enjoy travelling together.', myanmar: 'ငါတို့ အတူတူခရီးသွားရတာ ပျော်တယ်။', myanmarTh: 'พวกเราชอบเที่ยวด้วยกัน', },
+      { english: 'We enjoy traveling together.', myanmar: 'ငါတို့ အတူတူခရီးသွားရတာ ပျော်တယ်။', myanmarTh: 'พวกเราชอบเที่ยวด้วยกัน', },
       { english: 'He finished doing his homework.', myanmar: 'သူ အိမ်စာလုပ်ပြီးသွားပြီ။', myanmarTh: 'เขาทำการบ้านเสร็จแล้ว', },
     ],
     drills: [
@@ -1288,7 +1286,7 @@ export const grammarRules: GrammarRule[] = [
       { english: 'This coffee is too hot.', myanmar: 'ဒီကော်ဖီက အရမ်းပူတယ်။', myanmarTh: 'กาแฟร้อนเกินไป', },
       { english: 'She is old enough to drive.', myanmar: 'သူမက ကားမောင်းနိုင်လောက်အောင် အသက်ကြီးပြီ။', myanmarTh: 'เธออายุมากพอที่จะขับรถ', },
       { english: 'The bag is too heavy.', myanmar: 'အိတ်က အရမ်းလေးတယ်။', myanmarTh: 'กระเป๋าหนักเกินไป', },
-      { english: 'He isn\'t tall enough for basketball.', myanmar: 'သူက ဘတ်စကက်ဘောကစားဖို့ အရပ်မလုံလောက်ဘူး။', myanmarTh: 'เขาไม่สูงพอสำหรับบาสเกตบอล', },
+      { english: 'He isn\'t tall enough for basketball.', myanmar: 'သူက ဘတ်စကက်ဘောကစားဖို့ အရပ်မမီဘူး။', myanmarTh: 'เขาไม่สูงพอสำหรับบาสเกตบอล', },
     ],
     drills: [
       { prompt: 'It is ___ cold to swim.', answer: 'too', options: ['too', 'enough', 'so', 'very'] },

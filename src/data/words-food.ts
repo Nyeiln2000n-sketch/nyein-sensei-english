@@ -27,7 +27,7 @@ export const foodWords: Word[] = [
   { en: 'salty', my: 'ငန်သော', th: 'เค็ม', topic: 'food', level: 2, phonetic: 'sawl-ti', example: 'The soup is a bit salty.', exampleMy: 'စွပ်ပြုတ်က နည်းနည်း ငန်ပါတယ်။', exampleTh: 'ซุปเค็มไปหน่อย' },
   { en: 'hot', my: 'ပူသော', th: 'ร้อน', topic: 'food', level: 1, phonetic: 'hot', example: 'The tea is too hot.', exampleMy: 'လက်ဖက်ရည်က အရမ်း ပူနေပါတယ်။', exampleTh: 'ชาร้อนเกินไป' },
   { en: 'frozen', my: 'အေးခဲထားသော', th: 'แช่แข็ง', topic: 'food', level: 3, phonetic: 'froh-zun', example: 'Keep the fish frozen.', exampleMy: 'ငါးကို အေးခဲထားပါ။', exampleTh: 'เก็บปลาไว้ในช่องแช่แข็ง' },
-  { en: 'eat', my: 'စားသည်', th: 'กิน', topic: 'food', level: 1, phonetic: 'eet', example: 'We eat dinner at seven.', exampleMy: 'ခုနစ် နာရီမှာ ညစာ စားပါတယ်။', exampleTh: 'เรากินข้าวเย็นตอนหนึ่งทุ่ม' },
+  { en: 'eat', my: 'စားသည်', th: 'กิน', topic: 'food', level: 1, phonetic: 'eet', example: 'We eat dinner at seven.', exampleMy: 'ခုနှစ်နာရီမှာ ညစာ စားပါတယ်။', exampleTh: 'เรากินข้าวเย็นตอนหนึ่งทุ่ม' },
   { en: 'drink', my: 'သောက်သည်', th: 'ดื่ม', topic: 'food', level: 1, phonetic: 'drink', example: 'Drink water after exercise.', exampleMy: 'လေ့ကျင့်ခန်း လုပ်ပြီး ရေ သောက်ပါ။', exampleTh: 'ดื่มน้ำหลังออกกำลังกาย' },
   { en: 'cook', my: 'ချက်ပြုတ်သည်', th: 'ทำอาหาร', topic: 'food', level: 1, phonetic: 'kuk', example: 'My mother cooks dinner.', exampleMy: 'ကျွန်တော့် အမေက ညစာ ချက်ပါတယ်။', exampleTh: 'แม่ของฉันทำอาหารเย็น' },
   { en: 'delicious', my: 'အရသာရှိသော', th: 'อร่อย', topic: 'food', level: 3, phonetic: 'di-li-shus', example: 'The food smells delicious.', exampleMy: 'အစားအစာက အရသာရှိတဲ့ အနံ့ ထွက်နေပါတယ်။', exampleTh: 'อาหารมีกลิ่นหอมน่ากิน' },

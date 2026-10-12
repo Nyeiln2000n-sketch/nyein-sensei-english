@@ -4,16 +4,16 @@ import type { Verb } from '../../types';
 export const verbsBatch2: Verb[] = [
   {
     base: 'outdo', past: 'outdid', participle: 'outdone', present3s: 'outdoes', gerund: 'outdoing',
-    my: 'သာအောင်လုပ်သည်', th: 'ทำได้ดีกว่า', phonetic: 'out-DOO', cefr: 'A2',
+    my: 'သာလွန်အောင်လုပ်သည်', th: 'ทำได้ดีกว่า', phonetic: 'out-DOO', cefr: 'B2',
     examples: {
-      present: { en: 'She always outdoes her classmates.', my: 'သူမဟာ သူ့သင်တန်းသားတွေထက် အမြဲသာအောင်လုပ်တယ်။', th: 'เธอทำได้ดีกว่าเพื่อนร่วมชั้นเสมอ' },
-      past: { en: 'Our team outdid the rivals.', my: 'ကျွန်တော်တို့အသင်းက ပြိုင်ဘက်တွေကို သာသွားတယ်။', th: 'ทีมของพวกเราเอาชนะคู่แข่งได้' },
+      present: { en: 'She always outdoes her classmates.', my: 'သူမဟာ သူ့အတန်းဖော်တွေထက် အမြဲသာအောင်လုပ်တယ်။', th: 'เธอทำได้ดีกว่าเพื่อนร่วมชั้นเสมอ' },
+      past: { en: 'Our team outdid the rivals.', my: 'ကျွန်တော်တို့အသင်းက ပြိုင်ဘက်တွေကို သာသွားတယ်။', th: 'ทีมของพวกเราทำได้ดีกว่าคู่แข่ง' },
       future: { en: 'He will outdo everyone this year.', my: 'သူ ဒီနှစ်မှာ လူတိုင်းကို သာအောင်လုပ်မယ်။', th: 'เขาจะทำได้ดีกว่าทุกคนปีนี้' },
     },
   },
   {
     base: 'outrun', past: 'outran', participle: 'outrun', present3s: 'outruns', gerund: 'outrunning',
-    my: 'ပြေးပြီးကျော်ဖြတ်သည်', th: 'วิ่งแซง', phonetic: 'out-RUN', cefr: 'A2',
+    my: 'ပြေးပြီးကျော်ဖြတ်သည်', th: 'วิ่งแซง', phonetic: 'out-RUN', cefr: 'B2',
     examples: {
       present: { en: 'The dog outruns me every day.', my: 'ခွေးက ကျွန်တော့်ကို နေ့တိုင်း ပြေးကျော်သွားတယ်။', th: 'หมาวิ่งแซงผมทุกวัน' },
       past: { en: 'She outran the others easily.', my: 'သူမ ကျန်တဲ့သူတွေကို လွယ်လွယ်နဲ့ ပြေးကျော်ခဲ့တယ်။', th: 'เธอวิ่งแซงคนอื่นอย่างง่ายดาย' },
@@ -22,52 +22,52 @@ export const verbsBatch2: Verb[] = [
   },
   {
     base: 'outshine', past: 'outshone', participle: 'outshone', present3s: 'outshines', gerund: 'outshining',
-    my: 'တောက်ပသာလွန်သည်', th: 'โดดเด่นกว่า', phonetic: 'out-SHINE', cefr: 'A2',
+    my: 'တောက်ပသာလွန်သည်', th: 'โดดเด่นกว่า', phonetic: 'out-SHINE', cefr: 'B2',
     examples: {
-      present: { en: 'Her smile outshines the sun.', my: 'သူမရဲ့အပြုံးက နေထက်တောင် တောက်ပတယ်။', th: 'รอยยิ้มของเธอสดใสกว่าแสงอาทิตย์' },
+      present: { en: 'Her smile outshines the sun.', my: 'သူမရဲ့အပြုံးက နေထက်တောင် တောက်ပတယ်။', th: 'รอยยิ้มของเธอสว่างกว่าแสงอาทิตย์' },
       past: { en: 'He outshone all the singers.', my: 'သူ အဆိုတော်တွေအားလုံးကို သာလွန်ခဲ့တယ်။', th: 'เขาโดดเด่นกว่านักร้องทุกคน' },
       future: { en: 'You will outshine them all.', my: 'မင်းက သူတို့အားလုံးကို သာလွန်မယ်။', th: 'คุณจะโดดเด่นกว่าพวกเขาทั้งหมด' },
     },
   },
   {
     base: 'overeat', past: 'overate', participle: 'overeaten', present3s: 'overeats', gerund: 'overeating',
-    my: 'အစားလွန်ကဲစွာစားသည်', th: 'กินมากเกินไป', phonetic: 'oh-ver-EET', cefr: 'A2',
+    my: 'အစားလွန်ကဲစွာစားသည်', th: 'กินมากเกินไป', phonetic: 'oh-ver-EET', cefr: 'B1',
     examples: {
       present: { en: 'He always overeats at parties.', my: 'သူ ပွဲတွေမှာ အမြဲအစားလွန်ကဲစွာစားတယ်။', th: 'เขากินมากเกินไปในงานเลี้ยงเสมอ' },
       past: { en: 'I overate at lunch today.', my: 'ဒီနေ့နေ့လည်စာ ကျွန်တော် အစားလွန်စားခဲ့တယ်။', th: 'ผมกินมากเกินไปตอนเที่ยงวันนี้' },
-      future: { en: 'Do not overeat tonight.', my: 'ဒီည အစားလွန်ကဲစွာမစားနဲ့။', th: 'อย่ากินมากเกินไปคืนนี้' },
+      future: { en: 'You will overeat tonight if you are not careful.', my: 'မင်း သတိမထားရင် ဒီည အစားလွန်ကဲစွာစားမယ်။', th: 'คุณจะกินมากเกินไปคืนนี้ถ้าไม่ระวัง' },
     },
   },
   {
     base: 'overcome', past: 'overcame', participle: 'overcome', present3s: 'overcomes', gerund: 'overcoming',
-    my: 'အောင်နိုင်ကျော်လွှားသည်', th: 'เอาชนะ', phonetic: 'oh-ver-KUM', cefr: 'A2',
+    my: 'အောင်နိုင်ကျော်လွှားသည်', th: 'เอาชนะ', phonetic: 'oh-ver-KUM', cefr: 'B1',
     examples: {
       present: { en: 'She overcomes every problem.', my: 'သူမ ပြဿနာတိုင်းကို အောင်နိုင်ကျော်လွှားတယ်။', th: 'เธอเอาชนะทุกปัญหา' },
       past: { en: 'He overcame his fear of water.', my: 'သူ ရေကိုကြောက်တဲ့စိတ်ကို အောင်နိုင်ခဲ့တယ်။', th: 'เขาเอาชนะความกลัวน้ำได้' },
-      future: { en: 'We will overcome this together.', my: 'ကျွန်တော်တို့ ဒါကို အတူတူအောင်နိုင်ကျော်လွှားမယ်။', th: 'พวกเราจะผ่านเรื่องนี้ไปด้วยกัน' },
+      future: { en: 'We will overcome this together.', my: 'ကျွန်တော်တို့ ဒါကို အတူတူအောင်နိုင်ကျော်လွှားမယ်။', th: 'พวกเราจะเอาชนะเรื่องนี้ไปด้วยกัน' },
     },
   },
   {
     base: 'overshoot', past: 'overshot', participle: 'overshot', present3s: 'overshoots', gerund: 'overshooting',
-    my: 'ကျော်လွန်ပစ်သည်', th: 'เลยเป้าหมาย', phonetic: 'oh-ver-SHOOT', cefr: 'A2',
+    my: 'ကျော်လွန်သွားသည်', th: 'เลยเป้าหมาย', phonetic: 'oh-ver-SHOOT', cefr: 'C1',
     examples: {
-      present: { en: 'He often overshoots the target.', my: 'သူ မကြာခဏ ပစ်မှတ်ကျော်လွန်တယ်။', th: 'เขามักยิงเลยเป้าหมาย' },
-      past: { en: 'The plane overshot the runway.', my: 'လေယာဉ်က ပြေးလမ်းကို ကျော်လွန်သွားတယ်။', th: 'เครื่องบินลงเลยรันเวย์' },
-      future: { en: 'Do not overshoot the budget.', my: 'ဘတ်ဂျက်ကို ကျော်လွန်မသုံးနဲ့။', th: 'อย่าใช้จ่ายเกินงบ' },
+      present: { en: 'He often overshoots the target.', my: 'သူ မကြာခဏ ပစ်မှတ်ကျော်လွန်တယ်။', th: 'เขามักจะเลยเป้าหมาย' },
+      past: { en: 'The plane overshot the runway.', my: 'လေယာဉ်က ပြေးလမ်းကို ကျော်လွန်သွားတယ်။', th: 'เครื่องบินเลยรันเวย์' },
+      future: { en: 'We will overshoot the budget if we are not careful.', my: 'ကျွန်တော်တို့ သတိမထားရင် ဘတ်ဂျက်ကို ကျော်လွန်သုံးမယ်။', th: 'พวกเราจะใช้จ่ายเกินงบถ้าไม่ระวัง' },
     },
   },
   {
     base: 'oversleep', past: 'overslept', participle: 'overslept', present3s: 'oversleeps', gerund: 'oversleeping',
-    my: 'အိပ်ရာထရင့်သည်', th: 'ตื่นสาย', phonetic: 'oh-ver-SLEEP', cefr: 'A2',
+    my: 'အိပ်ရာထနောက်ကျသည်', th: 'ตื่นสาย', phonetic: 'oh-ver-SLEEP', cefr: 'A2',
     examples: {
-      present: { en: 'She oversleeps on weekends.', my: 'သူမ စနေတနင်္ဂနွေတွေမှာ အိပ်ရာထရင့်တယ်။', th: 'เธอตื่นสายในวันหยุดสุดสัปดาห์' },
-      past: { en: 'I overslept and missed the bus.', my: 'ကျွန်တော် အိပ်ရာထရင့်ပြီး ဘတ်စ်ကားလွတ်ခဲ့တယ်။', th: 'ผมตื่นสายจนพลาดรถเมล์' },
-      future: { en: 'Do not oversleep tomorrow.', my: 'မနက်ဖြန် အိပ်ရာထမရင့်စေနဲ့။', th: 'อย่าตื่นสายพรุ่งนี้นะ' },
+      present: { en: 'She oversleeps on weekends.', my: 'သူမ စနေတနင်္ဂနွေတွေမှာ အိပ်ရာထနောက်ကျတယ်။', th: 'เธอตื่นสายในวันหยุดสุดสัปดาห์' },
+      past: { en: 'I overslept and missed the bus.', my: 'ကျွန်တော် အိပ်ရာထနောက်ကျပြီး ဘတ်စ်ကားလွတ်ခဲ့တယ်။', th: 'ผมตื่นสายจนพลาดรถเมล์' },
+      future: { en: 'You will oversleep tomorrow if you do not set an alarm.', my: 'အချက်ပေးနာရီမချိန်ရင် မင်း မနက်ဖြန် အိပ်ရာထနောက်ကျမယ်။', th: 'คุณจะตื่นสายพรุ่งนี้ถ้าไม่ตั้งปลุก' },
     },
   },
   {
     base: 'overspend', past: 'overspent', participle: 'overspent', present3s: 'overspends', gerund: 'overspending',
-    my: 'အသုံးလွန်ကျွံသည်', th: 'ใช้จ่ายเกินตัว', phonetic: 'oh-ver-SPEND', cefr: 'A2',
+    my: 'အသုံးလွန်ကျွံသည်', th: 'ใช้จ่ายเกินตัว', phonetic: 'oh-ver-SPEND', cefr: 'B2',
     examples: {
       present: { en: 'He overspends on clothes.', my: 'သူ အဝတ်အစားမှာ အသုံးလွန်ကျွံတယ်။', th: 'เขาใช้จ่ายกับเสื้อผ้าเกินตัว' },
       past: { en: 'We overspent last month.', my: 'ကျွန်တော်တို့ ပြီးခဲ့တဲ့လက အသုံးလွန်ကျွံခဲ့တယ်။', th: 'พวกเราใช้จ่ายเกินตัวเดือนที่แล้ว' },
@@ -76,7 +76,7 @@ export const verbsBatch2: Verb[] = [
   },
   {
     base: 'overtake', past: 'overtook', participle: 'overtaken', present3s: 'overtakes', gerund: 'overtaking',
-    my: 'ကျော်တက်သည်', th: 'แซง', phonetic: 'oh-ver-TAYK', cefr: 'A2',
+    my: 'ကျော်တက်သည်', th: 'แซง', phonetic: 'oh-ver-TAYK', cefr: 'B2',
     examples: {
       present: { en: 'Cars overtake on the left.', my: 'ကားတွေက ဘယ်ဘက်က ကျော်တက်တယ်။', th: 'รถแซงกันทางซ้าย' },
       past: { en: 'She overtook him at the corner.', my: 'သူမ ထောင့်မှာ သူ့ကို ကျော်တက်ခဲ့တယ်။', th: 'เธอแซงเขาที่หัวมุมถนน' },
@@ -85,7 +85,7 @@ export const verbsBatch2: Verb[] = [
   },
   {
     base: 'overthrow', past: 'overthrew', participle: 'overthrown', present3s: 'overthrows', gerund: 'overthrowing',
-    my: 'ဖြုတ်ချသည်', th: 'โค่นล้ม', phonetic: 'oh-ver-THROH', cefr: 'A2',
+    my: 'ဖြုတ်ချသည်', th: 'โค่นล้ม', phonetic: 'oh-ver-THROH', cefr: 'C1',
     examples: {
       present: { en: 'The people overthrow the king.', my: 'ပြည်သူတွေက ဘုရင်ကို ဖြုတ်ချတယ်။', th: 'ประชาชนโค่นล้มกษัตริย์' },
       past: { en: 'They overthrew the old system.', my: 'သူတို့ စနစ်ဟောင်းကို ဖြုတ်ချခဲ့တယ်။', th: 'พวกเขาโค่นล้มระบอบเก่า' },
@@ -94,11 +94,11 @@ export const verbsBatch2: Verb[] = [
   },
   {
     base: 'partake', past: 'partook', participle: 'partaken', present3s: 'partakes', gerund: 'partaking',
-    my: 'ပါဝင်စားသောက်သည်', th: 'เข้าร่วม', phonetic: 'par-TAYK', cefr: 'A2',
+    my: 'ပါဝင်သည်၊ စားသောက်သည်', th: 'ร่วมรับประทาน', phonetic: 'par-TAYK', cefr: 'C1',
     examples: {
-      present: { en: 'She partakes in every meal.', my: 'သူမ ထမင်းတိုင်းမှာ ပါဝင်စားသောက်တယ်။', th: 'เธอร่วมกินทุกมื้อ' },
+      present: { en: 'She partakes of every meal.', my: 'သူမ ထမင်းတိုင်းမှာ ပါဝင်စားသောက်တယ်။', th: 'เธอร่วมรับประทานอาหารทุกมื้อ' },
       past: { en: 'He partook of the dinner.', my: 'သူ ညစာကို ပါဝင်စားသောက်ခဲ့တယ်။', th: 'เขาร่วมรับประทานอาหารเย็น' },
-      future: { en: 'Will you partake with us?', my: 'မင်း ငါတို့နဲ့ ပါဝင်စားသောက်မလား။', th: 'คุณจะร่วมกับพวกเราไหม' },
+      future: { en: 'Will you partake with us?', my: 'မင်း ငါတို့နဲ့ ပါဝင်စားသောက်မလား။', th: 'คุณจะร่วมรับประทานกับพวกเราไหม' },
     },
   },
   {
@@ -112,25 +112,25 @@ export const verbsBatch2: Verb[] = [
   },
   {
     base: 'prepay', past: 'prepaid', participle: 'prepaid', present3s: 'prepays', gerund: 'prepaying',
-    my: 'ကြိုတင်ပေးချေသည်', th: 'จ่ายล่วงหน้า', phonetic: 'pree-PAY', cefr: 'A2',
+    my: 'ကြိုတင်ပေးချေသည်', th: 'จ่ายล่วงหน้า', phonetic: 'pree-PAY', cefr: 'B1',
     examples: {
-      present: { en: 'We prepay our phone plan.', my: 'ကျွန်တော်တို့ ဖုန်းပက်ကတ်ကို ကြိုတင်ပေးချေတယ်။', th: 'พวกเราจ่ายค่าโทรศัพท์ล่วงหน้า' },
+      present: { en: 'We prepay our phone plan.', my: 'ကျွန်တော်တို့ ဖုန်းပက်ကတ်ကို ကြိုတင်ပေးချေတယ်။', th: 'พวกเราจ่ายค่าแพ็กเกจโทรศัพท์ล่วงหน้า' },
       past: { en: 'She prepaid the hotel room.', my: 'သူမ ဟိုတယ်အခန်းကို ကြိုတင်ပေးချေခဲ့တယ်။', th: 'เธอจ่ายค่าห้องพักล่วงหน้า' },
-      future: { en: 'You can prepay online.', my: 'မင်း အွန်လိုင်းကနေ ကြိုတင်ပေးချေလို့ရတယ်။', th: 'คุณจ่ายล่วงหน้าออนไลน์ได้' },
+      future: { en: 'You will be able to prepay online.', my: 'မင်း အွန်လိုင်းကနေ ကြိုတင်ပေးချေနိုင်မယ်။', th: 'คุณจ่ายล่วงหน้าทางออนไลน์ได้' },
     },
   },
   {
     base: 'put', past: 'put', participle: 'put', present3s: 'puts', gerund: 'putting',
-    my: 'ထားသည်၊ ချသည်', th: 'วาง', phonetic: 'put', cefr: 'A1',
+    my: 'ထားသည်၊ ချသည်', th: 'วาง; ใส่', phonetic: 'put', cefr: 'A1',
     examples: {
       present: { en: 'She puts the keys on the table.', my: 'သူမ သော့တွေကို စားပွဲပေါ်ထားတယ်။', th: 'เธอวางกุญแจบนโต๊ะ' },
       past: { en: 'He put his bag on the chair.', my: 'သူ သူ့အိတ်ကို ထိုင်ခုံပေါ်ချခဲ့တယ်။', th: 'เขาวางกระเป๋าบนเก้าอี้' },
-      future: { en: 'I will put it in your bag.', my: 'ကျွန်တော် အဲဒါကို မင်းအိတ်ထဲထားပေးမယ်။', th: 'ผมจะใส่ในกระเป๋าของคุณ' },
+      future: { en: 'I will put it in your bag.', my: 'ကျွန်တော် အဲဒါကို မင်းအိတ်ထဲထားမယ်။', th: 'ผมจะใส่ในกระเป๋าของคุณ' },
     },
   },
   {
     base: 'quit', past: 'quit', participle: 'quit', present3s: 'quits', gerund: 'quitting',
-    my: 'ထွက်သည်၊ ရပ်လိုက်သည်', th: 'เลิก; ลาออก', phonetic: 'kwit', cefr: 'A1',
+    my: 'ထွက်သည်၊ ရပ်လိုက်သည်', th: 'เลิก; ลาออก', phonetic: 'kwit', cefr: 'A2',
     examples: {
       present: { en: 'He quits smoking this year.', my: 'သူ ဒီနှစ်မှာ ဆေးလိပ်ဖြတ်တယ်။', th: 'เขาเลิกสูบบุหรี่ปีนี้' },
       past: { en: 'She quit her job last week.', my: 'သူမ ပြီးခဲ့တဲ့အပတ်က အလုပ်ထွက်ခဲ့တယ်။', th: 'เธอลาออกจากงานเมื่อสัปดาห์ที่แล้ว' },
@@ -148,34 +148,34 @@ export const verbsBatch2: Verb[] = [
   },
   {
     base: 'rebuild', past: 'rebuilt', participle: 'rebuilt', present3s: 'rebuilds', gerund: 'rebuilding',
-    my: 'ပြန်လည်တည်ဆောက်သည်', th: 'สร้างใหม่', phonetic: 'ree-BILD', cefr: 'A2',
+    my: 'ပြန်လည်တည်ဆောက်သည်', th: 'สร้างใหม่', phonetic: 'ree-BILD', cefr: 'B2',
     examples: {
-      present: { en: 'They rebuild old houses.', my: 'သူတို့ အိမ်ဟောင်းတွေကို ပြန်လည်တည်ဆောက်တယ်။', th: 'พวกเขาสร้างบ้านเก่าใหม่' },
+      present: { en: 'They rebuild old houses.', my: 'သူတို့ အိမ်ဟောင်းတွေကို ပြန်လည်တည်ဆောက်တယ်။', th: 'พวกเขาสร้างบ้านเก่าขึ้นใหม่' },
       past: { en: 'We rebuilt the bridge last year.', my: 'ကျွန်တော်တို့ ပြီးခဲ့တဲ့နှစ်က တံတားကို ပြန်ဆောက်ခဲ့တယ်။', th: 'พวกเราสร้างสะพานใหม่เมื่อปีที่แล้ว' },
       future: { en: 'He will rebuild his life.', my: 'သူ သူ့ဘဝကို ပြန်လည်တည်ဆောက်မယ်။', th: 'เขาจะเริ่มต้นชีวิตใหม่' },
     },
   },
   {
     base: 'relay', past: 'relayed', participle: 'relayed', present3s: 'relays', gerund: 'relaying',
-    my: 'တစ်ဆင့်ပေးပို့သည်', th: 'ส่งต่อ', phonetic: 'ree-LAY', cefr: 'A2',
+    my: 'တစ်ဆင့်ပေးပို့သည်', th: 'ส่งต่อ', phonetic: 'ree-LAY', cefr: 'B2',
     examples: {
       present: { en: 'He relays the news to us.', my: 'သူ သတင်းကို ကျွန်တော်တို့ဆီ တစ်ဆင့်ပေးတယ်။', th: 'เขาส่งข่าวให้พวกเรา' },
-      past: { en: 'She relayed my message.', my: 'သူမ ကျွန်တော့်မက်ဆေ့ချ်ကို တစ်ဆင့်ပေးခဲ့တယ်။', th: 'เธอส่งข้อความของผมต่อ' },
+      past: { en: 'She relayed my message.', my: 'သူမ ကျွန်တော့်မက်ဆေ့ချ်ကို တစ်ဆင့်ပေးခဲ့တယ်။', th: 'เธอส่งต่อข้อความของผม' },
       future: { en: 'I will relay your request.', my: 'ကျွန်တော် မင်းရဲ့တောင်းဆိုချက်ကို တစ်ဆင့်ပေးမယ်။', th: 'ผมจะส่งคำขอของคุณต่อ' },
     },
   },
   {
     base: 'remake', past: 'remade', participle: 'remade', present3s: 'remakes', gerund: 'remaking',
-    my: 'ပြန်လုပ်သည်', th: 'ทำใหม่', phonetic: 'ree-MAYK', cefr: 'A2',
+    my: 'ပြန်လုပ်သည်', th: 'ทำใหม่', phonetic: 'ree-MAYK', cefr: 'B1',
     examples: {
-      present: { en: 'They remake old movies.', my: 'သူတို့ ရုပ်ရှင်ဟောင်းတွေကို ပြန်လုပ်တယ်။', th: 'พวกเขาสร้างหนังเก่าใหม่' },
+      present: { en: 'They remake old movies.', my: 'သူတို့ ရုပ်ရှင်ဟောင်းတွေကို ပြန်လုပ်တယ်။', th: 'พวกเขารีเมคหนังเก่า' },
       past: { en: 'She remade the cake.', my: 'သူမ ကိတ်မုန့်ကို ပြန်လုပ်ခဲ့တယ်။', th: 'เธอทำเค้กใหม่' },
       future: { en: 'We will remake the plan.', my: 'ကျွန်တော်တို့ အစီအစဉ်ကို ပြန်လုပ်မယ်။', th: 'พวกเราจะทำแผนใหม่' },
     },
   },
   {
     base: 'repay', past: 'repaid', participle: 'repaid', present3s: 'repays', gerund: 'repaying',
-    my: 'ပြန်ဆပ်သည်', th: 'ชำระคืน', phonetic: 'ree-PAY', cefr: 'A2',
+    my: 'ပြန်ဆပ်သည်', th: 'ชำระคืน', phonetic: 'ree-PAY', cefr: 'B2',
     examples: {
       present: { en: 'He repays his debts on time.', my: 'သူ အကြွေးတွေကို အချိန်မှန်ပြန်ဆပ်တယ်။', th: 'เขาชำระหนี้ตรงเวลา' },
       past: { en: 'She repaid me yesterday.', my: 'သူမ မနေ့က ကျွန်တော့်ကို ပြန်ဆပ်ခဲ့တယ်။', th: 'เธอคืนเงินผมเมื่อวานนี้' },
@@ -184,7 +184,7 @@ export const verbsBatch2: Verb[] = [
   },
   {
     base: 'reread', past: 'reread', participle: 'reread', present3s: 'rereads', gerund: 'rereading',
-    my: 'ပြန်ဖတ်သည်', th: 'อ่านซ้ำ', phonetic: 'ree-REED', cefr: 'A2',
+    my: 'ပြန်ဖတ်သည်', th: 'อ่านซ้ำ', phonetic: 'ree-REED', cefr: 'B1',
     examples: {
       present: { en: 'She rereads her notes daily.', my: 'သူမ သူ့မှတ်စုတွေကို နေ့တိုင်းပြန်ဖတ်တယ်။', th: 'เธออ่านโน้ตซ้ำทุกวัน' },
       past: { en: 'I reread the email this morning.', my: 'ကျွန်တော် ဒီမနက် အီးမေးလ်ကို ပြန်ဖတ်ခဲ့တယ်။', th: 'ผมอ่านอีเมลซ้ำเช้านี้' },
@@ -193,7 +193,7 @@ export const verbsBatch2: Verb[] = [
   },
   {
     base: 'resit', past: 'resat', participle: 'resat', present3s: 'resits', gerund: 'resitting',
-    my: 'စာမေးပွဲပြန်ဖြေသည်', th: 'สอบซ่อม', phonetic: 'ree-SIT', cefr: 'A2',
+    my: 'စာမေးပွဲပြန်ဖြေသည်', th: 'สอบซ่อม', phonetic: 'ree-SIT', cefr: 'B2',
     examples: {
       present: { en: 'He resits the exam in June.', my: 'သူ ဇွန်လမှာ စာမေးပွဲပြန်ဖြေတယ်။', th: 'เขาสอบซ่อมในเดือนมิถุนายน' },
       past: { en: 'She resat the test last month.', my: 'သူမ ပြီးခဲ့တဲ့လက စာမေးပွဲပြန်ဖြေခဲ့တယ်။', th: 'เธอสอบซ่อมเมื่อเดือนที่แล้ว' },
@@ -202,7 +202,7 @@ export const verbsBatch2: Verb[] = [
   },
   {
     base: 'restring', past: 'restrung', participle: 'restrung', present3s: 'restrings', gerund: 'restringing',
-    my: 'ကြိုးပြန်တပ်သည်', th: 'ร้อยสายใหม่', phonetic: 'ree-STRING', cefr: 'A2',
+    my: 'ကြိုးပြန်တပ်သည်', th: 'ร้อยสายใหม่', phonetic: 'ree-STRING', cefr: 'C2',
     examples: {
       present: { en: 'He restrings his guitar monthly.', my: 'သူ သူ့ဂစ်တာကို လတိုင်းကြိုးပြန်တပ်တယ်။', th: 'เขาร้อยสายกีตาร์ใหม่ทุกเดือน' },
       past: { en: 'She restrung the beads.', my: 'သူမ ပုတီးစေ့တွေကို ကြိုးပြန်သွယ်ခဲ့တယ်။', th: 'เธอร้อยลูกปัดใหม่' },
@@ -211,7 +211,7 @@ export const verbsBatch2: Verb[] = [
   },
   {
     base: 'rethink', past: 'rethought', participle: 'rethought', present3s: 'rethinks', gerund: 'rethinking',
-    my: 'ပြန်စဉ်းစားသည်', th: 'คิดทบทวนใหม่', phonetic: 'ree-THINK', cefr: 'A2',
+    my: 'ပြန်စဉ်းစားသည်', th: 'คิดทบทวนใหม่', phonetic: 'ree-THINK', cefr: 'B2',
     examples: {
       present: { en: 'We rethink our plans often.', my: 'ကျွန်တော်တို့ အစီအစဉ်တွေကို မကြာခဏပြန်စဉ်းစားတယ်။', th: 'พวกเราคิดทบทวนแผนบ่อยๆ' },
       past: { en: 'He rethought his decision.', my: 'သူ သူ့ဆုံးဖြတ်ချက်ကို ပြန်စဉ်းစားခဲ့တယ်။', th: 'เขาคิดทบทวนการตัดสินใจ' },
@@ -220,7 +220,7 @@ export const verbsBatch2: Verb[] = [
   },
   {
     base: 'retell', past: 'retold', participle: 'retold', present3s: 'retells', gerund: 'retelling',
-    my: 'ပြန်ပြောပြသည်', th: 'เล่าใหม่', phonetic: 'ree-TEL', cefr: 'A2',
+    my: 'ပြန်ပြောပြသည်', th: 'เล่าใหม่', phonetic: 'ree-TEL', cefr: 'B2',
     examples: {
       present: { en: 'He retells old stories well.', my: 'သူ ပုံပြင်ဟောင်းတွေကို ကောင်းကောင်းပြန်ပြောတယ်။', th: 'เขาเล่านิทานเก่าได้ดี' },
       past: { en: 'She retold the story to us.', my: 'သူမ ပုံပြင်ကို ကျွန်တော်တို့အား ပြန်ပြောပြခဲ့တယ်။', th: 'เธอเล่านิทานให้พวกเราฟัง' },
@@ -229,7 +229,7 @@ export const verbsBatch2: Verb[] = [
   },
   {
     base: 'rewind', past: 'rewound', participle: 'rewound', present3s: 'rewinds', gerund: 'rewinding',
-    my: 'ပြန်ရစ်သည်', th: 'กรอกลับ', phonetic: 'ree-WYND', cefr: 'A2',
+    my: 'ပြန်ရစ်သည်', th: 'กรอกลับ', phonetic: 'ree-WYND', cefr: 'B1',
     examples: {
       present: { en: 'She rewinds the video.', my: 'သူမ ဗီဒီယိုကို ပြန်ရစ်တယ်။', th: 'เธอกรอวิดีโอกลับ' },
       past: { en: 'He rewound the tape.', my: 'သူ တိပ်ကို ပြန်ရစ်ခဲ့တယ်။', th: 'เขากรอเทปกลับ' },
@@ -238,7 +238,7 @@ export const verbsBatch2: Verb[] = [
   },
   {
     base: 'rewrite', past: 'rewrote', participle: 'rewritten', present3s: 'rewrites', gerund: 'rewriting',
-    my: 'ပြန်ရေးသည်', th: 'เขียนใหม่', phonetic: 'ree-RITE', cefr: 'A2',
+    my: 'ပြန်ရေးသည်', th: 'เขียนใหม่', phonetic: 'ree-RITE', cefr: 'B1',
     examples: {
       present: { en: 'I rewrite my essays twice.', my: 'ကျွန်တော် အက်ဆေးတွေကို နှစ်ခါပြန်ရေးတယ်။', th: 'ผมเขียนเรียงความใหม่สองรอบ' },
       past: { en: 'She rewrote the letter.', my: 'သူမ စာကို ပြန်ရေးခဲ့တယ်။', th: 'เธอเขียนจดหมายใหม่' },
@@ -247,7 +247,7 @@ export const verbsBatch2: Verb[] = [
   },
   {
     base: 'rid', past: 'rid', participle: 'rid', present3s: 'rids', gerund: 'ridding',
-    my: 'ဖယ်ရှားရှင်းလင်းသည်', th: 'กำจัด', phonetic: 'rid', cefr: 'A2',
+    my: 'ဖယ်ရှားရှင်းလင်းသည်', th: 'กำจัด', phonetic: 'rid', cefr: 'B2',
     examples: {
       present: { en: 'He rids the garden of weeds.', my: 'သူ ဥယျာဉ်က ပေါင်းပင်တွေကို ဖယ်ရှားတယ်။', th: 'เขากำจัดวัชพืชในสวน' },
       past: { en: 'We rid the room of dust.', my: 'ကျွန်တော်တို့ အခန်းက ဖုန်တွေကို ရှင်းခဲ့တယ်။', th: 'พวกเรากำจัดฝุ่นในห้อง' },
@@ -265,20 +265,20 @@ export const verbsBatch2: Verb[] = [
   },
   {
     base: 'ring', past: 'rang', participle: 'rung', present3s: 'rings', gerund: 'ringing',
-    my: 'မြည်သည်၊ ခေါ်သည်', th: 'โทร; สั่น(กระดิ่ง)', phonetic: 'ring', cefr: 'A1',
+    my: 'မြည်သည်၊ (ဖုန်း)ခေါ်သည်၊ (ခေါင်းလောင်း)တီးသည်', th: 'โทร; สั่น(กระดิ่ง)', phonetic: 'ring', cefr: 'A1',
     examples: {
-      present: { en: 'The phone rings loudly.', my: 'ဖုန်းက ကျယ်ကျယ်မြည်တယ်။', th: 'โทรศัพท์ดังเสียงดัง' },
+      present: { en: 'The phone rings loudly.', my: 'ဖုန်းက ကျယ်ကျယ်မြည်တယ်။', th: 'โทรศัพท์ดังมาก' },
       past: { en: 'He rang the doorbell.', my: 'သူ တံခါးခေါင်းလောင်းကို တီးခဲ့တယ်။', th: 'เขากดกริ่งประตู' },
       future: { en: 'I will ring you tonight.', my: 'ကျွန်တော် ဒီည မင်းကို ဖုန်းခေါ်မယ်။', th: 'ผมจะโทรหาคุณคืนนี้' },
     },
   },
   {
     base: 'rise', past: 'rose', participle: 'risen', present3s: 'rises', gerund: 'rising',
-    my: 'ထွက်ပေါ်သည်၊ တက်သည်', th: 'ขึ้น; ลุกขึ้น', phonetic: 'ryze', cefr: 'A1',
+    my: 'ထွက်ပေါ်သည်၊ တက်သည်', th: 'ขึ้น; ลุกขึ้น', phonetic: 'ryze', cefr: 'B1',
     examples: {
       present: { en: 'The sun rises at six.', my: 'နေ ခြောက်နာရီမှာ ထွက်တယ်။', th: 'พระอาทิตย์ขึ้นตอนหกโมง' },
       past: { en: 'Prices rose last month.', my: 'ပြီးခဲ့တဲ့လက ဈေးနှုန်းတွေ တက်ခဲ့တယ်။', th: 'ราคาขึ้นเมื่อเดือนที่แล้ว' },
-      future: { en: 'The river will rise in May.', my: 'မေလမှာ မြစ်ရေတက်မယ်။', th: 'แม่น้ำจะขึ้นในเดือนพฤษภาคม' },
+      future: { en: 'The river will rise in May.', my: 'မေလမှာ မြစ်ရေတက်မယ်။', th: 'ระดับน้ำในแม่น้ำจะสูงขึ้นในเดือนพฤษภาคม' },
     },
   },
   {
@@ -301,7 +301,7 @@ export const verbsBatch2: Verb[] = [
   },
   {
     base: 'see', past: 'saw', participle: 'seen', present3s: 'sees', gerund: 'seeing',
-    my: 'မြင်သည်', th: 'เห็น', phonetic: 'see', cefr: 'A1',
+    my: 'မြင်သည်', th: 'เห็น; ดู', phonetic: 'see', cefr: 'A1',
     examples: {
       present: { en: 'I see the mountain.', my: 'ကျွန်တော် တောင်ကို မြင်တယ်။', th: 'ผมเห็นภูเขา' },
       past: { en: 'She saw a rainbow.', my: 'သူမ သက်တန့်ကို မြင်ခဲ့တယ်။', th: 'เธอเห็นรุ้ง' },
@@ -310,7 +310,7 @@ export const verbsBatch2: Verb[] = [
   },
   {
     base: 'seek', past: 'sought', participle: 'sought', present3s: 'seeks', gerund: 'seeking',
-    my: 'ရှာဖွေသည်', th: 'แสวงหา', phonetic: 'seek', cefr: 'A2',
+    my: 'ရှာဖွေသည်', th: 'หา', phonetic: 'seek', cefr: 'B2',
     examples: {
       present: { en: 'He seeks a new job.', my: 'သူ အလုပ်အသစ်ရှာတယ်။', th: 'เขาหางานใหม่' },
       past: { en: 'She sought help from friends.', my: 'သူမ သူငယ်ချင်းတွေဆီက အကူအညီတောင်းခဲ့တယ်။', th: 'เธอขอความช่วยเหลือจากเพื่อน' },
@@ -341,7 +341,7 @@ export const verbsBatch2: Verb[] = [
     examples: {
       present: { en: 'She sets the table.', my: 'သူမ စားပွဲပြင်တယ်။', th: 'เธอจัดโต๊ะอาหาร' },
       past: { en: 'He set the alarm for six.', my: 'သူ ခြောက်နာရီနှိုးစက် ချိန်ခဲ့တယ်။', th: 'เขาตั้งนาฬิกาปลุกตอนหกโมง' },
-      future: { en: 'We will set a new goal.', my: 'ကျွန်တော်တို့ ရည်မှန်းချက်အသစ်ချမယ်။', th: 'พวกเราจะตั้งเป้าหมายใหม่' },
+      future: { en: 'We will set a new goal.', my: 'ကျွန်တော်တို့ ရည်မှန်းချက်အသစ်ချမှတ်မယ်။', th: 'พวกเราจะตั้งเป้าหมายใหม่' },
     },
   },
   {
@@ -355,16 +355,16 @@ export const verbsBatch2: Verb[] = [
   },
   {
     base: 'shed', past: 'shed', participle: 'shed', present3s: 'sheds', gerund: 'shedding',
-    my: 'ချွတ်သည်၊ ကျွတ်သည်', th: 'หลั่ง(น้ำตา); ผลัด(ขน)', phonetic: 'shed', cefr: 'A2',
+    my: 'ချွတ်သည်၊ ကျွတ်သည်', th: 'หลั่ง(น้ำตา); ผลัด(ขน)', phonetic: 'shed', cefr: 'B2',
     examples: {
-      present: { en: 'Trees shed leaves in autumn.', my: 'သစ်ပင်တွေ ဆောင်းဦးမှာ အရွက်ချွတ်တယ်။', th: 'ต้นไม้ผลัดใบในฤดูใบไม้ร่วง' },
+      present: { en: 'Trees shed leaves in autumn.', my: 'သစ်ပင်တွေ ဆောင်းဦးမှာ အရွက်ကြွေတယ်။', th: 'ต้นไม้ผลัดใบในฤดูใบไม้ร่วง' },
       past: { en: 'She shed tears of joy.', my: 'သူမ ဝမ်းသာမျက်ရည်ကျခဲ့တယ်။', th: 'เธอหลั่งน้ำตาแห่งความสุข' },
       future: { en: 'The dog will shed fur.', my: 'ခွေး အမွေးကျွတ်မယ်။', th: 'หมาจะผลัดขน' },
     },
   },
   {
     base: 'shine', past: 'shone', participle: 'shone', present3s: 'shines', gerund: 'shining',
-    my: 'တောက်ပသည်', th: 'ส่องแสง', phonetic: 'shyne', cefr: 'A1',
+    my: 'တောက်ပသည်', th: 'ส่องแสง', phonetic: 'shyne', cefr: 'B1',
     examples: {
       present: { en: 'The stars shine at night.', my: 'ကြယ်တွေ ညမှာ တောက်ပတယ်။', th: 'ดวงดาวส่องแสงตอนกลางคืน' },
       past: { en: 'The sun shone brightly.', my: 'နေ တောက်ပစွာထွန်းလင်းခဲ့တယ်။', th: 'พระอาทิตย์ส่องแสงจ้า' },
@@ -373,9 +373,9 @@ export const verbsBatch2: Verb[] = [
   },
   {
     base: 'shoot', past: 'shot', participle: 'shot', present3s: 'shoots', gerund: 'shooting',
-    my: 'ပစ်သည်', th: 'ยิง', phonetic: 'shoot', cefr: 'A1',
+    my: 'ပစ်သည်၊ ရိုက်ကူးသည်', th: 'ยิง; ถ่าย', phonetic: 'shoot', cefr: 'A2',
     examples: {
-      present: { en: 'He shoots the ball well.', my: 'သူ ဘောလုံးကို ကောင်းကောင်းကန်တယ်။', th: 'เขายิงบอลเก่ง' },
+      present: { en: 'He shoots the ball well.', my: 'သူ ဘောလုံးကို ကောင်းကောင်းပစ်တယ်။', th: 'เขายิงบอลเก่ง' },
       past: { en: 'She shot a photo.', my: 'သူမ ဓာတ်ပုံရိုက်ခဲ့တယ်။', th: 'เธอถ่ายรูป' },
       future: { en: 'They will shoot the film here.', my: 'သူတို့ ဒီမှာ ရုပ်ရှင်ရိုက်မယ်။', th: 'พวกเขาจะถ่ายหนังที่นี่' },
     },
@@ -391,11 +391,11 @@ export const verbsBatch2: Verb[] = [
   },
   {
     base: 'shrink', past: 'shrank', participle: 'shrunk', present3s: 'shrinks', gerund: 'shrinking',
-    my: 'ကျုံ့သည်', th: 'หด', phonetic: 'shrink', cefr: 'A2',
+    my: 'ကျုံ့သည်', th: 'หด', phonetic: 'shrink', cefr: 'B2',
     examples: {
       present: { en: 'Wool shrinks in hot water.', my: 'သိုးမွေးထည်က ရေပူမှာ ကျုံ့တယ်။', th: 'ผ้าขนสัตว์หดในน้ำร้อน' },
       past: { en: 'My shirt shrank in the wash.', my: 'ကျွန်တော့်အင်္ကျီ လျှော်လိုက်တာ ကျုံ့သွားတယ်။', th: 'เสื้อของผมหดตอนซัก' },
-      future: { en: 'The ice will shrink soon.', my: 'ရေခဲ မကြာခင် ကျုံ့သွားမယ်။', th: 'น้ำแข็งจะละลายในไม่ช้า' },
+      future: { en: 'The puddle will shrink in the sun.', my: 'ရေအိုင်က နေပူထဲမှာ ကျုံ့သွားမယ်။', th: 'แอ่งน้ำจะหดลงในแสงแดด' },
     },
   },
   {
@@ -404,7 +404,7 @@ export const verbsBatch2: Verb[] = [
     examples: {
       present: { en: 'She shuts the door softly.', my: 'သူမ တံခါးကို ညင်သာစွာပိတ်တယ်။', th: 'เธอปิดประตูเบาๆ' },
       past: { en: 'He shut the window.', my: 'သူ ပြတင်းပေါက်ကို ပိတ်ခဲ့တယ်။', th: 'เขาปิดหน้าต่าง' },
-      future: { en: 'Please shut the gate.', my: 'ခြံတံခါး ပိတ်ပေးပါ။', th: 'กรุณาปิดประตูรั้ว' },
+      future: { en: 'He will shut the gate at night.', my: 'သူ ညနေမှာ ခြံတံခါးပိတ်မယ်။', th: 'เขาจะปิดประตูรั้วตอนกลางคืน' },
     },
   },
   {
@@ -418,7 +418,7 @@ export const verbsBatch2: Verb[] = [
   },
   {
     base: 'sink', past: 'sank', participle: 'sunk', present3s: 'sinks', gerund: 'sinking',
-    my: 'နစ်မြုပ်သည်', th: 'จม', phonetic: 'sink', cefr: 'A2',
+    my: 'နစ်မြုပ်သည်', th: 'จม', phonetic: 'sink', cefr: 'B1',
     examples: {
       present: { en: 'Stones sink in water.', my: 'ကျောက်ခဲတွေ ရေမှာ နစ်တယ်။', th: 'หินจมในน้ำ' },
       past: { en: 'The ship sank in 1912.', my: 'သင်္ဘော ၁၉၁၂ မှာ နစ်မြုပ်ခဲ့တယ်။', th: 'เรือจมในปี 1912' },
@@ -431,12 +431,12 @@ export const verbsBatch2: Verb[] = [
     examples: {
       present: { en: 'He sits near the window.', my: 'သူ ပြတင်းပေါက်နားမှာ ထိုင်တယ်။', th: 'เขานั่งใกล้หน้าต่าง' },
       past: { en: 'We sat under the tree.', my: 'ကျွန်တော်တို့ သစ်ပင်အောက်မှာ ထိုင်ခဲ့တယ်။', th: 'พวกเรานั่งใต้ต้นไม้' },
-      future: { en: 'Please sit here.', my: 'ဒီမှာထိုင်ပါ။', th: 'กรุณานั่งตรงนี้' },
+      future: { en: 'We will sit here together.', my: 'ကျွန်တော်တို့ ဒီမှာ အတူထိုင်မယ်။', th: 'พวกเราจะนั่งที่นี่ด้วยกัน' },
     },
   },
   {
     base: 'slay', past: 'slew', participle: 'slain', present3s: 'slays', gerund: 'slaying',
-    my: 'သတ်ဖြတ်သည်', th: 'ฆ่า', phonetic: 'slay', cefr: 'A2',
+    my: 'သတ်ဖြတ်သည်', th: 'ฆ่า', phonetic: 'slay', cefr: 'C2',
     examples: {
       present: { en: 'The hero slays the dragon.', my: 'သူရဲကောင်းက နဂါးကို သတ်ဖြတ်တယ်။', th: 'วีรบุรุษฆ่ามังกร' },
       past: { en: 'He slew the giant.', my: 'သူ ဘီလူးကြီးကို သတ်ဖြတ်ခဲ့တယ်။', th: 'เขาฆ่ายักษ์' },
@@ -454,16 +454,16 @@ export const verbsBatch2: Verb[] = [
   },
   {
     base: 'slide', past: 'slid', participle: 'slid', present3s: 'slides', gerund: 'sliding',
-    my: 'လျှောသည်', th: 'เลื่อน; ลื่นไถล', phonetic: 'slyde', cefr: 'A2',
+    my: 'လျှောသည်', th: 'เลื่อน; ลื่นไถล', phonetic: 'slyde', cefr: 'B2',
     examples: {
       present: { en: 'The box slides down the hill.', my: 'သေတ္တာက တောင်ကုန်းအောက်ကို လျှောဆင်းတယ်။', th: 'กล่องเลื่อนลงเนิน' },
-      past: { en: 'He slid across the floor.', my: 'သူ ကြမ်းပြင်ပေါ်လျှောသွားခဲ့တယ်။', th: 'เขาลื่นไถลข้ามพื้น' },
+      past: { en: 'He slid across the floor.', my: 'သူ ကြမ်းပြင်ပေါ်လျှောသွားခဲ့တယ်။', th: 'เขาลื่นไถลไปบนพื้น' },
       future: { en: 'The door will slide open.', my: 'တံခါးက လျှောပြီးပွင့်မယ်။', th: 'ประตูจะเลื่อนเปิด' },
     },
   },
   {
     base: 'sneak', past: 'snuck', participle: 'snuck', present3s: 'sneaks', gerund: 'sneaking',
-    my: 'ခိုးဝင်သည်', th: 'แอบ', phonetic: 'sneek', cefr: 'A2',
+    my: 'ခိုးဝင်သည်', th: 'แอบ', phonetic: 'sneek', cefr: 'B2',
     examples: {
       present: { en: 'He sneaks into the room.', my: 'သူ အခန်းထဲကို ခိုးဝင်တယ်။', th: 'เขาแอบเข้าห้อง' },
       past: { en: 'She snuck out at midnight.', my: 'သူမ သန်းခေါင်မှာ ခိုးထွက်ခဲ့တယ်။', th: 'เธอแอบออกตอนเที่ยงคืน' },
@@ -472,11 +472,11 @@ export const verbsBatch2: Verb[] = [
   },
   {
     base: 'sow', past: 'sowed', participle: 'sown', present3s: 'sows', gerund: 'sowing',
-    my: 'မျိုးစေ့ချသည်', th: 'หว่าน(เมล็ด)', phonetic: 'soh', cefr: 'A2',
+    my: 'မျိုးစေ့ချသည်', th: 'หว่าน(เมล็ด)', phonetic: 'soh', cefr: 'C1',
     examples: {
       present: { en: 'Farmers sow rice in June.', my: 'လယ်သမားတွေ ဇွန်လမှာ စပါးမျိုးစေ့ချတယ်။', th: 'ชาวนาหว่านข้าวในเดือนมิถุนายน' },
       past: { en: 'He sowed wheat last spring.', my: 'သူ ပြီးခဲ့တဲ့နွေဦးက ဂျုံစိုက်ခဲ့တယ်။', th: 'เขาหว่านข้าวสาลีเมื่อฤดูใบไม้ผลิที่แล้ว' },
-      future: { en: 'We will sow the field tomorrow.', my: 'ကျွန်တော်တို့ မနက်ဖြန် လယ်မှာ မျိုးစေ့ချမယ်။', th: 'พวกเราจะหว่านเมล็ดในนาพรุ่งนี้' },
+      future: { en: 'We will sow the field tomorrow.', my: 'ကျွန်တော်တို့ မနက်ဖြန် လယ်မှာ မျိုးစေ့ချမယ်။', th: 'พวกเราจะหว่านเมล็ดที่นาพรุ่งนี้' },
     },
   },
   {
@@ -490,16 +490,16 @@ export const verbsBatch2: Verb[] = [
   },
   {
     base: 'speed', past: 'sped', participle: 'sped', present3s: 'speeds', gerund: 'speeding',
-    my: 'အမြန်မောင်းသည်', th: 'เร่งความเร็ว', phonetic: 'speed', cefr: 'A2',
+    my: 'အမြန်မောင်းသည်', th: 'ขับเร็ว; เร่งความเร็ว', phonetic: 'speed', cefr: 'A2',
     examples: {
       present: { en: 'He speeds on the highway.', my: 'သူ အမြန်လမ်းမှာ အမြန်မောင်းတယ်။', th: 'เขาขับเร็วบนทางหลวง' },
-      past: { en: 'She sped to the hospital.', my: 'သူမ ဆေးရုံကို အမြန်မောင်းသွားခဲ့တယ်။', th: 'เธอรีบไปโรงพยาบาล' },
-      future: { en: 'Do not speed in the city.', my: 'မြို့ထဲမှာ အမြန်မမောင်းနဲ့။', th: 'อย่าขับเร็วในเมือง' },
+      past: { en: 'She sped to the hospital.', my: 'သူမ ဆေးရုံကို အမြန်မောင်းသွားခဲ့တယ်။', th: 'เธอขับรถเร็วไปโรงพยาบาล' },
+      future: { en: 'He will speed on the highway.', my: 'သူ အမြန်လမ်းမှာ အမြန်မောင်းမယ်။', th: 'เขาจะขับเร็วบนทางหลวง' },
     },
   },
   {
     base: 'spell', past: 'spelt', participle: 'spelt', present3s: 'spells', gerund: 'spelling',
-    my: 'စာလုံးပေါင်းသည်', th: 'สะกดคำ', phonetic: 'spel', cefr: 'A2',
+    my: 'စာလုံးပေါင်းသည်', th: 'สะกดคำ', phonetic: 'spel', cefr: 'A1',
     examples: {
       present: { en: 'She spells her name for me.', my: 'သူမ သူ့နာမည်ကို ကျွန်တော့်အား စာလုံးပေါင်းပြတယ်။', th: 'เธอสะกดชื่อให้ผมฟัง' },
       past: { en: 'He spelt the word wrong.', my: 'သူ စကားလုံးကို မှားပေါင်းခဲ့တယ်။', th: 'เขาสะกดคำผิด' },
@@ -508,25 +508,25 @@ export const verbsBatch2: Verb[] = [
   },
   {
     base: 'spend', past: 'spent', participle: 'spent', present3s: 'spends', gerund: 'spending',
-    my: 'သုံးစွဲသည်', th: 'ใช้จ่าย', phonetic: 'spend', cefr: 'A1',
+    my: 'သုံးစွဲသည်', th: 'ใช้จ่าย; ใช้เวลา', phonetic: 'spend', cefr: 'A1',
     examples: {
       present: { en: 'She spends little money.', my: 'သူမ ပိုက်ဆံသိပ်မသုံးဘူး။', th: 'เธอใช้เงินน้อย' },
       past: { en: 'We spent the day at the beach.', my: 'ကျွန်တော်တို့ ကမ်းခြေမှာ တစ်နေ့တာကုန်ခဲ့တယ်။', th: 'พวกเราใช้เวลาทั้งวันที่ชายหาด' },
-      future: { en: 'He will spend time with family.', my: 'သူ မိသားစုနဲ့ အချိန်ပေးမယ်။', th: 'เขาจะใช้เวลากับครอบครัว' },
+      future: { en: 'He will spend time with family.', my: 'သူ မိသားစုနဲ့ အချိန်ကုန်မယ်။', th: 'เขาจะใช้เวลากับครอบครัว' },
     },
   },
   {
     base: 'spill', past: 'spilt', participle: 'spilt', present3s: 'spills', gerund: 'spilling',
-    my: 'ဖိတ်ကျသည်', th: 'หก', phonetic: 'spil', cefr: 'A2',
+    my: 'ဖိတ်ကျသည်', th: 'หก', phonetic: 'spil', cefr: 'B1',
     examples: {
       present: { en: 'He spills milk every morning.', my: 'သူ မနက်တိုင်း နို့ဖိတ်ကျတယ်။', th: 'เขาทำนมหกทุกเช้า' },
       past: { en: 'She spilt coffee on the table.', my: 'သူမ စားပွဲပေါ် ကော်ဖီဖိတ်ကျခဲ့တယ်။', th: 'เธอทำกาแฟหกบนโต๊ะ' },
-      future: { en: 'Be careful not to spill it.', my: 'မဖိတ်ကျစေနဲ့ သတိထားပါ။', th: 'ระวังอย่าทำหก' },
+      future: { en: 'The milk will spill.', my: 'နို့ ဖိတ်ကျမယ်။', th: 'นมจะหก' },
     },
   },
   {
     base: 'spin', past: 'spun', participle: 'spun', present3s: 'spins', gerund: 'spinning',
-    my: 'လှည့်သည်', th: 'หมุน', phonetic: 'spin', cefr: 'A2',
+    my: 'လှည့်သည်', th: 'หมุน', phonetic: 'spin', cefr: 'B2',
     examples: {
       present: { en: 'The wheel spins fast.', my: 'ဘီးက မြန်မြန်လှည့်တယ်။', th: 'ล้อหมุนเร็ว' },
       past: { en: 'She spun around quickly.', my: 'သူမ မြန်မြန်လှည့်ခဲ့တယ်။', th: 'เธอหมุนตัวเร็ว' },
@@ -535,16 +535,16 @@ export const verbsBatch2: Verb[] = [
   },
   {
     base: 'spit', past: 'spat', participle: 'spat', present3s: 'spits', gerund: 'spitting',
-    my: 'တံတွေးထွေးသည်', th: 'ถ่มน้ำลาย', phonetic: 'spit', cefr: 'A2',
+    my: 'တံတွေးထွေးသည်', th: 'ถ่มน้ำลาย; คาย', phonetic: 'spit', cefr: 'B2',
     examples: {
       present: { en: 'The baby spits out the food.', my: 'ကလေးက အစားအစာကို ထွေးထုတ်တယ်။', th: 'ทารกคายอาหารออก' },
       past: { en: 'He spat on the ground.', my: 'သူ မြေပေါ်မှာ တံတွေးထွေးခဲ့တယ်။', th: 'เขาถ่มน้ำลายลงพื้น' },
-      future: { en: 'Do not spit here.', my: 'ဒီမှာ တံတွေးမထွေးနဲ့။', th: 'อย่าถ่มน้ำลายตรงนี้' },
+      future: { en: 'He will spit on the floor.', my: 'သူ ကြမ်းပြင်ပေါ် တံတွေးထွေးမယ်။', th: 'เขาจะถ่มน้ำลายลงพื้น' },
     },
   },
   {
     base: 'split', past: 'split', participle: 'split', present3s: 'splits', gerund: 'splitting',
-    my: 'ခွဲသည်', th: 'แยก', phonetic: 'split', cefr: 'A2',
+    my: 'ခွဲသည်', th: 'แบ่ง; แยก', phonetic: 'split', cefr: 'B1',
     examples: {
       present: { en: 'She splits the cake in two.', my: 'သူမ ကိတ်မုန့်ကို နှစ်ပိုင်းခွဲတယ်။', th: 'เธอแบ่งเค้กเป็นสองส่วน' },
       past: { en: 'We split the bill.', my: 'ကျွန်တော်တို့ ဘေလ်ကို ခွဲပေးခဲ့တယ်။', th: 'พวกเราแบ่งบิลกัน' },
@@ -553,16 +553,16 @@ export const verbsBatch2: Verb[] = [
   },
   {
     base: 'spoil', past: 'spoilt', participle: 'spoilt', present3s: 'spoils', gerund: 'spoiling',
-    my: 'ပျက်စီးသည်၊ ဆိုးသွမ်းစေသည်', th: 'ทำให้เสีย', phonetic: 'spoil', cefr: 'A2',
+    my: 'ပျက်စီးသည်၊ ဆိုးသွမ်းစေသည်', th: 'เสีย; ทำให้เสีย', phonetic: 'spoil', cefr: 'B1',
     examples: {
       present: { en: 'Milk spoils quickly in heat.', my: 'နို့က အပူမှာ မြန်မြန်ပျက်စီးတယ်။', th: 'นมเสียง่ายในอากาศร้อน' },
       past: { en: 'Rain spoilt our picnic.', my: 'မိုးက ကျွန်တော်တို့ရဲ့အပန်းဖြေခရီးကို ပျက်စီးစေခဲ့တယ်။', th: 'ฝนทำให้ปิกนิกของพวกเราเสีย' },
-      future: { en: 'Do not spoil the surprise.', my: 'အံ့အားသင့်မှုကို မပျက်စီးစေနဲ့။', th: 'อย่าทำลายความประหลาดใจ' },
+      future: { en: 'He will spoil the surprise.', my: 'သူ အံ့အားသင့်မှုကို ပျက်စီးစေမယ်။', th: 'เขาจะทำให้เซอร์ไพรส์เสีย' },
     },
   },
   {
     base: 'spread', past: 'spread', participle: 'spread', present3s: 'spreads', gerund: 'spreading',
-    my: 'ဖြန့်သည်', th: 'แพร่กระจาย', phonetic: 'spred', cefr: 'A2',
+    my: 'ဖြန့်သည်', th: 'แพร่กระจาย; ทา(เนย, ครีม)', phonetic: 'spred', cefr: 'B1',
     examples: {
       present: { en: 'News spreads fast.', my: 'သတင်းက မြန်မြန်ပျံ့နှံ့တယ်။', th: 'ข่าวแพร่เร็ว' },
       past: { en: 'She spread butter on bread.', my: 'သူမ ပေါင်မုန့်ပေါ် ထောပတ်သုတ်ခဲ့တယ်။', th: 'เธอทาเนยบนขนมปัง' },
@@ -584,7 +584,7 @@ export const verbsBatch2: Verb[] = [
     examples: {
       present: { en: 'He stands by the door.', my: 'သူ တံခါးနားမှာ ရပ်တယ်။', th: 'เขายืนข้างประตู' },
       past: { en: 'We stood in line for an hour.', my: 'ကျွန်တော်တို့ တစ်နာရီတန်းစီရပ်ခဲ့တယ်။', th: 'พวกเรายืนรอคิวหนึ่งชั่วโมง' },
-      future: { en: 'Please stand up.', my: 'ထရပ်ပေးပါ။', th: 'กรุณายืนขึ้น' },
+      future: { en: 'He will stand by the door.', my: 'သူ တံခါးနားမှာ ရပ်နေမယ်။', th: 'เขาจะยืนข้างประตู' },
     },
   },
   {
@@ -607,11 +607,11 @@ export const verbsBatch2: Verb[] = [
   },
   {
     base: 'sting', past: 'stung', participle: 'stung', present3s: 'stings', gerund: 'stinging',
-    my: 'ကိုက်ခဲသည်', th: 'ต่อย(แมลง)', phonetic: 'sting', cefr: 'A2',
+    my: 'ကိုက်သည်', th: 'ต่อย(แมลง)', phonetic: 'sting', cefr: 'A2',
     examples: {
       present: { en: 'Bees sting when scared.', my: 'ပျားတွေ ကြောက်ရင် ကိုက်တယ်။', th: 'ผึ้งต่อยเมื่อตกใจ' },
       past: { en: 'A wasp stung my arm.', my: 'နဖားကိုက်က ကျွန်တော့်လက်မောင်းကို ကိုက်ခဲ့တယ်။', th: 'ตัวต่อต่อยแขนผม' },
-      future: { en: 'The jellyfish will sting you.', my: 'ရေခူပင်က မင်းကို ကိုက်မယ်။', th: 'แมงกะพรุนจะต่อยคุณ' },
+      future: { en: 'The jellyfish will sting you.', my: 'ရေခူက မင်းကို ကိုက်မယ်။', th: 'แมงกะพรุนจะต่อยคุณ' },
     },
   },
   {
@@ -625,11 +625,11 @@ export const verbsBatch2: Verb[] = [
   },
   {
     base: 'strike', past: 'struck', participle: 'struck', present3s: 'strikes', gerund: 'striking',
-    my: 'ရိုက်သည်၊ တိုက်ခိုက်သည်', th: 'ตี; นัดหยุดงาน', phonetic: 'stryke', cefr: 'A2',
+    my: 'ရိုက်သည်၊ တိုက်ခိုက်သည်', th: 'ตี; ฟ้าผ่า; นัดหยุดงาน', phonetic: 'stryke', cefr: 'A2',
     examples: {
-      present: { en: 'The clock strikes twelve.', my: 'နာရီက ဆယ့်နှစ်ချက်တီးတယ်။', th: 'นาฬิกาตีสิบสอง' },
+      present: { en: 'She strikes the ball hard.', my: 'သူမ ဘောလုံးကို အပြင်းရိုက်တယ်။', th: 'เธอตีลูกบอลแรงๆ' },
       past: { en: 'Lightning struck the tree.', my: 'မိုးကြိုးက သစ်ပင်ကို ပစ်ခဲ့တယ်။', th: 'ฟ้าผ่าต้นไม้' },
-      future: { en: 'Workers will strike on Monday.', my: 'အလုပ်သမားတွေ တနင်္လာနေ့မှာ သပိတ်မှောက်မယ်။', th: 'คนงานจะนัดหยุดงานวันจันทร์' },
+      future: { en: 'She will strike the target.', my: 'သူမ ပစ်မှတ်ကို ရိုက်မယ်။', th: 'เธอจะตีให้โดนเป้า' },
     },
   },
   {
@@ -643,7 +643,7 @@ export const verbsBatch2: Verb[] = [
   },
   {
     base: 'strive', past: 'strove', participle: 'striven', present3s: 'strives', gerund: 'striving',
-    my: 'ကြိုးစားအားထုတ်သည်', th: 'พยายาม', phonetic: 'stryve', cefr: 'A2',
+    my: 'ကြိုးစားအားထုတ်သည်', th: 'พยายาม', phonetic: 'stryve', cefr: 'B2',
     examples: {
       present: { en: 'She strives for success.', my: 'သူမ အောင်မြင်မှုအတွက် ကြိုးစားတယ်။', th: 'เธอมุ่งมั่นเพื่อความสำเร็จ' },
       past: { en: 'He strove to learn English.', my: 'သူ အင်္ဂလိပ်စာသင်ဖို့ ကြိုးစားခဲ့တယ်။', th: 'เขาพยายามเรียนภาษาอังกฤษ' },
@@ -652,7 +652,7 @@ export const verbsBatch2: Verb[] = [
   },
   {
     base: 'swear', past: 'swore', participle: 'sworn', present3s: 'swears', gerund: 'swearing',
-    my: 'ကျိန်ဆိုသည်', th: 'สาบาน; สบถ', phonetic: 'swair', cefr: 'A2',
+    my: 'ကျိန်ဆိုသည်၊ ဆဲဆိုသည်', th: 'สาบาน; สบถ', phonetic: 'swair', cefr: 'A2',
     examples: {
       present: { en: 'He swears to tell the truth.', my: 'သူ အမှန်ပြောမယ်လို့ ကျိန်ဆိုတယ်။', th: 'เขาสาบานว่าจะพูดความจริง' },
       past: { en: 'She swore she was innocent.', my: 'သူမ သူအပြစ်ကင်းတယ်လို့ ကျိန်ဆိုခဲ့တယ်။', th: 'เธอสาบานว่าบริสุทธิ์' },
@@ -688,16 +688,16 @@ export const verbsBatch2: Verb[] = [
   },
   {
     base: 'swing', past: 'swung', participle: 'swung', present3s: 'swings', gerund: 'swinging',
-    my: 'လွှဲသည်၊ ယိမ်းသည်', th: 'แกว่ง', phonetic: 'swing', cefr: 'A2',
+    my: 'လွှဲသည်၊ ယိမ်းသည်', th: 'แกว่ง; เหวี่ยง', phonetic: 'swing', cefr: 'A2',
     examples: {
-      present: { en: 'The child swings happily.', my: 'ကလေးက ပျော်ပျော်လွှဲစီးတယ်။', th: 'เด็กแกว่งอย่างมีความสุข' },
-      past: { en: 'He swung the door open.', my: 'သူ တံခါးကို လွှဲဖွင့်ခဲ့တယ်။', th: 'เขาผลักประตูเปิด' },
+      present: { en: 'The child swings happily.', my: 'ကလေးက ပျော်ပျော်လွှဲစီးတယ်။', th: 'เด็กแกว่งชิงช้าอย่างมีความสุข' },
+      past: { en: 'He swung the door open.', my: 'သူ တံခါးကို လွှဲဖွင့်ခဲ့တယ်။', th: 'เขาเหวี่ยงประตูเปิด' },
       future: { en: 'She will swing the bat.', my: 'သူမ ဘက်တံကို လွှဲမယ်။', th: 'เธอจะเหวี่ยงไม้เบสบอล' },
     },
   },
   {
     base: 'take', past: 'took', participle: 'taken', present3s: 'takes', gerund: 'taking',
-    my: 'ယူသည်', th: 'เอา; นำไป', phonetic: 'tayk', cefr: 'A1',
+    my: 'ယူသည်', th: 'เอา; นำไป; นั่ง(รถ)', phonetic: 'tayk', cefr: 'A1',
     examples: {
       present: { en: 'I take the bus to work.', my: 'ကျွန်တော် အလုပ်ကို ဘတ်စ်ကားနဲ့သွားတယ်။', th: 'ผมนั่งรถเมล์ไปทำงาน' },
       past: { en: 'He took my pen.', my: 'သူ ကျွန်တော့်ဘောပင်ကို ယူသွားတယ်။', th: 'เขาเอาปากกาของผมไป' },
@@ -718,8 +718,8 @@ export const verbsBatch2: Verb[] = [
     my: 'စုတ်ပြဲသည်', th: 'ฉีก', phonetic: 'tair', cefr: 'A2',
     examples: {
       present: { en: 'He tears the paper.', my: 'သူ စက္ကူကို စုတ်တယ်။', th: 'เขาฉีกกระดาษ' },
-      past: { en: 'She tore her dress.', my: 'သူမ သူ့ဂါဝန်ကို စုတ်ပြဲစေခဲ့တယ်။', th: 'เธอฉีกชุด' },
-      future: { en: 'Do not tear the letter.', my: 'စာကို မစုတ်ပါနဲ့။', th: 'อย่าฉีกจดหมาย' },
+      past: { en: 'She tore her dress.', my: 'သူမ သူ့ဂါဝန်ကို စုတ်ပြဲခဲ့တယ်။', th: 'เธอฉีกชุด' },
+      future: { en: 'He will tear the letter.', my: 'သူ စာကို စုတ်ပြဲမယ်။', th: 'เขาจะฉีกจดหมาย' },
     },
   },
   {
@@ -742,7 +742,7 @@ export const verbsBatch2: Verb[] = [
   },
   {
     base: 'throw', past: 'threw', participle: 'thrown', present3s: 'throws', gerund: 'throwing',
-    my: 'ပစ်သည်', th: 'ขว้าง', phonetic: 'throh', cefr: 'A1',
+    my: 'ပစ်သည်', th: 'ขว้าง; โยน; ทิ้ง', phonetic: 'throh', cefr: 'A1',
     examples: {
       present: { en: 'He throws the ball far.', my: 'သူ ဘောလုံးကို ဝေးဝေးပစ်တယ်။', th: 'เขาขว้างลูกบอลไกล' },
       past: { en: 'She threw the old shoes away.', my: 'သူမ ဖိနပ်ဟောင်းတွေကို ပစ်ထုတ်ခဲ့တယ်။', th: 'เธอทิ้งรองเท้าเก่า' },
@@ -751,11 +751,11 @@ export const verbsBatch2: Verb[] = [
   },
   {
     base: 'tread', past: 'trod', participle: 'trodden', present3s: 'treads', gerund: 'treading',
-    my: 'နင်းသည်', th: 'เหยียบ; ย่ำ', phonetic: 'tred', cefr: 'A2',
+    my: 'နင်းသည်', th: 'เหยียบ; ย่ำ', phonetic: 'tred', cefr: 'B2',
     examples: {
-      present: { en: 'He treads carefully on ice.', my: 'သူ ရေခဲပေါ်မှာ သတိထားနင်းတယ်။', th: 'เขาเดินระวังบนน้ำแข็ง' },
+      present: { en: 'He treads carefully on ice.', my: 'သူ ရေခဲပေါ်မှာ သတိထားနင်းတယ်။', th: 'เขาเดินเหยียบน้ำแข็งอย่างระมัดระวัง' },
       past: { en: 'She trod on my foot.', my: 'သူမ ကျွန်တော့်ခြေထောက်ကို နင်းမိခဲ့တယ်။', th: 'เธอเหยียบเท้าผม' },
-      future: { en: 'Do not tread on the grass.', my: 'မြက်ခင်းကို မနင်းနဲ့။', th: 'อย่าเหยียบหญ้า' },
+      future: { en: 'We will tread carefully on the grass.', my: 'ကျွန်တော်တို့ မြက်ခင်းပေါ်မှာ သတိထားနင်းမယ်။', th: 'พวกเราจะเดินเหยียบหญ้าอย่างระมัดระวัง' },
     },
   },
   {
@@ -769,20 +769,20 @@ export const verbsBatch2: Verb[] = [
   },
   {
     base: 'undertake', past: 'undertook', participle: 'undertaken', present3s: 'undertakes', gerund: 'undertaking',
-    my: 'တာဝန်ယူလုပ်ဆောင်သည်', th: 'รับทำ', phonetic: 'un-der-TAYK', cefr: 'A2',
+    my: 'တာဝန်ယူလုပ်ဆောင်သည်', th: 'รับทำ', phonetic: 'un-der-TAYK', cefr: 'B2',
     examples: {
-      present: { en: 'She undertakes big projects.', my: 'သူမ စီမံကိန်းကြီးတွေကို တာဝန်ယူတယ်။', th: 'เธอรับโครงการใหญ่' },
+      present: { en: 'She undertakes big projects.', my: 'သူမ စီမံကိန်းကြီးတွေကို တာဝန်ယူတယ်။', th: 'เธอรับทำโครงการใหญ่' },
       past: { en: 'He undertook the research.', my: 'သူ သုတေသနကို တာဝန်ယူလုပ်ခဲ့တယ်။', th: 'เขารับทำงานวิจัย' },
       future: { en: 'We will undertake the task.', my: 'ကျွန်တော်တို့ ဒီတာဝန်ကို ယူမယ်။', th: 'พวกเราจะรับงานนี้' },
     },
   },
   {
     base: 'uphold', past: 'upheld', participle: 'upheld', present3s: 'upholds', gerund: 'upholding',
-    my: 'ထိန်းသိမ်းစောင့်ရှောက်သည်', th: 'ค้ำจุน; สนับสนุน', phonetic: 'up-HOHLD', cefr: 'A2',
+    my: 'ထိန်းသိမ်းစောင့်ရှောက်သည်၊ (ဆုံးဖြတ်ချက်)အတည်ပြုသည်', th: 'รักษา; ยืนยัน(คำตัดสิน)', phonetic: 'up-HOHLD', cefr: 'C1',
     examples: {
-      present: { en: 'He upholds the law.', my: 'သူ ဥပဒေကို ထိန်းသိမ်းတယ်။', th: 'เขาค้ำจุนกฎหมาย' },
+      present: { en: 'He upholds the law.', my: 'သူ ဥပဒေကို ထိန်းသိမ်းတယ်။', th: 'เขารักษากฎหมาย' },
       past: { en: 'The court upheld the decision.', my: 'တရားရုံးက ဆုံးဖြတ်ချက်ကို အတည်ပြုခဲ့တယ်။', th: 'ศาลยืนยันคำตัดสิน' },
-      future: { en: 'We will uphold our values.', my: 'ကျွန်တော်တို့ ကျွန်တော်တို့တန်ဖိုးတွေကို ထိန်းသိမ်းမယ်။', th: 'พวกเราจะรักษาค่านิยมของเรา' },
+      future: { en: 'We will uphold our values.', my: 'ကျွန်တော်တို့ တန်ဖိုးတွေကို ထိန်းသိမ်းမယ်။', th: 'พวกเราจะรักษาค่านิยมของเรา' },
     },
   },
   {
@@ -791,7 +791,7 @@ export const verbsBatch2: Verb[] = [
     examples: {
       present: { en: 'Bad news upsets her.', my: 'သတင်းဆိုးက သူမကို စိတ်ထိခိုက်စေတယ်။', th: 'ข่าวร้ายทำให้เธอเสียใจ' },
       past: { en: 'He upset his mother.', my: 'သူ သူ့အမေကို စိတ်ထိခိုက်စေခဲ့တယ်။', th: 'เขาทำให้แม่เสียใจ' },
-      future: { en: 'Do not upset the baby.', my: 'ကလေးကို စိတ်မထိခိုက်စေနဲ့။', th: 'อย่าทำให้ทารกร้อง' },
+      future: { en: 'She will upset the baby.', my: 'သူမ ကလေးကို စိတ်ထိခိုက်စေမယ်။', th: 'เธอจะทำให้ทารกงอแง' },
     },
   },
   {
@@ -814,7 +814,7 @@ export const verbsBatch2: Verb[] = [
   },
   {
     base: 'weave', past: 'wove', participle: 'woven', present3s: 'weaves', gerund: 'weaving',
-    my: 'ရက်ကန်းရက်သည်', th: 'ทอ', phonetic: 'weev', cefr: 'A2',
+    my: 'ရက်ကန်းရက်သည်', th: 'ทอ; สาน', phonetic: 'weev', cefr: 'B2',
     examples: {
       present: { en: 'She weaves beautiful cloth.', my: 'သူမ လှပတဲ့အထည်ရက်တယ်။', th: 'เธอทอผ้าสวย' },
       past: { en: 'They wove baskets by hand.', my: 'သူတို့ ခြင်းတွေကို လက်နဲ့ရက်ခဲ့တယ်။', th: 'พวกเขาสานตะกร้าด้วยมือ' },
@@ -823,7 +823,7 @@ export const verbsBatch2: Verb[] = [
   },
   {
     base: 'wed', past: 'wed', participle: 'wed', present3s: 'weds', gerund: 'wedding',
-    my: 'လက်ထပ်သည်', th: 'แต่งงาน', phonetic: 'wed', cefr: 'A2',
+    my: 'လက်ထပ်သည်', th: 'แต่งงาน', phonetic: 'wed', cefr: 'C2',
     examples: {
       present: { en: 'They wed in spring.', my: 'သူတို့ နွေဦးမှာ လက်ထပ်တယ်။', th: 'พวกเขาแต่งงานในฤดูใบไม้ผลิ' },
       past: { en: 'She wed him last year.', my: 'သူမ ပြီးခဲ့တဲ့နှစ်က သူနဲ့လက်ထပ်ခဲ့တယ်။', th: 'เธอแต่งงานกับเขาเมื่อปีที่แล้ว' },
@@ -832,7 +832,7 @@ export const verbsBatch2: Verb[] = [
   },
   {
     base: 'weep', past: 'wept', participle: 'wept', present3s: 'weeps', gerund: 'weeping',
-    my: 'ငိုကြွေးသည်', th: 'ร้องไห้', phonetic: 'weep', cefr: 'A2',
+    my: 'ငိုကြွေးသည်', th: 'ร้องไห้', phonetic: 'weep', cefr: 'B2',
     examples: {
       present: { en: 'The child weeps loudly.', my: 'ကလေးက ကျယ်ကျယ်ငိုတယ်။', th: 'เด็กร้องไห้เสียงดัง' },
       past: { en: 'She wept at the news.', my: 'သူမ သတင်းကြားပြီး ငိုခဲ့တယ်။', th: 'เธอร้องไห้เมื่อได้ข่าว' },
@@ -850,7 +850,7 @@ export const verbsBatch2: Verb[] = [
   },
   {
     base: 'wind', past: 'wound', participle: 'wound', present3s: 'winds', gerund: 'winding',
-    my: 'ရစ်ပတ်သည်', th: 'ม้วน; ไขลาน', phonetic: 'wynd', cefr: 'A2',
+    my: 'ရစ်ပတ်သည်', th: 'ม้วน; ไขลาน', phonetic: 'wynd', cefr: 'B2',
     examples: {
       present: { en: 'She winds the clock.', my: 'သူမ နာရီကို ရစ်တယ်။', th: 'เธอไขลานนาฬิกา' },
       past: { en: 'He wound the rope tightly.', my: 'သူ ကြိုးကို တင်းတင်းရစ်ခဲ့တယ်။', th: 'เขาม้วนเชือกแน่น' },
@@ -859,7 +859,7 @@ export const verbsBatch2: Verb[] = [
   },
   {
     base: 'withdraw', past: 'withdrew', participle: 'withdrawn', present3s: 'withdraws', gerund: 'withdrawing',
-    my: 'ထုတ်ယူသည်၊ ရုပ်သိမ်းသည်', th: 'ถอน', phonetic: 'with-DRAW', cefr: 'A2',
+    my: 'ထုတ်ယူသည်၊ ရုပ်သိမ်းသည်၊ နှုတ်ထွက်သည်', th: 'ถอน', phonetic: 'with-DRAW', cefr: 'B2',
     examples: {
       present: { en: 'She withdraws money weekly.', my: 'သူမ အပတ်တိုင်း ပိုက်ဆံထုတ်တယ်။', th: 'เธอถอนเงินทุกสัปดาห์' },
       past: { en: 'He withdrew from the race.', my: 'သူ ပြိုင်ပွဲကနေ နှုတ်ထွက်ခဲ့တယ်။', th: 'เขาถอนตัวจากการแข่งขัน' },
@@ -868,7 +868,7 @@ export const verbsBatch2: Verb[] = [
   },
   {
     base: 'withhold', past: 'withheld', participle: 'withheld', present3s: 'withholds', gerund: 'withholding',
-    my: 'ထိန်းသိမ်းထားသည်၊ မပေးဘဲနေသည်', th: 'ระงับไว้', phonetic: 'with-HOHLD', cefr: 'A2',
+    my: 'ထိန်းသိမ်းထားသည်၊ မပေးဘဲနေသည်၊ ဖုံးကွယ်သည်', th: 'ปิดบัง; ระงับไว้', phonetic: 'with-HOHLD', cefr: 'C1',
     examples: {
       present: { en: 'He withholds the truth.', my: 'သူ အမှန်ကို ဖုံးကွယ်ထားတယ်။', th: 'เขาปิดบังความจริง' },
       past: { en: 'She withheld her approval.', my: 'သူမ သူ့သဘောတူညီချက်ကို မပေးခဲ့ဘူး။', th: 'เธอระงับการอนุมัติ' },
@@ -877,11 +877,11 @@ export const verbsBatch2: Verb[] = [
   },
   {
     base: 'withstand', past: 'withstood', participle: 'withstood', present3s: 'withstands', gerund: 'withstanding',
-    my: 'ခံနိုင်ရည်ရှိသည်', th: 'ต้านทาน', phonetic: 'with-STAND', cefr: 'A2',
+    my: 'ခံနိုင်ရည်ရှိသည်', th: 'ต้านทาน', phonetic: 'with-STAND', cefr: 'B2',
     examples: {
       present: { en: 'The wall withstands storms.', my: 'နံရံက မုန်တိုင်းတွေကို ခံနိုင်ရည်ရှိတယ်။', th: 'กำแพงต้านทานพายุ' },
       past: { en: 'She withstood the pressure.', my: 'သူမ ဖိအားကို ခံနိုင်ခဲ့တယ်။', th: 'เธอต้านทานแรงกดดันได้' },
-      future: { en: 'It will withstand the test.', my: 'အဲဒါ စမ်းသပ်မှုကို ခံနိုင်မယ်။', th: 'มันจะผ่านการทดสอบ' },
+      future: { en: 'It will withstand the test.', my: 'အဲဒါ စမ်းသပ်မှုကို ခံနိုင်မယ်။', th: 'มันจะทนต่อการทดสอบได้' },
     },
   },
   {

@@ -25,7 +25,7 @@ export const homeWords: Word[] = [
   { en: 'cup', my: 'ခွက်', th: 'ถ้วย', topic: 'home', level: 1, phonetic: 'kap', example: 'My cup is empty.', exampleMy: 'ကျွန်တော့်ခွက်က ဗလာ ဖြစ်ပါတယ်။', exampleTh: 'ถ้วยของฉันว่างเปล่า' },
   { en: 'spoon', my: 'ဇွန်း', th: 'ช้อน', topic: 'home', level: 1, phonetic: 'spoon', example: 'Use a clean spoon.', exampleMy: 'သန့်ရှင်းတဲ့ ဇွန်း သုံးပါ။', exampleTh: 'ใช้ช้อนสะอาด' },
   { en: 'fork', my: 'ခက်ရင်း', th: 'ส้อม', topic: 'home', level: 2, phonetic: 'fork', example: 'He eats with a fork.', exampleMy: 'သူ ခက်ရင်းနဲ့ စားပါတယ်။', exampleTh: 'เขากินด้วยส้อม' },
-  { en: 'knife', my: 'ဓား', th: 'มีด', topic: 'home', level: 1, phonetic: 'naif', example: 'The knife is sharp.', exampleMy: 'ဓားက ထက်နေပါတယ်။', exampleTh: 'มีดคม' },
+  { en: 'knife', my: 'ဓား', th: 'มีด', topic: 'home', level: 1, phonetic: 'naif', example: 'The knife is sharp.', exampleMy: 'ဓားက ထက်နေပါတယ်။', exampleTh: 'มีดเล่มนี้คม' },
   { en: 'curtain', my: 'လိုက်ကာ', th: 'ม่าน', topic: 'home', level: 2, phonetic: 'kur-tun', example: 'Close the curtains at night.', exampleMy: 'ညဘက် လိုက်ကာတွေ ပိတ်ပါ။', exampleTh: 'ปิดม่านตอนกลางคืน' },
   { en: 'carpet', my: 'ကော်ဇော', th: 'พรม', topic: 'home', level: 2, phonetic: 'kar-pit', example: 'The carpet is red.', exampleMy: 'ကော်ဇောက အနီရောင် ဖြစ်ပါတယ်။', exampleTh: 'พรมสีแดง' },
   { en: 'balcony', my: 'လသာဆောင်', th: 'ระเบียง', topic: 'home', level: 2, phonetic: 'bal-ko-ni', example: 'We sit on the balcony.', exampleMy: 'လသာဆောင်ပေါ်မှာ ထိုင်ပါတယ်။', exampleTh: 'เรานั่งที่ระเบียง' },

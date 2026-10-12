@@ -18,7 +18,7 @@ export const phrasesA: Phrase[] = [
   { en: 'This photo is old.', my: 'ဒီဓာတ်ပုံက ဟောင်းတယ်။', th: 'รูปนี้เก่าแล้ว', topic: 'family' },
   { en: 'My son is smart.', my: 'ကျွန်တော့်သားက ထက်မြက်တယ်။', th: 'ลูกชายของฉันฉลาด', topic: 'family' },
   { en: 'Come home early.', my: 'အိမ်ကို စောစောပြန်လာပါ။', th: 'กลับบ้านเร็วๆ นะ', topic: 'family' },
-  { en: 'I am happy with you all.', my: 'မင်းတို့အားလုံးနဲ့ ပျော်ပါတယ်။', th: 'ฉันมีความสุขที่ได้อยู่กับพวกเธอทุกคน', topic: 'family' },
+  { en: 'I am happy with you all.', my: 'မင်းတို့အားလုံးနဲ့ ပျော်တယ်။', th: 'ฉันมีความสุขที่ได้อยู่กับพวกเธอทุกคน', topic: 'family' },
   // friends — သူငယ်ချင်း
   { en: 'Meet my best friend.', my: 'ကျွန်တော့်အရင်းနှီးဆုံးသူငယ်ချင်းနဲ့ မိတ်ဆက်ပေးမယ်။', th: 'นี่คือเพื่อนสนิทของฉัน', topic: 'friends' },
   { en: 'Can we meet tomorrow?', my: 'မနက်ဖြန် တွေ့နိုင်မလား။', th: 'พรุ่งนี้เจอกันได้ไหม', topic: 'friends' },
@@ -79,7 +79,7 @@ export const phrasesA: Phrase[] = [
   { en: 'Is the hotel far?', my: 'ဟိုတယ်က ဝေးလား။', th: 'โรงแรมไกลไหมคะ', topic: 'travel' },
   { en: 'What a nice city!', my: 'မြို့ကောင်း လိုက်တာ။', th: 'เมืองนี้น่าอยู่จัง!', topic: 'travel' },
   { en: 'The bus is coming.', my: 'ဘတ်စ်ကား လာနေပြီ။', th: 'รถเมล์มาแล้ว', topic: 'travel' },
-  { en: 'We arrived safely.', my: 'ငါတို့ လုံခြုံစွာ ရောက်ရှိပြီ။', th: 'เรามาถึงอย่างปลอดภัย', topic: 'travel', cefr: 'A2' },
+  { en: 'We arrived safely.', my: 'ငါတို့ ဘေးကင်းကင်း ရောက်ပြီ။', th: 'เรามาถึงอย่างปลอดภัย', topic: 'travel', cefr: 'A2' },
   { en: 'Grab a taxi.', my: 'တက္ကစီ ငှားပါ။', th: 'เรียกแท็กซี่สิ', topic: 'travel' },
   { en: 'The map is helpful.', my: 'မြေပုံက အသုံးဝင်တယ်။', th: 'แผนที่มีประโยชน์มาก', topic: 'travel', cefr: 'A2' },
   { en: 'I will stay two days.', my: 'နှစ်ရက် နေမယ်။', th: 'ฉันจะพักสองวัน', topic: 'travel' },

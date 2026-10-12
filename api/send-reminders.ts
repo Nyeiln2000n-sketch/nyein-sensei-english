@@ -32,7 +32,7 @@ const { Client } = require('pg') as typeof import('pg');
 const webpush = require('web-push') as typeof import('web-push');
 
 const VAPID_PUBLIC_KEY =
-  'BJ7yi_jEO_bdMs8qUxf1f16pmeri2oyUY6OjG9m4HsYFug1TASaRI_qdkJQu4LJbp8luuX3H8dL5kTGNf4FvrwU';
+  'BIHkAIwQyGiTWEXOqoshFAzB2vIacPkVOb0ZRWFzYyKT9ZSs2R1regLMs1copZdI_K_DepF1mbJi4O6ebBzQRwU';
 const VAPID_SUBJECT = 'https://nyein-sensei-english.vercel.app/';
 const TITLE = 'Nyein Sensei English 🐱';
 
@@ -55,15 +55,29 @@ create table if not exists public.push_subscriptions (
   auth text not null,
   timezone text not null default 'Asia/Yangon',
   reminder_time text not null default '20:00',
-  reminders_enabled boolean not null default true,
+  enabled boolean not null default true,
   last_sent_at timestamptz,
   created_at timestamptz not null default now()
 );
+-- Migración defensiva: si la tabla ya existía con el nombre de columna
+-- antiguo (reminders_enabled), renombrarla al canónico 'enabled' que usan
+-- la app (src/lib/push.ts) y la migración 20261001_push_subscriptions.sql.
+do $$
+begin
+  if exists (
+    select 1 from information_schema.columns
+    where table_schema = 'public' and table_name = 'push_subscriptions'
+      and column_name = 'reminders_enabled'
+  ) then
+    alter table public.push_subscriptions
+      rename column reminders_enabled to enabled;
+  end if;
+end $$;
 create index if not exists push_subscriptions_user_id_idx
   on public.push_subscriptions (user_id);
 create index if not exists push_subscriptions_enabled_idx
-  on public.push_subscriptions (reminders_enabled)
-  where reminders_enabled;
+  on public.push_subscriptions (enabled)
+  where enabled;
 alter table public.push_subscriptions enable row level security;
 drop policy if exists push_subscriptions_owner_rw on public.push_subscriptions;
 create policy push_subscriptions_owner_rw
@@ -243,7 +257,7 @@ export default async function handler(req: any, res: any): Promise<void> {
     const { rows } = await client.query(
       `select id, endpoint, p256dh, auth, timezone, reminder_time, last_sent_at
          from public.push_subscriptions
-        where reminders_enabled`,
+        where enabled`,
     );
 
     let due = 0;

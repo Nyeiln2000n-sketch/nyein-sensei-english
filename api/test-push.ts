@@ -18,7 +18,7 @@ function pgConfig(url: string): Record<string, unknown> {
     host: u.hostname,
     port: Number(u.port) || 5432,
     user: decodeURIComponent(u.username),
-password: <redacted>
+password: decodeURIComponent(u.password),
     database: u.pathname.replace(/^\//, '') || 'postgres',
     ssl: { rejectUnauthorized: false },
   };
