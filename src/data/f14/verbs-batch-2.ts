@@ -116,7 +116,7 @@ export const verbsBatch2: Verb[] = [
     examples: {
       present: { en: 'We prepay our phone plan.', my: 'ကျွန်တော်တို့ ဖုန်းပက်ကတ်ကို ကြိုတင်ပေးချေတယ်။', th: 'พวกเราจ่ายค่าแพ็กเกจโทรศัพท์ล่วงหน้า' },
       past: { en: 'She prepaid the hotel room.', my: 'သူမ ဟိုတယ်အခန်းကို ကြိုတင်ပေးချေခဲ့တယ်။', th: 'เธอจ่ายค่าห้องพักล่วงหน้า' },
-      future: { en: 'You will be able to prepay online.', my: 'မင်း အွန်လိုင်းကနေ ကြိုတင်ပေးချေနိုင်မယ်။', th: 'คุณจ่ายล่วงหน้าทางออนไลน์ได้' },
+      future: { en: 'You will be able to prepay online.', my: 'မင်း အွန်လိုင်းကနေ ကြိုတင်ပေးချေနိုင်မယ်။', th: 'คุณจะจ่ายล่วงหน้าทางออนไลน์ได้' },
     },
   },
   {
@@ -159,7 +159,7 @@ export const verbsBatch2: Verb[] = [
     base: 'relay', past: 'relayed', participle: 'relayed', present3s: 'relays', gerund: 'relaying',
     my: 'တစ်ဆင့်ပေးပို့သည်', th: 'ส่งต่อ', phonetic: 'ree-LAY', cefr: 'B2',
     examples: {
-      present: { en: 'He relays the news to us.', my: 'သူ သတင်းကို ကျွန်တော်တို့ဆီ တစ်ဆင့်ပေးတယ်။', th: 'เขาส่งข่าวให้พวกเรา' },
+      present: { en: 'He relays the news to us.', my: 'သူ သတင်းကို ကျွန်တော်တို့ဆီ တစ်ဆင့်ပေးတယ်။', th: 'เขาส่งต่อข่าวให้พวกเรา' },
       past: { en: 'She relayed my message.', my: 'သူမ ကျွန်တော့်မက်ဆေ့ချ်ကို တစ်ဆင့်ပေးခဲ့တယ်။', th: 'เธอส่งต่อข้อความของผม' },
       future: { en: 'I will relay your request.', my: 'ကျွန်တော် မင်းရဲ့တောင်းဆိုချက်ကို တစ်ဆင့်ပေးမယ်။', th: 'ผมจะส่งคำขอของคุณต่อ' },
     },
@@ -224,7 +224,7 @@ export const verbsBatch2: Verb[] = [
     examples: {
       present: { en: 'He retells old stories well.', my: 'သူ ပုံပြင်ဟောင်းတွေကို ကောင်းကောင်းပြန်ပြောတယ်။', th: 'เขาเล่านิทานเก่าได้ดี' },
       past: { en: 'She retold the story to us.', my: 'သူမ ပုံပြင်ကို ကျွန်တော်တို့အား ပြန်ပြောပြခဲ့တယ်။', th: 'เธอเล่านิทานให้พวกเราฟัง' },
-      future: { en: 'I will retell it tomorrow.', my: 'ကျွန်တော် မနက်ဖြန် ပြန်ပြောပြမယ်။', th: 'ผมจะเล่าให้ฟังพรุ่งนี้' },
+      future: { en: 'I will retell it tomorrow.', my: 'ကျွန်တော် မနက်ဖြန် ပြန်ပြောပြမယ်။', th: 'ผมจะเล่าให้ฟังใหม่พรุ่งนี้' },
     },
   },
   {
@@ -250,7 +250,7 @@ export const verbsBatch2: Verb[] = [
     my: 'ဖယ်ရှားရှင်းလင်းသည်', th: 'กำจัด', phonetic: 'rid', cefr: 'B2',
     examples: {
       present: { en: 'He rids the garden of weeds.', my: 'သူ ဥယျာဉ်က ပေါင်းပင်တွေကို ဖယ်ရှားတယ်။', th: 'เขากำจัดวัชพืชในสวน' },
-      past: { en: 'We rid the room of dust.', my: 'ကျွန်တော်တို့ အခန်းက ဖုန်တွေကို ရှင်းခဲ့တယ်။', th: 'พวกเรากำจัดฝุ่นในห้อง' },
+      past: { en: 'We rid the room of dust.', my: 'ကျွန်တော်တို့ အခန်းက ဖုန်တွေကို ရှင်းခဲ့တယ်။', th: 'พวกเรากำจัดฝุ่นในห้องแล้ว' },
       future: { en: 'They will rid the city of crime.', my: 'သူတို့ မြို့က ရာဇဝတ်မှုတွေကို ဖယ်ရှားမယ်။', th: 'พวกเขาจะกำจัดอาชญากรรมในเมือง' },
     },
   },
@@ -340,7 +340,7 @@ export const verbsBatch2: Verb[] = [
     my: 'ချထားသည်၊ သတ်မှတ်သည်', th: 'ตั้ง; กำหนด', phonetic: 'set', cefr: 'A1',
     examples: {
       present: { en: 'She sets the table.', my: 'သူမ စားပွဲပြင်တယ်။', th: 'เธอจัดโต๊ะอาหาร' },
-      past: { en: 'He set the alarm for six.', my: 'သူ ခြောက်နာရီနှိုးစက် ချိန်ခဲ့တယ်။', th: 'เขาตั้งนาฬิกาปลุกตอนหกโมง' },
+      past: { en: 'He set the alarm for six.', my: 'သူ ခြောက်နာရီနှိုးစက် ချိန်ခဲ့တယ်။', th: 'เขาตั้งนาฬิกาปลุกตอนหกโมงแล้ว' },
       future: { en: 'We will set a new goal.', my: 'ကျွန်တော်တို့ ရည်မှန်းချက်အသစ်ချမှတ်မယ်။', th: 'พวกเราจะตั้งเป้าหมายใหม่' },
     },
   },
@@ -367,7 +367,7 @@ export const verbsBatch2: Verb[] = [
     my: 'တောက်ပသည်', th: 'ส่องแสง', phonetic: 'shyne', cefr: 'B1',
     examples: {
       present: { en: 'The stars shine at night.', my: 'ကြယ်တွေ ညမှာ တောက်ပတယ်။', th: 'ดวงดาวส่องแสงตอนกลางคืน' },
-      past: { en: 'The sun shone brightly.', my: 'နေ တောက်ပစွာထွန်းလင်းခဲ့တယ်။', th: 'พระอาทิตย์ส่องแสงจ้า' },
+      past: { en: 'The sun shone brightly.', my: 'နေ တောက်ပစွာထွန်းလင်းခဲ့တယ်။', th: 'พระอาทิตย์ส่องแสงจ้าแล้ว' },
       future: { en: 'Your talent will shine.', my: 'မင်းရဲ့အရည်အချင်း တောက်ပလာမယ်။', th: 'ความสามารถของคุณจะเปล่งประกาย' },
     },
   },
@@ -557,7 +557,7 @@ export const verbsBatch2: Verb[] = [
     examples: {
       present: { en: 'Milk spoils quickly in heat.', my: 'နို့က အပူမှာ မြန်မြန်ပျက်စီးတယ်။', th: 'นมเสียง่ายในอากาศร้อน' },
       past: { en: 'Rain spoilt our picnic.', my: 'မိုးက ကျွန်တော်တို့ရဲ့အပန်းဖြေခရီးကို ပျက်စီးစေခဲ့တယ်။', th: 'ฝนทำให้ปิกนิกของพวกเราเสีย' },
-      future: { en: 'He will spoil the surprise.', my: 'သူ အံ့အားသင့်မှုကို ပျက်စီးစေမယ်။', th: 'เขาจะทำให้เซอร์ไพรส์เสีย' },
+      future: { en: 'He will spoil the surprise.', my: 'သူက အံ့အားသင့်စရာကို ဖျက်စီးပစ်မယ်။', th: 'เขาจะทำให้เซอร์ไพรส์เสีย' },
     },
   },
   {
@@ -575,7 +575,7 @@ export const verbsBatch2: Verb[] = [
     examples: {
       present: { en: 'The cat springs onto the table.', my: 'ကြောင်က စားပွဲပေါ်ကို ခုန်တက်တယ်။', th: 'แมวกระโดดขึ้นโต๊ะ' },
       past: { en: 'He sprang up from his seat.', my: 'သူ ထိုင်ခုံကနေ ခုန်ထခဲ့တယ်။', th: 'เขาลุกพรวดจากที่นั่ง' },
-      future: { en: 'She will spring into action.', my: 'သူမ လှုပ်ရှားမှုစတင်မယ်။', th: 'เธอจะลงมือทำทันที' },
+      future: { en: 'She will spring into action.', my: 'သူမ ချက်ချင်း လှုပ်ရှားဆောင်ရွက်လာမယ်။', th: 'เธอจะลงมือทำทันที' },
     },
   },
   {

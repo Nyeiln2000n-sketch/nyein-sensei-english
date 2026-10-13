@@ -890,7 +890,7 @@ export const verbsBatch1: Verb[] = [
     examples: {
       present: { en: 'People mistake him for his twin.', my: 'လူတွေက သူ့ကို အမွှာနဲ့မှားကြတယ်။', th: 'คนจำเขาผิดว่าเป็นฝาแฝด' },
       past: { en: 'I mistook the time.', my: 'ကျွန်တော် အချိန်မှားခဲ့တယ်။', th: 'ผมจำเวลาผิด' },
-      future: { en: 'They will mistake your kindness for weakness.', my: 'သူတို့ မင်းရဲ့ ကြင်နာမှုကို အားနည်းချက်နဲ့ မှားကြလိမ့်မယ်။', th: 'อย่าเข้าใจความเมตตาผิดว่าเป็นความอ่อนแอ' },
+      future: { en: 'They will mistake your kindness for weakness.', my: 'သူတို့ မင်းရဲ့ ကြင်နာမှုကို အားနည်းချက်နဲ့ မှားကြလိမ့်မယ်။', th: 'พวกเขาจะเข้าใจความเมตตาของคุณผิดว่าเป็นความอ่อนแอ' },
     },
   },
   {

@@ -38,6 +38,16 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 60,
+    slug: 'module-6-review-home-and-daily-routine-i-wake-up-at-six-there-are-two-bedrooms-i-clean-my-room-2026-10-13',
+    titleMy: 'အပိုင်း ၆၀ — အခန်း ၆ ပြန်လည်လေ့လာခြင်း',
+    titleOrig: 'ทบทวนบทที่ 6 — Module 6 review',
+    descMy: 'အိမ်နှင့် နေ့စဉ်လုပ်ငန်းစဉ်များ ပြန်လည်လေ့လာခြင်း — "I wake up at six and brush my teeth." / "There are two bedrooms in my house." / "I clean my room every day." / "My neighbor is kind." / "I go to bed at ten."',
+    phrases: ['I wake up at six and brush my teeth.', 'There are two bedrooms in my house.', 'I clean my room every day.', 'My neighbor is kind.', 'I go to bed at ten.'],
+    durationSecs: 558,
+    cover: '/podcast-covers/ep-60.jpg',
+  },
+  {
     n: 59,
     slug: 'day-off-at-home-i-stay-home-i-rest-i-do-nothing-it-is-relaxing-2026-10-13',
     titleMy: 'အပိုင်း ၅၉ — အားလပ်ရက်တွင် အိမ်မှာနေခြင်း',

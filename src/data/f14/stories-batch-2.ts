@@ -420,7 +420,7 @@ export const storiesBatch2: Story[] = [
   paragraphs: [
     {
       en: 'Kyaw works the night shift at a hospital as a nurse. While the city sleeps, he takes care of patients who need help.',
-      my: 'ကျော်က ဆေးရုံမှာ သူနာပြုအဖြစ် ညဆိုင်း အလုပ်လုပ်တယ်။ မြို့အိပ်နေတုန်း အကူအညီလိုတဲ့ လူနာတွေကို ပြုစုတယ်။',
+      my: 'ကျော်က ဆေးရုံမှာ သူနာပြုအဖြစ် ညဆိုင်း အလုပ်လုပ်တယ်။ တစ်မြို့လုံး အိပ်ပျော်နေချိန်မှာ အကူအညီလိုတဲ့ လူနာတွေကို ပြုစုတယ်။',
       th: 'จอเป็นพยาบาลที่ทำงานกะกลางคืนในโรงพยาบาล ขณะที่เมืองกำลังหลับใหล เขาดูแลผู้ป่วยที่ต้องการความช่วยเหลือ',
     },
     {
@@ -470,7 +470,7 @@ export const storiesBatch2: Story[] = [
     },
     {
       en: 'On the day of the conference, five hundred people filled the hall. Although her hands were shaking, her voice remained steady as she described how her platform had helped ten thousand students in rural areas.',
-      my: 'ကွန်ဖရင့်နေ့မှာ လူငါးရာ ခန်းမကို ပြည့်သွားတယ်။ လက်တွေ တုန်နေပေမယ့် သူ့ပလက်ဖောင်းက ကျေးလက်ဒေသက ကျောင်းသားတစ်သောင်းကို ဘယ်လိုကူညီခဲ့လဲဆိုတာ ဖော်ပြတဲ့အခါ အသံက တည်ငြိမ်နေတယ်။',
+      my: 'ကွန်ဖရင့်နေ့မှာ လူငါးရာနဲ့ ခန်းမပြည့်သွားတယ်။ လက်တွေ တုန်နေပေမယ့် သူ့ပလက်ဖောင်းက ကျေးလက်ဒေသက ကျောင်းသားတစ်သောင်းကို ဘယ်လိုကူညီခဲ့လဲဆိုတာ ဖော်ပြတဲ့အခါ အသံက တည်ငြိမ်နေတယ်။',
       th: 'ในวันประชุม ผู้คนห้าร้อยคนเต็มห้อง แม้มือของเธอจะสั่น แต่เสียงของเธอมั่นคงขณะที่เธอบรรยายว่าแพลตฟอร์มของเธอช่วยนักเรียนหนึ่งหมื่นคนในชนบทอย่างไร',
     },
     {
@@ -584,7 +584,7 @@ export const storiesBatch2: Story[] = [
       th: 'ธนาคารคืนเงินให้เธอภายในสิบวัน ตันดาร์ได้เรียนรู้บทเรียนอันมีค่า ถ้าข้อเสนอไหนดูดีเกินจริง ก็น่าจะไม่จริง',
     },
     {
-      en: 'Thandar now checks reviews carefully before buying anything online. She also tells her friends to use payment methods that offer buyer protection. Her friends now always ask her for wise advice before shopping online, and she happily shares everything she learned from the difficult experience.',
+      en: 'Thandar now checks reviews carefully before buying anything online. She also tells her friends to use payment methods that offer buyer protection. Her friends now always ask her for sound advice before shopping online, and she happily shares everything she learned from the difficult experience.',
       my: 'သန္ဒာက အခု အွန်လိုင်းက တစ်ခုခုမဝယ်ခင် သုံးသပ်ချက်တွေကို သေချာစစ်တယ်။ ဝယ်သူအကာအကွယ်ပေးတဲ့ ငွေပေးချေမှုနည်းတွေ သုံးဖို့ သူငယ်ချင်းတွေကိုလည်း ပြောတယ်။ သူ့သူငယ်ချင်းတွေက အခု အွန်လိုင်းဈေးမဝယ်ခင် သူ့ဆီက အကြံဉာဏ်ကောင်းတွေ တောင်းကြပြီး သူက သင်ယူခဲ့သမျှကို ဝမ်းသာအားရ မျှဝေတယ်။',
       th: 'ตอนนี้ตันดาร์ตรวจรีวิวอย่างละเอียดก่อนซื้ออะไรออนไลน์ เธอยังบอกเพื่อนให้ใช้วิธีชำระเงินที่มีการคุ้มครองผู้ซื้อ ตอนนี้เพื่อนของเธอมักขอคำแนะนำดี ๆ จากเธอก่อนช้อปปิ้งออนไลน์ และเธอแบ่งปันทุกสิ่งที่เรียนรู้จากประสบการณ์ที่ยากลำบากอย่างยินดี',
     },
@@ -644,7 +644,7 @@ export const storiesBatch2: Story[] = [
   titleTh: 'การโทรแบบวิดีโอ',
   paragraphs: [
     {
-      en: 'Daw Myint had not seen her son for two years because he worked in Japan. When he suggested a video call, she was nervous about the technology.',
+      en: 'Daw Myint had not seen her son for two years because he was working in Japan. When he suggested a video call, she was nervous about the technology.',
       my: 'ဒေါ်မြင့်က သားက ဂျပန်မှာ အလုပ်လုပ်လို့ နှစ်နှစ်ရှိပြီ မတွေ့ရဘူး။ ဗီဒီယိုခေါ်ဖို့ သူက အကြံပေးတဲ့အခါ နည်းပညာအကြောင်း စိုးရိမ်တယ်။',
       th: 'ดอมิ้นท์ไม่ได้เจอลูกชายมาสองปีเพราะเขาทำงานที่ญี่ปุ่น เมื่อเขาเสนอการโทรแบบวิดีโอ เธอกังวลเรื่องเทคโนโลยี',
     },
@@ -704,7 +704,7 @@ export const storiesBatch2: Story[] = [
       th: 'สองวันต่อมา บริษัทยืนยันตัวตนของเขาและคืนการเข้าถึงให้เขา เขาตั้งค่าการยืนยันตัวตนสองชั้นทันทีและจดรหัสผ่านใหม่ไว้อย่างปลอดภัย',
     },
     {
-      en: 'Min Khant now helps his friends secure their accounts, teaching them about strong passwords and backup codes. He says losing access once was enough to learn forever. He wrote a short guide for his classmates explaining each recovery step clearly, and his kind teacher warmly praised his generous helpful spirit.',
+      en: 'Min Khant now helps his friends secure their accounts, teaching them about strong passwords and backup codes. He says losing access once was enough to teach him a lasting lesson. He wrote a short guide for his classmates explaining each recovery step clearly, and his kind teacher warmly praised his generosity and helpful spirit.',
       my: 'မင်းခန့်က အခု သူငယ်ချင်းတွေကို အကောင့်တွေ လုံခြုံအောင် ကူညီပြီး ခိုင်ခံ့တဲ့စကားဝှက်တွေနဲ့ အရန်ကုဒ်တွေအကြောင်း သင်ပေးတယ်။ တစ်ကြိမ်ဝင်ရောက်ခွင့် ဆုံးရှုံးတာက ထာဝရသင်ယူဖို့ လုံလောက်ပြီလို့ ပြောတယ်။ သူက အတန်းဖော်တွေအတွက် ပြန်လည်ရယူတဲ့အဆင့်တိုင်းကို ရှင်းရှင်းလင်းလင်း ရှင်းပြတဲ့ လမ်းညွှန်တိုလေး ရေးပြီး ဆရာက သူ့အကူအညီပေးတဲ့စိတ်ကို ချီးကျူးတယ်။',
       th: 'ตอนนี้มินคานต์ช่วยเพื่อนรักษาความปลอดภัยบัญชี สอนพวกเขาเรื่องรหัสผ่านที่รัดกุมและรหัสสำรอง เขาบอกว่าการเสียการเข้าถึงครั้งเดียวพอที่จะเรียนรู้ตลอดไป เขาเขียนคู่มือสั้น ๆ อธิบายแต่ละขั้นตอนการกู้คืนอย่างชัดเจนให้เพื่อนร่วมชั้น และครูใจดีของเขาก็ชมน้ำใจที่เอื้อเฟื้อเผื่อแผ่ของเขา',
     },
@@ -859,8 +859,8 @@ export const storiesBatch2: Story[] = [
       th: 'กลับบ้าน เด็ก ๆ วาดรูปเกาะและแขวนไว้บนผนังห้องนอน พ่อแม่เห็นตรงกันว่าเป็นเงินที่คุ้มค่าที่สุดเท่าที่เคยใช้มา ครอบครัวมองรูปวาดสีสันเหล่านั้นทุกวันแล้วยิ้มให้กันอย่างอบอุ่น',
     },
     {
-      en: 'As the plane took off, the children waved at the island below. Some holidays end, but the happiest ones stay in your heart.',
-      my: 'လေယာဉ် ထွက်ခွာသွားတဲ့အခါ ကလေးတွေက အောက်ကကျွန်းကို လက်ပြနှုတ်ဆက်တယ်။ အားလပ်ရက်တချို့က ပြီးဆုံးသွားပေမယ့် အပျော်ဆုံးအချိန်တွေက နှလုံးသားထဲမှာ ကျန်ရစ်တယ်။',
+      en: 'They had waved at the island below as their plane took off. Some holidays end, but the happiest ones stay in your heart.',
+      my: 'လေယာဉ် ထွက်ခွာသွားတဲ့အခါ ကလေးတွေက အောက်ကကျွန်းကို လက်ပြနှုတ်ဆက်ခဲ့ကြတယ်။ အားလပ်ရက်တချို့က ပြီးဆုံးသွားပေမယ့် အပျော်ဆုံးအချိန်တွေက နှလုံးသားထဲမှာ ကျန်ရစ်တယ်။',
       th: 'ขณะที่เครื่องบินขึ้น เด็ก ๆ โบกมือให้เกาะด้านล่าง วันหยุดบางทริปก็จบลง แต่วันหยุดที่แสนสุขจะอยู่ในความทรงจำตลอดไป',
     },
   ],
@@ -1280,7 +1280,7 @@ export const storiesBatch2: Story[] = [
     },
     {
       en: 'On race day, twenty thousand runners filled the streets of Yangon. The first ten kilometers felt easy, but after fifteen, every step became a battle against exhaustion.',
-      my: 'ပြိုင်ပွဲနေ့မှာ အပြေးသမားနှစ်သောင်း ရန်ကုန်လမ်းတွေကို ပြည့်သွားတယ်။ ပထမဆယ်ကီလိုမီတာက လွယ်ကူသလို ခံစားရပေမယ့် ဆယ့်ငါးကီလိုမီတာနောက်မှာ ခြေလှမ်းတိုင်းက ပင်ပန်းမှုနဲ့ တိုက်ပွဲဖြစ်လာတယ်။',
+      my: 'ပြိုင်ပွဲနေ့မှာ ရန်ကုန်လမ်းတွေမှာ အပြေးသမားနှစ်သောင်းနဲ့ ပြည့်နှက်သွားတယ်။ ပထမဆယ်ကီလိုမီတာက လွယ်ကူသလို ခံစားရပေမယ့် ဆယ့်ငါးကီလိုမီတာနောက်မှာ ခြေလှမ်းတိုင်းက ပင်ပန်းမှုနဲ့ တိုက်ပွဲဖြစ်လာတယ်။',
       th: 'วันแข่ง นักวิ่งสองหมื่นคนเต็มท้องถนนในย่างกุ้ง สิบกิโลเมตรแรกยังรู้สึกสบาย แต่พอเลยสิบห้ากิโลเมตรไป ทุกก้าวกลายเป็นการต่อสู้กับความเหนื่อยล้า',
     },
     {
@@ -1505,7 +1505,7 @@ export const storiesBatch2: Story[] = [
     },
     {
       en: 'The granddaughter has added two new dishes to the menu, but the famous soup remains unchanged. Some secrets, she says, should never change. Famous food critics from the bustling capital have written truly glowing reviews about the charming little family shop.',
-      my: 'မြေးမလေးက မီနူးမှာ ဟင်းအသစ်နှစ်မျိုး ထည့်ထားပေမယ့် နာမည်ကြီးဟင်းချိုကတော့ မပြောင်းလဲဘူး။ တချို့လျှို့ဝှက်ချက်တွေက ဘယ်တော့မှ မပြောင်းသင့်ဘူးလို့ ပြောတယ်။ မြို့တော်က အစားအသောက်ဝေဖန်ရေးသမားတွေက ဆိုင်သေးသေးလေးအကြောင်း တောက်ပတဲ့ သုံးသပ်ချက်တွေ ရေးတယ်။',
+      my: 'မြေးမလေးက မီနူးမှာ ဟင်းအသစ်နှစ်မျိုး ထည့်ထားပေမယ့် နာမည်ကြီးဟင်းချိုကတော့ မပြောင်းလဲဘူး။ တချို့လျှို့ဝှက်ချက်တွေက ဘယ်တော့မှ မပြောင်းသင့်ဘူးလို့ ပြောတယ်။ မြို့တော်က အစားအသောက်ဝေဖန်ရေးသမားတွေက ဆိုင်သေးသေးလေးအကြောင်း ချီးကျူးတဲ့ သုံးသပ်ချက်တွေ ရေးတယ်။',
       th: 'หลานสาวเพิ่มอาหารใหม่สองอย่างในเมนู แต่น้ำซุปชื่อดังยังคงเหมือนเดิม เธอบอกว่าความลับบางอย่างไม่ควรเปลี่ยน นักวิจารณ์อาหารชื่อดังจากเมืองหลวงที่คึกคักเขียนคำวิจารณ์ชื่นชมอย่างท่วมท้นเกี่ยวกับร้านครอบครัวเล็ก ๆ ที่มีเสน่ห์',
     },
   ],

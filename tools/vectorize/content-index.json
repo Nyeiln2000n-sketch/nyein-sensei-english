@@ -194770,10 +194770,10 @@
   {
    "id": "story-f14-b2-10",
    "kind": "story",
-   "en": "Thandar ordered a winter jacket from an international website because the price was unbelievably low. She paid immediately, imagining how warm she would feel during her trip to the mountains. Three weeks passed with no delivery. When she contacted customer service, they replied with vague promises that the package was on its way. Suspicious, she researched the website and found dozens of complaints from other buyers. She immediately contacted her bank to dispute the payment. The bank reversed the charge within ten days. Thandar learned a valuable lesson: if a deal looks too good to be true, it probably is. Thandar now checks reviews carefully before buying anything online. She also tells her friends to use payment methods that offer buyer protection. Her friends now always ask her for wise advice before shopping online, and she happily shares everything she learned from the difficult experience. The lost weeks were frustrating, but the lesson was permanent: on the internet, patience is cheaper than regret.",
-   "en_norm": "thandar ordered a winter jacket from an international website because the price was unbelievably low she paid immediately imagining how warm she would feel during her trip to the mountains three weeks passed with no delivery when she contacted customer service they replied with vague promises that the package was on its way suspicious she researched the website and found dozens of complaints from other buyers she immediately contacted her bank to dispute the payment the bank reversed the charge within ten days thandar learned a valuable lesson if a deal looks too good to be true it probably is thandar now checks reviews carefully before buying anything online she also tells her friends to use payment methods that offer buyer protection her friends now always ask her for wise advice before shopping online and she happily shares everything she learned from the difficult experience the lost weeks were frustrating but the lesson was permanent on the internet patience is cheaper than regret",
+   "en": "Thandar ordered a winter jacket from an international website because the price was unbelievably low. She paid immediately, imagining how warm she would feel during her trip to the mountains. Three weeks passed with no delivery. When she contacted customer service, they replied with vague promises that the package was on its way. Suspicious, she researched the website and found dozens of complaints from other buyers. She immediately contacted her bank to dispute the payment. The bank reversed the charge within ten days. Thandar learned a valuable lesson: if a deal looks too good to be true, it probably is. Thandar now checks reviews carefully before buying anything online. She also tells her friends to use payment methods that offer buyer protection. Her friends now always ask her for sound advice before shopping online, and she happily shares everything she learned from the difficult experience. The lost weeks were frustrating, but the lesson was permanent: on the internet, patience is cheaper than regret.",
+   "en_norm": "thandar ordered a winter jacket from an international website because the price was unbelievably low she paid immediately imagining how warm she would feel during her trip to the mountains three weeks passed with no delivery when she contacted customer service they replied with vague promises that the package was on its way suspicious she researched the website and found dozens of complaints from other buyers she immediately contacted her bank to dispute the payment the bank reversed the charge within ten days thandar learned a valuable lesson if a deal looks too good to be true it probably is thandar now checks reviews carefully before buying anything online she also tells her friends to use payment methods that offer buyer protection her friends now always ask her for sound advice before shopping online and she happily shares everything she learned from the difficult experience the lost weeks were frustrating but the lesson was permanent on the internet patience is cheaper than regret",
    "my_norm": "",
-   "fingerprint": "a6b23d5e6bd770ad",
+   "fingerprint": "7a21eb1fa3dbf5f6",
    "vocab_sig": [
     "advice",
     "always",
@@ -194841,6 +194841,7 @@
     "service",
     "shares",
     "shopping",
+    "sound",
     "suspicious",
     "tells",
     "ten",
@@ -194857,7 +194858,6 @@
     "website",
     "weeks",
     "winter",
-    "wise",
     "within"
    ],
    "template_sig": "W W a W W from an W W W the W was W W . she W W , W how W she would W W her W to the W . three W W with no W . when she W W W , they W with W W that the W was on its W . W , she W the W and W W of W from W W . she W W her W to W the W . the W W the W W W W . W W a W W : if a W W too W to be W , it W is . W W W W W before W W W . she also W her W to W W W that W W W . her W W W W her for W W before W W , and she W W W she W from the W W . the W W were W , but the W was W : on the W , W is W W W .",
@@ -194979,10 +194979,10 @@
   {
    "id": "story-f14-b2-12",
    "kind": "story",
-   "en": "Daw Myint had not seen her son for two years because he worked in Japan. When he suggested a video call, she was nervous about the technology. Her granddaughter patiently taught her to use the app, showing her which button to press. After three practice calls, Daw Myint felt ready. When her son's face appeared on the screen, tears of joy rolled down her cheeks. They talked for over an hour about his life in Tokyo. Now they call every Sunday evening. Daw Myint tells her friends that technology, once frightening, has become her greatest comfort. Daw Myint's story inspired several elderly neighbors to learn video calling too. Now the whole street gathers online every festival to celebrate together. Her son calls more often now, knowing how much these conversations mean to his mother, and their loving bond has never been stronger than it is today. Distance had separated them for years, but a small screen now brought them together every Sunday — proof that love travels farther than any road.",
-   "en_norm": "daw myint had not seen her son for two years because he worked in japan when he suggested a video call she was nervous about the technology her granddaughter patiently taught her to use the app showing her which button to press after three practice calls daw myint felt ready when her son s face appeared on the screen tears of joy rolled down her cheeks they talked for over an hour about his life in tokyo now they call every sunday evening daw myint tells her friends that technology once frightening has become her greatest comfort daw myint s story inspired several elderly neighbors to learn video calling too now the whole street gathers online every festival to celebrate together her son calls more often now knowing how much these conversations mean to his mother and their loving bond has never been stronger than it is today distance had separated them for years but a small screen now brought them together every sunday proof that love travels farther than any road",
+   "en": "Daw Myint had not seen her son for two years because he was working in Japan. When he suggested a video call, she was nervous about the technology. Her granddaughter patiently taught her to use the app, showing her which button to press. After three practice calls, Daw Myint felt ready. When her son's face appeared on the screen, tears of joy rolled down her cheeks. They talked for over an hour about his life in Tokyo. Now they call every Sunday evening. Daw Myint tells her friends that technology, once frightening, has become her greatest comfort. Daw Myint's story inspired several elderly neighbors to learn video calling too. Now the whole street gathers online every festival to celebrate together. Her son calls more often now, knowing how much these conversations mean to his mother, and their loving bond has never been stronger than it is today. Distance had separated them for years, but a small screen now brought them together every Sunday — proof that love travels farther than any road.",
+   "en_norm": "daw myint had not seen her son for two years because he was working in japan when he suggested a video call she was nervous about the technology her granddaughter patiently taught her to use the app showing her which button to press after three practice calls daw myint felt ready when her son s face appeared on the screen tears of joy rolled down her cheeks they talked for over an hour about his life in tokyo now they call every sunday evening daw myint tells her friends that technology once frightening has become her greatest comfort daw myint s story inspired several elderly neighbors to learn video calling too now the whole street gathers online every festival to celebrate together her son calls more often now knowing how much these conversations mean to his mother and their loving bond has never been stronger than it is today distance had separated them for years but a small screen now brought them together every sunday proof that love travels farther than any road",
    "my_norm": "",
-   "fingerprint": "e69ba3afacc04ba6",
+   "fingerprint": "d5cd46e57d962917",
    "vocab_sig": [
     "any",
     "app",
@@ -195066,10 +195066,10 @@
     "use",
     "video",
     "whole",
-    "worked",
+    "working",
     "years"
    ],
-   "template_sig": "W W had not W her W for two W W he W in W . when he W a W W , she was W about the W . her W W W her to W the W , W her which W to W . after three W W , W W W W . when her W ' s W W on the W , W of W W down her W . they W for over an W about his W in W . W they W W W W . W W W her W that W , W W , has W her W W . W W ' s W W W W W to W W W too . W the W W W W W W to W W . her W W W W W , W how W these W W to his W , and their W W has W been W W it is W . W had W them for W , but a W W W W them W W W — W that W W W W W W .",
+   "template_sig": "W W had not W her W for two W W he was W in W . when he W a W W , she was W about the W . her W W W her to W the W , W her which W to W . after three W W , W W W W . when her W ' s W W on the W , W of W W down her W . they W for over an W about his W in W . W they W W W W . W W W her W that W , W W , has W her W W . W W ' s W W W W W to W W W too . W the W W W W W W to W W . her W W W W W , W how W these W W to his W , and their W W has W been W W it is W . W had W them for W , but a W W W W them W W W — W that W W W W W W .",
    "tags": [
     "story"
    ],
@@ -195079,10 +195079,10 @@
   {
    "id": "story-f14-b2-13",
    "kind": "story",
-   "en": "Min Khant could not access his email because he had forgotten the password, and the recovery phone number was an old one he no longer used. This was a serious problem because all his job applications and university documents were in that inbox. He felt helpless and frustrated. After searching online, he found the account recovery form and filled it in with as much detail as he could remember, including the year he created the account. Two days later, the company verified his identity and restored his access. He immediately set up two-factor authentication and wrote down his new password safely. Min Khant now helps his friends secure their accounts, teaching them about strong passwords and backup codes. He says losing access once was enough to learn forever. He wrote a short guide for his classmates explaining each recovery step clearly, and his kind teacher warmly praised his generous helpful spirit.",
-   "en_norm": "min khant could not access his email because he had forgotten the password and the recovery phone number was an old one he no longer used this was a serious problem because all his job applications and university documents were in that inbox he felt helpless and frustrated after searching online he found the account recovery form and filled it in with as much detail as he could remember including the year he created the account two days later the company verified his identity and restored his access he immediately set up two factor authentication and wrote down his new password safely min khant now helps his friends secure their accounts teaching them about strong passwords and backup codes he says losing access once was enough to learn forever he wrote a short guide for his classmates explaining each recovery step clearly and his kind teacher warmly praised his generous helpful spirit",
+   "en": "Min Khant could not access his email because he had forgotten the password, and the recovery phone number was an old one he no longer used. This was a serious problem because all his job applications and university documents were in that inbox. He felt helpless and frustrated. After searching online, he found the account recovery form and filled it in with as much detail as he could remember, including the year he created the account. Two days later, the company verified his identity and restored his access. He immediately set up two-factor authentication and wrote down his new password safely. Min Khant now helps his friends secure their accounts, teaching them about strong passwords and backup codes. He says losing access once was enough to teach him a lasting lesson. He wrote a short guide for his classmates explaining each recovery step clearly, and his kind teacher warmly praised his generosity and helpful spirit.",
+   "en_norm": "min khant could not access his email because he had forgotten the password and the recovery phone number was an old one he no longer used this was a serious problem because all his job applications and university documents were in that inbox he felt helpless and frustrated after searching online he found the account recovery form and filled it in with as much detail as he could remember including the year he created the account two days later the company verified his identity and restored his access he immediately set up two factor authentication and wrote down his new password safely min khant now helps his friends secure their accounts teaching them about strong passwords and backup codes he says losing access once was enough to teach him a lasting lesson he wrote a short guide for his classmates explaining each recovery step clearly and his kind teacher warmly praised his generosity and helpful spirit",
    "my_norm": "",
-   "fingerprint": "475a5043cc036ccb",
+   "fingerprint": "ba5d3984e4dc908f",
    "vocab_sig": [
     "access",
     "account",
@@ -195107,13 +195107,12 @@
     "factor",
     "felt",
     "filled",
-    "forever",
     "forgotten",
     "form",
     "found",
     "friends",
     "frustrated",
-    "generous",
+    "generosity",
     "guide",
     "helpful",
     "helpless",
@@ -195125,8 +195124,9 @@
     "job",
     "khant",
     "kind",
+    "lasting",
     "later",
-    "learn",
+    "lesson",
     "longer",
     "losing",
     "min",
@@ -195155,6 +195155,7 @@
     "spirit",
     "step",
     "strong",
+    "teach",
     "teacher",
     "teaching",
     "university",
@@ -195164,7 +195165,7 @@
     "wrote",
     "year"
    ],
-   "template_sig": "W W could not W his W W he had W the W , and the W W W was an W one he no W W . this was a W W W W his W W and W W were in that W . he W W and W . after W W , he W the W W W and W it in with as W W as he could W , W the W he W the W . two W W , the W W his W and W his W . he W W up two - W W and W down his W W W . W W W W his W W their W , W them about W W and W W . he W W W W was W to W W . he W a W W for his W W W W W W , and his W W W W his W W W .",
+   "template_sig": "W W could not W his W W he had W the W , and the W W W was an W one he no W W . this was a W W W W his W W and W W were in that W . he W W and W . after W W , he W the W W W and W it in with as W W as he could W , W the W he W the W . two W W , the W W his W and W his W . he W W up two - W W and W down his W W W . W W W W his W W their W , W them about W W and W W . he W W W W was W to W him a W W . he W a W W for his W W W W W W , and his W W W W his W and W W .",
    "tags": [
     "story"
    ],
@@ -195449,10 +195450,10 @@
   {
    "id": "story-f14-b1-25",
    "kind": "story",
-   "en": "After working hard for a whole year, the family decided to spend five days on a small tropical island. The children ran to the beach as soon as they arrived. The sand was white, and the water was clear and warm. On the second day, they took a boat to see colorful fish. The children wore masks and looked at the coral reefs. In the evenings, they ate fresh seafood at a restaurant by the sea. The father said it was the best fish he had ever tasted. On the last day, nobody wanted to leave. The mother promised they would come back next year. Back home, the children drew pictures of the island and hung them on their bedroom walls. The parents agreed it was the best money they had ever spent. The happy family looks at those colorful drawings every single day and smiles warmly together. As the plane took off, the children waved at the island below. Some holidays end, but the happiest ones stay in your heart.",
-   "en_norm": "after working hard for a whole year the family decided to spend five days on a small tropical island the children ran to the beach as soon as they arrived the sand was white and the water was clear and warm on the second day they took a boat to see colorful fish the children wore masks and looked at the coral reefs in the evenings they ate fresh seafood at a restaurant by the sea the father said it was the best fish he had ever tasted on the last day nobody wanted to leave the mother promised they would come back next year back home the children drew pictures of the island and hung them on their bedroom walls the parents agreed it was the best money they had ever spent the happy family looks at those colorful drawings every single day and smiles warmly together as the plane took off the children waved at the island below some holidays end but the happiest ones stay in your heart",
+   "en": "After working hard for a whole year, the family decided to spend five days on a small tropical island. The children ran to the beach as soon as they arrived. The sand was white, and the water was clear and warm. On the second day, they took a boat to see colorful fish. The children wore masks and looked at the coral reefs. In the evenings, they ate fresh seafood at a restaurant by the sea. The father said it was the best fish he had ever tasted. On the last day, nobody wanted to leave. The mother promised they would come back next year. Back home, the children drew pictures of the island and hung them on their bedroom walls. The parents agreed it was the best money they had ever spent. The happy family looks at those colorful drawings every single day and smiles warmly together. They had waved at the island below as their plane took off. Some holidays end, but the happiest ones stay in your heart.",
+   "en_norm": "after working hard for a whole year the family decided to spend five days on a small tropical island the children ran to the beach as soon as they arrived the sand was white and the water was clear and warm on the second day they took a boat to see colorful fish the children wore masks and looked at the coral reefs in the evenings they ate fresh seafood at a restaurant by the sea the father said it was the best fish he had ever tasted on the last day nobody wanted to leave the mother promised they would come back next year back home the children drew pictures of the island and hung them on their bedroom walls the parents agreed it was the best money they had ever spent the happy family looks at those colorful drawings every single day and smiles warmly together they had waved at the island below as their plane took off some holidays end but the happiest ones stay in your heart",
    "my_norm": "",
-   "fingerprint": "932ac213a86f4a29",
+   "fingerprint": "59b0f228f73fcd3f",
    "vocab_sig": [
     "agreed",
     "arrived",
@@ -195537,7 +195538,7 @@
     "working",
     "year"
    ],
-   "template_sig": "after W W for a W W , the W W to W W W on a W W W . the W W to the W as W as they W . the W was W , and the W was W and W . on the W W , they W a W to W W W . the W W W and W at the W W . in the W , they W W W at a W by the W . the W W it was the W W he had W W . on the W W , W W to W . the W W they would W W W W . W W , the W W W of the W and W them on their W W . the W W it was the W W they had W W . the W W W at those W W W W W and W W W . as the W W off , the W W at the W W . W W W , but the W W W in your W .",
+   "template_sig": "after W W for a W W , the W W to W W W on a W W W . the W W to the W as W as they W . the W was W , and the W was W and W . on the W W , they W a W to W W W . the W W W and W at the W W . in the W , they W W W at a W by the W . the W W it was the W W he had W W . on the W W , W W to W . the W W they would W W W W . W W , the W W W of the W and W them on their W W . the W W it was the W W they had W W . the W W W at those W W W W W and W W W . they had W at the W W as their W W off . W W W , but the W W W in your W .",
    "tags": [
     "story"
    ],
@@ -423547,7 +423548,7 @@
    "kind": "word",
    "en": "trickster archetype",
    "en_norm": "trickster archetype",
-   "my_norm": "လှည့်စားသူပုံစံငယ်",
+   "my_norm": "လှည့်စားသူရှေ့ပြေးပုံစံ",
    "th_norm": "ต้นแบบจอมหลอกลวง",
    "fingerprint": "2063ca82cad70c8e",
    "vocab_sig": [
@@ -424416,10 +424417,10 @@
   {
    "id": "example:literature:prolepsis",
    "kind": "example",
-   "en": "The prolepsis hints at the hero's death chapters early.",
-   "en_norm": "the prolepsis hints at the hero s death chapters early",
+   "en": "The prolepsis hints at the hero's death in early chapters.",
+   "en_norm": "the prolepsis hints at the hero s death in early chapters",
    "my_norm": "",
-   "fingerprint": "6d88797017afa6fd",
+   "fingerprint": "53450c4c1633a522",
    "vocab_sig": [
     "chapters",
     "death",
@@ -424428,7 +424429,7 @@
     "hints",
     "prolepsis"
    ],
-   "template_sig": "the W W at the W ' s W W W .",
+   "template_sig": "the W W at the W ' s W in W W .",
    "tags": [
     "literature",
     "example"
