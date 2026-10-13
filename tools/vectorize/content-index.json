@@ -2963,11 +2963,12 @@
   {
    "id": "f14-health-7",
    "kind": "dialogue",
-   "en": "I cannot see far things clearly. Let us test your eyes. Okay, I am ready. Read the third line, please. E... F... P... I am not sure. You need glasses. Can I choose the frame? Of course! Look at these.",
-   "en_norm": "i cannot see far things clearly let us test your eyes okay i am ready read the third line please e f p i am not sure you need glasses can i choose the frame of course look at these",
+   "en": "I cannot see things far away clearly. Let us test your eyes. Okay, I am ready. Read the third line, please. E... F... P... I am not sure. You need glasses. Can I choose the frame? Of course! Look at these.",
+   "en_norm": "i cannot see things far away clearly let us test your eyes okay i am ready read the third line please e f p i am not sure you need glasses can i choose the frame of course look at these",
    "my_norm": "",
-   "fingerprint": "0213f549a2f68b3a",
+   "fingerprint": "cce62ccf8c25300e",
    "vocab_sig": [
+    "away",
     "cannot",
     "choose",
     "clearly",
@@ -2991,7 +2992,7 @@
     "things",
     "third"
    ],
-   "template_sig": "i W W W W W . let us W your W . W , i am W . W the W W , please . W . . . W . . . W . . . i am not W . you W W . can i W the W ? of W ! W at these .",
+   "template_sig": "i W W W W W W . let us W your W . W , i am W . W the W W , please . W . . . W . . . W . . . i am not W . you W W . can i W the W ? of W ! W at these .",
    "tags": [
     "health",
     "dialogue"
@@ -123348,7 +123349,7 @@
    "kind": "phrase",
    "en": "You make a valid point about enforcement; design can address it.",
    "en_norm": "you make a valid point about enforcement design can address it",
-   "my_norm": "အကောင်အထည်ဖော်မှုနဲ့ပတ်သက်ပြီး သင်ပြောတာမှန်တယ်၊ ဒီဇိုင်းနဲ့ ဖြေရှင်းလို့ရတယ်။",
+   "my_norm": "စည်းကမ်းလိုက်နာစေရေးနဲ့ပတ်သက်ပြီး သင်ပြောတာမှန်တယ်၊ ဒီဇိုင်းနဲ့ ဖြေရှင်းလို့ရတယ်။",
    "th_norm": "คุณยกประเด็นที่ถูกต้องเรื่องการบังคับใช้ ซึ่งแก้ไขได้ด้วยการออกแบบ",
    "fingerprint": "c90565961fb4ec9e",
    "vocab_sig": [
@@ -124781,7 +124782,7 @@
    "kind": "phrase",
    "en": "With certain qualifications, I can endorse that conclusion.",
    "en_norm": "with certain qualifications i can endorse that conclusion",
-   "my_norm": "အချို့သော ခြွင်းချက်တွေနဲ့ဆိုရင် အဲဒီကောက်ချက်ကို ထောက်ခံနိုင်တယ်။",
+   "my_norm": "အချို့သော ကန့်သတ်ချက်တွေနဲ့ဆိုရင် အဲဒီကောက်ချက်ကို ထောက်ခံနိုင်တယ်။",
    "th_norm": "มีข้อสงวนบางประการ ผม ดิฉันรับรองข้อสรุปนั้นได้",
    "fingerprint": "432c33b2bb7ae6a7",
    "vocab_sig": [
@@ -124850,7 +124851,7 @@
    "kind": "phrase",
    "en": "Tentatively, I'd suggest the opposite may also hold.",
    "en_norm": "tentatively i d suggest the opposite may also hold",
-   "my_norm": "သတိထားပြီးတော့ ဆန့်ကျင်ဘက်ကလည်း မှန်နိုင်တယ်လို့ အကြံပြုချင်တယ်။",
+   "my_norm": "ယာယီသဘောနဲ့ဆိုရင် ဆန့်ကျင်ဘက်ကလည်း မှန်နိုင်တယ်လို့ အကြံပြုချင်တယ်။",
    "th_norm": "เบื้องต้นขอเสนอว่าอาจเป็นตรงกันข้ามก็ได้",
    "fingerprint": "9841585cf53ad35b",
    "vocab_sig": [
@@ -124896,7 +124897,7 @@
    "kind": "phrase",
    "en": "To the extent that the data allows, we can draw a cautious inference.",
    "en_norm": "to the extent that the data allows we can draw a cautious inference",
-   "my_norm": "အချက်အလက်တွေ ခွင့်ပြုတဲ့အတိုင်းအတာအထိ သတိထားတဲ့ကောက်ချက်ချနိုင်တယ်။",
+   "my_norm": "အချက်အလက်တွေ ခွင့်ပြုတဲ့အတိုင်းအတာအထိတော့ သတိထားပြီး ကောက်ချက်ချနိုင်တယ်။",
    "th_norm": "เท่าที่ข้อมูลเอื้อ เราสรุปได้อย่างระมัดระวัง",
    "fingerprint": "a5782c2f2bd54061",
    "vocab_sig": [
@@ -125128,7 +125129,7 @@
    "kind": "phrase",
    "en": "Under normal conditions, the pattern is remarkably stable.",
    "en_norm": "under normal conditions the pattern is remarkably stable",
-   "my_norm": "ပုံမှန်အခြေအနေတွေအောက်မှာ ပုံစံက အံ့ဩစရာကောင်းလောက် တည်ငြိမ်တယ်။",
+   "my_norm": "ပုံမှန်အခြေအနေတွေအောက်မှာ ပုံစံက ထူးခြားလောက်အောင် တည်ငြိမ်တယ်။",
    "th_norm": "ภายใต้สภาวะปกติ รูปแบบเสถียรอย่างน่าทึ่ง",
    "fingerprint": "22ae6002696f42a8",
    "vocab_sig": [
@@ -125361,7 +125362,7 @@
    "kind": "phrase",
    "en": "Meta-analyses covering three decades leave little room for doubt.",
    "en_norm": "meta analyses covering three decades leave little room for doubt",
-   "my_norm": "ဆယ်စုနှစ် သုံးခုကို လွှမ်းခြုံတဲ့ မက်တာ ခွဲခြမ်းစိတ်ဖြာမှုတွေက သံသယအတွက် နေရာနည်းနည်းပဲ ချန်တယ်။",
+   "my_norm": "ဆယ်စုနှစ် သုံးခုကို လွှမ်းခြုံတဲ့ မက်တာ ခွဲခြမ်းစိတ်ဖြာမှုတွေက သံသယဖြစ်စရာ နည်းနည်းပဲ ကျန်တော့တယ်။",
    "th_norm": "การวิเคราะห์อภิมานสามทศวรรษแทบไม่เหลือที่ให้สงสัย",
    "fingerprint": "ac414293f39bbf59",
    "vocab_sig": [
@@ -125677,7 +125678,7 @@
    "kind": "phrase",
    "en": "Outliers drive the headline figure; the median tells another story.",
    "en_norm": "outliers drive the headline figure the median tells another story",
-   "my_norm": "အစွန်းထွက်တန်ဖိုးတွေက ခေါင်းစီးကိန်းဂဏန်းကို မောင်းနှင်တယ်၊ အလယ်တန်ဖိုးကတော့ နောက်ဇာတ်လမ်းတစ်ခု ပြောတယ်။",
+   "my_norm": "အစွန်းထွက်တန်ဖိုးတွေက ခေါင်းစီးကိန်းဂဏန်းကို လွှမ်းမိုးထားတယ်၊ အလယ်တန်ဖိုးကတော့ တခြားဇာတ်လမ်းတစ်ခုကို ပြောပြတယ်။",
    "th_norm": "ค่าผิดปกติขับเคลื่อนตัวเลขพาดหัว ค่ากลางเล่าอีกเรื่อง",
    "fingerprint": "020280da3765bcb8",
    "vocab_sig": [
@@ -126315,7 +126316,7 @@
    "kind": "phrase",
    "en": "The argument trades on an ambiguity in the key term.",
    "en_norm": "the argument trades on an ambiguity in the key term",
-   "my_norm": "အငြင်းပွားချက်က အဓိကျဝေါဟာရရဲ့ အဓိပ္ပာယ်မရေရာမှုကို အမြတ်ထုတ်ထားတယ်။",
+   "my_norm": "အငြင်းပွားချက်က အဓိကဝေါဟာရရဲ့ အဓိပ္ပာယ်မရေရာမှုကို အမြတ်ထုတ်ထားတယ်။",
    "th_norm": "ข้อโต้แย้งอาศัยความกำกวมของคำสำคัญ",
    "fingerprint": "292c7c8c46c525ce",
    "vocab_sig": [
@@ -126719,7 +126720,7 @@
    "kind": "phrase",
    "en": "The dignity of honest work deserves more than polite applause.",
    "en_norm": "the dignity of honest work deserves more than polite applause",
-   "my_norm": "ရိုးသားတဲ့အလုပ်ရဲ့ ဂုဏ်သိက္ခာက ယဥ်ကျေးတဲ့လက်ခုပ်သံထက် ပိုထိုက်တန်တယ်။",
+   "my_norm": "ရိုးသားတဲ့အလုပ်ရဲ့ ဂုဏ်သိက္ခာက ယဉ်ကျေးတဲ့လက်ခုပ်သံထက် ပိုထိုက်တန်တယ်။",
    "th_norm": "ศักดิ์ศรีของงานสุจริตสมควรได้มากกว่าการปรบมือสุภาพ",
    "fingerprint": "551f0e61ebe14358",
    "vocab_sig": [
@@ -128135,7 +128136,7 @@
    "kind": "phrase",
    "en": "The rules of this house protect every speaker, including you.",
    "en_norm": "the rules of this house protect every speaker including you",
-   "my_norm": "ဒီအဖွဲ့ရဲ့စည်းမျဥ်းတွေက သင်အပါအဝင် ပြောသူတိုင်းကို ကာကွယ်တယ်။",
+   "my_norm": "ဒီအဖွဲ့ရဲ့စည်းမျဉ်းတွေက သင်အပါအဝင် ပြောသူတိုင်းကို ကာကွယ်တယ်။",
    "th_norm": "กฎของสภานี้คุ้มครองผู้พูดทุกคน รวมถึงคุณ",
    "fingerprint": "8d1c636fe34a66ff",
    "vocab_sig": [
@@ -128159,7 +128160,7 @@
    "kind": "phrase",
    "en": "A point of order, not a point of volume, is what's needed.",
    "en_norm": "a point of order not a point of volume is what s needed",
-   "my_norm": "လိုအပ်တာက အသံကျယ်တဲ့အချက်မဟုတ်ဘူး၊ စည်းမျဥ်းဆိုင်ရာအချက်ပဲ။",
+   "my_norm": "လိုအပ်တာက အသံကျယ်တဲ့အချက်မဟုတ်ဘူး၊ စည်းမျဉ်းဆိုင်ရာအချက်ပဲ။",
    "th_norm": "สิ่งที่ต้องการคือประเด็นข้อบังคับ ไม่ใช่ประเด็นเสียงดัง",
    "fingerprint": "80ba83b51c2d5a11",
    "vocab_sig": [
@@ -129295,7 +129296,7 @@
    "kind": "phrase",
    "en": "We acknowledge the legitimate security concerns of all sides.",
    "en_norm": "we acknowledge the legitimate security concerns of all sides",
-   "my_norm": "ဘက်အားလုံးရဲ့ တရားဝင်လုံခြုံရေးစိုးရိမ်မှုတွေကို အသိအမှတ်ပြုပါတယ်။",
+   "my_norm": "ဘက်အားလုံးရဲ့ တရားမျှတသောလုံခြုံရေးစိုးရိမ်မှုတွေကို အသိအမှတ်ပြုပါတယ်။",
    "th_norm": "เรารับทราบความกังวลด้านความมั่นคงที่ชอบธรรมของทุกฝ่าย",
    "fingerprint": "89f15905976cf81b",
    "vocab_sig": [
@@ -130213,7 +130214,7 @@
    "kind": "phrase",
    "en": "The downside is capped; the upside is asymmetric.",
    "en_norm": "the downside is capped the upside is asymmetric",
-   "my_norm": "အကျဘက်က ကန့်သတ်ထားတယ်၊ အတက်ဘက်ကတော့ မညီမျှဘူး။",
+   "my_norm": "အကျဘက်က ကန့်သတ်ထားတယ်၊ အတက်ဘက်ကတော့ အချိုးမညီမျှလောက်အောင် ကြီးမားတယ်။",
    "th_norm": "ความเสี่ยงขาลงถูกจำกัดไว้ ขณะที่โอกาสขาขึ้นไม่สมส่วน",
    "fingerprint": "1c3455b704414764",
    "vocab_sig": [
@@ -130235,7 +130236,7 @@
    "kind": "phrase",
    "en": "Customer retention, not acquisition, is where the leverage lies.",
    "en_norm": "customer retention not acquisition is where the leverage lies",
-   "my_norm": "ဖောက်သည်ထိန်းသိမ်းမှုက ဝယ်ယူမှုမဟုတ်ဘဲ အသာစီးရစေတဲ့နေရာပဲ။",
+   "my_norm": "ဖောက်သည်အသစ်ရှာဖွေမှုမဟုတ်ဘဲ ဖောက်သည်ထိန်းသိမ်းမှုက အသာစီးရစေတဲ့နေရာပဲ။",
    "th_norm": "การรักษาลูกค้า ไม่ใช่การหาลูกค้าใหม่ คือจุดที่เกิดแรงส่งมากที่สุด",
    "fingerprint": "86143c4842e9cbf7",
    "vocab_sig": [
@@ -133319,19 +133320,19 @@
   {
    "id": "phrase:academia:4564",
    "kind": "phrase",
-   "en": "Summing up the affirmative case in a single proposition.",
-   "en_norm": "summing up the affirmative case in a single proposition",
+   "en": "Let me sum up the affirmative case in a single proposition.",
+   "en_norm": "let me sum up the affirmative case in a single proposition",
    "my_norm": "ထောက်ခံတဲ့အမှုကို အဆိုတစ်ခုတည်းနဲ့ အကျဉ်းချုပ်တယ်။",
    "th_norm": "สรุปคดีฝ่ายสนับสนุนในประพจน์เดียว",
-   "fingerprint": "930de04589ea9403",
+   "fingerprint": "15c72c7243edb252",
    "vocab_sig": [
     "affirmative",
     "case",
     "proposition",
     "single",
-    "summing"
+    "sum"
    ],
-   "template_sig": "W up the W W in a W W .",
+   "template_sig": "let me W up the W W in a W W .",
    "tags": [
     "academia",
     "phrase"
@@ -144775,7 +144776,7 @@
    "kind": "phrase",
    "en": "My phone battery is very low.",
    "en_norm": "my phone battery is very low",
-   "my_norm": "ကျွန်တော့်ဖုန်းရဲ့ ဘက်ထရီအရမ်းနည်းနေပြီ။",
+   "my_norm": "ကျွန်တော့်ဖုန်းဘက်ထရီအားအရမ်းနည်းနေပြီ။",
    "th_norm": "แบตโทรศัพท์ฉันใกล้หมด",
    "fingerprint": "3d06f6eb1168c334",
    "vocab_sig": [
@@ -144817,7 +144818,7 @@
    "kind": "phrase",
    "en": "The Wi-Fi signal is weak here.",
    "en_norm": "the wi fi signal is weak here",
-   "my_norm": "ဒီမှာ ဝိုင်ဖိုင်အချက်ပြအားနည်းတယ်။",
+   "my_norm": "ဒီမှာ ဝိုင်ဖိုင်အားနည်းတယ်။",
    "th_norm": "สัญญาณไวไฟที่นี่อ่อน",
    "fingerprint": "3b7b3f82dee28b40",
    "vocab_sig": [
@@ -145090,7 +145091,7 @@
    "kind": "phrase",
    "en": "The video keeps buffering.",
    "en_norm": "the video keeps buffering",
-   "my_norm": "ဗီဒီယိုက ဆက်တိုက်ရပ်ရပ်နေတယ်။",
+   "my_norm": "ဗီဒီယိုက ခဏခဏရပ်ရပ်နေတယ်။",
    "th_norm": "วิดีโอค้างตลอด",
    "fingerprint": "e8f3056807dc086e",
    "vocab_sig": [
@@ -145111,8 +145112,8 @@
    "kind": "phrase",
    "en": "My keyboard responds slowly.",
    "en_norm": "my keyboard responds slowly",
-   "my_norm": "ကျွန်တော့်ကီးဘုတ်က တုံ့ပြန်မှု နှေးနေတယ်။",
-   "th_norm": "คีย์บอร์ดของฉันพิมพ์ช้า",
+   "my_norm": "ကျွန်တော့်ကီးဘုတ်က နှေးနေတယ်။",
+   "th_norm": "คีย์บอร์ดของฉันตอบสนองช้า",
    "fingerprint": "8fe4c8d7864c9f91",
    "vocab_sig": [
     "keyboard",
@@ -145296,7 +145297,7 @@
    "kind": "phrase",
    "en": "I ran out of phone storage.",
    "en_norm": "i ran out of phone storage",
-   "my_norm": "ကျွန်တော့်ဖုန်းရဲ့သိုလှောင်နေရာကုန်သွားပြီ။",
+   "my_norm": "ကျွန်တော့်ဖုန်းရဲ့ မမ်မိုရီကုန်သွားပြီ။",
    "th_norm": "พื้นที่เก็บข้อมูลในโทรศัพท์เต็ม",
    "fingerprint": "91cb4fcb21998873",
    "vocab_sig": [
@@ -145615,7 +145616,7 @@
    "kind": "phrase",
    "en": "You can track your order online.",
    "en_norm": "you can track your order online",
-   "my_norm": "မင်းရဲ့အော်ဒါကို အွန်လိုင်းကနေ ခြေရာခံနိုင်တယ်။",
+   "my_norm": "မင်းရဲ့အော်ဒါအခြေအနေကို အွန်လိုင်းကနေ စစ်ဆေးနိုင်တယ်။",
    "th_norm": "คุณสามารถติดตามคำสั่งซื้อออนไลน์ได้",
    "fingerprint": "7bc95e3dd54a2b03",
    "vocab_sig": [
@@ -146771,7 +146772,7 @@
    "en": "The company expanded into new markets.",
    "en_norm": "the company expanded into new markets",
    "my_norm": "ကုမ္ပဏီက ဈေးကွက်အသစ်တွေကို ချဲ့ထွင်လိုက်တယ်။",
-   "th_norm": "บริษัทขยายสู่ตลาดใหม่",
+   "th_norm": "บริษัทขยายธุรกิจสู่ตลาดใหม่",
    "fingerprint": "a3bf7a8f974d2281",
    "vocab_sig": [
     "company",
@@ -146858,7 +146859,7 @@
    "kind": "phrase",
    "en": "Our rivals launched a cheaper product.",
    "en_norm": "our rivals launched a cheaper product",
-   "my_norm": "ကျွန်တော်တို့ပြိုင်ဘက်တွေက ဈေးသက်သာတဲ့ထုတ်ကုန်အသစ်ထွက်ရှိလိုက်တယ်။",
+   "my_norm": "ကျွန်တော်တို့ပြိုင်ဘက်တွေက ဈေးသက်သာတဲ့ထုတ်ကုန်အသစ်တစ်ခုကို မိတ်ဆက်လိုက်တယ်။",
    "th_norm": "คู่แข่งเปิดตัวสินค้าที่ถูกกว่า",
    "fingerprint": "b0a3f35fcc5349c1",
    "vocab_sig": [
@@ -147137,7 +147138,7 @@
    "en": "She oversees three different projects.",
    "en_norm": "she oversees three different projects",
    "my_norm": "သူမက စီမံကိန်းသုံးခုကို ကြီးကြပ်တယ်။",
-   "th_norm": "เธอดูแลสามโครงการที่แตกต่างกัน",
+   "th_norm": "เธอดูแลสามโครงการ",
    "fingerprint": "ff631a910cd20f34",
    "vocab_sig": [
     "different",
@@ -147397,7 +147398,7 @@
    "kind": "phrase",
    "en": "Diversification reduces investment risk.",
    "en_norm": "diversification reduces investment risk",
-   "my_norm": "ရင်းနှီးမြှုပ်နှံမှုကို အမျိုးမျိုးခွဲဝေခြင်းက ရင်းနှီးမြှုပ်နှံမှုအန္တရာယ်ကို လျှော့ချပေးတယ်။",
+   "my_norm": "အမျိုးမျိုးခွဲဝေပြီး ရင်းနှီးမြှုပ်နှံခြင်းက ရင်းနှီးမြှုပ်နှံမှုအန္တရာယ်ကို လျှော့ချပေးတယ်။",
    "th_norm": "การกระจายการลงทุนช่วยลดความเสี่ยง",
    "fingerprint": "e1035800363f5de7",
    "vocab_sig": [
@@ -147443,7 +147444,7 @@
    "en": "Entrepreneurship demands resilience and patience.",
    "en_norm": "entrepreneurship demands resilience and patience",
    "my_norm": "စွန့်ဦးတီထွင်လုပ်ငန်းက ခံနိုင်ရည်နဲ့ စိတ်ရှည်မှုလိုအပ်တယ်။",
-   "th_norm": "การเป็นผู้ประกอบการต้องอาศัยความทรหดและความอดทน",
+   "th_norm": "การเป็นผู้ประกอบการต้องอาศัยความทรหดอดทน",
    "fingerprint": "3d50eab218893d9d",
    "vocab_sig": [
     "demands",
@@ -147691,7 +147692,7 @@
    "en": "We feel grateful for your help.",
    "en_norm": "we feel grateful for your help",
    "my_norm": "မင်းအကူအညီအတွက် ကျွန်တော်တို့ကျေးဇူးတင်နေတယ်။",
-   "th_norm": "เรารู้สึกขอบคุณสำหรับความช่วยเหลือของคุณ",
+   "th_norm": "เราขอบคุณมากสำหรับความช่วยเหลือ",
    "fingerprint": "3bc6d010e327b9b7",
    "vocab_sig": [
     "feel",
@@ -148144,7 +148145,7 @@
    "kind": "phrase",
    "en": "I was overwhelmed by their kindness.",
    "en_norm": "i was overwhelmed by their kindness",
-   "my_norm": "သူတို့ကြင်နာမှုကြောင့် ကျွန်တော်ရင်ခုန်လွန်းခဲ့တယ်။",
+   "my_norm": "သူတို့ကြင်နာမှုကြောင့် ကျွန်တော် လှိုက်လှိုက်လှဲလှဲခံစားရပြီး ဘယ်လိုတုံ့ပြန်ရမှန်းမသိဖြစ်ခဲ့တယ်။",
    "th_norm": "ฉันซาบซึ้งในความใจดีของพวกเขามาก",
    "fingerprint": "3516916d8b9f799d",
    "vocab_sig": [
@@ -148293,7 +148294,7 @@
    "en": "He apologized sincerely for his rudeness.",
    "en_norm": "he apologized sincerely for his rudeness",
    "my_norm": "သူက သူ့ရိုင်းစိုင်းမှုအတွက် ရိုးသားစွာတောင်းပန်လိုက်တယ်။",
-   "th_norm": "เขาขอโทษอย่างจริงใจสำหรับความหยาบคาย",
+   "th_norm": "เขาขอโทษอย่างจริงใจที่ทำตัวหยาบคาย",
    "fingerprint": "1ffbbfe9f539d8bc",
    "vocab_sig": [
     "apologized",
@@ -148463,7 +148464,7 @@
    "kind": "phrase",
    "en": "His anger slowly turned into sadness.",
    "en_norm": "his anger slowly turned into sadness",
-   "my_norm": "သူ့ဒေါသက တဖြည်းဖြည်းဝမ်းနည်းမှုဖြစ်သွားတယ်။",
+   "my_norm": "သူ့ဒေါသက တဖြည်းဖြည်းချင်း ဝမ်းနည်းမှုအဖြစ်ပြောင်းလဲသွားတယ်။",
    "th_norm": "ความโกรธของเขาค่อยๆ กลายเป็นความเศร้า",
    "fingerprint": "7a87895e2876fe00",
    "vocab_sig": [
@@ -149573,7 +149574,7 @@
    "en": "He tidies his desk before leaving.",
    "en_norm": "he tidies his desk before leaving",
    "my_norm": "သူက မထွက်ခွာခင် သူ့စားပွဲကို သပ်ရပ်အောင်လုပ်တယ်။",
-   "th_norm": "เขาเก็บโต๊ะก่อนออกจากงาน",
+   "th_norm": "เขาเก็บโต๊ะก่อนเลิกงาน",
    "fingerprint": "a8fba448b4e7d2e7",
    "vocab_sig": [
     "desk",
@@ -455310,7 +455311,7 @@
    "kind": "word",
    "en": "vulture fund",
    "en_norm": "vulture fund",
-   "my_norm": "လင်းတဈေးရန်ပုံငွေ",
+   "my_norm": "လင်းတရန်ပုံငွေ",
    "th_norm": "กองทุนแร้ง",
    "fingerprint": "921a8359755dc3f8",
    "vocab_sig": [
@@ -459150,7 +459151,7 @@
    "kind": "word",
    "en": "private equity",
    "en_norm": "private equity",
-   "my_norm": "သီးသန့်အစုရှယ်ယာရန်ပုံငွေ",
+   "my_norm": "ပုဂ္ဂလိကရင်းနှီးမြှုပ်နှံမှု",
    "th_norm": "ไพรเวทอิควิตี",
    "fingerprint": "15352172334078e1",
    "vocab_sig": [
@@ -459501,7 +459502,7 @@
    "kind": "word",
    "en": "angel investor",
    "en_norm": "angel investor",
-   "my_norm": "နတ်သမီးရင်းနှီးမြှုပ်နှံသူ",
+   "my_norm": "အိန်ဂျယ်ရင်းနှီးမြှုပ်နှံသူ",
    "th_norm": "นักลงทุนเทวดา",
    "fingerprint": "36d24885481252e1",
    "vocab_sig": [

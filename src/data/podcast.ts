@@ -38,6 +38,16 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 59,
+    slug: 'day-off-at-home-i-stay-home-i-rest-i-do-nothing-it-is-relaxing-2026-10-13',
+    titleMy: 'အပိုင်း ၅၉ — အားလပ်ရက်တွင် အိမ်မှာနေခြင်း',
+    titleOrig: 'วันหยุดอยู่บ้าน — Day off at home',
+    descMy: 'အားလပ်ရက်တွင် အိမ်မှာနေခြင်းအကြောင်း ပြောဆိုခြင်း — "I stay home." / "I rest." / "I do nothing." / "It is relaxing." / "I enjoyed my day off."',
+    phrases: ['I stay home.', 'I rest.', 'I do nothing.', 'It is relaxing.', 'I enjoyed my day off.'],
+    durationSecs: 521,
+    cover: '/podcast-covers/ep-59.jpg',
+  },
+  {
     n: 58,
     slug: 'pets-dog-cat-fish-bird-i-have-a-cat-it-is-cute-2026-10-13',
     titleMy: 'အပိုင်း ၅၈ — အိမ်မွေးတိရစ္ဆာန်များ',

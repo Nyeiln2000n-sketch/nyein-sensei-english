@@ -51,7 +51,7 @@ export const dialoguesBatch1: Dialogue[] = [
     situationMy: 'မိသားစုက အဖွားအိမ်ကို သွားလည်နေတာ',
     situationTh: 'ครอบครัวไปเยี่ยมยายที่บ้าน',
     turns: [
-      { speaker: 'မြေး', speakerTh: 'หลาน', en: 'Grandma! We are here!', my: 'အဖွား။ တို့​ရောက်လာပြီ။', th: 'ยาย! พวกเรามาแล้ว!' },
+      { speaker: 'မြေး', speakerTh: 'หลาน', en: 'Grandma! We are here!', my: 'အဖွား။ တို့ရောက်လာပြီ။', th: 'ยาย! พวกเรามาแล้ว!' },
       { speaker: 'အဖွား', speakerTh: 'ยาย', en: 'My dear grandchildren! Come in!', my: 'ချစ်မြေးလေးတွေ။ ဝင်လာခဲ့။', th: 'หลานรักของยาย! เข้ามาเลย!' },
       { speaker: 'မြေး', speakerTh: 'หลาน', en: 'Grandma, I missed you so much.', my: 'အဖွားကို အရမ်းလွမ်းနေတာ။', th: 'ยาย หนูคิดถึงยายมากเลย' },
       { speaker: 'အဖွား', speakerTh: 'ยาย', en: 'I missed you too, my dear.', my: 'အဖွားလည်း လွမ်းနေတာပေါ့ ချစ်။', th: 'ยายก็คิดถึงหนูเหมือนกันจ้ะ' },
@@ -482,7 +482,7 @@ export const dialoguesBatch1: Dialogue[] = [
     turns: [
       { speaker: 'ဝယ်သူ', speakerTh: 'ลูกค้า', en: 'Hello, I bought this yesterday.', my: 'ဟလို၊ ဒါကို မနေ့က ဝယ်ခဲ့တာ။', th: 'สวัสดีครับ เมื่อวานซื้อตัวนี้มา' },
       { speaker: 'ဆိုင်ရှင်', speakerTh: 'เจ้าของร้าน', en: 'Hello! Is there a problem?', my: 'ဟလို။ ပြဿနာတစ်ခုခုရှိလို့လား။', th: 'สวัสดีครับ! มีปัญหาอะไรไหม' },
-      { speaker: 'ဝယ်သူ', speakerTh: 'ลูกค้า', en: 'It is too small for me.', my: 'ကျွန်တော့်အတွက် သေးနေတယ်။', th: 'มันเล็กไปสำหรับผมครับ' },
+      { speaker: 'ဝယ်သူ', speakerTh: 'ลูกค้า', en: 'It is too small for me.', my: 'ကျွန်တော့်အတွက် သေးနေတယ်။', th: 'มันเล็กไปหน่อยครับ' },
       { speaker: 'ဆိုင်ရှင်', speakerTh: 'เจ้าของร้าน', en: 'Do you have the receipt?', my: 'ပြေစာပါလား။', th: 'มีใบเสร็จไหมครับ' },
       { speaker: 'ဝယ်သူ', speakerTh: 'ลูกค้า', en: 'Yes, here it is.', my: 'ဟုတ်တယ်၊ ဒီမှာပါ။', th: 'มีครับ นี่ครับ' },
       { speaker: 'ဆိုင်ရှင်', speakerTh: 'เจ้าของร้าน', en: 'We can exchange it for a bigger size.', my: 'ပိုကြီးတဲ့ဆိုဒ်နဲ့ လဲပေးလို့ရပါတယ်။', th: 'เปลี่ยนเป็นไซส์ใหญ่กว่าได้ครับ' },
@@ -524,7 +524,7 @@ export const dialoguesBatch1: Dialogue[] = [
       { speaker: 'ငွေကိုင်', speakerTh: 'แคชเชียร์', en: 'And the total was twelve dollars.', my: 'စုစုပေါင်းက ဆယ့်နှစ်ဒေါ်လာပါ။', th: 'ยอดรวมสิบสองดอลลาร์ครับ' },
       { speaker: 'ဝယ်သူ', speakerTh: 'ลูกค้า', en: 'So the change should be eight dollars.', my: 'ဒါဆို ပြန်အမ်းငွေက ရှစ်ဒေါ်လာဖြစ်ရမယ်။', th: 'งั้นเงินทอนต้องแปดดอลลาร์ครับ' },
       { speaker: 'ငွေကိုင်', speakerTh: 'แคชเชียร์', en: 'You are right! Here is the rest.', my: 'မှန်တယ်။ ကျန်တာဒီမှာပါ။', th: 'คุณพูดถูกครับ! นี่ครับ ส่วนที่ทอนขาดไป' },
-      { speaker: 'ဝယ်သူ', speakerTh: 'ลูกค้า', en: 'Thank you! Have a nice day.', my: 'ကျေးဇူးပါ။ နေ့ကောင်းပါစေ။', th: 'ขอบคุณครับ! ขอให้มีวันที่ดีนะครับ' },
+      { speaker: 'ဝယ်သူ', speakerTh: 'ลูกค้า', en: 'Thank you! Have a nice day.', my: 'ကျေးဇူးပါ။ နေ့ကောင်းပါစေ။', th: 'ขอบคุณครับ สวัสดีครับ' },
     ],
   },
   {
@@ -637,7 +637,7 @@ export const dialoguesBatch1: Dialogue[] = [
     turns: [
       { speaker: 'ခရီးသည်', speakerTh: 'ผู้โดยสาร', en: 'Excuse me, my suitcase is missing.', my: 'ခွင့်ပြုပါ၊ ကျွန်တော့်ခရီးဆောင်အိတ် ပျောက်နေတယ်။', th: 'ขอโทษครับ กระเป๋าเดินทางผมหายครับ' },
       { speaker: 'ဝန်ထမ်း', speakerTh: 'พนักงาน', en: 'I am sorry to hear that. Which flight?', my: 'ကြားရတာ စိတ်မကောင်းပါဘူး။ ဘယ်လေယာဉ်နဲ့လဲ။', th: 'เสียใจด้วยนะครับ ไฟลต์ไหนครับ' },
-      { speaker: 'ခရီးသည်', speakerTh: 'ผู้โดยสาร', en: 'Flight 231 from Bangkok.', my: 'ဘန်ကောက်က လေယာဉ် ၂၃၁ နဲ့ပါ။', th: 'ไฟลต์ 2-3-1 จากกรุงเทพฯ ครับ' },
+      { speaker: 'ခရီးသည်', speakerTh: 'ผู้โดยสาร', en: 'Flight 231 from Bangkok.', my: 'ဘန်ကောက်က လေယာဉ် ၂၃၁ နဲ့ပါ။', th: 'ไฟลต์สองสามหนึ่ง จากกรุงเทพฯ ครับ' },
       { speaker: 'ဝန်ထမ်း', speakerTh: 'พนักงาน', en: 'Can you describe your suitcase?', my: 'အိတ်ပုံစံ ဖော်ပြပေးနိုင်မလား။', th: 'อธิบายลักษณะกระเป๋าได้ไหมครับ' },
       { speaker: 'ခရီးသည်', speakerTh: 'ผู้โดยสาร', en: 'It is black with a red ribbon.', my: 'အနက်ရောင်ပါ၊ အနီရောင်ဖဲကြိုးချည်ထားတယ်။', th: 'สีดำ มีโบว์สีแดงผูกไว้ครับ' },
       { speaker: 'ဝန်ထမ်း', speakerTh: 'พนักงาน', en: 'Please fill in this form.', my: 'ဒီဖောင်ဖြည့်ပေးပါ။', th: 'กรอกแบบฟอร์มนี้หน่อยครับ' },
@@ -773,7 +773,7 @@ export const dialoguesBatch1: Dialogue[] = [
     situationMy: 'လူနာတစ်ယောက် မျက်မှန်ဆိုင်မှာ မျက်စိစမ်းသပ်ခံနေတာ',
     situationTh: 'คนไข้คนหนึ่งกำลังตรวจสายตาที่ร้านแว่น',
     turns: [
-      { speaker: 'လူနာ', speakerTh: 'คนไข้', en: 'I cannot see far things clearly.', my: 'အဝေးကအရာတွေ မမြင်ရဘူး။', th: 'มองไกลๆ ไม่ชัดครับ' },
+      { speaker: 'လူနာ', speakerTh: 'คนไข้', en: 'I cannot see things far away clearly.', my: 'အဝေးကအရာတွေ မမြင်ရဘူး။', th: 'มองไกลๆ ไม่ชัดครับ' },
       { speaker: 'မျက်စိဆရာဝန်', speakerTh: 'จักษุแพทย์', en: 'Let us test your eyes.', my: 'မျက်စိစမ်းကြည့်ရအောင်။', th: 'มาตรวจสายตากันครับ' },
       { speaker: 'လူနာ', speakerTh: 'คนไข้', en: 'Okay, I am ready.', my: 'အိုကေ၊ အဆင်သင့်ပါ။', th: 'โอเค พร้อมแล้วครับ' },
       { speaker: 'မျက်စိဆရာဝန်', speakerTh: 'จักษุแพทย์', en: 'Read the third line, please.', my: 'တတိယစာကြောင်းကို ဖတ်ပေးပါ။', th: 'อ่านแถวที่สามหน่อยครับ' },
