@@ -19,7 +19,7 @@ export const hyperlocalStories1: Story[] = [
         th: 'เช้าวันหนึ่ง นักท่องเที่ยวสาวชื่อแอนนาแวะที่แผงของเธอ เธอก้มดูแผนที่ด้วยสีหน้ากังวล เธอหาพระเจดีย์เก่าแก่ไม่พบ',
       },
       {
-        en: 'Daw Mya laughs and shows Anna the way on the map. "The pagoda is near the river. Walk ten minutes." She also teaches Anna to bargain with respect. "Smile and ask for a lower price. Be polite, never angry."',
+        en: 'Daw Mya laughs and shows Anna the way on the map. "The pagoda is near the river. Walk for ten minutes." She also teaches Anna to bargain with respect. "Smile and ask for a lower price. Be polite, never angry."',
         my: 'ဒေါ်မြက ရယ်မောပြီး မြေပုံပေါ်မှာ လမ်းညွှန်ပေးတယ်။ "ဘုရားက မြစ်ကမ်းနားမှာ။ ဆယ်မိနစ်ပဲ လမ်းလျှောက်ရမယ်။" ပြီးတော့ အန်နာကို ရိုရိုသေသေ ဈေးဆစ်နည်းလည်း သင်ပေးတယ်။ "ပြုံးပြီး ဈေးလျှော့ခိုင်းပါ။ ယဉ်ယဉ်ကျေးကျေးပြောပါ၊ စိတ်မဆိုးနဲ့နော်။"',
         th: 'ดอเมียหัวเราะแล้วชี้ทางให้แอนนาดูบนแผนที่ "เจดีย์อยู่ริมแม่น้ำ เดินไปแค่สิบนาทีเอง" จากนั้นเธอก็สอนแอนนาวิธีต่อรองราคาอย่างสุภาพ "ยิ้มเข้าไว้แล้วขอต่อราคาหน่อย พูดจาสุภาพ ๆ นะ อย่าโกรธล่ะ"',
       },
@@ -48,9 +48,9 @@ export const hyperlocalStories1: Story[] = [
         th: 'อูจอขับรถตุ๊กตุ๊กสีน้ำเงินรับจ้างในเมือง เขาทำงานหนักทุกวัน',
       },
       {
-        en: 'One afternoon, a passenger named Tom takes his tuk-tuk to the restaurant street. Tom is in a big hurry.',
+        en: 'One afternoon, a passenger named Tom takes U Kyaw\'s tuk-tuk to the restaurant street. Tom is in a big hurry.',
         my: 'တစ်နေ့လယ်မှာ တွမ်ဆိုတဲ့ ခရီးသည်တစ်ယောက် သူ့တုတ်တုတ်နဲ့ စားသောက်ဆိုင်တွေရှိတဲ့ လမ်းကို လိုက်စီးတယ်။ တွမ်က အရမ်းအလျင်လိုနေတယ်။',
-        th: 'บ่ายวันหนึ่ง ผู้โดยสารหนุ่มชื่อทอมเรียกใช้บริการรถของเขาไปส่งที่ย่านร้านอาหาร ทอมกำลังรีบมาก',
+        th: 'บ่ายวันหนึ่ง ผู้โดยสารหนุ่มชื่อทอมนั่งรถตุ๊กตุ๊กของเขาไปย่านร้านอาหาร ทอมกำลังรีบมาก',
       },
       {
         en: 'At the restaurant, Tom pays and runs inside quickly. Later, U Kyaw finds a brown wallet on the back seat. There is a lot of money inside.',
@@ -83,7 +83,7 @@ export const hyperlocalStories1: Story[] = [
       },
       {
         en: 'That evening, he suddenly feels sick. Because he has a high fever, he can hardly stand up.',
-        my: 'အဲဒီညနေမှာပဲ သူ ရုတ်တရက် နေမကောင်းဖြစ်လာတယ်။ အဖျားအရမ်းကြီးနေလို့ မတ်တပ်တောင် ခိုင်ခိုင်ရပ်ဖို့ မနည်းကြိုးစားရတယ်။',
+        my: 'အဲဒီညနေမှာပဲ သူ ရုတ်တရက် နေမကောင်းဖြစ်လာတယ်။ အဖျားအရမ်းကြီးနေလို့ မတ်တပ်တောင် တော်တော်ရပ်နိုင်မှာ မဟုတ်ဘူး။',
         th: 'เย็นวันนั้น เขารู้สึกไม่สบายกะทันหัน เพราะมีไข้สูงจึงแทบจะยืนไม่ไหว',
       },
       {
@@ -126,7 +126,7 @@ export const hyperlocalStories1: Story[] = [
         th: 'ในห้องพัก เขาเปิดกระเป๋าเพื่อหาหนังสือเดินทาง แต่มันไม่อยู่ที่นั่น! เขาค้นทุกซอกทุกมุม แต่หนังสือเดินทางก็หายไปแล้ว',
       },
       {
-        en: 'Tom runs down to the reception desk. The receptionist, Ma Ei, listens calmly because she has helped many travelers before.',
+        en: 'Tom runs down to the reception desk. The receptionist, Ma Ei, calmly listens because she has helped many travelers before.',
         my: 'တွမ်က ဧည့်ခံကောင်တာဆီ အပြေးဆင်းလာတယ်။ ဧည့်ခံဝန်ထမ်း မအိက စိတ်ရှည်ရှည်နဲ့ နားထောင်ပေးတယ် — ဘာလို့လဲဆိုတော့ သူမ ခရီးသွားတွေ အများကြီးကို ဒီလိုမျိုး ကူညီဖူးလို့ပါ။',
         th: 'ทอมรีบวิ่งลงไปที่เคาน์เตอร์ต้อนรับ มะเอ พนักงานต้อนรับ รับฟังอย่างใจเย็น เพราะเธอเคยช่วยเหลือเหล่านักท่องเที่ยวมาแล้วหลายครั้ง',
       },

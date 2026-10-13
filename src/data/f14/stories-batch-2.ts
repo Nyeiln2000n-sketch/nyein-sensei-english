@@ -16,7 +16,7 @@ export const storiesBatch2: Story[] = [
     {
       en: 'Aung Min woke up early on Monday morning because he had a job interview at nine o\'clock. He had prepared for this interview for a whole week, and he felt both nervous and excited.',
       my: 'အောင်မင်းက တနင်္လာနေ့မနက် အစောကြီး နိုးထခဲ့တယ်၊ ဘာလို့လဲဆိုတော့ ကိုးနာရီမှာ အလုပ်အင်တာဗျူးရှိလို့ပဲ။ ဒီအင်တာဗျူးအတွက် တစ်ပတ်လုံး ပြင်ဆင်ခဲ့ပြီး စိုးရိမ်စိတ်နဲ့ စိတ်လှုပ်ရှားမှုနှစ်ခုလုံး ခံစားရတယ်။',
-      th: 'อองมินตื่นเช้าวันจันทร์เพราะเขามีสัมภาษณ์งานตอนเก้าโมง เขาเตรียมตัวสำหรับการสัมภาษณ์นี้มาทั้งสัปดาห์ และรู้สึกทั้งประหม่าและตื่นเต้น',
+      th: 'อองมินตื่นแต่เช้าวันจันทร์เพราะเขามีนัดสัมภาษณ์งานตอนเก้าโมง เขาเตรียมตัวสำหรับการสัมภาษณ์นี้มาทั้งสัปดาห์ และรู้สึกทั้งประหม่าและตื่นเต้น',
     },
     {
       en: 'He chose his best shirt, printed his resume, and arrived at the office thirty minutes early. The receptionist smiled and asked him to wait in the meeting room.',
@@ -55,7 +55,7 @@ export const storiesBatch2: Story[] = [
   paragraphs: [
     {
       en: 'May works at a mobile phone shop in downtown Yangon. She likes her job, but some days are harder than others because customers can be very demanding.',
-      my: 'မေက ရန်ကုန်မြို့လယ်က မိုဘိုင်းဖုန်းဆိုင်မှာ အလုပ်လုပ်တယ်။ သူက အလုပ်ကို ကြိုက်ပေမယ့် တစ်ချို့နေ့တွေက ပိုခက်ခဲတယ်၊ ဘာလို့လဲဆိုတော့ ဖောက်သည်တွေက အရမ်းတောင်းဆိုတတ်လို့ပါ။',
+      my: 'မေက ရန်ကုန်မြို့လယ်က မိုဘိုင်းဖုန်းဆိုင်မှာ အလုပ်လုပ်တယ်။ သူက အလုပ်ကို ကြိုက်ပေမယ့် တစ်ချို့နေ့တွေက ပိုခက်ခဲတယ်၊ ဘာလို့လဲဆိုတော့ ဖောက်သည်တွေက အရမ်းတောင်းဆိုတတ်လို့ပဲ။',
       th: 'เมย์ทำงานที่ร้านโทรศัพท์มือถือในใจกลางย่างกุ้ง เธอชอบงานของเธอ แต่บางวันก็ยากกว่าวันอื่นเพราะลูกค้าบางคนเรียกร้องมากเกินไป',
     },
     {
@@ -81,7 +81,7 @@ export const storiesBatch2: Story[] = [
     {
       en: 'From that day on, May became known as the most patient employee in the shop. Whenever a difficult customer arrived, her colleagues asked her for help, and she always smiled and handled every difficult situation with great grace.',
       my: 'အဲဒီနေ့ကစပြီး မေက ဆိုင်မှာ စိတ်အရှည်ဆုံးဝန်ထမ်းအဖြစ် လူသိများလာတယ်။ ခက်ခဲတဲ့ဖောက်သည် ရောက်လာတိုင်း လုပ်ဖော်ကိုင်ဖက်တွေက သူ့အကူအညီ တောင်းပြီး သူက အမြဲပြုံးကာ သိမ်မွေ့ယဉ်ကျေးစွာ ကိုင်တွယ်တယ်။',
-      th: 'ตั้งแต่วันนั้น เมย์เป็นที่รู้จักในฐานะพนักงานที่อดทนที่สุดในร้าน ทุกครั้งที่มีลูกค้าที่รับมือยาก เพื่อนร่วมงานก็ขอความช่วยเหลือจากเธอ และเธอยิ้มเสมอพร้อมจัดการทุกสถานการณ์ที่ยากลำบากได้อย่างมืออาชีพ',
+      th: 'ตั้งแต่วันนั้น เมย์เป็นที่รู้จักในฐานะพนักงานที่อดทนที่สุดในร้าน ทุกครั้งที่มีลูกค้าที่รับมือยาก เพื่อนร่วมงานก็ขอความช่วยเหลือจากเธอ และเธอยิ้มเสมอ พร้อมรับมือทุกสถานการณ์ที่ยากลำบากได้อย่างสง่างาม',
     },
   ],
 },
@@ -100,7 +100,7 @@ export const storiesBatch2: Story[] = [
     },
     {
       en: 'She felt worried because all her clothes and medicine were inside the suitcase. She went to the lost luggage counter to report the problem.',
-      my: 'သူ စိုးရိမ်ခဲ့တယ်၊ ဘာလို့လဲဆိုတော့ အဝတ်အစားတွေနဲ့ ဆေးတွေအားလုံး အိတ်ထဲမှာ ရှိလို့ပါ။ ပြဿနာကို တိုင်ဖို့ ပျောက်ဆုံးအိတ်ကောင်တာကို သွားတယ်။',
+      my: 'သူ စိုးရိမ်ခဲ့တယ်၊ ဘာလို့လဲဆိုတော့ အဝတ်အစားတွေနဲ့ ဆေးတွေအားလုံး အိတ်ထဲမှာ ရှိလို့ပဲ။ ပြဿနာကို တိုင်ဖို့ ပျောက်ဆုံးအိတ်ကောင်တာကို သွားတယ်။',
       th: 'เธอรู้สึกกังวลเพราะเสื้อผ้าและยาทั้งหมดอยู่ในกระเป๋า เธอไปเคาน์เตอร์กระเป๋าหายเพื่อแจ้งปัญหา',
     },
     {
@@ -121,7 +121,7 @@ export const storiesBatch2: Story[] = [
     {
       en: 'Daw Hla enjoyed the rest of her holiday without any more problems. When she returned home, she told her friends to always keep important medicine in their hand luggage, just in case. She also decided to label her suitcase clearly with her name and phone number for all future trips, so this would never happen again.',
       my: 'ဒေါ်လှက ကျန်တဲ့အားလပ်ရက်ကို ပြဿနာမရှိဘဲ ပျော်ရွှင်စွာ ကုန်ဆုံးတယ်။ အိမ်ပြန်ရောက်တဲ့အခါ အရေးကြီးတဲ့ဆေးတွေကို လက်ဆွဲအိတ်ထဲမှာ အမြဲထားဖို့ သူငယ်ချင်းတွေကို ပြောတယ်၊ ကြိုတင်ကာကွယ်တဲ့အနေနဲ့။ သူက နောင်ခရီးတိုင်းအတွက် ဒါမျိုး ထပ်မဖြစ်အောင် အိတ်မှာ နာမည်နဲ့ ဖုန်းနံပါတ်ကို ရှင်းရှင်းလင်းလင်း တံဆိပ်ကပ်ဖို့ ဆုံးဖြတ်တယ်။',
-      th: 'ดอฮลาเพลิดเพลินกับวันหยุดที่เหลือโดยไม่มีปัญหาอีก เมื่อกลับบ้าน เธอบอกเพื่อนให้เก็บยาสำคัญในกระเป๋าถือเสมอ เผื่อไว้ เธอยังตัดสินใจติดป้ายชื่อและเบอร์โทรบนกระเป๋าให้ชัดเจนสำหรับการเดินทางครั้งต่อ ๆ ไป เพื่อไม่ให้เกิดเหตุการณ์นี้อีก',
+      th: 'ดอฮลาเพลิดเพลินกับวันหยุดที่เหลือโดยไม่มีปัญหาอีก เมื่อกลับบ้าน เธอบอกเพื่อนให้เก็บยาสำคัญในกระเป๋าถือขึ้นเครื่องเสมอ เผื่อไว้ เธอยังตัดสินใจติดป้ายชื่อและเบอร์โทรบนกระเป๋าให้ชัดเจนสำหรับการเดินทางครั้งต่อ ๆ ไป เพื่อไม่ให้เกิดเหตุการณ์นี้อีก',
     },
   ],
 },
@@ -159,9 +159,9 @@ export const storiesBatch2: Story[] = [
       th: 'เช้าวันรุ่งขึ้น เขาเขียนรีวิวห้าดาวออนไลน์ เขาเรียนรู้ว่าความผิดพลาดเกิดขึ้นได้ แต่บริการที่ดีแก้ไขได้',
     },
     {
-      en: 'Ko Thet slept wonderfully in the comfortable upgraded room. The next morning, he thanked the manager personally and promised to stay at the same hotel on every future trip to Mandalay. He told his business partners about the wonderful service, and two of them booked the same hotel for their next visit to the city.',
-      my: 'ကိုသက်က သက်တောင့်သက်သာရှိတဲ့ မြှင့်ပေးထားတဲ့အခန်းမှာ အရမ်းကောင်းကောင်း အိပ်စက်တယ်။ နောက်တစ်နေ့မနက်မှာ မန်နေဂျာကို ကိုယ်တိုင်ကျေးဇူးတင်ပြီး နောင်မန္တလေးခရီးတိုင်းမှာ ဒီဟိုတယ်မှာပဲ တည်းမယ်လို့ ကတိပေးတယ်။ သူက စီးပွားဖက်တွေကို အံ့ဩစရာကောင်းတဲ့ ဝန်ဆောင်မှုအကြောင်း ပြောပြပြီး သူတို့ထဲက နှစ်ယောက်က မြို့ကို နောက်လာတဲ့အခါ ဒီဟိုတယ်မှာပဲ ဘိုကင်လုပ်ခဲ့ကြတယ်။',
-      th: 'โกเต็ตนอนหลับสบายมากในห้องที่อัปเกรดแล้วซึ่งสะดวกสบายมาก เช้าวันรุ่งขึ้น เขาขอบคุณผู้จัดการเป็นการส่วนตัวและสัญญาว่าจะพักโรงแรมเดิมทุกครั้งที่มามัณฑะเลย์ เขาบอกคู่ค้าธุรกิจเรื่องบริการยอดเยี่ยม และสองคนในนั้นจองโรงแรมเดียวกันสำหรับการมาเยือนเมืองครั้งหน้า',
+      en: 'Ko Thet slept wonderfully in the comfortable upgraded room. Before checking out, he thanked the manager personally and promised to stay at the same hotel on every future trip to Mandalay. He told his business partners about the wonderful service, and two of them booked the same hotel for their next visit to the city.',
+      my: 'ကိုသက်က သက်တောင့်သက်သာရှိတဲ့ မြှင့်ပေးထားတဲ့အခန်းမှာ အရမ်းကောင်းကောင်း အိပ်စက်တယ်။ ဟိုတယ်ကမထွက်ခွာခင်မှာ မန်နေဂျာကို ကိုယ်တိုင်ကျေးဇူးတင်ပြီး နောင်မန္တလေးခရီးတိုင်းမှာ ဒီဟိုတယ်မှာပဲ တည်းမယ်လို့ ကတိပေးတယ်။ သူက စီးပွားဖက်တွေကို အံ့ဩစရာကောင်းတဲ့ ဝန်ဆောင်မှုအကြောင်း ပြောပြပြီး သူတို့ထဲက နှစ်ယောက်က မြို့ကို နောက်လာတဲ့အခါ ဒီဟိုတယ်မှာပဲ ဘိုကင်လုပ်ခဲ့ကြတယ်။',
+      th: 'โกเต็ตนอนหลับอย่างสบายมากในห้องที่อัปเกรดแล้ว เช้าวันรุ่งขึ้น เขาขอบคุณผู้จัดการเป็นการส่วนตัวและสัญญาว่าจะพักโรงแรมเดิมทุกครั้งที่มามัณฑะเลย์ เขาบอกคู่ค้าธุรกิจเรื่องบริการยอดเยี่ยม และสองคนในนั้นจองโรงแรมเดียวกันสำหรับการมาเยือนเมืองครั้งหน้า',
     },
   ],
 },
@@ -236,7 +236,7 @@ export const storiesBatch2: Story[] = [
     {
       en: 'After three months, he felt much healthier and more energetic. He thanked his doctor for the advice that changed his life.',
       my: 'သုံးလအကြာမှာ သူ အများကြီးပိုကျန်းမာပြီး အားအင်ပြည့်လာတယ်။ ဘဝကို ပြောင်းလဲစေတဲ့ အကြံဉာဏ်အတွက် ဆရာဝန်ကို ကျေးဇူးတင်တယ်။',
-      th: 'สามเดือนต่อมา เขารู้สึกว่าสุขภาพดีขึ้นและมีพลังมากขึ้นมาก เขาขอบคุณหมอสำหรับคำแนะนำที่เปลี่ยนชีวิตเขา',
+      th: 'สามเดือนต่อมา เขารู้สึกว่าสุขภาพดีขึ้นและกระฉับกระเฉงขึ้นมาก เขาขอบคุณหมอสำหรับคำแนะนำที่เปลี่ยนชีวิตเขา',
     },
     {
       en: 'U Ba now walks every morning without fail, and he has even convinced two neighbors to join him. His doctor says his test results have improved remarkably. His grandchildren now join the morning walks during school holidays, and U Ba loves teaching them about healthy living.',
@@ -255,7 +255,7 @@ export const storiesBatch2: Story[] = [
   paragraphs: [
     {
       en: 'When the new manager arrived at the small software company, the employees were worried. They had heard that she was very strict.',
-      my: 'မန်နေဂျာအသစ်က ဆော့ဖ်ဝဲလ်ကုမ္ပဏီသေးသေးလေးကို ရောက်လာတဲ့အခါ ဝန်ထမ်းတွေ စိုးရိမ်ခဲ့ကြတယ်။ သူက အရမ်းတင်းကျပ်တယ်လို့ ကြားခဲ့ကြလို့ပါ။',
+      my: 'မန်နေဂျာအသစ်က ဆော့ဖ်ဝဲလ်ကုမ္ပဏီသေးသေးလေးကို ရောက်လာတဲ့အခါ ဝန်ထမ်းတွေ စိုးရိမ်ခဲ့ကြတယ်။ သူက အရမ်းတင်းကျပ်တယ်လို့ ကြားခဲ့ကြလို့ပဲ။',
       th: 'เมื่อผู้จัดการคนใหม่มาถึงบริษัทซอฟต์แวร์เล็ก พนักงานกังวล พวกเขาได้ยินว่าเธอเข้มงวดมาก',
     },
     {
@@ -281,7 +281,7 @@ export const storiesBatch2: Story[] = [
     {
       en: 'Daw Ei still meets every new employee personally during their first week. She believes this small habit is the secret behind the company\'s continued success. New employees often say that this personal welcome made them feel valued from the very first day, and many stay with the company for years because of it, which makes everyone happy.',
       my: 'ဒေါ်အိက ဝန်ထမ်းအသစ်တိုင်းနဲ့ ပထမတစ်ပတ်မှာ ကိုယ်တိုင်တွေ့တုန်းပဲ။ ဒီအကျင့်သေးသေးလေးက ကုမ္ပဏီရဲ့ ဆက်လက်အောင်မြင်မှုနောက်က လျှို့ဝှက်ချက်လို့ သူ ယုံကြည်တယ်။ ဝန်ထမ်းအသစ်တွေက ဒီကိုယ်ပိုင်ကြိုဆိုမှုက ပထမနေ့ကတည်းက တန်ဖိုးထားခံရသလို ခံစားစေတယ်လို့ မကြာခဏ ပြောပြီး အများအပြားက ဒါကြောင့် ကုမ္ပဏီမှာ နှစ်တွေနဲ့ချီ နေကြတယ်၊ ဒါက အားလုံးကို ပျော်ရွှင်စေတယ်။',
-      th: 'ดอเอยังพบพนักงานใหม่ทุกคนเป็นการส่วนตัวในสัปดาห์แรก เธอเชื่อว่านิสัยเล็ก ๆ นี้คือความลับเบื้องหลังความสำเร็จต่อเนื่องของบริษัท พนักงานใหม่มักบอกว่าการต้อนรับส่วนตัวนี้ทำให้พวกเขารู้สึกมีค่าตั้งแต่วันแรก และหลายคนอยู่กับบริษัทมาหลายปีเพราะเหตุนี้ ซึ่งทำให้ทุกคนมีความสุข',
+      th: 'ดอเอยังพบพนักงานใหม่ทุกคนเป็นการส่วนตัวในสัปดาห์แรก เธอเชื่อว่านิสัยเล็ก ๆ นี้คือความลับเบื้องหลังความสำเร็จต่อเนื่องของบริษัท พนักงานใหม่มักบอกว่าการต้อนรับส่วนตัวนี้ทำให้พวกเขารู้สึกว่าตนเองมีคุณค่าตั้งแต่วันแรก และหลายคนอยู่กับบริษัทมาหลายปีเพราะเหตุนี้ ซึ่งทำให้ทุกคนมีความสุข',
     },
   ],
 },
@@ -321,7 +321,7 @@ export const storiesBatch2: Story[] = [
     {
       en: 'After the successful campaign, the team celebrated with a big dinner. Nanda reminded them that the real victory was learning to work together under pressure. The client was so happy that they signed a bigger contract for the next campaign, giving the team an even greater challenge to look forward to.',
       my: 'အောင်မြင်တဲ့ကမ်ပိန်းအပြီး အဖွဲ့က ညစာကြီးနဲ့ အောင်ပွဲခံတယ်။ တကယ့်အောင်ပွဲက ဖိအားအောက်မှာ အတူတူအလုပ်လုပ်ဖို့ သင်ယူခဲ့တာပါပဲလို့ နန္ဒက သူတို့ကို သတိရစေတယ်။ ဖောက်သည်က အရမ်းပျော်လို့ နောက်ကမ်ပိန်းအတွက် ပိုကြီးတဲ့စာချုပ် ချုပ်တယ်၊ အဖွဲ့ကို စောင့်မျှော်စရာ ပိုကြီးတဲ့စိန်ခေါ်မှုတစ်ခု ပေးခဲ့တယ်။',
-      th: 'หลังจากแคมเปญประสบความสำเร็จ ทีมฉลองด้วยอาหารค่ำมื้อใหญ่ นันทาเตือนพวกเขาว่าชัยชนะที่แท้จริงคือการเรียนรู้ที่จะทำงานด้วยกันภายใต้ความกดดัน ลูกค้ามีความสุขจนเซ็นสัญญาที่ใหญ่กว่าสำหรับแคมเปญหน้า ทำให้ทีมมีความท้าทายที่ยิ่งใหญ่กว่ารออยู่',
+      th: 'หลังจากแคมเปญประสบความสำเร็จ ทีมฉลองด้วยอาหารค่ำมื้อใหญ่ นันทาเตือนพวกเขาว่าชัยชนะที่แท้จริงคือการเรียนรู้ที่จะทำงานด้วยกันภายใต้ความกดดัน ลูกค้ามีความสุขจนเซ็นสัญญาที่ใหญ่กว่าสำหรับแคมเปญหน้า ทำให้ทีมมีเรื่องท้าทายครั้งใหญ่กว่าให้ตั้งตารออยู่',
     },
   ],
 },
@@ -361,7 +361,7 @@ export const storiesBatch2: Story[] = [
     {
       en: 'The four students remained close friends after graduation. Whenever they meet, they laugh about their old arguments and agree those disagreements made their project stronger. Their teacher still uses their website as an example for new students, showing clearly what true cooperation and mutual respect can achieve together.',
       my: 'ကျောင်းသားလေးယောက် ဘွဲ့ရပြီးနောက် ရင်းနှီးတဲ့သူငယ်ချင်းတွေ အဖြစ် ဆက်ရှိနေတယ်။ တွေ့တိုင်း အရင်အငြင်းပွားမှုတွေကို ရယ်မောပြီး အဲဒီသဘောထားကွဲမှုတွေက ပရောဂျက်ကို ပိုအားကောင်းစေတယ်လို့ သဘောတူတယ်။ သူတို့ဆရာက သူတို့ဝက်ဘ်ဆိုက်ကို ကျောင်းသားအသစ်တွေအတွက် နမူနာအဖြစ် အခုထိ သုံးပြီး ပူးပေါင်းဆောင်ရွက်မှုနဲ့ အပြန်အလှန်လေးစားမှုက ဘာတွေ အောင်မြင်နိုင်လဲဆိုတာ ပြတယ်။',
-      th: 'นักศึกษาทั้งสี่ยังเป็นเพื่อนสนิทกันหลังจบการศึกษา ทุกครั้งที่พบกัน พวกเขาหัวเราะเรื่องการโต้เถียงเก่า ๆ และเห็นพ้องว่าความเห็นต่างทำให้โครงการของพวกเขาแข็งแกร่งขึ้น ครูยังใช้เว็บไซต์ของพวกเขาเป็นตัวอย่างให้นักศึกษาใหม่ แสดงให้เห็นชัดเจนว่าความร่วมมือและความเคารพซึ่งกันและกันบรรลุอะไรได้บ้าง',
+      th: 'นักศึกษาทั้งสี่ยังเป็นเพื่อนสนิทกันหลังจบการศึกษา ทุกครั้งที่พบกัน พวกเขาหัวเราะเรื่องการโต้เถียงเก่า ๆ และเห็นพ้องว่าความเห็นต่างทำให้โครงการของพวกเขาแข็งแกร่งขึ้น ครูยังใช้เว็บไซต์ของพวกเขาเป็นตัวอย่างให้นักศึกษาใหม่ แสดงให้เห็นอย่างชัดเจนว่าความร่วมมือและความเคารพซึ่งกันและกันนำไปสู่อะไรได้บ้าง',
     },
     {
       en: 'In the end, they learned that a good team is not four people who always agree, but four people who know how to disagree well.',
@@ -391,7 +391,7 @@ export const storiesBatch2: Story[] = [
     {
       en: 'During the interview, she spoke confidently about her achievements. She had saved the company money by finding errors in old reports.',
       my: 'အင်တာဗျူးမှာ သူက အောင်မြင်မှုတွေအကြောင်း ယုံကြည်မှုရှိရှိ ပြောတယ်။ အစီရင်ခံစာဟောင်းတွေက အမှားတွေကို ရှာတွေ့ပြီး ကုမ္ပဏီအတွက် ငွေကုန်ကျစရိတ် သက်သာစေခဲ့တယ်။',
-      th: 'ระหว่างการสัมภาษณ์ เธอพูดเรื่องความสำเร็จของเธออย่างมั่นใจ เธอช่วยบริษัทประหยัดเงินโดยพบข้อผิดพลาดในรายงานเก่า',
+      th: 'ระหว่างการสัมภาษณ์ เธอพูดเรื่องความสำเร็จของเธออย่างมั่นใจ เธอช่วยให้บริษัทประหยัดเงินได้เพราะเธอพบข้อผิดพลาดในรายงานเก่า',
     },
     {
       en: 'A week later, her manager called her into the office. With a big smile, he told her she had got the promotion.',
@@ -406,7 +406,7 @@ export const storiesBatch2: Story[] = [
     {
       en: 'In her new role, Hnin mentors junior accountants just as her own manager once mentored her. She believes that sharing knowledge is the best way to grow together. Her story inspires many young women in the company who now see that dedication and honesty are always recognized and rewarded in the end.',
       my: 'ရာထူးအသစ်မှာ နှင်းက သူ့မန်နေဂျာတစ်ချိန်က သူ့ကို လမ်းညွှန်သလို ဂျူနီယာစာရင်းကိုင်တွေကို လမ်းညွှန်တယ်။ အသိပညာမျှဝေတာက အတူတူကြီးထွားဖို့ အကောင်းဆုံးနည်းလမ်းလို့ သူ ယုံကြည်တယ်။ သူ့ဇာတ်လမ်းက ကုမ္ပဏီက အမျိုးသမီးငယ်များစွာကို အားကျစေပြီး ဆက်ကပ်ကြိုးစားမှုနဲ့ ရိုးသားမှုက အဆုံးမှာ အမြဲအသိအမှတ်ပြုခံရပြီး ဆုချခံရတယ်ဆိုတာ သူတို့ အခု မြင်တယ်။',
-      th: 'ในบทบาทใหม่ ฮนินเป็นพี่เลี้ยงให้นักบัญชีรุ่นน้องเหมือนที่ผู้จัดการของเธอเคยเป็นพี่เลี้ยงให้เธอ เธอเชื่อว่าการแบ่งปันความรู้คือวิธีเติบโตไปด้วยกันที่ดีที่สุด เรื่องราวของเธอเป็นแรงบันดาลใจให้หญิงสาวหลายคนในบริษัทที่ตอนนี้เห็นว่าความทุ่มเทและความซื่อสัตย์ได้รับการยอมรับและตอบแทนในที่สุดเสมอ',
+      th: 'ในบทบาทใหม่ ฮนินเป็นพี่เลี้ยงให้นักบัญชีรุ่นน้องเหมือนที่ผู้จัดการของเธอเคยเป็นพี่เลี้ยงให้เธอ เธอเชื่อว่าการแบ่งปันความรู้คือวิธีเติบโตไปด้วยกันที่ดีที่สุด เรื่องราวของเธอเป็นแรงบันดาลใจให้หญิงสาวหลายคนในบริษัทที่ตอนนี้เห็นว่าความทุ่มเทและความซื่อสัตย์จะได้รับการยอมรับและตอบแทนในที่สุด',
     },
   ],
 },
@@ -421,7 +421,7 @@ export const storiesBatch2: Story[] = [
     {
       en: 'Kyaw works the night shift at a hospital as a nurse. While the city sleeps, he takes care of patients who need help.',
       my: 'ကျော်က ဆေးရုံမှာ သူနာပြုအဖြစ် ညဆိုင်း အလုပ်လုပ်တယ်။ မြို့အိပ်နေတုန်း အကူအညီလိုတဲ့ လူနာတွေကို ပြုစုတယ်။',
-      th: 'จอทำงานกะกลางคืนที่โรงพยาบาลในฐานะพยาบาล ขณะที่เมืองกำลังหลับใหล เขาดูแลผู้ป่วยที่ต้องการความช่วยเหลือ',
+      th: 'จอเป็นพยาบาลที่ทำงานกะกลางคืนในโรงพยาบาล ขณะที่เมืองกำลังหลับใหล เขาดูแลผู้ป่วยที่ต้องการความช่วยเหลือ',
     },
     {
       en: 'At first, staying awake all night was very difficult. He drank too much coffee and felt terrible in the mornings.',
@@ -441,12 +441,12 @@ export const storiesBatch2: Story[] = [
     {
       en: 'He realized that every job is difficult at first, but the right habits make it manageable.',
       my: 'အလုပ်တိုင်းက အစမှာ ခက်ခဲပေမယ့် မှန်ကန်တဲ့အကျင့်တွေက အလုပ်ကို စီမံနိုင်အောင် ကူညီပေးတယ်ဆိုတာ သူ သဘောပေါက်တယ်။',
-      th: 'เขาตระหนักว่าทุกงานยากตอนแรก แต่นิสัยที่ดีทำให้รับมือได้',
+      th: 'เขาตระหนักว่าทุกงานยากตอนแรก แต่ถ้ามีนิสัยที่ดีก็รับมือได้',
     },
     {
       en: 'Kyaw now trains new nurses for the night shift, sharing all the tips he learned. He tells them that every challenging job becomes easier with patience and good habits. His family is proud of his important work, and his mother tells everyone that her son helps save precious lives every single night.',
       my: 'ကျော်က အခု ညဆိုင်းအတွက် သူနာပြုအသစ်တွေကို သင်ပေးပြီး သင်ယူခဲ့တဲ့ အကြံတွေအားလုံး မျှဝေတယ်။ စိန်ခေါ်မှုရှိတဲ့အလုပ်တိုင်းက စိတ်ရှည်မှုနဲ့ အကျင့်ကောင်းတွေနဲ့ ပိုလွယ်ကူလာတယ်လို့ သူတို့ကို ပြောတယ်။ သူ့မိသားစုက သူ့အရေးကြီးတဲ့အလုပ်အတွက် ဂုဏ်ယူပြီး အမေက သားက ညတိုင်း အသက်တွေ ကယ်ဖို့ ကူညီတယ်လို့ အားလုံးကို ပြောတယ်။',
-      th: 'จอฝึกพยาบาลใหม่สำหรับกะกลางคืน แบ่งปันเคล็ดลับทั้งหมดที่เรียนรู้ เขาบอกพวกเขาว่างานที่ท้าทายทุกงานง่ายขึ้นด้วยความอดทนและนิสัยที่ดี ครอบครัวภูมิใจในงานสำคัญของเขา และแม่บอกทุกคนว่าลูกชายของเธอช่วยชีวิตอันมีค่าทุกคืน',
+      th: 'จอฝึกพยาบาลใหม่สำหรับกะกลางคืน แบ่งปันเคล็ดลับทั้งหมดที่เรียนรู้ เขาบอกพวกเขาว่างานที่ยากจะง่ายขึ้นได้ถ้ามีความอดทนและนิสัยที่ดี ครอบครัวภูมิใจในงานสำคัญของเขา และแม่บอกทุกคนว่าลูกชายของเธอช่วยชีวิตผู้คนทุกคืน',
     },
   ],
 },
@@ -461,12 +461,12 @@ export const storiesBatch2: Story[] = [
     {
       en: 'When the invitation to speak at the international business conference arrived, Thuzar could hardly believe her eyes. She had only started her company eighteen months earlier, yet the organizers had noticed her innovative approach to online education.',
       my: 'နိုင်ငံတကာစီးပွားရေးကွန်ဖရင့်မှာ ပြောဖို့ ဖိတ်ကြားလွှာရောက်လာတဲ့အခါ သူဇာက မယုံနိုင်လောက်အောင် အံ့ဩသွားတယ်။ သူ့ကုမ္ပဏီကို စတင်တာ ဆယ့်ရှစ်လပဲ ရှိသေးပေမယ့် စီစဉ်သူတွေက အွန်လိုင်းပညာရေးနဲ့ ပတ်သက်တဲ့ သူ့ဆန်းသစ်တဲ့ချဉ်းကပ်မှုကို သတိထားမိခဲ့တယ်။',
-      th: 'เมื่อคำเชิญให้พูดในการประชุมธุรกิจระหว่างประเทศมาถึง ตูซาร์แทบไม่เชื่อสายตาตัวเอง เธอเพิ่งเริ่มบริษัทเมื่อสิบแปดเดือนก่อน แต่ผู้จัดสังเกตเห็นแนวทางนวัตกรรมของเธอในการศึกษาออนไลน์',
+      th: 'เมื่อคำเชิญให้พูดในการประชุมธุรกิจระหว่างประเทศมาถึง ตูซาร์แทบไม่เชื่อสายตาตัวเอง เธอเพิ่งเริ่มบริษัทเมื่อสิบแปดเดือนก่อน แต่ผู้จัดงานเห็นแนวทางใช้นวัตกรรมของเธอในด้านการศึกษาออนไลน์',
     },
     {
       en: 'She spent three weeks preparing her speech, rehearsing in English even though it was not her first language. Her team helped her simplify complicated ideas into clear, memorable stories.',
       my: 'သူက မိန့်ခွန်းကို သုံးပတ်ကြာ ပြင်ဆင်တယ်၊ အင်္ဂလိပ်က မိခင်ဘာသာမဟုတ်ပေမယ့် အင်္ဂလိပ်လိုပဲ လေ့ကျင့်တယ်။ သူ့အဖွဲ့က ရှုပ်ထွေးတဲ့အကြံတွေကို ရှင်းလင်းမှတ်မိလွယ်တဲ့ ဇာတ်လမ်းတွေအဖြစ် ရိုးရှင်းအောင် ကူညီပေးတယ်။',
-      th: 'เธอใช้เวลาสามสัปดาห์เตรียมสุนทรพจน์ ฝึกซ้อมเป็นภาษาอังกฤษแม้ภาษาอังกฤษจะไม่ใช่ภาษาแม่ของเธอ ทีมของเธอช่วยเธอย่อยความคิดที่ซับซ้อนให้เป็นเรื่องราวที่ชัดเจนและจดจำง่าย',
+      th: 'เธอใช้เวลาสามสัปดาห์เตรียมสุนทรพจน์ ฝึกซ้อมเป็นภาษาอังกฤษแม้จะไม่ใช่ภาษาแม่ของเธอ ทีมของเธอช่วยเธอย่อยความคิดที่ซับซ้อนให้เป็นเรื่องราวที่ชัดเจนและจดจำง่าย',
     },
     {
       en: 'On the day of the conference, five hundred people filled the hall. Although her hands were shaking, her voice remained steady as she described how her platform had helped ten thousand students in rural areas.',
@@ -496,7 +496,7 @@ export const storiesBatch2: Story[] = [
     {
       en: 'For years, Nay Chi worked as an engineer at a large corporation, but she secretly dreamed of starting her own business. Every evening, she sketched ideas for an app that would connect farmers directly with buyers.',
       my: 'နှစ်တွေနဲ့ချီပြီး နေခြည်က ကော်ပိုရေးရှင်းကြီးတစ်ခုမှာ အင်ဂျင်နီယာအဖြစ် အလုပ်လုပ်ခဲ့ပေမယ့် ကိုယ်ပိုင်စီးပွားရေး စတင်ဖို့ တိတ်တဆိတ် အိပ်မက်မက်ခဲ့တယ်။ ညနေတိုင်း လယ်သမားတွေကို ဝယ်သူတွေနဲ့ တိုက်ရိုက်ချိတ်ဆက်ပေးမယ့် အက်ပ်အတွက် အကြံတွေကို ပုံကြမ်းဆွဲတယ်။',
-      th: 'เนจีทำงานเป็นวิศวกรที่บริษัทใหญ่มาหลายปี แต่เธอแอบฝันอยากเริ่มธุรกิจของตัวเอง ทุกเย็น เธอร่างความคิดสำหรับแอปที่จะเชื่อมชาวนาโดยตรงกับผู้ซื้อ',
+      th: 'เนจีทำงานเป็นวิศวกรที่บริษัทใหญ่มาหลายปี แต่เธอแอบฝันอยากเริ่มธุรกิจของตัวเอง ทุกเย็น เธอร่างไอเดียสำหรับแอปที่จะเชื่อมชาวนาโดยตรงกับผู้ซื้อ',
     },
     {
       en: 'Her friends thought she was taking too big a risk, since she had a stable salary and a comfortable life. However, she had saved enough money to survive for one year without income.',
@@ -531,7 +531,7 @@ export const storiesBatch2: Story[] = [
     {
       en: 'Zaw Htet dropped his phone on the concrete floor, and the screen shattered into a spiderweb of cracks. Since he depended on his phone for work, he felt a wave of panic.',
       my: 'ဇော်ထက်က ဖုန်းကို ကွန်ကရစ်ကြမ်းပြင်ပေါ် လွတ်ကျပြီး မျက်နှာပြင်က ပင့်ကူအိမ်လို အက်ကွဲသွားတယ်။ အလုပ်အတွက် ဖုန်းကို အားကိုးနေရလို့ ထိတ်လန့်စိတ် ဖြစ်ပေါ်လာတယ်။',
-      th: 'ซอเท็ตทำโทรศัพท์ตกบนพื้นคอนกรีต และหน้าจอแตกเป็นใยแมงมุม เนื่องจากเขาพึ่งพาโทรศัพท์เพื่องาน เขารู้สึกตื่นตระหนก',
+      th: 'ซอเท็ตทำโทรศัพท์ตกบนพื้นคอนกรีต และหน้าจอแตกลายงา เนื่องจากเขาพึ่งพาโทรศัพท์เพื่องาน เขารู้สึกตื่นตระหนก',
     },
     {
       en: 'The repair shop quoted a price that was almost half the cost of a new phone. He had to decide whether repairing the old phone was worth it, or whether buying a new one made more sense.',
@@ -551,7 +551,7 @@ export const storiesBatch2: Story[] = [
     {
       en: 'Zaw Htet now buys a strong protective case for every new phone he owns. He jokes that the cracked screen taught him an expensive lesson about being careful. He now backs up his data every week without fail.',
       my: 'ဇော်ထက်က အခု ဖုန်းအသစ်တိုင်းအတွက် ခိုင်ခံ့တဲ့ကာဗာဝယ်တယ်။ အက်ကွဲတဲ့ မျက်နှာပြင်က သတိထားဖို့အကြောင်း အဖိုးကြီးတဲ့သင်ခန်းစာ ပေးခဲ့တယ်လို့ နောက်ပြောင်တယ်။ သူက အခု အချက်အလက်တွေကို အပတ်တိုင်း မပျက်မကွက် အရန်ကူးယူတယ်။',
-      th: 'ตอนนี้ซอเท็ตซื้อเคสป้องกันที่แข็งแรงสำหรับโทรศัพท์ใหม่ทุกเครื่อง เขาล้อเล่นว่าหน้าจอที่แตกสอนบทเรียนราคาแพงเรื่องความระมัดระวังให้เขา ตอนนี้เขาสำรองข้อมูลทุกสัปดาห์โดยไม่ขาด',
+      th: 'ตอนนี้ซอเท็ตซื้อเคสป้องกันที่แข็งแรงสำหรับโทรศัพท์ใหม่ทุกเครื่อง เขาล้อเล่นว่าหน้าจอที่แตกสอนบทเรียนราคาแพงให้เขารู้จักระมัดระวัง ตอนนี้เขาสำรองข้อมูลทุกสัปดาห์โดยไม่ขาด',
     },
   ],
 },
@@ -566,7 +566,7 @@ export const storiesBatch2: Story[] = [
     {
       en: 'Thandar ordered a winter jacket from an international website because the price was unbelievably low. She paid immediately, imagining how warm she would feel during her trip to the mountains.',
       my: 'သန္ဒာက ဈေးက မယုံနိုင်လောက်အောင် သက်သာလို့ နိုင်ငံတကာဝက်ဘ်ဆိုက်ကနေ ဆောင်းအင်္ကျီတစ်ထည် မှာတယ်။ တောင်ခရီးမှာ ဘယ်လောက်နွေးမလဲဆိုတာ စိတ်ကူးပြီး ချက်ချင်းငွေပေးတယ်။',
-      th: 'ตันดาร์สั่งเสื้อแจ็กเก็ตหน้าหนาวจากเว็บต่างประเทศเพราะราคาถูกอย่างไม่น่าเชื่อ เธอจ่ายเงินทันที พร้อมจินตนาการว่าเธอจะอบอุ่นแค่ไหนระหว่างทริปไปภูเขา',
+      th: 'ตันดาร์สั่งเสื้อแจ็กเก็ตหน้าหนาวจากเว็บต่างประเทศเพราะราคาถูกอย่างไม่น่าเชื่อ เธอจ่ายเงินทันที พลางจินตนาการว่าเธอจะอบอุ่นแค่ไหนระหว่างทริปไปภูเขา',
     },
     {
       en: 'Three weeks passed with no delivery. When she contacted customer service, they replied with vague promises that the package was on its way.',
@@ -581,17 +581,17 @@ export const storiesBatch2: Story[] = [
     {
       en: 'The bank reversed the charge within ten days. Thandar learned a valuable lesson: if a deal looks too good to be true, it probably is.',
       my: 'ဘဏ်က ဆယ်ရက်အတွင်း ငွေကို ပြန်အမ်းပေးတယ်။ ကမ်းလှမ်းချက်က တကယ်ဖြစ်နိုင်တာထက် ကောင်းလွန်းနေရင် အများအားဖြင့် အလိမ်အညာပဲဆိုတဲ့ အဖိုးတန်သင်ခန်းစာ သန္ဒာ သင်ယူခဲ့တယ်။',
-      th: 'ธนาคารคืนเงินให้เธอภายในสิบวัน ตันดาร์ได้เรียนรู้บทเรียนอันมีค่า ถ้าข้อเสนอดีเกินจริง มันอาจไม่จริง',
+      th: 'ธนาคารคืนเงินให้เธอภายในสิบวัน ตันดาร์ได้เรียนรู้บทเรียนอันมีค่า ถ้าข้อเสนอไหนดูดีเกินจริง ก็น่าจะไม่จริง',
     },
     {
       en: 'Thandar now checks reviews carefully before buying anything online. She also tells her friends to use payment methods that offer buyer protection. Her friends now always ask her for wise advice before shopping online, and she happily shares everything she learned from the difficult experience.',
       my: 'သန္ဒာက အခု အွန်လိုင်းက တစ်ခုခုမဝယ်ခင် သုံးသပ်ချက်တွေကို သေချာစစ်တယ်။ ဝယ်သူအကာအကွယ်ပေးတဲ့ ငွေပေးချေမှုနည်းတွေ သုံးဖို့ သူငယ်ချင်းတွေကိုလည်း ပြောတယ်။ သူ့သူငယ်ချင်းတွေက အခု အွန်လိုင်းဈေးမဝယ်ခင် သူ့ဆီက အကြံဉာဏ်ကောင်းတွေ တောင်းကြပြီး သူက သင်ယူခဲ့သမျှကို ဝမ်းသာအားရ မျှဝေတယ်။',
-      th: 'ตอนนี้ตันดาร์ตรวจรีวิวอย่างละเอียดก่อนซื้ออะไรออนไลน์ เธอยังบอกเพื่อนให้ใช้วิธีชำระเงินที่มีการคุ้มครองผู้ซื้อ ตอนนี้เพื่อนของเธอมักขอคำแนะนำที่ชาญฉลาดจากเธอก่อนช้อปปิ้งออนไลน์ และเธอแบ่งปันทุกสิ่งที่เรียนรู้จากประสบการณ์ที่ยากลำบากอย่างยินดี',
+      th: 'ตอนนี้ตันดาร์ตรวจรีวิวอย่างละเอียดก่อนซื้ออะไรออนไลน์ เธอยังบอกเพื่อนให้ใช้วิธีชำระเงินที่มีการคุ้มครองผู้ซื้อ ตอนนี้เพื่อนของเธอมักขอคำแนะนำดี ๆ จากเธอก่อนช้อปปิ้งออนไลน์ และเธอแบ่งปันทุกสิ่งที่เรียนรู้จากประสบการณ์ที่ยากลำบากอย่างยินดี',
     },
     {
       en: 'The lost weeks were frustrating, but the lesson was permanent: on the internet, patience is cheaper than regret.',
       my: 'ဆုံးရှုံးသွားတဲ့ အပတ်တွေက စိတ်ပျက်စရာဖြစ်ပေမယ့် ရခဲ့တဲ့သင်ခန်းစာက ထာဝရတည်တံ့တယ် — အွန်လိုင်းမှာ စိတ်ရှည်စောင့်ဆိုင်းတာက နောင်တရတာထက် အများကြီး ကောင်းတယ်ဆိုတာ သန္ဒာ သင်ယူခဲ့တယ်။',
-      th: 'สัปดาห์ที่สูญเสียไปน่าหงุดหงิด แต่บทเรียนที่ได้รับจะคงอยู่ตลอดไป ในโลกออนไลน์ ความอดทนมีราคาถูกกว่าความเสียใจ',
+      th: 'แม้จะเสียเวลาไปหลายสัปดาห์จนน่าหงุดหงิด แต่บทเรียนนี้จะติดตัวไปตลอด ในโลกออนไลน์ การอดทนรอดีกว่ามาเสียใจทีหลัง',
     },
   ],
 },
@@ -606,7 +606,7 @@ export const storiesBatch2: Story[] = [
     {
       en: 'One evening, Aye received a text message claiming she had won a large cash prize. All she had to do was click a link and enter her bank details.',
       my: 'တစ်ညမှာ အေးက ငွေသားဆုကြီး ပေါက်တယ်ဆိုတဲ့ စာတိုမက်ဆေ့ချ် ရတယ်။ လုပ်ရမှာက လင့်တစ်ခုကို နှိပ်ပြီး ဘဏ်အချက်အလက်တွေ ထည့်ရုံပဲ။',
-      th: 'เย็นวันหนึ่ง เอได้รับข้อความอ้างว่าเธอถูกรางวัลเงินสดก้อนใหญ่ สิ่งที่เธอต้องทำคือคลิกลิงก์และกรอกรายละเอียดธนาคาร',
+      th: 'เย็นวันหนึ่ง เอได้รับข้อความอ้างว่าเธอถูกรางวัลเงินสดก้อนใหญ่ เพียงแค่คลิกลิงก์และกรอกข้อมูลธนาคารเท่านั้น',
     },
     {
       en: 'Although the message looked official, with logos and formal language, something felt wrong. She remembered her brother\'s warning about online scams.',
@@ -621,17 +621,17 @@ export const storiesBatch2: Story[] = [
     {
       en: 'Aye shared her experience on social media to warn others. Her post was shared thousands of times, possibly saving many people from losing money.',
       my: 'အေးက တခြားသူတွေကို သတိပေးဖို့ အတွေ့အကြုံကို ဆိုရှယ်မီဒီယာမှာ မျှဝေတယ်။ သူ့ပို့စ်ကို ထောင်ပေါင်းများစွာ မျှဝေကြပြီး လူများစွာ ငွေမဆုံးရှုံးအောင် ကယ်နိုင်တယ်။',
-      th: 'เอแบ่งปันประสบการณ์บนโซเชียลมีเดียเพื่อเตือนคนอื่น โพสต์ของเธอถูกแชร์หลายพันครั้ง อาจช่วยหลายคนไม่ให้เสียเงิน',
+      th: 'เอแบ่งปันประสบการณ์บนโซเชียลมีเดียเพื่อเตือนคนอื่น โพสต์ของเธอถูกแชร์หลายพันครั้ง อาจช่วยให้หลายคนไม่ต้องเสียเงิน',
     },
     {
       en: 'The police later caught the criminals behind the scam messages. Aye felt proud that her small action had helped protect many strangers. She now volunteers at a community center, patiently teaching elderly people how to recognize dangerous scams and carefully protect their valuable personal information.',
       my: 'ရဲက နောက်ပိုင်း လိမ်လည်မက်ဆေ့ချ်နောက်က ရာဇဝတ်သားတွေကို ဖမ်းတယ်။ သူ့လုပ်ရပ်သေးသေးလေးက သူစိမ်းအများအပြားကို ကာကွယ်ဖို့ ကူညီခဲ့လို့ အေး ဂုဏ်ယူတယ်။ သူက အခု ရပ်ရွာစင်တာမှာ စေတနာ့ဝန်ထမ်းလုပ်ပြီး သက်ကြီးရွယ်အိုတွေကို လိမ်လည်မှုတွေ ဘယ်လိုသိမလဲ၊ ကိုယ်ပိုင်အချက်အလက်တွေ ဘယ်လိုကာကွယ်မလဲဆိုတာ သင်ပေးတယ်။',
-      th: 'ตำรวจจับอาชญากรเบื้องหลังข้อความหลอกลวงได้ในภายหลัง เอรู้สึกภูมิใจที่การกระทำเล็ก ๆ ของเธอช่วยปกป้องคนแปลกหน้าหลายคน ตอนนี้เธออาสาที่ศูนย์ชุมชน สอนผู้สูงอายุอย่างอดทนให้รู้เท่าทันกลลวงที่อันตรายและปกป้องข้อมูลส่วนบุคคลที่มีค่าอย่างระมัดระวัง',
+      th: 'ตำรวจจับอาชญากรเบื้องหลังข้อความหลอกลวงได้ในภายหลัง เอรู้สึกภูมิใจที่การกระทำเล็ก ๆ ของเธอช่วยปกป้องคนแปลกหน้าหลายคน ตอนนี้เธออาสาที่ศูนย์ชุมชน สอนผู้สูงอายุอย่างอดทนให้รู้เท่าทันกลลวงที่อันตรายและปกป้องข้อมูลส่วนบุคคลสำคัญของตัวเองอย่างระมัดระวัง',
     },
     {
       en: 'One careful phone call had turned a trap into a triumph — proof that a moment of doubt is worth more than a lifetime of regret.',
       my: 'သတိထားပြီး ဖုန်းတစ်ခါဆက်လိုက်တာက ထောင်ချောက်ကို အောင်ပွဲအဖြစ် ပြောင်းလဲပေးခဲ့တယ် — သံသယတစ်ခဏတာက တစ်သက်တာနောင်တထက် တန်ဖိုးရှိတယ်ဆိုတဲ့ သက်သေပါပဲ။',
-      th: 'โทรศัพท์ที่ระมัดระวังเพียงสายเดียวเปลี่ยนกับดักให้เป็นชัยชนะ — หลักฐานว่าความสงสัยชั่วขณะมีค่ามากกว่าความเสียใจตลอดชีวิต',
+      th: 'โทรศัพท์ที่ระมัดระวังเพียงสายเดียวเปลี่ยนกับดักให้เป็นชัยชนะ — ซึ่งพิสูจน์ว่าความสงสัยเพียงชั่วขณะมีค่ามากกว่าความเสียใจไปตลอดชีวิต',
     },
   ],
 },
@@ -646,32 +646,32 @@ export const storiesBatch2: Story[] = [
     {
       en: 'Daw Myint had not seen her son for two years because he worked in Japan. When he suggested a video call, she was nervous about the technology.',
       my: 'ဒေါ်မြင့်က သားက ဂျပန်မှာ အလုပ်လုပ်လို့ နှစ်နှစ်ရှိပြီ မတွေ့ရဘူး။ ဗီဒီယိုခေါ်ဖို့ သူက အကြံပေးတဲ့အခါ နည်းပညာအကြောင်း စိုးရိမ်တယ်။',
-      th: 'ดอมิ้นท์ไม่ได้เห็นลูกชายมาสองปีเพราะเขาทำงานที่ญี่ปุ่น เมื่อเขาเสนอการโทรแบบวิดีโอ เธอกังวลเรื่องเทคโนโลยี',
+      th: 'ดอมิ้นท์ไม่ได้เจอลูกชายมาสองปีเพราะเขาทำงานที่ญี่ปุ่น เมื่อเขาเสนอการโทรแบบวิดีโอ เธอกังวลเรื่องเทคโนโลยี',
     },
     {
       en: 'Her granddaughter patiently taught her to use the app, showing her which button to press. After three practice calls, Daw Myint felt ready.',
       my: 'သူ့မြေးမလေးက စိတ်ရှည်ရှည်နဲ့ အက်ပ်သုံးဖို့ သင်ပေးပြီး ဘယ်ခလုတ်နှိပ်ရမလဲဆိုတာ ပြတယ်။ သုံးကြိမ် လေ့ကျင့်ခေါ်ပြီးနောက် ဒေါ်မြင့် အဆင်သင့်ဖြစ်သွားတယ်။',
-      th: 'หลานสาวสอนเธอใช้แอปอย่างอดทน แสดงว่าต้องกดปุ่มไหน หลังจากลองโทรฝึกซ้อมสามครั้ง ดอมิ้นท์รู้สึกพร้อม',
+      th: 'หลานสาวสอนเธอใช้แอปอย่างอดทน แสดงให้ดูว่าต้องกดปุ่มไหน หลังจากลองโทรฝึกซ้อมสามครั้ง ดอมิ้นท์รู้สึกพร้อม',
     },
     {
       en: 'When her son\'s face appeared on the screen, tears of joy rolled down her cheeks. They talked for over an hour about his life in Tokyo.',
       my: 'သားရဲ့မျက်နှာက ဖန်သားပြင်ပေါ် ပေါ်လာတဲ့အခါ ဝမ်းသာမျက်ရည်တွေ ပါးပြင်ပေါ် စီးကျလာတယ်။ တိုကျိုက သူ့ဘဝအကြောင်း တစ်နာရီကျော် စကားပြောကြတယ်။',
-      th: 'เมื่อใบหน้าของลูกชายปรากฏบนหน้าจอ น้ำตาแห่งความสุขไหลลงแก้มของเธอ พวกเขาคุยกันกว่าหนึ่งชั่วโมงเรื่องชีวิตของเขาในโตเกียว',
+      th: 'เมื่อใบหน้าของลูกชายปรากฏบนหน้าจอ น้ำตาก็คลอเบ้าด้วยความดีใจ พวกเขาคุยกันกว่าหนึ่งชั่วโมงเรื่องชีวิตของเขาในโตเกียว',
     },
     {
       en: 'Now they call every Sunday evening. Daw Myint tells her friends that technology, once frightening, has become her greatest comfort.',
       my: 'အခု တနင်္ဂနွေညနေတိုင်း ဖုန်းခေါ်ကြတယ်။ တစ်ချိန်က ကြောက်စရာကောင်းတဲ့ နည်းပညာက အခု အကြီးမားဆုံး နှစ်သိမ့်မှုဖြစ်လာပြီလို့ ဒေါ်မြင့်က သူငယ်ချင်းတွေကို ပြောတယ်။',
-      th: 'ตอนนี้พวกเขาโทรทุกเย็นวันอาทิตย์ ดอมิ้นท์บอกเพื่อนว่าเทคโนโลยีที่เคยน่ากลัว กลายเป็นความสบายใจที่ยิ่งใหญ่ที่สุดของเธอ',
+      th: 'ตอนนี้พวกเขาโทรหากันทุกเย็นวันอาทิตย์ ดอมิ้นท์บอกเพื่อนว่าเทคโนโลยีที่เคยน่ากลัว กลายเป็นที่พึ่งทางใจที่ใหญ่ที่สุดของเธอ',
     },
     {
       en: 'Daw Myint\'s story inspired several elderly neighbors to learn video calling too. Now the whole street gathers online every festival to celebrate together. Her son calls more often now, knowing how much these conversations mean to his mother, and their loving bond has never been stronger than it is today.',
       my: 'ဒေါ်မြင့်ရဲ့ ဇာတ်လမ်းက သက်ကြီးအိမ်နီးချင်းတော်တော်များများကို ဗီဒီယိုခေါ်ဖို့ သင်ယူဖို့ အားကျစေတယ်။ အခု လမ်းတစ်ခုလုံး ပွဲတော်တိုင်း အွန်လိုင်းမှာ စုဝေးပြီး အတူတူ ကျင်းပတယ်။ သားက ဒီစကားဝိုင်းတွေက အမေအတွက် ဘယ်လောက်အဓိပ္ပာယ်ရှိလဲဆိုတာ သိလို့ အခု ပိုမကြာခဏ ဖုန်းခေါ်တယ်၊ သူတို့ရဲ့ သံယောဇဉ်က ဘယ်တုန်းကမှ ဒီလောက်မခိုင်မာခဲ့ဘူး။',
-      th: 'เรื่องราวของดอมิ้นท์สร้างแรงบันดาลใจให้เพื่อนบ้านสูงอายุหลายคนเรียนรู้การโทรแบบวิดีโอด้วย ตอนนี้ทั้งถนนมารวมตัวกันออนไลน์ทุกเทศกาลเพื่อฉลองด้วยกัน ตอนนี้ลูกชายของเธอโทรบ่อยขึ้น เพราะรู้ว่าบทสนทนาเหล่านี้มีความหมายกับแม่แค่ไหน และสายสัมพันธ์อันอบอุ่นของพวกเขาไม่เคยแน่นแฟ้นเท่าวันนี้มาก่อน',
+      th: 'เรื่องราวของดอมิ้นท์สร้างแรงบันดาลใจให้เพื่อนบ้านสูงอายุหลายคนเรียนรู้การโทรแบบวิดีโอด้วย ตอนนี้ทั้งถนนมารวมตัวกันออนไลน์ทุกเทศกาลเพื่อฉลองด้วยกัน ตอนนี้ลูกชายของเธอโทรบ่อยขึ้น เพราะรู้ว่าบทสนทนาเหล่านี้มีความหมายกับแม่แค่ไหน และสายสัมพันธ์อันอบอุ่นของพวกเขาแน่นแฟ้นที่สุดเท่าที่เคยมีมา',
     },
     {
       en: 'Distance had separated them for years, but a small screen now brought them together every Sunday — proof that love travels farther than any road.',
       my: 'အကွာအဝေးက သူတို့ကို နှစ်ပေါင်းများစွာ ခွဲထားခဲ့ပေမယ့် အခု စခရင်သေးသေးလေးက တနင်္ဂနွေတိုင်း သူတို့ကို ပြန်ဆုံစေတယ် — ချစ်ခြင်းမေတ္တာက ဘယ်လမ်းထက်မဆို ပိုဝေးဝေး ခရီးသွားနိုင်တယ်ဆိုတဲ့ သက်သေပါပဲ။',
-      th: 'ระยะทางแยกพวกเขามาหลายปี แต่หน้าจอเล็ก ๆ ตอนนี้นำพวกเขามาอยู่ด้วยกันทุกวันอาทิตย์ — หลักฐานว่าความรักเดินทางไกลกว่าถนนใด ๆ',
+      th: 'ระยะทางแยกพวกเขามาหลายปี แต่หน้าจอเล็ก ๆ กลับนำพวกเขามาอยู่ด้วยกันทุกวันอาทิตย์ — พิสูจน์ให้เห็นว่าความรักเดินทางได้ไกลกว่าถนนทุกสาย',
     },
   ],
 },
@@ -681,7 +681,7 @@ export const storiesBatch2: Story[] = [
   level: 'B2',
   titleEn: 'The Lost Password',
   titleMy: 'ပျောက်ဆုံးသွားတဲ့စကားဝှက်',
-  titleTh: 'รหัสผ่านที่หายไป',
+  titleTh: 'รหัสผ่านที่ลืมไป',
   paragraphs: [
     {
       en: 'Min Khant could not access his email because he had forgotten the password, and the recovery phone number was an old one he no longer used.',
@@ -696,7 +696,7 @@ export const storiesBatch2: Story[] = [
     {
       en: 'After searching online, he found the account recovery form and filled it in with as much detail as he could remember, including the year he created the account.',
       my: 'အွန်လိုင်းမှာ ရှာပြီးနောက် အကောင့်ပြန်လည်ရယူတဲ့ဖောင်ကို တွေ့ပြီး မှတ်မိသလောက် အသေးစိတ်ဖြည့်တယ်၊ အကောင့်စဖွင့်တဲ့နှစ်လည်း ပါဝင်တယ်။',
-      th: 'หลังค้นหาออนไลน์ เขาพบแบบฟอร์มกู้คืนบัญชีและกรอกอย่างละเอียดเท่าที่จำได้ รวมถึงปีที่เขาสร้างบัญชี',
+      th: 'หลังค้นหาข้อมูลออนไลน์ เขาพบแบบฟอร์มกู้คืนบัญชีและกรอกข้อมูลให้ละเอียดเท่าที่จำได้ รวมถึงปีที่เขาสร้างบัญชี',
     },
     {
       en: 'Two days later, the company verified his identity and restored his access. He immediately set up two-factor authentication and wrote down his new password safely.',
@@ -706,7 +706,7 @@ export const storiesBatch2: Story[] = [
     {
       en: 'Min Khant now helps his friends secure their accounts, teaching them about strong passwords and backup codes. He says losing access once was enough to learn forever. He wrote a short guide for his classmates explaining each recovery step clearly, and his kind teacher warmly praised his generous helpful spirit.',
       my: 'မင်းခန့်က အခု သူငယ်ချင်းတွေကို အကောင့်တွေ လုံခြုံအောင် ကူညီပြီး ခိုင်ခံ့တဲ့စကားဝှက်တွေနဲ့ အရန်ကုဒ်တွေအကြောင်း သင်ပေးတယ်။ တစ်ကြိမ်ဝင်ရောက်ခွင့် ဆုံးရှုံးတာက ထာဝရသင်ယူဖို့ လုံလောက်ပြီလို့ ပြောတယ်။ သူက အတန်းဖော်တွေအတွက် ပြန်လည်ရယူတဲ့အဆင့်တိုင်းကို ရှင်းရှင်းလင်းလင်း ရှင်းပြတဲ့ လမ်းညွှန်တိုလေး ရေးပြီး ဆရာက သူ့အကူအညီပေးတဲ့စိတ်ကို ချီးကျူးတယ်။',
-      th: 'ตอนนี้มินคานต์ช่วยเพื่อนรักษาความปลอดภัยบัญชี สอนพวกเขาเรื่องรหัสผ่านที่แข็งแรงและรหัสสำรอง เขาบอกว่าการเสียการเข้าถึงครั้งเดียวพอที่จะเรียนรู้ตลอดไป เขาเขียนคู่มือสั้น ๆ อธิบายขั้นตอนการกู้คืนแต่ละขั้นตอนอย่างชัดเจนให้เพื่อนร่วมชั้น และครูใจดีของเขาก็ชมน้ำใจที่เอื้อเฟื้อเผื่อแผ่ของเขา',
+      th: 'ตอนนี้มินคานต์ช่วยเพื่อนรักษาความปลอดภัยบัญชี สอนพวกเขาเรื่องรหัสผ่านที่รัดกุมและรหัสสำรอง เขาบอกว่าการเสียการเข้าถึงครั้งเดียวพอที่จะเรียนรู้ตลอดไป เขาเขียนคู่มือสั้น ๆ อธิบายแต่ละขั้นตอนการกู้คืนอย่างชัดเจนให้เพื่อนร่วมชั้น และครูใจดีของเขาก็ชมน้ำใจที่เอื้อเฟื้อเผื่อแผ่ของเขา',
     },
   ],
 },
@@ -726,22 +726,22 @@ export const storiesBatch2: Story[] = [
     {
       en: 'Hla needed to reach the town clinic because her grandmother\'s medicine had run out. Waiting for the water to go down was not an option.',
       my: 'အဖွားရဲ့ ဆေးကုန်သွားလို့ လှက မြို့ဆေးခန်းကို ရောက်ဖို့လိုတယ်။ ရေကျဖို့ စောင့်တာက ရွေးချယ်စရာ မဟုတ်ဘူး။',
-      th: 'ฮลาต้องไปคลินิกในเมืองเพราะยาของยายหมด การรอให้น้ำลดไม่ใช่ทางเลือก',
+      th: 'ฮลาต้องไปคลินิกในเมืองเพราะยาของยายหมด จะรอให้น้ำลดเพียงอย่างเดียวไม่ได้',
     },
     {
       en: 'A neighbor offered his small wooden boat, and together they rowed through the flooded streets. The journey that usually took twenty minutes lasted two hours.',
       my: 'အိမ်နီးချင်းတစ်ယောက်က သစ်သားလှေသေးသေးလေး ပေးပြီး အတူတူ ရေကြီးနေတဲ့လမ်းတွေကို လှော်ခတ်ကြတယ်။ ပုံမှန်မိနစ်နှစ်ဆယ်ကြာတဲ့ ခရီးက နှစ်နာရီ ကြာသွားတယ်။',
-      th: 'เพื่อนบ้านเสนอเรือไม้เล็กของเขา และพวกเขาพายด้วยกันผ่านถนนที่น้ำท่วม การเดินทางที่ปกติใช้ยี่สิบนาทีใช้เวลาสองชั่วโมง',
+      th: 'เพื่อนบ้านให้ยืมเรือไม้ลำเล็กของเขา แล้วพวกเขาก็พายไปด้วยกันผ่านถนนที่น้ำท่วม การเดินทางที่ปกติใช้ยี่สิบนาทีใช้เวลาถึงสองชั่วโมง',
     },
     {
       en: 'At the clinic, the doctor gave them extra medicine for the whole village. On the way back, Hla realized how strong community spirit can overcome any obstacle.',
       my: 'ဆေးခန်းမှာ ဆရာဝန်က ရွာတစ်ခုလုံးအတွက် ဆေးအပိုပေးတယ်။ အပြန်လမ်းမှာ ရပ်ရွာစိတ်ဓာတ်ခိုင်မာမှုက အတားအဆီးမှန်သမျှကို ကျော်လွှားနိုင်တယ်ဆိုတာ လှ သဘောပေါက်တယ်။',
-      th: 'ที่คลินิก หมอให้ยาเพิ่มสำหรับทั้งหมู่บ้าน ระหว่างทางกลับ ฮลาตระหนักว่าจิตวิญญาณชุมชนที่แข็งแกร่งเอาชนะอุปสรรคใด ๆ ได้',
+      th: 'ที่คลินิก หมอให้ยาเพิ่มสำหรับทั้งหมู่บ้าน ระหว่างทางกลับ ฮลาก็ตระหนักว่าน้ำใจของคนในชุมชนที่เข้มแข็งเอาชนะอุปสรรคได้ทุกอย่าง',
     },
     {
       en: 'The village built a small bridge over the flooded area after that experience. Hla\'s grandmother recovered fully, and the whole village celebrated with a feast. Children in the village now learn about flood safety at school, so they will be fully prepared if the dangerous waters ever rise again.',
       my: 'အဲဒီအတွေ့အကြုံအပြီး ရွာက ရေကြီးတဲ့နေရာမှာ တံတားသေးသေးလေး ဆောက်တယ်။ လှရဲ့အဖွား လုံးဝပြန်ကောင်းသွားပြီး ရွာတစ်ခုလုံး စားသောက်ပွဲနဲ့ အောင်ပွဲခံတယ်။ ရွာက ကလေးတွေက အခု ကျောင်းမှာ ရေဘေးကင်းလုံခြုံမှုအကြောင်း သင်ယူပြီး ရေပြန်တက်လာရင် အဆင်သင့်ဖြစ်မယ်။',
-      th: 'หมู่บ้านสร้างสะพานเล็กข้ามบริเวณที่น้ำท่วมหลังประสบการณ์นั้น ยายของฮลาหายดีสมบูรณ์ และทั้งหมู่บ้านฉลองด้วยงานเลี้ยง ตอนนี้เด็ก ๆ ในหมู่บ้านเรียนรู้เรื่องความปลอดภัยจากน้ำท่วมที่โรงเรียน เพื่อจะได้พร้อมเต็มที่หากเกิดน้ำท่วมอันตรายอีก',
+      th: 'หมู่บ้านสร้างสะพานเล็กข้ามบริเวณที่น้ำท่วมหลังประสบการณ์นั้น ยายของฮลาก็หายเป็นปกติแล้ว และทั้งหมู่บ้านฉลองด้วยงานเลี้ยง ตอนนี้เด็ก ๆ ในหมู่บ้านเรียนรู้เรื่องความปลอดภัยจากน้ำท่วมที่โรงเรียน เพื่อจะได้พร้อมเต็มที่หากเกิดน้ำท่วมอันตรายอีก',
     },
   ],
 },
@@ -766,12 +766,12 @@ export const storiesBatch2: Story[] = [
     {
       en: 'Her guide encouraged her to take small steps and rest often. He told her that reaching the top slowly is better than giving up quickly.',
       my: 'သူ့ဧည့်လမ်းညွှန်က ခြေလှမ်းသေးသေးလေးတွေ လှမ်းပြီး မကြာခဏနားဖို့ အားပေးတယ်။ ဖြည်းဖြည်းချင်း ထိပ်ရောက်တာက မြန်မြန်အရှုံးပေးတာထက် ပိုကောင်းတယ်လို့ ပြောတယ်။',
-      th: 'ไกด์ของเธอคอยให้กำลังใจเธอ โดยบอกให้ก้าวเล็ก ๆ และพักบ่อย ๆ เขาบอกเธอว่าไปถึงยอดช้า ๆ ดีกว่ารีบยอมแพ้',
+      th: 'ไกด์ของเธอคอยให้กำลังใจ โดยบอกให้ก้าวเล็ก ๆ และพักบ่อย ๆ เขาบอกเธอว่าขึ้นไปถึงยอดช้า ๆ ยังดีกว่ายอมแพ้กลางคัน',
     },
     {
       en: 'At sunrise on the third day, she stood at the summit, watching clouds drift below her feet. Every painful step had been worth it.',
       my: 'တတိယနေ့ နေထွက်ချိန်မှာ သူ ထိပ်မှာ ရပ်ပြီး ခြေထောက်အောက်မှာ တိမ်တွေ မျောနေတာ ကြည့်တယ်။ နာကျင်တဲ့ ခြေလှမ်းတိုင်းက တန်ခဲ့တယ်။',
-      th: 'ตอนพระอาทิตย์ขึ้นในวันที่สาม เธอยืนบนยอดเขา มองเมฆลอยใต้เท้าของเธอ ทุกก้าวที่เจ็บปวดคุ้มค่า',
+      th: 'ตอนพระอาทิตย์ขึ้นในวันที่สาม เธอยืนอยู่บนยอดเขา มองเมฆลอยอยู่ใต้เท้า ทุกก้าวที่เจ็บปวดนั้นล้วนคุ้มค่า',
     },
     {
       en: 'Chaw now leads a small hiking group every month, encouraging beginners to try mountain trails. She believes the mountain taught her that limits exist only in the mind. She framed a photo from the summit and hung it in her living room, where it reminds her daily that she is much stronger and braver than she ever imagined possible.',
@@ -801,12 +801,12 @@ export const storiesBatch2: Story[] = [
     {
       en: 'During the trip, Ko Aung taught his son the names of the villages along the river. They ate fish curry cooked on the boat.',
       my: 'ခရီးအတွင်း ကိုအောင်က သားကို မြစ်ကမ်းက ရွာတွေရဲ့ နာမည်တွေ သင်ပေးတယ်။ လှေပေါ်မှာ ချက်တဲ့ ငါးဟင်းကို စားကြတယ်။',
-      th: 'ระหว่างทริป โกอองสอนชื่อหมู่บ้านริมแม่น้ำให้ลูกชาย พวกเขากินแกงปลาที่ปรุงบนเรือ',
+      th: 'ระหว่างเดินทาง โกอองบอกลูกชายว่าหมู่บ้านริมแม่น้ำแต่ละแห่งชื่ออะไร พวกเขากินแกงปลาที่ปรุงบนเรือ',
     },
     {
       en: 'At night, they slept on the deck under the stars. The boy said it was the best night of his life.',
       my: 'ညဘက်မှာ ကြယ်တွေအောက် ကုန်းပတ်ပေါ်မှာ အိပ်ကြတယ်။ ကောင်လေးက သူ့ဘဝရဲ့ အကောင်းဆုံးညလို့ ပြောတယ်။',
-      th: 'ตอนกลางคืน พวกเขานอนบนดาดฟ้าใต้ดวงดาว เด็กชายบอกว่าเป็นคืนที่ดีที่สุดในชีวิตของเขา',
+      th: 'ตอนกลางคืน พวกเขานอนดูดาวบนดาดฟ้าเรือ เด็กชายบอกว่าเป็นคืนที่ดีที่สุดในชีวิตของเขา',
     },
     {
       en: 'When they arrived, the whole family was waiting at the jetty. Ko Aung knew his son would remember this journey forever.',
@@ -816,7 +816,7 @@ export const storiesBatch2: Story[] = [
     {
       en: 'Years later, the boy still talks about that boat journey with shining eyes. He says it taught him more about his country than any book ever could. The excited boy now truly wants to become a professional boat captain when he grows up one day.',
       my: 'နှစ်တွေကြာပြီးနောက် ကောင်လေးက အဲဒီလှေခရီးအကြောင်း မျက်လုံးတွေ တောက်ပစွာ ပြောတုန်းပဲ။ စာအုပ်တစ်အုပ်ကမှ မသင်ပေးနိုင်တဲ့ တိုင်းပြည်အကြောင်း သူ့ကို သင်ပေးခဲ့တယ်လို့ ပြောတယ်။ ကောင်လေးက အခု ကြီးလာရင် လှေကပ္ပတိန်ဖြစ်ချင်တယ်။',
-      th: 'หลายปีต่อมา เด็กชายยังพูดถึงการเดินทางโดยเรือนั้นด้วยตาที่เป็นประกาย เขาบอกว่ามันสอนเขาเรื่องประเทศของเขามากกว่าหนังสือเล่มไหน ๆ จะทำได้ ตอนนี้เด็กชายอยากเป็นกัปตันเรืออาชีพเมื่อโตขึ้น',
+      th: 'หลายปีต่อมา เด็กชายยังพูดถึงการเดินทางโดยเรือนั้นด้วยแววตาที่เป็นประกาย เขาบอกว่ามันสอนเขาเรื่องประเทศของเขามากกว่าหนังสือเล่มไหน ๆ จะทำได้ ตอนนี้เด็กชายอยากเป็นกัปตันเรือมืออาชีพเมื่อโตขึ้น',
     },
   ],
 },
@@ -836,7 +836,7 @@ export const storiesBatch2: Story[] = [
     {
       en: 'The children ran to the beach as soon as they arrived. The sand was white, and the water was clear and warm.',
       my: 'ကလေးတွေက ရောက်တာနဲ့ ကမ်းခြေကို ပြေးသွားတယ်။ သဲက ဖြူပြီး ရေက ကြည်လင်နွေးထွေးတယ်။',
-      th: 'เด็ก ๆ วิ่งไปที่ชายหาดทันทีที่มาถึง ทรายขาว และน้ำใสและอบอุ่น',
+      th: 'เด็ก ๆ วิ่งไปที่ชายหาดทันทีที่มาถึง ทรายขาวละเอียด น้ำทะเลก็ใสและอุ่นกำลังดี',
     },
     {
       en: 'On the second day, they took a boat to see colorful fish. The children wore masks and looked at the coral reefs.',
@@ -861,7 +861,7 @@ export const storiesBatch2: Story[] = [
     {
       en: 'As the plane took off, the children waved at the island below. Some holidays end, but the happiest ones stay in your heart.',
       my: 'လေယာဉ် ထွက်ခွာသွားတဲ့အခါ ကလေးတွေက အောက်ကကျွန်းကို လက်ပြနှုတ်ဆက်တယ်။ အားလပ်ရက်တချို့က ပြီးဆုံးသွားပေမယ့် အပျော်ဆုံးအချိန်တွေက နှလုံးသားထဲမှာ ကျန်ရစ်တယ်။',
-      th: 'ขณะที่เครื่องบินขึ้น เด็ก ๆ โบกมือให้เกาะด้านล่าง วันหยุดบางวันจบลง แต่ความสุขจากวันหยุดจะอยู่ในใจตลอดไป',
+      th: 'ขณะที่เครื่องบินขึ้น เด็ก ๆ โบกมือให้เกาะด้านล่าง วันหยุดบางทริปก็จบลง แต่วันหยุดที่แสนสุขจะอยู่ในความทรงจำตลอดไป',
     },
   ],
 },
@@ -886,7 +886,7 @@ export const storiesBatch2: Story[] = [
     {
       en: 'An old woman sat across from her and shared homemade snacks. They talked for hours about their families and their lives.',
       my: 'အမျိုးသမီးကြီးတစ်ယောက် သူ့မျက်နှာချင်းဆိုင်မှာ ထိုင်ပြီး အိမ်လုပ်မုန့်တွေ မျှဝေတယ်။ မိသားစုတွေနဲ့ ဘဝတွေအကြောင်း နာရီပေါင်းများစွာ စကားပြောကြတယ်။',
-      th: 'หญิงชราคนหนึ่งนั่งตรงข้ามเธอและแบ่งขนมที่ทำเองที่บ้าน พวกเขาคุยกันหลายชั่วโมงเรื่องครอบครัวและชีวิตของพวกเขา',
+      th: 'หญิงชราคนหนึ่งนั่งตรงข้ามเธอและแบ่งขนมทำเองให้ พวกเขาคุยกันหลายชั่วโมงเรื่องครอบครัวและชีวิตของพวกเขา',
     },
     {
       en: 'Mya fell asleep to the gentle rocking of the train. When she woke up, green mountains were visible through the window.',
@@ -901,7 +901,7 @@ export const storiesBatch2: Story[] = [
     {
       en: 'Mya stayed with her aunt for a whole week, helping in the garden and learning traditional recipes. On the train home, she already missed the mountains. She warmly promised her dear aunt that she would happily return during the cool season together with her beloved brother.',
       my: 'မြက အဒေါ်နဲ့ တစ်ပတ်လုံး နေပြီး ဥယျာဉ်မှာ ကူညီရင်း ရိုးရာချက်ပြုတ်နည်းတွေ သင်ယူတယ်။ အပြန်ရထားပေါ်မှာ တောင်တွေကို လွမ်းနေပြီ။ သူက အအေးရာသီမှာ အစ်ကိုနဲ့ ပြန်လာမယ်လို့ အဒေါ်ကို ကတိပေးတယ်။',
-      th: 'มยาอยู่กับป้าหนึ่งสัปดาห์เต็ม ช่วยงานในสวนและเรียนรู้สูตรอาหารดั้งเดิม บนรถไฟขากลับ เธอเริ่มคิดถึงภูเขาแล้ว เธอสัญญากับป้าที่รักว่าจะกลับมาในช่วงฤดูหนาวพร้อมพี่ชายสุดที่รัก',
+      th: 'มยาอยู่กับป้าหนึ่งสัปดาห์เต็ม ช่วยงานในสวนและเรียนรู้สูตรอาหารดั้งเดิม บนรถไฟขากลับ เธอเริ่มคิดถึงภูเขาแล้ว เธอสัญญากับป้าที่รักว่าจะกลับมาในช่วงฤดูหนาวพร้อมพี่ชายที่รัก',
     },
   ],
 },
@@ -916,7 +916,7 @@ export const storiesBatch2: Story[] = [
     {
       en: 'Once a month, traders from both sides of the border gather at the big market near the river. It is the most colorful place in the region.',
       my: 'တစ်လတစ်ကြိမ် နယ်စပ်နှစ်ဖက်က ကုန်သည်တွေ မြစ်နားက ဈေးကြီးမှာ စုဝေးကြတယ်။ အဲဒါက ဒေသထဲမှာ အရောင်အသွေး အစုံလင်ဆုံးနေရာပါ။',
-      th: 'เดือนละครั้ง พ่อค้าแม่ค้าจากทั้งสองฝั่งชายแดนมารวมตัวกันที่ตลาดใหญ่ใกล้แม่น้ำ เป็นตลาดที่คึกคักที่สุดในย่านนี้',
+      th: 'เดือนละครั้ง พ่อค้าแม่ค้าจากทั้งสองฝั่งชายแดนมารวมตัวกันที่ตลาดใหญ่ใกล้แม่น้ำ เป็นตลาดที่มีสีสันที่สุดในย่านนี้',
     },
     {
       en: 'Aye Aye sells traditional snacks there. She wakes up at four in the morning to prepare everything fresh.',
@@ -986,7 +986,7 @@ export const storiesBatch2: Story[] = [
     {
       en: 'Eight hundred years of history had spoken to them through stone and silence. The students went home with full notebooks and even fuller hearts.',
       my: 'နှစ်ရှစ်ရာသမိုင်းက ကျောက်တုံးတွေနဲ့ တိတ်ဆိတ်မှုကနေ သူတို့ကို စကားပြောခဲ့တယ်။ ကျောင်းသားတွေ အိမ်ပြန်သွားတဲ့အခါ မှတ်စုစာအုပ်တွေ ပြည့်ပြီး နှလုံးသားတွေက ပိုပြည့်နေတယ်။',
-      th: 'ประวัติศาสตร์แปดร้อยปีเล่าเรื่องราวผ่านหินและความเงียบสงบ นักเรียนกลับบ้านพร้อมสมุดบันทึกที่เต็มเปี่ยมและหัวใจที่อิ่มเอมยิ่งกว่า',
+      th: 'ประวัติศาสตร์แปดร้อยปีเล่าเรื่องราวผ่านหินและความเงียบสงบ นักเรียนกลับบ้านพร้อมสมุดบันทึกที่เขียนจนเต็มเล่มและหัวใจที่อิ่มเอมยิ่งกว่า',
     },
   ],
 },
@@ -1021,7 +1021,7 @@ export const storiesBatch2: Story[] = [
     {
       en: 'But the young son of the owner decided to continue the business. The tea house will stay open, and U Htun\'s mornings are saved.',
       my: 'ဒါပေမယ့် ဆိုင်ရှင်ရဲ့သားငယ်က စီးပွားရေးကို ဆက်လုပ်ဖို့ ဆုံးဖြတ်တယ်။ လက်ဖက်ရည်ဆိုင် ဆက်ဖွင့်မယ်၊ ဦးထွန်းရဲ့ မနက်တွေလည်း ကယ်တင်ခံရပြီ။',
-      th: 'แต่ลูกชายคนเล็กของเจ้าของตัดสินใจทำธุรกิจต่อ ร้านน้ำชาจะเปิดต่อไป และตอนเช้าของอูทุนก็รอดแล้ว',
+      th: 'แต่ลูกชายหนุ่มของเจ้าของตัดสินใจทำธุรกิจต่อ ร้านน้ำชาจะเปิดต่อไป และตอนเช้าของอูทุนก็รอดแล้ว',
     },
     {
       en: 'U Htun\'s mornings continue as before, with strong tea and good friends. He says some traditions are worth protecting. The energetic young owner has thoughtfully added completely free Wi-Fi, and now, happily, even more customers come every day.',
@@ -1046,17 +1046,17 @@ export const storiesBatch2: Story[] = [
     {
       en: 'The whole town was preparing for the annual lights festival. Streets were decorated with colorful lanterns and flowers.',
       my: 'မြို့တစ်ခုလုံး နှစ်စဉ်မီးထွန်းပွဲတော်အတွက် ပြင်ဆင်နေတယ်။ လမ်းတွေကို ရောင်စုံမီးပုံးတွေနဲ့ ပန်းတွေနဲ့ အလှဆင်ထားတယ်။',
-      th: 'ทั้งเมืองกำลังเตรียมงานเทศกาลแสงไฟประจำปี ถนนตกแต่งด้วยโคมไฟสีสันและดอกไม้',
+      th: 'ทั้งเมืองกำลังเตรียมงานเทศกาลแสงไฟประจำปี ถนนตกแต่งด้วยโคมไฟหลากสีและดอกไม้',
     },
     {
       en: 'Nilar and her family arrived early to get a good spot near the river. Thousands of people were already there.',
       my: 'နီလာနဲ့ မိသားစုက မြစ်နားမှာ နေရာကောင်းရဖို့ အစောကြီး ရောက်လာတယ်။ လူထောင်ပေါင်းများစွာ အရင်ရောက်နေပြီ။',
-      th: 'นีลาร์กับครอบครัวมาถึงแต่เช้าเพื่อจับจองที่ดีริมแม่น้ำ ผู้คนหลายพันอยู่ที่นั่นแล้ว',
+      th: 'นีลาร์กับครอบครัวมาถึงแต่เช้าเพื่อได้ที่นั่งดี ๆ ริมแม่น้ำ ผู้คนหลายพันอยู่ที่นั่นแล้ว',
     },
     {
       en: 'At eight o\'clock, the sky filled with floating lanterns. Everyone watched in silence as the lights rose higher and higher.',
       my: 'ရှစ်နာရီမှာ ကောင်းကင်က လွှတ်တင်တဲ့မီးပုံးတွေနဲ့ ပြည့်သွားတယ်။ မီးတွေ တဖြည်းဖြည်း မြင့်တက်လာတာ အားလုံး တိတ်တိတ်ဆိတ်ဆိတ် ကြည့်နေတယ်။',
-      th: 'ตอนสองทุ่ม ท้องฟ้าเต็มไปด้วยโคมไฟลอย ทุกคนดูเงียบ ๆ ขณะแสงไฟลอยสูงขึ้นเรื่อย ๆ',
+      th: 'ตอนสองทุ่ม ท้องฟ้าเต็มไปด้วยโคมไฟลอย ทุกคนเฝ้าดูอย่างเงียบ ๆ ขณะแสงไฟลอยสูงขึ้นเรื่อย ๆ',
     },
     {
       en: 'Nilar made a wish as she released her own lantern. She wished for good health for her grandparents.',
@@ -1091,12 +1091,12 @@ export const storiesBatch2: Story[] = [
     {
       en: 'Old U Sein has been fishing in the great lake for fifty years. He knows every corner of the water.',
       my: 'ဦးစိန်က ကန်ကြီးမှာ ငါးဖမ်းတာ နှစ်ငါးဆယ် ရှိပြီ။ ရေရဲ့ ထောင့်တိုင်းကို သိတယ်။',
-      th: 'อูเซนผู้เฒ่าตกปลาในทะเลสาบใหญ่มานานห้าสิบปี เขารู้จักทะเลสาบทุกซอกทุกมุม',
+      th: 'อูเซนผู้เฒ่าหาปลาในทะเลสาบใหญ่มานานห้าสิบปี เขารู้จักทะเลสาบทุกซอกทุกมุม',
     },
     {
       en: 'Every morning before sunrise, he rows his small boat to his favorite spot. He says the fish bite best in the early morning.',
       my: 'မနက်တိုင်း နေမထွက်ခင် လှေသေးသေးလေးကို လှော်ပြီး အကြိုက်ဆုံးနေရာကို သွားတယ်။ မနက်အစောမှာ ငါးအကိုက်ဆုံးလို့ ပြောတယ်။',
-      th: 'ทุกเช้าก่อนพระอาทิตย์ขึ้น เขาพายเรือเล็กไปยังจุดตกปลาโปรดของเขา เขาบอกว่าปลากินเบ็ดดีที่สุดตอนเช้าตรู่',
+      th: 'ทุกเช้าก่อนพระอาทิตย์ขึ้น เขาพายเรือเล็กไปยังจุดหาปลาประจำของเขา เขาบอกว่าปลากินเบ็ดดีที่สุดตอนเช้าตรู่',
     },
     {
       en: 'Young fishermen often ask for his advice. He tells them to be patient and to respect the lake.',
@@ -1275,7 +1275,7 @@ export const storiesBatch2: Story[] = [
     },
     {
       en: 'She followed a strict training plan, waking up at five every morning to run before work. Although her muscles ached constantly during the first weeks, she refused to skip a single session.',
-      my: 'သူက တင်းကျပ်တဲ့လေ့ကျင့်မှုအစီအစဉ်ကို လိုက်နာပြီး အလုပ်မသွားခင် ပြေးဖို့ မနက်တိုင်း ငါးနာရီ နိုးတယ်။ ပထမရက်သတ္တပတ်တွေမှာ ကြွက်သားတွေ အမြဲနာနေပေမယ့် တစ်ကြိမ်တလေမှ မပျက်ကွက်ခဲ့ဘူး။',
+      my: 'သူက တင်းကျပ်တဲ့လေ့ကျင့်မှုအစီအစဉ်ကို လိုက်နာပြီး အလုပ်မသွားခင် ပြေးဖို့ မနက်တိုင်း ငါးနာရီ နိုးတယ်။ ပထမရက်သတ္တပတ်တွေမှာ ကြွက်သားတွေ အမြဲနာနေပေမယ့် တစ်ကြိမ်မှ မပျက်ကွက်ခဲ့ဘူး။',
       th: 'เธอทำตามแผนฝึกที่เข้มงวด ตื่นตีห้าทุกเช้าเพื่อออกไปวิ่งก่อนไปทำงาน แม้กล้ามเนื้อจะปวดตลอดช่วงสัปดาห์แรก เธอก็ไม่ยอมขาดซ้อมแม้แต่ครั้งเดียว',
     },
     {
@@ -1459,7 +1459,7 @@ export const storiesBatch2: Story[] = [
       th: 'พี่ชายคนโตโกมินรู้ว่าเขาพูดคำพูดโหดร้ายด้วยความโกรธ แม้ทิฐิจะบอกให้เขารอคำขอโทษ แต่ความรักที่มีต่อน้องกลับแข็งแกร่งกว่าทิฐิ',
     },
     {
-      en: 'One rainy evening, he knocked on his brother\'s door with his favorite childhood snacks. When Ko Htet opened the door, Ko Min simply said, "I was wrong, and I am sorry."',
+      en: 'One rainy evening, he knocked on his brother\'s door with their favorite childhood snacks. When Ko Htet opened the door, Ko Min simply said, "I was wrong, and I am sorry."',
       my: 'မိုးရွာတဲ့ တစ်ညမှာ သူက ငယ်ဘဝအကြိုက်ဆုံးမုန့်တွေနဲ့ ညီရဲ့တံခါးကို ခေါက်တယ်။ ကိုထက် တံခါးဖွင့်တဲ့အခါ ကိုမင်းက ငါမှားတယ်၊ တောင်းပန်တယ်လို့ ရိုးရိုးလေး ပြောတယ်။',
       th: 'เย็นวันหนึ่งที่ฝนตก เขาเคาะประตูบ้านน้องพร้อมขนมโปรดในวัยเด็ก เมื่อโกเท็ตเปิดประตู โกมินเพียงพูดว่า "ฉันผิด และฉันขอโทษ"',
     },

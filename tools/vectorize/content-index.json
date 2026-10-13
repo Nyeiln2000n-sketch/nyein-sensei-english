@@ -109919,18 +109919,18 @@
   {
    "id": "phrase:business:3626",
    "kind": "phrase",
-   "en": "I am writing to enquire about the revised delivery schedule. (formal) / I'm writing to ask about the new delivery date. (informal)",
-   "en_norm": "i am writing to enquire about the revised delivery schedule formal i m writing to ask about the new delivery date informal",
-   "my_norm": "ပြင်ဆင်ထားသော ပို့ဆောင်မည့်အချိန်ဇယားနှင့် ပတ်သက်၍ စုံစမ်းမေးမြန်းလိုပါသည်။ တရားဝင် ပို့မည့်ရက်အသစ်အကြောင်း မေးချင်လို့ရေးတာပါ။ ပေါ့ပေါ့ပါးပါး",
+   "en": "I am writing to enquire about the revised delivery schedule. (formal) / I'm writing to ask about the new delivery date. (neutral)",
+   "en_norm": "i am writing to enquire about the revised delivery schedule formal i m writing to ask about the new delivery date neutral",
+   "my_norm": "ပြင်ဆင်ထားသော ပို့ဆောင်မည့်အချိန်ဇယားနှင့် ပတ်သက်၍ စုံစမ်းမေးမြန်းလိုပါသည်။ တရားဝင် ပို့မည့်ရက်အသစ်အကြောင်း မေးချင်လို့ရေးတာပါ။ သာမန်",
    "th_norm": "ข้าพเจ้าเขียนมาเพื่อสอบถามเกี่ยวกับกำหนดส่งมอบฉบับปรับปรุง ทางการ ผมเขียนมาถามเรื่องวันส่งมอบใหม่ครับ ไม่เป็นทางการ",
-   "fingerprint": "331c9a0b4261a971",
+   "fingerprint": "812551e736ee578e",
    "vocab_sig": [
     "ask",
     "date",
     "delivery",
     "enquire",
     "formal",
-    "informal",
+    "neutral",
     "new",
     "revised",
     "schedule",
@@ -109973,16 +109973,16 @@
   {
    "id": "phrase:business:3628",
    "kind": "phrase",
-   "en": "I would be much obliged for your swift response to this enquiry. (formal) / Please reply to this enquiry quickly. (informal)",
-   "en_norm": "i would be much obliged for your swift response to this enquiry formal please reply to this enquiry quickly informal",
-   "my_norm": "ဤစုံစမ်းမှုကို အမြန်ပြန်ကြားပေးပါက အထူးကျေးဇူးတင်မိပါမည်။ တရားဝင် ဒီစုံစမ်းမှုကို မြန်မြန်ပြန်ပေးပါ။ ပေါ့ပေါ့ပါးပါး",
+   "en": "I would be much obliged for your swift response to this enquiry. (formal) / Please reply to this enquiry quickly. (neutral)",
+   "en_norm": "i would be much obliged for your swift response to this enquiry formal please reply to this enquiry quickly neutral",
+   "my_norm": "ဤစုံစမ်းမှုကို အမြန်ပြန်ကြားပေးပါက အထူးကျေးဇူးတင်မိပါမည်။ တရားဝင် ဒီစုံစမ်းမှုကို မြန်မြန်ပြန်ပေးပါ။ သာမန်",
    "th_norm": "ข้าพเจ้าจะรู้สึกขอบพระคุณยิ่งสำหรับการตอบกลับโดยเร็ว ทางการ กรุณาตอบกลับด่วนๆ หน่อย ไม่เป็นทางการ",
-   "fingerprint": "274ac4bf36be3a89",
+   "fingerprint": "ef41a1b32f295e81",
    "vocab_sig": [
     "enquiry",
     "formal",
-    "informal",
     "much",
+    "neutral",
     "obliged",
     "quickly",
     "reply",
@@ -110622,7 +110622,7 @@
    "kind": "phrase",
    "en": "Yours faithfully, (formal, UK, recipient unknown) / Cheers, (informal, UK)",
    "en_norm": "yours faithfully formal uk recipient unknown cheers informal uk",
-   "my_norm": "လေးစားစွာဖြင့်၊ တရားဝင်၊ လိပ်စာမသိသူကို ဗြိတိသျှသုံး ချီးယားစ်၊ ပေါ့ပေါ့ပါးပါး၊ ဗြိတိသျှသုံး",
+   "my_norm": "လေးစားစွာဖြင့်၊ တရားဝင်၊ လက်ခံသူအမည်မသိသူကို ဗြိတိသျှသုံး ချီးယားစ်၊ ပေါ့ပေါ့ပါးပါး၊ ဗြိတိသျှသုံး",
    "th_norm": "ขอแสดงความนับถือ ทางการ แบบอังกฤษ ไม่ทราบผู้รับ ขอบคุณนะ ไม่เป็นทางการ แบบอังกฤษ",
    "fingerprint": "621f8c9d0c45b60e",
    "vocab_sig": [
@@ -110647,7 +110647,7 @@
    "kind": "phrase",
    "en": "Yours sincerely, (formal, UK, recipient known) / Best, (neutral)",
    "en_norm": "yours sincerely formal uk recipient known best neutral",
-   "my_norm": "လေးစားစွာဖြင့်၊ တရားဝင်၊ လိပ်စာသိသူကို ဗြိတိသျှသုံး ဘက်စ်၊ သာမန်",
+   "my_norm": "လေးစားစွာဖြင့်၊ တရားဝင်၊ လက်ခံသူအမည်သိသူကို ဗြိတိသျှသုံး ဘက်စ်၊ သာမန်",
    "th_norm": "ขอแสดงความนับถือ ทางการ แบบอังกฤษ ทราบผู้รับ ด้วยความปรารถนาดี กลางๆ",
    "fingerprint": "3b6b81c61a4a5b79",
    "vocab_sig": [
@@ -111900,7 +111900,7 @@
    "kind": "phrase",
    "en": "I see it rather differently, if I may be candid. (formal) / Honestly, I see it differently. (informal)",
    "en_norm": "i see it rather differently if i may be candid formal honestly i see it differently informal",
-   "my_norm": "ပွင့်လင်းစွာ ပြောခွင့်ပြုပါက၊ ကျွန်တော် အနည်းငယ် ကွဲပြားစွာ မြင်ပါသည်။ တရားဝင် ပွင့်ပွင့်ပြောရရင်၊ ငါ မတူဘဲ မြင်တယ်။ ပေါ့ပေါ့ပါးပါး",
+   "my_norm": "ပွင့်လင်းစွာ ပြောခွင့်ပြုပါက၊ ကျွန်တော် အနည်းငယ် ကွဲပြားစွာ မြင်ပါသည်။ တရားဝင် ပွင့်ပွင့်ပြောရရင်၊ ငါ မတူဘူးလို့ မြင်တယ်။ ပေါ့ပေါ့ပါးပါး",
    "th_norm": "ถ้าพูดตรงๆ ข้าพเจ้ามองต่างออกไป ทางการ พูดตรงๆ ผมมองต่างออกไป ไม่เป็นทางการ",
    "fingerprint": "49c3ccfd24f7ea6f",
    "vocab_sig": [
@@ -112933,7 +112933,7 @@
    "kind": "phrase",
    "en": "We are sorry beyond words for the loss. (formal) / Words can't say how sorry we are. (neutral)",
    "en_norm": "we are sorry beyond words for the loss formal words can t say how sorry we are neutral",
-   "my_norm": "ဆုံးရှုံးမှုအတွက် စကားလုံးဖြင့် ဖော်ပြ၍မရအောင် ဝမ်းနည်းမိပါသည်။ တရားဝင် ဘယ်လောက်တောင်းပန်ရမလဲ စကားလုံးမရှိဘူး။ သာမန်",
+   "my_norm": "ဆုံးရှုံးမှုအတွက် စကားလုံးဖြင့် ဖော်ပြ၍မရအောင် ဝမ်းနည်းမိပါသည်။ တရားဝင် ဘယ်လိုပြောရမှန်းမသိလောက်အောင် တောင်းပန်ပါတယ်။ သာမန်",
    "th_norm": "เราเสียใจเกินคำพูดสำหรับการสูญเสีย ทางการ ไม่มีคำไหนบอกได้ว่าเราเสียใจแค่ไหน กลางๆ",
    "fingerprint": "39188d4b165ecd0e",
    "vocab_sig": [
@@ -113273,7 +113273,7 @@
    "kind": "phrase",
    "en": "Perhaps you would be good enough to clarify your position. (formal) / Could you clarify where you stand? (neutral)",
    "en_norm": "perhaps you would be good enough to clarify your position formal could you clarify where you stand neutral",
-   "my_norm": "သင်၏ရပ်တည်ချက်ကို ရှင်းလင်းပေးပါရန် မေတ္တာရပ်ခံပါသည်။ တရားဝင် သင်ဘယ်ဘက်မှာ ရပ်တည်လဲ ရှင်းပြနိုင်မလား။ သာမန်",
+   "my_norm": "သင်၏ရပ်တည်ချက်ကို ရှင်းလင်းပေးပါရန် မေတ္တာရပ်ခံပါသည်။ တရားဝင် သင့်ရပ်တည်ချက်ကို ရှင်းပြပေးနိုင်မလား။ သာမန်",
    "th_norm": "ท่านจะกรุณาชี้แจงจุดยืนของท่านได้หรือไม่ ทางการ ช่วยบอกหน่อยได้ไหมว่าคุณยืนอยู่จุดไหน กลางๆ",
    "fingerprint": "23b5b0f03ab8a78f",
    "vocab_sig": [
@@ -113457,7 +113457,7 @@
    "kind": "phrase",
    "en": "Might I venture a tentative suggestion? (formal) / Can I throw out an idea? (informal)",
    "en_norm": "might i venture a tentative suggestion formal can i throw out an idea informal",
-   "my_norm": "တိကျမှုမရှိသေးသော အကြံပြုချက်တစ်ခု တင်ပြခွင့်ပြုပါမည်လော။ တရားဝင် စိတ်ကူးတစ်ခု ပစ်ထည့်လို့ရမလား။ ပေါ့ပေါ့ပါးပါး",
+   "my_norm": "တိကျမှုမရှိသေးသော အကြံပြုချက်တစ်ခု တင်ပြခွင့်ပြုပါမည်လော။ တရားဝင် စိတ်ကူးတစ်ခု ပြောပြလို့ရမလား။ ပေါ့ပေါ့ပါးပါး",
    "th_norm": "ข้าพเจ้าขอเสนอข้อเสนอแนะเบื้องต้นได้ไหม ทางการ ขอโยนไอเดียหน่อยได้ไหม ไม่เป็นทางการ",
    "fingerprint": "0cd9d4d9880f7cb1",
    "vocab_sig": [
@@ -113537,7 +113537,7 @@
    "kind": "phrase",
    "en": "Would you be amenable to a compromise on the timeline? (formal) / Would you meet us halfway on timing? (neutral)",
    "en_norm": "would you be amenable to a compromise on the timeline formal would you meet us halfway on timing neutral",
-   "my_norm": "အချိန်ဇယားတွင် အပေးအယူလုပ်ရန် သဘောတူပါမည်လော။ တရားဝင် အချိန်ကိစ္စမှာ အလယ်အလတ်တွေ့ကြမလား။ သာမန်",
+   "my_norm": "အချိန်ဇယားတွင် အပေးအယူလုပ်ရန် သဘောတူပါမည်လော။ တရားဝင် အချိန်ကိစ္စမှာ အပေးအယူလုပ်ကြမလား။ သာမန်",
    "th_norm": "ท่านจะยินดีประนีประนอมเรื่องกรอบเวลาหรือไม่ ทางการ เจอกันครึ่งทางเรื่องเวลาได้ไหม กลางๆ",
    "fingerprint": "726ed842797a582f",
    "vocab_sig": [
@@ -113617,7 +113617,7 @@
    "kind": "phrase",
    "en": "Might we respectfully request a point of clarification? (formal) / Quick question to clarify — (informal)",
    "en_norm": "might we respectfully request a point of clarification formal quick question to clarify informal",
-   "my_norm": "လေးစားစွာ ရှင်းလင်းချက်တစ်ခု တောင်းခံနိုင်မည်လော။ တရားဝင် ရှင်းဖို့ မေးခွန်းတစ်ခု ပေါ့ပေါ့ပါးပါး",
+   "my_norm": "လေးစားစွာ ရှင်းလင်းချက်တစ်ခု တောင်းခံနိုင်မည်လော။ တရားဝင် ရှင်းဖို့ မေးခွန်းတစ်ခုမေးချင်တယ်။ ပေါ့ပေါ့ပါးပါး",
    "th_norm": "ข้าพเจ้าขอความกระจ่างสักประเด็นอย่างสุภาพได้ไหม ทางการ ขอถามเพื่อความชัดเจนแป๊บ ไม่เป็นทางการ",
    "fingerprint": "1c98894c1dea8d1f",
    "vocab_sig": [
@@ -113722,7 +113722,7 @@
    "kind": "phrase",
    "en": "We gently urge all parties to exercise restraint. (formal) / We ask everyone to stay calm. (neutral)",
    "en_norm": "we gently urge all parties to exercise restraint formal we ask everyone to stay calm neutral",
-   "my_norm": "ပါဝင်သူအားလုံး ထိန်းသိမ်းမှုရှိရန် ညင်သာစွာ တိုက်တွန်းပါသည်။ တရားဝင် အားလုံး စိတ်အေးအေးထားဖို့ တောင်းဆိုပါတယ်။ သာမန်",
+   "my_norm": "ပါဝင်သူအားလုံး ထိန်းထိန်းသိမ်းသိမ်းနေထိုင်ကြရန် ညင်သာစွာ တိုက်တွန်းပါသည်။ တရားဝင် အားလုံး စိတ်အေးအေးထားဖို့ တောင်းဆိုပါတယ်။ သာမန်",
    "th_norm": "เราขอเรียกร้องอย่างนุ่มนวลให้ทุกฝ่ายใช้ความยับยั้งชั่งใจ ทางการ ขอให้ทุกคนใจเย็นๆ กลางๆ",
    "fingerprint": "9f995651da57802c",
    "vocab_sig": [
@@ -114243,7 +114243,7 @@
    "kind": "phrase",
    "en": "Let's boil the ocean on this one. (informal, jargon, ironic) / Let's not try to do everything at once. (neutral)",
    "en_norm": "let s boil the ocean on this one informal jargon ironic let s not try to do everything at once neutral",
-   "my_norm": "တစ်ပြိုင်နက် အရာအားလုံး မလုပ်မိစေနှင့်။ ဗန်းစကား၊ ရယ်စရာသုံး တစ်ခါတည်း အကုန်မလုပ်မိစေနဲ့။ သာမန်",
+   "my_norm": "ဒီတစ်ခါ မဖြစ်နိုင်တာတွေပါ လုပ်ကြည့်ကြစို့။ ဗန်းစကား၊ ရယ်စရာသုံး တစ်ခါတည်း အကုန်မလုပ်မိစေနဲ့။ သာမန်",
    "th_norm": "อย่าพยายามทำทุกอย่างพร้อมกัน ไม่เป็นทางการ ศัพท์เฉพาะ ประชด อย่าพยายามทำทุกอย่างในคราวเดียว กลางๆ",
    "fingerprint": "dd2c0683814c0a6a",
    "vocab_sig": [
@@ -118649,7 +118649,7 @@
    "kind": "phrase",
    "en": "We are willing to sweeten the deal with training. (informal) / We can add training to make the deal better. (neutral)",
    "en_norm": "we are willing to sweeten the deal with training informal we can add training to make the deal better neutral",
-   "my_norm": "သဘောတူညီချက်ကို လေ့ကျင့်ပေးမှုဖြင့် ပိုဆွဲဆောင်မှုရှိအောင် လုပ်ပေးနိုင်ပါသည်။ ပေါ့ပေါ့ပါးပါး သဘောတူညီချက်ပိုကောင်းအောင် လေ့ကျင့်ပေးမှု ထည့်ပေးနိုင်တယ်။ သာမန်",
+   "my_norm": "သဘောတူညီချက်ကို လေ့ကျင့်ပေးမှုနဲ့ ပိုဆွဲဆောင်မှုရှိအောင် လုပ်ပေးနိုင်တယ်။ ပေါ့ပေါ့ပါးပါး သဘောတူညီချက်ပိုကောင်းအောင် လေ့ကျင့်ပေးမှု ထည့်ပေးနိုင်တယ်။ သာမန်",
    "th_norm": "เรายินดีเพิ่มการฝึกอบรมเพื่อทำให้ดีลน่าสนใจขึ้น ไม่เป็นทางการ เราเพิ่มการฝึกอบรมให้ดีลดีขึ้นได้ กลางๆ",
    "fingerprint": "5affabff3ba6e87e",
    "vocab_sig": [
@@ -120576,7 +120576,7 @@
    "kind": "phrase",
    "en": "A minute's silence will be observed. (formal) / Let's have a moment of silence. (neutral)",
    "en_norm": "a minute s silence will be observed formal let s have a moment of silence neutral",
-   "my_norm": "တစ်မိနစ်တာ ငြိမ်သက်စွာ နေထိုင်ပါမည်။ တရားဝင် တစ်ခဏ ငြိမ်သက်စွာ နေကြစို့။ သာမန်",
+   "my_norm": "တစ်မိနစ်တာ ငြိမ်သက်စွာ နေပါမည်။ တရားဝင် တစ်ခဏ ငြိမ်သက်စွာ နေကြစို့။ သာမန်",
    "th_norm": "จะมีการยืนสงบนิ่งเป็นเวลาหนึ่งนาที ทางการ เรามายืนสงบนิ่งกันสักครู่ กลางๆ",
    "fingerprint": "8aaf9e54a740c272",
    "vocab_sig": [
@@ -122604,7 +122604,7 @@
    "kind": "phrase",
    "en": "I couldn't care less. (neutral, correct) / I could care less. (informal, common error)",
    "en_norm": "i couldn t care less neutral correct i could care less informal common error",
-   "my_norm": "လုံးဝ ဂရုမစိုက်ပါ။ သာမန်၊ မှန်ကန်သုံး နည်းနည်းတော့ ဂရုစိုက်တယ် ပေါ့ပေါ့ပါးပါး၊ အမှားများသုံး တကယ်ဆိုလိုတာနဲ့ ဆန့်ကျင်ဘက်",
+   "my_norm": "လုံးဝ ဂရုမစိုက်ပါ။ သာမန်၊ မှန်ကန်သုံး နည်းနည်းတော့ ဂရုစိုက်တယ်။ ပေါ့ပေါ့ပါးပါး၊ အမှားများသုံး တကယ်ဆိုလိုတာနဲ့ ဆန့်ကျင်ဘက်",
    "th_norm": "ไม่สนใจเลย กลางๆ ถูกต้อง ไม่สนใจเลย ไม่เป็นทางการ มักใช้ผิด ความหมายตรงข้ามกับที่ตั้งใจ",
    "fingerprint": "8cc4421abf451b52",
    "vocab_sig": [
@@ -123302,7 +123302,7 @@
    "en": "That criticism is well taken, and I'll carry it forward.",
    "en_norm": "that criticism is well taken and i ll carry it forward",
    "my_norm": "အဲဒီဝေဖန်ချက်ကို ကောင်းကောင်းလက်ခံတယ်၊ ရှေ့ဆက်လည်း ထည့်သွင်းစဉ်းစားသွားမယ်။",
-   "th_norm": "คำวิจารณ์นั้นรับไว้อย่างดี และจะนำไปใช้ต่อ",
+   "th_norm": "น้อมรับคำวิจารณ์นั้น และจะนำไปปรับใช้ต่อไป",
    "fingerprint": "bc39d4259f53af65",
    "vocab_sig": [
     "carry",
@@ -123349,7 +123349,7 @@
    "en": "You make a valid point about enforcement; design can address it.",
    "en_norm": "you make a valid point about enforcement design can address it",
    "my_norm": "အကောင်အထည်ဖော်မှုနဲ့ပတ်သက်ပြီး သင်ပြောတာမှန်တယ်၊ ဒီဇိုင်းနဲ့ ဖြေရှင်းလို့ရတယ်။",
-   "th_norm": "คุณยกประเด็นที่ถูกต้องเรื่องการบังคับใช้ การออกแบบแก้ได้",
+   "th_norm": "คุณยกประเด็นที่ถูกต้องเรื่องการบังคับใช้ ซึ่งแก้ไขได้ด้วยการออกแบบ",
    "fingerprint": "c90565961fb4ec9e",
    "vocab_sig": [
     "address",
@@ -123554,7 +123554,7 @@
    "en": "I accept your framing for the sake of argument, then show why it fails.",
    "en_norm": "i accept your framing for the sake of argument then show why it fails",
    "my_norm": "ဆွေးနွေးမှုအတွက်ပဲ သင့်ဘောင်သတ်မှတ်ချက်ကို လက်ခံတယ်၊ ပြီးတော့ ဘာလို့မအောင်မြင်တာလဲဆိုတာ ပြမယ်။",
-   "th_norm": "รับกรอบของคุณเพื่อการโต้แย้ง แล้วแสดงว่าทำไมมันล้มเหลว",
+   "th_norm": "สมมติรับกรอบของคุณไว้ก่อน แล้วจะแสดงให้เห็นว่าทำไมมันล้มเหลว",
    "fingerprint": "74799afb10fcb621",
    "vocab_sig": [
     "accept",
@@ -123767,7 +123767,7 @@
    "en": "The argument proves too much: if true, it would rule out everything.",
    "en_norm": "the argument proves too much if true it would rule out everything",
    "my_norm": "အဲဒီအငြင်းပွားချက်က လွန်ကဲစွာ သက်သေပြနေတယ်၊ မှန်ခဲ့ရင် အရာအားလုံးကို ပယ်ချရမယ်။",
-   "th_norm": "ข้อโต้แย้งพิสูจน์มากเกินไป ถ้าจริงมันจะตัดทุกอย่างออกหมด",
+   "th_norm": "ข้อโต้แย้งพิสูจน์มากเกินไป ถ้าเป็นจริง มันจะหักล้างทุกอย่างไปหมด",
    "fingerprint": "1bfd5d934e84bb36",
    "vocab_sig": [
     "argument",
@@ -123815,7 +123815,7 @@
    "en": "That reasoning is circular — the conclusion is smuggled into the premise.",
    "en_norm": "that reasoning is circular the conclusion is smuggled into the premise",
    "my_norm": "အဲဒီဆင်ခြင်မှုက စက်ဝိုင်းပုံစံဖြစ်နေတယ်၊ ကောက်ချက်ကို ယူဆချက်ထဲမှာ ခိုးသွင်းထားတယ်။",
-   "th_norm": "เหตุผลนั้นวนเป็นวง แอบใส่ข้อสรุปไว้ในข้อตั้งต้น",
+   "th_norm": "เหตุผลนั้นวนเป็นวง แฝงข้อสรุปไว้ในข้อตั้งต้นตั้งแต่แรก",
    "fingerprint": "1b0ffd205fa88d57",
    "vocab_sig": [
     "circular",
@@ -123929,7 +123929,7 @@
    "en": "The logic fails at the second step, where possibility is treated as probability.",
    "en_norm": "the logic fails at the second step where possibility is treated as probability",
    "my_norm": "ဆင်ခြင်မှုက ဒုတိယအဆင့်မှာ ပျက်တယ်၊ ဖြစ်နိုင်ခြေကို ဖြစ်နိုင်ခြေမြင့်မှုအဖြစ် ဆက်ဆံတဲ့နေရာမှာပဲ။",
-   "th_norm": "ตรรกะพังที่ขั้นตอนที่สอง ซึ่งถือความเป็นไปได้เป็นความน่าจะเป็น",
+   "th_norm": "ตรรกะล้มเหลวที่ขั้นตอนที่สอง ซึ่งถือความเป็นไปได้เป็นความน่าจะเป็น",
    "fingerprint": "952fd5e200fa9d99",
    "vocab_sig": [
     "fails",
@@ -124234,7 +124234,7 @@
    "en": "Even on your own terms, the conclusion doesn't hold.",
    "en_norm": "even on your own terms the conclusion doesn t hold",
    "my_norm": "သင့်ကိုယ်ပိုင်စံနှုန်းနဲ့တောင် ကောက်ချက်က မခိုင်ဘူး။",
-   "th_norm": "แม้ตามเงื่อนไขของคุณเอง ข้อสรุปก็ยังตั้งอยู่ไม่ได้",
+   "th_norm": "แม้ตามเงื่อนไขของคุณเอง ข้อสรุปก็ยังคงใช้ไม่ได้",
    "fingerprint": "df2b63428f175e87",
    "vocab_sig": [
     "conclusion",
@@ -124425,7 +124425,7 @@
    "en": "Apply the same standard to your own proposal and watch it buckle.",
    "en_norm": "apply the same standard to your own proposal and watch it buckle",
    "my_norm": "တူညီတဲ့စံနှုန်းကို သင့်ကိုယ်ပိုင်အဆိုပြုချက်မှာ အသုံးချပြီး ဘယ်လိုယိမ်းယိုင်သွားလဲဆိုတာ ကြည့်ပါ။",
-   "th_norm": "ใช้มาตรฐานเดียวกันกับข้อเสนอตัวเองแล้วดูมันพัง",
+   "th_norm": "ใช้มาตรฐานเดียวกันกับข้อเสนอของตัวเอง แล้วดูมันล้มเหลวไปเอง",
    "fingerprint": "a839525f673b7a8a",
    "vocab_sig": [
     "apply",
@@ -124475,7 +124475,7 @@
    "en": "You're optimizing for the wrong variable entirely.",
    "en_norm": "you re optimizing for the wrong variable entirely",
    "my_norm": "သင် အကောင်းဆုံးဖြစ်အောင်လုပ်နေတာက လုံးဝမှားယွင်းတဲ့ကိန်းရှင်ပဲ။",
-   "th_norm": "คุณกำลังทุ่มปรับให้เหมาะกับตัวแปรที่ผิดไปโดยสิ้นเชิง",
+   "th_norm": "คุณกำลังมุ่งปรับปรุงตัวแปรที่ผิดโดยสิ้นเชิง",
    "fingerprint": "29c9bae7437c0756",
    "vocab_sig": [
     "entirely",
@@ -124689,7 +124689,7 @@
    "en": "The strongest defense of your position is also its strongest indictment.",
    "en_norm": "the strongest defense of your position is also its strongest indictment",
    "my_norm": "သင့်ရပ်တည်ချက်ရဲ့ အခိုင်မာဆုံးကာကွယ်မှုကိုယ်တိုင်က သူ့အတွက် အပြင်းထန်ဆုံးစွပ်စွဲချက်ပဲ။",
-   "th_norm": "การป้องกันจุดยืนของคุณที่แข็งที่สุด ก็คือคำฟ้องที่แรงที่สุดเช่นกัน",
+   "th_norm": "การปกป้องจุดยืนของคุณที่แข็งแกร่งที่สุด ก็คือข้อกล่าวหาที่รุนแรงที่สุดเช่นกัน",
    "fingerprint": "ca95dd486fb02755",
    "vocab_sig": [
     "defense",
@@ -124735,7 +124735,7 @@
    "en": "Your argument defeats itself the moment it's applied consistently.",
    "en_norm": "your argument defeats itself the moment it s applied consistently",
    "my_norm": "သင့်အငြင်းပွားချက်က တသမတ်တည်းအသုံးချလိုက်တာနဲ့ သူ့ကိုယ်သူ ချေဖျက်သွားတယ်။",
-   "th_norm": "ข้อโต้แย้งของคุณพ่ายแพ้ตัวเองทันทีที่ใช้อย่างสม่ำเสมอ",
+   "th_norm": "ข้อโต้แย้งของคุณทำลายตัวเองทันทีเมื่อใช้อย่างสม่ำเสมอ",
    "fingerprint": "42e567b0a9fec55b",
    "vocab_sig": [
     "applied",
@@ -125106,7 +125106,7 @@
    "en": "I wouldn't go so far as to say it's inevitable.",
    "en_norm": "i wouldn t go so far as to say it s inevitable",
    "my_norm": "မလွှဲမရှောင်ဖြစ်မယ်လို့ ပြောလောက်တဲ့အထိ မသွားဘူး။",
-   "th_norm": "จะไม่พูดไกลถึงขั้นว่าหลีกเลี่ยงไม่ได้",
+   "th_norm": "จะไม่พูดถึงขั้นว่าหลีกเลี่ยงไม่ได้",
    "fingerprint": "a665795e81520fb8",
    "vocab_sig": [
     "far",
@@ -125198,7 +125198,7 @@
    "en": "If I may qualify that: true for cities, doubtful for rural areas.",
    "en_norm": "if i may qualify that true for cities doubtful for rural areas",
    "my_norm": "ဖြည့်စွက်ပြင်ဆင်ခွင့်ပြုရင် မြို့တွေအတွက် မှန်တယ်၊ ကျေးလက်ဒေသတွေအတွက်တော့ သံသယရှိတယ်။",
-   "th_norm": "ขอเสริมเงื่อนไข จริงสำหรับเมือง ไม่แน่สำหรับชนบท",
+   "th_norm": "ขอเพิ่มข้อแม้สักหน่อย จริงสำหรับเมือง แต่ไม่แน่สำหรับชนบท",
    "fingerprint": "e4b0169e1cdcf381",
    "vocab_sig": [
     "areas",
@@ -125388,7 +125388,7 @@
    "en": "The raw figures tell a starker story than the polished summaries.",
    "en_norm": "the raw figures tell a starker story than the polished summaries",
    "my_norm": "မပြုပြင်ရသေးတဲ့ကိန်းဂဏန်းတွေက ချောမွေ့အောင်ပြုလုပ်ထားတဲ့အကျဥ်းချုပ်တွေထက် ပိုပြင်းထန်တဲ့ဇာတ်လမ်းကို ပြောတယ်။",
-   "th_norm": "ตัวเลขดิบเล่าเรื่องที่ชัดเจนกว่าสรุปที่ขัดเกลาแล้วมาก",
+   "th_norm": "ตัวเลขดิบเล่าเรื่องที่น่าตกใจกว่าสรุปที่ขัดเกลาแล้วมาก",
    "fingerprint": "8ab47bf11c30db4f",
    "vocab_sig": [
     "figures",
@@ -125559,7 +125559,7 @@
    "en": "The burden of empirical proof falls squarely on the proponents.",
    "en_norm": "the burden of empirical proof falls squarely on the proponents",
    "my_norm": "အတွေ့အကြုံဆိုင်ရာသက်သေပြရမယ့်တာဝန်က ထောက်ခံသူတွေအပေါ် တိတိကျကျ ကျရောက်တယ်။",
-   "th_norm": "ภาระการพิสูจน์เชิงประจักษ์ตกอยู่กับผู้สนับสนุนเต็มๆ",
+   "th_norm": "ภาระการพิสูจน์เชิงประจักษ์ตกอยู่กับผู้สนับสนุนอย่างเต็มที่",
    "fingerprint": "98283f6c86bb2237",
    "vocab_sig": [
     "burden",
@@ -125583,7 +125583,7 @@
    "en": "Anecdotes are suggestive, but they are not a substitute for data.",
    "en_norm": "anecdotes are suggestive but they are not a substitute for data",
    "my_norm": "ဖြစ်ရပ်ဥပမာတွေက အရိပ်အမြွက်ပေးနိုင်ပေမယ့် အချက်အလက်အစား အသုံးမခံနိုင်ဘူး။",
-   "th_norm": "เรื่องเล่าชวนให้นึก แต่ไม่ใช่สิ่งแทนข้อมูล",
+   "th_norm": "เรื่องเล่าอาจชวนให้คิด แต่ไม่ใช่สิ่งทดแทนข้อมูล",
    "fingerprint": "b8b88973c3bdba5f",
    "vocab_sig": [
     "anecdotes",
@@ -125605,7 +125605,7 @@
    "en": "The methodology section alone raises three red flags.",
    "en_norm": "the methodology section alone raises three red flags",
    "my_norm": "နည်းနာပိုင်းတစ်ခုတည်းကပဲ သတိပေးချက် သုံးခု ပေါ်စေတယ်။",
-   "th_norm": "แค่ส่วนวิธีวิทยาก็ยกธงแดงสามผืนแล้ว",
+   "th_norm": "เพียงส่วนวิธีวิทยาก็มีประเด็นน่าสงสัยสามประการแล้ว",
    "fingerprint": "bba5fc9ab471d16c",
    "vocab_sig": [
     "alone",
@@ -125922,7 +125922,7 @@
    "en": "What the data rules out is as informative as what it confirms.",
    "en_norm": "what the data rules out is as informative as what it confirms",
    "my_norm": "အချက်အလက်တွေ ပယ်ချတဲ့အရာက အတည်ပြုတဲ့အရာလောက် အချက်အလက်ပေးနိုင်တယ်။",
-   "th_norm": "สิ่งที่ข้อมูลตัดทิ้งให้ข้อมูลไม่น้อยไปกว่าสิ่งที่ข้อมูลยืนยัน",
+   "th_norm": "สิ่งที่ข้อมูลปฏิเสธให้ข้อมูลไม่น้อยไปกว่าสิ่งที่ข้อมูลยืนยัน",
    "fingerprint": "e59f7bacefb5b7d2",
    "vocab_sig": [
     "confirms",
@@ -125966,8 +125966,8 @@
    "kind": "phrase",
    "en": "The syllogism is airtight; dispute the premises if you can.",
    "en_norm": "the syllogism is airtight dispute the premises if you can",
-   "my_norm": "ဆင်ခြင်သုံးဆင့်က လေလုံတယ်၊ တတ်နိုင်ရင် ယူဆချက်တွေကို ဆန့်ကျင်ကြည့်ပါ။",
-   "th_norm": "ตริบทยานนี้รัดกุม โต้แย้งข้อตั้งต้นได้ถ้าทำได้",
+   "my_norm": "ဆီလော့ဂျစ်ဇမ်က ချို့ယွင်းချက်ကင်းတယ်၊ တတ်နိုင်ရင် ယူဆချက်တွေကို ဆန့်ကျင်ကြည့်ပါ။",
+   "th_norm": "ตริบทญาณนี้รัดกุม โต้แย้งข้อตั้งต้นได้ถ้าคิดว่าทำได้",
    "fingerprint": "f1638c34fda84c39",
    "vocab_sig": [
     "airtight",
@@ -125988,7 +125988,7 @@
    "kind": "phrase",
    "en": "Consistency demands we apply the same reasoning here.",
    "en_norm": "consistency demands we apply the same reasoning here",
-   "my_norm": "တသမတ်တည်းဖြစ်မှုက ဒီနေရာမှာလည်း တူညီတဲ့ဆင်ခြင်မှုကို အသုံးချဖို့ တောင်းဆိုတယ်။",
+   "my_norm": "တစ်သမတ်တည်းဖြစ်ဖို့အတွက် ဒီနေရာမှာလည်း အဲဒီဆင်ခြင်မှုမျိုးကိုပဲ သုံးရမယ်။",
    "th_norm": "ความสม่ำเสมอเรียกร้องให้ใช้เหตุผลเดียวกันตรงนี้",
    "fingerprint": "eb014113aa7925f7",
    "vocab_sig": [
@@ -126012,7 +126012,7 @@
    "en": "The dilemma is false: a third option has been overlooked.",
    "en_norm": "the dilemma is false a third option has been overlooked",
    "my_norm": "ရွေးချယ်မှုနှစ်ခုအကျပ်အတည်းက မှားယွင်းတယ်၊ တတိယရွေးချယ်မှုတစ်ခုကို လွတ်သွားတယ်။",
-   "th_norm": "ทางสองแพร่งนั้นเท็จ มีทางเลือกที่สามที่ถูกมองข้าม",
+   "th_norm": "ข้อเสนอทางสองแพร่งนี้ไม่จริง ยังมีทางเลือกที่สามที่ถูกมองข้าม",
    "fingerprint": "85acc09abc757cdd",
    "vocab_sig": [
     "dilemma",
@@ -126058,7 +126058,7 @@
    "en": "By parity of reasoning, the same objection applies to your alternative.",
    "en_norm": "by parity of reasoning the same objection applies to your alternative",
    "my_norm": "ဆင်ခြင်မှုတူညီချက်အရ တူညီတဲ့ဆန့်ကျင်ချက်က သင့်အခြားရွေးချယ်မှုမှာလည်း သက်ဆိုင်တယ်။",
-   "th_norm": "ด้วยเหตุผลสมมาตร ข้อโต้แย้งเดียวกันใช้กับทางเลือกของคุณได้",
+   "th_norm": "ด้วยหลักเหตุผลเดียวกัน ข้อโต้แย้งเดิมจึงใช้ได้กับทางเลือกของคุณเช่นกัน",
    "fingerprint": "9d0f1aff50763790",
    "vocab_sig": [
     "alternative",
@@ -126292,7 +126292,7 @@
    "kind": "phrase",
    "en": "Necessity and sufficiency pull in opposite directions here.",
    "en_norm": "necessity and sufficiency pull in opposite directions here",
-   "my_norm": "လိုအပ်မှုနဲ့ လုံလောက်မှုက ဒီနေရာမှာ ဆန့်ကျင်ဘက်ဦးတည်ချက်တွေကို ဆွဲတယ်။",
+   "my_norm": "လိုအပ်ချက်နဲ့ လုံလောက်ချက်က ဒီနေရာမှာ ဆန့်ကျင်ဘက်နှစ်ဖက်ကို ဆွဲငင်နေတယ်။",
    "th_norm": "ความจำเป็นกับความเพียงพอดึงไปคนละทางตรงนี้",
    "fingerprint": "7abf0c2d0369731d",
    "vocab_sig": [
@@ -126339,7 +126339,7 @@
    "en": "Follow the implication chain to its end and the cost becomes clear.",
    "en_norm": "follow the implication chain to its end and the cost becomes clear",
    "my_norm": "နောက်ဆက်တွဲကွင်းဆက်ကို အဆုံးအထိ လိုက်ကြည့်ပါ၊ ကုန်ကျစရိတ်က ရှင်းလင်းလာမယ်။",
-   "th_norm": "ตามโซ่นัยไปจนสุดแล้วต้นทุนจะชัด",
+   "th_norm": "ตามสายโซ่นัยยะไปจนสุด แล้วต้นทุนจะชัดเจน",
    "fingerprint": "c4be23d1423e1e54",
    "vocab_sig": [
     "becomes",
@@ -126363,7 +126363,7 @@
    "kind": "phrase",
    "en": "The excluded middle is precisely what's at stake.",
    "en_norm": "the excluded middle is precisely what s at stake",
-   "my_norm": "ဖယ်ထုတ်ထားတဲ့အလယ်အလတ်က အတိအကျ အန္တရာယ်ရှိနေတဲ့အရာပဲ။",
+   "my_norm": "ဖယ်ထုတ်ထားတဲ့ အလယ်အလတ်နိယာမကပဲ ဒီနေရာမှာ အဆုံးအဖြတ်ခံရမယ့်အရာပဲ။",
    "th_norm": "หลักการขจัดทางกลางคือประเด็นที่เป็นเดิมพันอย่างแท้จริง",
    "fingerprint": "0a94ce8e5695a8ed",
    "vocab_sig": [
@@ -126386,7 +126386,7 @@
    "en": "Deductive certainty is unattainable here; inductive weight must suffice.",
    "en_norm": "deductive certainty is unattainable here inductive weight must suffice",
    "my_norm": "ဒီနေရာမှာ နုတ်ယူဆင်ခြင်မှုရဲ့သေချာမှုက မရနိုင်ဘူး၊ သွေးဆောင်ဆင်ခြင်မှုရဲ့အလေးချိန်နဲ့ လုံလောက်ရမယ်။",
-   "th_norm": "ความแน่ชัดแบบนิรนัยไปไม่ถึงตรงนี้ น้ำหนักแบบอุปนัยต้องพอ",
+   "th_norm": "ความแน่นอนเชิงนิรนัยเอื้อมไม่ถึงในกรณีนี้ น้ำหนักเชิงอุปนัยต้องเพียงพอ",
    "fingerprint": "f37246d3a5a1d0ba",
    "vocab_sig": [
     "certainty",
@@ -126409,7 +126409,7 @@
    "kind": "phrase",
    "en": "The principle generalizes; the exception must be justified, not assumed.",
    "en_norm": "the principle generalizes the exception must be justified not assumed",
-   "my_norm": "အခြေခံမူက ယေဘုယျပြုနိုင်တယ်၊ ခြွင်းချက်က ယူဆထားတာမဟုတ်ဘဲ တရားမျှတကြောင်း ပြရမယ်။",
+   "my_norm": "အခြေခံမူက ယေဘုယျသက်ရောက်နိုင်တယ်၊ ခြွင်းချက်ကိုတော့ ကြိုယူဆထားလို့မရဘဲ ခိုင်လုံကြောင်း အကြောင်းပြချက်ပေးရမယ်။",
    "th_norm": "หลักการขยายได้ทั่วไป ข้อยกเว้นต้องให้เหตุผล ไม่ใช่ตั้งสมมุติ",
    "fingerprint": "95d6582cc089311c",
    "vocab_sig": [
@@ -126576,7 +126576,7 @@
    "en": "Our credibility is the currency in which all future deals are struck.",
    "en_norm": "our credibility is the currency in which all future deals are struck",
    "my_norm": "ကျွန်တော်တို့ရဲ့ ယုံကြည်စိတ်ချရမှုက အနာဂတ်သဘောတူညီမှုတိုင်းရဲ့ ငွေကြေးပဲ။",
-   "th_norm": "ความน่าเชื่อถือของเราคือสกุลเงินที่ข้อตกลงทั้งหมดในอนาคตใช้ซื้อขายกัน",
+   "th_norm": "ความน่าเชื่อถือของเราคือสกุลเงินที่ข้อตกลงทุกฉบับในอนาคตถูกผนึกด้วย",
    "fingerprint": "6c1607ec271b191b",
    "vocab_sig": [
     "all",
@@ -126791,7 +126791,7 @@
    "en": "Compassion without action is sentimentality dressed as virtue.",
    "en_norm": "compassion without action is sentimentality dressed as virtue",
    "my_norm": "လုပ်ဆောင်မှုမပါတဲ့ သနားကြင်နာမှုက သီလအဖြစ် ဝတ်ဆင်ထားတဲ့ စိတ်ခံစားမှုပဲ။",
-   "th_norm": "ความเห็นอกเห็นใจไร้การกระทำคือความซาบซึ้งแต่งตัวเป็นคุณธรรม",
+   "th_norm": "ความเห็นอกเห็นใจที่ไร้การกระทำคือความซาบซึ้งที่แอบอ้างเป็นคุณธรรม",
    "fingerprint": "89dae701987f700a",
    "vocab_sig": [
     "action",
@@ -127002,7 +127002,7 @@
    "en": "We inherit institutions; we bequeath either their repair or their ruin.",
    "en_norm": "we inherit institutions we bequeath either their repair or their ruin",
    "my_norm": "ကျွန်တော်တို့ အဖွဲ့အစည်းတွေကို အမွေရတယ်၊ သူတို့ရဲ့ပြုပြင်မှုဖြစ်စေ ပျက်စီးမှုဖြစ်စေ ချန်ထားခဲ့မယ်။",
-   "th_norm": "เราสืบทอดสถาบันมา และจะส่งต่อไว้ไม่การซ่อมแซมก็การทำลายของมัน",
+   "th_norm": "เราสืบทอดสถาบันมา และสิ่งที่เราจะส่งต่อไว้คือการซ่อมแซมหรือการทำลายของมัน",
    "fingerprint": "809883fd02882c5f",
    "vocab_sig": [
     "bequeath",
@@ -127047,8 +127047,8 @@
    "kind": "phrase",
    "en": "Solidarity is not charity; it is enlightened self-interest.",
    "en_norm": "solidarity is not charity it is enlightened self interest",
-   "my_norm": "စည်းလုံးညီညွတ်မှုက အလှူဒါနမဟုတ်ဘူး၊ အလင်းပွင့်တဲ့ ကိုယ်ကျိုးစီးပွားပဲ။",
-   "th_norm": "ความสามัคคีไม่ใช่การกุศล แต่คือผลประโยชน์ตนที่รู้แจ้ง",
+   "my_norm": "စည်းလုံးညီညွတ်မှုက အလှူဒါနမဟုတ်ဘူး၊ ဉာဏ်ပွင့်တဲ့ ကိုယ်ကျိုးစီးပွားပဲ။",
+   "th_norm": "ความสามัคคีไม่ใช่การกุศล แต่คือผลประโยชน์ส่วนตนที่มองการณ์ไกล",
    "fingerprint": "bbb583941cf360e9",
    "vocab_sig": [
     "charity",
@@ -127253,7 +127253,7 @@
    "kind": "phrase",
    "en": "Delay is itself a decision — and rarely a defensible one.",
    "en_norm": "delay is itself a decision and rarely a defensible one",
-   "my_norm": "နှောင့်နှေးမှုကိုယ်တိုင်က ဆုံးဖြတ်ချက်တစ်ခုပဲ၊ ပြီးတော့ ကာကွယ်နိုင်ခဲတဲ့ဆုံးဖြတ်ချက်ပဲ။",
+   "my_norm": "နှောင့်နှေးမှုကိုယ်တိုင်က ဆုံးဖြတ်ချက်တစ်ခုပဲ၊ ပြီးတော့ ခိုင်လုံကြောင်း ပြဖို့ခက်တဲ့ ဆုံးဖြတ်ချက်ပဲ။",
    "th_norm": "การล่าช้าคือการตัดสินใจในตัวเอง และแทบจะแก้ต่างไม่ได้เลย",
    "fingerprint": "126be8adad620b8f",
    "vocab_sig": [
@@ -127553,7 +127553,7 @@
    "kind": "phrase",
    "en": "We owe the future more than our hesitation.",
    "en_norm": "we owe the future more than our hesitation",
-   "my_norm": "ကျွန်တော်တို့ အနာဂတ်ကို တွန့်ဆုတ်မှုထက် ပိုပေးဆပ်ရမယ်။",
+   "my_norm": "ကျွန်တော်တို့ အနာဂတ်ကို တွန့်ဆုတ်မှုထက် ပိုတာတွေ ပေးရမယ့်တာဝန်ရှိတယ်။",
    "th_norm": "เราติดหนี้อนาคตมากกว่าความลังเลของเรา",
    "fingerprint": "5da1ee0ba59be886",
    "vocab_sig": [
@@ -127736,7 +127736,7 @@
    "kind": "phrase",
    "en": "I'll take questions at the end; the argument needs its full arc.",
    "en_norm": "i ll take questions at the end the argument needs its full arc",
-   "my_norm": "အဆုံးမှာ မေးခွန်းတွေ လက်ခံမယ်၊ အငြင်းပွားချက်က သူ့ရဲ့အပြည့်အဝလမ်းကြောင်း လိုအပ်တယ်။",
+   "my_norm": "အဆုံးမှာ မေးခွန်းတွေ လက်ခံမယ်၊ အငြင်းပွားချက်က အစအဆုံးပြည့်စုံဖို့ လိုအပ်တယ်။",
    "th_norm": "รับคำถามตอนท้าย ข้อโต้แย้งต้องการเส้นเรื่องที่ครบถ้วน",
    "fingerprint": "1ed4fe7f0d21dc84",
    "vocab_sig": [
@@ -127786,7 +127786,7 @@
    "en": "Let me land this point, then I'll gladly hear your rebuttal.",
    "en_norm": "let me land this point then i ll gladly hear your rebuttal",
    "my_norm": "ဒီအချက်ကို အဆုံးသတ်ခွင့်ပြုပါ၊ ပြီးရင် သင့်ပြန်လည်ချေပမှုကို ဝမ်းသာစွာ နားထောင်မယ်။",
-   "th_norm": "ขอลงประเด็นนี้ก่อน แล้วยินดีฟังคำโต้",
+   "th_norm": "ขอสรุปประเด็นนี้ให้จบก่อน แล้วยินดีฟังคำโต้แย้ง",
    "fingerprint": "89a639c9d7c03317",
    "vocab_sig": [
     "gladly",
@@ -127855,7 +127855,7 @@
    "en": "Your eagerness is noted; the evidence will be heard first.",
    "en_norm": "your eagerness is noted the evidence will be heard first",
    "my_norm": "သင့်စိတ်အားထက်သန်မှုကို မှတ်သားတယ်၊ သက်သေကိုတော့ အရင်ကြားရမယ်။",
-   "th_norm": "รับทราบความกระตือรือร้น หลักฐานจะได้ยินก่อน",
+   "th_norm": "รับทราบความกระตือรือร้น แต่ต้องฟังหลักฐานก่อน",
    "fingerprint": "46344df74b9e8aef",
    "vocab_sig": [
     "eagerness",
@@ -128065,7 +128065,7 @@
    "en": "Your point is queued; my sentence is not yet done.",
    "en_norm": "your point is queued my sentence is not yet done",
    "my_norm": "သင့်အချက်က တန်းစီနေတယ်၊ ကျွန်တော့်ဝါကျကတော့ မပြီးသေးဘူး။",
-   "th_norm": "ประเด็นของคุณเข้าคิวแล้ว ประโยคของผม ดิฉันยังไม่จบ",
+   "th_norm": "ประเด็นของคุณเข้าคิวแล้ว ส่วนประโยคนี้ยังไม่จบ",
    "fingerprint": "2ee3b111fcfd5bff",
    "vocab_sig": [
     "done",
@@ -128113,7 +128113,7 @@
    "en": "I'll address the substance once the shouting subsides.",
    "en_norm": "i ll address the substance once the shouting subsides",
    "my_norm": "အော်ဟစ်သံတွေ ငြိမ်သွားပြီးမှ အနှစ်သာရကို ဖြေရှင်းမယ်။",
-   "th_norm": "จะตอบเนื้อหาเมื่อเสียงตะโกนสงบ",
+   "th_norm": "จะตอบเนื้อหาเมื่อเสียงตะโกนเงียบลง",
    "fingerprint": "19c6b81c0a84c490",
    "vocab_sig": [
     "address",
@@ -128204,7 +128204,7 @@
    "en": "Finish your interruption and I'll finish my argument — in that order.",
    "en_norm": "finish your interruption and i ll finish my argument in that order",
    "my_norm": "သင့်ကြားဖြတ်မှုကို အဆုံးသတ်ပါ၊ ကျွန်တော့်အငြင်းပွားချက်ကို အဆုံးသတ်မယ်၊ အဲဒီအစီအစဉ်အတိုင်းပဲ။",
-   "th_norm": "จบการขัดจังหวะของคุณแล้วผม ดิฉันจะจบข้อโต้แย้ง ตามลำดับนั้น",
+   "th_norm": "จบการขัดจังหวะของคุณก่อน แล้วค่อยจบข้อโต้แย้ง ตามลำดับนั้น",
    "fingerprint": "139cd1d758419893",
    "vocab_sig": [
     "argument",
@@ -128248,7 +128248,7 @@
    "en": "We can have order or we can have noise; we cannot have a debate with both.",
    "en_norm": "we can have order or we can have noise we cannot have a debate with both",
    "my_norm": "စည်းစနစ်ဖြစ်ဖြစ် ဆူညံသံဖြစ်ဖြစ် ရနိုင်တယ်၊ နှစ်ခုလုံးနဲ့တော့ ဆွေးနွေးမှုဖြစ်လာမှာမဟုတ်ဘူး။",
-   "th_norm": "มีความเป็นระเบียบหรือมีเสียงอึกทึกได้ แต่ถกเถียงโดยมีทั้งสองไม่ได้",
+   "th_norm": "มีความเป็นระเบียบหรือเสียงอึกทึกได้อย่างใดอย่างหนึ่ง แต่จะถกเถียงโดยมีทั้งสองพร้อมกันไม่ได้",
    "fingerprint": "40251f9181d70df8",
    "vocab_sig": [
     "both",
@@ -128270,7 +128270,7 @@
    "kind": "phrase",
    "en": "Put differently, the policy rewards the behavior it claims to discourage.",
    "en_norm": "put differently the policy rewards the behavior it claims to discourage",
-   "my_norm": "တခြားနည်းပြောရရင် မူဝါဒက တားမြစ်တယ်ဆိုတဲ့အပြုအမူကို ဆုချီးမြှင့်နေတယ်။",
+   "my_norm": "တခြားနည်းပြောရရင် မူဝါဒက အားမပေးဘူးဆိုတဲ့အပြုအမူကိုပဲ ဆုချီးမြှင့်နေတယ်။",
    "th_norm": "พูดอีกอย่าง นโยบายให้รางวัลพฤติกรรมที่มันอ้างว่ากีดกัน",
    "fingerprint": "3c986441d30cde42",
    "vocab_sig": [
@@ -128319,7 +128319,7 @@
    "en": "To restate the thesis in a single sentence: incentives shape outcomes.",
    "en_norm": "to restate the thesis in a single sentence incentives shape outcomes",
    "my_norm": "အဆိုကို ဝါကျတစ်ကြောင်းတည်းနဲ့ ပြန်ပြောရရင် မက်လုံးတွေက ရလဒ်တွေကို ပုံဖော်တယ်။",
-   "th_norm": "ย้ำวิทยานิพนธ์ในประโยคเดียว แรงจูงใจกำหนดผลลัพธ์",
+   "th_norm": "ย้ำข้อเสนอหลักในประโยคเดียว แรงจูงใจกำหนดผลลัพธ์",
    "fingerprint": "f86980183089db16",
    "vocab_sig": [
     "incentives",
@@ -128344,7 +128344,7 @@
    "en": "What that amounts to, stripped of jargon, is a transfer of risk.",
    "en_norm": "what that amounts to stripped of jargon is a transfer of risk",
    "my_norm": "ဝေါဟာရအထူးတွေကို ဖယ်လိုက်ရင် အဲဒါရဲ့အဓိပ္ပာယ်က အန္တရာယ်လွှဲပြောင်းမှုပဲ။",
-   "th_norm": "สิ่งนั้นปอกศัพท์เฉพาะออกคือการโอนความเสี่ยง",
+   "th_norm": "ปอกศัพท์เฉพาะออกแล้ว สิ่งที่เหลือคือการโอนความเสี่ยง",
    "fingerprint": "f3f9fd9384b4f4bb",
    "vocab_sig": [
     "amounts",
@@ -128366,7 +128366,7 @@
    "kind": "phrase",
    "en": "Reframed positively, it's an investment in resilience, not a cost.",
    "en_norm": "reframed positively it s an investment in resilience not a cost",
-   "my_norm": "အပြုသဘောနဲ့ ပြန်ဘောင်သတ်မှတ်ရင် ကုန်ကျစရိတ်မဟုတ်ဘဲ ခံနိုင်ရည်အတွက် ရင်းနှီးမြှုပ်နှံမှုပဲ။",
+   "my_norm": "ရှုထောင့်ပြောင်းပြီး အပြုသဘောဆောင်ကြည့်ရင် ကုန်ကျစရိတ်မဟုတ်ဘဲ ခံနိုင်ရည်အတွက် ရင်းနှီးမြှုပ်နှံမှုပဲ။",
    "th_norm": "ปรับกรอบเชิงบวก มันคือการลงทุนในความยืดหยุ่น ไม่ใช่ต้นทุน",
    "fingerprint": "8f7417772fe15a9e",
    "vocab_sig": [
@@ -128460,7 +128460,7 @@
    "kind": "phrase",
    "en": "Translate that into practical terms and the burden falls on the poorest.",
    "en_norm": "translate that into practical terms and the burden falls on the poorest",
-   "my_norm": "အဲဒါကို လက်တွေ့ကျတဲ့ဝေါဟာရနဲ့ ဘာသာပြန်ရင် ဝန်ထုပ်က အဆင်းရဲဆုံးသူတွေအပေါ် ကျရောက်တယ်။",
+   "my_norm": "အဲဒါကို လက်တွေ့အသုံးအနှုန်းနဲ့ ပြောရရင် ဝန်ထုပ်က အဆင်းရဲဆုံးသူတွေအပေါ် ကျရောက်တယ်။",
    "th_norm": "แปลเป็นภาษาปฏิบัติแล้วภาระตกกับคนจนที่สุด",
    "fingerprint": "45d0e7cfd468159c",
    "vocab_sig": [
@@ -128484,7 +128484,7 @@
    "kind": "phrase",
    "en": "Said without euphemism, the plan asks the vulnerable to wait.",
    "en_norm": "said without euphemism the plan asks the vulnerable to wait",
-   "my_norm": "ချောမွေ့တဲ့စကားမပါဘဲ ပြောရရင် အစီအစဉ်က ထိခိုက်လွယ်သူတွေကို စောင့်ဖို့ တောင်းဆိုတယ်။",
+   "my_norm": "ချိုသာတဲ့စကားမပါဘဲ ပြောရရင် အစီအစဉ်က ထိခိုက်လွယ်သူတွေကို စောင့်ဖို့ တောင်းဆိုတယ်။",
    "th_norm": "พูดไม่ใช้สำนวนอ้อม แผนขอให้ผู้เปราะบางรอ",
    "fingerprint": "91297517d4dee1a2",
    "vocab_sig": [
@@ -128558,7 +128558,7 @@
    "kind": "phrase",
    "en": "At bottom, this is a dispute about values wearing the clothes of facts.",
    "en_norm": "at bottom this is a dispute about values wearing the clothes of facts",
-   "my_norm": "အနက်ရှိုင်းဆုံးအဆင့်မှာ ဒါက အချက်တွေရဲ့အဝတ်အစားဝတ်ထားတဲ့ တန်ဖိုးတွေအပေါ် အငြင်းပွားမှုပဲ။",
+   "my_norm": "အနက်ရှိုင်းဆုံးအဆင့်မှာ ဒါက အချက်အလက်အသွင်ယူထားတဲ့ တန်ဖိုးတွေအပေါ် အငြင်းပွားမှုပဲ။",
    "th_norm": "ลึกลงไปนี่คือข้อพิพาทเรื่องค่านิยมสวมเสื้อข้อเท็จจริง",
    "fingerprint": "26bad944f5ec0bcc",
    "vocab_sig": [
@@ -128605,7 +128605,7 @@
    "kind": "phrase",
    "en": "The euphemism does heavy lifting here; let's name the thing plainly.",
    "en_norm": "the euphemism does heavy lifting here let s name the thing plainly",
-   "my_norm": "ချောမွေ့တဲ့စကားက ဒီနေရာမှာ အလုပ်များများလုပ်နေတယ်၊ အရာကို ရှင်းရှင်းပဲ နာမည်တပ်ကြရအောင်။",
+   "my_norm": "ချိုသာတဲ့စကားက ဒီနေရာမှာ အဓိကအခန်းကဏ္ဍက ပါဝင်နေတယ်၊ အရာကို ရှင်းရှင်းပဲ နာမည်တပ်ကြရအောင်။",
    "th_norm": "สำนวนอ้อมรับบทหนักตรงนี้ มาเรียกสิ่งนั้นตรงๆ",
    "fingerprint": "ac302c53b13b6397",
    "vocab_sig": [
@@ -128629,7 +128629,7 @@
    "kind": "phrase",
    "en": "Distilled to its core, the argument is about trust, not technique.",
    "en_norm": "distilled to its core the argument is about trust not technique",
-   "my_norm": "အနှစ်သာရအထိ ပေါင်းခံလိုက်ရင် အငြင်းပွားချက်က နည်းပညာမဟုတ်ဘဲ ယုံကြည်မှုအကြောင်းပဲ။",
+   "my_norm": "အနှစ်ချုပ်လိုက်ရင် အငြင်းပွားချက်က နည်းပညာအကြောင်းမဟုတ်ဘဲ ယုံကြည်မှုအကြောင်းပဲ။",
    "th_norm": "กลั่นถึงแก่น ข้อโต้แย้งคือเรื่องความไว้วางใจ ไม่ใช่เทคนิค",
    "fingerprint": "3cf1524a49eca32a",
    "vocab_sig": [
@@ -128652,7 +128652,7 @@
    "kind": "phrase",
    "en": "Put bluntly, no one volunteered for the costs being imposed.",
    "en_norm": "put bluntly no one volunteered for the costs being imposed",
-   "my_norm": "တုံးတိပြောရရင် ချမှတ်နေတဲ့ကုန်ကျစရိတ်တွေအတွက် ဘယ်သူမှ စေတနာ့ဝန်ထမ်း မလုပ်ခဲ့ဘူး။",
+   "my_norm": "တုံးတိပြောရရင် ချမှတ်နေတဲ့ကုန်ကျစရိတ်တွေကို ဘယ်သူမှ ကိုယ့်ဆန္ဒအလျောက် လက်ခံခဲ့တာမဟုတ်ဘူး။",
    "th_norm": "พูดตรงๆ ไม่มีใครอาสารับต้นทุนที่ถูกกำหนด",
    "fingerprint": "e290e1a63d75ae42",
    "vocab_sig": [
@@ -128775,7 +128775,7 @@
    "kind": "phrase",
    "en": "Rendered in human terms, the abstraction becomes a dilemma.",
    "en_norm": "rendered in human terms the abstraction becomes a dilemma",
-   "my_norm": "လူသားဝေါဟာရနဲ့ ဖော်ပြလိုက်ရင် စိတ္တဇအရာက အကျပ်အတည်းဖြစ်လာတယ်။",
+   "my_norm": "လူတိုင်းနားလည်တဲ့ဘာသာနဲ့ ဖော်ပြလိုက်ရင် စိတ္တဇအရာက အကျပ်အတည်းဖြစ်လာတယ်။",
    "th_norm": "แปลเป็นภาษามนุษย์ นามธรรมกลายเป็นทางสองแพร่ง",
    "fingerprint": "b133c5a18fcea80d",
    "vocab_sig": [
@@ -128849,7 +128849,7 @@
    "en": "Simplify further and you lose the very distinction that matters.",
    "en_norm": "simplify further and you lose the very distinction that matters",
    "my_norm": "ပိုရိုးရှင်းအောင်လုပ်ရင် အရေးပါတဲ့ခွဲခြားမှုကိုယ်တိုင်ကို ဆုံးရှုံးရတယ်။",
-   "th_norm": "ย่อง่ายกว่านี้จะเสียความแตกต่างที่สำคัญพอดี",
+   "th_norm": "ย่อง่ายกว่านี้จะเสียความแตกต่างที่เป็นหัวใจสำคัญไป",
    "fingerprint": "451f2a3bb129125e",
    "vocab_sig": [
     "distinction",
@@ -128872,7 +128872,7 @@
    "en": "We note with concern the recent developments in the region.",
    "en_norm": "we note with concern the recent developments in the region",
    "my_norm": "ဒေသတွင်း လတ်တလောဖြစ်ပေါ်မှုတွေကို စိုးရိမ်မှုနဲ့ မှတ်သားပါတယ်။",
-   "th_norm": "เราบันทึกด้วยความกังวลต่อพัฒนาการล่าสุดในภูมิภาค",
+   "th_norm": "เราขอแสดงความกังวลต่อพัฒนาการล่าสุดในภูมิภาค",
    "fingerprint": "5df7d18f77ebb886",
    "vocab_sig": [
     "concern",
@@ -128917,7 +128917,7 @@
    "kind": "phrase",
    "en": "We urge all parties to exercise maximum restraint.",
    "en_norm": "we urge all parties to exercise maximum restraint",
-   "my_norm": "ပါဝင်သူအားလုံး အမြင့်ဆုံးထိန်းချုပ်မှုကို ကျင့်သုံးဖို့ တိုက်တွန်းပါတယ်။",
+   "my_norm": "ပါဝင်သူအားလုံး အမြင့်ဆုံးအတိုင်းအတာထိ ထိန်းထိန်းသိမ်းသိမ်း နေထိုင်ကြဖို့ တိုက်တွန်းပါတယ်။",
    "th_norm": "เราขอเรียกร้องทุกฝ่ายให้ใช้ความยับยั้งชั่งใจสูงสุด",
    "fingerprint": "1e0460c6a6e413d5",
    "vocab_sig": [
@@ -128942,7 +128942,7 @@
    "en": "Differences of view should not preclude constructive engagement.",
    "en_norm": "differences of view should not preclude constructive engagement",
    "my_norm": "အမြင်ကွဲလွဲမှုတွေက အပြုသဘောဆောင်တဲ့ ထိတွေ့ဆက်ဆံမှုကို မတားဆီးသင့်ဘူး။",
-   "th_norm": "ความเห็นต่างไม่ควรกีดขวางการมีส่วนร่วมอย่างสร้างสรรค์",
+   "th_norm": "ความเห็นต่างไม่ควรเป็นอุปสรรคต่อการมีส่วนร่วมอย่างสร้างสรรค์",
    "fingerprint": "5da7f4d80668ef40",
    "vocab_sig": [
     "constructive",
@@ -129011,8 +129011,8 @@
    "kind": "phrase",
    "en": "We consider unilateral actions deeply unhelpful to the process.",
    "en_norm": "we consider unilateral actions deeply unhelpful to the process",
-   "my_norm": "တစ်ဖက်သတ်လုပ်ဆောင်မှုတွေက လုပ်ငန်းစဉ်အတွက် အလွန်အနှောင့်အယှက်ဖြစ်တယ်လို့ ယူဆပါတယ်။",
-   "th_norm": "เราถือว่าการกระทำฝ่ายเดียวเป็นผลเสียอย่างยิ่งต่อกระบวนการ",
+   "my_norm": "တစ်ဖက်သတ်လုပ်ဆောင်မှုတွေက လုပ်ငန်းစဉ်အတွက် အလွန်အထောက်အကူမပြုဘူးလို့ ယူဆပါတယ်။",
+   "th_norm": "เราถือว่าการดำเนินการฝ่ายเดียวไม่เอื้ออำนวยอย่างยิ่งต่อกระบวนการ",
    "fingerprint": "b96dc93e18837531",
    "vocab_sig": [
     "actions",
@@ -129084,7 +129084,7 @@
    "kind": "phrase",
    "en": "Sovereignty and dialogue are not mutually exclusive.",
    "en_norm": "sovereignty and dialogue are not mutually exclusive",
-   "my_norm": "အချုပ်အခြာအာဏာနဲ့ ဆွေးနွေးမှုက တစ်ခုကိုတစ်ခုဖယ်ထုတ်တာမဟုတ်ဘူး။",
+   "my_norm": "အချုပ်အခြာအာဏာနဲ့ ဆွေးနွေးမှုက တစ်ပြိုင်နက်တည်း တည်ရှိနိုင်တယ်။",
    "th_norm": "อธิปไตยกับการเจรจาไม่ขัดแย้งกัน",
    "fingerprint": "bc1460134f4aa2e5",
    "vocab_sig": [
@@ -129107,7 +129107,7 @@
    "en": "We reserve the right to respond, while preferring restraint.",
    "en_norm": "we reserve the right to respond while preferring restraint",
    "my_norm": "တုံ့ပြန်ပိုင်ခွင့်ကို သိမ်းထားပါတယ်၊ ဒါပေမယ့် ထိန်းချုပ်မှုကို ဦးစားပေးပါတယ်။",
-   "th_norm": "เราสงวนสิทธิที่จะตอบโต้ โดยนิยมความยับยั้งชั่งใจ",
+   "th_norm": "เราสงวนสิทธิ์ที่จะตอบโต้ แต่ยังคงให้ความสำคัญกับความยับยั้งชั่งใจ",
    "fingerprint": "52e65a6c183521c0",
    "vocab_sig": [
     "preferring",
@@ -129224,7 +129224,7 @@
    "en": "Multilateral frameworks offer the only durable path forward.",
    "en_norm": "multilateral frameworks offer the only durable path forward",
    "my_norm": "ဘက်စုံဘောင်တွေက ရေရှည်တည်တံ့တဲ့ ရှေ့ဆက်လမ်းတစ်ခုတည်းကို ပေးတယ်။",
-   "th_norm": "กรอบพหุภาคีเสนอเส้นทางเดียวที่ยั่งยืนข้างหน้า",
+   "th_norm": "กรอบพหุภาคีเสนอหนทางเดียวที่ยั่งยืนสำหรับการก้าวไปข้างหน้า",
    "fingerprint": "5d4a0300954a55c4",
    "vocab_sig": [
     "durable",
@@ -129488,8 +129488,8 @@
    "kind": "phrase",
    "en": "Every concession I make needs a reciprocal move from your side.",
    "en_norm": "every concession i make needs a reciprocal move from your side",
-   "my_norm": "ကျွန်တော် လုပ်တဲ့အပေးအယူတိုင်းအတွက် သင့်ဘက်က အပြန်အလှန်လှုပ်ရှားမှု လိုအပ်တယ်။",
-   "th_norm": "ข้อต่อรองทุกข้อที่ข้าพเจ้าให้ไปจำเป็นต้องได้รับการตอบสนองที่เท่าเทียมกันจากฝ่ายท่าน",
+   "my_norm": "ကျွန်တော် လုပ်တဲ့ အပေးအယူတိုင်းအတွက် သင့်ဘက်က အပြန်အလှန် အပေးအယူ လိုအပ်တယ်။",
+   "th_norm": "ข้อต่อรองทุกข้อที่เรายอมไป ต้องการการตอบแทนที่สอดคล้องกันจากฝ่ายคุณ",
    "fingerprint": "88bfcc6282fb1a6f",
    "vocab_sig": [
     "concession",
@@ -129535,8 +129535,8 @@
    "kind": "phrase",
    "en": "The package must work as a whole; cherry-picking will unravel it.",
    "en_norm": "the package must work as a whole cherry picking will unravel it",
-   "my_norm": "အထုပ်တစ်ခုလုံး အလုပ်ဖြစ်ရမယ်၊ ရွေးချယ်ယူတာက သူ့ကို ဖြေလျော့စေမယ်။",
-   "th_norm": "แพ็กเกจต้องไปด้วยกันทั้งชุด เลือกเฉพาะข้อดีจะทำให้พัง",
+   "my_norm": "အထုပ်တစ်ခုလုံး အလုပ်ဖြစ်ရမယ်၊ ကြိုက်ရာရွေးယူတာက အဲဒါကို ဖျက်ဆီးပစ်လိမ့်မယ်။",
+   "th_norm": "แพ็กเกจต้องเป็นภาพรวมทั้งชุด การเลือกเอาเฉพาะส่วนที่ได้เปรียบจะทำให้ทั้งชุดพังทลาย",
    "fingerprint": "09f63ed1413d33e4",
    "vocab_sig": [
     "cherry",
@@ -129559,7 +129559,7 @@
    "kind": "phrase",
    "en": "Nothing is agreed until everything is agreed.",
    "en_norm": "nothing is agreed until everything is agreed",
-   "my_norm": "အရာအားလုံး သဘောမတူမချင်း ဘာမှ သဘောတူတာ မဟုတ်ဘူး။",
+   "my_norm": "အရာအားလုံးကို သဘောမတူမချင်း ဘာတစ်ခုကိုမှ သဘောတူတယ်လို့ မမှတ်ရဘူး။",
    "th_norm": "ไม่มีอะไรตกลงจนกว่าทุกอย่างตกลง",
    "fingerprint": "c9d0023ab37c7735",
    "vocab_sig": [
@@ -129630,7 +129630,7 @@
    "en": "We need an agreement both sides can defend back home.",
    "en_norm": "we need an agreement both sides can defend back home",
    "my_norm": "နှစ်ဖက်စလုံး ကိုယ့်နိုင်ငံမှာ ကာကွယ်နိုင်တဲ့သဘောတူညီမှု လိုအပ်တယ်။",
-   "th_norm": "ต้องการข้อตกลงที่ทั้งสองฝ่ายสามารถปกป้องได้ต่อหน้าประชาชนในประเทศของตน",
+   "th_norm": "ต้องการข้อตกลงที่ทั้งสองฝ่ายสามารถนำไปปกป้องและชี้แจงได้ในประเทศของตน",
    "fingerprint": "1384eea335659634",
    "vocab_sig": [
     "agreement",
@@ -129708,7 +129708,7 @@
    "en": "Let's anchor the discussion in shared interests, not competing demands.",
    "en_norm": "let s anchor the discussion in shared interests not competing demands",
    "my_norm": "ဆွေးနွေးမှုကို ယှဉ်ပြိုင်နေတဲ့တောင်းဆိုမှုတွေမှာမဟုတ်ဘဲ ဘုံအကျိုးစီးပွားတွေမှာ ခိုင်မာအောင် ချထားကြရအောင်။",
-   "th_norm": "ยึดการหารือบนผลประโยชน์ร่วม ไม่ใช่ข้อเรียกร้องแข่งกัน",
+   "th_norm": "ให้ผลประโยชน์ร่วมกันเป็นแกนของการหารือ ไม่ใช่ข้อเรียกร้องที่แข่งขันกัน",
    "fingerprint": "d26da92b19926f2a",
    "vocab_sig": [
     "anchor",
@@ -129754,7 +129754,7 @@
    "en": "Deadlines concentrate the mind; let's set one and honor it.",
    "en_norm": "deadlines concentrate the mind let s set one and honor it",
    "my_norm": "နောက်ဆုံးရက်တွေက စိတ်ကို စုစည်းစေတယ်၊ တစ်ခုသတ်မှတ်ပြီး လေးစားလိုက်နာကြရအောင်။",
-   "th_norm": "เส้นตายทำให้จิตใจจดจ่อ ตั้งหนึ่งแล้วรักษาไว้",
+   "th_norm": "กำหนดเวลาช่วยให้เราจดจ่อ มาตั้งกำหนดเวลาสักหนึ่งแล้วทำให้ได้ตามนั้น",
    "fingerprint": "70df2b6a99afabe1",
    "vocab_sig": [
     "concentrate",
@@ -129777,7 +129777,7 @@
    "en": "We'll need objective criteria both sides trust, or the numbers mean nothing.",
    "en_norm": "we ll need objective criteria both sides trust or the numbers mean nothing",
    "my_norm": "နှစ်ဖက်စလုံး ယုံကြည်ရတဲ့ ဘက်မလိုက်သော စံနှုန်းတွေ လိုအပ်တယ်၊ မဟုတ်ရင် ဂဏန်းတွေက အဓိပ္ပာယ်မရှိဘူး။",
-   "th_norm": "ต้องการเกณฑ์วัตถุวิสัยที่ทั้งสองฝ่ายไว้ใจ ไม่งั้นตัวเลขไร้ความหมาย",
+   "th_norm": "ต้องการเกณฑ์ที่เป็นวัตถุวิสัยซึ่งทั้งสองฝ่ายไว้ใจ มิฉะนั้นตัวเลขก็ไร้ความหมาย",
    "fingerprint": "8ae82006ac60be81",
    "vocab_sig": [
     "both",
@@ -129828,7 +129828,7 @@
    "en": "Let's test the proposal against both sides' walk-away alternatives.",
    "en_norm": "let s test the proposal against both sides walk away alternatives",
    "my_norm": "အဆိုပြုချက်ကို နှစ်ဖက်စလုံးရဲ့ ထွက်ခွာနိုင်တဲ့အခြားရွေးချယ်မှုတွေနဲ့ စမ်းသပ်ကြရအောင်။",
-   "th_norm": "มาลองทดสอบข้อเสนอกับทางเลือกถอนตัวของทั้งสองฝ่ายกันเถอะ",
+   "th_norm": "มาลองเทียบข้อเสนอกับทางเลือกสำรองในกรณีที่ต้องถอนตัวของทั้งสองฝ่ายกัน",
    "fingerprint": "1d87cdb6708a1368",
    "vocab_sig": [
     "against",
@@ -129977,7 +129977,7 @@
    "en": "Let's agree on the mechanism for resolving future disputes now.",
    "en_norm": "let s agree on the mechanism for resolving future disputes now",
    "my_norm": "အနာဂတ်အငြင်းပွားမှုတွေ ဖြေရှင်းမယ့်ယန္တရားကို အခု သဘောတူကြရအောင်။",
-   "th_norm": "ตกลงกลไกระงับข้อพิพาทอนาคตกันตอนนี้",
+   "th_norm": "มาตกลงกลไกสำหรับระงับข้อพิพาทในอนาคตกันตั้งแต่ตอนนี้",
    "fingerprint": "8187272193d3bac0",
    "vocab_sig": [
     "agree",
@@ -130073,8 +130073,8 @@
    "kind": "phrase",
    "en": "The ROI case is compelling: payback within eighteen months.",
    "en_norm": "the roi case is compelling payback within eighteen months",
-   "my_norm": "ရင်းနှီးမြှုပ်နှံမှုပြန်ရမှုအမှုက ယုံကြည်လောက်စရာရှိတယ်၊ ဆယ့်ရှစ်လအတွင်း ပြန်ရမယ်။",
-   "th_norm": "กรณีผลตอบแทนการลงทุนน่าเชื่อถือ คืนทุนในสิบแปดเดือน",
+   "my_norm": "ROI ရင်းနှီးမြှုပ်နှံမှုပြန်ရနှုန်း ဆိုင်ရာ အဆိုပြုချက်က ယုံကြည်လောက်စရာရှိတယ်၊ ဆယ့်ရှစ်လအတွင်း အရင်းပြန်ရမယ်။",
+   "th_norm": "เหตุผลด้านผลตอบแทนการลงทุนน่าเชื่อถือ คาดว่าจะคืนทุนได้ภายในสิบแปดเดือน",
    "fingerprint": "5b03f2eae9a43db4",
    "vocab_sig": [
     "case",
@@ -130098,7 +130098,7 @@
    "kind": "phrase",
    "en": "Our competitors are already moving; hesitation is the costliest option.",
    "en_norm": "our competitors are already moving hesitation is the costliest option",
-   "my_norm": "ကျွန်တော်တို့ရဲ့ပြိုင်ဘက်တွေ ရွှေ့နေပြီ၊ တွန့်ဆုတ်မှုက အကုန်ကျအများဆုံးရွေးချယ်မှုပဲ။",
+   "my_norm": "ကျွန်တော်တို့ရဲ့ပြိုင်ဘက်တွေ ရွှေ့နေပြီ၊ တွန့်ဆုတ်မှုက အကုန်အကျအများဆုံးရွေးချယ်မှုပဲ။",
    "th_norm": "คู่แข่งขยับแล้ว ความลังเลคือทางเลือกแพงที่สุด",
    "fingerprint": "a24b73f2ece7f8f1",
    "vocab_sig": [
@@ -130193,7 +130193,7 @@
    "en": "We're not buying growth; we're buying optionality.",
    "en_norm": "we re not buying growth we re buying optionality",
    "my_norm": "ကျွန်တော်တို့ ဝယ်နေတာက တိုးတက်မှုမဟုတ်ဘူး၊ ရွေးချယ်နိုင်စွမ်းပဲ။",
-   "th_norm": "เราไม่ได้ซื้อการเติบโต แต่ซื้อทางเลือก",
+   "th_norm": "เราไม่ได้ซื้อการเติบโต แต่ซื้อความยืดหยุ่นของทางเลือกในอนาคต",
    "fingerprint": "9bec11c167fe2c53",
    "vocab_sig": [
     "buying",
@@ -130235,7 +130235,7 @@
    "kind": "phrase",
    "en": "Customer retention, not acquisition, is where the leverage lies.",
    "en_norm": "customer retention not acquisition is where the leverage lies",
-   "my_norm": "ဖောက်သည်ထိန်းသိမ်းမှုက ဝယ်ယူမှုမဟုတ်ဘဲ အခွင့်အလမ်းရှိတဲ့နေရာပဲ။",
+   "my_norm": "ဖောက်သည်ထိန်းသိမ်းမှုက ဝယ်ယူမှုမဟုတ်ဘဲ အသာစီးရစေတဲ့နေရာပဲ။",
    "th_norm": "การรักษาลูกค้า ไม่ใช่การหาลูกค้าใหม่ คือจุดที่เกิดแรงส่งมากที่สุด",
    "fingerprint": "86143c4842e9cbf7",
    "vocab_sig": [
@@ -130403,7 +130403,7 @@
    "en": "The synergy isn't theoretical — the pilot already proved it.",
    "en_norm": "the synergy isn t theoretical the pilot already proved it",
    "my_norm": "ပူးပေါင်းအကျိုးက သီအိုရီမဟုတ်ဘူး၊ စမ်းသပ်မှုက သက်သေပြပြီးပြီ။",
-   "th_norm": "พลังเสริมจากการผนึกกำลังไม่ใช่แค่ทฤษฎี โครงการนำร่องพิสูจน์แล้ว",
+   "th_norm": "ซินเนอร์จีไม่ใช่แค่ทฤษฎี โครงการนำร่องพิสูจน์แล้ว",
    "fingerprint": "343eb36be3d9eee8",
    "vocab_sig": [
     "already",
@@ -130497,7 +130497,7 @@
    "kind": "phrase",
    "en": "This is the inflection point analysts will cite for years.",
    "en_norm": "this is the inflection point analysts will cite for years",
-   "my_norm": "အဲဒါက ခွဲခြမ်းစိတ်ဖြာသူတွေ နှစ်ပေါင်းများစွာ ကိုးကားမယ့် အကွေ့အကောက်အမှတ်ပဲ။",
+   "my_norm": "အဲဒါက ခွဲခြမ်းစိတ်ဖြာသူတွေ နှစ်ပေါင်းများစွာ ကိုးကားမယ့် အလှည့်အပြောင်းအမှတ်ပဲ။",
    "th_norm": "นี่คือจุดเปลี่ยนที่นักวิเคราะห์จะอ้างถึงอีกหลายปี",
    "fingerprint": "d737a6be7e917df4",
    "vocab_sig": [
@@ -130521,7 +130521,7 @@
    "en": "The alternative — managed decline — is the truly expensive choice.",
    "en_norm": "the alternative managed decline is the truly expensive choice",
    "my_norm": "အခြားရွေးချယ်မှု၊ စီမံထားတဲ့ကျဆင်းမှုက တကယ့်ကို ကုန်ကျများတဲ့ရွေးချယ်မှုပဲ။",
-   "th_norm": "ทางเลือก การถดถอยแบบจัดการ คือทางเลือกแพงจริง",
+   "th_norm": "ทางเลือกอื่น คือการถดถอยอย่างมีการจัดการ เป็นทางเลือกที่แพงที่สุดอย่างแท้จริง",
    "fingerprint": "7dcb436802ccd16f",
    "vocab_sig": [
     "alternative",
@@ -130730,7 +130730,7 @@
    "en": "This challenges the received wisdom without discarding its insights.",
    "en_norm": "this challenges the received wisdom without discarding its insights",
    "my_norm": "အဲဒါက လက်ခံထားတဲ့ပညာကို သူ့ရဲ့ထိုးထွင်းသိမြင်မှုတွေကို မစွန့်ပစ်ဘဲ စိန်ခေါ်တယ်။",
-   "th_norm": "สิ่งนี้ท้าทายภูมิปัญญาที่รับมาโดยไม่ทิ้งข้อคิดของมัน",
+   "th_norm": "สิ่งนี้ท้าทายความเชื่อดั้งเดิมโดยไม่ทิ้งข้อคิดอันมีค่าของมัน",
    "fingerprint": "6ce99b68c6e91a3a",
    "vocab_sig": [
     "challenges",
@@ -130777,7 +130777,7 @@
    "en": "A closer reading of the primary sources complicates the picture.",
    "en_norm": "a closer reading of the primary sources complicates the picture",
    "my_norm": "မူရင်းရင်းမြစ်တွေကို ပိုနီးနီးဖတ်ရှုမှုက ပုံရိပ်ကို ရှုပ်ထွေးစေတယ်။",
-   "th_norm": "การอ่านแหล่งปฐมภูมิใกล้ชิดทำให้ภาพซับซ้อนขึ้น",
+   "th_norm": "การอ่านแหล่งข้อมูลปฐมภูมิอย่างละเอียดทำให้ภาพรวมซับซ้อนขึ้น",
    "fingerprint": "9f753abd765261dd",
    "vocab_sig": [
     "closer",
@@ -130801,7 +130801,7 @@
    "en": "The hypothesis is elegant but empirically underdetermined.",
    "en_norm": "the hypothesis is elegant but empirically underdetermined",
    "my_norm": "ယူဆချက်က ကျက်သရေရှိတယ်၊ ဒါပေမယ့် အတွေ့အကြုံအရ ဆုံးဖြတ်လို့မရဘူး။",
-   "th_norm": "สมมุติฐานงดงามแต่กำหนดไม่พอเชิงประจักษ์",
+   "th_norm": "สมมุติฐานงดงาม แต่ยังขาดหลักฐานเชิงประจักษ์เพียงพอที่จะยืนยันได้",
    "fingerprint": "1dd6bb6c68d1053a",
    "vocab_sig": [
     "elegant",
@@ -130870,8 +130870,8 @@
    "kind": "phrase",
    "en": "This reframes a stale debate in productive new terms.",
    "en_norm": "this reframes a stale debate in productive new terms",
-   "my_norm": "အဲဒါက ငြီးငွေ့စရာကောင်းတဲ့ဆွေးနွေးမှုကို အကျိုးရှိတဲ့ဝေါဟာရအသစ်တွေနဲ့ ပြန်ဘောင်သတ်မှတ်တယ်။",
-   "th_norm": "สิ่งนี้ปรับกรอบการถกเถียงเก่าในศัพท์ใหม่ที่สร้างสรรค์",
+   "my_norm": "အဲဒါက ငြီးငွေ့ဖွယ်ဆွေးနွေးမှုကို အကျိုးရှိတဲ့ ရှုထောင့်အသစ်တွေနဲ့ ပြန်ပုံဖော်တယ်။",
+   "th_norm": "สิ่งนี้ปรับกรอบการถกเถียงที่ซ้ำซากให้อยู่ในมุมมองใหม่ที่สร้างสรรค์",
    "fingerprint": "26d1a4644fbc2da0",
    "vocab_sig": [
     "debate",
@@ -130895,7 +130895,7 @@
    "en": "The distinction, though subtle, does real analytical work.",
    "en_norm": "the distinction though subtle does real analytical work",
    "my_norm": "ခွဲခြားမှုက သိမ်မွေ့ပေမယ့် တကယ့်ခွဲခြမ်းစိတ်ဖြာမှုအလုပ် လုပ်တယ်။",
-   "th_norm": "ความแตกต่างแม้ละเอียด แต่ทำงานวิเคราะห์จริง",
+   "th_norm": "ความแตกต่างนี้แม้จะละเอียดอ่อน แต่ก็มีบทบาทเชิงวิเคราะห์อย่างแท้จริง",
    "fingerprint": "261e7cf267b9d556",
    "vocab_sig": [
     "analytical",
@@ -130919,7 +130919,7 @@
    "en": "Counterexamples from the periphery undermine the core thesis.",
    "en_norm": "counterexamples from the periphery undermine the core thesis",
    "my_norm": "အစွန်အဖျားက ဆန့်ကျင်ဥပမာတွေက အဓိကအဆိုကို အားနည်းစေတယ်။",
-   "th_norm": "ตัวอย่างโต้แย้งจากชายขอบบ่อนทำลายวิทยานิพนธ์หลัก",
+   "th_norm": "ตัวอย่างค้านจากชายขอบบ่อนทำลายข้อเสนอหลัก",
    "fingerprint": "9e3c097aa48c5611",
    "vocab_sig": [
     "core",
@@ -130967,7 +130967,7 @@
    "en": "Interdisciplinary evidence converges where single-discipline work stalls.",
    "en_norm": "interdisciplinary evidence converges where single discipline work stalls",
    "my_norm": "ဘာသာရပ်စုံသက်သေက ဘာသာရပ်တစ်ခုတည်းအလုပ် ရပ်တန့်တဲ့နေရာမှာ စုဆုံတယ်။",
-   "th_norm": "หลักฐานสหวิทยาการบรรจบที่งานสาขาเดียวชะงัก",
+   "th_norm": "หลักฐานจากสหวิทยาการมาบรรจบกันตรงจุดที่งานของสาขาวิชาเดียวหยุดชะงัก",
    "fingerprint": "00da7998e4f43d23",
    "vocab_sig": [
     "converges",
@@ -131037,7 +131037,7 @@
    "en": "The theory survives its critics but not without modification.",
    "en_norm": "the theory survives its critics but not without modification",
    "my_norm": "သီအိုရီက သူ့ဝေဖန်သူတွေကို ရှင်သန်ကျော်လွှားတယ်၊ ဒါပေမယ့် ပြုပြင်မှုမရှိဘဲတော့ မဟုတ်ဘူး။",
-   "th_norm": "ทฤษฎีรอดนักวิจารณ์แต่ไม่ไร้การปรับ",
+   "th_norm": "ทฤษฎีรอดพ้นจากนักวิจารณ์มาได้ แต่ก็ต้องผ่านการปรับเปลี่ยน",
    "fingerprint": "c760b461b78d6583",
    "vocab_sig": [
     "critics",
@@ -131084,7 +131084,7 @@
    "en": "The null result is the finding — absence of evidence matters here.",
    "en_norm": "the null result is the finding absence of evidence matters here",
    "my_norm": "ဗလာရလဒ်ကိုယ်တိုင်က တွေ့ရှိချက်ပဲ၊ သက်သေမရှိမှုက ဒီနေရာမှာ အရေးပါတယ်။",
-   "th_norm": "ผลว่างคือข้อค้นพบ การไม่มีหลักฐานสำคัญตรงนี้",
+   "th_norm": "ผลลัพธ์แบบ null นั่นเองคือข้อค้นพบ การขาดหลักฐานมีความสำคัญในที่นี้",
    "fingerprint": "68664b740643856f",
    "vocab_sig": [
     "absence",
@@ -131132,7 +131132,7 @@
    "en": "The review process, for all its flaws, remains our best filter.",
    "en_norm": "the review process for all its flaws remains our best filter",
    "my_norm": "ပြန်လည်သုံးသပ်မှုလုပ်ငန်းစဉ်က ချို့ယွင်းချက်တွေရှိပေမယ့် ကျွန်တော်တို့ရဲ့အကောင်းဆုံးစစ်ထုတ်မှုအဖြစ် ဆက်ရှိနေတယ်။",
-   "th_norm": "กระบวนการทบทวนแม้มีข้อบกพร่อง ยังเป็นตัวกรองดีที่สุดของเรา",
+   "th_norm": "กระบวนการพิจารณาโดยผู้ทรงคุณวุฒิ แม้มีข้อบกพร่อง ก็ยังเป็นตัวกรองที่ดีที่สุดของเรา",
    "fingerprint": "394e1c41fa968fbb",
    "vocab_sig": [
     "all",
@@ -131316,7 +131316,7 @@
    "kind": "phrase",
    "en": "The ending reframes everything that came before it.",
    "en_norm": "the ending reframes everything that came before it",
-   "my_norm": "အဆုံးသတ်က အဲဒီအရင်က ဖြစ်ခဲ့သမျှကို ပြန်ဘောင်သတ်မှတ်တယ်။",
+   "my_norm": "အဆုံးသတ်က အရင်ဖြစ်ခဲ့သမျှကို အဓိပ္ပာယ်အသစ်နဲ့ ပြန်မြင်စေတယ်။",
    "th_norm": "ตอนจบปรับกรอบทุกอย่างที่มาก่อน",
    "fingerprint": "03590fa8480b033d",
    "vocab_sig": [
@@ -131338,7 +131338,7 @@
    "kind": "phrase",
    "en": "What the text withholds is as eloquent as what it declares.",
    "en_norm": "what the text withholds is as eloquent as what it declares",
-   "my_norm": "စာသားက ချန်လှပ်ထားတာက ကြေညာတာလောက် အဓိပ္ပာယ်ထိရောက်တယ်။",
+   "my_norm": "စာသားက ချန်လှပ်ထားတာက ကြေညာတာလောက် ပြောစွမ်းအားရှိတယ်။",
    "th_norm": "สิ่งที่ตัวบทปกปิดมีวาทศิลป์พอๆ กับสิ่งที่ประกาศ",
    "fingerprint": "7538161e67109247",
    "vocab_sig": [
@@ -131360,8 +131360,8 @@
    "kind": "phrase",
    "en": "The metaphor does argumentative work the plot cannot.",
    "en_norm": "the metaphor does argumentative work the plot cannot",
-   "my_norm": "ဥပမာက ဇာတ်လမ်းမလုပ်နိုင်တဲ့ အငြင်းပွားမှုဆိုင်ရာအလုပ် လုပ်ဆောင်တယ်။",
-   "th_norm": "อุปมาทำงานโต้แย้งที่พล็อตทำไม่ได้",
+   "my_norm": "ဥပမာပုံက ဇာတ်လမ်းမလုပ်နိုင်တဲ့ အငြင်းပွားရေးဆိုင်ရာအလုပ်ကို လုပ်ဆောင်တယ်။",
+   "th_norm": "อุปมาทำหน้าที่เชิงโต้แย้งในแบบที่โครงเรื่องทำไม่ได้",
    "fingerprint": "0df0eb5ee858c6e2",
    "vocab_sig": [
     "argumentative",
@@ -131384,7 +131384,7 @@
    "en": "Irony here functions as moral judgment disguised as style.",
    "en_norm": "irony here functions as moral judgment disguised as style",
    "my_norm": "ဒီနေရာက သရော်စာက စတိုင်အဖြစ် ဖုံးကွယ်ထားတဲ့ ကိုယ်ကျင့်တရားဆိုင်ရာဆုံးဖြတ်ချက်အဖြစ် လုပ်ဆောင်တယ်။",
-   "th_norm": "การประชดตรงนี้ทำหน้าที่ตัดสินศีลธรรมปลอมเป็นสไตล์",
+   "th_norm": "ไอรอนีตรงนี้ทำหน้าที่เป็นคำตัดสินทางศีลธรรมที่อำพรางในรูปของสไตล์",
    "fingerprint": "cf53371ca22a3636",
    "vocab_sig": [
     "disguised",
@@ -131431,7 +131431,7 @@
    "en": "Every symbol in the poem earns its place through repetition.",
    "en_norm": "every symbol in the poem earns its place through repetition",
    "my_norm": "ကဗျာထဲက သင်္ကေတတိုင်းက ထပ်ခါထပ်ခါသုံးမှုနဲ့ သူ့နေရာကို ရထိုက်တယ်။",
-   "th_norm": "ทุกสัญลักษณ์ในบทกวีได้ที่ของมันผ่านการซ้ำ",
+   "th_norm": "ทุกสัญลักษณ์ในบทกวีได้มาซึ่งตำแหน่งของตนผ่านการซ้ำย้ำ",
    "fingerprint": "1a05c36e209541c3",
    "vocab_sig": [
     "earns",
@@ -131455,7 +131455,7 @@
    "en": "The tragedy lies not in the fall but in the foreknowledge of it.",
    "en_norm": "the tragedy lies not in the fall but in the foreknowledge of it",
    "my_norm": "ဝမ်းနည်းဖွယ်ရာက ကျဆုံးမှုမှာ မဟုတ်ဘူး၊ အဲဒါကို ကြိုသိမှုမှာပဲ။",
-   "th_norm": "โศกนาฏกรรมไม่ได้อยู่ที่การตกแต่อยู่ที่การรู้ล่วงหน้า",
+   "th_norm": "โศกนาฏกรรมไม่ได้อยู่ที่การล่มสลาย แต่อยู่ที่การรู้ล่วงหน้าถึงมัน",
    "fingerprint": "92a665adb45513d4",
    "vocab_sig": [
     "fall",
@@ -131501,7 +131501,7 @@
    "en": "The dialogue crackles because every line carries a subtext.",
    "en_norm": "the dialogue crackles because every line carries a subtext",
    "my_norm": "စကားပြောခန်းက လျှပ်စီးလက်နေတယ်၊ ဘာလို့လဲဆိုတော့ စာကြောင်းတိုင်းမှာ စာသားအောက်အဓိပ္ပာယ် သယ်ဆောင်ထားလို့ပဲ။",
-   "th_norm": "บทสนทนาคมเพราะทุกบรรทัดมีความหมายแฝง",
+   "th_norm": "บทสนทนามีชีวิตชีวาเพราะทุกบรรทัดมีความหมายแฝง",
    "fingerprint": "3589e5e5b9c86530",
    "vocab_sig": [
     "because",
@@ -131525,8 +131525,8 @@
    "kind": "phrase",
    "en": "Genre conventions are invoked only to be subverted.",
    "en_norm": "genre conventions are invoked only to be subverted",
-   "my_norm": "အမျိုးအစားစံချိန်တွေကို ဖိတ်ခေါ်တာက ဖျက်ဆီးဖို့အတွက်ပဲ။",
-   "th_norm": "ขนบประเภทถูกอ้างเพื่อหักล้างเท่านั้น",
+   "my_norm": "အမျိုးအစားစံတွေကို ခေါ်ယူသုံးစွဲတာက ဖျက်ဆီးဖို့အတွက်ပဲ။",
+   "th_norm": "ธรรมเนียมของประเภทวรรณกรรมถูกหยิบยกขึ้นมาเพียงเพื่อจะถูกล้มล้าง",
    "fingerprint": "1a10e8e646a88e1f",
    "vocab_sig": [
     "conventions",
@@ -131548,8 +131548,8 @@
    "kind": "phrase",
    "en": "The protagonist's arc bends toward recognition, not redemption.",
    "en_norm": "the protagonist s arc bends toward recognition not redemption",
-   "my_norm": "ဇာတ်ကောင်ရဲ့လမ်းကြောင်းက ကယ်တင်မှုဆီမဟုတ်ဘဲ အသိအမှတ်ပြုမှုဆီ ကွေးညွှတ်တယ်။",
-   "th_norm": "เส้นโค้งตัวเอกโค้งสู่การตระหนัก ไม่ใช่การไถ่บาป",
+   "my_norm": "ဇာတ်ကောင်ရဲ့လမ်းကြောင်းက ကယ်တင်ခြင်းဆီမဟုတ်ဘဲ အမှန်တရားသိမြင်မှုဆီ ကွေးညွှတ်တယ်။",
+   "th_norm": "วิถีของตัวเอกโน้มเอียงสู่การตระหนักรู้ ไม่ใช่การไถ่บาป",
    "fingerprint": "0de5ce6f50cca057",
    "vocab_sig": [
     "arc",
@@ -131595,8 +131595,8 @@
    "kind": "phrase",
    "en": "The intertextual echoes reward the attentive reader.",
    "en_norm": "the intertextual echoes reward the attentive reader",
-   "my_norm": "စာသားဖြတ်ကျော်ပဲ့တင်သံတွေက အာရုံစိုက်တဲ့စာဖတ်သူကို ဆုချတယ်။",
-   "th_norm": "เสียงสะท้อนระหว่างตัวบทให้รางวัลผู้อ่านที่ใส่ใจ",
+   "my_norm": "စာသားအချင်းချင်းဆိုင်ရာ ပဲ့တင်သံတွေက အာရုံစိုက်တဲ့စာဖတ်သူကို ဆုချတယ်။",
+   "th_norm": "เสียงสะท้อนระหว่างตัวบทเป็นรางวัลสำหรับผู้อ่านที่ใส่ใจ",
    "fingerprint": "8ed1a71cefca9002",
    "vocab_sig": [
     "attentive",
@@ -131619,7 +131619,7 @@
    "en": "What seems like digression is actually the novel's thesis.",
    "en_norm": "what seems like digression is actually the novel s thesis",
    "my_norm": "လမ်းလွဲမှုလို့ ထင်ရတာက တကယ်တော့ ဝတ္ထုရဲ့အဆိုပဲ။",
-   "th_norm": "สิ่งที่ดูเหมือนออกนอกเรื่องจริงๆ คือวิทยานิพนธ์ของนวนิยาย",
+   "th_norm": "สิ่งที่ดูเหมือนออกนอกเรื่อง แท้จริงแล้วคือข้อเสนอหลักของนวนิยาย",
    "fingerprint": "5f67e4606849406c",
    "vocab_sig": [
     "actually",
@@ -131641,7 +131641,7 @@
    "kind": "phrase",
    "en": "The epigraph frames the entire work as a question, not an answer.",
    "en_norm": "the epigraph frames the entire work as a question not an answer",
-   "my_norm": "အဖွင့်ကိုးကားချက်က လက်ရာတစ်ခုလုံးကို အဖြေမဟုတ်ဘဲ မေးခွန်းအဖြစ် ဘောင်သတ်မှတ်တယ်။",
+   "my_norm": "အဖွင့်ကိုးကားချက်က လက်ရာတစ်ခုလုံးကို အဖြေမဟုတ်ဘဲ မေးခွန်းတစ်ခုအဖြစ် ပုံဖော်ပေးတယ်။",
    "th_norm": "คำคมนำเรื่องวางกรอบงานทั้งชิ้นให้เป็นคำถาม ไม่ใช่คำตอบ",
    "fingerprint": "241fc46440e094b1",
    "vocab_sig": [
@@ -131735,7 +131735,7 @@
    "en": "The canon wars were never really about the books.",
    "en_norm": "the canon wars were never really about the books",
    "my_norm": "စံစာပေတိုက်ပွဲတွေက စာအုပ်တွေအကြောင်း တကယ်မဟုတ်ခဲ့ဘူး။",
-   "th_norm": "สงครามเรื่องสารบบวรรณกรรมไม่เคยเกี่ยวกับหนังสือจริงๆ",
+   "th_norm": "สงครามเรื่องแคนนอนวรรณกรรมไม่เคยเกี่ยวกับหนังสือจริงๆ เลย",
    "fingerprint": "3c36c2ae77628b30",
    "vocab_sig": [
     "books",
@@ -131758,7 +131758,7 @@
    "en": "This stanza does in twelve lines what essays take pages to argue.",
    "en_norm": "this stanza does in twelve lines what essays take pages to argue",
    "my_norm": "ဒီအပိုဒ်က စာမျက်နှာတွေနဲ့ငြင်းရမယ့်အရာကို ဆယ့်နှစ်ကြောင်းနဲ့ လုပ်တယ်။",
-   "th_norm": "บทนี้ทำในสิบสองบรรทัดสิ่งที่เรียงความใช้หน้าโต้แย้ง",
+   "th_norm": "บทกวีบทนี้ทำในสิบสองบรรทัด ในสิ่งที่เรียงความต้องใช้หลายหน้าเพื่อโต้แย้ง",
    "fingerprint": "1929c6915456765e",
    "vocab_sig": [
     "argue",
@@ -131899,7 +131899,7 @@
    "kind": "phrase",
    "en": "The slippery slope needs evidence at each step, not just momentum.",
    "en_norm": "the slippery slope needs evidence at each step not just momentum",
-   "my_norm": "ချော်လဲတဲ့ဆင်ခြေလျှောက အရှိန်တစ်ခုတည်းမဟုတ်ဘဲ အဆင့်တိုင်းမှာ သက်သေလိုအပ်တယ်။",
+   "my_norm": "ဆင့်ကဲချော်ကျမှု မှားယွင်းချက် slippery slope က အရှိန်တစ်ခုတည်းနဲ့မဟုတ်ဘဲ အဆင့်တိုင်းမှာ သက်သေခံချက် လိုအပ်တယ်။",
    "th_norm": "ทางลาดลื่นต้องการหลักฐานทุกขั้น ไม่ใช่แค่แรงส่ง",
    "fingerprint": "82cabbd8a1477d14",
    "vocab_sig": [
@@ -131924,7 +131924,7 @@
    "kind": "phrase",
    "en": "That's a false dilemma — the menu has more than two items.",
    "en_norm": "that s a false dilemma the menu has more than two items",
-   "my_norm": "အဲဒါက မှားယွင်းတဲ့ရွေးချယ်မှုနှစ်ခုအကျပ်အတည်းပဲ၊ မီနူးမှာ နှစ်ခုထက် ပိုရှိတယ်။",
+   "my_norm": "အဲဒါက ရွေးချယ်စရာနှစ်ခုတည်းသာ ရှိသယောင်ပြတဲ့ မှားယွင်းချက် false dilemma ပဲ၊ မီနူးမှာ နှစ်ခုထက် ပိုရှိတယ်။",
    "th_norm": "นั่นคือทางสองแพร่งเท็จ เมนูมีมากกว่าสองอย่าง",
    "fingerprint": "20a2e5387ac85644",
    "vocab_sig": [
@@ -131972,7 +131972,7 @@
    "en": "The tu quoque deflects; it doesn't defend.",
    "en_norm": "the tu quoque deflects it doesn t defend",
    "my_norm": "တူကိုကွက်က လမ်းလွဲစေတယ်၊ ကာကွယ်တာမဟုတ်ဘူး။",
-   "th_norm": "การย้อนว่าเธอก็เป็นเบี่ยงประเด็น ไม่ได้แก้ต่าง",
+   "th_norm": "การโต้ว่า เธอก็เหมือนกัน แค่เบี่ยงประเด็น ไม่ได้แก้ต่าง",
    "fingerprint": "e0f42791c114efe8",
    "vocab_sig": [
     "defend",
@@ -132018,7 +132018,7 @@
    "kind": "phrase",
    "en": "Begging the question assumes the answer it's supposed to earn.",
    "en_norm": "begging the question assumes the answer it s supposed to earn",
-   "my_norm": "မေးခွန်းတောင်းခံမှုက ရရှိသင့်တဲ့အဖြေကို ယူဆထားတယ်။",
+   "my_norm": "စက်ဝိုင်းယုတ္တိ begging the question က သက်သေပြရမယ့်အဖြေကို ကြိုတင်ယူဆထားတာပါ။",
    "th_norm": "การถือเอาสิ่งที่ต้องพิสูจน์คือการตั้งสมมุติคำตอบที่ควรหามาเอง",
    "fingerprint": "2b895bb3b036daf3",
    "vocab_sig": [
@@ -132360,7 +132360,7 @@
    "en": "The motte-and-bailey retreats to the trivial claim when pressed.",
    "en_norm": "the motte and bailey retreats to the trivial claim when pressed",
    "my_norm": "မော့တ် အန်း ဘေလီက ဖိအားပေးခံရတဲ့အခါ သာမန်အဆိုဆီ ဆုတ်ခွာတယ်။",
-   "th_norm": "การถอยแบบมอตต์แอนด์เบลีย์กลับสู่อ้างเล็กน้อยเมื่อถูกกดดัน",
+   "th_norm": "การถอยแบบมอตต์แอนด์เบลีย์ถอยกลับไปยึดข้ออ้างเล็กน้อยเมื่อถูกกดดัน",
    "fingerprint": "0738894c96d6866f",
    "vocab_sig": [
     "bailey",
@@ -132653,7 +132653,7 @@
    "en": "The question is no longer if, but when — and at what cost.",
    "en_norm": "the question is no longer if but when and at what cost",
    "my_norm": "မေးခွန်းက ဖြစ်မလားဆိုတာ မဟုတ်တော့ဘူး၊ ဘယ်တော့လဲ၊ ဘယ်လောက်ကုန်ကျမလဲဆိုတာပဲ။",
-   "th_norm": "คำถามไม่ใช่ว่าหรือไม่ แต่เมื่อไหร่ และราคาเท่าไหร่",
+   "th_norm": "คำถามไม่ใช่ หรือไม่ อีกต่อไป แต่คือ เมื่อไหร่ และ ต้องจ่ายราคาเท่าไหร่",
    "fingerprint": "15fb51b082cdc14e",
    "vocab_sig": [
     "cost",
@@ -132789,7 +132789,7 @@
    "kind": "phrase",
    "en": "The metaphor carries the argument where logic alone cannot go.",
    "en_norm": "the metaphor carries the argument where logic alone cannot go",
-   "my_norm": "ဥပမာစကားက ဆင်ခြင်မှုတစ်ခုတည်း မသွားနိုင်တဲ့နေရာကို အငြင်းပွားချက် သယ်ဆောင်သွားတယ်။",
+   "my_norm": "ဥပမာစကားက ယုတ္တိဗေဒတစ်ခုတည်း မရောက်နိုင်တဲ့နေရာအထိ အငြင်းပွားချက်ကို သယ်ဆောင်သွားတယ်။",
    "th_norm": "อุปมาพาข้อโต้แย้งไปถึงที่ตรรกะอย่างเดียวไปไม่ถึง",
    "fingerprint": "f168588df0a9dd9f",
    "vocab_sig": [
@@ -132837,7 +132837,7 @@
    "kind": "phrase",
    "en": "The rhetorical question answers itself — that's its power.",
    "en_norm": "the rhetorical question answers itself that s its power",
-   "my_norm": "စကားအတတ်ပညာဆိုင်ရာမေးခွန်းက သူ့ကိုယ်သူ ဖြေတယ်၊ အဲဒါက သူ့ရဲ့အစွမ်းပဲ။",
+   "my_norm": "အဖြေမမျှော်လင့်တဲ့မေးခွန်း rhetorical question က သူ့အဖြေကို သူ့ဘာသာ ပါပြီးသားပါ၊ အဲဒါက သူ့ရဲ့အစွမ်းပါပဲ။",
    "th_norm": "คำถามเชิงวาทศิลป์ตอบตัวเอง นั่นคือพลังของมัน",
    "fingerprint": "ad717f927e92e018",
    "vocab_sig": [
@@ -133027,7 +133027,7 @@
    "kind": "phrase",
    "en": "Let me first establish what is not in dispute.",
    "en_norm": "let me first establish what is not in dispute",
-   "my_norm": "အငြင်းပွားမှုမရှိတာကို အရင် တည်ဆောက်ပါရစေ။",
+   "my_norm": "အငြင်းပွားစရာမရှိတဲ့အချက်ကို အရင် သတ်မှတ်အတည်ပြုပါရစေ။",
    "th_norm": "ขอระบุให้ชัดเจนก่อนว่าอะไรไม่เป็นที่โต้แย้ง",
    "fingerprint": "7339e6919c1c5383",
    "vocab_sig": [
@@ -133071,7 +133071,7 @@
    "kind": "phrase",
    "en": "I will address the strongest objection before concluding.",
    "en_norm": "i will address the strongest objection before concluding",
-   "my_norm": "အဆုံးသတ်မယ့်အရင် အခိုင်မာဆုံးဆန့်ကျင်ချက်ကို ဖြေရှင်းမယ်။",
+   "my_norm": "နိဂုံးမချုပ်ခင် အခိုင်မာဆုံး ကန့်ကွက်ချက်ကို အရင်ဖြေရှင်းမယ်။",
    "th_norm": "จะตอบข้อโต้แย้งที่แข็งที่สุดก่อนสรุป",
    "fingerprint": "2e6a2b1c77406c5f",
    "vocab_sig": [
@@ -133093,7 +133093,7 @@
    "kind": "phrase",
    "en": "The thesis I defend has two limbs, each independently sufficient.",
    "en_norm": "the thesis i defend has two limbs each independently sufficient",
-   "my_norm": "ကျွန်တော် ကာကွယ်တဲ့အဆိုမှာ အကိုင်းနှစ်ခု ရှိတယ်၊ တစ်ခုချင်းစီက သီးခြားလုံလောက်တယ်။",
+   "my_norm": "ကျွန်တော် ကာကွယ်နေတဲ့အဆိုမှာ အချက် နှစ်ချက် ပါတယ်၊ တစ်ခုချင်းစီက သီးခြားစီ လုံလောက်တယ်။",
    "th_norm": "วิทยานิพนธ์ที่ปกป้องมีสองประเด็น แต่ละประเด็นเพียงพอในตัวเอง",
    "fingerprint": "408b04cd909ef75f",
    "vocab_sig": [
@@ -133117,7 +133117,7 @@
    "kind": "phrase",
    "en": "Before rebuttal, a brief concession is in order.",
    "en_norm": "before rebuttal a brief concession is in order",
-   "my_norm": "ပြန်လည်ချေပမှုအရင် အကျဉ်းချုပ်ဝန်ခံမှုတစ်ခု လိုအပ်တယ်။",
+   "my_norm": "ပြန်လည်ချေပမှု မစတင်မီ အကျဉ်းချုပ် ဝန်ခံချက်တစ်ခု ပြုလုပ်သင့်တယ်။",
    "th_norm": "ก่อนโต้กลับ ควรยอมรับเล็กน้อยเสียก่อน",
    "fingerprint": "dacd9db8e8359e00",
    "vocab_sig": [
@@ -133184,7 +133184,7 @@
    "en": "Anticipating the obvious objection, let me answer it now.",
    "en_norm": "anticipating the obvious objection let me answer it now",
    "my_norm": "ထင်ရှားတဲ့ဆန့်ကျင်ချက်ကို ကြိုတင်မျှော်လင့်ပြီး အခု ဖြေပါရစေ။",
-   "th_norm": "คาดข้อโต้แย้งชัดๆ ขอตอบตอนนี้",
+   "th_norm": "เพื่อคาดการณ์ข้อโต้แย้งที่เห็นได้ชัด ขอตอบตั้งแต่ตอนนี้",
    "fingerprint": "0b6f06b81be0e4ba",
    "vocab_sig": [
     "answer",
@@ -133206,7 +133206,7 @@
    "kind": "phrase",
    "en": "The argument so far establishes the need; what follows establishes the means.",
    "en_norm": "the argument so far establishes the need what follows establishes the means",
-   "my_norm": "အခုထိအငြင်းပွားချက်က လိုအပ်ချက်ကို တည်ဆောက်တယ်၊ နောက်ဆက်တွဲက နည်းလမ်းကို တည်ဆောက်တယ်။",
+   "my_norm": "အခုထိ အငြင်းပွားချက်က လိုအပ်ချက်ကို သက်သေပြပြီးပြီ၊ ဆက်လာမယ့်အပိုင်းက နည်းလမ်းကို သက်သေပြမယ်။",
    "th_norm": "ข้อโต้แย้งจนถึงตอนนี้ยืนยันความจำเป็น สิ่งที่ตามมายืนยันวิธีการ",
    "fingerprint": "4e2fc47cd0b57598",
    "vocab_sig": [
@@ -133230,7 +133230,7 @@
    "kind": "phrase",
    "en": "Let me flag the key premise, since everything turns on it.",
    "en_norm": "let me flag the key premise since everything turns on it",
-   "my_norm": "အဓိကျယူဆချက်ကို အလံစိုက်ပါရစေ၊ အရာအားလုံး သူ့အပေါ် မူတည်နေလို့ပဲ။",
+   "my_norm": "အဓိက ယူဆချက်ကို အသားပေး ထောက်ပြပါရစေ၊ အရာအားလုံး သူ့အပေါ်မှာ မူတည်နေလို့ပါ။",
    "th_norm": "ขอเน้นข้อตั้งต้นสำคัญ เพราะทุกอย่างหมุนรอบมัน",
    "fingerprint": "40a0e87f0ac3ea48",
    "vocab_sig": [
@@ -133254,7 +133254,7 @@
    "kind": "phrase",
    "en": "I will bracket the historical debate and focus on the present case.",
    "en_norm": "i will bracket the historical debate and focus on the present case",
-   "my_norm": "သမိုင်းဆွေးနွေးမှုကို ဘောင်ခတ်ထားပြီး လက်ရှိဖြစ်ရပ်ကို အာရုံစိုက်မယ်။",
+   "my_norm": "သမိုင်းဆိုင်ရာ ဆွေးနွေးမှုကို ခဏဘေးဖယ်ထားပြီး လက်ရှိဖြစ်ရပ်ကို အာရုံစိုက်မယ်။",
    "th_norm": "จะพักการถกเถียงประวัติศาสตร์ไว้ก่อนและโฟกัสคดีปัจจุบัน",
    "fingerprint": "aa0b2f6e4113d81e",
    "vocab_sig": [
@@ -133278,7 +133278,7 @@
    "kind": "phrase",
    "en": "Two clarifications before I proceed to the evidence.",
    "en_norm": "two clarifications before i proceed to the evidence",
-   "my_norm": "သက်သေဆီ မဆက်ခင် ရှင်းလင်းချက် နှစ်ခု လိုတယ်။",
+   "my_norm": "သက်သေအထောက်အထားဆီ မဆက်သွားခင် ရှင်းလင်းချက် နှစ်ချက် ပြောပါရစေ။",
    "th_norm": "สองคำชี้แจงก่อนดำเนินสู่หลักฐาน",
    "fingerprint": "3bc49dbf69951b10",
    "vocab_sig": [
@@ -133299,8 +133299,8 @@
    "kind": "phrase",
    "en": "The burden now shifts; let me show why.",
    "en_norm": "the burden now shifts let me show why",
-   "my_norm": "တာဝန်က အခု ပြောင်းသွားပြီ၊ ဘာလို့ဆိုတာ ပြပါရစေ။",
-   "th_norm": "ภาระเลื่อนแล้ว ขอแสดงว่าทำไม",
+   "my_norm": "သက်သေပြရမယ့်တာဝန်က အခု တစ်ဖက်ကို ရောက်သွားပြီ၊ ဘာကြောင့်ဆိုတာ ပြပါရစေ။",
+   "th_norm": "ภาระการพิสูจน์เปลี่ยนมือแล้ว ขอแสดงว่าทำไม",
    "fingerprint": "810a81ba7a7d8fcd",
    "vocab_sig": [
     "burden",
@@ -133367,7 +133367,7 @@
    "kind": "phrase",
    "en": "The map of the debate has three territories; I claim the middle one.",
    "en_norm": "the map of the debate has three territories i claim the middle one",
-   "my_norm": "ဆွေးနွေးမှုမြေပုံမှာ နယ်မြေသုံးခု ရှိတယ်၊ အလယ်တစ်ခုကို ကျွန်တော် ပိုင်ဆိုင်တယ်။",
+   "my_norm": "ဆွေးနွေးမှုမြေပုံမှာ နယ်မြေသုံးခု ရှိတယ်၊ အလယ်က နယ်မြေကို ကျွန်တော် ရွေးချယ်ယူတယ်။",
    "th_norm": "แผนที่การถกเถียงมีสามประเด็น ผม ดิฉันขอประเด็นกลาง",
    "fingerprint": "0a8cc8ba8ad6ef92",
    "vocab_sig": [
@@ -133437,7 +133437,7 @@
    "kind": "phrase",
    "en": "The remainder of my remarks addresses implementation, not principle.",
    "en_norm": "the remainder of my remarks addresses implementation not principle",
-   "my_norm": "ကျွန်တော့်မှတ်ချက်တွေရဲ့ကျန်အပိုင်းက အခြေခံမူမဟုတ်ဘဲ အကောင်အထည်ဖော်မှုကို ဖြေရှင်းတယ်။",
+   "my_norm": "ကျွန်တော့်မှတ်ချက်တွေရဲ့ ကျန်တဲ့အပိုင်းက အခြေခံမူနဲ့ မဟုတ်ဘဲ အကောင်အထည်ဖော်မှုနဲ့ သက်ဆိုင်တယ်။",
    "th_norm": "คำที่เหลือกล่าวถึงการนำไปใช้ ไม่ใช่หลักการ",
    "fingerprint": "d03fbf2d8abc7cba",
    "vocab_sig": [
@@ -133507,7 +133507,7 @@
    "kind": "phrase",
    "en": "Let the synthesis emerge from the clash, not from compromise.",
    "en_norm": "let the synthesis emerge from the clash not from compromise",
-   "my_norm": "ပေါင်းစပ်မှုက အပေးအယူမဟုတ်ဘဲ တိုက်ခိုက်မှုကနေ ပေါ်ထွက်ပါစေ။",
+   "my_norm": "ပေါင်းစပ်မှုဟာ အပေးအယူကနေ မဟုတ်ဘဲ အတိုက်အခံဖြစ်မှုကနေ ပေါ်ထွက်ပါစေ။",
    "th_norm": "ให้สังเคราะห์เกิดจากการปะทะ ไม่ใช่จากการประนีประนอม",
    "fingerprint": "43f4926b3e21c343",
    "vocab_sig": [
@@ -133577,7 +133577,7 @@
    "en": "I speak from fifteen years of working inside these institutions.",
    "en_norm": "i speak from fifteen years of working inside these institutions",
    "my_norm": "ကျွန်တော် ပြောတာက ဒီအဖွဲ့အစည်းတွေထဲမှာ ဆယ့်ငါးနှစ် လုပ်ကိုင်ခဲ့တဲ့အတွေ့အကြုံကနေပဲ။",
-   "th_norm": "ผม ดิฉันพูดจากสิบห้าปีทำงานในสถาบันเหล่านี้",
+   "th_norm": "ผม ดิฉันพูดจากประสบการณ์สิบห้าปีที่ทำงานในสถาบันเหล่านี้",
    "fingerprint": "c03552b079942ece",
    "vocab_sig": [
     "fifteen",
@@ -133670,8 +133670,8 @@
    "kind": "phrase",
    "en": "I was skeptical of this conclusion before the evidence convinced me.",
    "en_norm": "i was skeptical of this conclusion before the evidence convinced me",
-   "my_norm": "သက်သေက ကျွန်တော့်ကို ယုံကြည်စေတဲ့အရင် ဒီကောက်ချက်ကို သံသယရှိခဲ့တယ်။",
-   "th_norm": "ผม ดิฉันสงสัยข้อสรุปนี้ก่อนหลักฐานโน้มน้าว",
+   "my_norm": "သက်သေအထောက်အထားက ကျွန်တော့်ကို မယုံကြည်စေခင်က ဒီကောက်ချက်အပေါ် သံသယရှိခဲ့တယ်။",
+   "th_norm": "ผม ดิฉันเคยสงสัยในข้อสรุปนี้ ก่อนที่หลักฐานจะโน้มน้าวใจ",
    "fingerprint": "adc77cb8f73c8a76",
    "vocab_sig": [
     "conclusion",
@@ -133692,7 +133692,7 @@
    "kind": "phrase",
    "en": "Disclose your interests and your arguments gain weight.",
    "en_norm": "disclose your interests and your arguments gain weight",
-   "my_norm": "သင့်အကျိုးစီးပွားတွေကို ဖော်ပြပါ၊ သင့်အငြင်းပွားမှုတွေ အလေးချိန်ရလာမယ်။",
+   "my_norm": "သင့်အကျိုးစီးပွားတွေကို ဖွင့်ချပြပါ၊ သင့်အငြင်းပွားချက်တွေ အလေးချိန်တက်လာမယ်။",
    "th_norm": "เปิดเผยผลประโยชน์แล้วข้อโต้แย้งจะมีน้ำหนัก",
    "fingerprint": "79db90a28a8d8018",
    "vocab_sig": [
@@ -133716,7 +133716,7 @@
    "en": "I have argued the opposite case and found it wanting.",
    "en_norm": "i have argued the opposite case and found it wanting",
    "my_norm": "ဆန့်ကျင်ဘက်အမှုကို ငြင်းခဲ့ဖူးတယ်၊ ချို့ယွင်းနေတာကို တွေ့ခဲ့တယ်။",
-   "th_norm": "ผม ดิฉันเคยโต้ฝ่ายตรงข้ามและพบว่าขาด",
+   "th_norm": "ผม ดิฉันเคยโต้แย้งฝั่งตรงข้ามมาก่อน และพบว่ามันไม่มีน้ำหนักพอ",
    "fingerprint": "0449c5658cb916ab",
    "vocab_sig": [
     "argued",
@@ -133738,7 +133738,7 @@
    "kind": "phrase",
    "en": "The committee's unanimous report speaks louder than any advocate.",
    "en_norm": "the committee s unanimous report speaks louder than any advocate",
-   "my_norm": "ကော်မတီရဲ့ တညီတညွတ်တည်းအစီရင်ခံစာက မည်သည့်ထောက်ခံသူထက်မဆို ပိုကျယ်ကျယ်ပြောတယ်။",
+   "my_norm": "ကော်မတီရဲ့ တညီတညွတ်တည်း အစီရင်ခံစာက မည်သည့် ထောက်ခံပြောဆိုသူထက်မဆို ပိုလေးနက်တယ်။",
    "th_norm": "รายงานเอกฉันท์ของคณะกรรมการพูดดังกว่านักสนับสนุนใด",
    "fingerprint": "a5eb0df3692fed95",
    "vocab_sig": [
@@ -133811,7 +133811,7 @@
    "kind": "phrase",
    "en": "Experience taught me what theory could only suggest.",
    "en_norm": "experience taught me what theory could only suggest",
-   "my_norm": "အတွေ့အကြုံက သီအိုရီ အကြံပြုနိုင်တာကိုပဲ သင်ပေးခဲ့တယ်။",
+   "my_norm": "သီအိုရီက အရိပ်အမြွက်သာ ပေးနိုင်ခဲ့တာကို အတွေ့အကြုံက အပြည့်အဝ သင်ပေးခဲ့တယ်။",
    "th_norm": "ประสบการณ์สอนสิ่งที่ทฤษฎีแค่ชี้แนะ",
    "fingerprint": "81e10966b92f6cba",
    "vocab_sig": [
@@ -133929,7 +133929,7 @@
    "kind": "phrase",
    "en": "My critics keep me honest; I keep their arguments on file.",
    "en_norm": "my critics keep me honest i keep their arguments on file",
-   "my_norm": "ကျွန်တော့်ဝေဖန်သူတွေက ကျွန်တော့်ကို ရိုးသားစေတယ်၊ သူတို့အငြင်းပွားမှုတွေကို ဖိုင်မှာ သိမ်းထားတယ်။",
+   "my_norm": "ကျွန်တော့်ဝေဖန်သူတွေက ကျွန်တော့်ကို ရိုးသားအောင် ထိန်းပေးတယ်၊ သူတို့ရဲ့ အငြင်းပွားချက်တွေကို ဖိုင်တွဲမှာ သိမ်းထားတယ်။",
    "th_norm": "นักวิจารณ์ทำให้ผม ดิฉันซื่อสัตย์ ผม ดิฉันเก็บข้อโต้แย้งของพวกเขาไว้",
    "fingerprint": "89fa84cb366d9a53",
    "vocab_sig": [
@@ -133998,7 +133998,7 @@
    "en": "The strongest credential is a track record of changing one's mind.",
    "en_norm": "the strongest credential is a track record of changing one s mind",
    "my_norm": "အခိုင်မာဆုံးအရည်အချင်းက စိတ်ပြောင်းခဲ့တဲ့မှတ်တမ်းပဲ။",
-   "th_norm": "คุณสมบัติที่แข็งที่สุดคือประวัติเปลี่ยนใจ",
+   "th_norm": "คุณสมบัติที่แข็งที่สุดคือประวัติการยอมเปลี่ยนใจ",
    "fingerprint": "62d8859529334bc1",
    "vocab_sig": [
     "changing",
@@ -134021,7 +134021,7 @@
    "kind": "phrase",
    "en": "I defer to the specialists on the technical points — and press them on the rest.",
    "en_norm": "i defer to the specialists on the technical points and press them on the rest",
-   "my_norm": "နည်းပညာအချက်တွေမှာ အထူးကုတွေကို ဦးစားပေးတယ်၊ ကျန်တာတွေမှာတော့ သူတို့ကို ဖိအားပေးတယ်။",
+   "my_norm": "နည်းပညာဆိုင်ရာ အချက်တွေမှာတော့ အထူးကုတွေရဲ့ အမြင်ကို လေးစားလိုက်နာတယ်၊ ကျန်တဲ့အချက်တွေမှာတော့ သူတို့ကို တင်းတင်းကျပ်ကျပ် မေးမြန်းစစ်ဆေးတယ်။",
    "th_norm": "ผม ดิฉันเชื่อผู้เชี่ยวชาญเรื่องเทคนิค และกดดันพวกเขาเรื่องที่เหลือ",
    "fingerprint": "a354b13af07577d4",
    "vocab_sig": [
@@ -134156,7 +134156,7 @@
    "kind": "phrase",
    "en": "Let's find the common ground before mapping the disagreements.",
    "en_norm": "let s find the common ground before mapping the disagreements",
-   "my_norm": "သဘောကွဲလွဲမှုတွေ မြေပုံဆွဲမယ့်အရင် ဘုံအခြေခံကို ရှာကြရအောင်။",
+   "my_norm": "သဘောကွဲလွဲမှုတွေကို မြေပုံမဆွဲခင် ဘုံအခြေခံကို အရင် ရှာကြရအောင်။",
    "th_norm": "หาพื้นที่ร่วมก่อนทำแผนที่ความไม่เห็นด้วย",
    "fingerprint": "b361ecca88f129e3",
    "vocab_sig": [
@@ -134179,7 +134179,7 @@
    "kind": "phrase",
    "en": "We agree on the destination; only the route is contested.",
    "en_norm": "we agree on the destination only the route is contested",
-   "my_norm": "ပန်းတိုင်မှာ ကျွန်တော်တို့ သဘောတူတယ်၊ အငြင်းပွားတာက လမ်းကြောင်းတစ်ခုတည်းပဲ။",
+   "my_norm": "ပန်းတိုင်မှာ ကျွန်တော်တို့ သဘောတူညီတယ်၊ အငြင်းပွားနေတာက လမ်းကြောင်းသာ ဖြစ်တယ်။",
    "th_norm": "เราเห็นตรงเรื่องจุดหมาย โต้กันแค่เส้นทาง",
    "fingerprint": "0760d4ec9b88ab38",
    "vocab_sig": [
@@ -134202,7 +134202,7 @@
    "kind": "phrase",
    "en": "The overlapping consensus is wider than the rhetoric suggests.",
    "en_norm": "the overlapping consensus is wider than the rhetoric suggests",
-   "my_norm": "ထပ်နေတဲ့သဘောတူညီမှုက စကားအတတ်ပညာ အကြံပြုတာထက် ပိုကျယ်တယ်။",
+   "my_norm": "ထပ်နေတဲ့ သဘောတူညီမှုက အပြောအဆိုတွေမှာ ပါတာထက် ပိုကျယ်ပြန့်တယ်။",
    "th_norm": "ฉันทามติทับซ้อนกว้างกว่าที่วาทศิลป์ชวนให้เชื่อ",
    "fingerprint": "584da9bcc0ae873a",
    "vocab_sig": [
@@ -134298,7 +134298,7 @@
    "kind": "phrase",
    "en": "Unanimity is ideal; a critical mass will do.",
    "en_norm": "unanimity is ideal a critical mass will do",
-   "my_norm": "တညီတညွတ်တည်းဖြစ်မှုက စံပြပဲ၊ အရေးပါတဲ့အစုအဝေးက လုံလောက်တယ်။",
+   "my_norm": "တညီတညွတ်တည်း ဖြစ်မှုက စံပြဖြစ်ပေမယ့် လုံလောက်တဲ့ အရေအတွက် critical mass ရှိရင် ရပြီ။",
    "th_norm": "เอกฉันท์คืออุดมคติ มวลวิกฤตพอเพียง",
    "fingerprint": "047d834fa382e468",
    "vocab_sig": [
@@ -134390,7 +134390,7 @@
    "en": "Shared ownership of the outcome guarantees shared commitment to it.",
    "en_norm": "shared ownership of the outcome guarantees shared commitment to it",
    "my_norm": "ရလဒ်ရဲ့ဘုံပိုင်ဆိုင်မှုက သူ့အပေါ် ဘုံကတိပြုမှုကို အာမခံတယ်။",
-   "th_norm": "ความเป็นเจ้าของร่วมของผลลัพธ์รับประกันความมุ่งมั่นร่วมต่อผลลัพธ์นั้น",
+   "th_norm": "การร่วมเป็นเจ้าของผลลัพธ์ ทำให้ทุกคนร่วมกันมุ่งมั่นกับผลลัพธ์นั้น",
    "fingerprint": "ff9e62aafce7258f",
    "vocab_sig": [
     "commitment",
@@ -134413,7 +134413,7 @@
    "en": "The quiet consensus in the corridors exceeds the noise in the chamber.",
    "en_norm": "the quiet consensus in the corridors exceeds the noise in the chamber",
    "my_norm": "စင်္ကြန်တွေထဲက တိတ်ဆိတ်တဲ့သဘောတူညီမှုက အစည်းအဝေးခန်းထဲက ဆူညံသံကို ကျော်လွန်တယ်။",
-   "th_norm": "ฉันทามติเงียบในทางเดินเกินเสียงดังในห้องประชุม",
+   "th_norm": "ฉันทามติเงียบๆ ในทางเดิน กลบเสียงอึกทึกในห้องประชุม",
    "fingerprint": "f9aab26b9edebb7f",
    "vocab_sig": [
     "chamber",
@@ -134459,8 +134459,8 @@
    "kind": "phrase",
    "en": "The middle ground is not weakness; it is where majorities live.",
    "en_norm": "the middle ground is not weakness it is where majorities live",
-   "my_norm": "အလယ်အလတ်မြေက အားနည်းချက်မဟုတ်ဘူး၊ လူအများစု နေထိုင်တဲ့နေရာပဲ။",
-   "th_norm": "พื้นที่กลางไม่ใช่อ่อนแอ แต่คือที่ที่เสียงส่วนใหญ่อยู่",
+   "my_norm": "အလယ်အလတ် ရပ်တည်ချက်က အားနည်းချက် မဟုတ်ဘူး၊ လူအများစု ရပ်တည်ရာ နေရာပါပဲ။",
+   "th_norm": "พื้นที่กลางไม่ใช่ความอ่อนแอ แต่คือที่อยู่ของเสียงส่วนใหญ่",
    "fingerprint": "d6237f55440d2db5",
    "vocab_sig": [
     "ground",
@@ -134507,7 +134507,7 @@
    "kind": "phrase",
    "en": "Consensus is built sentence by sentence, not declared by gavel.",
    "en_norm": "consensus is built sentence by sentence not declared by gavel",
-   "my_norm": "သဘောတူညီမှုက တူရိယာနဲ့ ကြေညာတာမဟုတ်ဘဲ ဝါကျတစ်ခုချင်းစီနဲ့ တည်ဆောက်တာပဲ။",
+   "my_norm": "သဘောတူညီမှုကို တရားသူကြီးတူနဲ့ ကြေညာတာမဟုတ်ဘဲ ဝါကျတစ်ခုချင်းစီနဲ့ တည်ဆောက်ရတာပါ။",
    "th_norm": "ฉันทามติสร้างทีละประโยค ไม่ได้ประกาศด้วยค้อน",
    "fingerprint": "a5208ebd75a497a4",
    "vocab_sig": [
@@ -193733,10 +193733,10 @@
   {
    "id": "story-f14-b1-16",
    "kind": "story",
-   "en": "Ko Thet booked a hotel room online for his business trip to Mandalay. When he arrived late at night, the receptionist could not find his reservation. He showed the confirmation email on his phone, but the hotel had no record of it. Ko Thet was tired and frustrated. The manager came to help. After checking carefully, she discovered that the booking had been made for the wrong month. Instead of arguing, the manager apologized and upgraded him to a better room at no extra charge. Ko Thet was pleasantly surprised. The next morning, he left a five-star review online. He learned that mistakes happen, but good service can fix them. Ko Thet slept wonderfully in the comfortable upgraded room. The next morning, he thanked the manager personally and promised to stay at the same hotel on every future trip to Mandalay. He told his business partners about the wonderful service, and two of them booked the same hotel for their next visit to the city.",
-   "en_norm": "ko thet booked a hotel room online for his business trip to mandalay when he arrived late at night the receptionist could not find his reservation he showed the confirmation email on his phone but the hotel had no record of it ko thet was tired and frustrated the manager came to help after checking carefully she discovered that the booking had been made for the wrong month instead of arguing the manager apologized and upgraded him to a better room at no extra charge ko thet was pleasantly surprised the next morning he left a five star review online he learned that mistakes happen but good service can fix them ko thet slept wonderfully in the comfortable upgraded room the next morning he thanked the manager personally and promised to stay at the same hotel on every future trip to mandalay he told his business partners about the wonderful service and two of them booked the same hotel for their next visit to the city",
+   "en": "Ko Thet booked a hotel room online for his business trip to Mandalay. When he arrived late at night, the receptionist could not find his reservation. He showed the confirmation email on his phone, but the hotel had no record of it. Ko Thet was tired and frustrated. The manager came to help. After checking carefully, she discovered that the booking had been made for the wrong month. Instead of arguing, the manager apologized and upgraded him to a better room at no extra charge. Ko Thet was pleasantly surprised. The next morning, he left a five-star review online. He learned that mistakes happen, but good service can fix them. Ko Thet slept wonderfully in the comfortable upgraded room. Before checking out, he thanked the manager personally and promised to stay at the same hotel on every future trip to Mandalay. He told his business partners about the wonderful service, and two of them booked the same hotel for their next visit to the city.",
+   "en_norm": "ko thet booked a hotel room online for his business trip to mandalay when he arrived late at night the receptionist could not find his reservation he showed the confirmation email on his phone but the hotel had no record of it ko thet was tired and frustrated the manager came to help after checking carefully she discovered that the booking had been made for the wrong month instead of arguing the manager apologized and upgraded him to a better room at no extra charge ko thet was pleasantly surprised the next morning he left a five star review online he learned that mistakes happen but good service can fix them ko thet slept wonderfully in the comfortable upgraded room before checking out he thanked the manager personally and promised to stay at the same hotel on every future trip to mandalay he told his business partners about the wonderful service and two of them booked the same hotel for their next visit to the city",
    "my_norm": "",
-   "fingerprint": "ed8e2077e019ae6e",
+   "fingerprint": "6c514ffcd59f0e9f",
    "vocab_sig": [
     "apologized",
     "arguing",
@@ -193807,7 +193807,7 @@
     "wonderfully",
     "wrong"
    ],
-   "template_sig": "W W W a W W W for his W W to W . when he W W at W , the W could not W his W . he W the W W on his W , but the W had no W of it . W W was W and W . the W W to W . after W W , she W that the W had been W for the W W . W of W , the W W and W him to a W W at no W W . W W was W W . the W W , he W a W - W W W . he W that W W , but W W can W them . W W W W in the W W W . the W W , he W the W W and W to W at the W W on W W W to W . he W his W W about the W W , and two of them W the W W for their W W to the W .",
+   "template_sig": "W W W a W W W for his W W to W . when he W W at W , the W could not W his W . he W the W W on his W , but the W had no W of it . W W was W and W . the W W to W . after W W , she W that the W had been W for the W W . W of W , the W W and W him to a W W at no W W . W W was W W . the W W , he W a W - W W W . he W that W W , but W W can W them . W W W W in the W W W . before W out , he W the W W and W to W at the W W on W W W to W . he W his W W about the W W , and two of them W the W W for their W W to the W .",
    "tags": [
     "story"
    ],
@@ -196850,10 +196850,10 @@
   {
    "id": "story-f14-b2-21",
    "kind": "story",
-   "en": "After a heated argument about money, brothers Ko Min and Ko Htet did not speak to each other for six months. Their mother cried every time she saw them sitting in silence at family dinners. The older brother, Ko Min, knew he had said cruel things in anger. Although his pride told him to wait for an apology, his love for his brother grew stronger than his pride. One rainy evening, he knocked on his brother's door with his favorite childhood snacks. When Ko Htet opened the door, Ko Min simply said, \"I was wrong, and I am sorry.\" They talked until midnight, cried a little, and laughed a lot. Their mother, listening from the next room, finally smiled through her tears. The brothers now meet every Sunday for dinner with their mother. She says those weekly dinners healed her heart completely. Their deeply moved mother lovingly framed a beautiful photo of that emotional rainy evening's precious reunion dinner.",
-   "en_norm": "after a heated argument about money brothers ko min and ko htet did not speak to each other for six months their mother cried every time she saw them sitting in silence at family dinners the older brother ko min knew he had said cruel things in anger although his pride told him to wait for an apology his love for his brother grew stronger than his pride one rainy evening he knocked on his brother s door with his favorite childhood snacks when ko htet opened the door ko min simply said i was wrong and i am sorry they talked until midnight cried a little and laughed a lot their mother listening from the next room finally smiled through her tears the brothers now meet every sunday for dinner with their mother she says those weekly dinners healed her heart completely their deeply moved mother lovingly framed a beautiful photo of that emotional rainy evening s precious reunion dinner",
+   "en": "After a heated argument about money, brothers Ko Min and Ko Htet did not speak to each other for six months. Their mother cried every time she saw them sitting in silence at family dinners. The older brother, Ko Min, knew he had said cruel things in anger. Although his pride told him to wait for an apology, his love for his brother grew stronger than his pride. One rainy evening, he knocked on his brother's door with their favorite childhood snacks. When Ko Htet opened the door, Ko Min simply said, \"I was wrong, and I am sorry.\" They talked until midnight, cried a little, and laughed a lot. Their mother, listening from the next room, finally smiled through her tears. The brothers now meet every Sunday for dinner with their mother. She says those weekly dinners healed her heart completely. Their deeply moved mother lovingly framed a beautiful photo of that emotional rainy evening's precious reunion dinner.",
+   "en_norm": "after a heated argument about money brothers ko min and ko htet did not speak to each other for six months their mother cried every time she saw them sitting in silence at family dinners the older brother ko min knew he had said cruel things in anger although his pride told him to wait for an apology his love for his brother grew stronger than his pride one rainy evening he knocked on his brother s door with their favorite childhood snacks when ko htet opened the door ko min simply said i was wrong and i am sorry they talked until midnight cried a little and laughed a lot their mother listening from the next room finally smiled through her tears the brothers now meet every sunday for dinner with their mother she says those weekly dinners healed her heart completely their deeply moved mother lovingly framed a beautiful photo of that emotional rainy evening s precious reunion dinner",
    "my_norm": "",
-   "fingerprint": "1288795d1dfe39d5",
+   "fingerprint": "ae71575b1cf0b37d",
    "vocab_sig": [
     "although",
     "anger",
@@ -196934,7 +196934,7 @@
     "weekly",
     "wrong"
    ],
-   "template_sig": "after a W W about W , W W W and W W did not W to W W for W W . their W W W W she W them W in W at W W . the W W , W W , W he had W W W in W . W his W W him to W for an W , his W for his W W W W his W . one W W , he W on his W ' s W with his W W W . when W W W the W , W W W W , \" i was W , and i am W . \" they W W W , W a W , and W a W . their W , W from the W W , W W through her W . the W W W W W for W with their W . she W those W W W her W W . their W W W W W a W W of that W W W ' s W W W .",
+   "template_sig": "after a W W about W , W W W and W W did not W to W W for W W . their W W W W she W them W in W at W W . the W W , W W , W he had W W W in W . W his W W him to W for an W , his W for his W W W W his W . one W W , he W on his W ' s W with their W W W . when W W W the W , W W W W , \" i was W , and i am W . \" they W W W , W a W , and W a W . their W , W from the W W , W W through her W . the W W W W W for W with their W . she W those W W W her W W . their W W W W W a W W of that W W W ' s W W W .",
    "tags": [
     "story"
    ],
@@ -200986,10 +200986,10 @@
   {
    "id": "f14-s-034",
    "kind": "story",
-   "en": "In the strange world of quantum physics, a particle can exist in two places at once — until someone looks at it. This is not science fiction; it is the most tested theory in all of science. For a century, this weirdness stayed locked in laboratories. Then engineers asked a bold question: what if we could build computers that calculate using this strangeness itself? A quantum computer does not use ordinary bits — ones and zeros. It uses qubits, which can be one, zero, or both simultaneously. Fifty qubits can represent more states than there are atoms in the Earth. In 2019, a quantum machine solved in 200 seconds a problem that would take the world's fastest supercomputer 10,000 years. The result was useless in itself — but it proved the principle worked. The stakes are enormous. Quantum computers could design life-saving drugs in days, or break the encryption protecting every bank account and government secret on the planet. Physicist Dr. Amara Chen compares the moment to the first steam engines: \"We have built the engine. Now humanity must decide where this train is going — before it leaves the station.\"",
-   "en_norm": "in the strange world of quantum physics a particle can exist in two places at once until someone looks at it this is not science fiction it is the most tested theory in all of science for a century this weirdness stayed locked in laboratories then engineers asked a bold question what if we could build computers that calculate using this strangeness itself a quantum computer does not use ordinary bits ones and zeros it uses qubits which can be one zero or both simultaneously fifty qubits can represent more states than there are atoms in the earth in 2019 a quantum machine solved in 200 seconds a problem that would take the world s fastest supercomputer 10 000 years the result was useless in itself but it proved the principle worked the stakes are enormous quantum computers could design life saving drugs in days or break the encryption protecting every bank account and government secret on the planet physicist dr amara chen compares the moment to the first steam engines we have built the engine now humanity must decide where this train is going before it leaves the station",
+   "en": "In the strange world of quantum physics, a particle can exist in two places at once — until someone looks at it. This is not science fiction; it is the most tested theory in all of science. For a century, this weirdness stayed locked in laboratories. Then engineers asked a bold question: what if we could build computers that calculate using this strangeness itself? A quantum computer does not use ordinary bits — ones and zeros. It uses qubits, which can be one, zero, or both simultaneously. Three hundred qubits can represent more states than there are atoms in the observable universe. In 2019, a quantum machine solved in 200 seconds a problem that would take the world's fastest supercomputer 10,000 years. The result was useless in itself — but it proved the principle worked. The stakes are enormous. Quantum computers could design life-saving drugs in days, or break the encryption protecting every bank account and government secret on the planet. Physicist Dr. Amara Chen compares the moment to the first steam engines: \"We have built the engine. Now humanity must decide where this train is going — before it leaves the station.\"",
+   "en_norm": "in the strange world of quantum physics a particle can exist in two places at once until someone looks at it this is not science fiction it is the most tested theory in all of science for a century this weirdness stayed locked in laboratories then engineers asked a bold question what if we could build computers that calculate using this strangeness itself a quantum computer does not use ordinary bits ones and zeros it uses qubits which can be one zero or both simultaneously three hundred qubits can represent more states than there are atoms in the observable universe in 2019 a quantum machine solved in 200 seconds a problem that would take the world s fastest supercomputer 10 000 years the result was useless in itself but it proved the principle worked the stakes are enormous quantum computers could design life saving drugs in days or break the encryption protecting every bank account and government secret on the planet physicist dr amara chen compares the moment to the first steam engines we have built the engine now humanity must decide where this train is going before it leaves the station",
    "my_norm": "",
-   "fingerprint": "9096f5ca5cf77b63",
+   "fingerprint": "855b3abd0056da50",
    "vocab_sig": [
     "000",
     "10",
@@ -201018,7 +201018,6 @@
     "design",
     "dr",
     "drugs",
-    "earth",
     "encryption",
     "engine",
     "engineers",
@@ -201028,11 +201027,11 @@
     "exist",
     "fastest",
     "fiction",
-    "fifty",
     "first",
     "going",
     "government",
     "humanity",
+    "hundred",
     "itself",
     "laboratories",
     "leaves",
@@ -201044,6 +201043,7 @@
     "more",
     "most",
     "now",
+    "observable",
     "once",
     "ones",
     "ordinary",
@@ -201082,6 +201082,7 @@
     "then",
     "theory",
     "train",
+    "universe",
     "until",
     "use",
     "useless",
@@ -201094,7 +201095,7 @@
     "zero",
     "zeros"
    ],
-   "template_sig": "in the W W of W W , a W can W in two W at W — W W W at it . this is not W W ; it is the W W W in W of W . for a W , this W W W in W . W W W a W W : what if we could W W that W W this W W ? a W W does not W W W — W and W . it W W , which can be one , W , or W W . W W can W W W W there are W in the W . in W , a W W W in W W a W that would W the W ' s W W W , W W . the W was W in W — but it W the W W . the W are W . W W could W W - W W in W , or W the W W W W W and W W on the W . W W . W W W the W to the W W W : \" we have W the W . W W must W where this W is W — before it W the W . \"",
+   "template_sig": "in the W W of W W , a W can W in two W at W — W W W at it . this is not W W ; it is the W W W in W of W . for a W , this W W W in W . W W W a W W : what if we could W W that W W this W W ? a W W does not W W W — W and W . it W W , which can be one , W , or W W . three W W can W W W W there are W in the W W . in W , a W W W in W W a W that would W the W ' s W W W , W W . the W was W in W — but it W the W W . the W are W . W W could W W - W W in W , or W the W W W W W and W W on the W . W W . W W W the W to the W W W : \" we have W the W . W W must W where this W is W — before it W the W . \"",
    "tags": [
     "story"
    ],
@@ -202776,10 +202777,10 @@
   {
    "id": "f14-s-049",
    "kind": "story",
-   "en": "The Inca Trail is only 43 kilometers long, but it climbs from steamy jungle to a freezing mountain pass at 4,215 meters — higher than any point in Western Europe. Hikers walk in the footsteps of the Incas themselves, passing stone ruins where messengers once ran with news for the emperor, and terraces where farmers grew corn on impossible slopes. On the second day comes Dead Woman's Pass — the highest and hardest climb. Porters, carrying 20 kilograms on their backs, overtake exhausted tourists with cheerful ease, a humbling sight. The final morning begins at 3:30 a.m. in darkness. Trekkers climb stone steps by headlamp for two hours, racing to reach the Sun Gate as the first light touches the ruins. And then it appears: Machu Picchu, floating above the clouds between two sharp peaks. After four days of pain, the ancient city looks less like ruins and more like a reward. Archaeologists still debate why the Incas built a city in such an unreachable place. Standing there at dawn, most visitors stop debating — some places, they feel, were built simply because they are beautiful.",
-   "en_norm": "the inca trail is only 43 kilometers long but it climbs from steamy jungle to a freezing mountain pass at 4 215 meters higher than any point in western europe hikers walk in the footsteps of the incas themselves passing stone ruins where messengers once ran with news for the emperor and terraces where farmers grew corn on impossible slopes on the second day comes dead woman s pass the highest and hardest climb porters carrying 20 kilograms on their backs overtake exhausted tourists with cheerful ease a humbling sight the final morning begins at 3 30 a m in darkness trekkers climb stone steps by headlamp for two hours racing to reach the sun gate as the first light touches the ruins and then it appears machu picchu floating above the clouds between two sharp peaks after four days of pain the ancient city looks less like ruins and more like a reward archaeologists still debate why the incas built a city in such an unreachable place standing there at dawn most visitors stop debating some places they feel were built simply because they are beautiful",
+   "en": "The Inca Trail is only 43 kilometers long, but it climbs from steamy jungle to a freezing mountain pass at 4,215 meters — higher than any point in the British Isles. Hikers walk in the footsteps of the Incas themselves, passing stone ruins where messengers once ran with news for the emperor, and terraces where farmers grew corn on impossible slopes. On the second day comes Dead Woman's Pass — the highest and hardest climb. Porters, carrying 20 kilograms on their backs, overtake exhausted tourists with cheerful ease, a humbling sight. The final morning begins at 3:30 a.m. in darkness. Trekkers climb stone steps by headlamp for two hours, racing to reach the Sun Gate as the first light touches the ruins. And then it appears: Machu Picchu, floating above the clouds between two sharp peaks. After four days of pain, the ancient city looks less like ruins and more like a reward. Archaeologists still debate why the Incas built a city in such an unreachable place. Standing there at dawn, most visitors stop debating — some places, they feel, were built simply because they are beautiful.",
+   "en_norm": "the inca trail is only 43 kilometers long but it climbs from steamy jungle to a freezing mountain pass at 4 215 meters higher than any point in the british isles hikers walk in the footsteps of the incas themselves passing stone ruins where messengers once ran with news for the emperor and terraces where farmers grew corn on impossible slopes on the second day comes dead woman s pass the highest and hardest climb porters carrying 20 kilograms on their backs overtake exhausted tourists with cheerful ease a humbling sight the final morning begins at 3 30 a m in darkness trekkers climb stone steps by headlamp for two hours racing to reach the sun gate as the first light touches the ruins and then it appears machu picchu floating above the clouds between two sharp peaks after four days of pain the ancient city looks less like ruins and more like a reward archaeologists still debate why the incas built a city in such an unreachable place standing there at dawn most visitors stop debating some places they feel were built simply because they are beautiful",
    "my_norm": "",
-   "fingerprint": "9d5a6926230bcdec",
+   "fingerprint": "a70c406b23ed2eae",
    "vocab_sig": [
     "20",
     "215",
@@ -202796,6 +202797,7 @@
     "beautiful",
     "because",
     "begins",
+    "british",
     "built",
     "carrying",
     "cheerful",
@@ -202814,7 +202816,6 @@
     "debating",
     "ease",
     "emperor",
-    "europe",
     "exhausted",
     "farmers",
     "feel",
@@ -202836,6 +202837,7 @@
     "impossible",
     "inca",
     "incas",
+    "isles",
     "jungle",
     "kilograms",
     "kilometers",
@@ -202893,10 +202895,9 @@
     "unreachable",
     "visitors",
     "walk",
-    "western",
     "woman"
    ],
-   "template_sig": "the W W is W W W W , but it W from W W to a W W W at W , W W — W W W W in W W . W W in the W of the W W , W W W where W W W with W for the W , and W where W W W on W W . on the W W W W W ' s W — the W and W W . W , W W W on their W , W W W with W W , a W W . the W W W at W : W a . m . in W . W W W W by W for two W , W to W the W W as the W W W the W . and W it W : W W , W W the W between two W W . after W W of W , the W W W W like W and W like a W . W W W why the W W a W in W an W W . W there at W , W W W W — W W , they W , were W W W they are W .",
+   "template_sig": "the W W is W W W W , but it W from W W to a W W W at W , W W — W W W W in the W W . W W in the W of the W W , W W W where W W W with W for the W , and W where W W W on W W . on the W W W W W ' s W — the W and W W . W , W W W on their W , W W W with W W , a W W . the W W W at W : W a . m . in W . W W W W by W for two W , W to W the W W as the W W W the W . and W it W : W W , W W the W between two W W . after W W of W , the W W W W like W and W like a W . W W W why the W W a W in W an W W . W there at W , W W W W — W W , they W , were W W W they are W .",
    "tags": [
     "story"
    ],
@@ -203035,12 +203036,13 @@
   {
    "id": "f14-s-051",
    "kind": "story",
-   "en": "In the autumn of 1962, the world stood on the edge of nuclear war. American ships had surrounded Cuba, and Soviet missiles were already on the island. One wrong order could have ended civilization. Behind closed doors, a quiet diplomat named Anatoly Dobrynin carried secret messages between Washington and Moscow. He met the American attorney general late at night, in rooms with no windows and no records. Neither side could afford to look weak, yet neither side wanted war. Dobrynin proposed a secret exchange: the Soviets would remove their missiles from Cuba, and the Americans would quietly remove theirs from Turkey. The deal worked. The missiles left Cuba, the crisis ended, and almost nobody knew how close the world had come to disaster. Dobrynin never gave interviews or wrote memoirs about those thirteen days. History remembers presidents and generals, but it was a patient diplomat in a windowless room who gave both sides a way to step back. Sometimes peace is negotiated by people whose names we never learn.",
-   "en_norm": "in the autumn of 1962 the world stood on the edge of nuclear war american ships had surrounded cuba and soviet missiles were already on the island one wrong order could have ended civilization behind closed doors a quiet diplomat named anatoly dobrynin carried secret messages between washington and moscow he met the american attorney general late at night in rooms with no windows and no records neither side could afford to look weak yet neither side wanted war dobrynin proposed a secret exchange the soviets would remove their missiles from cuba and the americans would quietly remove theirs from turkey the deal worked the missiles left cuba the crisis ended and almost nobody knew how close the world had come to disaster dobrynin never gave interviews or wrote memoirs about those thirteen days history remembers presidents and generals but it was a patient diplomat in a windowless room who gave both sides a way to step back sometimes peace is negotiated by people whose names we never learn",
+   "en": "In the autumn of 1962, the world stood on the edge of nuclear war. American ships had surrounded Cuba, and Soviet missiles were already on the island. One wrong order could have ended civilization. Behind closed doors, a quiet diplomat named Anatoly Dobrynin carried secret messages between Washington and Moscow. He met the American attorney general late at night, in rooms with no windows and no records. Neither side could afford to look weak, yet neither side wanted war. Dobrynin proposed a secret exchange: the Soviets would remove their missiles from Cuba, and the Americans would quietly remove theirs from Turkey. The deal worked. The missiles left Cuba, the crisis ended, and almost nobody knew how close the world had come to disaster. Dobrynin rarely spoke of those thirteen days, publishing his memoirs only in 1995. History remembers presidents and generals, but it was a patient diplomat in a windowless room who gave both sides a way to step back. Sometimes peace is negotiated by people whose names we never learn.",
+   "en_norm": "in the autumn of 1962 the world stood on the edge of nuclear war american ships had surrounded cuba and soviet missiles were already on the island one wrong order could have ended civilization behind closed doors a quiet diplomat named anatoly dobrynin carried secret messages between washington and moscow he met the american attorney general late at night in rooms with no windows and no records neither side could afford to look weak yet neither side wanted war dobrynin proposed a secret exchange the soviets would remove their missiles from cuba and the americans would quietly remove theirs from turkey the deal worked the missiles left cuba the crisis ended and almost nobody knew how close the world had come to disaster dobrynin rarely spoke of those thirteen days publishing his memoirs only in 1995 history remembers presidents and generals but it was a patient diplomat in a windowless room who gave both sides a way to step back sometimes peace is negotiated by people whose names we never learn",
    "my_norm": "",
-   "fingerprint": "83162a301d45627b",
+   "fingerprint": "419326c35c8ac005",
    "vocab_sig": [
     "1962",
+    "1995",
     "afford",
     "almost",
     "already",
@@ -203072,7 +203074,6 @@
     "general",
     "generals",
     "history",
-    "interviews",
     "island",
     "knew",
     "late",
@@ -203092,14 +203093,17 @@
     "night",
     "nobody",
     "nuclear",
+    "only",
     "order",
     "patient",
     "peace",
     "people",
     "presidents",
     "proposed",
+    "publishing",
     "quiet",
     "quietly",
+    "rarely",
     "records",
     "remembers",
     "remove",
@@ -203112,6 +203116,7 @@
     "sometimes",
     "soviet",
     "soviets",
+    "spoke",
     "step",
     "stood",
     "surrounded",
@@ -203127,10 +203132,9 @@
     "worked",
     "world",
     "wrong",
-    "wrote",
     "yet"
    ],
-   "template_sig": "in the W of W , the W W on the W of W W . W W had W W , and W W were W on the W . one W W could have W W . W W W , a W W W W W W W W between W and W . he W the W W W W at W , in W with no W and no W . W W could W to W W , W W W W W . W W a W W : the W would W their W from W , and the W would W W theirs from W . the W W . the W W W , the W W , and W W W how W the W had W to W . W W W W or W W about those W W . W W W and W , but it was a W W in a W W who W W W a W to W W . W W is W by W whose W we W W .",
+   "template_sig": "in the W of W , the W W on the W of W W . W W had W W , and W W were W on the W . one W W could have W W . W W W , a W W W W W W W W between W and W . he W the W W W W at W , in W with no W and no W . W W could W to W W , W W W W W . W W a W W : the W would W their W from W , and the W would W W theirs from W . the W W . the W W W , the W W , and W W W how W the W had W to W . W W W of those W W , W his W W in W . W W W and W , but it was a W W in a W W who W W W a W to W W . W W is W by W whose W we W W .",
    "tags": [
     "story"
    ],
@@ -207927,10 +207931,10 @@
   {
    "id": "f14-s-096",
    "kind": "story",
-   "en": "\"Call me Ishmael.\" With those three words, Herman Melville begins the great American novel — the story of Captain Ahab's obsessive hunt for Moby Dick, the white whale that took his leg. Ahab's quest is magnificent and insane. He turns his whaling ship into an instrument of vengeance, nailing a gold coin to the mast for whoever first spots the whale. The crew, spellbound, swears to follow him to the ends of the earth. But Melville's novel is far more than an adventure. It is an encyclopedia of whaling, a meditation on fate and free will, and a portrait of America itself — a ship of many nations sailing toward an unknown doom. The white whale may symbolize God, nature, or the unknowable — Melville never says. Ahab's tragedy is that he demands meaning from a universe that offers only mystery, and destroys himself demanding it. The book was a commercial failure in Melville's lifetime; he died forgotten. Rediscovered in the 1920s, it is now the great white whale of American literature — the whale every literature must chase, and can never quite catch.",
-   "en_norm": "call me ishmael with those three words herman melville begins the great american novel the story of captain ahab s obsessive hunt for moby dick the white whale that took his leg ahab s quest is magnificent and insane he turns his whaling ship into an instrument of vengeance nailing a gold coin to the mast for whoever first spots the whale the crew spellbound swears to follow him to the ends of the earth but melville s novel is far more than an adventure it is an encyclopedia of whaling a meditation on fate and free will and a portrait of america itself a ship of many nations sailing toward an unknown doom the white whale may symbolize god nature or the unknowable melville never says ahab s tragedy is that he demands meaning from a universe that offers only mystery and destroys himself demanding it the book was a commercial failure in melville s lifetime he died forgotten rediscovered in the 1920s it is now the great white whale of american literature the whale every literature must chase and can never quite catch",
+   "en": "\"Call me Ishmael.\" With those three words, Herman Melville begins the great American novel — the story of Captain Ahab's obsessive hunt for Moby Dick, the white whale that took his leg. Ahab's quest is magnificent and insane. He turns his whaling ship into an instrument of vengeance, nailing a gold coin to the mast for whoever first spots the whale. The crew, spellbound, swears to follow him to the ends of the earth. But Melville's novel is far more than an adventure. It is an encyclopedia of whaling, a meditation on fate and free will, and a portrait of America itself — a ship of many nations sailing toward an unknown doom. The white whale may symbolize God, nature, or the unknowable — Melville never says. Ahab's tragedy is that he demands meaning from a universe that offers only mystery, and destroys himself demanding it. The book was a commercial failure in Melville's lifetime; he died forgotten. Rediscovered in the 1920s, it is now the great white whale of American literature — the whale every student of literature must chase, and can never quite catch.",
+   "en_norm": "call me ishmael with those three words herman melville begins the great american novel the story of captain ahab s obsessive hunt for moby dick the white whale that took his leg ahab s quest is magnificent and insane he turns his whaling ship into an instrument of vengeance nailing a gold coin to the mast for whoever first spots the whale the crew spellbound swears to follow him to the ends of the earth but melville s novel is far more than an adventure it is an encyclopedia of whaling a meditation on fate and free will and a portrait of america itself a ship of many nations sailing toward an unknown doom the white whale may symbolize god nature or the unknowable melville never says ahab s tragedy is that he demands meaning from a universe that offers only mystery and destroys himself demanding it the book was a commercial failure in melville s lifetime he died forgotten rediscovered in the 1920s it is now the great white whale of american literature the whale every student of literature must chase and can never quite catch",
    "my_norm": "",
-   "fingerprint": "ca4cfa62897c6932",
+   "fingerprint": "d5cf8a03974ec708",
    "vocab_sig": [
     "1920s",
     "adventure",
@@ -208004,6 +208008,7 @@
     "spellbound",
     "spots",
     "story",
+    "student",
     "swears",
     "symbolize",
     "than",
@@ -208021,7 +208026,7 @@
     "whoever",
     "words"
    ],
-   "template_sig": "\" W me W . \" with those three W , W W W the W W W — the W of W W ' s W W for W W , the W W that W his W . W ' s W is W and W . he W his W W into an W of W , W a W W to the W for W W W the W . the W , W , W to W him to the W of the W . but W ' s W is W W W an W . it is an W of W , a W on W and W will , and a W of W W — a W of W W W W an W W . the W W may W W , W , or the W — W W W . W ' s W is that he W W from a W that W W W , and W W W it . the W was a W W in W ' s W ; he W W . W in the W , it is W the W W W of W W — the W W W must W , and can W W W .",
+   "template_sig": "\" W me W . \" with those three W , W W W the W W W — the W of W W ' s W W for W W , the W W that W his W . W ' s W is W and W . he W his W W into an W of W , W a W W to the W for W W W the W . the W , W , W to W him to the W of the W . but W ' s W is W W W an W . it is an W of W , a W on W and W will , and a W of W W — a W of W W W W an W W . the W W may W W , W , or the W — W W W . W ' s W is that he W W from a W that W W W , and W W W it . the W was a W W in W ' s W ; he W W . W in the W , it is W the W W W of W W — the W W W of W must W , and can W W W .",
    "tags": [
     "story"
    ],
@@ -208148,16 +208153,15 @@
   {
    "id": "f14-s-098",
    "kind": "story",
-   "en": "Inside Dostoevsky's massive novel \"The Brothers Karamazov\" sits a short story many consider the greatest philosophical parable ever written. A poet brother tells it to his atheist brother on the eve of a murder. Christ returns to Earth during the Spanish Inquisition — and is immediately arrested by the Grand Inquisitor, who explains, politely and terribly, why He must be executed. Humanity, the Inquisitor argues, cannot bear freedom. People do not want the terrible burden of choosing between good and evil, he says. They want bread, miracles, authority — someone to carry the burden for them. The Church, he claims, has mercifully corrected Christ's mistake of giving humans freedom. Christ says nothing throughout. At the end, He simply kisses the old man on the lips — and walks away into the dark. The Inquisitor, shaken, lets Him go, but will not change his mind. Dostoevsky's parable asks the most uncomfortable question in politics and religion: do people truly want freedom, or do they want to be relieved of it? Every authoritarian in history has bet on the second answer.",
-   "en_norm": "inside dostoevsky s massive novel the brothers karamazov sits a short story many consider the greatest philosophical parable ever written a poet brother tells it to his atheist brother on the eve of a murder christ returns to earth during the spanish inquisition and is immediately arrested by the grand inquisitor who explains politely and terribly why he must be executed humanity the inquisitor argues cannot bear freedom people do not want the terrible burden of choosing between good and evil he says they want bread miracles authority someone to carry the burden for them the church he claims has mercifully corrected christ s mistake of giving humans freedom christ says nothing throughout at the end he simply kisses the old man on the lips and walks away into the dark the inquisitor shaken lets him go but will not change his mind dostoevsky s parable asks the most uncomfortable question in politics and religion do people truly want freedom or do they want to be relieved of it every authoritarian in history has bet on the second answer",
+   "en": "Inside Dostoevsky's massive novel \"The Brothers Karamazov\" sits a short story many consider the greatest philosophical parable ever written. The skeptical brother tells it to his devout younger brother on the eve of a murder. Christ returns to Earth during the Spanish Inquisition — and is immediately arrested by the Grand Inquisitor, who explains, politely and terribly, why He must be executed. Humanity, the Inquisitor argues, cannot bear freedom. People do not want the terrible burden of choosing between good and evil, he says. They want bread, miracles, authority — someone to carry the burden for them. The Church, he claims, has mercifully corrected Christ's mistake of giving humans freedom. Christ says nothing throughout. At the end, He simply kisses the old man on the lips — and walks away into the dark. The Inquisitor, shaken, lets Him go, but will not change his mind. Dostoevsky's parable asks the most uncomfortable question in politics and religion: do people truly want freedom, or do they want to be relieved of it? Every authoritarian in history has bet on the second answer.",
+   "en_norm": "inside dostoevsky s massive novel the brothers karamazov sits a short story many consider the greatest philosophical parable ever written the skeptical brother tells it to his devout younger brother on the eve of a murder christ returns to earth during the spanish inquisition and is immediately arrested by the grand inquisitor who explains politely and terribly why he must be executed humanity the inquisitor argues cannot bear freedom people do not want the terrible burden of choosing between good and evil he says they want bread miracles authority someone to carry the burden for them the church he claims has mercifully corrected christ s mistake of giving humans freedom christ says nothing throughout at the end he simply kisses the old man on the lips and walks away into the dark the inquisitor shaken lets him go but will not change his mind dostoevsky s parable asks the most uncomfortable question in politics and religion do people truly want freedom or do they want to be relieved of it every authoritarian in history has bet on the second answer",
    "my_norm": "",
-   "fingerprint": "5130d1b9f2dcd37e",
+   "fingerprint": "69236bc4e8237d14",
    "vocab_sig": [
     "answer",
     "argues",
     "arrested",
     "asks",
-    "atheist",
     "authoritarian",
     "authority",
     "away",
@@ -208177,6 +208181,7 @@
     "consider",
     "corrected",
     "dark",
+    "devout",
     "dostoevsky",
     "during",
     "earth",
@@ -208219,7 +208224,6 @@
     "parable",
     "people",
     "philosophical",
-    "poet",
     "politely",
     "politics",
     "question",
@@ -208232,6 +208236,7 @@
     "short",
     "simply",
     "sits",
+    "skeptical",
     "someone",
     "spanish",
     "story",
@@ -208243,9 +208248,10 @@
     "uncomfortable",
     "walks",
     "want",
-    "written"
+    "written",
+    "younger"
    ],
-   "template_sig": "W W ' s W W \" the W W \" W a W W W W the W W W W W . a W W W it to his W W on the W of a W . W W to W W the W W — and is W W by the W W , who W , W and W , why he must be W . W , the W W , W W W . W do not W the W W of W between W and W , he W . they W W , W , W — W to W the W for them . the W , he W , has W W W ' s W of W W W . W W W W . at the W , he W W the W W on the W — and W W into the W . the W , W , W him W , but will not W his W . W ' s W W the W W W in W and W : do W W W W , or do they W to be W of it ? W W in W has W on the W W .",
+   "template_sig": "W W ' s W W \" the W W \" W a W W W W the W W W W W . the W W W it to his W W W on the W of a W . W W to W W the W W — and is W W by the W W , who W , W and W , why he must be W . W , the W W , W W W . W do not W the W W of W between W and W , he W . they W W , W , W — W to W the W for them . the W , he W , has W W W ' s W of W W W . W W W W . at the W , he W W the W W on the W — and W W into the W . the W , W , W him W , but will not W his W . W ' s W W the W W W in W and W : do W W W W , or do they W to be W of it ? W W in W has W on the W W .",
    "tags": [
     "story"
    ],
@@ -210468,10 +210474,10 @@
   {
    "id": "hl-s-001",
    "kind": "story",
-   "en": "Daw Mya sells mangoes at the morning market. Her mangoes are sweet and cheap. One morning, a young tourist named Anna stops at her stall. She looks at her map and seems worried. She cannot find the old pagoda. Daw Mya laughs and shows Anna the way on the map. \"The pagoda is near the river. Walk ten minutes.\" She also teaches Anna to bargain with respect. \"Smile and ask for a lower price. Be polite, never angry.\" Anna buys two kilos of mangoes. She smiles and asks, \"A little cheaper, please?\" Daw Mya is very happy. She gives Anna one extra mango for free. Anna finds the pagoda easily. The mangoes are sweet. She will never forget the kind mango seller.",
-   "en_norm": "daw mya sells mangoes at the morning market her mangoes are sweet and cheap one morning a young tourist named anna stops at her stall she looks at her map and seems worried she cannot find the old pagoda daw mya laughs and shows anna the way on the map the pagoda is near the river walk ten minutes she also teaches anna to bargain with respect smile and ask for a lower price be polite never angry anna buys two kilos of mangoes she smiles and asks a little cheaper please daw mya is very happy she gives anna one extra mango for free anna finds the pagoda easily the mangoes are sweet she will never forget the kind mango seller",
+   "en": "Daw Mya sells mangoes at the morning market. Her mangoes are sweet and cheap. One morning, a young tourist named Anna stops at her stall. She looks at her map and seems worried. She cannot find the old pagoda. Daw Mya laughs and shows Anna the way on the map. \"The pagoda is near the river. Walk for ten minutes.\" She also teaches Anna to bargain with respect. \"Smile and ask for a lower price. Be polite, never angry.\" Anna buys two kilos of mangoes. She smiles and asks, \"A little cheaper, please?\" Daw Mya is very happy. She gives Anna one extra mango for free. Anna finds the pagoda easily. The mangoes are sweet. She will never forget the kind mango seller.",
+   "en_norm": "daw mya sells mangoes at the morning market her mangoes are sweet and cheap one morning a young tourist named anna stops at her stall she looks at her map and seems worried she cannot find the old pagoda daw mya laughs and shows anna the way on the map the pagoda is near the river walk for ten minutes she also teaches anna to bargain with respect smile and ask for a lower price be polite never angry anna buys two kilos of mangoes she smiles and asks a little cheaper please daw mya is very happy she gives anna one extra mango for free anna finds the pagoda easily the mangoes are sweet she will never forget the kind mango seller",
    "my_norm": "",
-   "fingerprint": "798ed74c82f68b52",
+   "fingerprint": "d01d238fa61c3fad",
    "vocab_sig": [
     "angry",
     "anna",
@@ -210530,7 +210536,7 @@
     "worried",
     "young"
    ],
-   "template_sig": "W W W W at the W W . her W are W and W . one W , a W W W W W at her W . she W at her W and W W . she W W the W W . W W W and W W the W on the W . \" the W is W the W . W W W . \" she also W W to W with W . \" W and W for a W W . be W , W W . \" W W two W of W . she W and W , \" a W W , please ? \" W W is very W . she W W one W W for W . W W the W W . the W are W . she will W W the W W W .",
+   "template_sig": "W W W W at the W W . her W are W and W . one W , a W W W W W at her W . she W at her W and W W . she W W the W W . W W W and W W the W on the W . \" the W is W the W . W for W W . \" she also W W to W with W . \" W and W for a W W . be W , W W . \" W W two W of W . she W and W , \" a W W , please ? \" W W is very W . she W W one W W for W . W W the W W . the W are W . she will W W the W W W .",
    "tags": [
     "story"
    ],
@@ -210540,10 +210546,10 @@
   {
    "id": "hl-s-002",
    "kind": "story",
-   "en": "U Kyaw drives a blue tuk-tuk in the city. He works hard every day. One afternoon, a passenger named Tom takes his tuk-tuk to the restaurant street. Tom is in a big hurry. At the restaurant, Tom pays and runs inside quickly. Later, U Kyaw finds a brown wallet on the back seat. There is a lot of money inside. U Kyaw does not keep the wallet for himself. He drives back to the restaurant and returns it to Tom. Tom is very surprised and very thankful. \"Please eat with me!\" says Tom. They share a big bowl of hot mohinga together. U Kyaw smiles. Honesty always brings good friends.",
-   "en_norm": "u kyaw drives a blue tuk tuk in the city he works hard every day one afternoon a passenger named tom takes his tuk tuk to the restaurant street tom is in a big hurry at the restaurant tom pays and runs inside quickly later u kyaw finds a brown wallet on the back seat there is a lot of money inside u kyaw does not keep the wallet for himself he drives back to the restaurant and returns it to tom tom is very surprised and very thankful please eat with me says tom they share a big bowl of hot mohinga together u kyaw smiles honesty always brings good friends",
+   "en": "U Kyaw drives a blue tuk-tuk in the city. He works hard every day. One afternoon, a passenger named Tom takes U Kyaw's tuk-tuk to the restaurant street. Tom is in a big hurry. At the restaurant, Tom pays and runs inside quickly. Later, U Kyaw finds a brown wallet on the back seat. There is a lot of money inside. U Kyaw does not keep the wallet for himself. He drives back to the restaurant and returns it to Tom. Tom is very surprised and very thankful. \"Please eat with me!\" says Tom. They share a big bowl of hot mohinga together. U Kyaw smiles. Honesty always brings good friends.",
+   "en_norm": "u kyaw drives a blue tuk tuk in the city he works hard every day one afternoon a passenger named tom takes u kyaw s tuk tuk to the restaurant street tom is in a big hurry at the restaurant tom pays and runs inside quickly later u kyaw finds a brown wallet on the back seat there is a lot of money inside u kyaw does not keep the wallet for himself he drives back to the restaurant and returns it to tom tom is very surprised and very thankful please eat with me says tom they share a big bowl of hot mohinga together u kyaw smiles honesty always brings good friends",
    "my_norm": "",
-   "fingerprint": "7a807ff9590a0781",
+   "fingerprint": "d9eecb5d299e5252",
    "vocab_sig": [
     "afternoon",
     "always",
@@ -210595,7 +210601,7 @@
     "wallet",
     "works"
    ],
-   "template_sig": "W W W a W W - W in the W . he W W W W . one W , a W W W W his W - W to the W W . W is in a W W . at the W , W W and W W W . W , W W W a W W on the W W . there is a W of W W . W W does not W the W for W . he W W to the W and W it to W . W is very W and very W . \" please W with me ! \" W W . they W a W W of W W W . W W W . W W W W W .",
+   "template_sig": "W W W a W W - W in the W . he W W W W . one W , a W W W W W W ' s W - W to the W W . W is in a W W . at the W , W W and W W W . W , W W W a W W on the W W . there is a W of W W . W W does not W the W for W . he W W to the W and W it to W . W is very W and very W . \" please W with me ! \" W W . they W a W W of W W W . W W W . W W W W W .",
    "tags": [
     "story"
    ],
@@ -210681,10 +210687,10 @@
   {
    "id": "hl-s-004",
    "kind": "story",
-   "en": "Tom arrives in Mandalay for a short holiday. He checks into a small hotel near the palace. In his room, he opens his bag to find his passport. It is not there! He searches everywhere, but the passport is gone. Tom runs down to the reception desk. The receptionist, Ma Ei, listens calmly because she has helped many travelers before. \"First, let's call the police,\" says Ma Ei. She calls the tourist police and explains everything in Burmese. An hour later, the phone rings. A taxi driver found the passport in his car and brought it to the police station! Tom gets his passport back. He thanks Ma Ei again and again. When you are in trouble in a new country, kind people are everywhere.",
-   "en_norm": "tom arrives in mandalay for a short holiday he checks into a small hotel near the palace in his room he opens his bag to find his passport it is not there he searches everywhere but the passport is gone tom runs down to the reception desk the receptionist ma ei listens calmly because she has helped many travelers before first let s call the police says ma ei she calls the tourist police and explains everything in burmese an hour later the phone rings a taxi driver found the passport in his car and brought it to the police station tom gets his passport back he thanks ma ei again and again when you are in trouble in a new country kind people are everywhere",
+   "en": "Tom arrives in Mandalay for a short holiday. He checks into a small hotel near the palace. In his room, he opens his bag to find his passport. It is not there! He searches everywhere, but the passport is gone. Tom runs down to the reception desk. The receptionist, Ma Ei, calmly listens because she has helped many travelers before. \"First, let's call the police,\" says Ma Ei. She calls the tourist police and explains everything in Burmese. An hour later, the phone rings. A taxi driver found the passport in his car and brought it to the police station! Tom gets his passport back. He thanks Ma Ei again and again. When you are in trouble in a new country, kind people are everywhere.",
+   "en_norm": "tom arrives in mandalay for a short holiday he checks into a small hotel near the palace in his room he opens his bag to find his passport it is not there he searches everywhere but the passport is gone tom runs down to the reception desk the receptionist ma ei calmly listens because she has helped many travelers before first let s call the police says ma ei she calls the tourist police and explains everything in burmese an hour later the phone rings a taxi driver found the passport in his car and brought it to the police station tom gets his passport back he thanks ma ei again and again when you are in trouble in a new country kind people are everywhere",
    "my_norm": "",
-   "fingerprint": "81cf7e2a1c47a149",
+   "fingerprint": "4e30e8c50d63b3ad",
    "vocab_sig": [
     "again",
     "arrives",
@@ -461945,7 +461951,7 @@
    "kind": "word",
    "en": "Fermi paradox",
    "en_norm": "fermi paradox",
-   "my_norm": "ဖာမီဆန့်ကျင်ဘက်",
+   "my_norm": "ဖာမီဝိရောဓိ",
    "th_norm": "ข้อขัดแย้งของแฟร์มี",
    "fingerprint": "759d9bac01d24a23",
    "vocab_sig": [
@@ -463358,7 +463364,7 @@
    "kind": "word",
    "en": "model quantization",
    "en_norm": "model quantization",
-   "my_norm": "မော်ဒယ်အရေအတွက်လျှော့ချမှု",
+   "my_norm": "မော်ဒယ်တိကျမှုလျှော့ချမှု",
    "th_norm": "การควอนไทซ์โมเดล",
    "fingerprint": "84240d08db3c1918",
    "vocab_sig": [
@@ -471418,18 +471424,18 @@
   {
    "id": "example:frontier-science:angstrom-class-node",
    "kind": "example",
-   "en": "An angstrom-class node packs transistors measured in billionths of a meter.",
-   "en_norm": "an angstrom class node packs transistors measured in billionths of a meter",
+   "en": "An angstrom-class node packs transistors measured in tenths of a nanometer.",
+   "en_norm": "an angstrom class node packs transistors measured in tenths of a nanometer",
    "my_norm": "",
-   "fingerprint": "85772794b1395261",
+   "fingerprint": "f5e12e8605da4ac0",
    "vocab_sig": [
     "angstrom",
-    "billionths",
     "class",
     "measured",
-    "meter",
+    "nanometer",
     "node",
     "packs",
+    "tenths",
     "transistors"
    ],
    "template_sig": "an W - W W W W W in W of a W .",
@@ -472142,24 +472148,25 @@
   {
    "id": "example:frontier-science:lattice-based-cryptography",
    "kind": "example",
-   "en": "Lattice-based cryptography hides secrets in math problems quantum computers cannot crack.",
-   "en_norm": "lattice based cryptography hides secrets in math problems quantum computers cannot crack",
+   "en": "Lattice-based cryptography hides secrets in math problems even quantum computers struggle to crack.",
+   "en_norm": "lattice based cryptography hides secrets in math problems even quantum computers struggle to crack",
    "my_norm": "",
-   "fingerprint": "3b7c8315ed9d73d6",
+   "fingerprint": "83e003c1e51c4c2b",
    "vocab_sig": [
     "based",
-    "cannot",
     "computers",
     "crack",
     "cryptography",
+    "even",
     "hides",
     "lattice",
     "math",
     "problems",
     "quantum",
-    "secrets"
+    "secrets",
+    "struggle"
    ],
-   "template_sig": "W - W W W W in W W W W W W .",
+   "template_sig": "W - W W W W in W W W W W W to W .",
    "tags": [
     "frontier-science",
     "example"
@@ -474608,7 +474615,7 @@
    "kind": "word",
    "en": "speech neuroprosthesis",
    "en_norm": "speech neuroprosthesis",
-   "my_norm": "အသံထွက်နျူရိုခြေတု",
+   "my_norm": "အသံထွက်နျူရိုအစားထိုးကိရိယာ",
    "th_norm": "นิวโรพรอสเทติกการพูด",
    "fingerprint": "ed292aef10b95ca2",
    "vocab_sig": [
@@ -475346,7 +475353,7 @@
    "kind": "word",
    "en": "antisense oligonucleotide",
    "en_norm": "antisense oligonucleotide",
-   "my_norm": "ဆန့်ကျင်အဓိပ္ပာယ်အိုလီဂို",
+   "my_norm": "ဆန့်ကျင်ဘက်အိုလီဂို",
    "th_norm": "โอลิโกนิวคลีโอไทด์แอนติเซนส์",
    "fingerprint": "6e06383b591a2c1b",
    "vocab_sig": [
@@ -475805,7 +475812,7 @@
    "kind": "word",
    "en": "microphysiological system",
    "en_norm": "microphysiological system",
-   "my_norm": "အဏုဇီဝရူပစနစ်",
+   "my_norm": "အဏုဇီဝကမ္မစနစ်",
    "th_norm": "ระบบไมโครฟิสิโอโลยี",
    "fingerprint": "a6f4a70f26094928",
    "vocab_sig": [
@@ -479204,16 +479211,15 @@
   {
    "id": "example:frontier-science:hydrothermal-liquefaction",
    "kind": "example",
-   "en": "Hydrothermal liquefaction turns wet waste like sewage into crude oil using hot pressurized water.",
-   "en_norm": "hydrothermal liquefaction turns wet waste like sewage into crude oil using hot pressurized water",
+   "en": "Hydrothermal liquefaction turns wet waste like sewage into biocrude using hot pressurized water.",
+   "en_norm": "hydrothermal liquefaction turns wet waste like sewage into biocrude using hot pressurized water",
    "my_norm": "",
-   "fingerprint": "9c9fc2ef81a84f7a",
+   "fingerprint": "5b1bccb8c87a791b",
    "vocab_sig": [
-    "crude",
+    "biocrude",
     "hot",
     "hydrothermal",
     "liquefaction",
-    "oil",
     "pressurized",
     "sewage",
     "turns",
@@ -479222,7 +479228,7 @@
     "water",
     "wet"
    ],
-   "template_sig": "W W W W W like W into W W W W W W .",
+   "template_sig": "W W W W W like W into W W W W W .",
    "tags": [
     "frontier-science",
     "example"
@@ -479486,22 +479492,24 @@
   {
    "id": "example:frontier-science:capacity-factor",
    "kind": "example",
-   "en": "Capacity factor shows what share of the time a power plant actually produces.",
-   "en_norm": "capacity factor shows what share of the time a power plant actually produces",
+   "en": "Capacity factor shows what share of its maximum possible output a power plant actually produces.",
+   "en_norm": "capacity factor shows what share of its maximum possible output a power plant actually produces",
    "my_norm": "",
-   "fingerprint": "712bb81644f43eab",
+   "fingerprint": "8f680739704ec068",
    "vocab_sig": [
     "actually",
     "capacity",
     "factor",
+    "maximum",
+    "output",
     "plant",
+    "possible",
     "power",
     "produces",
     "share",
-    "shows",
-    "time"
+    "shows"
    ],
-   "template_sig": "W W W what W of the W a W W W W .",
+   "template_sig": "W W W what W of its W W W a W W W W .",
    "tags": [
     "frontier-science",
     "example"
@@ -479652,7 +479660,7 @@
    "kind": "word",
    "en": "synthetic inertia",
    "en_norm": "synthetic inertia",
-   "my_norm": "ဓာတုငြိမ်သက်အာနိသင်",
+   "my_norm": "အတုငြိမ်သက်အာနိသင်",
    "th_norm": "ความเฉื่อยสังเคราะห์",
    "fingerprint": "86557eeec76e54c7",
    "vocab_sig": [
@@ -481875,7 +481883,7 @@
    "kind": "word",
    "en": "synthetic cell",
    "en_norm": "synthetic cell",
-   "my_norm": "ဓာတုဆဲလ်",
+   "my_norm": "အတုဆဲလ်",
    "th_norm": "เซลล์สังเคราะห์",
    "fingerprint": "47f65301e0d8d9d0",
    "vocab_sig": [
@@ -482095,7 +482103,7 @@
    "kind": "word",
    "en": "DNA walker",
    "en_norm": "dna walker",
-   "my_norm": "ဒီအန်အေလမ်းလျှောက်သူ",
+   "my_norm": "ဒီအန်အေလမ်းလျှောက်စက်",
    "th_norm": "ดีเอ็นเอวอล์กเกอร์",
    "fingerprint": "122909a2f908d4fe",
    "vocab_sig": [
@@ -488784,18 +488792,19 @@
   {
    "id": "example:rhetoric:anacoluthon",
    "kind": "example",
-   "en": "His excited anacoluthon left the sentence unfinished.",
-   "en_norm": "his excited anacoluthon left the sentence unfinished",
+   "en": "His excitement broke the sentence off midway, a clear anacoluthon.",
+   "en_norm": "his excitement broke the sentence off midway a clear anacoluthon",
    "my_norm": "",
-   "fingerprint": "5d82726b32b67ccf",
+   "fingerprint": "abbf8bef6f5cc030",
    "vocab_sig": [
     "anacoluthon",
-    "excited",
-    "left",
-    "sentence",
-    "unfinished"
+    "broke",
+    "clear",
+    "excitement",
+    "midway",
+    "sentence"
    ],
-   "template_sig": "his W W W the W W .",
+   "template_sig": "his W W the W off W , a W W .",
    "tags": [
     "rhetoric",
     "example"
@@ -489030,19 +489039,19 @@
   {
    "id": "example:rhetoric:tmesis",
    "kind": "example",
-   "en": "Abso-bloody-lutely is a tmesis that splits a word in two.",
-   "en_norm": "abso bloody lutely is a tmesis that splits a word in two",
+   "en": "'A whole nother day' is a tmesis that splits 'another' in two.",
+   "en_norm": "a whole nother day is a tmesis that splits another in two",
    "my_norm": "",
-   "fingerprint": "647a159c5cf6eede",
+   "fingerprint": "c7cdadf091ec29d4",
    "vocab_sig": [
-    "abso",
-    "bloody",
-    "lutely",
+    "another",
+    "day",
+    "nother",
     "splits",
     "tmesis",
-    "word"
+    "whole"
    ],
-   "template_sig": "W - W - W is a W that W a W in two .",
+   "template_sig": "' a W W W ' is a W that W ' W ' in two .",
    "tags": [
     "rhetoric",
     "example"
@@ -489957,7 +489966,7 @@
    "kind": "word",
    "en": "bathos",
    "en_norm": "bathos",
-   "my_norm": "ရုတ်တရက်နိမ့်ကျသွားမှု",
+   "my_norm": "စိတ်ခံစားမှုရုတ်တရက်နိမ့်ကျသွားမှု",
    "th_norm": "บาทอส",
    "fingerprint": "d6e3f92fb1253367",
    "vocab_sig": [
@@ -489974,10 +489983,10 @@
   {
    "id": "example:rhetoric:bathos",
    "kind": "example",
-   "en": "The hero died saving the city, then the poem praised his socks is bathos.",
-   "en_norm": "the hero died saving the city then the poem praised his socks is bathos",
+   "en": "The hero died saving the city, then the poem praised his socks — that is bathos.",
+   "en_norm": "the hero died saving the city then the poem praised his socks that is bathos",
    "my_norm": "",
-   "fingerprint": "3403d9d688e60a03",
+   "fingerprint": "85f15309c719b40e",
    "vocab_sig": [
     "bathos",
     "city",
@@ -489989,7 +489998,7 @@
     "socks",
     "then"
    ],
-   "template_sig": "the W W W the W , W the W W his W is W .",
+   "template_sig": "the W W W the W , W the W W his W — that is W .",
    "tags": [
     "rhetoric",
     "example"
@@ -490042,7 +490051,7 @@
    "kind": "word",
    "en": "verbal irony",
    "en_norm": "verbal irony",
-   "my_norm": "စကားဖြင့်သရော်မှု",
+   "my_norm": "ဆိုလိုရင်းနှင့်ဆန့်ကျင်ဘက်ပြောဆိုမှု",
    "th_norm": "การประชดด้วยวาจา",
    "fingerprint": "dc33116d16a5e9b2",
    "vocab_sig": [
@@ -490060,7 +490069,7 @@
   {
    "id": "example:rhetoric:verbal-irony",
    "kind": "example",
-   "en": "Saying lovely weather during a storm is verbal irony.",
+   "en": "Saying \"lovely weather\" during a storm is verbal irony.",
    "en_norm": "saying lovely weather during a storm is verbal irony",
    "my_norm": "",
    "fingerprint": "94baae3ee1f6a1c7",
@@ -490073,7 +490082,7 @@
     "verbal",
     "weather"
    ],
-   "template_sig": "W W W W a W is W W .",
+   "template_sig": "W \" W W \" W a W is W W .",
    "tags": [
     "rhetoric",
     "example"
@@ -490104,10 +490113,10 @@
   {
    "id": "example:rhetoric:dramatic-irony",
    "kind": "example",
-   "en": "We know the killer is behind the door, but she does not is dramatic irony.",
-   "en_norm": "we know the killer is behind the door but she does not is dramatic irony",
+   "en": "We know the killer is behind the door, but she does not know — that is dramatic irony.",
+   "en_norm": "we know the killer is behind the door but she does not know that is dramatic irony",
    "my_norm": "",
-   "fingerprint": "6a8f8c3ba030dfcd",
+   "fingerprint": "1d65ad80d0ddd845",
    "vocab_sig": [
     "behind",
     "door",
@@ -490116,7 +490125,7 @@
     "killer",
     "know"
    ],
-   "template_sig": "we W the W is W the W , but she does not is W W .",
+   "template_sig": "we W the W is W the W , but she does not W — that is W W .",
    "tags": [
     "rhetoric",
     "example"
@@ -490129,7 +490138,7 @@
    "kind": "word",
    "en": "situational irony",
    "en_norm": "situational irony",
-   "my_norm": "အခြေအနေသရော်မှု",
+   "my_norm": "မျှော်မှန်းချက်နှင့်ဆန့်ကျင်သောအခြေအနေဖြစ်ပေါ်မှု",
    "th_norm": "การประชดเชิงสถานการณ์",
    "fingerprint": "b29a1f43a1197c83",
    "vocab_sig": [
@@ -490171,7 +490180,7 @@
    "kind": "word",
    "en": "grandiloquence",
    "en_norm": "grandiloquence",
-   "my_norm": "ကြွားဝါသောစကားပြောဆိုမှု",
+   "my_norm": "ဟိတ်ဟန်ကြီးမားသောစကားပြောဆိုမှု",
    "th_norm": "การพูดโอ้อวด",
    "fingerprint": "793cda146a4461cd",
    "vocab_sig": [
@@ -490274,17 +490283,18 @@
   {
    "id": "example:rhetoric:sardonic",
    "kind": "example",
-   "en": "He gave a sardonic smile at the flattery.",
-   "en_norm": "he gave a sardonic smile at the flattery",
+   "en": "He gave a sardonic smile in response to the flattery.",
+   "en_norm": "he gave a sardonic smile in response to the flattery",
    "my_norm": "",
-   "fingerprint": "5a497eedfb2a211a",
+   "fingerprint": "9da5b5e026d1125d",
    "vocab_sig": [
     "flattery",
     "gave",
+    "response",
     "sardonic",
     "smile"
    ],
-   "template_sig": "he W a W W at the W .",
+   "template_sig": "he W a W W in W to the W .",
    "tags": [
     "rhetoric",
     "example"
@@ -490378,7 +490388,7 @@
    "kind": "word",
    "en": "mordant",
    "en_norm": "mordant",
-   "my_norm": "ကိုက်ခဲထိမိသော",
+   "my_norm": "ထိမိစူးရှသော",
    "th_norm": "กัดกร่อน",
    "fingerprint": "2ea0ad14436e3af4",
    "vocab_sig": [
@@ -490580,7 +490590,7 @@
    "kind": "word",
    "en": "barbed",
    "en_norm": "barbed",
-   "my_norm": "ဆူးပါသောထိမိချက်",
+   "my_norm": "ဆူးပါသောမှတ်ချက်",
    "th_norm": "เหน็บแนม",
    "fingerprint": "c8216fb6bd3a7861",
    "vocab_sig": [
@@ -490867,7 +490877,7 @@
    "kind": "word",
    "en": "ignominy",
    "en_norm": "ignominy",
-   "my_norm": "အရှက်ရဖွယ်အဖြစ်ဆိုး",
+   "my_norm": "အရှက်တကွဲဖြစ်ရမှု",
    "th_norm": "ความอัปยศ",
    "fingerprint": "5949265945469b51",
    "vocab_sig": [
@@ -491126,7 +491136,7 @@
   {
    "id": "example:rhetoric:polyptoton",
    "kind": "example",
-   "en": "Judge not, that ye be not judged is polyptoton.",
+   "en": "\"Judge not, that ye be not judged\" is polyptoton.",
    "en_norm": "judge not that ye be not judged is polyptoton",
    "my_norm": "",
    "fingerprint": "df3b001860fff3d2",
@@ -491136,7 +491146,7 @@
     "polyptoton",
     "ye"
    ],
-   "template_sig": "W not , that W be not W is W .",
+   "template_sig": "\" W not , that W be not W \" is W .",
    "tags": [
     "rhetoric",
     "example"
@@ -491166,7 +491176,7 @@
   {
    "id": "example:rhetoric:antanaclasis",
    "kind": "example",
-   "en": "Time flies like an arrow, fruit flies like a banana is antanaclasis.",
+   "en": "\"Time flies like an arrow; fruit flies like a banana\" is antanaclasis.",
    "en_norm": "time flies like an arrow fruit flies like a banana is antanaclasis",
    "my_norm": "",
    "fingerprint": "7984dc09dee7d29d",
@@ -491178,7 +491188,7 @@
     "fruit",
     "time"
    ],
-   "template_sig": "W W like an W , W W like a W is W .",
+   "template_sig": "\" W W like an W ; W W like a W \" is W .",
    "tags": [
     "rhetoric",
     "example"
@@ -491372,7 +491382,7 @@
   {
    "id": "example:rhetoric:epiplexis",
    "kind": "example",
-   "en": "Have you no shame is epiplexis, not a request for information.",
+   "en": "\"Have you no shame?\" is epiplexis, not a request for information.",
    "en_norm": "have you no shame is epiplexis not a request for information",
    "my_norm": "",
    "fingerprint": "6ae185964e945020",
@@ -491382,7 +491392,7 @@
     "request",
     "shame"
    ],
-   "template_sig": "have you no W is W , not a W for W .",
+   "template_sig": "\" have you no W ? \" is W , not a W for W .",
    "tags": [
     "rhetoric",
     "example"
@@ -491452,7 +491462,7 @@
   {
    "id": "example:rhetoric:optatio",
    "kind": "example",
-   "en": "Would that I had studied harder is optatio.",
+   "en": "\"Would that I had studied harder\" is optatio.",
    "en_norm": "would that i had studied harder is optatio",
    "my_norm": "",
    "fingerprint": "0ddbaeb90d0fb66d",
@@ -491461,7 +491471,7 @@
     "optatio",
     "studied"
    ],
-   "template_sig": "would that i had W W is W .",
+   "template_sig": "\" would that i had W W \" is W .",
    "tags": [
     "rhetoric",
     "example"
@@ -491491,7 +491501,7 @@
   {
    "id": "example:rhetoric:correctio",
    "kind": "example",
-   "en": "He is my friend, no, my brother shows correctio.",
+   "en": "\"He is my friend — no, my brother\" shows correctio.",
    "en_norm": "he is my friend no my brother shows correctio",
    "my_norm": "",
    "fingerprint": "5de65f7b446b3a42",
@@ -491501,7 +491511,7 @@
     "friend",
     "shows"
    ],
-   "template_sig": "he is my W , no , my W W W .",
+   "template_sig": "\" he is my W — no , my W \" W W .",
    "tags": [
     "rhetoric",
     "example"
@@ -491531,7 +491541,7 @@
   {
    "id": "example:rhetoric:epanorthosis",
    "kind": "example",
-   "en": "Thousands, no, millions attended is epanorthosis.",
+   "en": "\"Thousands — no, millions — attended\" is epanorthosis.",
    "en_norm": "thousands no millions attended is epanorthosis",
    "my_norm": "",
    "fingerprint": "c1f7be450ce82508",
@@ -491541,7 +491551,7 @@
     "millions",
     "thousands"
    ],
-   "template_sig": "W , no , W W is W .",
+   "template_sig": "\" W — no , W — W \" is W .",
    "tags": [
     "rhetoric",
     "example"
@@ -491928,7 +491938,7 @@
    "kind": "word",
    "en": "forensic",
    "en_norm": "forensic",
-   "my_norm": "စုံစမ်းစစ်ဆေးခွဲခြမ်းစိတ်ဖြာနိုင်သော",
+   "my_norm": "တရားစီရင်ရေးဆိုင်ရာ အသေးစိတ်ခွဲခြမ်းစိတ်ဖြာသော",
    "th_norm": "นิติวาทศิลป์",
    "fingerprint": "59827482d3334dd5",
    "vocab_sig": [
@@ -492238,7 +492248,7 @@
   {
    "id": "example:rhetoric:enthymeme",
    "kind": "example",
-   "en": "We cannot trust him, for he lied before is an enthymeme.",
+   "en": "\"We cannot trust him, for he lied before\" is an enthymeme.",
    "en_norm": "we cannot trust him for he lied before is an enthymeme",
    "my_norm": "",
    "fingerprint": "f5be92a6e5f8c502",
@@ -492248,7 +492258,7 @@
     "lied",
     "trust"
    ],
-   "template_sig": "we W W him , for he W before is an W .",
+   "template_sig": "\" we W W him , for he W before \" is an W .",
    "tags": [
     "rhetoric",
     "example"
@@ -492480,17 +492490,17 @@
   {
    "id": "example:rhetoric:disproof",
    "kind": "example",
-   "en": "One counterexample is enough for disproof of the claim.",
-   "en_norm": "one counterexample is enough for disproof of the claim",
+   "en": "One counterexample is enough for the disproof of the claim.",
+   "en_norm": "one counterexample is enough for the disproof of the claim",
    "my_norm": "",
-   "fingerprint": "ff74792ac6cfa218",
+   "fingerprint": "91ee5747cd5f1062",
    "vocab_sig": [
     "claim",
     "counterexample",
     "disproof",
     "enough"
    ],
-   "template_sig": "one W is W for W of the W .",
+   "template_sig": "one W is W for the W of the W .",
    "tags": [
     "rhetoric",
     "example"
@@ -492770,7 +492780,7 @@
   {
    "id": "example:rhetoric:ad-baculum",
    "kind": "example",
-   "en": "Agree, or you are fired is pure ad baculum.",
+   "en": "\"Agree, or you are fired\" is pure ad baculum.",
    "en_norm": "agree or you are fired is pure ad baculum",
    "my_norm": "",
    "fingerprint": "d801e0f8b51502e5",
@@ -492781,7 +492791,7 @@
     "fired",
     "pure"
    ],
-   "template_sig": "W , or you are W is W W W .",
+   "template_sig": "\" W , or you are W \" is W W W .",
    "tags": [
     "rhetoric",
     "example"
@@ -492855,7 +492865,7 @@
   {
    "id": "example:rhetoric:ad-ignorantiam",
    "kind": "example",
-   "en": "No one has disproved it, so it must be true is ad ignorantiam.",
+   "en": "\"No one has disproved it, so it must be true\" is ad ignorantiam.",
    "en_norm": "no one has disproved it so it must be true is ad ignorantiam",
    "my_norm": "",
    "fingerprint": "074d1462ce248931",
@@ -492865,7 +492875,7 @@
     "ignorantiam",
     "true"
    ],
-   "template_sig": "no one has W it , so it must be W is W W .",
+   "template_sig": "\" no one has W it , so it must be W \" is W W .",
    "tags": [
     "rhetoric",
     "example"
@@ -492896,7 +492906,7 @@
   {
    "id": "example:rhetoric:petitio-principii",
    "kind": "example",
-   "en": "This law is just because it is the law is petitio principii.",
+   "en": "\"This law is just because it is the law\" is petitio principii.",
    "en_norm": "this law is just because it is the law is petitio principii",
    "my_norm": "",
    "fingerprint": "d03a2606a6b73697",
@@ -492906,7 +492916,7 @@
     "petitio",
     "principii"
    ],
-   "template_sig": "this W is just W it is the W is W W .",
+   "template_sig": "\" this W is just W it is the W \" is W W .",
    "tags": [
     "rhetoric",
     "example"
@@ -492981,7 +492991,7 @@
   {
    "id": "example:rhetoric:non-sequitur",
    "kind": "example",
-   "en": "He is rich, so he must be happy is a non sequitur.",
+   "en": "\"He is rich, so he must be happy\" is a non sequitur.",
    "en_norm": "he is rich so he must be happy is a non sequitur",
    "my_norm": "",
    "fingerprint": "7dc3e40b1562d3c5",
@@ -492991,7 +493001,7 @@
     "rich",
     "sequitur"
    ],
-   "template_sig": "he is W , so he must be W is a W W .",
+   "template_sig": "\" he is W , so he must be W \" is a W W .",
    "tags": [
     "rhetoric",
     "example"
@@ -493067,7 +493077,7 @@
   {
    "id": "example:rhetoric:secundum-quid",
    "kind": "example",
-   "en": "Exercise is good, so run a marathon today is secundum quid.",
+   "en": "\"Exercise is good, so run a marathon today\" is secundum quid.",
    "en_norm": "exercise is good so run a marathon today is secundum quid",
    "my_norm": "",
    "fingerprint": "d6d079727636f36d",
@@ -493080,7 +493090,7 @@
     "secundum",
     "today"
    ],
-   "template_sig": "W is W , so W a W W is W W .",
+   "template_sig": "\" W is W , so W a W W \" is W W .",
    "tags": [
     "rhetoric",
     "example"
@@ -493239,7 +493249,7 @@
   {
    "id": "example:rhetoric:shifting-the-burden",
    "kind": "example",
-   "en": "Prove me wrong is shifting the burden of proof.",
+   "en": "\"Prove me wrong\" is shifting the burden of proof.",
    "en_norm": "prove me wrong is shifting the burden of proof",
    "my_norm": "",
    "fingerprint": "54910c17274ef5ea",
@@ -493250,7 +493260,7 @@
     "shifting",
     "wrong"
    ],
-   "template_sig": "W me W is W the W of W .",
+   "template_sig": "\" W me W \" is W the W of W .",
    "tags": [
     "rhetoric",
     "example"
@@ -493281,7 +493291,7 @@
   {
    "id": "example:rhetoric:argument-from-silence",
    "kind": "example",
-   "en": "He never denied it, so it must be true is an argument from silence.",
+   "en": "\"He never denied it, so it must be true\" is an argument from silence.",
    "en_norm": "he never denied it so it must be true is an argument from silence",
    "my_norm": "",
    "fingerprint": "31cf7a7dae4c57ef",
@@ -493292,7 +493302,7 @@
     "silence",
     "true"
    ],
-   "template_sig": "he W W it , so it must be W is an W from W .",
+   "template_sig": "\" he W W it , so it must be W \" is an W from W .",
    "tags": [
     "rhetoric",
     "example"
@@ -493323,7 +493333,7 @@
   {
    "id": "example:rhetoric:moralistic-fallacy",
    "kind": "example",
-   "en": "War is wrong, so humans must be naturally peaceful is the moralistic fallacy.",
+   "en": "\"War is wrong, so humans must be naturally peaceful\" is the moralistic fallacy.",
    "en_norm": "war is wrong so humans must be naturally peaceful is the moralistic fallacy",
    "my_norm": "",
    "fingerprint": "413dd5bf95ab83ff",
@@ -493336,7 +493346,7 @@
     "war",
     "wrong"
    ],
-   "template_sig": "W is W , so W must be W W is the W W .",
+   "template_sig": "\" W is W , so W must be W W \" is the W W .",
    "tags": [
     "rhetoric",
     "example"
@@ -493367,7 +493377,7 @@
   {
    "id": "example:rhetoric:naturalistic-fallacy",
    "kind": "example",
-   "en": "It is natural, therefore it is good commits the naturalistic fallacy.",
+   "en": "\"It is natural, therefore it is good\" commits the naturalistic fallacy.",
    "en_norm": "it is natural therefore it is good commits the naturalistic fallacy",
    "my_norm": "",
    "fingerprint": "281c4c5d49d7d94a",
@@ -493379,7 +493389,7 @@
     "naturalistic",
     "therefore"
    ],
-   "template_sig": "it is W , W it is W W the W W .",
+   "template_sig": "\" it is W , W it is W \" W the W W .",
    "tags": [
     "rhetoric",
     "example"
@@ -493453,21 +493463,22 @@
   {
    "id": "example:rhetoric:motte-and-bailey",
    "kind": "example",
-   "en": "He defended the bold claim, then retreated to a trivial one, a motte and bailey.",
-   "en_norm": "he defended the bold claim then retreated to a trivial one a motte and bailey",
+   "en": "He defended the bold claim, then retreated to a trivial one — a classic motte-and-bailey.",
+   "en_norm": "he defended the bold claim then retreated to a trivial one a classic motte and bailey",
    "my_norm": "",
-   "fingerprint": "528a7f80edd56a3b",
+   "fingerprint": "36dc8ec97323985e",
    "vocab_sig": [
     "bailey",
     "bold",
     "claim",
+    "classic",
     "defended",
     "motte",
     "retreated",
     "then",
     "trivial"
    ],
-   "template_sig": "he W the W W , W W to a W one , a W and W .",
+   "template_sig": "he W the W W , W W to a W one — a W W - and - W .",
    "tags": [
     "rhetoric",
     "example"
@@ -494156,7 +494167,7 @@
   {
    "id": "example:rhetoric:sophistry",
    "kind": "example",
-   "en": "Voters saw through the candidates sophistry.",
+   "en": "Voters saw through the candidates' sophistry.",
    "en_norm": "voters saw through the candidates sophistry",
    "my_norm": "",
    "fingerprint": "1d31d86dde121e2a",
@@ -494166,7 +494177,7 @@
     "sophistry",
     "voters"
    ],
-   "template_sig": "W W through the W W .",
+   "template_sig": "W W through the W ' W .",
    "tags": [
     "rhetoric",
     "example"
@@ -495142,18 +495153,19 @@
    "line": 254
   },
   {
-   "id": "word:rhetoric:trompe-loeil",
+   "id": "word:rhetoric:trompe-l-oeil",
    "kind": "word",
-   "en": "trompe-loeil",
-   "en_norm": "trompe loeil",
+   "en": "trompe l'oeil",
+   "en_norm": "trompe l oeil",
    "my_norm": "အမြင်လှည့်စားပန်းချီ",
    "th_norm": "ทรอมป์เลอย",
-   "fingerprint": "f1421aab645b55d3",
+   "fingerprint": "0a07ab19b17a7aab",
    "vocab_sig": [
-    "loeil",
+    "l",
+    "oeil",
     "trompe"
    ],
-   "template_sig": "W - W",
+   "template_sig": "W W ' W",
    "tags": [
     "rhetoric",
     "word"
@@ -495162,20 +495174,21 @@
    "line": 255
   },
   {
-   "id": "example:rhetoric:trompe-loeil",
+   "id": "example:rhetoric:trompe-l-oeil",
    "kind": "example",
-   "en": "The ceiling was painted with trompe-loeil clouds.",
-   "en_norm": "the ceiling was painted with trompe loeil clouds",
+   "en": "The ceiling was painted with trompe l'oeil clouds.",
+   "en_norm": "the ceiling was painted with trompe l oeil clouds",
    "my_norm": "",
-   "fingerprint": "b57b3b7a2f61d216",
+   "fingerprint": "eca867d7e297a250",
    "vocab_sig": [
     "ceiling",
     "clouds",
-    "loeil",
+    "l",
+    "oeil",
     "painted",
     "trompe"
    ],
-   "template_sig": "the W was W with W - W W .",
+   "template_sig": "the W was W with W W ' W W .",
    "tags": [
     "rhetoric",
     "example"
@@ -496026,7 +496039,7 @@
   {
    "id": "word:rhetoric:objet-trouve",
    "kind": "word",
-   "en": "objet trouve",
+   "en": "objet trouvé",
    "en_norm": "objet trouve",
    "my_norm": "တွေ့ရှိပစ္စည်းအနုပညာ",
    "th_norm": "ออบเจทรูเว",
@@ -496407,7 +496420,7 @@
    "kind": "word",
    "en": "art brut",
    "en_norm": "art brut",
-   "my_norm": "ရိုးရာအနုပညာသန့်စင်မှု",
+   "my_norm": "ကိုယ်တိုင်သင်အနုပညာရှင်တွေရဲ့ရိုးသားတဲ့အနုပညာ",
    "th_norm": "อาร์บรูต",
    "fingerprint": "de1f44935b425201",
    "vocab_sig": [
@@ -496701,7 +496714,7 @@
    "kind": "word",
    "en": "op-ed",
    "en_norm": "op ed",
-   "my_norm": "အယ်ဒီတာ့အာဘော်ဆန့်ကျင်ဘက်စာမျက်နှာ",
+   "my_norm": "ဧည့်သည်ရေးသားဆောင်းပါး အော့ပ် အက်ဒ်",
    "th_norm": "โอปเอ็ด",
    "fingerprint": "40e81b063f93754a",
    "vocab_sig": [
@@ -497844,18 +497857,18 @@
   {
    "id": "example:rhetoric:gatekeeping",
    "kind": "example",
-   "en": "Editors perform gatekeeping on every story.",
-   "en_norm": "editors perform gatekeeping on every story",
+   "en": "Editors act as gatekeepers for every story.",
+   "en_norm": "editors act as gatekeepers for every story",
    "my_norm": "",
-   "fingerprint": "b1a2304a0b064b26",
+   "fingerprint": "9a3811a926b6fa9c",
    "vocab_sig": [
+    "act",
     "editors",
     "every",
-    "gatekeeping",
-    "perform",
+    "gatekeepers",
     "story"
    ],
-   "template_sig": "W W W on W W .",
+   "template_sig": "W W as W for W W .",
    "tags": [
     "rhetoric",
     "example"
@@ -498041,7 +498054,7 @@
    "kind": "word",
    "en": "filter bubble",
    "en_norm": "filter bubble",
-   "my_norm": "စစ်ထုတ်ပူဖောင်း",
+   "my_norm": "ဖီလ်တာဘာဘယ် စစ်ထုတ်ပူဖောင်း",
    "th_norm": "ฟิลเตอร์บับเบิล",
    "fingerprint": "79090fc378f50d1a",
    "vocab_sig": [
@@ -498944,21 +498957,19 @@
   {
    "id": "example:rhetoric:below-the-fold",
    "kind": "example",
-   "en": "Good news rarely makes it above the fold, ending below the fold.",
-   "en_norm": "good news rarely makes it above the fold ending below the fold",
+   "en": "Good news usually ends up below the fold.",
+   "en_norm": "good news usually ends up below the fold",
    "my_norm": "",
-   "fingerprint": "e58a40574ba6cc8c",
+   "fingerprint": "f3101c39124cc157",
    "vocab_sig": [
-    "above",
     "below",
-    "ending",
+    "ends",
     "fold",
     "good",
-    "makes",
     "news",
-    "rarely"
+    "usually"
    ],
-   "template_sig": "W W W W it W the W , W W the W .",
+   "template_sig": "W W W W up W the W .",
    "tags": [
     "rhetoric",
     "example"
@@ -499466,7 +499477,7 @@
    "kind": "word",
    "en": "ratioed",
    "en_norm": "ratioed",
-   "my_norm": "တုံ့ပြန်မှုများစွာခံရမှု",
+   "my_norm": "အပျက်သဘောတုံ့ပြန်မှုအများအပြားခံရမှု",
    "th_norm": "เรโชด์",
    "fingerprint": "befbcf49512d2139",
    "vocab_sig": [
@@ -499675,7 +499686,7 @@
    "kind": "word",
    "en": "grandiloquent",
    "en_norm": "grandiloquent",
-   "my_norm": "ကြွားဝါသောစကားလုံးကြီးများ",
+   "my_norm": "ကြွားဝါပြီး စကားကြီးစကားကျယ်ပြောသော",
    "th_norm": "โอ้อวด",
    "fingerprint": "dcb62a5f773f0c8d",
    "vocab_sig": [
@@ -499715,7 +499726,7 @@
    "kind": "word",
    "en": "magniloquent",
    "en_norm": "magniloquent",
-   "my_norm": "ဂုဏ်ယူဝင့်ကြွားသောစကား",
+   "my_norm": "ဂုဏ်ယူဝင့်ကြွားပြီး ကြွားဝါသောစကားပြောဟန်",
    "th_norm": "โอ้อวด",
    "fingerprint": "e9e0890349892b60",
    "vocab_sig": [
@@ -501359,7 +501370,7 @@
    "kind": "word",
    "en": "acquiescence",
    "en_norm": "acquiescence",
-   "my_norm": "မတတ်သာလို့လက်ခံမှု",
+   "my_norm": "အငြင်းမပွားဘဲလက်ခံမှု",
    "th_norm": "การยอมรับ",
    "fingerprint": "157fa2e680bd34de",
    "vocab_sig": [
@@ -501480,7 +501491,7 @@
    "kind": "word",
    "en": "rhetorician",
    "en_norm": "rhetorician",
-   "my_norm": "စကားပြောပညာရှင်",
+   "my_norm": "စကားအတတ်ပညာရှင်",
    "th_norm": "นักวาทศาสตร์",
    "fingerprint": "0b27475a607d8907",
    "vocab_sig": [
@@ -502565,7 +502576,7 @@
   {
    "id": "example:rhetoric:management-speak",
    "kind": "example",
-   "en": "Let us circle back is classic management speak.",
+   "en": "\"Let us circle back\" is classic management speak.",
    "en_norm": "let us circle back is classic management speak",
    "my_norm": "",
    "fingerprint": "f9248385d328bd30",
@@ -502576,7 +502587,7 @@
     "management",
     "speak"
    ],
-   "template_sig": "let us W W is W W W .",
+   "template_sig": "\" let us W W \" is W W W .",
    "tags": [
     "rhetoric",
     "example"
@@ -503490,7 +503501,7 @@
    "kind": "word",
    "en": "witch hunt",
    "en_norm": "witch hunt",
-   "my_norm": "စုန်းမရှာဖွေမှုအလား",
+   "my_norm": "စုန်းမရှာဖွေမှု",
    "th_norm": "การล่าแม่มด",
    "fingerprint": "84602797c225326b",
    "vocab_sig": [
@@ -504682,7 +504693,7 @@
   {
    "id": "example:rhetoric:oscar-bait",
    "kind": "example",
-   "en": "Critics dismissed the drama as obvious oscar bait.",
+   "en": "Critics dismissed the drama as obvious Oscar bait.",
    "en_norm": "critics dismissed the drama as obvious oscar bait",
    "my_norm": "",
    "fingerprint": "cf8f3406f8cc0458",
@@ -504976,7 +504987,7 @@
   {
    "id": "example:rhetoric:audience-score",
    "kind": "example",
-   "en": "The audience score was far higher than the critics rating.",
+   "en": "The audience score was far higher than the critics' rating.",
    "en_norm": "the audience score was far higher than the critics rating",
    "my_norm": "",
    "fingerprint": "f9cd8a6008e23a74",
@@ -504989,7 +505000,7 @@
     "score",
     "than"
    ],
-   "template_sig": "the W W was W W W the W W .",
+   "template_sig": "the W W was W W W the W ' W .",
    "tags": [
     "rhetoric",
     "example"

@@ -38,6 +38,36 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 57,
+    slug: 'my-neighbors-2026-10-13',
+    titleMy: 'အပိုင်း ၅၇ — အိမ်နီးချင်းများ',
+    titleOrig: 'เพื่อนบ้าน — Neighbors',
+    descMy: 'အိမ်နီးချင်းများအကြောင်း ပြောဆိုခြင်း — "My neighbor is kind." / "They live next door." / "My neighbors are friendly." / "We help each other." / "Our neighbors are quiet."',
+    phrases: ['My neighbor is kind.', 'They live next door.', 'My neighbors are friendly.', 'We help each other.', 'Our neighbors are quiet.'],
+    durationSecs: 458,
+    cover: '/podcast-covers/ep-57.jpg',
+  },
+  {
+    n: 56,
+    slug: 'my-home-2026-10-12',
+    titleMy: 'အပိုင်း ၅၆ — ငါ့အိမ်',
+    titleOrig: 'บ้านของฉัน — My Home',
+    descMy: 'အိမ်အကြောင်းပြောခြင်း — \"My house is big.\" / \"There are three rooms.\" / \"My bedroom is small but clean.\" / \"The kitchen is next to the living room.\" / \"I like my home because it is cozy.\"',
+    phrases: ['My house is big.', 'There are three rooms.', 'My bedroom is small but clean.', 'The kitchen is next to the living room.', 'I like my home because it is cozy.'],
+    durationSecs: 466,
+    cover: '/podcast-covers/ep-56.jpg',
+  },
+  {
+    n: 55,
+    slug: 'housework-verbs-2026-10-12',
+    titleMy: 'အပိုင်း ၅၅ — အိမ်မှုကိစ္စများ',
+    titleOrig: 'งานบ้าน — Housework Verbs',
+    descMy: 'အိမ်မှုကိစ္စလုပ်ငန်းများ — \"I clean my room.\" / \"She washes the dishes.\" / \"I sweep the floor.\" / \"I wash my clothes.\" / \"I cook lunch for my family.\"',
+    phrases: ['I clean my room.', 'She washes the dishes.', 'I sweep the floor.', 'I wash my clothes.', 'I cook lunch for my family.'],
+    durationSecs: 431,
+    cover: '/podcast-covers/ep-55.jpg',
+  },
+  {
     n: 54,
     slug: 'evening-routine-2026-10-12',
     titleMy: 'အပိုင်း ၅၄ — ညနေခင်း ပုံမှန်လုပ်ဆောင်ချက်များ',

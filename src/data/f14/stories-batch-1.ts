@@ -79,17 +79,17 @@ export const storiesBatch1: Story[] = [
     {
       en: 'Daw Su has a little garden behind her house. Every morning she works there.',
       my: 'ဒေါ်စုရဲ့ အိမ်နောက်မှာ ပန်းခြံလေး တစ်ခုရှိတယ်။ မနက်တိုင်း သူမ အဲဒီမှာ အလုပ်လုပ်တယ်။',
-      th: 'ดอซูมีสวนเล็ก ๆ หลังบ้านของเธอ ทุกเช้าเธอทำงานที่นั่น',
+      th: 'ดอซูมีสวนเล็ก ๆ หลังบ้านของเธอ ทุกเช้าเธอทำสวนอยู่ที่นั่น',
     },
     {
       en: 'She plants red flowers and green vegetables. She gives them water every day.',
       my: 'သူမ အနီရောင် ပန်းတွေနဲ့ အစိမ်းရောင် ဟင်းသီးဟင်းရွက်တွေ စိုက်တယ်။ အပင်တွေကို နေ့တိုင်း ရေ လောင်းတယ်။',
-      th: 'เธอปลูกดอกไม้สีแดงและผักสีเขียว เธอรดน้ำให้พวกมันทุกวัน',
+      th: 'เธอปลูกดอกไม้สีแดงและผักสีเขียว เธอรดน้ำให้ทุกวัน',
     },
     {
       en: 'After one month, the flowers are beautiful. The vegetables grow big.',
       my: 'တစ်လအကြာမှာ ပန်းတွေက လှလာတယ်။ ဟင်းသီးဟင်းရွက်တွေက ကြီးထွားလာတယ်။',
-      th: 'หลังหนึ่งเดือน ดอกไม้ก็สวยงาม ผักเติบโตใหญ่',
+      th: 'ผ่านไปหนึ่งเดือน ดอกไม้ก็สวยงาม ผักโตขึ้นเยอะ',
     },
     {
       en: 'Daw Su gives vegetables to her friends. Her garden makes everyone happy.',
@@ -178,7 +178,7 @@ export const storiesBatch1: Story[] = [
     },
     {
       en: 'We all sit at the table. My brother eats two bowls. It is so delicious!',
-      my: 'ကျွန်တော်တို့ အားလုံး စားပွဲမှာ ထိုင်ကြတယ်။ ကျွန်တော့်အစ်ကိုက နှစ်ပန်းကန် စားတယ်။ အရမ်း အရသာရှိတယ်။',
+      my: 'ကျွန်တော်တို့ အားလုံး စားပွဲမှာ ထိုင်ကြတယ်။ ကျွန်တော့်အစ်ကိုက နှစ်ခွက် စားတယ်။ အရမ်း အရသာရှိတယ်။',
       th: 'พวกเราทุกคนนั่งที่โต๊ะ พี่ชายของฉันกินสองชาม อร่อยมาก!',
     },
     {
@@ -204,12 +204,12 @@ export const storiesBatch1: Story[] = [
     {
       en: 'The boat is broken. "I will repair it," says Ko Min. He works every day.',
       my: 'လှေက ပျက်နေတယ်။ "ကျွန်တော် ပြင်မယ်" လို့ ကိုမင်းက ပြောတယ်။ သူ နေ့တိုင်း အလုပ်လုပ်တယ်။',
-      th: 'เรือชำรุด โกมินพูดว่า "ผมจะซ่อมมัน" เขาทำงานทุกวัน',
+      th: 'เรือชำรุด โกมินพูดว่า "ผมจะซ่อมมัน" เขาซ่อมเรือทุกวัน',
     },
     {
       en: 'He cleans the wood. He paints it blue. Now the boat looks new.',
       my: 'သူက သစ်သားကို သန့်ရှင်းလုပ်တယ်။ လှေကို အပြာရောင် သုတ်တယ်။ အခု လှေက အသစ်လို ဖြစ်နေတယ်။',
-      th: 'เขาทำความสะอาดไม้ เขาทาสีฟ้า ตอนนี้เรือดูเหมือนใหม่',
+      th: 'เขาทำความสะอาดไม้ เขาทาสีเรือเป็นสีฟ้า ตอนนี้เรือดูเหมือนใหม่',
     },
     {
       en: 'They row on the lake. They catch fish. Grandfather is proud of Ko Min.',
@@ -239,7 +239,7 @@ export const storiesBatch1: Story[] = [
     {
       en: 'We walk up the mountain. It is a long walk. We sing songs on the way.',
       my: 'ကျွန်တော်တို့ တောင်ပေါ်ကို လမ်းလျှောက်တက်ကြတယ်။ လမ်းခရီးက ရှည်တယ်။ လမ်းမှာ သီချင်းတွေ ဆိုကြတယ်။',
-      th: 'พวกเราเดินขึ้นภูเขา เป็นทางเดินที่ยาว พวกเราร้องเพลงระหว่างทาง',
+      th: 'พวกเราเดินขึ้นภูเขา ทางไกลมาก พวกเราร้องเพลงระหว่างทาง',
     },
     {
       en: 'At the top, we eat lunch. We are tired, but we are happy.',
@@ -289,7 +289,7 @@ export const storiesBatch1: Story[] = [
     {
       en: 'In October, Myanmar celebrates the Festival of Lights. It is called Thadingyut.',
       my: 'အောက်တိုဘာလမှာ မြန်မာနိုင်ငံက မီးထွန်းပွဲတော် ကျင်းပတယ်။ အဲဒါကို သီတင်းကျွတ်လို့ ခေါ်တယ်။',
-      th: 'ในเดือนตุลาคม เมียนมาฉลองเทศกาลแห่งแสงไฟ เรียกว่าตะดิ่งจุ',
+      th: 'ในเดือนตุลาคม เมียนมาฉลองเทศกาลแห่งแสงไฟ ซึ่งเรียกว่า \'ตะดิ่งจุ๊ด\'',
     },
     {
       en: 'At night, people light candles in front of their houses. The streets are bright.',
@@ -299,7 +299,7 @@ export const storiesBatch1: Story[] = [
     {
       en: 'Children visit their grandparents. They give them gifts and say thank you.',
       my: 'ကလေးတွေက သူတို့အဘိုးအဘွားတွေကို သွားလည်ကြတယ်။ လက်ဆောင်တွေ ပေးပြီး ကျေးဇူးတင်စကား ပြောကြတယ်။',
-      th: 'เด็ก ๆ ไปเยี่ยมปู่ย่าตายาย พวกเขาให้ของขวัญและกล่าวขอบคุณ',
+      th: 'เด็ก ๆ ไปเยี่ยมปู่ย่าตายาย พวกเขาให้ของขวัญและขอบคุณ',
     },
     {
       en: 'Families eat together and laugh. The festival is full of light and love.',
@@ -428,13 +428,13 @@ export const storiesBatch1: Story[] = [
     },
     {
       en: 'Daw Hla read the letter three times. Although she tried not to cry, tears ran down her face. They were happy tears.',
-      my: 'ဒေါ်လှက စာကို သုံးကြိမ် ဖတ်တယ်။ မငိုဖို့ ကြိုးစားပေမယ့် မျက်ရည်တွေ ကျလာတယ်။ အဲဒါတွေက ပျော်ရွှင်တဲ့ မျက်ရည်တွေပါ။',
+      my: 'ဒေါ်လှက စာကို သုံးကြိမ် ဖတ်တယ်။ မငိုဖို့ ကြိုးစားပေမယ့် မျက်ရည်တွေ ကျလာတယ်။ အဲဒါတွေက ဝမ်းသာမျက်ရည်တွေပါ။',
       th: 'ดอฮลาอ่านจดหมายสามครั้ง แม้เธอพยายามไม่ร้องไห้ แต่น้ำตาก็ไหลลงมา เป็นน้ำตาแห่งความสุข',
     },
     {
       en: 'That evening, she sat down and wrote a long reply. She told him about the village, the neighbors, and the mango tree. "Come home soon," she wrote at the end.',
       my: 'အဲဒီညနေမှာ သူမ ထိုင်ပြီး အဖြေစာရှည်ရှည် ရေးတယ်။ ရွာအကြောင်း၊ အိမ်နီးချင်းတွေအကြောင်း၊ သရက်ပင်အကြောင်း ပြောပြတယ်။ အဆုံးမှာ "အမြန် အိမ်ပြန်လာပါ" လို့ ရေးတယ်။',
-      th: 'เย็นวันนั้น เธอนั่งลงเขียนจดหมายตอบยาว เธอเล่าเรื่องหมู่บ้าน เพื่อนบ้าน และต้นมะม่วง เธอเขียนปิดท้ายว่า "กลับบ้านเร็ว ๆ นะ"',
+      th: 'เย็นวันนั้น เธอนั่งลงเขียนจดหมายตอบกลับยาว ๆ ฉบับหนึ่ง เธอเล่าเรื่องหมู่บ้าน เพื่อนบ้าน และต้นมะม่วง เธอเขียนปิดท้ายว่า "กลับบ้านเร็ว ๆ นะ"',
     },
   ],
 },
@@ -494,7 +494,7 @@ export const storiesBatch1: Story[] = [
     {
       en: 'U Ba owned the only big boat. While the rain was falling, he rowed from house to house. He carried children, old people, and even chickens to the high school on the hill.',
       my: 'ရွာမှာ လှေကြီးဆိုလို့ ဦးဘမှာပဲ တစ်စီး ရှိတယ်။ မိုးရွာနေတုန်း သူက အိမ်တစ်အိမ်ကနေ တစ်အိမ်ကို လှော်ခတ်တယ်။ ကလေးတွေ၊ သက်ကြီးရွယ်အိုတွေနဲ့ ကြက်တွေကိုပါ တောင်ပေါ်က အထက်တန်းကျောင်းကို သယ်ပေးတယ်။',
-      th: 'อูบามีเรือใหญ่เพียงลำเดียว ขณะฝนตก เขาพายจากบ้านหนึ่งไปอีกบ้านหนึ่ง เขาพาเด็ก ๆ คนชรา และแม้แต่ไก่ไปที่โรงเรียนมัธยมบนเนินเขา',
+      th: 'อูบามีเรือใหญ่เพียงลำเดียว ขณะฝนตก เขาพายจากบ้านหนึ่งไปอีกบ้านหนึ่ง เขาขนเด็ก ๆ คนชรา และแม้แต่ไก่ไปที่โรงเรียนมัธยมบนเนินเขา',
     },
     {
       en: 'After three days, the rain stopped. Although many houses were damaged, nobody was hurt, because U Ba had rescued everyone.',
@@ -533,7 +533,7 @@ export const storiesBatch1: Story[] = [
     },
     {
       en: 'Years later, we sold the old house. I felt sad, because I thought I would never see the tree again.',
-      my: 'နှစ်တွေကြာတော့ ကျွန်တော်တို့ အိမ်ဟောင်းကို ရောင်းလိုက်တယ်။ ကျွန်တော် ဝမ်းနည်းတယ်၊ ဘာလို့လဲဆိုတော့ အပင်ကို နောက်တစ်ခါ ဘယ်တော့မှ မြင်ရတော့မှာ မဟုတ်ဘူးလို့ ထင်ခဲ့လို့ပါ။',
+      my: 'နှစ်တွေကြာတော့ ကျွန်တော်တို့ အိမ်ဟောင်းကို ရောင်းလိုက်တယ်။ ကျွန်တော် ဝမ်းနည်းခဲ့တယ်၊ ဘာလို့လဲဆိုတော့ အပင်ကို နောက်တစ်ခါ ဘယ်တော့မှ မြင်ရတော့မှာ မဟုတ်ဘူးလို့ ထင်ခဲ့လို့ပါ။',
       th: 'หลายปีต่อมา พวกเราขายบ้านเก่า ฉันรู้สึกเศร้า เพราะคิดว่าจะไม่ได้เห็นต้นไม้อีก',
     },
     {
@@ -569,7 +569,7 @@ export const storiesBatch1: Story[] = [
     {
       en: 'At one stall, I found a beautiful shirt. The seller asked for a high price, so I bargained politely. Finally, we agreed on a fair price.',
       my: 'ဆိုင်တစ်ဆိုင်မှာ လှပတဲ့ အင်္ကျီတစ်ထည် တွေ့တယ်။ ရောင်းသူက ဈေးများများတောင်းလို့ ကျွန်တော် ယဉ်ယဉ်ကျေးကျေး ဈေးဆစ်တယ်။ နောက်ဆုံး သင့်တင့်တဲ့ ဈေးနဲ့ သဘောတူညီမှုရတယ်။',
-      th: 'ที่แผงหนึ่ง ฉันเจอเสื้อสวยตัวหนึ่ง คนขายขอราคาสูง ฉันจึงต่อรองอย่างสุภาพ สุดท้ายเราตกลงราคาที่เป็นธรรม',
+      th: 'ที่แผงหนึ่ง ฉันเจอเสื้อสวยตัวหนึ่ง คนขายตั้งราคาสูง ฉันจึงต่อรองอย่างสุภาพ สุดท้ายเราตกลงกันได้ในราคาที่เป็นธรรม',
     },
     {
       en: 'We left the market at midnight, tired but happy. The night market is my favorite place, because it feels like the whole city is celebrating.',
@@ -619,7 +619,7 @@ export const storiesBatch1: Story[] = [
   level: 'B1',
   titleEn: 'The Broken Promise',
   titleMy: 'ကျိုးပျက်သွားတဲ့ ကတိ',
-  titleTh: 'คำสัญญาที่แตกสลาย',
+  titleTh: 'คำสัญญาที่ถูกทำลาย',
   paragraphs: [
     {
       en: 'Su and I had been best friends since childhood. We promised to tell each other everything, and we never kept secrets.',
@@ -663,23 +663,23 @@ export const storiesBatch1: Story[] = [
     },
     {
       en: 'He divided the money carefully. Half went to his mother, because she had worked so hard for the family. The rest he saved for the future.',
-      my: 'သူ ပိုက်ဆံကို ဂရုတစိုက် ခွဲတယ်။ တစ်ဝက်ကို သူ့အမေကို ပေးတယ်၊ ဘာလို့လဲဆိုတော့ သူမက မိသားစုအတွက် အရမ်း ကြိုးစားခဲ့လို့ပါ။ ကျန်တာကို အနာဂတ်အတွက် စုတယ်။',
+      my: 'သူ ပိုက်ဆံကို ဂရုတစိုက် ခွဲတယ်။ တစ်ဝက်ကို သူ့အမေကို ပေးခဲ့တယ်၊ ဘာလို့လဲဆိုတော့ သူမက မိသားစုအတွက် အရမ်း ကြိုးစားခဲ့လို့ပါ။ ကျန်တာကို အနာဂတ်အတွက် စုတယ်။',
       th: 'เขาแบ่งเงินอย่างระมัดระวัง ครึ่งหนึ่งให้แม่ เพราะเธอทำงานหนักมากเพื่อครอบครัว ที่เหลือเขาเก็บไว้สำหรับอนาคต',
     },
     {
       en: 'His mother tried to refuse the money. "Keep it for yourself," she said. However, Min insisted, and finally she accepted it with tears in her eyes.',
       my: 'သူ့အမေက ပိုက်ဆံကို ငြင်းဖို့ ကြိုးစားတယ်။ "မင်းအတွက် ထားပါ" လို့ သူမ ပြောတယ်။ ဒါပေမယ့် မင်းက အတင်းပေးပြီး နောက်ဆုံး သူမက မျက်ရည်တွေနဲ့ လက်ခံတယ်။',
-      th: 'แม่พยายามปฏิเสธเงิน เธอพูดว่า "เก็บไว้เองเถอะ" แต่มินยืนกราน และสุดท้ายเธอก็รับไว้ทั้งน้ำตา',
+      th: 'แม่พยายามปฏิเสธไม่รับเงิน เธอพูดว่า "เก็บไว้เองเถอะ" แต่มินยืนกราน และสุดท้ายเธอก็รับไว้ทั้งน้ำตา',
     },
     {
       en: 'With a small part of his savings, he bought a new shirt for his younger brother. The boy ran around the house, shouting with joy.',
       my: 'သူ့စုဆောင်းငွေရဲ့ အနည်းငယ်နဲ့ သူ့ညီလေးအတွက် အင်္ကျီအသစ် ဝယ်ပေးတယ်။ ကောင်လေးက အိမ်ထဲမှာ ပျော်ရွှင်စွာ အော်ပြီး ပြေးလွှားတယ်။',
-      th: 'ด้วยเงินเก็บส่วนหนึ่ง เขาซื้อเสื้อใหม่ให้น้องชาย เด็กชายวิ่งรอบบ้าน ตะโกนด้วยความดีใจ',
+      th: 'ด้วยเงินเก็บส่วนหนึ่ง เขาซื้อเสื้อใหม่ให้น้องชาย เด็กชายวิ่งรอบบ้าน ตะโกนอย่างดีใจ',
     },
     {
       en: 'That night, Min felt truly grown up. He understood that earning money is not just about spending — it is about taking care of the people you love.',
       my: 'အဲဒီည မင်းက တကယ့် လူကြီးတစ်ယောက်လို ခံစားရတယ်။ ပိုက်ဆံရှာတာက သုံးဖို့အတွက်ပဲ မဟုတ်ဘဲ — ချစ်တဲ့သူတွေကို ဂရုစိုက်ဖို့အတွက်ဆိုတာ သူ နားလည်တယ်။',
-      th: 'คืนนั้น มินรู้สึกเป็นผู้ใหญ่จริง ๆ เขาเข้าใจว่าการหาเงินไม่ใช่แค่เรื่องการใช้จ่าย — แต่คือการดูแลคนที่เรารัก',
+      th: 'คืนนั้น มินรู้สึกเป็นผู้ใหญ่จริง ๆ เขาเข้าใจว่าการหาเงินไม่ใช่แค่เรื่องใช้เงิน — แต่คือการดูแลคนที่เรารัก',
     },
   ],
 },
@@ -713,7 +713,7 @@ export const storiesBatch1: Story[] = [
     },
     {
       en: 'Nandar laughed at herself. Although the mystery was simple, she felt proud, because she had faced her fear instead of running away. The next day, she brought the old man some tea and asked him to lower the volume.',
-      my: 'နန္ဒာက သူမကိုယ်သူမ ရယ်တယ်။ လျှို့ဝှက်ချက်က ရိုးရှင်းပေမယ့် သူမ ဂုဏ်ယူတယ်၊ ဘာလို့လဲဆိုတော့ သူမ ကြောက်ရွံ့မှုကို ထွက်ပြေးမသွားဘဲ ရင်ဆိုင်ခဲ့လို့ပါ။ နောက်နေ့ သူမ အဘိုးအိုကို လက်ဖက်ရည် ယူသွားပေးပြီး အသံတိုးဖို့ တောင်းဆိုတယ်။',
+      my: 'နန္ဒာက သူမကိုယ်သူမ ရယ်တယ်။ လျှို့ဝှက်ချက်က ရိုးရှင်းပေမယ့် သူမ ဂုဏ်ယူခဲ့တယ်၊ ဘာလို့လဲဆိုတော့ သူမ ကြောက်ရွံ့မှုကို ထွက်ပြေးမသွားဘဲ ရင်ဆိုင်ခဲ့လို့ပါ။ နောက်နေ့ သူမ အဘိုးအိုကို လက်ဖက်ရည် ယူသွားပေးပြီး အသံတိုးဖို့ တောင်းဆိုတယ်။',
       th: 'นันทาหัวเราะตัวเอง แม้ปริศนาจะเรียบง่าย แต่เธอภูมิใจ เพราะเธอเผชิญหน้ากับความกลัวแทนที่จะหนี วันรุ่งขึ้น เธอเอาชาไปให้ชายชราและขอให้เขาเบาเสียงลง',
     },
   ],
@@ -734,7 +734,7 @@ export const storiesBatch1: Story[] = [
     {
       en: 'However, he decided to try. For three months, he trained every morning. He ran in the rain, in the heat, and even when his legs hurt.',
       my: 'ဒါပေမယ့် သူ ကြိုးစားဖို့ ဆုံးဖြတ်တယ်။ သုံးလတာ မနက်တိုင်း လေ့ကျင့်တယ်။ မိုးရွာရွာ၊ နေပူပူ၊ ခြေထောက်တွေ နာနာ သူ ပြေးတယ်။',
-      th: 'แต่เขาตัดสินใจลอง เขาฝึกซ้อมทุกเช้าเป็นเวลาสามเดือน เขาวิ่งทั้งตอนฝนตก แดดออก และแม้ขาจะปวด',
+      th: 'แต่เขาตัดสินใจลอง เขาฝึกซ้อมทุกเช้าเป็นเวลาสามเดือน เขาวิ่งทั้งตอนฝนตก ตอนแดดร้อนจัด และแม้ขาจะปวด',
     },
     {
       en: 'On race day, thousands of people stood at the starting line. Aye Chan felt nervous, but he remembered all his training.',
@@ -783,7 +783,7 @@ export const storiesBatch1: Story[] = [
     },
     {
       en: 'That evening, Thuzar put the photograph in a new frame. Now it hangs in the living room, because she wants to remember that her grandmother was once young, brave, and full of dreams — just like her.',
-      my: 'အဲဒီည သူဇာက ဓာတ်ပုံကို ဘောင်အသစ်ထဲ ထည့်တယ်။ အခု ဧည့်ခန်းမှာ ချိတ်ထားတယ်၊ ဘာလို့လဲဆိုတော့ သူမအဘွားက တစ်ချိန်က ငယ်ရွယ်ပြီး ရဲရင့်ပြီး အိပ်မက်တွေ ပြည့်နေခဲ့တယ်ဆိုတာ သတိရချင်လို့ပါ — အခု သူဇာလိုပဲ။',
+      my: 'အဲဒီည သူဇာက ဓာတ်ပုံကို ဘောင်အသစ်ထဲ ထည့်တယ်။ အခု ဧည့်ခန်းမှာ ချိတ်ထားတယ်၊ ဘာလို့လဲဆိုတော့ သူမအဘွားက တစ်ချိန်က ငယ်ရွယ်ပြီး ရဲရင့်ပြီး အိပ်မက်တွေ ပြည့်နေခဲ့တယ်ဆိုတာ သတိရချင်လို့ပဲ — အခု သူဇာလိုပဲ။',
       th: 'เย็นวันนั้น ตูซาร์ใส่ภาพถ่ายในกรอบใหม่ ตอนนี้มันแขวนอยู่ในห้องนั่งเล่น เพราะเธออยากจำไว้ว่ายายเคยเด็ก กล้าหาญ และเต็มไปด้วยความฝัน — เหมือนกับเธอ',
     },
   ],
@@ -813,7 +813,7 @@ export const storiesBatch1: Story[] = [
     },
     {
       en: 'Halfway through the night, the train stopped in the middle of nowhere. Passengers leaned out of the windows, wondering what had happened, until the conductor announced that a fallen tree was blocking the tracks ahead.',
-      my: 'ညလယ်လောက်မှာ ရထားက လူသူကင်းမဲ့တဲ့ နေရာမှာ ရပ်သွားတယ်။ ခရီးသည်တွေက ပြတင်းပေါက်တွေကနေ ခေါင်းထုတ်ပြီး ဘာဖြစ်တာလဲ သိချင်နေကြတယ်၊ ရှေ့မှာ လဲကျနေတဲ့ သစ်ပင်တစ်ပင်က လမ်းကို ပိတ်နေတယ်လို့ လက်မှတ်စစ်သူက ကြေညာတဲ့အထိပါ။',
+      my: 'ညလယ်လောက်မှာ ရထားက လူသူကင်းမဲ့တဲ့ နေရာမှာ ရပ်သွားတယ်။ ခရီးသည်တွေက ပြတင်းပေါက်တွေကနေ ခေါင်းထုတ်ပြီး ဘာဖြစ်တာလဲ သိချင်နေကြတယ်၊ ရှေ့မှာ လဲကျနေတဲ့ သစ်ပင်တစ်ပင်က လမ်းကို ပိတ်နေတယ်လို့ လက်မှတ်စစ်သူက ကြေညာတဲ့အထိ။',
       th: 'กลางดึก รถไฟหยุดกลางที่เปลี่ยว ผู้โดยสารชะโงกออกนอกหน้าต่าง สงสัยว่าเกิดอะไรขึ้น จนพนักงานตรวจตั๋วประกาศว่าต้นไม้ล้มขวางรางข้างหน้า',
     },
     {
@@ -888,8 +888,8 @@ export const storiesBatch1: Story[] = [
     },
     {
       en: 'What she truly loved was baking. On weekends, her small kitchen filled with the smell of fresh bread, and her friends always begged her to open a bakery.',
-      my: 'သူမ တကယ် ချစ်တာက မုန့်ဖုတ်တာပါ။ စနေ၊ တနင်္ဂနွေတွေမှာ သူမရဲ့ မီးဖိုချောင်အသေးလေးက လတ်ဆတ်တဲ့ ပေါင်မုန့်အနံ့နဲ့ ပြည့်နေတယ်၊ သူမရဲ့ သူငယ်ချင်းတွေက မုန့်ဆိုင်ဖွင့်ဖို့ အမြဲ တိုက်တွန်းကြတယ်။',
-      th: 'สิ่งที่เธอรักจริง ๆ คือการอบขนม วันหยุด ห้องครัวเล็ก ๆ ของเธอเต็มห้องไปด้วยกลิ่นขนมปังสด และเพื่อน ๆ มักอ้อนวอนให้เธอเปิดร้านเบเกอรี่',
+      my: 'သူမ တကယ် ချစ်တာက မုန့်ဖုတ်တာပဲ။ စနေ၊ တနင်္ဂနွေတွေမှာ သူမရဲ့ မီးဖိုချောင်အသေးလေးက လတ်ဆတ်တဲ့ ပေါင်မုန့်အနံ့နဲ့ ပြည့်နေတယ်၊ သူမရဲ့ သူငယ်ချင်းတွေက မုန့်ဆိုင်ဖွင့်ဖို့ အမြဲ တိုက်တွန်းကြတယ်။',
+      th: 'สิ่งที่เธอรักจริง ๆ คือการอบขนม ในวันหยุด ห้องครัวเล็ก ๆ ของเธอเต็มไปด้วยกลิ่นขนมปังสด และเพื่อน ๆ มักอ้อนวอนให้เธอเปิดร้านเบเกอรี่',
     },
     {
       en: 'One rainy morning, while stirring her tea, Khin made her decision. She would resign from the bank and risk everything on her dream, even though everyone warned her that most new businesses fail.',
@@ -898,12 +898,12 @@ export const storiesBatch1: Story[] = [
     },
     {
       en: 'The first year was brutally difficult. She woke before dawn, worked until midnight, and more than once considered giving up. But each morning, the smell of warm bread reminded her why she had started.',
-      my: 'ပထမနှစ်က အရမ်း ခက်ခဲတယ်။ သူမ အရုဏ်မတက်ခင် နိုးတယ်၊ သန်းခေါင်အထိ အလုပ်လုပ်တယ်၊ လက်လျှော့ဖို့ တစ်ကြိမ်မက စဉ်းစားတယ်။ ဒါပေမယ့် မနက်တိုင်း နွေးထွေးတဲ့ ပေါင်မုန့်အနံ့က သူမ ဘာလို့ စခဲ့တာလဲဆိုတာ သတိပေးတယ်။',
+      my: 'ပထမနှစ်က အရမ်း ခက်ခဲတယ်။ သူမ အရုဏ်မတက်ခင် နိုးတယ်၊ သန်းခေါင်အထိ အလုပ်လုပ်တယ်၊ လက်လျှော့ဖို့ တစ်ကြိမ်မက စဉ်းစားတယ်။ ဒါပေမယ့် မနက်တိုင်း နွေးထွေးတဲ့ ပေါင်မုန့်အနံ့က သူမ ဘာလို့ စခဲ့တာလဲဆိုတာ သတိရစေတယ်။',
       th: 'ปีแรกยากลำบากแสนสาหัส เธอตื่นก่อนรุ่งสาง ทำงานจนถึงเที่ยงคืน และเคยคิดจะยอมแพ้หลายครั้ง แต่ทุกเช้า กลิ่นขนมปังอุ่น ๆ ทำให้เธอนึกถึงเหตุผลที่เธอเริ่มต้น',
     },
     {
       en: 'Three years later, her bakery employs twelve people and supplies bread to hotels across the city. Khin still drinks tea at the same corner table — but now she watches the office workers hurry past, and she smiles, because she chose a different path.',
-      my: 'သုံးနှစ်အကြာမှာ သူမမုန့်ဆိုင်က လူ ဆယ့်နှစ်ယောက် အလုပ်ခန့်ထားပြီး မြို့တစ်ဝန်းက ဟိုတယ်တွေကို ပေါင်မုန့် ပို့ပေးတယ်။ ခင်က အဲဒီထောင့်စားပွဲမှာပဲ လက်ဖက်ရည် သောက်နေတုန်း — ဒါပေမယ့် အခု ရုံးဝန်ထမ်းတွေ အလျင်အမြန် ဖြတ်သွားတာကို ကြည့်ပြီး ပြုံးတယ်၊ ဘာလို့လဲဆိုတော့ သူမ မတူတဲ့ လမ်းကို ရွေးခဲ့လို့ပါ။',
+      my: 'သုံးနှစ်အကြာမှာ သူမမုန့်ဆိုင်က လူ ဆယ့်နှစ်ယောက် အလုပ်ခန့်ထားပြီး မြို့တစ်ဝန်းက ဟိုတယ်တွေကို ပေါင်မုန့် ပို့ပေးတယ်။ ခင်က အဲဒီထောင့်စားပွဲမှာပဲ လက်ဖက်ရည် သောက်နေတုန်း — ဒါပေမယ့် အခု ရုံးဝန်ထမ်းတွေ အလျင်အမြန် ဖြတ်သွားတာကို ကြည့်ပြီး ပြုံးတယ်၊ ဘာလို့လဲဆိုတော့ သူမ မတူတဲ့ လမ်းကို ရွေးခဲ့လို့ပဲ။',
       th: 'สามปีต่อมา ร้านเบเกอรี่ของเธอจ้างคนสิบสองคนและส่งขนมปังให้โรงแรมทั่วเมือง คินยังดื่มชาที่โต๊ะมุมเดิม — แต่ตอนนี้เธอมองพนักงานออฟฟิศรีบผ่านไป และยิ้ม เพราะเธอเลือกเส้นทางที่ต่างออกไป',
     },
   ],
@@ -919,7 +919,7 @@ export const storiesBatch1: Story[] = [
     {
       en: 'Captain Myo had sailed the great river for twenty years, and he believed he had seen every kind of weather. That afternoon, however, the sky turned a color he had never witnessed before.',
       my: 'ကပ္ပတိန် မျိုးက မြစ်ကြီးပေါ်မှာ အနှစ်နှစ်ဆယ် သင်္ဘောမောင်းခဲ့ပြီး ရာသီဥတုအမျိုးမျိုး မြင်ဖူးပြီလို့ ယုံကြည်တယ်။ ဒါပေမယ့် အဲဒီနေ့လည်မှာ ကောင်းကင်က သူ ဘယ်တော့မှ မမြင်ဖူးတဲ့ အရောင် ဖြစ်သွားတယ်။',
-      th: 'กัปตันมโยแล่นเรือบนแม่น้ำใหญ่มายี่สิบปี และเขาเชื่อว่าเคยเห็นอากาศทุกแบบ บ่ายวันนั้น ท้องฟ้ากลับเปลี่ยนเป็นสีที่เขาไม่เคยเห็นมาก่อน',
+      th: 'กัปตันมโยแล่นเรือบนแม่น้ำใหญ่มายี่สิบปี และเขาเชื่อว่าเคยเจอสภาพอากาศทุกรูปแบบมาแล้ว บ่ายวันนั้น ท้องฟ้ากลับเปลี่ยนเป็นสีที่เขาไม่เคยเห็นมาก่อน',
     },
     {
       en: 'Within minutes, black clouds swallowed the horizon. The wind rose with terrifying speed, and waves began crashing against the sides of the old ferry.',
@@ -929,7 +929,7 @@ export const storiesBatch1: Story[] = [
     {
       en: 'Passengers screamed as water poured onto the deck. While the crew struggled to secure the cargo, Captain Myo gripped the wheel with both hands, his eyes fixed on the faint outline of the shore.',
       my: 'ကုန်းပတ်ပေါ်ကို ရေ လျှံဝင်လာတဲ့အခါ ခရီးသည်တွေ အော်ကြတယ်။ သင်္ဘောသားတွေ ကုန်ပစ္စည်းတွေကို ခိုင်အောင် ကြိုးစားနေတုန်း ကပ္ပတိန် မျိုးက စတီယာရင်ကို လက်နှစ်ဖက်နဲ့ ဆုပ်ကိုင်ပြီး မျက်လုံးတွေကို ကမ်းခြေရဲ့ မှုန်ဝါးတဲ့ ပုံရိပ်ပေါ်မှာ စိုက်ထားတယ်။',
-      th: 'ผู้โดยสารกรีดร้องเมื่อน้ำทะลักขึ้นดาดฟ้า ขณะลูกเรือพยายามยึดสินค้า กัปตันมโยจับพวงมาลัยด้วยสองมือ สายตาจับจ้องที่เงาลาง ๆ ของฝั่ง',
+      th: 'ผู้โดยสารกรีดร้องเมื่อน้ำทะลักขึ้นดาดฟ้า ขณะลูกเรือพยายามยึดสินค้า กัปตันมโยกำหางเสือแน่นด้วยสองมือ สายตาจับจ้องที่เงาลาง ๆ ของฝั่ง',
     },
     {
       en: 'For nearly an hour, the little ferry fought against the storm. Just when hope seemed lost, the wind suddenly weakened, as if the river had finally grown tired of its own fury.',
@@ -943,7 +943,7 @@ export const storiesBatch1: Story[] = [
     },
     {
       en: 'That night, Captain Myo sat quietly on the beach, watching the calm water. He understood then that experience matters, but humility matters more — the river always deserves respect, no matter how well you think you know it.',
-      my: 'အဲဒီည ကပ္ပတိန် မျိုးက ကမ်းခြေမှာ တိတ်တိတ်ဆိတ်ဆိတ် ထိုင်ပြီး ငြိမ်သက်နေတဲ့ ရေကို ကြည့်နေတယ်။ အဲဒီအခါ သူ နားလည်သွားတယ် — အတွေ့အကြုံက အရေးကြီးပေမယ့် နှိမ့်ချမှုက ပိုအရေးကြီးတယ်။ မြစ်ကို ဘယ်လောက် ကောင်းကောင်း သိတယ်ထင်ထင် အမြဲ လေးစားရမယ်။',
+      my: 'အဲဒီည ကပ္ပတိန် မျိုးက ကမ်းခြေမှာ တိတ်တိတ်ဆိတ်ဆိတ် ထိုင်ပြီး ငြိမ်သက်နေတဲ့ ရေကို ကြည့်နေတယ်။ အဲဒီအခါ သူ နားလည်သွားတယ် — အတွေ့အကြုံက အရေးကြီးပေမယ့် စိတ်နှိမ့်ချမှုက ပိုအရေးကြီးတယ်။ မြစ်ကို ဘယ်လောက် ကောင်းကောင်း သိတယ်ထင်ထင် အမြဲ လေးစားရမယ်။',
       th: 'คืนนั้น กัปตันมโยนั่งเงียบ ๆ บนชายหาด มองน้ำที่สงบ เขาเข้าใจแล้วว่าประสบการณ์สำคัญ แต่ความถ่อมตนสำคัญกว่า — แม่น้ำสมควรได้รับความเคารพเสมอ ไม่ว่าใครจะคิดว่ารู้จักมันดีแค่ไหน',
     },
   ],
@@ -958,7 +958,7 @@ export const storiesBatch1: Story[] = [
   paragraphs: [
     {
       en: 'Dr. Lin was a physicist who had spent a decade studying light. Her laboratory, hidden in the basement of the university, contained an experiment that nobody else believed would work.',
-      my: 'ဒေါက်တာ လင်းက အလင်းကို ဆယ်စုနှစ် တစ်ခုလုံး လေ့လာခဲ့တဲ့ ရူပဗေဒ ပညာရှင်ပါ။ တက္ကသိုလ်ရဲ့ မြေအောက်ခန်းမှာ ဝှက်ထားတဲ့ သူမဓာတ်ခွဲခန်းမှာ ဘယ်သူမှ အောင်မြင်မယ်လို့ မယုံကြည်တဲ့ စမ်းသပ်မှုတစ်ခု ရှိတယ်။',
+      my: 'ဒေါက်တာ လင်းက အလင်းကို ဆယ်စုနှစ် တစ်ခုလုံး လေ့လာခဲ့တဲ့ ရူပဗေဒ ပညာရှင်ပဲ။ တက္ကသိုလ်ရဲ့ မြေအောက်ခန်းမှာ ဝှက်ထားတဲ့ သူမဓာတ်ခွဲခန်းမှာ ဘယ်သူမှ အောင်မြင်မယ်လို့ မယုံကြည်တဲ့ စမ်းသပ်မှုတစ်ခု ရှိတယ်။',
       th: 'ดร.ลินเป็นนักฟิสิกส์ที่ศึกษาด้านแสงมาสิบปี ห้องแล็บของเธอซ่อนอยู่ในชั้นใต้ดินของมหาวิทยาลัย มีการทดลองที่ไม่มีใครเชื่อว่าจะสำเร็จ',
     },
     {
@@ -978,7 +978,7 @@ export const storiesBatch1: Story[] = [
     },
     {
       en: 'Dr. Lin realized with a racing heart that her device had not made things invisible — it had revealed a hidden layer of reality that had always been there, waiting for someone patient enough to look.',
-      my: 'ဒေါက်တာ လင်းက နှလုံးခုန်မြန်စွာ သဘောပေါက်သွားတယ် — သူမကိရိယာက အရာတွေကို မမြင်ရအောင် လုပ်တာ မဟုတ်ဘဲ အမြဲ ရှိနေခဲ့ပြီး ကြည့်ဖို့ စိတ်ရှည်တဲ့သူကို စောင့်နေတဲ့ အရှိတရားရဲ့ လျှို့ဝှက် အလွှာကို ဖော်ထုတ်ပေးတာပါ။',
+      my: 'ဒေါက်တာ လင်းက နှလုံးခုန်မြန်စွာ သဘောပေါက်သွားတယ် — သူမကိရိယာက အရာတွေကို မမြင်ရအောင် လုပ်တာ မဟုတ်ဘဲ အမြဲ ရှိနေခဲ့ပြီး ကြည့်ဖို့ စိတ်ရှည်တဲ့သူကို စောင့်နေတဲ့ အရှိတရားရဲ့ လျှို့ဝှက် အလွှာကို ဖော်ထုတ်ပေးတာပဲ။',
       th: 'ดร.ลินตระหนักด้วยใจที่เต้นแรงว่าอุปกรณ์ของเธอไม่ได้ทำให้สิ่งต่าง ๆ มองไม่เห็น — แต่มันเผยชั้นที่ซ่อนอยู่ของความเป็นจริงที่มีอยู่เสมอ รอคนที่อดทนพอจะมอง',
     },
     {
@@ -998,18 +998,18 @@ export const storiesBatch1: Story[] = [
   paragraphs: [
     {
       en: 'When eighteen-year-old Nanda knocked on the door of the famous restaurant, he carried nothing but a small bag and an enormous dream: to become a great chef.',
-      my: 'အသက် ဆယ့်ရှစ်နှစ်အရွယ် နန္ဒာက နာမည်ကြီး စားသောက်ဆိုင်ရဲ့ တံခါးကို ခေါက်တဲ့အခါ အိတ်အသေးလေးတစ်လုံးနဲ့ ကြီးမားတဲ့ အိပ်မက်တစ်ခုပဲ ပါလာတယ် — ကြီးကျယ်တဲ့ စားဖိုမှူး ဖြစ်ဖို့ပါ။',
+      my: 'အသက် ဆယ့်ရှစ်နှစ်အရွယ် နန္ဒာက နာမည်ကြီး စားသောက်ဆိုင်ရဲ့ တံခါးကို ခေါက်တဲ့အခါ အိတ်အသေးလေးတစ်လုံးနဲ့ ကြီးမားတဲ့ အိပ်မက်တစ်ခုပဲ ပါလာတယ် — ကြီးကျယ်တဲ့ စားဖိုမှူး ဖြစ်ဖို့ပဲ။',
       th: 'เมื่อนันทาอายุสิบแปดเคาะประตูร้านอาหารชื่อดัง เขาพกมาเพียงกระเป๋าใบเล็กกับฝันอันยิ่งใหญ่ นั่นคือการเป็นเชฟที่ยอดเยี่ยม',
     },
     {
       en: 'The head chef, Daw May, was known throughout the country for her perfect curries. She looked at the nervous boy and gave him the hardest job in the kitchen: washing dishes.',
       my: 'စားဖိုမှူးချုပ် ဒေါ်မေက သူမရဲ့ ပြီးပြည့်စုံတဲ့ ဟင်းတွေကြောင့် နိုင်ငံတစ်ဝန်း နာမည်ကြီးတယ်။ သူမ စိုးရိမ်နေတဲ့ ကောင်လေးကို ကြည့်ပြီး မီးဖိုချောင်မှာ အခက်ဆုံးအလုပ် — ပန်းကန်ဆေးတာကို ပေးတယ်။',
-      th: 'หัวหน้าเชฟ ดอเมย์ มีชื่อเสียงทั่วประเทศเรื่องแกงที่สมบูรณ์แบบ เธอมองเด็กชายที่ประหม่าและให้งานที่ยากที่สุดในครัว นั่นคือการล้างจาน',
+      th: 'หัวหน้าเชฟ ดอเมย์ มีชื่อเสียงทั่วประเทศเรื่องแกงรสเลิศ เธอมองเด็กชายที่ประหม่าและให้งานที่ยากที่สุดในครัว นั่นคือการล้างจาน',
     },
     {
       en: 'For six months, Nanda washed thousands of plates without complaint. While other apprentices grumbled, he watched everything: how Daw May chose her spices, how she tasted each sauce, how she never rushed.',
       my: 'ခြောက်လတာ နန္ဒာက ပန်းကန်ထောင်ချီကို ညည်းညူခြင်းမရှိဘဲ ဆေးတယ်။ တခြားတပည့်တွေ ညည်းနေတုန်း သူက အရာအားလုံး ကြည့်နေတယ် — ဒေါ်မေ သူမရဲ့ ဟင်းခတ်အမွှေးအကြိုင်တွေ ဘယ်လို ရွေးတယ်၊ ဆော့စ်တစ်ခုချင်းကို ဘယ်လို အရသာခံတယ်၊ ဘယ်တော့မှ အလျင်မလိုဘူးဆိုတာ။',
-      th: 'หกเดือน นันทาล้างจานหลายพันใบโดยไม่บ่น ขณะเด็กฝึกงานคนอื่นบ่น เขาสังเกตทุกอย่าง ทั้งวิธีที่ดอเมย์เลือกเครื่องเทศ วิธีที่เธอชิมซอสแต่ละอย่าง วิธีที่เธอไม่เคยรีบร้อน',
+      th: 'ตลอดหกเดือน นันทาล้างจานหลายพันใบโดยไม่บ่นเลย ขณะเด็กฝึกงานคนอื่นบ่น เขาสังเกตทุกอย่าง ทั้งวิธีที่ดอเมย์เลือกเครื่องเทศ วิธีที่เธอชิมซอสแต่ละอย่าง วิธีที่เธอไม่เคยรีบร้อน',
     },
     {
       en: 'One evening, Daw May fell ill just before an important dinner. The restaurant was full, and there was no one else who knew her secret recipes. She looked at Nanda and made a decision that surprised everyone.',
