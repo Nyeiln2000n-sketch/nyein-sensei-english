@@ -38,6 +38,16 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 58,
+    slug: 'pets-dog-cat-fish-bird-i-have-a-cat-it-is-cute-2026-10-13',
+    titleMy: 'အပိုင်း ၅၈ — အိမ်မွေးတိရစ္ဆာန်များ',
+    titleOrig: 'สัตว์เลี้ยง — Pets',
+    descMy: 'အိမ်မွေးတိရစ္ဆာန်အကြောင်း ပြောဆိုခြင်း — "I have a cat." / "It is cute." / "My dog is big." / "My cat is small." / "It likes to play."',
+    phrases: ['I have a cat.', 'It is cute.', 'My dog is big.', 'My cat is small.', 'It likes to play.'],
+    durationSecs: 500,
+    cover: '/podcast-covers/ep-58.jpg',
+  },
+  {
     n: 57,
     slug: 'my-neighbors-2026-10-13',
     titleMy: 'အပိုင်း ၅၇ — အိမ်နီးချင်းများ',
