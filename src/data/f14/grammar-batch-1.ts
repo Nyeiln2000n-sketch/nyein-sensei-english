@@ -117,7 +117,7 @@ export const grammarRules: GrammarRule[] = [
     drills: [
       { prompt: 'He ___ eats breakfast. (100%)', answer: 'always', options: ['always', 'usually', 'sometimes', 'never'] },
       { prompt: 'She is ___ on time. (90%)', answer: 'usually', options: ['usually', 'always', 'often', 'sometimes'] },
-      { prompt: 'I ___ drink coffee.', answer: 'never', options: ['never', 'ever', 'always not', 'no'] },
+      { prompt: 'I ___ drink coffee.', answer: 'never', options: ['never', 'ever', 'doesn\'t', 'no'] },
     ],
   },
   {
@@ -262,9 +262,9 @@ export const grammarRules: GrammarRule[] = [
       { english: 'They can speak English.', myanmar: 'သူတို့ အင်္ဂလိပ်စကားပြောတတ်ကြတယ်။', myanmarTh: 'พวกเขาพูดภาษาอังกฤษได้', },
     ],
     drills: [
-      { prompt: 'I ___ ride a bike.', answer: 'can', options: ['can', 'cans', 'to can', 'canning'] },
+      { prompt: 'I ___ ride a bike.', answer: 'can', options: ['can', 'cans', 'to can', 'can to'] },
       { prompt: 'She ___ cook well.', answer: 'can\'t', options: ['can\'t', 'cans not', 'don\'t can', 'not can'] },
-      { prompt: '___ you play chess?', answer: 'Can', options: ['Can', 'Do', 'Are', 'Is'] },
+      { prompt: '___ you play chess?', answer: 'Can', options: ['Can', 'Does', 'Are', 'Is'] },
     ],
   },
   {
@@ -305,7 +305,7 @@ export const grammarRules: GrammarRule[] = [
     ],
     drills: [
       { prompt: 'The cat is ___ the box.', answer: 'in', options: ['in', 'on', 'at', 'to'] },
-      { prompt: 'Put the cup ___ the table.', answer: 'on', options: ['on', 'in', 'at', 'under to'] },
+      { prompt: 'Put the cup ___ the table.', answer: 'on', options: ['on', 'in', 'at', 'under'] },
       { prompt: 'She is ___ the bus stop.', answer: 'at', options: ['at', 'in', 'on', 'to'] },
     ],
   },
@@ -325,9 +325,9 @@ export const grammarRules: GrammarRule[] = [
       { english: 'Why are you crying?', myanmar: 'မင်း ဘာလို့ငိုနေတာလဲ။', myanmarTh: 'ทำไมคุณร้องไห้', },
     ],
     drills: [
-      { prompt: '___ do you go to school?', answer: 'How', options: ['How', 'What', 'Who', 'Why not'] },
+      { prompt: '___ do you go to school?', answer: 'How', options: ['How', 'What', 'Who', 'Which'] },
       { prompt: '___ is your teacher?', answer: 'Who', options: ['Who', 'What', 'Where', 'How'] },
-      { prompt: '___ does she work?', answer: 'Where', options: ['Where', 'What', 'When', 'Who'] },
+      { prompt: '___ does she work? (place)', answer: 'Where', options: ['Where', 'What', 'When', 'Who'] },
     ],
   },
   {
@@ -348,7 +348,7 @@ export const grammarRules: GrammarRule[] = [
     drills: [
       { prompt: 'Do you like tea? — Yes, ___.', answer: 'I do', options: ['I do', 'I like', 'I am', 'me do'] },
       { prompt: 'Is he busy? — No, ___.', answer: 'he isn\'t', options: ['he isn\'t', 'he doesn\'t', 'he not', 'he no'] },
-      { prompt: 'Did you eat? — Yes, ___.', answer: 'I did', options: ['I did', 'I eats', 'I do', 'I eat'] },
+      { prompt: 'Did you eat? — Yes, ___.', answer: 'I did', options: ['I did', 'I do', 'I eat', 'I was'] },
     ],
   },
   {
@@ -358,7 +358,7 @@ export const grammarRules: GrammarRule[] = [
     titleMyanmar: 'အနုတ်ဝါကျများ',
     titleMyanmarTh: 'ประโยคปฏิเสธ',
     explanationMyanmar:
-      'ကြိယာအကူ (do/does/did/am/is/are/can) နောက်မှာ not ထည့်တယ်။ အတိုကောက်ပုံစံတွေ သုံးလေ့ရှိတယ် — don\'t, doesn\'t, didn\'t, isn\'t, can\'t။',
+      'ကြိယာအကူ (do/does/did/am/is/are/can) နောက်မှာ not ထည့်တယ်။ အတိုကောက်ပုံစံတွေ သုံးလေ့ရှိတယ် — don\'t, doesn\'t, didn\'t, isn\'t, aren\'t, can\'t။',
     explanationMyanmarTh: 'ทำประโยคปฏิเสธโดยใส่ not หลังกริยาช่วย (do / does / did / am / is / are / can) นิยมใช้รูปย่อ เช่น don\'t doesn\'t didn\'t isn\'t can\'t',
     examples: [
       { english: 'I don\'t eat meat.', myanmar: 'ကျွန်တော် အသားမစားဘူး။', myanmarTh: 'ผมไม่กินเนื้อ', },
@@ -376,7 +376,7 @@ export const grammarRules: GrammarRule[] = [
     id: 'gr-there-is-are',
     level: 'A1',
     title: 'There is / There are',
-    titleMyanmar: 'There is / There are',
+    titleMyanmar: 'There is / There are သုံးနည်း',
     titleMyanmarTh: 'There is / There are',
     explanationMyanmar:
       'တစ်နေရာမှာ တစ်ခုခုရှိတယ်ပြောတဲ့အခါ there is (တစ်ခုတည်း) / there are (အများအပြား) သုံးတယ်။ အနုတ်က there isn\'t / there aren\'t။',
@@ -388,7 +388,7 @@ export const grammarRules: GrammarRule[] = [
       { english: 'Are there any shops nearby?', myanmar: 'အနီးမှာ ဆိုင်တွေရှိလား။', myanmarTh: 'มีร้านค้าใกล้ๆ ไหม', },
     ],
     drills: [
-      { prompt: '___ a park near my house.', answer: 'There is', options: ['There is', 'There are', 'It is', 'There'] },
+      { prompt: '___ a park near my house.', answer: 'There is', options: ['There is', 'There are', 'They\'re', 'There'] },
       { prompt: '___ many stars tonight.', answer: 'There are', options: ['There are', 'There is', 'They are', 'It are'] },
       { prompt: '___ a pen in your bag?', answer: 'Is there', options: ['Is there', 'Are there', 'There is', 'Does there'] },
     ],
@@ -577,7 +577,7 @@ export const grammarRules: GrammarRule[] = [
     ],
     drills: [
       { prompt: 'I ___ dinner with my boss tonight.', answer: 'am having', options: ['am having', 'having', 'am have', 'has'] },
-      { prompt: 'She ___ to Mandalay tomorrow.', answer: 'is going', options: ['is going', 'go', 'goes', 'going'] },
+      { prompt: 'She ___ to Mandalay tomorrow.', answer: 'is going', options: ['is going', 'are going', 'is go', 'going'] },
       { prompt: 'We ___ a test next Monday.', answer: 'are having', options: ['are having', 'is having', 'has', 'having'] },
     ],
   },
@@ -597,9 +597,9 @@ export const grammarRules: GrammarRule[] = [
       { english: 'We were waiting for the bus.', myanmar: 'ငါတို့ ဘတ်စ်ကားစောင့်နေခဲ့ကြတယ်။', myanmarTh: 'พวกเรากำลังรอรถเมล์', },
     ],
     drills: [
-      { prompt: 'I ___ TV at 8 pm.', answer: 'was watching', options: ['was watching', 'watched', 'watch', 'am watching'] },
-      { prompt: 'They ___ football when I arrived.', answer: 'were playing', options: ['were playing', 'played', 'play', 'are playing'] },
-      { prompt: 'She ___ while he talked.', answer: 'was listening', options: ['was listening', 'listened', 'listens', 'is listening'] },
+      { prompt: 'I ___ TV at 8 pm.', answer: 'was watching', options: ['was watching', 'were watching', 'was watch', 'am watching'] },
+      { prompt: 'They ___ football when I arrived.', answer: 'were playing', options: ['were playing', 'was playing', 'were play', 'are playing'] },
+      { prompt: 'She ___ while he talked.', answer: 'was listening', options: ['was listening', 'were listening', 'was listen', 'is listening'] },
     ],
   },
   {
@@ -618,9 +618,9 @@ export const grammarRules: GrammarRule[] = [
       { english: 'He has lost his keys.', myanmar: 'သူ သော့ပျောက်သွားပြီ။', myanmarTh: 'เขาทำกุญแจหาย', },
     ],
     drills: [
-      { prompt: 'I ___ my homework.', answer: 'have finished', options: ['have finished', 'finished', 'finish', 'finishing'] },
+      { prompt: 'I ___ my homework.', answer: 'have finished', options: ['have finished', 'has finished', 'have finish', 'finishing'] },
       { prompt: 'She ___ to Thailand.', answer: 'has been', options: ['has been', 'was', 'is', 'have been'] },
-      { prompt: 'They ___ the house.', answer: 'have sold', options: ['have sold', 'sold', 'sell', 'selling'] },
+      { prompt: 'They ___ the house.', answer: 'have sold', options: ['have sold', 'has sold', 'have sell', 'selling'] },
     ],
   },
   {
@@ -639,7 +639,7 @@ export const grammarRules: GrammarRule[] = [
       { english: 'We won\'t be late.', myanmar: 'ငါတို့ နောက်ကျမှာမဟုတ်ဘူး။', myanmarTh: 'พวกเราจะไม่สาย', },
     ],
     drills: [
-      { prompt: 'I ___ call you tonight.', answer: 'will', options: ['will', 'am', 'go to', 'would'] },
+      { prompt: 'I ___ call you tonight.', answer: 'will', options: ['will', 'wills', 'go to', 'am'] },
       { prompt: 'She ___ be here soon.', answer: 'will', options: ['will', 'is', 'does', 'has'] },
       { prompt: 'They ___ come tomorrow.', answer: 'won\'t', options: ['won\'t', 'don\'t', 'isn\'t', 'not'] },
     ],
@@ -660,7 +660,7 @@ export const grammarRules: GrammarRule[] = [
       { english: 'She is going to be a doctor.', myanmar: 'သူမ ဆရာဝန်ဖြစ်တော့မယ်။', myanmarTh: 'เธอจะเป็นหมอ', },
     ],
     drills: [
-      { prompt: 'I ___ visit my uncle.', answer: 'am going to', options: ['am going to', 'go to', 'will to', 'going'] },
+      { prompt: 'I ___ visit my uncle.', answer: 'am going to', options: ['am going to', 'am go to', 'will to', 'going'] },
       { prompt: 'Watch out! You ___ fall!', answer: 'are going to', options: ['are going to', 'will to', 'go to', 'going to'] },
       { prompt: 'He ___ start a new job.', answer: 'is going to', options: ['is going to', 'will to', 'goes to', 'going'] },
     ],
@@ -746,7 +746,7 @@ export const grammarRules: GrammarRule[] = [
     drills: [
       { prompt: 'He ___ read when he was six.', answer: 'could', options: ['could', 'cans', 'can', 'coulds'] },
       { prompt: 'We ___ hear the music last night.', answer: 'couldn\'t', options: ['couldn\'t', 'can\'t', 'don\'t', 'not could'] },
-      { prompt: '___ she drive last year?', answer: 'Could', options: ['Could', 'Can', 'Does', 'Did'] },
+      { prompt: '___ she drive last year?', answer: 'Could', options: ['Could', 'Can', 'Does', 'Were'] },
     ],
   },
   {
@@ -1013,7 +1013,7 @@ export const grammarRules: GrammarRule[] = [
     examples: [
       { english: 'I have just eaten.', myanmar: 'ကျွန်တော် အခုပဲ စားပြီးပြီ။', myanmarTh: 'ผมเพิ่งกินเสร็จ', },
       { english: 'She has already finished.', myanmar: 'သူမ ပြီးနှင့်ပြီးပြီ။', myanmarTh: 'เธอเสร็จเรียบร้อยแล้ว', },
-      { english: 'Have you finished yet?', myanmar: 'မင်း ပြီးပြီလား။', myanmarTh: 'คุณเสร็จหรือยัง', },
+      { english: 'Have you finished yet?', myanmar: 'မင်း မပြီးသေးဘူးလား။', myanmarTh: 'คุณเสร็จหรือยัง', },
       { english: 'They haven\'t arrived yet.', myanmar: 'သူတို့ မရောက်သေးဘူး။', myanmarTh: 'พวกเขายังไม่มาถึง', },
     ],
     drills: [
@@ -1060,7 +1060,7 @@ export const grammarRules: GrammarRule[] = [
     ],
     drills: [
       { prompt: 'I\'ve decided. I ___ study medicine.', answer: 'am going to', options: ['am going to', 'will to', 'go to', 'shall'] },
-      { prompt: 'It\'s heavy. I ___ carry it. (deciding now)', answer: 'will', options: ['will', 'am going to', 'go to', 'shall'] },
+      { prompt: 'It\'s heavy. Give it to me — I ___ carry it for you.', answer: 'will', options: ['will', 'am going to', 'go to', 'shall'] },
       { prompt: 'Look at the sky! It ___.', answer: 'is going to rain', options: ['is going to rain', 'will rain to', 'rains', 'rain'] },
     ],
   },
@@ -1138,13 +1138,13 @@ export const grammarRules: GrammarRule[] = [
     examples: [
       { english: 'It may rain this evening.', myanmar: 'ဒီည မိုးရွာနိုင်တယ်။', myanmarTh: 'เย็นนี้ฝนอาจตก', },
       { english: 'She might come to the party.', myanmar: 'သူမ ပါတီကို လာနိုင်တယ်။', myanmarTh: 'เธออาจมางานเลี้ยง', },
-      { english: 'You may sit here.', myanmar: 'မင်း ဒီမှာ ထိုင်လို့ရတယ်။', myanmarTh: 'คุณนั่งตรงนี้ได้', },
+      { english: 'He may be in his office.', myanmar: 'သူ ရုံးမှာရှိနိုင်တယ်။', myanmarTh: 'คุณนั่งตรงนี้ได้', },
       { english: 'They might be late.', myanmar: 'သူတို့ နောက်ကျနိုင်တယ်။', myanmarTh: 'พวกเขาอาจสาย', },
     ],
     drills: [
       { prompt: 'It ___ be cold tonight.', answer: 'might', options: ['might', 'mights', 'to might', 'might to'] },
       { prompt: 'She ___ know the answer.', answer: 'may', options: ['may', 'mays', 'to may', 'may to'] },
-      { prompt: 'They ___ come, I\'m not sure.', answer: 'might', options: ['might', 'must', 'should', 'will'] },
+      { prompt: 'They ___ come.', answer: 'might', options: ['might', 'must', 'should', 'will'] },
     ],
   },
   {
@@ -1186,7 +1186,7 @@ export const grammarRules: GrammarRule[] = [
     drills: [
       { prompt: 'If you mix red and blue, you ___ purple.', answer: 'get', options: ['get', 'will get', 'got', 'getting'] },
       { prompt: 'If it ___ tomorrow, we will cancel.', answer: 'rains', options: ['rains', 'will rain', 'rained', 'rain'] },
-      { prompt: 'If she ___, she will be late.', answer: 'hurries', options: ['hurries', 'will hurry', 'hurry', 'hurried'] },
+      { prompt: 'If she doesn\'t ___, she will be late.', answer: 'hurry', options: ['hurry', 'will hurry', 'hurries', 'hurried'] },
     ],
   },
   {
@@ -1196,7 +1196,7 @@ export const grammarRules: GrammarRule[] = [
     titleMyanmar: 'Passive voice အခြေခံ',
     titleMyanmarTh: 'Passive voice เบื้องต้น',
     explanationMyanmar:
-      'လုပ်သူကို အလေးမပေးဘဲ ခံရသူကို အလေးပေးတဲ့အခါ be + V3 (past participle) သုံးတယ်။ ဥပမာ The cake was made by my mother။',
+      'လုပ်သူကို အလေးမပေးဘဲ ခံရသူကို အလေးပေးတဲ့အခါ be + V3 (past participle) သုံးတယ်။ ဥပမာ The cake was made by my mother.',
     explanationMyanmarTh: 'เมื่อต้องการเน้นผู้ถูกกระทำมากกว่าผู้กระทำ ให้ใช้ be + กริยาช่อง 3 เช่น The cake was made by my mother',
     examples: [
       { english: 'The bridge was built in 1990.', myanmar: 'တံတားကို ၁၉၉၀ မှာ ဆောက်လုပ်ခဲ့တယ်။', myanmarTh: 'สะพานถูกสร้างในปี 1990', },

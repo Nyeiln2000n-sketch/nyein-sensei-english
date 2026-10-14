@@ -38,6 +38,16 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 62,
+    slug: 'asking-for-directions-2026-10-14',
+    titleMy: 'အပိုင်း ၆၂ — လမ်းမေးခြင်း',
+    titleOrig: 'ถามทาง — Asking for Directions',
+    descMy: 'အင်္ဂလိပ်လိုလမ်းမေးခြင်း — "Excuse me." / "Where is the station?" / "How do I get to the beach?" / "Is it far from here?" / "How long does it take?"',
+    phrases: ['Excuse me.', 'Where is the station?', 'How do I get to the beach?', 'Is it far from here?', 'How long does it take?'],
+    durationSecs: 551,
+    cover: '/podcast-covers/ep-62.jpg',
+  },
+  {
     n: 61,
     slug: 'ep-61-transportation-bus-taxi-train-motorcycle-i-go-by-bus-it-is-fast-2026-10-14',
     titleMy: 'အပိုင်း ၆၁ — သွားလာရေးယာဉ်များ',

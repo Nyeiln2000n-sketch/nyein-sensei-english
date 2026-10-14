@@ -28880,7 +28880,7 @@
    "en": "We share one bathroom.",
    "en_norm": "we share one bathroom",
    "my_norm": "ကျွန်တော်တို့ ရေချိုးခန်းတစ်ခုကို အတူသုံးတယ်။",
-   "th_norm": "เราใช้ห้องน้ำร่วมกันหนึ่งห้อง",
+   "th_norm": "เราใช้ห้องน้ำร่วมกัน",
    "fingerprint": "f1cb3b464fa65f8e",
    "vocab_sig": [
     "bathroom",
@@ -29364,7 +29364,7 @@
    "en": "It's nice having everyone under one roof.",
    "en_norm": "it s nice having everyone under one roof",
    "my_norm": "လူတိုင်း တစ်အိမ်ထဲမှာ ရှိနေတာ ပျော်စရာကောင်းတယ်။",
-   "th_norm": "ดีจังที่ทุกคนอยู่ใต้หลังคาเดียวกัน",
+   "th_norm": "ดีจังที่ทุกคนอยู่ใต้ชายคาเดียวกัน",
    "fingerprint": "c81df45d6ec0411b",
    "vocab_sig": [
     "everyone",
@@ -29539,7 +29539,7 @@
    "en": "Home feels empty without them.",
    "en_norm": "home feels empty without them",
    "my_norm": "သူတို့မရှိရင် အိမ်က ဟာတာတာဖြစ်နေတယ်။",
-   "th_norm": "บ้านรู้สึกว่างเปล่าเมื่อไม่มีพวกเขา",
+   "th_norm": "บ้านเงียบเหงาเมื่อไม่มีพวกเขา",
    "fingerprint": "ae2a539b3527eedd",
    "vocab_sig": [
     "empty",
@@ -29604,7 +29604,7 @@
    "en": "Sibling rivalry kept us competitive.",
    "en_norm": "sibling rivalry kept us competitive",
    "my_norm": "ညီအစ်ကိုကြား ပြိုင်ဆိုင်မှုက ကျွန်တော်တို့ကို ယှဉ်ပြိုင်လိုစိတ်ရှိစေတယ်။",
-   "th_norm": "การแข่งขันระหว่างพี่น้องทำให้เราไม่ยอมแพ้กัน",
+   "th_norm": "การแข่งขันระหว่างพี่น้องทำให้เราชอบแข่งขันกัน",
    "fingerprint": "1ae35415a970e9f9",
    "vocab_sig": [
     "competitive",
@@ -30025,7 +30025,7 @@
    "en": "He lives just around the corner.",
    "en_norm": "he lives just around the corner",
    "my_norm": "သူက အနီးနားမှာပဲ နေတယ်။",
-   "th_norm": "เขาอยู่แค่หัวมุมถนนนี่เอง",
+   "th_norm": "เขาอยู่ใกล้ๆ แค่นี้เอง",
    "fingerprint": "71f77edc46f40457",
    "vocab_sig": [
     "around",
@@ -30632,7 +30632,7 @@
    "en": "I value loyalty above everything in a friend.",
    "en_norm": "i value loyalty above everything in a friend",
    "my_norm": "သူငယ်ချင်းတစ်ယောက်မှာ သစ္စာရှိမှုကို အရာအားလုံးထက် တန်ဖိုးထားတယ်။",
-   "th_norm": "ฉันให้ค่ากับความซื่อสัตย์ในเพื่อนมากกว่าสิ่งใด",
+   "th_norm": "ฉันให้ความสำคัญกับความซื่อสัตย์ในเพื่อนมากกว่าสิ่งใด",
    "fingerprint": "99eeaf905c59c018",
    "vocab_sig": [
     "above",
@@ -31617,7 +31617,7 @@
    "en": "My contract ends in December.",
    "en_norm": "my contract ends in december",
    "my_norm": "ကျွန်တော့်စာချုပ်က ဒီဇင်ဘာမှာ ကုန်ဆုံးမယ်။",
-   "th_norm": "สัญญาของฉันหมดเดือนธันวาคม",
+   "th_norm": "สัญญาของฉันหมดอายุเดือนธันวาคม",
    "fingerprint": "9c7cb02ad71def2e",
    "vocab_sig": [
     "contract",
@@ -31724,7 +31724,7 @@
    "en": "Micromanagement is killing team morale.",
    "en_norm": "micromanagement is killing team morale",
    "my_norm": "အသေးစိတ်လိုက်ကြည့်တဲ့ စီမံခန့်ခွဲမှုက အဖွဲ့စိတ်ဓာတ်ကို ဖျက်ဆီးနေတယ်။",
-   "th_norm": "การจู้จี้จุกจิกกำลังทำลายขวัญทีม",
+   "th_norm": "การบริหารแบบจู้จี้จุกจิกกำลังทำลายขวัญทีม",
    "fingerprint": "526b0f9e730371b6",
    "vocab_sig": [
     "killing",
@@ -32546,7 +32546,7 @@
    "en": "Sales staff can be pushy sometimes.",
    "en_norm": "sales staff can be pushy sometimes",
    "my_norm": "အရောင်းဝန်ထမ်းတွေက တစ်ခါတစ်လေ ဖိအားပေးတတ်တယ်။",
-   "th_norm": "พนักงานขายบางครั้งก็จู้จี้เกินไป",
+   "th_norm": "พนักงานขายบางครั้งก็ขี้ตื้อเกินไป",
    "fingerprint": "2184e3513573f96b",
    "vocab_sig": [
     "pushy",
@@ -32832,7 +32832,7 @@
    "en": "The store's return policy is surprisingly generous.",
    "en_norm": "the store s return policy is surprisingly generous",
    "my_norm": "ဆိုင်ရဲ့ ပြန်အမ်းမူဝါဒက မထင်မှတ်လောက်အောင် ရက်ရောတယ်။",
-   "th_norm": "นโยบายการคืนสินค้าของร้านใจกว้างอย่างน่าประหลาดใจ",
+   "th_norm": "นโยบายการคืนสินค้าของร้านผ่อนปรนอย่างน่าประหลาดใจ",
    "fingerprint": "c8d712efbf1278fe",
    "vocab_sig": [
     "generous",
@@ -33539,7 +33539,7 @@
    "en": "The overnight bus was surprisingly comfortable.",
    "en_norm": "the overnight bus was surprisingly comfortable",
    "my_norm": "ညဘက်ဘတ်စ်ကားက မထင်မှတ်လောက်အောင် သက်တောင့်သက်သာရှိတယ်။",
-   "th_norm": "รถบัสนอนสบายอย่างไม่น่าเชื่อ",
+   "th_norm": "รถบัสนอนสบายเกินคาด",
    "fingerprint": "8956dd363620135c",
    "vocab_sig": [
     "bus",
@@ -33738,7 +33738,7 @@
    "en": "The weather ruined our beach plans.",
    "en_norm": "the weather ruined our beach plans",
    "my_norm": "ရာသီဥတုက ကျွန်တော်တို့ရဲ့ ကမ်းခြေအစီအစဉ်ကို ပျက်စီးစေခဲ့တယ်။",
-   "th_norm": "อากาศทำลายแผนเที่ยวทะเลของเรา",
+   "th_norm": "อากาศทำแผนเที่ยวทะเลของเราพัง",
    "fingerprint": "080c6111b4cff92c",
    "vocab_sig": [
     "beach",
@@ -142227,7 +142227,7 @@
    "kind": "phrase",
    "en": "I learned to cook from my grandmother.",
    "en_norm": "i learned to cook from my grandmother",
-   "my_norm": "ကျွန်တော် အဖွားဆီကနေ ချက်တတ်ဖို့ သင်ခဲ့တယ်။",
+   "my_norm": "ကျွန်တော် အဖွားဆီက ချက်ပြုတ်တတ်အောင် သင်ယူခဲ့တယ်။",
    "th_norm": "ฉันเรียนทำอาหารจากยาย",
    "fingerprint": "00c7c18b8683525c",
    "vocab_sig": [
@@ -142248,7 +142248,7 @@
    "kind": "phrase",
    "en": "The waiter brought the wrong order.",
    "en_norm": "the waiter brought the wrong order",
-   "my_norm": "စားပွဲထိုးက မှားယူလာခဲ့တယ်။",
+   "my_norm": "စားပွဲထိုးက မှားပြီး ယူလာခဲ့တယ်။",
    "th_norm": "พนักงานเสิร์ฟเอาอาหารผิดมาให้",
    "fingerprint": "dbb552194d15614e",
    "vocab_sig": [
@@ -142314,7 +142314,7 @@
    "kind": "phrase",
    "en": "The dessert was too sweet for me.",
    "en_norm": "the dessert was too sweet for me",
-   "my_norm": "အချိုပွဲက ကျွန်တော့်အတွက် အရမ်းချိုတယ်။",
+   "my_norm": "အချိုပွဲက ကျွန်တော့်အတွက် အရမ်းချိုခဲ့တယ်။",
    "th_norm": "ของหวานหวานเกินไปสำหรับฉัน",
    "fingerprint": "7588307c0a1625f6",
    "vocab_sig": [
@@ -142465,7 +142465,7 @@
    "kind": "phrase",
    "en": "We celebrate with a big family meal.",
    "en_norm": "we celebrate with a big family meal",
-   "my_norm": "ငါတို့ မိသားစုထမင်းဝိုင်းကြီးစားပြီး ကျင်းပတယ်။",
+   "my_norm": "ငါတို့ မိသားစုထမင်းဝိုင်းကြီးစားပြီး ပွဲခံတယ်။",
    "th_norm": "เราฉลองด้วยมื้ออาหารครอบครัวใหญ่",
    "fingerprint": "7cd7c3917568e421",
    "vocab_sig": [
@@ -142555,7 +142555,7 @@
    "kind": "phrase",
    "en": "The chef prepared a five-course meal.",
    "en_norm": "the chef prepared a five course meal",
-   "my_norm": "စားဖိုမှူးက ငါးဆက်ပါတဲ့ ညစာတစ်နပ်ကို ပြင်ဆင်ခဲ့တယ်။",
+   "my_norm": "စားဖိုမှူးက ဟင်းငါးမျိုးပါတဲ့ ညစာတစ်နပ်ကို ပြင်ဆင်ခဲ့တယ်။",
    "th_norm": "เชฟเตรียมอาหารห้าคอร์ส",
    "fingerprint": "08fff124ed26caf5",
    "vocab_sig": [
@@ -151973,7 +151973,7 @@
    "kind": "phrase",
    "en": "I locked all the windows.",
    "en_norm": "i locked all the windows",
-   "my_norm": "ပြတင်းပေါက်အားလုံး သော့ခတ်ထားတယ်။",
+   "my_norm": "ပြတင်းပေါက်အားလုံး သော့ခတ်ခဲ့တယ်။",
    "th_norm": "ฉันล็อกหน้าต่างทุกบาน",
    "fingerprint": "036cfa80c2f757fa",
    "vocab_sig": [
@@ -152340,7 +152340,7 @@
    "kind": "phrase",
    "en": "The mortgage payment is due next week.",
    "en_norm": "the mortgage payment is due next week",
-   "my_norm": "အိမ်ချေးငွေပေးဆောင်ရက် နောက်အပတ်ရောက်မယ်။",
+   "my_norm": "အိမ်ချေးငွေကို နောက်အပတ်မှာ ပေးဆောင်ရမယ်။",
    "th_norm": "ค่าผ่อนบ้านครบกำหนดสัปดาห์หน้า",
    "fingerprint": "57bc289be0e2d5ed",
    "vocab_sig": [
@@ -152494,7 +152494,7 @@
    "kind": "phrase",
    "en": "Our wifi works best in the living room.",
    "en_norm": "our wifi works best in the living room",
-   "my_norm": "ကျွန်တော်တို့ ဝိုင်ဖိုင် ဧည့်ခန်းမှာ အကောင်းဆုံးအလုပ်လုပ်တယ်။",
+   "my_norm": "ကျွန်တော်တို့ ဝိုင်ဖိုင် ဧည့်ခန်းမှာ လိုင်းအကောင်းဆုံးရတယ်။",
    "th_norm": "ไวไฟบ้านเราแรงสุดในห้องนั่งเล่น",
    "fingerprint": "3caf7fb3eb9eac0e",
    "vocab_sig": [
@@ -152718,7 +152718,7 @@
    "kind": "phrase",
    "en": "Termites had damaged the wooden beams.",
    "en_norm": "termites had damaged the wooden beams",
-   "my_norm": "ခြတွေက သစ်သားတိုင်တွေ ပျက်စီးစေခဲ့တယ်။",
+   "my_norm": "ခြတွေက သစ်သားထုပ်တန်းတွေ ပျက်စီးစေခဲ့တယ်။",
    "th_norm": "ปลวกกัดคานไม้จนเสียหาย",
    "fingerprint": "3d39e6b6000024b2",
    "vocab_sig": [
@@ -153611,7 +153611,7 @@
    "kind": "phrase",
    "en": "The dry cleaner ruined my suit.",
    "en_norm": "the dry cleaner ruined my suit",
-   "my_norm": "အခြောက်လျှော်ဆိုင်က ကျွန်တော့်ဝတ်စုံကို ဖျက်ဆီးသွားတယ်။",
+   "my_norm": "အခြောက်လျှော်ဆိုင်က ကျွန်တော့်ဝတ်စုံကို ပျက်စီးစေခဲ့တယ်။",
    "th_norm": "ร้านซักแห้งทำสูทฉันเสีย",
    "fingerprint": "7ebca8e22f27afd2",
    "vocab_sig": [
