@@ -38,6 +38,16 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 61,
+    slug: 'ep-61-transportation-bus-taxi-train-motorcycle-i-go-by-bus-it-is-fast-2026-10-14',
+    titleMy: 'အပိုင်း ၆၁ — သွားလာရေးယာဉ်များ',
+    titleOrig: 'ยานพาหนะ — Transportation',
+    descMy: 'ဘတ်စ်၊ တက်ကစီ၊ ရထား၊ မော်တော်ဆိုင်ကယ်ယာဉ်များ — "I go by bus." / "It is fast." / "I go to work by bus every day."',
+    phrases: ['I go by bus.', 'It is fast.', 'I go to work by bus every day.'],
+    durationSecs: 585,
+    cover: '/podcast-covers/ep-61.jpg',
+  },
+  {
     n: 60,
     slug: 'module-6-review-home-and-daily-routine-i-wake-up-at-six-there-are-two-bedrooms-i-clean-my-room-2026-10-13',
     titleMy: 'အပိုင်း ၆၀ — အခန်း ၆ ပြန်လည်လေ့လာခြင်း',

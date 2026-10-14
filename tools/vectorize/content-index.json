@@ -28731,7 +28731,7 @@
    "kind": "phrase",
    "en": "My little brother annoys me sometimes.",
    "en_norm": "my little brother annoys me sometimes",
-   "my_norm": "ကျွန်တော့်ညီလေးက တစ်ခါတစ်လေ ကျွန်တော့်ကို စိတ်တိုစေတယ်။",
+   "my_norm": "ကျွန်တော့်ညီလေးက တစ်ခါတစ်လေ ကျွန်တော့်ကို စိတ်အနှောင့်အယှက်ဖြစ်စေတယ်။",
    "th_norm": "น้องชายของฉันบางครั้งก็ชอบกวนใจฉัน",
    "fingerprint": "92f94499906f5a64",
    "vocab_sig": [
@@ -29581,7 +29581,7 @@
    "kind": "phrase",
    "en": "My parents instilled strong values in me.",
    "en_norm": "my parents instilled strong values in me",
-   "my_norm": "ကျွန်တော့်မိဘတွေက ကျွန်တော့မှာ ခိုင်မာတဲ့တန်ဖိုးတွေ သွတ်သွင်းပေးခဲ့တယ်။",
+   "my_norm": "ကျွန်တော့်မိဘတွေက ကျွန်တော့ထဲမှာ ခိုင်မာတဲ့တန်ဖိုးတွေ သွတ်သွင်းပေးခဲ့တယ်။",
    "th_norm": "พ่อแม่ปลูกฝังค่านิยมที่ดีให้ฉัน",
    "fingerprint": "dd74492cca1193a3",
    "vocab_sig": [
@@ -30002,7 +30002,7 @@
    "kind": "phrase",
    "en": "The group photo came out great.",
    "en_norm": "the group photo came out great",
-   "my_norm": "စုပေါင်းဓာတ်ပုံက အရမ်းလှထွက်လာတယ်။",
+   "my_norm": "စုပေါင်းဓာတ်ပုံက အရမ်းကောင်းထွက်လာတယ်။",
    "th_norm": "รูปกลุ่มออกมาสวยมาก",
    "fingerprint": "eb47cfb8f1a0924b",
    "vocab_sig": [
@@ -30024,7 +30024,7 @@
    "kind": "phrase",
    "en": "He lives just around the corner.",
    "en_norm": "he lives just around the corner",
-   "my_norm": "သူက ထောင့်နားမှာပဲ နေတယ်။",
+   "my_norm": "သူက အနီးနားမှာပဲ နေတယ်။",
    "th_norm": "เขาอยู่แค่หัวมุมถนนนี่เอง",
    "fingerprint": "71f77edc46f40457",
    "vocab_sig": [
@@ -30253,7 +30253,7 @@
    "kind": "phrase",
    "en": "We picked up where we left off.",
    "en_norm": "we picked up where we left off",
-   "my_norm": "ကျွန်တော်တို့ ရပ်ထားတဲ့နေရာကနေ ဆက်လုပ်တယ်။",
+   "my_norm": "ကျွန်တော်တို့ ရပ်ထားတဲ့နေရာကနေ ဆက်လုပ်ခဲ့တယ်။",
    "th_norm": "เรากลับมาคุยกันต่อจากที่ค้างไว้",
    "fingerprint": "4dbf8ccbb125e181",
    "vocab_sig": [
@@ -30273,7 +30273,7 @@
    "kind": "phrase",
    "en": "He apologized and we moved on.",
    "en_norm": "he apologized and we moved on",
-   "my_norm": "သူ တောင်းပန်ပြီး ကျွန်တော်တို့ ဆက်သွားတယ်။",
+   "my_norm": "သူ တောင်းပန်ပြီး ကျွန်တော်တို့ ဆက်သွားခဲ့တယ်။",
    "th_norm": "เขาขอโทษแล้วเราก็เดินหน้าต่อไป",
    "fingerprint": "b4d0c73e4e54e623",
    "vocab_sig": [
@@ -30546,7 +30546,7 @@
    "kind": "phrase",
    "en": "He drove me home that night.",
    "en_norm": "he drove me home that night",
-   "my_norm": "အဲဒီည သူက ကျွန်တော့်ကို အိမ်ပြန်ပို့တယ်။",
+   "my_norm": "အဲဒီည သူက ကျွန်တော့်ကို အိမ်ပြန်ပို့ခဲ့တယ်။",
    "th_norm": "คืนนั้นเขาขับรถไปส่งฉันที่บ้าน",
    "fingerprint": "1385746a9e9d899b",
    "vocab_sig": [
@@ -30954,7 +30954,7 @@
    "kind": "phrase",
    "en": "I applied for a new job.",
    "en_norm": "i applied for a new job",
-   "my_norm": "ကျွန်တော် အလုပ်သစ်အတွက် လျှောက်ထားတယ်။",
+   "my_norm": "ကျွန်တော် အလုပ်သစ်အတွက် လျှောက်ထားခဲ့တယ်။",
    "th_norm": "ฉันสมัครงานใหม่",
    "fingerprint": "b7543e9af0d61b01",
    "vocab_sig": [
@@ -31227,7 +31227,7 @@
    "kind": "phrase",
    "en": "We discussed the new project.",
    "en_norm": "we discussed the new project",
-   "my_norm": "ကျွန်တော်တို့ ပရောဂျက်အသစ်ကို ဆွေးနွေးတယ်။",
+   "my_norm": "ကျွန်တော်တို့ ပရောဂျက်အသစ်ကို ဆွေးနွေးခဲ့တယ်။",
    "th_norm": "เราหารือกันเรื่องโครงการใหม่",
    "fingerprint": "9914803feed31e6b",
    "vocab_sig": [
@@ -31423,7 +31423,7 @@
    "kind": "phrase",
    "en": "We brainstormed ideas for the campaign.",
    "en_norm": "we brainstormed ideas for the campaign",
-   "my_norm": "ကမ်ပိန်းအတွက် အကြံဥာဏ်တွေ ဆွေးနွေးခဲ့တယ်။",
+   "my_norm": "ကမ်ပိန်းအတွက် အကြံဥာဏ်တွေ တွေးထုတ်ခဲ့ကြတယ်။",
    "th_norm": "เราระดมความคิดสำหรับแคมเปญ",
    "fingerprint": "f7134aa4c30aa795",
    "vocab_sig": [
@@ -31723,7 +31723,7 @@
    "kind": "phrase",
    "en": "Micromanagement is killing team morale.",
    "en_norm": "micromanagement is killing team morale",
-   "my_norm": "အသေးစိတ်လိုက်ကြည့်တဲ့ စီမံခန့်ခွဲမှုက အဖွဲ့စိတ်ဓာတ်ကို သတ်နေတယ်။",
+   "my_norm": "အသေးစိတ်လိုက်ကြည့်တဲ့ စီမံခန့်ခွဲမှုက အဖွဲ့စိတ်ဓာတ်ကို ဖျက်ဆီးနေတယ်။",
    "th_norm": "การจู้จี้จุกจิกกำลังทำลายขวัญทีม",
    "fingerprint": "526b0f9e730371b6",
    "vocab_sig": [
@@ -31745,7 +31745,7 @@
    "kind": "phrase",
    "en": "I thrive under pressure, honestly.",
    "en_norm": "i thrive under pressure honestly",
-   "my_norm": "ရိုးရိုးပြောရရင် ဖိအားအောက်မှာ ကျွန်တော် ပိုတော်တယ်။",
+   "my_norm": "ရိုးရိုးပြောရရင် ဖိအားအောက်မှာ ကျွန်တော် ပိုတိုးတက်အောင်မြင်တယ်။",
    "th_norm": "พูดตรงๆ นะ ฉันทำงานได้ดีภายใต้ความกดดัน",
    "fingerprint": "829bb7d0b328ed71",
    "vocab_sig": [
@@ -31810,7 +31810,7 @@
    "kind": "phrase",
    "en": "Burnout is real in this industry.",
    "en_norm": "burnout is real in this industry",
-   "my_norm": "ဒီလုပ်ငန်းမှာ ပင်ပန်းနွမ်းနယ်မှုက တကယ်ရှိတယ်။",
+   "my_norm": "ဒီလုပ်ငန်းမှာ burnout လို့ခေါ်တဲ့ ပင်ပန်းမှုလွန်ခြင်းက တကယ်ဖြစ်တတ်တယ်။",
    "th_norm": "ภาวะหมดไฟเป็นเรื่องจริงในวงการนี้",
    "fingerprint": "1d0a647159d18069",
    "vocab_sig": [
@@ -32305,17 +32305,17 @@
   {
    "id": "phrase:shopping:0173",
    "kind": "phrase",
-   "en": "This store has good quality.",
-   "en_norm": "this store has good quality",
+   "en": "The quality at this store is good.",
+   "en_norm": "the quality at this store is good",
    "my_norm": "ဒီဆိုင်က အရည်အသွေးကောင်းတယ်။",
    "th_norm": "ร้านนี้คุณภาพดี",
-   "fingerprint": "b8abb84e830013d8",
+   "fingerprint": "5d36e5787d3afc02",
    "vocab_sig": [
     "good",
     "quality",
     "store"
    ],
-   "template_sig": "this W has W W .",
+   "template_sig": "the W at this W is W .",
    "tags": [
     "shopping",
     "phrase"
@@ -32480,7 +32480,7 @@
    "kind": "phrase",
    "en": "I bought it in bulk to save money.",
    "en_norm": "i bought it in bulk to save money",
-   "my_norm": "ငွေချွေတာဖို့ အများကြီးဝယ်ခဲ့တယ်။",
+   "my_norm": "ငွေချွေတာဖို့ အများအပြား တစ်ခါတည်းဝယ်ခဲ့တယ်။",
    "th_norm": "ฉันซื้อทีละเยอะๆ เพื่อประหยัดเงิน",
    "fingerprint": "93f2928e1db6ea88",
    "vocab_sig": [
@@ -33627,7 +33627,7 @@
    "kind": "phrase",
    "en": "I learned a few words of the local language.",
    "en_norm": "i learned a few words of the local language",
-   "my_norm": "ဒေသဘာသာစကားစကားလုံးအနည်းငယ် သင်ယူခဲ့တယ်။",
+   "my_norm": "ဒေသဘာသာစကားရဲ့ စကားလုံးအနည်းငယ် သင်ယူခဲ့တယ်။",
    "th_norm": "ฉันเรียนภาษาท้องถิ่นไปไม่กี่คำ",
    "fingerprint": "b5ea072def9b5248",
    "vocab_sig": [
@@ -216743,7 +216743,7 @@
    "kind": "word",
    "en": "pal",
    "en_norm": "pal",
-   "my_norm": "သူငယ်ချင်း",
+   "my_norm": "မိတ်ဆွေ",
    "th_norm": "เพื่อน",
    "fingerprint": "a1a38b5bae5866d7",
    "vocab_sig": [
@@ -217052,7 +217052,7 @@
    "kind": "word",
    "en": "charitable",
    "en_norm": "charitable",
-   "my_norm": "ဒါနပြု",
+   "my_norm": "ဒါနပြုသော",
    "th_norm": "ใจบุญ",
    "fingerprint": "ea0c999046858f9d",
    "vocab_sig": [
@@ -217672,7 +217672,7 @@
    "kind": "word",
    "en": "fall out",
    "en_norm": "fall out",
-   "my_norm": "ရန်ဖြစ်",
+   "my_norm": "ရန်ဖြစ်စိတ်ဆိုး",
    "th_norm": "ทะเลาะกัน",
    "fingerprint": "d8cdc66739002f25",
    "vocab_sig": [
@@ -217982,7 +217982,7 @@
    "kind": "word",
    "en": "dependable",
    "en_norm": "dependable",
-   "my_norm": "အားကိုး",
+   "my_norm": "အားကိုးရသော",
    "th_norm": "พึ่งพาได้",
    "fingerprint": "1a035594e4f52fd6",
    "vocab_sig": [
@@ -218097,7 +218097,7 @@
    "kind": "word",
    "en": "cranky",
    "en_norm": "cranky",
-   "my_norm": "ဒေါသထွက်",
+   "my_norm": "စိတ်တိုတတ်",
    "th_norm": "อารมณ์เสีย",
    "fingerprint": "fd59087dd967edb8",
    "vocab_sig": [
@@ -220144,7 +220144,7 @@
    "kind": "word",
    "en": "supply",
    "en_norm": "supply",
-   "my_norm": "ထောက်ပံ့",
+   "my_norm": "ထောက်ပံ့ပို့ဆောင်",
    "th_norm": "จัดหา",
    "fingerprint": "f30dfe1cfb6de6d1",
    "vocab_sig": [
@@ -220538,7 +220538,7 @@
    "kind": "word",
    "en": "internship",
    "en_norm": "internship",
-   "my_norm": "အလုပ်သင်အလုပ်အကိုင်",
+   "my_norm": "အလုပ်သင်",
    "th_norm": "การฝึกงาน",
    "fingerprint": "aed7e01a3eb8634a",
    "vocab_sig": [
@@ -221046,7 +221046,7 @@
    "kind": "word",
    "en": "driven",
    "en_norm": "driven",
-   "my_norm": "ရည်မှန်းချက်ကြီးသူ",
+   "my_norm": "ရည်မှန်းချက်ကြီးသော",
    "th_norm": "มีความมุ่งมั่น",
    "fingerprint": "34f5290adc138ebb",
    "vocab_sig": [
@@ -221648,15 +221648,15 @@
   {
    "id": "example:shopping:cashier",
    "kind": "example",
-   "en": "Pay at the cashier.",
-   "en_norm": "pay at the cashier",
+   "en": "Pay the cashier.",
+   "en_norm": "pay the cashier",
    "my_norm": "",
-   "fingerprint": "3e48dada87086c05",
+   "fingerprint": "167ee1ef1539e457",
    "vocab_sig": [
     "cashier",
     "pay"
    ],
-   "template_sig": "W at the W .",
+   "template_sig": "W the W .",
    "tags": [
     "shopping",
     "example"
@@ -222450,7 +222450,7 @@
    "kind": "word",
    "en": "rack",
    "en_norm": "rack",
-   "my_norm": "ချိတ်",
+   "my_norm": "အဝတ်ချိတ်စင်",
    "th_norm": "ราวแขวนเสื้อ",
    "fingerprint": "8e9d1a8d5b1863f1",
    "vocab_sig": [
@@ -222644,7 +222644,7 @@
    "kind": "word",
    "en": "outlay",
    "en_norm": "outlay",
-   "my_norm": "ထုတ်ကုန်",
+   "my_norm": "ကုန်ကျစရိတ်",
    "th_norm": "ค่าใช้จ่าย",
    "fingerprint": "1a59b661c2ca3919",
    "vocab_sig": [
@@ -222799,7 +222799,7 @@
    "kind": "word",
    "en": "settlement",
    "en_norm": "settlement",
-   "my_norm": "ရှင်းလင်းမှု",
+   "my_norm": "ငွေရှင်းမှု",
    "th_norm": "การชำระเงิน",
    "fingerprint": "a75c433ab2ae1daf",
    "vocab_sig": [
@@ -410093,7 +410093,7 @@
    "en": "rising action",
    "en_norm": "rising action",
    "my_norm": "ဇာတ်လမ်းအရှိန်တက်ပိုင်း",
-   "th_norm": "การดำเนินเรื่องขึ้น",
+   "th_norm": "การดำเนินเรื่องขาขึ้น",
    "fingerprint": "57ddd0267a2e393c",
    "vocab_sig": [
     "action",
@@ -410788,7 +410788,7 @@
    "en": "story arc",
    "en_norm": "story arc",
    "my_norm": "ဇာတ်လမ်းလမ်းကြောင်း",
-   "th_norm": "โครงเรื่อง",
+   "th_norm": "เส้นโค้งของเรื่อง",
    "fingerprint": "031a1a926273d210",
    "vocab_sig": [
     "arc",
@@ -413722,7 +413722,7 @@
    "en": "extended metaphor",
    "en_norm": "extended metaphor",
    "my_norm": "ရှည်လျားသောဥပမာဟန်",
-   "th_norm": "อุปมาขยาย",
+   "th_norm": "อุปลักษณ์ขยาย",
    "fingerprint": "c04efdd3cbf1459e",
    "vocab_sig": [
     "extended",
@@ -415616,7 +415616,7 @@
    "en": "locked-room mystery",
    "en_norm": "locked room mystery",
    "my_norm": "သော့ခတ်အခန်းလျှို့ဝှက်ချက်",
-   "th_norm": "ห้องปิดตาย",
+   "th_norm": "ปริศนาห้องปิดตาย",
    "fingerprint": "c249dee2f9f24a7a",
    "vocab_sig": [
     "locked",
@@ -417783,7 +417783,7 @@
    "en": "poignant",
    "en_norm": "poignant",
    "my_norm": "စိတ်ထိခိုက်ဖွယ်",
-   "th_norm": "ซาบซึ้ง",
+   "th_norm": "สะเทือนใจ",
    "fingerprint": "d6a8837c2a7cce85",
    "vocab_sig": [
     "poignant"
@@ -418286,7 +418286,7 @@
    "en": "page-turner",
    "en_norm": "page turner",
    "my_norm": "အဆက်မပြတ်ဖတ်ချင်စရာစာအုပ်",
-   "th_norm": "หนังสือพลิกหน้า",
+   "th_norm": "หนังสือที่อ่านแล้ววางไม่ลง",
    "fingerprint": "42bf470e1843e5a1",
    "vocab_sig": [
     "page",
@@ -419343,7 +419343,7 @@
    "en": "recondite",
    "en_norm": "recondite",
    "my_norm": "နားလည်ရခက်သောနက်နဲသော",
-   "th_norm": "ลึกซึ้ง",
+   "th_norm": "ลี้ลับ เข้าใจยาก",
    "fingerprint": "b35853d1d73424c3",
    "vocab_sig": [
     "recondite"
@@ -422550,7 +422550,7 @@
    "en": "fabulist",
    "en_norm": "fabulist",
    "my_norm": "ပုံပြင်ရေးဆရာ",
-   "th_norm": "นักเล่านิทาน",
+   "th_norm": "นักแต่งนิทาน",
    "fingerprint": "b01d50bcf500827f",
    "vocab_sig": [
     "fabulist"
@@ -424316,7 +424316,7 @@
    "en": "narrative hook",
    "en_norm": "narrative hook",
    "my_norm": "စာဖတ်သူဆွဲဆောင်အဖွင့်",
-   "th_norm": "ตะขอเรื่องเล่า",
+   "th_norm": "ฮุก",
    "fingerprint": "7cfdd067f8931324",
    "vocab_sig": [
     "hook",
@@ -424829,7 +424829,7 @@
    "en": "story cycle",
    "en_norm": "story cycle",
    "my_norm": "ဆက်စပ်ပုံပြင်စုစည်းမှု",
-   "th_norm": "วงจรเรื่อง",
+   "th_norm": "เรื่องสั้นชุดที่เชื่อมโยงกัน",
    "fingerprint": "a0dc00617aa39cad",
    "vocab_sig": [
     "cycle",
@@ -425678,7 +425678,7 @@
    "en": "emblem poem",
    "en_norm": "emblem poem",
    "my_norm": "သင်္ကေတပုံကဗျာ",
-   "th_norm": "เอ็มเบล็มโพอึม",
+   "th_norm": "เอ็มเบล็มโพเอม",
    "fingerprint": "101ec8ba1d43e866",
    "vocab_sig": [
     "emblem",
@@ -425721,7 +425721,7 @@
    "en": "found poem",
    "en_norm": "found poem",
    "my_norm": "တွေ့ရှိချက်ကဗျာ",
-   "th_norm": "ฟาวน์ดโพอึม",
+   "th_norm": "ฟาวน์ดโพเอม",
    "fingerprint": "76fc24695effe880",
    "vocab_sig": [
     "found",
@@ -425809,7 +425809,7 @@
    "en": "cento",
    "en_norm": "cento",
    "my_norm": "ကောက်နှုတ်ကဗျာ",
-   "th_norm": "เซนโต",
+   "th_norm": "เชนโต",
    "fingerprint": "862480fd42810f16",
    "vocab_sig": [
     "cento"
@@ -427454,7 +427454,7 @@
    "en": "persona poem",
    "en_norm": "persona poem",
    "my_norm": "အယောင်ဆောင်ကဗျာ",
-   "th_norm": "เพอร์โซนาโพอึม",
+   "th_norm": "เพอร์โซนาโพเอม",
    "fingerprint": "4330d4889a5007f4",
    "vocab_sig": [
     "persona",
@@ -428116,7 +428116,7 @@
    "en": "man of letters",
    "en_norm": "man of letters",
    "my_norm": "စာပေပညာရှင်",
-   "th_norm": "นักอักษร",
+   "th_norm": "นักอักษรศาสตร์",
    "fingerprint": "1f6220bd114561e9",
    "vocab_sig": [
     "letters",
@@ -429085,7 +429085,7 @@
    "en": "tragic irony",
    "en_norm": "tragic irony",
    "my_norm": "ကြေကွဲဖွယ်သရော်မှု",
-   "th_norm": "ประชดโศกนาฏกรรม",
+   "th_norm": "แทรจิกไอรอนี",
    "fingerprint": "f8c436da802ad8b3",
    "vocab_sig": [
     "irony",
