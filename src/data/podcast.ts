@@ -38,6 +38,16 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 63,
+    slug: 'english-with-aung-and-may-ep-63-giving-directions-2026-10-14',
+    titleMy: 'အပိုင်း ၆၃ — လမ်းညွှန်ခြင်း',
+    titleOrig: 'บอกทาง — Giving Directions',
+    descMy: 'အင်္ဂလိပ်လိုလမ်းညွှန်ခြင်း — "Go straight for two blocks." / "Turn left at the traffic light." / "Turn right at the big market." / "It is near here, only five minutes on foot."',
+    phrases: ['Go straight for two blocks.', 'Turn left at the traffic light.', 'Turn right at the big market.', 'It is near here, only five minutes on foot.'],
+    durationSecs: 571,
+    cover: '/podcast-covers/ep-63.jpg',
+  },
+  {
     n: 62,
     slug: 'asking-for-directions-2026-10-14',
     titleMy: 'အပိုင်း ၆၂ — လမ်းမေးခြင်း',

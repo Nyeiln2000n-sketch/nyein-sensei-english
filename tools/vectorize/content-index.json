@@ -214430,7 +214430,7 @@
    "kind": "word",
    "en": "stepbrother",
    "en_norm": "stepbrother",
-   "my_norm": "မောင်ထွေး",
+   "my_norm": "အစ်ကိုထွေး",
    "th_norm": "พี่ชายต่างแม่",
    "fingerprint": "04f9b06e378a2e58",
    "vocab_sig": [
@@ -221945,7 +221945,7 @@
    "kind": "word",
    "en": "try on",
    "en_norm": "try on",
-   "my_norm": "ဝတ်စမ်းကြည့်",
+   "my_norm": "စမ်းဝတ်ကြည့်",
    "th_norm": "ลองสวม",
    "fingerprint": "bcc60fc727ad7936",
    "vocab_sig": [
@@ -222528,7 +222528,7 @@
    "kind": "word",
    "en": "dicker",
    "en_norm": "dicker",
-   "my_norm": "ဈေးဆစ်ညှိ",
+   "my_norm": "ဈေးဆစ်",
    "th_norm": "ต่อรองราคา",
    "fingerprint": "583fcd22c2c2fe36",
    "vocab_sig": [
@@ -435436,7 +435436,7 @@
    "kind": "word",
    "en": "appetite",
    "en_norm": "appetite",
-   "my_norm": "အစားအသောက်စိတ်ဝင်စားမှု",
+   "my_norm": "စားချင်စိတ်",
    "th_norm": "ความอยากอาหาร",
    "fingerprint": "abbe51030b1dbc63",
    "vocab_sig": [
@@ -508234,16 +508234,16 @@
   {
    "id": "example:food:fermentation",
    "kind": "example",
-   "en": "Kimchi uses fermentation.",
-   "en_norm": "kimchi uses fermentation",
+   "en": "Kimchi is made by fermentation.",
+   "en_norm": "kimchi is made by fermentation",
    "my_norm": "",
-   "fingerprint": "1642f54fde41e877",
+   "fingerprint": "86872bc7f313b76e",
    "vocab_sig": [
     "fermentation",
     "kimchi",
-    "uses"
+    "made"
    ],
-   "template_sig": "W W W .",
+   "template_sig": "W is W by W .",
    "tags": [
     "food",
     "example"
@@ -508295,7 +508295,7 @@
    "kind": "word",
    "en": "nutritious",
    "en_norm": "nutritious",
-   "my_norm": "အာဟာရပြည့်ဝသည်",
+   "my_norm": "အာဟာရပြည့်ဝသော",
    "th_norm": "มีคุณค่าทางอาหาร",
    "fingerprint": "e4e986e60a0591bc",
    "vocab_sig": [
@@ -509426,7 +509426,7 @@
    "kind": "word",
    "en": "isthmus",
    "en_norm": "isthmus",
-   "my_norm": "ကျွန်းဆက်မြေနား",
+   "my_norm": "ကျွန်းဆက်",
    "th_norm": "คอคอด",
    "fingerprint": "59d7981d69d01ad3",
    "vocab_sig": [
@@ -509818,7 +509818,7 @@
    "kind": "word",
    "en": "ravine",
    "en_norm": "ravine",
-   "my_norm": "ချောက်ကမ်းပါး",
+   "my_norm": "ချောက်",
    "th_norm": "หุบเหว",
    "fingerprint": "812db3d76abe347a",
    "vocab_sig": [
@@ -513049,7 +513049,7 @@
    "kind": "word",
    "en": "javelin",
    "en_norm": "javelin",
-   "my_norm": "လှံတံပစ်ပွဲ",
+   "my_norm": "လှံတံ",
    "th_norm": "พุ่งแหลน",
    "fingerprint": "0730d1dabc8ed4e8",
    "vocab_sig": [

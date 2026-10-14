@@ -374,7 +374,7 @@ export const dialoguesBatch2: Dialogue[] = [
     situationMy: 'သူငယ်ချင်းနှစ်ယောက် စာမေးပွဲမတိုင်ခင် ညမှာ စကားပြောနေတာ',
     situationTh: 'เพื่อนสองคนคุยกันคืนก่อนสอบ',
     turns: [
-      { speaker: 'သီရိ', speakerTh: 'ทิริ', en: 'I’m so nervous about tomorrow’s exam.', my: 'မနက်ဖြန်ရဲ့ စာမေးပွဲနဲ့ ပတ်သက်ပြီး အရမ်း စိတ်လှုပ်ရှားနေတယ်။', th: 'เราตื่นเต้นเรื่องสอบพรุ่งนี้มากเลย' },
+      { speaker: 'သီရိ', speakerTh: 'ทิริ', en: 'I’m so nervous about tomorrow’s exam.', my: 'မနက်ဖြန်ရဲ့ စာမေးပွဲနဲ့ ပတ်သက်ပြီး အရမ်း စိတ်လှုပ်ရှားနေတယ်။', th: 'เรากังวลเรื่องสอบพรุ่งนี้มากเลย' },
       { speaker: 'ကံ', speakerTh: 'คัน', en: 'You studied hard. You’ll be fine.', my: 'မင်း ကြိုးကြိုးစားစား စာကျက်ခဲ့တယ်။ အဆင်ပြေမှာပါ။', th: 'แกตั้งใจอ่านมาแล้ว ต้องโอเคแหละ' },
       { speaker: 'သီရိ', speakerTh: 'ทิริ', en: 'But what if I forget everything?', my: 'ဒါပေမဲ့ အကုန် မေ့သွားရင် ဘယ်လိုလုပ်မလဲ။', th: 'แต่ถ้าเราลืมหมดล่ะทำไง' },
       { speaker: 'ကံ', speakerTh: 'คัน', en: 'Take a deep breath. You know this material.', my: 'အသက်ကို နက်နက်ရှူပါ။ ဒီစာတွေကို မင်း သိပြီးသား။', th: 'หายใจลึกๆ แกรู้เนื้อหาพวกนี้อยู่แล้ว' },
@@ -1158,7 +1158,7 @@ export const dialoguesBatch2: Dialogue[] = [
     turns: [
       { speaker: 'ညီမ', speakerTh: 'น้องสาว', en: 'I need to type my homework. Where do I start?', my: 'အိမ်စာကို ရိုက်ဖို့ လိုတယ်။ ဘယ်က စရမလဲ။', th: 'หนูต้องพิมพ์การบ้าน เริ่มตรงไหน' },
       { speaker: 'အစ်မ', speakerTh: 'พี่สาว', en: 'Open a new document like this.', my: 'ဒီလို စာရွက်စာတမ်း အသစ် ဖွင့်ပါ။', th: 'เปิดเอกสารใหม่แบบนี้' },
-      { speaker: 'ညီမ', speakerTh: 'น้องสาว', en: 'How do I make the title big and bold?', my: 'ခေါင်းစဉ်ကို ကြီးပြီး ထူအောင် ဘယ်လို လုပ်ရမလဲ။', th: 'ทำหัวเรื่องให้ใหญ่หนายังไง' },
+      { speaker: 'ညီမ', speakerTh: 'น้องสาว', en: 'How do I make the title big and bold?', my: 'ခေါင်းစဉ်ကို ကြီးပြီး ထူအောင် ဘယ်လို လုပ်ရမလဲ။', th: 'ทำหัวเรื่องให้ใหญ่และหนายังไง' },
       { speaker: 'အစ်မ', speakerTh: 'พี่สาว', en: 'Select it, then click these two buttons.', my: 'အဲဒါကို ရွေးပြီး ဒီခလုတ် နှစ်ခုကို နှိပ်ပါ။', th: 'เลือกมันแล้วกดสองปุ่มนี้' },
       { speaker: 'ညီမ', speakerTh: 'น้องสาว', en: 'It worked! Now I’ll type the rest.', my: 'အလုပ်လုပ်ပြီ။ အခု ကျန်တာကို ရိုက်မယ်။', th: 'ได้แล้ว ต่อไปพิมพ์ที่เหลือ' },
       { speaker: 'အစ်မ', speakerTh: 'พี่สาว', en: 'Don’t forget to save your work!', my: 'အလုပ်ကို သိမ်းဖို့ မမေ့ပါနဲ့။', th: 'อย่าลืมเซฟงานนะ' },

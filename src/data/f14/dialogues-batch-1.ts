@@ -524,7 +524,7 @@ export const dialoguesBatch1: Dialogue[] = [
       { speaker: 'ငွေကိုင်', speakerTh: 'แคชเชียร์', en: 'And the total was twelve dollars.', my: 'စုစုပေါင်းက ဆယ့်နှစ်ဒေါ်လာပါ။', th: 'ยอดรวมสิบสองดอลลาร์ครับ' },
       { speaker: 'ဝယ်သူ', speakerTh: 'ลูกค้า', en: 'So the change should be eight dollars.', my: 'ဒါဆို ပြန်အမ်းငွေက ရှစ်ဒေါ်လာဖြစ်ရမယ်။', th: 'งั้นเงินทอนต้องแปดดอลลาร์ครับ' },
       { speaker: 'ငွေကိုင်', speakerTh: 'แคชเชียร์', en: 'You are right! Here is the rest.', my: 'မှန်တယ်။ ကျန်တာဒီမှာပါ။', th: 'คุณพูดถูกครับ! นี่ครับ ส่วนที่ทอนขาดไป' },
-      { speaker: 'ဝယ်သူ', speakerTh: 'ลูกค้า', en: 'Thank you! Have a nice day.', my: 'ကျေးဇူးပါ။ နေ့ကောင်းပါစေ။', th: 'ขอบคุณครับ สวัสดีครับ' },
+      { speaker: 'ဝယ်သူ', speakerTh: 'ลูกค้า', en: 'Thank you! Have a nice day.', my: 'ကျေးဇူးပါ။ နေ့ကောင်းပါစေ။', th: 'ขอบคุณครับ ขอให้มีวันที่ดีครับ' },
     ],
   },
   {
@@ -712,7 +712,7 @@ export const dialoguesBatch1: Dialogue[] = [
     titleEn: 'Having a headache',
     level: 1,
     situationMy: 'သူငယ်ချင်းတစ်ယောက် ခေါင်းကိုက်နေလို့ နောက်တစ်ယောက်က ဂရုစိုက်နေတာ',
-    situationTh: 'เพื่อนคนหนึ่งกำลังดูแลอีกคนที่ปวดหัว',
+    situationTh: 'พี่สาวคนหนึ่งกำลังดูแลน้องสาวที่ปวดหัว',
     turns: [
       { speaker: 'မမ', speakerTh: 'พี่สาว', en: 'You look tired. Are you okay?', my: 'ပင်ပန်းတဲ့ပုံပဲ။ အဆင်ပြေလား။', th: 'ดูเหนื่อยๆ นะ เป็นอะไรไหม' },
       { speaker: 'ညီမ', speakerTh: 'น้องสาว', en: 'My head hurts a little.', my: 'ခေါင်းနည်းနည်းကိုက်နေတယ်။', th: 'ปวดหัวนิดหน่อย' },
