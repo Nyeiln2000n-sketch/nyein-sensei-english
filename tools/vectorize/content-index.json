@@ -34003,7 +34003,7 @@
    "kind": "phrase",
    "en": "This restaurant has a cozy atmosphere.",
    "en_norm": "this restaurant has a cozy atmosphere",
-   "my_norm": "ဒီစားသောက်ဆိုင်မှာ နွေးထွေးသာယာတဲ့ အငွေ့အသက်ရှိတယ်။",
+   "my_norm": "ဒီစားသောက်ဆိုင်ရဲ့ လေထုက နွေးထွေးသာယာတယ်။",
    "th_norm": "ร้านอาหารนี้บรรยากาศอบอุ่น",
    "fingerprint": "a217e6923b563743",
    "vocab_sig": [
@@ -38411,7 +38411,7 @@
    "kind": "phrase",
    "en": "She felt empowered after the course.",
    "en_norm": "she felt empowered after the course",
-   "my_norm": "သူ သင်တန်းပြီးနောက် ကိုယ့်ကိုယ်ကို ပိုယုံကြည်လာတယ်။",
+   "my_norm": "သူ သင်တန်းပြီးနောက် ကိုယ့်ကိုယ်ကို ပိုအားပြည့်လာတယ်။",
    "th_norm": "เธอรู้สึกมีพลังหลังจบคอร์ส",
    "fingerprint": "cb8ec51731c05447",
    "vocab_sig": [
@@ -40141,7 +40141,7 @@
    "kind": "phrase",
    "en": "She dreams of opening a café.",
    "en_norm": "she dreams of opening a cafe",
-   "my_norm": "သူ ကော်ဖီဆိုင်ဖွင့်ဖို့ အိပ်မက်မက်နေတယ်။",
+   "my_norm": "သူ ကော်ဖီဆိုင်ဖွင့်ဖို့ အိပ်မက်မက်တယ်။",
    "th_norm": "เธอฝันอยากเปิดคาเฟ่",
    "fingerprint": "787fe9e54d3d462b",
    "vocab_sig": [
@@ -40162,7 +40162,7 @@
    "kind": "phrase",
    "en": "We hope to travel more next year.",
    "en_norm": "we hope to travel more next year",
-   "my_norm": "ကျွန်တော်တို့ နောက်နှစ် ပိုခရီးထွက်ဖို့ မျှော်လင့်တယ်။",
+   "my_norm": "ကျွန်တော်တို့ နောက်နှစ် ခရီးပိုထွက်ဖို့ မျှော်လင့်တယ်။",
    "th_norm": "เราหวังว่าจะได้เที่ยวมากขึ้นปีหน้า",
    "fingerprint": "44f6c1b518e61178",
    "vocab_sig": [
@@ -40332,7 +40332,7 @@
    "kind": "phrase",
    "en": "We are expecting our first child.",
    "en_norm": "we are expecting our first child",
-   "my_norm": "ကျွန်တော်တို့ ပထမဆုံးကလေး မွေးဖွားတော့မယ်။",
+   "my_norm": "ကျွန်တော်တို့ ပထမဆုံးကလေး ရတော့မယ်။",
    "th_norm": "เรากำลังจะมีลูกคนแรก",
    "fingerprint": "ec544ed21acf4732",
    "vocab_sig": [
