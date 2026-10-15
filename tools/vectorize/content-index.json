@@ -166167,7 +166167,7 @@
    "en": "I'll walk you through the main points.",
    "en_norm": "i ll walk you through the main points",
    "my_norm": "အဓိကအချက်တွေကို ရှင်းပြပေးပါ့မယ်။",
-   "th_norm": "ฉันจะพาคุณไล่ดูประเด็นหลัก",
+   "th_norm": "ฉันจะอธิบายประเด็นหลักให้ฟังทีละข้อ",
    "fingerprint": "0bfae2840483f14a",
    "vocab_sig": [
     "main",
@@ -168134,8 +168134,8 @@
    "kind": "phrase",
    "en": "I missed my connecting flight.",
    "en_norm": "i missed my connecting flight",
-   "my_norm": "ကျွန်တော် ဆက်စပ်လေယာဉ်ကို လွဲသွားတယ်။",
-   "th_norm": "ฉันพลาดเที่ยวบินต่อ",
+   "my_norm": "ကျွန်တော် ဆက်သွယ်လေယာဉ်ကို လွဲသွားတယ်။",
+   "th_norm": "ฉันพลาดเที่ยวบินต่อเครื่อง",
    "fingerprint": "ea55c65b91af5dc5",
    "vocab_sig": [
     "connecting",
@@ -168155,7 +168155,7 @@
    "kind": "phrase",
    "en": "Where is the nearest information desk?",
    "en_norm": "where is the nearest information desk",
-   "my_norm": "အနီးဆုံး သတင်းအချက်အလက်ဌာန ဘယ်မှာလဲ။",
+   "my_norm": "အနီးဆုံး စုံစမ်းရေးကောင်တာ ဘယ်မှာလဲ။",
    "th_norm": "เคาน์เตอร์ประชาสัมพันธ์ที่ใกล้ที่สุดอยู่ไหน",
    "fingerprint": "20831ca1f15cb7bb",
    "vocab_sig": [
@@ -169148,8 +169148,8 @@
    "kind": "phrase",
    "en": "I need roadside assistance.",
    "en_norm": "i need roadside assistance",
-   "my_norm": "လမ်းပေါ်အကူအညီ လိုပါတယ်။",
-   "th_norm": "ฉันต้องการความช่วยเหลือฉุกเฉินริมทาง",
+   "my_norm": "လမ်းဘေးအကူအညီ လိုပါတယ်။",
+   "th_norm": "ฉันต้องการความช่วยเหลือฉุกเฉินบนท้องถนน",
    "fingerprint": "40042b94c103d918",
    "vocab_sig": [
     "assistance",
@@ -169405,7 +169405,7 @@
    "kind": "phrase",
    "en": "I need to file a police report.",
    "en_norm": "i need to file a police report",
-   "my_norm": "ရဲတိုင်ကြားချက် တင်ဖို့ လိုပါတယ်။",
+   "my_norm": "ရဲစခန်းမှာ တိုင်ကြားစာတင်ဖို့ လိုပါတယ်။",
    "th_norm": "ฉันต้องแจ้งความกับตำรวจ",
    "fingerprint": "9ab7a0c31f3b342d",
    "vocab_sig": [
@@ -169658,7 +169658,7 @@
    "kind": "phrase",
    "en": "The boarding gate is closing soon.",
    "en_norm": "the boarding gate is closing soon",
-   "my_norm": "တက်မယ့်ဂိတ် မကြာခင် ပိတ်တော့မယ်။",
+   "my_norm": "လေယာဉ်တက်ဂိတ် မကြာခင် ပိတ်တော့မယ်။",
    "th_norm": "ประตูขึ้นเครื่องกำลังจะปิด",
    "fingerprint": "e4935e0a4a9a786c",
    "vocab_sig": [
@@ -170038,7 +170038,7 @@
    "en": "I bought this yesterday.",
    "en_norm": "i bought this yesterday",
    "my_norm": "ဒါကို မနေ့က ဝယ်ခဲ့တယ်။",
-   "th_norm": "ฉันซื้อสิ่งนี้เมื่อวาน",
+   "th_norm": "ฉันซื้อเมื่อวานนี้",
    "fingerprint": "ed6ad01923794bec",
    "vocab_sig": [
     "bought",
@@ -170143,7 +170143,7 @@
    "en": "This was broken when I opened the box.",
    "en_norm": "this was broken when i opened the box",
    "my_norm": "သေတ္တာဖွင့်တော့ ဒါက ပျက်နေတယ်။",
-   "th_norm": "มันแตกตอนฉันเปิดกล่อง",
+   "th_norm": "มันพังมาตั้งแต่เปิดกล่อง",
    "fingerprint": "3abbaeba19ef6fe6",
    "vocab_sig": [
     "box",
@@ -170418,7 +170418,7 @@
    "en": "Can I try this on?",
    "en_norm": "can i try this on",
    "my_norm": "ဒါကို စမ်းဝတ်ကြည့်လို့ရမလား။",
-   "th_norm": "ขอดูว่าอันนี้พอดีไหม",
+   "th_norm": "ขอลองใส่ได้ไหม",
    "fingerprint": "a4c30944542039bf",
    "vocab_sig": [
     "try"
@@ -170688,7 +170688,7 @@
    "en": "I ordered this online.",
    "en_norm": "i ordered this online",
    "my_norm": "ဒါကို အွန်လိုင်းက မှာခဲ့တယ်။",
-   "th_norm": "ฉันสั่งสิ่งนี้ออนไลน์",
+   "th_norm": "ฉันสั่งอันนี้ออนไลน์",
    "fingerprint": "cd4a0192d8d32ba0",
    "vocab_sig": [
     "online",
@@ -170750,7 +170750,7 @@
    "en": "The tracking hasn't updated in a week.",
    "en_norm": "the tracking hasn t updated in a week",
    "my_norm": "tracking က တစ်ပတ်လုံး အပ်ဒိတ်မဖြစ်သေးဘူး။",
-   "th_norm": "การติดตามไม่อัปเดตมาหนึ่งสัปดาห์",
+   "th_norm": "สถานะพัสดุไม่อัปเดตมาหนึ่งสัปดาห์",
    "fingerprint": "b046fd3e1b4cb902",
    "vocab_sig": [
     "hasn",
@@ -172030,7 +172030,7 @@
    "kind": "phrase",
    "en": "Does this contain dairy?",
    "en_norm": "does this contain dairy",
-   "my_norm": "ဒီမှာ နို့ထွက်ပစ္စည်း ပါလား။",
+   "my_norm": "ဒီဟင်းမှာ နို့ထွက်ပစ္စည်း ပါလား။",
    "th_norm": "จานนี้มีนมไหม",
    "fingerprint": "381b17c85a8068ab",
    "vocab_sig": [
@@ -172767,7 +172767,7 @@
    "en": "Do you take card payments?",
    "en_norm": "do you take card payments",
    "my_norm": "ကတ်နဲ့ပေးလို့ရလား။",
-   "th_norm": "รับจ่ายบัตรไหม",
+   "th_norm": "รับบัตรไหม",
    "fingerprint": "ba69195020d614f8",
    "vocab_sig": [
     "card",
@@ -173112,7 +173112,7 @@
    "en": "I don't have room for dessert.",
    "en_norm": "i don t have room for dessert",
    "my_norm": "အချိုပွဲစားဖို့ နေရာမရှိတော့ဘူး။",
-   "th_norm": "ฉันไม่มีที่ว่างสำหรับของหวานแล้ว",
+   "th_norm": "กินของหวานไม่ไหวแล้ว",
    "fingerprint": "5fc8893b51d2acbe",
    "vocab_sig": [
     "dessert",
@@ -173704,8 +173704,8 @@
    "kind": "phrase",
    "en": "I got stuck in a traffic jam.",
    "en_norm": "i got stuck in a traffic jam",
-   "my_norm": "ကျွန်တော် ကားပိတ်ဆို့မှုထဲမှာ ပိတ်မိနေတယ်။",
-   "th_norm": "ฉันติดอยู่ในรถติด",
+   "my_norm": "ကျွန်တော် ကားပိတ်မှုထဲမှာ ပိတ်မိနေတယ်။",
+   "th_norm": "ฉันเจอรถติด",
    "fingerprint": "0af90977c9070df3",
    "vocab_sig": [
     "got",
@@ -173792,7 +173792,7 @@
    "kind": "phrase",
    "en": "I need a local SIM card.",
    "en_norm": "i need a local sim card",
-   "my_norm": "ဒေသတွင်း SIM ကတ် လိုပါတယ်။",
+   "my_norm": "ဒေသခံ SIM ကတ် လိုပါတယ်။",
    "th_norm": "ฉันต้องการซิมท้องถิ่น",
    "fingerprint": "3862fb91b7b252a5",
    "vocab_sig": [
@@ -173815,7 +173815,7 @@
    "en": "The power adapter doesn't fit.",
    "en_norm": "the power adapter doesn t fit",
    "my_norm": "ပလပ်အဒက်တာက မကိုက်ဘူး။",
-   "th_norm": "อะแดปเตอร์ปลั๊กใช้ไม่ได้",
+   "th_norm": "อะแดปเตอร์ปลั๊กเสียบไม่เข้า",
    "fingerprint": "c6161d2852103fdb",
    "vocab_sig": [
     "adapter",
@@ -246477,7 +246477,7 @@
    "kind": "word",
    "en": "sensitivity",
    "en_norm": "sensitivity",
-   "my_norm": "ထိခိုက်လွယ်မှု",
+   "my_norm": "ဂရုတစိုက်ကိုင်တွယ်တတ်မှု",
    "th_norm": "ความอ่อนไหว",
    "fingerprint": "5c16250fd4bb6980",
    "vocab_sig": [
@@ -254959,7 +254959,7 @@
    "kind": "word",
    "en": "buttress",
    "en_norm": "buttress",
-   "my_norm": "ထောက်ခံ",
+   "my_norm": "ထောက်ကူအားပေး",
    "th_norm": "ค้ำจุน",
    "fingerprint": "cb7dd979e8dbf610",
    "vocab_sig": [
@@ -257073,7 +257073,7 @@
    "kind": "word",
    "en": "bewildered",
    "en_norm": "bewildered",
-   "my_norm": "တွေဝေသော",
+   "my_norm": "ရှုပ်ထွေးနေသော",
    "th_norm": "งุนงง",
    "fingerprint": "98f00c1969b8c6f0",
    "vocab_sig": [
@@ -261367,7 +261367,7 @@
    "kind": "word",
    "en": "idle",
    "en_norm": "idle",
-   "my_norm": "ပျင်းရိသော",
+   "my_norm": "ရပ်နားထားသော",
    "th_norm": "ไม่ได้ใช้งาน",
    "fingerprint": "4fb62348858c2f6f",
    "vocab_sig": [
@@ -263881,7 +263881,7 @@
    "kind": "word",
    "en": "disarray",
    "en_norm": "disarray",
-   "my_norm": "ရှုပ်ထွေးမှု",
+   "my_norm": "ဖရိုဖရဲဖြစ်မှု",
    "th_norm": "ความยุ่งเหยิง",
    "fingerprint": "a9e58496979e3397",
    "vocab_sig": [
@@ -265963,7 +265963,7 @@
    "en": "soften",
    "en_norm": "soften",
    "my_norm": "ပျော့ပြောင်းစေသည်",
-   "th_norm": "ทำให้อ่อน",
+   "th_norm": "ทำให้นิ่ม",
    "fingerprint": "354d51ee5f356dcc",
    "vocab_sig": [
     "soften"
@@ -272372,7 +272372,7 @@
    "en": "solar-powered",
    "en_norm": "solar powered",
    "my_norm": "နေရောင်ခြည်စွမ်းအင်သုံး",
-   "th_norm": "พลังงานแสงอาทิตย์",
+   "th_norm": "ใช้พลังงานแสงอาทิตย์",
    "fingerprint": "a3e2768d4a9735f3",
    "vocab_sig": [
     "powered",
@@ -278885,7 +278885,7 @@
    "en": "offboarding",
    "en_norm": "offboarding",
    "my_norm": "အလုပ်ထွက်လုပ်ငန်းစဉ်",
-   "th_norm": "การออกจากงาน",
+   "th_norm": "กระบวนการออกจากงาน",
    "fingerprint": "ce4bec5b89d2920f",
    "vocab_sig": [
     "offboarding"
@@ -281030,7 +281030,7 @@
    "en": "bureaucratic",
    "en_norm": "bureaucratic",
    "my_norm": "ဗျူရိုကရေစီဆန်သော",
-   "th_norm": "ระบบราชการ",
+   "th_norm": "เกี่ยวกับระบบราชการ",
    "fingerprint": "0d03e59e6cf36bda",
    "vocab_sig": [
     "bureaucratic"
@@ -281110,7 +281110,7 @@
    "en": "corporate",
    "en_norm": "corporate",
    "my_norm": "ကော်ပိုရိတ်ဆန်သော",
-   "th_norm": "องค์กร",
+   "th_norm": "เกี่ยวกับองค์กร",
    "fingerprint": "5818329505378272",
    "vocab_sig": [
     "corporate"
@@ -281666,7 +281666,7 @@
    "en": "eclipse",
    "en_norm": "eclipse",
    "my_norm": "နေကြတ်ခြင်း၊ လကြတ်ခြင်း",
-   "th_norm": "สุริยุปราคา",
+   "th_norm": "อุปราคา",
    "fingerprint": "80b1509ea3764325",
    "vocab_sig": [
     "eclipse"
@@ -283824,7 +283824,7 @@
    "kind": "word",
    "en": "centrifugal force",
    "en_norm": "centrifugal force",
-   "my_norm": "ဗဟိုစွန့်ပစ်အား",
+   "my_norm": "ဗဟိုတွန်းအား",
    "th_norm": "แรงหนีศูนย์กลาง",
    "fingerprint": "d09ef2bd1ceba9a5",
    "vocab_sig": [
@@ -283869,7 +283869,7 @@
    "kind": "word",
    "en": "viscosity",
    "en_norm": "viscosity",
-   "my_norm": "ပျစ်ခဲမှု",
+   "my_norm": "ပျစ်ကပ်မှု",
    "th_norm": "ความหนืด",
    "fingerprint": "544d7eda1c3efb94",
    "vocab_sig": [
@@ -291836,7 +291836,7 @@
    "kind": "word",
    "en": "bronchioles",
    "en_norm": "bronchioles",
-   "my_norm": "လေပြွန်ငယ်",
+   "my_norm": "လေပြွန်ငယ်များ",
    "th_norm": "หลอดลมฝอย",
    "fingerprint": "fc3afe09146dcef6",
    "vocab_sig": [
@@ -293362,7 +293362,7 @@
    "kind": "word",
    "en": "adaptive radiation",
    "en_norm": "adaptive radiation",
-   "my_norm": "လိုက်လျောညီထွေရောင်ခြည်ပြန့်နှံ့မှု",
+   "my_norm": "လိုက်လျောညီထွေ ကွဲပြားပြန့်ပွားမှု",
    "th_norm": "การแผ่รังสีปรับตัว",
    "fingerprint": "72f5027638de9989",
    "vocab_sig": [
@@ -294664,10 +294664,10 @@
   {
    "id": "example:science:black-hole",
    "kind": "example",
-   "en": "The black hole at our galaxy center has millions of solar masses.",
-   "en_norm": "the black hole at our galaxy center has millions of solar masses",
+   "en": "The black hole at the center of our galaxy has millions of solar masses.",
+   "en_norm": "the black hole at the center of our galaxy has millions of solar masses",
    "my_norm": "",
-   "fingerprint": "081386e010988779",
+   "fingerprint": "0583a376235cf5e8",
    "vocab_sig": [
     "black",
     "center",
@@ -294677,7 +294677,7 @@
     "millions",
     "solar"
    ],
-   "template_sig": "the W W at our W W has W of W W .",
+   "template_sig": "the W W at the W of our W has W of W W .",
    "tags": [
     "science",
     "example"
@@ -296512,7 +296512,7 @@
    "kind": "word",
    "en": "interstellar medium",
    "en_norm": "interstellar medium",
-   "my_norm": "ကြယ်ကြားအလတ်စား",
+   "my_norm": "ကြယ်ကြားဒြပ်ထု",
    "th_norm": "ตัวกลางระหว่างดาว",
    "fingerprint": "a585671076c2308c",
    "vocab_sig": [
@@ -297778,7 +297778,7 @@
    "kind": "word",
    "en": "right ascension",
    "en_norm": "right ascension",
-   "my_norm": "ညာတက်မှု",
+   "my_norm": "ရိုက်အက်ဆန်ရှင်း",
    "th_norm": "ไรต์แอสเซนชัน",
    "fingerprint": "ff75fdc62c955357",
    "vocab_sig": [
@@ -299352,10 +299352,10 @@
   {
    "id": "example:science:sandstone",
    "kind": "example",
-   "en": "The canyon walls glowed red in the sandstone.",
-   "en_norm": "the canyon walls glowed red in the sandstone",
+   "en": "The sandstone canyon walls glowed red.",
+   "en_norm": "the sandstone canyon walls glowed red",
    "my_norm": "",
-   "fingerprint": "23b5a6c4c763884f",
+   "fingerprint": "14ebe9349f19e770",
    "vocab_sig": [
     "canyon",
     "glowed",
@@ -299363,7 +299363,7 @@
     "sandstone",
     "walls"
    ],
-   "template_sig": "the W W W W in the W .",
+   "template_sig": "the W W W W W .",
    "tags": [
     "science",
     "example"
@@ -299865,7 +299865,7 @@
    "kind": "word",
    "en": "water table",
    "en_norm": "water table",
-   "my_norm": "ရေမျက်နှာပြင်",
+   "my_norm": "မြေအောက်ရေမျက်နှာပြင်",
    "th_norm": "ระดับน้ำใต้ดิน",
    "fingerprint": "fd6a62ae6ba84af3",
    "vocab_sig": [

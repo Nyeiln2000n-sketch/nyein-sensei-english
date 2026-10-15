@@ -38,6 +38,16 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 66,
+    slug: 'english-with-aung-and-may-ep-66-at-the-airport-i-would-like-to-check-in-here-is-my-passport-where-is-gate-five-2026-10-1',
+    titleMy: 'အပိုင်း ၆၆ — လေဆိပ်မှာ ချက်-အင် ဝင်ခြင်း',
+    titleOrig: 'ที่สนามบิน — At the Airport',
+    descMy: 'လေဆိပ်မှာ ချက်-အင် ဝင်ခြင်း — "I would like to check in." / "Here is my passport." / "Where is gate five?" / "Is my flight on time?" / "My flight leaves at ten o\'clock."',
+    phrases: ['I would like to check in.', 'Here is my passport.', 'Where is gate five?', 'Is my flight on time?', 'My flight leaves at ten o\'clock.'],
+    durationSecs: 661,
+    cover: '/podcast-covers/ep-66.jpg',
+  },
+  {
     n: 65,
     slug: 'english-with-aung-and-may-ep-65-bus-and-train-which-bus-what-time-does-it-leave-a-ticket-please-2026-10-15',
     titleMy: 'အပိုင်း ၆၅ — ဘတ်စ်ကားနဲ့ ရထားစီးခြင်း',
