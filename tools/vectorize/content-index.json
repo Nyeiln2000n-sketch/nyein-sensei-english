@@ -148614,7 +148614,7 @@
    "en": "She found solace in her music.",
    "en_norm": "she found solace in her music",
    "my_norm": "သူမက သူမရဲ့ဂီတမှာ နှစ်သိမ့်မှုရှာတွေ့ခဲ့တယ်။",
-   "th_norm": "เธอพบความสงบในเสียงเพลงของเธอ",
+   "th_norm": "เธอพบความปลอบใจในเสียงเพลงของเธอ",
    "fingerprint": "09f10efe31760250",
    "vocab_sig": [
     "found",
@@ -149703,7 +149703,7 @@
    "en": "I declutter my room every season.",
    "en_norm": "i declutter my room every season",
    "my_norm": "ကျွန်တော် ရာသီတိုင်း အခန်းထဲက မလိုအပ်တဲ့ပစ္စည်းတွေ ရှင်းထုတ်တယ်။",
-   "th_norm": "ฉันจัดห้องใหม่ทุกฤดู",
+   "th_norm": "ฉันกำจัดของที่ไม่จำเป็นในห้องทุกฤดู",
    "fingerprint": "cdb6c457e77c92f5",
    "vocab_sig": [
     "declutter",
@@ -161825,7 +161825,7 @@
    "kind": "phrase",
    "en": "He has a bad cold.",
    "en_norm": "he has a bad cold",
-   "my_norm": "သူ အအေးမိတာ ပြင်းထန်တယ်။",
+   "my_norm": "သူ အအေးမိတာ တော်တော်ဆိုးတယ်။",
    "th_norm": "เขาเป็นหวัดหนัก",
    "fingerprint": "57fbc3ff413b7a41",
    "vocab_sig": [
@@ -165949,7 +165949,7 @@
    "kind": "phrase",
    "en": "Her resilience inspires everyone around her.",
    "en_norm": "her resilience inspires everyone around her",
-   "my_norm": "သူမရဲ့ ခံနိုင်ရည်က သူမပတ်ဝန်းကျင်က လူတိုင်းကို လှုံ့ဆော်ပေးတယ်။",
+   "my_norm": "သူမရဲ့ ခံနိုင်ရည်ရှိမှုက သူမအနားက လူတိုင်းကို အားကျစေတယ်။",
    "th_norm": "เธอฟื้นคืนจากความยากลำบากได้เสมอ เป็นแรงบันดาลใจให้ทุกคนรอบข้าง",
    "fingerprint": "86106073063bb242",
    "vocab_sig": [
@@ -166079,7 +166079,7 @@
    "kind": "phrase",
    "en": "He approaches problems with remarkable composure.",
    "en_norm": "he approaches problems with remarkable composure",
-   "my_norm": "သူဟာ ပြဿနာတွေကို ထူးခြားတဲ့ တည်ငြိမ်မှုနဲ့ ချဉ်းကပ်တယ်။",
+   "my_norm": "သူဟာ ပြဿနာတွေကို ထူးခြားတဲ့ တည်ငြိမ်မှုနဲ့ ရင်ဆိုင်တတ်တယ်။",
    "th_norm": "เขาเผชิญปัญหาด้วยความสงบอย่างน่าทึ่ง",
    "fingerprint": "e765243f848f12e5",
    "vocab_sig": [
@@ -166101,7 +166101,7 @@
    "kind": "phrase",
    "en": "She balances ambition with genuine humility.",
    "en_norm": "she balances ambition with genuine humility",
-   "my_norm": "သူမဟာ ရည်မှန်းချက်ကြီးမှုကို စစ်မှန်တဲ့ နှိမ့်ချမှုနဲ့ ချိန်ညှိတယ်။",
+   "my_norm": "သူမဟာ ရည်မှန်းချက်ကြီးပေမယ့် မာနကြီးမနေဘဲ နှိမ့်ချတတ်တယ်။",
    "th_norm": "เธอสมดุลความทะเยอทะยานกับความถ่อมตนอย่างแท้จริง",
    "fingerprint": "18ad1d720ff4955e",
    "vocab_sig": [
@@ -228495,7 +228495,7 @@
    "kind": "word",
    "en": "stray",
    "en_norm": "stray",
-   "my_norm": "လမ်းဘေးခွေး ကြောင်",
+   "my_norm": "အိမ်မဲ့သော လမ်းဘေးခွေး ကြောင်",
    "th_norm": "จรจัด",
    "fingerprint": "e224ddc6b55af8b2",
    "vocab_sig": [
@@ -230208,17 +230208,17 @@
   {
    "id": "example:time:periodic",
    "kind": "example",
-   "en": "Buses run on a periodic schedule.",
-   "en_norm": "buses run on a periodic schedule",
+   "en": "The club holds periodic meetings.",
+   "en_norm": "the club holds periodic meetings",
    "my_norm": "",
-   "fingerprint": "cc62e260f23cb917",
+   "fingerprint": "13963e2b83509454",
    "vocab_sig": [
-    "buses",
-    "periodic",
-    "run",
-    "schedule"
+    "club",
+    "holds",
+    "meetings",
+    "periodic"
    ],
-   "template_sig": "W W on a W W .",
+   "template_sig": "the W W W W .",
    "tags": [
     "time",
     "example"
@@ -230347,7 +230347,7 @@
    "kind": "word",
    "en": "fleeting",
    "en_norm": "fleeting",
-   "my_norm": "ခဏတာပျောက်ကွယ်သော",
+   "my_norm": "ခဏတာကြာသော",
    "th_norm": "ผ่านไปเร็ว",
    "fingerprint": "5b93528cf6222586",
    "vocab_sig": [
@@ -232640,7 +232640,7 @@
    "kind": "word",
    "en": "line cook",
    "en_norm": "line cook",
-   "my_norm": "မီးဖိုချောင်အကူ",
+   "my_norm": "လိုင်းစားဖိုမှူး",
    "th_norm": "กุ๊กประจำไลน์",
    "fingerprint": "52fbfd68925964ac",
    "vocab_sig": [
@@ -234538,17 +234538,17 @@
   {
    "id": "example:airport:parking-garage",
    "kind": "example",
-   "en": "Long-term parking is in the garage.",
-   "en_norm": "long term parking is in the garage",
+   "en": "Long-term parking is in the parking garage.",
+   "en_norm": "long term parking is in the parking garage",
    "my_norm": "",
-   "fingerprint": "e7e668e8e333538e",
+   "fingerprint": "fd5080a5e5db38ef",
    "vocab_sig": [
     "garage",
     "long",
     "parking",
     "term"
    ],
-   "template_sig": "W - W W is in the W .",
+   "template_sig": "W - W W is in the W W .",
    "tags": [
     "airport",
     "example"
@@ -235989,17 +235989,18 @@
   {
    "id": "example:office:paternity-leave",
    "kind": "example",
-   "en": "He's taking time off for his new baby.",
-   "en_norm": "he s taking time off for his new baby",
+   "en": "He's taking paternity leave for his new baby.",
+   "en_norm": "he s taking paternity leave for his new baby",
    "my_norm": "",
-   "fingerprint": "c32b7099cc18c0a7",
+   "fingerprint": "f437f92123d1cde5",
    "vocab_sig": [
     "baby",
+    "leave",
     "new",
-    "taking",
-    "time"
+    "paternity",
+    "taking"
    ],
-   "template_sig": "he ' s W W off for his W W .",
+   "template_sig": "he ' s W W W for his W W .",
    "tags": [
     "office",
     "example"
@@ -242373,7 +242374,7 @@
    "kind": "word",
    "en": "false spring",
    "en_norm": "false spring",
-   "my_norm": "အတုနွေ",
+   "my_norm": "အတုနွေဦး",
    "th_norm": "ฤดูใบไม้ผลิหลอก",
    "fingerprint": "c2b8b5941605fba2",
    "vocab_sig": [
@@ -243054,7 +243055,7 @@
    "kind": "word",
    "en": "sloppy",
    "en_norm": "sloppy",
-   "my_norm": "ပျော့ညံ့သော အလုပ်",
+   "my_norm": "ပေါ့ဆသော အလုပ်",
    "th_norm": "สะเพร่า",
    "fingerprint": "3c2cd97763a54eac",
    "vocab_sig": [
@@ -513050,7 +513051,7 @@
    "en": "javelin",
    "en_norm": "javelin",
    "my_norm": "လှံတံ",
-   "th_norm": "พุ่งแหลน",
+   "th_norm": "แหลน",
    "fingerprint": "0730d1dabc8ed4e8",
    "vocab_sig": [
     "javelin"
@@ -518272,14 +518273,14 @@
   {
    "id": "example:technology:firewall",
    "kind": "example",
-   "en": "A firewall blocks bad traffic.",
-   "en_norm": "a firewall blocks bad traffic",
+   "en": "A firewall blocks malicious traffic.",
+   "en_norm": "a firewall blocks malicious traffic",
    "my_norm": "",
-   "fingerprint": "579e8b8c63ef7092",
+   "fingerprint": "43c5e4e6597b3964",
    "vocab_sig": [
-    "bad",
     "blocks",
     "firewall",
+    "malicious",
     "traffic"
    ],
    "template_sig": "a W W W W .",
@@ -518661,7 +518662,7 @@
    "en": "outlet",
    "en_norm": "outlet",
    "my_norm": "လျှော့ဈေးဆိုင်",
-   "th_norm": "ร้านสาขา",
+   "th_norm": "ร้านเอาต์เล็ต",
    "fingerprint": "7647af7af268c583",
    "vocab_sig": [
     "outlet"
@@ -519594,7 +519595,7 @@
    "en": "tailor",
    "en_norm": "tailor",
    "my_norm": "အပ်ချုပ်သမား",
-   "th_norm": "ร้านตัดเสื้อ",
+   "th_norm": "ช่างตัดเสื้อ",
    "fingerprint": "758cb95fdc40c073",
    "vocab_sig": [
     "tailor"
@@ -523109,7 +523110,7 @@
    "kind": "word",
    "en": "gasp",
    "en_norm": "gasp",
-   "my_norm": "အသက်ရှူမှားသည်",
+   "my_norm": "အသက်ပြင်းပြင်းရှူသည်",
    "th_norm": "สูดหายใจเฮือก",
    "fingerprint": "1ac7f69ea53de68a",
    "vocab_sig": [
@@ -537228,8 +537229,8 @@
    "kind": "word",
    "en": "tuck in",
    "en_norm": "tuck in",
-   "my_norm": "အင်္ကျီထိုးထည့်သည်",
-   "th_norm": "สอดชายเสื้อ",
+   "my_norm": "ထိုးထည့်သည်",
+   "th_norm": "สอดเข้าไป",
    "fingerprint": "79915dfcc6366d30",
    "vocab_sig": [
     "tuck"
@@ -537346,7 +537347,7 @@
    "kind": "word",
    "en": "sarong",
    "en_norm": "sarong",
-   "my_norm": "ဆာရောင်း ပဝါ",
+   "my_norm": "ဆာရောင်း လုံချည်လို ခါးပတ်ဝတ်သောအဝတ်",
    "th_norm": "ผ้าโสร่ง",
    "fingerprint": "3540772050f4ae1a",
    "vocab_sig": [
@@ -541520,7 +541521,7 @@
    "en": "ago",
    "en_norm": "ago",
    "my_norm": "လွန်ခဲ့သော",
-   "th_norm": "ก่อน",
+   "th_norm": "ที่ผ่านมา",
    "fingerprint": "1d8e08fd63268284",
    "vocab_sig": [
     "ago"
@@ -542297,7 +542298,7 @@
    "en": "naptime",
    "en_norm": "naptime",
    "my_norm": "ခဏအိပ်ချိန်",
-   "th_norm": "เวลางีบ",
+   "th_norm": "เวลางีบหลับ",
    "fingerprint": "d8f3f6ca201393ea",
    "vocab_sig": [
     "naptime"
@@ -543717,7 +543718,7 @@
    "en": "nine-to-five",
    "en_norm": "nine to five",
    "my_norm": "မနက်၉ ညနေ၅အလုပ်",
-   "th_norm": "งานประจำ",
+   "th_norm": "งานเก้าโมงเช้าถึงห้าโมงเย็น",
    "fingerprint": "4bf01dfebde27f53",
    "vocab_sig": [
     "five",
@@ -544305,8 +544306,8 @@
    "kind": "word",
    "en": "snooze",
    "en_norm": "snooze",
-   "my_norm": "ငိုက်မြည်းသည်",
-   "th_norm": "กดเลื่อนปลุก",
+   "my_norm": "နှိုးစက်ကို ခဏရွှေ့ဆိုင်းသည်",
+   "th_norm": "เลื่อนปลุก",
    "fingerprint": "959b65ed7e5323dd",
    "vocab_sig": [
     "snooze"
@@ -546571,7 +546572,7 @@
    "kind": "word",
    "en": "bolt",
    "en_norm": "bolt",
-   "my_norm": "လျှပ်စီးတောက်",
+   "my_norm": "လျှပ်စီးကြောင်း",
    "th_norm": "ฟ้าผ่า",
    "fingerprint": "d0b3cba71f725563",
    "vocab_sig": [
@@ -547117,7 +547118,7 @@
    "kind": "word",
    "en": "whiteout",
    "en_norm": "whiteout",
-   "my_norm": "နှင်းဖြူဖုံး",
+   "my_norm": "နှင်းဖြူဖုံးခြင်း",
    "th_norm": "หิมะขาวโพลน",
    "fingerprint": "987fa996fdadcccc",
    "vocab_sig": [
@@ -547936,45 +547937,6 @@
    "line": 98
   },
   {
-   "id": "word:restaurant:chopstick",
-   "kind": "word",
-   "en": "chopstick",
-   "en_norm": "chopstick",
-   "my_norm": "တူ",
-   "th_norm": "ตะเกียบ",
-   "fingerprint": "fd41fe39f59d6c38",
-   "vocab_sig": [
-    "chopstick"
-   ],
-   "template_sig": "W",
-   "tags": [
-    "restaurant",
-    "word"
-   ],
-   "file": "src/data/f14/words-batch-7.ts",
-   "line": 99
-  },
-  {
-   "id": "example:restaurant:chopstick",
-   "kind": "example",
-   "en": "Use chopsticks for noodles.",
-   "en_norm": "use chopsticks for noodles",
-   "my_norm": "",
-   "fingerprint": "7114be1877fbe1ef",
-   "vocab_sig": [
-    "chopsticks",
-    "noodles",
-    "use"
-   ],
-   "template_sig": "W W for W .",
-   "tags": [
-    "restaurant",
-    "example"
-   ],
-   "file": "src/data/f14/words-batch-7.ts",
-   "line": 99
-  },
-  {
    "id": "word:restaurant:mug",
    "kind": "word",
    "en": "mug",
@@ -547991,7 +547953,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 100
+   "line": 99
   },
   {
    "id": "example:restaurant:mug",
@@ -548011,7 +547973,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 100
+   "line": 99
   },
   {
    "id": "word:restaurant:runner",
@@ -548030,7 +547992,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 101
+   "line": 100
   },
   {
    "id": "example:restaurant:runner",
@@ -548050,7 +548012,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 101
+   "line": 100
   },
   {
    "id": "word:restaurant:armchair",
@@ -548069,7 +548031,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 102
+   "line": 101
   },
   {
    "id": "example:restaurant:armchair",
@@ -548088,7 +548050,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 102
+   "line": 101
   },
   {
    "id": "word:restaurant:meal",
@@ -548107,7 +548069,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 103
+   "line": 102
   },
   {
    "id": "example:restaurant:meal",
@@ -548126,7 +548088,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 103
+   "line": 102
   },
   {
    "id": "word:restaurant:soda",
@@ -548145,7 +548107,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 104
+   "line": 103
   },
   {
    "id": "example:restaurant:soda",
@@ -548165,7 +548127,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 104
+   "line": 103
   },
   {
    "id": "word:restaurant:bun",
@@ -548184,7 +548146,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 105
+   "line": 104
   },
   {
    "id": "example:restaurant:bun",
@@ -548204,7 +548166,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 105
+   "line": 104
   },
   {
    "id": "word:restaurant:pasta",
@@ -548223,7 +548185,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 106
+   "line": 105
   },
   {
    "id": "example:restaurant:pasta",
@@ -548243,7 +548205,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 106
+   "line": 105
   },
   {
    "id": "word:restaurant:omelet",
@@ -548262,7 +548224,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 107
+   "line": 106
   },
   {
    "id": "example:restaurant:omelet",
@@ -548281,7 +548243,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 107
+   "line": 106
   },
   {
    "id": "word:restaurant:pork",
@@ -548300,7 +548262,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 108
+   "line": 107
   },
   {
    "id": "example:restaurant:pork",
@@ -548320,7 +548282,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 108
+   "line": 107
   },
   {
    "id": "word:restaurant:prawn",
@@ -548339,7 +548301,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 109
+   "line": 108
   },
   {
    "id": "example:restaurant:prawn",
@@ -548359,7 +548321,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 109
+   "line": 108
   },
   {
    "id": "word:restaurant:poultry",
@@ -548378,7 +548340,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 110
+   "line": 109
   },
   {
    "id": "example:restaurant:poultry",
@@ -548398,7 +548360,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 110
+   "line": 109
   },
   {
    "id": "word:restaurant:guava",
@@ -548417,7 +548379,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 111
+   "line": 110
   },
   {
    "id": "example:restaurant:guava",
@@ -548438,7 +548400,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 111
+   "line": 110
   },
   {
    "id": "word:restaurant:broccoli",
@@ -548457,7 +548419,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 112
+   "line": 111
   },
   {
    "id": "example:restaurant:broccoli",
@@ -548477,7 +548439,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 112
+   "line": 111
   },
   {
    "id": "word:restaurant:ketchup",
@@ -548496,7 +548458,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 113
+   "line": 112
   },
   {
    "id": "example:restaurant:ketchup",
@@ -548517,7 +548479,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 113
+   "line": 112
   },
   {
    "id": "word:restaurant:sweetener",
@@ -548536,7 +548498,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 114
+   "line": 113
   },
   {
    "id": "example:restaurant:sweetener",
@@ -548555,7 +548517,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 114
+   "line": 113
   },
   {
    "id": "word:restaurant:curd",
@@ -548574,7 +548536,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 115
+   "line": 114
   },
   {
    "id": "example:restaurant:curd",
@@ -548594,7 +548556,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 115
+   "line": 114
   },
   {
    "id": "word:restaurant:lemonade",
@@ -548613,7 +548575,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 116
+   "line": 115
   },
   {
    "id": "example:restaurant:lemonade",
@@ -548633,7 +548595,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 116
+   "line": 115
   },
   {
    "id": "word:restaurant:cocoa",
@@ -548652,7 +548614,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 117
+   "line": 116
   },
   {
    "id": "example:restaurant:cocoa",
@@ -548672,47 +548634,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 117
-  },
-  {
-   "id": "word:restaurant:omelette",
-   "kind": "word",
-   "en": "omelette",
-   "en_norm": "omelette",
-   "my_norm": "ကြက်ဥကြော်",
-   "th_norm": "ไข่เจียว",
-   "fingerprint": "a495e837faa6ef83",
-   "vocab_sig": [
-    "omelette"
-   ],
-   "template_sig": "W",
-   "tags": [
-    "restaurant",
-    "word"
-   ],
-   "file": "src/data/f14/words-batch-7.ts",
-   "line": 118
-  },
-  {
-   "id": "example:restaurant:omelette",
-   "kind": "example",
-   "en": "I made a cheese omelette for breakfast.",
-   "en_norm": "i made a cheese omelette for breakfast",
-   "my_norm": "",
-   "fingerprint": "986c8ec56441ecf6",
-   "vocab_sig": [
-    "breakfast",
-    "cheese",
-    "made",
-    "omelette"
-   ],
-   "template_sig": "i W a W W for W .",
-   "tags": [
-    "restaurant",
-    "example"
-   ],
-   "file": "src/data/f14/words-batch-7.ts",
-   "line": 118
+   "line": 116
   },
   {
    "id": "word:restaurant:luncheon",
@@ -548731,7 +548653,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 119
+   "line": 117
   },
   {
    "id": "example:restaurant:luncheon",
@@ -548750,7 +548672,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 119
+   "line": 117
   },
   {
    "id": "word:restaurant:supper",
@@ -548769,7 +548691,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 120
+   "line": 118
   },
   {
    "id": "example:restaurant:supper",
@@ -548788,7 +548710,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 120
+   "line": 118
   },
   {
    "id": "word:restaurant:munch",
@@ -548807,7 +548729,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 121
+   "line": 119
   },
   {
    "id": "example:restaurant:munch",
@@ -548827,7 +548749,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 121
+   "line": 119
   },
   {
    "id": "word:restaurant:sip",
@@ -548846,7 +548768,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 122
+   "line": 120
   },
   {
    "id": "example:restaurant:sip",
@@ -548866,7 +548788,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 122
+   "line": 120
   },
   {
    "id": "word:restaurant:baker",
@@ -548885,7 +548807,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 123
+   "line": 121
   },
   {
    "id": "example:restaurant:baker",
@@ -548905,7 +548827,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 123
+   "line": 121
   },
   {
    "id": "word:restaurant:smell",
@@ -548924,7 +548846,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 124
+   "line": 122
   },
   {
    "id": "example:restaurant:smell",
@@ -548944,7 +548866,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 124
+   "line": 122
   },
   {
    "id": "word:restaurant:tart",
@@ -548963,7 +548885,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 125
+   "line": 123
   },
   {
    "id": "example:restaurant:tart",
@@ -548982,7 +548904,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 125
+   "line": 123
   },
   {
    "id": "word:restaurant:teapot",
@@ -549001,7 +548923,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 126
+   "line": 124
   },
   {
    "id": "example:restaurant:teapot",
@@ -549020,7 +548942,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 126
+   "line": 124
   },
   {
    "id": "word:restaurant:amount",
@@ -549039,7 +548961,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 127
+   "line": 125
   },
   {
    "id": "example:restaurant:amount",
@@ -549059,7 +548981,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 127
+   "line": 125
   },
   {
    "id": "word:restaurant:barista",
@@ -549078,7 +549000,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 128
+   "line": 126
   },
   {
    "id": "example:restaurant:barista",
@@ -549099,7 +549021,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 128
+   "line": 126
   },
   {
    "id": "word:restaurant:basin",
@@ -549118,7 +549040,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 129
+   "line": 127
   },
   {
    "id": "example:restaurant:basin",
@@ -549138,7 +549060,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 129
+   "line": 127
   },
   {
    "id": "word:restaurant:lantern",
@@ -549157,7 +549079,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 130
+   "line": 128
   },
   {
    "id": "example:restaurant:lantern",
@@ -549178,7 +549100,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 130
+   "line": 128
   },
   {
    "id": "word:restaurant:napkin-ring",
@@ -549198,7 +549120,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 131
+   "line": 129
   },
   {
    "id": "example:restaurant:napkin-ring",
@@ -549218,7 +549140,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 131
+   "line": 129
   },
   {
    "id": "word:restaurant:high-chair",
@@ -549238,7 +549160,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 132
+   "line": 130
   },
   {
    "id": "example:restaurant:high-chair",
@@ -549259,7 +549181,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 132
+   "line": 130
   },
   {
    "id": "word:restaurant:chopsticks",
@@ -549278,7 +549200,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 134
+   "line": 132
   },
   {
    "id": "example:restaurant:chopsticks",
@@ -549298,7 +549220,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 134
+   "line": 132
   },
   {
    "id": "word:restaurant:yummy",
@@ -549317,7 +549239,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 135
+   "line": 133
   },
   {
    "id": "example:restaurant:yummy",
@@ -549336,7 +549258,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 135
+   "line": 133
   },
   {
    "id": "word:restaurant:zesty",
@@ -549355,7 +549277,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 136
+   "line": 134
   },
   {
    "id": "example:restaurant:zesty",
@@ -549376,7 +549298,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 136
+   "line": 134
   },
   {
    "id": "word:restaurant:briny",
@@ -549395,7 +549317,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 137
+   "line": 135
   },
   {
    "id": "example:restaurant:briny",
@@ -549415,7 +549337,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 137
+   "line": 135
   },
   {
    "id": "word:restaurant:tangy",
@@ -549434,7 +549356,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 138
+   "line": 136
   },
   {
    "id": "example:restaurant:tangy",
@@ -549455,7 +549377,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 138
+   "line": 136
   },
   {
    "id": "word:restaurant:crunchy",
@@ -549474,7 +549396,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 139
+   "line": 137
   },
   {
    "id": "example:restaurant:crunchy",
@@ -549495,7 +549417,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 139
+   "line": 137
   },
   {
    "id": "word:restaurant:velvety",
@@ -549514,7 +549436,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 140
+   "line": 138
   },
   {
    "id": "example:restaurant:velvety",
@@ -549534,7 +549456,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 140
+   "line": 138
   },
   {
    "id": "word:restaurant:moist",
@@ -549553,7 +549475,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 141
+   "line": 139
   },
   {
    "id": "example:restaurant:moist",
@@ -549573,7 +549495,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 141
+   "line": 139
   },
   {
    "id": "word:restaurant:dining-room",
@@ -549593,7 +549515,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 142
+   "line": 140
   },
   {
    "id": "example:restaurant:dining-room",
@@ -549613,7 +549535,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 142
+   "line": 140
   },
   {
    "id": "word:restaurant:feast",
@@ -549632,7 +549554,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 143
+   "line": 141
   },
   {
    "id": "example:restaurant:feast",
@@ -549653,7 +549575,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 143
+   "line": 141
   },
   {
    "id": "word:restaurant:cookbook",
@@ -549672,7 +549594,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 144
+   "line": 142
   },
   {
    "id": "example:restaurant:cookbook",
@@ -549691,7 +549613,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 144
+   "line": 142
   },
   {
    "id": "word:restaurant:seasoning",
@@ -549710,7 +549632,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 145
+   "line": 143
   },
   {
    "id": "example:restaurant:seasoning",
@@ -549730,7 +549652,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 145
+   "line": 143
   },
   {
    "id": "word:restaurant:savor",
@@ -549749,7 +549671,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 146
+   "line": 144
   },
   {
    "id": "example:restaurant:savor",
@@ -549769,7 +549691,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 146
+   "line": 144
   },
   {
    "id": "word:restaurant:aroma",
@@ -549788,7 +549710,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 147
+   "line": 145
   },
   {
    "id": "example:restaurant:aroma",
@@ -549809,7 +549731,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 147
+   "line": 145
   },
   {
    "id": "word:restaurant:top",
@@ -549828,7 +549750,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 148
+   "line": 146
   },
   {
    "id": "example:restaurant:top",
@@ -549848,7 +549770,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 148
+   "line": 146
   },
   {
    "id": "word:restaurant:simmer",
@@ -549867,7 +549789,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 149
+   "line": 147
   },
   {
    "id": "example:restaurant:simmer",
@@ -549888,7 +549810,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 149
+   "line": 147
   },
   {
    "id": "word:restaurant:barbecue",
@@ -549907,7 +549829,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 150
+   "line": 148
   },
   {
    "id": "example:restaurant:barbecue",
@@ -549926,7 +549848,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 150
+   "line": 148
   },
   {
    "id": "word:restaurant:broil",
@@ -549945,7 +549867,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 151
+   "line": 149
   },
   {
    "id": "example:restaurant:broil",
@@ -549966,7 +549888,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 151
+   "line": 149
   },
   {
    "id": "word:restaurant:saute",
@@ -549985,7 +549907,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 152
+   "line": 150
   },
   {
    "id": "example:restaurant:saute",
@@ -550005,14 +549927,14 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 152
+   "line": 150
   },
   {
    "id": "word:restaurant:poach",
    "kind": "word",
    "en": "poach",
    "en_norm": "poach",
-   "my_norm": "ရေနွေးအေးအေးနဲ့ ပြုတ်သည်",
+   "my_norm": "ရေပွက်ပွက်မဆူဘဲ ပြုတ်သည်",
    "th_norm": "ลวก",
    "fingerprint": "67b957b997428c72",
    "vocab_sig": [
@@ -550024,7 +549946,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 153
+   "line": 151
   },
   {
    "id": "example:restaurant:poach",
@@ -550044,7 +549966,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 153
+   "line": 151
   },
   {
    "id": "word:restaurant:braise",
@@ -550063,7 +549985,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 154
+   "line": 152
   },
   {
    "id": "example:restaurant:braise",
@@ -550083,14 +550005,14 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 154
+   "line": 152
   },
   {
    "id": "word:restaurant:sear",
    "kind": "word",
    "en": "sear",
    "en_norm": "sear",
-   "my_norm": "ကင်သည်",
+   "my_norm": "အပေါ်ယံသာ မီးပြင်းပြင်းကင်သည်",
    "th_norm": "นาบ",
    "fingerprint": "09ed19e2e6ed1bd6",
    "vocab_sig": [
@@ -550102,7 +550024,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 155
+   "line": 153
   },
   {
    "id": "example:restaurant:sear",
@@ -550122,7 +550044,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 155
+   "line": 153
   },
   {
    "id": "word:restaurant:slice",
@@ -550141,7 +550063,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 156
+   "line": 154
   },
   {
    "id": "example:restaurant:slice",
@@ -550161,7 +550083,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 156
+   "line": 154
   },
   {
    "id": "word:restaurant:peel",
@@ -550180,7 +550102,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 157
+   "line": 155
   },
   {
    "id": "example:restaurant:peel",
@@ -550200,7 +550122,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 157
+   "line": 155
   },
   {
    "id": "word:restaurant:dice",
@@ -550219,7 +550141,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 158
+   "line": 156
   },
   {
    "id": "example:restaurant:dice",
@@ -550240,14 +550162,14 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 158
+   "line": 156
   },
   {
    "id": "word:restaurant:cater",
    "kind": "word",
    "en": "cater",
    "en_norm": "cater",
-   "my_norm": "ဧည့်ခံသည်",
+   "my_norm": "အစားအသောက်ဧည့်ခံသည်",
    "th_norm": "จัดเลี้ยง",
    "fingerprint": "be2925a2333b21d0",
    "vocab_sig": [
@@ -550259,7 +550181,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 159
+   "line": 157
   },
   {
    "id": "example:restaurant:cater",
@@ -550279,7 +550201,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 159
+   "line": 157
   },
   {
    "id": "word:restaurant:homemade",
@@ -550298,7 +550220,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 160
+   "line": 158
   },
   {
    "id": "example:restaurant:homemade",
@@ -550317,7 +550239,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 160
+   "line": 158
   },
   {
    "id": "word:restaurant:leftover",
@@ -550336,7 +550258,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 161
+   "line": 159
   },
   {
    "id": "example:restaurant:leftover",
@@ -550356,7 +550278,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 161
+   "line": 159
   },
   {
    "id": "word:restaurant:takeout",
@@ -550375,7 +550297,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 162
+   "line": 160
   },
   {
    "id": "example:restaurant:takeout",
@@ -550395,7 +550317,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 162
+   "line": 160
   },
   {
    "id": "word:restaurant:drive-through",
@@ -550414,7 +550336,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 163
+   "line": 161
   },
   {
    "id": "example:restaurant:drive-through",
@@ -550434,7 +550356,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 163
+   "line": 161
   },
   {
    "id": "word:restaurant:food-truck",
@@ -550454,7 +550376,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 164
+   "line": 162
   },
   {
    "id": "example:restaurant:food-truck",
@@ -550475,7 +550397,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 164
+   "line": 162
   },
   {
    "id": "word:restaurant:banquet",
@@ -550494,7 +550416,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 166
+   "line": 164
   },
   {
    "id": "example:restaurant:banquet",
@@ -550515,7 +550437,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 166
+   "line": 164
   },
   {
    "id": "word:restaurant:catering",
@@ -550534,7 +550456,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 167
+   "line": 165
   },
   {
    "id": "example:restaurant:catering",
@@ -550553,7 +550475,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 167
+   "line": 165
   },
   {
    "id": "word:restaurant:ambience",
@@ -550572,7 +550494,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 168
+   "line": 166
   },
   {
    "id": "example:restaurant:ambience",
@@ -550592,7 +550514,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 168
+   "line": 166
   },
   {
    "id": "word:restaurant:cutlery",
@@ -550611,7 +550533,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 169
+   "line": 167
   },
   {
    "id": "example:restaurant:cutlery",
@@ -550631,7 +550553,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 169
+   "line": 167
   },
   {
    "id": "word:restaurant:condiment",
@@ -550650,7 +550572,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 170
+   "line": 168
   },
   {
    "id": "example:restaurant:condiment",
@@ -550671,7 +550593,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 170
+   "line": 168
   },
   {
    "id": "word:restaurant:palate",
@@ -550690,7 +550612,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 171
+   "line": 169
   },
   {
    "id": "example:restaurant:palate",
@@ -550711,7 +550633,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 171
+   "line": 169
   },
   {
    "id": "word:restaurant:exquisite",
@@ -550730,7 +550652,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 172
+   "line": 170
   },
   {
    "id": "example:restaurant:exquisite",
@@ -550749,7 +550671,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 172
+   "line": 170
   },
   {
    "id": "word:restaurant:marinade",
@@ -550768,7 +550690,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 173
+   "line": 171
   },
   {
    "id": "example:restaurant:marinade",
@@ -550789,7 +550711,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 173
+   "line": 171
   },
   {
    "id": "word:restaurant:tasteless",
@@ -550808,7 +550730,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 174
+   "line": 172
   },
   {
    "id": "example:restaurant:tasteless",
@@ -550829,7 +550751,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 174
+   "line": 172
   },
   {
    "id": "word:restaurant:succulent",
@@ -550848,7 +550770,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 175
+   "line": 173
   },
   {
    "id": "example:restaurant:succulent",
@@ -550867,7 +550789,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 175
+   "line": 173
   },
   {
    "id": "word:restaurant:infuse",
@@ -550886,7 +550808,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 176
+   "line": 174
   },
   {
    "id": "example:restaurant:infuse",
@@ -550906,7 +550828,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 176
+   "line": 174
   },
   {
    "id": "word:restaurant:caramelize",
@@ -550925,7 +550847,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 177
+   "line": 175
   },
   {
    "id": "example:restaurant:caramelize",
@@ -550945,7 +550867,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 177
+   "line": 175
   },
   {
    "id": "word:restaurant:complimentary",
@@ -550964,7 +550886,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 178
+   "line": 176
   },
   {
    "id": "example:restaurant:complimentary",
@@ -550984,7 +550906,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 178
+   "line": 176
   },
   {
    "id": "word:restaurant:a-la-carte",
@@ -551004,7 +550926,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 179
+   "line": 177
   },
   {
    "id": "example:restaurant:a-la-carte",
@@ -551026,7 +550948,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 179
+   "line": 177
   },
   {
    "id": "word:restaurant:gourmet",
@@ -551045,7 +550967,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 180
+   "line": 178
   },
   {
    "id": "example:restaurant:gourmet",
@@ -551064,7 +550986,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 180
+   "line": 178
   },
   {
    "id": "word:airport:airplane",
@@ -551083,7 +551005,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 185
+   "line": 183
   },
   {
    "id": "example:airport:airplane",
@@ -551102,7 +551024,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 185
+   "line": 183
   },
   {
    "id": "word:airport:taxiway",
@@ -551121,7 +551043,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 186
+   "line": 184
   },
   {
    "id": "example:airport:taxiway",
@@ -551141,7 +551063,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 186
+   "line": 184
   },
   {
    "id": "word:airport:boarding-pass",
@@ -551161,7 +551083,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 187
+   "line": 185
   },
   {
    "id": "example:airport:boarding-pass",
@@ -551182,7 +551104,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 187
+   "line": 185
   },
   {
    "id": "word:airport:permit",
@@ -551201,7 +551123,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 188
+   "line": 186
   },
   {
    "id": "example:airport:permit",
@@ -551221,7 +551143,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 188
+   "line": 186
   },
   {
    "id": "word:airport:satchel",
@@ -551240,7 +551162,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 189
+   "line": 187
   },
   {
    "id": "example:airport:satchel",
@@ -551260,7 +551182,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 189
+   "line": 187
   },
   {
    "id": "word:airport:handbag",
@@ -551279,7 +551201,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 190
+   "line": 188
   },
   {
    "id": "example:airport:handbag",
@@ -551299,7 +551221,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 190
+   "line": 188
   },
   {
    "id": "word:airport:row",
@@ -551318,7 +551240,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 191
+   "line": 189
   },
   {
    "id": "example:airport:row",
@@ -551338,7 +551260,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 191
+   "line": 189
   },
   {
    "id": "word:airport:ascend",
@@ -551357,7 +551279,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 192
+   "line": 190
   },
   {
    "id": "example:airport:ascend",
@@ -551377,7 +551299,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 192
+   "line": 190
   },
   {
    "id": "word:airport:land",
@@ -551396,7 +551318,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 193
+   "line": 191
   },
   {
    "id": "example:airport:land",
@@ -551416,7 +551338,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 193
+   "line": 191
   },
   {
    "id": "word:airport:voyage",
@@ -551435,7 +551357,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 194
+   "line": 192
   },
   {
    "id": "example:airport:voyage",
@@ -551455,7 +551377,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 194
+   "line": 192
   },
   {
    "id": "word:airport:tour",
@@ -551474,7 +551396,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 195
+   "line": 193
   },
   {
    "id": "example:airport:tour",
@@ -551494,7 +551416,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 195
+   "line": 193
   },
   {
    "id": "word:airport:directory",
@@ -551513,7 +551435,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 196
+   "line": 194
   },
   {
    "id": "example:airport:directory",
@@ -551534,7 +551456,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 196
+   "line": 194
   },
   {
    "id": "word:airport:flight-status",
@@ -551554,7 +551476,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 197
+   "line": 195
   },
   {
    "id": "example:airport:flight-status",
@@ -551575,7 +551497,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 197
+   "line": 195
   },
   {
    "id": "word:airport:first",
@@ -551594,7 +551516,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 198
+   "line": 196
   },
   {
    "id": "example:airport:first",
@@ -551614,7 +551536,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 198
+   "line": 196
   },
   {
    "id": "word:airport:prompt",
@@ -551633,7 +551555,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 199
+   "line": 197
   },
   {
    "id": "example:airport:prompt",
@@ -551653,7 +551575,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 199
+   "line": 197
   },
   {
    "id": "word:airport:swift",
@@ -551672,7 +551594,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 200
+   "line": 198
   },
   {
    "id": "example:airport:swift",
@@ -551692,7 +551614,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 200
+   "line": 198
   },
   {
    "id": "word:airport:jammed",
@@ -551711,7 +551633,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 201
+   "line": 199
   },
   {
    "id": "example:airport:jammed",
@@ -551730,7 +551652,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 201
+   "line": 199
   },
   {
    "id": "word:airport:large",
@@ -551749,7 +551671,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 202
+   "line": 200
   },
   {
    "id": "example:airport:large",
@@ -551768,7 +551690,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 202
+   "line": 200
   },
   {
    "id": "word:airport:tiny",
@@ -551787,7 +551709,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 203
+   "line": 201
   },
   {
    "id": "example:airport:tiny",
@@ -551808,7 +551730,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 203
+   "line": 201
   },
   {
    "id": "word:airport:new",
@@ -551827,7 +551749,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 204
+   "line": 202
   },
   {
    "id": "example:airport:new",
@@ -551847,7 +551769,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 204
+   "line": 202
   },
   {
    "id": "word:airport:old",
@@ -551866,7 +551788,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 205
+   "line": 203
   },
   {
    "id": "example:airport:old",
@@ -551885,7 +551807,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 205
+   "line": 203
   },
   {
    "id": "word:airport:far",
@@ -551904,7 +551826,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 206
+   "line": 204
   },
   {
    "id": "example:airport:far",
@@ -551924,7 +551846,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 206
+   "line": 204
   },
   {
    "id": "word:airport:brief",
@@ -551943,7 +551865,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 207
+   "line": 205
   },
   {
    "id": "example:airport:brief",
@@ -551962,7 +551884,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 207
+   "line": 205
   },
   {
    "id": "word:airport:booth",
@@ -551981,7 +551903,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 208
+   "line": 206
   },
   {
    "id": "example:airport:booth",
@@ -552003,7 +551925,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 208
+   "line": 206
   },
   {
    "id": "word:airport:line",
@@ -552022,7 +551944,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 209
+   "line": 207
   },
   {
    "id": "example:airport:line",
@@ -552041,7 +551963,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 209
+   "line": 207
   },
   {
    "id": "word:airport:board",
@@ -552060,7 +551982,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 210
+   "line": 208
   },
   {
    "id": "example:airport:board",
@@ -552082,7 +552004,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 210
+   "line": 208
   },
   {
    "id": "word:airport:scurry",
@@ -552101,7 +552023,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 211
+   "line": 209
   },
   {
    "id": "example:airport:scurry",
@@ -552121,7 +552043,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 211
+   "line": 209
   },
   {
    "id": "word:airport:sit",
@@ -552140,7 +552062,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 212
+   "line": 210
   },
   {
    "id": "example:airport:sit",
@@ -552159,7 +552081,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 212
+   "line": 210
   },
   {
    "id": "word:airport:stand",
@@ -552178,7 +552100,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 213
+   "line": 211
   },
   {
    "id": "example:airport:stand",
@@ -552199,7 +552121,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 213
+   "line": 211
   },
   {
    "id": "word:airport:leave",
@@ -552218,7 +552140,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 214
+   "line": 212
   },
   {
    "id": "example:airport:leave",
@@ -552237,7 +552159,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 214
+   "line": 212
   },
   {
    "id": "word:airport:reach",
@@ -552256,7 +552178,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 215
+   "line": 213
   },
   {
    "id": "example:airport:reach",
@@ -552276,7 +552198,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 215
+   "line": 213
   },
   {
    "id": "word:airport:see",
@@ -552295,7 +552217,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 216
+   "line": 214
   },
   {
    "id": "example:airport:see",
@@ -552314,7 +552236,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 216
+   "line": 214
   },
   {
    "id": "word:airport:find",
@@ -552333,7 +552255,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 217
+   "line": 215
   },
   {
    "id": "example:airport:find",
@@ -552353,7 +552275,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 217
+   "line": 215
   },
   {
    "id": "word:airport:select",
@@ -552372,7 +552294,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 218
+   "line": 216
   },
   {
    "id": "example:airport:select",
@@ -552392,7 +552314,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 218
+   "line": 216
   },
   {
    "id": "word:airport:excess-baggage",
@@ -552412,7 +552334,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 219
+   "line": 217
   },
   {
    "id": "example:airport:excess-baggage",
@@ -552434,7 +552356,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 219
+   "line": 217
   },
   {
    "id": "word:airport:entrance",
@@ -552453,7 +552375,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 220
+   "line": 218
   },
   {
    "id": "example:airport:entrance",
@@ -552472,7 +552394,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 220
+   "line": 218
   },
   {
    "id": "word:airport:near",
@@ -552491,7 +552413,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 221
+   "line": 219
   },
   {
    "id": "example:airport:near",
@@ -552511,7 +552433,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 221
+   "line": 219
   },
   {
    "id": "word:airport:program",
@@ -552530,7 +552452,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 223
+   "line": 221
   },
   {
    "id": "example:airport:program",
@@ -552550,7 +552472,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 223
+   "line": 221
   },
   {
    "id": "word:airport:halt",
@@ -552569,7 +552491,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 224
+   "line": 222
   },
   {
    "id": "example:airport:halt",
@@ -552589,7 +552511,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 224
+   "line": 222
   },
   {
    "id": "word:airport:nonstop",
@@ -552608,7 +552530,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 225
+   "line": 223
   },
   {
    "id": "example:airport:nonstop",
@@ -552627,7 +552549,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 225
+   "line": 223
   },
   {
    "id": "word:airport:priority",
@@ -552646,7 +552568,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 226
+   "line": 224
   },
   {
    "id": "example:airport:priority",
@@ -552666,7 +552588,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 226
+   "line": 224
   },
   {
    "id": "word:airport:standby",
@@ -552685,7 +552607,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 227
+   "line": 225
   },
   {
    "id": "example:airport:standby",
@@ -552704,7 +552626,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 227
+   "line": 225
   },
   {
    "id": "word:airport:overbooked",
@@ -552723,7 +552645,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 228
+   "line": 226
   },
   {
    "id": "example:airport:overbooked",
@@ -552742,7 +552664,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 228
+   "line": 226
   },
   {
    "id": "word:airport:rebook",
@@ -552761,7 +552683,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 229
+   "line": 227
   },
   {
    "id": "example:airport:rebook",
@@ -552781,7 +552703,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 229
+   "line": 227
   },
   {
    "id": "word:airport:reroute",
@@ -552800,7 +552722,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 230
+   "line": 228
   },
   {
    "id": "example:airport:reroute",
@@ -552821,7 +552743,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 230
+   "line": 228
   },
   {
    "id": "word:airport:headwind",
@@ -552840,7 +552762,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 231
+   "line": 229
   },
   {
    "id": "example:airport:headwind",
@@ -552861,14 +552783,14 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 231
+   "line": 229
   },
   {
    "id": "word:airport:carousel",
    "kind": "word",
    "en": "carousel",
    "en_norm": "carousel",
-   "my_norm": "ပစ္စည်းထုတ်စက်",
+   "my_norm": "ပစ္စည်းထုတ်ခါးပတ်",
    "th_norm": "สายพานรับกระเป๋า",
    "fingerprint": "7565e4480e567f25",
    "vocab_sig": [
@@ -552880,7 +552802,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 232
+   "line": 230
   },
   {
    "id": "example:airport:carousel",
@@ -552900,14 +552822,14 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 232
+   "line": 230
   },
   {
    "id": "word:airport:conveyor-belt",
    "kind": "word",
    "en": "conveyor belt",
    "en_norm": "conveyor belt",
-   "my_norm": "စက်ခါးပတ်",
+   "my_norm": "ခါးပတ်စက်",
    "th_norm": "สายพานลำเลียง",
    "fingerprint": "6f654325e277f4e4",
    "vocab_sig": [
@@ -552920,7 +552842,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 233
+   "line": 231
   },
   {
    "id": "example:airport:conveyor-belt",
@@ -552941,7 +552863,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 233
+   "line": 231
   },
   {
    "id": "word:airport:trolley",
@@ -552960,7 +552882,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 234
+   "line": 232
   },
   {
    "id": "example:airport:trolley",
@@ -552980,7 +552902,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 234
+   "line": 232
   },
   {
    "id": "word:airport:porter",
@@ -552999,7 +552921,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 235
+   "line": 233
   },
   {
    "id": "example:airport:porter",
@@ -553019,7 +552941,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 235
+   "line": 233
   },
   {
    "id": "word:airport:lounge",
@@ -553038,7 +552960,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 236
+   "line": 234
   },
   {
    "id": "example:airport:lounge",
@@ -553057,7 +552979,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 236
+   "line": 234
   },
   {
    "id": "word:airport:duty-free",
@@ -553077,7 +552999,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 237
+   "line": 235
   },
   {
    "id": "example:airport:duty-free",
@@ -553098,7 +553020,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 237
+   "line": 235
   },
   {
    "id": "word:airport:memento",
@@ -553117,7 +553039,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 238
+   "line": 236
   },
   {
    "id": "example:airport:memento",
@@ -553137,7 +553059,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 238
+   "line": 236
   },
   {
    "id": "word:airport:currency",
@@ -553156,7 +553078,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 239
+   "line": 237
   },
   {
    "id": "example:airport:currency",
@@ -553175,7 +553097,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 239
+   "line": 237
   },
   {
    "id": "word:airport:convert",
@@ -553194,7 +553116,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 240
+   "line": 238
   },
   {
    "id": "example:airport:convert",
@@ -553214,7 +553136,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 240
+   "line": 238
   },
   {
    "id": "word:airport:stub",
@@ -553233,7 +553155,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 241
+   "line": 239
   },
   {
    "id": "example:airport:stub",
@@ -553253,7 +553175,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 241
+   "line": 239
   },
   {
    "id": "word:airport:agent",
@@ -553272,7 +553194,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 242
+   "line": 240
   },
   {
    "id": "example:airport:agent",
@@ -553292,7 +553214,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 242
+   "line": 240
   },
   {
    "id": "word:airport:paging",
@@ -553311,7 +553233,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 243
+   "line": 241
   },
   {
    "id": "example:airport:paging",
@@ -553331,7 +553253,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 243
+   "line": 241
   },
   {
    "id": "word:airport:transfer",
@@ -553350,7 +553272,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 244
+   "line": 242
   },
   {
    "id": "example:airport:transfer",
@@ -553370,7 +553292,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 244
+   "line": 242
   },
   {
    "id": "word:airport:connection",
@@ -553389,7 +553311,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 245
+   "line": 243
   },
   {
    "id": "example:airport:connection",
@@ -553408,7 +553330,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 245
+   "line": 243
   },
   {
    "id": "word:airport:frequent-flyer",
@@ -553428,7 +553350,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 246
+   "line": 244
   },
   {
    "id": "example:airport:frequent-flyer",
@@ -553447,14 +553369,14 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 246
+   "line": 244
   },
   {
    "id": "word:airport:mileage",
    "kind": "word",
    "en": "mileage",
    "en_norm": "mileage",
-   "my_norm": "မိုင်အကွာအဝေး",
+   "my_norm": "မိုင်စုဆောင်းမှု",
    "th_norm": "ไมล์สะสม",
    "fingerprint": "8741995dbd2877e9",
    "vocab_sig": [
@@ -553466,7 +553388,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 247
+   "line": 245
   },
   {
    "id": "example:airport:mileage",
@@ -553487,7 +553409,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 247
+   "line": 245
   },
   {
    "id": "word:airport:carry-on",
@@ -553506,7 +553428,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 248
+   "line": 246
   },
   {
    "id": "example:airport:carry-on",
@@ -553526,7 +553448,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 248
+   "line": 246
   },
   {
    "id": "word:airport:cargo",
@@ -553545,7 +553467,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 249
+   "line": 247
   },
   {
    "id": "example:airport:cargo",
@@ -553565,7 +553487,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 249
+   "line": 247
   },
   {
    "id": "word:airport:collect",
@@ -553584,7 +553506,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 250
+   "line": 248
   },
   {
    "id": "example:airport:collect",
@@ -553605,7 +553527,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 250
+   "line": 248
   },
   {
    "id": "word:airport:information-desk",
@@ -553625,7 +553547,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 251
+   "line": 249
   },
   {
    "id": "example:airport:information-desk",
@@ -553645,7 +553567,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 251
+   "line": 249
   },
   {
    "id": "word:airport:restroom",
@@ -553664,7 +553586,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 252
+   "line": 250
   },
   {
    "id": "example:airport:restroom",
@@ -553684,7 +553606,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 252
+   "line": 250
   },
   {
    "id": "word:airport:escalator",
@@ -553703,7 +553625,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 253
+   "line": 251
   },
   {
    "id": "example:airport:escalator",
@@ -553724,7 +553646,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 253
+   "line": 251
   },
   {
    "id": "word:airport:moving-walkway",
@@ -553744,7 +553666,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 254
+   "line": 252
   },
   {
    "id": "example:airport:moving-walkway",
@@ -553765,7 +553687,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 254
+   "line": 252
   },
   {
    "id": "word:airport:concourse",
@@ -553784,7 +553706,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 256
+   "line": 254
   },
   {
    "id": "example:airport:concourse",
@@ -553804,7 +553726,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 256
+   "line": 254
   },
   {
    "id": "word:airport:jet-bridge",
@@ -553824,7 +553746,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 257
+   "line": 255
   },
   {
    "id": "example:airport:jet-bridge",
@@ -553845,14 +553767,14 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 257
+   "line": 255
   },
   {
    "id": "word:airport:tarmac",
    "kind": "word",
    "en": "tarmac",
    "en_norm": "tarmac",
-   "my_norm": "လေယာဉ်ပြေးလမ်း",
+   "my_norm": "လေယာဉ်ရပ်နားကွင်း",
    "th_norm": "ลานจอดเครื่องบิน",
    "fingerprint": "81f5c5cc7961139d",
    "vocab_sig": [
@@ -553864,7 +553786,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 258
+   "line": 256
   },
   {
    "id": "example:airport:tarmac",
@@ -553884,7 +553806,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 258
+   "line": 256
   },
   {
    "id": "word:airport:hangar",
@@ -553903,7 +553825,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 259
+   "line": 257
   },
   {
    "id": "example:airport:hangar",
@@ -553923,7 +553845,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 259
+   "line": 257
   },
   {
    "id": "word:airport:air-traffic-control",
@@ -553944,7 +553866,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 260
+   "line": 258
   },
   {
    "id": "example:airport:air-traffic-control",
@@ -553967,7 +553889,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 260
+   "line": 258
   },
   {
    "id": "word:airport:deicing",
@@ -553986,7 +553908,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 261
+   "line": 259
   },
   {
    "id": "example:airport:deicing",
@@ -554007,7 +553929,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 261
+   "line": 259
   },
   {
    "id": "word:airport:black-box",
@@ -554027,7 +553949,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 262
+   "line": 260
   },
   {
    "id": "example:airport:black-box",
@@ -554048,7 +553970,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 262
+   "line": 260
   },
   {
    "id": "word:airport:fuselage",
@@ -554067,7 +553989,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 263
+   "line": 261
   },
   {
    "id": "example:airport:fuselage",
@@ -554087,7 +554009,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 263
+   "line": 261
   },
   {
    "id": "word:airport:emergency-exit",
@@ -554107,7 +554029,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 264
+   "line": 262
   },
   {
    "id": "example:airport:emergency-exit",
@@ -554128,7 +554050,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 264
+   "line": 262
   },
   {
    "id": "word:airport:life-vest",
@@ -554148,7 +554070,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 265
+   "line": 263
   },
   {
    "id": "example:airport:life-vest",
@@ -554169,7 +554091,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 265
+   "line": 263
   },
   {
    "id": "word:airport:biometrics",
@@ -554188,7 +554110,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 266
+   "line": 264
   },
   {
    "id": "example:airport:biometrics",
@@ -554209,7 +554131,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 266
+   "line": 264
   },
   {
    "id": "word:airport:precheck",
@@ -554228,7 +554150,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 267
+   "line": 265
   },
   {
    "id": "example:airport:precheck",
@@ -554250,7 +554172,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 267
+   "line": 265
   },
   {
    "id": "word:airport:red-eye",
@@ -554270,7 +554192,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 268
+   "line": 266
   },
   {
    "id": "example:airport:red-eye",
@@ -554292,7 +554214,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 268
+   "line": 266
   },
   {
    "id": "word:airport:charter",
@@ -554311,7 +554233,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 269
+   "line": 267
   },
   {
    "id": "example:airport:charter",
@@ -554332,7 +554254,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 269
+   "line": 267
   },
   {
    "id": "word:airport:hub",
@@ -554351,7 +554273,7 @@
     "word"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 270
+   "line": 268
   },
   {
    "id": "example:airport:hub",
@@ -554371,7 +554293,7 @@
     "example"
    ],
    "file": "src/data/f14/words-batch-7.ts",
-   "line": 270
+   "line": 268
   },
   {
    "id": "word:office:meeting-room",
@@ -556847,7 +556769,7 @@
    "en": "stethoscope",
    "en_norm": "stethoscope",
    "my_norm": "နှလုံးခုန်သံနားထောင်ကိရိယာ",
-   "th_norm": "หูฟังของแพทย์",
+   "th_norm": "หูฟังแพทย์",
    "fingerprint": "593fe4bc6c8ebaca",
    "vocab_sig": [
     "stethoscope"
@@ -560983,7 +560905,7 @@
    "en": "layaway",
    "en_norm": "layaway",
    "my_norm": "ကြိုတင်အရစ်ကျပေးငွေ",
-   "th_norm": "การผ่อนชำระล่วงหน้า",
+   "th_norm": "การผ่อนจ่ายก่อนรับสินค้า",
    "fingerprint": "fc9c2bcb87d4c265",
    "vocab_sig": [
     "layaway"
@@ -566312,7 +566234,7 @@
    "kind": "word",
    "en": "jealousy",
    "en_norm": "jealousy",
-   "my_norm": "မနာလိုမှု",
+   "my_norm": "သဝန်တိုမှု မနာလိုမှု",
    "th_norm": "ความอิจฉา",
    "fingerprint": "5a245672087ced1c",
    "vocab_sig": [
@@ -567489,7 +567411,7 @@
    "kind": "word",
    "en": "soul sister",
    "en_norm": "soul sister",
-   "my_norm": "စိတ်တူညီအစ်မ",
+   "my_norm": "စိတ်တူညီမ",
    "th_norm": "พี่น้องร่วมใจ",
    "fingerprint": "09442e117e8fa457",
    "vocab_sig": [
@@ -568951,7 +568873,7 @@
    "kind": "word",
    "en": "coffee badging",
    "en_norm": "coffee badging",
-   "my_norm": "ကော်ဖီတံဆိပ်ကပ်မှု",
+   "my_norm": "တံဆိပ်ဖြတ်ဖို့သက်သက်ရုံးလာခြင်း",
    "th_norm": "การแวะมาออฟฟิศแป๊บเดียว",
    "fingerprint": "1f822b5ac8612deb",
    "vocab_sig": [
@@ -569369,16 +569291,17 @@
   {
    "id": "example:shopping:shopping-spree",
    "kind": "example",
-   "en": "She spent a fortune at the mall.",
-   "en_norm": "she spent a fortune at the mall",
+   "en": "She went on a shopping spree at the mall.",
+   "en_norm": "she went on a shopping spree at the mall",
    "my_norm": "",
-   "fingerprint": "3c0c6c904e2a395d",
+   "fingerprint": "caf01a23aa613514",
    "vocab_sig": [
-    "fortune",
     "mall",
-    "spent"
+    "shopping",
+    "spree",
+    "went"
    ],
-   "template_sig": "she W a W at the W .",
+   "template_sig": "she W on a W W at the W .",
    "tags": [
     "shopping",
     "example"
@@ -569571,17 +569494,18 @@
   {
    "id": "example:shopping:buyer-s-remorse",
    "kind": "example",
-   "en": "He regretted the purchase right after buying it.",
-   "en_norm": "he regretted the purchase right after buying it",
+   "en": "He felt buyer's remorse right after buying it.",
+   "en_norm": "he felt buyer s remorse right after buying it",
    "my_norm": "",
-   "fingerprint": "d890c3e4861b04ce",
+   "fingerprint": "a49c8118ff227d5c",
    "vocab_sig": [
+    "buyer",
     "buying",
-    "purchase",
-    "regretted",
+    "felt",
+    "remorse",
     "right"
    ],
-   "template_sig": "he W the W W after W it .",
+   "template_sig": "he W W ' s W W after W it .",
    "tags": [
     "shopping",
     "example"
@@ -570293,7 +570217,7 @@
    "kind": "word",
    "en": "dupe",
    "en_norm": "dupe",
-   "my_norm": "အတုအပ ဈေးသက်သာအစားထိုး",
+   "my_norm": "ဈေးသက်သာတဲ့အစားထိုးပစ္စည်း",
    "th_norm": "ของเลียนแบบราคาถูก",
    "fingerprint": "4356f4252f6d90ea",
    "vocab_sig": [
@@ -570411,7 +570335,7 @@
   {
    "id": "word:shopping:buy-nothing-day",
    "kind": "word",
-   "en": "buy nothing day",
+   "en": "Buy Nothing Day",
    "en_norm": "buy nothing day",
    "my_norm": "ဘာမှမဝယ်သောနေ့",
    "th_norm": "วันไม่ซื้ออะไรเลย",
@@ -570432,7 +570356,7 @@
   {
    "id": "example:shopping:buy-nothing-day",
    "kind": "example",
-   "en": "They joined buy nothing day.",
+   "en": "They joined Buy Nothing Day.",
    "en_norm": "they joined buy nothing day",
    "my_norm": "",
    "fingerprint": "aad8eee2667abe22",
@@ -573197,7 +573121,7 @@
    "kind": "word",
    "en": "incubation period",
    "en_norm": "incubation period",
-   "my_norm": "ရောဂါဖွက်ကာလ",
+   "my_norm": "ရောဂါပျိုးကာလ",
    "th_norm": "ระยะฟักตัว",
    "fingerprint": "1e5e39b297084f32",
    "vocab_sig": [
@@ -573294,16 +573218,18 @@
   {
    "id": "example:health:comorbidity",
    "kind": "example",
-   "en": "Age is a comorbidity factor.",
-   "en_norm": "age is a comorbidity factor",
+   "en": "Diabetes is a common comorbidity of heart disease.",
+   "en_norm": "diabetes is a common comorbidity of heart disease",
    "my_norm": "",
-   "fingerprint": "1560a78b9064a31c",
+   "fingerprint": "ef88a47c1cdd3473",
    "vocab_sig": [
-    "age",
+    "common",
     "comorbidity",
-    "factor"
+    "diabetes",
+    "disease",
+    "heart"
    ],
-   "template_sig": "W is a W W .",
+   "template_sig": "W is a W W of W W .",
    "tags": [
     "health",
     "example"
@@ -573516,7 +573442,7 @@
    "kind": "word",
    "en": "dormitory",
    "en_norm": "dormitory",
-   "my_norm": "အဆောင်း",
+   "my_norm": "အဆောင်",
    "th_norm": "หอพัก",
    "fingerprint": "d852ee03fd93d790",
    "vocab_sig": [
@@ -575359,7 +575285,7 @@
    "kind": "word",
    "en": "slow food",
    "en_norm": "slow food",
-   "my_norm": "ဖြည်းဖြည်းချင်းအစားအစာ",
+   "my_norm": "ရိုးရာအစားအစာလှုပ်ရှားမှု",
    "th_norm": "สโลว์ฟู้ด",
    "fingerprint": "4c3ac8d6a4858ae1",
    "vocab_sig": [
@@ -577215,7 +577141,7 @@
    "kind": "word",
    "en": "moraines",
    "en_norm": "moraines",
-   "my_norm": "ရေခဲတွန်းမြေပုံ",
+   "my_norm": "ရေခဲမြစ်တွန်းမြေစိုင်",
    "th_norm": "สันตะกอนธารน้ำแข็ง",
    "fingerprint": "562ca338d301dae9",
    "vocab_sig": [
@@ -577570,7 +577496,7 @@
    "kind": "word",
    "en": "coordination",
    "en_norm": "coordination",
-   "my_norm": "ညှိနှိုင်းဆောင်ရွက်မှု",
+   "my_norm": "ခန္ဓာကိုယ်ညှိနှိုင်းမှု",
    "th_norm": "การประสานงานของร่างกาย",
    "fingerprint": "cbbeb3cc2d482a2f",
    "vocab_sig": [
@@ -582147,7 +582073,7 @@
    "kind": "word",
    "en": "defensive",
    "en_norm": "defensive",
-   "my_norm": "ခုခံကာကွယ်သောစိတ်",
+   "my_norm": "ခုခံကာကွယ်စိတ်ရှိသော",
    "th_norm": "มีท่าทีป้องกันตัว",
    "fingerprint": "6cf2c255b068bb69",
    "vocab_sig": [
@@ -582304,7 +582230,7 @@
    "kind": "word",
    "en": "sentimental",
    "en_norm": "sentimental",
-   "my_norm": "စိတ်ခံစားမှုတန်ဖိုးထားသော",
+   "my_norm": "အမှတ်တရတန်ဖိုးရှိသော",
    "th_norm": "มีคุณค่าทางใจ",
    "fingerprint": "69f32b0797ddb739",
    "vocab_sig": [
@@ -582383,7 +582309,7 @@
    "kind": "word",
    "en": "edgy",
    "en_norm": "edgy",
-   "my_norm": "စိတ်တင်းမာမငြိမ်မသက်ဖြစ်သော",
+   "my_norm": "စိတ်တင်းမာမငြိမ်မသက်သော",
    "th_norm": "กระวนกระวาย",
    "fingerprint": "9f196b6f9a9aa529",
    "vocab_sig": [
@@ -583844,7 +583770,7 @@
    "kind": "word",
    "en": "unplug",
    "en_norm": "unplug",
-   "my_norm": "ပလပ်ဖြုတ်သည် အနားယူသည်",
+   "my_norm": "အဆက်အသွယ်ဖြတ်သည် အလုပ်ကနေ အနားယူသည်",
    "th_norm": "ปิดสวิตช์เรื่องงาน",
    "fingerprint": "5004da7363b8fe49",
    "vocab_sig": [
@@ -641893,10 +641819,10 @@
  ],
  "meta": {
   "kinds": {
-   "word": 9996,
+   "word": 9994,
    "phrase": 8096,
    "topic": 39,
-   "example": 9996,
+   "example": 9994,
    "dialogue": 532,
    "story": 204,
    "verb": 200

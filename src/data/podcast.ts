@@ -38,6 +38,26 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 65,
+    slug: 'english-with-aung-and-may-ep-65-bus-and-train-which-bus-what-time-does-it-leave-a-ticket-please-2026-10-15',
+    titleMy: 'အပိုင်း ၆၅ — ဘတ်စ်ကားနဲ့ ရထားစီးခြင်း',
+    titleOrig: 'นั่งรถเมล์และรถไฟ — Bus and Train',
+    descMy: 'ဘတ်စ်ကားနဲ့ ရထား စီးခြင်း — "Which bus?" / "What time does it leave?" / "A ticket, please." / "How much is a ticket?"',
+    phrases: ['Which bus?', 'What time does it leave?', 'A ticket, please.', 'How much is a ticket?', 'Does this bus go to the market?'],
+    durationSecs: 633,
+    cover: '/podcast-covers/ep-65.jpg',
+  },
+  {
+    n: 64,
+    slug: 'english-with-aung-and-may-ep-64-taking-a-taxi-2026-10-14',
+    titleMy: 'အပိုင်း ၆၄ — တက္ကစီစီးခြင်း',
+    titleOrig: 'นั่งแท็กซี่ — Taking a Taxi',
+    descMy: 'တက္ကစီစီးခြင်း — "Please take me to the airport." / "How much is it?" / "Stop here, please." / "Please wait for me."',
+    phrases: ['Please take me to the airport.', 'How much is it?', 'Stop here, please.', 'Please wait for me.'],
+    durationSecs: 604,
+    cover: '/podcast-covers/ep-64.jpg',
+  },
+  {
     n: 63,
     slug: 'english-with-aung-and-may-ep-63-giving-directions-2026-10-14',
     titleMy: 'အပိုင်း ၆၃ — လမ်းညွှန်ခြင်း',
