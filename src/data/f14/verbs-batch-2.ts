@@ -355,7 +355,7 @@ export const verbsBatch2: Verb[] = [
   },
   {
     base: 'shed', past: 'shed', participle: 'shed', present3s: 'sheds', gerund: 'shedding',
-    my: 'ချွတ်သည်၊ ကျွတ်သည်', th: 'หลั่ง(น้ำตา); ผลัด(ขน)', phonetic: 'shed', cefr: 'B2',
+    my: 'ကျွတ်သည်၊ ကြွေကျသည်', th: 'หลั่ง(น้ำตา); ผลัด(ขน)', phonetic: 'shed', cefr: 'B2',
     examples: {
       present: { en: 'Trees shed leaves in autumn.', my: 'သစ်ပင်တွေ ဆောင်းဦးမှာ အရွက်ကြွေတယ်။', th: 'ต้นไม้ผลัดใบในฤดูใบไม้ร่วง' },
       past: { en: 'She shed tears of joy.', my: 'သူမ ဝမ်းသာမျက်ရည်ကျခဲ့တယ်။', th: 'เธอหลั่งน้ำตาแห่งความสุข' },

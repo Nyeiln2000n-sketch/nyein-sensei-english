@@ -38,6 +38,16 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 68,
+    slug: 'tourist-attractions-2026-10-15',
+    titleMy: 'အပိုင်း ၆၈ — ခရီးသွားနေရာများ',
+    titleOrig: 'สถานที่ท่องเที่ยว — Tourist Attractions',
+    descMy: 'ခရီးသွားနေရာများ — "The temple is very beautiful." / "Let us go to the market." / "Have you been to the beach?" / "The museum is very interesting." / "You should visit the night market."',
+    phrases: ['The temple is very beautiful.', 'Let us go to the market.', 'Have you been to the beach?', 'The museum is very interesting.', 'You should visit the night market.'],
+    durationSecs: 571,
+    cover: '/podcast-covers/ep-68.jpg',
+  },
+  {
     n: 67,
     slug: 'at-the-hotel-2026-10-15',
     titleMy: 'အပိုင်း ၆၇ — ဟိုတယ်မှာ ချက်-အင် ဝင်ခြင်း',

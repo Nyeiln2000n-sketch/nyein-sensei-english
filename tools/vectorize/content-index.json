@@ -292304,7 +292304,7 @@
    "en": "zoonotic",
    "en_norm": "zoonotic",
    "my_norm": "ဇူနိုတစ်",
-   "th_norm": "โรคจากสัตว์สู่คน",
+   "th_norm": "ที่ติดต่อจากสัตว์สู่คน",
    "fingerprint": "cde1e7537b4d5d1d",
    "vocab_sig": [
     "zoonotic"
@@ -294224,7 +294224,7 @@
    "en": "bioremediation",
    "en_norm": "bioremediation",
    "my_norm": "ဇီဝပြန်လည်သန့်စင်မှု",
-   "th_norm": "การฟื้นฟูด้วยชีวภาพ",
+   "th_norm": "การบำบัดด้วยชีวภาพ",
    "fingerprint": "55acdb7c1daed7d1",
    "vocab_sig": [
     "bioremediation"
@@ -294733,7 +294733,7 @@
    "en": "accretion disk",
    "en_norm": "accretion disk",
    "my_norm": "အက်ခရီရှင်းဒစ်ခ်",
-   "th_norm": "จานพอกพูนมวล",
+   "th_norm": "จานมวลสาร",
    "fingerprint": "2932340d45c367e0",
    "vocab_sig": [
     "accretion",
@@ -298037,7 +298037,7 @@
    "en": "strike-slip fault",
    "en_norm": "strike slip fault",
    "my_norm": "စထရိုက်စလစ်ပြတ်ရွေ့",
-   "th_norm": "รอยเลื่อนเลื่อนข้าง",
+   "th_norm": "รอยเลื่อนแบบเลื่อนข้าง",
    "fingerprint": "51c80447a35d4301",
    "vocab_sig": [
     "fault",
