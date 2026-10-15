@@ -38,6 +38,16 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 67,
+    slug: 'at-the-hotel-2026-10-15',
+    titleMy: 'အပိုင်း ၆၇ — ဟိုတယ်မှာ ချက်-အင် ဝင်ခြင်း',
+    titleOrig: 'ที่โรงแรม — At the Hotel',
+    descMy: 'ဟိုတယ်မှာ ကိုယ်တိုင် ချက်-အင် ဝင်ခြင်း — "I have a reservation." / "Check in, please." / "The key, please." / "What time is checkout?" / "Is breakfast included?" / "I need a towel, please."',
+    phrases: ['I have a reservation.', 'Check in, please.', 'The key, please.', 'What time is checkout?', 'Is breakfast included?', 'I need a towel, please.'],
+    durationSecs: 541,
+    cover: '/podcast-covers/ep-67.jpg',
+  },
+  {
     n: 66,
     slug: 'english-with-aung-and-may-ep-66-at-the-airport-i-would-like-to-check-in-here-is-my-passport-where-is-gate-five-2026-10-1',
     titleMy: 'အပိုင်း ၆၆ — လေဆိပ်မှာ ချက်-အင် ဝင်ခြင်း',

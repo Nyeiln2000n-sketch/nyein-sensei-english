@@ -216951,16 +216951,16 @@
   {
    "id": "example:friends:friendship",
    "kind": "example",
-   "en": "Their friendship lasts for years.",
-   "en_norm": "their friendship lasts for years",
+   "en": "Their friendship has lasted for years.",
+   "en_norm": "their friendship has lasted for years",
    "my_norm": "",
-   "fingerprint": "4d7705c9d570964d",
+   "fingerprint": "093ad4f8f4369597",
    "vocab_sig": [
     "friendship",
-    "lasts",
+    "lasted",
     "years"
    ],
-   "template_sig": "their W W for W .",
+   "template_sig": "their W has W for W .",
    "tags": [
     "friends",
     "example"
@@ -219044,7 +219044,7 @@
    "kind": "word",
    "en": "bittersweet",
    "en_norm": "bittersweet",
-   "my_norm": "ချိုတစ်ဝက်ခါးတစ်ဝက်",
+   "my_norm": "ဝမ်းသာတစ်ဝက်ဝမ်းနည်းတစ်ဝက်",
    "th_norm": "หวานอมขมกลืน",
    "fingerprint": "556ded69059a18b0",
    "vocab_sig": [
@@ -219163,7 +219163,7 @@
    "kind": "word",
    "en": "deputy",
    "en_norm": "deputy",
-   "my_norm": "ဒုတိယ",
+   "my_norm": "ဒုတိယခေါင်းဆောင်",
    "th_norm": "รอง",
    "fingerprint": "00652261d8f5e7a4",
    "vocab_sig": [
@@ -220299,7 +220299,7 @@
    "kind": "word",
    "en": "vacancy",
    "en_norm": "vacancy",
-   "my_norm": "လစ်လပ်နေရာ",
+   "my_norm": "လစ်လပ်ရာထူး",
    "th_norm": "ตำแหน่งว่าง",
    "fingerprint": "51f362abd9484034",
    "vocab_sig": [
@@ -283604,7 +283604,7 @@
    "kind": "word",
    "en": "thermodynamics",
    "en_norm": "thermodynamics",
-   "my_norm": "အပူစွမ်းအင်ဗေဒ",
+   "my_norm": "သာမိုဒိုင်းနမစ်",
    "th_norm": "อุณหพลศาสตร์",
    "fingerprint": "a2351e2337dff66d",
    "vocab_sig": [
@@ -286983,7 +286983,7 @@
    "kind": "word",
    "en": "corrosive",
    "en_norm": "corrosive",
-   "my_norm": "စားပျက်စေတတ်သော",
+   "my_norm": "တိုက်စားတတ်သော",
    "th_norm": "กัดกร่อน",
    "fingerprint": "82cef985d0b17dc5",
    "vocab_sig": [
@@ -294776,7 +294776,7 @@
    "kind": "word",
    "en": "solar wind",
    "en_norm": "solar wind",
-   "my_norm": "နေလေပြင်း",
+   "my_norm": "နေလေ",
    "th_norm": "ลมสุริยะ",
    "fingerprint": "bed2572e4945921e",
    "vocab_sig": [
@@ -297527,7 +297527,7 @@
    "kind": "word",
    "en": "conjunction",
    "en_norm": "conjunction",
-   "my_norm": "ဆက်စပ်မှု",
+   "my_norm": "ယှဉ်မှု",
    "th_norm": "การร่วมทิศ",
    "fingerprint": "12abd6fbac0f2f0e",
    "vocab_sig": [
@@ -310400,7 +310400,7 @@
    "kind": "word",
    "en": "speedy trial",
    "en_norm": "speedy trial",
-   "my_norm": "မြန်ဆန်သောတရားစွဲမှု",
+   "my_norm": "မြန်ဆန်သောတရားစီရင်မှု",
    "th_norm": "การพิจารณาคดีโดยรวดเร็ว",
    "fingerprint": "41538b198d826982",
    "vocab_sig": [
@@ -311827,7 +311827,7 @@
    "kind": "word",
    "en": "heat of passion",
    "en_norm": "heat of passion",
-   "my_norm": "ဒေါသအမျက်ထွက်မှု",
+   "my_norm": "ဒေါသထွက်မှု",
    "th_norm": "การบันดาลโทสะ",
    "fingerprint": "322e4bf10bbbc39e",
    "vocab_sig": [
@@ -312821,7 +312821,7 @@
    "kind": "word",
    "en": "money laundering",
    "en_norm": "money laundering",
-   "my_norm": "ငွေမည်းခိုမှု",
+   "my_norm": "ငွေကြေးခဝါချမှု",
    "th_norm": "การฟอกเงิน",
    "fingerprint": "cc89f8a271217436",
    "vocab_sig": [
@@ -315629,7 +315629,7 @@
    "kind": "word",
    "en": "last clear chance",
    "en_norm": "last clear chance",
-   "my_norm": "နောက်ဆုံးရှင်းလင်းသောအခွင့်အရေး",
+   "my_norm": "နောက်ဆုံးအခွင့်အရေး",
    "th_norm": "หลักโอกาสสุดท้าย",
    "fingerprint": "f65a40f5d635c47e",
    "vocab_sig": [
@@ -316265,7 +316265,7 @@
    "kind": "word",
    "en": "adverse possession",
    "en_norm": "adverse possession",
-   "my_norm": "ဆန့်ကျင်ပိုင်ဆိုင်မှု",
+   "my_norm": "ဆန့်ကျင်ဘက်ပိုင်ဆိုင်မှု",
    "th_norm": "การครอบครองปรปักษ์",
    "fingerprint": "802338ac79989833",
    "vocab_sig": [
@@ -316855,7 +316855,7 @@
    "kind": "word",
    "en": "lien",
    "en_norm": "lien",
-   "my_norm": "ပစ္စည်းအာမခံအကြွေး",
+   "my_norm": "ပစ္စည်းပေါ်အကြွေးတောင်းပိုင်ခွင့်",
    "th_norm": "สิทธิยึดหน่วง",
    "fingerprint": "c6c01cee2272c625",
    "vocab_sig": [
@@ -319821,7 +319821,7 @@
    "kind": "word",
    "en": "unreasonable search",
    "en_norm": "unreasonable search",
-   "my_norm": "မသင့်လျော်သောရှာဖွေမှု",
+   "my_norm": "ကျိုးကြောင်းမဆီလျော်သောရှာဖွေမှု",
    "th_norm": "การค้นที่ไม่สมเหตุผล",
    "fingerprint": "3638a33ca038c81f",
    "vocab_sig": [
@@ -431905,7 +431905,7 @@
    "kind": "word",
    "en": "rickshaw",
    "en_norm": "rickshaw",
-   "my_norm": "သုံးဘီးဆိုက္ကား",
+   "my_norm": "ဆိုက္ကား",
    "th_norm": "รถสามล้อ",
    "fingerprint": "f0c610d81013305d",
    "vocab_sig": [
@@ -435793,7 +435793,7 @@
    "kind": "word",
    "en": "drowsy",
    "en_norm": "drowsy",
-   "my_norm": "ငိုက်မျည်းနေသော",
+   "my_norm": "ငိုက်မျဉ်းနေသော",
    "th_norm": "ง่วงซึม",
    "fingerprint": "8978c132949a4dba",
    "vocab_sig": [
@@ -438601,7 +438601,7 @@
    "kind": "word",
    "en": "worksheet",
    "en_norm": "worksheet",
-   "my_norm": "အလုပ်စာရွက်",
+   "my_norm": "လေ့ကျင့်ခန်းစာရွက်",
    "th_norm": "ใบงาน",
    "fingerprint": "df98a69a5e09d5b8",
    "vocab_sig": [
@@ -438990,7 +438990,7 @@
    "kind": "word",
    "en": "quiz",
    "en_norm": "quiz",
-   "my_norm": "ဉာဏ်စမ်းမေးခွန်း",
+   "my_norm": "မေးခွန်းတို",
    "th_norm": "แบบทดสอบสั้น",
    "fingerprint": "9d98ce221dd52ecc",
    "vocab_sig": [
@@ -439228,7 +439228,7 @@
    "kind": "word",
    "en": "locker",
    "en_norm": "locker",
-   "my_norm": "သေတ္တာခုံ",
+   "my_norm": "လော့ကာသေတ္တာ",
    "th_norm": "ตู้ล็อกเกอร์",
    "fingerprint": "8bca6dada231e0fd",
    "vocab_sig": [
@@ -439540,7 +439540,7 @@
    "kind": "word",
    "en": "skip",
    "en_norm": "skip",
-   "my_norm": "လစ်လျူရှုသည်",
+   "my_norm": "ကျော်သွားသည်",
    "th_norm": "ข้าม",
    "fingerprint": "42e93b9bb77d8a73",
    "vocab_sig": [
@@ -440041,7 +440041,7 @@
    "kind": "word",
    "en": "assignment",
    "en_norm": "assignment",
-   "my_norm": "တာဝန်",
+   "my_norm": "ပေးထားသောအလုပ်",
    "th_norm": "งานที่ได้รับมอบหมาย",
    "fingerprint": "ce7a7c10b0dfd968",
    "vocab_sig": [
