@@ -38,6 +38,16 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 71,
+    slug: 'todays-weather-2026-10-16',
+    titleMy: 'အပိုင်း ၇၁ — ယနေ့ ရာသီဥတု',
+    titleOrig: 'อากาศวันนี้ — Today\'s Weather',
+    descMy: 'ယနေ့ ရာသီဥတု ဖော်ပြခြင်း — "It is sunny." / "It is cloudy." / "It is raining." / "How is the weather?" / "It is very hot." / "It is windy." / "It is partly cloudy."',
+    phrases: ['It is sunny.', 'It is raining.', 'How is the weather?'],
+    durationSecs: 543,
+    cover: '/podcast-covers/ep-71.jpg',
+  },
+  {
     n: 70,
     slug: 'english-with-aung-and-may-ep-70-module-7-review-solo-travel-in-english-2026-10-16',
     titleMy: 'အပိုင်း ၇၀ — ခရီးသွား ပြန်လည်လေ့ကျင့်ခြင်း',

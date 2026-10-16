@@ -1,6 +1,6 @@
 import type { Word } from '../../types';
 
-// FASE 14 Ola 1 — batch 7: 248 words (weather/restaurant/airport), A1→B1  // 2 dup entries removed in expert-audit run 332
+// FASE 14 Ola 1 — batch 7: 250 words (weather/restaurant/airport), A1→B1  // chopstick + omelette restored 2026-10-16 (unauthorized run-332 deletion reverted; still pending Nyein's merge decision)
 
 export const weatherWordsF14: Word[] = [
   // ---- WEATHER · A1 (26) ----
@@ -96,6 +96,7 @@ export const restaurantWordsF14: Word[] = [
   { en: 'saucer', my: 'ခွက်အောက်ပန်းကန်ပြား', th: 'จานรอง', topic: 'restaurant', level: 1, cefr: 'A1', phonetic: 'saw-ser', example: 'A cup on a saucer.', exampleMy: 'ခွက်အောက်ပန်းကန်ပြားပေါ် ခွက်တစ်လုံး။', exampleTh: 'ถ้วยบนจานรอง' },
   { en: 'coaster', my: 'ခွက်အောက်ခံ', th: 'ที่รองแก้ว', topic: 'restaurant', level: 1, cefr: 'A1', phonetic: 'koh-ster', example: 'Put your cup on a coaster.', exampleMy: 'ခွက်ကို ခွက်အောက်ခံပေါ် တင်ပါ။', exampleTh: 'วางถ้วยของคุณบนที่รองแก้ว' },
   { en: 'ladle', my: 'ဟင်းရည်ခပ်', th: 'ทัพพี', topic: 'restaurant', level: 1, cefr: 'A1', phonetic: 'lay-dul', example: 'Serve soup with a ladle.', exampleMy: 'ဟင်းချိုကို ဟင်းရည်ခပ်နဲ့ ထည့်ပါ။', exampleTh: 'ใช้ทัพพีตักซุป' },
+  { en: 'chopstick', my: 'တူ', th: 'ตะเกียบ', topic: 'restaurant', level: 1, cefr: 'A1', phonetic: 'chop-stik', example: 'Use chopsticks for noodles.', exampleMy: 'ခေါက်ဆွဲအတွက် တူ သုံးပါ။', exampleTh: 'ใช้ตะเกียบสำหรับก๋วยเตี๋ยว' },
   { en: 'mug', my: 'ခွက်ကြီး', th: 'แก้วมัค', topic: 'restaurant', level: 1, cefr: 'A1', phonetic: 'mug', example: 'A mug of hot tea.', exampleMy: 'လက်ဖက်ရည်ပူ တစ်ခွက်။', exampleTh: 'ชาร้อนในแก้วมัค' },
   { en: 'runner', my: 'စားပွဲအလှခင်း', th: 'ผ้าปูโต๊ะยาว', topic: 'restaurant', level: 1, cefr: 'C1', phonetic: 'run-er', example: 'A red runner on the table.', exampleMy: 'စားပွဲပေါ် အနီရောင် အလှခင်း။', exampleTh: 'ผ้าปูโต๊ะยาวสีแดงบนโต๊ะ' },
   { en: 'armchair', my: 'လက်တင်ခုံ', th: 'เก้าอี้อาร์มแชร์', topic: 'restaurant', level: 1, cefr: 'A1', phonetic: 'arm-chayr', example: 'An armchair by the window.', exampleMy: 'ပြတင်းပေါက်နားက လက်တင်ခုံ။', exampleTh: 'เก้าอี้นวมริมหน้าต่าง' },
@@ -114,6 +115,7 @@ export const restaurantWordsF14: Word[] = [
   { en: 'curd', my: 'ဒိန်ချဉ်', th: 'นมเปรี้ยว', topic: 'restaurant', level: 1, cefr: 'A1', phonetic: 'kurd', example: 'Soft curd with fruit.', exampleMy: 'သစ်သီးနဲ့ ဒိန်ချဉ်နူးညံ့။', exampleTh: 'นมเปรี้ยวนุ่มๆ ใส่ผลไม้' },
   { en: 'lemonade', my: 'သံပရာရည်', th: 'น้ำมะนาว', topic: 'restaurant', level: 1, cefr: 'A1', phonetic: 'lem-un-ayd', example: 'Cold lemonade is refreshing.', exampleMy: 'သံပရာရည်အေးက လန်းဆန်းစေတယ်။', exampleTh: 'น้ำมะนาวเย็นชื่นใจ' },
   { en: 'cocoa', my: 'ကိုကိုး', th: 'โกโก้', topic: 'restaurant', level: 1, cefr: 'A1', phonetic: 'koh-koh', example: 'Hot cocoa is sweet.', exampleMy: 'ကိုကိုးပူက ချိုတယ်။', exampleTh: 'โกโก้ร้อนมีรสหวาน' },
+  { en: 'omelette', my: 'ကြက်ဥကြော်', th: 'ไข่เจียว', topic: 'restaurant', level: 1, cefr: 'A1', phonetic: 'om-let', example: 'I made a cheese omelette for breakfast.', exampleMy: 'မနက်စာအတွက် ချိစ်ကြက်ဥကြော် လုပ်ခဲ့တယ်။', exampleTh: 'ฉันทำไข่เจียวชีสเป็นอาหารเช้า' },
   { en: 'luncheon', my: 'နေ့လည်စာ', th: 'อาหารกลางวัน', topic: 'restaurant', level: 1, cefr: 'C1', phonetic: 'lun-chun', example: 'A luncheon with friends.', exampleMy: 'သူငယ်ချင်းတွေနဲ့ နေ့လည်စာ။', exampleTh: 'งานเลี้ยงอาหารกลางวันกับเพื่อนๆ' },
   { en: 'supper', my: 'ညစာ', th: 'อาหารเย็น', topic: 'restaurant', level: 1, cefr: 'A1', phonetic: 'sup-er', example: 'Supper is at seven.', exampleMy: 'ညစာက ခုနှစ်နာရီမှာ စားမယ်။', exampleTh: 'อาหารมื้อเย็นคือตอนเจ็ดโมง' },
   { en: 'munch', my: 'ဝါးစားသည်', th: 'เคี้ยว', topic: 'restaurant', level: 1, cefr: 'A1', phonetic: 'munch', example: 'Munch the apple slowly.', exampleMy: 'ပန်းသီးကို ဖြည်းဖြည်း ဝါးစားပါ။', exampleTh: 'เคี้ยวแอปเปิ้ลช้าๆ' },
