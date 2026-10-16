@@ -38,6 +38,16 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 70,
+    slug: 'english-with-aung-and-may-ep-70-module-7-review-solo-travel-in-english-2026-10-16',
+    titleMy: 'အပိုင်း ၇၀ — ခရီးသွား ပြန်လည်လေ့ကျင့်ခြင်း',
+    titleOrig: 'ทบทวนบทที่ 7 — Solo Travel Review',
+    descMy: 'ခရီးသွားအပိုင်း ပြန်လည်လေ့ကျင့်ခြင်း — "Where is the temple?" / "Go straight." / "Turn left." / "A ticket, please." / "What time does it leave?" / "Please take me to the beach." / "Stop here, please." / "I have a reservation." / "Can you show me on the map?" / "We are here."',
+    phrases: ['Where is the temple?', 'Turn left.', 'A ticket, please.', 'Please take me to the beach.', 'I have a reservation.', 'Can you show me on the map?'],
+    durationSecs: 605,
+    cover: '/podcast-covers/ep-70.jpg',
+  },
+  {
     n: 69,
     slug: 'english-with-aung-and-may-ep-69-2026-10-16',
     titleMy: 'အပိုင်း ၆၉ — မြေပုံကြည့်ခြင်း',
