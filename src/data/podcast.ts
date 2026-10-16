@@ -38,6 +38,16 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 69,
+    slug: 'english-with-aung-and-may-ep-69-2026-10-16',
+    titleMy: 'အပိုင်း ၆၉ — မြေပုံကြည့်ခြင်း',
+    titleOrig: 'ดูแผนที่ — Using a Map',
+    descMy: 'မြေပုံကြည့်ခြင်း — "Can you show me on the map?" / "We are here." / "Here." / "There." / "Can you show me where the temple is?" / "It is near here." / "It is far from here."',
+    phrases: ['Can you show me on the map?', 'We are here.', 'Here.', 'There.', 'Can you show me where the temple is?', 'It is near here.', 'It is far from here.'],
+    durationSecs: 631,
+    cover: '/podcast-covers/ep-69.jpg',
+  },
+  {
     n: 68,
     slug: 'tourist-attractions-2026-10-15',
     titleMy: 'အပိုင်း ၆၈ — ခရီးသွားနေရာများ',

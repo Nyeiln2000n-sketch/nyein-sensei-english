@@ -212,9 +212,9 @@ export const grammarRulesB2C1: GrammarRuleB2C1[] = [
     explanationMyanmarTh: 'ผสมเงื่อนไขอดีตกับผลปัจจุบัน หรือเงื่อนไขปัจจุบันกับผลอดีต: If I had studied harder I would have a better job now (ถ้าอดีตขยันกว่านี้ ตอนนี้คงมีงานดีกว่านี้)',
     examples: [
       { english: 'If I had saved money, I would be rich now.', myanmar: 'ပိုက်ဆံစုခဲ့ရင် အခုချမ်းသာနေမှာ။', myanmarTh: 'ถ้าตอนนั้นผมเก็บเงินไว้ ตอนนี้ผมคงรวยแล้ว', },
-      { english: 'If she were more careful, she would not have broken the vase.', myanmar: 'သူမပိုသတိထားခဲ့ရင် ပန်းအိုးခွဲမိမှာမဟုတ်ဘူး။', myanmarTh: 'ถ้าเธอระวังกว่านี้ เธอคงไม่ทำแจกันแตก', },
+      { english: 'If she were more careful, she would not have broken the vase.', myanmar: 'သူမက ပိုသတိထားတတ်တဲ့သူဆိုရင် ပန်းအိုးခွဲမိခဲ့မှာမဟုတ်ဘူး။', myanmarTh: 'ถ้าเธอระวังกว่านี้ เธอคงไม่ทำแจกันแตก', },
       { english: 'If he had taken the job, he would be living in Singapore now.', myanmar: 'သူ အဲဒီအလုပ်ယူခဲ့ရင် အခုစင်ကာပူမှာနေနေရမှာ။', myanmarTh: 'ถ้าเขารับงานนั้น เขาคงอยู่สิงคโปร์ตอนนี้', },
-      { english: 'If I were not afraid of flying, I would have visited you last year.', myanmar: 'လေယာဉ်စီးရမှာမကြောက်ခဲ့ရင် မနှစ်က မင်းဆီလာလည်ခဲ့မှာ။', myanmarTh: 'ถ้าผมไม่กลัวเครื่องบิน ผมคงไปเยี่ยมคุณปีที่แล้ว', },
+      { english: 'If I were not afraid of flying, I would have visited you last year.', myanmar: 'လေယာဉ်စီးရမှာမကြောက်ရင် မနှစ်က မင်းဆီလာလည်ခဲ့မှာ။', myanmarTh: 'ถ้าผมไม่กลัวเครื่องบิน ผมคงไปเยี่ยมคุณปีที่แล้ว', },
     ],
     drills: [
       { prompt: 'If I had learned English earlier, I ___ a better job now. (have)', answer: 'would have', options: ['would have', 'would had', 'will have', 'have'] },
@@ -276,7 +276,7 @@ export const grammarRulesB2C1: GrammarRuleB2C1[] = [
     examples: [
       { english: 'She admitted that she had made a mistake.', myanmar: 'သူမ အမှားလုပ်ခဲ့မိတယ်လို့ ဝန်ခံခဲ့တယ်။', myanmarTh: 'เธอยอมรับว่าเธอทำผิด', },
       { english: 'He denied taking the money.', myanmar: 'သူ ပိုက်ဆံယူခဲ့တာကို ငြင်းဆိုခဲ့တယ်။', myanmarTh: 'เขาปฏิเสธว่าเขาเอาเงินไป', },
-      { english: 'The teacher warned us not to cheat.', myanmar: 'ဆရာက ငါတို့ကို မလိမ်ဖို့ သတိပေးခဲ့တယ်။', myanmarTh: 'ครูเตือนพวกเราไม่ให้โกง', },
+      { english: 'The teacher warned us not to cheat.', myanmar: 'ဆရာက ငါတို့ကို စာမေးပွဲမှာ မခိုးချဖို့ သတိပေးခဲ့တယ်။', myanmarTh: 'ครูเตือนพวกเราไม่ให้โกง', },
       { english: 'He said that water boils at 100 degrees.', myanmar: 'ရေက ၁၀၀ ဒီဂရီမှာ ဆူတယ်လို့ သူပြောခဲ့တယ်။', myanmarTh: 'เขาบอกว่าน้ำเดือดที่ 100 องศา', },
     ],
     drills: [
@@ -463,7 +463,7 @@ export const grammarRulesB2C1: GrammarRuleB2C1[] = [
       'အနာဂတ်အချိန်တစ်ခုမှာ ကြာမြင့်နေပြီးဖြစ်မယ့်လုပ်ဆောင်ချက်အတွက် will have been + V-ing သုံးတယ်။ By next year, I will have been working here for ten years. ကြာချိန်ကို အလေးပေးတယ်။',
     explanationMyanmarTh: 'การกระทำที่จะดำเนินมานานจนถึงจุดหนึ่งในอนาคตใช้ will have been + กริยาเติม -ing: By next year I will have been working here for ten years เน้นระยะเวลา',
     examples: [
-      { english: 'By December, she will have been teaching for twenty years.', myanmar: 'ဒီဇင်ဘာလဆိုရင် သူမ သင်ကြားတာ နှစ်ဆယ်ကြာပြီးဖြစ်မယ်။', myanmarTh: 'ถึงเดือนธันวาคม เธอจะสอนมาครบยี่สิบปี', },
+      { english: 'By December, she will have been teaching for twenty years.', myanmar: 'ဒီဇင်ဘာလဆိုရင် သူမ သင်ကြားတာ နှစ်နှစ်ဆယ်ကြာပြီးဖြစ်မယ်။', myanmarTh: 'ถึงเดือนธันวาคม เธอจะสอนมาครบยี่สิบปี', },
       { english: 'Next month, we will have been living here for a decade.', myanmar: 'နောက်လဆိုရင် ငါတို့ဒီမှာနေတာ ဆယ်စုနှစ်တစ်ခုကြာပြီးဖြစ်မယ်။', myanmarTh: 'เดือนหน้า พวกเราจะอยู่ที่นี่ครบสิบปี', },
       { english: 'By the time you arrive, I will have been waiting for two hours.', myanmar: 'မင်းရောက်တဲ့အချိန်ဆိုရင် ငါစောင့်နေတာ နှစ်နာရီကြာပြီးဖြစ်မယ်။', myanmarTh: 'ตอนคุณมาถึง ผมจะรอมาสองชั่วโมงแล้ว', },
       { english: 'In June, they will have been married for 25 years.', myanmar: 'ဇွန်လဆိုရင် သူတို့လက်ထပ်တာ ၂၅ နှစ်ကြာပြီးဖြစ်မယ်။', myanmarTh: 'ในเดือนมิถุนายน พวกเขาจะแต่งงานครบ 25 ปี', },
@@ -526,9 +526,9 @@ export const grammarRulesB2C1: GrammarRuleB2C1[] = [
       'ဖြစ်နိုင်ခဲ့ပေမယ့် မဖြစ်ခဲ့တဲ့အရာတွေအတွက် could have + V3 (လုပ်နိုင်ခဲ့တယ်)၊ would have + V3 (လုပ်ခဲ့မှာပါ) သုံးတယ်။ I could have won. I would have helped, but I was busy.။',
     explanationMyanmarTh: 'สิ่งที่เกือบจะเกิดแต่ไม่เกิด: could have + กริยาช่อง 3 (เกือบทำได้) would have + กริยาช่อง 3 (คงจะทำ): I could have won / I would have helped but I was busy',
     examples: [
-      { english: 'I could have bought that house, but I hesitated.', myanmar: 'ငါ အဲဒီအိမ်ဝယ်နိုင်ခဲ့တယ်၊ ဒါပေမဲ့ တွန့်ဆုတ်နေခဲ့တယ်။', myanmarTh: 'ผมเกือบซื้อบ้านหลังนั้น แต่ลังเล', },
+      { english: 'I could have bought that house, but I hesitated.', myanmar: 'ငါ အဲဒီအိမ်ကို ဝယ်နိုင်ခဲ့ပေမယ့် မဝယ်ခဲ့ဘူး၊ တွန့်ဆုတ်နေခဲ့တယ်။', myanmarTh: 'ผมเกือบซื้อบ้านหลังนั้น แต่ลังเล', },
       { english: 'She would have come, but she was ill.', myanmar: 'သူမ လာခဲ့မှာပါ၊ ဒါပေမဲ့ နေမကောင်းဖြစ်နေခဲ့တယ်။', myanmarTh: 'เธอคงมา แต่เธอป่วย', },
-      { english: 'We could have avoided this problem.', myanmar: 'ငါတို့ ဒီပြဿနာကို ရှောင်နိုင်ခဲ့တယ်။', myanmarTh: 'พวกเราน่าจะหลีกเลี่ยงปัญหานี้ได้', },
+      { english: 'We could have avoided this problem.', myanmar: 'ငါတို့ ဒီပြဿနာကို ရှောင်နိုင်ခဲ့ပေမယ့် မရှောင်ခဲ့ဘူး။', myanmarTh: 'พวกเราน่าจะหลีกเลี่ยงปัญหานี้ได้', },
       { english: 'He would have succeeded with a little more luck.', myanmar: 'ကံနည်းနည်းပိုကောင်းရင် သူအောင်မြင်ခဲ့မှာပါ။', myanmarTh: 'เขาคงสำเร็จถ้ามีโชคมากกว่านี้หน่อย', },
     ],
     drills: [
@@ -952,9 +952,9 @@ export const grammarRulesB2C1: GrammarRuleB2C1[] = [
       { english: 'They could have won if the referee had been fair.', myanmar: 'ဒိုင်လူကြီးတရားမျှတခဲ့ရင် သူတို့အနိုင်ရနိုင်ခဲ့တယ်။', myanmarTh: 'พวกเขาคงชนะได้ถ้ากรรมการยุติธรรม', },
     ],
     drills: [
-      { prompt: 'She ___ the train; she is not here. (may → "may have missed")', answer: 'may have missed', options: ['may have missed', 'may missed', 'may miss', 'may has missed'] },
-      { prompt: 'You ___ all that money! (needn\'t → "needn\'t have spent")', answer: 'needn\'t have spent', options: ['needn\'t have spent', 'needn\'t spent', 'didn\'t need spent', 'needn\'t spending'] },
-      { prompt: 'He ___ the keys somewhere. (might → "might have lost")', answer: 'might have lost', options: ['might have lost', 'might lost', 'might losing', 'might has lost'] },
+      { prompt: 'She ___ the train; she is not here. (miss → ___)', answer: 'may have missed', options: ['may have missed', 'may missed', 'may miss', 'may has missed'] },
+      { prompt: 'You ___ all that money! (spend → ___)', answer: 'needn\'t have spent', options: ['needn\'t have spent', 'needn\'t spent', 'didn\'t need spent', 'needn\'t spending'] },
+      { prompt: 'He ___ the keys somewhere. (lose → ___)', answer: 'might have lost', options: ['might have lost', 'might lost', 'might losing', 'might has lost'] },
     ],
   },
   {

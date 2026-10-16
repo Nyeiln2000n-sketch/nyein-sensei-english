@@ -16912,7 +16912,7 @@
    ],
    "template_sig": "W W are so W that W the W W W . no W W is W . one W W is one too W . it W W from W W . W W no W W W W to W W . W ’ W W W and W . W W W ; it does not W W W . W W W on W W . the W W .",
    "tags": [
-    "daily-life",
+    "law",
     "dialogue"
    ],
    "file": "src/data/f14/dialogues-batch-5.ts",
@@ -60772,7 +60772,7 @@
    "kind": "phrase",
    "en": "We have escalated your case to senior management.",
    "en_norm": "we have escalated your case to senior management",
-   "my_norm": "သင့်အမှုကို အကြီးတန်းစီမံခန့်ခွဲမှုထံ တင်ပြပြီးပါပြီ။",
+   "my_norm": "သင့်အမှုကို အကြီးတန်းအရာရှိများထံ လွှဲပြောင်းတင်ပြပြီးပါပြီ။",
    "th_norm": "เราได้ส่งเคสของท่านต่อให้ผู้บริหารระดับสูงแล้ว",
    "fingerprint": "360580c3814eff1d",
    "vocab_sig": [
@@ -61733,7 +61733,7 @@
    "kind": "phrase",
    "en": "We wish you every success in your job search.",
    "en_norm": "we wish you every success in your job search",
-   "my_norm": "သင့်အလုပ်ရှာဖွေမှုမှာ အောင်မြင်မှုတိုင်း ရရှိဖို့ ဆုတောင်းပါတယ်။",
+   "my_norm": "သင့်အလုပ်ရှာဖွေမှုမှာ အောင်မြင်မှုတိုင်း ရရှိပါစေလို့ ဆန္ဒပြုပါတယ်။",
    "th_norm": "เราขอให้ท่านประสบความสำเร็จในการหางาน",
    "fingerprint": "5be49b5de6b34262",
    "vocab_sig": [
@@ -62115,7 +62115,7 @@
    "kind": "phrase",
    "en": "We wish you well in your future endeavors.",
    "en_norm": "we wish you well in your future endeavors",
-   "my_norm": "သင့်အနာဂတ် ကြိုးပမ်းမှုတွေမှာ အဆင်ပြေဖို့ ဆုတောင်းပါတယ်။",
+   "my_norm": "သင့်အနာဂတ် ကြိုးပမ်းမှုတွေမှာ အောင်မြင်ပါစေလို့ ဆန္ဒပြုပါတယ်။",
    "th_norm": "เราขอให้ท่านโชคดีในเส้นทางข้างหน้า",
    "fingerprint": "2920eed96ae00d10",
    "vocab_sig": [
@@ -62473,7 +62473,7 @@
    "kind": "phrase",
    "en": "From my standpoint, the risks outweigh the benefits.",
    "en_norm": "from my standpoint the risks outweigh the benefits",
-   "my_norm": "ကျွန်တော့်ရှုထောင့်ကကြည့်ရင် အန္တရာယ်တွေက အကျိုးကျေးဇူးတွေထက် ပိုများပါတယ်။",
+   "my_norm": "ကျွန်တော့်ရှုထောင့်က ကြည့်ရင် အန္တရာယ်တွေက အကျိုးကျေးဇူးတွေထက် ပိုများပါတယ်။",
    "th_norm": "จากจุดยืนของข้าพเจ้า ความเสี่ยงมากกว่าผลประโยชน์",
    "fingerprint": "b0a1d32233b16ed9",
    "vocab_sig": [
@@ -307452,7 +307452,7 @@
    "en": "mutual assent",
    "en_norm": "mutual assent",
    "my_norm": "အပြန်အလှန်သဘောတူညီမှု",
-   "th_norm": "ความตกลงใจร่วมกัน",
+   "th_norm": "เจตนาตรงกัน",
    "fingerprint": "836e0e44ee4d9d87",
    "vocab_sig": [
     "assent",
@@ -309135,7 +309135,7 @@
    "en": "integration clause",
    "en_norm": "integration clause",
    "my_norm": "ပေါင်းစည်းမှုအပိုဒ်",
-   "th_norm": "ข้อสัญญาความสมบูรณ์ของสัญญา",
+   "th_norm": "ข้อสัญญาบริบูรณ์",
    "fingerprint": "2a63b379a199245c",
    "vocab_sig": [
     "clause",
@@ -309605,7 +309605,7 @@
    "en": "quasi-contract",
    "en_norm": "quasi contract",
    "my_norm": "စာချုပ်သဖွယ်တာဝန်",
-   "th_norm": "สัญญากึ่งสัญญา",
+   "th_norm": "กึ่งสัญญา",
    "fingerprint": "3db0c31bb901f871",
    "vocab_sig": [
     "contract",
@@ -333539,7 +333539,7 @@
    "kind": "word",
    "en": "differential diagnosis",
    "en_norm": "differential diagnosis",
-   "my_norm": "ကွဲပြားရောဂါရှာဖွေခြင်း",
+   "my_norm": "ခွဲခြားရောဂါရှာဖွေခြင်း",
    "th_norm": "การวินิจฉัยแยกโรค",
    "fingerprint": "d7f0c0236b246b8c",
    "vocab_sig": [
@@ -334763,7 +334763,7 @@
    "kind": "word",
    "en": "serology",
    "en_norm": "serology",
-   "my_norm": "သွေးရည်အမှတ်အသားစစ်ဆေးခြင်း",
+   "my_norm": "သွေးရည်စစ်ဆေးခြင်း",
    "th_norm": "วิทยาเซรุ่ม",
    "fingerprint": "66d94053d34e7dc9",
    "vocab_sig": [
@@ -340258,7 +340258,7 @@
    "kind": "word",
    "en": "social determinants of health",
    "en_norm": "social determinants of health",
-   "my_norm": "ကျန်းမာရေးဆိုင်ရာလူမှုအဆုံးအဖြတ်များ",
+   "my_norm": "ကျန်းမာရေးဆိုင်ရာလူမှုသတ်မှတ်ချက်များ",
    "th_norm": "ปัจจัยสังคมกำหนดสุขภาพ",
    "fingerprint": "09dcc9e52df7d745",
    "vocab_sig": [

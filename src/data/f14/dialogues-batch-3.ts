@@ -1554,7 +1554,7 @@ export const dialoguesBatch3: Dialogue[] = [
     situationMy: 'ဖောက်သည်က အသားကင်ကျက်လွန်နေတာကို ပြောနေတာ',
     situationTh: 'ลูกค้ากำลังบอกว่าสเต๊กสุกเกินไป',
     turns: [
-      { speaker: 'ဖောက်သည်', speakerTh: 'ลูกค้า', en: 'Excuse me, I ordered my steak medium, but this is well done.', my: 'တောင်းပန်ပါတယ်၊ အသားကို မီဒီယမ် မှာခဲ့တာ၊ ဒါက ကျက်လွန်နေတယ်။', th: 'ขอโทษครับ ผมสั่งสเต๊กมีเดียม แต่นี่สุกหมด' },
+      { speaker: 'ဖောက်သည်', speakerTh: 'ลูกค้า', en: 'Excuse me, I ordered my steak medium, but this is well done.', my: 'တောင်းပန်ပါတယ်၊ အသားကို မီဒီယမ် မှာခဲ့တာ၊ ဒါက ကျက်လွန်နေတယ်။', th: 'ขอโทษครับ ผมสั่งสเต๊กมีเดียม แต่ชิ้นนี้สุกสนิท' },
       { speaker: 'စားပွဲထိုး', speakerTh: 'พนักงานเสิร์ฟ', en: 'You are right, this looks overcooked. I am sorry.', my: 'ခင်ဗျား မှန်တယ်၊ ဒါက ကျက်လွန်နေတယ်။ တောင်းပန်ပါတယ်။', th: 'จริงด้วยครับ ดูสุกเกิน ขอโทษครับ' },
       { speaker: 'ဖောက်သည်', speakerTh: 'ลูกค้า', en: 'Could you ask the chef to make another one?', my: 'စားဖိုမှူးကို နောက်တစ်ခုလုပ်ခိုင်းပေးနိုင်မလား။', th: 'ช่วยบอกเชฟทำชิ้นใหม่ได้ไหมครับ' },
       { speaker: 'စားပွဲထိုး', speakerTh: 'พนักงานเสิร์ฟ', en: 'Certainly. Medium, pink in the middle. Is that correct?', my: 'ရတာပေါ့။ မီဒီယမ်၊ အလယ်မှာ ပန်းရောင်။ မှန်လား။', th: 'ได้ครับ มีเดียม ข้างในชมพู ถูกไหม' },
@@ -1677,7 +1677,7 @@ export const dialoguesBatch3: Dialogue[] = [
       { speaker: 'ဖောက်သည်', speakerTh: 'ลูกค้า', en: 'Excuse me, we have been waiting for forty minutes.', my: 'တောင်းပန်ပါတယ်၊ မိနစ်လေးဆယ် စောင့်နေရပြီ။', th: 'ขอโทษครับ เรารอมาสี่สิบนาทีแล้ว' },
       { speaker: 'စားပွဲထိုး', speakerTh: 'พนักงานเสิร์ฟ', en: 'I am very sorry. Let me check on your order.', my: 'အရမ်းတောင်းပန်ပါတယ်။ သင့်အမှာစာကို စစ်ကြည့်ပေးပါမယ်။', th: 'ขอโทษจริงๆ ครับ ขอเช็กออเดอร์ก่อน' },
       { speaker: 'ဖောက်သည်', speakerTh: 'ลูกค้า', en: 'We ordered almost an hour ago. Is the kitchen very busy?', my: 'တစ်နာရီနီးပါးက မှာခဲ့တာ။ မီးဖိုချောင် အရမ်းအလုပ်များနေလား။', th: 'สั่งไปเกือบชั่วโมงแล้ว ครัวยุ่งมากเหรอครับ' },
-      { speaker: 'စားပွဲထိုး', speakerTh: 'พนักงานเสิร์ฟ', en: 'Yes, we have a large party tonight. Your food will be ready in ten minutes.', my: 'ဟုတ်ကဲ့၊ ဒီည ဧည့်သည်အများကြီးရှိတယ်။ သင့်အစားအစာက ဆယ်မိနစ်အတွင်း အဆင်သင့်ဖြစ်ပါမယ်။', th: 'ครับ คืนนี้มีกรุ๊ปใหญ่ อาหารคุณอีกสิบนาทีเสร็จ' },
+      { speaker: 'စားပွဲထိုး', speakerTh: 'พนักงานเสิร์ฟ', en: 'Yes, we have a large party tonight. Your food will be ready in ten minutes.', my: 'ဟုတ်ကဲ့၊ ဒီည ဧည့်သည်အများကြီးရှိတယ်။ သင့်အစားအစာက ဆယ်မိနစ်အတွင်း အဆင်သင့်ဖြစ်ပါမယ်။', th: 'ครับ คืนนี้มีกรุ๊ปใหญ่ อีกสิบนาทีอาหารเสร็จ' },
       { speaker: 'ဖောက်သည်', speakerTh: 'ลูกค้า', en: 'We are really hungry. Could you bring some bread first?', my: 'တကယ်ဗိုက်ဆာနေပြီ။ အရင် ပေါင်မုန့်ယူလာပေးနိုင်မလား။', th: 'หิวมากครับ เอาขนมปังมาก่อนได้ไหม' },
       { speaker: 'စားပွဲထိုး', speakerTh: 'พนักงานเสิร์ฟ', en: 'Certainly, right away. And I will ask for a complimentary dessert.', my: 'ရတာပေါ့၊ ချက်ချင်း။ အချိုပွဲလက်ဆောင်တောင်းပေးပါမယ်။', th: 'ได้ครับ ทันทีเลย แล้วเดี๋ยวผมขอของหวานแถมให้' },
       { speaker: 'ဖောက်သည်', speakerTh: 'ลูกค้า', en: 'That is appreciated. Thank you.', my: 'အဲဒါ ကျေးဇူးတင်ပါတယ်။', th: 'ขอบคุณมากครับ' },
@@ -1721,7 +1721,7 @@ export const dialoguesBatch3: Dialogue[] = [
       { speaker: 'ဖောက်သည်', speakerTh: 'ลูกค้า', en: 'Yes, several times, but nothing happens.', my: 'ဟုတ်ကဲ့၊ အကြိမ်အနည်းငယ် စမ်းကြည့်ပြီးပြီ၊ ဒါပေမယ့် ဘာမှမဖြစ်ဘူး။', th: 'ลองแล้วครับ หลายครั้ง แต่ไม่มีอะไรเกิดขึ้น' },
       { speaker: 'အကူအညီ', speakerTh: 'ผู้ช่วยเหลือ', en: 'In that case, please bring it to our service center. It is still under warranty.', my: 'အဲဒါဆိုရင် ဝန်ဆောင်မှုစင်တာကို ယူလာပေးပါ။ အာမခံသက်တမ်းအတွင်းမှာ ရှိသေးတယ်။', th: 'งั้นเอามาที่ศูนย์บริการครับ ยังอยู่ในประกัน' },
       { speaker: 'ဖောက်သည်', speakerTh: 'ลูกค้า', en: 'Where is the nearest service center?', my: 'အနီးဆုံး ဝန်ဆောင်မှုစင်တာက ဘယ်မှာလဲ။', th: 'ศูนย์ใกล้สุดอยู่ที่ไหนครับ' },
-      { speaker: 'အကူအညီ', speakerTh: 'ผู้ช่วยเหลือ', en: 'On Pyay Road, near the bus station. They are open until six.', my: 'ပြည်လမ်းပေါ်မှာ၊ ဘတ်စ်ဂိတ်နားမှာ။ ညနေ ခြောက်နာရီအထိ ဖွင့်တယ်။', th: 'ถนนพยาย ใกล้ท่ารถครับ เปิดถึงหกโมงเย็น' },
+      { speaker: 'အကူအညီ', speakerTh: 'ผู้ช่วยเหลือ', en: 'On Pyay Road, near the bus station. They are open until six.', my: 'ပြည်လမ်းပေါ်မှာ၊ ဘတ်စ်ဂိတ်နားမှာ။ ညနေ ခြောက်နာရီအထိ ဖွင့်တယ်။', th: 'ถนนปยัย ใกล้ท่ารถครับ เปิดถึงหกโมงเย็น' },
     ],
   },
   {
