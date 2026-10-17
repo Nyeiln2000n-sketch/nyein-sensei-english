@@ -177301,7 +177301,7 @@
    "en": "Don't wait up for me.",
    "en_norm": "don t wait up for me",
    "my_norm": "ကျွန်တော့်ကို မအိပ်ဘဲ စောင့်မနေပါနဲ့။",
-   "th_norm": "ไม่ต้องรอฉันนะ",
+   "th_norm": "ไม่ต้องอดนอนรอฉันนะ",
    "fingerprint": "8962ac050d780294",
    "vocab_sig": [
     "wait"
@@ -177543,7 +177543,7 @@
    "en": "Did you get my text?",
    "en_norm": "did you get my text",
    "my_norm": "ကျွန်တော့်စာတိုကို ရလား။",
-   "th_norm": "คุณได้รับข้อความของฉันไหม",
+   "th_norm": "คุณได้ข้อความฉันไหม",
    "fingerprint": "94b7365872041542",
    "vocab_sig": [
     "get",
@@ -179241,7 +179241,7 @@
    "en": "Tell me about it.",
    "en_norm": "tell me about it",
    "my_norm": "ဟုတ်ပါ့၊ အမှန်ပဲလေ။",
-   "th_norm": "เล่าให้ฟังหน่อยสิ",
+   "th_norm": "ไม่ต้องเล่าก็รู้",
    "fingerprint": "63473749972f6561",
    "vocab_sig": [
     "tell"
@@ -181501,7 +181501,7 @@
    "en": "That was a lovely evening.",
    "en_norm": "that was a lovely evening",
    "my_norm": "အဲဒါ သာယာတဲ့ညချမ်းလေးပါ။",
-   "th_norm": "เป็นค่ำคืนที่น่ารักมาก",
+   "th_norm": "เป็นค่ำคืนที่ดีมาก",
    "fingerprint": "47c3a742c39b3dbb",
    "vocab_sig": [
     "evening",

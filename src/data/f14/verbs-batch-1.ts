@@ -638,7 +638,7 @@ export const verbsBatch1: Verb[] = [
     examples: {
       present: { en: 'The ball hits the window.', my: 'ဘောလုံးက ပြတင်းပေါက်ကို ထိတယ်။', th: 'ลูกบอลชนหน้าต่าง' },
       past: { en: 'He hit the target.', my: 'သူ ပစ်မှတ်ကို ထိမှန်ခဲ့တယ်။', th: 'เขายิงถูกเป้า' },
-      future: { en: 'The storm will hit tonight.', my: 'မုန်တိုင်းက ဒီည ဝင်ရောက်မယ်။', th: 'พายุจะเข้าคืนนี้' },
+      future: { en: 'The storm will hit tonight.', my: 'မုန်တိုင်းက ဒီည တိုက်ခတ်မယ်။', th: 'พายุจะเข้าคืนนี้' },
     },
   },
   {
@@ -674,7 +674,7 @@ export const verbsBatch1: Verb[] = [
     examples: {
       present: { en: 'She keeps her room clean.', my: 'သူမ အခန်းကို သန့်သန့်ရှင်းရှင်းထားတယ်။', th: 'เธอรักษาห้องให้สะอาด' },
       past: { en: 'He kept his promise.', my: 'သူ ကတိတည်ခဲ့တယ်။', th: 'เขารักษาสัญญา' },
-      future: { en: 'I will keep your secret.', my: 'ကျွန်တော် မင်းလျှို့ဝှက်ချက်ကို ထိန်းသိမ်းမယ်။', th: 'ผมจะเก็บความลับของคุณ' },
+      future: { en: 'I will keep your secret.', my: 'ကျွန်တော် မင်းလျှို့ဝှက်ချက်ကို လျှို့ဝှက်ထားမယ်။', th: 'ผมจะเก็บความลับของคุณ' },
     },
   },
   {

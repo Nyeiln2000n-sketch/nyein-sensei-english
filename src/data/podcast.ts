@@ -38,6 +38,16 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 74,
+    slug: 'weather-forecast-2026-10-17',
+    titleMy: 'အပိုင်း ၇၄ — မိုးလေဝသ ခန့်မှန်းချက်',
+    titleOrig: 'พยากรณ์อากาศ — Weather Forecast',
+    descMy: 'မနက်ဖြန် မိုးလေဝသ ခန့်မှန်းပြောဆိုခြင်း — "It will rain tomorrow." / "It will be sunny." / "It will be cloudy." / "It will not rain." / "Maybe it will rain." / "It will be hot and sunny tomorrow."',
+    phrases: ['It will rain tomorrow.', 'It will be sunny.', 'Maybe it will rain.'],
+    durationSecs: 479,
+    cover: '/podcast-covers/ep-74.jpg',
+  },
+  {
     n: 73,
     slug: 'seasons-summer-rainy-season-winter-i-like-winter-it-rains-a-lot-2026-10-17',
     titleMy: 'အပိုင်း ၇၃ — ရာသီဥတုများ',

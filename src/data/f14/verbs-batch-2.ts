@@ -78,7 +78,7 @@ export const verbsBatch2: Verb[] = [
     base: 'overtake', past: 'overtook', participle: 'overtaken', present3s: 'overtakes', gerund: 'overtaking',
     my: 'ကျော်တက်သည်', th: 'แซง', phonetic: 'oh-ver-TAYK', cefr: 'B2',
     examples: {
-      present: { en: 'Cars overtake on the left.', my: 'ကားတွေက ဘယ်ဘက်က ကျော်တက်တယ်။', th: 'รถแซงกันทางซ้าย' },
+      present: { en: 'Cars overtake on the left in America.', my: 'အမေရိကမှာ ကားတွေက ဘယ်ဘက်က ကျော်တက်တယ်။', th: 'รถแซงกันทางซ้ายในอเมริกา' },
       past: { en: 'She overtook him at the corner.', my: 'သူမ ထောင့်မှာ သူ့ကို ကျော်တက်ခဲ့တယ်။', th: 'เธอแซงเขาที่หัวมุมถนน' },
       future: { en: 'I will overtake the leader soon.', my: 'ကျွန်တော် မကြာခင် ဦးဆောင်သူကို ကျော်တက်မယ်။', th: 'ผมจะแซงผู้นำในไม่ช้า' },
     },
@@ -98,7 +98,7 @@ export const verbsBatch2: Verb[] = [
     examples: {
       present: { en: 'She partakes of every meal.', my: 'သူမ ထမင်းတိုင်းမှာ ပါဝင်စားသောက်တယ်။', th: 'เธอร่วมรับประทานอาหารทุกมื้อ' },
       past: { en: 'He partook of the dinner.', my: 'သူ ညစာကို ပါဝင်စားသောက်ခဲ့တယ်။', th: 'เขาร่วมรับประทานอาหารเย็น' },
-      future: { en: 'Will you partake with us?', my: 'မင်း ငါတို့နဲ့ ပါဝင်စားသောက်မလား။', th: 'คุณจะร่วมรับประทานกับพวกเราไหม' },
+      future: { en: 'Will you partake in our feast?', my: 'မင်း ငါတို့ရဲ့ပွဲတော်မှာ ပါဝင်စားသောက်မလား။', th: 'คุณจะร่วมรับประทานกับพวกเราไหม' },
     },
   },
   {
@@ -494,7 +494,7 @@ export const verbsBatch2: Verb[] = [
     examples: {
       present: { en: 'He speeds on the highway.', my: 'သူ အမြန်လမ်းမှာ အမြန်မောင်းတယ်။', th: 'เขาขับเร็วบนทางหลวง' },
       past: { en: 'She sped to the hospital.', my: 'သူမ ဆေးရုံကို အမြန်မောင်းသွားခဲ့တယ်။', th: 'เธอขับรถเร็วไปโรงพยาบาล' },
-      future: { en: 'He will speed on the highway.', my: 'သူ အမြန်လမ်းမှာ အမြန်မောင်းမယ်။', th: 'เขาจะขับเร็วบนทางหลวง' },
+      future: { en: 'He will speed down the highway tonight.', my: 'သူ ဒီည အမြန်လမ်းပေါ်မှာ အမြန်မောင်းမယ်။', th: 'เขาจะขับเร็วบนทางหลวงคืนนี้' },
     },
   },
   {
@@ -584,7 +584,7 @@ export const verbsBatch2: Verb[] = [
     examples: {
       present: { en: 'He stands by the door.', my: 'သူ တံခါးနားမှာ ရပ်တယ်။', th: 'เขายืนข้างประตู' },
       past: { en: 'We stood in line for an hour.', my: 'ကျွန်တော်တို့ တစ်နာရီတန်းစီရပ်ခဲ့တယ်။', th: 'พวกเรายืนรอคิวหนึ่งชั่วโมง' },
-      future: { en: 'He will stand by the door.', my: 'သူ တံခါးနားမှာ ရပ်နေမယ်။', th: 'เขาจะยืนข้างประตู' },
+      future: { en: 'He will stand by the door all evening.', my: 'သူ တံခါးနားမှာ ညနေတစ်ခွင်လုံး ရပ်နေမယ်။', th: 'เขาจะยืนข้างประตูตลอดทั้งเย็น' },
     },
   },
   {
