@@ -3,7 +3,7 @@ import type { Phrase } from '../../types';
 // FASE 14 Ola 1 — phrases batch 6: 250 (office/doctor/computer/market/seasons/personality), A2→B2
 export const phrasesBatch6: Phrase[] = [
   // office — ရုံးခန်း
-  { en: 'The meeting starts at nine.', my: 'အစည်းအဝေးက နံနက် ကိုးနာရီမှာ စတယ်။', th: 'การประชุมเริ่มเก้าโมง', topic: 'office', cefr: 'A2' },
+  { en: 'The meeting starts at nine.', my: 'အစည်းအဝေးက ကိုးနာရီမှာ စတယ်။', th: 'การประชุมเริ่มเก้าโมง', topic: 'office', cefr: 'A2' },
   { en: 'I work in an office downtown.', my: 'ကျွန်တော် မြို့လယ်က ရုံးမှာ အလုပ်လုပ်တယ်။', th: 'ฉันทำงานในออฟฟิศย่านใจกลางเมือง', topic: 'office', cefr: 'A2' },
   { en: 'She answers the phone every morning.', my: 'သူမဟာ မနက်တိုင်း ဖုန်းဖြေတယ်။', th: 'เธอรับโทรศัพท์ทุกเช้า', topic: 'office', cefr: 'A2' },
   { en: 'Please forward the report to me.', my: 'အစီရင်ခံစာကို ကျွန်တော့်ဆီ ထပ်ဆင့်ပို့ပေးပါ။', th: 'กรุณาส่งต่อรายงานมาให้ฉัน', topic: 'office', cefr: 'B1' },
@@ -228,7 +228,7 @@ export const phrasesBatch6: Phrase[] = [
   { en: 'I try to be polite.', my: 'ကျွန်တော် ယဉ်ကျေးဖို့ ကြိုးစားတယ်။', th: 'ฉันพยายามสุภาพ', topic: 'personality', cefr: 'A2' },
   { en: 'She is brave and strong.', my: 'သူမဟာ ရဲရင့်ပြီး သန်မာတယ်။', th: 'เธอกล้าหาญและเข้มแข็ง', topic: 'personality', cefr: 'A2' },
   { en: 'He gets angry easily.', my: 'သူဟာ လွယ်လွယ်နဲ့ ဒေါသထွက်တယ်။', th: 'เขาโกรธง่าย', topic: 'personality', cefr: 'A2' },
-  { en: 'My sister is creative.', my: 'ကျွန်တော့်ညီမက တီထွင်ဖန်တီးနိုင်တယ်။', th: 'น้องสาวของฉันมีความคิดสร้างสรรค์', topic: 'personality', cefr: 'A2' },
+  { en: 'My sister is creative.', my: 'ကျွန်တော့်ညီမက တီထွင်ဖန်တီးတတ်တယ်။', th: 'น้องสาวของฉันมีความคิดสร้างสรรค์', topic: 'personality', cefr: 'A2' },
   { en: 'I am an early riser.', my: 'ကျွန်တော်က မနက်စောစော ထတဲ့သူ ဖြစ်တယ်။', th: 'ฉันเป็นคนตื่นเช้า', topic: 'personality', cefr: 'A2' },
   { en: 'He stays calm under pressure.', my: 'သူက ဖိအားအောက်မှာ တည်ငြိမ်နေတယ်။', th: 'เขาสงบภายใต้ความกดดัน', topic: 'personality', cefr: 'B1' },
   { en: 'He is very confident.', my: 'သူဟာ အရမ်း ယုံကြည်မှုရှိတယ်။', th: 'เขามั่นใจมาก', topic: 'personality', cefr: 'A2' },
@@ -257,5 +257,5 @@ export const phrasesBatch6: Phrase[] = [
   { en: 'They demonstrated exceptional integrity.', my: 'သူတို့က ထူးခြားတဲ့ သမာဓိတရားကို ပြသခဲ့တယ်။', th: 'พวกเขาแสดงความซื่อตรงอย่างโดดเด่น', topic: 'personality', cefr: 'B2' },
   { en: 'Her optimism is genuinely contagious.', my: 'သူမရဲ့ အကောင်းမြင်စိတ်က တကယ့်ကို ကူးစက်တတ်တယ်။', th: 'ความมองโลกในแง่ดีของเธอติดต่อได้อย่างแท้จริง', topic: 'personality', cefr: 'B2' },
   { en: 'He approaches problems with remarkable composure.', my: 'သူဟာ ပြဿနာတွေကို ထူးခြားတဲ့ တည်ငြိမ်မှုနဲ့ ရင်ဆိုင်တတ်တယ်။', th: 'เขาเผชิญปัญหาด้วยความสงบอย่างน่าทึ่ง', topic: 'personality', cefr: 'B2' },
-  { en: 'She balances ambition with genuine humility.', my: 'သူမဟာ ရည်မှန်းချက်ကြီးပေမယ့် မာနကြီးမနေဘဲ နှိမ့်ချတတ်တယ်။', th: 'เธอสมดุลความทะเยอทะยานกับความถ่อมตนอย่างแท้จริง', topic: 'personality', cefr: 'B2' },
+  { en: 'She balances ambition with genuine humility.', my: 'သူမဟာ ရည်မှန်းချက်ကြီးမှုနဲ့ စစ်မှန်တဲ့ နှိမ့်ချမှုကို မျှတအောင် ပေါင်းစပ်ထားတယ်။', th: 'เธอสมดุลความทะเยอทะยานกับความถ่อมตนอย่างแท้จริง', topic: 'personality', cefr: 'B2' },
 ];

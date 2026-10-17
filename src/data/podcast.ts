@@ -38,6 +38,26 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 73,
+    slug: 'seasons-summer-rainy-season-winter-i-like-winter-it-rains-a-lot-2026-10-17',
+    titleMy: 'အပိုင်း ၇၃ — ရာသီဥတုများ',
+    titleOrig: 'ฤดูกาล — Seasons',
+    descMy: 'ရာသီဥတု ဖော်ပြခြင်း — "Summer." / "Winter." / "Rainy season." / "I like winter." / "It rains a lot." / "I love summer because I can go to the beach." / "The leaves turn red in autumn."',
+    phrases: ['I like winter.', 'It rains a lot.', 'I love summer because I can go to the beach.'],
+    durationSecs: 503,
+    cover: '/podcast-covers/ep-73.jpg',
+  },
+  {
+    n: 72,
+    slug: 'hot-and-cold-2026-10-16',
+    titleMy: 'အပိုင်း ၇၂ — ပူခြင်း အေးခြင်း',
+    titleOrig: 'ร้อนและหนาว — Hot and Cold',
+    descMy: 'ပူအေး ဖော်ပြခြင်း — "It is very hot." / "It is warm today." / "I feel hot." / "It is cold today." / "I feel cold." / "It is freezing."',
+    phrases: ['It is very hot.', 'It is cold today.', 'I feel hot.'],
+    durationSecs: 598,
+    cover: '/podcast-covers/ep-72.jpg',
+  },
+  {
     n: 71,
     slug: 'todays-weather-2026-10-16',
     titleMy: 'အပိုင်း ၇၁ — ယနေ့ ရာသီဥတု',

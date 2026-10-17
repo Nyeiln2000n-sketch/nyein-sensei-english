@@ -28344,10 +28344,10 @@
   {
    "id": "hl-d-003",
    "kind": "dialogue",
-   "en": "Tuk-tuk! Excuse me, please stop! Where are you going? To Shwedagon Pagoda, please. Sure. Get in. Wait, how much is it first? Five thousand kyat. Too much. Three thousand, okay? Hmm... okay. Three thousand. Perfect, please stop right here. Here we are. Three thousand kyat. Here you go — three thousand, and five hundred for you. Thank you!",
-   "en_norm": "tuk tuk excuse me please stop where are you going to shwedagon pagoda please sure get in wait how much is it first five thousand kyat too much three thousand okay hmm okay three thousand perfect please stop right here here we are three thousand kyat here you go three thousand and five hundred for you thank you",
+   "en": "Tuk-tuk! Excuse me, please stop! Where are you going? To Shwedagon Pagoda, please. Sure. Get in. Wait — first, how much is it? Five thousand kyat. Too much. Three thousand, okay? Hmm... okay. Three thousand. Perfect, please stop right here. Here we are. Three thousand kyat. Here you go — three thousand, and five hundred for you. Thank you!",
+   "en_norm": "tuk tuk excuse me please stop where are you going to shwedagon pagoda please sure get in wait first how much is it five thousand kyat too much three thousand okay hmm okay three thousand perfect please stop right here here we are three thousand kyat here you go three thousand and five hundred for you thank you",
    "my_norm": "",
-   "fingerprint": "c6ecc0a5eb74095b",
+   "fingerprint": "5f3d465dd3a7b621",
    "vocab_sig": [
     "excuse",
     "first",
@@ -28371,7 +28371,7 @@
     "tuk",
     "wait"
    ],
-   "template_sig": "W - W ! W me , please W ! where are you W ? to W W , please . W . W in . W , how W is it W ? W W W . too W . three W , W ? W . . . W . three W . W , please W W here . here we are . three W W . here you W — three W , and W W for you . W you !",
+   "template_sig": "W - W ! W me , please W ! where are you W ? to W W , please . W . W in . W — W , how W is it ? W W W . too W . three W , W ? W . . . W . three W . W , please W W here . here we are . three W W . here you W — three W , and W W for you . W you !",
    "tags": [
     "travel",
     "dialogue"
@@ -28421,10 +28421,10 @@
   {
    "id": "hl-d-005",
    "kind": "dialogue",
-   "en": "Good morning, doctor. I have a fever and a headache. Good morning. How long are you sick? Since yesterday evening. I also feel tired all the time. Let me take your temperature. Hmm, you have a little fever. Is it serious, doctor? Not at all. It looks like a common cold. Do you have a problem with any medicine? No, I am not allergic to anything. Good. I will give you some medicine. Take one pill three times a day after meals. How many days do I take it? For five days. And come back in three days if you are still sick.",
-   "en_norm": "good morning doctor i have a fever and a headache good morning how long are you sick since yesterday evening i also feel tired all the time let me take your temperature hmm you have a little fever is it serious doctor not at all it looks like a common cold do you have a problem with any medicine no i am not allergic to anything good i will give you some medicine take one pill three times a day after meals how many days do i take it for five days and come back in three days if you are still sick",
+   "en": "Good morning, doctor. I have a fever and a headache. Good morning. How long have you been sick? Since yesterday evening. I also feel tired all the time. Let me take your temperature. Hmm, you have a slight fever. Is it serious, doctor? Not at all. It looks like a common cold. Are you allergic to any medicine? No, I am not allergic to anything. Good. I will give you some medicine. Take one pill three times a day after meals. How many days should I take it? For five days. And come back in three days if you are still sick.",
+   "en_norm": "good morning doctor i have a fever and a headache good morning how long have you been sick since yesterday evening i also feel tired all the time let me take your temperature hmm you have a slight fever is it serious doctor not at all it looks like a common cold are you allergic to any medicine no i am not allergic to anything good i will give you some medicine take one pill three times a day after meals how many days should i take it for five days and come back in three days if you are still sick",
    "my_norm": "",
-   "fingerprint": "12cf213a55bd9f24",
+   "fingerprint": "2ef04bfcc1f7a052",
    "vocab_sig": [
     "all",
     "allergic",
@@ -28445,7 +28445,6 @@
     "good",
     "headache",
     "hmm",
-    "little",
     "long",
     "looks",
     "many",
@@ -28453,10 +28452,10 @@
     "medicine",
     "morning",
     "pill",
-    "problem",
     "serious",
     "sick",
     "since",
+    "slight",
     "some",
     "still",
     "take",
@@ -28466,7 +28465,7 @@
     "tired",
     "yesterday"
    ],
-   "template_sig": "W W , W . i have a W and a W . W W . how W are you W ? W W W . i also W W W the W . let me W your W . W , you have a W W . is it W , W ? not at W . it W like a W W . do you have a W with W W ? no , i am not W to W . W . i will W you W W . W one W three W a W after W . how W W do i W it ? for W W . and W W in three W if you are W W .",
+   "template_sig": "W W , W . i have a W and a W . W W . how W have you been W ? W W W . i also W W W the W . let me W your W . W , you have a W W . is it W , W ? not at W . it W like a W W . are you W to W W ? no , i am not W to W . W . i will W you W W . W one W three W a W after W . how W W should i W it ? for W W . and W W in three W if you are W W .",
    "tags": [
     "doctor",
     "dialogue"
@@ -28477,10 +28476,10 @@
   {
    "id": "hl-d-006",
    "kind": "dialogue",
-   "en": "Good morning! Happy Monday! How was your weekend? Morning! It was great. I went to the mountains with my family. How about you? Pretty quiet. I stayed home and watched a movie. So, how is the new project going? It is going well, but we must finish by Friday and we have so much left to do. That is very little time. Do you need help with anything? Actually, yes. Could you check the report before I send it? Of course! Send it to me after lunch and I will look at it. Thank you so much! You are so kind. Would you like to join me for lunch today? I would love to. Where shall we go? There is a new noodle shop around the corner. Let us try it at twelve.",
-   "en_norm": "good morning happy monday how was your weekend morning it was great i went to the mountains with my family how about you pretty quiet i stayed home and watched a movie so how is the new project going it is going well but we must finish by friday and we have so much left to do that is very little time do you need help with anything actually yes could you check the report before i send it of course send it to me after lunch and i will look at it thank you so much you are so kind would you like to join me for lunch today i would love to where shall we go there is a new noodle shop around the corner let us try it at twelve",
+   "en": "Good morning! Happy Monday! How was your weekend? Morning! It was great. I went to the mountains with my family. How about you? Pretty quiet. I stayed home and watched a movie. So, how is the new project going? It is going well, but we must finish by Friday and we have so much left to do. That's not much time. Do you need help with anything? Actually, yes. Could you check the report before I send it? Of course! Send it to me after lunch and I will look at it. Thank you so much! You are so kind. Would you like to join me for lunch today? I would love to. Where shall we go? There is a new noodle shop around the corner. Let us try it at twelve.",
+   "en_norm": "good morning happy monday how was your weekend morning it was great i went to the mountains with my family how about you pretty quiet i stayed home and watched a movie so how is the new project going it is going well but we must finish by friday and we have so much left to do that s not much time do you need help with anything actually yes could you check the report before i send it of course send it to me after lunch and i will look at it thank you so much you are so kind would you like to join me for lunch today i would love to where shall we go there is a new noodle shop around the corner let us try it at twelve",
    "my_norm": "",
-   "fingerprint": "e10e6ca4678fa4a8",
+   "fingerprint": "9ea89fbcfeae8b81",
    "vocab_sig": [
     "actually",
     "anything",
@@ -28501,7 +28500,6 @@
     "join",
     "kind",
     "left",
-    "little",
     "look",
     "love",
     "lunch",
@@ -28530,7 +28528,7 @@
     "well",
     "went"
    ],
-   "template_sig": "W W ! W W ! how was your W ? W ! it was W . i W to the W with my W . how about you ? W W . i W W and W a W . so , how is the W W W ? it is W W , but we must W by W and we have so W W to do . that is very W W . do you W W with W ? W , yes . could you W the W before i W it ? of W ! W it to me after W and i will W at it . W you so W ! you are so W . would you like to W me for W W ? i would W to . where shall we W ? there is a W W W W the W . let us W it at W .",
+   "template_sig": "W W ! W W ! how was your W ? W ! it was W . i W to the W with my W . how about you ? W W . i W W and W a W . so , how is the W W W ? it is W W , but we must W by W and we have so W W to do . that ' s not W W . do you W W with W ? W , yes . could you W the W before i W it ? of W ! W it to me after W and i will W at it . W you so W ! you are so W . would you like to W me for W W ? i would W to . where shall we W ? there is a W W W W the W . let us W it at W .",
    "tags": [
     "office",
     "dialogue"
@@ -28541,10 +28539,10 @@
   {
    "id": "hl-d-007",
    "kind": "dialogue",
-   "en": "Good evening. I booked a room. My name is Nyein. Welcome to our hotel! May I see your passport, please? Of course. Here it is. Thank you, Ms. Nyein. You are in room twelve oh eight, on the twelfth floor. Great. Do I get breakfast with my room? Yes, it is. You can eat breakfast from six thirty to ten in the morning. Perfect. What time is check-out? Check-out is at twelve noon. We can give you more time. Just tell us. Thank you. And what is the Wi-Fi password? The network is Grand Hotel, and the password is welcome123. Enjoy your stay!",
-   "en_norm": "good evening i booked a room my name is nyein welcome to our hotel may i see your passport please of course here it is thank you ms nyein you are in room twelve oh eight on the twelfth floor great do i get breakfast with my room yes it is you can eat breakfast from six thirty to ten in the morning perfect what time is check out check out is at twelve noon we can give you more time just tell us thank you and what is the wi fi password the network is grand hotel and the password is welcome123 enjoy your stay",
+   "en": "Good evening. I booked a room. My name is Nyein. Welcome to our hotel! May I see your passport, please? Of course. Here it is. Thank you, Ms. Nyein. You are in room twelve oh eight, on the twelfth floor. Great. Do I get breakfast with my room? Yes, you do. You can eat breakfast from six thirty to ten in the morning. Perfect. What time is check-out? Check-out is at twelve noon. We can give you more time. Just let us know. Thank you. And what is the Wi-Fi password? The network is Grand Hotel, and the password is welcome123. Enjoy your stay!",
+   "en_norm": "good evening i booked a room my name is nyein welcome to our hotel may i see your passport please of course here it is thank you ms nyein you are in room twelve oh eight on the twelfth floor great do i get breakfast with my room yes you do you can eat breakfast from six thirty to ten in the morning perfect what time is check out check out is at twelve noon we can give you more time just let us know thank you and what is the wi fi password the network is grand hotel and the password is welcome123 enjoy your stay",
    "my_norm": "",
-   "fingerprint": "cb7db17fa8f858ca",
+   "fingerprint": "16f3a55b731ed6ba",
    "vocab_sig": [
     "booked",
     "breakfast",
@@ -28562,6 +28560,7 @@
     "grand",
     "great",
     "hotel",
+    "know",
     "more",
     "morning",
     "ms",
@@ -28577,7 +28576,6 @@
     "see",
     "six",
     "stay",
-    "tell",
     "ten",
     "thank",
     "thirty",
@@ -28588,7 +28586,7 @@
     "welcome123",
     "wi"
    ],
-   "template_sig": "W W . i W a W . my W is W . W to our W ! may i W your W , please ? of W . here it is . W you , W . W . you are in W W W W , on the W W . W . do i W W with my W ? yes , it is . you can W W from W W to W in the W . W . what W is W - out ? W - out is at W W . we can W you W W . just W us . W you . and what is the W - W W ? the W is W W , and the W is W . W your W !",
+   "template_sig": "W W . i W a W . my W is W . W to our W ! may i W your W , please ? of W . here it is . W you , W . W . you are in W W W W , on the W W . W . do i W W with my W ? yes , you do . you can W W from W W to W in the W . W . what W is W - out ? W - out is at W W . we can W you W W . just let us W . W you . and what is the W - W W ? the W is W W , and the W is W . W your W !",
    "tags": [
     "travel",
     "dialogue"
@@ -160825,7 +160823,7 @@
    "kind": "phrase",
    "en": "The meeting starts at nine.",
    "en_norm": "the meeting starts at nine",
-   "my_norm": "အစည်းအဝေးက နံနက် ကိုးနာရီမှာ စတယ်။",
+   "my_norm": "အစည်းအဝေးက ကိုးနာရီမှာ စတယ်။",
    "th_norm": "การประชุมเริ่มเก้าโมง",
    "fingerprint": "d1897793517fc8c8",
    "vocab_sig": [
@@ -165491,7 +165489,7 @@
    "kind": "phrase",
    "en": "My sister is creative.",
    "en_norm": "my sister is creative",
-   "my_norm": "ကျွန်တော့်ညီမက တီထွင်ဖန်တီးနိုင်တယ်။",
+   "my_norm": "ကျွန်တော့်ညီမက တီထွင်ဖန်တီးတတ်တယ်။",
    "th_norm": "น้องสาวของฉันมีความคิดสร้างสรรค์",
    "fingerprint": "d334599ce86bc1c0",
    "vocab_sig": [
@@ -166099,7 +166097,7 @@
    "kind": "phrase",
    "en": "She balances ambition with genuine humility.",
    "en_norm": "she balances ambition with genuine humility",
-   "my_norm": "သူမဟာ ရည်မှန်းချက်ကြီးပေမယ့် မာနကြီးမနေဘဲ နှိမ့်ချတတ်တယ်။",
+   "my_norm": "သူမဟာ ရည်မှန်းချက်ကြီးမှုနဲ့ စစ်မှန်တဲ့ နှိမ့်ချမှုကို မျှတအောင် ပေါင်းစပ်ထားတယ်။",
    "th_norm": "เธอสมดุลความทะเยอทะยานกับความถ่อมตนอย่างแท้จริง",
    "fingerprint": "18ad1d720ff4955e",
    "vocab_sig": [
@@ -174060,7 +174058,7 @@
    "kind": "phrase",
    "en": "I need to cancel my checkup.",
    "en_norm": "i need to cancel my checkup",
-   "my_norm": "ကျွန်တော့်ကျန်းမာရေးစစ်ဆေးမှုကို ဖျက်သိမ်းဖို့လိုပါတယ်။",
+   "my_norm": "ကျွန်တော့်ကျန်းမာရေးစစ်ဆေးမှုကို ဖျက်ချင်ပါတယ်။",
    "th_norm": "ฉันต้องยกเลิกนัดตรวจสุขภาพ",
    "fingerprint": "16606013debae11f",
    "vocab_sig": [
@@ -176425,7 +176423,7 @@
    "kind": "phrase",
    "en": "I'm calling to cancel my booking.",
    "en_norm": "i m calling to cancel my booking",
-   "my_norm": "ကျွန်တော့်ဘိုကင်ကို ဖျက်သိမ်းဖို့ ဆက်တာပါ။",
+   "my_norm": "ကျွန်တော့်ဘိုကင်ကို ဖျက်ဖို့ ဖုန်းဆက်တာပါ။",
    "th_norm": "ฉันโทรมาจะยกเลิกการจอง",
    "fingerprint": "601f4d0788f12b43",
    "vocab_sig": [
@@ -182918,7 +182916,7 @@
    "kind": "phrase",
    "en": "I wish I had spoken up sooner.",
    "en_norm": "i wish i had spoken up sooner",
-   "my_norm": "စောစောက ပြောခဲ့ရင်ကောင်းမယ်လို့ ဆန္ဒပြုတယ်။",
+   "my_norm": "စောစောက ပြောလိုက်ရမှာ။",
    "th_norm": "ฉันน่าจะพูดออกไปเร็วกว่านี้",
    "fingerprint": "04ecc218554a875e",
    "vocab_sig": [
@@ -183291,7 +183289,7 @@
    "kind": "phrase",
    "en": "The party starts at eight.",
    "en_norm": "the party starts at eight",
-   "my_norm": "ပါတီက ည ၈ နာရီမှာ စမယ်။",
+   "my_norm": "ပါတီက ၈ နာရီမှာ စမယ်။",
    "th_norm": "งานเริ่มสองทุ่ม",
    "fingerprint": "129233d86d638af9",
    "vocab_sig": [
@@ -183561,7 +183559,7 @@
    "kind": "phrase",
    "en": "I will pick you up at seven.",
    "en_norm": "i will pick you up at seven",
-   "my_norm": "ည ၇ နာရီမှာ မင်းကို လာကြိုမယ်။",
+   "my_norm": "၇ နာရီမှာ မင်းကို လာကြိုမယ်။",
    "th_norm": "ฉันจะไปรับคุณตอนหนึ่งทุ่ม",
    "fingerprint": "025f9ee4db7294a5",
    "vocab_sig": [
@@ -183666,7 +183664,7 @@
    "kind": "phrase",
    "en": "I can make it after six.",
    "en_norm": "i can make it after six",
-   "my_norm": "ညနေ ၆ နာရီနောက်ပိုင်း ကျွန်တော် လာနိုင်တယ်။",
+   "my_norm": "၆ နာရီနောက်ပိုင်း ကျွန်တော် လာနိုင်တယ်။",
    "th_norm": "ฉันไปได้หลังหกโมง",
    "fingerprint": "499f1ecc117b4a02",
    "vocab_sig": [
@@ -183769,7 +183767,7 @@
    "kind": "phrase",
    "en": "The barbecue is on Sunday afternoon.",
    "en_norm": "the barbecue is on sunday afternoon",
-   "my_norm": "အသားကင်ပွဲက တနင်္ဂနွေနေ့ နေ့လယ်ပိုင်း။",
+   "my_norm": "အသားကင်ပွဲက တနင်္ဂနွေနေ့ နေ့လယ်ပိုင်းမှာ လုပ်မယ်။",
    "th_norm": "งานบาร์บีคิววันอาทิตย์บ่าย",
    "fingerprint": "d59e45d31e3a115e",
    "vocab_sig": [
@@ -185743,7 +185741,7 @@
    "kind": "phrase",
    "en": "Can you wake me up at six?",
    "en_norm": "can you wake me up at six",
-   "my_norm": "မနက် ၆ နာရီမှာ ကျွန်တော့်ကို နှိုးပေးနိုင်မလား။",
+   "my_norm": "၆ နာရီမှာ ကျွန်တော့်ကို နှိုးပေးနိုင်မလား။",
    "th_norm": "ช่วยปลุกฉันตอนหกโมงได้ไหม",
    "fingerprint": "21695ae1294acd66",
    "vocab_sig": [
@@ -186178,7 +186176,7 @@
    "kind": "phrase",
    "en": "Would you mind picking me up at six?",
    "en_norm": "would you mind picking me up at six",
-   "my_norm": "ညနေ ၆ နာရီမှာ လာကြိုပေးနိုင်မလား။",
+   "my_norm": "၆ နာရီမှာ လာကြိုပေးနိုင်မလား။",
    "th_norm": "มารับฉันตอนหกโมงเย็นได้ไหม",
    "fingerprint": "5b6d0b02482631fc",
    "vocab_sig": [
@@ -225854,7 +225852,7 @@
    "en": "fixture",
    "en_norm": "fixture",
    "my_norm": "တပ်ဆင်ထားသောပစ္စည်း",
-   "th_norm": "อุปกรณ์ติดตั้ง",
+   "th_norm": "สุขภัณฑ์",
    "fingerprint": "f16d05ec6b29248d",
    "vocab_sig": [
     "fixture"
@@ -227973,7 +227971,7 @@
    "en": "capsule wardrobe",
    "en_norm": "capsule wardrobe",
    "my_norm": "အခြေခံဝတ်စုံအစုံ",
-   "th_norm": "ตู้เสื้อผ้าแคปซูล",
+   "th_norm": "แคปซูลวอร์โดรบ",
    "fingerprint": "5cedac55bbb665e9",
    "vocab_sig": [
     "capsule",
@@ -230189,7 +230187,7 @@
    "kind": "word",
    "en": "periodic",
    "en_norm": "periodic",
-   "my_norm": "အချိန်မှန်ဖြစ်သော",
+   "my_norm": "ပုံမှန်ဖြစ်ပေါ်သော",
    "th_norm": "เป็นระยะ",
    "fingerprint": "a8f9b083bb67e1d9",
    "vocab_sig": [
@@ -233700,7 +233698,7 @@
    "kind": "word",
    "en": "pop-up",
    "en_norm": "pop up",
-   "my_norm": "ယာယီဆိုင်",
+   "my_norm": "ယာယီ",
    "th_norm": "ป๊อปอัป",
    "fingerprint": "17ad4b475d69418e",
    "vocab_sig": [
@@ -233717,17 +233715,18 @@
   {
    "id": "example:restaurant:pop-up",
    "kind": "example",
-   "en": "A pop-up café opened downtown.",
-   "en_norm": "a pop up cafe opened downtown",
+   "en": "Pop-up stalls filled the night market.",
+   "en_norm": "pop up stalls filled the night market",
    "my_norm": "",
-   "fingerprint": "fe20c4a6803fb508",
+   "fingerprint": "afaeebc48b34a58b",
    "vocab_sig": [
-    "cafe",
-    "downtown",
-    "opened",
-    "pop"
+    "filled",
+    "market",
+    "night",
+    "pop",
+    "stalls"
    ],
-   "template_sig": "a W - up W W W .",
+   "template_sig": "W - up W W the W W .",
    "tags": [
     "restaurant",
     "example"
@@ -233945,7 +233944,7 @@
    "kind": "word",
    "en": "self check-in",
    "en_norm": "self check in",
-   "my_norm": "ကိုယ်တိုင် check in လုပ်ခြင်း",
+   "my_norm": "ကိုယ်တိုင်ချက်အင်လုပ်ခြင်း",
    "th_norm": "เช็กอินด้วยตัวเอง",
    "fingerprint": "d2a1d875593502b0",
    "vocab_sig": [
@@ -234151,7 +234150,7 @@
    "en": "liquid restriction",
    "en_norm": "liquid restriction",
    "my_norm": "အရည်ကန့်သတ်ချက်",
-   "th_norm": "ข้อจำกัดของเหลว",
+   "th_norm": "ข้อจำกัดเกี่ยวกับของเหลว",
    "fingerprint": "d28359c329cb8529",
    "vocab_sig": [
     "liquid",
@@ -242252,7 +242251,7 @@
    "kind": "word",
    "en": "out of season",
    "en_norm": "out of season",
-   "my_norm": "ရာသီပြင်ပ",
+   "my_norm": "ရာသီမဟုတ်သော",
    "th_norm": "นอกฤดูกาล",
    "fingerprint": "9a5999f359887f35",
    "vocab_sig": [
@@ -249021,7 +249020,7 @@
    "en": "clandestinity",
    "en_norm": "clandestinity",
    "my_norm": "လျှို့ဝှက်မှု",
-   "th_norm": "ความเป็นความลับ",
+   "th_norm": "ความลับ",
    "fingerprint": "a3a11c5cf46dc056",
    "vocab_sig": [
     "clandestinity"
@@ -389349,7 +389348,7 @@
    "en": "thesis statement",
    "en_norm": "thesis statement",
    "my_norm": "ကျမ်းစာတမ်းဆိုဆိုချက်",
-   "th_norm": "ข้อความวิทยานิพนธ์",
+   "th_norm": "ข้อความแสดงจุดยืน",
    "fingerprint": "07e42bdb9bf7fd59",
    "vocab_sig": [
     "statement",
@@ -391327,7 +391326,7 @@
    "en": "accreditation",
    "en_norm": "accreditation",
    "my_norm": "အသိအမှတ်ပြုမှု",
-   "th_norm": "การรับรอง",
+   "th_norm": "การรับรองวิทยฐานะ",
    "fingerprint": "7df3253d5d95627d",
    "vocab_sig": [
     "accreditation"
@@ -391367,7 +391366,7 @@
    "kind": "word",
    "en": "adjunct",
    "en_norm": "adjunct",
-   "my_norm": "တွဲဖက်ပါမောက္ခ",
+   "my_norm": "အချိန်ပိုင်းကထိက",
    "th_norm": "อาจารย์พิเศษ",
    "fingerprint": "160e7cd05083bcaf",
    "vocab_sig": [
@@ -391534,7 +391533,7 @@
    "kind": "word",
    "en": "academic journal",
    "en_norm": "academic journal",
-   "my_norm": "ပညာရေးဂျာနယ်",
+   "my_norm": "ပညာရပ်ဆိုင်ရာဂျာနယ်",
    "th_norm": "วารสารวิชาการ",
    "fingerprint": "62c56bc26138fb06",
    "vocab_sig": [
@@ -391663,7 +391662,7 @@
    "en": "open access",
    "en_norm": "open access",
    "my_norm": "ဖွင့်လှစ်အသုံးပြုမှု",
-   "th_norm": "เปิดเข้าถึง",
+   "th_norm": "การเข้าถึงแบบเปิด",
    "fingerprint": "6b5eb006fb4e1797",
    "vocab_sig": [
     "access",
@@ -392132,7 +392131,7 @@
    "en": "call for papers",
    "en_norm": "call for papers",
    "my_norm": "စာတမ်းခေါ်ယူမှု",
-   "th_norm": "การเรียกบทความ",
+   "th_norm": "การเชิญส่งบทความ",
    "fingerprint": "970e83be0c61119e",
    "vocab_sig": [
     "call",
@@ -394230,7 +394229,7 @@
    "en": "rhetorical device",
    "en_norm": "rhetorical device",
    "my_norm": "စကားအတတ်နည်းစနစ်",
-   "th_norm": "อุปกรณ์วาทศิลป์",
+   "th_norm": "กลวิธีทางวาทศิลป์",
    "fingerprint": "8f6e0066574bb39f",
    "vocab_sig": [
     "device",
@@ -394603,7 +394602,7 @@
    "en": "understatement",
    "en_norm": "understatement",
    "my_norm": "လျှော့ပြောဆိုမှု",
-   "th_norm": "การพูดน้อย",
+   "th_norm": "การพูดน้อยกว่าจริง",
    "fingerprint": "525aa435225e2c36",
    "vocab_sig": [
     "understatement"
@@ -394768,7 +394767,7 @@
    "en": "appeal to emotion",
    "en_norm": "appeal to emotion",
    "my_norm": "စိတ်ခံစားမှုဆွဲဆောင်မှု",
-   "th_norm": "การอุทธรณ์อารมณ์",
+   "th_norm": "การโน้มน้าวด้วยอารมณ์",
    "fingerprint": "3e62f7bc932b17d7",
    "vocab_sig": [
     "appeal",
@@ -394811,7 +394810,7 @@
    "en": "simile",
    "en_norm": "simile",
    "my_norm": "တူညီမှုပြ",
-   "th_norm": "อุปมาอุปไมย",
+   "th_norm": "อุปมา",
    "fingerprint": "bd61a640dbf4836d",
    "vocab_sig": [
     "simile"
@@ -395791,7 +395790,7 @@
    "en": "student evaluation",
    "en_norm": "student evaluation",
    "my_norm": "ကျောင်းသားအကဲဖြတ်မှု",
-   "th_norm": "การประเมินนักศึกษา",
+   "th_norm": "การประเมินโดยนักศึกษา",
    "fingerprint": "12c817dc1c46e3da",
    "vocab_sig": [
     "evaluation",
@@ -397831,7 +397830,7 @@
    "kind": "word",
    "en": "tease out",
    "en_norm": "tease out",
-   "my_norm": "ဖြေရှင်းထုတ်ယူသည်",
+   "my_norm": "ခွဲခြားထုတ်ယူသည်",
    "th_norm": "แยกแยะ",
    "fingerprint": "39d4f56a8ab7ab41",
    "vocab_sig": [
@@ -398072,7 +398071,7 @@
    "en": "set out",
    "en_norm": "set out",
    "my_norm": "တင်ပြဖော်ပြသည်",
-   "th_norm": "กำหนด",
+   "th_norm": "เสนอ",
    "fingerprint": "0de94272cec95c90",
    "vocab_sig": [
     "set"
@@ -398435,7 +398434,7 @@
    "en": "authoritative",
    "en_norm": "authoritative",
    "my_norm": "ဩဇာရှိသော",
-   "th_norm": "มีอำนาจ",
+   "th_norm": "น่าเชื่อถือ",
    "fingerprint": "df39bb99bd28ab15",
    "vocab_sig": [
     "authoritative"
@@ -403443,7 +403442,7 @@
    "en": "adjunct professor",
    "en_norm": "adjunct professor",
    "my_norm": "တွဲဖက်ပါမောက္ခ",
-   "th_norm": "ศาสตราจารย์พิเศษ",
+   "th_norm": "อาจารย์พิเศษ",
    "fingerprint": "691783f292cc32e6",
    "vocab_sig": [
     "adjunct",
@@ -408214,7 +408213,7 @@
    "kind": "word",
    "en": "theory-ladenness",
    "en_norm": "theory ladenness",
-   "my_norm": "သီအိုရီဝန်ထုပ်ဝန်ပိုး",
+   "my_norm": "သီအိုရီပြည့်နှက်မှု",
    "th_norm": "ธีโอรีเลดเนส",
    "fingerprint": "152e007f9426f70f",
    "vocab_sig": [
@@ -408782,7 +408781,7 @@
    "kind": "word",
    "en": "factor analysis",
    "en_norm": "factor analysis",
-   "my_norm": "အချက်ပြပုံစံသုံးသပ်ချက်",
+   "my_norm": "အချက်သုံးသပ်ချက်",
    "th_norm": "การวิเคราะห์ปัจจัย",
    "fingerprint": "3d9facbc10a94fca",
    "vocab_sig": [
@@ -408826,7 +408825,7 @@
    "kind": "word",
    "en": "exploratory factor analysis",
    "en_norm": "exploratory factor analysis",
-   "my_norm": "စူးစမ်းအချက်ပြသုံးသပ်ချက်",
+   "my_norm": "စူးစမ်းအချက်သုံးသပ်ချက်",
    "th_norm": "การวิเคราะห์ปัจจัยเชิงสำรวจ",
    "fingerprint": "ec7c439013a64624",
    "vocab_sig": [
@@ -408871,7 +408870,7 @@
    "kind": "word",
    "en": "confirmatory factor analysis",
    "en_norm": "confirmatory factor analysis",
-   "my_norm": "အတည်ပြုအချက်ပြသုံးသပ်ချက်",
+   "my_norm": "အတည်ပြုအချက်သုံးသပ်ချက်",
    "th_norm": "การวิเคราะห์ปัจจัยเชิงยืนยัน",
    "fingerprint": "1be32c62d56fd53e",
    "vocab_sig": [
@@ -410787,7 +410786,7 @@
    "en": "story arc",
    "en_norm": "story arc",
    "my_norm": "ဇာတ်လမ်းလမ်းကြောင်း",
-   "th_norm": "เส้นโค้งของเรื่อง",
+   "th_norm": "เส้นเรื่อง",
    "fingerprint": "031a1a926273d210",
    "vocab_sig": [
     "arc",
@@ -411835,7 +411834,7 @@
    "en": "blank verse",
    "en_norm": "blank verse",
    "my_norm": "ကာရန်မဲ့ကဗျာဟန်",
-   "th_norm": "บทกวีไร้สัมผัส",
+   "th_norm": "กลอนเปล่า",
    "fingerprint": "3c8c28686d13e8f3",
    "vocab_sig": [
     "blank",
@@ -414283,7 +414282,7 @@
    "kind": "word",
    "en": "theatre of the absurd",
    "en_norm": "theatre of the absurd",
-   "my_norm": "အဓိပ္ပာယ်မဲ့ပြဇာတ်ရုံ",
+   "my_norm": "အဓိပ္ပာယ်မဲ့ပြဇာတ်ဟန်",
    "th_norm": "โรงละครแห่งความไร้สาระ",
    "fingerprint": "b58d48a328269315",
    "vocab_sig": [
@@ -418539,7 +418538,7 @@
    "kind": "word",
    "en": "pellucid",
    "en_norm": "pellucid",
-   "my_norm": "သလင်းကဲ့သို့ကြည်လင်သော",
+   "my_norm": "ထင်ရှားကြည်လင်သော",
    "th_norm": "ใสแจ๋ว",
    "fingerprint": "112733a37563404f",
    "vocab_sig": [
@@ -419467,7 +419466,7 @@
    "kind": "word",
    "en": "arcane",
    "en_norm": "arcane",
-   "my_norm": "လျှို့ဝှက်နက်နဲသော",
+   "my_norm": "ဆန်းကြယ်လျှို့ဝှက်သော",
    "th_norm": "ลึกลับ",
    "fingerprint": "25b380d8dad7cb16",
    "vocab_sig": [
@@ -419550,7 +419549,7 @@
    "kind": "word",
    "en": "cryptic",
    "en_norm": "cryptic",
-   "my_norm": "လျှို့ဝှက်နက်နဲသော",
+   "my_norm": "အနက်ဖော်ရခက်သော",
    "th_norm": "น่าฉงน",
    "fingerprint": "91a0cfaa688b7e7b",
    "vocab_sig": [
@@ -419966,7 +419965,7 @@
    "kind": "word",
    "en": "anatomize",
    "en_norm": "anatomize",
-   "my_norm": "ခွဲခြမ်းစိတ်ဖြာသည်",
+   "my_norm": "စိစိစပ်စပ်ခွဲခြမ်းစိတ်ဖြာသည်",
    "th_norm": "ชำแหละ",
    "fingerprint": "9528690d42594d29",
    "vocab_sig": [
@@ -420089,7 +420088,7 @@
    "kind": "word",
    "en": "parse",
    "en_norm": "parse",
-   "my_norm": "ခွဲခြမ်းစိတ်ဖြာသည်",
+   "my_norm": "အစိတ်အပိုင်းခွဲခြား၍စိတ်ဖြာသည်",
    "th_norm": "วิเคราะห์",
    "fingerprint": "30c471f6aafbca70",
    "vocab_sig": [
@@ -422673,7 +422672,7 @@
    "kind": "word",
    "en": "litterateur",
    "en_norm": "litterateur",
-   "my_norm": "စာပေပညာရှင်",
+   "my_norm": "စာပေဝါသနာရှင်",
    "th_norm": "นักวรรณศิลป์",
    "fingerprint": "8d96254e3b6c958b",
    "vocab_sig": [

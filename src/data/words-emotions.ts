@@ -21,7 +21,7 @@ export const emotionsWords: Word[] = [
   { en: 'feel', my: 'ခံစားရသည်', th: 'รู้สึก', topic: 'emotions', level: 1, phonetic: 'feel', example: 'How do you feel today?', exampleMy: 'ဒီနေ့ ဘယ်လို ခံစားရလဲ။', exampleTh: 'วันนี้คุณรู้สึกอย่างไร' },
   { en: 'heart', my: 'နှလုံးသား', th: 'หัวใจ', topic: 'emotions', level: 1, phonetic: 'hart', example: 'She has a kind heart.', exampleMy: 'သူမမှာ ကြင်နာတတ်တဲ့ နှလုံးသား ရှိပါတယ်။', exampleTh: 'เธอมีจิตใจดี' },
   { en: 'tear', my: 'မျက်ရည်', th: 'น้ำตา', topic: 'emotions', level: 2, phonetic: 'teer', example: 'A tear fell from her eye.', exampleMy: 'သူ့ မျက်လုံးက မျက်ရည် တစ်စက် ကျလာပါတယ်။', exampleTh: 'น้ำตาหยดหนึ่งไหลจากตาของเธอ' },
-  { en: 'hug', my: 'ဖက်သည်', th: 'กอด', topic: 'emotions', level: 1, phonetic: 'hag', example: 'She gave me a warm hug.', exampleMy: 'သူမ ကျွန်တော့်ကို နွေးထွေးတဲ့ ဖက်ခြင်း ပေးခဲ့ပါတယ်။', exampleTh: 'เธอกอดฉันอย่างอบอุ่น' },
+  { en: 'hug', my: 'ဖက်သည်', th: 'กอด', topic: 'emotions', level: 1, phonetic: 'hag', example: 'She gave me a warm hug.', exampleMy: 'သူမ ကျွန်တော့်ကို နွေးနွေးထွေးထွေး ဖက်ပေးခဲ့ပါတယ်။', exampleTh: 'เธอกอดฉันอย่างอบอุ่น' },
   { en: 'kiss', my: 'နမ်းသည်', th: 'จูบ', topic: 'emotions', level: 1, phonetic: 'kis', example: 'He gave her a kiss.', exampleMy: 'သူက သူမကို နမ်းခဲ့ပါတယ်။', exampleTh: 'เขาจูบเธอ' },
   { en: 'hope', my: 'မျှော်လင့်သည်', th: 'หวัง', topic: 'emotions', level: 1, phonetic: 'hohp', example: 'I hope you feel better.', exampleMy: 'မင်း နေကောင်းလာမယ်လို့ မျှော်လင့်ပါတယ်။', exampleTh: 'ฉันหวังว่าคุณจะดีขึ้น' },
   { en: 'dream', my: 'အိပ်မက်', th: 'ความฝัน', topic: 'emotions', level: 1, phonetic: 'dreem', example: 'I had a strange dream.', exampleMy: 'ထူးဆန်းတဲ့ အိပ်မက်မက်ခဲ့ပါတယ်။', exampleTh: 'ฉันฝันแปลกๆ' },
@@ -31,5 +31,5 @@ export const emotionsWords: Word[] = [
   { en: 'confident', my: 'ယုံကြည်မှုရှိသော', th: 'มั่นใจ', topic: 'emotions', level: 2, phonetic: 'kon-fi-dent', example: 'Speak with a confident voice.', exampleMy: 'ယုံကြည်မှုရှိတဲ့အသံနဲ့ပြောပါ။', exampleTh: 'พูดด้วยเสียงที่มั่นใจ' },
   { en: 'shy', my: 'ရှက်တတ်သော', th: 'ขี้อาย', topic: 'emotions', level: 2, phonetic: 'shai', example: 'The shy boy hides behind his mother.', exampleMy: 'ရှက်တတ်တဲ့ ကောင်လေး က အမေ့ နောက်မှာ ပုန်းနေပါတယ်။', exampleTh: 'เด็กชายขี้อายซ่อนหลังแม่' },
   { en: 'brave', my: 'ရဲရင့်သော', th: 'กล้าหาญ', topic: 'emotions', level: 2, phonetic: 'breiv', example: 'The brave girl saved the cat.', exampleMy: 'ရဲရင့်တဲ့ ကောင်မလေး က ကြောင် ကို ကယ်ခဲ့ပါတယ်။', exampleTh: 'เด็กหญิงผู้กล้าช่วยแมวไว้' },
-  { en: 'patience', my: 'သည်းခံခြင်း', th: 'ความอดทน', topic: 'emotions', level: 3, phonetic: 'pei-shuns', example: 'Good teachers have great patience.', exampleMy: 'ကောင်းတဲ့ ဆရာတွေမှာ သည်းခံမှု ကြီး ရှိပါတယ်။', exampleTh: 'ครูที่ดีมีความอดทนมาก' },
+  { en: 'patience', my: 'သည်းခံခြင်း', th: 'ความอดทน', topic: 'emotions', level: 3, phonetic: 'pei-shuns', example: 'Good teachers have great patience.', exampleMy: 'ကောင်းတဲ့ ဆရာတွေမှာ သည်းခံမှု အများကြီး ရှိပါတယ်။', exampleTh: 'ครูที่ดีมีความอดทนมาก' },
 ];

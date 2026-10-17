@@ -15,7 +15,7 @@ export const hyperlocalDialogues2: Dialogue[] = [
       { speaker: 'တုတ်တုတ်ဆရာ', speakerTh: 'คนขับตุ๊กตุ๊ก', en: 'Where are you going?', my: 'ဘယ်ကိုသွားမှာလဲ။', th: 'จะไปไหนครับ' },
       { speaker: 'ခရီးသွား', speakerTh: 'นักท่องเที่ยว', en: 'To Shwedagon Pagoda, please.', my: 'ရွှေတိဂုံဘုရားကို သွားချင်ပါတယ်။', th: 'ไปเจดีย์ชเวดากองครับ' },
       { speaker: 'တုတ်တုတ်ဆရာ', speakerTh: 'คนขับตุ๊กตุ๊ก', en: 'Sure. Get in.', my: 'ရပါတယ်။ တက်လာပါ။', th: 'ได้ครับ ขึ้นมาเลยครับ' },
-      { speaker: 'ခရီးသွား', speakerTh: 'นักท่องเที่ยว', en: 'Wait, how much is it first?', my: 'ခဏလေး။ အရင်ဈေးမေးမယ်။ ဘယ်လောက်ကျမလဲ။', th: 'เดี๋ยวก่อนครับ ขอถามราคาก่อน เท่าไหร่ครับ' },
+      { speaker: 'ခရီးသွား', speakerTh: 'นักท่องเที่ยว', en: 'Wait — first, how much is it?', my: 'ခဏလေး။ အရင်ဈေးမေးမယ်။ ဘယ်လောက်ကျမလဲ။', th: 'เดี๋ยวก่อนครับ ขอถามราคาก่อน เท่าไหร่ครับ' },
       { speaker: 'တုတ်တုတ်ဆရာ', speakerTh: 'คนขับตุ๊กตุ๊ก', en: 'Five thousand kyat.', my: 'ငါးထောင်ကျပ်။', th: 'ห้าพันจ๊าดครับ' },
       { speaker: 'ခရီးသွား', speakerTh: 'นักท่องเที่ยว', en: 'Too much. Three thousand, okay?', my: 'များလွန်းတယ်။ သုံးထောင်ဆိုရင်ရော။', th: 'แพงไปครับ สามพันได้ไหมครับ' },
       { speaker: 'တုတ်တုတ်ဆရာ', speakerTh: 'คนขับตุ๊กตุ๊ก', en: 'Hmm... okay. Three thousand.', my: 'အင်း... ရတယ်။ သုံးထောင်ပဲ။', th: 'อืม... ได้ครับ สามพันก็สามพัน' },
