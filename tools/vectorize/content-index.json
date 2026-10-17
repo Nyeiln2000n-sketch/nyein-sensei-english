@@ -461863,7 +461863,7 @@
    "en": "photonic computing",
    "en_norm": "photonic computing",
    "my_norm": "အလင်းကွန်ပျူတာတွက်ချက်မှု",
-   "th_norm": "การคำนวณโฟโตนิก",
+   "th_norm": "การประมวลผลโฟโตนิก",
    "fingerprint": "d0a408656837fde5",
    "vocab_sig": [
     "computing",
@@ -461907,7 +461907,7 @@
    "en": "personalized medicine",
    "en_norm": "personalized medicine",
    "my_norm": "တစ်ဦးချင်းဆေးပညာ",
-   "th_norm": "แพทย์เฉพาะบุคคล",
+   "th_norm": "การแพทย์เฉพาะบุคคล",
    "fingerprint": "f81fe20d37a6ddbd",
    "vocab_sig": [
     "medicine",
@@ -462491,7 +462491,7 @@
    "en": "diffusion model",
    "en_norm": "diffusion model",
    "my_norm": "ပျံ့နှံ့မှုမော်ဒယ်",
-   "th_norm": "โมเดลการแพร่",
+   "th_norm": "ดิฟฟิวชันโมเดล",
    "fingerprint": "f526cc7e57098d70",
    "vocab_sig": [
     "diffusion",
@@ -465012,7 +465012,7 @@
    "en": "quantum annealing",
    "en_norm": "quantum annealing",
    "my_norm": "ကွမ်တမ်အန်နီးလင်း",
-   "th_norm": "การอบควอนตัม",
+   "th_norm": "ควอนตัมแอนนีลลิง",
    "fingerprint": "417ba779eb608c27",
    "vocab_sig": [
     "annealing",
@@ -467638,7 +467638,7 @@
    "en": "exomoon",
    "en_norm": "exomoon",
    "my_norm": "ဂြိုဟ်ပြင်လဂြိုဟ်",
-   "th_norm": "ดวงจันทร์นอกระบบ",
+   "th_norm": "ดวงจันทร์นอกระบบสุริยะ",
    "fingerprint": "520ebcf2466abbe0",
    "vocab_sig": [
     "exomoon"
@@ -467911,7 +467911,7 @@
    "kind": "word",
    "en": "cosmic web",
    "en_norm": "cosmic web",
-   "my_norm": "စကြဝဠာပင့်ကူ",
+   "my_norm": "စကြဝဠာကွန်ရက်",
    "th_norm": "ใยจักรวาล",
    "fingerprint": "4296ff4c0405801a",
    "vocab_sig": [
@@ -467956,7 +467956,7 @@
    "kind": "word",
    "en": "dark matter halo",
    "en_norm": "dark matter halo",
-   "my_norm": "မှောင်မိုက်အရာဝတ္ထုအာရာ",
+   "my_norm": "မှောင်မိုက်အရာဝတ္ထုဟေလို",
    "th_norm": "ฮาโลสสารมืด",
    "fingerprint": "7259e971bd5e144e",
    "vocab_sig": [
@@ -468140,7 +468140,7 @@
    "en": "reionization era",
    "en_norm": "reionization era",
    "my_norm": "ပြန်လည်အိုင်းယွန်းခေတ်",
-   "th_norm": "ยุคไอออไนเซชันใหม่",
+   "th_norm": "ยุครีไอออไนเซชัน",
    "fingerprint": "480293ef537a09f6",
    "vocab_sig": [
     "era",
@@ -468588,7 +468588,7 @@
    "en": "antimatter propulsion",
    "en_norm": "antimatter propulsion",
    "my_norm": "ဆန့်ကျင်အရာဝတ္ထုတွန်းကန်မှု",
-   "th_norm": "การขับดันแอนติแมตเตอร์",
+   "th_norm": "การขับดันปฏิสสาร",
    "fingerprint": "2b744de23f34af54",
    "vocab_sig": [
     "antimatter",
@@ -470391,7 +470391,7 @@
    "kind": "word",
    "en": "MXene",
    "en_norm": "mxene",
-   "my_norm": "အမ်ဇင်း",
+   "my_norm": "အမ်မက်ဇင်း",
    "th_norm": "เอ็มซีน",
    "fingerprint": "0f1e3d773fd44658",
    "vocab_sig": [
@@ -471123,7 +471123,7 @@
    "kind": "word",
    "en": "reservoir computing",
    "en_norm": "reservoir computing",
-   "my_norm": "ရေလှောင်တွက်ချက်မှု",
+   "my_norm": "ရီဇာဗွာတွက်ချက်မှု",
    "th_norm": "การคำนวณแบบรีเซอร์วัวร์",
    "fingerprint": "74a192161763155b",
    "vocab_sig": [
@@ -474157,7 +474157,7 @@
    "en": "neural implant",
    "en_norm": "neural implant",
    "my_norm": "နျူရယ်အစားထိုးကိရိယာ",
-   "th_norm": "รากเทียมประสาท",
+   "th_norm": "อุปกรณ์ฝังประสาท",
    "fingerprint": "a6da4168a086cfce",
    "vocab_sig": [
     "implant",
@@ -474571,7 +474571,7 @@
    "en": "neural decoding",
    "en_norm": "neural decoding",
    "my_norm": "နျူရယ်ကုဒ်ဖြေမှု",
-   "th_norm": "การถอดรหัสนิวรัล",
+   "th_norm": "การถอดรหัสประสาท",
    "fingerprint": "4b2ef8ec639f9610",
    "vocab_sig": [
     "decoding",
@@ -481970,7 +481970,7 @@
    "kind": "word",
    "en": "artificial photosynthesis",
    "en_norm": "artificial photosynthesis",
-   "my_norm": "အတုအလင်းမီသစ်ရွက်လုပ်ငန်း",
+   "my_norm": "အတုအလင်းမှီသစ်ရွက်လုပ်ငန်း",
    "th_norm": "การสังเคราะห์แสงเทียม",
    "fingerprint": "fe4466e06d7206a5",
    "vocab_sig": [

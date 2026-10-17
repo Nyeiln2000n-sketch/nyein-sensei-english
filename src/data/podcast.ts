@@ -38,6 +38,16 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 76,
+    slug: 'weather-small-talk-2026-10-17',
+    titleMy: 'အပိုင်း ၇၆ — ရာသီဥတုအကြောင်း စကားပြောခြင်း',
+    titleOrig: 'คุยเรื่องอากาศ — Weather Small Talk',
+    descMy: 'သူစိမ်းများနှင့် ရာသီဥတုအကြောင်းပြောရင်း မိတ်ဖွဲ့နည်း — "Nice day, is it not?" / "Yes, beautiful." / "Hot today, huh?" / "What lovely weather." / "I hope it stays sunny."',
+    phrases: ['Nice day, is it not?', 'Yes, beautiful.', 'Hot today, huh?'],
+    durationSecs: 585,
+    cover: '/podcast-covers/ep-76.jpg',
+  },
+  {
     n: 75,
     slug: 'dressing-for-the-weather-2026-10-17',
     titleMy: 'အပိုင်း ၇၅ — ရာသီဥတုအလိုက် အဝတ်အစား',
