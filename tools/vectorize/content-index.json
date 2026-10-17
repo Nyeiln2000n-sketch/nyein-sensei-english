@@ -486264,7 +486264,7 @@
    "en": "castigate",
    "en_norm": "castigate",
    "my_norm": "ပြင်းထန်စွာဝေဖန်ပြစ်တင်သည်",
-   "th_norm": "ลงโทษวิจารณ์",
+   "th_norm": "ตำหนิอย่างรุนแรง",
    "fingerprint": "32202e9f9fb62731",
    "vocab_sig": [
     "castigate"
@@ -489859,10 +489859,10 @@
   {
    "id": "example:rhetoric:litotes",
    "kind": "example",
-   "en": "Calling the Everest not a small hill is litotes.",
-   "en_norm": "calling the everest not a small hill is litotes",
+   "en": "Calling Everest not a small hill is litotes.",
+   "en_norm": "calling everest not a small hill is litotes",
    "my_norm": "",
-   "fingerprint": "364e2e9e4ddde9a7",
+   "fingerprint": "06ef03765d5b3ef0",
    "vocab_sig": [
     "calling",
     "everest",
@@ -489870,7 +489870,7 @@
     "litotes",
     "small"
    ],
-   "template_sig": "W the W not a W W is W .",
+   "template_sig": "W W not a W W is W .",
    "tags": [
     "rhetoric",
     "example"
@@ -492557,7 +492557,7 @@
    "en": "counterpoint",
    "en_norm": "counterpoint",
    "my_norm": "ဆန့်ကျင်ဘက်အမြင်",
-   "th_norm": "การโต้แย้ง",
+   "th_norm": "ข้อโต้แย้ง",
    "fingerprint": "5f9ed9097b6f915b",
    "vocab_sig": [
     "counterpoint"
@@ -495366,7 +495366,7 @@
    "en": "uncanny",
    "en_norm": "uncanny",
    "my_norm": "ထူးဆန်းကြောက်မက်ဖွယ်",
-   "th_norm": "แปลกประหลาด",
+   "th_norm": "น่าพิศวง",
    "fingerprint": "86949bafb13a8f9a",
    "vocab_sig": [
     "uncanny"
@@ -496059,7 +496059,7 @@
   {
    "id": "example:rhetoric:objet-trouve",
    "kind": "example",
-   "en": "The sculpture is an objet trouve made from driftwood.",
+   "en": "The sculpture is an objet trouvé made from driftwood.",
    "en_norm": "the sculpture is an objet trouve made from driftwood",
    "my_norm": "",
    "fingerprint": "a5e14da9ee239ef8",
@@ -497292,7 +497292,7 @@
    "en": "sensationalism",
    "en_norm": "sensationalism",
    "my_norm": "အာရုံစားသတင်းပြုမှု",
-   "th_norm": "การสร้างข่าวฉาว",
+   "th_norm": "การทำข่าวเร้าอารมณ์",
    "fingerprint": "4812fc3da085af4f",
    "vocab_sig": [
     "sensationalism"
@@ -497333,7 +497333,7 @@
    "en": "sensationalize",
    "en_norm": "sensationalize",
    "my_norm": "အာရုံစားအောင်ဖော်ပြသည်",
-   "th_norm": "ทำให้เป็นข่าวฉาว",
+   "th_norm": "ทำให้เป็นข่าวใหญ่โตเกินจริง",
    "fingerprint": "b9cd14013095397f",
    "vocab_sig": [
     "sensationalize"
@@ -497968,7 +497968,7 @@
    "en": "priming",
    "en_norm": "priming",
    "my_norm": "ကြိုတင်ဦးတည်သက်ရောက်မှု",
-   "th_norm": "การเตรียมพร้อม",
+   "th_norm": "การเตรียมความพร้อมทางความคิด",
    "fingerprint": "a8bb69cf056631ac",
    "vocab_sig": [
     "priming"
@@ -500386,7 +500386,7 @@
    "en": "sententious",
    "en_norm": "sententious",
    "my_norm": "ဩဝါဒပေးတတ်သော",
-   "th_norm": "มีคติสอนใจ",
+   "th_norm": "ชอบสั่งสอน",
    "fingerprint": "706ec34794454f47",
    "vocab_sig": [
     "sententious"
@@ -500469,7 +500469,7 @@
    "en": "oracular",
    "en_norm": "oracular",
    "my_norm": "ပရောဖက်ဆန်သောစကား",
-   "th_norm": "เชิงพยากรณ์",
+   "th_norm": "อย่างโองการ",
    "fingerprint": "eee2ee62b3a26768",
    "vocab_sig": [
     "oracular"
@@ -500916,7 +500916,7 @@
    "en": "articulation",
    "en_norm": "articulation",
    "my_norm": "အသံထွက်တိကျမှု",
-   "th_norm": "การออกเสียง",
+   "th_norm": "การเปล่งเสียง",
    "fingerprint": "50057bdb98f58d9e",
    "vocab_sig": [
     "articulation"
@@ -500957,7 +500957,7 @@
    "en": "projection",
    "en_norm": "projection",
    "my_norm": "အသံဝေးဝေးရောက်အောင်ပြောမှု",
-   "th_norm": "การส่งเสียง",
+   "th_norm": "การส่งเสียงให้ไกล",
    "fingerprint": "1b250ea199bec73d",
    "vocab_sig": [
     "projection"
@@ -501371,7 +501371,7 @@
    "en": "acquiescence",
    "en_norm": "acquiescence",
    "my_norm": "အငြင်းမပွားဘဲလက်ခံမှု",
-   "th_norm": "การยอมรับ",
+   "th_norm": "การยอมรับอย่างเงียบ ๆ",
    "fingerprint": "157fa2e680bd34de",
    "vocab_sig": [
     "acquiescence"
@@ -501613,7 +501613,7 @@
    "en": "spellbinder",
    "en_norm": "spellbinder",
    "my_norm": "စွဲမက်စေသောစကားပြောသူ",
-   "th_norm": "ผู้สะกดจิตด้วยวาจา",
+   "th_norm": "นักสะกดใจด้วยวาจา",
    "fingerprint": "0628fe9d03afac66",
    "vocab_sig": [
     "spellbinder"
@@ -501776,7 +501776,7 @@
    "en": "speech act",
    "en_norm": "speech act",
    "my_norm": "စကားပြောလုပ်ရပ်",
-   "th_norm": "วัจนกรรมการพูด",
+   "th_norm": "วัจนกรรม",
    "fingerprint": "bbf15e031696719a",
    "vocab_sig": [
     "act",
@@ -507163,7 +507163,7 @@
    "kind": "word",
    "en": "cereal",
    "en_norm": "cereal",
-   "my_norm": "နံနက်စာမုန့်",
+   "my_norm": "စီရီရယ်",
    "th_norm": "ซีเรียล",
    "fingerprint": "38c09b54483898f2",
    "vocab_sig": [
@@ -507399,7 +507399,7 @@
    "kind": "word",
    "en": "croissant",
    "en_norm": "croissant",
-   "my_norm": "ခရုအာဆင်",
+   "my_norm": "ခရိုအာဆင်",
    "th_norm": "ครัวซองต์",
    "fingerprint": "fbb1eeb89d064f26",
    "vocab_sig": [
@@ -507439,7 +507439,7 @@
    "kind": "word",
    "en": "stew",
    "en_norm": "stew",
-   "my_norm": "ဟင်းအနှစ်ပြုတ်",
+   "my_norm": "စတူး",
    "th_norm": "สตูว์",
    "fingerprint": "0727fc6654c3e547",
    "vocab_sig": [
@@ -507806,15 +507806,15 @@
   {
    "id": "example:food:muffin",
    "kind": "example",
-   "en": "A muffin for breakfast.",
-   "en_norm": "a muffin for breakfast",
+   "en": "I had a muffin for breakfast.",
+   "en_norm": "i had a muffin for breakfast",
    "my_norm": "",
-   "fingerprint": "85366ae214357db1",
+   "fingerprint": "28d96d02251e2cdd",
    "vocab_sig": [
     "breakfast",
     "muffin"
    ],
-   "template_sig": "a W for W .",
+   "template_sig": "i had a W for W .",
    "tags": [
     "food",
     "example"
@@ -508077,16 +508077,17 @@
   {
    "id": "example:food:bagel",
    "kind": "example",
-   "en": "He eats a bagel daily.",
-   "en_norm": "he eats a bagel daily",
+   "en": "He eats a bagel every day.",
+   "en_norm": "he eats a bagel every day",
    "my_norm": "",
-   "fingerprint": "5838c58eee068896",
+   "fingerprint": "019a50ddb23f6545",
    "vocab_sig": [
     "bagel",
-    "daily",
-    "eats"
+    "day",
+    "eats",
+    "every"
    ],
-   "template_sig": "he W a W W .",
+   "template_sig": "he W a W W W .",
    "tags": [
     "food",
     "example"
@@ -509090,16 +509091,16 @@
   {
    "id": "example:nature:whirlpool",
    "kind": "example",
-   "en": "A whirlpool spun the leaves.",
-   "en_norm": "a whirlpool spun the leaves",
+   "en": "A whirlpool spun in the river.",
+   "en_norm": "a whirlpool spun in the river",
    "my_norm": "",
-   "fingerprint": "a0772d02457d3cea",
+   "fingerprint": "ada532a45c404a4f",
    "vocab_sig": [
-    "leaves",
+    "river",
     "spun",
     "whirlpool"
    ],
-   "template_sig": "a W W the W .",
+   "template_sig": "a W W in the W .",
    "tags": [
     "nature",
     "example"
@@ -509463,7 +509464,7 @@
    "en": "brook",
    "en_norm": "brook",
    "my_norm": "စမ်းချောင်း",
-   "th_norm": "ลำธาร",
+   "th_norm": "ห้วย",
    "fingerprint": "b79624284645b7cb",
    "vocab_sig": [
     "brook"
@@ -509541,7 +509542,7 @@
    "en": "butte",
    "en_norm": "butte",
    "my_norm": "တောင်ထိပ်ပြား",
-   "th_norm": "ภูเขายอดราบ",
+   "th_norm": "ภูเขายอดแบนราบ",
    "fingerprint": "1969c04bf6b1adea",
    "vocab_sig": [
     "butte"
@@ -509675,17 +509676,16 @@
   {
    "id": "example:nature:mesa",
    "kind": "example",
-   "en": "The mesa rises flat-topped.",
-   "en_norm": "the mesa rises flat topped",
+   "en": "The mesa has a flat top.",
+   "en_norm": "the mesa has a flat top",
    "my_norm": "",
-   "fingerprint": "f8772aff21f09d23",
+   "fingerprint": "fabb30b6ffa2f2e6",
    "vocab_sig": [
     "flat",
     "mesa",
-    "rises",
-    "topped"
+    "top"
    ],
-   "template_sig": "the W W W - W .",
+   "template_sig": "the W has a W W .",
    "tags": [
     "nature",
     "example"
@@ -509976,7 +509976,7 @@
    "en": "islet",
    "en_norm": "islet",
    "my_norm": "ကျွန်းငယ်",
-   "th_norm": "เกาะเล็กๆ",
+   "th_norm": "เกาะเล็กมาก",
    "fingerprint": "cd0aecc5f13dff93",
    "vocab_sig": [
     "islet"
@@ -511768,16 +511768,17 @@
   {
    "id": "example:nature:rewilding",
    "kind": "example",
-   "en": "Rewilding helps nature.",
-   "en_norm": "rewilding helps nature",
+   "en": "Rewilding restores wild habitats.",
+   "en_norm": "rewilding restores wild habitats",
    "my_norm": "",
-   "fingerprint": "710a345198f08e7a",
+   "fingerprint": "d0b736be3f2cc778",
    "vocab_sig": [
-    "helps",
-    "nature",
-    "rewilding"
+    "habitats",
+    "restores",
+    "rewilding",
+    "wild"
    ],
-   "template_sig": "W W W .",
+   "template_sig": "W W W W .",
    "tags": [
     "nature",
     "example"
@@ -512342,7 +512343,7 @@
    "kind": "word",
    "en": "racket",
    "en_norm": "racket",
-   "my_norm": "တင်းနစ်ရိုက်",
+   "my_norm": "ရက်ကက်",
    "th_norm": "ไม้แร็กเกต",
    "fingerprint": "b51534ce9aa94a79",
    "vocab_sig": [
@@ -512775,8 +512776,8 @@
    "kind": "word",
    "en": "referee",
    "en_norm": "referee",
-   "my_norm": "ဒိုင်လူကြီး",
-   "th_norm": "กรรมการ",
+   "my_norm": "ဒိုင်လူကြီး ဘောလုံး",
+   "th_norm": "กรรมการ ฟุตบอล",
    "fingerprint": "81803dd4e410a92b",
    "vocab_sig": [
     "referee"
@@ -513749,7 +513750,7 @@
    "kind": "word",
    "en": "golf",
    "en_norm": "golf",
-   "my_norm": "ဂေါက်သီး",
+   "my_norm": "ဂေါက်",
    "th_norm": "กอล์ฟ",
    "fingerprint": "625fe74cad4600b5",
    "vocab_sig": [
@@ -514223,7 +514224,7 @@
    "en": "qualify",
    "en_norm": "qualify",
    "my_norm": "အရည်အချင်းပြည့်မီသည်",
-   "th_norm": "ผ่านคุณสมบัติ",
+   "th_norm": "ผ่านเข้ารอบ",
    "fingerprint": "e48cfe4f6f37ec01",
    "vocab_sig": [
     "qualify"
@@ -514648,8 +514649,8 @@
    "kind": "word",
    "en": "umpire",
    "en_norm": "umpire",
-   "my_norm": "ဒိုင်လူကြီး",
-   "th_norm": "กรรมการ",
+   "my_norm": "ဒိုင်လူကြီး ဘေ့စ်ဘော တင်းနစ်",
+   "th_norm": "กรรมการ เบสบอล เทนนิส",
    "fingerprint": "ee38e188a007eda7",
    "vocab_sig": [
     "umpire"
@@ -515480,7 +515481,7 @@
    "en": "ring",
    "en_norm": "ring",
    "my_norm": "မြည်သည်",
-   "th_norm": "ดัง",
+   "th_norm": "ส่งเสียงดัง",
    "fingerprint": "16b974583155fdcb",
    "vocab_sig": [
     "ring"
@@ -518500,7 +518501,7 @@
    "en": "cryptocurrency",
    "en_norm": "cryptocurrency",
    "my_norm": "ဒစ်ဂျစ်တယ်ငွေကြေး",
-   "th_norm": "คริปโทเคอร์เรนซี",
+   "th_norm": "สกุลเงินคริปโต",
    "fingerprint": "a81246023e3f6c61",
    "vocab_sig": [
     "cryptocurrency"
@@ -519127,7 +519128,7 @@
    "en": "clerk",
    "en_norm": "clerk",
    "my_norm": "စာရေး",
-   "th_norm": "เสมียน",
+   "th_norm": "พนักงานขาย",
    "fingerprint": "c40dc72b0228e585",
    "vocab_sig": [
     "clerk"
@@ -519320,7 +519321,7 @@
    "en": "employ",
    "en_norm": "employ",
    "my_norm": "အလုပ်ခန့်သည်",
-   "th_norm": "จ้างงาน",
+   "th_norm": "จ้าง",
    "fingerprint": "b0688a56fae3ddb4",
    "vocab_sig": [
     "employ"
@@ -519552,7 +519553,7 @@
    "kind": "word",
    "en": "florist",
    "en_norm": "florist",
-   "my_norm": "ပန်းဆိုင်",
+   "my_norm": "ပန်းရောင်းသူ",
    "th_norm": "ร้านดอกไม้",
    "fingerprint": "f19a336b55b94a20",
    "vocab_sig": [
@@ -519630,7 +519631,7 @@
    "kind": "word",
    "en": "barber",
    "en_norm": "barber",
-   "my_norm": "ဆံသဆိုင်",
+   "my_norm": "ဆံသဆရာ",
    "th_norm": "ร้านตัดผมชาย",
    "fingerprint": "b67b8e2e8472a0a8",
    "vocab_sig": [
@@ -521120,7 +521121,7 @@
    "en": "shipment",
    "en_norm": "shipment",
    "my_norm": "ပို့ဆောင်မှု",
-   "th_norm": "การขนส่งสินค้า",
+   "th_norm": "พัสดุ",
    "fingerprint": "59f9076bc5008c4d",
    "vocab_sig": [
     "shipment"
@@ -521198,7 +521199,7 @@
    "en": "tester",
    "en_norm": "tester",
    "my_norm": "နမူနာစမ်းသပ်ပစ္စည်း",
-   "th_norm": "สินค้าตัวอย่างทดลอง",
+   "th_norm": "สินค้าตัวอย่าง",
    "fingerprint": "9bba5c53a0545e0c",
    "vocab_sig": [
     "tester"
@@ -522662,16 +522663,16 @@
   {
    "id": "example:emotions:whisper",
    "kind": "example",
-   "en": "Whisper; the baby sleeps.",
-   "en_norm": "whisper the baby sleeps",
+   "en": "Whisper; the baby is sleeping.",
+   "en_norm": "whisper the baby is sleeping",
    "my_norm": "",
-   "fingerprint": "4eff3585de8f4759",
+   "fingerprint": "9bfaa230027dcc1c",
    "vocab_sig": [
     "baby",
-    "sleeps",
+    "sleeping",
     "whisper"
    ],
-   "template_sig": "W ; the W W .",
+   "template_sig": "W ; the W is W .",
    "tags": [
     "emotions",
     "example"

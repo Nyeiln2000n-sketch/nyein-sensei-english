@@ -38,6 +38,16 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 75,
+    slug: 'dressing-for-the-weather-2026-10-17',
+    titleMy: 'အပိုင်း ၇၅ — ရာသီဥတုအလိုက် အဝတ်အစား',
+    titleOrig: 'เสื้อผ้าตามอากาศ — Dressing for the Weather',
+    descMy: 'မိုးလေဝသအလိုက် အဝတ်အစား ရွေးချယ်ခြင်း — "Take an umbrella." / "Wear a jacket." / "Do not forget sunscreen." / "Put on a raincoat." / "Wear comfortable shoes."',
+    phrases: ['Take an umbrella.', 'Wear a jacket.', 'Do not forget sunscreen.'],
+    durationSecs: 508,
+    cover: '/podcast-covers/ep-75.jpg',
+  },
+  {
     n: 74,
     slug: 'weather-forecast-2026-10-17',
     titleMy: 'အပိုင်း ၇၄ — မိုးလေဝသ ခန့်မှန်းချက်',
