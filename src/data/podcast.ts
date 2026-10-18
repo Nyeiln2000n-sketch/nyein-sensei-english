@@ -38,6 +38,16 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 80,
+    slug: 'review-module-8-weather-and-small-talk-2026-10-18',
+    titleMy: 'အခန်း ၈ ပြန်လည်သုံးသပ်ခြင်း — Review Module 8',
+    titleOrig: 'ทบทวนบทที่ 8 — Review Module 8',
+    descMy: 'အခန်း ၈ သုံးသပ်ချက် — ရာသီဥတုနဲ့ ပေါ့ပေါ့ပါးပါးစကားပြောခြင်းကို ရှည်လျားတဲ့ဝါကျတွေနဲ့ ပြန်လည်လေ့ကျင့်ခြင်း — "It is sunny today, so I am going swimming." / "Nice day, is it not? Do you like running?" / "It will rain tomorrow. Take an umbrella."',
+    phrases: ['It is sunny today, so I am going swimming.', 'Nice day, is it not? Do you like running?', 'It will rain tomorrow. Take an umbrella.'],
+    durationSecs: 606,
+    cover: '/podcast-covers/ep-80.jpg',
+  },
+  {
     n: 79,
     slug: 'music-and-movies-2026-10-18',
     titleMy: 'ဂီတနှင့် ရုပ်ရှင် — Music and movies',
