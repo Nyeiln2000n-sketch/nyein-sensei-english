@@ -207,7 +207,7 @@ export const grammarRulesC1C2: GrammarRuleC1C2[] = [
     level: 'C1',
     title: 'He is believed to have left (passive + perfect infinitive)',
     titleMyanmar: 'is believed to have + V3 — passive အတိတ်ခန့်မှန်းချက်',
-    titleMyanmarTh: 'is believed to have + กริยาช่อง 3',
+    titleMyanmarTh: 'การคาดเดาเหตุการณ์ในอดีตแบบ passive: is believed to have + กริยาช่อง 3',
     explanationMyanmar:
       'is said/believed/thought/known/reported + to have + V3 — အတိတ်ဖြစ်ရပ်ကို passive နဲ့ ခန့်မှန်းပြောတာ။ He is believed to have left (= လူတွေက သူထွက်သွားပြီလို့ ယုံကြည်တယ်)။ to + V1 ဆို ပစ္စုပ္ပန်/အထွေထွေ အဓိပ္ပာယ်။',
     explanationMyanmarTh: 'is said / believed / thought / known / reported + to have + กริยาช่อง 3 คาดเดาเหตุการณ์ในอดีตแบบ passive: He is believed to have left (= เขาว่ากันว่าเขาออกไปแล้ว) ส่วน to + กริยารูปพื้นฐาน หมายถึงปัจจุบันหรือทั่วไป',
@@ -248,7 +248,7 @@ export const grammarRulesC1C2: GrammarRuleC1C2[] = [
     level: 'C1',
     title: 'Tough movement: hard to please, easy to solve',
     titleMyanmar: 'Tough movement — hard to solve ပုံစံ',
-    titleMyanmarTh: 'Tough movement: hard to please',
+    titleMyanmarTh: 'การยกกรรมทางความหมายขึ้นเป็นประธาน: Tough movement (hard to please, easy to solve)',
     explanationMyanmar:
       'Adjective + to-infinitive မှာ logical object က subject နေရာရောက်နေတယ်။ This problem is hard to solve (= It is hard to solve this problem)။ သုံးလေ့ရှိတဲ့ adjective များ: hard, easy, difficult, tough, impossible, pleasant, interesting. "She is easy to talk to" လို preposition လည်း ကျန်နိုင်တယ်။',
     explanationMyanmarTh: 'โครงสร้าง คำคุณศัพท์ + to-infinitive ที่กรรมทางความหมาย (logical object) มาอยู่ตำแหน่งประธาน: This problem is hard to solve (= It is hard to solve this problem) คำคุณศัพท์ที่ใช้บ่อย: hard easy difficult tough impossible pleasant interesting บางครั้งมีบุพบทค้างอยู่ด้วย เช่น She is easy to talk to',
@@ -268,7 +268,7 @@ export const grammarRulesC1C2: GrammarRuleC1C2[] = [
     id: 'f14-g-c1-012',
     level: 'C1',
     title: 'Raising verbs: seem, appear, happen, turn out',
-    titleMyanmar: 'Raising verbs — seem to / it seems that',
+    titleMyanmar: 'Raising verbs — seem to / it seems that ပုံစံ',
     titleMyanmarTh: 'กริยา raising: seem / appear / happen / turn out',
     explanationMyanmar:
       'Seem, appear, happen, prove, turn out + to-infinitive — subject က အောက်က clause ကနေ "တက်"လာတာ။ He seems to be tired = It seems that he is tired. Happen to (= မရည်ရွယ်ဘဲ ဖြစ်သွားတာ): I happened to meet her. Turn out (= အဆုံးမှာဖြစ်သွားတာ)။',
@@ -289,7 +289,7 @@ export const grammarRulesC1C2: GrammarRuleC1C2[] = [
     id: 'f14-g-c1-013',
     level: 'C1',
     title: 'Perfect infinitive: claim to have seen',
-    titleMyanmar: 'Perfect infinitive — to have + V3',
+    titleMyanmar: 'Perfect infinitive — to have + V3 အတိတ်ပုံစံ',
     titleMyanmarTh: 'Perfect infinitive: to have + กริยาช่อง 3',
     explanationMyanmar:
       'to have + V3 — အတိတ်ဖြစ်ရပ်ကို အဓိကကြိယာထက် စောဖြစ်ခဲ့တယ်လို့ ပြတယ်။ He claims to have met the president (= တွေ့ခဲ့တယ်လို့ ဆိုတယ်)။ seem, appear, believe, pretend, claim + to have + V3 ပုံစံနဲ့ သုံးတယ်။',
@@ -310,7 +310,7 @@ export const grammarRulesC1C2: GrammarRuleC1C2[] = [
     id: 'f14-g-c1-014',
     level: 'C1',
     title: 'Perfect gerund: denied having taken',
-    titleMyanmar: 'Perfect gerund — having + V3',
+    titleMyanmar: 'Perfect gerund — gerund ရဲ့အတိတ်ပုံစံ (having + V3)',
     titleMyanmarTh: 'Perfect gerund: having + กริยาช่อง 3',
     explanationMyanmar:
       'having + V3 — gerund ရဲ့အတိတ်ပုံစံ၊ အဓိကကြိယာထက် စောဖြစ်ခဲ့တဲ့လုပ်ရပ်ကို ပြတယ်။ He denied having taken the money. Admit, deny, regret, remember, apologize for + having + V3. အနုတ်ဆို not having + V3။',
@@ -416,7 +416,7 @@ export const grammarRulesC1C2: GrammarRuleC1C2[] = [
     level: 'C1',
     title: 'Accuse of, blame for, praise for, charge with',
     titleMyanmar: 'accuse of / blame for / praise for — စွပ်စွဲ/ချီးမွမ်းပုံစံများ',
-    titleMyanmarTh: 'accuse of / blame for / praise for / charge with',
+    titleMyanmarTh: 'กริยา + บุพบท + gerund: accuse of / blame for / praise for / charge with',
     explanationMyanmar:
       'Accuse sb of doing, blame sb for doing, praise sb for doing, charge sb with doing, congratulate sb on doing, forgive sb for doing — preposition + gerund ပုံစံ။ Preposition မှားရင် အဓိပ္ပာယ်လွဲတတ်တယ်၊ တစ်ခုချင်းကို အတွဲနဲ့မှတ်ထား။',
     explanationMyanmarTh: 'accuse sb of doing, blame sb for doing, praise sb for doing, charge sb with doing, congratulate sb on doing, forgive sb for doing — โครงสร้าง บุพบท + gerund ถ้าใช้บุพบทผิดความหมายจะเพี้ยน ต้องจำทีละคู่',
@@ -542,7 +542,7 @@ export const grammarRulesC1C2: GrammarRuleC1C2[] = [
     level: 'C1',
     title: 'However hard / Strange as it may seem',
     titleMyanmar: 'However + adjective နဲ့ as + adjective + as အပေးအယူပုံစံ',
-    titleMyanmarTh: 'However hard / Strange as it may seem',
+    titleMyanmarTh: 'โครงสร้างยอมความแบบ however / as: However hard / Strange as it may seem',
     explanationMyanmar:
       'However + adjective/adverb + subject + verb (= ဘယ်လောက်ပဲ...စေကာမူ): However hard he tried. Adjective + as + subject + may/might: Strange as it may seem, ... may/might ကို ဖြုတ်လို့လည်းရတယ် (Strange as it seems)။ တရားဝင်အရေးအသားမှာ အသုံးများတယ်။',
     explanationMyanmarTh: 'However + คำคุณศัพท์ / กริยาวิเศษณ์ + ประธาน + กริยา (= ไม่ว่าจะ...แค่ไหนก็ตาม): However hard he tried. คำคุณศัพท์ + as + ประธาน + may / might: Strange as it may seem ... ละ may / might ได้ (Strange as it seems) ใช้มากในงานเขียนทางการ',
@@ -550,7 +550,7 @@ export const grammarRulesC1C2: GrammarRuleC1C2[] = [
       { english: 'However carefully you drive, accidents can happen.', myanmar: 'ဘယ်လောက်ပဲ ဂရုစိုက်မောင်းစေကာမူ မတော်တဆမှုဖြစ်နိုင်တယ်။', myanmarTh: 'คุณจะขับระวังแค่ไหน อุบัติเหตุก็เกิดได้', },
       { english: 'Strange as it may seem, I enjoy doing housework.', myanmar: 'ထူးဆန်းနေပေမဲ့ အိမ်မှုကိစ္စလုပ်ရတာကို ငါနှစ်သက်တယ်။', myanmarTh: 'ฟังดูแปลก แต่ผมชอบทำงานบ้าน', },
       { english: 'Difficult as the exam was, she passed with distinction.', myanmar: 'စာမေးပွဲ ဘယ်လောက်ပဲခက်စေကာမူ သူမ ဂုဏ်ထူးနဲ့အောင်ခဲ့တယ်။', myanmarTh: 'ข้อสอบยากแค่ไหน เธอก็สอบผ่านด้วยคะแนนดีเด่น', },
-      { english: 'However much I earn, I never seem to save.', myanmar: 'ဘယ်လောက်ပဲ ဝင်ငွေရရ စုမိသလို မခံစားရဘူး။', myanmarTh: 'ผมจะหาเงินได้มากแค่ไหน ก็เก็บไม่ได้สักที', },
+      { english: 'However much I earn, I never seem to save.', myanmar: 'ဘယ်လောက်ပဲ ဝင်ငွေရရ ဘယ်တော့မှ မစုမိဘူး။', myanmarTh: 'ผมจะหาเงินได้มากแค่ไหน ก็เก็บไม่ได้สักที', },
     ],
     drills: [
       { prompt: '___ rich he is, he\'s not happy.', answer: 'However', options: ['However', 'Whatever', 'Whenever', 'Wherever'] },
@@ -569,7 +569,7 @@ export const grammarRulesC1C2: GrammarRuleC1C2[] = [
     explanationMyanmarTh: 'Apposition คือการใช้นามหรือวลีนามขยายคำนามอีกตัว: My friend the doctor called คั่นด้วยจุลภาคสองตัว แบบ non-restrictive (ละได้) ต่างกับแบบ restrictive (ละไม่ได้ เช่น My brother John ไม่ใส่จุลภาค)',
     examples: [
       { english: 'Mandalay, the last royal capital, attracts many tourists.', myanmar: 'မန္တလေး (နောက်ဆုံးမင်းနေပြည်တော်) က ခရီးသွားများစွာကို ဆွဲဆောင်တယ်။', myanmarTh: 'มัณฑะเลย์ เมืองหลวงสุดท้ายของราชวงศ์ ดึงดูดนักท่องเที่ยวมากมาย', },
-      { english: 'Her husband, a quiet man, rarely speaks.', myanmar: 'သူ့ယောကျ်ား (တိတ်ဆိတ်တဲ့လူ) က ရှားရှားပါးပါးပဲ စကားပြောတယ်။', myanmarTh: 'สามีของเธอ ชายเงียบๆ แทบไม่พูด', },
+      { english: 'Her husband, a quiet man, rarely speaks.', myanmar: 'သူ့ယောက်ျား (တိတ်ဆိတ်တဲ့လူ) က ရှားရှားပါးပါးပဲ စကားပြောတယ်။', myanmarTh: 'สามีของเธอ ชายเงียบๆ แทบไม่พูด', },
       { english: 'We visited Bagan, an ancient city of temples.', myanmar: 'ငါတို့ ပုဂံ (ရှေးဟောင်းဘုရားမြို့) ကို သွားလည်ခဲ့တယ်။', myanmarTh: 'พวกเราไปพุกาม เมืองโบราณแห่งวัด', },
       { english: 'The CEO, Ms. Aye, announced the merger.', myanmar: 'စီအီးအို (ဒေါ်အေး) က ပေါင်းစည်းမှုကို ကြေညာခဲ့တယ်။', myanmarTh: 'ซีอีโอ คุณเอ ประกาศควบรวมกิจการ', },
     ],
@@ -691,7 +691,7 @@ export const grammarRulesC1C2: GrammarRuleC1C2[] = [
     titleMyanmar: 'It wasn\'t until ... that ... အချိန်အလေးပေးဝါကျ',
     titleMyanmarTh: 'ประโยคเน้นเวลา: It wasn\'t until ... that ...',
     explanationMyanmar:
-      'It wasn\'t until + အချိန် + that + clause (= ...မှပဲ): It wasn\'t until midnight that he arrived. It was only when... that... အလေးပေးချင်တဲ့အချိန်ကို that နောက်မှာထား၊ "နောက်ကျမှ" ဆိုတဲ့ အရိပ်အမြွက်ပါတယ်။',
+      'It wasn\'t until + အချိန် + that + clause (= ...မှပဲ): It wasn\'t until midnight that he arrived. It was only when... that... အလေးပေးချင်တဲ့အချိန်ကို until/when နဲ့ that ကြားမှာထား၊ "နောက်ကျမှ" ဆိုတဲ့ အရိပ်အမြွက်ပါတယ်။',
     explanationMyanmarTh: 'It was not until + เวลา + that + อนุประโยค (= ...ถึงได้...): It was not until midnight that he arrived / It was only when ... that ... เน้นช่วงเวลาที่ต้องการ มีนัยว่า ช้ากว่าที่ควร',
     examples: [
       { english: 'It wasn\'t until 2020 that she published her first novel.', myanmar: '၂၀၂၀ ရောက်မှပဲ သူမပထမဆုံး ဝတ္ထုထုတ်ဝေခဲ့တယ်။', myanmarTh: 'เธอเพิ่งตีพิมพ์นิยายเล่มแรกในปี 2020', },
@@ -709,8 +709,8 @@ export const grammarRulesC1C2: GrammarRuleC1C2[] = [
     id: 'f14-g-c2-003',
     level: 'C2',
     title: 'Extraposition: It is vital that ... / To complain is pointless',
-    titleMyanmar: 'Extraposition — It is ... that ... / To ... is ...',
-    titleMyanmarTh: 'Extraposition: It is ... that ...',
+    titleMyanmar: 'ရှည်တဲ့ subject clause ကို နောက်ရွှေ့တဲ့ extraposition — It is ... that ... / To ... is ...',
+    titleMyanmarTh: 'Extraposition: การย้ายอนุประโยคประธานไปไว้ท้าย (It is ... that ...)',
     explanationMyanmar:
       'ရှည်တဲ့ subject clause ကို နောက်ရွှေ့ပြီး it ကို အစားထိုးထားတာ။ It is vital that you attend (= That you attend is vital)။ It seems clear that..., It is no use crying. To complain is pointless (to-infinitive ကို subject လုပ် — တရားဝင်)။',
     explanationMyanmarTh: 'Extraposition คือการย้ายอนุประโยคประธานที่ยาวไปไว้ท้าย แล้วใช้ it แทนที่: It is vital that you attend (= That you attend is vital) / It seems clear that ... / It is no use crying / To complain is pointless (ใช้ to-infinitive เป็นประธาน — ทางการ)',
@@ -772,7 +772,7 @@ export const grammarRulesC1C2: GrammarRuleC1C2[] = [
     id: 'f14-g-c2-006',
     level: 'C2',
     title: 'Absolute phrases: Weather permitting, all things considered',
-    titleMyanmar: 'Absolute phrase — Weather permitting ...',
+    titleMyanmar: 'Absolute phrase (noun + participle ပုံစံ) — Weather permitting ...',
     titleMyanmarTh: 'วลีอิสระ (absolute phrase): Weather permitting ...',
     explanationMyanmar:
       'Noun + participle (weather permitting, all things considered, the meeting (being) over, God willing) — ဝါကျတစ်ခုလုံးကို ပြင်ဆင်တယ်၊ သူ့ကိုယ်ပိုင် subject ရှိတယ်။ တရားဝင်အရေးအသားနဲ့ မိန့်ခွန်းတွေမှာ သုံးတယ်။',
@@ -793,7 +793,7 @@ export const grammarRulesC1C2: GrammarRuleC1C2[] = [
     id: 'f14-g-c2-007',
     level: 'C2',
     title: 'Perfect participle clauses: Having finished, ...',
-    titleMyanmar: 'Having + V3 participle clause',
+    titleMyanmar: 'အရင်ဖြစ်လုပ်ရပ်ကို ပြတဲ့ participle — Having + V3',
     titleMyanmarTh: 'อนุประโยค perfect participle: Having finished ...',
     explanationMyanmar:
       'Having + past participle — အဓိက clause ထက်စောဖြစ်ခဲ့တဲ့ လုပ်ရပ်ကိုပြတယ်။ Having finished dinner, we went for a walk. Having been delayed (= passive ပုံစံ)။ အနုတ်ဆို Not having + V3။',
@@ -898,7 +898,7 @@ export const grammarRulesC1C2: GrammarRuleC1C2[] = [
     id: 'f14-g-c2-012',
     level: 'C2',
     title: 'Infinitive of result: only to discover ...',
-    titleMyanmar: 'Infinitive of result — only to find ...',
+    titleMyanmar: 'Infinitive of result — ရလဒ်ပြတဲ့ only to find ... ပုံစံ',
     titleMyanmarTh: 'Infinitive แสดงผล: only to discover ...',
     explanationMyanmar:
       'only + to-infinitive — မျှော်လင့်မထားတဲ့ အဆုံး/ရလဒ်ဆိုးကိုပြတယ်။ He rushed home only to find it empty. "Was to + V1" လည်း ရလဒ်ပြနိုင်တယ် — He was to become famous later (နောက်ပိုင်း နာမည်ကြီးလာခဲ့တယ်)။',
@@ -927,7 +927,7 @@ export const grammarRulesC1C2: GrammarRuleC1C2[] = [
     examples: [
       { english: 'It was too good an offer to refuse.', myanmar: 'ငြင်းဖို့ခက်တဲ့ အရမ်းကောင်းတဲ့ ကမ်းလှမ်းချက်ပါ။', myanmarTh: 'เป็นข้อเสนอที่ดีเกินกว่าจะปฏิเสธ', },
       { english: 'He is too proud a man to admit his mistake.', myanmar: 'သူက အမှားဝန်ခံဖို့ မာနအရမ်းကြီးတဲ့ လူပါ။', myanmarTh: 'เขาเป็นคนหยิ่งเกินกว่าจะยอมรับผิด', },
-      { english: 'That\'s a strange enough coincidence to be suspicious.', myanmar: 'သံသယဖြစ်စရာ ထူးဆန်းတဲ့ တိုက်ဆိုင်မှုပါ။', myanmarTh: 'เป็นเรื่องบังเอิญที่แปลกจนน่าสงสัย', },
+      { english: 'That\'s a strange enough coincidence to be suspicious.', myanmar: 'သံသယဖြစ်စရာ ထူးဆန်းတဲ့ တိုက်ဆိုင်မှုပါ။', myanmarTh: 'เป็นเรื่องบังเอิญที่แปลกพอที่จะน่าสงสัย', },
       { english: 'She was fool enough to believe him.', myanmar: 'သူ့ကို ယုံလောက်အောင် မိုက်မဲခဲ့တယ်။', myanmarTh: 'เธอโง่พอที่จะเชื่อเขา', },
     ],
     drills: [
@@ -949,7 +949,7 @@ export const grammarRulesC1C2: GrammarRuleC1C2[] = [
       { english: 'She risked losing everything by investing in the startup.', myanmar: 'စတာ့တပ်မှာ ရင်းနှီးမြှုပ်နှံပြီး အကုန်ဆုံးရှုံးဖို့ စွန့်စားခဲ့တယ်။', myanmarTh: 'เธอเสี่ยงที่จะเสียทุกอย่างไปกับการลงทุนในสตาร์ทอัพ', },
       { english: 'They postponed signing the contract until Monday.', myanmar: 'စာချုပ်လက်မှတ်ထိုးတာကို တနင်္လာနေ့ထိ ရွှေ့ဆိုင်းခဲ့တယ်။', myanmarTh: 'พวกเขาเลื่อนการเซ็นสัญญาออกไปเป็นวันจันทร์', },
       { english: 'He narrowly avoided being hit by the car.', myanmar: 'ကားတိုက်ခံရဖို့ နည်းနည်းလေး လွဲခဲ့တယ်။', myanmarTh: 'เขาเกือบโดนรถชน', },
-      { english: 'Would you mind opening the window?', myanmar: 'ပြတင်းပေါက် ဖွင့်ပေးဖို့ စိတ်မဆိုးဘူးလား။', myanmarTh: 'คุณช่วยเปิดหน้าต่างได้ไหม', },
+      { english: 'Would you mind opening the window?', myanmar: 'ပြတင်းပေါက် ဖွင့်ပေးဖို့ စိတ်မဆိုးဘူးလား။', myanmarTh: 'คุณจะว่าอะไรไหมถ้าจะเปิดหน้าต่าง', },
     ],
     drills: [
       { prompt: 'She denied ___ the keys.', answer: 'taking', options: ['taking', 'to take', 'take', 'taken'] },
@@ -962,7 +962,7 @@ export const grammarRulesC1C2: GrammarRuleC1C2[] = [
     level: 'C2',
     title: 'Each vs every vs all: subtle differences',
     titleMyanmar: 'each / every / all ကွာခြားချက်အသေးစိတ်',
-    titleMyanmarTh: 'ความแตกต่างละเอียด: each / every / all',
+    titleMyanmarTh: 'ความแตกต่างที่ละเอียดอ่อน: each / every / all',
     explanationMyanmar:
       'Each (= တစ်ခုချင်း — တစ်ဦးချင်းအာရုံစိုက်): Each student has a book. Every (= အားလုံးခြုံ — every + singular): Every student passed. All (= အားလုံးစုပေါင်း): All students passed. Each of / every one of + plural noun. "Almost every" မှန်တယ်၊ "almost each" မှားတယ်။',
     explanationMyanmarTh: 'Each (= ทีละหนึ่ง — เน้นรายตัว): Each student has a book / Every (= ทั้งหมดโดยรวม): Every student passed (every + เอกพจน์) / All (= ทั้งหมดรวมกัน): All students passed / Each of / every one of + คำนามพหูพจน์ / almost every ถูก แต่ almost each ผิด',
@@ -982,7 +982,7 @@ export const grammarRulesC1C2: GrammarRuleC1C2[] = [
     id: 'f14-g-c2-016',
     level: 'C2',
     title: 'Generic reference: the rich, the unemployed',
-    titleMyanmar: 'the + adjective — the rich, the poor',
+    titleMyanmar: 'the + adjective — the rich, the poor လူအုပ်စုရည်ညွှန်းပုံစံ',
     titleMyanmarTh: 'การอ้างถึงแบบทั่วไป: the rich / the unemployed',
     explanationMyanmar:
       'The + adjective (= လူအုပ်စု): the rich, the poor, the elderly, the unemployed — plural verb လိုက်တယ်။ Bare plural (= အထွေထွေ): Dogs are loyal. The + singular (= မျိုးစိတ်တစ်ခုလုံး — တရားဝင်): The tiger is endangered.',
@@ -1053,7 +1053,7 @@ export const grammarRulesC1C2: GrammarRuleC1C2[] = [
     examples: [
       { english: 'Don\'t you remember me?', myanmar: 'ငါ့ကို မမှတ်မိဘူးလား (မှတ်မိမယ်လို့ ထင်တယ်)။', myanmarTh: 'คุณจำผมไม่ได้หรือ', },
       { english: 'Haven\'t you eaten yet? It\'s already noon!', myanmar: 'မစားရသေးဘူးလား၊ နေ့လယ်ဖြစ်နေပြီ!', myanmarTh: 'คุณยังไม่ได้กินข้าวหรือ เที่ยงแล้วนะ', },
-      { english: 'Isn\'t she beautiful in that dress?', myanmar: 'အဲဒီအဝတ်နဲ့ သူမ မလှဘူးလား (လှတယ်လို့ ထင်တယ်)။', myanmarTh: 'เธอสวยในชุดนั้นใช่ไหม', },
+      { english: 'Isn\'t she beautiful in that dress?', myanmar: 'အဲဒီအဝတ်နဲ့ သူမ မလှဘူးလား (လှတယ်လို့ ထင်တယ်)။', myanmarTh: 'เธอไม่สวยในชุดนั้นหรือ', },
       { english: 'Can\'t you hear that noise?', myanmar: 'အဲဒီဆူညံသံ မကြားဘူးလား။', myanmarTh: 'คุณไม่ได้ยินเสียงนั้นหรือ', },
     ],
     drills: [

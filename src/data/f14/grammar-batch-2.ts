@@ -317,7 +317,7 @@ export const grammarRulesB2C1: GrammarRuleB2C1[] = [
     explanationMyanmarTh: 'ใช้ V-ing / V3 / having + V3 ทำเป็นวลีสั้นๆ บอกเหตุผล เวลา หรือสถานการณ์: Having finished dinner we went out (กินข้าวเสร็จแล้วพวกเราก็ออกไปข้างนอก) มีประโยชน์มากในงานเขียน',
     examples: [
       { english: 'Having finished her work, she went home early.', myanmar: 'အလုပ်ပြီးတော့ သူမ စောစောအိမ်ပြန်ခဲ့တယ်။', myanmarTh: 'ทำงานเสร็จแล้ว เธอกลับบ้านแต่เช้า', },
-      { english: 'Tired after the long flight, he slept for ten hours.', myanmar: 'ခရီးရှည်ပျံသန်းပြီးပင်ပန်းတာကြောင့် သူ ဆယ်နာရီကြာအိပ်ခဲ့တယ်။', myanmarTh: 'เหนื่อยหลังเที่ยวบินยาว เขานอนสิบชั่วโมง', },
+      { english: 'Tired after the long flight, he slept for ten hours.', myanmar: 'ခရီးရှည်ပျံသန်းပြီးပင်ပန်းတာကြောင့် သူ ဆယ်နာရီကြာအိပ်ခဲ့တယ်။', myanmarTh: 'เหนื่อยจากเที่ยวบินอันยาวนาน เขานอนสิบชั่วโมง', },
       { english: 'Walking through the park, I met an old friend.', myanmar: 'ပန်းခြံထဲလမ်းလျှောက်ရင်း သူငယ်ချင်းဟောင်းတစ်ယောက်နဲ့တွေ့ခဲ့တယ်။', myanmarTh: 'เดินผ่านสวน ผมเจอเพื่อนเก่า', },
       { english: 'Built in 1905, the temple attracts thousands of visitors.', myanmar: '၁၉၀၅ မှာတည်ဆောက်ခဲ့တဲ့ဘုရားက ဧည့်သည်ထောင်ချီကိုဆွဲဆောင်တယ်။', myanmarTh: 'วัดซึ่งสร้างขึ้นในปี 1905 ดึงดูดนักท่องเที่ยวหลายพันคน', },
     ],
@@ -458,7 +458,7 @@ export const grammarRulesB2C1: GrammarRuleB2C1[] = [
     level: 'B2',
     title: 'Future Perfect Continuous in use',
     titleMyanmar: 'Future Perfect Continuous လက်တွေ့သုံး',
-    titleMyanmarTh: 'Future Perfect Continuous',
+    titleMyanmarTh: 'Future Perfect Continuous (เหตุการณ์ที่ดำเนินต่อเนื่องจนถึงอนาคต)',
     explanationMyanmar:
       'အနာဂတ်အချိန်တစ်ခုမှာ ကြာမြင့်နေပြီးဖြစ်မယ့်လုပ်ဆောင်ချက်အတွက် will have been + V-ing သုံးတယ်။ By next year, I will have been working here for ten years. ကြာချိန်ကို အလေးပေးတယ်။',
     explanationMyanmarTh: 'การกระทำที่จะดำเนินมานานจนถึงจุดหนึ่งในอนาคตใช้ will have been + กริยาเติม -ing: By next year I will have been working here for ten years เน้นระยะเวลา',
@@ -524,7 +524,7 @@ export const grammarRulesB2C1: GrammarRuleB2C1[] = [
     titleMyanmarTh: 'could have / would have (เหตุการณ์ที่เกือบเกิด)',
     explanationMyanmar:
       'ဖြစ်နိုင်ခဲ့ပေမယ့် မဖြစ်ခဲ့တဲ့အရာတွေအတွက် could have + V3 (လုပ်နိုင်ခဲ့တယ်)၊ would have + V3 (လုပ်ခဲ့မှာပါ) သုံးတယ်။ I could have won. I would have helped, but I was busy.။',
-    explanationMyanmarTh: 'สิ่งที่เกือบจะเกิดแต่ไม่เกิด: could have + กริยาช่อง 3 (เกือบทำได้) would have + กริยาช่อง 3 (คงจะทำ): I could have won / I would have helped but I was busy',
+    explanationMyanmarTh: 'สิ่งที่เกือบจะเกิดแต่ไม่เกิด: could have + กริยาช่อง 3 (เกือบทำได้) / would have + กริยาช่อง 3 (คงจะทำ): I could have won / I would have helped but I was busy',
     examples: [
       { english: 'I could have bought that house, but I hesitated.', myanmar: 'ငါ အဲဒီအိမ်ကို ဝယ်နိုင်ခဲ့ပေမယ့် မဝယ်ခဲ့ဘူး၊ တွန့်ဆုတ်နေခဲ့တယ်။', myanmarTh: 'ผมเกือบซื้อบ้านหลังนั้น แต่ลังเล', },
       { english: 'She would have come, but she was ill.', myanmar: 'သူမ လာခဲ့မှာပါ၊ ဒါပေမဲ့ နေမကောင်းဖြစ်နေခဲ့တယ်။', myanmarTh: 'เธอคงมา แต่เธอป่วย', },
@@ -542,7 +542,7 @@ export const grammarRulesB2C1: GrammarRuleB2C1[] = [
     level: 'B2',
     title: 'Causative: have / get something done',
     titleMyanmar: 'have / get ... done — သူများကိုခိုင်းစေနည်း',
-    titleMyanmarTh: 'Causative: have / get something done',
+    titleMyanmarTh: 'have / get something done (ให้คนอื่นทำให้)',
     explanationMyanmar:
       'သူများကိုအလုပ်ခိုင်းတဲ့အခါ have + အရာ + V3 (I had my hair cut)၊ get + အရာ + V3 (I got my car fixed) သုံးတယ်။ ကိုယ်တိုင်မလုပ်ဘဲ ဝန်ဆောင်မှုရယူတဲ့အခါသုံးတယ်။',
     explanationMyanmarTh: 'จ้างหรือให้คนอื่นทำงานให้: have + กรรม + กริยาช่อง 3 (I had my hair cut) get + กรรม + กริยาช่อง 3 (I got my car fixed) ใช้เมื่อตัวเองไม่ได้ทำเองแต่ใช้บริการ',
@@ -755,7 +755,7 @@ export const grammarRulesB2C1: GrammarRuleB2C1[] = [
     titleMyanmarTh: 'เครื่องมือเชื่อมโยงข้อความ',
     explanationMyanmar:
       'စာပိုဒ်တွေကို ဆက်နွယ်စေတဲ့နည်းလမ်းများ: substitution (one, ones, so, do so — I want the red one)၊ reference (this, that, such — Such behaviour is unacceptable)၊ ellipsis။ ပညာရပ်ဆိုင်ရာအရေးအသားမှာ မရှိမဖြစ်လိုအပ်တယ်။',
-    explanationMyanmarTh: 'เครื่องมือเชื่อมย่อหน้า: substitution (one, ones, so, do so: I want the red one), reference (this, that, such: Such behaviour is unacceptable) ellipsis จำเป็นอย่างยิ่งในงานเขียนวิชาการ',
+    explanationMyanmarTh: 'เครื่องมือเชื่อมย่อหน้า: substitution (one, ones, so, do so: I want the red one), reference (this, that, such: Such behaviour is unacceptable), ellipsis — ทั้งหมดนี้จำเป็นอย่างยิ่งในงานเขียนวิชาการ',
     examples: [
       { english: 'I need a new laptop; this one is too slow.', myanmar: 'ငါလက်ပ်တော့အသစ်လိုတယ်၊ ဒီတစ်ခုက အရမ်းနှေးတယ်။', myanmarTh: 'ผมต้องการแล็ปท็อปใหม่ เครื่องนี้ช้าเกินไป', },
       { english: 'He promised to help, and he did so immediately.', myanmar: 'သူကူညီမယ်လို့ကတိပေးခဲ့တယ်၊ ပြီးတော့ ချက်ချင်းပဲလုပ်ပေးခဲ့တယ်။', myanmarTh: 'เขาสัญญาว่าจะช่วย และเขาก็ทำทันที', },
@@ -776,9 +776,9 @@ export const grammarRulesB2C1: GrammarRuleB2C1[] = [
     titleMyanmarTh: 'อนุประโยค relative แบบนาม: whatever / whoever',
     explanationMyanmar:
       'whatever (= anything that), whoever (= anyone who), whichever, wherever, however တို့နဲ့ ပုဒ်စုလုပ်တယ်။ Whatever you decide is fine. (မင်းဘာဆုံးဖြတ်ဖြတ် အဆင်ပြေတယ်)။ တရားဝင်စကားပြော၊ အရေးအသားမှာသုံးတယ်။',
-    explanationMyanmarTh: 'whatever (= anything that) whoever (= anyone who) whichever, wherever, however ทำเป็นอนุประโยค: Whatever you decide is fine (คุณจะตัดสินใจอย่างไรก็ได้) ใช้ในภาษาพูดและงานเขียนทางการ',
+    explanationMyanmarTh: 'whatever (= anything that) whoever (= anyone who) whichever, wherever, however ทำเป็นอนุประโยค: Whatever you decide is fine (คุณจะตัดสินใจอย่างไรก็ได้) ใช้ในภาษาพูดที่เป็นทางการและงานเขียนทางการ',
     examples: [
-      { english: 'Whatever you choose, I will support you.', myanmar: 'မင်းဘာရွေးရွေး ငါထောက်ခံမယ်။', myanmarTh: 'คุณจะเลือกอะไรผมก็สนับสนุน', },
+      { english: 'Whatever you choose, I will support you.', myanmar: 'မင်းဘာရွေးရွေး ငါထောက်ခံမယ်။', myanmarTh: 'คุณจะเลือกอะไร ผมก็จะสนับสนุนคุณ', },
       { english: 'Whoever arrives first should start the meeting.', myanmar: 'အရင်ရောက်တဲ့သူက အစည်းအဝေးစသင့်တယ်။', myanmarTh: 'ใครมาก่อนควรเริ่มการประชุม', },
       { english: 'Take whichever seat you prefer.', myanmar: 'မင်းကြိုက်တဲ့ခုံကို ယူထိုင်ပါ။', myanmarTh: 'เลือกที่นั่งที่คุณชอบ', },
       { english: 'However hard you try, some things cannot change.', myanmar: 'မင်းဘယ်လောက်ကြိုးစားကြိုးစား တချို့အရာတွေက ပြောင်းလဲလို့မရဘူး။', myanmarTh: 'คุณจะพยายามแค่ไหน บางสิ่งก็เปลี่ยนไม่ได้', },
@@ -881,7 +881,7 @@ export const grammarRulesB2C1: GrammarRuleB2C1[] = [
     titleMyanmarTh: 'Passive ขั้นสูง: get-passive และ modal passive',
     explanationMyanmar:
       'get + V3 (He got promoted — စကားပြောပုံစံ၊ များသောအားဖြင့် မမျှော်လင့်တဲ့ဖြစ်ရပ် သို့မဟုတ် subject ကိုယ်တိုင်ပါဝင်မှုရှိတဲ့အခြေအနေ)၊ modal + be + V3 (The bridge must be repaired)၊ reporting passive (He is said to be rich = လူတွေကသူချမ်းသာတယ်လို့ပြောကြတယ်)။',
-    explanationMyanmarTh: 'get + กริยาช่อง 3 (He got promoted — เหตุการณ์ไม่คาดคิด ภาษาพูด) modal + be + กริยาช่อง 3 (The bridge must be repaired) passive แบบรายงาน (He is said to be rich = เขาว่ากันว่าเขารวย)',
+    explanationMyanmarTh: 'get + กริยาช่อง 3 (He got promoted — เหตุการณ์ไม่คาดคิดหรือเหตุการณ์ที่ประธานมีส่วนเกี่ยวข้อง; ภาษาพูด) modal + be + กริยาช่อง 3 (The bridge must be repaired) passive แบบรายงาน (He is said to be rich = เขาว่ากันว่าเขารวย)',
     examples: [
       { english: 'He got fired for being late too often.', myanmar: 'သူ မကြာခဏနောက်ကျလို့ အလုပ်ဖြုတ်ခံခဲ့ရတယ်။', myanmarTh: 'เขาโดนไล่ออกเพราะสายบ่อย', },
       { english: 'The documents must be signed by Friday.', myanmar: 'စာရွက်စာတမ်းတွေကို သောကြာနေ့အရောက် လက်မှတ်ထိုးရမယ်။', myanmarTh: 'เอกสารต้องเซ็นก่อนวันศุกร์', },
@@ -948,7 +948,7 @@ export const grammarRulesB2C1: GrammarRuleB2C1[] = [
     examples: [
       { english: 'He may have forgotten our appointment.', myanmar: 'သူ ငါတို့ချိန်းဆိုမှုကို မေ့သွားခဲ့တာဖြစ်နိုင်တယ်။', myanmarTh: 'เขาอาจลืมนัดของพวกเรา', },
       { english: 'She might have taken the wrong bus.', myanmar: 'သူမ ဘတ်စ်ကားမှားစီးခဲ့တာဖြစ်နိုင်တယ်။', myanmarTh: 'เธออาจขึ้นรถเมล์ผิดคัน', },
-      { english: 'You needn\'t have cooked so much food!', myanmar: 'မင်း အစားအစာအဲလောက်အများကြီးချက်စရာမလိုခဲ့ဘူး။ (ချက်ပြီးသွားပြီ)', myanmarTh: 'คุณไม่จำเป็นต้องทำอาหารเยอะขนาดนั้นเลย', },
+      { english: 'You needn\'t have cooked so much food!', myanmar: 'မင်း အစားအစာအဲလောက်အများကြီးချက်စရာမလိုခဲ့ဘူး။ (ချက်ပြီးသွားပြီ)', myanmarTh: 'คุณไม่จำเป็นต้องทำอาหารเยอะขนาดนั้นเลย (ทำไปแล้วแต่ไม่จำเป็น)', },
       { english: 'They could have won if the referee had been fair.', myanmar: 'ဒိုင်လူကြီးတရားမျှတခဲ့ရင် သူတို့အနိုင်ရနိုင်ခဲ့တယ်။', myanmarTh: 'พวกเขาคงชนะได้ถ้ากรรมการยุติธรรม', },
     ],
     drills: [

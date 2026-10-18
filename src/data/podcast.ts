@@ -38,6 +38,16 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 78,
+    slug: 'sports-2026-10-18',
+    titleMy: 'အားကစား — Sports',
+    titleOrig: 'กีฬา — Sports',
+    descMy: 'အားကစားအကြောင်း အင်္ဂလိပ်လိုပြောနည်း — "I play football." / "Do you play football?" / "I like watching football." / "I play football twice a week."',
+    phrases: ['I play football.', 'Do you play football?', 'I like watching football.'],
+    durationSecs: 576,
+    cover: '/podcast-covers/ep-78.jpg',
+  },
+  {
     n: 77,
     slug: 'hobbies-2026-10-18',
     titleMy: 'ဝါသနာ — Hobbies',

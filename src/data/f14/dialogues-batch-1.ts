@@ -152,7 +152,7 @@ export const dialoguesBatch1: Dialogue[] = [
     turns: [
       { speaker: 'သူငယ်ချင်း ၁', speakerTh: 'เพื่อน 1', en: 'Which movie should we watch?', my: 'ဘယ်ရုပ်ရှင်ကြည့်ကြမလဲ။', th: 'ดูหนังเรื่องไหนดี' },
       { speaker: 'သူငယ်ချင်း ၂', speakerTh: 'เพื่อน 2', en: 'The funny one! It looks great.', my: 'ဟာသကားလေ။ ကောင်းမယ့်ပုံပဲ။', th: 'เรื่องตลกนั่นสิ ดูน่าสนุก' },
-      { speaker: 'သူငယ်ချင်း ၁', speakerTh: 'เพื่อน 1', en: 'Good choice. Two tickets, please.', my: 'ရွေးချယ်မှုကောင်းတယ်။ လက်မှတ်နှစ်စောင်ပေးပါ။', th: 'เลือกดี เอาตั๋วสองใบครับ' },
+      { speaker: 'သူငယ်ချင်း ၁', speakerTh: 'เพื่อน 1', en: 'Good choice. Two tickets, please.', my: 'ရွေးတာကောင်းတယ်။ လက်မှတ်နှစ်စောင်ပေးပါ။', th: 'เลือกดี เอาตั๋วสองใบครับ' },
       { speaker: 'သူငယ်ချင်း ၂', speakerTh: 'เพื่อน 2', en: 'Let us buy some popcorn too.', my: 'ပြောင်းဖူးပေါက်ပေါက်လည်း ဝယ်ကြစို့။', th: 'ซื้อป๊อปคอร์นด้วยกันเถอะ' },
       { speaker: 'သူငယ်ချင်း ၁', speakerTh: 'เพื่อน 1', en: 'The movie was so funny!', my: 'ရုပ်ရှင်က အရမ်းရယ်စရာကောင်းတယ်။', th: 'หนังตลกมากเลย!' },
       { speaker: 'သူငယ်ချင်း ၂', speakerTh: 'เพื่อน 2', en: 'I laughed the whole time.', my: 'တစ်ချိန်လုံး ရယ်နေရတယ်။', th: 'เราหัวเราะตลอดเรื่องเลย' },
@@ -171,7 +171,7 @@ export const dialoguesBatch1: Dialogue[] = [
     turns: [
       { speaker: 'မမ', speakerTh: 'พี่สาว', en: 'Hi! Long time no see!', my: 'ဟိုင်း။ တော်တော်ကြာပြီနော်။', th: 'ไฮ! ไม่ได้เจอกันนานเลย!' },
       { speaker: 'ညီမ', speakerTh: 'น้องสาว', en: 'I know! How have you been?', my: 'ဟုတ်တယ်။ နေကောင်းလား။', th: 'จริงด้วย เป็นไงบ้าง' },
-      { speaker: 'မမ', speakerTh: 'พี่สาว', en: 'Very well. What about you?', my: 'အရမ်းကောင်းတယ်။ နင်ရော့။', th: 'สบายดีมาก แล้วเธอล่ะ' },
+      { speaker: 'မမ', speakerTh: 'พี่สาว', en: 'Very well. What about you?', my: 'အရမ်းကောင်းတယ်။ နင်ရော။', th: 'สบายดีมาก แล้วเธอล่ะ' },
       { speaker: 'ညီမ', speakerTh: 'น้องสาว', en: 'Busy with work, but fine.', my: 'အလုပ်နဲ့ မအားဘူး၊ ဒါပေမဲ့ အဆင်ပြေတယ်။', th: 'งานยุ่ง แต่ก็โอเค' },
       { speaker: 'မမ', speakerTh: 'พี่สาว', en: 'What would you like to drink?', my: 'ဘာသောက်ချင်လဲ။', th: 'อยากดื่มอะไร' },
       { speaker: 'ညီမ', speakerTh: 'น้องสาว', en: 'An iced coffee, please.', my: 'ရေခဲကော်ဖီတစ်ခွက်ပေးပါ။', th: 'กาแฟเย็นแก้วนึง' },
@@ -312,7 +312,7 @@ export const dialoguesBatch1: Dialogue[] = [
       { speaker: 'ဝန်ထမ်း ၁', speakerTh: 'พนักงาน 1', en: 'It says the format is wrong.', my: 'ဖော်မတ်မှားနေတယ်လို့ပြနေတယ်။', th: 'มันขึ้นว่าฟอร์แมตผิด' },
       { speaker: 'ဝန်ထမ်း ၂', speakerTh: 'พนักงาน 2', en: 'Ah, save it as PDF first.', my: 'အော်၊ အရင် PDF အနေနဲ့ သိမ်းလိုက်။', th: 'อ๋อ เซฟเป็น PDF ก่อนสิ' },
       { speaker: 'ဝန်ထမ်း ၁', speakerTh: 'พนักงาน 1', en: 'It works now. Thank you so much!', my: 'အခုရပြီ။ ကျေးဇူးအများကြီးတင်ပါတယ်။', th: 'ได้แล้ว ขอบคุณมากๆ!' },
-      { speaker: 'ဝန်ထမ်း ၂', speakerTh: 'พนักงาน 2', en: 'Anytime!', my: 'အချိန်မရွေးပါ။', th: 'ได้ตลอดเลย!' },
+      { speaker: 'ဝန်ထမ်း ၂', speakerTh: 'พนักงาน 2', en: 'Anytime!', my: 'အချိန်မရွေးပါ။', th: 'ยินดีเสมอ!' },
     ],
   },
   {

@@ -987,7 +987,7 @@ export const dialoguesBatch2: Dialogue[] = [
     situationMy: 'ခရီးသည်က လေဆိပ် လုံခြုံရေးစစ်ဆေးမှု ဖြတ်နေတာ',
     situationTh: 'ผู้โดยสารกำลังผ่านจุดตรวจความปลอดภัยที่สนามบิน',
     turns: [
-      { speaker: 'လုံခြုံရေး', speakerTh: 'เจ้าหน้าที่รักษาความปลอดภัย', en: 'Please put your bag on the belt and empty your pockets.', my: 'အိတ်ကို စက်ခားပတ်ထေတ်ပို တင်ပီး အိတ်ကပ်တွေ ရှင်းပါ।', th: 'วางกระเป๋าบนสายพาน แล้วเอาของในกระเป๋ากางเกงออกด้วยครับ' },
+      { speaker: 'လုံခြုံရေး', speakerTh: 'เจ้าหน้าที่รักษาความปลอดภัย', en: 'Please put your bag on the belt and empty your pockets.', my: 'အိတ်ကို ခါးပတ်စက်ပေါ် တင်ပြီး အိတ်ကပ်တွေ ရှင်းပါ။', th: 'วางกระเป๋าบนสายพาน แล้วเอาของในกระเป๋ากางเกงออกด้วยครับ' },
       { speaker: 'ခရီးသည်', speakerTh: 'ผู้โดยสาร', en: 'Do I need to take off my shoes?', my: 'ဖိနပ် ချွတ်ရမလား။', th: 'ต้องถอดรองเท้าไหมครับ' },
       { speaker: 'လုံခြုံရေး', speakerTh: 'เจ้าหน้าที่รักษาความปลอดภัย', en: 'Yes, please. And place your laptop in a separate tray.', my: 'ဟုတ်တယ်၊ ချွတ်ပါ။ လက်ပ်တော့ကို သီးခြား ဗန်းထဲ ထည့်ပါ။', th: 'ใช่ครับ แล้ววางโน้ตบุ๊กในถาดแยกนะครับ' },
       { speaker: 'ခရီးသည်', speakerTh: 'ผู้โดยสาร', en: 'All done. Can I walk through now?', my: 'အားလုံး ပြီးပြီ။ အခု ဖြတ်လျှောက်လို့ရပြီလား။', th: 'เสร็จแล้ว เดินผ่านได้เลยไหมครับ' },
@@ -1063,7 +1063,7 @@ export const dialoguesBatch2: Dialogue[] = [
     situationMy: 'ရုံးမှာ လုပ်ဖော်ကိုင်ဖက်အသစ်ကို ကြိုဆိုနေတာ',
     situationTh: 'ที่ออฟฟิศกำลังต้อนรับเพื่อนร่วมงานใหม่',
     turns: [
-      { speaker: 'မန်နေဂျာ', speakerTh: 'ผู้จัดการ', en: 'Welcome to our team! We’re happy to have you.', my: 'တို့အဖွဲ့ကနေ ကြိုဆိုပါတယ်။ မင်းကို ရတာ ဝမ်းသာတယ်။', th: 'ยินดีต้อนรับสู่ทีม ดีใจที่ได้คุณมา' },
+      { speaker: 'မန်နေဂျာ', speakerTh: 'ผู้จัดการ', en: 'Welcome to our team! We’re happy to have you.', my: 'တို့အဖွဲ့က ကြိုဆိုပါတယ်။ မင်းကို ရတာ ဝမ်းသာတယ်။', th: 'ยินดีต้อนรับสู่ทีม ดีใจที่ได้คุณมาร่วมทีม' },
       { speaker: 'အသစ်', speakerTh: 'คนใหม่', en: 'Thank you! I’m excited to start.', my: 'ကျေးဇူးပါ။ စဖို့ စိတ်လှုပ်ရှားနေတယ်။', th: 'ขอบคุณค่ะ ตื่นเต้นที่จะเริ่มงาน' },
       { speaker: 'မန်နေဂျာ', speakerTh: 'ผู้จัดการ', en: 'Let me show you around the office.', my: 'ရုံးကို လိုက်ပြပေးမယ်။', th: 'เดี๋ยวพาดูรอบๆ ออฟฟิศนะ' },
       { speaker: 'အသစ်', speakerTh: 'คนใหม่', en: 'Where is my desk?', my: 'ကျွန်မရဲ့ စားပွဲ ဘယ်မှာလဲ။', th: 'โต๊ะหนูอยู่ไหนคะ' },
