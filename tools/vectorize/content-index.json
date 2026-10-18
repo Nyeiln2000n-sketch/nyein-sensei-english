@@ -7475,10 +7475,10 @@
   {
    "id": "f14-b3-hotel-5",
    "kind": "dialogue",
-   "en": "Hi, I think I lost my room key card. Do not worry, we can make you a new one. What is your room number? Room 417. I had it this morning, but now it is gone. May I see your ID to confirm your reservation? Here you are. My name is May Thazin. Thank you, Ms. May. Here is your new key card. Is there a charge for the replacement? The first replacement is free. Please keep it safe.",
-   "en_norm": "hi i think i lost my room key card do not worry we can make you a new one what is your room number room 417 i had it this morning but now it is gone may i see your id to confirm your reservation here you are my name is may thazin thank you ms may here is your new key card is there a charge for the replacement the first replacement is free please keep it safe",
+   "en": "Hi, I think I lost my room key card. Do not worry, we can make you a new one. What is your room number? Room 417. I had it this morning, but now it is gone. May I see your ID to confirm your reservation? Here you are. My name is May Thazin. Thank you, May Thazin. Here is your new key card. Is there a charge for the replacement? The first replacement is free. Please keep it safe.",
+   "en_norm": "hi i think i lost my room key card do not worry we can make you a new one what is your room number room 417 i had it this morning but now it is gone may i see your id to confirm your reservation here you are my name is may thazin thank you may thazin here is your new key card is there a charge for the replacement the first replacement is free please keep it safe",
    "my_norm": "",
-   "fingerprint": "e5c5edbfde3e992e",
+   "fingerprint": "3f05752ac7879cf7",
    "vocab_sig": [
     "417",
     "card",
@@ -7494,7 +7494,6 @@
     "lost",
     "make",
     "morning",
-    "ms",
     "name",
     "new",
     "now",
@@ -7509,7 +7508,7 @@
     "think",
     "worry"
    ],
-   "template_sig": "W , i W i W my W W W . do not W , we can W you a W one . what is your W W ? W W . i had it this W , but W it is W . may i W your W to W your W ? here you are . my W is may W . W you , W . may . here is your W W W . is there a W for the W ? the W W is W . please W it W .",
+   "template_sig": "W , i W i W my W W W . do not W , we can W you a W one . what is your W W ? W W . i had it this W , but W it is W . may i W your W to W your W ? here you are . my W is may W . W you , may W . here is your W W W . is there a W for the W ? the W W is W . please W it W .",
    "tags": [
     "travel",
     "dialogue"

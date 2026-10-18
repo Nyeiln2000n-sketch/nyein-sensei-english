@@ -38,6 +38,16 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 79,
+    slug: 'music-and-movies-2026-10-18',
+    titleMy: 'ဂီတနှင့် ရုပ်ရှင် — Music and movies',
+    titleOrig: 'ดนตรีและหนัง — Music and movies',
+    descMy: 'ဂီတနဲ့ ရုပ်ရှင်အကြောင်း အင်္ဂလိပ်လိုပြောနည်း — "I like Thai songs." / "What music do you like?" / "It is a good movie." / "I watched a movie last night."',
+    phrases: ['I like Thai songs.', 'What music do you like?', 'It is a good movie.'],
+    durationSecs: 512,
+    cover: '/podcast-covers/ep-79.jpg',
+  },
+  {
     n: 78,
     slug: 'sports-2026-10-18',
     titleMy: 'အားကစား — Sports',
