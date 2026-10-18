@@ -38,6 +38,16 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 77,
+    slug: 'hobbies-2026-10-18',
+    titleMy: 'ဝါသနာ — Hobbies',
+    titleOrig: 'งานอดิเรก — Hobbies',
+    descMy: 'အားလပ်ချိန်မှာ ဘာလုပ်ရတာကြိုက်လဲ အင်္ဂလိပ်လို ပြောတတ်မယ်။',
+    phrases: ['I like reading.', 'What do you like doing?', 'My hobby is cooking.'],
+    durationSecs: 703,
+    cover: '/podcast-covers/ep-77.jpg',
+  },
+  {
     n: 76,
     slug: 'weather-small-talk-2026-10-17',
     titleMy: 'အပိုင်း ၇၆ — ရာသီဥတုအကြောင်း စကားပြောခြင်း',

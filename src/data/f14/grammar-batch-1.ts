@@ -128,7 +128,7 @@ export const grammarRules: GrammarRule[] = [
     titleMyanmarTh: 'กาลปัจจุบันกำลังดำเนินอยู่',
     explanationMyanmar:
       'အခုလုပ်နေတဲ့အရာ၊ အခုဖြစ်နေတဲ့အရာပြောတဲ့အခါ am/is/are + ကြိယာ-ing သုံးတယ်။ ဥပမာ I am eating, she is sleeping။',
-    explanationMyanmarTh: 'เมื่อพูดถึงสิ่งที่กำลังทำหรือกำลังเกิดขึ้นในขณะนี้ ให้ใช้ am / is / are + กริยาเติม -ing เช่น I am eating she is sleeping',
+    explanationMyanmarTh: 'เมื่อพูดถึงสิ่งที่กำลังทำหรือกำลังเกิดขึ้นในขณะนี้ ให้ใช้ am / is / are + กริยาเติม -ing เช่น I am eating, she is sleeping',
     examples: [
       { english: 'I am cooking dinner now.', myanmar: 'ကျွန်တော် အခု ညစာချက်နေတယ်။', myanmarTh: 'ผมกำลังทำอาหารเย็น', },
       { english: 'She is reading a book.', myanmar: 'သူမ စာအုပ်ဖတ်နေတယ်။', myanmarTh: 'เธอกำลังอ่านหนังสือ', },
@@ -667,7 +667,7 @@ export const grammarRules: GrammarRule[] = [
   },
   {
     id: 'gr-articles-the',
-    level: 'A2',
+    level: 'A1',
     title: 'Article: the',
     titleMyanmar: 'the သုံးနည်း',
     titleMyanmarTh: 'วิธีใช้ the',
@@ -711,7 +711,7 @@ export const grammarRules: GrammarRule[] = [
     id: 'gr-much-many',
     level: 'A2',
     title: 'Much / Many / A lot of',
-    titleMyanmar: 'much / many / a lot of',
+    titleMyanmar: 'much / many / a lot of သုံးနည်း',
     titleMyanmarTh: 'much / many / a lot of',
     explanationMyanmar:
       'many = ရေတွက်ရတဲ့နာမ်အများနဲ့သုံး (many books)၊ much = ရေတွက်မရတဲ့နာမ်နဲ့သုံး (much time) — နှစ်ခုလုံး အနုတ်နဲ့မေးခွန်းမှာသုံးလေ့ရှိ။ a lot of = နှစ်မျိုးလုံးနဲ့ရတယ်။',
@@ -753,7 +753,7 @@ export const grammarRules: GrammarRule[] = [
     id: 'gr-must-mustnt',
     level: 'A2',
     title: 'Must / Mustn\'t',
-    titleMyanmar: 'must / mustn\'t',
+    titleMyanmar: 'must / mustn\'t သုံးနည်း',
     titleMyanmarTh: 'วิธีใช้ must / must not',
     explanationMyanmar:
       'မဖြစ်မနေလုပ်ရမယ့်အရာ (must) နဲ့ လုံးဝမလုပ်ရတဲ့အရာ (mustn\'t) အတွက်သုံးတယ်။ must နောက်မှာ to မထည့်ရဘူး။',
@@ -888,7 +888,7 @@ export const grammarRules: GrammarRule[] = [
       { english: 'I hurt myself.', myanmar: 'ကျွန်တော် ကိုယ့်ကိုယ်ကိုယ် ထိခိုက်မိတယ်။', myanmarTh: 'ผมทำร้ายตัวเอง', },
       { english: 'She taught herself English.', myanmar: 'သူမ ကိုယ့်ဘာသာ အင်္ဂလိပ်စာသင်ခဲ့တယ်။', myanmarTh: 'เธอสอนภาษาอังกฤษตัวเอง', },
       { english: 'They enjoyed themselves.', myanmar: 'သူတို့ ပျော်ရွှင်ခဲ့ကြတယ်။', myanmarTh: 'พวกเขาสนุกกันเอง', },
-      { english: 'Be careful! Don\'t hurt yourself.', myanmar: 'သတိထား။ ကိုယ့်ကိုယ်ကိုယ် မထိခိုက်စေနဲ့။', myanmarTh: 'ระวัง! อย่าทำร้ายตัวเอง', },
+      { english: 'Be careful! Don\'t hurt yourself.', myanmar: 'သတိထား။ ကိုယ့်ကိုယ်ကိုယ် မထိခိုက်မိစေနဲ့။', myanmarTh: 'ระวัง! อย่าทำร้ายตัวเอง', },
     ],
     drills: [
       { prompt: 'I did it ___.', answer: 'myself', options: ['myself', 'me', 'I', 'my'] },
@@ -991,7 +991,7 @@ export const grammarRules: GrammarRule[] = [
     explanationMyanmarTh: 'เหตุการณ์ที่กำลังดำเนินอยู่ในอดีต (was / were + กริยาเติม -ing) เป็นฉากหลัง ส่วนเหตุการณ์ที่เสร็จสมบูรณ์ (กริยาช่อง 2) แทรกเข้ามา มักใช้คู่กับ when / while',
     examples: [
       { english: 'I was cooking when he arrived.', myanmar: 'သူရောက်လာတုန်းက ကျွန်တော် ချက်ပြုတ်နေခဲ့တယ်။', myanmarTh: 'ผมกำลังทำอาหารตอนเขามาถึง', },
-      { english: 'While she was reading, the phone rang.', myanmar: 'သူမစာဖတ်နေတုန်း ဖုန်းမြည်ခဲ့တယ်။', myanmarTh: 'ขณะที่เธอกำลังอ่านหนังสือ โทรศัพท์ดัง', },
+      { english: 'While she was reading, the phone rang.', myanmar: 'သူမ စာဖတ်နေတုန်း ဖုန်းမြည်ခဲ့တယ်။', myanmarTh: 'ขณะที่เธอกำลังอ่านหนังสือ โทรศัพท์ดัง', },
       { english: 'They were walking home when it started to rain.', myanmar: 'မိုးစရွာတုန်းက သူတို့ အိမ်ပြန်လျှောက်နေခဲ့ကြတယ်။', myanmarTh: 'พวกเขากำลังเดินกลับบ้านตอนฝนเริ่มตก', },
       { english: 'He broke his leg while he was playing football.', myanmar: 'ဘောလုံးကန်နေတုန်း သူ့ခြေထောက်ကျိုးခဲ့တယ်။', myanmarTh: 'เขาขาหักขณะที่กำลังเล่นฟุตบอล', },
     ],
@@ -1012,7 +1012,7 @@ export const grammarRules: GrammarRule[] = [
     explanationMyanmarTh: 'just = เพิ่งจะ already = เรียบร้อยแล้ว (ประโยคบอกเล่า) yet = ยังไม่ (ประโยคปฏิเสธและคำถาม) วางหลัง have / has (yet วางท้ายประโยค)',
     examples: [
       { english: 'I have just eaten.', myanmar: 'ကျွန်တော် အခုပဲ စားပြီးပြီ။', myanmarTh: 'ผมเพิ่งกินเสร็จ', },
-      { english: 'She has already finished.', myanmar: 'သူမ ပြီးနှင့်ပြီးပြီ။', myanmarTh: 'เธอเสร็จเรียบร้อยแล้ว', },
+      { english: 'She has already finished.', myanmar: 'သူမ အရင်ကတည်းက ပြီးပြီ။', myanmarTh: 'เธอเสร็จเรียบร้อยแล้ว', },
       { english: 'Have you finished yet?', myanmar: 'မင်း မပြီးသေးဘူးလား။', myanmarTh: 'คุณเสร็จหรือยัง', },
       { english: 'They haven\'t arrived yet.', myanmar: 'သူတို့ မရောက်သေးဘူး။', myanmarTh: 'พวกเขายังไม่มาถึง', },
     ],
@@ -1035,7 +1035,7 @@ export const grammarRules: GrammarRule[] = [
       { english: 'She visited Bagan in 2020.', myanmar: 'သူမ ၂၀၂၀ မှာ ပုဂံသွားလည်ခဲ့တယ်။', myanmarTh: 'เธอไปพุกามในปี 2020', },
       { english: 'She has visited Bagan three times.', myanmar: 'သူမ ပုဂံကို သုံးခါသွားဖူးတယ်။', myanmarTh: 'เธอเคยไปพุกามสามครั้ง', },
       { english: 'We ate dinner an hour ago.', myanmar: 'ငါတို့ လွန်ခဲ့တဲ့ တစ်နာရီက ညစာစားခဲ့တယ်။', myanmarTh: 'พวกเรากินมื้อเย็นเมื่อชั่วโมงที่แล้ว', },
-      { english: 'We have already eaten dinner.', myanmar: 'ငါတို့ ညစာစားပြီးနှင့်ပြီးပြီ။', myanmarTh: 'พวกเรากินมื้อเย็นเรียบร้อยแล้ว', },
+      { english: 'We have already eaten dinner.', myanmar: 'ငါတို့ အရင်ကတည်းက ညစာစားပြီးပြီ။', myanmarTh: 'พวกเรากินมื้อเย็นเรียบร้อยแล้ว', },
     ],
     drills: [
       { prompt: 'I ___ him yesterday.', answer: 'saw', options: ['saw', 'have seen', 'see', 'seeing'] },
@@ -1087,9 +1087,9 @@ export const grammarRules: GrammarRule[] = [
   },
   {
     id: 'gr-a-few-little',
-    level: 'B1',
+    level: 'A2',
     title: 'A few / A little',
-    titleMyanmar: 'a few / a little',
+    titleMyanmar: 'a few / a little သုံးနည်း',
     titleMyanmarTh: 'a few / a little',
     explanationMyanmar:
       'a few = ရေတွက်ရတဲ့နာမ်နည်းနည်း (a few apples)၊ a little = ရေတွက်မရတဲ့နာမ်နည်းနည်း (a little sugar)။ နှစ်ခုလုံး အပြုသဘောဆောင် (လုံလောက်တဲ့ပမာဏရှိ)။',
@@ -1108,7 +1108,7 @@ export const grammarRules: GrammarRule[] = [
   },
   {
     id: 'gr-have-to',
-    level: 'B1',
+    level: 'A2',
     title: 'Have to: obligation',
     titleMyanmar: 'have to (လုပ်ရမည့်တာဝန်)',
     titleMyanmarTh: 'have to (ภาระหน้าที่)',
@@ -1138,7 +1138,7 @@ export const grammarRules: GrammarRule[] = [
     examples: [
       { english: 'It may rain this evening.', myanmar: 'ဒီည မိုးရွာနိုင်တယ်။', myanmarTh: 'เย็นนี้ฝนอาจตก', },
       { english: 'She might come to the party.', myanmar: 'သူမ ပါတီကို လာနိုင်တယ်။', myanmarTh: 'เธออาจมางานเลี้ยง', },
-      { english: 'He may be in his office.', myanmar: 'သူ ရုံးမှာရှိနိုင်တယ်။', myanmarTh: 'คุณนั่งตรงนี้ได้', },
+      { english: 'He may be in his office.', myanmar: 'သူ ရုံးမှာရှိနိုင်တယ်။', myanmarTh: 'เขาอาจอยู่ที่ออฟฟิศ', },
       { english: 'They might be late.', myanmar: 'သူတို့ နောက်ကျနိုင်တယ်။', myanmarTh: 'พวกเขาอาจสาย', },
     ],
     drills: [
@@ -1149,7 +1149,7 @@ export const grammarRules: GrammarRule[] = [
   },
   {
     id: 'gr-would-like',
-    level: 'B1',
+    level: 'A2',
     title: 'Would like: polite requests',
     titleMyanmar: 'would like (ယဉ်ကျေးစွာတောင်းဆိုခြင်း)',
     titleMyanmarTh: 'would like (การขอร้องอย่างสุภาพ)',
@@ -1176,7 +1176,7 @@ export const grammarRules: GrammarRule[] = [
     titleMyanmarTh: 'ประโยคเงื่อนไข (Zero / First)',
     explanationMyanmar:
       'Zero conditional = အမြဲမှန်တဲ့အချက်၊ သဘာဝနိယာမ (If + Present Simple, Present Simple)။ First conditional = အနာဂတ်ဖြစ်နိုင်ခြေ (If + Present Simple, will + V1)။',
-    explanationMyanmarTh: 'Zero conditional = ความจริงทั่วไปหรือกฎธรรมชาติ (If + Present Simple Present Simple) First conditional = ความเป็นไปได้ในอนาคต (If + Present Simple will + กริยารูปพื้นฐาน)',
+    explanationMyanmarTh: 'Zero conditional = ความจริงทั่วไปหรือกฎธรรมชาติ (If + Present Simple, Present Simple) First conditional = ความเป็นไปได้ในอนาคต (If + Present Simple, will + กริยารูปพื้นฐาน)',
     examples: [
       { english: 'If you heat ice, it melts.', myanmar: 'ရေခဲကို အပူပေးရင် အရည်ပျော်တယ်။', myanmarTh: 'ถ้าคุณทำให้น้ำแข็งร้อน มันจะละลาย', },
       { english: 'If it rains, we will stay home.', myanmar: 'မိုးရွာရင် ငါတို့ အိမ်မှာနေမယ်။', myanmarTh: 'ถ้าฝนตก พวกเราจะอยู่บ้าน', },
@@ -1275,9 +1275,9 @@ export const grammarRules: GrammarRule[] = [
   },
   {
     id: 'gr-too-enough',
-    level: 'B1',
+    level: 'A2',
     title: 'Too / Enough',
-    titleMyanmar: 'too / enough',
+    titleMyanmar: 'too / enough သုံးနည်း',
     titleMyanmarTh: 'too / enough',
     explanationMyanmar:
       'too + နာမဝိသေသန = အလွန်အကျွံ (အနုတ်သဘောဆောင် — too hot = သောက်မရလောက်အောင်ပူ)၊ နာမဝိသေသန + enough = လုံလောက်တယ် (old enough = လုံလောက်အောင်အသက်ကြီး)။',

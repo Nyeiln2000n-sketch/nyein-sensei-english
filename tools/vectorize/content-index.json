@@ -28772,7 +28772,7 @@
    "en": "Family dinner is at seven.",
    "en_norm": "family dinner is at seven",
    "my_norm": "မိသားစုထမင်းစားချိန်က ညနေ ၇ နာရီ။",
-   "th_norm": "มื้อเย็นของครอบครัวเริ่มตอนหนึ่งทุ่ม",
+   "th_norm": "มื้อเย็นของครอบครัวตอนหนึ่งทุ่ม",
    "fingerprint": "59a9d46a81eb0aa5",
    "vocab_sig": [
     "dinner",
@@ -29001,7 +29001,7 @@
    "en": "She called her mom first.",
    "en_norm": "she called her mom first",
    "my_norm": "သူက သူ့အမေကို အရင်ဆုံး ဖုန်းဆက်တယ်။",
-   "th_norm": "เธอโทรหาแม่ก่อนเป็นอันดับแรก",
+   "th_norm": "เธอโทรหาแม่ก่อนเลย",
    "fingerprint": "072faf49566361e6",
    "vocab_sig": [
     "called",
@@ -29106,7 +29106,7 @@
    "en": "My brother is two years older.",
    "en_norm": "my brother is two years older",
    "my_norm": "ကျွန်တော့်အစ်ကိုက ကျွန်တော့်ထက် ၂ နှစ်ကြီးတယ်။",
-   "th_norm": "พี่ชายของฉันแก่กว่าฉันสองปี",
+   "th_norm": "พี่ชายของฉันอายุมากกว่าฉันสองปี",
    "fingerprint": "d24a2382c0ccdb4d",
    "vocab_sig": [
     "brother",
@@ -30653,7 +30653,7 @@
    "en": "He confided in me about his problems.",
    "en_norm": "he confided in me about his problems",
    "my_norm": "သူက သူ့ပြဿနာတွေကို ကျွန်တော့်ကို ရင်ဖွင့်ပြောပြတယ်။",
-   "th_norm": "เขาไว้ใจเล่าปัญหาของเขาให้ฉันฟัง",
+   "th_norm": "เขาไว้ใจฉันและเล่าปัญหาของเขาให้ฉันฟัง",
    "fingerprint": "be9fb17563850b8e",
    "vocab_sig": [
     "confided",
@@ -31635,7 +31635,7 @@
    "kind": "phrase",
    "en": "We celebrated the team's success.",
    "en_norm": "we celebrated the team s success",
-   "my_norm": "အဖွဲ့ရဲ့အောင်မြင်မှုကို ကျွန်တော်တို့ ကျင်းပခဲ့တယ်။",
+   "my_norm": "အဖွဲ့ရဲ့အောင်မြင်မှုအတွက် ကျွန်တော်တို့ အောင်ပွဲခံခဲ့တယ်။",
    "th_norm": "เราฉลองความสำเร็จของทีม",
    "fingerprint": "d62e3c265b060910",
    "vocab_sig": [
@@ -31678,7 +31678,7 @@
    "en": "The restructuring caught everyone off guard.",
    "en_norm": "the restructuring caught everyone off guard",
    "my_norm": "ပြန်လည်ဖွဲ့စည်းမှုက လူတိုင်းကို အံ့အားသင့်စေခဲ့တယ်။",
-   "th_norm": "การปรับโครงสร้างทำให้ทุกคนตั้งตัวไม่ติด",
+   "th_norm": "การปรับโครงสร้างทำให้ทุกคนไม่ทันตั้งตัว",
    "fingerprint": "cf293919054cca3e",
    "vocab_sig": [
     "caught",
@@ -31849,7 +31849,7 @@
    "kind": "phrase",
    "en": "Do you have a bigger size?",
    "en_norm": "do you have a bigger size",
-   "my_norm": "ပိုကြီးတဲ့ size ရှိလား။",
+   "my_norm": "ဆိုဒ်ပိုကြီးတာ ရှိလား။",
    "th_norm": "มีไซส์ใหญ่กว่านี้ไหม",
    "fingerprint": "b4be0d9852895771",
    "vocab_sig": [
@@ -32650,7 +32650,7 @@
    "kind": "phrase",
    "en": "I left my wallet at home, unfortunately.",
    "en_norm": "i left my wallet at home unfortunately",
-   "my_norm": "ကံမကောင်းစွာနဲ့ ပိုက်ဆံအိတ်ကို အိမ်မှာမေ့ခဲ့တယ်။",
+   "my_norm": "ကံဆိုးချင်တော့ ပိုက်ဆံအိတ်ကို အိမ်မှာမေ့ခဲ့တယ်။",
    "th_norm": "โชคไม่ดี ฉันลืมกระเป๋าเงินไว้ที่บ้าน",
    "fingerprint": "c01ba609331b4001",
    "vocab_sig": [
@@ -32736,7 +32736,7 @@
    "kind": "phrase",
    "en": "Impulse buying ruins my budget every month.",
    "en_norm": "impulse buying ruins my budget every month",
-   "my_norm": "စိတ်လိုလက်ရဝယ်ယူမှုက လတိုင်း ကျွန်တော့်ဘတ်ဂျက်ကို ဖျက်နေတယ်။",
+   "my_norm": "စိတ်ပေါက်ပေါက်ဝယ်ယူတာတွေက လတိုင်း ကျွန်တော့်ဘတ်ဂျက်ကို ပျက်စီးစေတယ်။",
    "th_norm": "การซื้อตามอารมณ์ทำลายงบของฉันทุกเดือน",
    "fingerprint": "c7f010bb5a560c28",
    "vocab_sig": [
@@ -33193,7 +33193,7 @@
    "kind": "phrase",
    "en": "The locals were very helpful.",
    "en_norm": "the locals were very helpful",
-   "my_norm": "ဒေသခံတွေက အရမ်းကူညီတတ်တယ်။",
+   "my_norm": "ဒေသခံတွေက အရမ်းကူညီပေးတယ်။",
    "th_norm": "คนท้องถิ่นช่วยเหลือดีมาก",
    "fingerprint": "94f22533f1401916",
    "vocab_sig": [
@@ -33713,7 +33713,7 @@
    "kind": "phrase",
    "en": "We avoided the tourist traps this time.",
    "en_norm": "we avoided the tourist traps this time",
-   "my_norm": "ဒီတစ်ခါ ခရီးသွားထောင်ချောက်တွေကို ရှောင်ခဲ့တယ်။",
+   "my_norm": "ဒီတစ်ခါ ခရီးသွားတွေကို ဈေးဖြတ်တဲ့နေရာတွေကို ရှောင်ခဲ့တယ်။",
    "th_norm": "ครั้งนี้เราหลีกเลี่ยงกับดักนักท่องเที่ยวได้",
    "fingerprint": "56fdeac2864c928c",
    "vocab_sig": [

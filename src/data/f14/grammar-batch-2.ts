@@ -48,7 +48,7 @@ export const grammarRulesB2C1: GrammarRuleB2C1[] = [
       { english: 'Never have I seen such a beautiful sunset.', myanmar: 'အဲဒီလောက်လှတဲ့ညနေဆည်းဆာကို ငါဘယ်တော့မှမမြင်ဖူးဘူး။', myanmarTh: 'ผมไม่เคยเห็นพระอาทิตย์ตกสวยขนาดนี้มาก่อน', },
       { english: 'Rarely does she arrive late for meetings.', myanmar: 'သူမ အစည်းအဝေးတွေကို နောက်ကျတယ်ဆိုတာ ရှားပါတယ်။', myanmarTh: 'เธอแทบไม่เคยมาสายในการประชุม', },
       { english: 'Seldom have we received such generous support.', myanmar: 'အဲဒီလောက်ရက်ရောတဲ့ထောက်ပံ့မှုကို ငါတို့ရှားရှားပါးပါးပဲရဖူးတယ်။', myanmarTh: 'พวกเราแทบไม่เคยได้รับการสนับสนุนใจกว้างขนาดนี้', },
-      { english: 'Hardly had the concert begun when the lights went out.', myanmar: 'ကပွဲစပြီးမကြာဘူး မီးတွေပိတ်သွားတယ်။', myanmarTh: 'คอนเสิร์ตแทบยังไม่เริ่ม ไฟก็ดับ', },
+      { english: 'Hardly had the concert begun when the lights went out.', myanmar: 'ဖျော်ဖြေပွဲစပြီး မကြာဘူး မီးတွေပိတ်သွားတယ်။', myanmarTh: 'คอนเสิร์ตแทบยังไม่เริ่ม ไฟก็ดับ', },
     ],
     drills: [
       { prompt: 'Never ___ I met someone so kind.', answer: 'have', options: ['have', 'I have', 'do', 'are'] },
