@@ -135802,7 +135802,7 @@
    "en": "\"He that can have patience can have what he will\" means patience grants whatever you desire.",
    "en_norm": "he that can have patience can have what he will means patience grants whatever you desire",
    "my_norm": "He that can have patience can have what he will ဆိုတာ စိတ်ရှည်နိုင်တဲ့သူက လိုချင်တာမှန်သမျှ ရနိုင်တယ်လို့ ဆိုလိုတာပါ။",
-   "th_norm": "He that can have patience can have what he will หมายความว่า ผู้อดทนได้สิ่งที่ปรารถนา",
+   "th_norm": "He that can have patience can have what he will หมายความว่า ผู้อดทนย่อมได้สิ่งที่ปรารถนา",
    "fingerprint": "03d21d342215ed7c",
    "vocab_sig": [
     "desire",
@@ -135825,7 +135825,7 @@
    "en": "\"Slow and steady wins the race\" means consistency beats bursts of speed.",
    "en_norm": "slow and steady wins the race means consistency beats bursts of speed",
    "my_norm": "Slow and steady wins the race ဆိုတာ မှန်မှန်နဲ့တည်ငြိမ်စွာ လုပ်တာက ခဏတာမြန်တာထက် နိုင်တယ်လို့ ဆိုလိုတာပါ။",
-   "th_norm": "Slow and steady wins the race หมายความว่า สม่ำเสมอชนะความเร็วที่มาเป็นพักๆ",
+   "th_norm": "Slow and steady wins the race หมายความว่า การทำอย่างสม่ำเสมอชนะการรีบเร่งเป็นพักๆ",
    "fingerprint": "e87f600b89f6670f",
    "vocab_sig": [
     "beats",
@@ -136194,7 +136194,7 @@
    "en": "\"What doesn’t kill you makes you stronger\" means surviving hardship builds resilience.",
    "en_norm": "what doesn t kill you makes you stronger means surviving hardship builds resilience",
    "my_norm": "What doesn t kill you makes you stronger ဆိုတာ အခက်အခဲကို ကျော်လွှားနိုင်ရင် ပိုသန်မာလာတယ်လို့ ဆိုလိုတာပါ။",
-   "th_norm": "What doesn t kill you makes you stronger หมายความว่า ผ่านความยากได้จะแข็งแกร่งขึ้น",
+   "th_norm": "What doesn t kill you makes you stronger หมายความว่า ผ่านความยากลำบากมาได้จะแข็งแกร่งขึ้น",
    "fingerprint": "032d2059fba6151b",
    "vocab_sig": [
     "builds",
@@ -136302,7 +136302,7 @@
    "en": "\"Experience is the best teacher\" means lived lessons stick deepest.",
    "en_norm": "experience is the best teacher means lived lessons stick deepest",
    "my_norm": "Experience is the best teacher ဆိုတာ ကိုယ်တိုင်ကြုံတွေ့ရတဲ့ သင်ခန်းစာက အနက်ရှိုင်းဆုံးလို့ ဆိုလိုတာပါ။",
-   "th_norm": "Experience is the best teacher หมายความว่า บทเรียนจากประสบการณ์ติดลึกที่สุด",
+   "th_norm": "Experience is the best teacher หมายความว่า บทเรียนจากประสบการณ์จำได้แม่นที่สุด",
    "fingerprint": "d7854f9a238440b8",
    "vocab_sig": [
     "best",
@@ -136355,7 +136355,7 @@
    "en": "\"Don’t give up the ship\" means hold your course in a crisis.",
    "en_norm": "don t give up the ship means hold your course in a crisis",
    "my_norm": "Don t give up the ship ဆိုတာ အကျပ်အတည်းမှာတောင် ကိုယ့်လမ်းကို ဆက်လျှောက်ရမယ်လို့ ဆိုလိုတာပါ။",
-   "th_norm": "Don t give up the ship หมายความว่า ยามวิกฤตจงยึดเส้นทางของตน",
+   "th_norm": "Don t give up the ship หมายความว่า ยามวิกฤตจงยืนหยัดต่อไป",
    "fingerprint": "b69efb3bf0c65694",
    "vocab_sig": [
     "course",
@@ -136456,7 +136456,7 @@
    "en": "\"Hope for the best, prepare for the worst\" means stay optimistic but ready.",
    "en_norm": "hope for the best prepare for the worst means stay optimistic but ready",
    "my_norm": "Hope for the best prepare for the worst ဆိုတာ အကောင်းဆုံးကို မျှော်လင့်ပြီး အဆိုးဆုံးအတွက်လည်း ပြင်ဆင်ထားရမယ်လို့ ဆိုလိုတာပါ။",
-   "th_norm": "Hope for the best prepare for the worst หมายความว่า หวังดีที่สุดแต่เตรียมรับแย่ที่สุด",
+   "th_norm": "Hope for the best prepare for the worst หมายความว่า หวังสิ่งดีที่สุดแต่เตรียมพร้อมรับสิ่งแย่ที่สุด",
    "fingerprint": "e18ba56fae21f21d",
    "vocab_sig": [
     "best",
@@ -136661,7 +136661,7 @@
    "en": "\"You’re never too old to learn\" means learning has no age limit.",
    "en_norm": "you re never too old to learn means learning has no age limit",
    "my_norm": "You re never too old to learn ဆိုတာ သင်ယူမှုမှာ အသက်အရွယ်ကန့်သတ်ချက် မရှိဘူးလို့ ဆိုလိုတာပါ။",
-   "th_norm": "You re never too old to learn หมายความว่า การเรียนรู้ไม่มีขีดจำกัดอายุ",
+   "th_norm": "You re never too old to learn หมายความว่า การเรียนรู้ไม่จำกัดอายุ",
    "fingerprint": "3f5c09dcb1bb38c4",
    "vocab_sig": [
     "age",
@@ -136841,7 +136841,7 @@
    "en": "\"Marry in haste, repent at leisure\" warns that rushed big decisions bring long regret.",
    "en_norm": "marry in haste repent at leisure warns that rushed big decisions bring long regret",
    "my_norm": "Marry in haste repent at leisure ဆိုတာ အလျင်စလိုဆုံးဖြတ်တဲ့ ကြီးမားတဲ့ဆုံးဖြတ်ချက်တွေက ကြာရှည်နောင်တရစေတယ်လို့ သတိပေးတာပါ။",
-   "th_norm": "Marry in haste repent at leisure เตือนว่าการตัดสินใจใหญ่แบบรีบร้อนนำสู่การเสียใจยาวนาน",
+   "th_norm": "Marry in haste repent at leisure เตือนว่าการตัดสินใจใหญ่แบบรีบร้อนนำไปสู่ความเสียใจที่ยาวนาน",
    "fingerprint": "6c041b6fdd51332b",
    "vocab_sig": [
     "big",
@@ -137938,7 +137938,7 @@
    "en": "\"Whereof one cannot speak, thereof one must be silent\" means stay silent about what you cannot know.",
    "en_norm": "whereof one cannot speak thereof one must be silent means stay silent about what you cannot know",
    "my_norm": "Whereof one cannot speak thereof one must be silent ဆိုတာ ကိုယ်မသိနိုင်တဲ့အရာအကြောင်း တိတ်ဆိတ်နေရမယ်လို့ ဆိုလိုတာပါ။",
-   "th_norm": "Whereof one cannot speak thereof one must be silent หมายความว่า สิ่งที่รู้ไม่ได้จงเงียบเสีย",
+   "th_norm": "Whereof one cannot speak thereof one must be silent หมายความว่า สิ่งใดที่ไม่อาจรู้ได้ จงนิ่งเงียบไว้",
    "fingerprint": "a0c24be4981beafd",
    "vocab_sig": [
     "cannot",
@@ -138384,7 +138384,7 @@
    "en": "\"Ignorance is bliss\" means not knowing can spare pain.",
    "en_norm": "ignorance is bliss means not knowing can spare pain",
    "my_norm": "Ignorance is bliss ဆိုတာ မသိတာက နာကျင်မှုကနေ လွတ်စေနိုင်တယ်လို့ ဆိုလိုတာပါ။",
-   "th_norm": "Ignorance is bliss หมายความว่า ความไม่รู้ช่วยพ้นความเจ็บปวดได้",
+   "th_norm": "Ignorance is bliss หมายความว่า ความไม่รู้ช่วยให้พ้นจากความเจ็บปวดได้",
    "fingerprint": "c6effa23d3b7e8ae",
    "vocab_sig": [
     "bliss",
@@ -138408,7 +138408,7 @@
    "en": "\"The pen is mightier than the sword\" means ideas outlast force.",
    "en_norm": "the pen is mightier than the sword means ideas outlast force",
    "my_norm": "The pen is mightier than the sword ဆိုတာ စိတ်ကူးအတွေးအခေါ်က ဓားလက်နက်ထက် ပိုအားကြီးတယ်လို့ ဆိုလိုတာပါ။",
-   "th_norm": "The pen is mightier than the sword หมายความว่า ความคิดอยู่ยืนยาวกว่ากำลัง",
+   "th_norm": "The pen is mightier than the sword หมายความว่า ความคิดยืนยาวกว่ากำลัง",
    "fingerprint": "9d956fd9ed154d47",
    "vocab_sig": [
     "force",
@@ -138564,7 +138564,7 @@
    "en": "\"Trust, but verify\" means confidence should rest on evidence.",
    "en_norm": "trust but verify means confidence should rest on evidence",
    "my_norm": "Trust but verify ဆိုတာ ယုံကြည်မှုက သက်သေအထောက်အထားအပေါ် တည်ရမယ်လို့ ဆိုလိုတာပါ။",
-   "th_norm": "Trust but verify หมายความว่า ความไว้ใจต้องตั้งบนหลักฐาน",
+   "th_norm": "Trust but verify หมายความว่า ความไว้ใจต้องมีหลักฐานรองรับ",
    "fingerprint": "f7372d5a7f2df298",
    "vocab_sig": [
     "confidence",
@@ -138953,7 +138953,7 @@
    "en": "\"The more I learn, the more I realize how much I don’t know\" means learning reveals ignorance.",
    "en_norm": "the more i learn the more i realize how much i don t know means learning reveals ignorance",
    "my_norm": "The more I learn the more I realize how much I don t know ဆိုတာ ပိုသင်ယူလေ ကိုယ်မသိတာတွေ ပိုများမှန်း သိလာလေလို့ ဆိုလိုတာပါ။",
-   "th_norm": "The more I learn the more I realize how much I don t know หมายความว่า ยิ่งเรียนยิ่งรู้ว่าตนไม่รู้มาก",
+   "th_norm": "The more I learn the more I realize how much I don t know หมายความว่า ยิ่งเรียนยิ่งรู้ว่าตนเองยังไม่รู้อีกมาก",
    "fingerprint": "9c7cabd68828496a",
    "vocab_sig": [
     "ignorance",
@@ -139005,7 +139005,7 @@
    "en": "\"The biter is sometimes bit\" means schemers often get outsmarted themselves.",
    "en_norm": "the biter is sometimes bit means schemers often get outsmarted themselves",
    "my_norm": "The biter is sometimes bit ဆိုတာ သူများကို လှည့်ဖြားကိုက်ဖို့ ကြံတဲ့သူက တခါတရံ ကိုယ်တိုင်အကိုက်ခံရတတ်တယ်လို့ ဆိုလိုတာပါ။",
-   "th_norm": "The biter is sometimes bit หมายความว่า ผู้คิดหลอกคนอื่นบางทีโดนหลอกเสียเอง",
+   "th_norm": "The biter is sometimes bit หมายความว่า คนที่คิดจะหลอกคนอื่นบางทีกลับโดนหลอกเสียเอง",
    "fingerprint": "2b8cef425a3a9988",
    "vocab_sig": [
     "bit",
@@ -139292,7 +139292,7 @@
    "en": "\"Turn the other cheek\" urges forgiveness over revenge.",
    "en_norm": "turn the other cheek urges forgiveness over revenge",
    "my_norm": "Turn the other cheek ဆိုတာ လက်စားချေမယ့်အစား ခွင့်လွှတ်ရမယ်လို့ တိုက်တွန်းတာပါ။",
-   "th_norm": "Turn the other cheek กระตุ้นให้อภัยเหนือแก้แค้น",
+   "th_norm": "Turn the other cheek กระตุ้นให้เลือกการให้อภัยเหนือการแก้แค้น",
    "fingerprint": "0d82032be36313a0",
    "vocab_sig": [
     "cheek",
@@ -139420,7 +139420,7 @@
    "en": "\"The pot calling the kettle black\" mocks accusers guilty of the same fault.",
    "en_norm": "the pot calling the kettle black mocks accusers guilty of the same fault",
    "my_norm": "The pot calling the kettle black ဆိုတာ ကိုယ်တိုင်မည်းနေတဲ့ အိုးက ရေနွေးအိုးကို မည်းတယ်ပြောသလို အပြစ်တူရှိသူက သူများကို စွပ်စွဲတာကို လှောင်တာပါ။",
-   "th_norm": "The pot calling the kettle black เย้ยหยันผู้กล่าวหาที่มีข้อผิดเดียวกัน",
+   "th_norm": "The pot calling the kettle black เย้ยหยันผู้กล่าวหาที่มีความผิดอย่างเดียวกัน",
    "fingerprint": "ee770a1892624c29",
    "vocab_sig": [
     "accusers",
@@ -440715,8 +440715,8 @@
    "kind": "word",
    "en": "communiqué",
    "en_norm": "communique",
-   "my_norm": "ပူးတွဲကြေညာချက်",
-   "th_norm": "แถลงการณ์ร่วม",
+   "my_norm": "တရားဝင်ကြေညာချက်",
+   "th_norm": "แถลงการณ์",
    "fingerprint": "75fc746531dd53de",
    "vocab_sig": [
     "communique"
@@ -441733,7 +441733,7 @@
    "en": "credentials",
    "en_norm": "credentials",
    "my_norm": "ခန့်အပ်လွှာ",
-   "th_norm": "หนังสือแต่งตั้ง",
+   "th_norm": "สาส์นตราตั้ง",
    "fingerprint": "631aada47deaf488",
    "vocab_sig": [
     "credentials"
@@ -442519,7 +442519,7 @@
    "en": "coercive diplomacy",
    "en_norm": "coercive diplomacy",
    "my_norm": "အတင်းအကြပ်သံတမန်ရေး",
-   "th_norm": "การทูตบังคับ",
+   "th_norm": "การทูตเชิงบีบบังคับ",
    "fingerprint": "216c40c43da2cfa6",
    "vocab_sig": [
     "coercive",
@@ -445810,7 +445810,7 @@
    "kind": "word",
    "en": "entente",
    "en_norm": "entente",
-   "my_norm": "နားလည်မှုစာချုပ်",
+   "my_norm": "နားလည်မှုသဘောတူညီချက်",
    "th_norm": "อองตองต์",
    "fingerprint": "a0a084d0bb06a910",
    "vocab_sig": [
@@ -446189,7 +446189,7 @@
    "en": "responsibility to protect",
    "en_norm": "responsibility to protect",
    "my_norm": "ကာကွယ်ရမည့်တာဝန်",
-   "th_norm": "หน้าที่ในการคุ้มครอง",
+   "th_norm": "ความรับผิดชอบในการคุ้มครอง",
    "fingerprint": "eaf90add57304110",
    "vocab_sig": [
     "protect",
@@ -447998,7 +447998,7 @@
    "kind": "word",
    "en": "asset freeze",
    "en_norm": "asset freeze",
-   "my_norm": "ပိုင်ဆိုင်မှုထိန်းသိမ်းမှု",
+   "my_norm": "ပိုင်ဆိုင်မှုအေးခဲစေမှု",
    "th_norm": "การอายัดทรัพย์สิน",
    "fingerprint": "4361286bd6e592bc",
    "vocab_sig": [
@@ -448753,7 +448753,7 @@
    "en": "concession",
    "en_norm": "concession",
    "my_norm": "လိုက်လျောမှု",
-   "th_norm": "การยอม",
+   "th_norm": "การยอมอ่อนข้อ",
    "fingerprint": "b9aca78e330a930b",
    "vocab_sig": [
     "concession"
@@ -449294,7 +449294,7 @@
    "en": "stalemate",
    "en_norm": "stalemate",
    "my_norm": "ရွေ့မရသောအခြေအနေ",
-   "th_norm": "สเตลเมต",
+   "th_norm": "ภาวะชะงักงัน",
    "fingerprint": "c71bfae2e39961e8",
    "vocab_sig": [
     "stalemate"
@@ -450403,7 +450403,7 @@
    "en": "shuttle negotiation",
    "en_norm": "shuttle negotiation",
    "my_norm": "လှည့်လည်ညှိနှိုင်းမှု",
-   "th_norm": "การเจรจาชัตเทิล",
+   "th_norm": "การเจรจาชัตเติล",
    "fingerprint": "c42e1cb680bfeac0",
    "vocab_sig": [
     "negotiation",
@@ -450700,7 +450700,7 @@
    "kind": "word",
    "en": "clean text",
    "en_norm": "clean text",
-   "my_norm": "သန့်ရှင်းသောစာသား",
+   "my_norm": "သဘောတူညီပြီးသောစာသား",
    "th_norm": "ข้อความสะอาด",
    "fingerprint": "ca3e62efb1705749",
    "vocab_sig": [
@@ -450912,7 +450912,7 @@
    "en": "nonproliferation",
    "en_norm": "nonproliferation",
    "my_norm": "နျူကလီးယားပျံ့နှံ့မှုတားဆီးရေး",
-   "th_norm": "การไม่แพร่ขยาย",
+   "th_norm": "การไม่แพร่ขยายอาวุธ",
    "fingerprint": "56342467d2a19a71",
    "vocab_sig": [
     "nonproliferation"
@@ -451293,7 +451293,7 @@
    "en": "concession trading",
    "en_norm": "concession trading",
    "my_norm": "လိုက်လျောမှုလဲလှယ်ခြင်း",
-   "th_norm": "การแลกเปลี่ยนการยอม",
+   "th_norm": "การแลกเปลี่ยนการผ่อนปรน",
    "fingerprint": "6e37c347144f0910",
    "vocab_sig": [
     "concession",
@@ -451463,7 +451463,7 @@
    "kind": "word",
    "en": "sequencing",
    "en_norm": "sequencing",
-   "my_norm": "အစီအစဉ်ချမှတ်မှု",
+   "my_norm": "အစဉ်လိုက်စီစဉ်မှု",
    "th_norm": "การจัดลำดับ",
    "fingerprint": "8dc08f4dea09e6f9",
    "vocab_sig": [
@@ -451546,7 +451546,7 @@
    "en": "delinkage",
    "en_norm": "delinkage",
    "my_norm": "ချိတ်ဆက်မှုဖြုတ်ခြင်း",
-   "th_norm": "การแยกออก",
+   "th_norm": "การแยกประเด็น",
    "fingerprint": "8da0f6884b744096",
    "vocab_sig": [
     "delinkage"
@@ -451629,7 +451629,7 @@
    "en": "protectionism",
    "en_norm": "protectionism",
    "my_norm": "အကာအကွယ်ဝါဒ",
-   "th_norm": "ลัทธิคุ้มครอง",
+   "th_norm": "ลัทธิคุ้มครองทางการค้า",
    "fingerprint": "4fd40c658aa6a2b6",
    "vocab_sig": [
     "protectionism"
@@ -452056,7 +452056,7 @@
    "kind": "word",
    "en": "national treatment",
    "en_norm": "national treatment",
-   "my_norm": "ပြည်တွင်းကုန်တန်းတူဆက်ဆံမှု",
+   "my_norm": "နိုင်ငံခြားကုန်တန်းတူဆက်ဆံမှု",
    "th_norm": "การปฏิบัติเยี่ยงชาติ",
    "fingerprint": "76129ddf97e78185",
    "vocab_sig": [
@@ -452101,7 +452101,7 @@
    "en": "reciprocity",
    "en_norm": "reciprocity",
    "my_norm": "အပြန်အလှန်အကျိုးပေးမှု",
-   "th_norm": "การตอบแทนซึ่งกันและกัน",
+   "th_norm": "หลักการต่างตอบแทน",
    "fingerprint": "52a0ab62594d9922",
    "vocab_sig": [
     "reciprocity"
@@ -452396,7 +452396,7 @@
    "kind": "word",
    "en": "portfolio investment",
    "en_norm": "portfolio investment",
-   "my_norm": "အစုရှယ်ယာရင်းနှီးမြှုပ်နှံမှု",
+   "my_norm": "ငွေကြေးဈေးကွက်ရင်းနှီးမြှုပ်နှံမှု",
    "th_norm": "การลงทุนในหลักทรัพย์",
    "fingerprint": "8c34868e07ce871d",
    "vocab_sig": [
@@ -453339,7 +453339,7 @@
    "en": "offshore account",
    "en_norm": "offshore account",
    "my_norm": "ကမ်းလွန်စာရင်း",
-   "th_norm": "บัญชีนอกชายฝั่ง",
+   "th_norm": "บัญชีออฟชอร์",
    "fingerprint": "2d57764fc55326cd",
    "vocab_sig": [
     "account",
@@ -453893,7 +453893,7 @@
    "en": "speculative attack",
    "en_norm": "speculative attack",
    "my_norm": "လောင်းကစားတိုက်ခိုက်မှု",
-   "th_norm": "การโจมตีเชิงเก็งกำไร",
+   "th_norm": "การโจมตีค่าเงินเชิงเก็งกำไร",
    "fingerprint": "b812e7ba1a0c4730",
    "vocab_sig": [
     "attack",
@@ -455181,7 +455181,7 @@
    "en": "grant element",
    "en_norm": "grant element",
    "my_norm": "ထောက်ပံ့ငွေအစိတ်အပိုင်း",
-   "th_norm": "องค์ประกอบเงินช่วยเหลือ",
+   "th_norm": "องค์ประกอบของเงินให้เปล่า",
    "fingerprint": "0235608cfcfd2b3c",
    "vocab_sig": [
     "element",
@@ -455485,7 +455485,7 @@
    "en": "tender offer",
    "en_norm": "tender offer",
    "my_norm": "ဝယ်ယူကမ်းလှမ်းမှု",
-   "th_norm": "ข้อเสนอซื้อ",
+   "th_norm": "คำเสนอซื้อ",
    "fingerprint": "8128c92efa108452",
    "vocab_sig": [
     "offer",
@@ -456941,7 +456941,7 @@
    "en": "proxy voting",
    "en_norm": "proxy voting",
    "my_norm": "ကိုယ်စားလှယ်မဲပေးမှု",
-   "th_norm": "การออกเสียงโดยตัวแทน",
+   "th_norm": "การออกเสียงลงคะแนนโดยตัวแทน",
    "fingerprint": "7c642dccf6c56735",
    "vocab_sig": [
     "proxy",
@@ -457200,7 +457200,7 @@
    "en": "rights issue",
    "en_norm": "rights issue",
    "my_norm": "အခွင့်အရေးထုတ်ပေးမှု",
-   "th_norm": "การเพิ่มทุน",
+   "th_norm": "การออกหุ้นเพิ่มทุนให้ผู้ถือหุ้นเดิม",
    "fingerprint": "f48d364536d3e3f6",
    "vocab_sig": [
     "issue",
@@ -457581,7 +457581,7 @@
    "en": "breach of fiduciary duty",
    "en_norm": "breach of fiduciary duty",
    "my_norm": "ယုံကြည်စိတ်ချရသောတာဝန်ချိုးဖောက်မှု",
-   "th_norm": "การละเมิดหน้าที่ฟิดูเชียรี",
+   "th_norm": "การละเมิดหน้าที่ความไว้วางใจ",
    "fingerprint": "bad3568b45b6fe9f",
    "vocab_sig": [
     "breach",
@@ -457667,7 +457667,7 @@
    "en": "corporate trustee",
    "en_norm": "corporate trustee",
    "my_norm": "ကော်ပိုရိတ်ယုံကြည်ခံရသူ",
-   "th_norm": "ผู้ดูแลผลประโยชน์องค์กร",
+   "th_norm": "ทรัสตีนิติบุคคล",
    "fingerprint": "c2919f85986ed3ec",
    "vocab_sig": [
     "corporate",
@@ -458252,7 +458252,7 @@
    "en": "bailout",
    "en_norm": "bailout",
    "my_norm": "ကယ်ဆယ်ထောက်ပံ့မှု",
-   "th_norm": "การช่วยเหลือทางการเงิน",
+   "th_norm": "การช่วยเหลือทางการเงินฉุกเฉิน",
    "fingerprint": "81a5fc9abcbff131",
    "vocab_sig": [
     "bailout"
@@ -459970,7 +459970,7 @@
    "en": "strategic alliance",
    "en_norm": "strategic alliance",
    "my_norm": "ဗျူဟာမြောက်မဟာမိတ်",
-   "th_norm": "พันธมิตรเชิงกลยุทธ์",
+   "th_norm": "พันธมิตรเชิงยุทธศาสตร์",
    "fingerprint": "55c557f983221326",
    "vocab_sig": [
     "alliance",
@@ -460479,7 +460479,7 @@
    "en": "SWOT analysis",
    "en_norm": "swot analysis",
    "my_norm": "SWOT သုံးသပ်ချက်",
-   "th_norm": "การวิเคราะห์สวอต",
+   "th_norm": "การวิเคราะห์ SWOT",
    "fingerprint": "a20ac2b30d4502b6",
    "vocab_sig": [
     "analysis",
@@ -460522,7 +460522,7 @@
    "en": "disruptive innovation",
    "en_norm": "disruptive innovation",
    "my_norm": "ထိုးဖောက်ဆန်းသစ်တီထွင်မှု",
-   "th_norm": "นวัตกรรมทำลายล้าง",
+   "th_norm": "นวัตกรรมพลิกโฉม",
    "fingerprint": "fc93062e3ab86958",
    "vocab_sig": [
     "disruptive",
@@ -460609,7 +460609,7 @@
    "en": "market disruption",
    "en_norm": "market disruption",
    "my_norm": "ဈေးကွက်ထိုးဖောက်မှု",
-   "th_norm": "การปั่นป่วนตลาด",
+   "th_norm": "การพลิกโฉมตลาด",
    "fingerprint": "4e44977c6e4e9d75",
    "vocab_sig": [
     "disruption",
@@ -460917,7 +460917,7 @@
    "en": "subscription model",
    "en_norm": "subscription model",
    "my_norm": "စာရင်းသွင်းပုံစံ",
-   "th_norm": "โมเดลสมาชิก",
+   "th_norm": "โมเดลการสมัครสมาชิก",
    "fingerprint": "3e094e4cc83d8842",
    "vocab_sig": [
     "model",
@@ -461342,7 +461342,7 @@
    "kind": "word",
    "en": "carbon offset",
    "en_norm": "carbon offset",
-   "my_norm": "ကာဗွန်ထေမိမှု",
+   "my_norm": "ကာဗွန်လျော်ကြေး",
    "th_norm": "คาร์บอนออฟเซ็ต",
    "fingerprint": "cd9c4b5ef2af21eb",
    "vocab_sig": [
@@ -461600,7 +461600,7 @@
    "en": "derivative lawsuit",
    "en_norm": "derivative lawsuit",
    "my_norm": "ဆင့်ပွားတရားစွဲဆိုမှု",
-   "th_norm": "คดีอนุพันธ์",
+   "th_norm": "การฟ้องคดีแทนโดยผู้ถือหุ้น",
    "fingerprint": "ba162895bf87b8c9",
    "vocab_sig": [
     "derivative",
@@ -461774,7 +461774,7 @@
    "en": "anti-money laundering",
    "en_norm": "anti money laundering",
    "my_norm": "ငွေကြေးခဝါချမှုတိုက်ဖျက်ရေး",
-   "th_norm": "การต่อต้านการฟอกเงิน",
+   "th_norm": "การป้องกันและปราบปรามการฟอกเงิน",
    "fingerprint": "8fee4dd53e1eccbc",
    "vocab_sig": [
     "anti",
@@ -568174,7 +568174,7 @@
    "kind": "word",
    "en": "golden parachute",
    "en_norm": "golden parachute",
-   "my_norm": "ရွှေထွက်ပေါက်",
+   "my_norm": "ရွှေထွက်ပေါက် ကြီးမားတဲ့အလုပ်ထွက်ကြေး",
    "th_norm": "เงินชดเชยก้อนโต",
    "fingerprint": "57956bcd3651fb8b",
    "vocab_sig": [
@@ -568418,7 +568418,7 @@
    "kind": "word",
    "en": "flow state",
    "en_norm": "flow state",
-   "my_norm": "စီးဝင်မှုအခြေအနေ",
+   "my_norm": "စိတ်နှစ်မြှုပ်မှုအခြေအနေ",
    "th_norm": "ภาวะลื่นไหล",
    "fingerprint": "70c4a0b911462da4",
    "vocab_sig": [
@@ -568581,7 +568581,7 @@
    "kind": "word",
    "en": "headhunter",
    "en_norm": "headhunter",
-   "my_norm": "အလုပ်ရှာပေးသူ",
+   "my_norm": "ဝန်ထမ်းရှာပေးသူ",
    "th_norm": "เฮดฮันเตอร์",
    "fingerprint": "0c5625f68623a7d8",
    "vocab_sig": [
@@ -568662,7 +568662,7 @@
    "kind": "word",
    "en": "cover letter",
    "en_norm": "cover letter",
-   "my_norm": "အဖုံးစာ",
+   "my_norm": "အလုပ်လျှောက်တွဲစာ",
    "th_norm": "จดหมายสมัครงาน",
    "fingerprint": "ec8b778e04b2ff16",
    "vocab_sig": [
@@ -568825,7 +568825,7 @@
    "kind": "word",
    "en": "quiet quitting",
    "en_norm": "quiet quitting",
-   "my_norm": "တိတ်ဆိတ်အလုပ်ထွက်မှု",
+   "my_norm": "အလုပ်မှာ အနည်းဆုံးသာလုပ်ခြင်း",
    "th_norm": "การทำงานแค่พอผ่าน",
    "fingerprint": "20cc61c9eecdb7dd",
    "vocab_sig": [
@@ -570089,7 +570089,7 @@
    "kind": "word",
    "en": "gift receipt",
    "en_norm": "gift receipt",
-   "my_norm": "လက်ဆောင်ဖြတ်ပိုင်း",
+   "my_norm": "လက်ဆောင်ပြေစာ",
    "th_norm": "ใบเสร็จของขวัญ",
    "fingerprint": "a8fa9b6bd204f70b",
    "vocab_sig": [
@@ -571907,7 +571907,7 @@
    "kind": "word",
    "en": "immunity",
    "en_norm": "immunity",
-   "my_norm": "ကိုယ်ခံအားစနစ်",
+   "my_norm": "ကိုယ်ခံအား",
    "th_norm": "ภูมิคุ้มกัน",
    "fingerprint": "43e63f4a1c6b7e73",
    "vocab_sig": [
@@ -583903,17 +583903,16 @@
   {
    "id": "example:daily-life:morning-person",
    "kind": "example",
-   "en": "She wakes up cheerful every morning.",
-   "en_norm": "she wakes up cheerful every morning",
+   "en": "She is such a morning person.",
+   "en_norm": "she is such a morning person",
    "my_norm": "",
-   "fingerprint": "8b110fc283ea7db2",
+   "fingerprint": "725df3cad580c141",
    "vocab_sig": [
-    "cheerful",
-    "every",
     "morning",
-    "wakes"
+    "person",
+    "such"
    ],
-   "template_sig": "she W up W W W .",
+   "template_sig": "she is W a W W .",
    "tags": [
     "daily-life",
     "example"

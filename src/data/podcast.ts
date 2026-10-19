@@ -38,6 +38,16 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 81,
+    slug: 'body-parts-2026-10-19',
+    titleMy: 'ခန္ဓာကိုယ်အစိတ်အပိုင်းများ — Body parts',
+    titleOrig: 'ส่วนต่างๆ ของร่างกาย — Body parts',
+    descMy: 'ခန္ဓာကိုယ်အစိတ်အပိုင်းတွေရဲ့ အင်္ဂလိပ်အမည်များ — head, eye, nose, mouth, ear, hand, arm, leg, foot, stomach — နဲ့ \"My head hurts.\" / \"Touch your nose.\" / \"It hurts here.\"',
+    phrases: ['My head hurts.', 'Touch your nose.', 'It hurts here.'],
+    durationSecs: 556,
+    cover: '/podcast-covers/ep-81.jpg',
+  },
+  {
     n: 80,
     slug: 'review-module-8-weather-and-small-talk-2026-10-18',
     titleMy: 'အခန်း ၈ ပြန်လည်သုံးသပ်ခြင်း — Review Module 8',
