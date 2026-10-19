@@ -230982,7 +230982,7 @@
    "kind": "word",
    "en": "happy hour",
    "en_norm": "happy hour",
-   "my_norm": "ပျော်ရွှင်ချိန်",
+   "my_norm": "ဟက်ပီအာဝါ လျှော့ဈေးအရက်အချိန်",
    "th_norm": "แฮปปี้อาวร์",
    "fingerprint": "9dd9996bced1f3a9",
    "vocab_sig": [
@@ -237317,17 +237317,17 @@
   {
    "id": "example:doctor:urine-test",
    "kind": "example",
-   "en": "Bring a urine test sample.",
-   "en_norm": "bring a urine test sample",
+   "en": "Bring a urine sample for the test.",
+   "en_norm": "bring a urine sample for the test",
    "my_norm": "",
-   "fingerprint": "bcdb0dc7c6ef829c",
+   "fingerprint": "592d526a77960cf6",
    "vocab_sig": [
     "bring",
     "sample",
     "test",
     "urine"
    ],
-   "template_sig": "W a W W W .",
+   "template_sig": "W a W W for the W .",
    "tags": [
     "doctor",
     "example"
@@ -238650,17 +238650,17 @@
   {
    "id": "example:computer:screen-recording",
    "kind": "example",
-   "en": "Screen recording helps tutorials.",
-   "en_norm": "screen recording helps tutorials",
+   "en": "Screen recording helps with tutorials.",
+   "en_norm": "screen recording helps with tutorials",
    "my_norm": "",
-   "fingerprint": "1c6fb663e494b19c",
+   "fingerprint": "f6db29e937e6f0aa",
    "vocab_sig": [
     "helps",
     "recording",
     "screen",
     "tutorials"
    ],
-   "template_sig": "W W W W .",
+   "template_sig": "W W W with W .",
    "tags": [
     "computer",
     "example"
@@ -494852,18 +494852,18 @@
    "line": 247
   },
   {
-   "id": "word:rhetoric:chef-doeuvre",
+   "id": "word:rhetoric:chef-d-oeuvre",
    "kind": "word",
-   "en": "chef-doeuvre",
-   "en_norm": "chef doeuvre",
+   "en": "chef-d'oeuvre",
+   "en_norm": "chef d oeuvre",
    "my_norm": "ထိပ်တန်းလက်ရာ",
    "th_norm": "เชฟเดอเฟรอ",
-   "fingerprint": "b0bb9f70f01e54f2",
+   "fingerprint": "2c78d1a2b76c96e2",
    "vocab_sig": [
     "chef",
-    "doeuvre"
+    "oeuvre"
    ],
-   "template_sig": "W - W",
+   "template_sig": "W - d ' W",
    "tags": [
     "rhetoric",
     "word"
@@ -494872,21 +494872,21 @@
    "line": 248
   },
   {
-   "id": "example:rhetoric:chef-doeuvre",
+   "id": "example:rhetoric:chef-d-oeuvre",
    "kind": "example",
-   "en": "Critics called the film the director's chef-doeuvre.",
-   "en_norm": "critics called the film the director s chef doeuvre",
+   "en": "Critics called the film the director's chef-d'oeuvre.",
+   "en_norm": "critics called the film the director s chef d oeuvre",
    "my_norm": "",
-   "fingerprint": "483a39816e21c2b2",
+   "fingerprint": "e953ffd885e23f82",
    "vocab_sig": [
     "called",
     "chef",
     "critics",
     "director",
-    "doeuvre",
-    "film"
+    "film",
+    "oeuvre"
    ],
-   "template_sig": "W W the W the W ' s W - W .",
+   "template_sig": "W W the W the W ' s W - d ' W .",
    "tags": [
     "rhetoric",
     "example"
@@ -496396,12 +496396,12 @@
   {
    "id": "example:rhetoric:hyperrealism",
    "kind": "example",
-   "en": "Her hyperrealism portraits look like photographs.",
-   "en_norm": "her hyperrealism portraits look like photographs",
+   "en": "Her hyperrealist portraits look like photographs.",
+   "en_norm": "her hyperrealist portraits look like photographs",
    "my_norm": "",
-   "fingerprint": "af05700648ddfe01",
+   "fingerprint": "50bde45eb65fdea1",
    "vocab_sig": [
-    "hyperrealism",
+    "hyperrealist",
     "look",
     "photographs",
     "portraits"
@@ -501956,18 +501956,18 @@
   {
    "id": "example:rhetoric:implicature",
    "kind": "example",
-   "en": "It is cold in here carries the implicature to close the window.",
-   "en_norm": "it is cold in here carries the implicature to close the window",
+   "en": "It is cold in here carries the implicature that the window should be closed.",
+   "en_norm": "it is cold in here carries the implicature that the window should be closed",
    "my_norm": "",
-   "fingerprint": "ba2738a0149a4a1f",
+   "fingerprint": "3ca2969ba35e3f70",
    "vocab_sig": [
     "carries",
-    "close",
+    "closed",
     "cold",
     "implicature",
     "window"
    ],
-   "template_sig": "it is W in here W the W to W the W .",
+   "template_sig": "it is W in here W the W that the W should be W .",
    "tags": [
     "rhetoric",
     "example"
@@ -504778,10 +504778,10 @@
   {
    "id": "example:rhetoric:for-your-consideration",
    "kind": "example",
-   "en": "The studio sent screeners for your consideration to voters.",
-   "en_norm": "the studio sent screeners for your consideration to voters",
+   "en": "The studio sent screeners to voters for your consideration.",
+   "en_norm": "the studio sent screeners to voters for your consideration",
    "my_norm": "",
-   "fingerprint": "c150841ea7187a71",
+   "fingerprint": "40079146976e78fe",
    "vocab_sig": [
     "consideration",
     "screeners",
@@ -504789,7 +504789,7 @@
     "studio",
     "voters"
    ],
-   "template_sig": "the W W W for your W to W .",
+   "template_sig": "the W W W to W for your W .",
    "tags": [
     "rhetoric",
     "example"
@@ -527328,7 +527328,7 @@
    "kind": "word",
    "en": "rearrange",
    "en_norm": "rearrange",
-   "my_norm": "ပြန်လည်စီစဉ်သည်",
+   "my_norm": "ပြန်လည်နေရာချသည်",
    "th_norm": "จัดใหม่",
    "fingerprint": "b5836afbcf79c53e",
    "vocab_sig": [
@@ -527345,16 +527345,15 @@
   {
    "id": "example:daily-life:rearrange",
    "kind": "example",
-   "en": "We rearranged the meeting to Monday.",
-   "en_norm": "we rearranged the meeting to monday",
+   "en": "We rearranged the furniture.",
+   "en_norm": "we rearranged the furniture",
    "my_norm": "",
-   "fingerprint": "0971cb6baa923508",
+   "fingerprint": "e2dfd39c177aa026",
    "vocab_sig": [
-    "meeting",
-    "monday",
+    "furniture",
     "rearranged"
    ],
-   "template_sig": "we W the W to W .",
+   "template_sig": "we W the W .",
    "tags": [
     "daily-life",
     "example"
@@ -527595,7 +527594,7 @@
    "kind": "word",
    "en": "squeeze-in",
    "en_norm": "squeeze in",
-   "my_norm": "ညှပ်ထည့်သည်",
+   "my_norm": "အချိန်ညှပ်ထည့်သည်",
    "th_norm": "แทรกคิว แทรกตารางให้",
    "fingerprint": "2cabd1af100a7ee6",
    "vocab_sig": [
@@ -529579,7 +529578,7 @@
    "kind": "word",
    "en": "stuck",
    "en_norm": "stuck",
-   "my_norm": "ပိတ်မိနေသည်",
+   "my_norm": "ပိတ်ဆို့နေသည်",
    "th_norm": "ติดอยู่",
    "fingerprint": "9c05ce79d0bfe037",
    "vocab_sig": [
@@ -532170,7 +532169,7 @@
    "kind": "word",
    "en": "mailbox",
    "en_norm": "mailbox",
-   "my_norm": "စာတိုက်ပုံး",
+   "my_norm": "စာပုံး",
    "th_norm": "ตู้จดหมาย",
    "fingerprint": "92bea4d52a1d53f0",
    "vocab_sig": [
@@ -532708,7 +532707,7 @@
    "kind": "word",
    "en": "faucet",
    "en_norm": "faucet",
-   "my_norm": "ရေပိုက်",
+   "my_norm": "ရေပိုက်ခေါင်း",
    "th_norm": "ก๊อกน้ำ",
    "fingerprint": "f40b4c5241c68caf",
    "vocab_sig": [
@@ -533208,7 +533207,7 @@
    "kind": "word",
    "en": "guest-room",
    "en_norm": "guest room",
-   "my_norm": "ဧည့်သည်ခန်း",
+   "my_norm": "ဧည့်ခန်း",
    "th_norm": "ห้องพักแขก",
    "fingerprint": "63dab3bdf7191fd1",
    "vocab_sig": [
@@ -555413,7 +555412,7 @@
    "kind": "word",
    "en": "water cooler",
    "en_norm": "water cooler",
-   "my_norm": "ရေခဲသေတ္တာ",
+   "my_norm": "ရေအေးစက်",
    "th_norm": "ตู้กดน้ำ",
    "fingerprint": "ff66498fe3b6116d",
    "vocab_sig": [
@@ -557364,7 +557363,7 @@
   {
    "id": "word:doctor:iv-drip",
    "kind": "word",
-   "en": "iv drip",
+   "en": "IV drip",
    "en_norm": "iv drip",
    "my_norm": "သွေးကြောသွင်းဆေး",
    "th_norm": "น้ำเกลือ",
@@ -557384,7 +557383,7 @@
   {
    "id": "example:doctor:iv-drip",
    "kind": "example",
-   "en": "The nurse adjusted the iv drip above his bed.",
+   "en": "The nurse adjusted the IV drip above his bed.",
    "en_norm": "the nurse adjusted the iv drip above his bed",
    "my_norm": "",
    "fingerprint": "e23ecae4ebaefe0c",
@@ -557809,7 +557808,7 @@
    "kind": "word",
    "en": "phone case",
    "en_norm": "phone case",
-   "my_norm": "ဖုန်းအိတ်",
+   "my_norm": "ဖုန်းကာဗာ",
    "th_norm": "เคสโทรศัพท์",
    "fingerprint": "b18d90094ae09552",
    "vocab_sig": [
@@ -558283,17 +558282,18 @@
   {
    "id": "example:computer:trash",
    "kind": "example",
-   "en": "Take the trash out before it starts to smell.",
-   "en_norm": "take the trash out before it starts to smell",
+   "en": "Delete the file, then empty the trash.",
+   "en_norm": "delete the file then empty the trash",
    "my_norm": "",
-   "fingerprint": "03d6698a8b66441e",
+   "fingerprint": "b911e27a795e8fae",
    "vocab_sig": [
-    "smell",
-    "starts",
-    "take",
+    "delete",
+    "empty",
+    "file",
+    "then",
     "trash"
    ],
-   "template_sig": "W the W out before it W to W .",
+   "template_sig": "W the W , W W the W .",
    "tags": [
     "computer",
     "example"
@@ -558468,7 +558468,7 @@
    "kind": "word",
    "en": "refresh",
    "en_norm": "refresh",
-   "my_norm": "ပြန်လည်စတင်သည်",
+   "my_norm": "ပြန်လည်ဖွင့်သည်",
    "th_norm": "รีเฟรช",
    "fingerprint": "d6cc0a088c07683c",
    "vocab_sig": [
@@ -563567,7 +563567,7 @@
    "kind": "word",
    "en": "silly",
    "en_norm": "silly",
-   "my_norm": "မိုက်မဲသော",
+   "my_norm": "ရယ်စရာကောင်းသော",
    "th_norm": "ขี้เล่น",
    "fingerprint": "30b8795437a029dc",
    "vocab_sig": [
@@ -582228,7 +582228,7 @@
    "en": "regret",
    "en_norm": "regret",
    "my_norm": "နောင်တရသည်",
-   "th_norm": "เสียใจ",
+   "th_norm": "เสียดาย",
    "fingerprint": "d5259acec0d80c4f",
    "vocab_sig": [
     "regret"

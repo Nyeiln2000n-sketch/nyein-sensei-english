@@ -38,6 +38,16 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 82,
+    slug: 'being-sick-2026-10-19',
+    titleMy: 'မသက်သာခြင်း / နေမကောင်းဖြစ်ခြင်း — Being sick',
+    titleOrig: 'ไม่สบาย — Being sick',
+    descMy: 'နေမကောင်းဖြစ်တဲ့အခါ ပြောဖို့ အင်္ဂလိပ်ဝါကျများ — "I am sick." / "I have a fever." / "I have a headache." / "I feel dizzy." / "I feel sick today, so I am staying home."',
+    phrases: ['I am sick.', 'I have a fever.', 'I have a headache.', 'I feel dizzy.'],
+    durationSecs: 681,
+    cover: '/podcast-covers/ep-82.jpg',
+  },
+  {
     n: 81,
     slug: 'body-parts-2026-10-19',
     titleMy: 'ခန္ဓာကိုယ်အစိတ်အပိုင်းများ — Body parts',
