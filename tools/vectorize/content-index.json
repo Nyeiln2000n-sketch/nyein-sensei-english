@@ -326827,7 +326827,7 @@
    "en": "plasma",
    "en_norm": "plasma",
    "my_norm": "သွေးရည်ကြည်",
-   "th_norm": "พลาสมา",
+   "th_norm": "น้ำเลือด",
    "fingerprint": "0c4ac837abc0830c",
    "vocab_sig": [
     "plasma"
@@ -327568,7 +327568,7 @@
    "en": "nephron",
    "en_norm": "nephron",
    "my_norm": "နက်ဖရွန်",
-   "th_norm": "เนฟรอน",
+   "th_norm": "หน่วยไต",
    "fingerprint": "f31a23bb5b494abd",
    "vocab_sig": [
     "nephron"
@@ -331767,7 +331767,7 @@
    "en": "dizziness",
    "en_norm": "dizziness",
    "my_norm": "မူးနောက်ခြင်း",
-   "th_norm": "อาการมึนงง",
+   "th_norm": "อาการหน้ามืด",
    "fingerprint": "35be0fa611e43c36",
    "vocab_sig": [
     "dizziness"
@@ -332175,7 +332175,7 @@
    "en": "flatulence",
    "en_norm": "flatulence",
    "my_norm": "လေလည်ခြင်း",
-   "th_norm": "ท้องเฟ้อ",
+   "th_norm": "การผายลม",
    "fingerprint": "923857e337da9300",
    "vocab_sig": [
     "flatulence"
@@ -334382,7 +334382,7 @@
    "en": "bone marrow biopsy",
    "en_norm": "bone marrow biopsy",
    "my_norm": "ရိုးတွင်းချဉ်ဆီနမူနာယူစစ်ဆေးခြင်း",
-   "th_norm": "การเจาะไขกระดูก",
+   "th_norm": "การตัดชิ้นเนื้อไขกระดูก",
    "fingerprint": "d361d304aa17ee8f",
    "vocab_sig": [
     "biopsy",
@@ -334760,7 +334760,7 @@
    "en": "serology",
    "en_norm": "serology",
    "my_norm": "သွေးရည်စစ်ဆေးခြင်း",
-   "th_norm": "วิทยาเซรุ่ม",
+   "th_norm": "เซรุ่มวิทยา",
    "fingerprint": "66d94053d34e7dc9",
    "vocab_sig": [
     "serology"
@@ -342470,7 +342470,7 @@
    "en": "labor",
    "en_norm": "labor",
    "my_norm": "မီးဖွားခြင်း",
-   "th_norm": "การคลอด",
+   "th_norm": "การเจ็บท้องคลอด",
    "fingerprint": "3236c2112dab28cc",
    "vocab_sig": [
     "labor"
@@ -344425,7 +344425,7 @@
    "en": "psychosis",
    "en_norm": "psychosis",
    "my_norm": "စိတ်ရောဂါပြင်းထန်ခြင်း",
-   "th_norm": "ภาวะจิตหลอน",
+   "th_norm": "ภาวะโรคจิต",
    "fingerprint": "434767090f12df49",
    "vocab_sig": [
     "psychosis"
@@ -344670,7 +344670,7 @@
    "en": "compulsion",
    "en_norm": "compulsion",
    "my_norm": "အပြုအမူစွဲခြင်း",
-   "th_norm": "พฤติกรรมย้ำคิดย้ำทำ",
+   "th_norm": "พฤติกรรมย้ำทำ",
    "fingerprint": "cb910c7af9781699",
    "vocab_sig": [
     "compulsion"
@@ -344923,7 +344923,7 @@
    "en": "central line",
    "en_norm": "central line",
    "my_norm": "သွေးကြောမကြီးပိုက်",
-   "th_norm": "สายสวนหลอดเลือดดำใหญ่",
+   "th_norm": "สายสวนหลอดเลือดดำส่วนกลาง",
    "fingerprint": "eee945e058e92a33",
    "vocab_sig": [
     "central",
@@ -345094,7 +345094,7 @@
    "en": "vasopressor",
    "en_norm": "vasopressor",
    "my_norm": "သွေးကြောကျုံ့ဆေး",
-   "th_norm": "ยากระตุ้นหลอดเลือด",
+   "th_norm": "ยากระตุ้นความดัน",
    "fingerprint": "43bbd0332ed921ff",
    "vocab_sig": [
     "vasopressor"
@@ -490632,7 +490632,7 @@
    "en": "acidulous",
    "en_norm": "acidulous",
    "my_norm": "ချဉ်ဖျဉ်းဖျဉ်းသရော်သော",
-   "th_norm": "เปรี้ยวประชด",
+   "th_norm": "แสบเสียดสี",
    "fingerprint": "c1eebd0f521fc56a",
    "vocab_sig": [
     "acidulous"
@@ -492351,7 +492351,7 @@
    "en": "impugn",
    "en_norm": "impugn",
    "my_norm": "သံသယဝင်ရောက်တိုက်ခိုက်သည်",
-   "th_norm": "โจมตี",
+   "th_norm": "ตั้งข้อสงสัย",
    "fingerprint": "38ace5dc6cef8055",
    "vocab_sig": [
     "impugn"
@@ -493402,7 +493402,7 @@
    "en": "is-ought problem",
    "en_norm": "is ought problem",
    "my_norm": "ဖြစ်သည်နှင့်ဖြစ်သင့်သည်ပြဿနာ",
-   "th_norm": "ปัญหาคือ ควร",
+   "th_norm": "ปัญหาความเป็น ความควรเป็น",
    "fingerprint": "82fde577b12875d6",
    "vocab_sig": [
     "ought",
@@ -494567,7 +494567,7 @@
    "en": "aesthete",
    "en_norm": "aesthete",
    "my_norm": "အလှအပဝါဒီ",
-   "th_norm": "นักสุนทรียศาสตร์",
+   "th_norm": "นักเสพความงาม",
    "fingerprint": "06a58a32e7a8f8d9",
    "vocab_sig": [
     "aesthete"
@@ -495365,7 +495365,7 @@
    "en": "uncanny",
    "en_norm": "uncanny",
    "my_norm": "ထူးဆန်းကြောက်မက်ဖွယ်",
-   "th_norm": "น่าพิศวง",
+   "th_norm": "น่าขนลุก",
    "fingerprint": "86949bafb13a8f9a",
    "vocab_sig": [
     "uncanny"
@@ -496253,7 +496253,7 @@
    "en": "kinetic art",
    "en_norm": "kinetic art",
    "my_norm": "ရွေ့လျားအနုပညာ",
-   "th_norm": "ศิลปะจลนศาสตร์",
+   "th_norm": "ศิลปะจลน์",
    "fingerprint": "03423d0822478f32",
    "vocab_sig": [
     "art",
@@ -497085,7 +497085,7 @@
    "en": "muckraker",
    "en_norm": "muckraker",
    "my_norm": "အရှုပ်တော်ပုံဖော်ထုတ်သူ",
-   "th_norm": "นักมักเรกเกอร์",
+   "th_norm": "มักเรกเกอร์",
    "fingerprint": "acc2bf57d0a7e047",
    "vocab_sig": [
     "muckraker"
@@ -497126,7 +497126,7 @@
    "en": "yellow journalism",
    "en_norm": "yellow journalism",
    "my_norm": "အာရုံစားသတင်းစာပညာ",
-   "th_norm": "วารสารศาสตร์เหลือง",
+   "th_norm": "วารสารศาสตร์สีเหลือง",
    "fingerprint": "d901fa607bbeb6cb",
    "vocab_sig": [
     "journalism",
@@ -500056,7 +500056,7 @@
    "en": "florid",
    "en_norm": "florid",
    "my_norm": "အလွန်အလှဆင်သော",
-   "th_norm": "ฟลอริด",
+   "th_norm": "ฟุ่มเฟือย",
    "fingerprint": "ee013374d934e38a",
    "vocab_sig": [
     "florid"
@@ -500468,7 +500468,7 @@
    "en": "oracular",
    "en_norm": "oracular",
    "my_norm": "ပရောဖက်ဆန်သောစကား",
-   "th_norm": "อย่างโองการ",
+   "th_norm": "ดุจคำทำนาย",
    "fingerprint": "eee2ee62b3a26768",
    "vocab_sig": [
     "oracular"
@@ -501816,7 +501816,7 @@
    "en": "performative",
    "en_norm": "performative",
    "my_norm": "ပြောဆိုမှုဖြင့်အကောင်အထည်ဖော်သော",
-   "th_norm": "เชิงปฏิบัติการ",
+   "th_norm": "เชิงปฏิบัติ",
    "fingerprint": "e4cdb27a4b58803c",
    "vocab_sig": [
     "performative"
@@ -569803,7 +569803,7 @@
    "en": "thrift store",
    "en_norm": "thrift store",
    "my_norm": "အဟောင်းဆိုင်",
-   "th_norm": "ร้านของมือสอง",
+   "th_norm": "ร้านมือสอง",
    "fingerprint": "9d2d5a08cd64c76c",
    "vocab_sig": [
     "store",
@@ -616524,7 +616524,7 @@
    "kind": "word",
    "en": "love",
    "en_norm": "love",
-   "my_norm": "ချစ်ခြင်း",
+   "my_norm": "ချစ်သည်",
    "th_norm": "ความรัก",
    "fingerprint": "686f746a95b6f836",
    "vocab_sig": [
@@ -616562,7 +616562,7 @@
    "kind": "word",
    "en": "care",
    "en_norm": "care",
-   "my_norm": "ဂရုစိုက်ခြင်း",
+   "my_norm": "ဂရုစိုက်သည်",
    "th_norm": "ดูแล",
    "fingerprint": "f9ed2b54fd72ac16",
    "vocab_sig": [
@@ -623439,13 +623439,13 @@
   {
    "id": "example:market:retail",
    "kind": "example",
-   "en": "Retail shops sell to normal customers.",
-   "en_norm": "retail shops sell to normal customers",
+   "en": "Retail shops sell to regular customers.",
+   "en_norm": "retail shops sell to regular customers",
    "my_norm": "",
-   "fingerprint": "58ff8d4cd722de18",
+   "fingerprint": "645cd3a39677fd72",
    "vocab_sig": [
     "customers",
-    "normal",
+    "regular",
     "retail",
     "sell",
     "shops"
@@ -626134,7 +626134,7 @@
    "kind": "word",
    "en": "upgrade",
    "en_norm": "upgrade",
-   "my_norm": "အဆင့်မြှင့်တင်ခြင်း",
+   "my_norm": "အဆင့်မြှင့်တင်သည်",
    "th_norm": "อัปเกรด",
    "fingerprint": "7fef9479c8bc5a3c",
    "vocab_sig": [
@@ -628166,7 +628166,7 @@
    "kind": "word",
    "en": "consistent",
    "en_norm": "consistent",
-   "my_norm": "တည်ငြိမ်မှန်ကန်သော",
+   "my_norm": "တသမတ်တည်းရှိသော",
    "th_norm": "สม่ำเสมอ",
    "fingerprint": "206b5ec743f4c487",
    "vocab_sig": [
@@ -633272,7 +633272,7 @@
    "kind": "word",
    "en": "leaf-fall",
    "en_norm": "leaf fall",
-   "my_norm": "ရွက်ကြွေချိန်",
+   "my_norm": "ရွက်ကြွေ",
    "th_norm": "ฤดูใบไม้ร่วง",
    "fingerprint": "cb9b8c3bdd4dd3fd",
    "vocab_sig": [
@@ -633477,7 +633477,7 @@
    "kind": "word",
    "en": "subtropical",
    "en_norm": "subtropical",
-   "my_norm": "အပူအအေးသမမျှဒေသ",
+   "my_norm": "အပူအအေးသမမျှသော",
    "th_norm": "กึ่งเขตร้อน",
    "fingerprint": "69c89fbcdb06005a",
    "vocab_sig": [

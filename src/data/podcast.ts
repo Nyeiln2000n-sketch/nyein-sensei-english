@@ -38,6 +38,16 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 83,
+    slug: 'symptoms-2026-10-19',
+    titleMy: 'လက္ခဏာများ — Symptoms',
+    titleOrig: 'อาการต่างๆ — Symptoms',
+    descMy: 'နေမကောင်းဖြစ်တဲ့အခါ လက္ခဏာတွေကို အသေးစိတ်ပြောဖို့ အင်္ဂလိပ်ဝါကျများ — \"I have a cough.\" / \"I have a dry cough.\" / \"My throat hurts.\" / \"I have a runny nose.\" / \"I keep sneezing.\" / \"I feel very tired.\"',
+    phrases: ['I have a cough.', 'My throat hurts.', 'I have a runny nose.'],
+    durationSecs: 683,
+    cover: '/podcast-covers/ep-83.jpg',
+  },
+  {
     n: 82,
     slug: 'being-sick-2026-10-19',
     titleMy: 'မသက်သာခြင်း / နေမကောင်းဖြစ်ခြင်း — Being sick',

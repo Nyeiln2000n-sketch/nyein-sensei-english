@@ -22,7 +22,7 @@ export const doctorWords: Word[] = [
   { en: 'faint', my: 'မူးလဲသည်', th: 'เป็นลม', topic: 'doctor', level: 2, phonetic: 'faynt', example: 'She might faint in the heat.', exampleMy: 'သူမ အပူထဲမှာ မူးလဲနိုင်ပါတယ်။', exampleTh: 'เธออาจเป็นลมเพราะอากาศร้อน' },
   { en: 'shiver', my: 'တုန်ယင်သည်', th: 'สั่น', topic: 'doctor', level: 2, phonetic: 'shi-vur', example: 'I shiver when I have a fever.', exampleMy: 'အဖျားရှိတဲ့အခါ ကျွန်မ တုန်ယင်ပါတယ်။', exampleTh: 'ฉันสั่นเวลามีไข้' },
   { en: 'itch', my: 'ယားယံခြင်း', th: 'คัน', topic: 'doctor', level: 2, phonetic: 'ich', example: 'This cream stops the itch.', exampleMy: 'ဒီလိမ်းဆေးက ယားယံမှုကို ရပ်စေပါတယ်။', exampleTh: 'ครีมนี้ช่วยแก้อาการคัน' },
-  { en: 'sore', my: 'နာကျင်သော', th: 'เจ็บ', topic: 'doctor', level: 2, phonetic: 'sour', example: 'My throat is sore today.', exampleMy: 'ဒီနေ့ ကျွန်မရဲ့ လည်ချောင်း နာပါတယ်။', exampleTh: 'วันนี้ฉันเจ็บคอ' },
+  { en: 'sore', my: 'နာကျင်သော', th: 'เจ็บ', topic: 'doctor', level: 2, phonetic: 'sawr', example: 'My throat is sore today.', exampleMy: 'ဒီနေ့ ကျွန်မရဲ့ လည်ချောင်း နာပါတယ်။', exampleTh: 'วันนี้ฉันเจ็บคอ' },
   { en: 'swollen', my: 'ရောင်ရမ်းသော', th: 'บวม', topic: 'doctor', level: 2, phonetic: 'swou-lun', example: 'Her ankle is swollen and red.', exampleMy: 'သူမရဲ့ ခြေချင်းဝတ်က ရောင်ရမ်းပြီး နီပါတယ်။', exampleTh: 'ข้อเท้าของเธอบวมและแดง' },
   { en: 'rash', my: 'အနီဖုထွက်ခြင်း', th: 'ผื่น', topic: 'doctor', level: 2, phonetic: 'rash', example: 'The rash itches at night.', exampleMy: 'အနီဖုတွေက ညမှာ ယားပါတယ်။', exampleTh: 'ผื่นคันตอนกลางคืน' },
   { en: 'wound', my: 'ဒဏ်ရာ', th: 'แผล', topic: 'doctor', level: 2, phonetic: 'wuund', example: 'Clean the wound with water.', exampleMy: 'ဒဏ်ရာကို ရေနဲ့ ဆေးပါ။', exampleTh: 'ล้างแผลด้วยน้ำ' },
