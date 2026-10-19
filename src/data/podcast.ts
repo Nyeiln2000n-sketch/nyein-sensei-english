@@ -38,6 +38,16 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 84,
+    slug: 'at-the-pharmacy-i-need-medicine-2026-10-19',
+    titleMy: 'ဆေးဆိုင် — At the pharmacy',
+    titleOrig: 'ที่ร้านขายยา — At the pharmacy',
+    descMy: 'ဆေးဆိုင်မှာ ဆေးဝယ်ပြီး သောက်သုံးနည်းမေးဖို့ အင်္ဂလိပ်ဝါကျများ — \"I need medicine.\" / \"For headache.\" / \"How many times a day?\" / \"How many pills?\" / \"Before or after food?\"',
+    phrases: ['I need medicine.', 'For headache.', 'How many times a day?'],
+    durationSecs: 636,
+    cover: '/podcast-covers/ep-84.jpg',
+  },
+  {
     n: 83,
     slug: 'symptoms-2026-10-19',
     titleMy: 'လက္ခဏာများ — Symptoms',

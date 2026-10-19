@@ -4,7 +4,7 @@ import type { Word } from '../types';
 export const schoolWords: Word[] = [
   { en: 'school', my: 'ကျောင်း', th: 'โรงเรียน', topic: 'school', level: 1, phonetic: 'skul', example: 'I go to school every day.', exampleMy: 'ကျွန်မ နေ့တိုင်း ကျောင်း သွားပါတယ်။', exampleTh: 'ฉันไปโรงเรียนทุกวัน' },
   { en: 'teacher', my: 'ဆရာ / ဆရာမ', th: 'ครู', topic: 'school', level: 1, phonetic: 'ti-cher', example: 'My teacher is very kind.', exampleMy: 'ကျွန်မ ဆရာက အရမ်း သဘောကောင်းပါတယ်။', exampleTh: 'ครูของฉันใจดีมาก' },
-  { en: 'student', my: 'ကျောင်းသား', th: 'นักเรียน', topic: 'school', level: 1, phonetic: 'stu-dent', example: 'She is a good student.', exampleMy: 'သူမ ကျောင်းသားကောင်း တစ်ယောက်ပါ။', exampleTh: 'เธอเป็นนักเรียนที่ดี' },
+  { en: 'student', my: 'ကျောင်းသား', th: 'นักเรียน', topic: 'school', level: 1, phonetic: 'stu-dent', example: 'She is a good student.', exampleMy: 'သူမ ကျောင်းသူကောင်း တစ်ယောက်ပါ။', exampleTh: 'เธอเป็นนักเรียนที่ดี' },
   { en: 'class', my: 'အတန်း', th: 'ห้องเรียน', topic: 'school', level: 1, phonetic: 'klas', example: 'Our class starts at eight.', exampleMy: 'ကျွန်မတို့ အတန်း ရှစ်နာရီမှာ စပါတယ်။', exampleTh: 'ห้องเรียนของเราเริ่มแปดโมง' },
   { en: 'lesson', my: 'သင်ခန်းစာ', th: 'บทเรียน', topic: 'school', level: 1, phonetic: 'le-sen', example: 'Our lesson today is about animals.', exampleMy: 'ဒီနေ့ ကျွန်မတို့ သင်ခန်းစာက တိရစ္ဆာန်တွေအကြောင်း ပါ။', exampleTh: 'บทเรียนวันนี้เกี่ยวกับสัตว์' },
   { en: 'book', my: 'စာအုပ်', th: 'หนังสือ', topic: 'school', level: 1, phonetic: 'buk', example: 'Open your book to page ten.', exampleMy: 'စာအုပ်ကို စာမျက်နှာဆယ် ဖွင့်ပါ။', exampleTh: 'เปิดหนังสือหน้าที่สิบ' },
@@ -22,7 +22,7 @@ export const schoolWords: Word[] = [
   { en: 'count', my: 'ရေတွက်သည်', th: 'นับ', topic: 'school', level: 1, phonetic: 'kaunt', example: 'Can you count to ten?', exampleMy: 'ဆယ်အထိ ရေတွက်နိုင်ပါသလား။', exampleTh: 'คุณนับถึงสิบได้ไหม' },
   { en: 'math', my: 'သင်္ချာ', th: 'คณิตศาสตร์', topic: 'school', level: 1, phonetic: 'math', example: 'Math is my favorite subject.', exampleMy: 'သင်္ချာက ကျွန်မ အကြိုက်ဆုံး ဘာသာရပ်ပါ။', exampleTh: 'คณิตศาสตร์คือวิชาโปรดของฉัน' },
   { en: 'English', my: 'အင်္ဂလိပ်စာ', th: 'ภาษาอังกฤษ', topic: 'school', level: 1, phonetic: 'ing-glish', example: 'English helps me talk to people.', exampleMy: 'အင်္ဂလိပ်စာက လူတွေနဲ့ ပြောဆိုဖို့ ကူညီပါတယ်။', exampleTh: 'ภาษาอังกฤษช่วยให้ฉันคุยกับคน' },
-  { en: 'myanmar', my: 'မြန်မာစာ', th: 'ภาษาพม่า', topic: 'school', level: 1, phonetic: 'myan-mar', example: 'Myanmar writing is beautiful.', exampleMy: 'မြန်မာစာ ရေးသားမှုက လှပါတယ်။', exampleTh: 'ตัวเขียนพม่าสวยงาม' },
+  { en: 'Myanmar', my: 'မြန်မာစာ', th: 'ภาษาพม่า', topic: 'school', level: 1, phonetic: 'myan-mar', example: 'Myanmar writing is beautiful.', exampleMy: 'မြန်မာစာ ရေးသားမှုက လှပါတယ်။', exampleTh: 'ตัวเขียนพม่าสวยงาม' },
   { en: 'science', my: 'သိပ္ပံ', th: 'วิทยาศาสตร์', topic: 'school', level: 2, phonetic: 'sai-ens', example: 'Science class is fun and interesting.', exampleMy: 'သိပ္ပံ အတန်းက ပျော်စရာကောင်းပြီး စိတ်ဝင်စားစရာကောင်းပါတယ်။', exampleTh: 'วิชาวิทยาศาสตร์สนุกและน่าสนใจ' },
   { en: 'history', my: 'သမိုင်း', th: 'ประวัติศาสตร์', topic: 'school', level: 2, phonetic: 'his-to-ri', example: 'We learned Myanmar history yesterday.', exampleMy: 'မနေ့က မြန်မာ့သမိုင်း သင်ယူပါတယ်။', exampleTh: 'เมื่อวานเราเรียนประวัติศาสตร์พม่า' },
   { en: 'grade', my: 'အမှတ်', th: 'เกรด', topic: 'school', level: 3, phonetic: 'greyd', example: 'She got a good grade.', exampleMy: 'သူမ အမှတ်ကောင်း ရပါတယ်။', exampleTh: 'เธอได้เกรดดี' },

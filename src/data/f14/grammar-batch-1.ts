@@ -377,7 +377,7 @@ export const grammarRules: GrammarRule[] = [
     level: 'A1',
     title: 'There is / There are',
     titleMyanmar: 'There is / There are သုံးနည်း',
-    titleMyanmarTh: 'There is / There are',
+    titleMyanmarTh: 'การใช้ There is / There are',
     explanationMyanmar:
       'တစ်နေရာမှာ တစ်ခုခုရှိတယ်ပြောတဲ့အခါ there is (တစ်ခုတည်း) / there are (အများအပြား) သုံးတယ်။ အနုတ်က there isn\'t / there aren\'t။',
     explanationMyanmarTh: 'เมื่อต้องการบอกว่ามีสิ่งใดอยู่ที่ใด ให้ใช้ there is (เอกพจน์) / there are (พหูพจน์) รูปปฏิเสธคือ there is not / there are not',
@@ -406,7 +406,7 @@ export const grammarRules: GrammarRule[] = [
       { english: 'This is Aung\'s pen.', myanmar: 'ဒါက အောင်ရဲ့ဘောပင်ပါ။', myanmarTh: 'นี่คือปากกาของออง', },
       { english: 'The cat\'s tail is long.', myanmar: 'ကြောင်ရဲ့အမြီးက ရှည်တယ်။', myanmarTh: 'หางแมวยาว', },
       { english: 'My parents\' house is big.', myanmar: 'အဖေအမေတို့ရဲ့အိမ်က ကြီးတယ်။', myanmarTh: 'บ้านของพ่อแม่ผมใหญ่', },
-      { english: 'The students\' books are new.', myanmar: 'ကျောင်းသားတွေရဲ့စာအုပ်တွေက အသစ်တွေပါ။', myanmarTh: 'หนังสือของนักเรียนใหม่', },
+      { english: 'The students\' books are new.', myanmar: 'ကျောင်းသားတွေရဲ့စာအုပ်တွေက အသစ်တွေပါ။', myanmarTh: 'หนังสือเล่มใหม่ของนักเรียน', },
     ],
     drills: [
       { prompt: 'This is ___ bag. (May)', answer: 'May\'s', options: ['May\'s', 'Mays', 'May', 'of May\'s'] },
@@ -712,7 +712,7 @@ export const grammarRules: GrammarRule[] = [
     level: 'A2',
     title: 'Much / Many / A lot of',
     titleMyanmar: 'much / many / a lot of သုံးနည်း',
-    titleMyanmarTh: 'much / many / a lot of',
+    titleMyanmarTh: 'การใช้ much / many / a lot of',
     explanationMyanmar:
       'many = ရေတွက်ရတဲ့နာမ်အများနဲ့သုံး (many books)၊ much = ရေတွက်မရတဲ့နာမ်နဲ့သုံး (much time) — နှစ်ခုလုံး အနုတ်နဲ့မေးခွန်းမှာသုံးလေ့ရှိ။ a lot of = နှစ်မျိုးလုံးနဲ့ရတယ်။',
     explanationMyanmarTh: 'many ใช้กับคำนามนับได้พหูพจน์ (many books) much ใช้กับคำนามนับไม่ได้ (much time) ทั้งคู่มักใช้ในประโยคปฏิเสธและคำถาม ส่วน a lot of ใช้ได้กับทั้งสองแบบ',
@@ -802,7 +802,7 @@ export const grammarRules: GrammarRule[] = [
     explanationMyanmarTh: 'How much ใช้ถามคำนามนับไม่ได้หรือราคา (How much is it?) How many ใช้ถามคำนามนับได้ (How many apples?)',
     examples: [
       { english: 'How much is this shirt?', myanmar: 'ဒီအင်္ကျီ ဘယ်လောက်လဲ။', myanmarTh: 'เสื้อตัวนี้เท่าไหร่', },
-      { english: 'How many brothers do you have?', myanmar: 'မင်းမှာ ညီအစ်ကို ဘယ်နှယောက်ရှိလဲ။', myanmarTh: 'คุณมีพี่น้องกี่คน', },
+      { english: 'How many brothers do you have?', myanmar: 'မင်းမှာ ညီအစ်ကို ဘယ်နှယောက်ရှိလဲ။', myanmarTh: 'คุณมีพี่น้องชายกี่คน', },
       { english: 'How much sugar do you want?', myanmar: 'မင်း သကြားဘယ်လောက်လိုချင်လဲ။', myanmarTh: 'คุณต้องการน้ำตาลเท่าไหร่', },
       { english: 'How many days are there in March?', myanmar: 'မတ်လမှာ ရက်ဘယ်နှရက်ရှိလဲ။', myanmarTh: 'เดือนมีนาคมมีกี่วัน', },
     ],
@@ -885,10 +885,10 @@ export const grammarRules: GrammarRule[] = [
       'ကိုယ့်ကိုယ်ကိုယ်လုပ်တဲ့အခါ၊ အလေးပေးပြောတဲ့အခါ myself/yourself/himself/herself/itself/ourselves/yourselves/themselves သုံးတယ်။',
     explanationMyanmarTh: 'เมื่อประธานกระทำต่อตนเอง หรือต้องการเน้นประธาน ให้ใช้ myself / yourself / himself / herself / itself / ourselves / yourselves / themselves',
     examples: [
-      { english: 'I hurt myself.', myanmar: 'ကျွန်တော် ကိုယ့်ကိုယ်ကိုယ် ထိခိုက်မိတယ်။', myanmarTh: 'ผมทำร้ายตัวเอง', },
-      { english: 'She taught herself English.', myanmar: 'သူမ ကိုယ့်ဘာသာ အင်္ဂလိပ်စာသင်ခဲ့တယ်။', myanmarTh: 'เธอสอนภาษาอังกฤษตัวเอง', },
-      { english: 'They enjoyed themselves.', myanmar: 'သူတို့ ပျော်ရွှင်ခဲ့ကြတယ်။', myanmarTh: 'พวกเขาสนุกกันเอง', },
-      { english: 'Be careful! Don\'t hurt yourself.', myanmar: 'သတိထား။ ကိုယ့်ကိုယ်ကိုယ် မထိခိုက်မိစေနဲ့။', myanmarTh: 'ระวัง! อย่าทำร้ายตัวเอง', },
+      { english: 'I hurt myself.', myanmar: 'ကျွန်တော် ကိုယ့်ကိုယ်ကိုယ် ထိခိုက်မိတယ်။', myanmarTh: 'ผมทำตัวเองเจ็บ', },
+      { english: 'She taught herself English.', myanmar: 'သူမ ကိုယ့်ဘာသာ အင်္ဂလိပ်စာသင်ခဲ့တယ်။', myanmarTh: 'เธอสอนตัวเองภาษาอังกฤษ', },
+      { english: 'They enjoyed themselves.', myanmar: 'သူတို့ ပျော်ရွှင်ခဲ့ကြတယ်။', myanmarTh: 'พวกเขาสนุกกัน', },
+      { english: 'Be careful! Don\'t hurt yourself.', myanmar: 'သတိထား။ ကိုယ့်ကိုယ်ကိုယ် မထိခိုက်မိစေနဲ့။', myanmarTh: 'ระวัง! อย่าทำตัวเองเจ็บ', },
     ],
     drills: [
       { prompt: 'I did it ___.', answer: 'myself', options: ['myself', 'me', 'I', 'my'] },
@@ -1090,7 +1090,7 @@ export const grammarRules: GrammarRule[] = [
     level: 'A2',
     title: 'A few / A little',
     titleMyanmar: 'a few / a little သုံးနည်း',
-    titleMyanmarTh: 'a few / a little',
+    titleMyanmarTh: 'a few / a little (เล็กน้อย)',
     explanationMyanmar:
       'a few = ရေတွက်ရတဲ့နာမ်နည်းနည်း (a few apples)၊ a little = ရေတွက်မရတဲ့နာမ်နည်းနည်း (a little sugar)။ နှစ်ခုလုံး အပြုသဘောဆောင် (လုံလောက်တဲ့ပမာဏရှိ)။',
     explanationMyanmarTh: 'a few = เล็กน้อย (คำนามนับได้: a few apples) a little = เล็กน้อย (คำนามนับไม่ได้: a little sugar) ทั้งคู่มีความหมายเชิงบวกคือมีพอใช้',
@@ -1278,7 +1278,7 @@ export const grammarRules: GrammarRule[] = [
     level: 'A2',
     title: 'Too / Enough',
     titleMyanmar: 'too / enough သုံးနည်း',
-    titleMyanmarTh: 'too / enough',
+    titleMyanmarTh: 'too / enough (มากเกินไป / เพียงพอ)',
     explanationMyanmar:
       'too + နာမဝိသေသန = အလွန်အကျွံ (အနုတ်သဘောဆောင် — too hot = သောက်မရလောက်အောင်ပူ)၊ နာမဝိသေသန + enough = လုံလောက်တယ် (old enough = လုံလောက်အောင်အသက်ကြီး)။',
     explanationMyanmarTh: 'too + คำคุณศัพท์ = มากเกินไป (ความหมายเชิงลบ: too hot = ร้อนจนดื่มไม่ได้) คำคุณศัพท์ + enough = เพียงพอ (old enough = อายุมากพอ)',

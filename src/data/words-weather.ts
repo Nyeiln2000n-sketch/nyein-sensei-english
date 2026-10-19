@@ -3,7 +3,7 @@ import type { Word } from '../types';
 // Weather — ရာသီဥတု (30 words)
 export const weatherWords: Word[] = [
   { en: 'weather', my: 'ရာသီဥတု', th: 'สภาพอากาศ', topic: 'weather', level: 1, phonetic: 'we-dhor', example: 'The weather is nice today.', exampleMy: 'ဒီနေ့ ရာသီဥတု ကောင်းပါတယ်။', exampleTh: 'วันนี้อากาศดี' },
-  { en: 'warm', my: 'နွေးသော', th: 'อบอุ่น', topic: 'weather', level: 1, phonetic: 'worm', example: 'This room is warm.', exampleMy: 'ဒီအခန်းက နွေးပါတယ်။', exampleTh: 'ห้องนี้อบอุ่น' },
+  { en: 'warm', my: 'နွေးသော', th: 'อบอุ่น', topic: 'weather', level: 1, phonetic: 'wawrm', example: 'This room is warm.', exampleMy: 'ဒီအခန်းက နွေးပါတယ်။', exampleTh: 'ห้องนี้อบอุ่น' },
   { en: 'cool', my: 'အေးမြသော', th: 'เย็น', topic: 'weather', level: 1, phonetic: 'kuul', example: 'The evening air is cool.', exampleMy: 'ညနေပိုင်း လေက အေးမြပါတယ်။', exampleTh: 'อากาศตอนเย็นเย็นสบาย' },
   { en: 'sunny', my: 'နေသာသော', th: 'แดดออก', topic: 'weather', level: 1, phonetic: 'sa-nee', example: 'It is sunny outside.', exampleMy: 'အပြင်မှာ နေသာနေပါတယ်။', exampleTh: 'ข้างนอกแดดออก' },
   { en: 'rainy', my: 'မိုးရွာသော', th: 'ฝนตก', topic: 'weather', level: 1, phonetic: 'rei-nee', example: 'It is rainy this week.', exampleMy: 'ဒီအပတ် မိုးရွာနေပါတယ်။', exampleTh: 'สัปดาห์นี้ฝนตก' },

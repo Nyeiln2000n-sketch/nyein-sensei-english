@@ -17,7 +17,7 @@ export const phrasesC: Phrase[] = [
   { en: "I'm allergic to peanuts.", my: 'ကျွန်တော် မြေပဲဓာတ်မတည့်ဘူး။', th: 'ฉันแพ้ถั่วลิสงค่ะ', topic: 'restaurant', cefr: 'B1' },
   { en: 'Can we sit by the window?', my: 'ပြတင်းပေါက်နားမှာ ထိုင်လို့ရမလား။', th: 'นั่งตรงหน้าต่างได้ไหมคะ', topic: 'restaurant' },
   { en: 'How long is the wait?', my: 'ဘယ်လောက်ကြာ စောင့်ရမလဲ။', th: 'ต้องรอนานแค่ไหนคะ', topic: 'restaurant', cefr: 'B1' },
-  { en: 'This is too salty for me.', my: 'ဒါက နည်းနည်း ငန်နေတယ်။', th: 'จานนี้เค็มเกินไปสำหรับฉัน', topic: 'restaurant', cefr: 'A2' },
+  { en: 'This is too salty for me.', my: 'ဒါက ငါ့အတွက် ငန်လွန်းတယ်။', th: 'จานนี้เค็มเกินไปสำหรับฉัน', topic: 'restaurant', cefr: 'A2' },
   { en: 'Could you wrap this to go?', my: 'ဒါကို ပါဆယ်ထုပ်ပေးနိုင်မလား။', th: 'ห่อกลับบ้านให้หน่อยได้ไหมคะ', topic: 'restaurant', cefr: 'A2' },
   { en: 'The service was excellent.', my: 'ဝန်ဆောင်မှုက အရမ်းကောင်းတယ်။', th: 'บริการยอดเยี่ยมมากค่ะ', topic: 'restaurant', cefr: 'B1' },
   { en: "We'd like the check separately.", my: 'ငါတို့ ခွဲပြီး ရှင်းချင်တယ်။', th: 'ขอแยกบิลนะคะ', topic: 'restaurant', cefr: 'B1' },

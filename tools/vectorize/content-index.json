@@ -584742,7 +584742,7 @@
    "kind": "phrase",
    "en": "My family always supports me.",
    "en_norm": "my family always supports me",
-   "my_norm": "ကျွန်တော့် မိသားစုက ကျွန်တော့်ကို အမြဲတမ်း အားပေးတယ်။",
+   "my_norm": "ကျွန်တော့် မိသားစုက ကျွန်တော့်ကို အမြဲတမ်း အားပေးတယ်။",
    "th_norm": "ครอบครัวของฉันสนับสนุนฉันเสมอ",
    "fingerprint": "1986fa9721ae5a53",
    "vocab_sig": [
@@ -585259,7 +585259,7 @@
    "kind": "phrase",
    "en": "See you soon!",
    "en_norm": "see you soon",
-   "my_norm": "မကြာမီ တွေ့မယ်",
+   "my_norm": "မကြာခင် ပြန်တွေ့မယ်",
    "th_norm": "แล้วเจอกันนะ",
    "fingerprint": "3e3065e00bb54f4a",
    "vocab_sig": [
@@ -585477,7 +585477,7 @@
    "kind": "phrase",
    "en": "I am busy today.",
    "en_norm": "i am busy today",
-   "my_norm": "ဒီနေ့ ကျွန်တော် အလုပ်များတယ်။",
+   "my_norm": "ဒီနေ့ ကျွန်တော် မအားဘူး။",
    "th_norm": "วันนี้ฉันยุ่ง",
    "fingerprint": "f150d1e10e4cac9a",
    "vocab_sig": [
@@ -585894,7 +585894,7 @@
    "kind": "phrase",
    "en": "What size is it?",
    "en_norm": "what size is it",
-   "my_norm": "ဘယ်အရွယ်အစားလဲ။",
+   "my_norm": "ဆိုဒ်က ဘယ်လောက်လဲ။",
    "th_norm": "ไซส์อะไรคะ",
    "fingerprint": "25e11db0d5a13533",
    "vocab_sig": [
@@ -586132,7 +586132,7 @@
    "kind": "phrase",
    "en": "What a nice city!",
    "en_norm": "what a nice city",
-   "my_norm": "မြို့ကောင်း လိုက်တာ။",
+   "my_norm": "မြို့က ကောင်းလိုက်တာ",
    "th_norm": "เมืองนี้น่าอยู่จัง",
    "fingerprint": "1c8f985e0d2293dc",
    "vocab_sig": [
@@ -586673,7 +586673,7 @@
    "kind": "phrase",
    "en": "My teacher helps me a lot.",
    "en_norm": "my teacher helps me a lot",
-   "my_norm": "ကျွန်တော့်ဆရာမက ကျွန်တော့်ကို အများကြီး ကူညီတယ်။",
+   "my_norm": "ကျွန်တော့်ဆရာက ကျွန်တော့်ကို အများကြီး ကူညီတယ်။",
    "th_norm": "ครูของฉันช่วยฉันมาก",
    "fingerprint": "5d6240637a482c9d",
    "vocab_sig": [
@@ -586734,7 +586734,7 @@
    "kind": "phrase",
    "en": "The exam is tomorrow.",
    "en_norm": "the exam is tomorrow",
-   "my_norm": "စာမေးပွဲက မနက်ဖြန် ဖြစ်တယ်။",
+   "my_norm": "စာမေးပွဲက မနက်ဖြန်ပါ။",
    "th_norm": "พรุ่งนี้มีสอบ",
    "fingerprint": "e791279b4df9d0ed",
    "vocab_sig": [
@@ -587553,7 +587553,7 @@
    "kind": "phrase",
    "en": "The wind shakes the trees.",
    "en_norm": "the wind shakes the trees",
-   "my_norm": "လေက သစ်ပင်တွေကို လှုပ်နေတယ်။",
+   "my_norm": "လေတိုက်လို့ သစ်ပင်တွေ လှုပ်နေတယ်။",
    "th_norm": "ลมพัดต้นไม้ไหวเอน",
    "fingerprint": "ddb92875032bae27",
    "vocab_sig": [
@@ -587895,7 +587895,7 @@
    "kind": "phrase",
    "en": "Who won the match?",
    "en_norm": "who won the match",
-   "my_norm": "ဘယ်သူ ပြိုင်ပွဲနိုင်လဲ။",
+   "my_norm": "ဘယ်သူက ပြိုင်ပွဲ နိုင်လဲ။",
    "th_norm": "ใครชนะการแข่งขัน",
    "fingerprint": "719479777c8086c3",
    "vocab_sig": [
@@ -589965,7 +589965,7 @@
    "kind": "phrase",
    "en": "Buy a new jacket.",
    "en_norm": "buy a new jacket",
-   "my_norm": "အင်္ကျီအသစ် ဝယ်ပါ။",
+   "my_norm": "ဂျက်ကတ်အသစ် ဝယ်ပါ။",
    "th_norm": "ซื้อแจ็กเก็ตตัวใหม่สิ",
    "fingerprint": "ce91072f85c8ed7c",
    "vocab_sig": [
@@ -590007,7 +590007,7 @@
    "kind": "phrase",
    "en": "Tie your shoes.",
    "en_norm": "tie your shoes",
-   "my_norm": "ဖိနပ်ကို ချည်ပါ။",
+   "my_norm": "ဖိနပ်ကြိုးကို ချည်ပါ။",
    "th_norm": "ผูกเชือกรองเท้าด้วยนะ",
    "fingerprint": "eaab61ecbf074371",
    "vocab_sig": [
@@ -590710,7 +590710,7 @@
    "kind": "phrase",
    "en": "Time flies!",
    "en_norm": "time flies",
-   "my_norm": "အချိန်က မြန်တယ်",
+   "my_norm": "အချိန်ကုန်တာ မြန်လိုက်တာ",
    "th_norm": "เวลาผ่านไปเร็วมาก",
    "fingerprint": "c4f888cf77193ae7",
    "vocab_sig": [
@@ -591415,7 +591415,7 @@
    "kind": "phrase",
    "en": "This is too salty for me.",
    "en_norm": "this is too salty for me",
-   "my_norm": "ဒါက နည်းနည်း ငန်နေတယ်။",
+   "my_norm": "ဒါက ငါ့အတွက် ငန်လွန်းတယ်။",
    "th_norm": "จานนี้เค็มเกินไปสำหรับฉัน",
    "fingerprint": "c4f98ad486da973a",
    "vocab_sig": [
@@ -595216,26 +595216,6 @@
   {
    "id": "phrase:daily-life:7791",
    "kind": "phrase",
-   "en": "The shower is too cold.",
-   "en_norm": "the shower is too cold",
-   "my_norm": "ရေချိုးတဲ့ရေ အေးလွန်းတယ်။",
-   "th_norm": "น้ำฝักบัวเย็นเกินไป",
-   "fingerprint": "26b1cb4f4eeadfbc",
-   "vocab_sig": [
-    "cold",
-    "shower"
-   ],
-   "template_sig": "the W is too W .",
-   "tags": [
-    "daily-life",
-    "phrase"
-   ],
-   "file": "src/data/phrases-f.ts",
-   "line": 22
-  },
-  {
-   "id": "phrase:daily-life:7792",
-   "kind": "phrase",
    "en": "I need a haircut this weekend.",
    "en_norm": "i need a haircut this weekend",
    "my_norm": "ဒီအပတ်ကုန် ဆံပင်ညှပ်ရမယ်။",
@@ -595255,28 +595235,7 @@
    "line": 23
   },
   {
-   "id": "phrase:daily-life:7793",
-   "kind": "phrase",
-   "en": "Let's clean the house together.",
-   "en_norm": "let s clean the house together",
-   "my_norm": "အိမ်ကို အတူ သန့်ရှင်းကြရအောင်။",
-   "th_norm": "มาทำความสะอาดบ้านด้วยกันเถอะ",
-   "fingerprint": "f320cf26892d45f4",
-   "vocab_sig": [
-    "clean",
-    "house",
-    "together"
-   ],
-   "template_sig": "let ' s W the W W .",
-   "tags": [
-    "daily-life",
-    "phrase"
-   ],
-   "file": "src/data/phrases-f.ts",
-   "line": 24
-  },
-  {
-   "id": "phrase:daily-life:7794",
+   "id": "phrase:daily-life:7792",
    "kind": "phrase",
    "en": "I folded all the clothes.",
    "en_norm": "i folded all the clothes",
@@ -595297,7 +595256,7 @@
    "line": 25
   },
   {
-   "id": "phrase:daily-life:7795",
+   "id": "phrase:daily-life:7793",
    "kind": "phrase",
    "en": "The fridge is almost empty.",
    "en_norm": "the fridge is almost empty",
@@ -595318,7 +595277,7 @@
    "line": 26
   },
   {
-   "id": "phrase:daily-life:7796",
+   "id": "phrase:daily-life:7794",
    "kind": "phrase",
    "en": "I should buy some groceries today.",
    "en_norm": "i should buy some groceries today",
@@ -595340,7 +595299,7 @@
    "line": 27
   },
   {
-   "id": "phrase:daily-life:7797",
+   "id": "phrase:daily-life:7795",
    "kind": "phrase",
    "en": "We ran out of rice yesterday.",
    "en_norm": "we ran out of rice yesterday",
@@ -595361,7 +595320,7 @@
    "line": 28
   },
   {
-   "id": "phrase:daily-life:7798",
+   "id": "phrase:daily-life:7796",
    "kind": "phrase",
    "en": "I'll cook dinner tonight.",
    "en_norm": "i ll cook dinner tonight",
@@ -595382,7 +595341,7 @@
    "line": 29
   },
   {
-   "id": "phrase:daily-life:7799",
+   "id": "phrase:daily-life:7797",
    "kind": "phrase",
    "en": "Dinner is ready — come and eat!",
    "en_norm": "dinner is ready come and eat",
@@ -595404,7 +595363,7 @@
    "line": 30
   },
   {
-   "id": "phrase:daily-life:7800",
+   "id": "phrase:daily-life:7798",
    "kind": "phrase",
    "en": "Who wants dessert?",
    "en_norm": "who wants dessert",
@@ -595424,7 +595383,7 @@
    "line": 31
   },
   {
-   "id": "phrase:daily-life:7801",
+   "id": "phrase:daily-life:7799",
    "kind": "phrase",
    "en": "I usually go to bed at ten.",
    "en_norm": "i usually go to bed at ten",
@@ -595446,7 +595405,7 @@
    "line": 32
   },
   {
-   "id": "phrase:daily-life:7802",
+   "id": "phrase:daily-life:7800",
    "kind": "phrase",
    "en": "I couldn't sleep last night.",
    "en_norm": "i couldn t sleep last night",
@@ -595468,7 +595427,7 @@
    "line": 33
   },
   {
-   "id": "phrase:daily-life:7803",
+   "id": "phrase:daily-life:7801",
    "kind": "phrase",
    "en": "Turn off the lights, please.",
    "en_norm": "turn off the lights please",
@@ -595488,7 +595447,7 @@
    "line": 34
   },
   {
-   "id": "phrase:daily-life:7804",
+   "id": "phrase:daily-life:7802",
    "kind": "phrase",
    "en": "I woke up in a cold sweat.",
    "en_norm": "i woke up in a cold sweat",
@@ -595509,7 +595468,7 @@
    "line": 35
   },
   {
-   "id": "phrase:daily-life:7805",
+   "id": "phrase:daily-life:7803",
    "kind": "phrase",
    "en": "My alarm didn't go off.",
    "en_norm": "my alarm didn t go off",
@@ -595530,7 +595489,7 @@
    "line": 36
   },
   {
-   "id": "phrase:daily-life:7806",
+   "id": "phrase:daily-life:7804",
    "kind": "phrase",
    "en": "I'm running late for work.",
    "en_norm": "i m running late for work",
@@ -595551,7 +595510,7 @@
    "line": 37
   },
   {
-   "id": "phrase:daily-life:7807",
+   "id": "phrase:daily-life:7805",
    "kind": "phrase",
    "en": "I'll skip breakfast today.",
    "en_norm": "i ll skip breakfast today",
@@ -595572,7 +595531,7 @@
    "line": 38
   },
   {
-   "id": "phrase:daily-life:7808",
+   "id": "phrase:daily-life:7806",
    "kind": "phrase",
    "en": "Can you wake me up at seven?",
    "en_norm": "can you wake me up at seven",
@@ -595592,7 +595551,7 @@
    "line": 39
   },
   {
-   "id": "phrase:daily-life:7809",
+   "id": "phrase:daily-life:7807",
    "kind": "phrase",
    "en": "I left my keys at home.",
    "en_norm": "i left my keys at home",
@@ -595613,7 +595572,7 @@
    "line": 40
   },
   {
-   "id": "phrase:daily-life:7810",
+   "id": "phrase:daily-life:7808",
    "kind": "phrase",
    "en": "The baby finally fell asleep.",
    "en_norm": "the baby finally fell asleep",
@@ -595635,7 +595594,7 @@
    "line": 41
   },
   {
-   "id": "phrase:daily-life:7811",
+   "id": "phrase:daily-life:7809",
    "kind": "phrase",
    "en": "Don't make too much noise.",
    "en_norm": "don t make too much noise",
@@ -595656,7 +595615,7 @@
    "line": 42
   },
   {
-   "id": "phrase:daily-life:7812",
+   "id": "phrase:daily-life:7810",
    "kind": "phrase",
    "en": "I need to fix the leaking tap.",
    "en_norm": "i need to fix the leaking tap",
@@ -595678,7 +595637,7 @@
    "line": 43
   },
   {
-   "id": "phrase:daily-life:7813",
+   "id": "phrase:daily-life:7811",
    "kind": "phrase",
    "en": "The power went out again.",
    "en_norm": "the power went out again",
@@ -595699,7 +595658,7 @@
    "line": 44
   },
   {
-   "id": "phrase:daily-life:7814",
+   "id": "phrase:daily-life:7812",
    "kind": "phrase",
    "en": "Call the electrician tomorrow.",
    "en_norm": "call the electrician tomorrow",
@@ -595720,7 +595679,7 @@
    "line": 45
   },
   {
-   "id": "phrase:daily-life:7815",
+   "id": "phrase:daily-life:7813",
    "kind": "phrase",
    "en": "Our internet is very slow today.",
    "en_norm": "our internet is very slow today",
@@ -595741,7 +595700,7 @@
    "line": 46
   },
   {
-   "id": "phrase:travel:7816",
+   "id": "phrase:travel:7814",
    "kind": "phrase",
    "en": "Which platform does the train leave from?",
    "en_norm": "which platform does the train leave from",
@@ -595762,7 +595721,7 @@
    "line": 48
   },
   {
-   "id": "phrase:travel:7817",
+   "id": "phrase:travel:7815",
    "kind": "phrase",
    "en": "Does this bus go downtown?",
    "en_norm": "does this bus go downtown",
@@ -595783,7 +595742,7 @@
    "line": 49
   },
   {
-   "id": "phrase:travel:7818",
+   "id": "phrase:travel:7816",
    "kind": "phrase",
    "en": "Please take me to this address.",
    "en_norm": "please take me to this address",
@@ -595803,7 +595762,7 @@
    "line": 50
   },
   {
-   "id": "phrase:travel:7819",
+   "id": "phrase:travel:7817",
    "kind": "phrase",
    "en": "How long does the ride take?",
    "en_norm": "how long does the ride take",
@@ -595824,7 +595783,7 @@
    "line": 51
   },
   {
-   "id": "phrase:travel:7820",
+   "id": "phrase:travel:7818",
    "kind": "phrase",
    "en": "No need for change, thanks.",
    "en_norm": "no need for change thanks",
@@ -595845,7 +595804,7 @@
    "line": 52
   },
   {
-   "id": "phrase:travel:7821",
+   "id": "phrase:travel:7819",
    "kind": "phrase",
    "en": "My flight was delayed by two hours.",
    "en_norm": "my flight was delayed by two hours",
@@ -595866,7 +595825,7 @@
    "line": 53
   },
   {
-   "id": "phrase:travel:7822",
+   "id": "phrase:travel:7820",
    "kind": "phrase",
    "en": "Where is the baggage claim?",
    "en_norm": "where is the baggage claim",
@@ -595886,7 +595845,7 @@
    "line": 54
   },
   {
-   "id": "phrase:travel:7823",
+   "id": "phrase:travel:7821",
    "kind": "phrase",
    "en": "I need to catch my connecting flight.",
    "en_norm": "i need to catch my connecting flight",
@@ -595908,7 +595867,7 @@
    "line": 55
   },
   {
-   "id": "phrase:travel:7824",
+   "id": "phrase:travel:7822",
    "kind": "phrase",
    "en": "The hotel lobby is on the ground floor.",
    "en_norm": "the hotel lobby is on the ground floor",
@@ -595930,7 +595889,7 @@
    "line": 56
   },
   {
-   "id": "phrase:travel:7825",
+   "id": "phrase:travel:7823",
    "kind": "phrase",
    "en": "Could I have a wake-up call at six?",
    "en_norm": "could i have a wake up call at six",
@@ -595951,7 +595910,7 @@
    "line": 57
   },
   {
-   "id": "phrase:travel:7826",
+   "id": "phrase:travel:7824",
    "kind": "phrase",
    "en": "Is breakfast included in the price?",
    "en_norm": "is breakfast included in the price",
@@ -595972,7 +595931,7 @@
    "line": 58
   },
   {
-   "id": "phrase:travel:7827",
+   "id": "phrase:travel:7825",
    "kind": "phrase",
    "en": "I'd like a room with a sea view.",
    "en_norm": "i d like a room with a sea view",
@@ -595993,7 +595952,7 @@
    "line": 59
   },
   {
-   "id": "phrase:travel:7828",
+   "id": "phrase:travel:7826",
    "kind": "phrase",
    "en": "The air conditioner isn't working.",
    "en_norm": "the air conditioner isn t working",
@@ -596015,7 +595974,7 @@
    "line": 60
   },
   {
-   "id": "phrase:travel:7829",
+   "id": "phrase:travel:7827",
    "kind": "phrase",
    "en": "Can I have an extra blanket?",
    "en_norm": "can i have an extra blanket",
@@ -596035,7 +595994,7 @@
    "line": 61
   },
   {
-   "id": "phrase:travel:7830",
+   "id": "phrase:travel:7828",
    "kind": "phrase",
    "en": "What time is check-out?",
    "en_norm": "what time is check out",
@@ -596055,7 +596014,7 @@
    "line": 62
   },
   {
-   "id": "phrase:travel:7831",
+   "id": "phrase:travel:7829",
    "kind": "phrase",
    "en": "Please clean my room today.",
    "en_norm": "please clean my room today",
@@ -596076,7 +596035,7 @@
    "line": 63
   },
   {
-   "id": "phrase:travel:7832",
+   "id": "phrase:travel:7830",
    "kind": "phrase",
    "en": "Is there a swimming pool here?",
    "en_norm": "is there a swimming pool here",
@@ -596096,7 +596055,7 @@
    "line": 64
   },
   {
-   "id": "phrase:travel:7833",
+   "id": "phrase:travel:7831",
    "kind": "phrase",
    "en": "Where can I rent a motorbike?",
    "en_norm": "where can i rent a motorbike",
@@ -596116,7 +596075,7 @@
    "line": 65
   },
   {
-   "id": "phrase:travel:7834",
+   "id": "phrase:travel:7832",
    "kind": "phrase",
    "en": "How much is the rental per day?",
    "en_norm": "how much is the rental per day",
@@ -596138,7 +596097,7 @@
    "line": 66
   },
   {
-   "id": "phrase:travel:7835",
+   "id": "phrase:travel:7833",
    "kind": "phrase",
    "en": "I need a map of the city.",
    "en_norm": "i need a map of the city",
@@ -596159,7 +596118,7 @@
    "line": 67
   },
   {
-   "id": "phrase:travel:7836",
+   "id": "phrase:travel:7834",
    "kind": "phrase",
    "en": "Is it safe to walk at night?",
    "en_norm": "is it safe to walk at night",
@@ -596180,7 +596139,7 @@
    "line": 68
   },
   {
-   "id": "phrase:travel:7837",
+   "id": "phrase:travel:7835",
    "kind": "phrase",
    "en": "Where is the nearest pharmacy?",
    "en_norm": "where is the nearest pharmacy",
@@ -596200,7 +596159,7 @@
    "line": 69
   },
   {
-   "id": "phrase:travel:7838",
+   "id": "phrase:travel:7836",
    "kind": "phrase",
    "en": "Can you recommend a good restaurant?",
    "en_norm": "can you recommend a good restaurant",
@@ -596221,7 +596180,7 @@
    "line": 70
   },
   {
-   "id": "phrase:travel:7839",
+   "id": "phrase:travel:7837",
    "kind": "phrase",
    "en": "How do I get to the museum?",
    "en_norm": "how do i get to the museum",
@@ -596241,7 +596200,7 @@
    "line": 71
   },
   {
-   "id": "phrase:travel:7840",
+   "id": "phrase:travel:7838",
    "kind": "phrase",
    "en": "Is it far from here?",
    "en_norm": "is it far from here",
@@ -596260,7 +596219,7 @@
    "line": 72
   },
   {
-   "id": "phrase:travel:7841",
+   "id": "phrase:travel:7839",
    "kind": "phrase",
    "en": "You can walk — it's very close.",
    "en_norm": "you can walk it s very close",
@@ -596280,7 +596239,7 @@
    "line": 73
   },
   {
-   "id": "phrase:travel:7842",
+   "id": "phrase:travel:7840",
    "kind": "phrase",
    "en": "Take the second street on the left.",
    "en_norm": "take the second street on the left",
@@ -596302,7 +596261,7 @@
    "line": 74
   },
   {
-   "id": "phrase:travel:7843",
+   "id": "phrase:travel:7841",
    "kind": "phrase",
    "en": "Go straight, then turn right.",
    "en_norm": "go straight then turn right",
@@ -596325,7 +596284,7 @@
    "line": 75
   },
   {
-   "id": "phrase:travel:7844",
+   "id": "phrase:travel:7842",
    "kind": "phrase",
    "en": "The station is behind the mall.",
    "en_norm": "the station is behind the mall",
@@ -596346,7 +596305,7 @@
    "line": 76
   },
   {
-   "id": "phrase:travel:7845",
+   "id": "phrase:travel:7843",
    "kind": "phrase",
    "en": "I'm lost — can you help me?",
    "en_norm": "i m lost can you help me",
@@ -596366,7 +596325,7 @@
    "line": 77
   },
   {
-   "id": "phrase:travel:7846",
+   "id": "phrase:travel:7844",
    "kind": "phrase",
    "en": "Could you show me on the map?",
    "en_norm": "could you show me on the map",
@@ -596386,7 +596345,7 @@
    "line": 78
   },
   {
-   "id": "phrase:travel:7847",
+   "id": "phrase:travel:7845",
    "kind": "phrase",
    "en": "What is the Wi-Fi password?",
    "en_norm": "what is the wi fi password",
@@ -596407,7 +596366,7 @@
    "line": 79
   },
   {
-   "id": "phrase:travel:7848",
+   "id": "phrase:travel:7846",
    "kind": "phrase",
    "en": "My phone has no signal here.",
    "en_norm": "my phone has no signal here",
@@ -596427,7 +596386,7 @@
    "line": 80
   },
   {
-   "id": "phrase:travel:7849",
+   "id": "phrase:travel:7847",
    "kind": "phrase",
    "en": "Where can I buy a local SIM card?",
    "en_norm": "where can i buy a local sim card",
@@ -596449,7 +596408,7 @@
    "line": 81
   },
   {
-   "id": "phrase:travel:7850",
+   "id": "phrase:travel:7848",
    "kind": "phrase",
    "en": "I need to exchange some money.",
    "en_norm": "i need to exchange some money",
@@ -596471,7 +596430,7 @@
    "line": 82
   },
   {
-   "id": "phrase:travel:7851",
+   "id": "phrase:travel:7849",
    "kind": "phrase",
    "en": "What is the exchange rate today?",
    "en_norm": "what is the exchange rate today",
@@ -596492,7 +596451,7 @@
    "line": 83
   },
   {
-   "id": "phrase:travel:7852",
+   "id": "phrase:travel:7850",
    "kind": "phrase",
    "en": "Do you have a city tour?",
    "en_norm": "do you have a city tour",
@@ -596512,7 +596471,7 @@
    "line": 84
   },
   {
-   "id": "phrase:travel:7853",
+   "id": "phrase:travel:7851",
    "kind": "phrase",
    "en": "What time does the tour start?",
    "en_norm": "what time does the tour start",
@@ -596533,7 +596492,7 @@
    "line": 85
   },
   {
-   "id": "phrase:travel:7854",
+   "id": "phrase:travel:7852",
    "kind": "phrase",
    "en": "I want to visit the floating market.",
    "en_norm": "i want to visit the floating market",
@@ -596555,7 +596514,7 @@
    "line": 86
   },
   {
-   "id": "phrase:travel:7855",
+   "id": "phrase:travel:7853",
    "kind": "phrase",
    "en": "That was an amazing trip!",
    "en_norm": "that was an amazing trip",
@@ -596575,7 +596534,7 @@
    "line": 87
   },
   {
-   "id": "phrase:shopping:7856",
+   "id": "phrase:shopping:7854",
    "kind": "phrase",
    "en": "Can you give me a better price?",
    "en_norm": "can you give me a better price",
@@ -596596,7 +596555,7 @@
    "line": 89
   },
   {
-   "id": "phrase:shopping:7857",
+   "id": "phrase:shopping:7855",
    "kind": "phrase",
    "en": "Do you have this in a larger size?",
    "en_norm": "do you have this in a larger size",
@@ -596616,7 +596575,7 @@
    "line": 90
   },
   {
-   "id": "phrase:shopping:7858",
+   "id": "phrase:shopping:7856",
    "kind": "phrase",
    "en": "Can I try it on?",
    "en_norm": "can i try it on",
@@ -596635,7 +596594,7 @@
    "line": 91
   },
   {
-   "id": "phrase:shopping:7859",
+   "id": "phrase:shopping:7857",
    "kind": "phrase",
    "en": "Where are the fitting rooms?",
    "en_norm": "where are the fitting rooms",
@@ -596655,7 +596614,7 @@
    "line": 92
   },
   {
-   "id": "phrase:shopping:7860",
+   "id": "phrase:shopping:7858",
    "kind": "phrase",
    "en": "I'd like to return this shirt.",
    "en_norm": "i d like to return this shirt",
@@ -596675,7 +596634,7 @@
    "line": 93
   },
   {
-   "id": "phrase:shopping:7861",
+   "id": "phrase:shopping:7859",
    "kind": "phrase",
    "en": "The zipper is broken.",
    "en_norm": "the zipper is broken",
@@ -596695,7 +596654,7 @@
    "line": 94
   },
   {
-   "id": "phrase:shopping:7862",
+   "id": "phrase:shopping:7860",
    "kind": "phrase",
    "en": "Do you accept mobile payment?",
    "en_norm": "do you accept mobile payment",
@@ -596716,7 +596675,7 @@
    "line": 95
   },
   {
-   "id": "phrase:shopping:7863",
+   "id": "phrase:shopping:7861",
    "kind": "phrase",
    "en": "Can I get a receipt, please?",
    "en_norm": "can i get a receipt please",
@@ -596736,7 +596695,7 @@
    "line": 96
   },
   {
-   "id": "phrase:shopping:7864",
+   "id": "phrase:shopping:7862",
    "kind": "phrase",
    "en": "Is this the last piece?",
    "en_norm": "is this the last piece",
@@ -596756,7 +596715,7 @@
    "line": 97
   },
   {
-   "id": "phrase:shopping:7865",
+   "id": "phrase:shopping:7863",
    "kind": "phrase",
    "en": "I'll pay in cash.",
    "en_norm": "i ll pay in cash",
@@ -596776,7 +596735,7 @@
    "line": 98
   },
   {
-   "id": "phrase:shopping:7866",
+   "id": "phrase:shopping:7864",
    "kind": "phrase",
    "en": "That color doesn't suit me.",
    "en_norm": "that color doesn t suit me",
@@ -596797,7 +596756,7 @@
    "line": 99
   },
   {
-   "id": "phrase:shopping:7867",
+   "id": "phrase:shopping:7865",
    "kind": "phrase",
    "en": "Do you have it in blue?",
    "en_norm": "do you have it in blue",
@@ -596816,7 +596775,7 @@
    "line": 100
   },
   {
-   "id": "phrase:shopping:7868",
+   "id": "phrase:shopping:7866",
    "kind": "phrase",
    "en": "It's a bit too tight.",
    "en_norm": "it s a bit too tight",
@@ -596836,7 +596795,7 @@
    "line": 101
   },
   {
-   "id": "phrase:shopping:7869",
+   "id": "phrase:shopping:7867",
    "kind": "phrase",
    "en": "It's too loose for me.",
    "en_norm": "it s too loose for me",
@@ -596855,7 +596814,7 @@
    "line": 102
   },
   {
-   "id": "phrase:shopping:7870",
+   "id": "phrase:shopping:7868",
    "kind": "phrase",
    "en": "How about this one?",
    "en_norm": "how about this one",
@@ -596872,7 +596831,7 @@
    "line": 103
   },
   {
-   "id": "phrase:shopping:7871",
+   "id": "phrase:shopping:7869",
    "kind": "phrase",
    "en": "I'm just looking, thank you.",
    "en_norm": "i m just looking thank you",
@@ -596892,7 +596851,7 @@
    "line": 104
   },
   {
-   "id": "phrase:shopping:7872",
+   "id": "phrase:shopping:7870",
    "kind": "phrase",
    "en": "Do you have any new arrivals?",
    "en_norm": "do you have any new arrivals",
@@ -596913,7 +596872,7 @@
    "line": 105
   },
   {
-   "id": "phrase:shopping:7873",
+   "id": "phrase:shopping:7871",
    "kind": "phrase",
    "en": "When does the sale end?",
    "en_norm": "when does the sale end",
@@ -596933,7 +596892,7 @@
    "line": 106
   },
   {
-   "id": "phrase:shopping:7874",
+   "id": "phrase:shopping:7872",
    "kind": "phrase",
    "en": "Everything is fifty percent off!",
    "en_norm": "everything is fifty percent off",
@@ -596954,7 +596913,7 @@
    "line": 107
   },
   {
-   "id": "phrase:shopping:7875",
+   "id": "phrase:shopping:7873",
    "kind": "phrase",
    "en": "That's still too expensive.",
    "en_norm": "that s still too expensive",
@@ -596974,7 +596933,7 @@
    "line": 108
   },
   {
-   "id": "phrase:shopping:7876",
+   "id": "phrase:shopping:7874",
    "kind": "phrase",
    "en": "I'll think about it.",
    "en_norm": "i ll think about it",
@@ -596993,7 +596952,7 @@
    "line": 109
   },
   {
-   "id": "phrase:shopping:7877",
+   "id": "phrase:shopping:7875",
    "kind": "phrase",
    "en": "Can you wrap it as a gift?",
    "en_norm": "can you wrap it as a gift",
@@ -597013,7 +596972,7 @@
    "line": 110
   },
   {
-   "id": "phrase:shopping:7878",
+   "id": "phrase:shopping:7876",
    "kind": "phrase",
    "en": "This bag is too small.",
    "en_norm": "this bag is too small",
@@ -597033,7 +596992,7 @@
    "line": 111
   },
   {
-   "id": "phrase:shopping:7879",
+   "id": "phrase:shopping:7877",
    "kind": "phrase",
    "en": "Do you deliver to my home?",
    "en_norm": "do you deliver to my home",
@@ -597053,7 +597012,7 @@
    "line": 112
   },
   {
-   "id": "phrase:shopping:7880",
+   "id": "phrase:shopping:7878",
    "kind": "phrase",
    "en": "How long is the warranty?",
    "en_norm": "how long is the warranty",
@@ -597073,7 +597032,7 @@
    "line": 113
   },
   {
-   "id": "phrase:shopping:7881",
+   "id": "phrase:shopping:7879",
    "kind": "phrase",
    "en": "The battery doesn't last long.",
    "en_norm": "the battery doesn t last long",
@@ -597095,7 +597054,7 @@
    "line": 114
   },
   {
-   "id": "phrase:shopping:7882",
+   "id": "phrase:shopping:7880",
    "kind": "phrase",
    "en": "Can I see the display model?",
    "en_norm": "can i see the display model",
@@ -597116,7 +597075,7 @@
    "line": 115
   },
   {
-   "id": "phrase:shopping:7883",
+   "id": "phrase:shopping:7881",
    "kind": "phrase",
    "en": "Is this brand reliable?",
    "en_norm": "is this brand reliable",
@@ -597136,7 +597095,7 @@
    "line": 116
   },
   {
-   "id": "phrase:shopping:7884",
+   "id": "phrase:shopping:7882",
    "kind": "phrase",
    "en": "I saw it cheaper online.",
    "en_norm": "i saw it cheaper online",
@@ -597157,7 +597116,7 @@
    "line": 117
   },
   {
-   "id": "phrase:shopping:7885",
+   "id": "phrase:shopping:7883",
    "kind": "phrase",
    "en": "Do you price-match?",
    "en_norm": "do you price match",
@@ -597177,7 +597136,7 @@
    "line": 118
   },
   {
-   "id": "phrase:shopping:7886",
+   "id": "phrase:shopping:7884",
    "kind": "phrase",
    "en": "I need two kilos of apples.",
    "en_norm": "i need two kilos of apples",
@@ -597198,7 +597157,7 @@
    "line": 119
   },
   {
-   "id": "phrase:shopping:7887",
+   "id": "phrase:shopping:7885",
    "kind": "phrase",
    "en": "Are these mangoes sweet?",
    "en_norm": "are these mangoes sweet",
@@ -597218,7 +597177,7 @@
    "line": 120
   },
   {
-   "id": "phrase:shopping:7888",
+   "id": "phrase:shopping:7886",
    "kind": "phrase",
    "en": "Weigh out a kilo for me, please.",
    "en_norm": "weigh out a kilo for me please",
@@ -597238,7 +597197,7 @@
    "line": 121
   },
   {
-   "id": "phrase:shopping:7889",
+   "id": "phrase:shopping:7887",
    "kind": "phrase",
    "en": "Can you throw in a few extra?",
    "en_norm": "can you throw in a few extra",
@@ -597259,7 +597218,7 @@
    "line": 122
   },
   {
-   "id": "phrase:shopping:7890",
+   "id": "phrase:shopping:7888",
    "kind": "phrase",
    "en": "Is this fish from today?",
    "en_norm": "is this fish from today",
@@ -597279,7 +597238,7 @@
    "line": 123
   },
   {
-   "id": "phrase:shopping:7891",
+   "id": "phrase:shopping:7889",
    "kind": "phrase",
    "en": "The vegetables look very fresh.",
    "en_norm": "the vegetables look very fresh",
@@ -597300,7 +597259,7 @@
    "line": 124
   },
   {
-   "id": "phrase:shopping:7892",
+   "id": "phrase:shopping:7890",
    "kind": "phrase",
    "en": "I'll come back tomorrow morning.",
    "en_norm": "i ll come back tomorrow morning",
@@ -597322,7 +597281,7 @@
    "line": 125
   },
   {
-   "id": "phrase:shopping:7893",
+   "id": "phrase:shopping:7891",
    "kind": "phrase",
    "en": "Do you open on Sundays?",
    "en_norm": "do you open on sundays",
@@ -597342,7 +597301,7 @@
    "line": 126
   },
   {
-   "id": "phrase:shopping:7894",
+   "id": "phrase:shopping:7892",
    "kind": "phrase",
    "en": "When do you close today?",
    "en_norm": "when do you close today",
@@ -597362,7 +597321,7 @@
    "line": 127
   },
   {
-   "id": "phrase:shopping:7895",
+   "id": "phrase:shopping:7893",
    "kind": "phrase",
    "en": "Thanks for the good deal!",
    "en_norm": "thanks for the good deal",
@@ -597383,7 +597342,7 @@
    "line": 128
   },
   {
-   "id": "phrase:restaurant:7896",
+   "id": "phrase:restaurant:7894",
    "kind": "phrase",
    "en": "Could we have separate checks?",
    "en_norm": "could we have separate checks",
@@ -597403,7 +597362,7 @@
    "line": 130
   },
   {
-   "id": "phrase:restaurant:7897",
+   "id": "phrase:restaurant:7895",
    "kind": "phrase",
    "en": "This steak is undercooked.",
    "en_norm": "this steak is undercooked",
@@ -597423,7 +597382,7 @@
    "line": 131
   },
   {
-   "id": "phrase:restaurant:7898",
+   "id": "phrase:restaurant:7896",
    "kind": "phrase",
    "en": "Could you heat this up, please?",
    "en_norm": "could you heat this up please",
@@ -597442,7 +597401,7 @@
    "line": 132
   },
   {
-   "id": "phrase:restaurant:7899",
+   "id": "phrase:restaurant:7897",
    "kind": "phrase",
    "en": "I'll have the same as her.",
    "en_norm": "i ll have the same as her",
@@ -597461,7 +597420,7 @@
    "line": 133
   },
   {
-   "id": "phrase:restaurant:7900",
+   "id": "phrase:restaurant:7898",
    "kind": "phrase",
    "en": "Do you have a children's menu?",
    "en_norm": "do you have a children s menu",
@@ -597481,11 +597440,11 @@
    "line": 134
   },
   {
-   "id": "phrase:restaurant:7901",
+   "id": "phrase:restaurant:7899",
    "kind": "phrase",
    "en": "We'd like some extra napkins.",
    "en_norm": "we d like some extra napkins",
-   "my_norm": "တစ်ရှူးစက္ကူ ထပ်နည်းနည်း လိုချင်တယ်။",
+   "my_norm": "တစ်ရှူးစက္ကူ နည်းနည်း ထပ်ယူချင်တယ်။",
    "th_norm": "ขอทิชชู่เพิ่มหน่อยค่ะ",
    "fingerprint": "97a8fce4648dd1b3",
    "vocab_sig": [
@@ -597502,7 +597461,7 @@
    "line": 135
   },
   {
-   "id": "phrase:restaurant:7902",
+   "id": "phrase:restaurant:7900",
    "kind": "phrase",
    "en": "The soup is a bit cold.",
    "en_norm": "the soup is a bit cold",
@@ -597523,7 +597482,7 @@
    "line": 136
   },
   {
-   "id": "phrase:restaurant:7903",
+   "id": "phrase:restaurant:7901",
    "kind": "phrase",
    "en": "Can I get this to go?",
    "en_norm": "can i get this to go",
@@ -597543,7 +597502,7 @@
    "line": 137
   },
   {
-   "id": "phrase:restaurant:7904",
+   "id": "phrase:restaurant:7902",
    "kind": "phrase",
    "en": "Do you serve breakfast all day?",
    "en_norm": "do you serve breakfast all day",
@@ -597565,7 +597524,7 @@
    "line": 138
   },
   {
-   "id": "phrase:restaurant:7905",
+   "id": "phrase:restaurant:7903",
    "kind": "phrase",
    "en": "What time do you close tonight?",
    "en_norm": "what time do you close tonight",
@@ -597586,7 +597545,7 @@
    "line": 139
   },
   {
-   "id": "phrase:restaurant:7906",
+   "id": "phrase:restaurant:7904",
    "kind": "phrase",
    "en": "Is there a queue?",
    "en_norm": "is there a queue",
@@ -597605,7 +597564,7 @@
    "line": 140
   },
   {
-   "id": "phrase:restaurant:7907",
+   "id": "phrase:restaurant:7905",
    "kind": "phrase",
    "en": "We have a reservation under \"Aung\".",
    "en_norm": "we have a reservation under aung",
@@ -597626,7 +597585,7 @@
    "line": 141
   },
   {
-   "id": "phrase:restaurant:7908",
+   "id": "phrase:restaurant:7906",
    "kind": "phrase",
    "en": "Our table isn't ready yet.",
    "en_norm": "our table isn t ready yet",
@@ -597648,7 +597607,7 @@
    "line": 142
   },
   {
-   "id": "phrase:restaurant:7909",
+   "id": "phrase:restaurant:7907",
    "kind": "phrase",
    "en": "Could we move to a quieter table?",
    "en_norm": "could we move to a quieter table",
@@ -597669,7 +597628,7 @@
    "line": 143
   },
   {
-   "id": "phrase:restaurant:7910",
+   "id": "phrase:restaurant:7908",
    "kind": "phrase",
    "en": "The menu is only in Thai.",
    "en_norm": "the menu is only in thai",
@@ -597690,7 +597649,7 @@
    "line": 144
   },
   {
-   "id": "phrase:restaurant:7911",
+   "id": "phrase:restaurant:7909",
    "kind": "phrase",
    "en": "Could you explain this dish?",
    "en_norm": "could you explain this dish",
@@ -597710,11 +597669,11 @@
    "line": 145
   },
   {
-   "id": "phrase:restaurant:7912",
+   "id": "phrase:restaurant:7910",
    "kind": "phrase",
    "en": "What's in the set lunch?",
    "en_norm": "what s in the set lunch",
-   "my_norm": "နေ့လည်စာ ဆက်မှာ ဘာတွေ ပါလဲ။",
+   "my_norm": "နေ့လည်စာ set lunch မှာ ဘာတွေ ပါလဲ။",
    "th_norm": "ชุดอาหารกลางวันมีอะไรบ้างคะ",
    "fingerprint": "fbc7b843d1b98d81",
    "vocab_sig": [
@@ -597730,7 +597689,7 @@
    "line": 146
   },
   {
-   "id": "phrase:restaurant:7913",
+   "id": "phrase:restaurant:7911",
    "kind": "phrase",
    "en": "I'll skip the appetizer.",
    "en_norm": "i ll skip the appetizer",
@@ -597750,7 +597709,7 @@
    "line": 147
   },
   {
-   "id": "phrase:restaurant:7914",
+   "id": "phrase:restaurant:7912",
    "kind": "phrase",
    "en": "The main course was excellent.",
    "en_norm": "the main course was excellent",
@@ -597771,7 +597730,7 @@
    "line": 148
   },
   {
-   "id": "phrase:restaurant:7915",
+   "id": "phrase:restaurant:7913",
    "kind": "phrase",
    "en": "I'm too full for dessert.",
    "en_norm": "i m too full for dessert",
@@ -597791,7 +597750,7 @@
    "line": 149
   },
   {
-   "id": "phrase:restaurant:7916",
+   "id": "phrase:restaurant:7914",
    "kind": "phrase",
    "en": "Could I have the recipe?",
    "en_norm": "could i have the recipe",
@@ -597810,11 +597769,11 @@
    "line": 150
   },
   {
-   "id": "phrase:restaurant:7917",
+   "id": "phrase:restaurant:7915",
    "kind": "phrase",
    "en": "This tastes just like home.",
    "en_norm": "this tastes just like home",
-   "my_norm": "အိမ် အရသာ အတိုင်းပဲ။",
+   "my_norm": "အိမ်မှာ ချက်သလို အရသာ အတိုင်းပဲ။",
    "th_norm": "รสชาติเหมือนที่บ้านเลย",
    "fingerprint": "e4485c64050bfcc8",
    "vocab_sig": [
@@ -597830,7 +597789,7 @@
    "line": 151
   },
   {
-   "id": "phrase:restaurant:7918",
+   "id": "phrase:restaurant:7916",
    "kind": "phrase",
    "en": "The portion is huge!",
    "en_norm": "the portion is huge",
@@ -597850,7 +597809,7 @@
    "line": 152
   },
   {
-   "id": "phrase:restaurant:7919",
+   "id": "phrase:restaurant:7917",
    "kind": "phrase",
    "en": "We enjoyed the live music.",
    "en_norm": "we enjoyed the live music",
@@ -597871,7 +597830,7 @@
    "line": 153
   },
   {
-   "id": "phrase:restaurant:7920",
+   "id": "phrase:restaurant:7918",
    "kind": "phrase",
    "en": "Please call us a taxi.",
    "en_norm": "please call us a taxi",
@@ -597891,7 +597850,7 @@
    "line": 154
   },
   {
-   "id": "phrase:restaurant:7921",
+   "id": "phrase:restaurant:7919",
    "kind": "phrase",
    "en": "The service was a bit slow.",
    "en_norm": "the service was a bit slow",
@@ -597912,7 +597871,7 @@
    "line": 155
   },
   {
-   "id": "phrase:restaurant:7922",
+   "id": "phrase:restaurant:7920",
    "kind": "phrase",
    "en": "We'll definitely come back.",
    "en_norm": "we ll definitely come back",
@@ -597933,7 +597892,7 @@
    "line": 156
   },
   {
-   "id": "phrase:restaurant:7923",
+   "id": "phrase:restaurant:7921",
    "kind": "phrase",
    "en": "Can I pay with my phone?",
    "en_norm": "can i pay with my phone",
@@ -597953,7 +597912,7 @@
    "line": 157
   },
   {
-   "id": "phrase:restaurant:7924",
+   "id": "phrase:restaurant:7922",
    "kind": "phrase",
    "en": "The change is yours.",
    "en_norm": "the change is yours",
@@ -597972,7 +597931,7 @@
    "line": 158
   },
   {
-   "id": "phrase:restaurant:7925",
+   "id": "phrase:restaurant:7923",
    "kind": "phrase",
    "en": "Is service charge included?",
    "en_norm": "is service charge included",
@@ -597993,7 +597952,7 @@
    "line": 159
   },
   {
-   "id": "phrase:restaurant:7926",
+   "id": "phrase:restaurant:7924",
    "kind": "phrase",
    "en": "Could we split the bill three ways?",
    "en_norm": "could we split the bill three ways",
@@ -598014,7 +597973,7 @@
    "line": 160
   },
   {
-   "id": "phrase:restaurant:7927",
+   "id": "phrase:restaurant:7925",
    "kind": "phrase",
    "en": "I didn't order this.",
    "en_norm": "i didn t order this",
@@ -598034,7 +597993,7 @@
    "line": 161
   },
   {
-   "id": "phrase:restaurant:7928",
+   "id": "phrase:restaurant:7926",
    "kind": "phrase",
    "en": "There's a hair in my soup!",
    "en_norm": "there s a hair in my soup",
@@ -598054,7 +598013,7 @@
    "line": 162
   },
   {
-   "id": "phrase:restaurant:7929",
+   "id": "phrase:restaurant:7927",
    "kind": "phrase",
    "en": "Could you bring more rice?",
    "en_norm": "could you bring more rice",
@@ -598075,7 +598034,7 @@
    "line": 163
   },
   {
-   "id": "phrase:restaurant:7930",
+   "id": "phrase:restaurant:7928",
    "kind": "phrase",
    "en": "Less ice in my drink, please.",
    "en_norm": "less ice in my drink please",
@@ -598096,7 +598055,7 @@
    "line": 164
   },
   {
-   "id": "phrase:restaurant:7931",
+   "id": "phrase:restaurant:7929",
    "kind": "phrase",
    "en": "No sugar in my tea.",
    "en_norm": "no sugar in my tea",
@@ -598116,7 +598075,7 @@
    "line": 165
   },
   {
-   "id": "phrase:restaurant:7932",
+   "id": "phrase:restaurant:7930",
    "kind": "phrase",
    "en": "Make it extra spicy!",
    "en_norm": "make it extra spicy",
@@ -598137,7 +598096,7 @@
    "line": 166
   },
   {
-   "id": "phrase:restaurant:7933",
+   "id": "phrase:restaurant:7931",
    "kind": "phrase",
    "en": "I'm vegetarian — no meat, please.",
    "en_norm": "i m vegetarian no meat please",
@@ -598157,7 +598116,7 @@
    "line": 167
   },
   {
-   "id": "phrase:restaurant:7934",
+   "id": "phrase:restaurant:7932",
    "kind": "phrase",
    "en": "Does this contain peanuts?",
    "en_norm": "does this contain peanuts",
@@ -598177,7 +598136,7 @@
    "line": 168
   },
   {
-   "id": "phrase:restaurant:7935",
+   "id": "phrase:restaurant:7933",
    "kind": "phrase",
    "en": "The bill seems wrong.",
    "en_norm": "the bill seems wrong",
@@ -598198,7 +598157,7 @@
    "line": 169
   },
   {
-   "id": "phrase:airport:7936",
+   "id": "phrase:airport:7934",
    "kind": "phrase",
    "en": "How long is the layover?",
    "en_norm": "how long is the layover",
@@ -598218,7 +598177,7 @@
    "line": 171
   },
   {
-   "id": "phrase:airport:7937",
+   "id": "phrase:airport:7935",
    "kind": "phrase",
    "en": "My gate changed to B12.",
    "en_norm": "my gate changed to b12",
@@ -598239,7 +598198,7 @@
    "line": 172
   },
   {
-   "id": "phrase:airport:7938",
+   "id": "phrase:airport:7936",
    "kind": "phrase",
    "en": "Is there free Wi-Fi here?",
    "en_norm": "is there free wi fi here",
@@ -598260,7 +598219,7 @@
    "line": 173
   },
   {
-   "id": "phrase:airport:7939",
+   "id": "phrase:airport:7937",
    "kind": "phrase",
    "en": "Where can I exchange money?",
    "en_norm": "where can i exchange money",
@@ -598280,7 +598239,7 @@
    "line": 174
   },
   {
-   "id": "phrase:airport:7940",
+   "id": "phrase:airport:7938",
    "kind": "phrase",
    "en": "My luggage didn't arrive.",
    "en_norm": "my luggage didn t arrive",
@@ -598301,7 +598260,7 @@
    "line": 175
   },
   {
-   "id": "phrase:airport:7941",
+   "id": "phrase:airport:7939",
    "kind": "phrase",
    "en": "Where is the lost and found?",
    "en_norm": "where is the lost and found",
@@ -598321,7 +598280,7 @@
    "line": 176
   },
   {
-   "id": "phrase:airport:7942",
+   "id": "phrase:airport:7940",
    "kind": "phrase",
    "en": "I need to report a missing bag.",
    "en_norm": "i need to report a missing bag",
@@ -598343,7 +598302,7 @@
    "line": 177
   },
   {
-   "id": "phrase:airport:7943",
+   "id": "phrase:airport:7941",
    "kind": "phrase",
    "en": "Has my flight been delayed?",
    "en_norm": "has my flight been delayed",
@@ -598363,7 +598322,7 @@
    "line": 178
   },
   {
-   "id": "phrase:airport:7944",
+   "id": "phrase:airport:7942",
    "kind": "phrase",
    "en": "Boarding starts in ten minutes.",
    "en_norm": "boarding starts in ten minutes",
@@ -598385,7 +598344,7 @@
    "line": 179
   },
   {
-   "id": "phrase:airport:7945",
+   "id": "phrase:airport:7943",
    "kind": "phrase",
    "en": "Make sure your seatbelt is fastened.",
    "en_norm": "make sure your seatbelt is fastened",
@@ -598407,7 +598366,7 @@
    "line": 180
   },
   {
-   "id": "phrase:airport:7946",
+   "id": "phrase:airport:7944",
    "kind": "phrase",
    "en": "We are now boarding group two.",
    "en_norm": "we are now boarding group two",
@@ -598428,7 +598387,7 @@
    "line": 181
   },
   {
-   "id": "phrase:airport:7947",
+   "id": "phrase:airport:7945",
    "kind": "phrase",
    "en": "My seat is by the aisle.",
    "en_norm": "my seat is by the aisle",
@@ -598448,7 +598407,7 @@
    "line": 182
   },
   {
-   "id": "phrase:airport:7948",
+   "id": "phrase:airport:7946",
    "kind": "phrase",
    "en": "Can I switch to a window seat?",
    "en_norm": "can i switch to a window seat",
@@ -598469,7 +598428,7 @@
    "line": 183
   },
   {
-   "id": "phrase:airport:7949",
+   "id": "phrase:airport:7947",
    "kind": "phrase",
    "en": "How long is the flight?",
    "en_norm": "how long is the flight",
@@ -598489,7 +598448,7 @@
    "line": 184
   },
   {
-   "id": "phrase:airport:7950",
+   "id": "phrase:airport:7948",
    "kind": "phrase",
    "en": "Could I have some water?",
    "en_norm": "could i have some water",
@@ -598509,7 +598468,7 @@
    "line": 185
   },
   {
-   "id": "phrase:airport:7951",
+   "id": "phrase:airport:7949",
    "kind": "phrase",
    "en": "Do you have any magazines?",
    "en_norm": "do you have any magazines",
@@ -598529,7 +598488,7 @@
    "line": 186
   },
   {
-   "id": "phrase:airport:7952",
+   "id": "phrase:airport:7950",
    "kind": "phrase",
    "en": "I feel a bit airsick.",
    "en_norm": "i feel a bit airsick",
@@ -598550,7 +598509,7 @@
    "line": 187
   },
   {
-   "id": "phrase:airport:7953",
+   "id": "phrase:airport:7951",
    "kind": "phrase",
    "en": "The plane just landed.",
    "en_norm": "the plane just landed",
@@ -598570,27 +598529,7 @@
    "line": 188
   },
   {
-   "id": "phrase:airport:7954",
-   "kind": "phrase",
-   "en": "Welcome to Bangkok!",
-   "en_norm": "welcome to bangkok",
-   "my_norm": "ဘန်ကောက်ကို ကြိုဆိုပါတယ်",
-   "th_norm": "ยินดีต้อนรับสู่กรุงเทพฯ",
-   "fingerprint": "d00611cddb7b3ffb",
-   "vocab_sig": [
-    "bangkok",
-    "welcome"
-   ],
-   "template_sig": "W to W !",
-   "tags": [
-    "airport",
-    "phrase"
-   ],
-   "file": "src/data/phrases-f.ts",
-   "line": 189
-  },
-  {
-   "id": "phrase:airport:7955",
+   "id": "phrase:airport:7952",
    "kind": "phrase",
    "en": "Follow the signs to immigration.",
    "en_norm": "follow the signs to immigration",
@@ -598611,7 +598550,7 @@
    "line": 190
   },
   {
-   "id": "phrase:market:7956",
+   "id": "phrase:market:7953",
    "kind": "phrase",
    "en": "Is this today's stock?",
    "en_norm": "is this today s stock",
@@ -598631,7 +598570,7 @@
    "line": 192
   },
   {
-   "id": "phrase:market:7957",
+   "id": "phrase:market:7954",
    "kind": "phrase",
    "en": "These chilies are very spicy.",
    "en_norm": "these chilies are very spicy",
@@ -598651,7 +598590,7 @@
    "line": 193
   },
   {
-   "id": "phrase:market:7958",
+   "id": "phrase:market:7955",
    "kind": "phrase",
    "en": "How much for a bunch?",
    "en_norm": "how much for a bunch",
@@ -598671,7 +598610,7 @@
    "line": 194
   },
   {
-   "id": "phrase:market:7959",
+   "id": "phrase:market:7956",
    "kind": "phrase",
    "en": "The tomatoes are too soft.",
    "en_norm": "the tomatoes are too soft",
@@ -598691,7 +598630,7 @@
    "line": 195
   },
   {
-   "id": "phrase:market:7960",
+   "id": "phrase:market:7957",
    "kind": "phrase",
    "en": "Pick the ripe ones for me.",
    "en_norm": "pick the ripe ones for me",
@@ -598712,7 +598651,7 @@
    "line": 196
   },
   {
-   "id": "phrase:market:7961",
+   "id": "phrase:market:7958",
    "kind": "phrase",
    "en": "I want the morning catch.",
    "en_norm": "i want the morning catch",
@@ -598733,27 +598672,7 @@
    "line": 197
   },
   {
-   "id": "phrase:market:7962",
-   "kind": "phrase",
-   "en": "Can you clean the fish?",
-   "en_norm": "can you clean the fish",
-   "my_norm": "ငါးကို ကိုင်ပေးနိုင်မလား။",
-   "th_norm": "ทำความสะอาดปลาให้ได้ไหมคะ",
-   "fingerprint": "a3d4e615e45f9c2a",
-   "vocab_sig": [
-    "clean",
-    "fish"
-   ],
-   "template_sig": "can you W the W ?",
-   "tags": [
-    "market",
-    "phrase"
-   ],
-   "file": "src/data/phrases-f.ts",
-   "line": 198
-  },
-  {
-   "id": "phrase:market:7963",
+   "id": "phrase:market:7959",
    "kind": "phrase",
    "en": "Cut it into small pieces.",
    "en_norm": "cut it into small pieces",
@@ -598774,7 +598693,7 @@
    "line": 199
   },
   {
-   "id": "phrase:market:7964",
+   "id": "phrase:market:7960",
    "kind": "phrase",
    "en": "That's my regular stall.",
    "en_norm": "that s my regular stall",
@@ -598794,7 +598713,7 @@
    "line": 200
   },
   {
-   "id": "phrase:market:7965",
+   "id": "phrase:market:7961",
    "kind": "phrase",
    "en": "She always gives me a good price.",
    "en_norm": "she always gives me a good price",
@@ -598816,7 +598735,7 @@
    "line": 201
   },
   {
-   "id": "phrase:market:7966",
+   "id": "phrase:market:7962",
    "kind": "phrase",
    "en": "The market is very crowded today.",
    "en_norm": "the market is very crowded today",
@@ -598837,7 +598756,7 @@
    "line": 202
   },
   {
-   "id": "phrase:market:7967",
+   "id": "phrase:market:7963",
    "kind": "phrase",
    "en": "Let's go early to get the best picks.",
    "en_norm": "let s go early to get the best picks",
@@ -598860,7 +598779,7 @@
    "line": 203
   },
   {
-   "id": "phrase:market:7968",
+   "id": "phrase:market:7964",
    "kind": "phrase",
    "en": "I bought too much — help me carry!",
    "en_norm": "i bought too much help me carry",
@@ -598882,7 +598801,7 @@
    "line": 204
   },
   {
-   "id": "phrase:market:7969",
+   "id": "phrase:market:7965",
    "kind": "phrase",
    "en": "Can you break a thousand?",
    "en_norm": "can you break a thousand",
@@ -598902,7 +598821,7 @@
    "line": 205
   },
   {
-   "id": "phrase:market:7970",
+   "id": "phrase:market:7966",
    "kind": "phrase",
    "en": "Put it in a separate bag.",
    "en_norm": "put it in a separate bag",
@@ -598923,7 +598842,7 @@
    "line": 206
   },
   {
-   "id": "phrase:market:7971",
+   "id": "phrase:market:7967",
    "kind": "phrase",
    "en": "I don't need a bag — I brought my own.",
    "en_norm": "i don t need a bag i brought my own",
@@ -598945,7 +598864,7 @@
    "line": 207
   },
   {
-   "id": "phrase:market:7972",
+   "id": "phrase:market:7968",
    "kind": "phrase",
    "en": "These eggs are farm fresh.",
    "en_norm": "these eggs are farm fresh",
@@ -598966,7 +598885,7 @@
    "line": 208
   },
   {
-   "id": "phrase:market:7973",
+   "id": "phrase:market:7969",
    "kind": "phrase",
    "en": "How many eggs in a tray?",
    "en_norm": "how many eggs in a tray",
@@ -598987,7 +598906,7 @@
    "line": 209
   },
   {
-   "id": "phrase:market:7974",
+   "id": "phrase:market:7970",
    "kind": "phrase",
    "en": "The flowers smell wonderful.",
    "en_norm": "the flowers smell wonderful",
@@ -599008,7 +598927,7 @@
    "line": 210
   },
   {
-   "id": "phrase:market:7975",
+   "id": "phrase:market:7971",
    "kind": "phrase",
    "en": "I'll take a dozen bananas.",
    "en_norm": "i ll take a dozen bananas",
@@ -599029,7 +598948,7 @@
    "line": 211
   },
   {
-   "id": "phrase:work:7976",
+   "id": "phrase:work:7972",
    "kind": "phrase",
    "en": "Let's schedule a follow-up meeting.",
    "en_norm": "let s schedule a follow up meeting",
@@ -599050,7 +598969,7 @@
    "line": 7
   },
   {
-   "id": "phrase:work:7977",
+   "id": "phrase:work:7973",
    "kind": "phrase",
    "en": "I'll send you the updated file.",
    "en_norm": "i ll send you the updated file",
@@ -599071,7 +598990,7 @@
    "line": 8
   },
   {
-   "id": "phrase:work:7978",
+   "id": "phrase:work:7974",
    "kind": "phrase",
    "en": "The client said yes to our proposal.",
    "en_norm": "the client said yes to our proposal",
@@ -599092,7 +599011,7 @@
    "line": 9
   },
   {
-   "id": "phrase:work:7979",
+   "id": "phrase:work:7975",
    "kind": "phrase",
    "en": "We need to finish this by Friday.",
    "en_norm": "we need to finish this by friday",
@@ -599113,7 +599032,7 @@
    "line": 10
   },
   {
-   "id": "phrase:work:7980",
+   "id": "phrase:work:7976",
    "kind": "phrase",
    "en": "Can we move the meeting to Monday?",
    "en_norm": "can we move the meeting to monday",
@@ -599134,7 +599053,7 @@
    "line": 11
   },
   {
-   "id": "phrase:work:7981",
+   "id": "phrase:work:7977",
    "kind": "phrase",
    "en": "I'm working from home today.",
    "en_norm": "i m working from home today",
@@ -599155,7 +599074,7 @@
    "line": 12
   },
   {
-   "id": "phrase:work:7982",
+   "id": "phrase:work:7978",
    "kind": "phrase",
    "en": "Please CC me on the email.",
    "en_norm": "please cc me on the email",
@@ -599175,7 +599094,7 @@
    "line": 13
   },
   {
-   "id": "phrase:work:7983",
+   "id": "phrase:work:7979",
    "kind": "phrase",
    "en": "The Wi-Fi in the meeting room is down.",
    "en_norm": "the wi fi in the meeting room is down",
@@ -599197,7 +599116,7 @@
    "line": 14
   },
   {
-   "id": "phrase:work:7984",
+   "id": "phrase:work:7980",
    "kind": "phrase",
    "en": "I have a performance review tomorrow.",
    "en_norm": "i have a performance review tomorrow",
@@ -599218,7 +599137,7 @@
    "line": 15
   },
   {
-   "id": "phrase:work:7985",
+   "id": "phrase:work:7981",
    "kind": "phrase",
    "en": "Shall we pick this up after lunch?",
    "en_norm": "shall we pick this up after lunch",
@@ -599238,7 +599157,7 @@
    "line": 16
   },
   {
-   "id": "phrase:work:7986",
+   "id": "phrase:work:7982",
    "kind": "phrase",
    "en": "Could you summarize the main points?",
    "en_norm": "could you summarize the main points",
@@ -599259,7 +599178,7 @@
    "line": 17
   },
   {
-   "id": "phrase:work:7987",
+   "id": "phrase:work:7983",
    "kind": "phrase",
    "en": "I'll take notes during the call.",
    "en_norm": "i ll take notes during the call",
@@ -599281,7 +599200,7 @@
    "line": 18
   },
   {
-   "id": "phrase:work:7988",
+   "id": "phrase:work:7984",
    "kind": "phrase",
    "en": "Let's stick to the agenda.",
    "en_norm": "let s stick to the agenda",
@@ -599301,7 +599220,7 @@
    "line": 19
   },
   {
-   "id": "phrase:work:7989",
+   "id": "phrase:work:7985",
    "kind": "phrase",
    "en": "We are running out of time.",
    "en_norm": "we are running out of time",
@@ -599321,7 +599240,7 @@
    "line": 20
   },
   {
-   "id": "phrase:work:7990",
+   "id": "phrase:work:7986",
    "kind": "phrase",
    "en": "Can we extend the deadline?",
    "en_norm": "can we extend the deadline",
@@ -599341,7 +599260,7 @@
    "line": 21
   },
   {
-   "id": "phrase:work:7991",
+   "id": "phrase:work:7987",
    "kind": "phrase",
    "en": "The project is on track.",
    "en_norm": "the project is on track",
@@ -599361,7 +599280,7 @@
    "line": 22
   },
   {
-   "id": "phrase:work:7992",
+   "id": "phrase:work:7988",
    "kind": "phrase",
    "en": "We hit a small problem yesterday.",
    "en_norm": "we hit a small problem yesterday",
@@ -599383,7 +599302,7 @@
    "line": 23
   },
   {
-   "id": "phrase:work:7993",
+   "id": "phrase:work:7989",
    "kind": "phrase",
    "en": "Let's brainstorm some new ideas.",
    "en_norm": "let s brainstorm some new ideas",
@@ -599405,7 +599324,7 @@
    "line": 24
   },
   {
-   "id": "phrase:work:7994",
+   "id": "phrase:work:7990",
    "kind": "phrase",
    "en": "Who is in charge of this task?",
    "en_norm": "who is in charge of this task",
@@ -599425,7 +599344,7 @@
    "line": 25
   },
   {
-   "id": "phrase:work:7995",
+   "id": "phrase:work:7991",
    "kind": "phrase",
    "en": "I'll handle the presentation slides.",
    "en_norm": "i ll handle the presentation slides",
@@ -599446,7 +599365,7 @@
    "line": 26
   },
   {
-   "id": "phrase:work:7996",
+   "id": "phrase:work:7992",
    "kind": "phrase",
    "en": "The numbers don't add up.",
    "en_norm": "the numbers don t add up",
@@ -599466,7 +599385,7 @@
    "line": 27
   },
   {
-   "id": "phrase:work:7997",
+   "id": "phrase:work:7993",
    "kind": "phrase",
    "en": "We need to cut costs this quarter.",
    "en_norm": "we need to cut costs this quarter",
@@ -599488,7 +599407,7 @@
    "line": 28
   },
   {
-   "id": "phrase:work:7998",
+   "id": "phrase:work:7994",
    "kind": "phrase",
    "en": "Our sales went up last month.",
    "en_norm": "our sales went up last month",
@@ -599510,7 +599429,7 @@
    "line": 29
   },
   {
-   "id": "phrase:work:7999",
+   "id": "phrase:work:7995",
    "kind": "phrase",
    "en": "The new hire starts on Monday.",
    "en_norm": "the new hire starts on monday",
@@ -599532,7 +599451,7 @@
    "line": 30
   },
   {
-   "id": "phrase:work:8000",
+   "id": "phrase:work:7996",
    "kind": "phrase",
    "en": "I need to take a day off.",
    "en_norm": "i need to take a day off",
@@ -599553,7 +599472,7 @@
    "line": 31
   },
   {
-   "id": "phrase:work:8001",
+   "id": "phrase:work:7997",
    "kind": "phrase",
    "en": "My shift ends at six.",
    "en_norm": "my shift ends at six",
@@ -599574,7 +599493,7 @@
    "line": 32
   },
   {
-   "id": "phrase:work:8002",
+   "id": "phrase:work:7998",
    "kind": "phrase",
    "en": "Overtime is not allowed this week.",
    "en_norm": "overtime is not allowed this week",
@@ -599595,7 +599514,7 @@
    "line": 33
   },
   {
-   "id": "phrase:work:8003",
+   "id": "phrase:work:7999",
    "kind": "phrase",
    "en": "Please submit your timesheet.",
    "en_norm": "please submit your timesheet",
@@ -599615,7 +599534,7 @@
    "line": 34
   },
   {
-   "id": "phrase:work:8004",
+   "id": "phrase:work:8000",
    "kind": "phrase",
    "en": "The office party is next Friday.",
    "en_norm": "the office party is next friday",
@@ -599637,7 +599556,7 @@
    "line": 35
   },
   {
-   "id": "phrase:work:8005",
+   "id": "phrase:work:8001",
    "kind": "phrase",
    "en": "I got promoted last month!",
    "en_norm": "i got promoted last month",
@@ -599659,7 +599578,7 @@
    "line": 36
   },
   {
-   "id": "phrase:office:8006",
+   "id": "phrase:office:8002",
    "kind": "phrase",
    "en": "The printer needs more paper.",
    "en_norm": "the printer needs more paper",
@@ -599681,7 +599600,7 @@
    "line": 38
   },
   {
-   "id": "phrase:office:8007",
+   "id": "phrase:office:8003",
    "kind": "phrase",
    "en": "Can you book the conference room?",
    "en_norm": "can you book the conference room",
@@ -599702,7 +599621,7 @@
    "line": 39
   },
   {
-   "id": "phrase:office:8008",
+   "id": "phrase:office:8004",
    "kind": "phrase",
    "en": "I left my badge at home.",
    "en_norm": "i left my badge at home",
@@ -599723,7 +599642,7 @@
    "line": 40
   },
   {
-   "id": "phrase:office:8009",
+   "id": "phrase:office:8005",
    "kind": "phrase",
    "en": "The elevator is out of service.",
    "en_norm": "the elevator is out of service",
@@ -599743,7 +599662,7 @@
    "line": 41
   },
   {
-   "id": "phrase:office:8010",
+   "id": "phrase:office:8006",
    "kind": "phrase",
    "en": "Let's grab coffee downstairs.",
    "en_norm": "let s grab coffee downstairs",
@@ -599764,7 +599683,7 @@
    "line": 42
   },
   {
-   "id": "phrase:office:8011",
+   "id": "phrase:office:8007",
    "kind": "phrase",
    "en": "The meeting room is occupied.",
    "en_norm": "the meeting room is occupied",
@@ -599785,7 +599704,7 @@
    "line": 43
   },
   {
-   "id": "phrase:office:8012",
+   "id": "phrase:office:8008",
    "kind": "phrase",
    "en": "Can I borrow your charger?",
    "en_norm": "can i borrow your charger",
@@ -599805,7 +599724,7 @@
    "line": 44
   },
   {
-   "id": "phrase:office:8013",
+   "id": "phrase:office:8009",
    "kind": "phrase",
    "en": "My computer keeps freezing.",
    "en_norm": "my computer keeps freezing",
@@ -599826,7 +599745,7 @@
    "line": 45
   },
   {
-   "id": "phrase:office:8014",
+   "id": "phrase:office:8010",
    "kind": "phrase",
    "en": "I need to update my password.",
    "en_norm": "i need to update my password",
@@ -599847,7 +599766,7 @@
    "line": 46
   },
   {
-   "id": "phrase:office:8015",
+   "id": "phrase:office:8011",
    "kind": "phrase",
    "en": "The shared drive is full.",
    "en_norm": "the shared drive is full",
@@ -599868,7 +599787,7 @@
    "line": 47
   },
   {
-   "id": "phrase:office:8016",
+   "id": "phrase:office:8012",
    "kind": "phrase",
    "en": "Please don't disturb me this afternoon.",
    "en_norm": "please don t disturb me this afternoon",
@@ -599888,7 +599807,7 @@
    "line": 48
   },
   {
-   "id": "phrase:office:8017",
+   "id": "phrase:office:8013",
    "kind": "phrase",
    "en": "I'm in a meeting — text me instead.",
    "en_norm": "i m in a meeting text me instead",
@@ -599909,7 +599828,7 @@
    "line": 49
   },
   {
-   "id": "phrase:office:8018",
+   "id": "phrase:office:8014",
    "kind": "phrase",
    "en": "The new policy starts next month.",
    "en_norm": "the new policy starts next month",
@@ -599932,7 +599851,7 @@
    "line": 50
   },
   {
-   "id": "phrase:office:8019",
+   "id": "phrase:office:8015",
    "kind": "phrase",
    "en": "HR sent an important announcement.",
    "en_norm": "hr sent an important announcement",
@@ -599954,7 +599873,7 @@
    "line": 51
   },
   {
-   "id": "phrase:office:8020",
+   "id": "phrase:office:8016",
    "kind": "phrase",
    "en": "Let's order lunch together.",
    "en_norm": "let s order lunch together",
@@ -599975,7 +599894,7 @@
    "line": 52
   },
   {
-   "id": "phrase:office:8021",
+   "id": "phrase:office:8017",
    "kind": "phrase",
    "en": "The cafeteria food is quite good.",
    "en_norm": "the cafeteria food is quite good",
@@ -599997,7 +599916,7 @@
    "line": 53
   },
   {
-   "id": "phrase:office:8022",
+   "id": "phrase:office:8018",
    "kind": "phrase",
    "en": "I have back-to-back meetings today.",
    "en_norm": "i have back to back meetings today",
@@ -600018,7 +599937,7 @@
    "line": 54
   },
   {
-   "id": "phrase:office:8023",
+   "id": "phrase:office:8019",
    "kind": "phrase",
    "en": "Can you cover for me tomorrow?",
    "en_norm": "can you cover for me tomorrow",
@@ -600038,7 +599957,7 @@
    "line": 55
   },
   {
-   "id": "phrase:office:8024",
+   "id": "phrase:office:8020",
    "kind": "phrase",
    "en": "The boss wants to see you.",
    "en_norm": "the boss wants to see you",
@@ -600059,7 +599978,7 @@
    "line": 56
   },
   {
-   "id": "phrase:office:8025",
+   "id": "phrase:office:8021",
    "kind": "phrase",
    "en": "Let's celebrate after work!",
    "en_norm": "let s celebrate after work",
@@ -600079,7 +599998,7 @@
    "line": 57
   },
   {
-   "id": "phrase:business:8026",
+   "id": "phrase:business:8022",
    "kind": "phrase",
    "en": "Let's discuss the terms first.",
    "en_norm": "let s discuss the terms first",
@@ -600100,7 +600019,7 @@
    "line": 59
   },
   {
-   "id": "phrase:business:8027",
+   "id": "phrase:business:8023",
    "kind": "phrase",
    "en": "Our budget is quite tight this year.",
    "en_norm": "our budget is quite tight this year",
@@ -600122,7 +600041,7 @@
    "line": 60
   },
   {
-   "id": "phrase:business:8028",
+   "id": "phrase:business:8024",
    "kind": "phrase",
    "en": "Can you send me the invoice?",
    "en_norm": "can you send me the invoice",
@@ -600142,7 +600061,7 @@
    "line": 61
   },
   {
-   "id": "phrase:business:8029",
+   "id": "phrase:business:8025",
    "kind": "phrase",
    "en": "The presentation went really well.",
    "en_norm": "the presentation went really well",
@@ -600164,7 +600083,7 @@
    "line": 62
   },
   {
-   "id": "phrase:business:8030",
+   "id": "phrase:business:8026",
    "kind": "phrase",
    "en": "We need a better strategy.",
    "en_norm": "we need a better strategy",
@@ -600185,7 +600104,7 @@
    "line": 63
   },
   {
-   "id": "phrase:business:8031",
+   "id": "phrase:business:8027",
    "kind": "phrase",
    "en": "Let's sign the contract today.",
    "en_norm": "let s sign the contract today",
@@ -600206,7 +600125,7 @@
    "line": 64
   },
   {
-   "id": "phrase:business:8032",
+   "id": "phrase:business:8028",
    "kind": "phrase",
    "en": "When can you deliver the goods?",
    "en_norm": "when can you deliver the goods",
@@ -600226,7 +600145,7 @@
    "line": 65
   },
   {
-   "id": "phrase:business:8033",
+   "id": "phrase:business:8029",
    "kind": "phrase",
    "en": "Payment is due within thirty days.",
    "en_norm": "payment is due within thirty days",
@@ -600249,7 +600168,7 @@
    "line": 66
   },
   {
-   "id": "phrase:business:8034",
+   "id": "phrase:business:8030",
    "kind": "phrase",
    "en": "We offer a full refund.",
    "en_norm": "we offer a full refund",
@@ -600270,7 +600189,7 @@
    "line": 67
   },
   {
-   "id": "phrase:business:8035",
+   "id": "phrase:business:8031",
    "kind": "phrase",
    "en": "That's our final offer.",
    "en_norm": "that s our final offer",
@@ -600290,7 +600209,7 @@
    "line": 68
   },
   {
-   "id": "phrase:business:8036",
+   "id": "phrase:business:8032",
    "kind": "phrase",
    "en": "Can we meet halfway on the price?",
    "en_norm": "can we meet halfway on the price",
@@ -600311,7 +600230,7 @@
    "line": 69
   },
   {
-   "id": "phrase:business:8037",
+   "id": "phrase:business:8033",
    "kind": "phrase",
    "en": "I need to check with my team.",
    "en_norm": "i need to check with my team",
@@ -600332,7 +600251,7 @@
    "line": 70
   },
   {
-   "id": "phrase:business:8038",
+   "id": "phrase:business:8034",
    "kind": "phrase",
    "en": "Let's put it in writing.",
    "en_norm": "let s put it in writing",
@@ -600352,7 +600271,7 @@
    "line": 71
   },
   {
-   "id": "phrase:business:8039",
+   "id": "phrase:business:8035",
    "kind": "phrase",
    "en": "The deal is almost closed.",
    "en_norm": "the deal is almost closed",
@@ -600373,7 +600292,7 @@
    "line": 72
   },
   {
-   "id": "phrase:business:8040",
+   "id": "phrase:business:8036",
    "kind": "phrase",
    "en": "We lost the bid this time.",
    "en_norm": "we lost the bid this time",
@@ -600394,7 +600313,7 @@
    "line": 73
   },
   {
-   "id": "phrase:business:8041",
+   "id": "phrase:business:8037",
    "kind": "phrase",
    "en": "Our competitors lowered their prices.",
    "en_norm": "our competitors lowered their prices",
@@ -600415,7 +600334,7 @@
    "line": 74
   },
   {
-   "id": "phrase:business:8042",
+   "id": "phrase:business:8038",
    "kind": "phrase",
    "en": "Customer feedback has been positive.",
    "en_norm": "customer feedback has been positive",
@@ -600436,7 +600355,7 @@
    "line": 75
   },
   {
-   "id": "phrase:business:8043",
+   "id": "phrase:business:8039",
    "kind": "phrase",
    "en": "We should expand to new markets.",
    "en_norm": "we should expand to new markets",
@@ -600457,7 +600376,7 @@
    "line": 76
   },
   {
-   "id": "phrase:business:8044",
+   "id": "phrase:business:8040",
    "kind": "phrase",
    "en": "The launch date is confirmed.",
    "en_norm": "the launch date is confirmed",
@@ -600478,7 +600397,7 @@
    "line": 77
   },
   {
-   "id": "phrase:business:8045",
+   "id": "phrase:business:8041",
    "kind": "phrase",
    "en": "Let's review the numbers together.",
    "en_norm": "let s review the numbers together",
@@ -600499,7 +600418,7 @@
    "line": 78
   },
   {
-   "id": "phrase:friends:8046",
+   "id": "phrase:friends:8042",
    "kind": "phrase",
    "en": "What are you up to this weekend?",
    "en_norm": "what are you up to this weekend",
@@ -600518,7 +600437,7 @@
    "line": 80
   },
   {
-   "id": "phrase:friends:8047",
+   "id": "phrase:friends:8043",
    "kind": "phrase",
    "en": "Long time no see!",
    "en_norm": "long time no see",
@@ -600539,7 +600458,7 @@
    "line": 81
   },
   {
-   "id": "phrase:friends:8048",
+   "id": "phrase:friends:8044",
    "kind": "phrase",
    "en": "How have you been lately?",
    "en_norm": "how have you been lately",
@@ -600558,7 +600477,7 @@
    "line": 82
   },
   {
-   "id": "phrase:friends:8049",
+   "id": "phrase:friends:8045",
    "kind": "phrase",
    "en": "Let's catch up over coffee.",
    "en_norm": "let s catch up over coffee",
@@ -600578,7 +600497,7 @@
    "line": 83
   },
   {
-   "id": "phrase:friends:8050",
+   "id": "phrase:friends:8046",
    "kind": "phrase",
    "en": "That sounds like fun — count me in!",
    "en_norm": "that sounds like fun count me in",
@@ -600599,7 +600518,7 @@
    "line": 84
   },
   {
-   "id": "phrase:friends:8051",
+   "id": "phrase:friends:8047",
    "kind": "phrase",
    "en": "Are you free on Saturday?",
    "en_norm": "are you free on saturday",
@@ -600619,7 +600538,7 @@
    "line": 85
   },
   {
-   "id": "phrase:friends:8052",
+   "id": "phrase:friends:8048",
    "kind": "phrase",
    "en": "I had a great time yesterday.",
    "en_norm": "i had a great time yesterday",
@@ -600640,7 +600559,7 @@
    "line": 86
   },
   {
-   "id": "phrase:friends:8053",
+   "id": "phrase:friends:8049",
    "kind": "phrase",
    "en": "Thanks for inviting me!",
    "en_norm": "thanks for inviting me",
@@ -600660,7 +600579,7 @@
    "line": 87
   },
   {
-   "id": "phrase:friends:8054",
+   "id": "phrase:friends:8050",
    "kind": "phrase",
    "en": "Sorry I'm late — traffic was terrible.",
    "en_norm": "sorry i m late traffic was terrible",
@@ -600682,7 +600601,7 @@
    "line": 88
   },
   {
-   "id": "phrase:friends:8055",
+   "id": "phrase:friends:8051",
    "kind": "phrase",
    "en": "No worries, we just started.",
    "en_norm": "no worries we just started",
@@ -600702,7 +600621,7 @@
    "line": 89
   },
   {
-   "id": "phrase:friends:8056",
+   "id": "phrase:friends:8052",
    "kind": "phrase",
    "en": "Let's take a selfie!",
    "en_norm": "let s take a selfie",
@@ -600722,7 +600641,7 @@
    "line": 90
   },
   {
-   "id": "phrase:friends:8057",
+   "id": "phrase:friends:8053",
    "kind": "phrase",
    "en": "You look great today!",
    "en_norm": "you look great today",
@@ -600743,7 +600662,7 @@
    "line": 91
   },
   {
-   "id": "phrase:friends:8058",
+   "id": "phrase:friends:8054",
    "kind": "phrase",
    "en": "I love your new haircut.",
    "en_norm": "i love your new haircut",
@@ -600764,7 +600683,7 @@
    "line": 92
   },
   {
-   "id": "phrase:friends:8059",
+   "id": "phrase:friends:8055",
    "kind": "phrase",
    "en": "What do you think of this movie?",
    "en_norm": "what do you think of this movie",
@@ -600784,7 +600703,7 @@
    "line": 93
   },
   {
-   "id": "phrase:friends:8060",
+   "id": "phrase:friends:8056",
    "kind": "phrase",
    "en": "Have you seen the new episode?",
    "en_norm": "have you seen the new episode",
@@ -600805,7 +600724,7 @@
    "line": 94
   },
   {
-   "id": "phrase:friends:8061",
+   "id": "phrase:friends:8057",
    "kind": "phrase",
    "en": "Let's plan a trip together.",
    "en_norm": "let s plan a trip together",
@@ -600826,7 +600745,7 @@
    "line": 95
   },
   {
-   "id": "phrase:friends:8062",
+   "id": "phrase:friends:8058",
    "kind": "phrase",
    "en": "I'll bring the snacks.",
    "en_norm": "i ll bring the snacks",
@@ -600846,7 +600765,7 @@
    "line": 96
   },
   {
-   "id": "phrase:friends:8063",
+   "id": "phrase:friends:8059",
    "kind": "phrase",
    "en": "Don't forget your swimsuit!",
    "en_norm": "don t forget your swimsuit",
@@ -600866,7 +600785,7 @@
    "line": 97
   },
   {
-   "id": "phrase:friends:8064",
+   "id": "phrase:friends:8060",
    "kind": "phrase",
    "en": "It was nice meeting your family.",
    "en_norm": "it was nice meeting your family",
@@ -600887,7 +600806,7 @@
    "line": 98
   },
   {
-   "id": "phrase:friends:8065",
+   "id": "phrase:friends:8061",
    "kind": "phrase",
    "en": "Let's do this again soon!",
    "en_norm": "let s do this again soon",
@@ -600907,7 +600826,7 @@
    "line": 99
   },
   {
-   "id": "phrase:emergencies:8066",
+   "id": "phrase:emergencies:8062",
    "kind": "phrase",
    "en": "Hello? I can't hear you very well.",
    "en_norm": "hello i can t hear you very well",
@@ -600928,7 +600847,7 @@
    "line": 101
   },
   {
-   "id": "phrase:emergencies:8067",
+   "id": "phrase:emergencies:8063",
    "kind": "phrase",
    "en": "Can you speak a little slower?",
    "en_norm": "can you speak a little slower",
@@ -600949,7 +600868,7 @@
    "line": 102
   },
   {
-   "id": "phrase:emergencies:8068",
+   "id": "phrase:emergencies:8064",
    "kind": "phrase",
    "en": "I'll call you right back.",
    "en_norm": "i ll call you right back",
@@ -600970,7 +600889,7 @@
    "line": 103
   },
   {
-   "id": "phrase:emergencies:8069",
+   "id": "phrase:emergencies:8065",
    "kind": "phrase",
    "en": "Please leave a message after the beep.",
    "en_norm": "please leave a message after the beep",
@@ -600991,7 +600910,7 @@
    "line": 104
   },
   {
-   "id": "phrase:emergencies:8070",
+   "id": "phrase:emergencies:8066",
    "kind": "phrase",
    "en": "Is this a good time to talk?",
    "en_norm": "is this a good time to talk",
@@ -601012,7 +600931,7 @@
    "line": 105
   },
   {
-   "id": "phrase:emergencies:8071",
+   "id": "phrase:emergencies:8067",
    "kind": "phrase",
    "en": "Sorry, I have to hang up now.",
    "en_norm": "sorry i have to hang up now",
@@ -601033,7 +600952,7 @@
    "line": 106
   },
   {
-   "id": "phrase:emergencies:8072",
+   "id": "phrase:emergencies:8068",
    "kind": "phrase",
    "en": "The line is very bad today.",
    "en_norm": "the line is very bad today",
@@ -601054,7 +600973,7 @@
    "line": 107
   },
   {
-   "id": "phrase:emergencies:8073",
+   "id": "phrase:emergencies:8069",
    "kind": "phrase",
    "en": "Can you text me the address?",
    "en_norm": "can you text me the address",
@@ -601074,7 +600993,7 @@
    "line": 108
   },
   {
-   "id": "phrase:emergencies:8074",
+   "id": "phrase:emergencies:8070",
    "kind": "phrase",
    "en": "My phone is about to die.",
    "en_norm": "my phone is about to die",
@@ -601094,7 +601013,7 @@
    "line": 109
   },
   {
-   "id": "phrase:emergencies:8075",
+   "id": "phrase:emergencies:8071",
    "kind": "phrase",
    "en": "I'll send you my location.",
    "en_norm": "i ll send you my location",
@@ -601114,7 +601033,7 @@
    "line": 110
   },
   {
-   "id": "phrase:health:8076",
+   "id": "phrase:health:8072",
    "kind": "phrase",
    "en": "I need to see a doctor this week.",
    "en_norm": "i need to see a doctor this week",
@@ -601136,7 +601055,7 @@
    "line": 112
   },
   {
-   "id": "phrase:health:8077",
+   "id": "phrase:health:8073",
    "kind": "phrase",
    "en": "I've had this cough for days.",
    "en_norm": "i ve had this cough for days",
@@ -601156,7 +601075,7 @@
    "line": 113
   },
   {
-   "id": "phrase:health:8078",
+   "id": "phrase:health:8074",
    "kind": "phrase",
    "en": "My back hurts from sitting too long.",
    "en_norm": "my back hurts from sitting too long",
@@ -601178,7 +601097,7 @@
    "line": 114
   },
   {
-   "id": "phrase:health:8079",
+   "id": "phrase:health:8075",
    "kind": "phrase",
    "en": "I should drink more water.",
    "en_norm": "i should drink more water",
@@ -601199,7 +601118,7 @@
    "line": 115
   },
   {
-   "id": "phrase:health:8080",
+   "id": "phrase:health:8076",
    "kind": "phrase",
    "en": "Let's go for a morning walk.",
    "en_norm": "let s go for a morning walk",
@@ -601220,7 +601139,7 @@
    "line": 116
   },
   {
-   "id": "phrase:health:8081",
+   "id": "phrase:health:8077",
    "kind": "phrase",
    "en": "I started jogging last week.",
    "en_norm": "i started jogging last week",
@@ -601242,7 +601161,7 @@
    "line": 117
   },
   {
-   "id": "phrase:health:8082",
+   "id": "phrase:health:8078",
    "kind": "phrase",
    "en": "You look tired — get some rest.",
    "en_norm": "you look tired get some rest",
@@ -601265,7 +601184,7 @@
    "line": 118
   },
   {
-   "id": "phrase:health:8083",
+   "id": "phrase:health:8079",
    "kind": "phrase",
    "en": "I need to eat healthier food.",
    "en_norm": "i need to eat healthier food",
@@ -601287,7 +601206,7 @@
    "line": 119
   },
   {
-   "id": "phrase:health:8084",
+   "id": "phrase:health:8080",
    "kind": "phrase",
    "en": "Too much coffee is bad for you.",
    "en_norm": "too much coffee is bad for you",
@@ -601308,7 +601227,7 @@
    "line": 120
   },
   {
-   "id": "phrase:health:8085",
+   "id": "phrase:health:8081",
    "kind": "phrase",
    "en": "I feel much better today.",
    "en_norm": "i feel much better today",
@@ -601330,7 +601249,7 @@
    "line": 121
   },
   {
-   "id": "phrase:technology:8086",
+   "id": "phrase:technology:8082",
    "kind": "phrase",
    "en": "My phone battery dies too fast.",
    "en_norm": "my phone battery dies too fast",
@@ -601352,7 +601271,7 @@
    "line": 123
   },
   {
-   "id": "phrase:technology:8087",
+   "id": "phrase:technology:8083",
    "kind": "phrase",
    "en": "The app keeps crashing.",
    "en_norm": "the app keeps crashing",
@@ -601373,7 +601292,7 @@
    "line": 124
   },
   {
-   "id": "phrase:technology:8088",
+   "id": "phrase:technology:8084",
    "kind": "phrase",
    "en": "Can you help me install this?",
    "en_norm": "can you help me install this",
@@ -601393,7 +601312,7 @@
    "line": 125
   },
   {
-   "id": "phrase:technology:8089",
+   "id": "phrase:technology:8085",
    "kind": "phrase",
    "en": "I forgot my Wi-Fi password.",
    "en_norm": "i forgot my wi fi password",
@@ -601415,7 +601334,7 @@
    "line": 126
   },
   {
-   "id": "phrase:technology:8090",
+   "id": "phrase:technology:8086",
    "kind": "phrase",
    "en": "The screen is cracked.",
    "en_norm": "the screen is cracked",
@@ -601435,7 +601354,7 @@
    "line": 127
   },
   {
-   "id": "phrase:technology:8091",
+   "id": "phrase:technology:8087",
    "kind": "phrase",
    "en": "I need more storage space.",
    "en_norm": "i need more storage space",
@@ -601457,7 +601376,7 @@
    "line": 128
   },
   {
-   "id": "phrase:technology:8092",
+   "id": "phrase:technology:8088",
    "kind": "phrase",
    "en": "Turn on airplane mode.",
    "en_norm": "turn on airplane mode",
@@ -601478,7 +601397,7 @@
    "line": 129
   },
   {
-   "id": "phrase:technology:8093",
+   "id": "phrase:technology:8089",
    "kind": "phrase",
    "en": "The update will take ten minutes.",
    "en_norm": "the update will take ten minutes",
@@ -601500,7 +601419,7 @@
    "line": 130
   },
   {
-   "id": "phrase:technology:8094",
+   "id": "phrase:technology:8090",
    "kind": "phrase",
    "en": "I backed up all my photos.",
    "en_norm": "i backed up all my photos",
@@ -601521,7 +601440,7 @@
    "line": 131
   },
   {
-   "id": "phrase:technology:8095",
+   "id": "phrase:technology:8091",
    "kind": "phrase",
    "en": "This charger works much faster.",
    "en_norm": "this charger works much faster",
@@ -631336,7 +631255,7 @@
   {
    "id": "word:school:myanmar",
    "kind": "word",
-   "en": "myanmar",
+   "en": "Myanmar",
    "en_norm": "myanmar",
    "my_norm": "မြန်မာစာ",
    "th_norm": "ภาษาพม่า",
@@ -636026,18 +635945,17 @@
   {
    "id": "example:sports:fitness",
    "kind": "example",
-   "en": "Daily exercise keeps your fitness strong.",
-   "en_norm": "daily exercise keeps your fitness strong",
+   "en": "Daily exercise improves your fitness.",
+   "en_norm": "daily exercise improves your fitness",
    "my_norm": "",
-   "fingerprint": "91d91e3216ae4214",
+   "fingerprint": "3f236ae81ea1e9b0",
    "vocab_sig": [
     "daily",
     "exercise",
     "fitness",
-    "keeps",
-    "strong"
+    "improves"
    ],
-   "template_sig": "W W W your W W .",
+   "template_sig": "W W W your W .",
    "tags": [
     "sports",
     "example"
@@ -637458,7 +637376,7 @@
    "kind": "word",
    "en": "noon",
    "en_norm": "noon",
-   "my_norm": "နေ့လယ်",
+   "my_norm": "နေ့လည်",
    "th_norm": "เที่ยงวัน",
    "fingerprint": "b198f3cd8e7048e4",
    "vocab_sig": [
@@ -641895,7 +641813,7 @@
  "meta": {
   "kinds": {
    "word": 9996,
-   "phrase": 8096,
+   "phrase": 8092,
    "topic": 39,
    "example": 9996,
    "dialogue": 532,

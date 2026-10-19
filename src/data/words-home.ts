@@ -22,7 +22,7 @@ export const homeWords: Word[] = [
   { en: 'stove', my: 'မီးဖို', th: 'เตา', topic: 'home', level: 2, phonetic: 'stohv', example: 'Be careful near the stove.', exampleMy: 'မီးဖိုအနီး သတိထားပါ။', exampleTh: 'ระวังใกล้เตา' },
   { en: 'pot', my: 'အိုး', th: 'หม้อ', topic: 'home', level: 1, phonetic: 'pot', example: 'The pot is on the stove.', exampleMy: 'အိုးက မီးဖိုပေါ်မှာ ရှိပါတယ်။', exampleTh: 'หม้ออยู่บนเตา' },
   { en: 'plate', my: 'ပန်းကန်', th: 'จาน', topic: 'home', level: 1, phonetic: 'pleit', example: 'Put the plate here.', exampleMy: 'ပန်းကန်ကို ဒီမှာ ထားပါ။', exampleTh: 'วางจานตรงนี้' },
-  { en: 'cup', my: 'ခွက်', th: 'ถ้วย', topic: 'home', level: 1, phonetic: 'kap', example: 'My cup is empty.', exampleMy: 'ကျွန်တော့်ခွက်က ဗလာ ဖြစ်ပါတယ်။', exampleTh: 'ถ้วยของฉันว่างเปล่า' },
+  { en: 'cup', my: 'ခွက်', th: 'ถ้วย', topic: 'home', level: 1, phonetic: 'kup', example: 'My cup is empty.', exampleMy: 'ကျွန်တော့်ခွက်က ဗလာ ဖြစ်ပါတယ်။', exampleTh: 'ถ้วยของฉันว่างเปล่า' },
   { en: 'spoon', my: 'ဇွန်း', th: 'ช้อน', topic: 'home', level: 1, phonetic: 'spoon', example: 'Use a clean spoon.', exampleMy: 'သန့်ရှင်းတဲ့ ဇွန်း သုံးပါ။', exampleTh: 'ใช้ช้อนสะอาด' },
   { en: 'fork', my: 'ခက်ရင်း', th: 'ส้อม', topic: 'home', level: 2, phonetic: 'fork', example: 'He eats with a fork.', exampleMy: 'သူ ခက်ရင်းနဲ့ စားပါတယ်။', exampleTh: 'เขากินด้วยส้อม' },
   { en: 'knife', my: 'ဓား', th: 'มีด', topic: 'home', level: 1, phonetic: 'naif', example: 'The knife is sharp.', exampleMy: 'ဓားက ထက်နေပါတယ်။', exampleTh: 'มีดเล่มนี้คม' },
