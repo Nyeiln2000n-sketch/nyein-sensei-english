@@ -38,6 +38,16 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 87,
+    slug: 'staying-healthy-2026-10-20',
+    titleMy: 'ကျန်းမာရေး ထိန်းသိမ်းခြင်း — Staying healthy',
+    titleOrig: 'ดูแลสุขภาพ — Staying healthy',
+    descMy: 'ကျန်းမာစွာနေထိုင်ဖို့ ပြောဖို့ အင်္ဂလိပ်ဝါကျများ — \"I exercise every day.\" / \"I drink a lot of water.\" / \"I sleep eight hours every night.\" / \"I eat vegetables every day.\" / \"Walking is good exercise.\" / \"I want to stay healthy.\"',
+    phrases: ['I exercise every day.', 'I drink a lot of water.', 'I sleep eight hours every night.'],
+    durationSecs: 586,
+    cover: '/podcast-covers/ep-87.jpg',
+  },
+  {
     n: 86,
     slug: 'at-the-hospital-2026-10-20',
     titleMy: 'ဆေးရုံ၌ — At the hospital',

@@ -75,7 +75,7 @@ export const storiesBatch2: Story[] = [
     },
     {
       en: 'Her manager saw everything and praised her patience. May learned that staying calm can turn a difficult situation into a good one.',
-      my: 'သူ့မန်နေဂျာက အရာအားလုံး မြင်ခဲ့ပြီး သူ့စိတ်ရှည်မှုကို ချီးကျူးတယ်။ စိတ်အေးအေးထားတာက ခက်ခဲတဲ့အခြေအနေကို ကောင်းတဲ့အခြေအနေအဖြစ် ပြောင်းနိုင်တယ်ဆိုတာ မေသင်ယူခဲ့တယ်။',
+      my: 'သူ့မန်နေဂျာက အရာအားလုံး မြင်ပြီးနောက် သူ့စိတ်ရှည်မှုကို ချီးကျူးတယ်။ စိတ်အေးအေးထားတာက ခက်ခဲတဲ့အခြေအနေကို ကောင်းတဲ့အခြေအနေအဖြစ် ပြောင်းနိုင်တယ်ဆိုတာ မေသင်ယူခဲ့တယ်။',
       th: 'ผู้จัดการเห็นทุกอย่างและชมความอดทนของเธอ เมย์เรียนรู้ว่าความใจเย็นเปลี่ยนสถานการณ์ยากให้กลายเป็นดีได้',
     },
     {
@@ -200,7 +200,7 @@ export const storiesBatch2: Story[] = [
     },
     {
       en: 'Back at the office, Su Su shared everything she had learned with her colleagues. Her boss was so impressed that he asked her to lead the next international project. She keeps the conference badge on her desk as a reminder that stepping outside her comfort zone was the best decision she ever made.',
-      my: 'ရုံးပြန်ရောက်တဲ့အခါ စုစုက သင်ယူခဲ့သမျှကို လုပ်ဖော်ကိုင်ဖက်တွေနဲ့ မျှဝေတယ်။ သူ့သူဌေးက အရမ်းအထင်ကြီးလို့ နောက်နိုင်ငံတကာပရောဂျက်ကို ဦးဆောင်ဖို့ တောင်းဆိုတယ်။ သူက သက်တောင့်သက်သာဇုန်အပြင်ထွက်တာက သူလုပ်ဖူးသမျှထဲမှာ အကောင်းဆုံးဆုံးဖြတ်ချက်ဖြစ်တယ်ဆိုတာ သတိရဖို့ ကွန်ဖရင့်တံဆိပ်ကို စားပွဲပေါ် ထားတယ်။',
+      my: 'ရုံးပြန်ရောက်တဲ့အခါ စုစုက သင်ယူခဲ့သမျှကို လုပ်ဖော်ကိုင်ဖက်တွေနဲ့ မျှဝေတယ်။ သူဌေးက သူ့ကို အရမ်းအထင်ကြီးလို့ နောက်နိုင်ငံတကာပရောဂျက်ကို ဦးဆောင်ဖို့ တောင်းဆိုတယ်။ သူက သက်တောင့်သက်သာဇုန်အပြင်ထွက်တာက သူလုပ်ဖူးသမျှထဲမှာ အကောင်းဆုံးဆုံးဖြတ်ချက်ဖြစ်တယ်ဆိုတာ သတိရဖို့ ကွန်ဖရင့်တံဆိပ်ကို စားပွဲပေါ် ထားတယ်။',
       th: 'พอกลับถึงออฟฟิศ ซูซูแบ่งปันทุกสิ่งที่เรียนรู้กับเพื่อนร่วมงาน เจ้านายประทับใจจนขอให้เธอนำโครงการระหว่างประเทศครั้งหน้า เธอเก็บบัตรประชุมไว้บนโต๊ะเพื่อเตือนว่าการก้าวออกจากคอมฟอร์ตโซนคือการตัดสินใจที่ดีที่สุดที่เธอเคยทำ',
     },
   ],
@@ -320,7 +320,7 @@ export const storiesBatch2: Story[] = [
     },
     {
       en: 'After the successful campaign, the team celebrated with a big dinner. Nanda reminded them that the real victory was learning to work together under pressure. The client was so happy that they signed a bigger contract for the next campaign, giving the team an even greater challenge to look forward to.',
-      my: 'အောင်မြင်တဲ့ကမ်ပိန်းအပြီး အဖွဲ့က ညစာကြီးနဲ့ အောင်ပွဲခံတယ်။ တကယ့်အောင်ပွဲက ဖိအားအောက်မှာ အတူတူအလုပ်လုပ်ဖို့ သင်ယူခဲ့တာပါပဲလို့ နန္ဒက သူတို့ကို သတိရစေတယ်။ ဖောက်သည်က အရမ်းပျော်လို့ နောက်ကမ်ပိန်းအတွက် ပိုကြီးတဲ့စာချုပ် ချုပ်တယ်၊ အဖွဲ့ကို စောင့်မျှော်စရာ ပိုကြီးတဲ့စိန်ခေါ်မှုတစ်ခု ပေးခဲ့တယ်။',
+      my: 'အောင်မြင်တဲ့ကမ်ပိန်းအပြီး အဖွဲ့က ညစာကြီးနဲ့ အောင်ပွဲခံတယ်။ တကယ့်အောင်ပွဲက ဖိအားအောက်မှာ အတူတူအလုပ်လုပ်ဖို့ သင်ယူခဲ့တာပါပဲလို့ နန္ဒက သူတို့ကို သတိပေးတယ်။ ဖောက်သည်က အရမ်းပျော်လို့ နောက်ကမ်ပိန်းအတွက် ပိုကြီးတဲ့စာချုပ် ချုပ်တယ်၊ အဖွဲ့ကို စောင့်မျှော်စရာ ပိုကြီးတဲ့စိန်ခေါ်မှုတစ်ခု ပေးခဲ့တယ်။',
       th: 'หลังจากแคมเปญประสบความสำเร็จ ทีมฉลองด้วยอาหารค่ำมื้อใหญ่ นันทาเตือนพวกเขาว่าชัยชนะที่แท้จริงคือการเรียนรู้ที่จะทำงานด้วยกันภายใต้ความกดดัน ลูกค้ามีความสุขจนเซ็นสัญญาที่ใหญ่กว่าสำหรับแคมเปญหน้า ทำให้ทีมมีเรื่องท้าทายครั้งใหญ่กว่าให้ตั้งตารออยู่',
     },
   ],
@@ -660,7 +660,7 @@ export const storiesBatch2: Story[] = [
     },
     {
       en: 'Now they call every Sunday evening. Daw Myint tells her friends that technology, once frightening, has become her greatest comfort.',
-      my: 'အခု တနင်္ဂနွေညနေတိုင်း ဖုန်းခေါ်ကြတယ်။ တစ်ချိန်က ကြောက်စရာကောင်းတဲ့ နည်းပညာက အခု အကြီးမားဆုံး နှစ်သိမ့်မှုဖြစ်လာပြီလို့ ဒေါ်မြင့်က သူငယ်ချင်းတွေကို ပြောတယ်။',
+      my: 'အခု တနင်္ဂနွေညနေတိုင်း ဖုန်းခေါ်ကြတယ်။ တစ်ချိန်က ကြောက်စရာကောင်းတဲ့ နည်းပညာက အခု အကြီးမားဆုံး သက်သာရာဖြစ်လာပြီလို့ ဒေါ်မြင့်က သူငယ်ချင်းတွေကို ပြောတယ်။',
       th: 'ตอนนี้พวกเขาโทรหากันทุกเย็นวันอาทิตย์ ดอมิ้นท์บอกเพื่อนว่าเทคโนโลยีที่เคยน่ากลัว กลายเป็นที่พึ่งทางใจที่ใหญ่ที่สุดของเธอ',
     },
     {
@@ -814,7 +814,7 @@ export const storiesBatch2: Story[] = [
       th: 'เมื่อมาถึง ทั้งครอบครัวรออยู่ที่ท่าเรือ โกอองรู้ว่าลูกชายจะจำการเดินทางนี้ไปตลอด',
     },
     {
-      en: 'Years later, the boy still talks about that boat journey with shining eyes. He says it taught him more about his country than any book ever could. The excited boy now truly wants to become a professional boat captain when he grows up one day.',
+      en: 'Years later, the boy still talks about that boat journey with shining eyes. He says it taught him more about his country than any book ever could. The boy now truly wants to become a professional boat captain when he grows up.',
       my: 'နှစ်တွေကြာပြီးနောက် ကောင်လေးက အဲဒီလှေခရီးအကြောင်း မျက်လုံးတွေ တောက်ပစွာ ပြောတုန်းပဲ။ စာအုပ်တစ်အုပ်ကမှ မသင်ပေးနိုင်တဲ့ တိုင်းပြည်အကြောင်း သူ့ကို သင်ပေးခဲ့တယ်လို့ ပြောတယ်။ ကောင်လေးက အခု ကြီးလာရင် လှေကပ္ပတိန်ဖြစ်ချင်တယ်။',
       th: 'หลายปีต่อมา เด็กชายยังพูดถึงการเดินทางโดยเรือนั้นด้วยแววตาที่เป็นประกาย เขาบอกว่ามันสอนเขาเรื่องประเทศของเขามากกว่าหนังสือเล่มไหน ๆ จะทำได้ ตอนนี้เด็กชายอยากเป็นกัปตันเรือมืออาชีพเมื่อโตขึ้น',
     },
@@ -899,7 +899,7 @@ export const storiesBatch2: Story[] = [
       th: 'ป้าของเธอรออยู่ที่สถานีเล็ก ๆ พร้อมอ้อมกอดอันอบอุ่น มยาตัดสินใจว่าการเดินทางด้วยรถไฟเป็นวิธีเดินทางที่ดีที่สุด',
     },
     {
-      en: 'Mya stayed with her aunt for a whole week, helping in the garden and learning traditional recipes. On the train home, she already missed the mountains. She warmly promised her dear aunt that she would happily return during the cool season together with her beloved brother.',
+      en: 'Mya stayed with her aunt for a whole week, helping in the garden and learning traditional recipes. On the train home, she already missed the mountains. She promised her aunt she would return during the cool season with her brother.',
       my: 'မြက အဒေါ်နဲ့ တစ်ပတ်လုံး နေပြီး ဥယျာဉ်မှာ ကူညီရင်း ရိုးရာချက်ပြုတ်နည်းတွေ သင်ယူတယ်။ အပြန်ရထားပေါ်မှာ တောင်တွေကို လွမ်းနေပြီ။ သူက အအေးရာသီမှာ အစ်ကိုနဲ့ ပြန်လာမယ်လို့ အဒေါ်ကို ကတိပေးတယ်။',
       th: 'มยาอยู่กับป้าหนึ่งสัปดาห์เต็ม ช่วยงานในสวนและเรียนรู้สูตรอาหารดั้งเดิม บนรถไฟขากลับ เธอเริ่มคิดถึงภูเขาแล้ว เธอสัญญากับป้าที่รักว่าจะกลับมาในช่วงฤดูหนาวพร้อมพี่ชายที่รัก',
     },
@@ -939,7 +939,7 @@ export const storiesBatch2: Story[] = [
       th: 'เธอเก็บรายได้ส่วนใหญ่เพื่อการศึกษาของลูกสาว เธอฝันว่าสักวันหนึ่งลูกสาวจะได้เป็นครู',
     },
     {
-      en: 'Aye Aye\'s daughter is now studying hard at school, inspired by her mother\'s dedication. Aye Aye believes that every snack she sells brings that dream closer. Every single month, hardworking Aye Aye happily tries one delicious new snack recipe to pleasantly surprise her many loyal customers.',
+      en: 'Aye Aye\'s daughter is now studying hard at school, inspired by her mother\'s dedication. Aye Aye believes that every snack she sells brings that dream closer. Every month, Aye Aye tries one new snack recipe to surprise her loyal customers.',
       my: 'အေးအေးရဲ့ သမီးက အမေ့ရဲ့စိတ်အားထက်သန်မှုနဲ့ အားကျပြီး ကျောင်းမှာ ကြိုးကြိုးစားစား စာသင်နေတယ်။ ရောင်းတဲ့မုန့်တိုင်းက အဲဒီအိပ်မက်ကို ပိုနီးစေတယ်လို့ အေးအေး ယုံကြည်တယ်။ လတိုင်း အေးအေးက သစ္စာရှိတဲ့ဖောက်သည်တွေကို အံ့သြစေဖို့ မုန့်ချက်ပြုတ်နည်းအသစ်တစ်ခု စမ်းတယ်။',
       th: 'ลูกสาวของเอเอตอนนี้เรียนหนักที่โรงเรียน ได้แรงบันดาลใจจากความทุ่มเทของแม่ เอเอเชื่อว่าขนมทุกชิ้นที่เธอขายทำให้ความฝันนั้นใกล้ความจริงมากขึ้น ทุกเดือนเอเอผู้ขยันขันแข็งจะลองสูตรขนมใหม่อร่อย ๆ เพื่อสร้างความประหลาดใจให้ลูกค้าประจำของเธอ',
     },
@@ -979,7 +979,7 @@ export const storiesBatch2: Story[] = [
       th: 'ระหว่างทางกลับ นักเรียนเห็นพ้องว่าเป็นทริปที่น่าสนใจที่สุดของปี',
     },
     {
-      en: 'The students wrote essays about the temple visit, and the best one was published in the school magazine. The teacher was proud of their curiosity. The curious students all hope to visit an even older and more mysterious temple on their exciting next school trip together.',
+      en: 'The students wrote essays about the temple visit, and the best one was published in the school magazine. The teacher was proud of their curiosity. The students hope to visit an even older and more mysterious temple on their next school trip.',
       my: 'ကျောင်းသားတွေက ဘုရားသွားလည်တာအကြောင်း စာစီစာကုံးတွေ ရေးပြီး အကောင်းဆုံးတစ်ပုဒ်ကို ကျောင်းမဂ္ဂဇင်းမှာ ထုတ်ဝေတယ်။ ဆရာက သူတို့ရဲ့ စူးစမ်းလိုစိတ်အတွက် ဂုဏ်ယူတယ်။ ကျောင်းသားတွေက နောက်ကျောင်းခရီးမှာ ပိုဟောင်းပြီး ပိုလျှို့ဝှက်ဆန်းကြယ်တဲ့ ဘုရားတစ်ဆူ သွားလည်ဖို့ မျှော်လင့်တယ်။',
       th: 'นักเรียนเขียนเรียงความเรื่องการไปเยี่ยมวัด และเรื่องที่ดีที่สุดได้ตีพิมพ์ในนิตยสารของโรงเรียน ครูภูมิใจในความอยากรู้อยากเห็นของพวกเขา ทุกคนหวังว่าจะได้ไปเยี่ยมวัดที่เก่าแก่และลึกลับกว่าในทัศนศึกษาครั้งหน้า',
     },
@@ -1024,7 +1024,7 @@ export const storiesBatch2: Story[] = [
       th: 'แต่ลูกชายหนุ่มของเจ้าของตัดสินใจทำธุรกิจต่อ ร้านน้ำชาจะเปิดต่อไป และตอนเช้าของอูทุนก็รอดแล้ว',
     },
     {
-      en: 'U Htun\'s mornings continue as before, with strong tea and good friends. He says some traditions are worth protecting. The energetic young owner has thoughtfully added completely free Wi-Fi, and now, happily, even more customers come every day.',
+      en: 'U Htun\'s mornings continue as before, with strong tea and good friends. He says some traditions are worth protecting. The young owner has added free Wi-Fi, and now even more customers come every day.',
       my: 'ဦးထွန်းရဲ့ မနက်တွေက အရင်အတိုင်း ဆက်ရှိနေတယ်၊ လက်ဖက်ရည်အပြင်းနဲ့ သူငယ်ချင်းကောင်းတွေနဲ့။ တချို့ရိုးရာတွေက ကာကွယ်ထိန်းသိမ်းဖို့ ထိုက်တန်တယ်လို့ ပြောတယ်။ ပိုင်ရှင်ငယ်က အခမဲ့ ဝိုင်ဖိုင် ထည့်ထားပြီး အခု ဖောက်သည်တွေ ပိုများလာတယ်။',
       th: 'ชีวิตยามเช้าของอูทุนดำเนินต่อไปเหมือนเดิม ด้วยชาเข้มและเพื่อนดี เขาบอกว่าประเพณีบางอย่างควรค่าแก่การปกป้อง เจ้าของหนุ่มผู้กระตือรือร้นติดตั้ง Wi-Fi ให้ใช้ฟรี และตอนนี้ก็มีลูกค้ามากขึ้นทุกวัน',
     },
@@ -1069,7 +1069,7 @@ export const storiesBatch2: Story[] = [
       th: 'ระหว่างทางกลับ น้องชายตัวน้อยหลับในอ้อมแขนของพ่อ เป็นคืนที่สมบูรณ์แบบ',
     },
     {
-      en: 'Nilar keeps a photo of the floating lanterns beside her bed. Whenever she feels sad, she looks at it and remembers that perfect night. Next year, Nilar wants to lovingly release two beautiful lanterns, one special lantern for each beloved grandparent.',
+      en: 'Nilar keeps a photo of the floating lanterns beside her bed. Whenever she feels sad, she looks at it and remembers that perfect night. Next year, Nilar wants to release two lanterns, one for each of her grandparents.',
       my: 'နီလာက လွှတ်တင်တဲ့မီးပုံးတွေရဲ့ ဓာတ်ပုံကို အိပ်ရာဘေးမှာ ထားတယ်။ ဝမ်းနည်းတဲ့အခါတိုင်း အဲဒါကို ကြည့်ပြီး ပြီးပြည့်စုံတဲ့ညကို သတိရတယ်။ နောက်နှစ် နီလာက မီးပုံးနှစ်လုံး လွှတ်တင်ချင်တယ်၊ အဘိုးအတွက် တစ်လုံး၊ အဘွားအတွက် တစ်လုံး။',
       th: 'นีลาร์เก็บรูปโคมไฟลอยไว้ข้างเตียง เมื่อใดรู้สึกเศร้า เธอมองมันและนึกถึงคืนที่สมบูรณ์แบบนั้น ปีหน้า นีลาร์อยากปล่อยโคมสวย ๆ สองดวงด้วยความรัก เป็นโคมพิเศษสำหรับปู่ย่าตายายที่รักคนละดวง',
     },
@@ -1089,7 +1089,7 @@ export const storiesBatch2: Story[] = [
   titleTh: 'เรื่องเล่าของชาวประมง',
   paragraphs: [
     {
-      en: 'Old U Sein has been fishing in the great lake for fifty years. He knows every corner of the water.',
+      en: 'Old U Sein has been fishing in the great lake for fifty years. He knows every corner of the lake.',
       my: 'ဦးစိန်က ကန်ကြီးမှာ ငါးဖမ်းတာ နှစ်ငါးဆယ် ရှိပြီ။ ရေရဲ့ ထောင့်တိုင်းကို သိတယ်။',
       th: 'อูเซนผู้เฒ่าหาปลาในทะเลสาบใหญ่มานานห้าสิบปี เขารู้จักทะเลสาบทุกซอกทุกมุม',
     },
@@ -1114,7 +1114,7 @@ export const storiesBatch2: Story[] = [
       th: 'ตอนนี้ ทุกครั้งที่เขาจับปลาตัวใหญ่ได้ เขาจะแบ่งปันให้เพื่อนบ้าน เขาบอกว่าในเมื่อทะเลสาบให้มา เขาก็ต้องให้ตอบแทนเช่นกัน',
     },
     {
-      en: 'U Sein\'s grandchildren love hearing his stories about the lake. He hopes they will respect nature just as he has done all his life. Every peaceful evening, kind old U Sein patiently mends his fishing nets while happily telling wonderful stories to the fascinated village children.',
+      en: 'U Sein\'s grandchildren love hearing his stories about the lake. He hopes they will respect nature just as he has done all his life. Every evening, U Sein mends his fishing nets while telling stories to the village children.',
       my: 'ဦးစိန်ရဲ့ မြေးတွေက ကန်အကြောင်း သူ့ပုံပြင်တွေ နားထောင်ရတာ ကြိုက်တယ်။ သူတစ်သက်လုံး လုပ်ခဲ့သလို သဘာဝကို လေးစားဖို့ သူ မျှော်လင့်တယ်။ ညနေတိုင်း ဦးစိန်က ရွာကလေးတွေကို ပုံပြင်တွေ ပြောရင်း ပိုက်ကွန်တွေ ပြင်တယ်။',
       th: 'หลาน ๆ ของอูเซนชอบฟังเรื่องราวของเขาเกี่ยวกับทะเลสาบ เขาหวังว่าพวกเขาจะเคารพธรรมชาติเหมือนที่เขาทำมาตลอดชีวิต ทุกเย็นที่สงบ อูเซนผู้เฒ่าซ่อมอวนอย่างใจเย็น พร้อมเล่าเรื่องมหัศจรรย์ให้เด็ก ๆ ในหมู่บ้านฟังอย่างมีความสุข',
     },
@@ -1159,7 +1159,7 @@ export const storiesBatch2: Story[] = [
       th: 'ผู้คนช่วยเหลือกันระหว่างน้ำท่วม แบ่งปันอาหารและที่พัก มรสุมสอนให้พวกเขารู้จักพลังของชุมชน',
     },
     {
-      en: 'When the rains finally stop in October, farmers celebrate the harvest festival with music and dancing. The cycle of the seasons continues, year after year. Children born during the rainy monsoon season are often given beautiful names related to rain and water.',
+      en: 'When the rains finally stop in October, farmers celebrate the harvest festival with music and dancing. The cycle of the seasons continues, year after year. Children born during the monsoon season are often given beautiful names related to rain and water.',
       my: 'အောက်တိုဘာမှာ မိုးတွေ နောက်ဆုံးရပ်တဲ့အခါ လယ်သမားတွေက ရိတ်သိမ်းပွဲကို ဂီတနဲ့ အကတွေနဲ့ ကျင်းပတယ်။ ရာသီစက်ဝန်းက နှစ်စဉ်ဆက်လက် လည်ပတ်နေတယ်။ မုတ်သုန်ကာလမှာ မွေးတဲ့ကလေးတွေကို မိုးနဲ့ ဆက်စပ်တဲ့ နာမည်တွေ ပေးလေ့ရှိတယ်။',
       th: 'เมื่อฝนหยุดในที่สุดในเดือนตุลาคม ชาวนาฉลองเทศกาลเก็บเกี่ยวด้วยดนตรีและการเต้นรำ วงจรของฤดูกาลดำเนินต่อไปปีแล้วปีเล่า เด็กที่เกิดในช่วงฤดูมรสุมมักได้ชื่อเพราะ ๆ ที่เกี่ยวกับฝนและน้ำ',
     },
@@ -1204,13 +1204,13 @@ export const storiesBatch2: Story[] = [
       th: 'เมื่อฤดูจบ เด็ก ๆ รู้สึกเศร้า แต่ดอยินยิ้มและบอกว่าต้นไม้จะออกผลให้อีกในปีหน้า',
     },
     {
-      en: 'Daw Yin\'s mango jam won first prize at the village fair last year. She shared the prize money with her grandchildren, who were very proud of her. This year, generous Daw Yin lovingly planted two more young mango trees for all the happy future generations to enjoy.',
+      en: 'Daw Yin\'s mango jam won first prize at the village fair last year. She shared the prize money with her grandchildren, who were very proud of her. This year, Daw Yin planted two more young mango trees for future generations to enjoy.',
       my: 'ဒေါ်ရင်ရဲ့ သရက်ယိုက ပြီးခဲ့တဲ့နှစ် ရွာပွဲမှာ ပထမဆုရတယ်။ သူက ဆုငွေကို မြေးတွေနဲ့ မျှဝေတယ်၊ သူတို့က သူ့အတွက် အရမ်းဂုဏ်ယူကြတယ်။ ဒီနှစ် ဒေါ်ရင်က နောင်လာနောင်သားတွေအတွက် သရက်ပင်နှစ်ပင် ထပ်စိုက်တယ်။',
       th: 'แยมมะม่วงของดอยินชนะรางวัลที่หนึ่งในงานประจำหมู่บ้านปีที่แล้ว เธอแบ่งเงินรางวัลกับหลาน ๆ ที่ภูมิใจในตัวเธอมาก ปีนี้ ดอยินผู้เอื้อเฟื้อปลูกต้นมะม่วงอ่อนเพิ่มอีกสองต้น เพื่อให้คนรุ่นหลังได้เพลิดเพลิน',
     },
     {
-      en: 'Every spring the old tree would bloom again, sweet as ever. Some gifts, Daw Yin knew, keep growing long after they are given.',
-      my: 'နွေဦးတိုင်း အပင်အိုက အမြဲလိုပဲ ချိုမြိန်စွာ ပွင့်လန်းလာမယ်။ တချို့လက်ဆောင်တွေက ပေးပြီးတဲ့နောက်မှာတောင် ဆက်လက်ကြီးထွားနေတယ်ဆိုတာ ဒေါ်ရင် သိတယ်။',
+      en: 'Every year the old tree would bloom again, sweet as ever. Some gifts, Daw Yin knew, keep growing long after they are given.',
+      my: 'နှစ်တိုင်း အပင်အိုက အမြဲလိုပဲ ချိုမြိန်စွာ ပွင့်လန်းလာမယ်။ တချို့လက်ဆောင်တွေက ပေးပြီးတဲ့နောက်မှာတောင် ဆက်လက်ကြီးထွားနေတယ်ဆိုတာ ဒေါ်ရင် သိတယ်။',
       th: 'ทุกฤดูใบไม้ผลิ ต้นไม้เก่าก็จะออกดอกอีกครั้ง และผลของมันยังคงหวานเหมือนเดิม ดอยินรู้ว่าของขวัญบางอย่างยังคงงอกงามต่อไปแม้จะมอบให้ไปนานแล้ว',
     },
   ],
@@ -1249,7 +1249,7 @@ export const storiesBatch2: Story[] = [
       th: 'ทีมสีฟ้าชนะถ้วยรางวัล แต่ทั้งสองทีมจับมือกันด้วยความเคารพ เป็นนัดที่ทุกคนจะจำ',
     },
     {
-      en: 'The captain was chosen as the player of the tournament. He thanked his teammates, saying that no victory is ever won alone. Both proud teams were officially invited to a prestigious national youth tournament after the truly exciting and memorable final match.',
+      en: 'The captain was chosen as the player of the tournament. He thanked his teammates, saying that no victory is ever won alone. Both teams were invited to a national youth tournament after the exciting final match.',
       my: 'ခေါင်းဆောင်ကို ပြိုင်ပွဲရဲ့ အကောင်းဆုံးကစားသမားအဖြစ် ရွေးချယ်တယ်။ အသင်းဖော်တွေကို ကျေးဇူးတင်ပြီး အောင်ပွဲဘယ်တော့မှ တစ်ယောက်တည်း မရဘူးလို့ ပြောတယ်။ စိတ်လှုပ်ရှားစရာဗိုလ်လုပွဲအပြီး အသင်းနှစ်သင်းလုံး အမျိုးသားလူငယ်ပြိုင်ပွဲကို ဖိတ်ကြားခံရတယ်။',
       th: 'กัปตันได้รับเลือกเป็นผู้เล่นยอดเยี่ยมของทัวร์นาเมนต์ เขาขอบคุณเพื่อนร่วมทีมและบอกว่าไม่มีชัยชนะใดที่ได้มาคนเดียว หลังรอบชิงที่น่าตื่นเต้นและน่าจดจำ ทั้งสองทีมได้รับเชิญอย่างเป็นทางการให้เข้าร่วมทัวร์นาเมนต์เยาวชนแห่งชาติอันทรงเกียรติ',
     },
@@ -1359,7 +1359,7 @@ export const storiesBatch2: Story[] = [
       th: 'เขาสละราชินีด้วยการเดินหมากอย่างกล้าหาญที่ทำให้ทุกคนตกใจรวมถึงคู่แข่ง อีกสามก้าวต่อมา แชมป์ไม่มีทางเลือกนอกจากยอมจำนน',
     },
     {
-      en: 'Nanda went on to win the national championship the following year. He dedicated the trophy to his grandfather, whose patient lessons had shaped his game. His beloved grandfather, now a remarkable ninety years old, proudly watched the thrilling final game with happy tears of overwhelming pride.',
+      en: 'Nanda went on to win the national championship the following year. He dedicated the trophy to his grandfather, whose patient lessons had shaped his game. His grandfather, now ninety years old, watched the final game with tears of pride.',
       my: 'နန္ဒက နောက်နှစ် အမျိုးသားချန်ပီယံဆု ဆက်ရတယ်။ သူ့ကစားဟန်ကို ပုံဖော်ပေးခဲ့တဲ့ စိတ်ရှည်တဲ့သင်ခန်းစာတွေအတွက် ဖလားကို အဘိုးအတွက် ရည်စူးခဲ့တယ်။ အသက်ကိုးဆယ်ရှိပြီဖြစ်တဲ့ အဘိုးက ဗိုလ်လုပွဲကို ဂုဏ်ယူတဲ့မျက်ရည်တွေနဲ့ ကြည့်တယ်။',
       th: 'นันทาคว้าแชมป์แห่งชาติในปีต่อมา เขาอุทิศถ้วยรางวัลให้ปู่ ผู้ซึ่งบทเรียนอันอดทนได้หล่อหลอมฝีมือการเล่นของเขา ปู่ที่รักของเขาซึ่งตอนนี้อายุเก้าสิบปีแล้ว ชมเกมรอบชิงอย่างตื่นเต้นด้วยน้ำตาแห่งความภาคภูมิใจ',
     },
@@ -1394,7 +1394,7 @@ export const storiesBatch2: Story[] = [
       th: 'ก่อนจากไป พวกเขาสัญญาจะพบกันทุกห้าปี ทอขับรถกลับบ้านรู้สึกขอบคุณที่มิตรภาพบางอย่างรอดการทดสอบของเวลา',
     },
     {
-      en: 'Thaw created an online group so classmates can stay in touch between reunions. Old photos and funny stories are shared there every week. Thaw\'s kind old football coach also happily joined the lively group and generously shared many useful training tips.',
+      en: 'Thaw created an online group so classmates can stay in touch between reunions. Old photos and funny stories are shared there every week. Thaw\'s old football coach also joined the group and shared useful training tips.',
       my: 'သော်က အတန်းဖော်တွေ ပြန်လည်ဆုံတွေ့မှုကြား အဆက်အသွယ်ရှိနေဖို့ အွန်လိုင်းအဖွဲ့တစ်ခု ဖန်တီးတယ်။ ဓာတ်ပုံဟောင်းတွေနဲ့ ရယ်စရာဇာတ်လမ်းတွေကို အပတ်တိုင်း အဲဒီမှာ မျှဝေတယ်။ သော်ရဲ့ ဘောလုံးနည်းပြဟောင်းလည်း အဖွဲ့ဝင်ပြီး လေ့ကျင့်မှုအကြံတွေ မျှဝေတယ်။',
       th: 'ทอสร้างกลุ่มออนไลน์เพื่อให้เพื่อนร่วมชั้นติดต่อกันระหว่างการพบปะแต่ละครั้ง มีรูปเก่าและเรื่องตลกถูกแชร์กันทุกสัปดาห์ โค้ชฟุตบอลผู้ชราใจดีของทอก็เข้าร่วมกลุ่มที่คึกคักและแบ่งปันเคล็ดลับการฝึกที่เป็นประโยชน์มากมายอย่างเอื้อเฟื้อ',
     },
@@ -1434,7 +1434,7 @@ export const storiesBatch2: Story[] = [
       th: 'ปลายภาค ยูกิกล่าวสุนทรพจน์สั้น ๆ เป็นภาษาเมียนมาในที่ประชุมใหญ่ของโรงเรียน ซูตระหนักว่ามิตรภาพต้องการแค่ความกรุณา ไม่ใช่ภาษาที่สมบูรณ์แบบ',
     },
     {
-      en: 'Hsu and Yuki are still best friends many years later, and both speak three languages fluently. Their friendship began with snacks, smiles, and courage. Their proud teachers often invite them to welcome nervous new foreign students at their beloved school.',
+      en: 'Hsu and Yuki are still best friends many years later, and both speak three languages fluently. Their friendship began with snacks, smiles, and courage. Their teachers often invite them to welcome new foreign students at their school.',
       my: 'ဆုနဲ့ ယုကိက နှစ်တွေကြာပြီးနောက် အခုထိ အရင်းနှီးဆုံးသူငယ်ချင်းတွေဖြစ်ပြီး နှစ်ယောက်လုံး ဘာသာစကားသုံးမျိုး ကျွမ်းကျင်စွာ ပြောတယ်။ သူတို့ခင်မင်မှုက မုန့်၊ အပြုံး၊ သတ္တိနဲ့ စခဲ့တယ်။ သူတို့ဆရာတွေက ကျောင်းမှာ နိုင်ငံခြားကျောင်းသားအသစ်တွေကို ကြိုဆိုဖို့ သူတို့ကို မကြာခဏ ဖိတ်တယ်။',
       th: 'ซูกับยูกิยังเป็นเพื่อนสนิทกันหลายปีต่อมา และทั้งคู่พูดสามภาษาได้อย่างคล่องแคล่ว มิตรภาพของพวกเธอเริ่มด้วยขนม รอยยิ้ม และความกล้า ครูที่ภูมิใจของพวกเธอมักเชิญพวกเธอมาต้อนรับนักเรียนต่างชาติใหม่ที่ประหม่าในโรงเรียนที่รักของพวกเธอ',
     },
@@ -1469,7 +1469,7 @@ export const storiesBatch2: Story[] = [
       th: 'พวกเขาคุยกันจนถึงเที่ยงคืน ร้องไห้นิดหน่อย และหัวเราะกันมาก แม่ของพวกเขาซึ่งฟังอยู่จากห้องข้าง ๆ ก็ยิ้มทั้งน้ำตาในที่สุด',
     },
     {
-      en: 'The brothers now meet every Sunday for dinner with their mother. She says those weekly dinners healed her heart completely. Their deeply moved mother lovingly framed a beautiful photo of that emotional rainy evening\'s precious reunion dinner.',
+      en: 'The brothers now meet every Sunday for dinner with their mother. She says those weekly dinners healed her heart completely. Their mother framed a photo of that rainy evening\'s reunion dinner.',
       my: 'ညီအစ်ကိုတွေက အခု တနင်္ဂနွေတိုင်း အမေနဲ့ ညစာစားဖို့ တွေ့တယ်။ အဲဒီအပတ်စဉ်ညစာတွေက သူ့နှလုံးသားကို လုံးဝကုစားပေးတယ်လို့ အမေက ပြောတယ်။ အမေက အဲဒီမိုးရွာတဲ့ည ပြန်လည်ဆုံတွေ့ညစာရဲ့ ဓာတ်ပုံကို ဘောင်ခတ်တယ်။',
       th: 'ตอนนี้พี่น้องพบกันทุกวันอาทิตย์เพื่อกินอาหารค่ำกับแม่ เธอบอกว่าอาหารค่ำทุกสัปดาห์นั้นช่วยเยียวยาหัวใจของเธอจนหายดี แม่ผู้ซาบซึ้งใจนำรูปสวย ๆ ของอาหารค่ำแห่งการพบกันอันมีค่าในเย็นวันฝนตกนั้นใส่กรอบไว้อย่างทะนุถนอม',
     },
@@ -1504,7 +1504,7 @@ export const storiesBatch2: Story[] = [
       th: 'วันนี้ หลานสาวบริหารร้านด้วยความทุ่มเทเช่นเดียวกัน คิวก็ยังยาว และมรดกของดอคินยังคงอยู่ในทุกชาม',
     },
     {
-      en: 'The granddaughter has added two new dishes to the menu, but the famous soup remains unchanged. Some secrets, she says, should never change. Famous food critics from the bustling capital have written truly glowing reviews about the charming little family shop.',
+      en: 'The granddaughter has added two new dishes to the menu, but the famous soup remains unchanged. Some secrets, she says, should never change. Food critics from the capital have written glowing reviews about the little family shop.',
       my: 'မြေးမလေးက မီနူးမှာ ဟင်းအသစ်နှစ်မျိုး ထည့်ထားပေမယ့် နာမည်ကြီးဟင်းချိုကတော့ မပြောင်းလဲဘူး။ တချို့လျှို့ဝှက်ချက်တွေက ဘယ်တော့မှ မပြောင်းသင့်ဘူးလို့ ပြောတယ်။ မြို့တော်က အစားအသောက်ဝေဖန်ရေးသမားတွေက ဆိုင်သေးသေးလေးအကြောင်း ချီးကျူးတဲ့ သုံးသပ်ချက်တွေ ရေးတယ်။',
       th: 'หลานสาวเพิ่มอาหารใหม่สองอย่างในเมนู แต่น้ำซุปชื่อดังยังคงเหมือนเดิม เธอบอกว่าความลับบางอย่างไม่ควรเปลี่ยน นักวิจารณ์อาหารชื่อดังจากเมืองหลวงที่คึกคักเขียนคำวิจารณ์ชื่นชมอย่างท่วมท้นเกี่ยวกับร้านครอบครัวเล็ก ๆ ที่มีเสน่ห์',
     },
@@ -1539,7 +1539,7 @@ export const storiesBatch2: Story[] = [
       th: 'เมื่อแม่ได้รับจดหมาย เธออ่านออกเสียงให้ทั้งครอบครัวฟัง พลางร้องไห้ด้วยความปลื้มปีติ อองจอตระหนักว่าคำพูดส่งไปถึงที่ที่เงินไปไม่ถึงได้',
     },
     {
-      en: 'Aung Kyaw finally saved enough and opened his repair shop last month. His mother cried again, this time with pure joy. He excitedly plans to hire two bright young assistants from his beloved home village starting next month.',
+      en: 'Aung Kyaw finally saved enough and opened his repair shop last month. His mother cried again, this time with pure joy. He plans to hire two young assistants from his home village starting next month.',
       my: 'အောင်ကျော်က နောက်ဆုံး လုံလောက်အောင် စုပြီး ပြီးခဲ့တဲ့လက ပြုပြင်ရေးဆိုင် ဖွင့်တယ်။ အမေက ထပ်ငိုတယ်၊ ဒီတစ်ခါ စစ်မှန်တဲ့ဝမ်းသာမှုနဲ့။ သူက နောက်လ ရွာက လူငယ်အကူနှစ်ယောက် ငှားဖို့ စီစဉ်တယ်။',
       th: 'ในที่สุดอองจอก็เก็บเงินได้พอและเปิดร้านซ่อมเมื่อเดือนที่แล้ว แม่ของเขาร้องไห้อีกครั้ง คราวนี้ด้วยความปีติยินดี เขาวางแผนด้วยความตื่นเต้นว่าจะจ้างผู้ช่วยหนุ่มสาวไฟแรงสองคนจากหมู่บ้านเกิดเริ่มงานเดือนหน้า',
     },
@@ -1574,7 +1574,7 @@ export const storiesBatch2: Story[] = [
       th: 'ตอนนี้ดอนเวบอกเพื่อน ๆ ว่าการเรียนเทคโนโลยีใหม่ไม่มีขีดจำกัดอายุ เธอบอกว่าความอยากรู้อยากเห็นทำให้เธอดูอ่อนเยาว์',
     },
     {
-      en: 'Her grandchildren now compete to teach her new tricks, and Daw Nwe learns them all with delight. She proves every day that curiosity has no age. Her impressed doctor happily says her sharp memory has wonderfully improved since she bravely started learning exciting new skills.',
+      en: 'Her grandchildren now compete to teach her new tricks, and Daw Nwe learns them all with delight. She proves every day that curiosity has no age. Her doctor says her memory has improved since she started learning new skills.',
       my: 'သူ့မြေးတွေက အခု လှည့်ကွက်အသစ်တွေ သင်ပေးဖို့ ပြိုင်ကြပြီး ဒေါ်နွယ်က ဝမ်းသာအားရ သင်ယူတယ်။ စူးစမ်းလိုစိတ်မှာ အသက်အရွယ် မရှိဘူးဆိုတာ နေ့တိုင်း သက်သေပြတယ်။ နည်းပညာအသစ်တွေ စသင်ကတည်းက မှတ်ဉာဏ် တိုးတက်လာတယ်လို့ ဆရာဝန်က ပြောတယ်။',
       th: 'ตอนนี้หลาน ๆ แข่งกันสอนทริคใหม่ให้เธอ และดอนเวก็เรียนรู้ทั้งหมดด้วยความเพลิดเพลิน เธอพิสูจน์ทุกวันว่าความอยากรู้อยากเห็นไม่มีอายุ คุณหมอของเธอพูดด้วยความยินดีว่าความจำของเธอดีขึ้นอย่างน่าทึ่งตั้งแต่เธอกล้าเริ่มเรียนรู้สิ่งใหม่ ๆ',
     },
