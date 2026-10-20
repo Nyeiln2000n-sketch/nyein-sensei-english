@@ -120,7 +120,7 @@ export const dialoguesBatch3: Dialogue[] = [
       { speaker: 'လျှောက်သူ', speakerTh: 'ผู้สมัคร', en: 'How would you describe a typical workday?', my: 'ပုံမှန်အလုပ်နေ့တစ်နေ့ကို ဘယ်လိုဖော်ပြမလဲ။', th: 'วันทำงานปกติเป็นยังไงคะ' },
       { speaker: 'အင်တာဗျူးသူ', speakerTh: 'ผู้สัมภาษณ์', en: 'We start with a short team meeting, then everyone focuses on their tasks.', my: 'အဖွဲ့အစည်းအဝေးတိုလေးနဲ့ စပြီး အားလုံးက ကိုယ့်တာဝန်တွေကို အာရုံစိုက်ကြတယ်။', th: 'เริ่มด้วยประชุมทีมสั้นๆ แล้วทุกคนโฟกัสงานตัวเอง' },
       { speaker: 'လျှောက်သူ', speakerTh: 'ผู้สมัคร', en: 'Do people often work together on projects?', my: 'လူတွေက ပရောဂျက်တွေမှာ အတူတကွ အလုပ်လုပ်လေ့ရှိလား။', th: 'คนที่นี่ทำงานร่วมกันในโปรเจกต์บ่อยไหมคะ' },
-      { speaker: 'အင်တာဗျူးသူ', speakerTh: 'ผู้สัมภาษณ์', en: 'Yes, most projects involve two or three people working closely.', my: 'ဟုတ်တယ်၊ ပရောဂျက်အများစုမှာ လူနှစ်ယောက် သုံးယောက်လောက် နီးနီးကပ်ကပ် လုပ်ကြတယ်။', th: 'บ่อยค่ะ โปรเจกต์ส่วนใหญ่จะมีสองสามคนทำงานใกล้ชิดกัน' },
+      { speaker: 'အင်တာဗျူးသူ', speakerTh: 'ผู้สัมภาษณ์', en: 'Yes, most projects involve two or three people working closely.', my: 'ဟုတ်တယ်၊ ပရောဂျက်အများစုမှာ လူနှစ်ယောက် သုံးယောက်လောက် နီးနီးကပ်ကပ် လုပ်ကြတယ်။', th: 'บ่อยครับ โปรเจกต์ส่วนใหญ่จะมีสองสามคนทำงานใกล้ชิดกัน' },
       { speaker: 'လျှောက်သူ', speakerTh: 'ผู้สมัคร', en: 'That sounds like a great environment for me.', my: 'အဲဒါက ကျွန်မအတွက် အရမ်းကောင်းတဲ့ ပတ်ဝန်းကျင်လိုပဲ။', th: 'ฟังดูเป็นสภาพแวดล้อมที่ดีสำหรับหนูเลยค่ะ' },
       { speaker: 'အင်တာဗျူးသူ', speakerTh: 'ผู้สัมภาษณ์', en: 'We think so too. Do you have any other questions?', my: 'ကျွန်တော်တို့လည်း အဲဒီလိုပဲ ထင်တယ်။ တခြားမေးစရာရှိသေးလား။', th: 'เราก็คิดอย่างนั้น มีคำถามอื่นไหม' },
     ],
@@ -1253,7 +1253,7 @@ export const dialoguesBatch3: Dialogue[] = [
     turns: [
       { speaker: 'ဇနီး', speakerTh: 'ภรรยา', en: 'For our holiday, should we go to the beach or the mountains?', my: 'အားလပ်ရက်အတွက် ကမ်းခြေသွားရမလား၊ တောင်သွားရမလား။', th: 'วันหยุดเราไปทะเลหรือภูเขาดี' },
       { speaker: 'ခင်ပွန်း', speakerTh: 'สามี', en: 'I prefer the mountains. The weather is cooler there.', my: 'တောင်ကို ပိုကြိုက်တယ်။ အဲဒီမှာ ရာသီဥတု ပိုအေးတယ်။', th: 'ผมชอบภูเขามากกว่า อากาศเย็นกว่า' },
-      { speaker: 'ဇနီး', speakerTh: 'ภรรยา', en: 'But I love swimming. The beach would be more relaxing for me.', my: 'ဒါပေမယ့် ရေကူးတာ ကြိုက်တယ်။ ကမ်းခြေက ငါ့အတွက် ပိုပြီး အနားယူရမယ်။', th: 'แต่ฉันชอบว่ายน้ำ ไปทะเลฉันผ่อนคลายกว่า' },
+      { speaker: 'ဇနီး', speakerTh: 'ภรรยา', en: 'But I love swimming. The beach would be more relaxing for me.', my: 'ဒါပေမယ့် ရေကူးတာ ကြိုက်တယ်။ ကမ်းခြေက ငါ့အတွက် ပိုပြီး အပန်းပြေစေမယ်။', th: 'แต่ฉันชอบว่ายน้ำ ไปทะเลฉันผ่อนคลายกว่า' },
       { speaker: 'ခင်ပွန်း', speakerTh: 'สามี', en: 'What if we spend three days at the beach and two in the mountains?', my: 'ကမ်းခြေမှာ သုံးရက်၊ တောင်မှာ နှစ်ရက် နေရင်ရော။', th: 'ถ้าอยู่ทะเลสามวัน ภูเขาสองวันล่ะ' },
       { speaker: 'ဇနီး', speakerTh: 'ภรรยา', en: 'That is a great compromise! Can we afford both?', my: 'အဲဒါ အရမ်းကောင်းတဲ့ အပေးအယူပဲ။ နှစ်ခုလုံး တတ်နိုင်ပါ့မလား။', th: 'ประนีประนอมได้ดีมาก เราจ่ายไหวไหม' },
       { speaker: 'ခင်ပွန်း', speakerTh: 'สามี', en: 'If we take the bus instead of flying, we can save money.', my: 'လေယာဉ်အစား ဘတ်စ်စီးရင် ငွေစုနိုင်တယ်။', th: 'ถ้านั่งรถบัสแทนเครื่องบินก็ประหยัดได้' },

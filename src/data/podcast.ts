@@ -38,6 +38,16 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 86,
+    slug: 'at-the-hospital-2026-10-20',
+    titleMy: 'ဆေးရုံ၌ — At the hospital',
+    titleOrig: 'ที่โรงพยาบาล — At the hospital',
+    descMy: 'ဆေးရုံရောက်တဲ့အခါ ပြောဖို့ အင်္ဂလိပ်ဝါကျများ — \"I have an appointment with Doctor Smith.\" / \"Where is the emergency room?\" / \"Please help me, it hurts a lot.\" / \"I have had this pain for two days.\" / \"Excuse me, where is the examination room?\" / \"Can you speak more slowly, please?\"',
+    phrases: ['I have an appointment with Doctor Smith.', 'Where is the emergency room?', 'Please help me, it hurts a lot.'],
+    durationSecs: 656,
+    cover: '/podcast-covers/ep-86.jpg',
+  },
+  {
     n: 85,
     slug: 'seeing-a-doctor-2026-10-20',
     titleMy: 'ဆရာဝန်နဲ့တွေ့ခြင်း — Seeing a doctor',
