@@ -588037,7 +588037,7 @@
    "en": "Say cheese!",
    "en_norm": "say cheese",
    "my_norm": "ချီးစ် ပြောပါ။",
-   "th_norm": "พูดชีสสิ",
+   "th_norm": "ชีส",
    "fingerprint": "33c88d091b89934b",
    "vocab_sig": [
     "cheese",
@@ -588715,7 +588715,7 @@
    "en": "I am here for you.",
    "en_norm": "i am here for you",
    "my_norm": "မင်းအတွက် ငါ ဒီမှာ ရှိတယ်။",
-   "th_norm": "ฉันอยู่ตรงนี้เพื่อเธอ",
+   "th_norm": "ฉันอยู่ข้างๆ เธอ",
    "fingerprint": "d60b4ba35821edfa",
    "vocab_sig": [],
    "template_sig": "i am here for you .",
@@ -588908,7 +588908,7 @@
    "en": "Good morning!",
    "en_norm": "good morning",
    "my_norm": "မင်္ဂလာပါ",
-   "th_norm": "สวัสดีตอนเช้า",
+   "th_norm": "อรุณสวัสดิ์",
    "fingerprint": "cdf71dea7d7741a2",
    "vocab_sig": [
     "good",
@@ -593829,7 +593829,7 @@
    "en": "My pollen allergy gets worse every spring.",
    "en_norm": "my pollen allergy gets worse every spring",
    "my_norm": "ကျွန်မရဲ့ ပန်းဝတ်မှုန်ဓာတ်မတည့်တာက နွေဦးတိုင်း ပိုဆိုးလာတယ်။",
-   "th_norm": "อาการแพ้เกสรของฉันแย่ลงทุกฤดูใบไม้ผลิ",
+   "th_norm": "อาการแพ้ละอองเกสรของฉันแย่ลงทุกฤดูใบไม้ผลิ",
    "fingerprint": "4246ab1ce0403102",
    "vocab_sig": [
     "allergy",
@@ -594006,7 +594006,7 @@
    "en": "I slipped on the frost this morning.",
    "en_norm": "i slipped on the frost this morning",
    "my_norm": "ဒီမနက် နှင်းခဲပေါ် ချော်လဲခဲ့တယ်။",
-   "th_norm": "เช้านี้ฉันลื่นบนน้ำแข็ง",
+   "th_norm": "เช้านี้ฉันลื่นล้มเพราะน้ำค้างแข็ง",
    "fingerprint": "6c7aef8dcfb534a7",
    "vocab_sig": [
     "frost",
@@ -594381,7 +594381,7 @@
    "en": "Stay focused, and you will finish faster.",
    "en_norm": "stay focused and you will finish faster",
    "my_norm": "အာရုံစိုက်ထား၊ ပိုမြန်မြန်ပြီးမယ်။",
-   "th_norm": "ตั้งใจไว้ แล้วจะเสร็จเร็วขึ้น",
+   "th_norm": "ตั้งใจหน่อย แล้วจะเสร็จเร็วขึ้น",
    "fingerprint": "d92435cdac01873c",
    "vocab_sig": [
     "faster",
@@ -594447,7 +594447,7 @@
    "en": "She stays curious about everything new.",
    "en_norm": "she stays curious about everything new",
    "my_norm": "သူမက အသစ်အဆန်းတိုင်းကို စူးစမ်းလိုစိတ်ရှိနေတယ်။",
-   "th_norm": "เธออยากรู้อยากเห็นเรื่องใหม่ๆ อยู่เสมอ",
+   "th_norm": "เธอใฝ่รู้เรื่องใหม่ๆ อยู่เสมอ",
    "fingerprint": "3df2c385cd66258e",
    "vocab_sig": [
     "curious",

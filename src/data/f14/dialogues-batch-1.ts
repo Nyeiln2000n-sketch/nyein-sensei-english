@@ -956,7 +956,7 @@ export const dialoguesBatch1: Dialogue[] = [
       { speaker: 'သူ ၁', speakerTh: 'คนที่ 1', en: 'And I will make the poster.', my: 'ငါက ပိုစတာလုပ်မယ်။', th: 'แล้วเราทำโปสเตอร์' },
       { speaker: 'သူ ၂', speakerTh: 'คนที่ 2', en: 'When should we meet again?', my: 'ဘယ်တော့ ထပ်တွေ့ကြမလဲ။', th: 'เจอกันอีกเมื่อไรดี' },
       { speaker: 'သူ ၁', speakerTh: 'คนที่ 1', en: 'Tomorrow after school.', my: 'မနက်ဖြန် ကျောင်းဆင်းပြီးရင်။', th: 'พรุ่งนี้หลังเลิกเรียน' },
-      { speaker: 'သူ ၂', speakerTh: 'คนที่ 2', en: 'Deal! We will finish on time.', my: 'သဘောတူပြီ။ အချိန်မှန်ပြီးမယ်။', th: 'ตกลง! จะเสร็จทันเวลาแน่นอน' },
+      { speaker: 'သူ ၂', speakerTh: 'คนที่ 2', en: 'Deal! We will finish on time.', my: 'သဘောတူပြီ။ အချိန်မှီပြီးမယ်။', th: 'ตกลง! จะเสร็จทันเวลาแน่นอน' },
     ],
   },
   {

@@ -38,6 +38,16 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 85,
+    slug: 'seeing-a-doctor-2026-10-20',
+    titleMy: 'ဆရာဝန်နဲ့တွေ့ခြင်း — Seeing a doctor',
+    titleOrig: 'ไปหาหมอ — Seeing a doctor',
+    descMy: 'ဆရာဝန်ဆီသွားတဲ့အခါ ပြောဖို့ အင်္ဂလိပ်ဝါကျများ — \\\"I need to see a doctor.\\\" / \\\"Where does it hurt?\\\" / \\\"It hurts here.\\\" / \\\"I have had a fever for three days.\\\" / \\\"Can you give me some medicine?\\\" / \\\"When should I come back?\\\"',
+    phrases: ['I need to see a doctor.', 'Where does it hurt?', 'It hurts here.'],
+    durationSecs: 514,
+    cover: '/podcast-covers/ep-85.jpg',
+  },
+  {
     n: 84,
     slug: 'at-the-pharmacy-i-need-medicine-2026-10-19',
     titleMy: 'ဆေးဆိုင် — At the pharmacy',
