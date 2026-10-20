@@ -150518,7 +150518,7 @@
    "kind": "phrase",
    "en": "The baby is choking!",
    "en_norm": "the baby is choking",
-   "my_norm": "ကလေး လည်ပင်းမှာ တစ်ခုခုပိတ်ပြီး အသက်ရှူကျပ်နေတယ်။",
+   "my_norm": "ကလေး လည်ချောင်းပိတ်နေတယ်။",
    "th_norm": "เด็กสำลัก",
    "fingerprint": "27f55be545c9cb80",
    "vocab_sig": [
@@ -150745,7 +150745,7 @@
    "kind": "phrase",
    "en": "The alarm went off at midnight.",
    "en_norm": "the alarm went off at midnight",
-   "my_norm": "ည ၁၂ နာရီမှာ အရေးပေါ်အချက်ပေးသံ မြည်သွားတယ်။",
+   "my_norm": "ည ၁၂ နာရီမှာ အချက်ပေးသံ မြည်သွားတယ်။",
    "th_norm": "สัญญาณเตือนดังตอนเที่ยงคืน",
    "fingerprint": "0ca4f35c891e078e",
    "vocab_sig": [
@@ -150766,7 +150766,7 @@
    "kind": "phrase",
    "en": "We had to evacuate the building.",
    "en_norm": "we had to evacuate the building",
-   "my_norm": "အဆောက်အဦထဲက လူတွေကို ရွှေ့ပြောင်းခဲ့ရတယ်။",
+   "my_norm": "ကျွန်တော်တို့ အဆောက်အဦကနေ ထွက်ခွာခဲ့ရတယ်။",
    "th_norm": "เราต้องอพยพออกจากตึก",
    "fingerprint": "8f5448665be3f42d",
    "vocab_sig": [
@@ -152265,7 +152265,7 @@
    "kind": "phrase",
    "en": "I hired a plumber to fix the sink.",
    "en_norm": "i hired a plumber to fix the sink",
-   "my_norm": "ဘေစင်ပြင်ဖို့ ပိုက်ပြင်သမား ငှားခဲ့တယ်။",
+   "my_norm": "ဘေစင်ပြင်ဖို့ ပိုက်ဆက်သမား ငှားခဲ့တယ်။",
    "th_norm": "ฉันจ้างช่างประปามาซ่อมอ่างล้างจาน",
    "fingerprint": "a01cf998ab54e90f",
    "vocab_sig": [
@@ -152397,7 +152397,7 @@
    "kind": "phrase",
    "en": "We bought a bigger dining table.",
    "en_norm": "we bought a bigger dining table",
-   "my_norm": "ညစာစားပွဲ ပိုကြီးတာ ဝယ်ခဲ့တယ်။",
+   "my_norm": "ထမင်းစားပွဲ ပိုကြီးတာ ဝယ်ခဲ့တယ်။",
    "th_norm": "เราซื้อโต๊ะกินข้าวที่ใหญ่กว่า",
    "fingerprint": "dc30c67723276f55",
    "vocab_sig": [
@@ -158476,7 +158476,7 @@
    "kind": "phrase",
    "en": "I don’t like spicy food.",
    "en_norm": "i don t like spicy food",
-   "my_norm": "အစပ်အစားအသောက် မကြိုက်ဘူး။",
+   "my_norm": "အစပ်အစာ မကြိုက်ဘူး။",
    "th_norm": "ฉันไม่ชอบอาหารเผ็ด",
    "fingerprint": "19ddd623e5a601c3",
    "vocab_sig": [
@@ -159443,7 +159443,7 @@
    "kind": "phrase",
    "en": "We savored every bite of the slow-cooked lamb.",
    "en_norm": "we savored every bite of the slow cooked lamb",
-   "my_norm": "နှေးနှေး ချက်ထားတဲ့ သိုးသားရဲ့ တစ်ကိုက်ချင်းစီကို အရသာခံပြီး စားခဲ့တယ်။",
+   "my_norm": "မီးအေးအေးနဲ့ ကြာကြာချက်ထားတဲ့ သိုးသားရဲ့ တစ်ကိုက်ချင်းစီကို အရသာခံပြီး စားခဲ့တယ်။",
    "th_norm": "เราลิ้มรสแกะตุ๋นทุกคำอย่างเต็มที่",
    "fingerprint": "01222605f44c006e",
    "vocab_sig": [
@@ -159863,7 +159863,7 @@
    "kind": "phrase",
    "en": "Our flight boards in thirty minutes.",
    "en_norm": "our flight boards in thirty minutes",
-   "my_norm": "ကျွန်တော်တို့လေယာဉ်က မိနစ်သုံးဆယ်အတွင်း တက်မယ်။",
+   "my_norm": "ကျွန်တော်တို့လေယာဉ်က မိနစ်သုံးဆယ်အတွင်း လေယာဉ်ပေါ်တက်ရမယ်။",
    "th_norm": "เที่ยวบินของเราขึ้นเครื่องในสามสิบนาที",
    "fingerprint": "a074f030398e4afc",
    "vocab_sig": [
@@ -160094,7 +160094,7 @@
    "kind": "phrase",
    "en": "The turbulence was scary.",
    "en_norm": "the turbulence was scary",
-   "my_norm": "လေထု လှုပ်ရှားမှုက ကြောက်စရာကောင်းတယ်။",
+   "my_norm": "လေထုမငြိမ်သက်မှုက ကြောက်စရာကောင်းတယ်။",
    "th_norm": "เครื่องสั่นน่ากลัว",
    "fingerprint": "6fa0cf2fe6c7de73",
    "vocab_sig": [
@@ -160137,7 +160137,7 @@
    "kind": "phrase",
    "en": "The airline upgraded me to business class.",
    "en_norm": "the airline upgraded me to business class",
-   "my_norm": "လေကြောင်းလိုင်းက ကျွန်တော့်ကို ဘစ်ဇနက်စ် အတန်းကို မြှင့်ပေးတယ်။",
+   "my_norm": "လေကြောင်းလိုင်းက ကျွန်တော့်ကို ဘစ်ဇနက် အတန်းကို မြှင့်ပေးတယ်။",
    "th_norm": "สายการบินอัปเกรดฉันเป็นชั้นธุรกิจ",
    "fingerprint": "54bec6b0ca629da1",
    "vocab_sig": [
@@ -160631,7 +160631,7 @@
    "kind": "phrase",
    "en": "Stricter baggage regulations took effect this month.",
    "en_norm": "stricter baggage regulations took effect this month",
-   "my_norm": "ဒီလမှာ ပိုတင်းကျပ်တဲ့ ခရီးဆောင်အိတ် စည်းမျဉ်းတွေ စတင်အသက်ဝင်တယ်။",
+   "my_norm": "ဒီလမှာ ပိုတင်းကျပ်တဲ့ ခရီးဆောင်အိတ် စည်းမျဉ်းတွေ အသက်ဝင်တယ်။",
    "th_norm": "กฎกระเป๋าเดินทางที่เข้มงวดมีผลเดือนนี้",
    "fingerprint": "1f636f99f2ebbcd2",
    "vocab_sig": [
@@ -160726,7 +160726,7 @@
    "kind": "phrase",
    "en": "Biometric screening has streamlined the boarding process.",
    "en_norm": "biometric screening has streamlined the boarding process",
-   "my_norm": "ဇီဝတိုင်းတာ စစ်ဆေးမှုက ဘော်ဒင် လုပ်ငန်းစဉ်ကို ချောမွေ့စေတယ်။",
+   "my_norm": "ဇီဝလက္ခဏာ စစ်ဆေးမှုက ဘော်ဒင် လုပ်ငန်းစဉ်ကို ချောမွေ့စေတယ်။",
    "th_norm": "การตรวจไบโอเมตริกซ์ทำให้ขึ้นเครื่องเร็วขึ้น",
    "fingerprint": "51aac69e85aed6d2",
    "vocab_sig": [
@@ -160946,7 +160946,7 @@
    "en": "We have lunch at noon.",
    "en_norm": "we have lunch at noon",
    "my_norm": "ကျွန်တော်တို့ မွန်းတည့်မှာ နေ့လည်စာ စားတယ်။",
-   "th_norm": "เรากินข้าวเที่ยงตอนเที่ยง",
+   "th_norm": "เรากินข้าวตอนเที่ยง",
    "fingerprint": "b074c3baa0854aea",
    "vocab_sig": [
     "lunch",
@@ -161556,7 +161556,7 @@
    "en": "I summarize the discussion after each meeting.",
    "en_norm": "i summarize the discussion after each meeting",
    "my_norm": "ကျွန်တော် အစည်းအဝေးပြီးတိုင်းမှာ ဆွေးနွေးချက်တွေကို အကျဉ်းချုပ်ရေးတယ်။",
-   "th_norm": "ฉันจดโน้ตทุกการประชุม",
+   "th_norm": "ฉันสรุปผลการหารือหลังการประชุมทุกครั้ง",
    "fingerprint": "2533faf7096be76e",
    "vocab_sig": [
     "discussion",
@@ -161601,7 +161601,7 @@
    "en": "Our team exceeded the quarterly sales target.",
    "en_norm": "our team exceeded the quarterly sales target",
    "my_norm": "ကျွန်တော်တို့ အဖွဲ့က သုံးလပတ် အရောင်းရည်မှန်းချက်ကို ကျော်လွန်ခဲ့တယ်။",
-   "th_norm": "ทีมของเราทำยอดขายเกินเป้าไตรมาส",
+   "th_norm": "ทีมของเราทำยอดขายเกินเป้าหมายรายไตรมาส",
    "fingerprint": "2892054992bef26a",
    "vocab_sig": [
     "exceeded",
@@ -161646,7 +161646,7 @@
    "en": "The report highlights several key concerns.",
    "en_norm": "the report highlights several key concerns",
    "my_norm": "အစီရင်ခံစာက အဓိက စိုးရိမ်ချက်အချို့ကို မီးမောင်းထိုးပြထားတယ်။",
-   "th_norm": "รายงานชี้ประเด็นสำคัญหลายข้อ",
+   "th_norm": "รายงานเน้นข้อกังวลสำคัญหลายข้อ",
    "fingerprint": "fd5e697eafae5b2f",
    "vocab_sig": [
     "concerns",
@@ -161691,7 +161691,7 @@
    "en": "They implemented a new policy last week.",
    "en_norm": "they implemented a new policy last week",
    "my_norm": "သူတို့ ပြီးခဲ့တဲ့ အပတ်မှာ မူဝါဒအသစ်တစ်ခု အကောင်အထည်ဖော်ခဲ့တယ်။",
-   "th_norm": "พวกเขาใช้นโยบายใหม่เมื่อสัปดาห์ที่แล้ว",
+   "th_norm": "พวกเขานำนโยบายใหม่มาใช้เมื่อสัปดาห์ที่แล้ว",
    "fingerprint": "86483af2a5c26e2c",
    "vocab_sig": [
     "implemented",
@@ -162352,7 +162352,7 @@
    "en": "His back has been sore for a week.",
    "en_norm": "his back has been sore for a week",
    "my_norm": "သူ့ကျောနာတာ တစ်ပတ်ရှိပြီ။",
-   "th_norm": "เขาปวดหลัง",
+   "th_norm": "เขาปวดหลังมาเป็นสัปดาห์แล้ว",
    "fingerprint": "f310219c38d53e0f",
    "vocab_sig": [
     "back",
@@ -163632,7 +163632,7 @@
    "en": "The fish smells fresh.",
    "en_norm": "the fish smells fresh",
    "my_norm": "ငါးက လတ်ဆတ်တဲ့ အနံ့ရှိတယ်။",
-   "th_norm": "ปลากลิ่นสด",
+   "th_norm": "ปลาส่งกลิ่นสด",
    "fingerprint": "5f7bb2db906421b1",
    "vocab_sig": [
     "fish",
@@ -164266,7 +164266,7 @@
    "en": "She negotiated a bulk discount with the supplier.",
    "en_norm": "she negotiated a bulk discount with the supplier",
    "my_norm": "သူမဟာ ပေးသွင်းသူနဲ့ အများအပြား ဝယ်ယူမှုအတွက် လျှော့ဈေး ညှိနှိုင်းခဲ့တယ်။",
-   "th_norm": "เธอเจรจาส่วนลดจำนวนมากกับซัพพลายเออร์",
+   "th_norm": "เธอเจรจาส่วนลดสำหรับการซื้อจำนวนมากกับซัพพลายเออร์",
    "fingerprint": "502ae5925099e4b2",
    "vocab_sig": [
     "bulk",
@@ -164311,7 +164311,7 @@
    "en": "I prefer sustainably sourced products.",
    "en_norm": "i prefer sustainably sourced products",
    "my_norm": "ကျွန်တော် ရေရှည်တည်တံ့စွာ ရရှိတဲ့ ထုတ်ကုန်တွေကို ပိုနှစ်သက်တယ်။",
-   "th_norm": "ฉันชอบสินค้าที่มาจากแหล่งยั่งยืน",
+   "th_norm": "ฉันชอบสินค้าจากแหล่งผลิตที่ยั่งยืน",
    "fingerprint": "6dee3b230c5fb394",
    "vocab_sig": [
     "prefer",
@@ -164630,7 +164630,7 @@
    "en": "We pick fruit in autumn.",
    "en_norm": "we pick fruit in autumn",
    "my_norm": "ကျွန်တော်တို့ ဆောင်းဦးမှာ သစ်သီးခူးတယ်။",
-   "th_norm": "เราเก็บผลไม้ฤดูใบไม้ร่วง",
+   "th_norm": "เราเก็บผลไม้ในฤดูใบไม้ร่วง",
    "fingerprint": "cb7c47e8def9f197",
    "vocab_sig": [
     "autumn",
@@ -164841,7 +164841,7 @@
    "en": "Temperatures drop sharply in December.",
    "en_norm": "temperatures drop sharply in december",
    "my_norm": "ဒီဇင်ဘာလမှာ အပူချိန်တွေ အလျင်အမြန် ကျဆင်းတယ်။",
-   "th_norm": "อุณหภูมิดิ่งลงอย่างรวดเร็วเดือนธันวาคม",
+   "th_norm": "อุณหภูมิลดลงอย่างรวดเร็วในเดือนธันวาคม",
    "fingerprint": "491b9269790f8e65",
    "vocab_sig": [
     "december",
@@ -165127,7 +165127,7 @@
    "en": "Climate change is altering seasonal patterns.",
    "en_norm": "climate change is altering seasonal patterns",
    "my_norm": "ရာသီဥတု ပြောင်းလဲမှုက ရာသီပုံစံတွေကို ပြောင်းလဲနေတယ်။",
-   "th_norm": "การเปลี่ยนแปลงสภาพภูมิอากาศกำลังเปลี่ยนรูปแบบฤดูกาล",
+   "th_norm": "การเปลี่ยนแปลงสภาพภูมิอากาศกำลังเปลี่ยนแปลงรูปแบบของฤดูกาล",
    "fingerprint": "f5386e8307beb930",
    "vocab_sig": [
     "altering",
@@ -165150,7 +165150,7 @@
    "en": "The relentless heatwave scorched the fields.",
    "en_norm": "the relentless heatwave scorched the fields",
    "my_norm": "အဆက်မပြတ် ပူပြင်းတဲ့အပူလှိုင်းက လယ်ကွင်းတွေကို လောင်ကျွမ်းစေခဲ့တယ်။",
-   "th_norm": "คลื่นความร้อนไม่หยุดเผาทุ่งนา",
+   "th_norm": "คลื่นความร้อนอันไม่หยุดยั้งเผาทุ่งนาจนแห้งเกรียม",
    "fingerprint": "8fc1a4b338fc6586",
    "vocab_sig": [
     "fields",
@@ -165172,7 +165172,7 @@
    "en": "She suffers from seasonal allergies every spring.",
    "en_norm": "she suffers from seasonal allergies every spring",
    "my_norm": "သူမဟာ နွေဦးတိုင်းမှာ ရာသီအလိုက် ဓာတ်မတည့်မှုကို ခံစားရတယ်။",
-   "th_norm": "เธอเป็นภูมิแพ้ตามฤดูทุกฤดูใบไม้ผลิ",
+   "th_norm": "เธอเป็นภูมิแพ้ฤดูใบไม้ผลิทุกปี",
    "fingerprint": "fac303b8916852c9",
    "vocab_sig": [
     "allergies",
@@ -165217,7 +165217,7 @@
    "en": "Farmers depend heavily on predictable rainfall.",
    "en_norm": "farmers depend heavily on predictable rainfall",
    "my_norm": "လယ်သမားတွေက ခန့်မှန်းနိုင်တဲ့ မိုးရွာသွန်းမှုအပေါ် အများကြီး မှီခိုတယ်။",
-   "th_norm": "เกษตรกรพึ่งพาฝนที่คาดการณ์ได้อย่างมาก",
+   "th_norm": "เกษตรกรพึ่งพาปริมาณฝนที่คาดการณ์ได้อย่างมาก",
    "fingerprint": "6bcbc46183b3663c",
    "vocab_sig": [
     "depend",
@@ -165772,7 +165772,7 @@
    "en": "She keeps a positive attitude.",
    "en_norm": "she keeps a positive attitude",
    "my_norm": "သူမဟာ အကောင်းမြင်စိတ်ကို အမြဲထားတယ်။",
-   "th_norm": "เขามองโลกในแง่ดีภายใต้ความกดดัน",
+   "th_norm": "เธอรักษาทัศนคติเชิงบวกไว้เสมอ",
    "fingerprint": "c4ce8a85f2f4e31e",
    "vocab_sig": [
     "attitude",
@@ -165941,7 +165941,7 @@
    "en": "Her resilience inspires everyone around her.",
    "en_norm": "her resilience inspires everyone around her",
    "my_norm": "သူမရဲ့ ခံနိုင်ရည်ရှိမှုက သူမအနားက လူတိုင်းကို အားကျစေတယ်။",
-   "th_norm": "เธอฟื้นคืนจากความยากลำบากได้เสมอ เป็นแรงบันดาลใจให้ทุกคนรอบข้าง",
+   "th_norm": "ความอดทนไม่ย่อท้อของเธอเป็นแรงบันดาลใจให้ทุกคนรอบข้าง",
    "fingerprint": "86106073063bb242",
    "vocab_sig": [
     "around",
@@ -166050,7 +166050,7 @@
    "en": "Her optimism is genuinely contagious.",
    "en_norm": "her optimism is genuinely contagious",
    "my_norm": "သူမရဲ့ အကောင်းမြင်စိတ်က တကယ့်ကို ကူးစက်တတ်တယ်။",
-   "th_norm": "ความมองโลกในแง่ดีของเธอติดต่อได้อย่างแท้จริง",
+   "th_norm": "การมองโลกในแง่ดีของเธอแพร่กระจายสู่คนรอบข้างอย่างแท้จริง",
    "fingerprint": "5bdf5787419cf948",
    "vocab_sig": [
     "contagious",

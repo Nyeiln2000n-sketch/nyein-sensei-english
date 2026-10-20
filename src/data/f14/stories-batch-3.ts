@@ -989,7 +989,7 @@ export const storiesBatch3: Story[] = [
       {
         en: 'In the 1860s, two companies raced to build America\'s first transcontinental railway. Thousands of workers — many of them Chinese and Irish immigrants — laid track through deserts and over mountains.',
         my: '၁၈၆၀ ပြည့်နှစ်တွေမှာ ကုမ္ပဏီနှစ်ခု အမေရိကန်ရဲ့ပထမဆုံး တိုက်ဖြတ်ရထားလမ်းဆောက်ဖို့ ပြိုင်ဆိုင်ခဲ့ကြတယ်။ အလုပ်သမားထောင်ပေါင်းများစွာ — အများစုက တရုတ်နဲ့ အိုင်းရစ်ရှ်ရွှေ့ပြောင်းနေထိုင်သူတွေ — သဲကန္တာရတွေဖြတ် တောင်တွေပေါ်ဖြတ်ပြီး သံလမ်းခင်းခဲ့ကြတယ်။',
-        th: 'ในยุค 1860 บริษัทสองแห่งแข่งกันสร้างทางรถไฟข้ามทวีปสายแรกของอเมริกา คนงานหลายพัน หลายคนเป็นผู้อพยพจีนและไอริช วางรางผ่านทะเลทรายและข้ามภูเขา',
+        th: 'ในทศวรรษ 1860 บริษัทสองแห่งแข่งกันสร้างทางรถไฟข้ามทวีปสายแรกของอเมริกา คนงานหลายพัน หลายคนเป็นผู้อพยพจีนและไอริช วางรางผ่านทะเลทรายและข้ามภูเขา',
       },
       {
         en: 'The work was brutal. In the Sierra Nevada mountains, workers hung from ropes to blast tunnels through solid granite, in snowstorms that buried their camps overnight.',
@@ -1038,7 +1038,7 @@ export const storiesBatch3: Story[] = [
       {
         en: 'Turing realized that no human could test the Enigma\'s 159 million million million possible settings by hand. So he designed a machine — the Bombe — that could test them mechanically, day and night.',
         my: 'အင်နစ်ဂမာရဲ့ဖြစ်နိုင်ခြေ ၁၅၉ သန်းသန်းသန်း ဆက်တင်တွေကို လူက လက်နဲ့ စမ်းသပ်မရနိုင်ဘူးဆိုတာ ကျူးရင်းက သဘောပေါက်ခဲ့တယ်။ ဒါကြောင့် သူက စက်တစ်လုံး — ဘုံးမ်း — ကို ဒီဇိုင်းဆွဲခဲ့တယ်၊ နေ့ရောညပါ စက်မှုနည်းနဲ့ စမ်းသပ်နိုင်တယ်။',
-        th: 'ทูริงตระหนักว่าไม่มีมนุษย์คนไหนทดสอบการตั้งค่าเอนิกมา 159 ล้านล้านล้านแบบด้วยมือได้ เขาจึงออกแบบเครื่อง บอมบ์ ที่ทดสอบเชิงกลได้ทั้งวันทั้งคืน',
+        th: 'ทูริงตระหนักว่าไม่มีมนุษย์คนไหนทดสอบการตั้งค่าเอนิกมา 159 ล้านล้านล้านแบบด้วยมือได้ เขาจึงออกแบบเครื่องบอมบ์ ที่ทดสอบเชิงกลได้ทั้งวันทั้งคืน',
       },
       {
         en: 'The work was secret and exhausting. Codebreakers worked in shifts around the clock, knowing that every decoded message could save a convoy — and that a single mistake could cost hundreds of lives.',
@@ -1092,7 +1092,7 @@ export const storiesBatch3: Story[] = [
       {
         en: 'Some engineers argue the dilemma is overblown: self-driving cars, they say, will simply cause far fewer accidents overall. But regulators insist that rare edge cases still need written rules.',
         my: 'အင်ဂျင်နီယာတချို့က ဒီကျင့်ဝတ်ပြဿနာကို အလွန်အကျွံပြောတယ်လို့ ဆိုတယ် — ကိုယ်တိုင်မောင်းတဲ့ကားတွေက ယေဘုယျအားဖြင့် မတော်တဆမှု အများကြီး နည်းစေလိမ့်မယ်လို့ သူတို့ ပြောတယ်။ ဒါပေမယ့် စည်းမျဉ်းချမှတ်သူတွေက ရှားပါးတဲ့အစွန်းအခြေအနေတွေအတွက် ရေးသားထားတဲ့စည်းမျဉ်းတွေ လိုအပ်နေသေးတယ်လို့ တောင်းဆိုတယ်။',
-        th: 'วิศวกรบางคนโต้ว่าประเด็นนี้ถูกพูดเกินจริง รถไร้คนขับจะทำให้อุบัติเหตุลดลงมากโดยรวม แต่หน่วยงานกำกับดูแลยืนยันว่ากรณีสุดขอบ (edge case) ที่พบได้ยากยังต้องมีกฎเป็นลายลักษณ์อักษร',
+        th: 'วิศวกรบางคนโต้ว่าประเด็นนี้ถูกพูดเกินจริง รถไร้คนขับจะทำให้อุบัติเหตุลดลงมากโดยรวม แต่หน่วยงานกำกับดูแลยืนยันว่ากรณีสุดขอบที่พบได้ยากยังต้องมีกฎเป็นลายลักษณ์อักษร',
       },
       {
         en: 'For now, Dr. Vogt\'s team programs cars to brake first, warn loudly, and minimize total harm — without ranking human lives by age or value. "The moment we rank lives," she says quietly, "we have already lost."',
@@ -1150,7 +1150,7 @@ export const storiesBatch3: Story[] = [
       {
         en: 'At 3 a.m. in the emergency ward, Dr. Khin faced a choice no training had fully prepared her for. Two patients needed the same life-saving medicine — and only one dose remained in the hospital.',
         my: 'အရေးပေါ်လူနာဆောင်မှာ မနက် ၃ နာရီမှာ ဒေါက်တာ ခင်က ဘယ်သင်တန်းမှ အပြည့်အဝ ပြင်ဆင်မပေးခဲ့တဲ့ရွေးချယ်မှုနဲ့ ရင်ဆိုင်ရတယ်။ လူနာနှစ်ဦးက အသက်ကယ်ဆေးအတူတူ လိုအပ်နေတယ် — ဆေးရုံမှာ ဆေးတစ်လုံးသာ ကျန်တယ်။',
-        th: 'ตีสามในหอฉุกเฉิน ดร.คิน เผชิญทางเลือกที่การฝึกอบรมใดๆ ก็เตรียมเธอไว้ไม่พร้อมเต็มที่ คนไข้สองคนต้องการยาช่วยชีวิตตัวเดียวกัน และเหลือยาแค่ขนาดเดียวในโรงพยาบาล',
+        th: 'ตีสามในหอฉุกเฉิน ดร.คิน เผชิญทางเลือกที่ไม่มีการฝึกอบรมใดเตรียมเธอให้พร้อมได้อย่างเต็มที่ คนไข้สองคนต้องการยาช่วยชีวิตตัวเดียวกัน และเหลือยาแค่ขนาดเดียวในโรงพยาบาล',
       },
       {
         en: 'Patient one was a seven-year-old boy with a severe infection. Patient two was a sixty-eight-year-old grandmother, a retired teacher, whose condition was equally critical.',

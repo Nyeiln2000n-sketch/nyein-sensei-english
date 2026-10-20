@@ -38,6 +38,16 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 88,
+    slug: 'healthy-eating-eat-vegetables-every-day-2026-10-20',
+    titleMy: 'ကျန်းမာရေးနှင့် ညီညွတ်သော အစားအစာ — Healthy eating',
+    titleOrig: 'อาหารเพื่อสุขภาพ — Healthy eating',
+    descMy: 'ကျန်းမာရေးနဲ့ ညီညွတ်တဲ့ အစားအသောက်အကြောင်း ပြောဖို့ အင်္ဂလိပ်ဝါကျများ — "I eat vegetables every day." / "I eat a lot of fruit." / "I eat less sugar now." / "Vegetables are good for your health." / "Fried food is bad for you."',
+    phrases: ['I eat vegetables every day.', 'I eat a lot of fruit.', 'I eat less sugar now.'],
+    durationSecs: 491,
+    cover: '/podcast-covers/ep-88.jpg',
+  },
+  {
     n: 87,
     slug: 'staying-healthy-2026-10-20',
     titleMy: 'ကျန်းမာရေး ထိန်းသိမ်းခြင်း — Staying healthy',
