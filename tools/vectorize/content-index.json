@@ -35844,7 +35844,7 @@
    "kind": "phrase",
    "en": "The study is my quiet corner.",
    "en_norm": "the study is my quiet corner",
-   "my_norm": "စာရေးခန်းက ကျွန်တော့်တိတ်ဆိတ်တဲ့ထောင့်ပဲ။",
+   "my_norm": "စာရေးခန်းက ကျွန်တော့် တိတ်ဆိတ်တဲ့ထောင့်ပဲ။",
    "th_norm": "ห้องทำงานคือมุมสงบของฉัน",
    "fingerprint": "e591350fa94fbbde",
    "vocab_sig": [
@@ -35865,7 +35865,7 @@
    "kind": "phrase",
    "en": "This door creaks when it opens.",
    "en_norm": "this door creaks when it opens",
-   "my_norm": "ဒီတံခါးက ဖွင့်တဲ့အခါ ကျွီကျွီမြည်တယ်။",
+   "my_norm": "ဒီတံခါးက ဖွင့်တဲ့အခါ ကျီကျီမြည်တယ်။",
    "th_norm": "ประตูนี้ส่งเสียงเอี๊ยดอ๊าดเวลาเปิด",
    "fingerprint": "5bae4121f6dad1c5",
    "vocab_sig": [
@@ -36357,7 +36357,7 @@
    "kind": "phrase",
    "en": "He listens to music on the train.",
    "en_norm": "he listens to music on the train",
-   "my_norm": "သူက ရထားပေါ်မှာ ဂီတနားထောင်တယ်။",
+   "my_norm": "သူက ရထားပေါ်မှာ သီချင်းနားထောင်တယ်။",
    "th_norm": "เขาฟังเพลงบนรถไฟ",
    "fingerprint": "981a087c0d3c3e7d",
    "vocab_sig": [
@@ -36935,7 +36935,7 @@
    "en": "We air out the rooms daily.",
    "en_norm": "we air out the rooms daily",
    "my_norm": "ကျွန်တော်တို့ နေ့တိုင်း အခန်းတွေကို လေဝင်လေထွက်ကောင်းအောင် ဖွင့်တယ်။",
-   "th_norm": "เราเปิดห้องระบายอากาศทุกวัน",
+   "th_norm": "เราเปิดหน้าต่างระบายอากาศทุกวัน",
    "fingerprint": "bdf4e93e16a13b0c",
    "vocab_sig": [
     "air",
@@ -37062,7 +37062,7 @@
    "en": "I refill the water dispenser.",
    "en_norm": "i refill the water dispenser",
    "my_norm": "ကျွန်တော် ရေသန့်ဘူးကို ရေပြန်ဖြည့်တယ်။",
-   "th_norm": "ฉันเติมน้ำในเครื่องกรอง",
+   "th_norm": "ฉันเติมน้ำในเครื่องกดน้ำ",
    "fingerprint": "4f8d84d024562d05",
    "vocab_sig": [
     "dispenser",
@@ -38610,7 +38610,7 @@
    "kind": "phrase",
    "en": "I felt a wave of relief.",
    "en_norm": "i felt a wave of relief",
-   "my_norm": "ကျွန်တော် သက်သာရာရမှုလှိုင်းတစ်ခု ဝင်လာသလို ခံစားရတယ်။",
+   "my_norm": "ကျွန်တော် ရုတ်တရက် သက်သာသွားသလို ခံစားရတယ်။",
    "th_norm": "ฉันรู้สึกโล่งใจอย่างท่วมท้น",
    "fingerprint": "9d555ba530fa72a9",
    "vocab_sig": [
@@ -38652,7 +38652,7 @@
    "en": "She felt a pang of regret.",
    "en_norm": "she felt a pang of regret",
    "my_norm": "သူ နောင်တရတဲ့ ခံစားချက် ရုတ်တရက် ဝင်လာတယ်။",
-   "th_norm": "เธอรู้สึกเสียใจแวบหนึ่ง",
+   "th_norm": "เธอรู้สึกเสียดายแวบหนึ่ง",
    "fingerprint": "bc21a226bd05a2e1",
    "vocab_sig": [
     "felt",
@@ -38692,7 +38692,7 @@
    "kind": "phrase",
    "en": "He felt a deep sense of loss.",
    "en_norm": "he felt a deep sense of loss",
-   "my_norm": "သူ နက်ရှိုင်းတဲ့ဆုံးရှုံးမှုခံစားချက်တစ်ခု ခံစားရတယ်။",
+   "my_norm": "သူ ဆုံးရှုံးမှုကို နက်နက်ရှိုင်းရှိုင်း ခံစားရတယ်။",
    "th_norm": "เขารู้สึกสูญเสียอย่างลึกซึ้ง",
    "fingerprint": "3c946945aa37f213",
    "vocab_sig": [
@@ -38715,7 +38715,7 @@
    "en": "She was overcome with emotion.",
    "en_norm": "she was overcome with emotion",
    "my_norm": "သူ စိတ်ခံစားမှုတွေ ပြည့်လျှံနေတယ်။",
-   "th_norm": "เธอท่วมท้นไปด้วยอารมณ์",
+   "th_norm": "เธอถูกอารมณ์ครอบงำ",
    "fingerprint": "0faec4d25350e264",
    "vocab_sig": [
     "emotion",
@@ -38960,7 +38960,7 @@
    "en": "Her face lit up with happiness.",
    "en_norm": "her face lit up with happiness",
    "my_norm": "သူ့မျက်နှာက ပျော်ရွှင်မှုနဲ့ လင်းလက်သွားတယ်။",
-   "th_norm": "เธอเปล่งปลั่งด้วยความสุข",
+   "th_norm": "ใบหน้าของเธอเปล่งประกายด้วยความสุข",
    "fingerprint": "8354902f0cb3e6ff",
    "vocab_sig": [
     "face",
@@ -39084,7 +39084,7 @@
    "kind": "phrase",
    "en": "She let out a sigh of relief.",
    "en_norm": "she let out a sigh of relief",
-   "my_norm": "သူ သက်သာရာရတဲ့သက်ပြင်းတစ်ခု ချခဲ့တယ်။",
+   "my_norm": "သူ သက်ပြင်းချလိုက်တယ်။",
    "th_norm": "เธอถอนหายใจด้วยความโล่งใจ",
    "fingerprint": "ffbdf3e56732f510",
    "vocab_sig": [
@@ -39352,7 +39352,7 @@
    "en": "I felt a knot in my stomach.",
    "en_norm": "i felt a knot in my stomach",
    "my_norm": "ကျွန်တော် စိတ်လှုပ်ရှားလို့ ဗိုက်ထဲမှာ ဆို့ပြီး မသက်မသာ ဖြစ်နေတယ်။",
-   "th_norm": "ฉันรู้สึกปั่นป่วนในท้อง",
+   "th_norm": "ฉันรู้สึกแน่นในท้อง",
    "fingerprint": "9510cb5c243c90d7",
    "vocab_sig": [
     "felt",
@@ -40515,7 +40515,7 @@
    "en": "He wants to buy a bigger apartment.",
    "en_norm": "he wants to buy a bigger apartment",
    "my_norm": "သူ ပိုကြီးတဲ့တိုက်ခန်း ဝယ်ချင်တယ်။",
-   "th_norm": "เขาอยากซื้ออพาร์ตเมนต์หลังใหญ่กว่า",
+   "th_norm": "เขาอยากซื้ออพาร์ตเมนต์ห้องใหญ่กว่า",
    "fingerprint": "1d9dbd32a470817e",
    "vocab_sig": [
     "apartment",
@@ -41460,7 +41460,7 @@
    "en": "He hopes to buy an electric car.",
    "en_norm": "he hopes to buy an electric car",
    "my_norm": "သူ လျှပ်စစ်ကား ဝယ်ဖို့ မျှော်လင့်တယ်။",
-   "th_norm": "เขาหวังว่าจะซื้อรถไฟฟ้า",
+   "th_norm": "เขาหวังว่าจะซื้อรถยนต์ไฟฟ้า",
    "fingerprint": "bfb74db0a0d25da5",
    "vocab_sig": [
     "buy",
@@ -41679,7 +41679,7 @@
    "en": "She plans to foster a rescue dog.",
    "en_norm": "she plans to foster a rescue dog",
    "my_norm": "သူ ကယ်တင်ထားတဲ့ခွေးတစ်ကောင်ကို ယာယီမွေးဖို့ စီစဉ်ထားတယ်။",
-   "th_norm": "เธอวางแผนรับเลี้ยงหมาจร",
+   "th_norm": "เธอวางแผนรับอุปการะหมาจรชั่วคราว",
    "fingerprint": "19173ede4c98cf29",
    "vocab_sig": [
     "dog",
@@ -42165,7 +42165,7 @@
    "en": "I'm inclined to believe that curiosity is the best teacher of all.",
    "en_norm": "i m inclined to believe that curiosity is the best teacher of all",
    "my_norm": "စူးစမ်းလိုစိတ်ဟာ အကောင်းဆုံးဆရာပဲလို့ ကျွန်တော် ယုံကြည်တယ်။",
-   "th_norm": "ฉันเอนเอียงที่จะเชื่อว่าความอยากรู้อยากเห็นคือครูที่ดีที่สุด",
+   "th_norm": "ฉันค่อนข้างเชื่อว่าความอยากรู้อยากเห็นคือครูที่ดีที่สุด",
    "fingerprint": "82a9c1136cb331e8",
    "vocab_sig": [
     "all",
@@ -43036,7 +43036,7 @@
    "en": "Far from being a luxury, arts education is a necessity.",
    "en_norm": "far from being a luxury arts education is a necessity",
    "my_norm": "အနုပညာပညာရေးဟာ ဇိမ်ခံမှုသက်သက်မဟုတ်ဘဲ မရှိမဖြစ်လိုအပ်ချက်တစ်ခုပဲ။",
-   "th_norm": "ห่างไกลจากความฟุ่มเฟือย การศึกษาศิลปะคือสิ่งจำเป็น",
+   "th_norm": "การศึกษาศิลปะไม่ใช่เรื่องฟุ่มเฟือย แต่คือสิ่งจำเป็น",
    "fingerprint": "7bb7a76b8ecb8529",
    "vocab_sig": [
     "arts",
@@ -43402,7 +43402,7 @@
    "en": "I'm inclined to believe that passion beats talent in the long run.",
    "en_norm": "i m inclined to believe that passion beats talent in the long run",
    "my_norm": "ရေရှည်မှာ ဝါသနာက အရည်အချင်းကို အနိုင်ရတယ်လို့ ကျွန်တော် ယုံကြည်တယ်။",
-   "th_norm": "ฉันเอนเอียงที่จะเชื่อว่าใจรักเอาชนะพรสวรรค์ในระยะยาว",
+   "th_norm": "ฉันค่อนข้างเชื่อว่าใจรักเอาชนะพรสวรรค์ในระยะยาว",
    "fingerprint": "d84b1265f7e58317",
    "vocab_sig": [
     "beats",
@@ -43644,7 +43644,7 @@
    "en": "It's generally accepted that soft skills are harder to teach than technical ones.",
    "en_norm": "it s generally accepted that soft skills are harder to teach than technical ones",
    "my_norm": "လူမှုဆက်ဆံရေးဆိုင်ရာ ကျွမ်းကျင်မှုတွေက နည်းပညာဆိုင်ရာ ကျွမ်းကျင်မှုတွေထက် သင်ပေးရခက်တယ်ဆိုတာ ယေဘုယျအားဖြင့် လက်ခံထားကြတယ်။",
-   "th_norm": "โดยทั่วไปยอมรับกันว่าทักษะด้านอารมณ์สอนยากกว่าทักษะเทคนิค",
+   "th_norm": "โดยทั่วไปยอมรับกันว่าซอฟต์สกิลสอนยากกว่าทักษะเทคนิค",
    "fingerprint": "2464fd71dac688d4",
    "vocab_sig": [
     "accepted",
@@ -44268,7 +44268,7 @@
    "en": "Far from being a weakness, asking for help is a strength.",
    "en_norm": "far from being a weakness asking for help is a strength",
    "my_norm": "အကူအညီတောင်းတာဟာ အားနည်းချက်မဟုတ်ဘဲ အားသာချက်တစ်ခုပဲ။",
-   "th_norm": "ห่างไกลจากความอ่อนแอ การขอความช่วยเหลือคือความเข้มแข็ง",
+   "th_norm": "การขอความช่วยเหลือไม่ได้แสดงถึงความอ่อนแอ แต่คือความเข้มแข็ง",
    "fingerprint": "2f48f27f8d96047a",
    "vocab_sig": [
     "asking",
@@ -44580,7 +44580,7 @@
    "en": "I'm convinced that the internet has democratized knowledge.",
    "en_norm": "i m convinced that the internet has democratized knowledge",
    "my_norm": "အင်တာနက်က အသိပညာကို လူတိုင်းလက်လှမ်းမီစေခဲ့တယ်လို့ ကျွန်တော် ယုံကြည်တယ်။",
-   "th_norm": "ฉันมั่นใจว่าอินเทอร์เน็ตทำให้ความรู้เป็นประชาธิปไตย",
+   "th_norm": "ฉันมั่นใจว่าอินเทอร์เน็ตทำให้ทุกคนเข้าถึงความรู้ได้อย่างเท่าเทียมกัน",
    "fingerprint": "3df90b19f1899304",
    "vocab_sig": [
     "convinced",
@@ -44628,7 +44628,7 @@
    "en": "I'm inclined to believe that convenience often comes at a hidden cost.",
    "en_norm": "i m inclined to believe that convenience often comes at a hidden cost",
    "my_norm": "အဆင်ပြေမှုနောက်မှာ ဖုံးကွယ်ထားတဲ့ ကုန်ကျစရိတ်တွေ များသောအားဖြင့် ပါတယ်လို့ ကျွန်တော် ယုံကြည်တယ်။",
-   "th_norm": "ฉันเอนเอียงที่จะเชื่อว่าความสะดวกมักมาพร้อมต้นทุนแฝง",
+   "th_norm": "ฉันค่อนข้างเชื่อว่าความสะดวกมักมาพร้อมต้นทุนแฝง",
    "fingerprint": "065c63367a73e3c7",
    "vocab_sig": [
     "believe",
@@ -45075,7 +45075,7 @@
    "kind": "phrase",
    "en": "Although streaming has its merits, nothing matches a live performance.",
    "en_norm": "although streaming has its merits nothing matches a live performance",
-   "my_norm": "တိုက်ရိုက်ထုတ်လွှင့်မှုမှာ သူ့ကောင်းကွက်တွေရှိပေမယ့် တိုက်ရိုက်ဖျော်ဖြေမှုကို ဘာနဲ့မှ မယှဉ်နိုင်ဘူး။",
+   "my_norm": "စတြင်မင်းမှာလည်း သူ့ကောင်းကွက်တွေရှိပေမယ့် တိုက်ရိုက်ဖျော်ဖြေပွဲကို ဘာနဲ့မှ မယှဉ်နိုင်ဘူး။",
    "th_norm": "แม้สตรีมมิงจะมีข้อดี แต่ไม่มีอะไรเทียบการแสดงสดได้",
    "fingerprint": "f9a7ec12ff100832",
    "vocab_sig": [
@@ -45497,7 +45497,7 @@
    "en": "Far from being neutral, every algorithm reflects its creators' biases.",
    "en_norm": "far from being neutral every algorithm reflects its creators biases",
    "my_norm": "အယ်လ်ဂိုရစ်သမ်တိုင်းဟာ ဘက်မလိုက်တာမဟုတ်ဘဲ ဖန်တီးသူတွေရဲ့ ဘက်လိုက်မှုတွေကို ထင်ဟပ်စေတယ်။",
-   "th_norm": "ห่างไกลจากความเป็นกลาง อัลกอริทึมทุกตัวสะท้อนอคติของผู้สร้าง",
+   "th_norm": "อัลกอริทึมไม่ได้เป็นกลางเลย ทุกตัวล้วนสะท้อนอคติของผู้สร้าง",
    "fingerprint": "11b88320ee5f2b4a",
    "vocab_sig": [
     "algorithm",
@@ -45569,7 +45569,7 @@
    "kind": "phrase",
    "en": "Looking at it objectively, the digital divide is still enormous.",
    "en_norm": "looking at it objectively the digital divide is still enormous",
-   "my_norm": "ဓမ္မဓိဋ္ဌာန်ကျကျ ကြည့်ရင် ဒစ်ဂျစ်တယ်ကွာဟချက်က အခုထိ ကြီးမားနေတုန်းပဲ။",
+   "my_norm": "ဘက်မလိုက်ဘဲ ကြည့်ရင် ဒစ်ဂျစ်တယ်ကွာဟချက်က အခုထိ ကြီးမားနေတုန်းပဲ။",
    "th_norm": "มองอย่างเป็นกลาง ช่องว่างดิจิทัลยังกว้างใหญ่มาก",
    "fingerprint": "9ea9e952b3a644b6",
    "vocab_sig": [
@@ -45860,7 +45860,7 @@
    "en": "I'm inclined to believe that nature has a healing power we underestimate.",
    "en_norm": "i m inclined to believe that nature has a healing power we underestimate",
    "my_norm": "သဘာဝမှာ ကျွန်တော်တို့ လျှော့တွက်ထားတဲ့ ကုသနိုင်စွမ်းရှိတယ်လို့ ကျွန်တော် ယုံကြည်မိတယ်။",
-   "th_norm": "ฉันเอนเอียงที่จะเชื่อว่าธรรมชาติมีพลังเยียวยาที่เราประเมินต่ำไป",
+   "th_norm": "ฉันค่อนข้างเชื่อว่าธรรมชาติมีพลังเยียวยาที่เราประเมินต่ำไป",
    "fingerprint": "bec79f310e1015ba",
    "vocab_sig": [
     "believe",
@@ -46413,7 +46413,7 @@
    "en": "What concerns me most is how fast species are disappearing.",
    "en_norm": "what concerns me most is how fast species are disappearing",
    "my_norm": "ကျွန်တော့်ကို အစိုးရိမ်ဆုံးက မျိုးစိတ်တွေ ဘယ်လောက်မြန်မြန် ပျောက်ကွယ်နေလဲဆိုတာပဲ။",
-   "th_norm": "สิ่งที่ฉันกังวลที่สุดคือสัตว์สูญพันธุ์เร็วแค่ไหน",
+   "th_norm": "สิ่งที่ฉันกังวลที่สุดคือสิ่งมีชีวิตกำลังสูญพันธุ์เร็วแค่ไหน",
    "fingerprint": "a39365c359102226",
    "vocab_sig": [
     "concerns",
@@ -46723,7 +46723,7 @@
    "en": "Far from being helpless, consumers have real power over corporations.",
    "en_norm": "far from being helpless consumers have real power over corporations",
    "my_norm": "စားသုံးသူတွေဟာ အကူအညီမဲ့သူတွေမဟုတ်ဘဲ ကုမ္ပဏီတွေအပေါ် တကယ့်အာဏာရှိတယ်။",
-   "th_norm": "ห่างไกลจากความไร้พลัง ผู้บริโภคมีอำนาจจริงเหนือบริษัท",
+   "th_norm": "ผู้บริโภคไม่ได้ไร้พลังเลย แต่มีอำนาจจริงเหนือบริษัท",
    "fingerprint": "1dc98e29f4ea4375",
    "vocab_sig": [
     "consumers",
@@ -46792,7 +46792,7 @@
    "kind": "phrase",
    "en": "Looking at it objectively, our consumption patterns are unsustainable.",
    "en_norm": "looking at it objectively our consumption patterns are unsustainable",
-   "my_norm": "ဓမ္မဓိဋ္ဌာန်ကျကျ ကြည့်ရင် ကျွန်တော်တို့ရဲ့ စားသုံးမှုပုံစံတွေက ရေရှည်မတည်တံ့နိုင်ဘူး။",
+   "my_norm": "ဘက်မလိုက်ဘဲ ကြည့်ရင် ကျွန်တော်တို့ရဲ့ စားသုံးမှုပုံစံတွေက ရေရှည်မတည်တံ့နိုင်ဘူး။",
    "th_norm": "มองอย่างเป็นกลาง รูปแบบการบริโภคของเราไม่ยั่งยืน",
    "fingerprint": "db04765dfd475716",
    "vocab_sig": [
@@ -47080,7 +47080,7 @@
    "en": "I'm inclined to believe that loneliness harms health as much as smoking.",
    "en_norm": "i m inclined to believe that loneliness harms health as much as smoking",
    "my_norm": "အထီးကျန်မှုက ဆေးလိပ်သောက်သလောက် ကျန်းမာရေးကို ထိခိုက်တယ်လို့ ကျွန်တော် ယုံကြည်မိတယ်။",
-   "th_norm": "ฉันเอนเอียงที่จะเชื่อว่าความเหงาทำร้ายสุขภาพพอๆ กับการสูบบุหรี่",
+   "th_norm": "ฉันค่อนข้างเชื่อว่าความเหงาทำร้ายสุขภาพพอๆ กับการสูบบุหรี่",
    "fingerprint": "1f10ff7217d63837",
    "vocab_sig": [
     "believe",
@@ -47724,7 +47724,7 @@
    "kind": "phrase",
    "en": "At the end of the day, your body keeps score of how you treat it.",
    "en_norm": "at the end of the day your body keeps score of how you treat it",
-   "my_norm": "နောက်ဆုံးတော့ မင်းရဲ့ခန္ဓာကိုယ်က မင်း ဘယ်လိုဆက်ဆံခဲ့လဲဆိုတာကို မှတ်ထားတယ်။",
+   "my_norm": "နောက်ဆုံးတော့ ကိုယ့်ခန္ဓာကိုယ်က ကိုယ် ဘယ်လိုဆက်ဆံခဲ့လဲဆိုတာကို မှတ်ထားတယ်။",
    "th_norm": "ท้ายที่สุด ร่างกายของคุณจดจำทุกอย่างที่คุณทำกับมัน",
    "fingerprint": "7dbf9e9ec65e85a9",
    "vocab_sig": [
@@ -47944,7 +47944,7 @@
    "en": "Far from being selfish, self-care enables us to care for others.",
    "en_norm": "far from being selfish self care enables us to care for others",
    "my_norm": "ကိုယ့်ကိုယ်ကိုယ် ဂရုစိုက်တာဟာ တစ်ကိုယ်ကောင်းဆန်တာမဟုတ်ဘဲ သူများကို ဂရုစိုက်နိုင်အောင် လုပ်ပေးတာပဲ။",
-   "th_norm": "ห่างไกลจากความเห็นแก่ตัว การดูแลตัวเองทำให้เราดูแลผู้อื่นได้",
+   "th_norm": "การดูแลตัวเองไม่ได้เห็นแก่ตัวเลย แต่มันทำให้เราดูแลผู้อื่นได้",
    "fingerprint": "0c01d402f5641cb4",
    "vocab_sig": [
     "care",
@@ -48015,7 +48015,7 @@
    "kind": "phrase",
    "en": "Looking at it objectively, modern life is designed to keep us sedentary.",
    "en_norm": "looking at it objectively modern life is designed to keep us sedentary",
-   "my_norm": "ဓမ္မဓိဋ္ဌာန်ကျကျ ကြည့်ရင် ခေတ်သစ်ဘဝက ကျွန်တော်တို့ကို လှုပ်ရှားမှုနည်းအောင် ဒီဇိုင်းဆွဲထားတာပဲ။",
+   "my_norm": "ဘက်မလိုက်ဘဲ ကြည့်ရင် ခေတ်သစ်ဘဝက ကျွန်တော်တို့ကို လှုပ်ရှားမှုနည်းအောင် ဒီဇိုင်းဆွဲထားတာပဲ။",
    "th_norm": "มองอย่างเป็นกลาง ชีวิตยุคนี้ออกแบบมาให้เรานั่งนิ่ง",
    "fingerprint": "ef5b52307415b23f",
    "vocab_sig": [
@@ -48089,7 +48089,7 @@
    "en": "From my perspective, justice must be blind to wealth and power.",
    "en_norm": "from my perspective justice must be blind to wealth and power",
    "my_norm": "ကျွန်တော့်အမြင်အရ တရားစီရင်ရာမှာ ချမ်းသာမှုနဲ့အာဏာကြောင့် မျက်နှာလိုက်တာ မဖြစ်ရဘူး။",
-   "th_norm": "ในมุมมองของฉัน ความยุติธรรมต้องตาบอดต่อความร่ำรวยและอำนาจ",
+   "th_norm": "ในมุมมองของฉัน ความยุติธรรมต้องไม่เลือกปฏิบัติตามฐานะหรืออำนาจ",
    "fingerprint": "54463b6e48e11801",
    "vocab_sig": [
     "blind",
@@ -48302,7 +48302,7 @@
    "en": "I'm inclined to believe that justice delayed is justice denied.",
    "en_norm": "i m inclined to believe that justice delayed is justice denied",
    "my_norm": "နှောင့်နှေးတဲ့တရားမျှတမှုဟာ ငြင်းပယ်ခံရတဲ့ တရားမျှတမှုပဲလို့ ကျွန်တော် ယုံကြည်မိတယ်။",
-   "th_norm": "ฉันเอนเอียงที่จะเชื่อว่าความยุติธรรมที่ล่าช้าคือความยุติธรรมที่ถูกปฏิเสธ",
+   "th_norm": "ฉันค่อนข้างเชื่อว่าความยุติธรรมที่ล่าช้าคือความไม่ยุติธรรม",
    "fingerprint": "1af7f6f17ec6d702",
    "vocab_sig": [
     "believe",
@@ -48472,7 +48472,7 @@
    "en": "It's clear that equal rights remain an unfinished project.",
    "en_norm": "it s clear that equal rights remain an unfinished project",
    "my_norm": "တန်းတူအခွင့်အရေးဟာ မပြီးသေးတဲ့လုပ်ငန်းအဖြစ် ရှိနေတုန်းဆိုတာ ရှင်းရှင်းလင်းလင်း တွေ့ရတယ်။",
-   "th_norm": "ชัดเจนว่าสิทธิที่เท่าเทียมยังเป็นโครงการที่ไม่เสร็จ",
+   "th_norm": "ชัดเจนว่าความเท่าเทียมทางสิทธิยังเป็นงานที่ค้างคา",
    "fingerprint": "ca47a55d522c430c",
    "vocab_sig": [
     "clear",
@@ -48691,7 +48691,7 @@
    "kind": "phrase",
    "en": "On the one hand, privacy matters; on the other hand, security requires some oversight.",
    "en_norm": "on the one hand privacy matters on the other hand security requires some oversight",
-   "my_norm": "တစ်ဖက်ကကြည့်ရင် လျှို့ဝှက်ချက်က အရေးကြီးတယ်။ တစ်ဖက်ကကြည့်ရင်တော့ လုံခြုံရေးအတွက် ကြီးကြပ်မှုအချို့ လိုအပ်တယ်။",
+   "my_norm": "တစ်ဖက်ကကြည့်ရင် ကိုယ်ရေးကိုယ်တာအခွင့်အရေးက အရေးကြီးတယ်။ တစ်ဖက်ကကြည့်ရင်တော့ လုံခြုံရေးအတွက် ကြီးကြပ်မှုအချို့ လိုအပ်တယ်။",
    "th_norm": "ในด้านหนึ่ง ความเป็นส่วนตัวสำคัญ ในอีกด้านหนึ่ง ความมั่นคงต้องการการตรวจสอบบ้าง",
    "fingerprint": "45c4bf6920e0d8fd",
    "vocab_sig": [
@@ -48820,7 +48820,7 @@
    "kind": "phrase",
    "en": "The case against mandatory minimum sentences is well documented.",
    "en_norm": "the case against mandatory minimum sentences is well documented",
-   "my_norm": "မဖြစ်မနေချမှတ်ရမယ့် အနည်းဆုံးပြစ်ဒဏ်တွေကို ဆန့်ကျင်တဲ့အကြောင်းပြချက်က ကောင်းကောင်းမှတ်တမ်းတင်ထားပြီးသား။",
+   "my_norm": "မဖြစ်မနေချမှတ်ရမယ့် အနည်းဆုံးပြစ်ဒဏ်တွေကို ဆန့်ကျင်တဲ့အကြောင်းပြချက်တွေဟာ အထောက်အထားတွေနဲ့ ခိုင်ခိုင်မာမာ ထောက်ခံထားပြီးသား။",
    "th_norm": "ข้อโต้แย้งต่อโทษจำคุกขั้นต่ำบังคับมีหลักฐานชัดเจน",
    "fingerprint": "e7c286bd770d555d",
    "vocab_sig": [
@@ -49108,7 +49108,7 @@
    "en": "I'm all in favor of restorative justice over pure punishment.",
    "en_norm": "i m all in favor of restorative justice over pure punishment",
    "my_norm": "သက်သက်အပြစ်ပေးတာထက် ပြန်လည်ကုစားတဲ့ တရားမျှတမှုကို ကျွန်တော် အပြည့်အဝ ထောက်ခံတယ်။",
-   "th_norm": "ฉันสนับสนุนเต็มที่ให้ใช้ยุติธรรมเชิงฟื้นฟูแทนการลงโทษล้วนๆ",
+   "th_norm": "ฉันสนับสนุนเต็มที่ให้ใช้ความยุติธรรมเชิงสมานฉันท์แทนการลงโทษล้วนๆ",
    "fingerprint": "2a26d9944c9d71e4",
    "vocab_sig": [
     "all",
@@ -49157,7 +49157,7 @@
    "en": "Far from being soft, rehabilitation demands real courage from society.",
    "en_norm": "far from being soft rehabilitation demands real courage from society",
    "my_norm": "ပြန်လည်ထူထောင်ရေးဟာ ပျော့ညံ့တာမဟုတ်ဘဲ လူ့အဖွဲ့အစည်းအတွက် တကယ့်သတ္တိ လိုအပ်တဲ့ အလုပ်ပဲ။",
-   "th_norm": "ห่างไกลจากความอ่อนโยน การฟื้นฟูต้องการความกล้าหาญจริงจากสังคม",
+   "th_norm": "การฟื้นฟูไม่ใช่เรื่องของความอ่อนแอ แต่ต้องการความกล้าหาญจริงจากสังคม",
    "fingerprint": "274ab616bef25408",
    "vocab_sig": [
     "courage",
@@ -49229,7 +49229,7 @@
    "kind": "phrase",
    "en": "Looking at it objectively, no legal system is entirely fair.",
    "en_norm": "looking at it objectively no legal system is entirely fair",
-   "my_norm": "ဓမ္မဓိဋ္ဌာန်ကျကျ ကြည့်ရင် ဘယ်တရားစီရင်ရေးစနစ်မှ လုံးဝမျှတတာ မရှိဘူး။",
+   "my_norm": "ဘက်မလိုက်ဘဲ ကြည့်ရင် ဘယ်တရားစီရင်ရေးစနစ်မှ လုံးဝမျှတတာ မရှိဘူး။",
    "th_norm": "มองอย่างเป็นกลาง ไม่มีระบบกฎหมายไหนยุติธรรมสมบูรณ์",
    "fingerprint": "dd9fae4545caa0e3",
    "vocab_sig": [
@@ -49278,7 +49278,7 @@
    "en": "I see no reason why public services shouldn't be transparent by default.",
    "en_norm": "i see no reason why public services shouldn t be transparent by default",
    "my_norm": "အများပြည်သူဝန်ဆောင်မှုတွေမှာ ပွင့်လင်းမြင်သာမှု ပုံမှန်မရှိသင့်တဲ့ အကြောင်းပြချက် ကျွန်တော် မမြင်ဘူး။",
-   "th_norm": "ฉันไม่เห็นเหตุผลว่าทำไมบริการสาธารณะจะไม่โปร่งใสเป็นปกติ",
+   "th_norm": "ฉันไม่เห็นเหตุผลใดที่บริการสาธารณะจะไม่โปร่งใสเป็นมาตรฐาน",
    "fingerprint": "fb2695b2317d94ea",
    "vocab_sig": [
     "default",
@@ -49515,7 +49515,7 @@
    "en": "I'm inclined to believe that empathy is humanity's greatest strength.",
    "en_norm": "i m inclined to believe that empathy is humanity s greatest strength",
    "my_norm": "ကိုယ်ချင်းစာတရားဟာ လူသားတို့ရဲ့ အကြီးမားဆုံး အားသာချက်ပဲလို့ ကျွန်တော် ယုံကြည်မိတယ်။",
-   "th_norm": "ฉันเอนเอียงที่จะเชื่อว่าความเห็นอกเห็นใจคือจุดแข็งที่สุดของมนุษยชาติ",
+   "th_norm": "ฉันค่อนข้างเชื่อว่าความเห็นอกเห็นใจคือจุดแข็งที่สุดของมนุษยชาติ",
    "fingerprint": "e6a5785503d3404e",
    "vocab_sig": [
     "believe",
@@ -49777,7 +49777,7 @@
    "en": "The evidence suggests that helping others boosts our own wellbeing.",
    "en_norm": "the evidence suggests that helping others boosts our own wellbeing",
    "my_norm": "သူများကို ကူညီတာက ကိုယ့်ရဲ့ကျန်းမာရေးကို မြှင့်တင်တယ်လို့ အထောက်အထားတွေက ဖော်ပြနေတယ်။",
-   "th_norm": "หลักฐานชี้ว่าการช่วยเหลือผู้อื่นเพิ่มความสุขของเราเอง",
+   "th_norm": "หลักฐานชี้ว่าการช่วยเหลือผู้อื่นดีต่อสุขภาวะของเราเอง",
    "fingerprint": "48256b9145154b3b",
    "vocab_sig": [
     "boosts",
@@ -49983,7 +49983,7 @@
    "en": "Despite the benefits of optimism, blind positivity can be harmful.",
    "en_norm": "despite the benefits of optimism blind positivity can be harmful",
    "my_norm": "အကောင်းမြင်ဝါဒရဲ့ အကျိုးကျေးဇူးတွေရှိပေမယ့် မျက်စိမှိတ်အကောင်းမြင်တာက အန္တရာယ်ရှိနိုင်တယ်။",
-   "th_norm": "แม้การมองโลกในแง่ดีจะมีประโยชน์ แต่การบวกแบบหลับหูหลับตาอาจเป็นอันตราย",
+   "th_norm": "แม้การมองโลกในแง่ดีจะมีประโยชน์ แต่การมองโลกในแง่ดีแบบหลับหูหลับตาอาจเป็นอันตราย",
    "fingerprint": "c5ccdc51f83a6ad5",
    "vocab_sig": [
     "benefits",
@@ -50080,7 +50080,7 @@
    "en": "The real question is what makes a life truly worth living.",
    "en_norm": "the real question is what makes a life truly worth living",
    "my_norm": "တကယ့်မေးခွန်းက ဘဝတစ်ခုကို တကယ်နေထိုင်ထိုက်စေတာက ဘာလဲဆိုတာပဲ။",
-   "th_norm": "คำถามที่แท้จริงคืออะไรทำให้ชีวิตควรค่าแก่การมีชีวิตอยู่",
+   "th_norm": "คำถามที่แท้จริงคืออะไรทำให้ชีวิตคุ้มค่าที่จะมีชีวิตอยู่",
    "fingerprint": "4ccfd8422a1370f3",
    "vocab_sig": [
     "life",
@@ -50269,7 +50269,7 @@
    "en": "I'm skeptical that happiness can be pursued directly.",
    "en_norm": "i m skeptical that happiness can be pursued directly",
    "my_norm": "ပျော်ရွှင်မှုကို တိုက်ရိုက်လိုက်လံနိုင်ပါ့မလားလို့ ကျွန်တော် သံသယရှိတယ်။",
-   "th_norm": "ฉันสงสัยว่าความสุขจะไล่ตามโดยตรงได้จริงหรือไม่",
+   "th_norm": "ฉันสงสัยว่าการไล่ตามความสุขโดยตรงจะได้ผลจริงหรือไม่",
    "fingerprint": "f1b8d887c3879a1a",
    "vocab_sig": [
     "directly",
@@ -50360,7 +50360,7 @@
    "en": "Far from being a flaw, sensitivity is a form of intelligence.",
    "en_norm": "far from being a flaw sensitivity is a form of intelligence",
    "my_norm": "ထိခိုက်လွယ်မှုဟာ ချို့ယွင်းချက်မဟုတ်ဘဲ ဉာဏ်ရည်ရဲ့ပုံစံတစ်ခုပဲ။",
-   "th_norm": "ห่างไกลจากข้อบกพร่อง ความอ่อนไหวคือปัญญารูปแบบหนึ่ง",
+   "th_norm": "ความอ่อนไหวไม่ใช่ข้อบกพร่อง แต่คือปัญญารูปแบบหนึ่ง",
    "fingerprint": "e655c1258480388f",
    "vocab_sig": [
     "far",
@@ -50428,7 +50428,7 @@
    "kind": "phrase",
    "en": "Looking at it objectively, most of our worries never materialize.",
    "en_norm": "looking at it objectively most of our worries never materialize",
-   "my_norm": "ဓမ္မဓိဋ္ဌာန်ကျကျ ကြည့်ရင် ကျွန်တော်တို့ရဲ့ စိုးရိမ်မှုအများစုက တကယ်မဖြစ်လာဘူး။",
+   "my_norm": "ဘက်မလိုက်ဘဲ ကြည့်ရင် ကျွန်တော်တို့ရဲ့ စိုးရိမ်မှုအများစုက တကယ်မဖြစ်လာဘူး။",
    "th_norm": "มองอย่างเป็นกลาง ความกังวลส่วนใหญ่ของเราไม่เคยเกิดขึ้นจริง",
    "fingerprint": "2abdfb5c11dac7b9",
    "vocab_sig": [
@@ -50477,7 +50477,7 @@
    "en": "I see no reason why aging shouldn't be celebrated, not feared.",
    "en_norm": "i see no reason why aging shouldn t be celebrated not feared",
    "my_norm": "အသက်ကြီးလာတာကို ကြောက်မယ့်အစား ဂုဏ်ပြုသင့်တယ်လို့ ကျွန်တော် မြင်တယ်။",
-   "th_norm": "ฉันไม่เห็นเหตุผลว่าทำไมความชราจะไม่ควรเฉลิมฉลองแทนที่จะกลัว",
+   "th_norm": "ฉันไม่เห็นเหตุผลว่าทำไมเราจึงไม่ควรเฉลิมฉลองความชราแทนที่จะกลัวมัน",
    "fingerprint": "500b787234801d31",
    "vocab_sig": [
     "aging",
@@ -50574,7 +50574,7 @@
    "en": "As I see it, strong families are built on small daily rituals.",
    "en_norm": "as i see it strong families are built on small daily rituals",
    "my_norm": "ကျွန်တော်မြင်တာက ခိုင်မာတဲ့မိသားစုတွေဟာ နေ့စဉ်အသေးစား ဓလေ့တွေပေါ် တည်ဆောက်ထားတာပဲ။",
-   "th_norm": "อย่างที่ฉันเห็น ครอบครัวที่แข็งแกร่งสร้างจากพิธีกรรมเล็กๆ ทุกวัน",
+   "th_norm": "อย่างที่ฉันเห็น ครอบครัวที่แข็งแกร่งสร้างจากกิจวัตรเล็กๆ ทุกวัน",
    "fingerprint": "559788e57037d6aa",
    "vocab_sig": [
     "built",
@@ -50720,7 +50720,7 @@
    "en": "I'm inclined to believe that chosen family can be as strong as blood.",
    "en_norm": "i m inclined to believe that chosen family can be as strong as blood",
    "my_norm": "ရွေးချယ်ထားတဲ့ မိသားစုဟာ သွေးသားလောက် ခိုင်မာနိုင်တယ်လို့ ကျွန်တော် ယုံကြည်မိတယ်။",
-   "th_norm": "ฉันเอนเอียงที่จะเชื่อว่าครอบครัวที่เลือกเองแข็งแกร่งได้เท่าสายเลือด",
+   "th_norm": "ฉันค่อนข้างเชื่อว่าครอบครัวที่เลือกเองแข็งแกร่งได้เท่าสายเลือด",
    "fingerprint": "05fd5a08f082f2b4",
    "vocab_sig": [
     "believe",
@@ -51361,7 +51361,7 @@
    "kind": "phrase",
    "en": "At the end of the day, people remember how you made them feel.",
    "en_norm": "at the end of the day people remember how you made them feel",
-   "my_norm": "နောက်ဆုံးတော့ လူတွေက မင်း သူတို့ကို ဘယ်လိုခံစားစေခဲ့လဲဆိုတာကို မှတ်မိကြတယ်။",
+   "my_norm": "နောက်ဆုံးတော့ လူတွေက သူတို့ကို ဘယ်လိုခံစားရစေခဲ့လဲဆိုတာကိုပဲ မှတ်မိကြတယ်။",
    "th_norm": "ท้ายที่สุด คนจำได้ว่าคุณทำให้พวกเขารู้สึกอย่างไร",
    "fingerprint": "ac9db5d1cd5fcd62",
    "vocab_sig": [
@@ -51583,7 +51583,7 @@
    "en": "Far from being old-fashioned, loyalty is timeless.",
    "en_norm": "far from being old fashioned loyalty is timeless",
    "my_norm": "သစ္စာစောင့်သိမှုဟာ ခေတ်နောက်ကျတာမဟုတ်ဘဲ ခေတ်အဆက်ဆက် တန်ဖိုးရှိတာပဲ။",
-   "th_norm": "ห่างไกลจากความล้าสมัย ความภักดีไม่มีวันตกยุค",
+   "th_norm": "ความภักดีไม่ได้ล้าสมัยเลย แต่เป็นสิ่งที่ไม่ตกยุค",
    "fingerprint": "dacedd2e1841a2d1",
    "vocab_sig": [
     "far",
@@ -51654,7 +51654,7 @@
    "kind": "phrase",
    "en": "Looking at it objectively, no family is perfect.",
    "en_norm": "looking at it objectively no family is perfect",
-   "my_norm": "ဓမ္မဓိဋ္ဌာန်ကျကျ ကြည့်ရင် ဘယ်မိသားစုမှ ပြီးပြည့်စုံတာ မရှိဘူး။",
+   "my_norm": "ဘက်မလိုက်ဘဲ ကြည့်ရင် ဘယ်မိသားစုမှ ပြီးပြည့်စုံတာ မရှိဘူး။",
    "th_norm": "มองอย่างเป็นกลาง ไม่มีครอบครัวไหนสมบูรณ์แบบ",
    "fingerprint": "f7fa72761295f757",
    "vocab_sig": [
@@ -51701,7 +51701,7 @@
    "en": "I see no reason why old friends shouldn't stay close across decades.",
    "en_norm": "i see no reason why old friends shouldn t stay close across decades",
    "my_norm": "သူငယ်ချင်းဟောင်းတွေဟာ ဆယ်စုနှစ်တွေကြာလည်း ရင်းနှီးနေသင့်တယ်လို့ ကျွန်တော် မြင်တယ်။",
-   "th_norm": "ฉันไม่เห็นเหตุผลว่าทำไมเพื่อนเก่าจะไม่สนิทกันข้ามทศวรรษ",
+   "th_norm": "ฉันไม่เห็นเหตุผลว่าเพื่อนเก่าทำไมจะรักษาความสนิทไว้ข้ามทศวรรษไม่ได้",
    "fingerprint": "23527cab02c2c806",
    "vocab_sig": [
     "across",
@@ -51947,7 +51947,7 @@
    "en": "I'm inclined to believe that traditional crafts deserve protection from mass production.",
    "en_norm": "i m inclined to believe that traditional crafts deserve protection from mass production",
    "my_norm": "ရိုးရာလက်မှုပညာတွေဟာ အစုလိုက်ထုတ်လုပ်မှုကနေ ကာကွယ်မှု ထိုက်တန်တယ်လို့ ကျွန်တော် ယုံကြည်မိတယ်။",
-   "th_norm": "ฉันเอนเอียงที่จะเชื่อว่าหัตถกรรมดั้งเดิมสมควรได้รับการปกป้องจากการผลิตจำนวนมาก",
+   "th_norm": "ฉันค่อนข้างเชื่อว่าหัตถกรรมดั้งเดิมสมควรได้รับการปกป้องจากการผลิตจำนวนมาก",
    "fingerprint": "546fc9d25828e1fe",
    "vocab_sig": [
     "believe",
@@ -52339,7 +52339,7 @@
    "kind": "phrase",
    "en": "On the one hand, globalization spreads culture; on the other hand, it erases traditions.",
    "en_norm": "on the one hand globalization spreads culture on the other hand it erases traditions",
-   "my_norm": "တစ်ဖက်ကကြည့်ရင် ဂလိုဘယ်လိုက်ဇေးရှင်းက ယဉ်ကျေးမှုကို ဖြန့်ဝေတယ်။ တစ်ဖက်ကကြည့်ရင်တော့ ရိုးရာဓလေ့တွေကို ဖျက်ဆီးတယ်။",
+   "my_norm": "တစ်ဖက်ကကြည့်ရင် ဂလိုဘယ်လိုင်ဇေးရှင်းက ယဉ်ကျေးမှုကို ဖြန့်ဝေတယ်။ တစ်ဖက်ကကြည့်ရင်တော့ ရိုးရာဓလေ့တွေကို ဖျက်ဆီးတယ်။",
    "th_norm": "ในด้านหนึ่ง โลกาภิวัตน์เผยแพร่วัฒนธรรม ในอีกด้านหนึ่ง มันลบประเพณี",
    "fingerprint": "40a382f4eae5f312",
    "vocab_sig": [
@@ -52390,7 +52390,7 @@
    "kind": "phrase",
    "en": "Although fine dining has its merits, home cooking feeds the soul.",
    "en_norm": "although fine dining has its merits home cooking feeds the soul",
-   "my_norm": "အဆင့်မြင့်စားသောက်မှုမှာ သူ့ကောင်းကွက်တွေရှိပေမယ့် အိမ်ချက်က ဝိညာဉ်ကို အာဟာရပေးတယ်။",
+   "my_norm": "အဆင့်မြင့်စားသောက်မှုမှာ သူ့ကောင်းကွက်တွေရှိပေမယ့် အိမ်ချက်က နှလုံးသားကို အားဖြည့်ပေးတယ်။",
    "th_norm": "แม้ไฟน์ไดนิงจะมีข้อดี แต่อาหารทำเองที่บ้านหล่อเลี้ยงจิตวิญญาณ",
    "fingerprint": "81439eaba45db1a1",
    "vocab_sig": [
@@ -52516,7 +52516,7 @@
    "en": "The real question is whether culture can survive commercialization.",
    "en_norm": "the real question is whether culture can survive commercialization",
    "my_norm": "တကယ့်မေးခွန်းက ယဉ်ကျေးမှုဟာ စီးပွားဖြစ်မှုကို ခံနိုင်ရည်ရှိပါ့မလားဆိုတာပဲ။",
-   "th_norm": "คำถามที่แท้จริงคือวัฒนธรรมจะรอดจากการพาณิชย์ได้หรือไม่",
+   "th_norm": "คำถามที่แท้จริงคือวัฒนธรรมจะอยู่รอดท่ามกลางกระแสพาณิชย์ได้หรือไม่",
    "fingerprint": "9dac0ecd32b26bcf",
    "vocab_sig": [
     "commercialization",
@@ -52712,7 +52712,7 @@
    "en": "I'm skeptical that virtual concerts can replace the real thing.",
    "en_norm": "i m skeptical that virtual concerts can replace the real thing",
    "my_norm": "အွန်လိုင်းဖျော်ဖြေပွဲတွေက တကယ့်ဖျော်ဖြေပွဲကို အစားထိုးနိုင်ပါ့မလားလို့ ကျွန်တော် သံသယရှိတယ်။",
-   "th_norm": "ฉันสงสัยว่าคอนเสิร์ตเสมือนจะทดแทนของจริงได้หรือไม่",
+   "th_norm": "ฉันสงสัยว่าคอนเสิร์ตเสมือนจริงจะทดแทนของจริงได้หรือไม่",
    "fingerprint": "bf734c093bfc2cc6",
    "vocab_sig": [
     "concerts",
@@ -52808,7 +52808,7 @@
    "en": "Far from being elitist, classical music belongs to everyone.",
    "en_norm": "far from being elitist classical music belongs to everyone",
    "my_norm": "ဂန္တဝင်ဂီတဟာ အထက်တန်းလွှာဆန်တာမဟုတ်ဘဲ လူတိုင်းပိုင်တာပဲ။",
-   "th_norm": "ห่างไกลจากความเป็นชนชั้นสูง ดนตรีคลาสสิกเป็นของทุกคน",
+   "th_norm": "ดนตรีคลาสสิกไม่ใช่เรื่องของชนชั้นสูง แต่เป็นของทุกคน",
    "fingerprint": "702c5d2df393d86d",
    "vocab_sig": [
     "belongs",
@@ -52879,7 +52879,7 @@
    "kind": "phrase",
    "en": "Looking at it objectively, no cuisine is superior to another.",
    "en_norm": "looking at it objectively no cuisine is superior to another",
-   "my_norm": "ဓမ္မဓိဋ္ဌာန်ကျကျ ကြည့်ရင် ဘယ်အစားအစာယဉ်ကျေးမှုမှ တစ်ခုထက်တစ်ခု သာတာ မရှိဘူး။",
+   "my_norm": "ဘက်မလိုက်ဘဲ ကြည့်ရင် ဘယ်အစားအစာယဉ်ကျေးမှုမှ တစ်ခုထက်တစ်ခု သာတာ မရှိဘူး။",
    "th_norm": "มองอย่างเป็นกลาง ไม่มีอาหารชาติไหนเหนือกว่าชาติไหน",
    "fingerprint": "118ad64530c4d9d9",
    "vocab_sig": [
@@ -53000,7 +53000,7 @@
    "kind": "phrase",
    "en": "To my mind, space exploration inspires us to think bigger.",
    "en_norm": "to my mind space exploration inspires us to think bigger",
-   "my_norm": "ကျွန်တော့်စိတ်ထဲမှာ အာကာသစူးစမ်းမှုက ကျွန်တော်တို့ကို ပိုကြီးကြီးတွေးဖို့ လှုံ့ဆော်ပေးတယ်။",
+   "my_norm": "ကျွန်တော့်စိတ်ထဲမှာ အာကာသစူးစမ်းမှုက ကျွန်တော်တို့ရဲ့ အတွေးအခေါ်ကို ချဲ့ထွင်ဖို့ လှုံ့ဆော်ပေးတယ်။",
    "th_norm": "ในความคิดของฉัน การสำรวจอวกาศบันดาลใจให้เราคิดให้ใหญ่ขึ้น",
    "fingerprint": "9eeb1573467727b5",
    "vocab_sig": [
@@ -53071,7 +53071,7 @@
    "en": "Personally, I think every citizen should understand the scientific method.",
    "en_norm": "personally i think every citizen should understand the scientific method",
    "my_norm": "ကိုယ်ပိုင်အမြင်အရ နိုင်ငံသားတိုင်း သိပ္ပံနည်းကျနည်းလမ်းကို နားလည်သင့်တယ်။",
-   "th_norm": "โดยส่วนตัวฉันคิดว่าพลเมืองทุกคนควรเข้าใจวิธีวิทยาศาสตร์",
+   "th_norm": "โดยส่วนตัวฉันคิดว่าพลเมืองทุกคนควรเข้าใจวิธีการทางวิทยาศาสตร์",
    "fingerprint": "1e11f0b8960bc4f0",
    "vocab_sig": [
     "citizen",
@@ -53168,7 +53168,7 @@
    "en": "I'm inclined to believe that understanding genetics will transform medicine.",
    "en_norm": "i m inclined to believe that understanding genetics will transform medicine",
    "my_norm": "မျိုးရိုးဗီဇကို နားလည်မှုက ဆေးပညာကို ပြောင်းလဲပစ်လိမ့်မယ်လို့ ကျွန်တော် ယုံကြည်မိတယ်။",
-   "th_norm": "ฉันเอนเอียงที่จะเชื่อว่าความเข้าใจพันธุกรรมจะเปลี่ยนโฉมการแพทย์",
+   "th_norm": "ฉันค่อนข้างเชื่อว่าความเข้าใจพันธุกรรมจะเปลี่ยนโฉมการแพทย์",
    "fingerprint": "522876f3b40db1af",
    "vocab_sig": [
     "believe",
@@ -53514,7 +53514,7 @@
    "en": "Critics argue that genetic editing crosses dangerous ethical lines.",
    "en_norm": "critics argue that genetic editing crosses dangerous ethical lines",
    "my_norm": "မျိုးရိုးဗီဇတည်းဖြတ်မှုက အန္တရာယ်ရှိတဲ့ ကျင့်ဝတ်နယ်နိမိတ်တွေကို ကျော်လွန်တယ်လို့ ဝေဖန်သူတွေက ဆိုတယ်။",
-   "th_norm": "นักวิจารณ์โต้แย้งว่าการตัดต่อพันธุกรรมข้ามเส้นจริยธรรมอันตราย",
+   "th_norm": "นักวิจารณ์โต้แย้งว่าการตัดต่อพันธุกรรมล้ำเส้นจริยธรรมอย่างอันตราย",
    "fingerprint": "b5ab6170de10f303",
    "vocab_sig": [
     "argue",
@@ -53933,7 +53933,7 @@
    "kind": "phrase",
    "en": "I'm skeptical that we will find extraterrestrial life in our lifetime.",
    "en_norm": "i m skeptical that we will find extraterrestrial life in our lifetime",
-   "my_norm": "ကျွန်တော်တို့သက်တမ်းမှာ ဂြိုဟ်သားသက်ရှိတွေ တွေ့ရပါ့မလားလို့ ကျွန်တော် သံသယရှိတယ်။",
+   "my_norm": "ကျွန်တော်တို့ရဲ့ သက်တမ်းအတွင်းမှာ ဂြိုဟ်သားသက်ရှိတွေ တွေ့ရပါ့မလားလို့ ကျွန်တော် သံသယရှိတယ်။",
    "th_norm": "ฉันสงสัยว่าเราจะพบสิ่งมีชีวิตนอกโลกในชั่วชีวิตเราหรือไม่",
    "fingerprint": "17a01fdbff17f1dc",
    "vocab_sig": [
@@ -54007,7 +54007,7 @@
    "en": "Rather than fearing the unknown, we should investigate it.",
    "en_norm": "rather than fearing the unknown we should investigate it",
    "my_norm": "မသိတာကို ကြောက်မယ့်အစား စုံစမ်းစစ်ဆေးသင့်တယ်။",
-   "th_norm": "แทนที่จะกลัวสิ่งที่ไม่รู้ เราควรสืบสวนมัน",
+   "th_norm": "แทนที่จะกลัวสิ่งที่ไม่รู้ เราควรสำรวจมัน",
    "fingerprint": "d741057076e94fcb",
    "vocab_sig": [
     "fearing",
@@ -54030,7 +54030,7 @@
    "en": "Far from being cold, science is driven by wonder.",
    "en_norm": "far from being cold science is driven by wonder",
    "my_norm": "သိပ္ပံဟာ အေးစက်တာမဟုတ်ဘဲ အံ့သြမှုက တွန်းအားပေးတာပဲ။",
-   "th_norm": "ห่างไกลจากความเย็นชา วิทยาศาสตร์ขับเคลื่อนด้วยความอัศจรรย์",
+   "th_norm": "วิทยาศาสตร์ไม่ได้เย็นชาอย่างที่คิด แต่ขับเคลื่อนด้วยความอัศจรรย์",
    "fingerprint": "d4ea556969aff783",
    "vocab_sig": [
     "cold",
@@ -54101,7 +54101,7 @@
    "kind": "phrase",
    "en": "Looking at it objectively, human knowledge is still in its infancy.",
    "en_norm": "looking at it objectively human knowledge is still in its infancy",
-   "my_norm": "ဓမ္မဓိဋ္ဌာန်ကျကျ ကြည့်ရင် လူ့အသိပညာဟာ အခုထိ နို့စို့အရွယ်ပဲ ရှိသေးတယ်။",
+   "my_norm": "ဘက်မလိုက်ဘဲ ကြည့်ရင် လူ့အသိပညာဟာ အခုထိ နုနယ်တဲ့အဆင့်မှာပဲ ရှိသေးတယ်။",
    "th_norm": "มองอย่างเป็นกลาง ความรู้มนุษย์ยังอยู่ในวัยทารก",
    "fingerprint": "0463b6d644098d73",
    "vocab_sig": [
@@ -54495,7 +54495,7 @@
    "en": "I would like to raise a concern regarding the project timeline.",
    "en_norm": "i would like to raise a concern regarding the project timeline",
    "my_norm": "စီမံကိန်းအချိန်ဇယားနဲ့ ပတ်သက်တဲ့ စိုးရိမ်မှုတစ်ခုကို တင်ပြချင်ပါတယ်။",
-   "th_norm": "ข้าพเจ้าขอยกข้อกังวลเกี่ยวกับไทม์ไลน์โครงการ",
+   "th_norm": "ข้าพเจ้าขอแสดงความกังวลเกี่ยวกับไทม์ไลน์ของโครงการ",
    "fingerprint": "546cdbf40ca5f46c",
    "vocab_sig": [
     "concern",
@@ -54927,7 +54927,7 @@
    "en": "Your prompt response would be greatly appreciated.",
    "en_norm": "your prompt response would be greatly appreciated",
    "my_norm": "သင့်ရဲ့ အမြန်တုံ့ပြန်မှုကို အလွန်ကျေးဇူးတင်မိမှာပါ။",
-   "th_norm": "การตอบกลับโดยเร็วของท่านจะเป็นที่ขอบพระคุณยิ่ง",
+   "th_norm": "การตอบกลับอย่างรวดเร็วของท่านจะได้รับการขอบพระคุณอย่างสูงยิ่ง",
    "fingerprint": "c4a7445c5f35309c",
    "vocab_sig": [
     "appreciated",
@@ -55083,7 +55083,7 @@
    "en": "May I kindly ask you to review the attached proposal?",
    "en_norm": "may i kindly ask you to review the attached proposal",
    "my_norm": "ပူးတွဲထားတဲ့ အဆိုပြုချက်ကို ပြန်လည်သုံးသပ်ပေးဖို့ ကျေးဇူးပြုပြီး တောင်းဆိုနိုင်မလား။",
-   "th_norm": "ข้าพเจ้าขอความกรุณาท่านโปรดทบทวนข้อเสนอที่แนบมา",
+   "th_norm": "ข้าพเจ้าขอความกรุณาท่านโปรดพิจารณาข้อเสนอที่แนบมา",
    "fingerprint": "fa46021d3016a277",
    "vocab_sig": [
     "ask",
@@ -55128,7 +55128,7 @@
    "en": "Please accept my apologies for the delayed response.",
    "en_norm": "please accept my apologies for the delayed response",
    "my_norm": "နောက်ကျတဲ့ တုံ့ပြန်မှုအတွက် ကျွန်တော့်တောင်းပန်မှုကို လက်ခံပေးပါ။",
-   "th_norm": "โปรดรับคำขอโทษของข้าพเจ้าสำหรับการตอบล่าช้า",
+   "th_norm": "ข้าพเจ้าขออภัยสำหรับการตอบล่าช้า",
    "fingerprint": "426baca17de89fc9",
    "vocab_sig": [
     "accept",
@@ -55214,7 +55214,7 @@
    "en": "Your cooperation in this matter is greatly appreciated.",
    "en_norm": "your cooperation in this matter is greatly appreciated",
    "my_norm": "ဒီကိစ္စမှာ သင့်ပူးပေါင်းဆောင်ရွက်မှုကို အလွန်ကျေးဇူးတင်ပါတယ်။",
-   "th_norm": "ความร่วมมือของท่านในเรื่องนี้เป็นที่ขอบพระคุณยิ่ง",
+   "th_norm": "ข้าพเจ้าขอขอบพระคุณเป็นอย่างสูงสำหรับความร่วมมือของท่านในเรื่องนี้",
    "fingerprint": "4dd99f6ec840c2c3",
    "vocab_sig": [
     "appreciated",
@@ -55568,7 +55568,7 @@
    "en": "Kindly note that the venue has been changed.",
    "en_norm": "kindly note that the venue has been changed",
    "my_norm": "ကျင်းပမယ့်နေရာ ပြောင်းလဲသွားကြောင်း ကျေးဇူးပြုပြီး သတိပြုပါ။",
-   "th_norm": "กรุณาทราบว่าสถานที่จัดงานมีการเปลี่ยนแปลง",
+   "th_norm": "โปรดทราบว่าสถานที่จัดงานมีการเปลี่ยนแปลง",
    "fingerprint": "c225f501369c0ce2",
    "vocab_sig": [
     "changed",
@@ -55949,7 +55949,7 @@
    "en": "I would like to hear the views of everyone on this proposal.",
    "en_norm": "i would like to hear the views of everyone on this proposal",
    "my_norm": "ဒီအဆိုပြုချက်နဲ့ ပတ်သက်ပြီး အားလုံးရဲ့ အမြင်တွေကို ကြားချင်ပါတယ်။",
-   "th_norm": "ข้าพเจ้าอยากฟังความเห็นของทุกคนต่อข้อเสนอนี้",
+   "th_norm": "ข้าพเจ้าขอรับฟังความเห็นของทุกคนต่อข้อเสนอนี้",
    "fingerprint": "d72787f3a8e89de1",
    "vocab_sig": [
     "everyone",
@@ -55994,7 +55994,7 @@
    "en": "I would like to second that motion.",
    "en_norm": "i would like to second that motion",
    "my_norm": "အဲဒီအဆိုကို ထောက်ခံပါတယ်။",
-   "th_norm": "ข้าพเจ้าขอสนับสนุนญัตตินั้น",
+   "th_norm": "ข้าพเจ้าขอรับรองญัตตินั้น",
    "fingerprint": "ed7f3245f0c7a211",
    "vocab_sig": [
     "motion",
@@ -56212,7 +56212,7 @@
    "en": "I move that the meeting be adjourned.",
    "en_norm": "i move that the meeting be adjourned",
    "my_norm": "အစည်းအဝေးကို ရပ်နားဖို့ အဆိုပြုပါတယ်။",
-   "th_norm": "ข้าพเจ้าขอเสนอให้ปิดการประชุม",
+   "th_norm": "ข้าพเจ้าขอเสนอญัตติให้ปิดการประชุม",
    "fingerprint": "047957cfe982f6ba",
    "vocab_sig": [
     "adjourned",
@@ -56233,7 +56233,7 @@
    "en": "The meeting is adjourned until next Tuesday.",
    "en_norm": "the meeting is adjourned until next tuesday",
    "my_norm": "အစည်းအဝေးကို လာမယ့် အင်္ဂါနေ့အထိ ရပ်နားလိုက်ပါတယ်။",
-   "th_norm": "ปิดการประชุมจนถึงวันอังคารหน้า",
+   "th_norm": "การประชุมปิดลงจนถึงวันอังคารหน้า",
    "fingerprint": "5bc17f891562ded3",
    "vocab_sig": [
     "adjourned",
@@ -56411,7 +56411,7 @@
    "en": "I would like to revisit the point raised earlier.",
    "en_norm": "i would like to revisit the point raised earlier",
    "my_norm": "အစောက တင်ပြခဲ့တဲ့ အချက်ကို ပြန်လည်ဆွေးနွေးချင်ပါတယ်။",
-   "th_norm": "ข้าพเจ้าขอกลับไปประเด็นที่ยกขึ้นก่อนหน้านี้",
+   "th_norm": "ข้าพเจ้าขอกลับมาพิจารณาประเด็นที่ยกขึ้นก่อนหน้านี้อีกครั้ง",
    "fingerprint": "c4d6ddad045be06f",
    "vocab_sig": [
     "earlier",
@@ -56433,7 +56433,7 @@
    "en": "With your permission, I would like to add an item to the agenda.",
    "en_norm": "with your permission i would like to add an item to the agenda",
    "my_norm": "ခွင့်ပြုချက်နဲ့ အစီအစဉ်မှာ အချက်တစ်ခု ထပ်ထည့်ချင်ပါတယ်။",
-   "th_norm": "ด้วยความอนุญาตของท่าน ข้าพเจ้าขอเพิ่มวาระหนึ่ง",
+   "th_norm": "หากท่านอนุญาต ข้าพเจ้าขอเพิ่มวาระการประชุมอีกหนึ่งวาระ",
    "fingerprint": "a6b0a5a54d4b4d9d",
    "vocab_sig": [
     "add",
@@ -56476,7 +56476,7 @@
    "en": "Let us stay focused on the matter at hand.",
    "en_norm": "let us stay focused on the matter at hand",
    "my_norm": "လက်ရှိဆွေးနွေးနေတဲ့ ကိစ္စပေါ်မှာ အာရုံစိုက်ကြရအောင်။",
-   "th_norm": "เรามามุ่งเน้นเรื่องที่อยู่ตรงหน้ากัน",
+   "th_norm": "เรามามุ่งเน้นประเด็นที่กำลังพิจารณากัน",
    "fingerprint": "7389007c99683f58",
    "vocab_sig": [
     "focused",
@@ -56628,7 +56628,7 @@
    "en": "I would urge caution before making a final decision.",
    "en_norm": "i would urge caution before making a final decision",
    "my_norm": "နောက်ဆုံးဆုံးဖြတ်ချက် မချခင် သတိထားဖို့ တိုက်တွန်းချင်ပါတယ်။",
-   "th_norm": "ข้าพเจ้าขอให้ใช้ความระมัดระวังก่อนตัดสินใจขั้นสุดท้าย",
+   "th_norm": "ข้าพเจ้าขอให้ท่านใช้ความระมัดระวังก่อนตัดสินใจขั้นสุดท้าย",
    "fingerprint": "80a78d5891a05d27",
    "vocab_sig": [
     "caution",
@@ -56761,7 +56761,7 @@
    "en": "Point of order: we have not yet voted on the amendment.",
    "en_norm": "point of order we have not yet voted on the amendment",
    "my_norm": "လုပ်ထုံးအရ ပြင်ဆင်ချက်ကို မဲမခွဲရသေးပါဘူး။",
-   "th_norm": "ขออนุญาต เรายังไม่ได้ลงมติเรื่องญัตติแก้ไข",
+   "th_norm": "ขอหารือตามระเบียบวาระ เรายังไม่ได้ลงมติเรื่องญัตติแก้ไข",
    "fingerprint": "48be574a7f7409d3",
    "vocab_sig": [
     "amendment",
@@ -56891,7 +56891,7 @@
    "en": "This achievement reflects well on the entire department.",
    "en_norm": "this achievement reflects well on the entire department",
    "my_norm": "ဒီအောင်မြင်မှုက ဌာနတစ်ခုလုံးအတွက် ဂုဏ်ယူစရာပါ။",
-   "th_norm": "ความสำเร็จนี้สะท้อนดีต่อทั้งแผนก",
+   "th_norm": "ความสำเร็จนี้สะท้อนภาพลักษณ์ที่ดีของทั้งแผนก",
    "fingerprint": "49e5200613edd398",
    "vocab_sig": [
     "achievement",
@@ -57091,7 +57091,7 @@
    "en": "I would like to begin by outlining the main objectives.",
    "en_norm": "i would like to begin by outlining the main objectives",
    "my_norm": "အဓိကရည်မှန်းချက်တွေကို ဖော်ပြပြီး စတင်ချင်ပါတယ်။",
-   "th_norm": "ข้าพเจ้าขอเริ่มด้วยการวางวัตถุประสงค์หลัก",
+   "th_norm": "ข้าพเจ้าขอเริ่มด้วยการนำเสนอวัตถุประสงค์หลักโดยสังเขป",
    "fingerprint": "5be2a9353bf3edd1",
    "vocab_sig": [
     "begin",
@@ -57248,7 +57248,7 @@
    "en": "The figures speak for themselves.",
    "en_norm": "the figures speak for themselves",
    "my_norm": "ကိန်းဂဏန်းတွေကိုကြည့်ရုံနဲ့ အခြေအနေ ရှင်းလင်းနေပါတယ်။",
-   "th_norm": "ตัวเลขพูดแทนตัวเองได้",
+   "th_norm": "ตัวเลขบอกทุกอย่างได้ชัดเจนอยู่แล้ว",
    "fingerprint": "3a3115d560da9d4d",
    "vocab_sig": [
     "figures",
@@ -57269,7 +57269,7 @@
    "en": "This brings me to my next point.",
    "en_norm": "this brings me to my next point",
    "my_norm": "ဒါက ကျွန်တော့်နောက်အချက်ကို ရောက်စေပါတယ်။",
-   "th_norm": "ข้อนี้นำข้าพเจ้าสู่ประเด็นถัดไป",
+   "th_norm": "ต่อไป ข้าพเจ้าขอกล่าวถึงประเด็นถัดไป",
    "fingerprint": "a65342a2129c471b",
    "vocab_sig": [
     "brings",
@@ -57290,7 +57290,7 @@
    "en": "Turning now to the financial implications.",
    "en_norm": "turning now to the financial implications",
    "my_norm": "ယခု ဘဏ္ဍာရေးသက်ရောက်မှုဘက်ကို လှည့်ကြည့်ရအောင်။",
-   "th_norm": "หันมาดูผลกระทบทางการเงินกัน",
+   "th_norm": "ต่อไป เรามาดูผลกระทบทางการเงินกัน",
    "fingerprint": "e0a21f209371a281",
    "vocab_sig": [
     "financial",
@@ -57333,7 +57333,7 @@
    "en": "It is worth noting that costs have decreased significantly.",
    "en_norm": "it is worth noting that costs have decreased significantly",
    "my_norm": "ကုန်ကျစရိတ်တွေ သိသိသာသာ ကျဆင်းသွားတာကို သတိပြုသင့်ပါတယ်။",
-   "th_norm": "ควรทราบว่าต้นทุนลดลงอย่างมีนัยสำคัญ",
+   "th_norm": "เป็นที่น่าสังเกตว่าต้นทุนลดลงอย่างมีนัยสำคัญ",
    "fingerprint": "9607350a0d2fa5c4",
    "vocab_sig": [
     "costs",
@@ -57574,7 +57574,7 @@
    "en": "I would now like to open the floor for questions.",
    "en_norm": "i would now like to open the floor for questions",
    "my_norm": "ယခု မေးခွန်းများမေးဖို့ အခွင့်ပေးချင်ပါတယ်။",
-   "th_norm": "ข้าพเจ้าขอเปิดเวทีสำหรับคำถาม",
+   "th_norm": "ข้าพเจ้าขอเปิดโอกาสให้ทุกท่านซักถาม",
    "fingerprint": "5c16e24994527a95",
    "vocab_sig": [
     "floor",
@@ -57640,7 +57640,7 @@
    "en": "I am afraid I do not have that information at hand.",
    "en_norm": "i am afraid i do not have that information at hand",
    "my_norm": "အဲဒီအချက်အလက် အဆင်သင့် မရှိသေးတာ စိတ်မကောင်းပါဘူး။",
-   "th_norm": "ข้าพเจ้าเกรงว่าข้าพเจ้าไม่มีข้อมูลนั้นอยู่ในมือ",
+   "th_norm": "ข้าพเจ้าเกรงว่าข้าพเจ้าไม่มีข้อมูลดังกล่าวในขณะนี้",
    "fingerprint": "0b460e19db310de4",
    "vocab_sig": [
     "afraid",
@@ -57770,7 +57770,7 @@
    "en": "The full report is available upon request.",
    "en_norm": "the full report is available upon request",
    "my_norm": "အစီရင်ခံစာအပြည့်အစုံကို တောင်းဆိုရင် ရရှိနိုင်ပါတယ်။",
-   "th_norm": "รายงานฉบับเต็มขอได้ตามคำขอ",
+   "th_norm": "ท่านสามารถขอรับรายงานฉบับเต็มได้",
    "fingerprint": "73c480f22e037336",
    "vocab_sig": [
     "available",
@@ -57793,7 +57793,7 @@
    "en": "I would like to acknowledge the contributions of my team.",
    "en_norm": "i would like to acknowledge the contributions of my team",
    "my_norm": "ကျွန်တော့်အဖွဲ့ရဲ့ ပါဝင်မှုတွေကို အသိအမှတ်ပြုချင်ပါတယ်။",
-   "th_norm": "ข้าพเจ้าขอขอบคุณในความทุ่มเทของทีม",
+   "th_norm": "ข้าพเจ้าขอขอบคุณสำหรับผลงานและการมีส่วนร่วมของทีม",
    "fingerprint": "0baeee3ac9aca31d",
    "vocab_sig": [
     "acknowledge",
@@ -57814,7 +57814,7 @@
    "en": "Without further ado, let me introduce our keynote speaker.",
    "en_norm": "without further ado let me introduce our keynote speaker",
    "my_norm": "နောက်ထပ်မနှောင့်နှေးဘဲ အဓိကပြောကြားသူကို မိတ်ဆက်ပါရစေ။",
-   "th_norm": "โดยไม่ต้องเกริ่นนาน ขอแนะนำวิทยากรหลักของเรา",
+   "th_norm": "โดยไม่รอช้า ขอแนะนำวิทยากรหลักของเรา",
    "fingerprint": "9a2da90e95c2b918",
    "vocab_sig": [
     "ado",
@@ -58258,7 +58258,7 @@
    "en": "Please accept our sincere apologies for the delay.",
    "en_norm": "please accept our sincere apologies for the delay",
    "my_norm": "နောက်ကျမှုအတွက် ကျွန်တော်တို့ရဲ့ စိတ်ရင်းတောင်းပန်မှုကို လက်ခံပေးပါ။",
-   "th_norm": "โปรดรับคำขอโทษอย่างจริงใจของเราสำหรับความล่าช้า",
+   "th_norm": "เราขออภัยอย่างจริงใจสำหรับความล่าช้า",
    "fingerprint": "0abedf3cb79cbe74",
    "vocab_sig": [
     "accept",
@@ -58475,7 +58475,7 @@
    "en": "We have credited your account as a gesture of goodwill.",
    "en_norm": "we have credited your account as a gesture of goodwill",
    "my_norm": "စေတနာအထိမ်းအမှတ်အနေနဲ့ သင့်အကောင့်ကို ငွေထည့်ပေးပြီးပါပြီ။",
-   "th_norm": "เราได้เพิ่มเครดิตในบัญชีของท่านเพื่อแสดงความปรารถนาดี",
+   "th_norm": "เราได้เพิ่มเครดิตในบัญชีของท่านเพื่อแสดงเจตนาดีของเรา",
    "fingerprint": "32c5795cb939b895",
    "vocab_sig": [
     "account",
@@ -58649,7 +58649,7 @@
    "en": "I understand your frustration, and I am here to help.",
    "en_norm": "i understand your frustration and i am here to help",
    "my_norm": "သင့်စိတ်အနှောင့်အယှက်ကို နားလည်ပြီး ကူညီဖို့ ဒီမှာရှိနေပါတယ်။",
-   "th_norm": "ข้าพเจ้าเข้าใจความหงุดหงิดของท่าน และข้าพเจ้าอยู่ที่นี่เพื่อช่วย",
+   "th_norm": "ข้าพเจ้าเข้าใจความหงุดหงิดของท่าน และยินดีให้ความช่วยเหลือ",
    "fingerprint": "d7037bfa8811b68c",
    "vocab_sig": [
     "frustration",
@@ -59021,7 +59021,7 @@
    "en": "Please do not hesitate to share your concerns with us.",
    "en_norm": "please do not hesitate to share your concerns with us",
    "my_norm": "သင့်စိုးရိမ်မှုတွေကို ကျွန်တော်တို့နဲ့ မျှဝေဖို့ မတွန့်ဆုတ်ပါနဲ့။",
-   "th_norm": "โปรดอย่าลังเลที่จะแบ่งปันข้อกังวลกับเรา",
+   "th_norm": "โปรดอย่าลังเลที่จะแจ้งข้อกังวลของท่านให้เราทราบ",
    "fingerprint": "bf6119185a9484ce",
    "vocab_sig": [
     "concerns",
@@ -59201,7 +59201,7 @@
    "en": "We hope this resolution meets your expectations.",
    "en_norm": "we hope this resolution meets your expectations",
    "my_norm": "ဒီဖြေရှင်းချက်က သင့်မျှော်လင့်ချက်နဲ့ ကိုက်ညီမယ်လို့ မျှော်လင့်ပါတယ်။",
-   "th_norm": "เราหวังว่าการแก้นี้ตรงตามความคาดหวังของท่าน",
+   "th_norm": "เราหวังว่าทางออกนี้ตรงตามความคาดหวังของท่าน",
    "fingerprint": "0ecade2a17998f32",
    "vocab_sig": [
     "expectations",
@@ -59246,7 +59246,7 @@
    "en": "We remain at your service for any further needs.",
    "en_norm": "we remain at your service for any further needs",
    "my_norm": "နောက်ထပ်လိုအပ်ချက်များအတွက် ကျွန်တော်တို့ ဝန်ဆောင်မှုပေးဖို့ အဆင်သင့်ပါ။",
-   "th_norm": "เราพร้อมให้บริการท่านสำหรับความต้องการอื่นใด",
+   "th_norm": "เรายินดีให้บริการท่าน หากท่านมีความต้องการเพิ่มเติม",
    "fingerprint": "369560b1592a3654",
    "vocab_sig": [
     "any",
@@ -59404,7 +59404,7 @@
    "en": "This agreement shall remain in force for two years.",
    "en_norm": "this agreement shall remain in force for two years",
    "my_norm": "ဒီသဘောတူညီချက်က နှစ်နှစ်ကြာ အကျိုးသက်ရောက်မှာပါ။",
-   "th_norm": "ข้อตกลงนี้มีผลบังคับใช้สองปี",
+   "th_norm": "ข้อตกลงนี้มีผลบังคับใช้เป็นเวลาสองปี",
    "fingerprint": "55c85dcdd693b923",
    "vocab_sig": [
     "agreement",
@@ -59494,7 +59494,7 @@
    "en": "We insist on including a confidentiality clause.",
    "en_norm": "we insist on including a confidentiality clause",
    "my_norm": "လျှို့ဝှက်ချက်အပိုဒ် ထည့်သွင်းဖို့ ကျွန်တော်တို့ တောင်းဆိုပါတယ်။",
-   "th_norm": "เราขอยืนยันให้มีข้อกำหนดการรักษาความลับ",
+   "th_norm": "เราขอยืนกรานให้มีข้อกำหนดการรักษาความลับ",
    "fingerprint": "4cb586d7a35e085a",
    "vocab_sig": [
     "clause",
@@ -59788,7 +59788,7 @@
    "en": "We cannot accept these conditions as they stand.",
    "en_norm": "we cannot accept these conditions as they stand",
    "my_norm": "ဒီအခြေအနေအတိုင်း ဒီစည်းကမ်းတွေကို လက်ခံနိုင်မှာ မဟုတ်ပါဘူး။",
-   "th_norm": "เราไม่อาจยอมรับเงื่อนไขเหล่านี้ตามที่เป็นอยู่",
+   "th_norm": "เราไม่อาจยอมรับเงื่อนไขเหล่านี้ในสภาพปัจจุบัน",
    "fingerprint": "3a00aa0d94dc1fc3",
    "vocab_sig": [
     "accept",
@@ -59810,7 +59810,7 @@
    "en": "We would like to propose an alternative arrangement.",
    "en_norm": "we would like to propose an alternative arrangement",
    "my_norm": "အခြားအစီအစဉ်တစ်ခု အဆိုပြုချင်ပါတယ်။",
-   "th_norm": "เราขอเสนอข้อตกลงทางเลือก",
+   "th_norm": "เราขอเสนอทางเลือกอื่น",
    "fingerprint": "6f8f98d6591d79c1",
    "vocab_sig": [
     "alternative",
@@ -59922,7 +59922,7 @@
    "en": "The undersigned parties acknowledge receipt of payment.",
    "en_norm": "the undersigned parties acknowledge receipt of payment",
    "my_norm": "လက်မှတ်ထိုးထားတဲ့ နှစ်ဖက်စလုံးက ငွေလက်ခံရရှိကြောင်း အသိအမှတ်ပြုပါတယ်။",
-   "th_norm": "คู่สัญญาที่ลงนามรับทราบว่าได้รับชำระเงินแล้ว",
+   "th_norm": "คู่สัญญาผู้ลงนามข้างท้ายนี้ขอรับทราบว่าได้รับชำระเงินแล้ว",
    "fingerprint": "543a547dacc6fd68",
    "vocab_sig": [
     "acknowledge",
@@ -59966,7 +59966,7 @@
    "kind": "phrase",
    "en": "This document constitutes a binding agreement.",
    "en_norm": "this document constitutes a binding agreement",
-   "my_norm": "ဒီစာရွက်စာတမ်းက ချုပ်နှောင်မှုရှိတဲ့ သဘောတူညီချက်တစ်ခု ဖြစ်ပါတယ်။",
+   "my_norm": "ဒီစာရွက်စာတမ်းက စည်းနှောင်မှုရှိတဲ့ သဘောတူညီချက်တစ်ခု ဖြစ်ပါတယ်။",
    "th_norm": "เอกสารนี้ถือเป็นข้อตกลงที่มีผลผูกพัน",
    "fingerprint": "22c704918d43cdfa",
    "vocab_sig": [
@@ -60215,7 +60215,7 @@
    "en": "We are committed to honoring our contractual obligations.",
    "en_norm": "we are committed to honoring our contractual obligations",
    "my_norm": "စာချုပ်ပါ တာဝန်တွေကို ထမ်းဆောင်ဖို့ ကျွန်တော်တို့ ကတိပြုပါတယ်။",
-   "th_norm": "เรามุ่งมั่นปฏิบัติตามพันธะสัญญา",
+   "th_norm": "เรามุ่งมั่นปฏิบัติตามข้อผูกพันตามสัญญา",
    "fingerprint": "b9a1985233e5676d",
    "vocab_sig": [
     "committed",
@@ -60237,7 +60237,7 @@
    "en": "Any breach of contract will be taken seriously.",
    "en_norm": "any breach of contract will be taken seriously",
    "my_norm": "စာချုပ်ဖောက်ဖျက်မှုမှန်သမျှကို အလေးအနက် ကိုင်တွယ်မှာပါ။",
-   "th_norm": "การละเมิดสัญญาจะถูกจัดการอย่างจริงจัง",
+   "th_norm": "การละเมิดสัญญาใดๆ จะได้รับการดำเนินการอย่างจริงจัง",
    "fingerprint": "f4a36bda1db087d4",
    "vocab_sig": [
     "any",
@@ -60349,7 +60349,7 @@
    "en": "Please countersign and return one copy to us.",
    "en_norm": "please countersign and return one copy to us",
    "my_norm": "တစ်စောင်ကို ထပ်မံလက်မှတ်ထိုးပြီး ကျွန်တော်တို့ထံ ပြန်ပို့ပေးပါ။",
-   "th_norm": "โปรดลงนามสำเนาคู่และส่งคืนหนึ่งฉบับให้เรา",
+   "th_norm": "โปรดลงนามกำกับและส่งคืนฉบับหนึ่งให้เรา",
    "fingerprint": "54049d0c4f4df330",
    "vocab_sig": [
     "copy",
@@ -60592,7 +60592,7 @@
    "en": "Please investigate this matter thoroughly.",
    "en_norm": "please investigate this matter thoroughly",
    "my_norm": "ဒီကိစ္စကို စေ့စေ့စပ်စပ် စုံစမ်းပေးပါ။",
-   "th_norm": "โปรดสืบสวนเรื่องนี้อย่างละเอียด",
+   "th_norm": "โปรดตรวจสอบเรื่องนี้อย่างละเอียดถี่ถ้วน",
    "fingerprint": "c6b17b5cce6c7e8d",
    "vocab_sig": [
     "investigate",
@@ -60613,7 +60613,7 @@
    "en": "We have received your complaint and are investigating.",
    "en_norm": "we have received your complaint and are investigating",
    "my_norm": "သင့်တိုင်ကြားချက်ကို လက်ခံရရှိပြီး စုံစမ်းနေပါတယ်။",
-   "th_norm": "เราได้รับข้อร้องเรียนของท่านและกำลังสืบสวนอยู่",
+   "th_norm": "เราได้รับข้อร้องเรียนของท่านและกำลังตรวจสอบอยู่",
    "fingerprint": "151ea9befaaafb16",
    "vocab_sig": [
     "complaint",
@@ -60634,7 +60634,7 @@
    "en": "We will investigate this matter thoroughly and respond soon.",
    "en_norm": "we will investigate this matter thoroughly and respond soon",
    "my_norm": "ဒီကိစ္စကို စေ့စေ့စပ်စပ် စုံစမ်းပြီး မကြာခင် တုံ့ပြန်မှာပါ။",
-   "th_norm": "เราจะสืบสวนเรื่องนี้อย่างละเอียดและตอบกลับในไม่ช้า",
+   "th_norm": "เราจะตรวจสอบเรื่องนี้อย่างละเอียดและตอบกลับในไม่ช้า",
    "fingerprint": "1e134754a99aa5c7",
    "vocab_sig": [
     "investigate",
@@ -60657,7 +60657,7 @@
    "en": "We sincerely regret any distress this has caused you.",
    "en_norm": "we sincerely regret any distress this has caused you",
    "my_norm": "ဒီကိစ္စကြောင့် သင် ကြုံတွေ့ခဲ့ရတဲ့ စိတ်အနှောင့်အယှက်အတွက် စိတ်ရင်းမှန်နဲ့ ဝမ်းနည်းပါတယ်။",
-   "th_norm": "เราเสียใจอย่างจริงใจต่อความทุกข์ที่เรื่องนี้ก่อให้ท่าน",
+   "th_norm": "เราเสียใจอย่างจริงใจต่อความเดือดร้อนที่ท่านได้รับจากเหตุการณ์นี้",
    "fingerprint": "41d4fb034f8b76c7",
    "vocab_sig": [
     "any",
@@ -60766,7 +60766,7 @@
    "en": "We have escalated your case to senior management.",
    "en_norm": "we have escalated your case to senior management",
    "my_norm": "သင့်အမှုကို အကြီးတန်းအရာရှိများထံ လွှဲပြောင်းတင်ပြပြီးပါပြီ။",
-   "th_norm": "เราได้ส่งเคสของท่านต่อให้ผู้บริหารระดับสูงแล้ว",
+   "th_norm": "เราได้ส่งเรื่องร้องเรียนของท่านต่อให้ผู้บริหารระดับสูงแล้ว",
    "fingerprint": "360580c3814eff1d",
    "vocab_sig": [
     "case",
@@ -61141,7 +61141,7 @@
    "en": "We are implementing new measures to avoid such issues.",
    "en_norm": "we are implementing new measures to avoid such issues",
    "my_norm": "ဒီလိုပြဿနာတွေ ရှောင်ရှားဖို့ အစီအမံအသစ်တွေ အကောင်အထည်ဖော်နေပါတယ်။",
-   "th_norm": "เรากำลังใช้มาตรการใหม่เพื่อหลีกเลี่ยงปัญหาเช่นนี้",
+   "th_norm": "เรากำลังดำเนินการตามมาตรการใหม่เพื่อหลีกเลี่ยงปัญหาเช่นนี้",
    "fingerprint": "d6f6b5e5adecc5ed",
    "vocab_sig": [
     "avoid",
@@ -61165,7 +61165,7 @@
    "en": "Your case will remain open until fully resolved.",
    "en_norm": "your case will remain open until fully resolved",
    "my_norm": "သင့်အမှု အပြည့်အဝ ဖြေရှင်းပြီးတဲ့အထိ ဖွင့်ထားမှာပါ။",
-   "th_norm": "เคสของท่านจะเปิดอยู่จนกว่าจะแก้เสร็จสมบูรณ์",
+   "th_norm": "เรื่องร้องเรียนของท่านจะยังคงเปิดอยู่จนกว่าเรื่องจะยุติอย่างสมบูรณ์",
    "fingerprint": "564272daed4906dc",
    "vocab_sig": [
     "case",
@@ -61322,7 +61322,7 @@
    "en": "Your qualifications closely match our requirements.",
    "en_norm": "your qualifications closely match our requirements",
    "my_norm": "သင့်အရည်အချင်းတွေက ကျွန်တော်တို့လိုအပ်ချက်တွေနဲ့ နီးစပ်စွာ ကိုက်ညီပါတယ်။",
-   "th_norm": "คุณสมบัติของท่านตรงกับความต้องการของเราอย่างใกล้ชิด",
+   "th_norm": "คุณสมบัติของท่านสอดคล้องกับความต้องการของเราเป็นอย่างยิ่ง",
    "fingerprint": "f41de9a26ac0d93f",
    "vocab_sig": [
     "closely",
@@ -61366,7 +61366,7 @@
    "en": "The starting salary will be discussed during the interview.",
    "en_norm": "the starting salary will be discussed during the interview",
    "my_norm": "စတင်လစာကို အင်တာဗျူးအတွင်း ဆွေးနွေးမှာပါ။",
-   "th_norm": "เงินเดือนเริ่มต้นจะหารือระหว่างสัมภาษณ์",
+   "th_norm": "จะมีการหารือเรื่องเงินเดือนเริ่มต้นระหว่างการสัมภาษณ์",
    "fingerprint": "bdd0c909c39c836a",
    "vocab_sig": [
     "discussed",
@@ -61456,7 +61456,7 @@
    "en": "We offer flexible working hours and remote options.",
    "en_norm": "we offer flexible working hours and remote options",
    "my_norm": "ပြောင်းလွယ်တဲ့ အလုပ်ချိန်တွေနဲ့ အဝေးက လုပ်ကိုင်နိုင်တဲ့ ရွေးချယ်မှုတွေ ပေးပါတယ်။",
-   "th_norm": "เรามีเวลาทำงานยืดหยุ่นและตัวเลือกทำงานทางไกล",
+   "th_norm": "เรามีเวลาทำงานที่ยืดหยุ่นและทางเลือกในการทำงานระยะไกล",
    "fingerprint": "bbe0e10108cf868c",
    "vocab_sig": [
     "flexible",
@@ -61592,7 +61592,7 @@
    "en": "Your performance will be reviewed after six months.",
    "en_norm": "your performance will be reviewed after six months",
    "my_norm": "သင့်စွမ်းဆောင်ရည်ကို ခြောက်လအကြာမှာ ပြန်လည်သုံးသပ်မှာပါ။",
-   "th_norm": "ผลงานของท่านจะได้รับการทบทวนหลังหกเดือน",
+   "th_norm": "ผลงานของท่านจะได้รับการทบทวนเมื่อครบหกเดือน",
    "fingerprint": "8667de2656bf5003",
    "vocab_sig": [
     "months",
@@ -61636,7 +61636,7 @@
    "en": "The company provides comprehensive health insurance.",
    "en_norm": "the company provides comprehensive health insurance",
    "my_norm": "ကုမ္ပဏီက ပြည့်စုံတဲ့ ကျန်းမာရေးအာမခံ ပေးပါတယ်။",
-   "th_norm": "บริษัทจัดประกันสุขภาพแบบครอบคลุม",
+   "th_norm": "บริษัทจัดให้มีประกันสุขภาพที่ครอบคลุม",
    "fingerprint": "86b590156a21e1a9",
    "vocab_sig": [
     "company",
@@ -61860,7 +61860,7 @@
    "en": "You will be entitled to twenty days of paid leave.",
    "en_norm": "you will be entitled to twenty days of paid leave",
    "my_norm": "လစာနဲ့ ခွင့်ရက် ၂၀ ရက် ခံစားခွင့်ရှိမှာပါ။",
-   "th_norm": "ท่านมีสิทธิ์ลาพักร้อนที่ได้รับค่าจ้างยี่สิบวัน",
+   "th_norm": "ท่านมีสิทธิ์ลาพักผ่อนประจำปีจำนวนยี่สิบวันโดยได้รับค่าจ้าง",
    "fingerprint": "2ddcfb730d273712",
    "vocab_sig": [
     "days",
@@ -61883,7 +61883,7 @@
    "en": "Overtime will be compensated according to company policy.",
    "en_norm": "overtime will be compensated according to company policy",
    "my_norm": "အချိန်ပိုလုပ်အားခကို ကုမ္ပဏီမူဝါဒအတိုင်း ပေးချေမှာပါ။",
-   "th_norm": "ค่าล่วงเวลาจะชดเชยตามนโยบายบริษัท",
+   "th_norm": "ค่าล่วงเวลาจะได้รับการชดเชยตามนโยบายของบริษัท",
    "fingerprint": "4c539c2721d3460e",
    "vocab_sig": [
     "according",
@@ -61930,7 +61930,7 @@
    "en": "Confidentiality is a condition of your employment.",
    "en_norm": "confidentiality is a condition of your employment",
    "my_norm": "လျှို့ဝှက်ထိန်းသိမ်းမှုက သင့်အလုပ်ခန့်အပ်မှုရဲ့ စည်းကမ်းချက်တစ်ရပ်ပါ။",
-   "th_norm": "การรักษาความลับคือเงื่อนไขการจ้างงานของท่าน",
+   "th_norm": "การรักษาความลับเป็นเงื่อนไขหนึ่งในการจ้างงานของท่าน",
    "fingerprint": "02e407357a2f26d7",
    "vocab_sig": [
     "condition",
@@ -61951,7 +61951,7 @@
    "en": "Your resignation has been formally accepted.",
    "en_norm": "your resignation has been formally accepted",
    "my_norm": "သင့်အလုပ်ထွက်စာကို တရားဝင် လက်ခံပြီးပါပြီ။",
-   "th_norm": "ใบลาออกของท่านได้รับการรับรองอย่างเป็นทางการแล้ว",
+   "th_norm": "ใบลาออกของท่านได้รับการอนุมัติอย่างเป็นทางการแล้ว",
    "fingerprint": "05630467abda55d5",
    "vocab_sig": [
     "accepted",
@@ -62017,7 +62017,7 @@
    "en": "An exit interview will be scheduled next week.",
    "en_norm": "an exit interview will be scheduled next week",
    "my_norm": "ထွက်ခွာအင်တာဗျူးကို နောက်အပတ်မှာ စီစဉ်မှာပါ။",
-   "th_norm": "จะนัดสัมภาษณ์ออกงานในสัปดาห์หน้า",
+   "th_norm": "จะนัดสัมภาษณ์ก่อนออกจากงานในสัปดาห์หน้า",
    "fingerprint": "b2886a67b124afb8",
    "vocab_sig": [
     "exit",
@@ -62219,7 +62219,7 @@
    "en": "I understand your concern; however, the data tells a different story.",
    "en_norm": "i understand your concern however the data tells a different story",
    "my_norm": "သင့်စိုးရိမ်မှုကို နားလည်ပါတယ်၊ ဒါပေမယ့် အချက်အလက်တွေအရ အခြေအနေ မတူပါဘူး။",
-   "th_norm": "ข้าพเจ้าเข้าใจข้อกังวลของท่าน แต่ข้อมูลบอกอีกเรื่อง",
+   "th_norm": "ข้าพเจ้าเข้าใจข้อกังวลของท่าน แต่ข้อมูลกลับชี้ไปในทิศทางตรงกันข้าม",
    "fingerprint": "4b11fa28735ec972",
    "vocab_sig": [
     "concern",
@@ -62402,7 +62402,7 @@
    "en": "I am not entirely convinced by that argument.",
    "en_norm": "i am not entirely convinced by that argument",
    "my_norm": "အဲဒီအဆိုကို အပြည့်အဝ ယုံကြည်မိတာ မဟုတ်သေးပါဘူး။",
-   "th_norm": "ข้าพเจ้ายังไม่ถูกชักจูงโดยข้อโต้แย้งนั้นทั้งหมด",
+   "th_norm": "ข้าพเจ้ายังไม่เชื่อมั่นในข้อโต้แย้งนั้นโดยสมบูรณ์",
    "fingerprint": "354b91960efdcc73",
    "vocab_sig": [
     "argument",
@@ -62423,7 +62423,7 @@
    "en": "The evidence does not fully support that claim.",
    "en_norm": "the evidence does not fully support that claim",
    "my_norm": "သက်သေအထောက်အထားတွေက အဲဒီပြောဆိုချက်ကို အပြည့်အဝ မထောက်ခံပါဘူး။",
-   "th_norm": "หลักฐานไม่สนับสนุนข้ออ้างนั้นอย่างเต็มที่",
+   "th_norm": "หลักฐานไม่สนับสนุนข้อกล่าวอ้างนั้นอย่างเต็มที่",
    "fingerprint": "bc136f5d8dbfd2eb",
    "vocab_sig": [
     "claim",
@@ -62489,7 +62489,7 @@
    "en": "I feel strongly that we should explore other options.",
    "en_norm": "i feel strongly that we should explore other options",
    "my_norm": "တခြားရွေးချယ်မှုတွေကို ရှာဖွေသင့်တယ်လို့ အလေးအနက် ယုံကြည်ပါတယ်။",
-   "th_norm": "ข้าพเจ้ารู้สึกอย่างแรงว่าเราควรสำรวจทางเลือกอื่น",
+   "th_norm": "ข้าพเจ้ามีความเห็นอย่างแน่วแน่ว่าเราควรพิจารณาทางเลือกอื่น",
    "fingerprint": "215a03a37c836a43",
    "vocab_sig": [
     "explore",
@@ -62625,7 +62625,7 @@
    "en": "I would like to echo the concerns raised by my colleague.",
    "en_norm": "i would like to echo the concerns raised by my colleague",
    "my_norm": "ကျွန်တော့်လုပ်ဖော်ကိုင်ဖက် တင်ပြခဲ့တဲ့ စိုးရိမ်မှုတွေကို ထပ်မံထောက်ခံချင်ပါတယ်။",
-   "th_norm": "ข้าพเจ้าขอสะท้อนข้อกังวลที่เพื่อนร่วมงานยกขึ้น",
+   "th_norm": "ข้าพเจ้าขอร่วมสะท้อนข้อกังวลที่เพื่อนร่วมงานได้เสนอไว้",
    "fingerprint": "7e518793b92533d6",
    "vocab_sig": [
     "colleague",
@@ -62647,7 +62647,7 @@
    "en": "I fully endorse the recommendation put forward.",
    "en_norm": "i fully endorse the recommendation put forward",
    "my_norm": "တင်ပြထားတဲ့ အကြံပြုချက်ကို အပြည့်အဝ ထောက်ခံပါတယ်။",
-   "th_norm": "ข้าพเจ้ารับรองข้อเสนอแนะที่เสนอมาอย่างเต็มที่",
+   "th_norm": "ข้าพเจ้าเห็นชอบข้อเสนอแนะดังกล่าวอย่างเต็มที่",
    "fingerprint": "0f0078ac3d3c01b0",
    "vocab_sig": [
     "endorse",
@@ -62822,7 +62822,7 @@
    "en": "The results are encouraging, to say the least.",
    "en_norm": "the results are encouraging to say the least",
    "my_norm": "ရလဒ်တွေက အနည်းဆုံးတော့ အားပေးစရာပါ။",
-   "th_norm": "ผลลัพธ์น่าพอใจ อย่างน้อยที่สุด",
+   "th_norm": "ผลลัพธ์เป็นที่น่าพอใจอย่างยิ่ง",
    "fingerprint": "0214bd88d0b99010",
    "vocab_sig": [
     "encouraging",
@@ -62866,7 +62866,7 @@
    "en": "We have every reason to be confident going forward.",
    "en_norm": "we have every reason to be confident going forward",
    "my_norm": "ရှေ့ဆက်ဖို့ ယုံကြည်ရတဲ့ အကြောင်းပြချက်တွေ အများကြီးရှိပါတယ်။",
-   "th_norm": "เรามีเหตุผลทุกประการที่จะมั่นใจก้าวต่อไป",
+   "th_norm": "เรามีเหตุผลทุกประการที่จะมั่นใจในการเดินหน้าต่อไป",
    "fingerprint": "095dbb285e5346f8",
    "vocab_sig": [
     "confident",
@@ -63024,7 +63024,7 @@
    "en": "The stakes are too high to leave this to chance.",
    "en_norm": "the stakes are too high to leave this to chance",
    "my_norm": "ဆုံးရှုံးရမယ့်အရာ ကြီးမားလွန်းတဲ့အတွက် ကံကိုပဲ အားကိုးထားလို့ မရပါဘူး။",
-   "th_norm": "เดิมพันสูงเกินกว่าจะปล่อยให้เป็นเรื่องของโชค",
+   "th_norm": "ความเสี่ยงสูงเกินกว่าจะปล่อยให้เป็นเรื่องของโชคชะตา",
    "fingerprint": "ccb12d5c55708420",
    "vocab_sig": [
     "chance",
@@ -63046,7 +63046,7 @@
    "en": "We owe it to our clients to get this right.",
    "en_norm": "we owe it to our clients to get this right",
    "my_norm": "ဒါကို မှန်ကန်အောင် လုပ်ဖို့ ကျွန်တော်တို့ရဲ့ ဖောက်သည်တွေကို တာဝန်ရှိပါတယ်။",
-   "th_norm": "เราติดหนี้ลูกค้าของเราที่ต้องทำให้ถูกต้อง",
+   "th_norm": "เรามีหน้าที่ต่อลูกค้าของเราที่จะต้องทำให้เรื่องนี้ถูกต้อง",
    "fingerprint": "8feb1a3ae9bf9809",
    "vocab_sig": [
     "clients",
@@ -63179,7 +63179,7 @@
    "en": "In light of recent developments, we must revise our plans.",
    "en_norm": "in light of recent developments we must revise our plans",
    "my_norm": "မကြာသေးမီက ဖြစ်ပေါ်မှုတွေကြောင့် ကျွန်တော်တို့အစီအစဉ်တွေကို ပြန်လည်ပြင်ဆင်ရပါမယ်။",
-   "th_norm": "ท่ามกลางพัฒนาการล่าสุด เราต้องทบทวนแผนของเรา",
+   "th_norm": "เนื่องด้วยความเปลี่ยนแปลงล่าสุด เราจึงต้องทบทวนแผนของเรา",
    "fingerprint": "b10bedc59b240397",
    "vocab_sig": [
     "developments",
@@ -63337,7 +63337,7 @@
    "en": "It should be noted that these figures are estimates.",
    "en_norm": "it should be noted that these figures are estimates",
    "my_norm": "ဒီကိန်းဂဏန်းတွေက ခန့်မှန်းချက်တွေဖြစ်ကြောင်း သတိပြုသင့်ပါတယ်။",
-   "th_norm": "ควรทราบว่าตัวเลขเหล่านี้เป็นประมาณการ",
+   "th_norm": "โปรดทราบว่าตัวเลขเหล่านี้เป็นเพียงประมาณการ",
    "fingerprint": "54d14459561591b4",
    "vocab_sig": [
     "estimates",
@@ -63539,7 +63539,7 @@
    "en": "We request that you acknowledge receipt of this notice.",
    "en_norm": "we request that you acknowledge receipt of this notice",
    "my_norm": "ဒီအသိပေးစာကို လက်ခံရရှိကြောင်း အသိအမှတ်ပြုပေးဖို့ တောင်းဆိုပါတယ်။",
-   "th_norm": "เราขอให้ท่านยืนยันการรับประกาศนี้",
+   "th_norm": "เราขอให้ท่านลงนามรับทราบว่าได้รับประกาศฉบับนี้แล้ว",
    "fingerprint": "59816a0670c7c94b",
    "vocab_sig": [
     "acknowledge",
@@ -63876,7 +63876,7 @@
    "en": "Cost overruns must be reported immediately.",
    "en_norm": "cost overruns must be reported immediately",
    "my_norm": "ကုန်ကျစရိတ် ကျော်လွန်မှုတွေကို ချက်ချင်း အစီရင်ခံရပါမယ်။",
-   "th_norm": "งบที่เกินต้องรายงานทันที",
+   "th_norm": "ค่าใช้จ่ายที่เกินงบประมาณต้องรายงานทันที",
    "fingerprint": "f02d1d38a9390c85",
    "vocab_sig": [
     "cost",
@@ -63921,7 +63921,7 @@
    "en": "We anticipate completing the review by the end of the month.",
    "en_norm": "we anticipate completing the review by the end of the month",
    "my_norm": "ပြန်လည်သုံးသပ်မှုကို လကုန်လောက်မှာ ပြီးစီးမယ်လို့ မျှော်လင့်ပါတယ်။",
-   "th_norm": "เราคาดว่าจะทบทวนเสร็จสิ้นเดือน",
+   "th_norm": "เราคาดว่าจะดำเนินการทบทวนให้เสร็จภายในสิ้นเดือน",
    "fingerprint": "f03fb72ff2450c51",
    "vocab_sig": [
     "anticipate",
@@ -63944,7 +63944,7 @@
    "en": "A progress update will be issued every fortnight.",
    "en_norm": "a progress update will be issued every fortnight",
    "my_norm": "တိုးတက်မှု အပ်ဒိတ်ကို နှစ်ပတ်တစ်ကြိမ် ထုတ်ပြန်မှာပါ။",
-   "th_norm": "จะออกอัปเดตความก้าวหน้าทุกสองสัปดาห์",
+   "th_norm": "จะมีการอัปเดตความก้าวหน้าทุกสองสัปดาห์",
    "fingerprint": "d800e8e58b3d8258",
    "vocab_sig": [
     "every",
@@ -63967,7 +63967,7 @@
    "en": "The final version will be circulated for sign-off.",
    "en_norm": "the final version will be circulated for sign off",
    "my_norm": "နောက်ဆုံးဗားရှင်းကို အတည်ပြုလက်မှတ်အတွက် ဖြန့်ဝေမှာပါ။",
-   "th_norm": "ฉบับสุดท้ายจะเวียนให้ลงนามรับรอง",
+   "th_norm": "ฉบับสุดท้ายจะเวียนให้ลงนามอนุมัติ",
    "fingerprint": "6efa961750058054",
    "vocab_sig": [
     "circulated",
@@ -64012,7 +64012,7 @@
    "en": "Your input has been invaluable to this project.",
    "en_norm": "your input has been invaluable to this project",
    "my_norm": "သင့်ထည့်သွင်းမှုက ဒီစီမံကိန်းအတွက် အလွန်တန်ဖိုးရှိပါတယ်။",
-   "th_norm": "ข้อมูลของท่านมีค่าอย่างยิ่งต่อโครงการนี้",
+   "th_norm": "ข้อเสนอของท่านมีคุณค่าอย่างยิ่งต่อโครงการนี้",
    "fingerprint": "c797bd09ffb31bcc",
    "vocab_sig": [
     "input",
@@ -64033,7 +64033,7 @@
    "en": "We will incorporate your feedback into the final draft.",
    "en_norm": "we will incorporate your feedback into the final draft",
    "my_norm": "သင့်အကြံပြုချက်ကို နောက်ဆုံးမူကြမ်းမှာ ထည့်သွင်းမှာပါ။",
-   "th_norm": "เราจะนำข้อเสนอแนะของท่านใส่ในร่างสุดท้าย",
+   "th_norm": "เราจะนำข้อเสนอแนะของท่านมาประกอบไว้ในร่างสุดท้าย",
    "fingerprint": "07f9a6dc7f33b918",
    "vocab_sig": [
     "draft",
@@ -64099,7 +64099,7 @@
    "en": "This concludes the monthly operations report.",
    "en_norm": "this concludes the monthly operations report",
    "my_norm": "ဒါက လစဉ် လုပ်ငန်းလည်ပတ်မှုအစီရင်ခံစာရဲ့ အဆုံးသတ်ပါ။",
-   "th_norm": "จบรายงานการดำเนินงานประจำเดือน",
+   "th_norm": "สิ้นสุดรายงานการดำเนินงานประจำเดือน",
    "fingerprint": "5e2f58002b8a26d3",
    "vocab_sig": [
     "concludes",
@@ -64510,7 +64510,7 @@
    "en": "Thank you for calling; we appreciate your business.",
    "en_norm": "thank you for calling we appreciate your business",
    "my_norm": "ခေါ်ဆိုတာ ကျေးဇူးတင်ပါတယ်၊ သင့်စီးပွားရေးကို တန်ဖိုးထားပါတယ်။",
-   "th_norm": "ขอบคุณที่โทรมา เราขอบคุณในธุรกิจของท่าน",
+   "th_norm": "ขอบคุณที่โทรมา เราขอขอบคุณที่ท่านไว้วางใจใช้บริการของเรา",
    "fingerprint": "5fcd5d2bab23e182",
    "vocab_sig": [
     "appreciate",
@@ -65167,7 +65167,7 @@
    "en": "Thank you for your call; have a productive day.",
    "en_norm": "thank you for your call have a productive day",
    "my_norm": "ခေါ်ဆိုတာ ကျေးဇူးတင်ပါတယ်၊ အကျိုးရှိတဲ့နေ့ဖြစ်ပါစေ။",
-   "th_norm": "ขอบคุณสำหรับการโทร ขอให้มีวันที่ดี",
+   "th_norm": "ขอบคุณที่โทรมา ขอให้วันนี้ของท่านเป็นวันที่มีประสิทธิภาพ",
    "fingerprint": "d8f00851d8a64a0a",
    "vocab_sig": [
     "call",
@@ -65255,7 +65255,7 @@
    "en": "I wish you a pleasant rest of the day.",
    "en_norm": "i wish you a pleasant rest of the day",
    "my_norm": "ကျန်တဲ့နေ့လေးမှာ ပျော်ရွှင်ပါစေ။",
-   "th_norm": "ข้าพเจ้าขอให้ท่านมีวันที่เหลืออย่างรื่นรมย์",
+   "th_norm": "ข้าพเจ้าขอให้ช่วงเวลาที่เหลือของวันนี้ของท่านเป็นไปด้วยความราบรื่น",
    "fingerprint": "a75001021553bd23",
    "vocab_sig": [
     "day",

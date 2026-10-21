@@ -38,6 +38,16 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 90,
+    slug: 'review-module-9-health-and-body-2026-10-21',
+    titleMy: 'ခန္ဓာကိုယ်နှင့် ကျန်းမာရေး ပြန်လည်သုံးသပ်ခြင်း — Review: Health and Body',
+    titleOrig: 'ทบทวนบทที่ 9 — Review: Health and Body',
+    descMy: 'ခန္ဓာကိုယ်အစိတ်အပိုင်းများ၊ ရောဂါလက္ခဏာများ၊ ဆေးဆိုင်၊ ဆရာဝန်နဲ့တွေ့ဆုံခြင်းနဲ့ ကျန်းမာရေးအလေ့အကျင့်များကို ပြန်လည်လေ့လာပြီး နိုင်ငံခြားဆရာဝန်ကို ရောဂါလက္ခဏာပြောပြနိုင်ဖို့ အင်္ဂလိပ်ဝါကျများ — \"I have a fever.\" / \"Where does it hurt?\" / \"I need medicine.\" / \"Get well soon.\"',
+    phrases: ['I have a fever.', 'Where does it hurt?', 'I need medicine.', 'Get well soon.'],
+    durationSecs: 595,
+    cover: '/podcast-covers/ep-90.jpg',
+  },
+  {
     n: 89,
     slug: 'rest-and-recovery-2026-10-21',
     titleMy: 'အနားယူခြင်း — Rest and recovery',
