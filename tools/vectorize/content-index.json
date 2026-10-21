@@ -166767,7 +166767,7 @@
    "kind": "phrase",
    "en": "I'll handle the client emails.",
    "en_norm": "i ll handle the client emails",
-   "my_norm": "ဖောက်သည်အီးမေးလ်တွေကို ကျွန်တော် ကိုင်တွယ်ပါ့မယ်။",
+   "my_norm": "ဖောက်သည်အီးမေးလ်တွေကို ကျွန်တော် တာဝန်ယူပါ့မယ်။",
    "th_norm": "ฉันจะจัดการอีเมลลูกค้าเอง",
    "fingerprint": "f9fc2754eb445240",
    "vocab_sig": [
@@ -166975,7 +166975,7 @@
    "kind": "phrase",
    "en": "The deadline has been moved up.",
    "en_norm": "the deadline has been moved up",
-   "my_norm": "သတ်မှတ်ရက်ကို စောရွှေ့လိုက်ပြီ။",
+   "my_norm": "သတ်မှတ်ရက်ကို ရှေ့တိုးလိုက်ပြီ။",
    "th_norm": "กำหนดส่งถูกเลื่อนให้เร็วขึ้น",
    "fingerprint": "9416df78eb8661a6",
    "vocab_sig": [
@@ -167202,7 +167202,7 @@
    "kind": "phrase",
    "en": "Our competitors are moving fast.",
    "en_norm": "our competitors are moving fast",
-   "my_norm": "ကျွန်တော်တို့ရဲ့ ပြိုင်ဘက်တွေက အရမ်းမြန်မြန် ရှေ့တိုးနေတယ်။",
+   "my_norm": "ကျွန်တော်တို့ရဲ့ ပြိုင်ဘက်တွေက မြန်မြန်ရှေ့တိုးနေတယ်။",
    "th_norm": "คู่แข่งของเราเคลื่อนไหวเร็ว",
    "fingerprint": "7276017dff43a846",
    "vocab_sig": [
@@ -167310,7 +167310,7 @@
    "en": "The launch has been scheduled for June.",
    "en_norm": "the launch has been scheduled for june",
    "my_norm": "မိတ်ဆက်ပွဲကို ဇွန်လမှာ စီစဉ်ထားတယ်။",
-   "th_norm": "กำหนดเปิดตัวเดือนมิถุนายน",
+   "th_norm": "มีกำหนดเปิดตัวในเดือนมิถุนายน",
    "fingerprint": "5cabc842b46b5ee5",
    "vocab_sig": [
     "june",
@@ -168125,7 +168125,7 @@
    "kind": "phrase",
    "en": "I missed my connecting flight.",
    "en_norm": "i missed my connecting flight",
-   "my_norm": "ကျွန်တော် ဆက်သွယ်လေယာဉ်ကို လွဲသွားတယ်။",
+   "my_norm": "ကျွန်တော် ချိတ်ဆက်လေယာဉ်ကို လွဲသွားတယ်။",
    "th_norm": "ฉันพลาดเที่ยวบินต่อเครื่อง",
    "fingerprint": "ea55c65b91af5dc5",
    "vocab_sig": [
@@ -169567,7 +169567,7 @@
    "en": "They questioned me for an hour.",
    "en_norm": "they questioned me for an hour",
    "my_norm": "သူတို့က ကျွန်တော့်ကို တစ်နာရီ မေးမြန်းတယ်။",
-   "th_norm": "พวกเขาสอบถามฉันหนึ่งชั่วโมง",
+   "th_norm": "พวกเขาสอบถามฉันนานหนึ่งชั่วโมง",
    "fingerprint": "395596cb282a7fbf",
    "vocab_sig": [
     "hour",
@@ -169587,7 +169587,7 @@
    "en": "I declared everything at customs.",
    "en_norm": "i declared everything at customs",
    "my_norm": "အကောက်ခွန်မှာ အရာအားလုံး ကြေညာခဲ့တယ်။",
-   "th_norm": "ฉันแจ้งของทุกอย่างที่ศุลกากร",
+   "th_norm": "ฉันสำแดงของทุกอย่างที่ศุลกากร",
    "fingerprint": "d77a13a4c20b352f",
    "vocab_sig": [
     "customs",
@@ -169714,7 +169714,7 @@
    "en": "The hotel overbooked our room.",
    "en_norm": "the hotel overbooked our room",
    "my_norm": "ဟိုတယ်က ကျွန်တော်တို့အခန်းအတွက် ဘိုကင်အပို လက်ခံထားတယ်။",
-   "th_norm": "โรงแรมจองห้องเราเกิน",
+   "th_norm": "โรงแรมรับจองห้องเกินจำนวน",
    "fingerprint": "0755f4c54083d33f",
    "vocab_sig": [
     "hotel",
@@ -170091,7 +170091,7 @@
    "en": "Can I get store credit instead?",
    "en_norm": "can i get store credit instead",
    "my_norm": "ဆိုင်ခရက်ဒစ်နဲ့ အစားထိုးယူလို့ရမလား။",
-   "th_norm": "ขอเป็นเครดิตร้านแทนได้ไหม",
+   "th_norm": "ขอเป็นเครดิตร้านค้าแทนได้ไหม",
    "fingerprint": "a349aa754098e690",
    "vocab_sig": [
     "credit",
@@ -170113,7 +170113,7 @@
    "en": "The item arrived damaged.",
    "en_norm": "the item arrived damaged",
    "my_norm": "ပစ္စည်းက ပျက်စီးပြီး ရောက်လာတယ်။",
-   "th_norm": "สินค้ามาถึงเสียหาย",
+   "th_norm": "สินค้ามาถึงในสภาพเสียหาย",
    "fingerprint": "c954f8f08bb31602",
    "vocab_sig": [
     "arrived",
@@ -170176,7 +170176,7 @@
    "en": "The product doesn't work as described.",
    "en_norm": "the product doesn t work as described",
    "my_norm": "ထုတ်ကုန်က ဖော်ပြထားသလို အလုပ်မလုပ်ဘူး။",
-   "th_norm": "สินค้าใช้ไม่ได้ตามที่โฆษณา",
+   "th_norm": "สินค้าใช้ไม่ได้ตามที่ระบุไว้",
    "fingerprint": "5855601d1e380b38",
    "vocab_sig": [
     "described",
@@ -170198,7 +170198,7 @@
    "en": "It stopped working after one week.",
    "en_norm": "it stopped working after one week",
    "my_norm": "တစ်ပတ်အကြာမှာ ပျက်သွားတယ်။",
-   "th_norm": "มันหยุดทำงานหลังหนึ่งสัปดาห์",
+   "th_norm": "มันหยุดทำงานหลังจากใช้ไปหนึ่งสัปดาห์",
    "fingerprint": "7eca0a8f9450daac",
    "vocab_sig": [
     "stopped",
@@ -170240,7 +170240,7 @@
    "en": "The warranty expired last month.",
    "en_norm": "the warranty expired last month",
    "my_norm": "အာမခံက ပြီးခဲ့တဲ့လက ကုန်သွားပြီ။",
-   "th_norm": "การรับประกันหมดเดือนที่แล้ว",
+   "th_norm": "การรับประกันหมดอายุเมื่อเดือนที่แล้ว",
    "fingerprint": "c539cff2581e616d",
    "vocab_sig": [
     "expired",
@@ -170326,7 +170326,7 @@
    "en": "This shrank in the wash.",
    "en_norm": "this shrank in the wash",
    "my_norm": "ဒါ လျှော်လိုက်တာ ကျုံ့သွားတယ်။",
-   "th_norm": "อันนี้หดหลังซัก",
+   "th_norm": "ซักแล้วหด",
    "fingerprint": "d1cb45b0f0d19b61",
    "vocab_sig": [
     "shrank",
@@ -170549,7 +170549,7 @@
    "en": "The price tag says something different.",
    "en_norm": "the price tag says something different",
    "my_norm": "ဈေးနှုန်းတံဆိပ်မှာ တခြားဈေး ရေးထားတယ်။",
-   "th_norm": "ป้ายราคาบอกไม่ตรงกัน",
+   "th_norm": "ป้ายราคาบอกอีกราคานึง",
    "fingerprint": "4378ab9f8357b3ab",
    "vocab_sig": [
     "different",
@@ -170614,7 +170614,7 @@
    "en": "This was on sale last week.",
    "en_norm": "this was on sale last week",
    "my_norm": "ဒါ ပြီးခဲ့တဲ့အပတ်က လျှော့ဈေးချထားတယ်။",
-   "th_norm": "อันนี้ลดราคาสัปดาห์ที่แล้ว",
+   "th_norm": "อันนี้ลดราคาเมื่อสัปดาห์ที่แล้ว",
    "fingerprint": "367b315b361f55c1",
    "vocab_sig": [
     "last",
@@ -170656,7 +170656,7 @@
    "en": "Would you honor a cheaper price from another shop?",
    "en_norm": "would you honor a cheaper price from another shop",
    "my_norm": "တခြားဆိုင်က ဈေးသက်သာတာကို လက်ခံပေးနိုင်မလား။",
-   "th_norm": "จะลดให้เท่าราคาถูกกว่าจากร้านอื่นไหม",
+   "th_norm": "จะลดให้เท่าราคาของร้านอื่นที่ถูกกว่าได้ไหม",
    "fingerprint": "b4f49b5538632957",
    "vocab_sig": [
     "another",
@@ -170741,7 +170741,7 @@
    "en": "The tracking hasn't updated in a week.",
    "en_norm": "the tracking hasn t updated in a week",
    "my_norm": "tracking က တစ်ပတ်လုံး အပ်ဒိတ်မဖြစ်သေးဘူး။",
-   "th_norm": "สถานะพัสดุไม่อัปเดตมาหนึ่งสัปดาห์",
+   "th_norm": "สถานะพัสดุไม่ได้อัปเดตมาเป็นอาทิตย์แล้ว",
    "fingerprint": "b046fd3e1b4cb902",
    "vocab_sig": [
     "hasn",
@@ -171135,7 +171135,7 @@
    "en": "I'm waiting for the price to drop.",
    "en_norm": "i m waiting for the price to drop",
    "my_norm": "ဈေးကျဖို့ စောင့်နေတယ်။",
-   "th_norm": "ฉันรอให้ราคาลด",
+   "th_norm": "ฉันรอให้ราคาลดก่อน",
    "fingerprint": "f6de0b055f0c0702",
    "vocab_sig": [
     "drop",
@@ -171340,7 +171340,7 @@
    "en": "I need a gift receipt.",
    "en_norm": "i need a gift receipt",
    "my_norm": "လက်ဆောင်ပြေစာ လိုပါတယ်။",
-   "th_norm": "ฉันต้องการใบเสร็จของขวัญ",
+   "th_norm": "ฉันต้องการใบเสร็จแบบไม่ระบุราคา",
    "fingerprint": "0fef4e2a44725269",
    "vocab_sig": [
     "gift",
@@ -171425,7 +171425,7 @@
    "en": "It overheats after ten minutes.",
    "en_norm": "it overheats after ten minutes",
    "my_norm": "ဆယ်မိနစ်အကြာမှာ အရမ်းပူလာတယ်။",
-   "th_norm": "มันร้อนเกินหลังสิบนาที",
+   "th_norm": "มันร้อนเกินไปหลังจากใช้ไปสิบนาที",
    "fingerprint": "726902a2a7e692e9",
    "vocab_sig": [
     "minutes",
@@ -171961,7 +171961,7 @@
    "en": "What do you recommend?",
    "en_norm": "what do you recommend",
    "my_norm": "ဘာမှာရမလဲ အကြံပေးပါဦး။",
-   "th_norm": "คุณแนะนำอะไร",
+   "th_norm": "มีอะไรแนะนำบ้าง",
    "fingerprint": "de4418153da11246",
    "vocab_sig": [
     "recommend"
@@ -172022,7 +172022,7 @@
    "en": "Does this contain dairy?",
    "en_norm": "does this contain dairy",
    "my_norm": "ဒီဟင်းမှာ နို့ထွက်ပစ္စည်း ပါလား။",
-   "th_norm": "จานนี้มีนมไหม",
+   "th_norm": "จานนี้มีส่วนผสมของนมไหม",
    "fingerprint": "381b17c85a8068ab",
    "vocab_sig": [
     "contain",
@@ -172534,7 +172534,7 @@
    "en": "I expect a discount for this.",
    "en_norm": "i expect a discount for this",
    "my_norm": "ဒီအတွက် လျှော့ဈေးမျှော်လင့်ပါတယ်။",
-   "th_norm": "ฉันต้องการส่วนลดสำหรับเรื่องนี้",
+   "th_norm": "ฉันควรได้รับส่วนลดสำหรับเรื่องนี้",
    "fingerprint": "eb7decbc6e739c60",
    "vocab_sig": [
     "discount",
@@ -172800,7 +172800,7 @@
    "kind": "phrase",
    "en": "Could I get a receipt?",
    "en_norm": "could i get a receipt",
-   "my_norm": "ငွေရှင်းစာရွက် ရနိုင်မလား။",
+   "my_norm": "ပြေစာ ရနိုင်မလား။",
    "th_norm": "ขอใบเสร็จได้ไหม",
    "fingerprint": "e19618b32bf8b7ff",
    "vocab_sig": [
@@ -173205,7 +173205,7 @@
    "en": "The service was painfully slow.",
    "en_norm": "the service was painfully slow",
    "my_norm": "ဝန်ဆောင်မှုက အရမ်းနှေးတယ်။",
-   "th_norm": "บริการช้ามาก",
+   "th_norm": "บริการช้าจนน่าหงุดหงิด",
    "fingerprint": "e42a9dd18115d459",
    "vocab_sig": [
     "painfully",
@@ -173552,7 +173552,7 @@
    "en": "Do you have high chairs?",
    "en_norm": "do you have high chairs",
    "my_norm": "ကလေးအမြင့်ထိုင်ခုံတွေ ရှိလား။",
-   "th_norm": "มีเก้าอี้เด็กไหม",
+   "th_norm": "มีเก้าอี้สูงสำหรับเด็กไหม",
    "fingerprint": "9c433770937287e7",
    "vocab_sig": [
     "chairs",
@@ -173695,7 +173695,7 @@
    "kind": "phrase",
    "en": "I got stuck in a traffic jam.",
    "en_norm": "i got stuck in a traffic jam",
-   "my_norm": "ကျွန်တော် ကားပိတ်မှုထဲမှာ ပိတ်မိနေတယ်။",
+   "my_norm": "ကျွန်တော် ကားပိတ်မိနေတယ်။",
    "th_norm": "ฉันเจอรถติด",
    "fingerprint": "0af90977c9070df3",
    "vocab_sig": [
@@ -173869,7 +173869,7 @@
    "en": "The ambiance here is lovely.",
    "en_norm": "the ambiance here is lovely",
    "my_norm": "ဒီနေရာရဲ့ ပတ်ဝန်းကျင်အငွေ့အသက်က အရမ်းသာယာတယ်။",
-   "th_norm": "บรรยากาศที่นี่น่ารัก",
+   "th_norm": "บรรยากาศที่นี่ดีจัง",
    "fingerprint": "1f91dd19d0301482",
    "vocab_sig": [
     "ambiance",
@@ -174074,7 +174074,7 @@
    "kind": "phrase",
    "en": "I'm here for my annual checkup.",
    "en_norm": "i m here for my annual checkup",
-   "my_norm": "နှစ်ပတ်လည်ကျန်းမာရေးစစ်ဆေးမှုအတွက် လာတာပါ။",
+   "my_norm": "နှစ်စဉ်ကျန်းမာရေးစစ်ဆေးမှုအတွက် လာတာပါ။",
    "th_norm": "ฉันมาตรวจสุขภาพประจำปี",
    "fingerprint": "0695f551ebd591cc",
    "vocab_sig": [
@@ -174666,7 +174666,7 @@
    "kind": "phrase",
    "en": "I need a sick note for work.",
    "en_norm": "i need a sick note for work",
-   "my_norm": "အလုပ်အတွက် ဆေးလက်မှတ် လိုပါတယ်။",
+   "my_norm": "အလုပ်အတွက် ဆရာဝန်ထောက်ခံစာ လိုပါတယ်။",
    "th_norm": "ฉันต้องการใบรับรองแพทย์สำหรับที่ทำงาน",
    "fingerprint": "f0f8e1f6f1cb93e9",
    "vocab_sig": [
@@ -174856,7 +174856,7 @@
    "kind": "phrase",
    "en": "I'd like a second opinion.",
    "en_norm": "i d like a second opinion",
-   "my_norm": "ဒုတိယအမြင်တစ်ခု လိုချင်ပါတယ်။",
+   "my_norm": "နောက်တစ်ဦးရဲ့ အမြင်ကိုပါ လိုချင်ပါတယ်။",
    "th_norm": "ฉันอยากขอความเห็นที่สอง",
    "fingerprint": "45247dd0ea5aa56d",
    "vocab_sig": [
@@ -175080,7 +175080,7 @@
    "kind": "phrase",
    "en": "I need physiotherapy.",
    "en_norm": "i need physiotherapy",
-   "my_norm": "ရုပ်ကုထုံး လိုပါတယ်။",
+   "my_norm": "ရုပ်ပိုင်းဆိုင်ရာကုထုံး လိုပါတယ်။",
    "th_norm": "ฉันต้องการกายภาพบำบัด",
    "fingerprint": "c2752d8778f31c43",
    "vocab_sig": [
@@ -175343,7 +175343,7 @@
    "kind": "phrase",
    "en": "I got food poisoning.",
    "en_norm": "i got food poisoning",
-   "my_norm": "ကျွန်တော် အစားအစာအဆိပ်သင့်တယ်။",
+   "my_norm": "ကျွန်တော် အစာအဆိပ်သင့်တယ်။",
    "th_norm": "ฉันอาหารเป็นพิษ",
    "fingerprint": "d26fb025799a3b8c",
    "vocab_sig": [
@@ -175527,7 +175527,7 @@
    "kind": "phrase",
    "en": "What's the consultation fee?",
    "en_norm": "what s the consultation fee",
-   "my_norm": "တိုင်ပင်ခ ဘယ်လောက်လဲ။",
+   "my_norm": "ဆရာဝန်ပြခ ဘယ်လောက်လဲ။",
    "th_norm": "ค่าปรึกษาเท่าไหร่",
    "fingerprint": "e3216493f77b5e8a",
    "vocab_sig": [
@@ -176829,7 +176829,7 @@
    "kind": "phrase",
    "en": "This matter needs immediate attention.",
    "en_norm": "this matter needs immediate attention",
-   "my_norm": "ဒီကိစ္စကို ချက်ချင်း ကိုင်တွယ်ဖို့ လိုပါတယ်။",
+   "my_norm": "ဒီကိစ္စကို ချက်ချင်း ဆောင်ရွက်ဖို့ လိုပါတယ်။",
    "th_norm": "เรื่องนี้ต้องจัดการด่วน",
    "fingerprint": "b0acc39724eff2e6",
    "vocab_sig": [
@@ -177315,7 +177315,7 @@
    "en": "I'm stuck in traffic.",
    "en_norm": "i m stuck in traffic",
    "my_norm": "လမ်းပိတ်မိနေတယ်။",
-   "th_norm": "ฉันติดอยู่ในรถติด",
+   "th_norm": "ฉันติดรถติดอยู่",
    "fingerprint": "c3c7b60a018eeebd",
    "vocab_sig": [
     "stuck",
@@ -178091,7 +178091,7 @@
    "kind": "phrase",
    "en": "I'm into true crime podcasts.",
    "en_norm": "i m into true crime podcasts",
-   "my_norm": "တကယ့်ရာဇဝတ်မှုပေါ့ဒ်ကတ်စ်တွေကို စွဲလန်းနေတယ်။",
+   "my_norm": "တကယ့်ရာဇဝတ်မှုပေါ့ဒ်ကတ်စ်တွေကို စွဲလမ်းနေတယ်။",
    "th_norm": "ฉันติดพอดแคสต์แนวอาชญากรรมจริง",
    "fingerprint": "7fdf0973e39355b7",
    "vocab_sig": [
@@ -178498,7 +178498,7 @@
    "kind": "phrase",
    "en": "We should catch up properly.",
    "en_norm": "we should catch up properly",
-   "my_norm": "ကျွန်တော်တို့ သေချာတွေ့ဆုံပြီး စကားလက်ဆုံပြောသင့်တယ်။",
+   "my_norm": "ကျွန်တော်တို့ သေချာတွေ့ဆုံပြီး စကားရှည်ရှည်ပြောသင့်တယ်။",
    "th_norm": "เราควรนัดคุยกันจริงจังสักที",
    "fingerprint": "996ca52a1fa5bf09",
    "vocab_sig": [
@@ -179193,7 +179193,7 @@
    "en": "Great minds think alike.",
    "en_norm": "great minds think alike",
    "my_norm": "တော်တဲ့သူတွေ အတွေးတူတယ်။",
-   "th_norm": "คนคิดเหมือนกันมักคิดตรงกัน",
+   "th_norm": "ใจตรงกัน",
    "fingerprint": "7f0c6ea259ec67fb",
    "vocab_sig": [
     "alike",
@@ -179950,7 +179950,7 @@
    "en": "Overtime is killing me.",
    "en_norm": "overtime is killing me",
    "my_norm": "အချိန်ပိုလုပ်ရတာ ပင်ပန်းလွန်းတယ်။",
-   "th_norm": "การทำงานล่วงเวลาทำฉันแย่มาก",
+   "th_norm": "โอทีทำฉันแทบตาย",
    "fingerprint": "904820e0b866e742",
    "vocab_sig": [
     "killing",
@@ -179970,7 +179970,7 @@
    "en": "I finally cleared my inbox.",
    "en_norm": "i finally cleared my inbox",
    "my_norm": "နောက်ဆုံးတော့ အီးမေးလ်တွေ ရှင်းပြီးသွားပြီ။",
-   "th_norm": "ในที่สุดฉันก็เคลียร์กล่องจดหมายหมด",
+   "th_norm": "ในที่สุดฉันก็เคลียร์อินบ็อกซ์หมด",
    "fingerprint": "88cb18e17f762f60",
    "vocab_sig": [
     "cleared",
@@ -180226,7 +180226,7 @@
    "en": "I'm still adjusting to the time zone.",
    "en_norm": "i m still adjusting to the time zone",
    "my_norm": "အချိန်ဇုန်နဲ့ အသားကျဖို့ ကြိုးစားနေတုန်း။",
-   "th_norm": "ฉันยังปรับตัวกับเวลาใหม่ไม่เสร็จ",
+   "th_norm": "ฉันยังปรับตัวเข้ากับเวลาใหม่ไม่ได้",
    "fingerprint": "e461b5abd508841c",
    "vocab_sig": [
     "adjusting",
@@ -180292,7 +180292,7 @@
    "en": "The market was full of colors and smells.",
    "en_norm": "the market was full of colors and smells",
    "my_norm": "ဈေးက အရောင်တွေနဲ့ အနံ့တွေ ပြည့်နေတယ်။",
-   "th_norm": "ตลาดเต็มไปด้วยสีสันและกลิ่นหอม",
+   "th_norm": "ตลาดเต็มไปด้วยสีสันและกลิ่นต่างๆ",
    "fingerprint": "3610c611cb908cbd",
    "vocab_sig": [
     "colors",
@@ -180906,7 +180906,7 @@
    "kind": "phrase",
    "en": "I always keep my receipts.",
    "en_norm": "i always keep my receipts",
-   "my_norm": "ငွေရှင်းစာရွက်တွေကို အမြဲသိမ်းထားတယ်။",
+   "my_norm": "ပြေစာတွေကို အမြဲသိမ်းထားတယ်။",
    "th_norm": "ฉันเก็บใบเสร็จไว้เสมอ",
    "fingerprint": "915415b75105cfea",
    "vocab_sig": [
@@ -180949,7 +180949,7 @@
    "en": "I'm loyal to this brand.",
    "en_norm": "i m loyal to this brand",
    "my_norm": "ဒီအမှတ်တံဆိပ်ကို သစ္စာရှိတယ်။",
-   "th_norm": "ฉันภักดีกับแบรนด์นี้",
+   "th_norm": "ฉันใช้แต่แบรนด์นี้ประจำ",
    "fingerprint": "e276dc5850c78e0a",
    "vocab_sig": [
     "brand",
@@ -181455,7 +181455,7 @@
    "en": "Could we pay now, please?",
    "en_norm": "could we pay now please",
    "my_norm": "အခု ငွေရှင်းလို့ရမလား။",
-   "th_norm": "จ่ายเงินตอนนี้ได้ไหม",
+   "th_norm": "ขอเช็คบิลด้วย",
    "fingerprint": "df3c57ef22997760",
    "vocab_sig": [
     "now",
@@ -182128,7 +182128,7 @@
    "en": "The evidence strongly supports her claim.",
    "en_norm": "the evidence strongly supports her claim",
    "my_norm": "သက်သေအထောက်အထားက သူမရဲ့အဆိုကို ခိုင်မာစွာ ထောက်ခံနေတယ်။",
-   "th_norm": "หลักฐานสนับสนุนข้อกล่าวอ้างของเธออย่างหนักแน่น",
+   "th_norm": "หลักฐานสนับสนุนสิ่งที่เธออ้างอย่างหนักแน่น",
    "fingerprint": "88183be9d0818be0",
    "vocab_sig": [
     "claim",
@@ -182194,7 +182194,7 @@
    "en": "He refused to back down in the debate.",
    "en_norm": "he refused to back down in the debate",
    "my_norm": "သူက အငြင်းပွားမှုမှာ နောက်မဆုတ်ခဲ့ဘူး။",
-   "th_norm": "เขาปฏิเสธที่จะถอยในการโต้เถียง",
+   "th_norm": "เขาไม่ยอมถอยในการโต้เถียง",
    "fingerprint": "4af4449c4bac4a87",
    "vocab_sig": [
     "back",
@@ -182637,7 +182637,7 @@
    "en": "I would hate to be proven wrong.",
    "en_norm": "i would hate to be proven wrong",
    "my_norm": "ကျွန်တော် မှားတယ်ဆိုတာ သက်သေပြခံရတာကို မုန်းတယ်။",
-   "th_norm": "ฉันไม่อยากถูกพิสูจน์ว่าผิด",
+   "th_norm": "ฉันไม่อยากเป็นฝ่ายที่คิดผิด",
    "fingerprint": "baf37f2a8647bdde",
    "vocab_sig": [
     "hate",
@@ -183451,7 +183451,7 @@
    "en": "Count me in for the picnic.",
    "en_norm": "count me in for the picnic",
    "my_norm": "ပျော်ပွဲစားထွက်မယ်ဆိုရင် ကျွန်တော်လည်း လိုက်ပါမယ်။",
-   "th_norm": "นับฉันรวมในปิกนิกด้วย",
+   "th_norm": "ขอร่วมปิกนิกด้วยนะ",
    "fingerprint": "dd5af59c74e419e0",
    "vocab_sig": [
     "count",
@@ -185486,7 +185486,7 @@
    "en": "I am struggling to keep up.",
    "en_norm": "i am struggling to keep up",
    "my_norm": "လိုက်မှီဖို့ ကျွန်တော် ရုန်းကန်နေရတယ်။",
-   "th_norm": "ฉันพยายามตามให้ทันอย่างยากลำบาก",
+   "th_norm": "ฉันตามแทบไม่ทัน",
    "fingerprint": "98b281e640cff907",
    "vocab_sig": [
     "keep",
@@ -185546,16 +185546,16 @@
   {
    "id": "phrase:friends:6993",
    "kind": "phrase",
-   "en": "I am at a loss for what to say.",
-   "en_norm": "i am at a loss for what to say",
+   "en": "I am at a loss for words.",
+   "en_norm": "i am at a loss for words",
    "my_norm": "ဘာပြောရမယ်ဆိုတာ ကျွန်တော် မသိတော့ဘူး။",
    "th_norm": "ฉันไม่รู้จะพูดอะไร",
-   "fingerprint": "5e1fd940b127b204",
+   "fingerprint": "a511329d5a119c66",
    "vocab_sig": [
     "loss",
-    "say"
+    "words"
    ],
-   "template_sig": "i am at a W for what to W .",
+   "template_sig": "i am at a W for W .",
    "tags": [
     "friends",
     "phrase"
@@ -185779,7 +185779,7 @@
    "en": "Could you feed my cat this weekend?",
    "en_norm": "could you feed my cat this weekend",
    "my_norm": "ဒီအပတ်ပိတ်ရက် ကျွန်တော့်ကြောင်ကို အစာကျွေးပေးနိုင်မလား။",
-   "th_norm": "ช่วยเลี้ยงแมวให้ฉันสุดสัปดาห์นี้ได้ไหม",
+   "th_norm": "ช่วยเอาอาหารให้แมวฉันสุดสัปดาห์นี้หน่อยได้ไหม",
    "fingerprint": "9adaf35b36f19eff",
    "vocab_sig": [
     "cat",
@@ -186050,7 +186050,7 @@
    "en": "I am nervous about the interview.",
    "en_norm": "i am nervous about the interview",
    "my_norm": "အင်တာဗျူးနဲ့ပတ်သက်ပြီး ကျွန်တော် စိုးရိမ်နေတယ်။",
-   "th_norm": "ฉันตื่นเต้นเรื่องสัมภาษณ์",
+   "th_norm": "ฉันกังวลเรื่องสัมภาษณ์",
    "fingerprint": "f44b13f2d036b8cb",
    "vocab_sig": [
     "interview",
@@ -186132,7 +186132,7 @@
    "kind": "phrase",
    "en": "I would be grateful for your support.",
    "en_norm": "i would be grateful for your support",
-   "my_norm": "မင်း ပံ့ပိုးကူညီပေးမယ်ဆိုရင် ကျေးဇူးအများကြီး တင်မိမှာပါ။",
+   "my_norm": "မင်း ပံ့ပိုးကူညီပေးမယ်ဆိုရင် ကျေးဇူးအများကြီး တင်ပါတယ်။",
    "th_norm": "ฉันจะซาบซึ้งมากถ้าคุณช่วย",
    "fingerprint": "2e188a4fb21f9e52",
    "vocab_sig": [
@@ -186192,7 +186192,7 @@
    "kind": "phrase",
    "en": "I owe you one for this.",
    "en_norm": "i owe you one for this",
-   "my_norm": "ဒီအတွက် မင်းကို တစ်ခုအကြွေးတင်သွားပြီ။",
+   "my_norm": "ဒီအတွက် မင်းကို တစ်ခုတော့ အကြွေးတင်နေပြီ။",
    "th_norm": "เรื่องนี้ฉันติดหนี้บุญคุณคุณ",
    "fingerprint": "1ef7b75936f3a870",
    "vocab_sig": [
@@ -186251,7 +186251,7 @@
    "kind": "phrase",
    "en": "You are a lifesaver, thank you.",
    "en_norm": "you are a lifesaver thank you",
-   "my_norm": "မင်းက ကျွန်တော့်ကို ကယ်တင်သူပဲ၊ ကျေးဇူးတင်ပါတယ်။",
+   "my_norm": "မင်းက တကယ့်ကို အသက်ကယ်ပဲ၊ ကျေးဇူးတင်ပါတယ်။",
    "th_norm": "คุณช่วยชีวิตฉันไว้ ขอบคุณ",
    "fingerprint": "094f926a096cd752",
    "vocab_sig": [
@@ -186292,7 +186292,7 @@
    "kind": "phrase",
    "en": "You have no idea how much this means.",
    "en_norm": "you have no idea how much this means",
-   "my_norm": "ဒါ ဘယ်လောက်အရေးကြီးတယ်ဆိုတာ မင်း မသိဘူး။",
+   "my_norm": "ဒါ ကျွန်တော့်အတွက် ဘယ်လောက်အရေးပါတယ်ဆိုတာ မင်း မသိဘူး။",
    "th_norm": "คุณไม่รู้หรอกว่าเรื่องนี้มีความหมายกับฉันแค่ไหน",
    "fingerprint": "49bf3cb92ccec82f",
    "vocab_sig": [
@@ -186416,16 +186416,16 @@
   {
    "id": "phrase:work:7035",
    "kind": "phrase",
-   "en": "Why do you not take a break?",
-   "en_norm": "why do you not take a break",
+   "en": "Why don't you take a break?",
+   "en_norm": "why don t you take a break",
    "my_norm": "ခဏနားရင်ရော ဘယ်လိုလဲ။",
    "th_norm": "ทำไมไม่พักบ้าง",
-   "fingerprint": "70262a5faa2a60c2",
+   "fingerprint": "0b65854688633451",
    "vocab_sig": [
     "break",
     "take"
    ],
-   "template_sig": "why do you not W a W ?",
+   "template_sig": "why don ' t you W a W ?",
    "tags": [
     "work",
     "phrase"
@@ -186724,7 +186724,7 @@
    "en": "You should weigh your options first.",
    "en_norm": "you should weigh your options first",
    "my_norm": "မင်း အရင်ဆုံး ရွေးချယ်စရာတွေကို ချိန်ဆသင့်တယ်။",
-   "th_norm": "คุณควรชั่งน้ำหนักทางเลือกก่อน",
+   "th_norm": "คุณควรพิจารณาทางเลือกให้รอบคอบก่อน",
    "fingerprint": "f086210eee240998",
    "vocab_sig": [
     "first",
@@ -187224,7 +187224,7 @@
    "en": "You should get a second opinion.",
    "en_norm": "you should get a second opinion",
    "my_norm": "မင်း ဆရာဝန်နောက်တစ်ယောက်ဆီက အကြံဉာဏ်ယူသင့်တယ်။",
-   "th_norm": "คุณควรขอความเห็นที่สอง",
+   "th_norm": "คุณควรขอความเห็นจากผู้เชี่ยวชาญอีกคน",
    "fingerprint": "e5b99736bcef28f7",
    "vocab_sig": [
     "get",
@@ -187266,7 +187266,7 @@
    "kind": "phrase",
    "en": "Do not put all your eggs in one basket.",
    "en_norm": "do not put all your eggs in one basket",
-   "my_norm": "မင်းရဲ့အရာအားလုံးကို တစ်နေရာတည်းမှာ မထားပါနဲ့။",
+   "my_norm": "ကြက်ဥအားလုံးကို တစ်ခြင်းတည်းထဲမှာ မထည့်ပါနဲ့။",
    "th_norm": "อย่าทุ่มทุกอย่างไว้ที่เดียว",
    "fingerprint": "02c0aaeea081fe6b",
    "vocab_sig": [
@@ -189023,7 +189023,7 @@
    "en": "She is a fitness enthusiast.",
    "en_norm": "she is a fitness enthusiast",
    "my_norm": "သူက ကျန်းမာရေးလေ့ကျင့်ခန်း ဝါသနာပါသူပဲ။",
-   "th_norm": "เธอคลั่งการออกกำลังกาย",
+   "th_norm": "เธอรักการออกกำลังกายมาก",
    "fingerprint": "7c4d5d30ff833f02",
    "vocab_sig": [
     "enthusiast",
@@ -189043,7 +189043,7 @@
    "en": "He is a hopeless romantic.",
    "en_norm": "he is a hopeless romantic",
    "my_norm": "သူက အချစ်ရေးမှာ အရမ်းစိတ်ကူးယဉ်တတ်သူပဲ။",
-   "th_norm": "เขาโรแมนติกแบบหมดหวัง",
+   "th_norm": "เขาเป็นคนโรแมนติกเกินเยียวยา",
    "fingerprint": "ee51319bad6f2bfc",
    "vocab_sig": [
     "hopeless",

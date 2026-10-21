@@ -38,6 +38,16 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 89,
+    slug: 'rest-and-recovery-2026-10-21',
+    titleMy: 'အနားယူခြင်း — Rest and recovery',
+    titleOrig: 'การพักผ่อน — Rest and recovery',
+    descMy: 'အနားယူခြင်းနဲ့ ကျန်းမာရေးပြန်လည်ကောင်းမွန်မှုအကြောင်း ပြောဖို့ အင်္ဂလိပ်ဝါကျများ — \\\"I need rest.\\\" / \\\"You should rest.\\\" / \\\"Get some sleep.\\\" / \\\"Take care of yourself.\\\" / \\\"Get well soon.\\\" / \\\"I hope you feel better soon.\\\"',
+    phrases: ['I need rest.', 'You should rest.', 'Get some sleep.'],
+    durationSecs: 579,
+    cover: '/podcast-covers/ep-89.jpg',
+  },
+  {
     n: 88,
     slug: 'healthy-eating-eat-vegetables-every-day-2026-10-20',
     titleMy: 'ကျန်းမာရေးနှင့် ညီညွတ်သော အစားအစာ — Healthy eating',
