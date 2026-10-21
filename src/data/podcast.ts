@@ -38,6 +38,16 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 91,
+    slug: 'english-with-aung-and-may-ep-91-jobs-vocabulary-2026-10-21',
+    titleMy: 'အလုပ်အကိုင်များ — Jobs vocabulary',
+    titleOrig: 'อาชีพต่างๆ — Jobs vocabulary',
+    descMy: 'အလုပ်အကိုင်အမည်များကို လေ့လာခြင်း — ဆရာ/ဆရာမ (teacher)၊ ယာဉ်မောင်း (driver)၊ သူနာပြု (nurse)၊ အရောင်းသမား (seller)၊ လယ်သမား (farmer) — "What do you do?" မေးမြန်းပုံနှင့် "I am a driver." / "She is a nurse." / "He is a farmer." လို့ ဖြေဆိုပုံ',
+    phrases: ['What do you do?', 'I am a driver.', 'She is a nurse.', 'He is a farmer.'],
+    durationSecs: 602,
+    cover: '/podcast-covers/ep-91.jpg',
+  },
+  {
     n: 90,
     slug: 'review-module-9-health-and-body-2026-10-21',
     titleMy: 'ခန္ဓာကိုယ်နှင့် ကျန်းမာရေး ပြန်လည်သုံးသပ်ခြင်း — Review: Health and Body',
