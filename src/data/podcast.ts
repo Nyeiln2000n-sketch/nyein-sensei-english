@@ -38,6 +38,26 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 95,
+    slug: 'english-with-aung-and-may-ep-95-2026-10-22',
+    titleMy: 'အလုပ်အီးမေးလ် ရိုးရိုးလေး ရေးနည်း — Simple work emails',
+    titleOrig: 'เขียนอีเมลงานแบบง่าย — Simple professional emails',
+    descMy: 'အလုပ်အီးမေးလ်ကို အင်္ဂလိပ်လို ရိုးရိုးလေး ရေးနည်း — "Dear Sir." / "I am writing about my order." / "Thank you." / "Best regards." ဆိုတဲ့ ဝါကျလေးခု လေ့လာခြင်း',
+    phrases: ['Dear Sir.', 'I am writing about my order.', 'I am writing to confirm our meeting.', 'Thank you very much.'],
+    durationSecs: 688,
+    cover: '/podcast-covers/ep-95.jpg',
+  },
+  {
+    n: 94,
+    slug: 'skills-and-abilities-2026-10-22',
+    titleMy: 'ကိုယ့်ရဲ့ စွမ်းရည်နှင့် တတ်ကျွမ်းမှု — Skills and abilities',
+    titleOrig: 'ทักษะและความสามารถ — Talking about skills and abilities',
+    descMy: 'ကိုယ့်တတ်ကျွမ်းမှုကို အင်္ဂလိပ်လို ပြောပုံ — "I am good at cooking." / "I can use a computer." / "I learned English by myself." ဆိုတဲ့ ဝါကျသုံးခု လေ့လာခြင်း',
+    phrases: ['I am good at cooking.', 'I can use a computer.', 'I learned English by myself.', 'What are you good at?'],
+    durationSecs: 467,
+    cover: '/podcast-covers/ep-94.jpg',
+  },
+  {
     n: 93,
     slug: 'professional-self-introduction-at-work-2026-10-22',
     titleMy: 'ပညာရှင်ဆန်ဆန် မိတ်ဆက်ခြင်း — Professional self-introduction',
