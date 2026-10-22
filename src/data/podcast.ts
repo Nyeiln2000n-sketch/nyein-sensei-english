@@ -38,6 +38,16 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 96,
+    slug: 'your-first-meeting-in-english-2026-10-22',
+    titleMy: 'ပထမဆုံး အစည်းအဝေး — Your first meeting in English',
+    titleOrig: 'การประชุมครั้งแรก — Your first meeting in English',
+    descMy: 'အစည်းအဝေးမှာ ယုံကြည်မှုရှိရှိ ပြောနည်း — "Let\'s start the meeting." / "What do you think?" / "I agree with you." / "Good idea." ဆိုတဲ့ ဝါကျလေးခု လေ့လာခြင်း',
+    phrases: ["Let's start the meeting.", 'What do you think?', 'I agree with you.', 'Good idea.'],
+    durationSecs: 521,
+    cover: '/podcast-covers/ep-96.jpg',
+  },
+  {
     n: 95,
     slug: 'english-with-aung-and-may-ep-95-2026-10-22',
     titleMy: 'အလုပ်အီးမေးလ် ရိုးရိုးလေး ရေးနည်း — Simple work emails',

@@ -17,7 +17,7 @@ export const verbsBatch1: Verb[] = [
     examples: {
       present: { en: 'The alarm awakes her at six.', my: 'နှိုးစက်က သူမကို ခြောက်နာရီမှာ နှိုးတယ်။', th: 'นาฬิกาปลุกทำให้เธอตื่นตอนหกโมง' },
       past: { en: 'I awoke at six today.', my: 'ကျွန်တော် ဒီနေ့ ခြောက်နာရီမှာနိုးခဲ့တယ်။', th: 'วันนี้ผมตื่นตอนหกโมง' },
-      future: { en: 'We will awake before sunrise.', my: 'ငါတို့ နေထွက်ခင်နိုးမယ်။', th: 'พวกเราจะตื่นก่อนพระอาทิตย์ขึ้น' },
+      future: { en: 'We will awake before sunrise.', my: 'ငါတို့ နေမထွက်ခင် နိုးမယ်။', th: 'พวกเราจะตื่นก่อนพระอาทิตย์ขึ้น' },
     },
   },
   {
@@ -34,7 +34,7 @@ export const verbsBatch1: Verb[] = [
     my: 'သယ်ဆောင်သည်၊ ခံနိုင်ရည်ရှိသည်', th: 'แบกรับ; อดทน', phonetic: 'bair', cefr: 'B2',
     examples: {
       present: { en: 'Camels bear heavy loads.', my: 'ကုလားအုပ်တွေက ဝန်လေးတွေသယ်တယ်။', th: 'อูฐแบกของหนัก' },
-      past: { en: 'He bore the pain bravely.', my: 'သူ နာကျင်မှုကို ရဲရဲဝံ့ဝံ့ခံစားခဲ့တယ်။', th: 'เขาอดทนต่อความเจ็บปวดอย่างกล้าหาญ' },
+      past: { en: 'He bore the pain bravely.', my: 'သူ နာကျင်မှုကို ရဲရဲဝံ့ဝံ့ သည်းခံခဲ့တယ်။', th: 'เขาอดทนต่อความเจ็บปวดอย่างกล้าหาญ' },
       future: { en: 'She will bear the responsibility.', my: 'သူမ တာဝန်ကို ထမ်းဆောင်မယ်။', th: 'เธอจะรับผิดชอบหน้าที่นี้' },
     },
   },
@@ -494,7 +494,7 @@ export const verbsBatch1: Verb[] = [
     examples: {
       present: { en: 'Dreams foretell the future, they say.', my: 'အိပ်မက်တွေက အနာဂတ်ကို ကြိုဟောတယ်လို့ ဆိုကြတယ်။', th: 'เขาว่ากันว่าความฝันทำนายอนาคต' },
       past: { en: 'He foretold the flood.', my: 'သူ ရေဘေးကို ကြိုဟောခဲ့တယ်။', th: 'เขาทำนายน้ำท่วมไว้' },
-      future: { en: 'No one will be able to foretell tomorrow.', my: 'မနက်ဖြန်ကို ဘယ်သူမှ ကြိုဟောနိုင်မှာ မဟုတ်ဘူး။', th: 'ไม่มีใครทำนายพรุ่งนี้ได้' },
+      future: { en: 'No one will be able to foretell what tomorrow holds.', my: 'မနက်ဖြန်ကို ဘယ်သူမှ ကြိုဟောနိုင်မှာ မဟုတ်ဘူး။', th: 'ไม่มีใครทำนายพรุ่งนี้ได้' },
     },
   },
   {
@@ -584,7 +584,7 @@ export const verbsBatch1: Verb[] = [
     examples: {
       present: { en: 'She hangs the clothes outside.', my: 'သူမ အဝတ်တွေကို အပြင်မှာ လှန်းတယ်။', th: 'เธอตากผ้าข้างนอก' },
       past: { en: 'He hung the picture on the wall.', my: 'သူ ပုံကို နံရံမှာ ချိတ်ခဲ့တယ်။', th: 'เขาแขวนรูปบนผนัง' },
-      future: { en: 'I will hang the lamp here.', my: 'ကျွန်တော် မီးသီးကို ဒီမှာချိတ်မယ်။', th: 'ผมจะแขวนโคมไฟตรงนี้' },
+      future: { en: 'I will hang the lamp here.', my: 'ကျွန်တော် မီးအိမ်ကို ဒီမှာချိတ်မယ်။', th: 'ผมจะแขวนโคมไฟตรงนี้' },
     },
   },
   {

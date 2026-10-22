@@ -472,7 +472,7 @@ export const verbsBatch2: Verb[] = [
   },
   {
     base: 'sow', past: 'sowed', participle: 'sown', present3s: 'sows', gerund: 'sowing',
-    my: 'မျိုးစေ့ချသည်', th: 'หว่าน(เมล็ด)', phonetic: 'soh', cefr: 'C1',
+    my: 'မျိုးစေ့ချသည်', th: 'หว่าน(เมล็ด)', phonetic: 'sow', cefr: 'C1',
     examples: {
       present: { en: 'Farmers sow rice in June.', my: 'လယ်သမားတွေ ဇွန်လမှာ စပါးမျိုးစေ့ချတယ်။', th: 'ชาวนาหว่านข้าวในเดือนมิถุนายน' },
       past: { en: 'He sowed wheat last spring.', my: 'သူ ပြီးခဲ့တဲ့နွေဦးက ဂျုံစိုက်ခဲ့တယ်။', th: 'เขาหว่านข้าวสาลีเมื่อฤดูใบไม้ผลิที่แล้ว' },
