@@ -30625,7 +30625,7 @@
    "en": "I value loyalty above everything in a friend.",
    "en_norm": "i value loyalty above everything in a friend",
    "my_norm": "သူငယ်ချင်းတစ်ယောက်မှာ သစ္စာရှိမှုကို အရာအားလုံးထက် တန်ဖိုးထားတယ်။",
-   "th_norm": "ฉันให้ความสำคัญกับความซื่อสัตย์ในเพื่อนมากกว่าสิ่งใด",
+   "th_norm": "ฉันให้ความสำคัญกับความซื่อสัตย์ของเพื่อนมากกว่าสิ่งใด",
    "fingerprint": "99eeaf905c59c018",
    "vocab_sig": [
     "above",
@@ -30776,7 +30776,7 @@
    "en": "My boss is on a business trip.",
    "en_norm": "my boss is on a business trip",
    "my_norm": "ကျွန်တော့်အလုပ်ရှင်က အလုပ်ခရီးသွားနေတယ်။",
-   "th_norm": "เจ้านายของฉันไปทำธุระต่างจังหวัด",
+   "th_norm": "เจ้านายของฉันไปติดต่อธุรกิจ",
    "fingerprint": "e570c6ed2cf09f03",
    "vocab_sig": [
     "boss",
@@ -31350,7 +31350,7 @@
    "en": "She handles difficult customers calmly.",
    "en_norm": "she handles difficult customers calmly",
    "my_norm": "သူက ခက်ခဲတဲ့ဖောက်သည်တွေကို စိတ်အေးအေးနဲ့ ကိုင်တွယ်တယ်။",
-   "th_norm": "เธอรับมือลูกค้าที่ยากอย่างใจเย็น",
+   "th_norm": "เธอรับมือลูกค้าที่ยุ่งยากอย่างใจเย็น",
    "fingerprint": "aa35208e632f836d",
    "vocab_sig": [
     "calmly",
@@ -140686,7 +140686,7 @@
    "kind": "phrase",
    "en": "Open your books to page ten.",
    "en_norm": "open your books to page ten",
-   "my_norm": "မင်းရဲ့ စာအုပ်ကို စာမျက်နှာ ဆယ်ဖွင့်ပါ။",
+   "my_norm": "မင်းရဲ့ စာအုပ်ကို စာမျက်နှာ ဆယ်ကို ဖွင့်ပါ။",
    "th_norm": "เปิดหนังสือไปหน้าสิบ",
    "fingerprint": "608c6a8842c53c20",
    "vocab_sig": [
@@ -143544,7 +143544,7 @@
    "en": "Biodiversity is essential for a healthy planet.",
    "en_norm": "biodiversity is essential for a healthy planet",
    "my_norm": "ဇီဝမျိုးစုံမျိုးကွဲမှုက ကျန်းမာတဲ့ကမ္ဘာအတွက် မရှိမဖြစ်ပါ။",
-   "th_norm": "ความหลากหลายทางชีวภาพจำเป็นต่อโลกที่แข็งแรง",
+   "th_norm": "ความหลากหลายทางชีวภาพจำเป็นต่อโลกที่สมบูรณ์",
    "fingerprint": "a652557e7ae140b5",
    "vocab_sig": [
     "biodiversity",
@@ -144699,7 +144699,7 @@
    "en": "He retired after a long and successful career.",
    "en_norm": "he retired after a long and successful career",
    "my_norm": "ရှည်လျားပြီးအောင်မြင်တဲ့ ကစားသမားဘဝ ပြီးဆုံးပြီးနောက် သူ အနားယူခဲ့တယ်။",
-   "th_norm": "เขาแขวนสตั๊ดหลังอาชีพที่ยาวนานและประสบความสำเร็จ",
+   "th_norm": "เขาอำลาวงการกีฬาหลังมีอาชีพที่ยาวนานและประสบความสำเร็จ",
    "fingerprint": "f1ff4a92c3721ab0",
    "vocab_sig": [
     "career",
@@ -145309,7 +145309,7 @@
    "kind": "phrase",
    "en": "The message was sent twice.",
    "en_norm": "the message was sent twice",
-   "my_norm": "မက်ဆေ့ချ် နှစ်ခါပို့မိသွားတယ်။",
+   "my_norm": "မက်ဆေ့ချ် နှစ်ခါပို့သွားတယ်။",
    "th_norm": "ข้อความถูกส่งสองครั้ง",
    "fingerprint": "a8758d2e910f6e2d",
    "vocab_sig": [
@@ -148242,7 +148242,7 @@
    "kind": "phrase",
    "en": "They celebrated with tears in their eyes.",
    "en_norm": "they celebrated with tears in their eyes",
-   "my_norm": "သူတို့ မျက်ရည်တွေနဲ့ အောင်ပွဲခံခဲ့ကြတယ်။",
+   "my_norm": "သူတို့ မျက်ရည်တွေနဲ့ ဆင်နွှဲခဲ့ကြတယ်။",
    "th_norm": "พวกเขาฉลองทั้งน้ำตา",
    "fingerprint": "06ba3e260c9fa8af",
    "vocab_sig": [
@@ -150559,7 +150559,7 @@
    "kind": "phrase",
    "en": "Turn off the gas!",
    "en_norm": "turn off the gas",
-   "my_norm": "ဓာတ်ငွေ့ပိတ်ပါ။",
+   "my_norm": "ဂက်စ်ပိတ်ပါ။",
    "th_norm": "ปิดแก๊ส",
    "fingerprint": "367ad048d01e8c02",
    "vocab_sig": [
@@ -152508,7 +152508,7 @@
    "kind": "phrase",
    "en": "The house feels empty without the kids.",
    "en_norm": "the house feels empty without the kids",
-   "my_norm": "ကလေးတွေမရှိရင် အိမ်က ဗလာကျင်းနေတယ်။",
+   "my_norm": "ကလေးတွေမရှိရင် အိမ်က ဟာလာနေတယ်။",
    "th_norm": "บ้านดูว่างเปล่าเมื่อไม่มีลูกๆ",
    "fingerprint": "f354ffc0bbccabe4",
    "vocab_sig": [
@@ -152816,7 +152816,7 @@
    "kind": "phrase",
    "en": "The shirt fits perfectly.",
    "en_norm": "the shirt fits perfectly",
-   "my_norm": "ရှပ်အင်္ကျီ တော်တော်ကွက်တိဖြစ်တယ်။",
+   "my_norm": "ရှပ်အင်္ကျီ ကွက်တိဖြစ်တယ်။",
    "th_norm": "เสื้อตัวนี้พอดีเป๊ะ",
    "fingerprint": "31445b1cca88fee3",
    "vocab_sig": [
@@ -155836,7 +155836,7 @@
    "kind": "phrase",
    "en": "It’s five to nine.",
    "en_norm": "it s five to nine",
-   "my_norm": "ကိုးနာရီကို ငါးမိနစ်လိုတယ်။",
+   "my_norm": "ကိုးနာရီထိုးဖို့ ငါးမိနစ်လိုတယ်။",
    "th_norm": "อีกห้านาทีเก้าโมง",
    "fingerprint": "fd7984c84d7fc67b",
    "vocab_sig": [
@@ -156072,7 +156072,7 @@
    "kind": "phrase",
    "en": "It’s twenty to seven.",
    "en_norm": "it s twenty to seven",
-   "my_norm": "ခုနှစ်နာရီကို မိနစ်နှစ်ဆယ် လိုတယ်။",
+   "my_norm": "ခုနှစ်နာရီထိုးဖို့ မိနစ်နှစ်ဆယ်လိုတယ်။",
    "th_norm": "อีกยี่สิบนาทีเจ็ดโมง",
    "fingerprint": "7d052746e59c2935",
    "vocab_sig": [
@@ -157131,7 +157131,7 @@
    "kind": "phrase",
    "en": "The wind is blowing the leaves away.",
    "en_norm": "the wind is blowing the leaves away",
-   "my_norm": "လေက အရွက်တွေကို လွင့်အောင် တိုက်နေတယ်။",
+   "my_norm": "လေတိုက်လို့ အရွက်တွေ လွင့်နေတယ်။",
    "th_norm": "ลมพัดใบไม้ปลิว",
    "fingerprint": "bb42881b5d2c913e",
    "vocab_sig": [
@@ -157762,7 +157762,7 @@
    "kind": "phrase",
    "en": "Climate change is affecting weather patterns.",
    "en_norm": "climate change is affecting weather patterns",
-   "my_norm": "ရာသီဥတု ပြောင်းလဲမှုက ရာသီဥတုပုံစံတွေကို သက်ရောက်နေတယ်။",
+   "my_norm": "ရာသီဥတု ပြောင်းလဲမှုက မိုးလေဝသပုံစံတွေကို သက်ရောက်နေတယ်။",
    "th_norm": "การเปลี่ยนแปลงสภาพภูมิอากาศกระทบรูปแบบอากาศ",
    "fingerprint": "3ef1a9e224f41837",
    "vocab_sig": [

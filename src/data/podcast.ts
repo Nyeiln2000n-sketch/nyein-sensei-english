@@ -38,6 +38,16 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 93,
+    slug: 'professional-self-introduction-at-work-2026-10-22',
+    titleMy: 'ပညာရှင်ဆန်ဆန် မိတ်ဆက်ခြင်း — Professional self-introduction',
+    titleOrig: 'แนะนำตัวแบบมืออาชีพ — Professional self-introduction',
+    descMy: 'အလုပ်ခွင်မှာ ကိုယ့်ကိုယ်ကို ပညာရှင်ဆန်ဆန် မိတ်ဆက်ပုံ — "I work as a driver." / "I am responsible for deliveries." / "I have five years of experience." ဆိုတဲ့ ဝါကျသုံးခု လေ့လာခြင်း',
+    phrases: ['I work as a driver.', 'I am responsible for deliveries.', 'I have five years of experience.', 'My name is Nyein.'],
+    durationSecs: 530,
+    cover: '/podcast-covers/ep-93.jpg',
+  },
+  {
     n: 92,
     slug: 'english-with-aung-and-may-ep-92-workplace-2026-10-21',
     titleMy: 'အလုပ်ခွင် — Workplace',
