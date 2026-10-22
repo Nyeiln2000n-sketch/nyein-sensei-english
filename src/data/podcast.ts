@@ -38,6 +38,16 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 92,
+    slug: 'english-with-aung-and-may-ep-92-workplace-2026-10-21',
+    titleMy: 'အလုပ်ခွင် — Workplace',
+    titleOrig: 'ที่ทำงาน — Workplace',
+    descMy: 'အလုပ်ခွင်အမည်များကို လေ့လာခြင်း — ရုံး (office)၊ စက်ရုံ (factory)၊ ဆိုင် (shop)၊ ဈေး (market)၊ ဆေးရုံ (hospital)၊ ကျောင်း (school) — "Where do you work?" မေးမြန်းပုံနှင့် "I work in an office." / "I work at a factory." / "My office is near the market." လို့ ဖြေဆိုပုံ',
+    phrases: ['Where do you work?', 'I work in an office.', 'I work at a factory.', 'My office is near the market.'],
+    durationSecs: 631,
+    cover: '/podcast-covers/ep-92.jpg',
+  },
+  {
     n: 91,
     slug: 'english-with-aung-and-may-ep-91-jobs-vocabulary-2026-10-21',
     titleMy: 'အလုပ်အကိုင်များ — Jobs vocabulary',
