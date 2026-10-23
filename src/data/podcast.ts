@@ -38,6 +38,16 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 100,
+    slug: 'review-module-10-professional-workplace-english-100-episodes-2026-10-23',
+    titleMy: 'အပိုင်း ၁၀၀: လုပ်ငန်းခွင်အင်္ဂလိပ်စာ ပြန်လည်လေ့လာခြင်း — Review: professional workplace English',
+    titleOrig: 'ทบทวนบทที่ 10: ภาษาอังกฤษในที่ทำงาน — 100 ตอนแล้ว! — Review: professional workplace English',
+    descMy: 'အပိုင်း ၁၀၀ ပြည့်အတွက် Module 10 ကို ပြန်လေ့လာခြင်း — "I am responsible for..." / "I agree with you." / "The deadline is..." / "Tell me about yourself." ဆိုတဲ့ ပရော်ဖက်ရှင်နယ် ဝါကျလေးခုနဲ့ တစ်ရက်တာ အလုပ်သမားနေ့သင်္ကေတကို အင်္ဂလိပ်လိုပြောတတ်ခြင်း',
+    phrases: ['I am responsible for...', 'I agree with you.', 'The deadline is...', 'Tell me about yourself.'],
+    durationSecs: 601,
+    cover: '/podcast-covers/ep-100.jpg',
+  },
+  {
     n: 99,
     slug: 'job-applications-and-interviews-2026-10-23',
     titleMy: 'အလုပ်လျှောက်လွှာနှင့် အင်တာဗျူး — Job applications and interviews',

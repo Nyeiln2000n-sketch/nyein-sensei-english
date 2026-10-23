@@ -99156,7 +99156,7 @@
    "en": "They've been running a tight ship since the new director arrived.",
    "en_norm": "they ve been running a tight ship since the new director arrived",
    "my_norm": "ဒါရိုက်တာအသစ် ရောက်လာကတည်းက ကုမ္ပဏီကို စည်းကမ်းတင်းကျပ်စွာ စီမံခန့်ခွဲနေတယ်။",
-   "th_norm": "ตั้งแต่ผู้อำนวยการคนใหม่มา บริษัทก็ถูกบริหารอย่างเข้มงวด",
+   "th_norm": "ตั้งแต่ผู้อำนวยการคนใหม่มา บริษัทก็ถูกบริหารอย่างเป็นระบบและเข้มงวด",
    "fingerprint": "883634952c069646",
    "vocab_sig": [
     "arrived",
@@ -100131,7 +100131,7 @@
    "en": "He saw red when he heard the insult.",
    "en_norm": "he saw red when he heard the insult",
    "my_norm": "စော်ကားမှုကို ကြားတော့ သူက ဒေါသအလွန်ထွက်သွားတယ်။",
-   "th_norm": "ได้ยินคำดูถูก เขาก็โกรธจนตาแดง",
+   "th_norm": "ได้ยินคำดูถูก เขาเดือดดาลทันที",
    "fingerprint": "dbb937de9d700282",
    "vocab_sig": [
     "heard",
@@ -100223,7 +100223,7 @@
    "en": "He swept her off her feet during their trip to Paris.",
    "en_norm": "he swept her off her feet during their trip to paris",
    "my_norm": "ပဲရစ်ခရီးစဉ်မှာ သူ့ရဲ့ချစ်စရာကောင်းမှုကြောင့် သူမက ရူးသွပ်ချစ်မိသွားခဲ့တယ်။",
-   "th_norm": "ในทริปปารีส เขาทำให้เธอเคลิบเคลิ้ม",
+   "th_norm": "ในทริปปารีส เขาทำให้เธอหลงรักจนหมดใจ",
    "fingerprint": "ab697e7620618198",
    "vocab_sig": [
     "during",
@@ -104500,7 +104500,7 @@
    "en": "Don't put off the report until Friday.",
    "en_norm": "don t put off the report until friday",
    "my_norm": "အစီရင်ခံစာကို သောကြာနေ့အထိ မရွှေ့ပါနဲ့။",
-   "th_norm": "อย่าผลัดรายงานไปจนถึงวันศุกร์",
+   "th_norm": "อย่าเลื่อนรายงานไปจนถึงวันศุกร์",
    "fingerprint": "e74b0470b9f2a725",
    "vocab_sig": [
     "friday",
@@ -105401,7 +105401,7 @@
    "en": "She checks in on her grandmother every day.",
    "en_norm": "she checks in on her grandmother every day",
    "my_norm": "သူမက အဖွားကို နေ့တိုင်း သတင်းမေးတယ်။",
-   "th_norm": "เธอคอยเช็กดูคุณยายทุกวัน",
+   "th_norm": "เธอคอยแวะไปดูคุณยายทุกวัน",
    "fingerprint": "1fb5081c706e2f3b",
    "vocab_sig": [
     "checks",
@@ -107752,7 +107752,7 @@
    "en": "They called off the wedding two weeks before.",
    "en_norm": "they called off the wedding two weeks before",
    "my_norm": "သူတို့က မင်္ဂလာဆောင်ကို နှစ်ပတ်အလိုမှာ ဖျက်သိမ်းလိုက်တယ်။",
-   "th_norm": "พวกเขายกเลิกงานแต่งก่อนสองสัปดาห์",
+   "th_norm": "พวกเขายกเลิกงานแต่งก่อนถึงวันงานสองสัปดาห์",
    "fingerprint": "942545a0d1f6ac3c",
    "vocab_sig": [
     "called",
@@ -112425,7 +112425,7 @@
    "en": "There are nuances here that deserve careful consideration. (formal) / It's more complicated than that. (informal)",
    "en_norm": "there are nuances here that deserve careful consideration formal it s more complicated than that informal",
    "my_norm": "ဤနေရာတွင် ဂရုတစိုက် စဉ်းစားသင့်သော သိမ်မွေ့မှုများ ရှိပါသည်။ တရားဝင် အဲဒီထက် ပိုရှုပ်ထွေးတယ်။ ပေါ့ပေါ့ပါးပါး",
-   "th_norm": "มีรายละเอียดอ่อนไหวที่ควรพิจารณาอย่างรอบคอบ ทางการ มันซับซ้อนกว่านั้น ไม่เป็นทางการ",
+   "th_norm": "มีรายละเอียดอันละเอียดอ่อนที่ควรพิจารณาอย่างรอบคอบ ทางการ มันซับซ้อนกว่านั้น ไม่เป็นทางการ",
    "fingerprint": "8e048ca8432b3174",
    "vocab_sig": [
     "careful",
@@ -112693,7 +112693,7 @@
    "en": "I apologise for any inconvenience my late arrival may have caused. (formal) / Sorry I'm late — hope it wasn't a hassle. (informal)",
    "en_norm": "i apologise for any inconvenience my late arrival may have caused formal sorry i m late hope it wasn t a hassle informal",
    "my_norm": "နောက်ကျရောက်မှုကြောင့် အနှောင့်အယှက်ဖြစ်ခဲ့ပါက တောင်းပန်ပါသည်။ တရားဝင် နောက်ကျတာ တောင်းပန်တယ် အနှောင့်အယှက် မဖြစ်ပါစေနဲ့။ ပေါ့ပေါ့ပါးပါး",
-   "th_norm": "ข้าพเจ้าขอโทษสำหรับความไม่สะดวกที่การมาสายของข้าพเจ้าอาจก่อให้เกิด ทางการ ขอโทษที่มาสาย หวังว่าไม่เดือดร้อนนะ ไม่เป็นทางการ",
+   "th_norm": "ข้าพเจ้าขออภัยในความไม่สะดวกที่อาจเกิดจากการมาสายของข้าพเจ้า ทางการ ขอโทษที่มาสาย หวังว่าไม่เดือดร้อนนะ ไม่เป็นทางการ",
    "fingerprint": "43b99dc9c3299760",
    "vocab_sig": [
     "any",
@@ -112851,7 +112851,7 @@
    "en": "We humbly ask for your forgiveness. (formal) / Please forgive us. (neutral)",
    "en_norm": "we humbly ask for your forgiveness formal please forgive us neutral",
    "my_norm": "ကျွနုပ်တို့ နှိမ့်ချစွာ ခွင့်လွှတ်မှုကို တောင်းခံပါသည်။ တရားဝင် ခွင့်လွှတ်ပေးပါ။ သာမန်",
-   "th_norm": "เราขอความกรุณาให้อภัยอย่างนอบน้อม ทางการ โปรดให้อภัยเรา กลางๆ",
+   "th_norm": "เราขอให้ท่านโปรดอภัยอย่างนอบน้อม ทางการ โปรดให้อภัยเรา กลางๆ",
    "fingerprint": "3825d86aaa9ecea6",
    "vocab_sig": [
     "ask",
@@ -113964,7 +113964,7 @@
    "en": "That's outside my wheelhouse. (informal, jargon) / That's not my area of expertise. (neutral)",
    "en_norm": "that s outside my wheelhouse informal jargon that s not my area of expertise neutral",
    "my_norm": "အဲဒါ ကျွနုပ်၏ကျွမ်းကျင်မှုနယ်ပယ် အပြင်ဘက်ဖြစ်ပါသည်။ ဗန်းစကား အဲဒါ ငါ့ကျွမ်းကျင်တဲ့နယ်မဟုတ်ဘူး။ သာမန်",
-   "th_norm": "นั่นอยู่นอกขอบเขตความเชี่ยวชาญของผม ไม่เป็นทางการ ศัพท์เฉพาะ นั่นไม่ใช่งานสายผม ไม่เป็นทางการ ศัพท์เฉพาะ",
+   "th_norm": "นั่นไม่ใช่งานถนัดของผม ไม่เป็นทางการ ศัพท์เฉพาะ นั่นไม่ใช่งานสายผม ไม่เป็นทางการ ศัพท์เฉพาะ",
    "fingerprint": "c193c2ecd34dcf38",
    "vocab_sig": [
     "area",
@@ -114425,7 +114425,7 @@
    "en": "Let's not reinvent the wheel. (informal, idiom jargon) / Let's use the existing solution. (neutral)",
    "en_norm": "let s not reinvent the wheel informal idiom jargon let s use the existing solution neutral",
    "my_norm": "ရှိပြီးသားဖြေရှင်းချက်ကို သုံးကြစို့။ ဗန်းစကားဆန်သော စကားပုံ ရှိပြီးသားနည်းကို သုံးစို့။ သာမန်",
-   "th_norm": "อย่าคิดใหม่ทำใหม่ ใช้ของที่มีอยู่แล้ว ไม่เป็นทางการ สำนวนศัพท์เฉพาะ ใช้วิธีแก้ปัญหาที่มีอยู่แล้ว กลางๆ",
+   "th_norm": "อย่าเสียเวลาคิดค้นใหม่ ใช้ของที่มีอยู่แล้ว ไม่เป็นทางการ สำนวนศัพท์เฉพาะ ใช้วิธีแก้ปัญหาที่มีอยู่แล้ว กลางๆ",
    "fingerprint": "bfb48efc53dfaaed",
    "vocab_sig": [
     "existing",
@@ -114561,7 +114561,7 @@
    "en": "She is between jobs at the moment. (neutral, euphemism) / She is unemployed right now. (neutral)",
    "en_norm": "she is between jobs at the moment neutral euphemism she is unemployed right now neutral",
    "my_norm": "သူ ယခု အလုပ်အကိုင်ရှာဖွေနေဆဲ ဖြစ်ပါသည်။ ယဉ်ကျေးသောအသုံး သူ အခု အလုပ်လက်မဲ့ဖြစ်နေတယ်။ သာမန်",
-   "th_norm": "ขณะนี้เธอกำลังอยู่ระหว่างงาน กลางๆ ภาษาสุภาพแทน ตอนนี้เธอว่างงาน กลางๆ",
+   "th_norm": "ตอนนี้เธอยังไม่ได้เริ่มงานใหม่ กลางๆ ภาษาสุภาพแทน ตอนนี้เธอว่างงาน กลางๆ",
    "fingerprint": "02001cb3639f0e85",
    "vocab_sig": [
     "euphemism",
@@ -118075,7 +118075,7 @@
    "en": "The data presentation could be more compelling. (formal) / The data needs to be more convincing. (neutral)",
    "en_norm": "the data presentation could be more compelling formal the data needs to be more convincing neutral",
    "my_norm": "အချက်အလက်တင်ပြမှုသည် ပိုမိုဆွဲဆောင်မှုရှိသင့်ပါသည်။ တရားဝင် အချက်အလက်တွေ ပိုယုံကြည်စရာ ဖြစ်ဖို့လိုတယ်။ သာမန်",
-   "th_norm": "การนำเสนอข้อมูลควรมีความน่าสนใจดึงดูดใจมากกว่านี้ ทางการ ข้อมูลต้องน่าเชื่อถือกว่านี้ กลางๆ",
+   "th_norm": "การนำเสนอข้อมูลควรโน้มน้าวใจมากกว่านี้ ทางการ ข้อมูลต้องน่าเชื่อถือกว่านี้ กลางๆ",
    "fingerprint": "a79d0adc53e4da52",
    "vocab_sig": [
     "compelling",
@@ -119054,7 +119054,7 @@
    "en": "Shall we shake on it? (informal) / May we consider the matter settled? (formal)",
    "en_norm": "shall we shake on it informal may we consider the matter settled formal",
    "my_norm": "လက်ဆွဲနှုတ်ဆက်၍ သဘောတူကြစို့လား။ ပေါ့ပေါ့ပါးပါး ကိစ္စကို ပြေလည်ပြီဟု မှတ်ယူနိုင်ပါသလား။ တရားဝင်",
-   "th_norm": "เราจะถือว่าเรื่องนี้เป็นที่ยุติแล้วได้หรือไม่ ทางการ จับมือตกลงกันไหม ไม่เป็นทางการ",
+   "th_norm": "จับมือตกลงกันไหม ไม่เป็นทางการ เราจะถือว่าเรื่องนี้เป็นที่ยุติแล้วได้หรือไม่ ทางการ",
    "fingerprint": "d491bb3553427e0b",
    "vocab_sig": [
     "consider",
