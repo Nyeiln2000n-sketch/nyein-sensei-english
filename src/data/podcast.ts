@@ -38,6 +38,16 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 98,
+    slug: 'days-off-and-holidays-2026-10-23',
+    titleMy: 'အလုပ်ပိတ်ရက် — Days off and holidays',
+    titleOrig: 'วันหยุดงาน — Days off and holidays',
+    descMy: 'အလုပ်ပိတ်ရက်နဲ့ အခွင့်ယူနည်းအကြောင်း — \"I am on leave.\" / \"It is a holiday.\" / \"I do not work on Sunday.\" / \"I would like to take leave on Friday.\" ဆိုတဲ့ ဝါကျလေးခု လေ့လာခြင်း',
+    phrases: ['I am on leave.', 'It is a holiday.', 'I do not work on Sunday.', 'I would like to take leave on Friday.'],
+    durationSecs: 424,
+    cover: '/podcast-covers/ep-98.jpg',
+  },
+  {
     n: 97,
     slug: 'deadlines-and-work-appointments-2026-10-23',
     titleMy: 'ဒက်ဒ်လိုင်းနှင့် အလုပ်ချိန်းဆိုချက်များ — Deadlines and work appointments',

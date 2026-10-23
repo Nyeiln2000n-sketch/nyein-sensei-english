@@ -55015,7 +55015,7 @@
    "en": "I would be obliged if you could provide the necessary documentation.",
    "en_norm": "i would be obliged if you could provide the necessary documentation",
    "my_norm": "လိုအပ်တဲ့ စာရွက်စာတမ်းတွေ ပေးနိုင်ရင် ကျေးဇူးကြီးမိမှာပါ။",
-   "th_norm": "ข้าพเจ้าจะรู้สึกเป็นหนี้บุญคุณหากท่านกรุณาจัดเตรียมเอกสารที่จำเป็น",
+   "th_norm": "ข้าพเจ้าจะขอบพระคุณอย่างยิ่งหากท่านกรุณาจัดเตรียมเอกสารที่จำเป็น",
    "fingerprint": "b572131f6b04ca92",
    "vocab_sig": [
     "documentation",
@@ -56411,7 +56411,7 @@
    "en": "I would like to revisit the point raised earlier.",
    "en_norm": "i would like to revisit the point raised earlier",
    "my_norm": "အစောက တင်ပြခဲ့တဲ့ အချက်ကို ပြန်လည်ဆွေးနွေးချင်ပါတယ်။",
-   "th_norm": "ข้าพเจ้าขอกลับมาพิจารณาประเด็นที่ยกขึ้นก่อนหน้านี้อีกครั้ง",
+   "th_norm": "ข้าพเจ้าขอกลับมาพิจารณาประเด็นที่หยิบยกขึ้นก่อนหน้านี้อีกครั้ง",
    "fingerprint": "c4d6ddad045be06f",
    "vocab_sig": [
     "earlier",
@@ -56433,7 +56433,7 @@
    "en": "With your permission, I would like to add an item to the agenda.",
    "en_norm": "with your permission i would like to add an item to the agenda",
    "my_norm": "ခွင့်ပြုချက်နဲ့ အစီအစဉ်မှာ အချက်တစ်ခု ထပ်ထည့်ချင်ပါတယ်။",
-   "th_norm": "หากท่านอนุญาต ข้าพเจ้าขอเพิ่มวาระการประชุมอีกหนึ่งวาระ",
+   "th_norm": "หากท่านอนุญาต ข้าพเจ้าขอเพิ่มอีกหนึ่งวาระในการประชุม",
    "fingerprint": "a6b0a5a54d4b4d9d",
    "vocab_sig": [
     "add",
@@ -57269,7 +57269,7 @@
    "en": "This brings me to my next point.",
    "en_norm": "this brings me to my next point",
    "my_norm": "ဒါကြောင့် နောက်အချက်ကို ဆက်သွားပါရစေ။",
-   "th_norm": "ต่อไป ข้าพเจ้าขอกล่าวถึงประเด็นถัดไป",
+   "th_norm": "ข้าพเจ้าขอกล่าวถึงประเด็นถัดไป",
    "fingerprint": "a65342a2129c471b",
    "vocab_sig": [
     "brings",
@@ -57661,7 +57661,7 @@
    "en": "I will follow up with the exact figures tomorrow.",
    "en_norm": "i will follow up with the exact figures tomorrow",
    "my_norm": "တိကျတဲ့ ကိန်းဂဏန်းတွေကို မနက်ဖြန် ထပ်မံပို့ပေးပါ့မယ်။",
-   "th_norm": "ข้าพเจ้าจะติดตามด้วยตัวเลขที่แน่นอนพรุ่งนี้",
+   "th_norm": "ข้าพเจ้าจะส่งตัวเลขที่แน่นอนให้ท่านพรุ่งนี้",
    "fingerprint": "353125fdf349a402",
    "vocab_sig": [
     "exact",
@@ -59765,7 +59765,7 @@
    "en": "Our legal team will review the draft contract.",
    "en_norm": "our legal team will review the draft contract",
    "my_norm": "ကျွန်တော်တို့ရဲ့ ဥပဒေအဖွဲ့က မူကြမ်းစာချုပ်ကို ပြန်လည်သုံးသပ်မှာပါ။",
-   "th_norm": "ทีมกฎหมายของเราจะทบทวนร่างสัญญา",
+   "th_norm": "ทีมกฎหมายของเราจะตรวจสอบร่างสัญญา",
    "fingerprint": "89b8eb50f275b396",
    "vocab_sig": [
     "contract",
@@ -59788,7 +59788,7 @@
    "en": "We cannot accept these conditions as they stand.",
    "en_norm": "we cannot accept these conditions as they stand",
    "my_norm": "ဒီအခြေအနေအတိုင်း ဒီစည်းကမ်းတွေကို လက်ခံနိုင်မှာ မဟုတ်ပါဘူး။",
-   "th_norm": "เราไม่อาจยอมรับเงื่อนไขเหล่านี้ในสภาพปัจจุบัน",
+   "th_norm": "เรามิอาจยอมรับเงื่อนไขเหล่านี้ตามที่เสนอมาได้",
    "fingerprint": "3a00aa0d94dc1fc3",
    "vocab_sig": [
     "accept",
@@ -59831,7 +59831,7 @@
    "en": "This clause requires further discussion.",
    "en_norm": "this clause requires further discussion",
    "my_norm": "ဒီအပိုဒ်က ထပ်မံဆွေးနွေးဖို့ လိုအပ်ပါတယ်။",
-   "th_norm": "ข้อนี้ต้องการการหารือเพิ่มเติม",
+   "th_norm": "ข้อกำหนดนี้จำเป็นต้องมีการหารือเพิ่มเติม",
    "fingerprint": "9cc23dc4c03c5497",
    "vocab_sig": [
     "clause",
@@ -60192,7 +60192,7 @@
    "en": "Our partnership is based on mutual trust and respect.",
    "en_norm": "our partnership is based on mutual trust and respect",
    "my_norm": "ကျွန်တော်တို့ရဲ့ မိတ်ဖက်ဆက်ဆံရေးက အပြန်အလှန် ယုံကြည်မှုနဲ့ လေးစားမှုအပေါ် အခြေခံပါတယ်။",
-   "th_norm": "ความร่วมมือของเราตั้งอยู่บนความไว้ใจและความเคารพร่วมกัน",
+   "th_norm": "ความร่วมมือของเรามีพื้นฐานอยู่บนความไว้วางใจและความเคารพซึ่งกันและกัน",
    "fingerprint": "5c9fcfc2bfb88155",
    "vocab_sig": [
     "based",
@@ -60766,7 +60766,7 @@
    "en": "We have escalated your case to senior management.",
    "en_norm": "we have escalated your case to senior management",
    "my_norm": "သင့်အမှုကို အကြီးတန်းအရာရှိများထံ လွှဲပြောင်းတင်ပြပြီးပါပြီ။",
-   "th_norm": "เราได้ส่งเรื่องร้องเรียนของท่านต่อให้ผู้บริหารระดับสูงแล้ว",
+   "th_norm": "เราได้ส่งเรื่องร้องเรียนของท่านไปยังผู้บริหารระดับสูงแล้ว",
    "fingerprint": "360580c3814eff1d",
    "vocab_sig": [
     "case",
@@ -60943,7 +60943,7 @@
    "en": "I demand an immediate resolution to this problem.",
    "en_norm": "i demand an immediate resolution to this problem",
    "my_norm": "ဒီပြဿနာကို ချက်ချင်း ဖြေရှင်းပေးဖို့ တောင်းဆိုပါတယ်။",
-   "th_norm": "ข้าพเจ้าขอให้แก้ปัญหานี้ทันที",
+   "th_norm": "ข้าพเจ้าขอเรียกร้องให้แก้ไขปัญหานี้โดยทันที",
    "fingerprint": "3778879bed62a1e4",
    "vocab_sig": [
     "demand",
@@ -61344,7 +61344,7 @@
    "en": "We would like to invite you to the second round of interviews.",
    "en_norm": "we would like to invite you to the second round of interviews",
    "my_norm": "အင်တာဗျူး ဒုတိယအဆင့်ကို သင့်ကို ဖိတ်ကြားချင်ပါတယ်။",
-   "th_norm": "เราขอเชิญท่านสัมภาษณ์รอบสอง",
+   "th_norm": "เราขอเรียนเชิญท่านเข้ารับการสัมภาษณ์รอบที่สอง",
    "fingerprint": "4d2a8958d51a9acc",
    "vocab_sig": [
     "interviews",
@@ -61434,7 +61434,7 @@
    "en": "You will report directly to the department head.",
    "en_norm": "you will report directly to the department head",
    "my_norm": "သင် ဌာနအကြီးအကဲထံ တိုက်ရိုက်အစီရင်ခံရမှာပါ။",
-   "th_norm": "ท่านจะรายงานตรงต่อหัวหน้าแผนก",
+   "th_norm": "ท่านจะขึ้นตรงต่อหัวหน้าแผนก",
    "fingerprint": "2824b8be8d201c1f",
    "vocab_sig": [
     "department",
@@ -62040,7 +62040,7 @@
    "en": "We thank you for your years of dedicated service.",
    "en_norm": "we thank you for your years of dedicated service",
    "my_norm": "နှစ်ပေါင်းများစွာ စေတနာထား ဝန်ဆောင်မှုပေးခဲ့တာ ကျေးဇူးတင်ပါတယ်။",
-   "th_norm": "เราขอบคุณท่านสำหรับปีแห่งการทุ่มเททำงาน",
+   "th_norm": "เราขอบคุณท่านสำหรับการทุ่มเททำงานตลอดหลายปีที่ผ่านมา",
    "fingerprint": "478d4755dceeaa23",
    "vocab_sig": [
     "dedicated",
@@ -62131,7 +62131,7 @@
    "en": "The position has been filled internally.",
    "en_norm": "the position has been filled internally",
    "my_norm": "ရာထူးကို အတွင်းပိုင်းက ဖြည့်လိုက်ပါပြီ။",
-   "th_norm": "ตำแหน่งนี้ได้รับการบรรจุจากภายในแล้ว",
+   "th_norm": "ตำแหน่งนี้มีผู้ได้รับการคัดเลือกจากภายในองค์กรแล้ว",
    "fingerprint": "972c9c4b9e902439",
    "vocab_sig": [
     "filled",
@@ -62195,7 +62195,7 @@
    "en": "With all due respect, I must point out a flaw in this plan.",
    "en_norm": "with all due respect i must point out a flaw in this plan",
    "my_norm": "လေးစားမှုအပြည့်နဲ့ ဒီအစီအစဉ်မှာ ချို့ယွင်းချက်တစ်ခု ထောက်ပြရမှာပါ။",
-   "th_norm": "ด้วยความเคารพอย่างสูง ข้าพเจ้าต้องชี้ข้อบกพร่องในแผนนี้",
+   "th_norm": "ด้วยความเคารพอย่างสูง ข้าพเจ้าขอชี้ให้เห็นข้อบกพร่องในแผนนี้",
    "fingerprint": "79b1fcbfd5c68e1a",
    "vocab_sig": [
     "all",
@@ -62379,7 +62379,7 @@
    "en": "Allow me to argue the opposing view for a moment.",
    "en_norm": "allow me to argue the opposing view for a moment",
    "my_norm": "ခေတ္တ ဆန့်ကျင်ဘက်အမြင်ကို တင်ပြပါရစေ။",
-   "th_norm": "โปรดอนุญาตให้ข้าพเจ้าโต้แย้งมุมตรงกันข้ามสักครู่",
+   "th_norm": "ขออนุญาตโต้แย้งในมุมตรงกันข้ามสักครู่",
    "fingerprint": "544fd75bb37c29ff",
    "vocab_sig": [
     "allow",
@@ -62489,7 +62489,7 @@
    "en": "I feel strongly that we should explore other options.",
    "en_norm": "i feel strongly that we should explore other options",
    "my_norm": "တခြားရွေးချယ်မှုတွေကို ရှာဖွေသင့်တယ်လို့ အလေးအနက် ယုံကြည်ပါတယ်။",
-   "th_norm": "ข้าพเจ้ามีความเห็นอย่างแน่วแน่ว่าเราควรพิจารณาทางเลือกอื่น",
+   "th_norm": "ข้าพเจ้ามีความเห็นอย่างหนักแน่นว่าเราควรพิจารณาทางเลือกอื่น",
    "fingerprint": "215a03a37c836a43",
    "vocab_sig": [
     "explore",
@@ -63113,7 +63113,7 @@
    "en": "Attached please find the documents you requested.",
    "en_norm": "attached please find the documents you requested",
    "my_norm": "သင်တောင်းဆိုထားတဲ့ စာရွက်စာတမ်းတွေကို ပူးတွဲထားပါတယ်။",
-   "th_norm": "โปรดดูเอกสารที่ท่านขอซึ่งแนบมา",
+   "th_norm": "โปรดดูเอกสารที่แนบมาตามที่ท่านขอ",
    "fingerprint": "41179114aa5ad65f",
    "vocab_sig": [
     "attached",
@@ -63157,7 +63157,7 @@
    "en": "This memo is to remind you of the upcoming deadline.",
    "en_norm": "this memo is to remind you of the upcoming deadline",
    "my_norm": "ဒီမှတ်စုက လာမယ့် နောက်ဆုံးရက်ကို သတိပေးဖို့ပါ။",
-   "th_norm": "บันทึกนี้เพื่อเตือนท่านถึงกำหนดเวลาที่ใกล้มาถึง",
+   "th_norm": "บันทึกฉบับนี้มีขึ้นเพื่อเตือนท่านถึงกำหนดส่งที่ใกล้มาถึง",
    "fingerprint": "9f240ddb6e9fe9c7",
    "vocab_sig": [
     "deadline",
@@ -63202,7 +63202,7 @@
    "en": "The findings indicate a need for immediate action.",
    "en_norm": "the findings indicate a need for immediate action",
    "my_norm": "တွေ့ရှိချက်တွေက ချက်ချင်းလုပ်ဆောင်ဖို့ လိုအပ်ကြောင်း ညွှန်ပြနေပါတယ်။",
-   "th_norm": "ผลการค้นพบชี้ว่าต้องดำเนินการทันที",
+   "th_norm": "ผลการค้นพบชี้ให้เห็นถึงความจำเป็นต้องดำเนินการโดยทันที",
    "fingerprint": "ed113b2bc018b3ea",
    "vocab_sig": [
     "action",
@@ -63358,7 +63358,7 @@
    "en": "The report concludes with a set of action points.",
    "en_norm": "the report concludes with a set of action points",
    "my_norm": "အစီရင်ခံစာက လုပ်ဆောင်ချက်အချက်တွေနဲ့ အဆုံးသတ်ပါတယ်။",
-   "th_norm": "รายงานจบด้วยชุดประเด็นที่ต้องดำเนินการ",
+   "th_norm": "รายงานฉบับนี้สรุปปิดท้ายด้วยชุดประเด็นที่ต้องดำเนินการ",
    "fingerprint": "60910191761c1811",
    "vocab_sig": [
     "action",
@@ -63967,7 +63967,7 @@
    "en": "The final version will be circulated for sign-off.",
    "en_norm": "the final version will be circulated for sign off",
    "my_norm": "နောက်ဆုံးဗားရှင်းကို အတည်ပြုလက်မှတ်အတွက် ဖြန့်ဝေမှာပါ။",
-   "th_norm": "ฉบับสุดท้ายจะเวียนให้ลงนามอนุมัติ",
+   "th_norm": "จะเวียนฉบับสุดท้ายเพื่อให้ลงนามอนุมัติ",
    "fingerprint": "6efa961750058054",
    "vocab_sig": [
     "circulated",
@@ -64012,7 +64012,7 @@
    "en": "Your input has been invaluable to this project.",
    "en_norm": "your input has been invaluable to this project",
    "my_norm": "သင့်ထည့်သွင်းမှုက ဒီစီမံကိန်းအတွက် အလွန်တန်ဖိုးရှိပါတယ်။",
-   "th_norm": "ข้อเสนอของท่านมีคุณค่าอย่างยิ่งต่อโครงการนี้",
+   "th_norm": "ความคิดเห็นของท่านมีคุณค่าอย่างยิ่งต่อโครงการนี้",
    "fingerprint": "c797bd09ffb31bcc",
    "vocab_sig": [
     "input",
@@ -64033,7 +64033,7 @@
    "en": "We will incorporate your feedback into the final draft.",
    "en_norm": "we will incorporate your feedback into the final draft",
    "my_norm": "သင့်အကြံပြုချက်ကို နောက်ဆုံးမူကြမ်းမှာ ထည့်သွင်းမှာပါ။",
-   "th_norm": "เราจะนำข้อเสนอแนะของท่านมาประกอบไว้ในร่างสุดท้าย",
+   "th_norm": "เราจะนำข้อเสนอแนะของท่านไปประกอบไว้ในร่างสุดท้าย",
    "fingerprint": "07f9a6dc7f33b918",
    "vocab_sig": [
     "draft",
@@ -64099,7 +64099,7 @@
    "en": "This concludes the monthly operations report.",
    "en_norm": "this concludes the monthly operations report",
    "my_norm": "ဒါက လစဉ် လုပ်ငန်းလည်ပတ်မှုအစီရင်ခံစာရဲ့ အဆုံးသတ်ပါ။",
-   "th_norm": "สิ้นสุดรายงานการดำเนินงานประจำเดือน",
+   "th_norm": "รายงานการดำเนินงานประจำเดือนฉบับนี้สิ้นสุดเพียงเท่านี้",
    "fingerprint": "5e2f58002b8a26d3",
    "vocab_sig": [
     "concludes",
@@ -64188,7 +64188,7 @@
    "en": "Good morning, this is David speaking from headquarters.",
    "en_norm": "good morning this is david speaking from headquarters",
    "my_norm": "မင်္ဂလာနံနက်ခင်းပါ၊ ရုံးချုပ်က ဒေးဗစ်ပြောနေပါတယ်။",
-   "th_norm": "สวัสดีตอนเช้า นี่เดวิดพูดจากสำนักงานใหญ่",
+   "th_norm": "สวัสดีตอนเช้า นี่คือเดวิด พูดจากสำนักงานใหญ่",
    "fingerprint": "9735c86a75ee9366",
    "vocab_sig": [
     "david",
@@ -64211,7 +64211,7 @@
    "en": "May I ask who is calling, please?",
    "en_norm": "may i ask who is calling please",
    "my_norm": "ဘယ်သူခေါ်နေလဲ မေးလို့ရမလား။",
-   "th_norm": "ขอทราบว่าใครโทรมาได้หรือไม่",
+   "th_norm": "ขอทราบว่าท่านคือใครได้หรือไม่",
    "fingerprint": "06f0a35f8007b149",
    "vocab_sig": [
     "ask",
@@ -64318,7 +64318,7 @@
    "en": "I will ask her to return your call.",
    "en_norm": "i will ask her to return your call",
    "my_norm": "သူမကို သင့်ကို ပြန်ခေါ်ဖို့ ပြောပါ့မယ်။",
-   "th_norm": "ข้าพเจ้าจะบอกให้เธอโทรกลับหาท่าน",
+   "th_norm": "ข้าพเจ้าจะแจ้งให้เธอโทรกลับหาท่าน",
    "fingerprint": "24dbdf42d12fac20",
    "vocab_sig": [
     "ask",
@@ -64467,7 +64467,7 @@
    "en": "Let me repeat that back to confirm.",
    "en_norm": "let me repeat that back to confirm",
    "my_norm": "အတည်ပြုဖို့ ပြန်ပြောပါရစေ။",
-   "th_norm": "ขอข้าพเจ้าทวนกลับเพื่อยืนยัน",
+   "th_norm": "ขอทวนกลับเพื่อยืนยันความถูกต้อง",
    "fingerprint": "db29a65ebda9dad3",
    "vocab_sig": [
     "back",
@@ -64532,7 +64532,7 @@
    "en": "Welcome to the conference call; please introduce yourselves.",
    "en_norm": "welcome to the conference call please introduce yourselves",
    "my_norm": "ကွန်ဖရင့်ခေါ်ဆိုမှုကို ကြိုဆိုပါတယ်၊ ကိုယ့်ကိုယ်ကို မိတ်ဆက်ပေးပါ။",
-   "th_norm": "ยินดีต้อนรับสู่การประชุมทางโทรศัพท์ โปรดแนะนำตัว",
+   "th_norm": "ยินดีต้อนรับสู่การประชุมทางโทรศัพท์ โปรดแนะนำตัวเองด้วย",
    "fingerprint": "1d9730b2f2f55dc6",
    "vocab_sig": [
     "call",
@@ -64704,7 +64704,7 @@
    "en": "Let us keep this call to the scheduled thirty minutes.",
    "en_norm": "let us keep this call to the scheduled thirty minutes",
    "my_norm": "ဒီခေါ်ဆိုမှုကို စီစဉ်ထားတဲ့ မိနစ် ၃၀ အတွင်း ထားကြရအောင်။",
-   "th_norm": "เรามาจำกัดการโทรครั้งนี้ไว้สามสิบนาทีตามกำหนดกัน",
+   "th_norm": "เรามาจำกัดเวลาการโทรครั้งนี้ไว้ที่สามสิบนาทีตามที่กำหนดไว้",
    "fingerprint": "5c87f7aa0c958802",
    "vocab_sig": [
     "call",
@@ -64748,7 +64748,7 @@
    "en": "Before we wrap up, let me confirm the next steps.",
    "en_norm": "before we wrap up let me confirm the next steps",
    "my_norm": "အဆုံးမသတ်ခင် နောက်အဆင့်တွေကို အတည်ပြုပါရစေ။",
-   "th_norm": "ก่อนจบ ขอยืนยันขั้นตอนถัดไป",
+   "th_norm": "ก่อนจะจบการประชุม ขอทวนยืนยันขั้นตอนถัดไป",
    "fingerprint": "93dcb908fb9aba7f",
    "vocab_sig": [
     "confirm",
@@ -64770,7 +64770,7 @@
    "en": "I will circulate the recording after the session.",
    "en_norm": "i will circulate the recording after the session",
    "my_norm": "အစည်းအဝေးပြီးနောက် အသံသွင်းချက်ကို ဖြန့်ဝေပါ့မယ်။",
-   "th_norm": "ข้าพเจ้าจะเวียนบันทึกการประชุมหลังการประชุม",
+   "th_norm": "ข้าพเจ้าจะเวียนไฟล์บันทึกเสียงการประชุมหลังการประชุม",
    "fingerprint": "eb9433487d5dae1d",
    "vocab_sig": [
     "circulate",
@@ -64946,7 +64946,7 @@
    "en": "I will be traveling, but I can join remotely.",
    "en_norm": "i will be traveling but i can join remotely",
    "my_norm": "ကျွန်တော် ခရီးသွားနေမှာပေမယ့် အဝေးက ပါဝင်နိုင်ပါတယ်။",
-   "th_norm": "ข้าพเจ้าจะเดินทาง แต่เข้าร่วมทางไกลได้",
+   "th_norm": "ข้าพเจ้าจะอยู่ระหว่างเดินทาง แต่สามารถเข้าร่วมจากระยะไกลได้",
    "fingerprint": "d9f69af8dca9c737",
    "vocab_sig": [
     "join",
@@ -65055,7 +65055,7 @@
    "en": "My direct line is available during office hours.",
    "en_norm": "my direct line is available during office hours",
    "my_norm": "ရုံးချိန်အတွင်း ကျွန်တော့်တိုက်ရိုက်လိုင်း ရရှိနိုင်ပါတယ်။",
-   "th_norm": "สายตรงของข้าพเจ้าพร้อมในเวลาทำการ",
+   "th_norm": "ท่านสามารถติดต่อสายตรงของข้าพเจ้าได้ในเวลาทำการ",
    "fingerprint": "4be8d50d8a07b7b0",
    "vocab_sig": [
     "available",
@@ -65167,7 +65167,7 @@
    "en": "Thank you for your call; have a productive day.",
    "en_norm": "thank you for your call have a productive day",
    "my_norm": "ခေါ်ဆိုတာ ကျေးဇူးတင်ပါတယ်၊ အကျိုးရှိတဲ့နေ့ဖြစ်ပါစေ။",
-   "th_norm": "ขอบคุณที่โทรมา ขอให้วันนี้ของท่านเป็นวันที่มีประสิทธิภาพ",
+   "th_norm": "ขอบคุณที่โทรมา ขอให้ท่านมีวันที่เต็มไปด้วยความสำเร็จ",
    "fingerprint": "d8f00851d8a64a0a",
    "vocab_sig": [
     "call",
@@ -65211,7 +65211,7 @@
    "en": "Should you need anything else, please call again.",
    "en_norm": "should you need anything else please call again",
    "my_norm": "တခြားလိုအပ်တာရှိရင် ထပ်ခေါ်ပေးပါ။",
-   "th_norm": "หากท่านต้องการอะไรอีก โปรดโทรมาอีก",
+   "th_norm": "หากท่านต้องการสิ่งใดเพิ่มเติม โปรดโทรกลับมาได้เลย",
    "fingerprint": "7350d8baffb9a0bf",
    "vocab_sig": [
     "again",
@@ -65255,7 +65255,7 @@
    "en": "I wish you a pleasant rest of the day.",
    "en_norm": "i wish you a pleasant rest of the day",
    "my_norm": "ကျန်တဲ့နေ့လေးမှာ ပျော်ရွှင်ပါစေ။",
-   "th_norm": "ข้าพเจ้าขอให้ช่วงเวลาที่เหลือของวันนี้ของท่านเป็นไปด้วยความราบรื่น",
+   "th_norm": "ขอให้ช่วงเวลาที่เหลือของวันนี้เป็นไปด้วยดีสำหรับท่าน",
    "fingerprint": "a75001021553bd23",
    "vocab_sig": [
     "day",
@@ -65365,7 +65365,7 @@
    "en": "We might have won the match if our captain hadn't been injured.",
    "en_norm": "we might have won the match if our captain hadn t been injured",
    "my_norm": "အသင်းခေါင်းဆောင်ဒဏ်ရာမရခဲ့ရင် ပွဲအနိုင်ရခဲ့မှာဖြစ်နိုင်ပါတယ်။",
-   "th_norm": "เราอาจชนะแมตช์นั้นถ้ากัปตันไม่บาดเจ็บ",
+   "th_norm": "เราอาจชนะแมตช์นั้นถ้ากัปตันไม่ได้บาดเจ็บ",
    "fingerprint": "1ceee8a0a92dfc90",
    "vocab_sig": [
     "captain",
@@ -65387,7 +65387,7 @@
    "en": "If you had told me the truth, I could have helped you.",
    "en_norm": "if you had told me the truth i could have helped you",
    "my_norm": "အမှန်ကိုပြောခဲ့ရင် ကူညီနိုင်ခဲ့မှာပါ။",
-   "th_norm": "ถ้าคุณบอกความจริงกับฉัน ฉันคงช่วยคุณได้",
+   "th_norm": "ถ้าคุณบอกความจริงกับฉันตอนนั้น ฉันคงได้ช่วยคุณ",
    "fingerprint": "eeabf4e4d47fc894",
    "vocab_sig": [
     "helped",
@@ -65656,7 +65656,7 @@
    "en": "If the doctor had seen him sooner, the illness might not have spread.",
    "en_norm": "if the doctor had seen him sooner the illness might not have spread",
    "my_norm": "ဆရာဝန်စောတွေ့ခဲ့ရင် ရောဂါမပြန့်ပွားခဲ့မှာဖြစ်နိုင်ပါတယ်။",
-   "th_norm": "ถ้าหมอเห็นเขาเร็วกว่านี้ โรคอาจไม่แพร่กระจาย",
+   "th_norm": "ถ้าหมอเห็นเขาเร็วกว่านี้ โรคอาจไม่แพร่กระจายไปแล้ว",
    "fingerprint": "fcb921758ebdf4e1",
    "vocab_sig": [
     "doctor",
@@ -65749,7 +65749,7 @@
    "en": "She could have become a champion if she hadn't given up.",
    "en_norm": "she could have become a champion if she hadn t given up",
    "my_norm": "လက်မလျှော့ခဲ့ရင် ချန်ပီယံဖြစ်နိုင်ခဲ့မှာပါ။",
-   "th_norm": "เธออาจเป็นแชมป์ถ้าเธอไม่ยอมแพ้",
+   "th_norm": "เธออาจเป็นแชมป์ไปแล้วถ้าเธอไม่เคยยอมแพ้",
    "fingerprint": "b4521378cacd1970",
    "vocab_sig": [
     "become",
@@ -65793,7 +65793,7 @@
    "en": "If you had listened to my advice, you wouldn't have lost the money.",
    "en_norm": "if you had listened to my advice you wouldn t have lost the money",
    "my_norm": "ကျွန်တော့်အကြံဉာဏ်ကိုနားထောင်ခဲ့ရင် ပိုက်ဆံမဆုံးရှုံးခဲ့ဘူး။",
-   "th_norm": "ถ้าคุณฟังคำแนะนำของฉัน คุณคงไม่เสียเงิน",
+   "th_norm": "ถ้าคุณฟังคำแนะนำของฉันตอนนั้น คุณคงไม่เสียเงิน",
    "fingerprint": "5b9a41d83d3d62e9",
    "vocab_sig": [
     "advice",
@@ -65859,7 +65859,7 @@
    "en": "If the rain hadn't stopped, the concert would have been cancelled.",
    "en_norm": "if the rain hadn t stopped the concert would have been cancelled",
    "my_norm": "မိုးမရပ်ခဲ့ရင် ဖျော်ဖြေပွဲဖျက်သိမ်းခဲ့မှာပါ။",
-   "th_norm": "ถ้าฝนไม่หยุด คอนเสิร์ตคงถูกยกเลิก",
+   "th_norm": "ถ้าฝนไม่หยุดตอนนั้น คอนเสิร์ตคงถูกยกเลิกไปแล้ว",
    "fingerprint": "d65fdf74f21dd633",
    "vocab_sig": [
     "cancelled",
@@ -66361,7 +66361,7 @@
    "en": "If the river hadn't flooded, the festival would have gone ahead.",
    "en_norm": "if the river hadn t flooded the festival would have gone ahead",
    "my_norm": "မြစ်ရေမကြီးခဲ့ရင် ပွဲတော်ကျင်းပခဲ့မှာပါ။",
-   "th_norm": "ถ้าแม่น้ำไม่ท่วม เทศกาลคงจัดต่อไป",
+   "th_norm": "ถ้าแม่น้ำไม่ท่วมตอนนั้น เทศกาลคงจัดได้ตามกำหนด",
    "fingerprint": "3addd25cec2fe760",
    "vocab_sig": [
     "ahead",
@@ -66742,7 +66742,7 @@
    "en": "Had the doctor not acted quickly, the patient might have died.",
    "en_norm": "had the doctor not acted quickly the patient might have died",
    "my_norm": "ဆရာဝန်မြန်မြန်မဆောင်ရွက်ခဲ့ရင် လူနာသေခဲ့မှာဖြစ်နိုင်ပါတယ်။",
-   "th_norm": "ถ้าหมอไม่ลงมือเร็ว คนไข้คงเสียชีวิต",
+   "th_norm": "ถ้าหมอไม่ได้ลงมืออย่างรวดเร็ว คนไข้คงเสียชีวิตไปแล้ว",
    "fingerprint": "228ed87a77dd0d4b",
    "vocab_sig": [
     "acted",
@@ -67542,7 +67542,7 @@
    "en": "If she hadn't moved abroad, we would still be neighbors.",
    "en_norm": "if she hadn t moved abroad we would still be neighbors",
    "my_norm": "နိုင်ငံခြားမပြောင်းခဲ့ရင် အခုထိအိမ်နီးချင်းဖြစ်နေမှာပါ။",
-   "th_norm": "ถ้าเธอย้ายไปต่างประเทศ เราคงยังเป็นเพื่อนบ้านกัน",
+   "th_norm": "ถ้าเธอไม่ได้ย้ายไปต่างประเทศ เราคงยังเป็นเพื่อนบ้านกันอยู่",
    "fingerprint": "89261deef343112f",
    "vocab_sig": [
     "abroad",
@@ -67609,7 +67609,7 @@
    "en": "If you weren't so stubborn, you would have accepted the help.",
    "en_norm": "if you weren t so stubborn you would have accepted the help",
    "my_norm": "ခေါင်းမာမနေခဲ့ရင် အကူအညီလက်ခံခဲ့မှာပါ။",
-   "th_norm": "ถ้าคุณไม่ดื้อขนาดนั้น คุณคงรับความช่วยเหลือ",
+   "th_norm": "ถ้าคุณไม่ดื้อขนาดนั้น คุณคงรับความช่วยเหลือไปแล้ว",
    "fingerprint": "4d82584c691a14b1",
    "vocab_sig": [
     "accepted",
@@ -67747,7 +67747,7 @@
    "en": "If we lived closer, we would have visited more often.",
    "en_norm": "if we lived closer we would have visited more often",
    "my_norm": "နီးနီးနေခဲ့ရင် မကြာခဏလာလည်ခဲ့မှာပါ။",
-   "th_norm": "ถ้าเราอยู่ใกล้กว่านี้ เราคงไปเยี่ยมบ่อยกว่านี้",
+   "th_norm": "ถ้าเราอยู่ใกล้กว่านี้ เราคงได้ไปเยี่ยมบ่อยกว่านี้",
    "fingerprint": "698ac8eee8ff47fb",
    "vocab_sig": [
     "closer",
@@ -68046,7 +68046,7 @@
    "en": "If you were taller, you could have reached the top shelf.",
    "en_norm": "if you were taller you could have reached the top shelf",
    "my_norm": "အရပ်ပိုရှည်ခဲ့ရင် အပေါ်ဆုံးစင်ကိုရောက်နိုင်ခဲ့မှာပါ။",
-   "th_norm": "ถ้าคุณสูงกว่านี้ คุณคงเอื้อมชั้นบนสุดได้",
+   "th_norm": "ถ้าคุณสูงกว่านี้ คุณคงเอื้อมถึงชั้นบนสุดได้แล้ว",
    "fingerprint": "7b8eef23551dfe5c",
    "vocab_sig": [
     "reached",
@@ -68385,7 +68385,7 @@
    "en": "If the chef hadn't retired, the food would still be amazing.",
    "en_norm": "if the chef hadn t retired the food would still be amazing",
    "my_norm": "စားဖိုမှူးအနားမယူခဲ့ရင် အစားအသောက်အခုထိကောင်းနေမှာပါ။",
-   "th_norm": "ถ้าเชฟไม่เกษียณ อาหารคงยังอร่อยเหมือนเดิม",
+   "th_norm": "ถ้าเชฟไม่ได้เกษียณไป อาหารคงยังอร่อยเหมือนเดิม",
    "fingerprint": "48d4147e78353c06",
    "vocab_sig": [
     "amazing",
@@ -68551,7 +68551,7 @@
    "en": "If I were twenty years younger, I would have climbed that mountain.",
    "en_norm": "if i were twenty years younger i would have climbed that mountain",
    "my_norm": "အနှစ်နှစ်ဆယ်ငယ်ခဲ့ရင် အဲဒီတောင်တက်ခဲ့မှာပါ။",
-   "th_norm": "ถ้าฉันอายุน้อยกว่านี้สักยี่สิบปี ฉันคงปีนภูเขาลูกนั้น",
+   "th_norm": "ถ้าฉันอายุน้อยกว่านี้สักยี่สิบปี ฉันคงได้ปีนภูเขาลูกนั้นแล้ว",
    "fingerprint": "a89698fdbadf2f2e",
    "vocab_sig": [
     "climbed",
@@ -69874,7 +69874,7 @@
    "en": "What if the train is delayed and we miss our connection?",
    "en_norm": "what if the train is delayed and we miss our connection",
    "my_norm": "ရထားနောက်ကျပြီးဆက်စပ်ခရီးလွတ်ခဲ့ရင် ဘယ်လိုလုပ်မလဲ။",
-   "th_norm": "ถ้ารถไฟล่าช้าแล้วเราพลาดต่อรถล่ะ",
+   "th_norm": "ถ้ารถไฟล่าช้าแล้วเราต่อรถไม่ทันล่ะ",
    "fingerprint": "748b80011364bd4b",
    "vocab_sig": [
     "connection",
@@ -70918,7 +70918,7 @@
    "en": "They can't have finished already — it's only nine.",
    "en_norm": "they can t have finished already it s only nine",
    "my_norm": "သူတို့ပြီးစီးခဲ့တာ မဖြစ်နိုင်ဘူး ကိုးနာရီပဲရှိသေးတယ်။",
-   "th_norm": "พวกเขาเป็นไปไม่ได้ที่จะทำเสร็จแล้ว เพิ่งเก้าโมงเอง",
+   "th_norm": "พวกเขาไม่มีทางทำเสร็จแล้ว เพิ่งเก้าโมงเอง",
    "fingerprint": "cd5730863717d6fa",
    "vocab_sig": [
     "already",
@@ -71043,7 +71043,7 @@
    "en": "He can't have eaten all that food by himself.",
    "en_norm": "he can t have eaten all that food by himself",
    "my_norm": "သူတစ်ယောက်တည်းအဲဒီအစားအသောက်အားလုံးစားခဲ့တာ မဖြစ်နိုင်ဘူး။",
-   "th_norm": "เป็นไปไม่ได้ที่เขาจะกินอาหารทั้งหมดนั้นคนเดียว",
+   "th_norm": "เขาไม่มีทางกินอาหารทั้งหมดนั้นคนเดียวได้",
    "fingerprint": "16f8412ae2b4f1f2",
    "vocab_sig": [
     "all",
@@ -71276,7 +71276,7 @@
    "en": "He can't have driven here in this storm.",
    "en_norm": "he can t have driven here in this storm",
    "my_norm": "ဒီမုန်တိုင်းထဲမှာသူဒီကိုမောင်းလာခဲ့တာ မဖြစ်နိုင်ဘူး။",
-   "th_norm": "เป็นไปไม่ได้ที่เขาจะขับมาที่นี่ในพายุแบบนี้",
+   "th_norm": "เขาไม่มีทางขับมาที่นี่ในพายุแบบนี้ได้",
    "fingerprint": "fcfa742f19aac2fa",
    "vocab_sig": [
     "driven",
@@ -71470,7 +71470,7 @@
    "en": "She could have taken the earlier train.",
    "en_norm": "she could have taken the earlier train",
    "my_norm": "သူစောတဲ့ရထားစီးနိုင်ခဲ့တယ်။",
-   "th_norm": "เธอขึ้นรถไฟขบวนก่อนก็ได้",
+   "th_norm": "เธอน่าจะขึ้นรถไฟขบวนก่อนแล้ว",
    "fingerprint": "f76e72e07f3ccc4f",
    "vocab_sig": [
     "earlier",
@@ -71575,7 +71575,7 @@
    "en": "You can't have read the whole book in one day.",
    "en_norm": "you can t have read the whole book in one day",
    "my_norm": "တစ်ရက်တည်းစာအုပ်တစ်အုပ်လုံးဖတ်ခဲ့တာ မဖြစ်နိုင်ဘူး။",
-   "th_norm": "เป็นไปไม่ได้ที่คุณจะอ่านหนังสือทั้งเล่มจบในวันเดียว",
+   "th_norm": "คุณไม่มีทางอ่านหนังสือทั้งเล่มจบในวันเดียวได้",
    "fingerprint": "cf33eaeee56b2c12",
    "vocab_sig": [
     "book",
@@ -71749,7 +71749,7 @@
    "en": "She can't have forgotten my birthday — I reminded her twice.",
    "en_norm": "she can t have forgotten my birthday i reminded her twice",
    "my_norm": "သူကျွန်တော့်မွေးနေ့ကိုမေ့ခဲ့တာ မဖြစ်နိုင်ဘူး နှစ်ခါသတိပေးခဲ့တယ်။",
-   "th_norm": "เป็นไปไม่ได้ที่เธอจะลืมวันเกิดฉัน ฉันเตือนเธอสองรอบแล้ว",
+   "th_norm": "เธอไม่มีทางลืมวันเกิดฉัน ฉันเตือนเธอสองรอบแล้ว",
    "fingerprint": "9f23163996a441ab",
    "vocab_sig": [
     "birthday",
@@ -71966,7 +71966,7 @@
    "en": "It's likely to rain this afternoon.",
    "en_norm": "it s likely to rain this afternoon",
    "my_norm": "ဒီနေ့လည်မိုးရွာဖို့များတယ်။",
-   "th_norm": "บ่ายนี้ฝนมีแนวโน้มจะตก",
+   "th_norm": "บ่ายนี้ฝนน่าจะตก",
    "fingerprint": "a6e30e85b1943b6e",
    "vocab_sig": [
     "afternoon",
@@ -73239,7 +73239,7 @@
    "en": "If only the internet were faster in this area.",
    "en_norm": "if only the internet were faster in this area",
    "my_norm": "ဒီနေရာမှာအင်တာနက်မြန်ရင်ကောင်းမှာပဲ။",
-   "th_norm": "ถ้าอินเทอร์เน็ตแถวนี้เร็วกว่านี้",
+   "th_norm": "ถ้าอินเทอร์เน็ตแถวนี้เร็วกว่านี้ก็คงดี",
    "fingerprint": "f725094f52ba0a87",
    "vocab_sig": [
     "area",
@@ -73305,7 +73305,7 @@
    "en": "If only she had told the truth from the start.",
    "en_norm": "if only she had told the truth from the start",
    "my_norm": "အစကတည်းကအမှန်ပြောခဲ့ရင်ကောင်းမှာပဲ။",
-   "th_norm": "ถ้าเธอบอกความจริงตั้งแต่แรก",
+   "th_norm": "ถ้าเธอบอกความจริงตั้งแต่แรกก็คงดี",
    "fingerprint": "c3fc2c975d30d413",
    "vocab_sig": [
     "only",
@@ -73371,7 +73371,7 @@
    "en": "If only the doctor had arrived ten minutes earlier.",
    "en_norm": "if only the doctor had arrived ten minutes earlier",
    "my_norm": "ဆရာဝန်ဆယ်မိနစ်စောရောက်ခဲ့ရင်ကောင်းမှာပဲ။",
-   "th_norm": "ถ้าหมอมาถึงเร็วกว่านี้สิบนาที",
+   "th_norm": "ถ้าหมอมาถึงเร็วกว่านี้สิบนาทีก็คงดี",
    "fingerprint": "3123e7f4675c0c5e",
    "vocab_sig": [
     "arrived",
@@ -73439,7 +73439,7 @@
    "en": "If only we had known about the sale beforehand.",
    "en_norm": "if only we had known about the sale beforehand",
    "my_norm": "လျှော့ဈေးအကြောင်းကြိုသိခဲ့ရင်ကောင်းမှာပဲ။",
-   "th_norm": "ถ้าเรารู้เรื่องลดราคาล่วงหน้า",
+   "th_norm": "ถ้าเรารู้เรื่องลดราคาล่วงหน้าก็คงดี",
    "fingerprint": "1615f4d2ca43c7f2",
    "vocab_sig": [
     "beforehand",
@@ -73507,7 +73507,7 @@
    "en": "If only the team had scored in the final minute.",
    "en_norm": "if only the team had scored in the final minute",
    "my_norm": "အသင်းနောက်ဆုံးမိနစ်မှာဂိုးသွင်းနိုင်ခဲ့ရင်ကောင်းမှာပဲ။",
-   "th_norm": "ถ้าทีมยิงได้นาทีสุดท้าย",
+   "th_norm": "ถ้าทีมยิงได้นาทีสุดท้ายก็คงดี",
    "fingerprint": "c4cd800a7a89187a",
    "vocab_sig": [
     "final",
@@ -73574,7 +73574,7 @@
    "en": "If only the law were stricter about pollution.",
    "en_norm": "if only the law were stricter about pollution",
    "my_norm": "ညစ်ညမ်းမှုနဲ့ပတ်သက်ပြီးဥပဒေတင်းကျပ်ရင်ကောင်းမှာပဲ။",
-   "th_norm": "ถ้ากฎหมายเข้มงวดกว่านี้เรื่องมลพิษ",
+   "th_norm": "ถ้ากฎหมายเรื่องมลพิษเข้มงวดกว่านี้ก็คงดี",
    "fingerprint": "bd867b9e3bae0000",
    "vocab_sig": [
     "law",
@@ -74317,7 +74317,7 @@
    "en": "Even if it rains, the match will go ahead.",
    "en_norm": "even if it rains the match will go ahead",
    "my_norm": "မိုးရွာရင်တောင် ပွဲဆက်လုပ်မှာပါ။",
-   "th_norm": "แม้ฝนตก แมตช์ก็จะดำเนินต่อ",
+   "th_norm": "แม้ฝนตก แมตช์ก็แข่งต่อ",
    "fingerprint": "531469a8ba0d85de",
    "vocab_sig": [
     "ahead",
@@ -403826,7 +403826,7 @@
    "kind": "word",
    "en": "colloquium",
    "en_norm": "colloquium",
-   "my_norm": "ပညာရှင်ဆွေးနွေးပွဲ",
+   "my_norm": "ပညာရပ်ဆွေးနွေးပွဲ",
    "th_norm": "คอลลอควิอัม",
    "fingerprint": "1ff3963d191e7d03",
    "vocab_sig": [
@@ -427283,7 +427283,7 @@
    "kind": "word",
    "en": "Socratic irony",
    "en_norm": "socratic irony",
-   "my_norm": "ဆော့ခရတ္တိစ်ဆန့်ကျင်ဟန်",
+   "my_norm": "ဆော့ခရတ္တိစ်သရော်ဟန်",
    "th_norm": "โสกราติกไอรอนี",
    "fingerprint": "d6bf25cbd165e4f5",
    "vocab_sig": [
@@ -451171,7 +451171,7 @@
    "kind": "word",
    "en": "negotiating leverage",
    "en_norm": "negotiating leverage",
-   "my_norm": "ညှိနှိုင်းလွှမ်းမိုးမှု",
+   "my_norm": "ညှိနှိုင်းရေးအားသာချက်",
    "th_norm": "อำนาจต่อรองในการเจรจา",
    "fingerprint": "3ea8e39fe45997a7",
    "vocab_sig": [
@@ -451977,7 +451977,7 @@
    "kind": "word",
    "en": "national treatment",
    "en_norm": "national treatment",
-   "my_norm": "နိုင်ငံခြားကုန်တန်းတူဆက်ဆံမှု",
+   "my_norm": "ပြည်တွင်းကုန်နည်းတူတန်းတူဆက်ဆံမှု",
    "th_norm": "การปฏิบัติเยี่ยงชาติ",
    "fingerprint": "76129ddf97e78185",
    "vocab_sig": [
@@ -457884,7 +457884,7 @@
    "kind": "word",
    "en": "leverage ratio",
    "en_norm": "leverage ratio",
-   "my_norm": "လွှမ်းမိုးမှုအချိုး",
+   "my_norm": "လီဗာရချ်အချိုး",
    "th_norm": "อัตราส่วนเลเวอเรจ",
    "fingerprint": "54201364118accd0",
    "vocab_sig": [
@@ -459199,7 +459199,7 @@
    "kind": "word",
    "en": "mutual fund",
    "en_norm": "mutual fund",
-   "my_norm": "အပြန်အလှန်ရန်ပုံငွေ",
+   "my_norm": "စုပေါင်းရင်းနှီးမြှုပ်နှံမှုရန်ပုံငွေ",
    "th_norm": "กองทุนรวม",
    "fingerprint": "2079ca49f09f9f42",
    "vocab_sig": [
@@ -461306,7 +461306,7 @@
    "kind": "word",
    "en": "net-zero target",
    "en_norm": "net zero target",
-   "my_norm": "သန့်စင်သုညပစ်မှတ်",
+   "my_norm": "ထုတ်လွှတ်မှုအသားတင်သုညပစ်မှတ်",
    "th_norm": "เป้าหมายเน็ตซีโร่",
    "fingerprint": "57ad2ac1000a1a66",
    "vocab_sig": [
@@ -467557,7 +467557,7 @@
    "kind": "word",
    "en": "exomoon",
    "en_norm": "exomoon",
-   "my_norm": "ဂြိုဟ်ပြင်လဂြိုဟ်",
+   "my_norm": "ဂြိုဟ်ပြင်လ",
    "th_norm": "ดวงจันทร์นอกระบบสุริยะ",
    "fingerprint": "520ebcf2466abbe0",
    "vocab_sig": [
@@ -482806,7 +482806,7 @@
    "kind": "word",
    "en": "virtual cell",
    "en_norm": "virtual cell",
-   "my_norm": "အတုဆဲလ်",
+   "my_norm": "ကွန်ပျူတာအတုဆဲလ်",
    "th_norm": "เซลล์เสมือน",
    "fingerprint": "3ed114d25fc3f744",
    "vocab_sig": [
