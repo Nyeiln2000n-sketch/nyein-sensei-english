@@ -38,6 +38,16 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 99,
+    slug: 'job-applications-and-interviews-2026-10-23',
+    titleMy: 'အလုပ်လျှောက်လွှာနှင့် အင်တာဗျူး — Job applications and interviews',
+    titleOrig: 'สมัครงานและสัมภาษณ์ — Job applications and interviews',
+    descMy: 'အလုပ်လျှောက်နည်းနဲ့ အင်တာဗျူးအကြောင်း — "I want to apply for this job." / "I have experience in sales." / "Tell me about yourself." ဆိုတဲ့ ဝါကျသုံးခု၊ အင်တာဗျူးမှာ ကိုယ့်ကိုယ်ကိုယ် ပရော်ဖက်ရှင်နယ် လေးဝါကျဖြင့် မိတ်ဆက်နည်း လေ့လာခြင်း',
+    phrases: ['I want to apply for this job.', 'I have experience in sales.', 'Tell me about yourself.'],
+    durationSecs: 467,
+    cover: '/podcast-covers/ep-99.jpg',
+  },
+  {
     n: 98,
     slug: 'days-off-and-holidays-2026-10-23',
     titleMy: 'အလုပ်ပိတ်ရက် — Days off and holidays',

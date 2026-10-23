@@ -5693,10 +5693,10 @@
   {
    "id": "f14-doctor-4",
    "kind": "dialogue",
-   "en": "Doctor, my vision has become blurry lately. Let’s test your eyes. Read the letters on the chart. E… F… P… I can’t read the last line. You need glasses for reading. Let’s find the right lenses. Try these… Oh! Everything is clear now! Perfect match. Wear them whenever you read.",
-   "en_norm": "doctor my vision has become blurry lately let s test your eyes read the letters on the chart e f p i can t read the last line you need glasses for reading let s find the right lenses try these oh everything is clear now perfect match wear them whenever you read",
+   "en": "Doctor, my vision has become blurry lately. Let’s test your eyes. Read the letters on the chart. E… F… P… I can’t read the last line. You need glasses for reading. Let’s find the right lenses. Let me try these… Oh! Everything is clear now! Perfect match. Wear them whenever you read.",
+   "en_norm": "doctor my vision has become blurry lately let s test your eyes read the letters on the chart e f p i can t read the last line you need glasses for reading let s find the right lenses let me try these oh everything is clear now perfect match wear them whenever you read",
    "my_norm": "",
-   "fingerprint": "ec8601cd7ac2525e",
+   "fingerprint": "6daef0fc2d91b9d9",
    "vocab_sig": [
     "become",
     "blurry",
@@ -5729,7 +5729,7 @@
     "wear",
     "whenever"
    ],
-   "template_sig": "W , my W has W W W . let ’ s W your W . W the W on the W . W . . . W . . . W . . . i can ’ t W the W W . you W W for W . let ’ s W the W W . W these . . . W ! W is W W ! W W . W them W you W .",
+   "template_sig": "W , my W has W W W . let ’ s W your W . W the W on the W . W . . . W . . . W . . . i can ’ t W the W W . you W W for W . let ’ s W the W W . let me W these . . . W ! W is W W ! W W . W them W you W .",
    "tags": [
     "doctor",
     "dialogue"
@@ -77463,7 +77463,7 @@
    "en": "I find myself nodding along; your logic is sound.",
    "en_norm": "i find myself nodding along your logic is sound",
    "my_norm": "ကျွန်တော် ခေါင်းညိတ်နေမိတယ်၊ ခင်ဗျားရဲ့ယုတ္တိက ခိုင်မာတယ်။",
-   "th_norm": "ฉันพยักหน้าเห็นด้วย ตรรกะของคุณแน่นหนา",
+   "th_norm": "ฉันพยักหน้าเห็นด้วย เหตุผลของคุณสมเหตุสมผล",
    "fingerprint": "fed38d16ce6903c3",
    "vocab_sig": [
     "along",
@@ -78186,7 +78186,7 @@
    "en": "I would caution against drawing conclusions so quickly.",
    "en_norm": "i would caution against drawing conclusions so quickly",
    "my_norm": "အဲဒီလောက် မြန်မြန် နိဂုံးမချဖို့ သတိထားစေချင်တယ်။",
-   "th_norm": "ฉันอยากเตือนว่าอย่าเพิ่งด่วนสรุปเร็วขนาดนั้น",
+   "th_norm": "ฉันอยากเตือนว่าอย่าเพิ่งด่วนสรุป",
    "fingerprint": "ef5c8e5bef23cc68",
    "vocab_sig": [
     "against",
@@ -78759,7 +78759,7 @@
    "en": "Granted, the rollout was messy; the outcome was still a success.",
    "en_norm": "granted the rollout was messy the outcome was still a success",
    "my_norm": "စတင်ဖြန့်ချိမှုက ရှုပ်ထွေးခဲ့တာကို ဝန်ခံပါတယ်၊ ဒါပေမယ့် ရလဒ်က အောင်မြင်ခဲ့တယ်။",
-   "th_norm": "ยอมรับว่าการเปิดตัวยุ่งเหยิง แต่ผลลัพธ์ยังสำเร็จ",
+   "th_norm": "ยอมรับว่าการเปิดตัวยุ่งเหยิง แต่ผลลัพธ์ก็ประสบความสำเร็จ",
    "fingerprint": "d1f178e087c92812",
    "vocab_sig": [
     "granted",
@@ -79307,7 +79307,7 @@
    "en": "Real-world results have silenced the skeptics.",
    "en_norm": "real world results have silenced the skeptics",
    "my_norm": "လက်တွေ့ကမ္ဘာရလဒ်တွေက သံသယရှိသူတွေကို တိတ်ဆိတ်စေခဲ့တယ်။",
-   "th_norm": "ผลลัพธ์จากโลกจริงทำให้พวกขี้สงสัยต้องเงียบเสียงลง",
+   "th_norm": "ผลลัพธ์จากโลกจริงทำให้พวกขี้สงสัยต้องเงียบปากลง",
    "fingerprint": "318b13b9da4fe634",
    "vocab_sig": [
     "real",
@@ -81997,7 +81997,7 @@
    "en": "That's a false equivalence, and you know it.",
    "en_norm": "that s a false equivalence and you know it",
    "my_norm": "အဲဒါ မှားယွင်းတဲ့နှိုင်းယှဉ်မှုပဲ၊ ခင်ဗျားလည်း သိတယ်။",
-   "th_norm": "นั่นคือความเท่าเทียมเท็จ และคุณก็รู้",
+   "th_norm": "นั่นคือการเปรียบเทียบที่ผิดพลาด และคุณก็รู้",
    "fingerprint": "5dbfcba9b606b46a",
    "vocab_sig": [
     "equivalence",
@@ -82359,7 +82359,7 @@
    "en": "That logic would justify almost anything.",
    "en_norm": "that logic would justify almost anything",
    "my_norm": "အဲဒီဆင်ခြေမျိုးနဲ့ဆိုရင် ဘာမဆို အကြောင်းပြလို့ရလိမ့်မယ်။",
-   "th_norm": "ตรรกะแบบนั้นใช้อ้างเหตุผลให้ได้เกือบทุกเรื่อง",
+   "th_norm": "ตรรกะแบบนั้นใช้อ้างเหตุผลได้เกือบทุกเรื่อง",
    "fingerprint": "ce45571cb4d7f9a3",
    "vocab_sig": [
     "almost",
@@ -82424,7 +82424,7 @@
    "en": "Your timeline conveniently ignores the last three years.",
    "en_norm": "your timeline conveniently ignores the last three years",
    "my_norm": "ခင်ဗျားရဲ့အချိန်ဇယားက နောက်ဆုံးသုံးနှစ်ကို အဆင်ပြေစွာ လျစ်လျူရှုထားတယ်။",
-   "th_norm": "ไทม์ไลน์ของคุณละเลยสามปีหลังไปอย่างเหมาะเจาะ",
+   "th_norm": "ไทม์ไลน์ของคุณละเลยสามปีที่ผ่านมาไปอย่างเหมาะเจาะ",
    "fingerprint": "57d7511161fe6314",
    "vocab_sig": [
     "conveniently",
@@ -82490,7 +82490,7 @@
    "en": "You are fighting yesterday's battle with today's tools.",
    "en_norm": "you are fighting yesterday s battle with today s tools",
    "my_norm": "ခင်ဗျား မနေ့ကတိုက်ပွဲကို ဒီနေ့လက်နက်တွေနဲ့ တိုက်နေတယ်။",
-   "th_norm": "คุณกำลังรบศึกเมื่อวานด้วยเครื่องมือวันนี้",
+   "th_norm": "คุณกำลังรบศึกของเมื่อวานด้วยเครื่องมือของวันนี้",
    "fingerprint": "21829162d280fe00",
    "vocab_sig": [
     "battle",
@@ -82580,7 +82580,7 @@
    "en": "On balance, the advantages clearly outweigh the risks.",
    "en_norm": "on balance the advantages clearly outweigh the risks",
    "my_norm": "ချိန်ခွင်လျှာပေါ်မှာ အားသာချက်တွေက အန္တရာယ်တွေထက် ရှင်းရှင်းသာတယ်။",
-   "th_norm": "โดยรวม ข้อดีชัดว่าหนักกว่าความเสี่ยง",
+   "th_norm": "โดยรวมแล้ว ข้อดีหนักกว่าความเสี่ยงอย่างชัดเจน",
    "fingerprint": "77f9bfbe81ee2af3",
    "vocab_sig": [
     "advantages",
@@ -82603,7 +82603,7 @@
    "en": "The benefits are substantial, though not without cost.",
    "en_norm": "the benefits are substantial though not without cost",
    "my_norm": "အကျိုးကျေးဇူးတွေက များပြားပေမယ့် ကုန်ကျစရိတ်ကင်းတာတော့ မဟုတ်ဘူး။",
-   "th_norm": "ประโยชน์มากมาย แต่ก็มีต้นทุนของมัน",
+   "th_norm": "ประโยชน์มากมาย แต่ก็มีต้นทุนเช่นกัน",
    "fingerprint": "ce17eb42b70d3432",
    "vocab_sig": [
     "benefits",
@@ -82672,7 +82672,7 @@
    "en": "Short-term pain for long-term gain — a trade worth making.",
    "en_norm": "short term pain for long term gain a trade worth making",
    "my_norm": "ရေရှည်အကျိုးအတွက် ရေတိုနာကျင်မှု လုပ်သင့်တဲ့အပေးအယူပဲ။",
-   "th_norm": "เจ็บระยะสั้นเพื่อได้ระยะยาว การแลกที่คุ้ม",
+   "th_norm": "ทนเจ็บระยะสั้นเพื่อผลระยะยาว การแลกที่คุ้มค่า",
    "fingerprint": "a97bca55d1105ff2",
    "vocab_sig": [
     "gain",
@@ -83261,7 +83261,7 @@
    "en": "Promoting from within sends a powerful message to the team.",
    "en_norm": "promoting from within sends a powerful message to the team",
    "my_norm": "အတွင်းကနေ ရာထူးတိုးပေးတာက အသင်းကို အားကောင်းတဲ့သတင်းစကား ပို့တယ်။",
-   "th_norm": "การเลื่อนตำแหน่งคนในองค์กรส่งสารที่ชัดเจนถึงทีม",
+   "th_norm": "การเลื่อนตำแหน่งคนในองค์กรส่งสารถึงทีมอย่างทรงพลัง",
    "fingerprint": "f42a546c81889010",
    "vocab_sig": [
     "message",
@@ -83451,7 +83451,7 @@
    "en": "Succession planning is not optional; it's a fiduciary duty.",
    "en_norm": "succession planning is not optional it s a fiduciary duty",
    "my_norm": "ဆက်ခံစီမံကိန်းက ရွေးချယ်စရာမဟုတ်ဘူး၊ ယုံကြည်စောင့်ရှောက်မှုတာဝန်ပဲ။",
-   "th_norm": "การวางแผนสืบทอดตำแหน่งไม่ใช่ทางเลือก แต่เป็นหน้าที่ความรับผิดชอบ",
+   "th_norm": "การวางแผนสืบทอดตำแหน่งไม่ใช่ทางเลือก แต่เป็นหน้าที่ตามความไว้วางใจ",
    "fingerprint": "0b8d647b93a9f29f",
    "vocab_sig": [
     "duty",
@@ -83523,7 +83523,7 @@
    "en": "Performance metrics should measure outcomes, not hours logged.",
    "en_norm": "performance metrics should measure outcomes not hours logged",
    "my_norm": "စွမ်းဆောင်ရည်တိုင်းတာချက်တွေက ရလဒ်တွေကို တိုင်းတာသင့်တယ်၊ မှတ်တမ်းတင်နာရီတွေကို မဟုတ်ဘူး။",
-   "th_norm": "ตัวชี้วัดผลงานควรวัดผลลัพธ์ ไม่ใช่ชั่วโมงที่ลง",
+   "th_norm": "ตัวชี้วัดผลงานควรวัดผลลัพธ์ ไม่ใช่ชั่วโมงทำงาน",
    "fingerprint": "7b5090d665460daa",
    "vocab_sig": [
     "hours",
@@ -84447,7 +84447,7 @@
    "en": "Price is what you pay; value is what compounds.",
    "en_norm": "price is what you pay value is what compounds",
    "my_norm": "ဈေးက ခင်ဗျားပေးတဲ့အရာ၊ တန်ဖိုးက တိုးပွားတဲ့အရာ။",
-   "th_norm": "ราคาคือสิ่งที่คุณจ่าย คุณค่าคือสิ่งที่ทบต้น",
+   "th_norm": "ราคาคือสิ่งที่คุณจ่าย คุณค่าคือสิ่งที่ทวีคูณขึ้นเรื่อยๆ",
    "fingerprint": "3e149e6df90499da",
    "vocab_sig": [
     "compounds",
@@ -85979,7 +85979,7 @@
    "en": "For the sake of clarity, I will restate my thesis.",
    "en_norm": "for the sake of clarity i will restate my thesis",
    "my_norm": "ရှင်းလင်းမှုအတွက် ကျွန်တော့်အဓိကအဆိုကို ပြန်ပြောပါမယ်။",
-   "th_norm": "เพื่อความชัดเจน ฉันจะขอย้ำข้อโต้แย้งหลักของฉันอีกครั้ง",
+   "th_norm": "เพื่อความชัดเจน ฉันจะขอย้ำข้อเสนอหลักของฉันอีกครั้ง",
    "fingerprint": "28ac57746320407a",
    "vocab_sig": [
     "clarity",
@@ -86089,7 +86089,7 @@
    "en": "In light of recent developments, I must revise my stance.",
    "en_norm": "in light of recent developments i must revise my stance",
    "my_norm": "မကြာသေးမီက ဖြစ်ပေါ်မှုတွေအရ ကျွန်တော့်ရပ်တည်ချက်ကို ပြင်ရမယ်။",
-   "th_norm": "จากพัฒนาการล่าสุด ฉันต้องทบทวนจุดยืนของฉัน",
+   "th_norm": "จากเหตุการณ์ล่าสุด ฉันต้องทบทวนจุดยืนของฉัน",
    "fingerprint": "47be6dacc1caa5c5",
    "vocab_sig": [
     "developments",
@@ -86653,7 +86653,7 @@
    "en": "The learning curve is gentler than you fear — most teams adapt in a week.",
    "en_norm": "the learning curve is gentler than you fear most teams adapt in a week",
    "my_norm": "သင်ယူရတာ ခင်ဗျားစိုးရိမ်နေသလောက် မခက်ခဲပါဘူး အသင်းအများစုက တစ်ပတ်အတွင်း ကျင့်သားရသွားကြတယ်။",
-   "th_norm": "เส้นโค้งการเรียนรู้เบากว่าที่คุณกลัว ทีมส่วนใหญ่ปรับตัวในหนึ่งสัปดาห์",
+   "th_norm": "เส้นโค้งการเรียนรู้เบากว่าที่คุณกังวล ทีมส่วนใหญ่ปรับตัวในหนึ่งสัปดาห์",
    "fingerprint": "0f8c77ec8606e13b",
    "vocab_sig": [
     "adapt",
@@ -86911,7 +86911,7 @@
    "en": "The verdict of the data is unanimous.",
    "en_norm": "the verdict of the data is unanimous",
    "my_norm": "အချက်အလက်တွေရဲ့စီရင်ချက်က တညီတညွတ်တည်းပဲ။",
-   "th_norm": "คำตัดสินของข้อมูลเป็นเอกฉันท์",
+   "th_norm": "ข้อสรุปของข้อมูลเป็นเอกฉันท์",
    "fingerprint": "3b6e13c1b6367cbf",
    "vocab_sig": [
     "data",
@@ -89214,7 +89214,7 @@
    "en": "He got a taste of his own medicine when his joke backfired.",
    "en_norm": "he got a taste of his own medicine when his joke backfired",
    "my_norm": "သူ့ဟာသက သူ့ကိုယ်သူ ပြန်ထိတဲ့အခါ သူများကိုလုပ်သလို ကိုယ်ပြန်ခံစားရတာကို သူ နားလည်သွားတယ်။",
-   "th_norm": "เขาโดนเอาคืนแบบที่เคยทำคนอื่นตอนมุกของเขาย้อนกลับมาเล่นงาน",
+   "th_norm": "เขาต้องลิ้มรสยาเดียวกันกับที่เคยให้คนอื่นกินตอนมุกของเขาย้อนกลับมาเล่นงาน",
    "fingerprint": "749ef4fb84a16604",
    "vocab_sig": [
     "backfired",
@@ -91233,7 +91233,7 @@
    "en": "You can't teach an old dog new tricks.",
    "en_norm": "you can t teach an old dog new tricks",
    "my_norm": "အသက်ကြီးသူကို အကျင့်သစ်သင်ပေးဖို့ ခက်တယ်။",
-   "th_norm": "สอนหมาแก่ให้เล่นกลใหม่ไม่ได้",
+   "th_norm": "สอนหมาแก่ให้ทำอะไรใหม่ๆ ไม่ได้",
    "fingerprint": "1a5c1987305f9299",
    "vocab_sig": [
     "dog",
@@ -92185,7 +92185,7 @@
    "en": "I felt like a guinea pig in the trial.",
    "en_norm": "i felt like a guinea pig in the trial",
    "my_norm": "စမ်းသပ်မှုမှာ ကျွန်တော် စမ်းသပ်ခံရသလို ခံစားရတယ်။",
-   "th_norm": "ฉันรู้สึกเหมือนหนูทดลองในการทดลอง",
+   "th_norm": "ฉันรู้สึกเหมือนเป็นหนูทดลอง",
    "fingerprint": "091a2ca6f4eb96b3",
    "vocab_sig": [
     "felt",
@@ -92820,7 +92820,7 @@
    "en": "He called the prize worthless — just sour grapes.",
    "en_norm": "he called the prize worthless just sour grapes",
    "my_norm": "သူက ဆုကို အသုံးမဝင်ဘူးလို့ပြောတာ မရလို့ မနာလိုဖြစ်နေတာပါ။",
-   "th_norm": "เขาบอกรางวัลไร้ค่า แค่องุ่นเปรี้ยวเพราะไม่ได้",
+   "th_norm": "เขาบอกรางวัลไร้ค่า แค่พูดแก้ตัวเพราะตัวเองไม่ได้รางวัล",
    "fingerprint": "722451f1a783c636",
    "vocab_sig": [
     "called",
@@ -93634,7 +93634,7 @@
    "en": "The gloves are off in this election.",
    "en_norm": "the gloves are off in this election",
    "my_norm": "ဒီရွေးကောက်ပွဲမှာ ပြင်းပြင်းထန်ထန် ယှဉ်ပြိုင်ကြတော့မယ်။",
-   "th_norm": "การเลือกตั้งครั้งนี้ถอดถุงมือกันแล้ว",
+   "th_norm": "การเลือกตั้งครั้งนี้ไม่มีใครออมมือกันอีกแล้ว",
    "fingerprint": "a3c8a23896097feb",
    "vocab_sig": [
     "election",
@@ -94802,7 +94802,7 @@
    "en": "Be there or be square — it's the party of the year.",
    "en_norm": "be there or be square it s the party of the year",
    "my_norm": "လာခဲ့၊ မလာရင် ခေတ်မမီသူဖြစ်သွားမယ် တစ်နှစ်တာအကောင်းဆုံး ပါတီနော်။",
-   "th_norm": "มาเถอะ นี่คือปาร์ตี้แห่งปี",
+   "th_norm": "มาให้ได้นะ ไม่มาเชยแย่เลย นี่ปาร์ตี้แห่งปี",
    "fingerprint": "905cc11584bd3f69",
    "vocab_sig": [
     "party",
@@ -95733,7 +95733,7 @@
    "en": "Two can play at that game!",
    "en_norm": "two can play at that game",
    "my_norm": "မင်းလုပ်သလို ငါလည်းပြန်လုပ်နိုင်တယ်။",
-   "th_norm": "อย่าคิดว่าเธอทำได้คนเดียว",
+   "th_norm": "ถ้าจะเล่นไม้นี้ ฉันก็เล่นด้วยได้เหมือนกันนะ",
    "fingerprint": "a97741ebc07884a6",
    "vocab_sig": [
     "game",
@@ -96021,7 +96021,7 @@
    "en": "The talks ended in a stalemate.",
    "en_norm": "the talks ended in a stalemate",
    "my_norm": "ဆွေးနွေးမှုတွေ ဘယ်မှမရောက်ဘဲ ပြီးသွားတယ်။",
-   "th_norm": "การเจรจาจบลงแบบไม่มีใครชนะ",
+   "th_norm": "การเจรจาจบลงที่ทางตัน",
    "fingerprint": "0f0877c0e12586af",
    "vocab_sig": [
     "ended",
@@ -96170,7 +96170,7 @@
    "en": "The assistant did all the legwork.",
    "en_norm": "the assistant did all the legwork",
    "my_norm": "လက်ထောက်က အပြင်ထွက်လုပ်ရတဲ့ အလုပ်တွေအကုန် လုပ်ပေးခဲ့တယ်။",
-   "th_norm": "ผู้ช่วยทำงานภาคสนามทั้งหมด",
+   "th_norm": "ผู้ช่วยวิ่งรอกทำงานเตรียมการทั้งหมด",
    "fingerprint": "50a9ed3ed755a019",
    "vocab_sig": [
     "all",
@@ -96540,7 +96540,7 @@
    "en": "The match was a cakewalk.",
    "en_norm": "the match was a cakewalk",
    "my_norm": "ပွဲက အရမ်းလွယ်လွယ်နဲ့ နိုင်သွားတယ်။",
-   "th_norm": "แมตช์นั้นชนะง่ายเหมือนเดินเล่น",
+   "th_norm": "แมตช์นั้นง่ายเหมือนเดินเล่น",
    "fingerprint": "8bc631934d67f9f0",
    "vocab_sig": [
     "cakewalk",
@@ -97671,7 +97671,7 @@
    "en": "The launch made a big splash.",
    "en_norm": "the launch made a big splash",
    "my_norm": "မိတ်ဆက်ပွဲက လူအများရဲ့အာရုံကို ဖမ်းစားနိုင်ခဲ့တယ်။",
-   "th_norm": "งานเปิดตัวสร้างความฮือฮาใหญ่",
+   "th_norm": "งานเปิดตัวสร้างความฮือฮาอย่างมาก",
    "fingerprint": "0d759d8bc6f2516e",
    "vocab_sig": [
     "big",
@@ -97888,7 +97888,7 @@
    "en": "She washed her hands of the whole affair.",
    "en_norm": "she washed her hands of the whole affair",
    "my_norm": "သူမက ဒီကိစ္စနဲ့ လုံးဝအဆက်ဖြတ်လိုက်တယ်။",
-   "th_norm": "เธอล้างมือจากเรื่องทั้งหมด",
+   "th_norm": "เธอถอนตัวจากเรื่องทั้งหมดแล้ว",
    "fingerprint": "030b0a0275971b6e",
    "vocab_sig": [
     "affair",
