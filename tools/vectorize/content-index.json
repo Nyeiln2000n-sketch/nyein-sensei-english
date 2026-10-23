@@ -38405,7 +38405,7 @@
    "en": "She felt empowered after the course.",
    "en_norm": "she felt empowered after the course",
    "my_norm": "သူ သင်တန်းပြီးနောက် ကိုယ့်ကိုယ်ကို ပိုယုံကြည်မှုရှိလာတယ်။",
-   "th_norm": "เธอรู้สึกมีพลังหลังจบคอร์ส",
+   "th_norm": "เธอรู้สึกเข้มแข็งขึ้นหลังจบคอร์ส",
    "fingerprint": "cb8ec51731c05447",
    "vocab_sig": [
     "course",
@@ -40515,7 +40515,7 @@
    "en": "He wants to buy a bigger apartment.",
    "en_norm": "he wants to buy a bigger apartment",
    "my_norm": "သူ ပိုကြီးတဲ့တိုက်ခန်း ဝယ်ချင်တယ်။",
-   "th_norm": "เขาอยากซื้ออพาร์ตเมนต์ห้องใหญ่กว่า",
+   "th_norm": "เขาอยากซื้ออพาร์ตเมนต์ที่ใหญ่กว่า",
    "fingerprint": "1d9dbd32a470817e",
    "vocab_sig": [
     "apartment",
@@ -42356,7 +42356,7 @@
    "en": "It's obvious that punishing mistakes kills the desire to learn.",
    "en_norm": "it s obvious that punishing mistakes kills the desire to learn",
    "my_norm": "အမှားတွေကို အပြစ်ပေးတာက သင်ယူလိုစိတ်ကို သတ်ပစ်တာ ထင်ရှားတယ်။",
-   "th_norm": "เห็นได้ชัดว่าการลงโทษความผิดพลาดฆ่าความอยากเรียนรู้",
+   "th_norm": "เห็นได้ชัดว่าการลงโทษความผิดพลาดทำลายความอยากเรียนรู้",
    "fingerprint": "9f34ea0196010376",
    "vocab_sig": [
     "desire",
@@ -42554,7 +42554,7 @@
    "en": "On the one hand, private tutoring helps struggling students; on the other hand, it widens the gap between rich and poor.",
    "en_norm": "on the one hand private tutoring helps struggling students on the other hand it widens the gap between rich and poor",
    "my_norm": "တစ်ဖက်ကကြည့်ရင် ပုဂ္ဂလိကကျူရှင်က အားနည်းတဲ့ကျောင်းသားတွေကို ကူညီတယ်။ တစ်ဖက်ကကြည့်ရင်တော့ ချမ်းသာသူနဲ့ဆင်းရဲသူတို့ရဲ့ ကွာဟချက်ကို ပိုကျယ်စေတယ်။",
-   "th_norm": "ในด้านหนึ่ง การติวช่วยเด็กที่เรียนไม่ทัน ในอีกด้านหนึ่ง มันขยายช่องว่างระหว่างรวยกับจน",
+   "th_norm": "ในด้านหนึ่ง การติวช่วยเด็กที่เรียนไม่ทัน ในอีกด้านหนึ่ง มันขยายช่องว่างระหว่างคนรวยกับคนจน",
    "fingerprint": "1d976970ebeebae9",
    "vocab_sig": [
     "gap",
@@ -42766,7 +42766,7 @@
    "en": "What really matters is that children leave school loving to learn.",
    "en_norm": "what really matters is that children leave school loving to learn",
    "my_norm": "တကယ်အရေးကြီးတာက ကလေးတွေ ကျောင်းထွက်သွားတဲ့အခါ သင်ယူရတာကို ချစ်သွားဖို့ပဲ။",
-   "th_norm": "สิ่งที่สำคัญจริงๆ คือเด็กจบโรงเรียนไปด้วยความรักการเรียนรู้",
+   "th_norm": "สิ่งที่สำคัญจริงๆ คือเด็กๆ ออกจากโรงเรียนไปด้วยใจรักในการเรียนรู้",
    "fingerprint": "02aa2563a8f2c6c9",
    "vocab_sig": [
     "children",
@@ -45471,7 +45471,7 @@
    "en": "Rather than banning new technology, we should learn to use it wisely.",
    "en_norm": "rather than banning new technology we should learn to use it wisely",
    "my_norm": "နည်းပညာအသစ်ကို ပိတ်ပင်မယ့်အစား ပညာရှိရှိ သုံးတတ်အောင် သင်ယူသင့်တယ်။",
-   "th_norm": "แทนที่จะแบนเทคโนโลยีใหม่ เราควรเรียนรู้ใช้มันอย่างชาญฉลาด",
+   "th_norm": "แทนที่จะแบนเทคโนโลยีใหม่ เราควรเรียนรู้ที่จะใช้มันอย่างชาญฉลาด",
    "fingerprint": "498f52525dccbdfe",
    "vocab_sig": [
     "banning",
@@ -45955,7 +45955,7 @@
    "en": "One could argue that the true cost of fast fashion is paid by the planet.",
    "en_norm": "one could argue that the true cost of fast fashion is paid by the planet",
    "my_norm": "အမြန်ဖက်ရှင်ရဲ့ တကယ့်ကုန်ကျစရိတ်ကို ကမ္ဘာမြေက ပေးဆပ်နေရတယ်လို့လည်း ဆိုနိုင်တယ်။",
-   "th_norm": "อาจกล่าวได้ว่าต้นทุนที่แท้จริงของแฟชั่นเร็วถูกจ่ายโดยโลก",
+   "th_norm": "อาจกล่าวได้ว่าต้นทุนที่แท้จริงของแฟชั่นเร็วคือภาระที่โลกต้องแบกรับ",
    "fingerprint": "90b438fa2c67f886",
    "vocab_sig": [
     "argue",
@@ -48348,7 +48348,7 @@
    "en": "It strikes me that we criminalize poverty while excusing white-collar crime.",
    "en_norm": "it strikes me that we criminalize poverty while excusing white collar crime",
    "my_norm": "ကျွန်တော်တို့က ဆင်းရဲမှုကို ရာဇဝတ်မှုအဖြစ် သတ်မှတ်ပြီး ကော်လာဖြူ ရာဇဝတ်မှုတွေကိုတော့ ခွင့်လွှတ်နေသလို ခံစားရတယ်။",
-   "th_norm": "ฉันรู้สึกว่าเราทำให้ความจนเป็นอาชญากรรมขณะที่ยกเว้นอาชญากรรมคอปกขาว",
+   "th_norm": "ฉันรู้สึกว่าเราลงโทษคนจนราวกับเป็นอาชญากรขณะที่ยกเว้นอาชญากรรมคอปกขาว",
    "fingerprint": "513736ead7a9b1c2",
    "vocab_sig": [
     "collar",
@@ -48569,7 +48569,7 @@
    "en": "The evidence suggests that community policing reduces crime effectively.",
    "en_norm": "the evidence suggests that community policing reduces crime effectively",
    "my_norm": "ရပ်ရွာအခြေပြု ရဲလုပ်ငန်းက ရာဇဝတ်မှုကို ထိထိရောက်ရောက် လျှော့ချတယ်လို့ အထောက်အထားတွေက ဖော်ပြနေတယ်။",
-   "th_norm": "หลักฐานชี้ว่าการตำรวจชุมชนลดอาชญากรรมได้อย่างมีประสิทธิภาพ",
+   "th_norm": "หลักฐานชี้ว่าตำรวจชุมชนลดอาชญากรรมได้อย่างมีประสิทธิภาพ",
    "fingerprint": "da31afb1ead31e51",
    "vocab_sig": [
     "community",
@@ -50080,7 +50080,7 @@
    "en": "The real question is what makes a life truly worth living.",
    "en_norm": "the real question is what makes a life truly worth living",
    "my_norm": "တကယ့်မေးခွန်းက ဘဝတစ်ခုကို တကယ်နေထိုင်ထိုက်စေတာက ဘာလဲဆိုတာပဲ။",
-   "th_norm": "คำถามที่แท้จริงคืออะไรทำให้ชีวิตคุ้มค่าที่จะมีชีวิตอยู่",
+   "th_norm": "คำถามที่แท้จริงคืออะไรทำให้ชีวิตคู่ควรแก่การดำรงอยู่",
    "fingerprint": "4ccfd8422a1370f3",
    "vocab_sig": [
     "life",
@@ -50127,7 +50127,7 @@
    "en": "The bottom line is that meaning beats pleasure every time.",
    "en_norm": "the bottom line is that meaning beats pleasure every time",
    "my_norm": "အဓိကအချက်က အဓိပ္ပာယ်က သာယာမှုထက် အမြဲပိုအရေးကြီးတယ်ဆိုတာပဲ။",
-   "th_norm": "สรุปแล้ว ความหมายเอาชนะความสุขทุกครั้ง",
+   "th_norm": "สรุปแล้ว ความหมายสำคัญยิ่งกว่าความสุขทุกครั้ง",
    "fingerprint": "cb578d100d924ee1",
    "vocab_sig": [
     "beats",
@@ -52043,7 +52043,7 @@
    "en": "One could argue that cinema is the defining art of our age.",
    "en_norm": "one could argue that cinema is the defining art of our age",
    "my_norm": "ရုပ်ရှင်ဟာ ကျွန်တော်တို့ခေတ်ရဲ့ အဓိကအနုပညာပဲလို့လည်း ဆိုနိုင်တယ်။",
-   "th_norm": "อาจกล่าวได้ว่าภาพยนตร์คือศิลปะนิยามยุคของเรา",
+   "th_norm": "อาจกล่าวได้ว่าภาพยนตร์คือศิลปะที่นิยามยุคสมัยของเรา",
    "fingerprint": "dbb4cd052267db51",
    "vocab_sig": [
     "age",
@@ -53048,7 +53048,7 @@
    "en": "If you ask me, we underfund basic research dangerously.",
    "en_norm": "if you ask me we underfund basic research dangerously",
    "my_norm": "ကျွန်တော့်ကို မေးရင် ကျွန်တော်တို့ အခြေခံသုတေသနကို အန္တရာယ်ရှိလောက်အောင် ရန်ပုံငွေနည်းနည်းပဲ ပေးနေတယ်။",
-   "th_norm": "ถ้าถามฉัน เราให้ทุนวิจัยพื้นฐานน้อยเกินไปอย่างอันตราย",
+   "th_norm": "ถ้าถามฉัน เราให้ทุนงานวิจัยพื้นฐานน้อยเกินไปจนน่าเป็นห่วง",
    "fingerprint": "fbf60dafc7720529",
    "vocab_sig": [
     "ask",
@@ -53096,7 +53096,7 @@
    "en": "I firmly believe that evidence should guide public policy.",
    "en_norm": "i firmly believe that evidence should guide public policy",
    "my_norm": "အထောက်အထားတွေက အများပြည်သူမူဝါဒကို လမ်းညွှန်သင့်တယ်လို့ ကျွန်တော် ခိုင်ခိုင်မာမာ ယုံကြည်တယ်။",
-   "th_norm": "ฉันเชื่อมั่นอย่างแน่วแน่ว่าหลักฐานควรนำนโยบายสาธารณะ",
+   "th_norm": "ฉันเชื่อมั่นอย่างแน่วแน่ว่าการกำหนดนโยบายสาธารณะควรยึดตามหลักฐาน",
    "fingerprint": "d0660e5b7ec8e253",
    "vocab_sig": [
     "believe",
@@ -53565,7 +53565,7 @@
    "en": "On the one hand, gene therapy offers cures; on the other hand, it raises profound questions.",
    "en_norm": "on the one hand gene therapy offers cures on the other hand it raises profound questions",
    "my_norm": "တစ်ဖက်ကကြည့်ရင် မျိုးရိုးဗီဇကုထုံးက ကုသမှုတွေ ပေးတယ်။ တစ်ဖက်ကကြည့်ရင်တော့ နက်နဲတဲ့မေးခွန်းတွေ ထွက်ပေါ်စေတယ်။",
-   "th_norm": "ในด้านหนึ่ง ยีนบำบัดให้ทางรักษา ในอีกด้านหนึ่ง มันยกคำถามลึกซึ้ง",
+   "th_norm": "ในด้านหนึ่ง ยีนบำบัดให้ทางรักษา ในอีกด้านหนึ่ง มันทำให้เกิดคำถามที่ลึกซึ้ง",
    "fingerprint": "f97f0c281bb86ac1",
    "vocab_sig": [
     "cures",
@@ -54077,7 +54077,7 @@
    "en": "The truth of the matter is that every answer raises new questions.",
    "en_norm": "the truth of the matter is that every answer raises new questions",
    "my_norm": "အမှန်တရားက အဖြေတိုင်းက မေးခွန်းအသစ်တွေ ထွက်ပေါ်စေတယ်ဆိုတာပဲ။",
-   "th_norm": "ความจริงก็คือทุกคำตอบยกคำถามใหม่ขึ้นมา",
+   "th_norm": "ความจริงก็คือทุกคำตอบก่อให้เกิดคำถามใหม่",
    "fingerprint": "7bc97a34aeebbce1",
    "vocab_sig": [
     "answer",
@@ -350098,12 +350098,12 @@
   {
    "id": "example:art:travertine",
    "kind": "example",
-   "en": "Travertine floors give the gallery a warm, honey-colored glow.",
-   "en_norm": "travertine floors give the gallery a warm honey colored glow",
+   "en": "Travertine floors give the gallery a warm, honey-coloured glow.",
+   "en_norm": "travertine floors give the gallery a warm honey coloured glow",
    "my_norm": "",
-   "fingerprint": "d8cab579c39619b6",
+   "fingerprint": "bc694e67a7b1b0bb",
    "vocab_sig": [
-    "colored",
+    "coloured",
     "floors",
     "gallery",
     "give",
@@ -367071,7 +367071,7 @@
    "kind": "word",
    "en": "values",
    "en_norm": "values",
-   "my_norm": "တန်ဖိုးထားမှုများ",
+   "my_norm": "တန်ဖိုးများ",
    "th_norm": "ค่านิยม",
    "fingerprint": "89445ea08b55421f",
    "vocab_sig": [
@@ -374704,7 +374704,7 @@
    "kind": "word",
    "en": "libertarianism",
    "en_norm": "libertarianism",
-   "my_norm": "လွတ်လပ်ရေးဝါဒ",
+   "my_norm": "တစ်ဦးချင်းလွတ်လပ်မှုဝါဒ",
    "th_norm": "เสรีนิยมสุดขั้ว",
    "fingerprint": "5643a7be74f9c323",
    "vocab_sig": [

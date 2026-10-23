@@ -38,6 +38,16 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 97,
+    slug: 'deadlines-and-work-appointments-2026-10-23',
+    titleMy: 'ဒက်ဒ်လိုင်းနှင့် အလုပ်ချိန်းဆိုချက်များ — Deadlines and work appointments',
+    titleOrig: 'เดดไลน์และนัดหมายงาน — Deadlines and work appointments',
+    descMy: 'အလုပ်မှာ ဒက်ဒ်လိုင်းပြောနည်း — \"The deadline is Friday.\" / \"I will finish it tomorrow.\" / \"When is the deadline?\" / \"Sorry, I need more time.\" ဆိုတဲ့ ဝါကျလေးခု လေ့လာခြင်း',
+    phrases: ['The deadline is Friday.', 'I will finish it tomorrow.', 'When is the deadline?', 'Sorry, I need more time.'],
+    durationSecs: 475,
+    cover: '/podcast-covers/ep-97.jpg',
+  },
+  {
     n: 96,
     slug: 'your-first-meeting-in-english-2026-10-22',
     titleMy: 'ပထမဆုံး အစည်းအဝေး — Your first meeting in English',
