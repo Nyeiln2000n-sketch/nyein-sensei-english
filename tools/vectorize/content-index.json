@@ -28229,10 +28229,10 @@
   {
    "id": "hl-d-001",
    "kind": "dialogue",
-   "en": "Good morning! How much are the mangoes today? Good morning! Six thousand kyat a kilo. They're very sweet today. That's a little expensive. Can you make it cheaper? These are the best ones, fresh from the farm this morning. How about five thousand five hundred? How about five thousand kyat, okay? Hmm... for you, okay, five thousand. How many kilos do you want? I'll take two kilos, please. Two kilos... that will be ten thousand kyat. Here you go. Thank you very much! Thank you! Please come again!",
-   "en_norm": "good morning how much are the mangoes today good morning six thousand kyat a kilo they re very sweet today that s a little expensive can you make it cheaper these are the best ones fresh from the farm this morning how about five thousand five hundred how about five thousand kyat okay hmm for you okay five thousand how many kilos do you want i ll take two kilos please two kilos that will be ten thousand kyat here you go thank you very much thank you please come again",
+   "en": "Good morning! How much are the mangoes today? Good morning! Six thousand kyat a kilo. They're very sweet today. That's a little expensive. Can you make it cheaper? These are the best ones, fresh from the farm this morning. How about five thousand five hundred? How about five thousand kyat? Hmm... for you, okay, five thousand. How many kilos do you want? I'll take two kilos, please. Two kilos... that will be ten thousand kyat. Here you go. Thank you very much! Thank you! Please come again!",
+   "en_norm": "good morning how much are the mangoes today good morning six thousand kyat a kilo they re very sweet today that s a little expensive can you make it cheaper these are the best ones fresh from the farm this morning how about five thousand five hundred how about five thousand kyat hmm for you okay five thousand how many kilos do you want i ll take two kilos please two kilos that will be ten thousand kyat here you go thank you very much thank you please come again",
    "my_norm": "",
-   "fingerprint": "53a3710132dd984a",
+   "fingerprint": "c73a3fffe285accd",
    "vocab_sig": [
     "again",
     "best",
@@ -28266,7 +28266,7 @@
     "today",
     "want"
    ],
-   "template_sig": "W W ! how W are the W W ? W W ! W W W a W . they ' re very W W . that ' s a W W . can you W it W ? these are the W W , W from the W this W . how about W W W W ? how about W W W , W ? W . . . for you , W , W W . how W W do you W ? i ' ll W two W , please . two W . . . that will be W W W . here you W . W you very W ! W you ! please W W !",
+   "template_sig": "W W ! how W are the W W ? W W ! W W W a W . they ' re very W W . that ' s a W W . can you W it W ? these are the W W , W from the W this W . how about W W W W ? how about W W W ? W . . . for you , W , W W . how W W do you W ? i ' ll W two W , please . two W . . . that will be W W W . here you W . W you very W ! W you ! please W W !",
    "tags": [
     "market",
     "dialogue"
@@ -28277,11 +28277,12 @@
   {
    "id": "hl-d-002",
    "kind": "dialogue",
-   "en": "Good morning. May I go inside the temple? Welcome. First, please take off your shoes here. Oh, of course! Where should I put them? On the shelf over there. And please cover your shoulders; please dress properly. I see. I have a scarf in my bag. Is this okay? That's perfect. One more thing: please don't point your feet at the Buddha. I didn't know that. Should I sit with my legs to the side? Exactly, like the local people do. Do you want to give something to the Buddha? Yes, please. May I take photos inside the hall? Photos are fine, but please don't use the flash. Enjoy your visit.",
-   "en_norm": "good morning may i go inside the temple welcome first please take off your shoes here oh of course where should i put them on the shelf over there and please cover your shoulders please dress properly i see i have a scarf in my bag is this okay that s perfect one more thing please don t point your feet at the buddha i didn t know that should i sit with my legs to the side exactly like the local people do do you want to give something to the buddha yes please may i take photos inside the hall photos are fine but please don t use the flash enjoy your visit",
+   "en": "Good morning. May I go inside the temple? Welcome. First, please take off your shoes here. Oh, of course! Where should I put them? On the shelf over there. And please cover your shoulders and dress appropriately. I see. I have a scarf in my bag. Is this okay? That's perfect. One more thing: please don't point your feet at the Buddha. I didn't know that. Should I sit with my legs to the side? Exactly, like the local people do. Would you like to make an offering to the Buddha? Yes, please. May I take photos inside the hall? Photos are fine, but please don't use the flash. Enjoy your visit.",
+   "en_norm": "good morning may i go inside the temple welcome first please take off your shoes here oh of course where should i put them on the shelf over there and please cover your shoulders and dress appropriately i see i have a scarf in my bag is this okay that s perfect one more thing please don t point your feet at the buddha i didn t know that should i sit with my legs to the side exactly like the local people do would you like to make an offering to the buddha yes please may i take photos inside the hall photos are fine but please don t use the flash enjoy your visit",
    "my_norm": "",
-   "fingerprint": "5e57b3be7199c168",
+   "fingerprint": "95d48cb3867a057b",
    "vocab_sig": [
+    "appropriately",
     "bag",
     "buddha",
     "course",
@@ -28294,7 +28295,6 @@
     "fine",
     "first",
     "flash",
-    "give",
     "go",
     "good",
     "hall",
@@ -28302,15 +28302,16 @@
     "know",
     "legs",
     "local",
+    "make",
     "more",
     "morning",
+    "offering",
     "oh",
     "okay",
     "people",
     "perfect",
     "photos",
     "point",
-    "properly",
     "put",
     "scarf",
     "see",
@@ -28319,16 +28320,14 @@
     "shoulders",
     "side",
     "sit",
-    "something",
     "take",
     "temple",
     "thing",
     "use",
     "visit",
-    "want",
     "welcome"
    ],
-   "template_sig": "W W . may i W W the W ? W . W , please W off your W here . W , of W ! where should i W them ? on the W over there . and please W your W ; please W W . i W . i have a W in my W . is this W ? that ' s W . one W W : please don ' t W your W at the W . i W ' t W that . should i W with my W to the W ? W , like the W W do . do you W to W W to the W ? yes , please . may i W W W the W ? W are W , but please don ' t W the W . W your W .",
+   "template_sig": "W W . may i W W the W ? W . W , please W off your W here . W , of W ! where should i W them ? on the W over there . and please W your W and W W . i W . i have a W in my W . is this W ? that ' s W . one W W : please don ' t W your W at the W . i W ' t W that . should i W with my W to the W ? W , like the W W do . would you like to W an W to the W ? yes , please . may i W W W the W ? W are W , but please don ' t W the W . W your W .",
    "tags": [
     "daily-life",
     "dialogue"
@@ -123477,7 +123476,7 @@
    "en": "Your concern is legitimate; it is not decisive.",
    "en_norm": "your concern is legitimate it is not decisive",
    "my_norm": "သင့်စိုးရိမ်မှုက ခိုင်လုံတယ်၊ ဒါပေမယ့် အဆုံးအဖြတ်ပေးနိုင်လောက်တဲ့အထိ မဟုတ်ဘူး။",
-   "th_norm": "ความกังวลของคุณชอบธรรม แต่ไม่ใช่ตัวตัดสิน",
+   "th_norm": "ความกังวลของคุณมีมูล แต่ไม่ใช่ตัวตัดสิน",
    "fingerprint": "5630406e110ce363",
    "vocab_sig": [
     "concern",
@@ -123498,7 +123497,7 @@
    "en": "I'll give you the history; the future argues otherwise.",
    "en_norm": "i ll give you the history the future argues otherwise",
    "my_norm": "သမိုင်းအချက်ကို သင့်ဘက်ပေးတယ်၊ ဒါပေမယ့် အနာဂတ်က တခြားဘက်ကို ထောက်ခံတယ်။",
-   "th_norm": "ยกประวัติศาสตร์ให้คุณ อนาคตโต้แย้งเป็นอย่างอื่น",
+   "th_norm": "ยกประวัติศาสตร์ให้คุณ แต่อนาคตชี้ไปอีกทาง",
    "fingerprint": "92643aec11c2d12b",
    "vocab_sig": [
     "argues",
@@ -124106,7 +124105,7 @@
    "en": "The analogy is vivid — and vacuous.",
    "en_norm": "the analogy is vivid and vacuous",
    "my_norm": "ဥပမာနှိုင်းယှဥ်ချက်က ထင်ရှားတယ်၊ ဒါပေမယ့် အနှစ်သာရမရှိဘူး။",
-   "th_norm": "อุปมานั้นแจ่มชัด แต่กลวงเปล่า",
+   "th_norm": "อุปมานั้นแจ่มชัด แต่ไร้เนื้อหา",
    "fingerprint": "0bfd2924edc34144",
    "vocab_sig": [
     "analogy",
@@ -125051,7 +125050,7 @@
    "en": "The claim holds, provided we interpret the terms narrowly.",
    "en_norm": "the claim holds provided we interpret the terms narrowly",
    "my_norm": "ဝေါဟာရတွေကို ကျဉ်းကျဉ်းအဓိပ္ပာယ်ဖွင့်ရင် အဆိုက ခိုင်တယ်။",
-   "th_norm": "ข้ออ้างยืนได้ ถ้าตีความคำอย่างแคบ",
+   "th_norm": "ข้ออ้างยืนได้ ถ้าตีความคำในความหมายแคบๆ",
    "fingerprint": "7efb232bb7cac1a3",
    "vocab_sig": [
     "claim",
@@ -126214,7 +126213,7 @@
    "en": "The contrapositive is easier to grasp — and harder to deny.",
    "en_norm": "the contrapositive is easier to grasp and harder to deny",
    "my_norm": "ဆန့်ကျင်ဘက်ပြောင်းပြန်က နားလည်ရပိုလွယ်တယ်၊ ပြီးတော့ ငြင်းဖို့ပိုခက်တယ်။",
-   "th_norm": "บทผกผันของบทกลับเข้าใจง่ายกว่า และปฏิเสธยากกว่า",
+   "th_norm": "ประพจน์แย้งสลับที่เข้าใจง่ายกว่า และปฏิเสธยากกว่า",
    "fingerprint": "a472f30341befe73",
    "vocab_sig": [
     "contrapositive",
@@ -126425,7 +126424,7 @@
    "en": "Modus tollens does the heavy lifting in this refutation.",
    "en_norm": "modus tollens does the heavy lifting in this refutation",
    "my_norm": "မိုဒပ်စ် တိုလန်စ်က ဒီချေပမှုမှာ အဓိကအလုပ်ကို လုပ်တယ်။",
-   "th_norm": "มอดัสทอลเลนส์รับบทหนักในการหักล้างครั้งนี้",
+   "th_norm": "โมดัสทอลเลนส์รับบทหนักในการหักล้างครั้งนี้",
    "fingerprint": "f24a45e946c583fc",
    "vocab_sig": [
     "heavy",
@@ -126994,7 +126993,7 @@
    "en": "We inherit institutions; we bequeath either their repair or their ruin.",
    "en_norm": "we inherit institutions we bequeath either their repair or their ruin",
    "my_norm": "ကျွန်တော်တို့ အဖွဲ့အစည်းတွေကို အမွေရတယ်၊ သူတို့ရဲ့ပြုပြင်မှုဖြစ်စေ ပျက်စီးမှုဖြစ်စေ ချန်ထားခဲ့မယ်။",
-   "th_norm": "เราสืบทอดสถาบันมา และสิ่งที่เราจะส่งต่อไว้คือการซ่อมแซมหรือการทำลายของมัน",
+   "th_norm": "เราสืบทอดสถาบันมา และสิ่งที่เราจะส่งต่อไว้คือการซ่อมแซมหรือความล่มสลายของสถาบันเหล่านั้น",
    "fingerprint": "809883fd02882c5f",
    "vocab_sig": [
     "bequeath",
@@ -127593,7 +127592,7 @@
    "en": "I ask not for agreement but for a decision equal to the evidence.",
    "en_norm": "i ask not for agreement but for a decision equal to the evidence",
    "my_norm": "သဘောတူညီမှုကို မတောင်းဆိုဘူး၊ သက်သေနဲ့ထိုက်တန်တဲ့ဆုံးဖြတ်ချက်ကိုပဲ တောင်းဆိုတယ်။",
-   "th_norm": "ขอไม่ใช่ความเห็นด้วย แต่ขอการตัดสินใจที่สมกับหลักฐาน",
+   "th_norm": "สิ่งที่ขอไม่ใช่ความเห็นด้วย แต่คือการตัดสินใจที่สมกับหลักฐาน",
    "fingerprint": "ffd3eed7c3d35fa3",
    "vocab_sig": [
     "agreement",
@@ -127986,7 +127985,7 @@
    "en": "I'll note your dissent and continue; the record will show both.",
    "en_norm": "i ll note your dissent and continue the record will show both",
    "my_norm": "သင့်သဘောကွဲလွဲမှုကို မှတ်သားပြီး ဆက်သွားမယ်၊ မှတ်တမ်းမှာ နှစ်ခုလုံး ပြသလိမ့်မယ်။",
-   "th_norm": "บันทึกความเห็นต่างของคุณแล้วดำเนินต่อ บันทึกจะแสดงทั้งสอง",
+   "th_norm": "บันทึกความเห็นต่างของคุณแล้วดำเนินการต่อ บันทึกจะแสดงทั้งสอง",
    "fingerprint": "fd59e2e2a9aa74b0",
    "vocab_sig": [
     "both",
@@ -128174,7 +128173,7 @@
    "en": "I'll take that as enthusiasm for the topic, and proceed.",
    "en_norm": "i ll take that as enthusiasm for the topic and proceed",
    "my_norm": "အဲဒါကို အကြောင်းအရာအပေါ် စိတ်အားထက်သန်မှုအဖြစ် လက်ခံပြီး ဆက်သွားမယ်။",
-   "th_norm": "ถือว่านั่นคือความกระตือรือร้นต่อหัวข้อ แล้วดำเนินต่อ",
+   "th_norm": "ถือว่านั่นคือความกระตือรือร้นต่อหัวข้อ แล้วก็ดำเนินการต่อ",
    "fingerprint": "bc740ca8d0e9a20e",
    "vocab_sig": [
     "enthusiasm",
@@ -128792,7 +128791,7 @@
    "en": "To paraphrase the opposition: the medicine is worse than the disease.",
    "en_norm": "to paraphrase the opposition the medicine is worse than the disease",
    "my_norm": "ဆန့်ကျင်ဘက်ကို ပြန်ဆိုရရင် ဆေးက ရောဂါထက် ပိုဆိုးတယ်။",
-   "th_norm": "ถอดความฝ่ายตรงข้าม ยาแย่กว่าโรค",
+   "th_norm": "ถอดความของฝ่ายตรงข้าม ยาแย่กว่าโรค",
    "fingerprint": "b5a5d7abd7921e89",
    "vocab_sig": [
     "disease",
@@ -128816,7 +128815,7 @@
    "en": "The fine print, read carefully, reverses the headline promise.",
    "en_norm": "the fine print read carefully reverses the headline promise",
    "my_norm": "အသေးစိတ်စာသားကို ဂရုတစိုက်ဖတ်ရင် ခေါင်းစီးကတိကို ပြောင်းပြန်လှန်တယ်။",
-   "th_norm": "ตัวพิมพ์เล็กอ่านดีๆ กลับคำสัญญาพาดหัว",
+   "th_norm": "เงื่อนไขยิบย่อยอ่านดีๆ กลับคำสัญญาพาดหัว",
    "fingerprint": "44305782ced04bf9",
    "vocab_sig": [
     "carefully",
@@ -129099,7 +129098,7 @@
    "en": "We reserve the right to respond, while preferring restraint.",
    "en_norm": "we reserve the right to respond while preferring restraint",
    "my_norm": "တုံ့ပြန်ပိုင်ခွင့်ကို သိမ်းထားပါတယ်၊ သို့သော် ချုပ်တည်းမှုကိုသာ ဦးစားပေးပါတယ်။",
-   "th_norm": "เราสงวนสิทธิ์ที่จะตอบโต้ แต่ยังคงให้ความสำคัญกับความยับยั้งชั่งใจ",
+   "th_norm": "เราสงวนสิทธิ์ที่จะตอบโต้ แต่ยังคงใช้ความยับยั้งชั่งใจเป็นหลัก",
    "fingerprint": "52e65a6c183521c0",
    "vocab_sig": [
     "preferring",
@@ -130161,7 +130160,7 @@
    "en": "Scale changes the unit economics entirely in our favor.",
    "en_norm": "scale changes the unit economics entirely in our favor",
    "my_norm": "အတိုင်းအတာက ယူနစ်စီးပွားရေးကို ကျွန်တော်တို့ဘက်ကို လုံးဝပြောင်းလဲစေတယ်။",
-   "th_norm": "ขนาดเปลี่ยนเศรษฐศาสตร์ต่อหน่วยให้เข้าทางเราทั้งหมด",
+   "th_norm": "ขนาดเปลี่ยนโครงสร้างต้นทุนต่อหน่วยให้เข้าทางเราอย่างสิ้นเชิง",
    "fingerprint": "9a3b1816feea024c",
    "vocab_sig": [
     "changes",
@@ -131076,7 +131075,7 @@
    "en": "The null result is the finding — absence of evidence matters here.",
    "en_norm": "the null result is the finding absence of evidence matters here",
    "my_norm": "ဗလာရလဒ်ကိုယ်တိုင်က တွေ့ရှိချက်ပဲ၊ သက်သေမရှိမှုက ဒီနေရာမှာ အရေးပါတယ်။",
-   "th_norm": "ผลลัพธ์แบบ null นั่นเองคือข้อค้นพบ การขาดหลักฐานมีความสำคัญในที่นี้",
+   "th_norm": "ผลลัพธ์ที่ไม่มีนัยสำคัญนั่นเองคือข้อค้นพบ การขาดหลักฐานมีความสำคัญในที่นี้",
    "fingerprint": "68664b740643856f",
    "vocab_sig": [
     "absence",
@@ -137350,7 +137349,7 @@
    "en": "\"Let sleeping dogs lie\" means do not stir up old troubles.",
    "en_norm": "let sleeping dogs lie means do not stir up old troubles",
    "my_norm": "Let sleeping dogs lie ဆိုတာ အိပ်နေတဲ့ခွေးကို မနှိုးသလို ငြိမ်နေတဲ့ပြဿနာဟောင်းတွေကို မဆွရဘူးလို့ ဆိုလိုတာပါ။",
-   "th_norm": "Let sleeping dogs lie หมายความว่า อย่าไปรื้อฟื้นปัญหาเก่าที่จบไปแล้ว",
+   "th_norm": "Let sleeping dogs lie หมายความว่า อย่าไปรื้อฟื้นปัญหาเก่าที่ยังสงบอยู่",
    "fingerprint": "9c2e66b9b2fe1b6f",
    "vocab_sig": [
     "dogs",
@@ -137453,7 +137452,7 @@
    "en": "\"Too much of a good thing\" warns that excess spoils even pleasures.",
    "en_norm": "too much of a good thing warns that excess spoils even pleasures",
    "my_norm": "Too much of a good thing ဆိုတာ ကောင်းတဲ့အရာတောင် အလွန်အကျွံဖြစ်ရင် ပျက်စီးတတ်တယ်လို့ သတိပေးတာပါ။",
-   "th_norm": "Too much of a good thing เตือนว่าแม้สิ่งดีมากเกินก็เสีย",
+   "th_norm": "Too much of a good thing เตือนว่าแม้สิ่งดี ๆ มากเกินไปก็เสียหายได้",
    "fingerprint": "1d000b843c265d69",
    "vocab_sig": [
     "even",
@@ -138017,7 +138016,7 @@
    "en": "\"The tongue has no bones, but it breaks bones\" warns that words can wound deeply.",
    "en_norm": "the tongue has no bones but it breaks bones warns that words can wound deeply",
    "my_norm": "The tongue has no bones but it breaks bones ဆိုတာ လျှာမှာ အရိုးမရှိပေမယ့် အရိုးကျိုးအောင် နာကျင်စေနိုင်တယ်လို့ သတိပေးတာပါ။",
-   "th_norm": "The tongue has no bones but it breaks bones เตือนว่าคำพูดทำร้ายได้ลึก",
+   "th_norm": "The tongue has no bones but it breaks bones เตือนว่าคำพูดบาดลึกได้",
    "fingerprint": "59b9819424f773af",
    "vocab_sig": [
     "bones",
@@ -138042,7 +138041,7 @@
    "en": "\"Sticks and stones may break my bones, but words will never hurt me\" claims insults need not wound.",
    "en_norm": "sticks and stones may break my bones but words will never hurt me claims insults need not wound",
    "my_norm": "Sticks and stones may break my bones but words will never hurt me ဆိုတာ တုတ်နဲ့ခဲက အရိုးကျိုးစေနိုင်ပေမယ့် စကားလုံးတွေက ကိုယ့်ကို နာကျင်စေစရာ မလိုဘူးလို့ ဆိုလိုတာပါ။",
-   "th_norm": "Sticks and stones may break my bones but words will never hurt me อ้างว่าคำดูถูกไม่จำเป็นต้องทำร้าย",
+   "th_norm": "Sticks and stones may break my bones but words will never hurt me อ้างว่าคำดูถูกไม่จำเป็นต้องทำร้ายเรา",
    "fingerprint": "5a418c305cc5d53e",
    "vocab_sig": [
     "bones",
@@ -138179,7 +138178,7 @@
    "en": "\"Do as I say, not as I do\" mocks those who preach what they ignore.",
    "en_norm": "do as i say not as i do mocks those who preach what they ignore",
    "my_norm": "Do as I say not as I do ဆိုတာ ကိုယ်တိုင်မလိုက်နာဘဲ သူများကိုသာ ဆုံးမတဲ့သူကို လှောင်ပြောင်တာပါ။",
-   "th_norm": "Do as I say not as I do เย้ยหยันผู้เทศนาสิ่งที่ตัวเองเพิกเฉย",
+   "th_norm": "Do as I say not as I do ล้อเลียนผู้ที่เทศนาสิ่งที่ตัวเองเพิกเฉย",
    "fingerprint": "6f04df388fe3007a",
    "vocab_sig": [
     "ignore",
@@ -138277,7 +138276,7 @@
    "en": "\"Barking dogs seldom bite\" means loud threats rarely turn into action.",
    "en_norm": "barking dogs seldom bite means loud threats rarely turn into action",
    "my_norm": "Barking dogs seldom bite ဆိုတာ အသံကျယ်ကျယ်ဟောင်တဲ့ခွေးက ကိုက်ခဲတာ ရှားပါးတယ်လို့ ဆိုလိုတာပါ။",
-   "th_norm": "Barking dogs seldom bite หมายความว่า คำขู่เสียงดังแทบไม่กลายเป็นจริง",
+   "th_norm": "Barking dogs seldom bite หมายความว่า คำขู่ดัง ๆ แทบไม่เคยทำตามที่ขู่",
    "fingerprint": "d76178a1a69e8646",
    "vocab_sig": [
     "action",
@@ -139416,7 +139415,7 @@
    "en": "\"The pot calling the kettle black\" mocks accusers guilty of the same fault.",
    "en_norm": "the pot calling the kettle black mocks accusers guilty of the same fault",
    "my_norm": "The pot calling the kettle black ဆိုတာ ကိုယ်တိုင်မည်းနေတဲ့ အိုးက ရေနွေးအိုးကို မည်းတယ်ပြောသလို အပြစ်တူရှိသူက သူများကို စွပ်စွဲတာကို လှောင်တာပါ။",
-   "th_norm": "The pot calling the kettle black เย้ยหยันผู้กล่าวหาที่มีความผิดอย่างเดียวกัน",
+   "th_norm": "The pot calling the kettle black ล้อเลียนผู้กล่าวหาที่มีความผิดอย่างเดียวกัน",
    "fingerprint": "ee770a1892624c29",
    "vocab_sig": [
     "accusers",

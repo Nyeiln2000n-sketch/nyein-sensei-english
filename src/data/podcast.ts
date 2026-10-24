@@ -38,6 +38,16 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 101,
+    slug: 'answering-the-phone-hello-who-is-speaking-this-is-nyein-speaking-2026-10-24',
+    titleMy: 'အပိုင်း ၁၀၁: ဖုန်းကိုင်ခြင်း — Answering the phone',
+    titleOrig: 'รับโทรศัพท์ — Answering the phone',
+    descMy: 'ဖုန်းဝင်လာတဲ့အခါ အင်္ဂလိပ်လို ယုံကြည်မှုရှိရှိ ကိုင်နည်း — "Hello? This is Nyein speaking." / "Who is speaking?" / "May I ask who is calling?" / "Can I help you?" / "Just a moment, please." ဆိုတဲ့ ဖုန်းစကားပြော ဝါကျခြောက်ခု လေ့လာခြင်း',
+    phrases: ['Hello? This is Nyein speaking.', 'Who is speaking?', 'May I ask who is calling?', 'Can I help you?', 'Just a moment, please.'],
+    durationSecs: 566,
+    cover: '/podcast-covers/ep-101.jpg',
+  },
+  {
     n: 100,
     slug: 'review-module-10-professional-workplace-english-100-episodes-2026-10-23',
     titleMy: 'အပိုင်း ၁၀၀: လုပ်ငန်းခွင်အင်္ဂလိပ်စာ ပြန်လည်လေ့လာခြင်း — Review: professional workplace English',
