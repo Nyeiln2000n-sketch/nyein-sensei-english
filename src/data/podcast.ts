@@ -38,6 +38,16 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 104,
+    slug: 'making-an-appointment-2026-10-24',
+    titleMy: 'အပိုင်း ၁၀၄: ချိန်းဆိုခြင်း — Making an appointment',
+    titleOrig: 'นัดหมาย — Making an appointment',
+    descMy: 'သွားဆရာဝန်နဲ့ ချိန်းဆိုနည်း — "I would like to make an appointment." / "I would like to see the dentist on Monday." / "At two o\'clock in the afternoon." / "What time is available?" / "Is that okay?" ဆိုတဲ့ ဝါကျငါးခုနဲ့ "Sorry, I am late." ဘိုနပ်စ်ဝါကျ၊ ဆရာဝန်နဲ့ ချိန်းထားပြီး ငါးမိနစ်နောက်ကျတာ ပြဿနာရှိလား ဆွေးနွေးမှုနဲ့ role-play လေ့ကျင့်ခန်း',
+    phrases: ['I would like to make an appointment.', 'I would like to see the dentist on Monday.', 'At two o\'clock in the afternoon.', 'What time is available?', 'Is that okay?'],
+    durationSecs: 588,
+    cover: '/podcast-covers/ep-104.jpg',
+  },
+  {
     n: 103,
     slug: 'leaving-messages-2026-10-24',
     titleMy: 'အပိုင်း ၁၀၃: မက်ဆေ့ချန်ခဲ့ခြင်း — Leaving a message',

@@ -369,7 +369,7 @@ export const cefrExams: CEFRExam[] = [
       {
         prompt: 'A: "What\'s your name?" — What should B say?',
         promptMy: 'A က "What\'s your name?" လို့ မေးရင် B က ဘာပြန်ပြောသင့်သလဲ။',
-        promptTh: 'A: "What is your name?" — B ควรตอบว่าอะไร',
+        promptTh: 'A: "What\'s your name?" — B ควรตอบว่าอะไร',
         options: ['My name is May.', 'I am ten.', 'I like rice.', 'I am from Yangon.'],
         answer: 0,
         explanationMy: 'နာမည်မေးရင် "My name is ..." လို့ ဖြေရပါတယ်။',
@@ -427,12 +427,12 @@ export const cefrExams: CEFRExam[] = [
         options: ['It is Monday.', 'It is sunny.', "It's three o'clock.", 'It is big.'],
         answer: 2,
         explanationMy: 'အချိန်မေးရင် "It\'s three o\'clock." လို အချိန်ကို ဖြေရပါတယ်။',
-        explanationTh: 'ถามเวลา ตอบด้วยเวลา "It is three o clock."',
+        explanationTh: 'ถามเวลา ตอบด้วยเวลา "It is three o\'clock."',
       },
       {
         prompt: 'A: "I\'m sorry I\'m late." — What should B say?',
         promptMy: 'A က "I\'m sorry I\'m late." လို့ ပြောရင် B က ဘာပြန်ပြောသင့်သလဲ။',
-        promptTh: 'A: "I am sorry I am late." — B ควรตอบว่าอะไร',
+        promptTh: 'A: "I\'m sorry I\'m late." — B ควรตอบว่าอะไร',
         options: ['Thank you.', 'Goodbye.', 'Excuse me.', "That's OK."],
         answer: 3,
         explanationMy: 'တောင်းပန်စကားကို "That\'s OK." လို့ ခွင့်လွှတ်ကြောင်း ပြန်ပြောရပါတယ်။',

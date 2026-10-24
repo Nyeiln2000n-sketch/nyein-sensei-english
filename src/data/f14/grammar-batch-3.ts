@@ -67,7 +67,7 @@ export const grammarRulesC1C2: GrammarRuleC1C2[] = [
     examples: [
       { english: 'Try as she might, she could not solve the puzzle.', myanmar: 'ဘယ်လောက်ပဲကြိုးစားစေကာမူ သူမပဟေဠိကို မဖြေနိုင်ခဲ့ဘူး။', myanmarTh: 'เธอพยายามแค่ไหนก็แก้ปริศนาไม่ได้', },
       { english: 'Be he friend or foe, he will be treated fairly.', myanmar: 'မိတ်ဆွေဖြစ်ဖြစ် ရန်သူဖြစ်ဖြစ် တရားမျှတစွာ ဆက်ဆံခံရမယ်။', myanmarTh: 'จะเป็นมิตรหรือศัตรู เขาจะได้รับการปฏิบัติอย่างเป็นธรรม', },
-      { english: 'Much as I admire him, I cannot agree with his decision.', myanmar: 'သူ့ကို ဘယ်လောက်ပဲလေးစားစေကာမူ သူ့ဆုံးဖြတ်ချက်ကို သဘောမတူနိုင်ဘူး။', myanmarTh: 'ผมนับถือเขาแค่ไหนก็เห็นด้วยกับการตัดสินใจของเขาไม่ได้', },
+      { english: 'Much as I admire him, I cannot agree with his decision.', myanmar: 'သူ့ကို ဘယ်လောက်ပဲလေးစားစေကာမူ သူ့ဆုံးဖြတ်ချက်ကို သဘောမတူနိုင်ဘူး။', myanmarTh: 'ผมชื่นชมเขาแค่ไหนก็เห็นด้วยกับการตัดสินใจของเขาไม่ได้', },
       { english: 'Search as I might, I could not find my keys.', myanmar: 'ဘယ်လောက်ပဲရှာစေကာမူ သော့တွေ ရှာမတွေ့ခဲ့ဘူး။', myanmarTh: 'ค้นแค่ไหนก็หากุญแจไม่เจอ', },
     ],
     drills: [
@@ -131,7 +131,7 @@ export const grammarRulesC1C2: GrammarRuleC1C2[] = [
       { english: 'But for your advice, I would have made a terrible mistake.', myanmar: 'မင်းအကြံပေးချက် မရှိခဲ့ရင် ဆိုးရွားတဲ့အမှား လုပ်မိမှာပါ။', myanmarTh: 'ถ้าไม่มีคำแนะนำของคุณ ผมคงทำผิดพลาดร้ายแรง', },
       { english: 'If it weren\'t for the rain, we\'d be playing outside now.', myanmar: 'မိုးမရွာရင် အခု အပြင်မှာ ကစားနေမှာပါ။', myanmarTh: 'ถ้าไม่มีฝน พวกเราคงเล่นข้างนอกตอนนี้', },
       { english: 'If it hadn\'t been for her quick thinking, the child would have drowned.', myanmar: 'သူမရဲ့ လျင်မြန်တဲ့ စဉ်းစားနိုင်မှု မရှိခဲ့ရင် ကလေးရေနစ်သေမှာပါ။', myanmarTh: 'ถ้าเธอไม่คิดเร็ว เด็กคงจมน้ำ', },
-      { english: 'But for the delay, we would be home by now.', myanmar: 'နှောင့်နှေးမှု မရှိခဲ့ရင် အခု အိမ်ရောက်နေမှာပါ။', myanmarTh: 'ถ้าไม่ดีเลย์ พวกเราคงถึงบ้านแล้วตอนนี้', },
+      { english: 'But for the delay, we would be home by now.', myanmar: 'နှောင့်နှေးမှု မရှိခဲ့ရင် အခု အိမ်ရောက်နေမှာပါ။', myanmarTh: 'ถ้าไม่มีความล่าช้า พวกเราคงถึงบ้านแล้วตอนนี้', },
     ],
     drills: [
       { prompt: 'But ___ his courage, the mission would have failed.', answer: 'for', options: ['for', 'from', 'of', 'with'] },
@@ -149,10 +149,10 @@ export const grammarRulesC1C2: GrammarRuleC1C2[] = [
       'Supposing (= what if — စိတ်ကူးယဉ်မေးတာ), In case (= ကြိုတင်ပြင်ဆင် — just in case), As/So long as (= ...သရွေ့ — စည်းကမ်းဆက်တိုက်), On condition that (= စည်းကမ်းနဲ့)။ If ရိုးရိုးနဲ့ အဓိပ္ပာယ်မတူဘူး — တစ်ခုချင်းရဲ့အရိပ်အမြွက်ကို သတိထား။',
     explanationMyanmarTh: 'Supposing (= what if — ถามเชิงสมมติ) In case (= เตรียมไว้ก่อน: just in case) As / So long as (= ตราบใดที่ — มีเงื่อนไขต่อเนื่อง) On condition that (= โดยมีเงื่อนไขว่า) แต่ละคำมีนัยต่างจาก if ธรรมดา ต้องระวัง',
     examples: [
-      { english: 'Supposing he refuses — what\'s our backup plan?', myanmar: 'သူငြင်းရင်ဆိုပါစို့ — ငါတို့အရန်အစီအစဉ်က ဘာလဲ။', myanmarTh: 'ถ้าเขาปฏิเสธ แผนสำรองของพวกเราคืออะไร', },
+      { english: 'Supposing he refuses — what\'s our backup plan?', myanmar: 'သူငြင်းရင်ဆိုပါစို့ — ငါတို့အရန်အစီအစဉ်က ဘာလဲ။', myanmarTh: 'สมมติว่าเขาปฏิเสธ แผนสำรองของพวกเราคืออะไร', },
       { english: 'Take an umbrella in case it rains.', myanmar: 'မိုးရွာရင်ရွာမယ်ဆိုပြီး ထီးယူသွား။', myanmarTh: 'เอาร่มไปเผื่อฝนตก', },
-      { english: 'You can borrow my car as long as you fill the tank.', myanmar: 'ဆီဖြည့်ပေးသရွေ့ ငါ့ကားငှားလို့ရတယ်။', myanmarTh: 'คุณยืมรถผมได้ถ้าเติมน้ำมันเต็มถัง', },
-      { english: 'I\'ll lend you the money on condition that you repay me by June.', myanmar: 'ဇွန်လထိ ပြန်ပေးမယ်ဆိုတဲ့စည်းကမ်းနဲ့ ပိုက်ဆံချေးမယ်။', myanmarTh: 'ผมจะให้คุณยืมเงินถ้าคุณคืนภายในมิถุนายน', },
+      { english: 'You can borrow my car as long as you fill the tank.', myanmar: 'ဆီဖြည့်ပေးသရွေ့ ငါ့ကားငှားလို့ရတယ်။', myanmarTh: 'คุณยืมรถผมได้ตราบใดที่คุณเติมน้ำมันเต็มถัง', },
+      { english: 'I\'ll lend you the money on condition that you repay me by June.', myanmar: 'ဇွန်လထိ ပြန်ပေးမယ်ဆိုတဲ့စည်းကမ်းနဲ့ ပိုက်ဆံချေးမယ်။', myanmarTh: 'ผมจะให้คุณยืมเงิน โดยมีเงื่อนไขว่าคุณต้องคืนภายในเดือนมิถุนายน', },
     ],
     drills: [
       { prompt: '___ that he\'s right, what do we do then?', answer: 'Supposing', options: ['Supposing', 'In case', 'As long as', 'Unless'] },
@@ -215,7 +215,7 @@ export const grammarRulesC1C2: GrammarRuleC1C2[] = [
       { english: 'The thief is thought to have hidden the jewels nearby.', myanmar: 'သူခိုးက ရတနာတွေကို အနီးမှာ ဝှက်ထားတယ်လို့ ထင်ကြတယ်။', myanmarTh: 'เขาว่ากันว่าขโมยซ่อนเพชรไว้ใกล้ๆ', },
       { english: 'She is known to have donated millions to charity.', myanmar: 'သူမက ပရဟိတကို သန်းချီလှူခဲ့တယ်လို့ သိကြတယ်။', myanmarTh: 'เขาว่ากันว่าเธอบริจาคเงินหลายล้านให้การกุศล', },
       { english: 'They are reported to be planning a merger.', myanmar: 'သူတို့ ပေါင်းစည်းမှုစီစဉ်နေတယ်လို့ သတင်းရတယ်။', myanmarTh: 'มีรายงานว่าพวกเขากำลังวางแผนควบรวมกิจการ', },
-      { english: 'He is said to have been the best student of his year.', myanmar: 'သူ့နှစ်ရဲ့ အကောင်းဆုံးကျောင်းသား ဖြစ်ခဲ့တယ်လို့ ဆိုကြတယ်။', myanmarTh: 'เขาว่ากันว่าเขาเป็นนักเรียนที่ดีที่สุดของรุ่น', },
+      { english: 'He is said to have been the best student of his year.', myanmar: 'သူ့နှစ်ရဲ့ အကောင်းဆုံးကျောင်းသား ဖြစ်ခဲ့တယ်လို့ ဆိုကြတယ်။', myanmarTh: 'เขาว่ากันว่าเขาเคยเป็นนักเรียนที่ดีที่สุดของรุ่น', },
     ],
     drills: [
       { prompt: 'He is believed ___ the money yesterday.', answer: 'to have stolen', options: ['to have stolen', 'to steal', 'stolen', 'having stolen'] },
@@ -236,7 +236,7 @@ export const grammarRulesC1C2: GrammarRuleC1C2[] = [
       { english: 'The old traditions were done away with.', myanmar: 'ရိုးရာဓလေ့ဟောင်းတွေကို ဖျက်သိမ်းခံရတယ်။', myanmarTh: 'ประเพณีเก่าถูกยกเลิก', },
       { english: 'She felt she was being talked about.', myanmar: 'သူမအကြောင်း ပြောနေကြတယ်လို့ ခံစားရတယ်။', myanmarTh: 'เธอรู้สึกว่ามีคนพูดถึงเธอ', },
       { english: 'The proposal was voted down by the committee.', myanmar: 'အဆိုပြုချက်ကို ကော်မတီက ပယ်ချခဲ့တယ်။', myanmarTh: 'ข้อเสนอถูกคณะกรรมการโหวตคว่ำ', },
-      { english: 'He was looked up to by all his students.', myanmar: 'သူ့ကျောင်းသားအားလုံးက သူ့ကို လေးစားကြတယ်။', myanmarTh: 'นักเรียนทุกคนยกย่องเขา', },
+      { english: 'He was looked up to by all his students.', myanmar: 'သူ့ကျောင်းသားအားလုံးက သူ့ကို လေးစားကြတယ်။', myanmarTh: 'เขาได้รับการยกย่องจากนักเรียนทุกคน', },
     ],
     drills: [
       { prompt: 'The problem was ___ into carefully.', answer: 'looked', options: ['looked', 'look', 'looking', 'looks'] },
@@ -337,7 +337,7 @@ export const grammarRulesC1C2: GrammarRuleC1C2[] = [
       'be + to-infinitive — တရားဝင်ညွှန်ကြားချက်/အစီအစဉ်။ You are to report at 8 a.m. (= သတင်းပို့ရမယ်)။ was/were to + V1 (= ဖြစ်ဖို့ရှိခဲ့တယ်): They were to meet at noon. was to have + V3 (= လုပ်ဖို့ရှိခဲ့ပေမဲ့ မလုပ်ခဲ့ဘူး): He was to have come, but he fell ill.',
     explanationMyanmarTh: 'be + to-infinitive ใช้ในการสั่งหรือวางแผนแบบเป็นทางการ: You are to report at 8 a.m. (= ต้องมารายงานตัว) was / were to + กริยารูปพื้นฐาน (= ควรจะได้ทำ / มีกำหนดไว้ว่าจะทำ): They were to meet at noon / was to have + กริยาช่อง 3 (= ควรจะได้ทำแต่ไม่ได้ทำ): He was to have come but he fell ill',
     examples: [
-      { english: 'The students are to wear uniforms on Mondays.', myanmar: 'ကျောင်းသားတွေ တနင်္လာနေ့တွေမှာ ယူနီဖောင်းဝတ်ရမယ်။', myanmarTh: 'นักเรียนต้องใส่เครื่องแบบวันจันทร์', },
+      { english: 'The students are to wear uniforms on Mondays.', myanmar: 'ကျောင်းသားတွေ တနင်္လာနေ့တွေမှာ ယူနီဖောင်းဝတ်ရမယ်။', myanmarTh: 'นักเรียนต้องใส่เครื่องแบบทุกวันจันทร์', },
       { english: 'The president was to address the nation tonight.', myanmar: 'သမ္မတ ဒီည နိုင်ငံတော်ကို မိန့်ခွန်းပြောဖို့ ရှိခဲ့တယ်။', myanmarTh: 'ประธานาธิบดีมีกำหนดแถลงต่อชาติคืนนี้', },
       { english: 'She was to have started the new job last week.', myanmar: 'ပြီးခဲ့တဲ့အပတ်က အလုပ်သစ်စဖို့ ရှိခဲ့ပေမဲ့ မစခဲ့ဘူး။', myanmarTh: 'เธอกำหนดไว้ว่าจะเริ่มงานใหม่สัปดาห์ที่แล้ว แต่ไม่ได้เริ่ม', },
       { english: 'No one is to leave the room during the exam.', myanmar: 'စာမေးပွဲအတွင်း ဘယ်သူမှ အခန်းကထွက်မသွားရဘူး။', myanmarTh: 'ห้ามใครออกจากห้องระหว่างสอบ', },
@@ -358,7 +358,7 @@ export const grammarRulesC1C2: GrammarRuleC1C2[] = [
       'Wh- clause ရဲ့နောက်ပိုင်းကို ဖြုတ်ပြီး wh- စကားလုံးတစ်ခုတည်း ချန်တာ။ I know he bought something, but I don\'t know what. စကားပြောမှာ သဘာဝကျတဲ့ တိုတိုပုံစံ၊ ရှေ့ဝါကျက အဓိပ္ပာယ်ကို နားလည်ပြီးသားမို့ ထပ်မပြောဘူး။',
     explanationMyanmarTh: 'Sluicing คือการละส่วนหลังของอนุประโยค wh- เหลือแค่คำ wh-: I know he bought something but I do not know what เป็นรูปย่อที่เป็นธรรมชาติในภาษาพูด เพราะเข้าใจความหมายจากประโยคก่อนหน้าอยู่แล้ว',
     examples: [
-      { english: 'She said she was upset, but she didn\'t say why.', myanmar: 'သူမစိတ်ဆိုးတယ်လို့ ပြောပေမဲ့ ဘာကြောင့်လဲ မပြောဘူး။', myanmarTh: 'เธอบอกว่าเธอเสียใจ แต่ไม่บอกว่าทำไม', },
+      { english: 'She said she was upset, but she didn\'t say why.', myanmar: 'သူမစိတ်ဆိုးတယ်လို့ ပြောပေမဲ့ ဘာကြောင့်လဲ မပြောဘူး။', myanmarTh: 'เธอบอกว่าเธออารมณ์เสีย แต่ไม่บอกว่าทำไม', },
       { english: 'He wants to go somewhere exotic, but he hasn\'t decided where.', myanmar: 'ထူးခြားတဲ့နေရာ သွားချင်ပေမဲ့ ဘယ်ကိုလဲ မဆုံးဖြတ်ရသေးဘူး။', myanmarTh: 'เขาอยากไปที่แปลกๆ แต่ยังไม่ตัดสินใจว่าที่ไหน', },
       { english: 'The meeting is tomorrow, but I don\'t remember when exactly.', myanmar: 'အစည်းအဝေးက မနက်ဖြန်ပေမဲ့ ဘယ်အချိန်လဲ အတိအကျ မမှတ်မိဘူး။', myanmarTh: 'การประชุมพรุ่งนี้ แต่ผมจำไม่ได้ว่าเมื่อไหร่แน่', },
       { english: 'Someone called, but I couldn\'t tell who.', myanmar: 'တစ်ယောက်ယောက် ဖုန်းဆက်ပေမဲ့ ဘယ်သူလဲ မသိနိုင်ခဲ့ဘူး။', myanmarTh: 'มีคนโทรหา แต่ผมบอกไม่ได้ว่าใคร', },
@@ -379,10 +379,10 @@ export const grammarRulesC1C2: GrammarRuleC1C2[] = [
       'ဆက်စပ်ဝါကျမှာ ထပ်နေတဲ့ကြိယာကို ဖြုတ်တာ။ I ordered rice and she (ordered) noodles. He likes tea and she (likes) coffee. အရေးအသားတိုတိုမှာ သုံးတယ်၊ စာပေဆန်တယ်။ ဖြုတ်ထားတဲ့ကြိယာကို စာဖတ်သူက ဖြည့်တွေးရတယ်။',
     explanationMyanmarTh: 'Gapping คือการละกริยาที่ซ้ำในประโยคที่เชื่อมกัน: I ordered rice and she (ordered) noodles / He likes tea and she (likes) coffee ใช้ในงานเขียนกระชับเชิงวรรณศิลป์ ผู้อ่านต้องเติมกริยาที่ละไว้เอง',
     examples: [
-      { english: 'My brother plays football and my sister tennis.', myanmar: 'ငါ့ညီ ဘောလုံးကစားတယ်၊ ငါ့ညီမက တင်းနစ် (ကစားတယ်)။', myanmarTh: 'พี่ชายผมเล่นฟุตบอล น้องสาวเล่นเทนนิส', },
-      { english: 'She speaks English and he French.', myanmar: 'သူမ အင်္ဂလိပ်စကားပြောတယ်၊ သူက ပြင်သစ် (စကား)။', myanmarTh: 'เธอพูดภาษาอังกฤษ เขาพูดภาษาฝรั่งเศส', },
-      { english: 'I wanted tea and my wife coffee.', myanmar: 'ငါ လက်ဖက်ရည်လိုချင်တယ်၊ ငါ့မိန်းမက ကော်ဖီ (လိုချင်တယ်)။', myanmarTh: 'ผมอยากดื่มชา ภรรยาผมอยากดื่มกาแฟ', },
-      { english: 'The first train leaves at six and the second at seven.', myanmar: 'ပထမရထား ခြောက်နာရီထွက်တယ်၊ ဒုတိယရထားက ခုနှစ်နာရီ (ထွက်တယ်)။', myanmarTh: 'รถไฟขบวนแรกออกหกโมง ขบวนที่สองออกเจ็ดโมง', },
+      { english: 'My brother plays football and my sister tennis.', myanmar: 'ငါ့ညီ ဘောလုံးကစားတယ်၊ ငါ့ညီမက တင်းနစ် (ကစားတယ်)။', myanmarTh: 'พี่ชายผมเล่นฟุตบอล น้องสาวเทนนิส', },
+      { english: 'She speaks English and he French.', myanmar: 'သူမ အင်္ဂလိပ်စကားပြောတယ်၊ သူက ပြင်သစ် (စကား)။', myanmarTh: 'เธอพูดภาษาอังกฤษ เขาภาษาฝรั่งเศส', },
+      { english: 'I wanted tea and my wife coffee.', myanmar: 'ငါ လက်ဖက်ရည်လိုချင်တယ်၊ ငါ့မိန်းမက ကော်ဖီ (လိုချင်တယ်)။', myanmarTh: 'ผมอยากดื่มชา ภรรยาผมกาแฟ', },
+      { english: 'The first train leaves at six and the second at seven.', myanmar: 'ပထမရထား ခြောက်နာရီထွက်တယ်၊ ဒုတိယရထားက ခုနှစ်နာရီ (ထွက်တယ်)။', myanmarTh: 'รถไฟขบวนแรกออกหกโมง ขบวนที่สองเจ็ดโมง', },
     ],
     drills: [
       { prompt: 'He likes dogs and she ___.', answer: 'cats', options: ['cats', 'cat', 'liking', 'to like'] },
@@ -465,7 +465,7 @@ export const grammarRulesC1C2: GrammarRuleC1C2[] = [
     examples: [
       { english: 'The funny story made us laugh.', myanmar: 'ရယ်စရာပုံပြင်က ငါတို့ကို ရယ်မောစေခဲ့တယ်။', myanmarTh: 'เรื่องตลกทำให้พวกเราหัวเราะ', },
       { english: 'My parents let me stay out late.', myanmar: 'ငါ့မိဘတွေက ညနောက်ကျထိ အပြင်နေခွင့်ပေးတယ်။', myanmarTh: 'พ่อแม่ให้ผมอยู่ข้างนอกจนดึกได้', },
-      { english: 'The boss made everyone work overtime.', myanmar: 'သူဌေးက လူတိုင်းကို အချိန်ပိုလုပ်ခိုင်းခဲ့တယ်။', myanmarTh: 'เจ้านายให้ทุกคนทำโอที', },
+      { english: 'The boss made everyone work overtime.', myanmar: 'သူဌေးက လူတိုင်းကို အချိန်ပိုလုပ်ခိုင်းခဲ့တယ်။', myanmarTh: 'เจ้านายสั่งให้ทุกคนทำโอที', },
       { english: 'Don\'t let him fool you.', myanmar: 'သူ မင်းကို လှည့်စားခွင့် မပေးနဲ့။', myanmarTh: 'อย่าปล่อยให้เขาหลอกคุณ', },
     ],
     drills: [
@@ -534,7 +534,7 @@ export const grammarRulesC1C2: GrammarRuleC1C2[] = [
     drills: [
       { prompt: 'It\'s not so much hot ___ humid.', answer: 'as', options: ['as', 'than', 'like', 'that'] },
       { prompt: 'She\'s as much a friend ___ a colleague.', answer: 'as', options: ['as', 'than', 'like', 'and'] },
-      { prompt: 'He failed not so much ___ lack of effort as bad luck.', answer: 'from', options: ['from', 'for', 'of', 'by'] },
+      { prompt: 'He failed not so much ___ lack of effort as bad luck.', answer: 'from', options: ['from', 'into', 'of', 'by'] },
     ],
   },
   {
@@ -566,7 +566,7 @@ export const grammarRulesC1C2: GrammarRuleC1C2[] = [
     titleMyanmarTh: 'Apposition: การขยายนามด้วยนาม',
     explanationMyanmar:
       'နာမ်တစ်ခုကို နာမ်စု/စကားစုနဲ့ ထပ်ရှင်းတာ။ My friend, the doctor, called. Comma နှစ်ခုကြားထားတယ်။ Non-restrictive (ဖြုတ်လို့ရ) နဲ့ restrictive (ဖြုတ်မရ — "My brother John" comma မပါ) ကွာတယ်။',
-    explanationMyanmarTh: 'Apposition คือการใช้นามหรือวลีนามขยายคำนามอีกตัว: My friend the doctor called คั่นด้วยจุลภาคสองตัว แบบ non-restrictive (ละได้) ต่างกับแบบ restrictive (ละไม่ได้ เช่น My brother John ไม่ใส่จุลภาค)',
+    explanationMyanmarTh: 'Apposition คือการใช้นามหรือวลีนามขยายคำนามอีกตัว: My friend, the doctor, called คั่นด้วยจุลภาคสองตัว แบบ non-restrictive (ละได้) ต่างกับแบบ restrictive (ละไม่ได้ เช่น My brother John ไม่ใส่จุลภาค)',
     examples: [
       { english: 'Mandalay, the last royal capital, attracts many tourists.', myanmar: 'မန္တလေး (နောက်ဆုံးမင်းနေပြည်တော်) က ခရီးသွားများစွာကို ဆွဲဆောင်တယ်။', myanmarTh: 'มัณฑะเลย์ เมืองหลวงสุดท้ายของราชวงศ์ ดึงดูดนักท่องเที่ยวมากมาย', },
       { english: 'Her husband, a quiet man, rarely speaks.', myanmar: 'သူ့ယောက်ျား (တိတ်ဆိတ်တဲ့လူ) က ရှားရှားပါးပါးပဲ စကားပြောတယ်။', myanmarTh: 'สามีของเธอ ชายเงียบๆ แทบไม่พูด', },
@@ -610,7 +610,7 @@ export const grammarRulesC1C2: GrammarRuleC1C2[] = [
       'တရားဝင်အရေးအသားမှာ preposition ကို relative pronoun ရှေ့ထားတယ် (pied-piping): the person to whom I spoke, the house in which I grew up. စကားပြောမှာတော့ နောက်ဆုံးထားတယ် (stranding): the person I spoke to. Whom + preposition ရှေ့ — who နဲ့မရဘူး။',
     explanationMyanmarTh: 'ในการเขียนอย่างเป็นทางการ ให้ย้ายบุพบทมาหน้าคำสรรพนาม relative (pied-piping): the person to whom I spoke / the house in which I grew up ส่วนภาษาพูดวางบุพบทไว้ท้าย (stranding): the person I spoke to หลังบุพบทต้องใช้ whom เท่านั้น ใช้ who ไม่ได้',
     examples: [
-      { english: 'The colleague with whom I share an office is very kind.', myanmar: 'ရုံးခန်းအတူသုံးတဲ့ လုပ်ဖော်ကိုင်ဖက်က အရမ်းသဘောကောင်းတယ်။', myanmarTh: 'เพื่อนร่วมงานที่ผมใช้ห้องทำงานด้วยใจดีมาก', },
+      { english: 'The colleague with whom I share an office is very kind.', myanmar: 'ရုံးခန်းအတူသုံးတဲ့ လုပ်ဖော်ကိုင်ဖက်က အရမ်းသဘောကောင်းတယ်။', myanmarTh: 'เพื่อนร่วมงานที่ผมใช้ห้องทำงานร่วมกันใจดีมาก', },
       { english: 'This is the topic about which we disagree.', myanmar: 'ဒါက ငါတို့သဘောမတူတဲ့ အကြောင်းအရာပါ။', myanmarTh: 'นี่คือหัวข้อที่พวกเราไม่เห็นด้วย', },
       { english: 'The hotel at which we stayed was luxurious.', myanmar: 'ငါတို့တည်းခဲ့တဲ့ ဟိုတယ်က ဇိမ်ခံတယ်။', myanmarTh: 'โรงแรมที่พวกเราพักหรูหรา', },
       { english: 'She is someone on whom you can always rely.', myanmar: 'သူမက မင်းအမြဲ အားကိုးနိုင်တဲ့သူပါ။', myanmarTh: 'เธอคือคนที่พึ่งพาได้เสมอ', },
@@ -653,7 +653,7 @@ export const grammarRulesC1C2: GrammarRuleC1C2[] = [
     explanationMyanmarTh: 'What on earth / in heaven\'s name + คำถาม (= ประหลาดใจ / โกรธ): What on earth are you doing? และ Wh- + ever (Whatever did he say? = เขาพูดอะไรเนี่ย — แสดงความประหลาดใจ) ระวัง whatever ยังแปลว่า ไม่ว่าจะอะไรก็ตาม ได้ด้วย ต้องดูน้ำเสียง',
     examples: [
       { english: 'What on earth were you thinking?', myanmar: 'မင်း ဘာတွေတွေးနေတာလဲ (အံ့ဩတာ)!', myanmarTh: 'คุณคิดอะไรอยู่เนี่ย', },
-      { english: 'Wherever did you find that hat?', myanmar: 'အဲဒီဦးထုပ်ကို ဘယ်မှာတွေ့ခဲ့တာလဲ!', myanmarTh: 'คุณไปเจอหมวกใบนั้นที่ไหนมา', },
+      { english: 'Wherever did you find that hat?', myanmar: 'အဲဒီဦးထုပ်ကို ဘယ်မှာတွေ့ခဲ့တာလဲ!', myanmarTh: 'คุณไปเจอหมวกใบนั้นที่ไหนมาเนี่ย', },
       { english: 'However did you manage to finish so quickly?', myanmar: 'ဘယ်လိုလုပ်ပြီး အဲလောက်မြန်မြန် ပြီးအောင်လုပ်နိုင်ခဲ့တာလဲ!', myanmarTh: 'คุณทำเสร็จเร็วขนาดนี้ได้อย่างไร', },
       { english: 'What in heaven\'s name is that noise?', myanmar: 'အဲဒီဆူညံသံက ဘာကြီးလဲ!', myanmarTh: 'เสียงนั่นมันอะไรกัน', },
     ],
@@ -674,7 +674,7 @@ export const grammarRulesC1C2: GrammarRuleC1C2[] = [
     explanationMyanmarTh: 'กลับด้าน pseudo-cleft: Peace is what she wants / Running marathons is what he lives for เอาส่วนที่ต้องการเน้นมาหน้าประโยค เป็นสำนวนเชิงวรรณศิลป์ ใช้มากในสุนทรพจน์',
     examples: [
       { english: 'A good night\'s sleep is what I need most.', myanmar: 'ကောင်းကောင်းအိပ်စက်ရတာက ငါအလိုအပ်ဆုံးပါ။', myanmarTh: 'การนอนหลับดีๆ คือสิ่งที่ผมต้องการที่สุด', },
-      { english: 'Honesty is what matters in the end.', myanmar: 'အဆုံးမှာ အရေးကြီးတာက ရိုးသားမှုပါ။', myanmarTh: 'ความซื่อสัตย์คือสิ่งสำคัญในที่สุด', },
+      { english: 'Honesty is what matters in the end.', myanmar: 'အဆုံးမှာ အရေးကြီးတာက ရိုးသားမှုပါ။', myanmarTh: 'ความซื่อสัตย์คือสิ่งที่สำคัญในท้ายที่สุด', },
       { english: 'Spending time with family is what she enjoys.', myanmar: 'မိသားစုနဲ့အတူ အချိန်ကုန်ဆုံးရတာက သူမနှစ်သက်တာပါ။', myanmarTh: 'การใช้เวลากับครอบครัวคือสิ่งที่เธอชอบ', },
       { english: 'Winning the scholarship is what changed his life.', myanmar: 'ပညာသင်ဆုရတာက သူ့ဘဝကို ပြောင်းလဲစေခဲ့တာပါ။', myanmarTh: 'การชนะทุนการศึกษาคือสิ่งที่เปลี่ยนชีวิตเขา', },
     ],
@@ -697,7 +697,7 @@ export const grammarRulesC1C2: GrammarRuleC1C2[] = [
       { english: 'It wasn\'t until 2020 that she published her first novel.', myanmar: '၂၀၂၀ ရောက်မှပဲ သူမပထမဆုံး ဝတ္ထုထုတ်ဝေခဲ့တယ်။', myanmarTh: 'เธอเพิ่งตีพิมพ์นิยายเล่มแรกในปี 2020', },
       { english: 'It was only when the lights went out that we realised the storm\'s power.', myanmar: 'မီးတွေပိတ်သွားမှပဲ မုန်တိုင်းရဲ့အစွမ်းကို သဘောပေါက်ခဲ့တယ်။', myanmarTh: 'พอไฟดับพวกเราถึงรู้ว่าพายุรุนแรงแค่ไหน', },
       { english: 'It wasn\'t until he spoke that I recognised his voice.', myanmar: 'သူစကားပြောမှပဲ သူ့အသံကို မှတ်မိခဲ့တယ်။', myanmarTh: 'พอเขาพูดผมถึงจำเสียงเขาได้', },
-      { english: 'It was not until the meeting ended that the decision was announced.', myanmar: 'အစည်းအဝေးပြီးမှပဲ ဆုံးဖြတ်ချက်ကို ကြေညာခဲ့တယ်။', myanmarTh: 'การตัดสินใจเพิ่งประกาศหลังการประชุมจบ', },
+      { english: 'It was not until the meeting ended that the decision was announced.', myanmar: 'အစည်းအဝေးပြီးမှပဲ ဆုံးဖြတ်ချက်ကို ကြေညာခဲ့တယ်။', myanmarTh: 'กว่าการประชุมจะจบลง การตัดสินใจจึงได้รับการประกาศ', },
     ],
     drills: [
       { prompt: 'It ___ not until dawn that they found the lost child.', answer: 'was', options: ['was', 'is', 'had', 'did'] },
@@ -739,7 +739,7 @@ export const grammarRulesC1C2: GrammarRuleC1C2[] = [
       { english: 'There remains much to be done before the deadline.', myanmar: 'သတ်မှတ်ရက် မတိုင်ခင် လုပ်စရာများစွာ ကျန်သေးတယ်။', myanmarTh: 'ยังเหลืออีกมากที่ต้องทำก่อนกำหนด', },
       { english: 'There comes a point in every career when change is needed.', myanmar: 'အသက်မွေးဝမ်းကျောင်း တိုင်းမှာ ပြောင်းလဲမှုလိုအပ်တဲ့ အချိန်ဆိုတာရှိတယ်။', myanmarTh: 'ทุกอาชีพมีจุดที่ต้องเปลี่ยนแปลง', },
       { english: 'There exists no simple solution to this problem.', myanmar: 'ဒီပြဿနာအတွက် ရိုးရှင်းတဲ့အဖြေ ဆိုတာမရှိဘူး။', myanmarTh: 'ปัญหานี้ไม่มีทางแก้ง่ายๆ', },
-      { english: 'There stood an old temple at the top of the hill.', myanmar: 'တောင်ထိပ်မှာ ရှေးဟောင်းဘုရား တစ်ဆူရှိခဲ့တယ်။', myanmarTh: 'มีวัดเก่าอยู่บนยอดเขา', },
+      { english: 'There stood an old temple at the top of the hill.', myanmar: 'တောင်ထိပ်မှာ ရှေးဟောင်းဘုရား တစ်ဆူရှိခဲ့တယ်။', myanmarTh: 'เคยมีวัดเก่าตั้งอยู่บนยอดเขา', },
     ],
     drills: [
       { prompt: 'There ___ little hope left.', answer: 'remains', options: ['remains', 'remain', 'remaining', 'remained'] },
@@ -755,11 +755,11 @@ export const grammarRulesC1C2: GrammarRuleC1C2[] = [
     titleMyanmarTh: 'Control กับ raising: promise to go / seem to know',
     explanationMyanmar:
       'Promise, decide, refuse, agree = control verbs (subject က ကိုယ်တိုင်လုပ်မယ့်သူ): I promised to help (= ငါကူညီမယ်)။ Seem, appear, happen = raising verbs (subject က အောက်က predicate ရဲ့အကြောင်းအရာ): He seems to be ill (= သူနေမကောင်းပုံရတယ် — seem ရဲ့ subject အစစ်မဟုတ်)။',
-    explanationMyanmarTh: 'Promise decide refuse agree = control verbs (ประธานเป็นผู้ทำเอง): I promised to help (= ผมจะช่วยเอง) / Seem appear happen = raising verbs (ประธานไม่ใช่ผู้ทำจริง): He seems to be ill (= ดูเหมือนเขาจะป่วย — seem ไม่ได้มีประธานเป็นของตัวเอง)',
+    explanationMyanmarTh: 'Promise decide refuse agree = control verbs (ประธานเป็นผู้ทำเอง): I promised to help (= ผมจะช่วยเอง) / Seem appear happen = raising verbs (ประธานไม่ใช่ผู้ทำที่แท้จริง): He seems to be ill (= ดูเหมือนเขาจะป่วย — ประธานไม่ใช่ประธานที่แท้จริงของ seem)',
     examples: [
       { english: 'She refused to answer the question.', myanmar: 'သူမ မေးခွန်းကို ဖြေဖို့ ငြင်းခဲ့တယ်။', myanmarTh: 'เธอปฏิเสธตอบคำถาม', },
       { english: 'He seems to understand the problem.', myanmar: 'သူ ပြဿနာကို နားလည်ပုံရတယ်။', myanmarTh: 'ดูเหมือนเขาจะเข้าใจปัญหา', },
-      { english: 'I agreed to lend him my notes.', myanmar: 'ငါ့မှတ်စုတွေ ငှားဖို့ သဘောတူခဲ့တယ်။', myanmarTh: 'ผมตกลงให้เขายืมโน้ต', },
+      { english: 'I agreed to lend him my notes.', myanmar: 'ငါ့မှတ်စုတွေ ငှားဖို့ သဘောတူခဲ့တယ်။', myanmarTh: 'ผมตกลงให้เขายืมโน้ตของผม', },
       { english: 'She happens to know the manager.', myanmar: 'သူမ မန်နေဂျာကို တိုက်တိုက်ဆိုင်ဆိုင် သိတယ်။', myanmarTh: 'เธอบังเอิญรู้จักผู้จัดการ', },
     ],
     drills: [
@@ -823,7 +823,7 @@ export const grammarRulesC1C2: GrammarRuleC1C2[] = [
       { english: 'The project succeeded, notwithstanding the budget cuts.', myanmar: 'ဘတ်ဂျက်ဖြတ်တောက်မှုတွေ ရှိပေမဲ့ စီမံကိန်းအောင်မြင်ခဲ့တယ်။', myanmarTh: 'โครงการสำเร็จ แม้งบถูกตัด', },
       { english: 'Admittedly, the first attempt was a failure.', myanmar: 'ဝန်ခံရရင် ပထမကြိုးစားမှုက ကျရှုံးခဲ့တယ်။', myanmarTh: 'ยอมรับว่าครั้งแรกล้มเหลว', },
       { english: 'He was promoted; subsequently, his responsibilities doubled.', myanmar: 'သူ ရာထူးတိုးခဲ့တယ်၊ နောက်ပိုင်းမှာ သူ့တာဝန်တွေ နှစ်ဆဖြစ်သွားတယ်။', myanmarTh: 'เขาได้เลื่อนตำแหน่ง ต่อมาภาระงานเพิ่มเท่าตัว', },
-      { english: 'Urban areas grew quickly; conversely, rural towns declined.', myanmar: 'မြို့ပြတွေ လျင်မြန်စွာ ကြီးထွားခဲ့တယ်၊ ဆန့်ကျင်ဘက်အနေနဲ့ ကျေးလက်မြို့တွေ ကျဆင်းခဲ့တယ်။', myanmarTh: 'เมืองเติบโตเร็ว ในทางกลับกันเมืองชนบทถดถอย', },
+      { english: 'Urban areas grew quickly; conversely, rural towns declined.', myanmar: 'မြို့ပြတွေ လျင်မြန်စွာ ကြီးထွားခဲ့တယ်၊ ဆန့်ကျင်ဘက်အနေနဲ့ ကျေးလက်မြို့တွေ ကျဆင်းခဲ့တယ်။', myanmarTh: 'เขตเมืองเติบโตเร็ว ในทางกลับกันเมืองชนบทถดถอย', },
     ],
     drills: [
       { prompt: '___, the results were disappointing.', answer: 'Admittedly', options: ['Admittedly', 'Admitting', 'Admitted', 'Admit'] },
@@ -839,7 +839,7 @@ export const grammarRulesC1C2: GrammarRuleC1C2[] = [
     titleMyanmarTh: 'Hedging เชิงวิชาการขั้นสูง',
     explanationMyanmar:
       'It could be argued that..., There is a tendency to..., To the best of my knowledge, ..., It would appear that..., ...may suggest that... — တိကျမှုလျှော့ပြီး ယဉ်ကျေးစွာပြောတာ။ "This proves" ထက် "This suggests" က ပိုပညာရပ်ဆန်တယ်။ Essay နဲ့ report တွေမှာ မရှိမဖြစ်လိုတယ်။',
-    explanationMyanmarTh: 'Hedging เชิงวิชาการ: It could be argued that ... / There is a tendency to ... / To the best of my knowledge ... / It would appear that ... / ... may suggest that ... ลดความเด็ดขาดและพูดอย่างสุภาพ: This suggests ดูน่าวิชาการกว่า This proves และจำเป็นอย่างยิ่งในการเขียน essay และ report',
+    explanationMyanmarTh: 'Hedging เชิงวิชาการ: It could be argued that ... / There is a tendency to ... / To the best of my knowledge ... / It would appear that ... / ... may suggest that ... ลดความเด็ดขาดและพูดอย่างสุภาพ: This suggests ดูเป็นวิชาการมากกว่า This proves และจำเป็นอย่างยิ่งในการเขียน essay และ report',
     examples: [
       { english: 'It could be argued that technology isolates people.', myanmar: 'နည်းပညာက လူတွေကို အထီးကျန်စေတယ်လို့ ဆိုနိုင်တယ်။', myanmarTh: 'อาจโต้แย้งได้ว่าเทคโนโลยีทำให้คนโดดเดี่ยว', },
       { english: 'To the best of my knowledge, no one has solved this problem.', myanmar: 'ငါသိသလောက်တော့ ဒီပြဿနာကို ဘယ်သူမှ မဖြေရှင်းနိုင်သေးဘူး။', myanmarTh: 'เท่าที่ผมรู้ ยังไม่มีใครแก้ปัญหานี้ได้', },
@@ -864,7 +864,7 @@ export const grammarRulesC1C2: GrammarRuleC1C2[] = [
     examples: [
       { english: 'The implementation of the policy took two years.', myanmar: 'မူဝါဒ အကောင်အထည်ဖော်ဖို့ နှစ်နှစ်ကြာခဲ့တယ်။', myanmarTh: 'การนำนโยบายไปปฏิบัติใช้เวลาสองปี', },
       { english: 'His refusal to cooperate surprised everyone.', myanmar: 'ပူးပေါင်းဖို့ ငြင်းတာက လူတိုင်းကို အံ့ဩစေခဲ့တယ်။', myanmarTh: 'การที่เขาปฏิเสธที่จะร่วมมือทำให้ทุกคนประหลาดใจ', },
-      { english: 'The destruction of the forest alarmed scientists.', myanmar: 'သစ်တောဖျက်ဆီး ခံရတာက သိပ္ပံပညာရှင်တွေကို စိုးရိမ်စေခဲ့တယ်။', myanmarTh: 'การที่ป่าถูกทำลายทำให้นักวิทยาศาสตร์ตื่นตระหนก', },
+      { english: 'The destruction of the forest alarmed scientists.', myanmar: 'သစ်တောဖျက်ဆီး ခံရတာက သိပ္ပံပညာရှင်တွေကို စိုးရိမ်စေခဲ့တယ်။', myanmarTh: 'การที่ป่าถูกทำลายทำให้นักวิทยาศาสตร์วิตกกังวล', },
       { english: 'There was widespread criticism of the decision.', myanmar: 'ဆုံးဖြတ်ချက်ကို ဝေဖန်မှုကျယ်ကျယ် ပြန့်ပြန့်ရှိခဲ့တယ်။', myanmarTh: 'การตัดสินใจครั้งนี้ถูกวิพากษ์วิจารณ์อย่างกว้างขวาง', },
     ],
     drills: [
@@ -889,7 +889,7 @@ export const grammarRulesC1C2: GrammarRuleC1C2[] = [
       { english: 'It was her birthday. Surely they hadn\'t forgotten?', myanmar: 'သူမမွေးနေ့ပဲ။ သူတို့မေ့သွား တာတော့ မဖြစ်နိုင်ဘူး။', myanmarTh: 'วันเกิดเธอ พวกเขาคงไม่ลืมหรอกนะ', },
     ],
     drills: [
-      { prompt: 'She checked her wallet. It was ___. Where had the money gone?', answer: 'empty', options: ['empty', 'emptied', 'emptiness', 'emptily'] },
+      { prompt: 'She checked her wallet. It was ___. Where had the money gone?', answer: 'empty', options: ['empty', 'empties', 'emptiness', 'emptily'] },
       { prompt: 'He waited for hours. ___ she ever come?', answer: 'Would', options: ['Would', 'Will', 'Shall', 'May'] },
       { prompt: 'The lights were off. Had everyone ___ already?', answer: 'left', options: ['left', 'leave', 'leaving', 'leaves'] },
     ],
@@ -906,7 +906,7 @@ export const grammarRulesC1C2: GrammarRuleC1C2[] = [
     examples: [
       { english: 'She saved for years only to lose everything in a scam.', myanmar: 'နှစ်ချီစုဆောင်း ခဲ့ပေမဲ့ လိမ်လည်မှုတစ်ခုမှာ အကုန်ဆုံးရှုံးခဲ့ရတယ်။', myanmarTh: 'เธอเก็บเงินมาหลายปี แต่สุดท้ายเสียหมดเพราะถูกหลอก', },
       { english: 'He woke early only to discover the flight was cancelled.', myanmar: 'စောစောထခဲ့ပေမဲ့ လေယာဉ်ဖျက်သိမ်း ခံရတာကို တွေ့ခဲ့ရတယ်။', myanmarTh: 'เขาตื่นเช้า แต่สุดท้ายพบว่าเที่ยวบินถูกยกเลิก', },
-      { english: 'They married young, only to divorce a year later.', myanmar: 'ငယ်ငယ်က လက်ထပ်ခဲ့ပေမဲ့ တစ်နှစ်အကြာမှာ ကွာရှင်းခဲ့တယ်။', myanmarTh: 'พวกเขาแต่งงานตั้งแต่อายุยังน้อย แต่หย่ากันในปีต่อมา', },
+      { english: 'They married young, only to divorce a year later.', myanmar: 'ငယ်ငယ်က လက်ထပ်ခဲ့ပေမဲ့ တစ်နှစ်အကြာမှာ ကွာရှင်းခဲ့တယ်။', myanmarTh: 'พวกเขาแต่งงานตั้งแต่อายุยังน้อย แต่หย่ากันในอีกหนึ่งปีต่อมา', },
       { english: 'The team trained hard, only to be defeated in the final.', myanmar: 'အသင်းက ကြိုးစားလေ့ကျင့် ခဲ့ပေမဲ့ ဗိုလ်လုပွဲမှာ ရှုံးခဲ့တယ်။', myanmarTh: 'ทีมซ้อมหนัก แต่สุดท้ายแพ้ในรอบชิง', },
     ],
     drills: [
@@ -948,7 +948,7 @@ export const grammarRulesC1C2: GrammarRuleC1C2[] = [
     examples: [
       { english: 'She risked losing everything by investing in the startup.', myanmar: 'စတာ့တပ်မှာ ရင်းနှီးမြှုပ်နှံပြီး အကုန်ဆုံးရှုံးဖို့ စွန့်စားခဲ့တယ်။', myanmarTh: 'เธอเสี่ยงที่จะเสียทุกอย่างไปกับการลงทุนในสตาร์ทอัพ', },
       { english: 'They postponed signing the contract until Monday.', myanmar: 'စာချုပ်လက်မှတ်ထိုးတာကို တနင်္လာနေ့ထိ ရွှေ့ဆိုင်းခဲ့တယ်။', myanmarTh: 'พวกเขาเลื่อนการเซ็นสัญญาออกไปเป็นวันจันทร์', },
-      { english: 'He narrowly avoided being hit by the car.', myanmar: 'ကားတိုက်ခံရဖို့ နည်းနည်းလေး လွဲခဲ့တယ်။', myanmarTh: 'เขาเกือบโดนรถชน', },
+      { english: 'He narrowly avoided being hit by the car.', myanmar: 'ကားတိုက်ခံရဖို့ နည်းနည်းလေး လွဲခဲ့တယ်။', myanmarTh: 'เขาเกือบโดนรถชนแต่หลบได้ทัน', },
       { english: 'Would you mind opening the window?', myanmar: 'ပြတင်းပေါက် ဖွင့်ပေးဖို့ စိတ်မဆိုးဘူးလား။', myanmarTh: 'คุณจะว่าอะไรไหมถ้าจะเปิดหน้าต่าง', },
     ],
     drills: [
