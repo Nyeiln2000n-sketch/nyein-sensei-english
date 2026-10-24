@@ -237,7 +237,7 @@ export const grammarRules: GrammarRule[] = [
     examples: [
       { english: 'Two cats are sleeping.', myanmar: 'ကြောင်နှစ်ကောင် အိပ်နေကြတယ်။', myanmarTh: 'แมวสองตัวกำลังนอน', },
       { english: 'I have three boxes.', myanmar: 'ကျွန်တော့်မှာ သေတ္တာသုံးလုံးရှိတယ်။', myanmarTh: 'ผมมีกล่องสามใบ', },
-      { english: 'The babies are crying.', myanmar: 'ကလေးငယ်တွေ ငိုနေကြတယ်။', myanmarTh: 'ทารกกำลังร้องไห้', },
+      { english: 'The babies are crying.', myanmar: 'ကလေးငယ်တွေ ငိုနေကြတယ်။', myanmarTh: 'ทารกหลายคนกำลังร้องไห้', },
       { english: 'She bought five mangoes.', myanmar: 'သူမ သရက်သီးငါးလုံးဝယ်ခဲ့တယ်။', myanmarTh: 'เธอซื้อมะม่วงห้าลูก', },
     ],
     drills: [
@@ -380,7 +380,7 @@ export const grammarRules: GrammarRule[] = [
     titleMyanmarTh: 'การใช้ There is / There are',
     explanationMyanmar:
       'တစ်နေရာမှာ တစ်ခုခုရှိတယ်ပြောတဲ့အခါ there is (တစ်ခုတည်း) / there are (အများအပြား) သုံးတယ်။ အနုတ်က there isn\'t / there aren\'t။',
-    explanationMyanmarTh: 'เมื่อต้องการบอกว่ามีสิ่งใดอยู่ที่ใด ให้ใช้ there is (เอกพจน์) / there are (พหูพจน์) รูปปฏิเสธคือ there is not / there are not',
+    explanationMyanmarTh: 'เมื่อต้องการบอกว่ามีสิ่งใดอยู่ที่ใด ให้ใช้ there is (เอกพจน์) / there are (พหูพจน์) รูปปฏิเสธคือ there isn\'t / there aren\'t',
     examples: [
       { english: 'There is a book on the table.', myanmar: 'စားပွဲပေါ်မှာ စာအုပ်တစ်အုပ်ရှိတယ်။', myanmarTh: 'มีหนังสือบนโต๊ะ', },
       { english: 'There are many people here.', myanmar: 'ဒီမှာ လူအများကြီးရှိတယ်။', myanmarTh: 'มีคนมากมายที่นี่', },
@@ -406,7 +406,7 @@ export const grammarRules: GrammarRule[] = [
       { english: 'This is Aung\'s pen.', myanmar: 'ဒါက အောင်ရဲ့ဘောပင်ပါ။', myanmarTh: 'นี่คือปากกาของออง', },
       { english: 'The cat\'s tail is long.', myanmar: 'ကြောင်ရဲ့အမြီးက ရှည်တယ်။', myanmarTh: 'หางแมวยาว', },
       { english: 'My parents\' house is big.', myanmar: 'အဖေအမေတို့ရဲ့အိမ်က ကြီးတယ်။', myanmarTh: 'บ้านของพ่อแม่ผมใหญ่', },
-      { english: 'The students\' books are new.', myanmar: 'ကျောင်းသားတွေရဲ့စာအုပ်တွေက အသစ်တွေပါ။', myanmarTh: 'หนังสือเล่มใหม่ของนักเรียน', },
+      { english: 'The students\' books are new.', myanmar: 'ကျောင်းသားတွေရဲ့စာအုပ်တွေက အသစ်တွေပါ။', myanmarTh: 'หนังสือเล่มใหม่ๆ ของนักเรียน', },
     ],
     drills: [
       { prompt: 'This is ___ bag. (May)', answer: 'May\'s', options: ['May\'s', 'Mays', 'May', 'of May\'s'] },
@@ -485,7 +485,7 @@ export const grammarRules: GrammarRule[] = [
     titleMyanmarTh: 'วิธีใช้ some / any',
     explanationMyanmar:
       'some က အတည်ပြုဝါကျတွေမှာသုံး (I have some apples.)၊ any က အနုတ်နဲ့မေးခွန်းတွေမှာသုံး (I don\'t have any apples. / Do you have any apples?)။ ကမ်းလှမ်း/တောင်းဆိုတဲ့မေးခွန်းတွေမှာတော့ some သုံးတယ် (Do you want some tea?)။',
-    explanationMyanmarTh: 'some ใช้ในประโยคบอกเล่า (I have some apples) any ใช้ในประโยคปฏิเสธและคำถาม (I do not have any apples / Do you have any apples?)',
+    explanationMyanmarTh: 'some ใช้ในประโยคบอกเล่า (I have some apples) any ใช้ในประโยคปฏิเสธและคำถาม (I do not have any apples / Do you have any apples?) ยกเว้นคำถามที่เสนอหรือขอร้องให้ใช้ some (Do you want some tea?)',
     examples: [
       { english: 'I have some friends in Japan.', myanmar: 'ကျွန်တော့်မှာ ဂျပန်မှာ သူငယ်ချင်းတွေရှိတယ်။', myanmarTh: 'ผมมีเพื่อนบางคนในญี่ปุ่น', },
       { english: 'She doesn\'t have any money.', myanmar: 'သူမမှာ ပိုက်ဆံမရှိဘူး။', myanmarTh: 'เธอไม่มีเงิน', },
@@ -526,7 +526,7 @@ export const grammarRules: GrammarRule[] = [
     titleMyanmar: 'like / love / hate နောက် -ing',
     titleMyanmarTh: 'like / love / hate ตามด้วยกริยาเติม -ing',
     explanationMyanmar: 'like, love, hate, enjoy နောက်မှာ ကြိယာ-ing ပုံစံသုံးလေ့ရှိတယ်။ ဥပမာ I like swimming (ရေကူးရတာကြိုက်တယ်)။ (မှတ်ချက် — like, love, hate နောက်မှာ to + ကြိယာလည်းသုံးလို့ရတယ်၊ ဥပမာ I like to swim; ဒီသင်ခန်းစာမှာတော့ -ing ပုံစံကိုပဲလေ့ကျင့်မယ်။)',
-    explanationMyanmarTh: 'หลัง like love hate enjoy ต้องตามด้วยกริยาเติม -ing เช่น I like swimming (ผมชอบว่ายน้ำ)',
+    explanationMyanmarTh: 'หลัง like love hate enjoy มักตามด้วยกริยาเติม -ing เช่น I like swimming (ผมชอบว่ายน้ำ)',
     examples: [
       { english: 'I like reading novels.', myanmar: 'ကျွန်တော် ဝတ္ထုဖတ်ရတာကြိုက်တယ်။', myanmarTh: 'ผมชอบอ่านนิยาย', },
       { english: 'She loves dancing.', myanmar: 'သူမ အကရတာကြိုက်တယ်။', myanmarTh: 'เธอชอบเต้นรำ', },
@@ -802,7 +802,7 @@ export const grammarRules: GrammarRule[] = [
     explanationMyanmarTh: 'How much ใช้ถามคำนามนับไม่ได้หรือราคา (How much is it?) How many ใช้ถามคำนามนับได้ (How many apples?)',
     examples: [
       { english: 'How much is this shirt?', myanmar: 'ဒီအင်္ကျီ ဘယ်လောက်လဲ။', myanmarTh: 'เสื้อตัวนี้เท่าไหร่', },
-      { english: 'How many brothers do you have?', myanmar: 'မင်းမှာ ညီအစ်ကို ဘယ်နှယောက်ရှိလဲ။', myanmarTh: 'คุณมีพี่น้องชายกี่คน', },
+      { english: 'How many brothers do you have?', myanmar: 'မင်းမှာ ညီအစ်ကို ဘယ်နှယောက်ရှိလဲ။', myanmarTh: 'คุณมีพี่ชายหรือน้องชายกี่คน', },
       { english: 'How much sugar do you want?', myanmar: 'မင်း သကြားဘယ်လောက်လိုချင်လဲ။', myanmarTh: 'คุณต้องการน้ำตาลเท่าไหร่', },
       { english: 'How many days are there in March?', myanmar: 'မတ်လမှာ ရက်ဘယ်နှရက်ရှိလဲ။', myanmarTh: 'เดือนมีนาคมมีกี่วัน', },
     ],
@@ -925,7 +925,7 @@ export const grammarRules: GrammarRule[] = [
     titleMyanmarTh: 'การเสนอแนะ',
     explanationMyanmar:
       'အကြံပြုတဲ့အခါ Let\'s + ကြိယာအခြေခံပုံစံ၊ Shall we + V1၊ Why don\'t we + V1 သုံးတယ်။',
-    explanationMyanmarTh: 'การเสนอแนะใช้ Let us + กริยารูปพื้นฐาน Shall we + กริยารูปพื้นฐาน หรือ Why do not we + กริยารูปพื้นฐาน',
+    explanationMyanmarTh: 'การเสนอแนะใช้ Let\'s + กริยารูปพื้นฐาน Shall we + กริยารูปพื้นฐาน หรือ Why don\'t we + กริยารูปพื้นฐาน',
     examples: [
       { english: 'Let\'s go to the beach.', myanmar: 'ကမ်းခြေသွားကြရအောင်။', myanmarTh: 'ไปชายหาดกันเถอะ', },
       { english: 'Shall we eat out tonight?', myanmar: 'ဒီည အပြင်မှာ စားကြရအောင်လား။', myanmarTh: 'คืนนี้ออกไปกินข้าวข้างนอกกันไหม', },
@@ -1039,7 +1039,7 @@ export const grammarRules: GrammarRule[] = [
     ],
     drills: [
       { prompt: 'I ___ him yesterday.', answer: 'saw', options: ['saw', 'have seen', 'see', 'seeing'] },
-      { prompt: 'I ___ this film before.', answer: 'have seen', options: ['have seen', 'saw', 'see', 'seeing'] },
+      { prompt: 'I ___ this film before.', answer: 'have seen', options: ['have seen', 'seen', 'see', 'seeing'] },
       { prompt: 'She ___ to Japan in 2019.', answer: 'went', options: ['went', 'has gone', 'go', 'going'] },
     ],
   },
@@ -1178,7 +1178,7 @@ export const grammarRules: GrammarRule[] = [
       'Zero conditional = အမြဲမှန်တဲ့အချက်၊ သဘာဝနိယာမ (If + Present Simple, Present Simple)။ First conditional = အနာဂတ်ဖြစ်နိုင်ခြေ (If + Present Simple, will + V1)။',
     explanationMyanmarTh: 'Zero conditional = ความจริงทั่วไปหรือกฎธรรมชาติ (If + Present Simple, Present Simple) First conditional = ความเป็นไปได้ในอนาคต (If + Present Simple, will + กริยารูปพื้นฐาน)',
     examples: [
-      { english: 'If you heat ice, it melts.', myanmar: 'ရေခဲကို အပူပေးရင် အရည်ပျော်တယ်။', myanmarTh: 'ถ้าคุณทำให้น้ำแข็งร้อน มันจะละลาย', },
+      { english: 'If you heat ice, it melts.', myanmar: 'ရေခဲကို အပူပေးရင် အရည်ပျော်တယ်။', myanmarTh: 'ถ้าคุณทำให้น้ำแข็งร้อน มันละลาย', },
       { english: 'If it rains, we will stay home.', myanmar: 'မိုးရွာရင် ငါတို့ အိမ်မှာနေမယ်။', myanmarTh: 'ถ้าฝนตก พวกเราจะอยู่บ้าน', },
       { english: 'If she studies hard, she will pass.', myanmar: 'သူမ ကြိုးစားစာကျက်ရင် အောင်မယ်။', myanmarTh: 'ถ้าเธอตั้งใจเรียน เธอจะสอบผ่าน', },
       { english: 'Plants die if they don\'t get water.', myanmar: 'အပင်တွေကို ရေမရရင် သေတယ်။', myanmarTh: 'พืชตายถ้าไม่ได้รับน้ำ', },

@@ -206352,10 +206352,10 @@
   {
    "id": "f14-s-082",
    "kind": "story",
-   "en": "On October 29, 1969, in a small room at UCLA, a student named Charley Kline sat at a refrigerator-sized computer and tried to send the first message over a new network called ARPANET. He was supposed to type the word \"login\" to a computer 500 kilometers away at Stanford. He typed \"l\" — it arrived. He typed \"o\" — it arrived. Then the system crashed. The first message on the internet was \"lo.\" Nobody celebrated. ARPANET was a military research project connecting just four computers, built so that communication could survive a nuclear attack. Its inventors had no idea they were building the nervous system of the modern world. Within a few years, researchers invented email — and then the network quietly outgrew its military origins. By the 1990s, the World Wide Web turned ARPANET's descendant into something anyone could use. Every video call, every message, every page you have ever opened descends from that crashed \"lo\" in 1969. The internet was not born with a fanfare — it was born with a typo and a system crash.",
-   "en_norm": "on october 29 1969 in a small room at ucla a student named charley kline sat at a refrigerator sized computer and tried to send the first message over a new network called arpanet he was supposed to type the word login to a computer 500 kilometers away at stanford he typed l it arrived he typed o it arrived then the system crashed the first message on the internet was lo nobody celebrated arpanet was a military research project connecting just four computers built so that communication could survive a nuclear attack its inventors had no idea they were building the nervous system of the modern world within a few years researchers invented email and then the network quietly outgrew its military origins by the 1990s the world wide web turned arpanet s descendant into something anyone could use every video call every message every page you have ever opened descends from that crashed lo in 1969 the internet was not born with a fanfare it was born with a typo and a system crash",
+   "en": "On October 29, 1969, in a small room at UCLA, a student named Charley Kline sat at a refrigerator-sized computer and tried to send the first message over a new network called ARPANET. He was supposed to type the word \"login\" to a computer 500 kilometers away at Stanford. He typed \"l\" — it arrived. He typed \"o\" — it arrived. Then the system crashed. The first message on the internet was \"lo.\" Nobody celebrated. ARPANET was a military research project connecting just four computers, built so that communication could survive a nuclear attack. Its inventors had no idea they were building the nervous system of the modern world. Within a few years, researchers invented email — and then the network quietly outgrew its military origins. By the 1990s, the World Wide Web turned ARPANET's descendant into something anyone could use. Every video call, every message, every page you have ever opened descends from that crashed \"lo\" in 1969. The internet was not born with a fanfare — it was born with a half-finished message and a system crash.",
+   "en_norm": "on october 29 1969 in a small room at ucla a student named charley kline sat at a refrigerator sized computer and tried to send the first message over a new network called arpanet he was supposed to type the word login to a computer 500 kilometers away at stanford he typed l it arrived he typed o it arrived then the system crashed the first message on the internet was lo nobody celebrated arpanet was a military research project connecting just four computers built so that communication could survive a nuclear attack its inventors had no idea they were building the nervous system of the modern world within a few years researchers invented email and then the network quietly outgrew its military origins by the 1990s the world wide web turned arpanet s descendant into something anyone could use every video call every message every page you have ever opened descends from that crashed lo in 1969 the internet was not born with a fanfare it was born with a half finished message and a system crash",
    "my_norm": "",
-   "fingerprint": "b081803eabd5b80f",
+   "fingerprint": "8ab4131857fb2e4e",
    "vocab_sig": [
     "1969",
     "1990s",
@@ -206386,8 +206386,10 @@
     "every",
     "fanfare",
     "few",
+    "finished",
     "first",
     "four",
+    "half",
     "idea",
     "internet",
     "invented",
@@ -206433,7 +206435,6 @@
     "turned",
     "type",
     "typed",
-    "typo",
     "ucla",
     "use",
     "video",
@@ -206444,7 +206445,7 @@
     "world",
     "years"
    ],
-   "template_sig": "on W W , W , in a W W at W , a W W W W W at a W - W W and W to W the W W over a W W W W . he was W to W the W \" W \" to a W W W W at W . he W \" W \" — it W . he W \" W \" — it W . W the W W . the W W on the W was \" W . \" W W . W was a W W W W just W W , W so that W could W a W W . its W had no W they were W the W W of the W W . W a W W , W W W — and W the W W W its W W . by the W , the W W W W W ' s W into W W could W . W W W , W W , W W you have W W W from that W \" W \" in W . the W was not W with a W — it was W with a W and a W W .",
+   "template_sig": "on W W , W , in a W W at W , a W W W W W at a W - W W and W to W the W W over a W W W W . he was W to W the W \" W \" to a W W W W at W . he W \" W \" — it W . he W \" W \" — it W . W the W W . the W W on the W was \" W . \" W W . W was a W W W W just W W , W so that W could W a W W . its W had no W they were W the W W of the W W . W a W W , W W W — and W the W W W its W W . by the W , the W W W W W ' s W into W W could W . W W W , W W , W W you have W W W from that W \" W \" in W . the W was not W with a W — it was W with a W - W W and a W W .",
    "tags": [
     "story"
    ],

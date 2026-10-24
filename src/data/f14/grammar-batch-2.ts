@@ -177,7 +177,7 @@ export const grammarRulesB2C1: GrammarRuleB2C1[] = [
     drills: [
       { prompt: 'All I need ___ some rest.', answer: 'is', options: ['is', 'are', 'am', 'be'] },
       { prompt: 'The reason he failed ___ that he never studied.', answer: 'is', options: ['is', 'was because', 'are', 'were'] },
-      { prompt: 'All she did was ___. (smile)', answer: 'smile', options: ['smile', 'smiled', 'smiles', 'to smile'] },
+      { prompt: 'All she did was ___. (smile)', answer: 'smile', options: ['smile', 'smiled', 'smiles', 'to smiling'] },
     ],
   },
   {
@@ -418,13 +418,13 @@ export const grammarRulesB2C1: GrammarRuleB2C1[] = [
     titleMyanmar: 'ထပ်နေတဲ့စကားလုံးတွေဖြုတ်နည်း',
     titleMyanmarTh: 'การละคำ (ellipsis)',
     explanationMyanmar:
-      'ထပ်နေတဲ့၊ နားလည်ပြီးသားစကားလုံးတွေကို ဖြုတ်ရေးတယ်။ She can play piano, and he can too. (too နောက်မှာ play piano ဖြုတ်ထားတယ်)။ စကားပြောနဲ့အရေးအသားကို သဘာဝကျ၊ တိုစေတယ်။',
+      'ထပ်နေတဲ့၊ နားလည်ပြီးသားစကားလုံးတွေကို ဖြုတ်ရေးတယ်။ She can play piano, and he can too. (can နောက်မှာ play piano ဖြုတ်ထားတယ်)။ စကားပြောနဲ့အရေးအသားကို သဘာဝကျ၊ တိုစေတယ်။',
     explanationMyanmarTh: 'ละคำที่ซ้ำหรือเข้าใจได้อยู่แล้ว: She can play piano and he can too (ละ play piano หลัง too) ทำให้ภาษาพูดและงานเขียนเป็นธรรมชาติและกระชับ',
     examples: [
       { english: 'I wanted to go, but I couldn\'t.', myanmar: 'ငါသွားချင်ခဲ့တယ်၊ ဒါပေမဲ့ မသွားနိုင်ခဲ့ဘူး။', myanmarTh: 'ผมอยากไป แต่ไปไม่ได้', },
       { english: 'She speaks three languages, and her brother does too.', myanmar: 'သူမ ဘာသာစကားသုံးမျိုးပြောတတ်တယ်၊ သူ့ညီလည်းပဲ။', myanmarTh: 'เธอพูดได้สามภาษา และน้องชายเธอก็พูดได้เหมือนกัน', },
       { english: 'Have you finished? — I have.', myanmar: 'ပြီးပြီလား။ — ပြီးပြီ။', myanmarTh: 'คุณเสร็จหรือยัง — เสร็จแล้ว', },
-      { english: 'Some people like tea, others prefer coffee.', myanmar: 'တချို့လူတွေက လက်ဖက်ရည်ကြိုက်တယ်၊ တချို့က ကော်ဖီကိုပိုကြိုက်တယ်။', myanmarTh: 'บางคนชอบชา บางคนชอบกาแฟ', },
+      { english: 'Some people like tea, others coffee.', myanmar: 'တချို့လူတွေက လက်ဖက်ရည်ကြိုက်တယ်၊ တချို့က ကော်ဖီပါ။', myanmarTh: 'บางคนชอบชา บางคนชอบกาแฟ', },
     ],
     drills: [
       { prompt: 'I have never been to Japan, but she ___.', answer: 'has', options: ['has', 'have', 'is', 'does'] },
@@ -466,7 +466,7 @@ export const grammarRulesB2C1: GrammarRuleB2C1[] = [
       { english: 'By December, she will have been teaching for twenty years.', myanmar: 'ဒီဇင်ဘာလဆိုရင် သူမ သင်ကြားတာ နှစ်နှစ်ဆယ်ကြာပြီးဖြစ်မယ်။', myanmarTh: 'ถึงเดือนธันวาคม เธอจะสอนมาครบยี่สิบปี', },
       { english: 'Next month, we will have been living here for a decade.', myanmar: 'နောက်လဆိုရင် ငါတို့ဒီမှာနေတာ ဆယ်စုနှစ်တစ်ခုကြာပြီးဖြစ်မယ်။', myanmarTh: 'เดือนหน้า พวกเราจะอยู่ที่นี่ครบสิบปี', },
       { english: 'By the time you arrive, I will have been waiting for two hours.', myanmar: 'မင်းရောက်တဲ့အချိန်ဆိုရင် ငါစောင့်နေတာ နှစ်နာရီကြာပြီးဖြစ်မယ်။', myanmarTh: 'ตอนคุณมาถึง ผมจะรอมาสองชั่วโมงแล้ว', },
-      { english: 'In June, they will have been married for 25 years.', myanmar: 'ဇွန်လဆိုရင် သူတို့လက်ထပ်တာ ၂၅ နှစ်ကြာပြီးဖြစ်မယ်။', myanmarTh: 'ในเดือนมิถุนายน พวกเขาจะแต่งงานครบ 25 ปี', },
+      { english: 'In June, they will have been living in Yangon for 25 years.', myanmar: 'ဇွန်လဆိုရင် သူတို့ရန်ကုန်မှာနေတာ ၂၅ နှစ်ကြာပြီးဖြစ်မယ်။', myanmarTh: 'ในเดือนมิถุนายน พวกเขาจะอยู่ย่างกุ้งครบ 25 ปี', },
     ],
     drills: [
       { prompt: 'By 2030, I ___ here for fifteen years. (work)', answer: 'will have been working', options: ['will have been working', 'would have been working', 'will be working', 'have been working'] },
@@ -674,7 +674,7 @@ export const grammarRulesB2C1: GrammarRuleB2C1[] = [
     explanationMyanmarTh: 'Subjunctive ทางการระดับ C1: Be it resolved that ... (มีมติว่า) If he were to resign ... (ถ้าเขาจะลาออก — อนาคตสมมติ), come what may, suffice it to say พบในกฎหมายและเอกสารทางการ',
     examples: [
       { english: 'Be it enacted that all citizens have equal rights.', myanmar: 'နိုင်ငံသားတိုင်း တန်းတူအခွင့်အရေးရှိစေဖို့ ပြဋ္ဌာန်းလိုက်တယ်။', myanmarTh: 'มีมติให้พลเมืองทุกคนมีสิทธิเท่าเทียมกัน', },
-      { english: 'If he were to win the election, policies would change.', myanmar: 'သူရွေးကောက်ပွဲအနိုင်ရခဲ့ရင် မူဝါဒတွေပြောင်းမှာပါ။', myanmarTh: 'ถ้าเขาจะชนะการเลือกตั้ง นโยบายจะเปลี่ยน', },
+      { english: 'If he were to win the election, policies would change.', myanmar: 'သူရွေးကောက်ပွဲအနိုင်ရခဲ့ရင် မူဝါဒတွေပြောင်းမှာပါ။', myanmarTh: 'ถ้าเขาชนะการเลือกตั้ง นโยบายจะเปลี่ยน', },
       { english: 'Come what may, we will finish this project.', myanmar: 'ဘာပဲဖြစ်ဖြစ် ငါတို့ဒီပရောဂျက်ကို ပြီးအောင်လုပ်မယ်။', myanmarTh: 'จะเกิดอะไรขึ้นก็ตาม พวกเราจะทำโครงการนี้ให้เสร็จ', },
       { english: 'Suffice it to say, the meeting was a disaster.', myanmar: 'ပြောရရင် အစည်းအဝေးက ဆိုးရွားခဲ့တာပါ။', myanmarTh: 'พูดสั้นๆ ว่า การประชุมเป็นหายนะ', },
     ],
@@ -918,7 +918,7 @@ export const grammarRulesB2C1: GrammarRuleB2C1[] = [
   {
     id: 'gr-emphasis-neither',
     level: 'C1',
-    title: 'Emphatic addition: neither / nor and not ... either',
+    title: 'Emphatic addition: neither / nor',
     titleMyanmar: 'Neither / Nor အလေးပေးထပ်ပေါင်းနည်း',
     titleMyanmarTh: 'การเน้นเพิ่มเติมด้วย neither / nor',
     explanationMyanmar:

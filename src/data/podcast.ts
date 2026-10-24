@@ -38,6 +38,16 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 103,
+    slug: 'leaving-messages-2026-10-24',
+    titleMy: 'အပိုင်း ၁၀၃: မက်ဆေ့ချန်ခဲ့ခြင်း — Leaving a message',
+    titleOrig: 'ฝากข้อความ — Leaving a message',
+    descMy: 'တစ်စုံတစ်ယောက် ဖုန်းမကိုင်တဲ့အခါ အင်္ဂလိပ်လို မက်ဆေ့ချန်ထားနည်း — "Can I leave a message?" / "Please call me back." / "My number is..." / "Can you tell him I called?" / "It is urgent." ဆိုတဲ့ ဝါကျငါးခုနဲ့ "Thanks for your message." ဘိုနပ်စ်ဝါကျ၊ အသံမက်ဆေ့ ယနေ့ခေတ်မှာ လူတွေသုံးနေသေးလား ဆွေးနွေးမှုနဲ့ role-play လေ့ကျင့်ခန်း',
+    phrases: ['Can I leave a message?', 'Please call me back.', 'My number is...', 'Can you tell him I called?', 'It is urgent.'],
+    durationSecs: 543,
+    cover: '/podcast-covers/ep-103.jpg',
+  },
+  {
     n: 102,
     slug: 'calling-someone-2026-10-24',
     titleMy: 'အပိုင်း ၁၀၂: ဖုန်းခေါ်ဆိုခြင်း — Calling someone',
