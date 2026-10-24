@@ -191576,10 +191576,10 @@
   {
    "id": "story-f14-a2-7",
    "kind": "story",
-   "en": "Grandfather has an old boat. It has stood near Inle Lake for many years. The boat is broken. \"I will repair it,\" says Ko Min. He works every day. He cleans the wood. He paints it blue. Now the boat looks new. They row on the lake. They catch fish. Grandfather is proud of Ko Min.",
-   "en_norm": "grandfather has an old boat it has stood near inle lake for many years the boat is broken i will repair it says ko min he works every day he cleans the wood he paints it blue now the boat looks new they row on the lake they catch fish grandfather is proud of ko min",
+   "en": "Grandfather has an old boat. It has been near Inle Lake for many years. The boat is broken. \"I will repair it,\" says Ko Min. He works every day. He cleans the wood. He paints it blue. Now the boat looks new. They row on the lake. They catch fish. Grandfather is proud of Ko Min.",
+   "en_norm": "grandfather has an old boat it has been near inle lake for many years the boat is broken i will repair it says ko min he works every day he cleans the wood he paints it blue now the boat looks new they row on the lake they catch fish grandfather is proud of ko min",
    "my_norm": "",
-   "fingerprint": "02316cd04bc4d73e",
+   "fingerprint": "27fbb8a331c464f2",
    "vocab_sig": [
     "blue",
     "boat",
@@ -191605,12 +191605,11 @@
     "repair",
     "row",
     "says",
-    "stood",
     "wood",
     "works",
     "years"
    ],
-   "template_sig": "W has an W W . it has W W W W for W W . the W is W . \" i will W it , \" W W W . he W W W . he W the W . he W it W . W the W W W . they W on the W . they W W . W is W of W W .",
+   "template_sig": "W has an W W . it has been W W W for W W . the W is W . \" i will W it , \" W W W . he W W W . he W the W . he W it W . W the W W W . they W on the W . they W W . W is W of W W .",
    "tags": [
     "story"
    ],
@@ -192045,10 +192044,10 @@
   {
    "id": "story-f14-b1-4",
    "kind": "story",
-   "en": "Every year, the heavy rain comes in July. The river rises, and the low fields disappear under water. This year was worse than before. The water entered the village, and families had to leave their houses quickly. U Ba owned the only big boat. While the rain was falling, he rowed from house to house. He carried children, old people, and even chickens to the high school on the hill. After three days, the rain stopped. Although many houses were damaged, nobody was hurt, because U Ba had rescued everyone. The villagers gave him a small medal. \"You are our hero,\" they said. U Ba just smiled and repaired his boat for the next rainy season.",
-   "en_norm": "every year the heavy rain comes in july the river rises and the low fields disappear under water this year was worse than before the water entered the village and families had to leave their houses quickly u ba owned the only big boat while the rain was falling he rowed from house to house he carried children old people and even chickens to the high school on the hill after three days the rain stopped although many houses were damaged nobody was hurt because u ba had rescued everyone the villagers gave him a small medal you are our hero they said u ba just smiled and repaired his boat for the next rainy season",
+   "en": "Every year, the heavy rain comes in July. The river rises, and the low fields disappear under water. This year was worse than before. The water entered the village, and families had to leave their houses quickly. U Ba owned the only big boat. While the rain fell, he rowed from house to house. He carried children, old people, and even chickens to the high school on the hill. After three days, the rain stopped. Although many houses were damaged, nobody was hurt, because U Ba had rescued everyone. The villagers gave him a small medal. \"You are our hero,\" they said. U Ba just smiled and repaired his boat for the next rainy season.",
+   "en_norm": "every year the heavy rain comes in july the river rises and the low fields disappear under water this year was worse than before the water entered the village and families had to leave their houses quickly u ba owned the only big boat while the rain fell he rowed from house to house he carried children old people and even chickens to the high school on the hill after three days the rain stopped although many houses were damaged nobody was hurt because u ba had rescued everyone the villagers gave him a small medal you are our hero they said u ba just smiled and repaired his boat for the next rainy season",
    "my_norm": "",
-   "fingerprint": "84ae2279542e43d8",
+   "fingerprint": "6ea80e38383d76a9",
    "vocab_sig": [
     "although",
     "ba",
@@ -192066,8 +192065,8 @@
     "even",
     "every",
     "everyone",
-    "falling",
     "families",
+    "fell",
     "fields",
     "gave",
     "heavy",
@@ -192112,7 +192111,7 @@
     "worse",
     "year"
    ],
-   "template_sig": "W W , the W W W in W . the W W , and the W W W W W . this W was W W before . the W W the W , and W had to W their W W . W W W the W W W . W the W was W , he W from W to W . he W W , W W , and W W to the W W on the W . after three W , the W W . W W W were W , W was W , W W W had W W . the W W him a W W . \" you are our W , \" they W . W W just W and W his W for the W W W .",
+   "template_sig": "W W , the W W W in W . the W W , and the W W W W W . this W was W W before . the W W the W , and W had to W their W W . W W W the W W W . W the W W , he W from W to W . he W W , W W , and W W to the W W on the W . after three W , the W W . W W W were W , W was W , W W W had W W . the W W him a W W . \" you are our W , \" they W . W W just W and W his W for the W W W .",
    "tags": [
     "story"
    ],

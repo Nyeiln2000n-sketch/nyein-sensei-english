@@ -41,9 +41,9 @@ export const hyperlocalPhrases2: Phrase[] = [
   { en: 'Can you call a taxi?', my: 'တက္ကစီ ခေါ်ပေးနိုင်မလား။', th: 'เรียกแท็กซี่ให้หน่อยได้ไหมคะ', topic: 'travel', cefr: 'A1' },
   { en: 'Thanks for everything.', my: 'အရာရာအတွက် ကျေးဇူးတင်ပါတယ်။', th: 'ขอบคุณสำหรับทุกอย่างนะคะ', topic: 'travel', cefr: 'A1' },
   // 8. Emergencias (emergencies, A2)
-  { en: 'Help me!', my: 'ကူညီပါ။', th: 'ช่วยฉันด้วย!', topic: 'emergencies', cefr: 'A1' },
-  { en: 'We need an ambulance!', my: 'လူနာတင်ယာဉ် လိုပါတယ်။', th: 'เรียกรถพยาบาลด้วยค่ะ!', topic: 'emergencies', cefr: 'A2' },
-  { en: 'Someone call the police!', my: 'ရဲကို ဖုန်းဆက်ပေးပါ။', th: 'ช่วยโทรเรียกตำรวจด้วยค่ะ!', topic: 'emergencies', cefr: 'A2' },
+  { en: 'Help me!', my: 'ကူညီပါ။', th: 'ช่วยฉันด้วย', topic: 'emergencies', cefr: 'A1' },
+  { en: 'We need an ambulance!', my: 'လူနာတင်ယာဉ် လိုပါတယ်။', th: 'เรียกรถพยาบาลด้วยค่ะ', topic: 'emergencies', cefr: 'A2' },
+  { en: 'Someone call the police!', my: 'ရဲကို ဖုန်းဆက်ပေးပါ။', th: 'ช่วยโทรเรียกตำรวจด้วยค่ะ', topic: 'emergencies', cefr: 'A2' },
   { en: "There's been an accident.", my: 'မတော်တဆမှု ဖြစ်ခဲ့တယ်။', th: 'เกิดอุบัติเหตุค่ะ', topic: 'emergencies', cefr: 'A2' },
   { en: "I've lost my passport.", my: 'ကျွန်မ ပတ်စ်ပို့ ပျောက်သွားပြီ။', th: 'ฉันทำพาสปอร์ตหายค่ะ', topic: 'emergencies', cefr: 'A2' },
   { en: 'I need help, please.', my: 'အကူအညီ လိုပါတယ်။', th: 'ขอความช่วยเหลือหน่อยค่ะ', topic: 'emergencies', cefr: 'A1' },

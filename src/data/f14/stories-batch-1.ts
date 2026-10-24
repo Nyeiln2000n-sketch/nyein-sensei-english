@@ -197,7 +197,7 @@ export const storiesBatch1: Story[] = [
   titleTh: 'เรือเก่า',
   paragraphs: [
     {
-      en: 'Grandfather has an old boat. It has stood near Inle Lake for many years.',
+      en: 'Grandfather has an old boat. It has been near Inle Lake for many years.',
       my: 'အဘိုးမှာ လှေဟောင်းတစ်စီး ရှိတယ်။ အဲဒါ အင်းလေးကန်နားမှာ နှစ်ပေါင်းများစွာ ရှိနေတယ်။',
       th: 'คุณปู่มีเรือเก่าลำหนึ่ง มันจอดอยู่ใกล้ทะเลสาบอินเลมานานหลายปี',
     },
@@ -268,7 +268,7 @@ export const storiesBatch1: Story[] = [
     },
     {
       en: 'Thiri practices every afternoon. She rides slowly, then faster and faster.',
-      my: 'သီရိက နေ့တိုင်း ညနေပိုင်းမှာ လေ့ကျင့်တယ်။ သူမ ဖြည်းဖြည်းစီးတယ်၊ ပြီးတော့ ပိုပိုပြီး မြန်လာတယ်။',
+      my: 'သီရိက နေ့တိုင်း ညနေပိုင်းမှာ လေ့ကျင့်တယ်။ သူမ ဖြည်းဖြည်းစီးတယ်၊ ပြီးတော့ တဖြည်းဖြည်း မြန်လာတယ်။',
       th: 'ทีรีฝึกทุกบ่าย เธอขี่ช้า ๆ แล้วเร็วขึ้นเรื่อย ๆ',
     },
     {
@@ -492,7 +492,7 @@ export const storiesBatch1: Story[] = [
       th: 'ปีนี้แย่กว่าปีก่อน น้ำเข้าหมู่บ้าน และครอบครัวต้องออกจากบ้านอย่างรวดเร็ว',
     },
     {
-      en: 'U Ba owned the only big boat. While the rain was falling, he rowed from house to house. He carried children, old people, and even chickens to the high school on the hill.',
+      en: 'U Ba owned the only big boat. While the rain fell, he rowed from house to house. He carried children, old people, and even chickens to the high school on the hill.',
       my: 'ရွာမှာ လှေကြီးဆိုလို့ ဦးဘမှာပဲ တစ်စီး ရှိတယ်။ မိုးရွာနေတုန်း သူက အိမ်တစ်အိမ်ကနေ တစ်အိမ်ကို လှော်ခတ်တယ်။ ကလေးတွေ၊ သက်ကြီးရွယ်အိုတွေနဲ့ ကြက်တွေကိုပါ တောင်ပေါ်က အထက်တန်းကျောင်းကို သယ်ပေးတယ်။',
       th: 'อูบามีเรือใหญ่เพียงลำเดียว ขณะฝนตก เขาพายจากบ้านหนึ่งไปอีกบ้านหนึ่ง เขาขนเด็ก ๆ คนชรา และแม้แต่ไก่ไปที่โรงเรียนมัธยมบนเนินเขา',
     },
@@ -793,7 +793,7 @@ export const storiesBatch1: Story[] = [
   id: 'story-f14-b2-1',
   level: 'B2',
   titleEn: 'The Last Train to Mandalay',
-  titleMy: 'မန္တလေးကို နောက်ဆုံး ရထား',
+  titleMy: 'မန္တလေးသွား နောက်ဆုံးရထား',
   titleTh: 'รถไฟขบวนสุดท้ายไปมัณฑะเลย์',
   paragraphs: [
     {

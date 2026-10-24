@@ -38,6 +38,16 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 102,
+    slug: 'calling-someone-2026-10-24',
+    titleMy: 'အပိုင်း ၁၀၂: ဖုန်းခေါ်ဆိုခြင်း — Calling someone',
+    titleOrig: 'โทรหาใครสักคน — Calling someone',
+    descMy: 'တစ်စုံတစ်ယောက်ကို အင်္ဂလိပ်လို ဖုန်းခေါ်နည်း — "Hello, this is Nyein calling." / "May I speak to May, please?" / "Hold on, please." / "She is not available right now." / "I will call back later." / "Could you ask her to call me back?" ဆိုတဲ့ ဝါကျခြောက်ခုနဲ့ "Sorry, wrong number." ဘိုနပ်စ်ဝါကျ၊ ဖုန်းခေါ်ခြင်း vs စာတိုပို့ခြင်း ဘယ်ဟာပိုယဉ်ကျေးလဲ ဆွေးနွေးမှုနဲ့ role-play လေ့ကျင့်ခန်း',
+    phrases: ['Hello, this is Nyein calling.', 'May I speak to May, please?', 'Hold on, please.', 'She is not available right now.', 'I will call back later.', 'Could you ask her to call me back?'],
+    durationSecs: 493,
+    cover: '/podcast-covers/ep-102.jpg',
+  },
+  {
     n: 101,
     slug: 'answering-the-phone-hello-who-is-speaking-this-is-nyein-speaking-2026-10-24',
     titleMy: 'အပိုင်း ၁၀၁: ဖုန်းကိုင်ခြင်း — Answering the phone',

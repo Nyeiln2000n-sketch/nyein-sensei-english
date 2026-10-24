@@ -1656,7 +1656,7 @@ export const storiesBatch4: Story[] = [
       {
         en: 'A modern version sharpens the question: suppose someone collected all the discarded original planks and rebuilt a second ship. Now there are two ships — one of old parts, one of new. Which is the true ship of Theseus?',
         my: 'ခေတ်သစ်ဗားရှင်းက မေးခွန်းကို ပိုစူးရှစေတယ် — စွန့်ပစ်ထားတဲ့မူလပျဉ်ပြားအားလုံးကို တစ်ယောက်ယောက် စုဆောင်းပြီး ဒုတိယသင်္ဘောတစ်စီး ပြန်တည်ဆောက်တယ်ဆိုပါစို့။ အခု သင်္ဘောနှစ်စီး ရှိပြီ — တစ်ခုက အစိတ်အပိုင်းဟောင်းတွေ၊ တစ်ခုက အသစ်တွေ။ ဘယ်ဟာက တကယ့်သီဆီးယပ်စ်သင်္ဘောလဲ။',
-        th: 'ปริศนาเดียวกันใช้กับมนุษย์ได้: ร่างกายของเราเปลี่ยนเซลล์ทั้งหมดทุกไม่กี่ปี เรายังเป็นคนเดิมหรือไม่',
+        th: 'ปริศนาเดียวกันใช้กับมนุษย์ได้: ร่างกายของเราเปลี่ยนเซลล์ส่วนใหญ่ทุกเจ็ดปี เรายังเป็นคนเดิมหรือไม่',
       },
       {
         en: 'Some philosophers answer that identity is continuity, not material: what matters is the unbroken story, not the planks. Others say identity is just a useful fiction we impose on a world of constant change.',
