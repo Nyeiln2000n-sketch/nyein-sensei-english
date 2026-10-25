@@ -38,6 +38,16 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 108,
+    slug: 'at-a-party-2026-10-25',
+    titleMy: 'အပိုင်း ၁၀၈: ပါတီပွဲသို့ သွားခြင်း — At a party',
+    titleOrig: 'งานปาร์ตี้ — At a party',
+    descMy: 'မွေးနေ့ပါတီပွဲမှာ အင်္ဂလိပ်လို ပြောဆိုနည်း — "Happy birthday!" / "Happy birthday to you!" / "What time does the party start?" / "I brought a gift for you." / "Would you like some cake?" / "Let us celebrate together." / "This party is wonderful." / "Thank you for the wonderful party." / "I am so happy to see you." ဆိုတဲ့ ဝါကျကိုးခုနဲ့ ပါတီပွဲသို့ လက်ဆောင်ယူသွားသင့်လား၊ အိမ်ရှင်ကို အရင်မေးသင့်လား ဆွေးနွေးမှုနဲ့ role-play လေ့ကျင့်ခန်း',
+    phrases: ['Happy birthday!', 'Happy birthday to you!', 'What time does the party start?', 'I brought a gift for you.', 'Would you like some cake?', 'Let us celebrate together.', 'This party is wonderful.', 'Thank you for the wonderful party.', 'I am so happy to see you.'],
+    durationSecs: 688,
+    cover: '/podcast-covers/ep-108.jpg',
+  },
+  {
     n: 107,
     slug: 'accepting-and-declining-invitations-2026-10-25',
     titleMy: 'အပိုင်း ၁၀၇: ဖိတ်ကြားမှုကို လက်ခံခြင်းနှင့် ငြင်းဆိုခြင်း — Accepting and declining invitations',

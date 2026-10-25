@@ -222250,7 +222250,7 @@
    "kind": "word",
    "en": "special",
    "en_norm": "special",
-   "my_norm": "အထူး",
+   "my_norm": "အထူးလျှော့ဈေး",
    "th_norm": "พิเศษ",
    "fingerprint": "7d4c5c8894e016e7",
    "vocab_sig": [
@@ -436149,7 +436149,7 @@
    "en": "stiff neck",
    "en_norm": "stiff neck",
    "my_norm": "လည်ပင်းတောင့်တင်းခြင်း",
-   "th_norm": "คอแข็ง",
+   "th_norm": "คอเคล็ด",
    "fingerprint": "90878ed71c7cfa3e",
    "vocab_sig": [
     "neck",
