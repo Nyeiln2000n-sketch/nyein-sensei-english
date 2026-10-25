@@ -1941,7 +1941,7 @@ export const cefrExams: CEFRExam[] = [
         prompt: 'Choose the correct word: "He behaves as if he ___ the boss."',
         promptMy: 'မှန်ကန်သောစကားလုံးကို ရွေးပါ — "He behaves as if he ___ the boss."',
         promptTh: 'เลือกคำที่ถูกต้อง: "He behaves as if he ___ the boss."',
-        options: ['is', 'was', 'were', 'has been'],
+        options: ['is', 'be', 'were', 'has been'],
         answer: 2,
         explanationMy: '"as if" နောက်က စိတ်ကူးယဉ် အခြေအနေအတွက် "were" ကို သုံးပါတယ်။',
         explanationTh: 'หลัง "as if" แสดงสมมติ ใช้ "were"',
@@ -1958,11 +1958,11 @@ export const cefrExams: CEFRExam[] = [
       {
         prompt: 'Choose the correct word: "I\'d rather you ___ smoke in here."',
         promptMy: 'မှန်ကန်သောစကားလုံးကို ရွေးပါ — "I\'d rather you ___ smoke in here."',
-        promptTh: 'เลือกคำที่ถูกต้อง: "I would rather you ___ smoking in here."',
+        promptTh: 'เลือกคำที่ถูกต้อง: \"I\'d rather you ___ smoke in here.\"',
         options: ["didn't", "don't", "won't", 'not'],
         answer: 0,
         explanationMy: '"would rather" နောက်မှာ အတိတ်ပုံစံ "didn\'t" ကို သုံးပါတယ်။',
-        explanationTh: 'หลัง "would rather" ใช้รูปอดีต "did not"',
+        explanationTh: 'หลัง \"would rather\" ใช้รูปอดีต \"didn\'t\"',
       },
       {
         prompt: 'Choose the correct word: "The information ___ been verified."',
@@ -2022,7 +2022,7 @@ export const cefrExams: CEFRExam[] = [
       {
         prompt: 'What does this sentence mean? "The author\'s argument is predicated on flawed assumptions."',
         promptMy: 'ဤဝါကျဘာကိုဆိုလိုသလဲ — "The author\'s argument is predicated on flawed assumptions."',
-        promptTh: 'ประโยคนี้หมายความว่าอะไร "The argument of the author is predicated on flawed assumptions."',
+        promptTh: 'ประโยคนี้หมายความว่าอะไร \"The author\'s argument is predicated on flawed assumptions.\"',
         options: [
           'စာရေးသူရဲ့ ငြင်းခုံမှုက ခိုင်လုံတယ်',
           'စာရေးသူက ယူဆချက်မရှိဘူး',
@@ -2036,7 +2036,7 @@ export const cefrExams: CEFRExam[] = [
       {
         prompt: 'What does this sentence mean? "The committee\'s decision sparked heated debate."',
         promptMy: 'ဤဝါကျဘာကိုဆိုလိုသလဲ — "The committee\'s decision sparked heated debate."',
-        promptTh: 'ประโยคนี้หมายความว่าอะไร "The decision of the committee sparked heated debate."',
+        promptTh: 'ประโยคนี้หมายความว่าอะไร \"The committee\'s decision sparked heated debate.\"',
         options: [
           'ကော်မတီရဲ့ ဆုံးဖြတ်ချက်ကို အားလုံး သဘောတူတယ်',
           'ကော်မတီ မဆုံးဖြတ်နိုင်ဘူး',
@@ -2134,7 +2134,7 @@ export const cefrExams: CEFRExam[] = [
       {
         prompt: 'What does this sentence mean? "The CEO\'s resignation sent shockwaves through the industry."',
         promptMy: 'ဤဝါကျဘာကိုဆိုလိုသလဲ — "The CEO\'s resignation sent shockwaves through the industry."',
-        promptTh: 'ประโยคนี้หมายความว่าอะไร "The resignation of the CEO sent shockwaves through the industry."',
+        promptTh: 'ประโยคนี้หมายความว่าอะไร \"The CEO\'s resignation sent shockwaves through the industry.\"',
         options: [
           'CEO ရာထူးတိုးတယ်',
           'CEO အလုပ်ဆက်လုပ်တယ်',
@@ -2181,12 +2181,12 @@ export const cefrExams: CEFRExam[] = [
         ],
         answer: 0,
         explanationMy: 'ဝေဖန်မှုကို "That\'s an interesting observation — ..." လို့ ယဉ်ကျေးစွာ လက်ခံတုံ့ပြန်ရပါတယ်။',
-        explanationTh: 'รับฟังอย่างสุภาพ "That is an interesting observation — let me review the figures again."',
+        explanationTh: 'รับฟังอย่างสุภาพ \"That\'s an interesting observation — let me review the figures again.\"',
       },
       {
         prompt: 'Negotiation: "We can\'t accept these terms." Counter politely. What should you say?',
         promptMy: 'ညှိနှိုင်းမှုမှာ စည်းကမ်းချက်တွေ လက်မခံနိုင်ရင် ယဉ်ကျေးစွာ ဘာပြန်ပြောသင့်သလဲ။',
-        promptTh: 'เจรจา: "We cannot accept these terms." โต้ตอบอย่างสุภาพ ควรพูดว่าอะไร',
+        promptTh: 'เจรจา: \"We can\'t accept these terms.\" โต้ตอบอย่างสุภาพ ควรพูดว่าอะไร',
         options: [
           '"You\'ll have to do better than that."',
           '"Could we explore a middle ground on the pricing?"',
@@ -2200,7 +2200,7 @@ export const cefrExams: CEFRExam[] = [
       {
         prompt: 'A: "I\'d like to raise a concern about the timeline." What is the best reply?',
         promptMy: 'A က "I\'d like to raise a concern about the timeline." လို့ ပြောရင် အကောင်းဆုံးအဖြေက ဘာလဲ။',
-        promptTh: 'A: "I would like to raise a concern about the timeline." คำตอบที่ดีที่สุดคืออะไร',
+        promptTh: 'A: \"I\'d like to raise a concern about the timeline.\" คำตอบที่ดีที่สุดคืออะไร',
         options: [
           '"I\'m sure it\'ll be fine."',
           '"We\'ve got it under control."',
@@ -2283,7 +2283,7 @@ export const cefrExams: CEFRExam[] = [
         ],
         answer: 0,
         explanationMy: 'အစည်းအဝေးပိတ်ရာမှာ လုပ်ဆောင်ချက်တွေနဲ့ နောက်ဆုံးရက်တွေကို အတည်ပြုတာ ပရော်ဖက်ရှင်နယ်ကျပါတယ်။',
-        explanationTh: 'สรุปอย่างเป็นมืออาชีพ "Let us wrap up with action items and deadlines."',
+        explanationTh: 'สรุปอย่างเป็นมืออาชีพ \"Let\'s wrap up with action items and deadlines.\"',
       },
     ],
   },
@@ -2423,7 +2423,7 @@ export const cefrExams: CEFRExam[] = [
         promptTh: 'เลือกวลีที่ถูกต้อง: "___ , the experiment would have failed."',
         options: ['Had it not been for her help', 'Were it not for her help', 'If it was not for her help', 'But for her not helping'],
         answer: 0,
-        explanationMy: '"Had it not been for + နာမ်" ဆိုတာ အတိတ်က မဖြစ်ခဲ့တဲ့ အခြေအနေအတွက် third conditional inversion ဖြစ်ပါတယ်။ "Were it not for" က ပစ္စုပ္ပန်/အနာဂတ် စိတ်ကူးယဉ် အခြေအနေအတွက်သာ သုံးပါတယ်။',
+        explanationMy: '"Had it not been for + နာမ်" ဆိုတာ အတိတ်က မဖြစ်ခဲ့တဲ့ အခြေအနေအတွက် third conditional inversion ဖြစ်ပါတယ်။ ဒီမေးခွန်းလို အတိတ်အခြေအနေမှာတော့ "Had it not been for" က အတိအကျဆုံး ပုံစံဖြစ်ပြီး၊ "Were it not for" ကို ယေဘုယျအားဖြင့် ပစ္စုပ္ပန်/အနာဂတ် စိတ်ကူးယဉ် အခြေအနေတွေမှာ သုံးလေ့ရှိပါတယ်။',
         explanationTh: '"Had it not been for + คำนาม" เป็น inversion ของเงื่อนไขอดีตที่ไม่เกิดขึ้นจริง',
       },
       {
@@ -2484,7 +2484,7 @@ export const cefrExams: CEFRExam[] = [
       {
         prompt: 'What does this sentence mean? "The critic\'s review was a hatchet job."',
         promptMy: 'ဤဝါကျဘာကိုဆိုလိုသလဲ — "The critic\'s review was a hatchet job."',
-        promptTh: 'ประโยคนี้หมายความว่าอะไร "The review of the critic was a hatchet job."',
+        promptTh: 'ประโยคนี้หมายความว่าอะไร "The critic\'s review was a hatchet job."',
         options: [
           'ဝေဖန်ရေးက ချီးမွမ်းတယ်',
           'ဝေဖန်ရေး မျှတတယ်',
@@ -2500,7 +2500,7 @@ export const cefrExams: CEFRExam[] = [
         promptMy: 'ဤဝါကျဘာကိုဆိုလိုသလဲ — "His resignation was the tip of the iceberg."',
         promptTh: 'ประโยคนี้หมายความว่าอะไร "His resignation was the tip of the iceberg."',
         options: [
-          'သူ့နုတ်ထွက်မှုက ပိုကြီးတဲ့ ပြဿနာရဲ့ အစပဲရှိသေးတယ်',
+          'သူ့နုတ်ထွက်မှုက ပိုကြီးတဲ့ ပြဿနာရဲ့ မြင်ရတဲ့ အစိတ်အပိုင်းလေးပဲရှိသေးတယ်',
           'သူ ရေခဲတောင် သွားတယ်',
           'သူ့နုတ်ထွက်မှု အသေးအဖွဲပဲ',
           'သူ ပြန်လာမယ်',
@@ -2699,7 +2699,7 @@ export const cefrExams: CEFRExam[] = [
         ],
         answer: 1,
         explanationMy: '"shed light on" ဆိုတာ ရှင်းပြတာကို ဆိုလိုတာကြောင့် အသေးစိတ် ရှင်းပြရပါတယ်။',
-        explanationTh: '"shed light on" หมายถึงอธิบายให้กระจ่าง ตอบ "Certainly — here is what happened..."',
+        explanationTh: '"shed light on" หมายถึงอธิบายให้กระจ่าง ตอบ "Certainly — here\'s what happened..."',
       },
       {
         prompt: 'In a debate, concede a point gracefully. What should you say?',
@@ -2713,7 +2713,7 @@ export const cefrExams: CEFRExam[] = [
         ],
         answer: 2,
         explanationMy: 'အငြင်းပွားရာမှာ "You raise a valid point, though ..." လို့ အသိအမှတ်ပြုပြီး ကိုယ့်အမြင်ဆက်ပြောရပါတယ်။',
-        explanationTh: 'ยอมรับก่อนแล้วค่อยแย้ง "You raise a valid point, though I would argue..."',
+        explanationTh: 'ยอมรับก่อนแล้วค่อยแย้ง "You raise a valid point, though I\'d argue..."',
       },
       {
         prompt: 'Which is the most formal closing for a cover letter?',
@@ -2750,7 +2750,7 @@ export const cefrExams: CEFRExam[] = [
         ],
         answer: 1,
         explanationMy: 'တရားဝင်ပွဲမှာ "Good evening, I\'m ... — it\'s a pleasure to meet you." လို့ မိတ်ဆက်ရပါတယ်။',
-        explanationTh: 'แนะนำตัวอย่างเป็นทางการ "Good evening, I am Dr. Aung — it is a pleasure to meet you."',
+        explanationTh: 'แนะนำตัวอย่างเป็นทางการ "Good evening, I\'m Dr. Aung — it\'s a pleasure to meet you."',
       },
     ],
   },

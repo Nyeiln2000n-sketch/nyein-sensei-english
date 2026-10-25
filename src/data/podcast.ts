@@ -38,6 +38,16 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 106,
+    slug: 'inviting-people-to-a-party-2026-10-25',
+    titleMy: 'အပိုင်း ၁၀၆: ပါတီသို့ ဖိတ်ကြားခြင်း — Inviting people to a party',
+    titleOrig: 'ชวนไปงาน — Inviting people to a party',
+    descMy: 'ပါတီသို့ သူငယ်ချင်းတွေကို အင်္ဂလိပ်လို ဖိတ်ကြားနည်း — "Would you like to come?" / "You are invited." / "It is on Saturday." / "What time is the party?" / "I would love to come." / "Bring your friends." ဆိုတဲ့ ဝါကျခြောက်ခုနဲ့ "Thank you for inviting me." ဘိုနပ်စ်ဝါကျ၊ ပါတီသို့ ဖိတ်တဲ့အခါ ဘယ်လောက်ကြိုဖိတ်သင့်သလဲ ဆွေးနွေးမှုနဲ့ role-play လေ့ကျင့်ခန်း',
+    phrases: ['Would you like to come?', 'You are invited.', 'It is on Saturday.', 'What time is the party?', 'I would love to come.', 'Bring your friends.'],
+    durationSecs: 621,
+    cover: '/podcast-covers/ep-106.jpg',
+  },
+  {
     n: 105,
     slug: 'rescheduling-2026-10-25',
     titleMy: 'အပိုင်း ၁၀၅: ချိန်းဆိုချိန်ပြောင်းခြင်း — Rescheduling',

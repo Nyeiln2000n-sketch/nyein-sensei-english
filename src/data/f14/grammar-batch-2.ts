@@ -43,11 +43,11 @@ export const grammarRulesB2C1: GrammarRuleB2C1[] = [
     titleMyanmarTh: 'การผกผันประโยคด้วย Never / Rarely / Seldom',
     explanationMyanmar:
       'Never, Rarely, Seldom, Hardly, Barely စတဲ့ အနုတ်စကားလုံးနဲ့ ဝါကျစတဲ့အခါ အကြောင်းအရာနဲ့ကြိယာအကူနေရာပြောင်းရတယ်။ ဥပမာ Never have I seen... (ငါဘယ်တော့မှမမြင်ဖူးဘူး)။ ဒါက စာပေဆန်ပြီး အလေးပေးတဲ့ပုံစံ၊ အထူးသဖြင့် အရေးအသားနဲ့ မိန့်ခွန်းတွေမှာသုံးတယ်။',
-    explanationMyanmarTh: 'เมื่อขึ้นต้นประโยคด้วยคำปฏิเสธเช่น Never, Rarely, Seldom, Hardly, Barely ต้องสลับกริยาช่วยมาหน้าประธาน เช่น Never have I seen ... เป็นโครงสร้างเชิงวรรณศิลป์ใช้เน้นความ มักพบในงานเขียนและสุนทรพจน์',
+    explanationMyanmarTh: 'เมื่อขึ้นต้นประโยคด้วยคำปฏิเสธเช่น Never, Rarely, Seldom, Hardly, Barely ต้องสลับกริยาช่วยมาหน้าประธาน เช่น Never have I seen ... เป็นโครงสร้างเชิงวรรณศิลป์ใช้เพื่อเน้นความหมาย มักพบในงานเขียนและสุนทรพจน์',
     examples: [
       { english: 'Never have I seen such a beautiful sunset.', myanmar: 'အဲဒီလောက်လှတဲ့ညနေဆည်းဆာကို ငါဘယ်တော့မှမမြင်ဖူးဘူး။', myanmarTh: 'ผมไม่เคยเห็นพระอาทิตย์ตกสวยขนาดนี้มาก่อน', },
       { english: 'Rarely does she arrive late for meetings.', myanmar: 'သူမ အစည်းအဝေးတွေကို နောက်ကျတယ်ဆိုတာ ရှားပါတယ်။', myanmarTh: 'เธอแทบไม่เคยมาสายในการประชุม', },
-      { english: 'Seldom have we received such generous support.', myanmar: 'အဲဒီလောက်ရက်ရောတဲ့ထောက်ပံ့မှုကို ငါတို့ရှားရှားပါးပါးပဲရဖူးတယ်။', myanmarTh: 'พวกเราแทบไม่เคยได้รับการสนับสนุนใจกว้างขนาดนี้', },
+      { english: 'Seldom have we received such generous support.', myanmar: 'အဲဒီလောက်ရက်ရောတဲ့ထောက်ပံ့မှုကို ငါတို့ရှားရှားပါးပါးပဲရဖူးတယ်။', myanmarTh: 'พวกเราแทบไม่เคยได้รับการสนับสนุนอย่างใจกว้างขนาดนี้', },
       { english: 'Hardly had the concert begun when the lights went out.', myanmar: 'ဖျော်ဖြေပွဲစပြီး မကြာဘူး မီးတွေပိတ်သွားတယ်။', myanmarTh: 'คอนเสิร์ตแทบยังไม่เริ่ม ไฟก็ดับ', },
     ],
     drills: [
@@ -128,7 +128,7 @@ export const grammarRulesB2C1: GrammarRuleB2C1[] = [
     explanationMyanmarTh: 'เน้นส่วนใดของประโยคด้วย It is / was ... that / who ... เช่น It was MY SISTER who called (คนที่โทรคือพี่สาว) ส่วนที่ต้องการเน้นวางหลัง It is / was',
     examples: [
       { english: 'It was my brother who broke the window, not me.', myanmar: 'ပြတင်းပေါက်ခွဲခဲ့တာက ငါ့ညီပါ၊ ငါမဟုတ်ဘူး။', myanmarTh: 'คนที่ทำหน้าต่างแตกคือน้องชายผม ไม่ใช่ผม', },
-      { english: 'It is in Mandalay that the festival takes place.', myanmar: 'ပွဲတော်ကျင်းပတာက မန္တလေးမှာပါ။', myanmarTh: 'เทศกาลจัดที่มัณฑะเลย์', },
+      { english: 'It is in Mandalay that the festival takes place.', myanmar: 'ပွဲတော်ကျင်းပတာက မန္တလေးမှာပါ။', myanmarTh: 'เทศกาลนั้นจัดที่มัณฑะเลย์ต่างหาก', },
       { english: 'It was only yesterday that I heard the news.', myanmar: 'သတင်းကြားခဲ့တာက မနေ့ကမှပါ။', myanmarTh: 'ผมเพิ่งได้ข่าวเมื่อวานนี้เอง', },
       { english: 'It is hard work that brings success, not luck.', myanmar: 'အောင်မြင်မှုရစေတာက ကြိုးစားမှုပါ၊ ကံကြမ္မာမဟုတ်ဘူး။', myanmarTh: 'สิ่งที่นำความสำเร็จคือความขยัน ไม่ใช่โชค', },
     ],
@@ -193,7 +193,7 @@ export const grammarRulesB2C1: GrammarRuleB2C1[] = [
       { english: 'I suggest that he arrive on time.', myanmar: 'သူ အချိန်မှန်ရောက်ဖို့ အကြံပြုပါတယ်။', myanmarTh: 'ผมแนะนำให้เขามาตรงเวลา', },
       { english: 'The manager demanded that she finish the report today.', myanmar: 'မန်နေဂျာက သူမကို ဒီနေ့ အစီရင်ခံစာ အပြီးသတ်ဖို့ အမိန့်ပေးခဲ့တယ်။', myanmarTh: 'ผู้จัดการสั่งให้เธอทำรายงานเสร็จวันนี้', },
       { english: 'It is essential that every student be present.', myanmar: 'ကျောင်းသားတိုင်း တက်ရောက်ဖို့ မရှိမဖြစ်လိုအပ်ပါတယ်။', myanmarTh: 'จำเป็นอย่างยิ่งที่นักเรียนทุกคนต้องเข้าร่วม', },
-      { english: 'They insisted that we stay for dinner.', myanmar: 'သူတို့ ငါတို့ညစာစားဖို့ အတင်းတောင်းဆိုခဲ့ကြတယ်။', myanmarTh: 'พวกเขายืนยันให้พวกเราอยู่กินมื้อเย็น', },
+      { english: 'They insisted that we stay for dinner.', myanmar: 'သူတို့ ငါတို့ညစာစားဖို့ အတင်းတောင်းဆိုခဲ့ကြတယ်။', myanmarTh: 'พวกเขายืนกรานให้พวกเราอยู่ทานมื้อเย็น', },
     ],
     drills: [
       { prompt: 'I suggest that they ___ harder. (study)', answer: 'study', options: ['study', 'studies', 'studied', 'studying'] },
@@ -219,7 +219,7 @@ export const grammarRulesB2C1: GrammarRuleB2C1[] = [
     drills: [
       { prompt: 'If I had learned English earlier, I ___ a better job now. (have)', answer: 'would have', options: ['would have', 'would had', 'will have', 'have'] },
       { prompt: 'If she ___ taller, she could have reached the shelf. (be)', answer: 'were', options: ['were', 'has been', 'is', 'was being'] },
-      { prompt: 'If he had not been lazy, he ___ failed. (not / fail)', answer: 'would not have', options: ['would not have', 'will not have', 'would not', 'did not'] },
+      { prompt: 'If he were not lazy, he ___ failed. (not / fail)', answer: 'would not have', options: ['would not have', 'will not have', 'would not', 'did not'] },
     ],
   },
   {
@@ -355,7 +355,7 @@ export const grammarRulesB2C1: GrammarRuleB2C1[] = [
     titleMyanmar: 'ကြိယာကို နာမ်အဖြစ်ပြောင်းနည်း',
     titleMyanmarTh: 'การทำกริยาให้เป็นคำนาม',
     explanationMyanmar:
-      'ကြိယာ/နာမဝိသေသနကို နာမ်အဖြစ်ပြောင်းပြီး တရားဝင်အရေးအသားလုပ်တယ်။ decide → decision, develop → development, important → importance။ The development of the project took two years. (decide ရှည်ရှည်ရေးတာထက် တိုပြီးတရားဝင်တယ်)။',
+      'ကြိယာ/နာမဝိသေသနကို နာမ်အဖြစ်ပြောင်းပြီး တရားဝင်အရေးအသားလုပ်တယ်။ decide → decision, develop → development, important → importance။ The development of the project took two years. (ကြိယာနဲ့ရှည်ရှည်ရေးတာထက် တိုပြီးတရားဝင်တယ်)။',
     explanationMyanmarTh: 'เปลี่ยนกริยา / คำคุณศัพท์ให้เป็นคำนามเพื่อให้งานเขียนเป็นทางการ: decide → decision develop → development important → importance เช่น The development of the project took two years กระชับและเป็นทางการกว่าการเขียนยาวๆ',
     examples: [
       { english: 'The government announced the construction of a new bridge.', myanmar: 'အစိုးရက တံတားအသစ်တည်ဆောက်မှုကို ကြေညာခဲ့တယ်။', myanmarTh: 'รัฐบาลประกาศการก่อสร้างสะพานแห่งใหม่', },
@@ -419,7 +419,7 @@ export const grammarRulesB2C1: GrammarRuleB2C1[] = [
     titleMyanmarTh: 'การละคำ (ellipsis)',
     explanationMyanmar:
       'ထပ်နေတဲ့၊ နားလည်ပြီးသားစကားလုံးတွေကို ဖြုတ်ရေးတယ်။ She can play piano, and he can too. (can နောက်မှာ play piano ဖြုတ်ထားတယ်)။ စကားပြောနဲ့အရေးအသားကို သဘာဝကျ၊ တိုစေတယ်။',
-    explanationMyanmarTh: 'ละคำที่ซ้ำหรือเข้าใจได้อยู่แล้ว: She can play piano and he can too (ละ play piano หลัง too) ทำให้ภาษาพูดและงานเขียนเป็นธรรมชาติและกระชับ',
+    explanationMyanmarTh: 'ละคำที่ซ้ำหรือเข้าใจได้อยู่แล้ว: She can play piano and he can too (ละ play piano หลัง can ในประโยคหลัง) ทำให้ภาษาพูดและงานเขียนเป็นธรรมชาติและกระชับ',
     examples: [
       { english: 'I wanted to go, but I couldn\'t.', myanmar: 'ငါသွားချင်ခဲ့တယ်၊ ဒါပေမဲ့ မသွားနိုင်ခဲ့ဘူး။', myanmarTh: 'ผมอยากไป แต่ไปไม่ได้', },
       { english: 'She speaks three languages, and her brother does too.', myanmar: 'သူမ ဘာသာစကားသုံးမျိုးပြောတတ်တယ်၊ သူ့ညီလည်းပဲ။', myanmarTh: 'เธอพูดได้สามภาษา และน้องชายเธอก็พูดได้เหมือนกัน', },
@@ -587,7 +587,7 @@ export const grammarRulesB2C1: GrammarRuleB2C1[] = [
     titleMyanmarTh: 'อนุประโยคแสดงความขัดแย้งขั้นสูง',
     explanationMyanmar:
       'although/even though အပြင်: despite/in spite of + နာမ်/V-ing၊ however + နာမဝိသေသန (However difficult it is...)၊ much as, while/whereas တို့နဲ့ ဆန့်ကျင်ဘက်အကြောင်းပြချက်ပေးတယ်။',
-    explanationMyanmarTh: 'นอกจาก although / even though ยังมี: despite / in spite of + คำนาม / กริยาเติม -ing however + คำคุณศัพท์ (However difficult it is ...) much as, while / whereas ใช้บอกเหตุผลที่ขัดแย้งกัน',
+    explanationMyanmarTh: 'นอกจาก although / even though ยังมี: despite / in spite of + คำนาม / กริยาเติม -ing however + คำคุณศัพท์ (However difficult it is ...) much as, while / whereas ใช้แสดงการยอมรับข้อเท็จจริงที่ขัดแย้งกัน',
     examples: [
       { english: 'Despite the rain, the event was a success.', myanmar: 'မိုးရွာနေပေမဲ့ ပွဲကအောင်မြင်ခဲ့တယ်။', myanmarTh: 'แม้ฝนตก งานก็ประสบความสำเร็จ', },
       { english: 'However tired he was, he kept working.', myanmar: 'သူဘယ်လောက်ပင်ပန်းပင်ပန်း ဆက်အလုပ်လုပ်နေခဲ့တယ်။', myanmarTh: 'เขาเหนื่อยแค่ไหนก็ยังทำงานต่อ', },
@@ -629,7 +629,7 @@ export const grammarRulesB2C1: GrammarRuleB2C1[] = [
     titleMyanmarTh: 'วิธีใช้ would rather / prefer',
     explanationMyanmar:
       'နှစ်ခုထဲကတစ်ခုကို ရွေးချယ်တဲ့အခါ would rather + V1 (than + V1) သုံးတယ်။ I\'d rather stay home than go out. prefer + V-ing to V-ing (I prefer reading to watching TV)။ သူများအတွက်ဆို would rather + အကြောင်းအရာ + past tense။',
-    explanationMyanmarTh: 'เลือกระหว่างสองสิ่งใช้ would rather + กริยารูปพื้นฐาน (than + กริยารูปพื้นฐาน): I would rather stay home than go out / prefer + กริยาเติม -ing to กริยาเติม -ing (I prefer reading to watching TV) ถ้าเป็นคนอื่นใช้ would rather + ประธาน + อดีตกาล',
+    explanationMyanmarTh: 'เลือกระหว่างสองสิ่งใช้ would rather + กริยารูปพื้นฐาน (than + กริยารูปพื้นฐาน): I would rather stay home than go out / prefer + กริยาเติม -ing to กริยาเติม -ing (I prefer reading to watching TV) ถ้าผู้ที่ต้องทำเป็นคนอื่น ให้ใช้ would rather + ประธาน + อดีตกาล',
     examples: [
       { english: 'I would rather drink tea than coffee.', myanmar: 'ငါ ကော်ဖီထက် လက်ဖက်ရည်သောက်ရတာပိုကြိုက်တယ်။', myanmarTh: 'ผมอยากดื่มชามากกว่ากาแฟ', },
       { english: 'She prefers walking to driving.', myanmar: 'သူမ ကားမောင်းတာထက် လမ်းလျှောက်ရတာပိုကြိုက်တယ်။', myanmarTh: 'เธอชอบเดินมากกว่าขับรถ', },
@@ -692,7 +692,7 @@ export const grammarRulesB2C1: GrammarRuleB2C1[] = [
     titleMyanmarTh: 'การย้ายส่วนประโยคมาข้างหน้าเพื่อเน้น',
     explanationMyanmar:
       'အလေးပေးချင်တဲ့အပိုင်း (object, complement, adverbial) ကို ဝါကျအစပို့တယ်။ Most of all I remember her smile. Terrible was the storm. Rare books he collects. စာပေ၊ မိန့်ခွန်းမှာ အကျိုးသက်ရောက်မှုကြီးတယ်။',
-    explanationMyanmarTh: 'ย้ายส่วนที่ต้องการเน้น (กรรม ส่วนเติมเต็ม หรือวลีกริยาวิเศษณ์) มาหน้าประโยค: Most of all I remember her smile / Terrible was the storm / Rare books he collects ให้ผลรุนแรงในงานวรรณศิลป์และสุนทรพจน์',
+    explanationMyanmarTh: 'ย้ายส่วนที่ต้องการเน้น (กรรม ส่วนเติมเต็ม หรือวลีวิเศษณ์) มาหน้าประโยค: Most of all I remember her smile / Terrible was the storm / Rare books he collects สร้างการเน้นที่ชัดเจนในงานวรรณศิลป์และสุนทรพจน์',
     examples: [
       { english: 'Never will I forget that day.', myanmar: 'အဲဒီနေ့ကို ငါဘယ်တော့မှမေ့မှာမဟုတ်ဘူး။', myanmarTh: 'ผมจะไม่มีวันลืมวันนั้น', },
       { english: 'Most of all, I remember my grandmother\'s stories.', myanmar: 'အရာအားလုံးထဲမှာ အဖွားရဲ့ပုံပြင်တွေကို အမှတ်ရဆုံးပါ။', myanmarTh: 'สิ่งที่ผมจำได้มากที่สุดคือเรื่องเล่าของยาย', },
@@ -755,7 +755,7 @@ export const grammarRulesB2C1: GrammarRuleB2C1[] = [
     titleMyanmarTh: 'เครื่องมือเชื่อมโยงข้อความ',
     explanationMyanmar:
       'စာပိုဒ်တွေကို ဆက်နွယ်စေတဲ့နည်းလမ်းများ: substitution (one, ones, so, do so — I want the red one)၊ reference (this, that, such — Such behaviour is unacceptable)၊ ellipsis။ ပညာရပ်ဆိုင်ရာအရေးအသားမှာ မရှိမဖြစ်လိုအပ်တယ်။',
-    explanationMyanmarTh: 'เครื่องมือเชื่อมย่อหน้า: substitution (one, ones, so, do so: I want the red one), reference (this, that, such: Such behaviour is unacceptable), ellipsis — ทั้งหมดนี้จำเป็นอย่างยิ่งในงานเขียนวิชาการ',
+    explanationMyanmarTh: 'เครื่องมือเชื่อมโยงข้อความ: substitution (one, ones, so, do so: I want the red one), reference (this, that, such: Such behaviour is unacceptable), ellipsis — ทั้งหมดนี้จำเป็นอย่างยิ่งในงานเขียนวิชาการ',
     examples: [
       { english: 'I need a new laptop; this one is too slow.', myanmar: 'ငါလက်ပ်တော့အသစ်လိုတယ်၊ ဒီတစ်ခုက အရမ်းနှေးတယ်။', myanmarTh: 'ผมต้องการแล็ปท็อปใหม่ เครื่องนี้ช้าเกินไป', },
       { english: 'He promised to help, and he did so immediately.', myanmar: 'သူကူညီမယ်လို့ကတိပေးခဲ့တယ်၊ ပြီးတော့ ချက်ချင်းပဲလုပ်ပေးခဲ့တယ်။', myanmarTh: 'เขาสัญญาว่าจะช่วย และเขาก็ทำทันที', },
@@ -902,7 +902,7 @@ export const grammarRulesB2C1: GrammarRuleB2C1[] = [
     titleMyanmarTh: 'ประโยค relative ขั้นสูง: whom / whose',
     explanationMyanmar:
       'whom (The person whom I met)၊ whose (The writer whose book won)၊ preposition + which/whom (The house in which I grew up)၊ of which/whose + နာမ်။ တရားဝင်အရေးအသားမှာ who/that အစား သုံးတယ်။',
-    explanationMyanmarTh: 'whom (The person whom I met), whose (The writer whose book won), บุพบท + which / whom (The house in which I grew up), of which / whose + คำนาม ใช้แทน who / that ในงานเขียนทางการ',
+    explanationMyanmarTh: 'whom (The person whom I met), whose (The writer whose book won), บุพบท + which / whom (The house in which I grew up), whose + คำนาม และ คำนาม + of which ใช้แทน who / that ในงานเขียนทางการ',
     examples: [
       { english: 'The colleague with whom I work is very kind.', myanmar: 'ငါအတူအလုပ်လုပ်တဲ့လုပ်ဖော်ကိုင်ဖက်က အရမ်းသဘောကောင်းတယ်။', myanmarTh: 'เพื่อนร่วมงานที่ผมทำงานด้วยใจดีมาก', },
       { english: 'She married a man whose family owns a factory.', myanmar: 'သူမ စက်ရုံပိုင်တဲ့မိသားစုကယောက်ျားနဲ့ လက်ထပ်ခဲ့တယ်။', myanmarTh: 'เธอแต่งงานกับชายที่ครอบครัวเป็นเจ้าของโรงงาน', },
@@ -949,7 +949,7 @@ export const grammarRulesB2C1: GrammarRuleB2C1[] = [
       { english: 'He may have forgotten our appointment.', myanmar: 'သူ ငါတို့ချိန်းဆိုမှုကို မေ့သွားခဲ့တာဖြစ်နိုင်တယ်။', myanmarTh: 'เขาอาจลืมนัดของพวกเรา', },
       { english: 'She might have taken the wrong bus.', myanmar: 'သူမ ဘတ်စ်ကားမှားစီးခဲ့တာဖြစ်နိုင်တယ်။', myanmarTh: 'เธออาจขึ้นรถเมล์ผิดคัน', },
       { english: 'You needn\'t have cooked so much food!', myanmar: 'မင်း အစားအစာအဲလောက်အများကြီးချက်စရာမလိုခဲ့ဘူး။ (ချက်ပြီးသွားပြီ)', myanmarTh: 'คุณไม่จำเป็นต้องทำอาหารเยอะขนาดนั้นเลย (ทำไปแล้วแต่ไม่จำเป็น)', },
-      { english: 'They could have won if the referee had been fair.', myanmar: 'ဒိုင်လူကြီးတရားမျှတခဲ့ရင် သူတို့အနိုင်ရနိုင်ခဲ့တယ်။', myanmarTh: 'พวกเขาคงชนะได้ถ้ากรรมการยุติธรรม', },
+      { english: 'They could have won if the referee had been fair.', myanmar: 'ဒိုင်လူကြီးတရားမျှတခဲ့ရင် သူတို့အနိုင်ရနိုင်ခဲ့တယ်။', myanmarTh: 'พวกเขาคงชนะได้ถ้ากรรมการยุติธรรมกว่านี้', },
     ],
     drills: [
       { prompt: 'She ___ the train; she is not here. (miss → ___)', answer: 'may have missed', options: ['may have missed', 'may missed', 'may miss', 'may has missed'] },
