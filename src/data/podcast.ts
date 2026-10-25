@@ -38,6 +38,16 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 107,
+    slug: 'accepting-and-declining-invitations-2026-10-25',
+    titleMy: 'အပိုင်း ၁၀၇: ဖိတ်ကြားမှုကို လက်ခံခြင်းနှင့် ငြင်းဆိုခြင်း — Accepting and declining invitations',
+    titleOrig: 'ตอบรับและปฏิเสธคำชวน — Accepting and declining invitations',
+    descMy: 'ဖိတ်ကြားမှုကို အင်္ဂလိပ်လို လက်ခံခြင်းနှင့် ယဉ်ကျေးစွာ ငြင်းဆိုနည်း — "I would love to." / "Thank you for inviting me." / "That sounds great." / "Sorry, I cannot come." / "I am busy that day." / "Maybe next time." ဆိုတဲ့ ဝါကျခြောက်ခုနဲ့ "Let us do it another time." ဘိုနပ်စ်ဝါကျ၊ ဖိတ်ကြားမှုကို ငြင်းဆိုတဲ့အခါ စိတ်မဆိုးအောင် ဘယ်လိုပြောရမလဲ ဆွေးနွေးမှုနဲ့ role-play လေ့ကျင့်ခန်း',
+    phrases: ['I would love to.', 'Thank you for inviting me.', 'That sounds great.', 'Sorry, I cannot come.', 'I am busy that day.', 'Maybe next time.'],
+    durationSecs: 717,
+    cover: '/podcast-covers/ep-107.jpg',
+  },
+  {
     n: 106,
     slug: 'inviting-people-to-a-party-2026-10-25',
     titleMy: 'အပိုင်း ၁၀၆: ပါတီသို့ ဖိတ်ကြားခြင်း — Inviting people to a party',
