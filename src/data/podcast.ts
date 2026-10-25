@@ -38,6 +38,16 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 105,
+    slug: 'rescheduling-2026-10-25',
+    titleMy: 'အပိုင်း ၁၀၅: ချိန်းဆိုချိန်ပြောင်းခြင်း — Rescheduling',
+    titleOrig: 'เลื่อนนัด — Rescheduling',
+    descMy: 'ချိန်းထားတာကို အင်္ဂလိပ်လို ပြန်ရွှေ့နည်း — "I need to reschedule." / "Can we change the time?" / "How about Friday?" / "Is Friday okay?" / "Sorry, I am late." / "Sorry for the trouble." ဆိုတဲ့ ဝါကျခြောက်ခုနဲ့ "I will be there on time." ဘိုနပ်စ်ဝါကျ၊ ချိန်းဆိုချိန်ကို မကြာခဏပြောင်းတာ ယုံကြည်မှုထိခိုက်လား ဆွေးနွေးမှုနဲ့ role-play လေ့ကျင့်ခန်း',
+    phrases: ['I need to reschedule.', 'Can we change the time?', 'How about Friday?', 'Is Friday okay?', 'Sorry, I am late.', 'Sorry for the trouble.'],
+    durationSecs: 655,
+    cover: '/podcast-covers/ep-105.jpg',
+  },
+  {
     n: 104,
     slug: 'making-an-appointment-2026-10-24',
     titleMy: 'အပိုင်း ၁၀၄: ချိန်းဆိုခြင်း — Making an appointment',

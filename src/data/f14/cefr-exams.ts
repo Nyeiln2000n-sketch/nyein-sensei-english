@@ -591,11 +591,11 @@ export const cefrExams: CEFRExam[] = [
       {
         prompt: 'Choose the correct word: "You ___ eat too much candy. It\'s bad for your teeth."',
         promptMy: 'မှန်ကန်သောစကားလုံးကို ရွေးပါ — "You ___ eat too much candy. It\'s bad for your teeth."',
-        promptTh: 'เลือกคำที่ถูกต้อง: "You ___ eat too much candy. It is bad for your teeth."',
+        promptTh: 'เลือกคำที่ถูกต้อง: "You ___ eat too much candy. It\'s bad for your teeth."',
         options: ['should', 'should to', "don't should", "shouldn't"],
         answer: 3,
         explanationMy: 'မလုပ်သင့်တာကို အကြံပေးရာမှာ "shouldn\'t" ကို သုံးပါတယ်။',
-        explanationTh: 'ให้คำแนะนำเชิงห้าม ใช้ "should not"',
+        explanationTh: 'ให้คำแนะนำเชิงห้าม ใช้ "shouldn\'t"',
       },
       {
         prompt: 'Choose the correct word: "___ you ever been to Japan?"',
@@ -610,7 +610,7 @@ export const cefrExams: CEFRExam[] = [
         prompt: 'Choose the correct word: "If it rains, we ___ at home."',
         promptMy: 'မှန်ကန်သောစကားလုံးကို ရွေးပါ — "If it rains, we ___ at home."',
         promptTh: 'เลือกคำที่ถูกต้อง: "If it rains, we ___ at home."',
-        options: ['stay', 'will stay', 'stayed', 'would stay'],
+        options: ['staying', 'will stay', 'stayed', 'would stay'],
         answer: 1,
         explanationMy: 'အနာဂတ် ဖြစ်နိုင်ခြေ (first conditional) အတွက် "will stay" ကို သုံးပါတယ်။',
         explanationTh: 'เงื่อนไขแบบที่หนึ่ง (first conditional) ใช้ "will stay"',
@@ -719,7 +719,7 @@ export const cefrExams: CEFRExam[] = [
         promptTh: 'ประโยคนี้หมายความว่าอะไร "I will call you as soon as I arrive."',
         options: [
           'မရောက်ခင် ဖုန်းဆက်မယ်',
-          'ရောက်ပြီးမှ ဖုန်းမဆက်ဘူး',
+          'ဖုန်းမဆက်ဘဲ စာတိုပို့မယ်',
           'ရောက်ရင် ဖုန်းမဆက်ဘူး',
           'ရောက်တာနဲ့ ချက်ချင်း ဖုန်းဆက်မယ်',
         ],
@@ -791,7 +791,7 @@ export const cefrExams: CEFRExam[] = [
         ],
         answer: 0,
         explanationMy: 'မှာယူဖို့ အဆင်သင့်ဖြစ်ရင် "I\'d like ..." လို့ မှာယူရပါတယ်။',
-        explanationTh: 'สั่งอาหารอย่างสุภาพด้วย "Yes, I would like fried rice."',
+        explanationTh: 'สั่งอาหารอย่างสุภาพด้วย "Yes, I\'d like fried rice."',
       },
       {
         prompt: 'Friend: "I have a headache." What should you say?',
@@ -842,7 +842,7 @@ export const cefrExams: CEFRExam[] = [
         ],
         answer: 0,
         explanationMy: 'အကူအညီတောင်းရင် "Sure, ..." လို့ ယဉ်ကျေးစွာ လက်ခံတာ အကောင်းဆုံးပါ။',
-        explanationTh: 'ตอบรับคำขอความช่วยเหลืออย่างสุภาพ "Sure, what is the problem?"',
+        explanationTh: 'ตอบรับคำขอความช่วยเหลืออย่างสุภาพ "Sure, what\'s the problem?"',
       },
       {
         prompt: 'At a hotel: "What time is breakfast?" What is the best answer?',
@@ -856,7 +856,7 @@ export const cefrExams: CEFRExam[] = [
       {
         prompt: 'A: "I\'m sorry, I broke your pen." What should B say?',
         promptMy: 'A က "I\'m sorry, I broke your pen." လို့ ပြောရင် B က ဘာပြန်ပြောသင့်သလဲ။',
-        promptTh: 'A: "I am sorry, I broke your pen." B ควรตอบว่าอะไร',
+        promptTh: 'A: "I\'m sorry, I broke your pen." B ควรตอบว่าอะไร',
         options: [
           '"It\'s my fault."',
           '"You\'re welcome."',
@@ -865,7 +865,7 @@ export const cefrExams: CEFRExam[] = [
         ],
         answer: 2,
         explanationMy: 'တောင်းပန်မှုကို "That\'s all right." လို့ ခွင့်လွှတ်ကြောင်း ပြန်ပြောရပါတယ်။',
-        explanationTh: 'ตอบรับคำขอโทษด้วย "That is all right."',
+        explanationTh: 'ตอบรับคำขอโทษด้วย "That\'s all right."',
       },
       {
         prompt: 'A: "Would you like some tea?" You do NOT want any. What should you say?',
@@ -888,7 +888,7 @@ export const cefrExams: CEFRExam[] = [
       {
         prompt: 'A: "Let\'s meet at 5 pm." You agree. What should you say?',
         promptMy: 'A က "Let\'s meet at 5 pm." လို့ ပြောပြီး သဘောတူရင် ဘာပြောသင့်သလဲ။',
-        promptTh: 'A: "Let us meet at 5 pm." คุณตกลง ควรพูดว่าอะไร',
+        promptTh: 'A: "Let\'s meet at 5 pm." คุณตกลง ควรพูดว่าอะไร',
         options: ['"I can\'t."', '"Sounds good!"', '"Maybe not."', '"No way."'],
         answer: 1,
         explanationMy: 'သဘောတူရင် "Sounds good!" လို့ ပြောတာ သဘာဝကျပါတယ်။',
@@ -975,7 +975,7 @@ export const cefrExams: CEFRExam[] = [
         prompt: '"Look after" means ___.',
         promptMy: '"Look after" ဆိုတာ ဘာကို ဆိုလိုသလဲ။',
         promptTh: '"Look after" หมายความว่าอะไร',
-        options: ['ကြည့်ရှုသည်', 'စောင့်ရှောက်သည်', 'ရှာဖွေသည်', 'မေ့လျော့သည်'],
+        options: ['ပစ်ပယ်သည်', 'စောင့်ရှောက်သည်', 'ရှာဖွေသည်', 'မေ့လျော့သည်'],
         answer: 1,
         explanationMy: '"look after" ဆိုတဲ့ phrasal verb က စောင့်ရှောက်တာကို ဆိုလိုတာပါ။',
         explanationTh: '"Look after" เป็น phrasal verb หมายถึง ดูแล',
@@ -1346,7 +1346,7 @@ export const cefrExams: CEFRExam[] = [
         prompt: 'A: "Can I pay by card?" What is the best answer?',
         promptMy: 'A က "Can I pay by card?" လို့ မေးရင် အကောင်းဆုံးအဖြေက ဘာလဲ။',
         promptTh: 'A: "Can I pay by card?" คำตอบที่ดีที่สุดคืออะไร',
-        options: ['"Cash only."', '"No money."', '"Yes, of course."', '"Go to the bank."'],
+        options: ['"I don\'t know."', '"No money."', '"Yes, of course."', '"Go to the bank."'],
         answer: 2,
         explanationMy: 'ကတ်နဲ့ပေးလို့ရရင် "Yes, of course." လို့ ဖြေတာ အယဉ်ကျေးဆုံးပါ။',
         explanationTh: 'ตอบอย่างสุภาพ "Yes, of course."',
@@ -1541,7 +1541,7 @@ export const cefrExams: CEFRExam[] = [
         prompt: 'Choose the correct word: "By next year, she ___ her degree."',
         promptMy: 'မှန်ကန်သောစကားလုံးကို ရွေးပါ — "By next year, she ___ her degree."',
         promptTh: 'เลือกคำที่ถูกต้อง: "By next year, she ___ her degree."',
-        options: ['will complete', 'completes', 'will have completed', 'has completed'],
+        options: ['will have complete', 'completes', 'will have completed', 'has completed'],
         answer: 2,
         explanationMy: 'အနာဂတ် အချိန်တစ်ခုမတိုင်ခင် ပြီးမယ့်အတွက် future perfect "will have completed" ကို သုံးပါတယ်။',
         explanationTh: 'เหตุการณ์ที่จะเสร็จก่อนจุดเวลาในอนาคต ใช้ future perfect "will have completed"',
@@ -1592,7 +1592,7 @@ export const cefrExams: CEFRExam[] = [
       {
         prompt: 'What does this sentence mean? "Her argument didn\'t hold water."',
         promptMy: 'ဤဝါကျဘာကိုဆိုလိုသလဲ — "Her argument didn\'t hold water."',
-        promptTh: 'ประโยคนี้หมายความว่าอะไร "Her argument did not hold water."',
+        promptTh: 'ประโยคนี้หมายความว่าอะไร \"Her argument didn\'t hold water.\"',
         options: [
           'သူ့ငြင်းခုံမှု ခိုင်လုံတယ်',
           'သူ့ငြင်းခုံမှု ရေပန်းစားတယ်',
@@ -1601,12 +1601,12 @@ export const cefrExams: CEFRExam[] = [
         ],
         answer: 3,
         explanationMy: '"hold water" ဆိုတာ ခိုင်လုံတာကို ဆိုလိုတာကြောင့် "didn\'t hold water" က မခိုင်လုံဘူးလို့ ဆိုလိုတာပါ။',
-        explanationTh: '"hold water" หมายถึงมีน้ำหนักน่าเชื่อถือ "did not hold water" จึงหมายถึงไม่มีน้ำหนัก',
+        explanationTh: '\"hold water\" หมายถึงมีน้ำหนักน่าเชื่อถือ \"didn\'t hold water\" จึงหมายถึงไม่มีน้ำหนัก',
       },
       {
         prompt: 'What does this sentence mean? "We\'re in the same boat."',
         promptMy: 'ဤဝါကျဘာကိုဆိုလိုသလဲ — "We\'re in the same boat."',
-        promptTh: 'ประโยคนี้หมายความว่าอะไร "We are in the same boat."',
+        promptTh: 'ประโยคนี้หมายความว่าอะไร \"We\'re in the same boat.\"',
         options: [
           'ငါတို့ အခြေအနေ အတူတူပဲ',
           'ငါတို့ လှေစီးနေတယ်',
@@ -1676,7 +1676,7 @@ export const cefrExams: CEFRExam[] = [
       {
         prompt: 'What does this sentence mean? "It\'s time we took action."',
         promptMy: 'ဤဝါကျဘာကိုဆိုလိုသလဲ — "It\'s time we took action."',
-        promptTh: 'ประโยคนี้หมายความว่าอะไร "It is time we took action."',
+        promptTh: 'ประโยคนี้หมายความว่าอะไร \"It\'s time we took action.\"',
         options: [
           'အရေးယူဖို့ အချိန်ရှိသေးတယ်',
           'အခု အရေးယူသင့်ပြီ',
@@ -1685,13 +1685,13 @@ export const cefrExams: CEFRExam[] = [
         ],
         answer: 1,
         explanationMy: '"It\'s time we took ..." ဆိုတာ အခုလုပ်သင့်ပြီလို့ ဆိုလိုတာပါ။',
-        explanationTh: '"It is time we took ..." หมายถึงถึงเวลาที่ควรลงมือทำแล้ว',
+        explanationTh: '\"It\'s time we took ...\" หมายถึงถึงเวลาที่ควรลงมือทำแล้ว',
       },
       // ——— Contextual use (10) ———
       {
         prompt: 'Colleague: "I\'m swamped with work this week." Offer help. What should you say?',
         promptMy: 'လုပ်ဖော်ကိုင်ဖက်က "I\'m swamped with work this week." လို့ ပြောရင် ကူညီဖို့ ဘာပြောသင့်သလဲ။',
-        promptTh: 'เพื่อนร่วมงาน: "I am swamped with work this week." เสนอความช่วยเหลือ ควรพูดว่าอะไร',
+        promptTh: 'เพื่อนร่วมงาน: \"I\'m swamped with work this week.\" เสนอความช่วยเหลือ ควรพูดว่าอะไร',
         options: [
           '"Good luck."',
           '"Take a break."',
@@ -1705,7 +1705,7 @@ export const cefrExams: CEFRExam[] = [
       {
         prompt: 'A: "I disagree with your point, but I see where you\'re coming from." Respond politely.',
         promptMy: 'A က သဘောမတူပေမယ့် နားလည်ကြောင်း ပြောရင် ယဉ်ကျေးစွာ ဘာပြန်ပြောသင့်သလဲ။',
-        promptTh: 'A: "I disagree with your point, but I see where you are coming from." ตอบอย่างสุภาพ',
+        promptTh: 'A: \"I disagree with your point, but I see where you\'re coming from.\" ตอบอย่างสุภาพ',
         options: [
           '"You\'re wrong."',
           '"Whatever."',
@@ -1714,7 +1714,7 @@ export const cefrExams: CEFRExam[] = [
         ],
         answer: 3,
         explanationMy: 'သဘောကွဲလွဲမှုမှာ "I appreciate that — let\'s find common ground." လို့ ယဉ်ကျေးစွာ တုံ့ပြန်ရပါတယ်။',
-        explanationTh: 'ตอบอย่างสุภาพ "I appreciate that — let us find common ground."',
+        explanationTh: 'ตอบอย่างสุภาพ \"I appreciate that — let\'s find common ground.\"',
       },
       {
         prompt: 'At a conference: "Could you elaborate on that?" What should you say?',
@@ -1751,12 +1751,12 @@ export const cefrExams: CEFRExam[] = [
         ],
         answer: 2,
         explanationMy: 'သတင်းကောင်းကြားရင် "That\'s fantastic — congratulations!" လို့ ဝမ်းသာကြောင်း ပြရပါတယ်။',
-        explanationTh: 'แสดงความยินดี "That is fantastic — congratulations!"',
+        explanationTh: 'แสดงความยินดี \"That\'s fantastic — congratulations!\"',
       },
       {
         prompt: 'Agent: "I\'m afraid we can\'t offer you a refund." Negotiate politely. What should you say?',
         promptMy: 'ငွေပြန်အမ်းမပေးနိုင်ဘူးလို့ ပြောရင် ယဉ်ကျေးစွာ ညှိနှိုင်းဖို့ ဘာပြောသင့်သလဲ။',
-        promptTh: 'ตัวแทน: "I am afraid we cannot offer you a refund." เจรจาอย่างสุภาพ ควรพูดว่าอะไร',
+        promptTh: 'ตัวแทน: \"I\'m afraid we can\'t offer you a refund.\" เจรจาอย่างสุภาพ ควรพูดว่าอะไร',
         options: [
           '"This is unfair!"',
           '"I\'ll sue you."',
@@ -1793,7 +1793,7 @@ export const cefrExams: CEFRExam[] = [
         ],
         answer: 1,
         explanationMy: 'တောင်းဆိုမှုကို လက်ခံပြီး "I\'m sorry — I\'ll turn it down right away." လို့ တောင်းပန်ရပါတယ်။',
-        explanationTh: 'ขอโทษและรับปาก "Oh, I am sorry — I will turn it down right away."',
+        explanationTh: 'ขอโทษและรับปาก \"Oh, I\'m sorry — I\'ll turn it down right away.\"',
       },
       {
         prompt: 'Interview: "Where do you see yourself in five years?" What should you say?',
@@ -1812,7 +1812,7 @@ export const cefrExams: CEFRExam[] = [
       {
         prompt: 'Colleague: "Let\'s touch base next week about the proposal." What should you say?',
         promptMy: 'လုပ်ဖော်ကိုင်ဖက်က "Let\'s touch base next week about the proposal." လို့ ပြောရင် ဘာပြန်ပြောသင့်သလဲ။',
-        promptTh: 'เพื่อนร่วมงาน: "Let us touch base next week about the proposal." ควรพูดว่าอะไร',
+        promptTh: 'เพื่อนร่วมงาน: \"Let\'s touch base next week about the proposal.\" ควรพูดว่าอะไร',
         options: [
           '"I don\'t play baseball."',
           '"What proposal?"',
@@ -1821,7 +1821,7 @@ export const cefrExams: CEFRExam[] = [
         ],
         answer: 3,
         explanationMy: '"touch base" ဆိုတာ ဆက်သွယ်ဆွေးနွေးတာကို ဆိုလိုတာကြောင့် အချိန်ပေးဖို့ ကမ်းလှမ်းတာ အမှန်ပါ။',
-        explanationTh: '"touch base" หมายถึงติดต่อพูดคุย ตอบรับ "Sounds good — I will send you my availability."',
+        explanationTh: '\"touch base\" หมายถึงติดต่อพูดคุย ตอบรับ \"Sounds good — I\'ll send you my availability.\"',
       },
     ],
   },
