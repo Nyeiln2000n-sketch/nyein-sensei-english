@@ -558187,7 +558187,7 @@
    "en": "trash",
    "en_norm": "trash",
    "my_norm": "အမှိုက်ပုံး",
-   "th_norm": "ขยะ",
+   "th_norm": "ถังขยะ",
    "fingerprint": "e06da30434b904a0",
    "vocab_sig": [
     "trash"
@@ -560070,7 +560070,7 @@
    "kind": "word",
    "en": "jar",
    "en_norm": "jar",
-   "my_norm": "ဖန်ပုလင်း",
+   "my_norm": "ဖန်ဘူး",
    "th_norm": "ขวดโหล",
    "fingerprint": "0163f1eea7894350",
    "vocab_sig": [
@@ -560820,7 +560820,7 @@
    "kind": "word",
    "en": "shopping basket",
    "en_norm": "shopping basket",
-   "my_norm": "စျေးဝယ်ခြင်းတောင်း",
+   "my_norm": "စျေးဝယ်တောင်း",
    "th_norm": "ตะกร้าช้อปปิ้ง",
    "fingerprint": "3fd436f33562df19",
    "vocab_sig": [
@@ -561067,7 +561067,7 @@
    "kind": "word",
    "en": "butcher",
    "en_norm": "butcher",
-   "my_norm": "အသားဆိုင်",
+   "my_norm": "အသားသည်",
    "th_norm": "คนขายเนื้อ",
    "fingerprint": "01303d3beb16b992",
    "vocab_sig": [
@@ -564380,7 +564380,7 @@
    "kind": "word",
    "en": "charismatic",
    "en_norm": "charismatic",
-   "my_norm": "ဆွဲဆောင်မှုရှိသော",
+   "my_norm": "ဆွဲဆောင်အားကောင်းသော",
    "th_norm": "มีเสน่ห์ดึงดูด",
    "fingerprint": "e7f1239801a55a4d",
    "vocab_sig": [
@@ -567464,18 +567464,17 @@
   {
    "id": "example:work:probation",
    "kind": "example",
-   "en": "New staff work a three-month probation.",
-   "en_norm": "new staff work a three month probation",
+   "en": "New staff are on probation for three months.",
+   "en_norm": "new staff are on probation for three months",
    "my_norm": "",
-   "fingerprint": "9437e86d965bfdec",
+   "fingerprint": "66b161a2e46bd12d",
    "vocab_sig": [
-    "month",
+    "months",
     "new",
     "probation",
-    "staff",
-    "work"
+    "staff"
    ],
-   "template_sig": "W W W a three - W W .",
+   "template_sig": "W W are on W for three W .",
    "tags": [
     "work",
     "example"
@@ -568888,17 +568887,21 @@
   {
    "id": "example:work:coffee-badging",
    "kind": "example",
-   "en": "Coffee badging fills the cafe.",
-   "en_norm": "coffee badging fills the cafe",
+   "en": "Coffee badging fills the office for an hour, then everyone leaves.",
+   "en_norm": "coffee badging fills the office for an hour then everyone leaves",
    "my_norm": "",
-   "fingerprint": "2134fc43f4ab79bc",
+   "fingerprint": "af54ba70c4a09813",
    "vocab_sig": [
     "badging",
-    "cafe",
     "coffee",
-    "fills"
+    "everyone",
+    "fills",
+    "hour",
+    "leaves",
+    "office",
+    "then"
    ],
-   "template_sig": "W W W the W .",
+   "template_sig": "W W W the W for an W , W W W .",
    "tags": [
     "work",
     "example"

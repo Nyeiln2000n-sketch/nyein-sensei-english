@@ -38,6 +38,16 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 110,
+    slug: 'module-11-review-phone-appointments-invitations-2026-10-26',
+    titleMy: 'အပိုင်း ၁၁၀: ဖုန်း၊ ချိန်းဆိုမှုနှင့် ဖိတ်ကြားခြင်း ပြန်လည်သုံးသပ်ခြင်း — Module 11 review',
+    titleOrig: 'ทบทวนบทที่ 11 — Module 11 review',
+    descMy: 'အခန်း ၁၁ ကို ပြန်လည်သုံးသပ်ခြင်း — ဖုန်းခေါ်ဆိုခြင်း၊ မက်ဆေ့ချန်ထားခြင်း၊ ချိန်းဆိုခြင်းနှင့် ဖိတ်ကြားခြင်းတို့ကို အင်္ဂလိပ်လို ပြောဆိုနည်း — "May I speak to May?" / "I would like to make an appointment." / "I would love to." စတဲ့ ဝါကျများနဲ့ အင်္ဂလိပ်လို ဖုန်းပြောရဲပြီလား ဆွေးနွေးမှုနဲ့ ဖုန်းခေါ်ဆိုမှု အပြည့်အစုံ role-play လေ့ကျင့်ခန်း',
+    phrases: ['May I speak to May?', 'I would like to make an appointment.', 'I would love to.', 'Can I leave a message?', 'Sorry, I cannot come.', 'Thank you for inviting me.'],
+    durationSecs: 699,
+    cover: '/podcast-covers/ep-110.jpg',
+  },
+  {
     n: 109,
     slug: 'visiting-a-friends-home-2026-10-26',
     titleMy: 'အပိုင်း ၁၀၉: သူငယ်ချင်းအိမ်သို့ သွားလည်ခြင်း — Visiting a friend\'s home',
