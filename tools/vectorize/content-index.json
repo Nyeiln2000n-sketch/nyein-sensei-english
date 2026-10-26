@@ -224293,7 +224293,7 @@
    "kind": "word",
    "en": "heart attack",
    "en_norm": "heart attack",
-   "my_norm": "နှလုံးရောဂါရခြင်း",
+   "my_norm": "နှလုံးဖောက်ခြင်း",
    "th_norm": "หัวใจวาย",
    "fingerprint": "2c200509feda6d82",
    "vocab_sig": [
@@ -227008,7 +227008,7 @@
    "en": "robe",
    "en_norm": "robe",
    "my_norm": "ဝတ်ရုံ",
-   "th_norm": "เสื้อคลุมยาว",
+   "th_norm": "จีวร",
    "fingerprint": "9d0f44502d8625d3",
    "vocab_sig": [
     "robe"
@@ -228766,7 +228766,7 @@
    "en": "den",
    "en_norm": "den",
    "my_norm": "ဂူ သားရဲ",
-   "th_norm": "ถ้ำ",
+   "th_norm": "โพรง",
    "fingerprint": "8a8a1a9fe8565d64",
    "vocab_sig": [
     "den"
@@ -230340,7 +230340,7 @@
    "kind": "word",
    "en": "overdue",
    "en_norm": "overdue",
-   "my_norm": "နောက်ကျသော ပေးချေမှု",
+   "my_norm": "နောက်ကျသော",
    "th_norm": "เกินกำหนด",
    "fingerprint": "7038dedb22f1eafb",
    "vocab_sig": [
@@ -230633,18 +230633,19 @@
   {
    "id": "example:time:peak-hours",
    "kind": "example",
-   "en": "Gyms crowd during peak hours.",
-   "en_norm": "gyms crowd during peak hours",
+   "en": "Gyms get crowded during peak hours.",
+   "en_norm": "gyms get crowded during peak hours",
    "my_norm": "",
-   "fingerprint": "11433e89e3eea264",
+   "fingerprint": "cc2a4d7979560099",
    "vocab_sig": [
-    "crowd",
+    "crowded",
     "during",
+    "get",
     "gyms",
     "hours",
     "peak"
    ],
-   "template_sig": "W W W W W .",
+   "template_sig": "W W W W W W .",
    "tags": [
     "time",
     "example"
@@ -233617,7 +233618,7 @@
    "kind": "word",
    "en": "pop-up",
    "en_norm": "pop up",
-   "my_norm": "ယာယီ",
+   "my_norm": "ယာယီဆိုင်",
    "th_norm": "ป๊อปอัป",
    "fingerprint": "17ad4b475d69418e",
    "vocab_sig": [
@@ -234761,7 +234762,7 @@
    "en": "final approach",
    "en_norm": "final approach",
    "my_norm": "နောက်ဆုံးချဉ်းကပ်မှု",
-   "th_norm": "เข้าสู่ขั้นสุดท้าย",
+   "th_norm": "ขั้นสุดท้ายก่อนลงจอด",
    "fingerprint": "69114887473af53a",
    "vocab_sig": [
     "approach",
@@ -234922,7 +234923,7 @@
    "en": "cruising altitude",
    "en_norm": "cruising altitude",
    "my_norm": "ပျံသန်းအမြင့်",
-   "th_norm": "ระดับความสูงบิน",
+   "th_norm": "ระดับความสูงขณะบิน",
    "fingerprint": "79182981e2f1f626",
    "vocab_sig": [
     "altitude",
@@ -235043,7 +235044,7 @@
    "en": "tray table",
    "en_norm": "tray table",
    "my_norm": "ဗန်းစားပွဲ",
-   "th_norm": "ถาดพับ",
+   "th_norm": "โต๊ะพับ",
    "fingerprint": "f74ab4771357adbe",
    "vocab_sig": [
     "table",
@@ -236300,7 +236301,7 @@
    "en": "phone booth",
    "en_norm": "phone booth",
    "my_norm": "ဖုန်းခန်း",
-   "th_norm": "ตู้โทรศัพท์",
+   "th_norm": "ตู้โทรศัพท์เก็บเสียง",
    "fingerprint": "c2f4dc3d45204e8d",
    "vocab_sig": [
     "booth",
@@ -236463,7 +236464,7 @@
    "en": "prayer room",
    "en_norm": "prayer room",
    "my_norm": "ဆုတောင်းခန်း",
-   "th_norm": "ห้องละหมาด",
+   "th_norm": "ห้องสวดมนต์",
    "fingerprint": "2f2b195967dea95e",
    "vocab_sig": [
     "prayer",
@@ -237539,7 +237540,7 @@
    "en": "prescribe",
    "en_norm": "prescribe",
    "my_norm": "ဆေးညွှန်းသည်",
-   "th_norm": "สั่งยา",
+   "th_norm": "สั่งการรักษา",
    "fingerprint": "6ce34a94e412486a",
    "vocab_sig": [
     "prescribe"
@@ -237825,7 +237826,7 @@
    "en": "bedside manner",
    "en_norm": "bedside manner",
    "my_norm": "လူနာဆက်ဆံမှု",
-   "th_norm": "มารยาทข้างเตียง",
+   "th_norm": "ท่าทีต่อผู้ป่วย",
    "fingerprint": "a5515ee9944ef717",
    "vocab_sig": [
     "bedside",
@@ -241259,15 +241260,15 @@
    "line": 450
   },
   {
-   "id": "word:seasons:migratory-season",
+   "id": "word:seasons:migration-season",
    "kind": "word",
-   "en": "migratory season",
-   "en_norm": "migratory season",
+   "en": "migration season",
+   "en_norm": "migration season",
    "my_norm": "ရွှေ့ပြောင်းရာသီ",
    "th_norm": "ฤดูอพยพ",
-   "fingerprint": "f0b4cc70185c4591",
+   "fingerprint": "1fcf3caccae82012",
    "vocab_sig": [
-    "migratory",
+    "migration",
     "season"
    ],
    "template_sig": "W W",
@@ -241279,16 +241280,16 @@
    "line": 451
   },
   {
-   "id": "example:seasons:migratory-season",
+   "id": "example:seasons:migration-season",
    "kind": "example",
-   "en": "Birds arrive in migratory season.",
-   "en_norm": "birds arrive in migratory season",
+   "en": "Birds arrive in migration season.",
+   "en_norm": "birds arrive in migration season",
    "my_norm": "",
-   "fingerprint": "7f67b12651df9ebf",
+   "fingerprint": "3cdded1186579c7c",
    "vocab_sig": [
     "arrive",
     "birds",
-    "migratory",
+    "migration",
     "season"
    ],
    "template_sig": "W W in W W .",
@@ -243815,8 +243816,8 @@
    "kind": "word",
    "en": "breath of fresh air",
    "en_norm": "breath of fresh air",
-   "my_norm": "လေသန့်ရှူရှိုက်မှု",
-   "th_norm": "ลมหายใจสดชื่น",
+   "my_norm": "လန်းဆန်းစေသောအရာ",
+   "th_norm": "ความสดใหม่ที่น่ายินดี",
    "fingerprint": "37eeeb811da3b943",
    "vocab_sig": [
     "air",
@@ -243976,7 +243977,7 @@
    "kind": "word",
    "en": "assumption",
    "en_norm": "assumption",
-   "my_norm": "အယူအဆ",
+   "my_norm": "ယူဆချက်",
    "th_norm": "ข้อสันนิษฐาน",
    "fingerprint": "c081dd376ba93a53",
    "vocab_sig": [
@@ -245175,7 +245176,7 @@
    "kind": "word",
    "en": "logic",
    "en_norm": "logic",
-   "my_norm": "ယုတ္တိဗေဒ",
+   "my_norm": "ကျိုးကြောင်းဆင်ခြင်မှု",
    "th_norm": "ตรรกะ",
    "fingerprint": "08e4e1c34e288c71",
    "vocab_sig": [
@@ -246716,7 +246717,7 @@
    "en": "symbolism",
    "en_norm": "symbolism",
    "my_norm": "သင်္ကေတအဓိပ္ပာယ်",
-   "th_norm": "สัญลักษณ์นิยม",
+   "th_norm": "การใช้สัญลักษณ์",
    "fingerprint": "347b6e461cf15317",
    "vocab_sig": [
     "symbolism"
@@ -246774,12 +246775,12 @@
   {
    "id": "example:emotions:condolence",
    "kind": "example",
-   "en": "We offered our sincere condolence to the grieving family.",
-   "en_norm": "we offered our sincere condolence to the grieving family",
+   "en": "We offered our sincere condolences to the grieving family.",
+   "en_norm": "we offered our sincere condolences to the grieving family",
    "my_norm": "",
-   "fingerprint": "95f35f0b3ac66dac",
+   "fingerprint": "da5b953aace0ef0b",
    "vocab_sig": [
-    "condolence",
+    "condolences",
     "family",
     "grieving",
     "offered",
@@ -250152,7 +250153,7 @@
    "kind": "word",
    "en": "yare",
    "en_norm": "yare",
-   "my_norm": "လျင်မြန်သွက်လက်မှု",
+   "my_norm": "လျင်မြန်သွက်လက်သော",
    "th_norm": "ความคล่องแคล่ว",
    "fingerprint": "9f8cf7e59341fca4",
    "vocab_sig": [
@@ -254073,7 +254074,7 @@
    "kind": "word",
    "en": "invoke",
    "en_norm": "invoke",
-   "my_norm": "ရည်ညွှန်းခေါ်ဆို",
+   "my_norm": "ကိုးကား",
    "th_norm": "อ้างถึง",
    "fingerprint": "e77f5b9f691679ef",
    "vocab_sig": [
@@ -257307,7 +257308,7 @@
    "kind": "word",
    "en": "chivalrous",
    "en_norm": "chivalrous",
-   "my_norm": "သူရဲကောင်းဆန်သော",
+   "my_norm": "လေးစားယဉ်ကျေးသော",
    "th_norm": "สุภาพบุรุษ",
    "fingerprint": "714289f8b43c0af5",
    "vocab_sig": [
@@ -260293,7 +260294,7 @@
    "kind": "word",
    "en": "glib",
    "en_norm": "glib",
-   "my_norm": "ချောမောသော",
+   "my_norm": "အပေါ်ယံချောမောသော",
    "th_norm": "ลื่นปาก",
    "fingerprint": "4430778d0285f614",
    "vocab_sig": [
@@ -260768,7 +260769,7 @@
    "kind": "word",
    "en": "haggard",
    "en_norm": "haggard",
-   "my_norm": "ပိန်ခြောက်သော",
+   "my_norm": "ပင်ပန်းနွမ်းနယ်သော",
    "th_norm": "อิดโรย",
    "fingerprint": "249f12b6995b622d",
    "vocab_sig": [
@@ -262133,17 +262134,18 @@
   {
    "id": "example:emotions:ennui",
    "kind": "example",
-   "en": "Wealthy ennui bored him deeply.",
-   "en_norm": "wealthy ennui bored him deeply",
+   "en": "Long idle summers filled him with ennui.",
+   "en_norm": "long idle summers filled him with ennui",
    "my_norm": "",
-   "fingerprint": "866945d8502e260d",
+   "fingerprint": "e9d13665fc3037f1",
    "vocab_sig": [
-    "bored",
-    "deeply",
     "ennui",
-    "wealthy"
+    "filled",
+    "idle",
+    "long",
+    "summers"
    ],
-   "template_sig": "W W W him W .",
+   "template_sig": "W W W W him with W .",
    "tags": [
     "emotions",
     "example"
@@ -263069,17 +263071,17 @@
   {
    "id": "example:nature:confluence",
    "kind": "example",
-   "en": "The confluence of rivers forms a delta.",
-   "en_norm": "the confluence of rivers forms a delta",
+   "en": "We camped near the confluence of two rivers.",
+   "en_norm": "we camped near the confluence of two rivers",
    "my_norm": "",
-   "fingerprint": "0ebfbaa8abd1dfb5",
+   "fingerprint": "df4788800071af9a",
    "vocab_sig": [
+    "camped",
     "confluence",
-    "delta",
-    "forms",
+    "near",
     "rivers"
    ],
-   "template_sig": "the W of W W a W .",
+   "template_sig": "we W W the W of two W .",
    "tags": [
     "nature",
     "example"
@@ -264085,16 +264087,16 @@
   {
    "id": "example:school:solution",
    "kind": "example",
-   "en": "Sugar dissolves in the water.",
-   "en_norm": "sugar dissolves in the water",
+   "en": "Sugar dissolves in water.",
+   "en_norm": "sugar dissolves in water",
    "my_norm": "",
-   "fingerprint": "937486afc9ff7da5",
+   "fingerprint": "d5c438f9a81aef31",
    "vocab_sig": [
     "dissolves",
     "sugar",
     "water"
    ],
-   "template_sig": "W W in the W .",
+   "template_sig": "W W in W .",
    "tags": [
     "school",
     "example"
@@ -264281,17 +264283,18 @@
   {
    "id": "example:school:mineral",
    "kind": "example",
-   "en": "Milk contains calcium minerals.",
-   "en_norm": "milk contains calcium minerals",
+   "en": "Milk contains calcium and other minerals.",
+   "en_norm": "milk contains calcium and other minerals",
    "my_norm": "",
-   "fingerprint": "a96b21fdf3f621bb",
+   "fingerprint": "ee0edf1c7be4a3ff",
    "vocab_sig": [
     "calcium",
     "contains",
     "milk",
-    "minerals"
+    "minerals",
+    "other"
    ],
-   "template_sig": "W W W W .",
+   "template_sig": "W W W and W W .",
    "tags": [
     "school",
     "example"
@@ -265700,14 +265703,14 @@
   {
    "id": "example:health:hypersensitivity",
    "kind": "example",
-   "en": "Lactose hypersensitivity is common.",
-   "en_norm": "lactose hypersensitivity is common",
+   "en": "Peanut hypersensitivity is common.",
+   "en_norm": "peanut hypersensitivity is common",
    "my_norm": "",
-   "fingerprint": "88feaa832f1b2463",
+   "fingerprint": "b387bdfc5ec5bb27",
    "vocab_sig": [
     "common",
     "hypersensitivity",
-    "lactose"
+    "peanut"
    ],
    "template_sig": "W W is W .",
    "tags": [
@@ -265957,7 +265960,7 @@
    "en": "seethe",
    "en_norm": "seethe",
    "my_norm": "ဆူပွက်သည်",
-   "th_norm": "เดือด",
+   "th_norm": "เดือดดาล",
    "fingerprint": "0119616a2c261e47",
    "vocab_sig": [
     "seethe"
@@ -266051,17 +266054,18 @@
   {
    "id": "example:school:constrict",
    "kind": "example",
-   "en": "Cold air constricts the pipes.",
-   "en_norm": "cold air constricts the pipes",
+   "en": "Cold air constricts the blood vessels.",
+   "en_norm": "cold air constricts the blood vessels",
    "my_norm": "",
-   "fingerprint": "76efd0616ef1f214",
+   "fingerprint": "d0e100eb94162dc2",
    "vocab_sig": [
     "air",
+    "blood",
     "cold",
     "constricts",
-    "pipes"
+    "vessels"
    ],
-   "template_sig": "W W W the W .",
+   "template_sig": "W W W the W W .",
    "tags": [
     "school",
     "example"
@@ -267760,7 +267764,7 @@
    "en": "speckled",
    "en_norm": "speckled",
    "my_norm": "အစက်ငယ်များသော",
-   "th_norm": "มีจุดเล็ก",
+   "th_norm": "มีจุดเล็ก ๆ",
    "fingerprint": "11091aeb3f85db94",
    "vocab_sig": [
     "speckled"
@@ -269203,7 +269207,7 @@
    "kind": "word",
    "en": "volatile",
    "en_norm": "volatile",
-   "my_norm": "မတည်မငြိမ်သော",
+   "my_norm": "အလွယ်တကူအငွေ့ပျံသော",
    "th_norm": "ระเหยง่าย",
    "fingerprint": "021f0c9a23ee4441",
    "vocab_sig": [
@@ -269243,7 +269247,7 @@
    "kind": "word",
    "en": "inert",
    "en_norm": "inert",
-   "my_norm": "လှုပ်ရှားမှုမရှိသော",
+   "my_norm": "ဓာတုတုံ့ပြန်မှုမရှိသော",
    "th_norm": "เฉื่อย",
    "fingerprint": "3321675705932e37",
    "vocab_sig": [
@@ -269499,17 +269503,19 @@
   {
    "id": "example:computer:remote-desktop",
    "kind": "example",
-   "en": "Use remote desktop to help.",
-   "en_norm": "use remote desktop to help",
+   "en": "Use remote desktop to help fix the problem.",
+   "en_norm": "use remote desktop to help fix the problem",
    "my_norm": "",
-   "fingerprint": "47daaecfcd234d40",
+   "fingerprint": "414a6dda4fee9ac6",
    "vocab_sig": [
     "desktop",
+    "fix",
     "help",
+    "problem",
     "remote",
     "use"
    ],
-   "template_sig": "W W W to W .",
+   "template_sig": "W W W to W W the W .",
    "tags": [
     "computer",
     "example"
@@ -269976,14 +269982,14 @@
   {
    "id": "example:technology:airplane-mode",
    "kind": "example",
-   "en": "Please enable flight mode on your device.",
-   "en_norm": "please enable flight mode on your device",
+   "en": "Please enable airplane mode on your device.",
+   "en_norm": "please enable airplane mode on your device",
    "my_norm": "",
-   "fingerprint": "c56aec2357e62703",
+   "fingerprint": "949651cba74304c0",
    "vocab_sig": [
+    "airplane",
     "device",
     "enable",
-    "flight",
     "mode"
    ],
    "template_sig": "please W W W on your W .",
@@ -270055,17 +270061,17 @@
   {
    "id": "example:technology:battery-saver",
    "kind": "example",
-   "en": "Battery saver extends life.",
-   "en_norm": "battery saver extends life",
+   "en": "Battery saver extends battery life.",
+   "en_norm": "battery saver extends battery life",
    "my_norm": "",
-   "fingerprint": "0e16029cda7ba5e0",
+   "fingerprint": "e1c4cdd5be790cef",
    "vocab_sig": [
     "battery",
     "extends",
     "life",
     "saver"
    ],
-   "template_sig": "W W W W .",
+   "template_sig": "W W W W W .",
    "tags": [
     "technology",
     "example"
@@ -270096,7 +270102,7 @@
   {
    "id": "example:technology:dual-sim",
    "kind": "example",
-   "en": "This phone supports dual sim.",
+   "en": "This phone supports dual SIM.",
    "en_norm": "this phone supports dual sim",
    "my_norm": "",
    "fingerprint": "d0946d48353b84f3",
@@ -270412,7 +270418,7 @@
   {
    "id": "example:technology:nfc",
    "kind": "example",
-   "en": "Pay with nfc.",
+   "en": "Pay with NFC.",
    "en_norm": "pay with nfc",
    "my_norm": "",
    "fingerprint": "8fec11cc55f24fae",
@@ -270451,18 +270457,19 @@
   {
    "id": "example:technology:wifi-direct",
    "kind": "example",
-   "en": "Send files via wifi direct.",
-   "en_norm": "send files via wifi direct",
+   "en": "Send files via Wi-Fi Direct.",
+   "en_norm": "send files via wi fi direct",
    "my_norm": "",
-   "fingerprint": "3be12787f88fbc29",
+   "fingerprint": "2909b308c61da7c1",
    "vocab_sig": [
     "direct",
+    "fi",
     "files",
     "send",
     "via",
-    "wifi"
+    "wi"
    ],
-   "template_sig": "W W W W W .",
+   "template_sig": "W W W W - W W .",
    "tags": [
     "technology",
     "example"
@@ -270652,7 +270659,7 @@
   {
    "id": "example:computer:bios",
    "kind": "example",
-   "en": "Update the bios carefully.",
+   "en": "Update the BIOS carefully.",
    "en_norm": "update the bios carefully",
    "my_norm": "",
    "fingerprint": "227c7fb0fda0999b",
@@ -270729,16 +270736,17 @@
   {
    "id": "example:technology:extender",
    "kind": "example",
-   "en": "An extender boosts wifi.",
-   "en_norm": "an extender boosts wifi",
+   "en": "An extender boosts Wi-Fi.",
+   "en_norm": "an extender boosts wi fi",
    "my_norm": "",
-   "fingerprint": "81c74c8c8a4e8eb8",
+   "fingerprint": "a6f0c90c2d575104",
    "vocab_sig": [
     "boosts",
     "extender",
-    "wifi"
+    "fi",
+    "wi"
    ],
-   "template_sig": "an W W W .",
+   "template_sig": "an W W W - W .",
    "tags": [
     "technology",
     "example"
@@ -270769,7 +270777,7 @@
   {
    "id": "example:computer:ethernet-cable",
    "kind": "example",
-   "en": "Plug in the ethernet cable.",
+   "en": "Plug in the Ethernet cable.",
    "en_norm": "plug in the ethernet cable",
    "my_norm": "",
    "fingerprint": "6e7bebe419263105",
@@ -270809,7 +270817,7 @@
   {
    "id": "example:computer:usb-c",
    "kind": "example",
-   "en": "This laptop uses usb-c.",
+   "en": "This laptop uses USB-C.",
    "en_norm": "this laptop uses usb c",
    "my_norm": "",
    "fingerprint": "5645ded8565dbd47",
@@ -271241,15 +271249,15 @@
   {
    "id": "example:computer:unsubscribe",
    "kind": "example",
-   "en": "Unsubscribe from spam.",
-   "en_norm": "unsubscribe from spam",
+   "en": "Unsubscribe from the newsletter.",
+   "en_norm": "unsubscribe from the newsletter",
    "my_norm": "",
-   "fingerprint": "9b4a7958d4d1fb40",
+   "fingerprint": "48e826302e67f754",
    "vocab_sig": [
-    "spam",
+    "newsletter",
     "unsubscribe"
    ],
-   "template_sig": "W from W .",
+   "template_sig": "W from the W .",
    "tags": [
     "computer",
     "example"
@@ -273040,7 +273048,7 @@
    "en": "key pair",
    "en_norm": "key pair",
    "my_norm": "သော့အတွဲ",
-   "th_norm": "คู่กุญแจ",
+   "th_norm": "คู่คีย์",
    "fingerprint": "9c4aaf060bce3da7",
    "vocab_sig": [
     "key",
@@ -273508,7 +273516,7 @@
    "kind": "word",
    "en": "synchronize",
    "en_norm": "synchronize",
-   "my_norm": "တစ်ပြိုင်တည်းလုပ်သည်",
+   "my_norm": "ထပ်တူညီအောင်လုပ်သည်",
    "th_norm": "ซิงค์",
    "fingerprint": "2823580ca7f08508",
    "vocab_sig": [
@@ -273936,7 +273944,7 @@
    "kind": "word",
    "en": "seamless",
    "en_norm": "seamless",
-   "my_norm": "ချောမွေ့သော",
+   "my_norm": "ချောမွေ့ပြီး အနှောင့်အယှက်မရှိသော",
    "th_norm": "ราบรื่น",
    "fingerprint": "5a3cd73b85330e5f",
    "vocab_sig": [
@@ -274764,7 +274772,7 @@
    "kind": "word",
    "en": "host",
    "en_norm": "host",
-   "my_norm": "အိမ်ရှင်သက်ရှိ",
+   "my_norm": "အိမ်ရှင်",
    "th_norm": "โฮสต์",
    "fingerprint": "4740ae6347b0172c",
    "vocab_sig": [
@@ -276292,7 +276300,7 @@
    "en": "obese",
    "en_norm": "obese",
    "my_norm": "အဝလွန်သော",
-   "th_norm": "อ้วน",
+   "th_norm": "เป็นโรคอ้วน",
    "fingerprint": "d1f79e652718a4a9",
    "vocab_sig": [
     "obese"
@@ -276803,7 +276811,7 @@
    "en": "monograph",
    "en_norm": "monograph",
    "my_norm": "ဘာသာရပ်ကျမ်း",
-   "th_norm": "หนังสือวิชาการ",
+   "th_norm": "หนังสือวิชาการเฉพาะเรื่อง",
    "fingerprint": "406ed8d019b4cec0",
    "vocab_sig": [
     "monograph"
@@ -277116,7 +277124,7 @@
    "en": "joint degree",
    "en_norm": "joint degree",
    "my_norm": "ပူးတွဲဘွဲ့",
-   "th_norm": "ปริญญาคู่",
+   "th_norm": "ปริญญาร่วม",
    "fingerprint": "c214b452773e6309",
    "vocab_sig": [
     "degree",
@@ -277665,7 +277673,7 @@
    "kind": "word",
    "en": "tutorial",
    "en_norm": "tutorial",
-   "my_norm": "သင်ကြားမှုအသေး",
+   "my_norm": "ဆွေးနွေးသင်ခန်းစာ",
    "th_norm": "การสอนกลุ่มย่อย",
    "fingerprint": "fe30030e102ecf8f",
    "vocab_sig": [
@@ -282294,7 +282302,7 @@
    "kind": "word",
    "en": "virtual assistant",
    "en_norm": "virtual assistant",
-   "my_norm": "အတုအယောင်လက်ထောက်",
+   "my_norm": "ဗာကျူရယ်လက်ထောက်",
    "th_norm": "ผู้ช่วยเสมือน",
    "fingerprint": "782cf01cd511ce47",
    "vocab_sig": [
@@ -283201,7 +283209,7 @@
    "en": "breezy",
    "en_norm": "breezy",
    "my_norm": "လေညင်းတိုက်သော",
-   "th_norm": "มีลมเย็น",
+   "th_norm": "มีลมพัดเบา ๆ",
    "fingerprint": "fa6cff0bff3adc57",
    "vocab_sig": [
     "breezy"
@@ -283281,7 +283289,7 @@
    "en": "choppy",
    "en_norm": "choppy",
    "my_norm": "လှိုင်းထသော",
-   "th_norm": "คลื่นแรง",
+   "th_norm": "มีคลื่นไม่เรียบ",
    "fingerprint": "02ef2e49f39dec27",
    "vocab_sig": [
     "choppy"
@@ -283401,7 +283409,7 @@
    "en": "muddy",
    "en_norm": "muddy",
    "my_norm": "ရွှံ့နွံထသော",
-   "th_norm": "โคลนตม",
+   "th_norm": "เปื้อนโคลน",
    "fingerprint": "03b4cc3d83b564b9",
    "vocab_sig": [
     "muddy"

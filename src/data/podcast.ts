@@ -38,6 +38,16 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 111,
+    slug: 'feeling-good-positive-feelings-2026-10-26',
+    titleMy: 'အပိုင်း ၁၁၁: ကောင်းမွန်တဲ့ ခံစားချက်များ — Feeling good',
+    titleOrig: 'รู้สึกดี — Feeling good',
+    descMy: 'အခန်း ၁၂ ၏ ပထမဆုံး အပိုင်း — ခံစားချက်များကို အင်္ဂလိပ်လို ပြောဆိုနည်း — "I am happy." / "I am excited." / "I feel great today." / "I feel wonderful." / "Today is a great day." / "I am excited about the weekend." ဆိုတဲ့ ဝါကျခြောက်ခုနဲ့ စိတ်ကောင်းကို သူများအား မျှဝေသင့်လား၊ ကိုယ့်ဘာသာ သိမ်းထားသင့်လား ဆွေးနွေးမှုနဲ့ သူငယ်ချင်းကို ဒီနေ့ ဘယ်လို ခံစားရလဲ ပြောပြတဲ့ role-play လေ့ကျင့်ခန်း',
+    phrases: ['I am happy.', 'I am excited.', 'I feel great today.', 'I feel wonderful.', 'Today is a great day.', 'I am excited about the weekend.'],
+    durationSecs: 501,
+    cover: '/podcast-covers/ep-111.jpg',
+  },
+  {
     n: 110,
     slug: 'module-11-review-phone-appointments-invitations-2026-10-26',
     titleMy: 'အပိုင်း ၁၁၀: ဖုန်း၊ ချိန်းဆိုမှုနှင့် ဖိတ်ကြားခြင်း ပြန်လည်သုံးသပ်ခြင်း — Module 11 review',
