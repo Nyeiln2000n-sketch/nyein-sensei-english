@@ -38,6 +38,16 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 112,
+    slug: 'negative-feelings-2026-10-26',
+    titleMy: 'အပိုင်း ၁၁၂: စိတ်မကောင်းတဲ့ ခံစားချက်များ — Negative feelings',
+    titleOrig: 'รู้สึกไม่ดี — Negative feelings',
+    descMy: 'အခန်း ၁၂ ၏ ဒုတိယအပိုင်း — ဝမ်းနည်းခြင်း၊ ပင်ပန်းခြင်း၊ ပျင်းရိခြင်း၊ အထီးကျန်ခြင်းတို့ကို အင်္ဂလိပ်လို ပြောဆိုနည်း — "I am sad." / "I am tired." / "I am bored." / "I am lonely." / "I am sad because it is raining." / "I am lonely because I am home alone." ဆိုတဲ့ ဝါကျများနဲ့ အကြောင်းပြချက်ထည့်ပြောနည်း၊ ဝမ်းနည်းတဲ့အခါ သူငယ်ချင်းကို ပြောသင့်လား၊ ကိုယ့်ဘာသာ သိမ်းထားသင့်လား ဆွေးနွေးမှုနဲ့ သူငယ်ချင်းဖုန်းခေါ်လာတဲ့အခါ ဘယ်လို ခံစားရလဲ ပြောပြတဲ့ role-play လေ့ကျင့်ခန်း',
+    phrases: ['I am sad.', 'I am tired.', 'I am bored.', 'I am lonely.', 'I am sad because it is raining.', 'I am lonely because I am home alone.'],
+    durationSecs: 557,
+    cover: '/podcast-covers/ep-112.jpg',
+  },
+  {
     n: 111,
     slug: 'feeling-good-positive-feelings-2026-10-26',
     titleMy: 'အပိုင်း ၁၁၁: ကောင်းမွန်တဲ့ ခံစားချက်များ — Feeling good',

@@ -284022,22 +284022,20 @@
   {
    "id": "example:science:resonance",
    "kind": "example",
-   "en": "The bridge collapsed because wind-driven resonance matched its natural frequency.",
-   "en_norm": "the bridge collapsed because wind driven resonance matched its natural frequency",
+   "en": "A singer can shatter a glass when her note matches the glass's natural frequency.",
+   "en_norm": "a singer can shatter a glass when her note matches the glass s natural frequency",
    "my_norm": "",
-   "fingerprint": "8af34d147211a5f3",
+   "fingerprint": "56272e9d934bc7ae",
    "vocab_sig": [
-    "because",
-    "bridge",
-    "collapsed",
-    "driven",
     "frequency",
-    "matched",
+    "glass",
+    "matches",
     "natural",
-    "resonance",
-    "wind"
+    "note",
+    "shatter",
+    "singer"
    ],
-   "template_sig": "the W W W W - W W W its W W .",
+   "template_sig": "a W can W a W when her W W the W ' s W W .",
    "tags": [
     "science",
     "example"
@@ -284456,14 +284454,13 @@
   {
    "id": "example:science:dark-matter",
    "kind": "example",
-   "en": "Dark matter makes up most of the mass in the universe.",
-   "en_norm": "dark matter makes up most of the mass in the universe",
+   "en": "Dark matter makes up most of the matter in the universe.",
+   "en_norm": "dark matter makes up most of the matter in the universe",
    "my_norm": "",
-   "fingerprint": "56f29123a23dfcea",
+   "fingerprint": "1aa0703ca2a38321",
    "vocab_sig": [
     "dark",
     "makes",
-    "mass",
     "matter",
     "most",
     "universe"
@@ -300880,7 +300877,7 @@
    "en": "double-blind study",
    "en_norm": "double blind study",
    "my_norm": "နှစ်ထပ်မျက်ကွယ်လေ့လာမှု",
-   "th_norm": "การศึกษาปกปิดสองชั้น",
+   "th_norm": "การศึกษาแบบปกปิดสองทาง",
    "fingerprint": "bb29cfaba722e4a9",
    "vocab_sig": [
     "blind",
@@ -310111,7 +310108,7 @@
    "kind": "word",
    "en": "reasonable doubt",
    "en_norm": "reasonable doubt",
-   "my_norm": "သံသယဖြစ်ဖွယ်အကြောင်း",
+   "my_norm": "ကျိုးကြောင်းဆီလျော်သောသံသယ",
    "th_norm": "ข้อสงสัยอันมีเหตุผล",
    "fingerprint": "c46d66ad86b08e54",
    "vocab_sig": [
@@ -312872,7 +312869,7 @@
    "en": "tax evasion",
    "en_norm": "tax evasion",
    "my_norm": "အခွန်ရှောင်မှု",
-   "th_norm": "การเลี่ยงภาษี",
+   "th_norm": "การหนีภาษี",
    "fingerprint": "0f8b67b2f34623c3",
    "vocab_sig": [
     "evasion",
@@ -315510,7 +315507,7 @@
    "en": "res ipsa loquitur",
    "en_norm": "res ipsa loquitur",
    "my_norm": "အဖြစ်အပျက်ကိုယ်တိုင်ပြောသောမူ",
-   "th_norm": "หลักข้อเท็จจริงพูดด้วยตัวเอง",
+   "th_norm": "หลักข้อเท็จจริงปรากฏชัดในตัวเอง",
    "fingerprint": "82da5539268f8fbb",
    "vocab_sig": [
     "ipsa",
@@ -315765,18 +315762,20 @@
    "line": 269
   },
   {
-   "id": "word:law:intentional-infliction",
+   "id": "word:law:intentional-infliction-of-emotional-distress",
    "kind": "word",
-   "en": "intentional infliction",
-   "en_norm": "intentional infliction",
+   "en": "intentional infliction of emotional distress",
+   "en_norm": "intentional infliction of emotional distress",
    "my_norm": "ရည်ရွယ်ချက်ရှိထိခိုက်စေမှု",
-   "th_norm": "การก่อความทุกข์โดยเจตนา",
-   "fingerprint": "590d447479e45b07",
+   "th_norm": "การก่อความทุกข์ทางใจโดยเจตนา",
+   "fingerprint": "3e1450f138e29e38",
    "vocab_sig": [
+    "distress",
+    "emotional",
     "infliction",
     "intentional"
    ],
-   "template_sig": "W W",
+   "template_sig": "W W of W W",
    "tags": [
     "law",
     "word"
@@ -315785,20 +315784,21 @@
    "line": 270
   },
   {
-   "id": "example:law:intentional-infliction",
+   "id": "example:law:intentional-infliction-of-emotional-distress",
    "kind": "example",
-   "en": "Outrageous conduct may be intentional infliction of distress.",
-   "en_norm": "outrageous conduct may be intentional infliction of distress",
+   "en": "Outrageous conduct may be intentional infliction of emotional distress.",
+   "en_norm": "outrageous conduct may be intentional infliction of emotional distress",
    "my_norm": "",
-   "fingerprint": "5138650d0336316a",
+   "fingerprint": "064f41eed449daa0",
    "vocab_sig": [
     "conduct",
     "distress",
+    "emotional",
     "infliction",
     "intentional",
     "outrageous"
    ],
-   "template_sig": "W W may be W W of W .",
+   "template_sig": "W W may be W W of W W .",
    "tags": [
     "law",
     "example"
@@ -316986,7 +316986,7 @@
    "en": "abstract of title",
    "en_norm": "abstract of title",
    "my_norm": "ပိုင်ဆိုင်မှုအကျဉ်းမှတ်တမ်း",
-   "th_norm": "สารบบกรรมสิทธิ์โดยย่อ",
+   "th_norm": "สรุปประวัติกรรมสิทธิ์",
    "fingerprint": "abd94c01e75638f6",
    "vocab_sig": [
     "abstract",
@@ -317363,7 +317363,7 @@
    "kind": "word",
    "en": "homestead",
    "en_norm": "homestead",
-   "my_norm": "အိမ်ခြံမြေကာကွယ်မှုဇုံ",
+   "my_norm": "အိမ်ခြံမြေကာကွယ်မှု",
    "th_norm": "ที่อยู่อาศัยที่ได้รับความคุ้มครอง",
    "fingerprint": "a2f9f4b5e449df95",
    "vocab_sig": [
@@ -320003,7 +320003,7 @@
    "en": "supremacy clause",
    "en_norm": "supremacy clause",
    "my_norm": "အထက်စီးအပိုဒ်",
-   "th_norm": "บทบัญญัติว่าด้วยความเหนือกว่า",
+   "th_norm": "บทบัญญัติว่าด้วยความเหนือกว่าของกฎหมายกลาง",
    "fingerprint": "96f89749db8b4a0d",
    "vocab_sig": [
     "clause",
@@ -320047,7 +320047,7 @@
    "en": "commerce clause",
    "en_norm": "commerce clause",
    "my_norm": "ကုန်သွယ်ရေးအပိုဒ်",
-   "th_norm": "บทบัญญัติว่าด้วยการพาณิชย์",
+   "th_norm": "บทบัญญัติว่าด้วยการพาณิชย์ระหว่างรัฐ",
    "fingerprint": "b66ab4b67eedc117",
    "vocab_sig": [
     "clause",
@@ -320388,7 +320388,7 @@
    "en": "disparate impact",
    "en_norm": "disparate impact",
    "my_norm": "မညီမျှသောသက်ရောက်မှု",
-   "th_norm": "ผลกระทบที่แตกต่างกันอย่างไม่เป็นธรรม",
+   "th_norm": "ผลกระทบที่แตกต่างกัน",
    "fingerprint": "856eee91ab07a007",
    "vocab_sig": [
     "disparate",
@@ -321183,7 +321183,7 @@
    "en": "jus cogens",
    "en_norm": "jus cogens",
    "my_norm": "ယွတ်စ်ကိုဂျင့်စ် မလွှဲမရှောင်နိုင်ငံတကာမူ",
-   "th_norm": "หลักกฎหมายระหว่างประเทศที่ไม่อาจหลีกเลี่ยงได้",
+   "th_norm": "หลักกฎหมายระหว่างประเทศที่ไม่อาจลบล้างได้",
    "fingerprint": "0ddbf0bc2c1803e3",
    "vocab_sig": [
     "cogens",
@@ -324149,7 +324149,7 @@
    "en": "chapter 11",
    "en_norm": "chapter 11",
    "my_norm": "အခန်း ၁၁ ဒေဝါလီမှု",
-   "th_norm": "การล้มละลายเพื่อฟื้นฟูกิจการ",
+   "th_norm": "บทที่ 11 การล้มละลายเพื่อฟื้นฟูกิจการ",
    "fingerprint": "7e093d0930810ccc",
    "vocab_sig": [
     "11",
@@ -324193,7 +324193,7 @@
    "en": "chapter 7",
    "en_norm": "chapter 7",
    "my_norm": "အခန်း ၇ ဒေဝါလီမှု",
-   "th_norm": "การล้มละลายเพื่อชำระบัญชี",
+   "th_norm": "บทที่ 7 การล้มละลายเพื่อชำระบัญชี",
    "fingerprint": "539adac19b8a30c8",
    "vocab_sig": [
     "7",
@@ -330733,7 +330733,7 @@
    "kind": "word",
    "en": "chickenpox",
    "en_norm": "chickenpox",
-   "my_norm": "ကျောက်ရောဂါ",
+   "my_norm": "ရေကျောက်ရောဂါ",
    "th_norm": "อีสุกอีใส",
    "fingerprint": "518638d02d50834c",
    "vocab_sig": [
@@ -335068,17 +335068,16 @@
   {
    "id": "example:medicine:nephrectomy",
    "kind": "example",
-   "en": "He donated a kidney through a partial nephrectomy.",
-   "en_norm": "he donated a kidney through a partial nephrectomy",
+   "en": "He donated a kidney through a nephrectomy.",
+   "en_norm": "he donated a kidney through a nephrectomy",
    "my_norm": "",
-   "fingerprint": "47538cf8628e67ee",
+   "fingerprint": "a0fd353bf351885e",
    "vocab_sig": [
     "donated",
     "kidney",
-    "nephrectomy",
-    "partial"
+    "nephrectomy"
    ],
-   "template_sig": "he W a W through a W W .",
+   "template_sig": "he W a W through a W .",
    "tags": [
     "medicine",
     "example"
@@ -336402,19 +336401,21 @@
   {
    "id": "example:medicine:targeted-therapy",
    "kind": "example",
-   "en": "Targeted therapy attacks only cancer cells.",
-   "en_norm": "targeted therapy attacks only cancer cells",
+   "en": "Targeted therapy attacks cancer cells with specific molecular targets.",
+   "en_norm": "targeted therapy attacks cancer cells with specific molecular targets",
    "my_norm": "",
-   "fingerprint": "6b0d53ac15c99519",
+   "fingerprint": "208867f9863c73ff",
    "vocab_sig": [
     "attacks",
     "cancer",
     "cells",
-    "only",
+    "molecular",
+    "specific",
     "targeted",
+    "targets",
     "therapy"
    ],
-   "template_sig": "W W W W W W .",
+   "template_sig": "W W W W W with W W W .",
    "tags": [
     "medicine",
     "example"
@@ -342123,18 +342124,19 @@
   {
    "id": "example:medicine:conception",
    "kind": "example",
-   "en": "Conception usually happens two weeks after the period.",
-   "en_norm": "conception usually happens two weeks after the period",
+   "en": "Conception usually happens about two weeks after the start of the period.",
+   "en_norm": "conception usually happens about two weeks after the start of the period",
    "my_norm": "",
-   "fingerprint": "8a232ff9fa219013",
+   "fingerprint": "18c6850aafe3f0c9",
    "vocab_sig": [
     "conception",
     "happens",
     "period",
+    "start",
     "usually",
     "weeks"
    ],
-   "template_sig": "W W W two W after the W .",
+   "template_sig": "W W W about two W after the W of the W .",
    "tags": [
     "medicine",
     "example"
@@ -344979,7 +344981,7 @@
    "kind": "word",
    "en": "fluid resuscitation",
    "en_norm": "fluid resuscitation",
-   "my_norm": "အရည်အသွေးပြန်ဖြည့်ခြင်း",
+   "my_norm": "အရည်ပြန်ဖြည့်ခြင်း",
    "th_norm": "การให้สารน้ำกู้ชีพ",
    "fingerprint": "79019db5a13a29ed",
    "vocab_sig": [
@@ -345594,10 +345596,10 @@
   {
    "id": "example:medicine:transfusion-reaction",
    "kind": "example",
-   "en": "The nurses stopped the transfusion at the first sign of reaction.",
-   "en_norm": "the nurses stopped the transfusion at the first sign of reaction",
+   "en": "The nurses stopped the transfusion at the first sign of a reaction.",
+   "en_norm": "the nurses stopped the transfusion at the first sign of a reaction",
    "my_norm": "",
-   "fingerprint": "49c94c193d6a486d",
+   "fingerprint": "711108b2d693bdd4",
    "vocab_sig": [
     "first",
     "nurses",
@@ -345606,7 +345608,7 @@
     "stopped",
     "transfusion"
    ],
-   "template_sig": "the W W the W at the W W of W .",
+   "template_sig": "the W W the W at the W W of a W .",
    "tags": [
     "medicine",
     "example"
@@ -346299,7 +346301,7 @@
    "en": "droplet precautions",
    "en_norm": "droplet precautions",
    "my_norm": "အမှုန်ကာကွယ်မှုများ",
-   "th_norm": "มาตรการป้องกันละออง",
+   "th_norm": "มาตรการป้องกันละอองฝอย",
    "fingerprint": "e90d8aaea55975b8",
    "vocab_sig": [
     "droplet",
