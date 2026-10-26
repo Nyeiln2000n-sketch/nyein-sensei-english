@@ -38,6 +38,16 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 109,
+    slug: 'visiting-a-friends-home-2026-10-26',
+    titleMy: 'အပိုင်း ၁၀၉: သူငယ်ချင်းအိမ်သို့ သွားလည်ခြင်း — Visiting a friend\'s home',
+    titleOrig: 'ไปเยี่ยมบ้านเพื่อน — Visiting a friend\'s home',
+    descMy: 'သူငယ်ချင်းအိမ်သို့ သွားလည်တဲ့အခါ ဧည့်သည်ကို အင်္ဂလိပ်လို နွေးထွေးစွာ ကြိုဆိုနည်း — "Come in!" / "Welcome to my home!" / "Please come in." / "Make yourself at home." / "Please take a seat." / "Would you like some tea?" / "Thank you for coming." / "I am so happy you came." / "This is my home." ဆိုတဲ့ ဝါကျကိုးခုနဲ့ သူငယ်ချင်းအိမ်သို့ သွားလည်တဲ့အခါ အစားအသောက် ယူသွားသင့်လား၊ ပန်းယူသွားသင့်လား ဆွေးနွေးမှုနဲ့ role-play လေ့ကျင့်ခန်း',
+    phrases: ['Come in!', 'Welcome to my home!', 'Please come in.', 'Make yourself at home.', 'Please take a seat.', 'Would you like some tea?', 'Thank you for coming.', 'I am so happy you came.', 'This is my home.'],
+    durationSecs: 709,
+    cover: '/podcast-covers/ep-109.jpg',
+  },
+  {
     n: 108,
     slug: 'at-a-party-2026-10-25',
     titleMy: 'အပိုင်း ၁၀၈: ပါတီပွဲသို့ သွားခြင်း — At a party',

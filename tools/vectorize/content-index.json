@@ -515400,7 +515400,7 @@
    "en": "ring",
    "en_norm": "ring",
    "my_norm": "မြည်သည်",
-   "th_norm": "ส่งเสียงดัง",
+   "th_norm": "ดัง",
    "fingerprint": "16b974583155fdcb",
    "vocab_sig": [
     "ring"
@@ -517392,7 +517392,7 @@
    "en": "mention",
    "en_norm": "mention",
    "my_norm": "အမည်ဖော်ပြသည်",
-   "th_norm": "เอ่ยถึง",
+   "th_norm": "แท็ก",
    "fingerprint": "68b9c231ac85c959",
    "vocab_sig": [
     "mention"
@@ -519047,7 +519047,7 @@
    "en": "clerk",
    "en_norm": "clerk",
    "my_norm": "စာရေး",
-   "th_norm": "พนักงานขาย",
+   "th_norm": "เสมียน",
    "fingerprint": "c40dc72b0228e585",
    "vocab_sig": [
     "clerk"
@@ -530249,15 +530249,16 @@
   {
    "id": "example:emergencies:gun",
    "kind": "example",
-   "en": "He heard a gunshot.",
-   "en_norm": "he heard a gunshot",
+   "en": "The police found a gun.",
+   "en_norm": "the police found a gun",
    "my_norm": "",
-   "fingerprint": "1066ed25d856c6be",
+   "fingerprint": "ba2051bbcd291856",
    "vocab_sig": [
-    "gunshot",
-    "heard"
+    "found",
+    "gun",
+    "police"
    ],
-   "template_sig": "he W a W .",
+   "template_sig": "the W W a W .",
    "tags": [
     "emergencies",
     "example"
