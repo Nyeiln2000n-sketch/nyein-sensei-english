@@ -349199,7 +349199,7 @@
    "en": "totem pole",
    "en_norm": "totem pole",
    "my_norm": "တိုတမ်တိုင်",
-   "th_norm": "โทเท็ม",
+   "th_norm": "เสาโทเท็ม",
    "fingerprint": "d7f741b1d849191d",
    "vocab_sig": [
     "pole",
@@ -353054,7 +353054,7 @@
    "kind": "word",
    "en": "allegory",
    "en_norm": "allegory",
-   "my_norm": "ဥပမာဇာတ်လမ်း",
+   "my_norm": "သင်္ကေတဇာတ်လမ်း",
    "th_norm": "อุปมานิทัศน์",
    "fingerprint": "3b5eab16aad055e6",
    "vocab_sig": [
@@ -362901,7 +362901,7 @@
    "en": "realism",
    "en_norm": "realism",
    "my_norm": "ရီယလစ်ဇင်ဝါဒ",
-   "th_norm": "เรียลลิซึม",
+   "th_norm": "เรียลลิสม์",
    "fingerprint": "a609d2d7f515fd21",
    "vocab_sig": [
     "realism"
@@ -367577,7 +367577,7 @@
    "en": "stoicism",
    "en_norm": "stoicism",
    "my_norm": "စိတ်တည်ငြိမ်ဝါဒ",
-   "th_norm": "สโตอิก",
+   "th_norm": "ลัทธิสโตอิก",
    "fingerprint": "c07c6a7f49670fb7",
    "vocab_sig": [
     "stoicism"
@@ -368829,7 +368829,7 @@
    "en": "postmodernism",
    "en_norm": "postmodernism",
    "my_norm": "မော်ဒန်လွန်ဝါဒ",
-   "th_norm": "หลังสมัยใหม่",
+   "th_norm": "หลังสมัยนิยม",
    "fingerprint": "236f89f3c74eff3c",
    "vocab_sig": [
     "postmodernism"
@@ -372006,7 +372006,7 @@
    "en": "hegemony",
    "en_norm": "hegemony",
    "my_norm": "လွှမ်းမိုးမှုအာဏာ",
-   "th_norm": "อำนาจครอบงำ",
+   "th_norm": "อำนาจนำ",
    "fingerprint": "6cb3e7f6b445d58e",
    "vocab_sig": [
     "hegemony"
@@ -374922,7 +374922,7 @@
    "en": "tyranny",
    "en_norm": "tyranny",
    "my_norm": "အာဏာရှင်အုပ်ချုပ်မှု",
-   "th_norm": "ทรราช",
+   "th_norm": "ระบอบทรราช",
    "fingerprint": "8f3bbf973622a95d",
    "vocab_sig": [
     "tyranny"
@@ -381928,7 +381928,7 @@
    "kind": "word",
    "en": "enhanced weathering",
    "en_norm": "enhanced weathering",
-   "my_norm": "တိုးမြှင့်မိုးဒဏ်ခံမှုနည်း",
+   "my_norm": "တိုးမြှင့်ကျောက်ဆွေးမြေ့မှုနည်း",
    "th_norm": "การผุพังที่เร่งขึ้น",
    "fingerprint": "ec7213478d6d5441",
    "vocab_sig": [
@@ -384772,19 +384772,19 @@
   {
    "id": "example:environment:food-waste",
    "kind": "example",
-   "en": "A third of all food waste rots uneaten.",
-   "en_norm": "a third of all food waste rots uneaten",
+   "en": "A third of all food is wasted and rots uneaten.",
+   "en_norm": "a third of all food is wasted and rots uneaten",
    "my_norm": "",
-   "fingerprint": "f4b7864758fb47f4",
+   "fingerprint": "da95512f9369cc19",
    "vocab_sig": [
     "all",
     "food",
     "rots",
     "third",
     "uneaten",
-    "waste"
+    "wasted"
    ],
-   "template_sig": "a W of W W W W W .",
+   "template_sig": "a W of W W is W and W W .",
    "tags": [
     "environment",
     "example"
@@ -386782,7 +386782,7 @@
    "en": "r-strategist",
    "en_norm": "r strategist",
    "my_norm": "အရေအတွက်ဗျူဟာမျိုး",
-   "th_norm": "กลยุทธ์อาร์",
+   "th_norm": "สิ่งมีชีวิตกลยุทธ์อาร์",
    "fingerprint": "ce28f3096315d50b",
    "vocab_sig": [
     "r",
@@ -386826,7 +386826,7 @@
    "en": "K-strategist",
    "en_norm": "k strategist",
    "my_norm": "အရည်အသွေးဗျူဟာမျိုး",
-   "th_norm": "กลยุทธ์เค",
+   "th_norm": "สิ่งมีชีวิตกลยุทธ์เค",
    "fingerprint": "3dabec78787a6cae",
    "vocab_sig": [
     "k",
@@ -386911,7 +386911,7 @@
    "en": "regime shift",
    "en_norm": "regime shift",
    "my_norm": "စနစ်အလှည့်အပြောင်း",
-   "th_norm": "การเปลี่ยนระบอบ",
+   "th_norm": "การเปลี่ยนแปลงสภาวะของระบบนิเวศ",
    "fingerprint": "ae1710a83f24dd27",
    "vocab_sig": [
     "regime",
@@ -387549,7 +387549,7 @@
   {
    "id": "word:environment:pigouvian-tax",
    "kind": "word",
-   "en": "pigouvian tax",
+   "en": "Pigouvian tax",
    "en_norm": "pigouvian tax",
    "my_norm": "ပီဂူအခွန်",
    "th_norm": "ภาษีพิกูเวียน",
@@ -388973,7 +388973,7 @@
    "kind": "word",
    "en": "focus group",
    "en_norm": "focus group",
-   "my_norm": "အာရုံစိုက်အုပ်စု",
+   "my_norm": "အာရုံစိုက်ဆွေးနွေးအုပ်စု",
    "th_norm": "กลุ่มสนทนา",
    "fingerprint": "4915d0eee9f9a668",
    "vocab_sig": [
@@ -390665,7 +390665,7 @@
    "kind": "word",
    "en": "dean",
    "en_norm": "dean",
-   "my_norm": "ဌာနမှူး",
+   "my_norm": "မဟာဌာနမှူး",
    "th_norm": "คณบดี",
    "fingerprint": "f89767726a7827c6",
    "vocab_sig": [
@@ -390916,7 +390916,7 @@
    "kind": "word",
    "en": "comprehensive exam",
    "en_norm": "comprehensive exam",
-   "my_norm": "အရည်အချင်းစစ်စာမေးပွဲ",
+   "my_norm": "ဘာသာရပ်စုံစစ်စာမေးပွဲ",
    "th_norm": "การสอบประมวลความรู้",
    "fingerprint": "4513beecd58bb520",
    "vocab_sig": [
@@ -394071,7 +394071,7 @@
    "kind": "word",
    "en": "discourse analysis",
    "en_norm": "discourse analysis",
-   "my_norm": "ဝါဒသုံးသပ်ချက်",
+   "my_norm": "ဘာသာစကားသုံးသပ်ချက်",
    "th_norm": "การวิเคราะห์วาทกรรม",
    "fingerprint": "aa3be793b3aa3656",
    "vocab_sig": [
@@ -395718,7 +395718,7 @@
    "kind": "word",
    "en": "student evaluation",
    "en_norm": "student evaluation",
-   "my_norm": "ကျောင်းသားအကဲဖြတ်မှု",
+   "my_norm": "ကျောင်းသားများ၏ သင်ကြားမှုအကဲဖြတ်မှု",
    "th_norm": "การประเมินโดยนักศึกษา",
    "fingerprint": "12c817dc1c46e3da",
    "vocab_sig": [
@@ -404430,7 +404430,7 @@
    "kind": "word",
    "en": "postprint",
    "en_norm": "postprint",
-   "my_norm": "ထုတ်ဝေပြီးမူ",
+   "my_norm": "လက်ခံပြီးမူ",
    "th_norm": "โพสต์พรินต์",
    "fingerprint": "b630ac0b7cb35b93",
    "vocab_sig": [
@@ -404813,7 +404813,7 @@
    "kind": "word",
    "en": "desk rejection",
    "en_norm": "desk rejection",
-   "my_norm": "စားပွဲငြင်းပယ်မှု",
+   "my_norm": "အယ်ဒီတာအဆင့်ငြင်းပယ်မှု",
    "th_norm": "การปฏิเสธโดยบรรณาธิการ",
    "fingerprint": "4b604f09544b27ff",
    "vocab_sig": [

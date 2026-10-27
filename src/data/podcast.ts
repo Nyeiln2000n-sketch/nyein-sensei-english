@@ -38,6 +38,16 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 113,
+    slug: 'anger-and-fear-2026-10-27',
+    titleMy: 'အပိုင်း ၁၁၃: ဒေါသနှင့် ကြောက်ရွံ့ခြင်း — Anger and Fear',
+    titleOrig: 'โกรธและกลัว — Anger and Fear',
+    descMy: 'အခန်း ၁၂ ၏ တတိယအပိုင်း — ဒေါသထွက်ခြင်းနှင့် ကြောက်ရွံ့ခြင်းတို့ကို အင်္ဂလိပ်လို ပြောဆိုနည်း — "I am angry." / "I am scared." / "Calm down." / "Do not worry." / "I am angry because the bus is late." / "I am scared of the dark." ဆိုတဲ့ ဝါကျများနဲ့ အကြောင်းပြချက်ထည့်ပြောနည်း၊ ဒေါသထွက်တဲ့အခါ စိတ်ထဲက တစ်မှ ဆယ်အထိ ရေတွက်တာ တကယ် အကူအညီဖြစ်လား ဆွေးနွေးမှုနဲ့ ဒေါသထွက်နေ၊ ကြောက်နေတဲ့ သူငယ်ချင်းကို နှစ်သိမ့်တဲ့ role-play လေ့ကျင့်ခန်း',
+    phrases: ['I am angry.', 'I am scared.', 'Calm down.', 'Do not worry.', 'I am angry because the bus is late.', 'I am scared of the dark.'],
+    durationSecs: 596,
+    cover: '/podcast-covers/ep-113.jpg',
+  },
+  {
     n: 112,
     slug: 'negative-feelings-2026-10-26',
     titleMy: 'အပိုင်း ၁၁၂: စိတ်မကောင်းတဲ့ ခံစားချက်များ — Negative feelings',
