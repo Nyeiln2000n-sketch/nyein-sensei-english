@@ -38,6 +38,16 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 115,
+    slug: 'giving-opinions-at-work-2026-10-27',
+    titleMy: 'အပိုင်း ၁၁၅: အလုပ်တွင် ကိုယ့်အမြင်ကို ပြောဆိုခြင်း — Giving Opinions at Work',
+    titleOrig: 'แสดงความคิดเห็น (ในที่ทำงาน) — Giving Opinions at Work',
+    descMy: 'အခန်း ၁၂ ၏ ပဉ္စမအပိုင်း — အလုပ်တွင် ကိုယ့်အမြင်ကို ယဉ်ကျေးစွာနှင့် ယုံကြည်မှုရှိရှိ ပြောဆိုနည်း — "I think we should start at nine." / "In my opinion, this is better." / "I agree with you." / "In my opinion, we need more time." / "I think we should plan ahead." ဆိုတဲ့ ဝါကျများနဲ့ အကြောင်းပြချက်ထည့်ပြောနည်း၊ အစည်းအဝေးတွင် သူဌေးနှင့် အမြင်မတူသည်ကို ပြောရဲသလား ဆွေးနွေးမှုနဲ့ အစည်းအဝေးတွင် အမြင်ပြောတဲ့ role-play လေ့ကျင့်ခန်း',
+    phrases: ['I think we should start at nine.', 'In my opinion, this is better.', 'I agree with you.', 'In my opinion, we need more time.', 'I think we should plan ahead.'],
+    durationSecs: 787,
+    cover: '/podcast-covers/ep-115.jpg',
+  },
+  {
     n: 114,
     slug: 'love-and-strong-liking-2026-10-27',
     titleMy: 'အပိုင်း ၁၁၄: ချစ်ခြင်းနှင့် အလွန်ကြိုက်ခြင်း — Love and Strong Liking',

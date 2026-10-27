@@ -28932,7 +28932,7 @@
    "kind": "phrase",
    "en": "Cousins are like siblings to me.",
    "en_norm": "cousins are like siblings to me",
-   "my_norm": "ဝမ်းကွဲမောင်နှမတွေက ကျွန်တော့အတွက် ညီအစ်ကိုတွေလိုပဲ။",
+   "my_norm": "ဝမ်းကွဲမောင်နှမတွေက ကျွန်တော့အတွက် မောင်နှမတွေလိုပဲ။",
    "th_norm": "ลูกพี่ลูกน้องเหมือนพี่น้องของฉัน",
    "fingerprint": "66c05f20b48a6228",
    "vocab_sig": [
@@ -30245,7 +30245,7 @@
    "kind": "phrase",
    "en": "We picked up where we left off.",
    "en_norm": "we picked up where we left off",
-   "my_norm": "ကျွန်တော်တို့ ရပ်ထားတဲ့နေရာကနေ ဆက်လုပ်ခဲ့တယ်။",
+   "my_norm": "ကျွန်တော်တို့ ရပ်ထားတဲ့နေရာကနေပဲ ပြန်ဆက်ခဲ့တယ်။",
    "th_norm": "เรากลับมาคุยกันต่อจากที่ค้างไว้",
    "fingerprint": "4dbf8ccbb125e181",
    "vocab_sig": [
@@ -139524,7 +139524,7 @@
    "kind": "phrase",
    "en": "I keep coughing at night.",
    "en_norm": "i keep coughing at night",
-   "my_norm": "ညဘက် ကျွန်တော် အမြဲချောင်းဆိုးနေတယ်။",
+   "my_norm": "ညဘက် ကျွန်တော် ဆက်တိုက်ချောင်းဆိုးနေတယ်။",
    "th_norm": "ตอนกลางคืนฉันไอตลอด",
    "fingerprint": "1fcd59a4e1bb2ac3",
    "vocab_sig": [
@@ -140066,7 +140066,7 @@
    "en": "I have an appointment tomorrow morning.",
    "en_norm": "i have an appointment tomorrow morning",
    "my_norm": "မနက်ဖြန်မနက် ကျွန်တော် ရက်ချိန်းရှိတယ်။",
-   "th_norm": "พรุ่งนี้เช้าฉันมีนัดหมอ",
+   "th_norm": "พรุ่งนี้เช้าฉันมีนัด",
    "fingerprint": "a41acb1ed24e71dc",
    "vocab_sig": [
     "appointment",
@@ -140364,7 +140364,7 @@
    "kind": "phrase",
    "en": "Early detection greatly improves the chances of recovery.",
    "en_norm": "early detection greatly improves the chances of recovery",
-   "my_norm": "စောစောသိရှိခြင်းက ပြန်လည်ကောင်းမွန်နိုင်ခြေကို အများကြီးတိုးစေတယ်။",
+   "my_norm": "ရောဂါကို စောစောစီးစီးရှာဖွေတွေ့ရှိခြင်းက ပြန်လည်ကောင်းမွန်နိုင်ခြေကို အများကြီးတိုးစေတယ်။",
    "th_norm": "การตรวจพบแต่เนิ่นๆ เพิ่มโอกาสหายได้อย่างมาก",
    "fingerprint": "f06c01f5c2e36a60",
    "vocab_sig": [
@@ -140645,7 +140645,7 @@
    "en": "The results came out yesterday.",
    "en_norm": "the results came out yesterday",
    "my_norm": "ရလဒ်တွေက မနေ့ကထွက်လာတယ်။",
-   "th_norm": "ผลสอบออกเมื่อวาน",
+   "th_norm": "ผลออกเมื่อวาน",
    "fingerprint": "1aaf16382614c7f0",
    "vocab_sig": [
     "came",
@@ -142090,7 +142090,7 @@
    "en": "This dish is a local specialty.",
    "en_norm": "this dish is a local specialty",
    "my_norm": "ဒီဟင်းက ဒီဒေသရဲ့ ထူးခြားတဲ့အစားအစာပါ။",
-   "th_norm": "จานนี้เป็นอาหารพื้นเมือง",
+   "th_norm": "จานนี้เป็นอาหารขึ้นชื่อของท้องถิ่น",
    "fingerprint": "2f7b898d88f37452",
    "vocab_sig": [
     "dish",
@@ -143565,7 +143565,7 @@
    "en": "Deforestation threatens countless species.",
    "en_norm": "deforestation threatens countless species",
    "my_norm": "သစ်တောပြုန်းတီးမှုက မရေမတွက်နိုင်တဲ့ မျိုးစိတ်တွေကို ခြိမ်းခြောက်နေတယ်။",
-   "th_norm": "การตัดไม้ทำลายป่าคุกคามสิ่งมีชีวิตนับไม่ถ้วน",
+   "th_norm": "การตัดไม้ทำลายป่าคุกคามสายพันธุ์นับไม่ถ้วน",
    "fingerprint": "c7ad8dfc67dcf20b",
    "vocab_sig": [
     "countless",
@@ -144583,7 +144583,7 @@
    "kind": "phrase",
    "en": "She earned a place on the national team.",
    "en_norm": "she earned a place on the national team",
-   "my_norm": "သူ အမျိုးသားအသင်းမှာ နေရာရခဲ့တယ်။",
+   "my_norm": "သူ လက်ရွေးစင်အသင်းမှာ နေရာရခဲ့တယ်။",
    "th_norm": "เธอได้ติดทีมชาติ",
    "fingerprint": "e28cc3259eddbcf2",
    "vocab_sig": [
@@ -485377,7 +485377,7 @@
    "en": "harangue",
    "en_norm": "harangue",
    "my_norm": "ရှည်လျားပြင်းထန်တဲ့ဆူပူမိန့်ခွန်း",
-   "th_norm": "การปราศรัยยืดยาว",
+   "th_norm": "การปราศรัยยืดยาวอย่างดุดัน",
    "fingerprint": "bf64c45982938fb8",
    "vocab_sig": [
     "harangue"
@@ -488834,7 +488834,7 @@
    "kind": "word",
    "en": "hendiadys",
    "en_norm": "hendiadys",
-   "my_norm": "နာမ်နှစ်ခုနဲ့အဓိပ္ပာယ်တစ်ခုဖော်မှု",
+   "my_norm": "စကားလုံးနှစ်ခုနဲ့အဓိပ္ပာယ်တစ်ခုဖော်မှု",
    "th_norm": "เฮนดิอาดิส",
    "fingerprint": "9a24639f694b0f83",
    "vocab_sig": [
@@ -495094,7 +495094,7 @@
    "en": "trompe l'oeil",
    "en_norm": "trompe l oeil",
    "my_norm": "အမြင်လှည့်စားပန်းချီ",
-   "th_norm": "ทรอมป์เลอย",
+   "th_norm": "ทรอมป์เลอย์",
    "fingerprint": "0a07ab19b17a7aab",
    "vocab_sig": [
     "l",
@@ -497904,7 +497904,7 @@
    "en": "priming",
    "en_norm": "priming",
    "my_norm": "ကြိုတင်ဦးတည်သက်ရောက်မှု",
-   "th_norm": "การเตรียมความพร้อมทางความคิด",
+   "th_norm": "การชี้นำความคิดล่วงหน้า",
    "fingerprint": "a8bb69cf056631ac",
    "vocab_sig": [
     "priming"
@@ -499909,7 +499909,7 @@
    "en": "purple prose",
    "en_norm": "purple prose",
    "my_norm": "အလွန်အကျွံအလှဆင်စကားပြေ",
-   "th_norm": "ร้อยแก้วสีม่วง",
+   "th_norm": "ภาษาฟุ้งเฟ้อเกินเหตุ",
    "fingerprint": "88b8cf44112bc255",
    "vocab_sig": [
     "prose",
@@ -500728,7 +500728,7 @@
    "en": "intonation",
    "en_norm": "intonation",
    "my_norm": "အသံအနိမ့်အမြင့်",
-   "th_norm": "น้ำเสียง",
+   "th_norm": "ทำนองเสียง",
    "fingerprint": "d53ca01b678bb06d",
    "vocab_sig": [
     "intonation"
@@ -501769,7 +501769,7 @@
   {
    "id": "example:rhetoric:performative",
    "kind": "example",
-   "en": "I now pronounce you married is performative language.",
+   "en": "\"I now pronounce you married\" is performative language.",
    "en_norm": "i now pronounce you married is performative language",
    "my_norm": "",
    "fingerprint": "a8b9e157ef5931af",
@@ -501780,7 +501780,7 @@
     "performative",
     "pronounce"
    ],
-   "template_sig": "i W W you W is W W .",
+   "template_sig": "\" i W W you W \" is W W .",
    "tags": [
     "rhetoric",
     "example"
@@ -501810,7 +501810,7 @@
   {
    "id": "example:rhetoric:constative",
    "kind": "example",
-   "en": "The sky is blue is a constative statement.",
+   "en": "\"The sky is blue\" is a constative statement.",
    "en_norm": "the sky is blue is a constative statement",
    "my_norm": "",
    "fingerprint": "a4df2ed4a58c76ca",
@@ -501820,7 +501820,7 @@
     "sky",
     "statement"
    ],
-   "template_sig": "the W is W is a W W .",
+   "template_sig": "\" the W is W \" is a W W .",
    "tags": [
     "rhetoric",
     "example"
@@ -501893,7 +501893,7 @@
   {
    "id": "example:rhetoric:implicature",
    "kind": "example",
-   "en": "It is cold in here carries the implicature that the window should be closed.",
+   "en": "\"It is cold in here\" carries the implicature that the window should be closed.",
    "en_norm": "it is cold in here carries the implicature that the window should be closed",
    "my_norm": "",
    "fingerprint": "3ca2969ba35e3f70",
@@ -501904,7 +501904,7 @@
     "implicature",
     "window"
    ],
-   "template_sig": "it is W in here W the W that the W should be W .",
+   "template_sig": "\" it is W in here \" W the W that the W should be W .",
    "tags": [
     "rhetoric",
     "example"
@@ -501935,7 +501935,7 @@
   {
    "id": "example:rhetoric:conversational-implicature",
    "kind": "example",
-   "en": "Nice weather for ducks is conversational implicature for rain.",
+   "en": "\"Nice weather for ducks\" is conversational implicature for rain.",
    "en_norm": "nice weather for ducks is conversational implicature for rain",
    "my_norm": "",
    "fingerprint": "0afdb84aa300869e",
@@ -501947,7 +501947,7 @@
     "rain",
     "weather"
    ],
-   "template_sig": "W W for W is W W for W .",
+   "template_sig": "\" W W for W \" is W W for W .",
    "tags": [
     "rhetoric",
     "example"
@@ -501977,7 +501977,7 @@
   {
    "id": "example:rhetoric:presupposition",
    "kind": "example",
-   "en": "Have you stopped cheating contains a nasty presupposition.",
+   "en": "\"Have you stopped cheating\" contains a nasty presupposition.",
    "en_norm": "have you stopped cheating contains a nasty presupposition",
    "my_norm": "",
    "fingerprint": "e7fb75889d71b9bc",
@@ -501988,7 +501988,7 @@
     "presupposition",
     "stopped"
    ],
-   "template_sig": "have you W W W a W W .",
+   "template_sig": "\" have you W W \" W a W W .",
    "tags": [
     "rhetoric",
     "example"
@@ -502665,7 +502665,7 @@
    "kind": "word",
    "en": "rapid response",
    "en_norm": "rapid response",
-   "my_norm": "လျင်မြန်တုံ့ပြန်မှုအဖွဲ့",
+   "my_norm": "လျင်မြန်တုံ့ပြန်မှု",
    "th_norm": "การตอบสนองรวดเร็ว",
    "fingerprint": "533161a304547683",
    "vocab_sig": [
@@ -503896,7 +503896,7 @@
    "en": "shunning",
    "en_norm": "shunning",
    "my_norm": "ရှောင်ဖယ်မှု",
-   "th_norm": "การหลีกเลี่ยง",
+   "th_norm": "การเมินเฉยทางสังคม",
    "fingerprint": "bbd6b60aaa4d6631",
    "vocab_sig": [
     "shunning"
@@ -504609,7 +504609,7 @@
   {
    "id": "word:rhetoric:oscar-bait",
    "kind": "word",
-   "en": "oscar bait",
+   "en": "Oscar bait",
    "en_norm": "oscar bait",
    "my_norm": "ဆုရရန်ရည်ရွယ်ရုပ်ရှင်",
    "th_norm": "ออสการ์เบต",
