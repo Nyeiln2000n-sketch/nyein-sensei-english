@@ -38,6 +38,16 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 116,
+    slug: 'disagreeing-politely-and-professionally-at-work-2026-10-27',
+    titleMy: 'အပိုင်း ၁၁၆: အလုပ်တွင် ယဉ်ကျေးစွာ သဘောမတူခြင်း — Disagreeing Politely and Professionally at Work',
+    titleOrig: 'ไม่เห็นด้วยอย่างมืออาชีพ — Disagreeing Politely and Professionally at Work',
+    descMy: 'အခန်း ၁၂ ၏ ဆဋ္ဌမအပိုင်း — အလုပ်တွင် ယဉ်ကျေးစွာနှင့် ကျွမ်းကျင်စွာ သဘောမတူပြောဆိုနည်း — "I see your point, but I think we need more time." / "Maybe we can try another way." / "I do not think so." / "I am sorry, but I do not think so." ဆိုတဲ့ ဝါကျများနဲ့ လုပ်ဖော်ကိုင်ဖက်နှင့် သဘောမတူလျှင် တိုက်ရိုက်ပြောရမလား သွယ်ဝိုက်ပြောရမလား ဆွေးနွေးမှုနဲ့ အစည်းအဝေးတွင် နည်းလမ်းအခြားတစ်ခု အကြံပြုတဲ့ role-play လေ့ကျင့်ခန်း',
+    phrases: ['I see your point, but I think we need more time.', 'Maybe we can try another way.', 'I do not think so.', 'I am sorry, but I do not think so.'],
+    durationSecs: 605,
+    cover: '/podcast-covers/ep-116.jpg',
+  },
+  {
     n: 115,
     slug: 'giving-opinions-at-work-2026-10-27',
     titleMy: 'အပိုင်း ၁၁၅: အလုပ်တွင် ကိုယ့်အမြင်ကို ပြောဆိုခြင်း — Giving Opinions at Work',

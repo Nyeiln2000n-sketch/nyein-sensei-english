@@ -144892,7 +144892,7 @@
    "kind": "phrase",
    "en": "I dropped my phone in water.",
    "en_norm": "i dropped my phone in water",
-   "my_norm": "ကျွန်တော့်ဖုန်းကို ရေထဲကျသွားတယ်။",
+   "my_norm": "ကျွန်တော့်ဖုန်း ရေထဲကျသွားတယ်။",
    "th_norm": "ฉันทำโทรศัพท์ตกน้ำ",
    "fingerprint": "2b16f09cc622d05a",
    "vocab_sig": [
@@ -145650,7 +145650,7 @@
    "en": "The app crashed during the call.",
    "en_norm": "the app crashed during the call",
    "my_norm": "ဖုန်းပြောနေတုန်း အက်ပ်က ရပ်သွားတယ်။",
-   "th_norm": "แอปค้างระหว่างโทร",
+   "th_norm": "แอปเด้งระหว่างโทร",
    "fingerprint": "ee8f13f1c43bab1d",
    "vocab_sig": [
     "app",
@@ -147434,7 +147434,7 @@
    "en": "Entrepreneurship demands resilience and patience.",
    "en_norm": "entrepreneurship demands resilience and patience",
    "my_norm": "စွန့်ဦးတီထွင်လုပ်ငန်းက ခံနိုင်ရည်နဲ့ စိတ်ရှည်မှုလိုအပ်တယ်။",
-   "th_norm": "การเป็นผู้ประกอบการต้องอาศัยความทรหดอดทน",
+   "th_norm": "การเป็นผู้ประกอบการต้องอาศัยความทรหดและความอดทน",
    "fingerprint": "3d50eab218893d9d",
    "vocab_sig": [
     "demands",
@@ -147745,7 +147745,7 @@
    "en": "He is jealous of his brother.",
    "en_norm": "he is jealous of his brother",
    "my_norm": "သူက သူ့အစ်ကိုကို မနာလိုဖြစ်နေတယ်။",
-   "th_norm": "เขาอิจฉาน้องชาย",
+   "th_norm": "เขาอิจฉาพี่ชาย",
    "fingerprint": "3f15fdd748983ac6",
    "vocab_sig": [
     "brother",
@@ -148136,7 +148136,7 @@
    "en": "I was overwhelmed by their kindness.",
    "en_norm": "i was overwhelmed by their kindness",
    "my_norm": "သူတို့ကြင်နာမှုကြောင့် ကျွန်တော် လှိုက်လှိုက်လှဲလှဲခံစားရပြီး ဘယ်လိုတုံ့ပြန်ရမှန်းမသိဖြစ်ခဲ့တယ်။",
-   "th_norm": "ฉันซาบซึ้งในความใจดีของพวกเขามาก",
+   "th_norm": "ฉันรู้สึกท่วมท้นกับความใจดีของพวกเขา",
    "fingerprint": "3516916d8b9f799d",
    "vocab_sig": [
     "kindness",
@@ -148520,7 +148520,7 @@
    "en": "He forgave his brother at last.",
    "en_norm": "he forgave his brother at last",
    "my_norm": "သူက နောက်ဆုံးတော့ သူ့အစ်ကိုကို ခွင့်လွှတ်လိုက်တယ်။",
-   "th_norm": "ในที่สุดเขาก็ให้อภัยน้องชาย",
+   "th_norm": "ในที่สุดเขาก็ให้อภัยพี่ชาย",
    "fingerprint": "8d8be6dbed10a8d3",
    "vocab_sig": [
     "brother",
@@ -149367,7 +149367,7 @@
    "en": "We visit grandma every month.",
    "en_norm": "we visit grandma every month",
    "my_norm": "ကျွန်တော်တို့ လတိုင်း အဖွားကို သွားလည်တယ်။",
-   "th_norm": "เราไปเยี่ยมยายทุกเดือน",
+   "th_norm": "เราไปเยี่ยมย่าหรือยายทุกเดือน",
    "fingerprint": "a404fae33f580bd2",
    "vocab_sig": [
     "every",
@@ -149475,7 +149475,7 @@
    "en": "He commutes two hours each day.",
    "en_norm": "he commutes two hours each day",
    "my_norm": "သူက နေ့တိုင်း အလုပ်သို့ သွားပြန်ခရီး နှစ်နာရီကြာတယ်။",
-   "th_norm": "เขาเดินทางวันละสองชั่วโมง",
+   "th_norm": "เขาเดินทางไปกลับที่ทำงานวันละสองชั่วโมง",
    "fingerprint": "2c8d81388bb66915",
    "vocab_sig": [
     "commutes",
@@ -149735,7 +149735,7 @@
    "kind": "phrase",
    "en": "He drops by the store after work.",
    "en_norm": "he drops by the store after work",
-   "my_norm": "သူက အလုပ်ပြီးနောက် ဆိုင်ကို ဝင်ခဲ့တယ်။",
+   "my_norm": "သူက အလုပ်ပြီးနောက် ဆိုင်ကို ဝင်လေ့ရှိတယ်။",
    "th_norm": "เขาแวะร้านหลังเลิกงาน",
    "fingerprint": "c261299e5195b1ae",
    "vocab_sig": [
@@ -149910,7 +149910,7 @@
    "en": "She thrives on early morning solitude.",
    "en_norm": "she thrives on early morning solitude",
    "my_norm": "သူမက မနက်စောစော တစ်ယောက်တည်း တိတ်ဆိတ်နေရတာကို အရမ်းနှစ်သက်တယ်။",
-   "th_norm": "เธอมีความสุขกับความเงียบยามเช้า",
+   "th_norm": "เธอรู้สึกมีชีวิตชีวาเมื่อได้อยู่ลำพังยามเช้า",
    "fingerprint": "30d843d287588ed6",
    "vocab_sig": [
     "early",
@@ -152068,7 +152068,7 @@
    "en": "The heating bill was higher this month.",
    "en_norm": "the heating bill was higher this month",
    "my_norm": "ဒီလ အပူပေးဖိုးက ပိုများခဲ့တယ်။",
-   "th_norm": "ค่าเครื่องทำความร้อนเดือนนี้สูงขึ้น",
+   "th_norm": "ค่าทำความร้อนเดือนนี้สูงขึ้น",
    "fingerprint": "cb81fcccf82ba0bc",
    "vocab_sig": [
     "bill",
@@ -153434,7 +153434,7 @@
    "en": "I had the zipper replaced.",
    "en_norm": "i had the zipper replaced",
    "my_norm": "ဇစ်ကို အစားထိုးခိုင်းခဲ့တယ်။",
-   "th_norm": "ฉันเปลี่ยนซิปใหม่",
+   "th_norm": "ฉันให้ช่างเปลี่ยนซิปใหม่",
    "fingerprint": "1f6410202fe3a9c4",
    "vocab_sig": [
     "replaced",
@@ -153794,7 +153794,7 @@
    "en": "The exchange policy is thirty days.",
    "en_norm": "the exchange policy is thirty days",
    "my_norm": "လဲလှယ်ခွင့်က ရက်သုံးဆယ်အထိ ရပါတယ်။",
-   "th_norm": "นโยบายเปลี่ยนสินค้าคือสามสิบวัน",
+   "th_norm": "สามารถเปลี่ยนสินค้าได้ภายในสามสิบวัน",
    "fingerprint": "83351e9cf5477e95",
    "vocab_sig": [
     "days",
@@ -153837,7 +153837,7 @@
    "en": "The dress code is smart casual.",
    "en_norm": "the dress code is smart casual",
    "my_norm": "ဝတ်စားဆင်ယင်မှုစံက စမတ်ကယ်ဂျူရယ်ဖြစ်တယ်။",
-   "th_norm": "การแต่งกายคือสมาร์ทแคชชวล",
+   "th_norm": "การแต่งกายเป็นแบบสมาร์ทแคชชวล",
    "fingerprint": "cffdd7d238f38611",
    "vocab_sig": [
     "casual",
@@ -154753,7 +154753,7 @@
    "en": "She adopted a kitten from the shelter.",
    "en_norm": "she adopted a kitten from the shelter",
    "my_norm": "သူမ တိရစ္ဆာန်ခိုလှုံရာက ကြောင်ကလေး မွေးစားခဲ့တယ်။",
-   "th_norm": "เธอรับเลี้ยงลูกแมวจากศูนย์พักพิง",
+   "th_norm": "เธอรับเลี้ยงลูกแมวจากศูนย์พักพิงสัตว์",
    "fingerprint": "6a1e98cb3bb31e39",
    "vocab_sig": [
     "adopted",
@@ -154862,7 +154862,7 @@
    "en": "The farmer milks the cows at dawn.",
    "en_norm": "the farmer milks the cows at dawn",
    "my_norm": "လယ်သမားက နွားတွေကို အရုဏ်တက်ချိန် နို့ညှစ်တယ်။",
-   "th_norm": "ชาวนารีดนมวัวตอนรุ่งสาง",
+   "th_norm": "เกษตรกรรีดนมวัวตอนรุ่งสาง",
    "fingerprint": "6a8ee3f9000c8c2a",
    "vocab_sig": [
     "cows",
@@ -155235,7 +155235,7 @@
    "en": "Conservationists are restoring the wetland habitat.",
    "en_norm": "conservationists are restoring the wetland habitat",
    "my_norm": "ထိန်းသိမ်းရေးသမားတွေက စိုစွတ်ဒေသနေထိုင်ရာကို ပြန်လည်ထိန်းသိမ်းနေတယ်။",
-   "th_norm": "นักอนุรักษ์กำลังฟื้นฟูถิ่นที่อยู่พื้นที่ชุ่มน้ำ",
+   "th_norm": "นักอนุรักษ์กำลังฟื้นฟูถิ่นที่อยู่อาศัยในพื้นที่ชุ่มน้ำ",
    "fingerprint": "560ab48e7cfb113e",
    "vocab_sig": [
     "conservationists",
@@ -156283,7 +156283,7 @@
    "kind": "phrase",
    "en": "She usually spends an hour reading at night.",
    "en_norm": "she usually spends an hour reading at night",
-   "my_norm": "သူ ညတိုင်း တစ်နာရီလောက် စာဖတ်လေ့ရှိတယ်။",
+   "my_norm": "သူ ညဘက်မှာ တစ်နာရီလောက် စာဖတ်လေ့ရှိတယ်။",
    "th_norm": "เธอมักใช้เวลาหนึ่งชั่วโมงอ่านหนังสือตอนกลางคืน",
    "fingerprint": "3d072d0c15cf2fe2",
    "vocab_sig": [
@@ -156373,8 +156373,8 @@
    "kind": "phrase",
    "en": "I’m running late; I’ll be there by half past.",
    "en_norm": "i m running late i ll be there by half past",
-   "my_norm": "ကျွန်တော် နောက်ကျနေတယ်။ နာရီဝက်မှာ ရောက်မယ်။",
-   "th_norm": "ฉันมาสาย จะไปถึงทันครึ่งชั่วโมง",
+   "my_norm": "ကျွန်တော် နောက်ကျနေတယ်။ နာရီဝက်မတိုင်ခင် ရောက်မယ်။",
+   "th_norm": "ฉันมาสาย จะไปถึงทันครึ่งของชั่วโมงนี้",
    "fingerprint": "67aa7522a672975b",
    "vocab_sig": [
     "half",
@@ -160362,7 +160362,7 @@
    "en": "I was stopped at security for a random check.",
    "en_norm": "i was stopped at security for a random check",
    "my_norm": "ကျွန်တော် လုံခြုံရေးမှာ ကျပန်းစစ်ဆေးမှု ခံခဲ့ရတယ်။",
-   "th_norm": "ฉันถูกเรียกตรวจที่จุดรักษาความปลอดภัย",
+   "th_norm": "ฉันถูกสุ่มตรวจที่จุดรักษาความปลอดภัย",
    "fingerprint": "6043714fe06da834",
    "vocab_sig": [
     "check",
