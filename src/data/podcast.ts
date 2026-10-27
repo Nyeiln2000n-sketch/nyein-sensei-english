@@ -38,6 +38,16 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 114,
+    slug: 'love-and-strong-liking-2026-10-27',
+    titleMy: 'အပိုင်း ၁၁၄: ချစ်ခြင်းနှင့် အလွန်ကြိုက်ခြင်း — Love and Strong Liking',
+    titleOrig: 'รักและชอบมาก — Love and Strong Liking',
+    descMy: 'အခန်း ၁၂ ၏ စတုတ္ထအပိုင်း — ချစ်ခြင်းမေတ္တာနှင့် အလွန်ကြိုက်ခြင်းတို့ကို အင်္ဂလိပ်လို ပြောဆိုနည်း — "I love you." / "I like it very much." / "You are the best." / "Thank you for everything." / "I really like spending time with you." ဆိုတဲ့ ဝါကျများနဲ့ မိသားစုဝင်များကို ချစ်ကြောင်း၊ ကျေးဇူးတင်ကြောင်း ပြောဆိုနည်း၊ အင်္ဂလိပ်လို ချစ်ကြောင်း ပြောတာ ရှက်စရာလား ဆွေးနွေးမှုနဲ့ အမေကို ချီးကျူးပြီး ကျေးဇူးတင်တဲ့ role-play လေ့ကျင့်ခန်း',
+    phrases: ['I love you.', 'I like it very much.', 'You are the best.', 'Thank you for everything.', 'I really like spending time with you.'],
+    durationSecs: 614,
+    cover: '/podcast-covers/ep-114.jpg',
+  },
+  {
     n: 113,
     slug: 'anger-and-fear-2026-10-27',
     titleMy: 'အပိုင်း ၁၁၃: ဒေါသနှင့် ကြောက်ရွံ့ခြင်း — Anger and Fear',

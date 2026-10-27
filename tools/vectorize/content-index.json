@@ -390625,7 +390625,7 @@
    "en": "doctoral candidate",
    "en_norm": "doctoral candidate",
    "my_norm": "ပါရဂူအရည်အချင်းပြည့်သူ",
-   "th_norm": "ผู้สมัครปริญญาเอก",
+   "th_norm": "นักศึกษาปริญญาเอก",
    "fingerprint": "c7214cc2ebae5876",
    "vocab_sig": [
     "candidate",
@@ -391676,7 +391676,7 @@
    "en": "working paper",
    "en_norm": "working paper",
    "my_norm": "မူကြမ်းစာတမ်း တရားဝင်မထုတ်ဝေမီ",
-   "th_norm": "เอกสารทำงาน",
+   "th_norm": "บทความวิชาการฉบับร่าง",
    "fingerprint": "b984a307b8a62e4f",
    "vocab_sig": [
     "paper",
@@ -394489,7 +394489,7 @@
    "en": "allusion",
    "en_norm": "allusion",
    "my_norm": "သွယ်ဝိုက်ရည်ညွှန်းမှု",
-   "th_norm": "การอ้างอิง",
+   "th_norm": "การพาดพิง",
    "fingerprint": "55c02a05bc3bc77f",
    "vocab_sig": [
     "allusion"
@@ -394572,7 +394572,7 @@
    "en": "irony",
    "en_norm": "irony",
    "my_norm": "ဆန့်ကျင်ပြောဆိုမှု",
-   "th_norm": "ประชด",
+   "th_norm": "ความย้อนแย้ง",
    "fingerprint": "e10bb5d3b091d32b",
    "vocab_sig": [
     "irony"
@@ -399473,7 +399473,7 @@
    "en": "digital literacy",
    "en_norm": "digital literacy",
    "my_norm": "ဒစ်ဂျစ်တယ်တတ်မြောက်မှု",
-   "th_norm": "การรู้ดิจิทัล",
+   "th_norm": "การรู้เท่าทันดิจิทัล",
    "fingerprint": "54477266a352f804",
    "vocab_sig": [
     "digital",
@@ -400275,7 +400275,7 @@
    "en": "gap year",
    "en_norm": "gap year",
    "my_norm": "အားလပ်နှစ်",
-   "th_norm": "ปีว่าง",
+   "th_norm": "ปีพักการเรียน",
    "fingerprint": "1c2fb3f4908ba1aa",
    "vocab_sig": [
     "gap",
@@ -400492,7 +400492,7 @@
    "en": "first-generation student",
    "en_norm": "first generation student",
    "my_norm": "ပထမမျိုးဆက်ကျောင်းသား",
-   "th_norm": "นักศึกษารุ่นแรก",
+   "th_norm": "นักศึกษารุ่นแรกในครอบครัว",
    "fingerprint": "b4ab4d1e683a9134",
    "vocab_sig": [
     "first",
@@ -400838,7 +400838,7 @@
    "en": "corollary",
    "en_norm": "corollary",
    "my_norm": "နောက်ဆက်တွဲရလဒ်",
-   "th_norm": "ข้อสรุปตาม",
+   "th_norm": "ผลสืบเนื่อง",
    "fingerprint": "78e61a47f600a0b4",
    "vocab_sig": [
     "corollary"
@@ -405795,7 +405795,7 @@
    "en": "notice of award",
    "en_norm": "notice of award",
    "my_norm": "ဆုချီးမြှင့်အသိပေးစာ",
-   "th_norm": "หนังสือแจ้งรางวัล",
+   "th_norm": "หนังสือแจ้งการอนุมัติทุน",
    "fingerprint": "66bdac0e2851db4a",
    "vocab_sig": [
     "award",
@@ -409807,7 +409807,7 @@
    "en": "everyman",
    "en_norm": "everyman",
    "my_norm": "သာမန်လူဇာတ်ကောင်",
-   "th_norm": "คนธรรมดา",
+   "th_norm": "ตัวละครคนธรรมดา",
    "fingerprint": "f083d5198ad67fd7",
    "vocab_sig": [
     "everyman"
@@ -410064,7 +410064,7 @@
    "en": "falling action",
    "en_norm": "falling action",
    "my_norm": "ဇာတ်လမ်းအရှိန်ကျပိုင်း",
-   "th_norm": "ช่วงคลี่คลาย",
+   "th_norm": "การดำเนินเรื่องขาลง",
    "fingerprint": "5ae4b9836290e714",
    "vocab_sig": [
     "action",
@@ -410320,7 +410320,7 @@
    "en": "flash-forward",
    "en_norm": "flash forward",
    "my_norm": "အနာဂတ်ခုန်ကျော်ပြကွက်",
-   "th_norm": "ภาพล่วงหน้า",
+   "th_norm": "ภาพเหตุการณ์ล่วงหน้า",
    "fingerprint": "d084750c2436ec3f",
    "vocab_sig": [
     "flash",
@@ -414169,7 +414169,7 @@
    "en": "closet drama",
    "en_norm": "closet drama",
    "my_norm": "ဖတ်ရန်သီးသန့်ပြဇာတ်",
-   "th_norm": "ละครตู้",
+   "th_norm": "ละครสำหรับอ่าน",
    "fingerprint": "16070f848a994bea",
    "vocab_sig": [
     "closet",
@@ -415501,7 +415501,7 @@
    "en": "whodunit",
    "en_norm": "whodunit",
    "my_norm": "တရားခံရှာမှုခင်းဝတ္ထု",
-   "th_norm": "นวนิยายสืบสวน",
+   "th_norm": "นวนิยายสืบสวนหาตัวคนร้าย",
    "fingerprint": "657b2f512139f09e",
    "vocab_sig": [
     "whodunit"
@@ -415720,7 +415720,7 @@
    "en": "psychological thriller",
    "en_norm": "psychological thriller",
    "my_norm": "စိတ်ပညာသည်းထိတ်ရင်ဖိုဝတ္ထု",
-   "th_norm": "จิตวิทยาระทึกขวัญ",
+   "th_norm": "ระทึกขวัญเชิงจิตวิทยา",
    "fingerprint": "ab0a2a4f1691d71f",
    "vocab_sig": [
     "psychological",
@@ -417231,7 +417231,7 @@
    "en": "corpus",
    "en_norm": "corpus",
    "my_norm": "စာပေစုစည်းမှု",
-   "th_norm": "คลังข้อมูล",
+   "th_norm": "คลังข้อความ",
    "fingerprint": "6b17b8fcc411a533",
    "vocab_sig": [
     "corpus"
@@ -418468,7 +418468,7 @@
    "en": "pellucid",
    "en_norm": "pellucid",
    "my_norm": "ထင်ရှားကြည်လင်သော",
-   "th_norm": "ใสแจ๋ว",
+   "th_norm": "กระจ่างใส",
    "fingerprint": "112733a37563404f",
    "vocab_sig": [
     "pellucid"
@@ -418593,7 +418593,7 @@
    "en": "evanescent",
    "en_norm": "evanescent",
    "my_norm": "ခဏတာပျောက်ကွယ်တတ်သော",
-   "th_norm": "เลือนราง",
+   "th_norm": "แสนสั้น",
    "fingerprint": "95069bcfd1dcbc73",
    "vocab_sig": [
     "evanescent"
@@ -419073,10 +419073,10 @@
   {
    "id": "example:literature:worldbuilding",
    "kind": "example",
-   "en": "The novel worldbuilding includes its own languages and calendars.",
-   "en_norm": "the novel worldbuilding includes its own languages and calendars",
+   "en": "The novel's worldbuilding includes its own languages and calendars.",
+   "en_norm": "the novel s worldbuilding includes its own languages and calendars",
    "my_norm": "",
-   "fingerprint": "412459127a9e8313",
+   "fingerprint": "e80ced4cb36d9ed0",
    "vocab_sig": [
     "calendars",
     "includes",
@@ -419085,7 +419085,7 @@
     "own",
     "worldbuilding"
    ],
-   "template_sig": "the W W W its W W and W .",
+   "template_sig": "the W ' s W W its W W and W .",
    "tags": [
     "literature",
     "example"
@@ -420436,7 +420436,7 @@
    "en": "romanticize",
    "en_norm": "romanticize",
    "my_norm": "အလှဆင်စိတ်ကူးယဉ်သည်",
-   "th_norm": "โรแมนติไซซ์",
+   "th_norm": "ทำให้ดูโรแมนติก",
    "fingerprint": "33cc30b4a4848191",
    "vocab_sig": [
     "romanticize"
@@ -420559,7 +420559,7 @@
    "en": "allude",
    "en_norm": "allude",
    "my_norm": "သွယ်ဝိုက်ညွှန်းဆိုသည်",
-   "th_norm": "อ้างอิง",
+   "th_norm": "พาดพิงถึง",
    "fingerprint": "b6797ee79954227d",
    "vocab_sig": [
     "allude"
@@ -420601,7 +420601,7 @@
    "en": "foreshadow",
    "en_norm": "foreshadow",
    "my_norm": "ကြိုတင်အရိပ်ပေးသည်",
-   "th_norm": "ปูเรื่อง",
+   "th_norm": "บอกใบ้ล่วงหน้า",
    "fingerprint": "1dc6a5021e62a78d",
    "vocab_sig": [
     "foreshadow"
@@ -420767,7 +420767,7 @@
    "en": "subvert",
    "en_norm": "subvert",
    "my_norm": "ပြောင်းပြန်လှန်သည်",
-   "th_norm": "บ่อนทำลาย",
+   "th_norm": "หักล้างความคาดหมาย",
    "fingerprint": "1cf4e93e21a785f4",
    "vocab_sig": [
     "subvert"
@@ -420853,7 +420853,7 @@
    "en": "domestic thriller",
    "en_norm": "domestic thriller",
    "my_norm": "အိမ်တွင်းစိတ်လှုပ်ရှားဖွယ်ဝတ္ထု",
-   "th_norm": "ระทึกขวัญในบ้าน",
+   "th_norm": "นิยายระทึกขวัญในครอบครัว",
    "fingerprint": "23020d7d745507cd",
    "vocab_sig": [
     "domestic",
@@ -421856,7 +421856,7 @@
    "en": "slush pile",
    "en_norm": "slush pile",
    "my_norm": "မဖတ်ရသေးသောစာမူပုံ",
-   "th_norm": "กองต้นฉบับ",
+   "th_norm": "กองต้นฉบับที่ยังไม่ได้พิจารณา",
    "fingerprint": "b38d2ea9e1c9d4d3",
    "vocab_sig": [
     "pile",
@@ -421899,7 +421899,7 @@
    "en": "query letter",
    "en_norm": "query letter",
    "my_norm": "ထုတ်ဝေရန်တောင်းဆိုစာ",
-   "th_norm": "จดหมายสอบถาม",
+   "th_norm": "จดหมายนำเสนอผลงาน",
    "fingerprint": "897d7d148d8e8cb5",
    "vocab_sig": [
     "letter",
@@ -422186,7 +422186,7 @@
    "en": "writer's block",
    "en_norm": "writer s block",
    "my_norm": "စာရေးဆရာအတွေးပိတ်ဆို့မှု",
-   "th_norm": "ภาวะตัน",
+   "th_norm": "ภาวะเขียนไม่ออก",
    "fingerprint": "b805cd8da6f16e0a",
    "vocab_sig": [
     "block",
@@ -423429,7 +423429,7 @@
   {
    "id": "word:literature:show-don-t-tell",
    "kind": "word",
-   "en": "show don't tell",
+   "en": "show, don't tell",
    "en_norm": "show don t tell",
    "my_norm": "ပြသပါ မပြောပြပါနဲ့",
    "th_norm": "แสดงอย่าบอก",
@@ -423438,7 +423438,7 @@
     "show",
     "tell"
    ],
-   "template_sig": "W don ' t W",
+   "template_sig": "W , don ' t W",
    "tags": [
     "literature",
     "word"
@@ -423449,7 +423449,7 @@
   {
    "id": "example:literature:show-don-t-tell",
    "kind": "example",
-   "en": "\"Show don't tell\" means letting actions reveal character.",
+   "en": "\"Show, don't tell\" means letting actions reveal character.",
    "en_norm": "show don t tell means letting actions reveal character",
    "my_norm": "",
    "fingerprint": "b8628a689f65bb1d",
@@ -423462,7 +423462,7 @@
     "show",
     "tell"
    ],
-   "template_sig": "\" W don ' t W \" W W W W W .",
+   "template_sig": "\" W , don ' t W \" W W W W W .",
    "tags": [
     "literature",
     "example"
@@ -423776,7 +423776,7 @@
    "en": "the sublime",
    "en_norm": "the sublime",
    "my_norm": "ကြီးကျယ်နက်နဲသောအလှ",
-   "th_norm": "ความยิ่งใหญ่",
+   "th_norm": "ความงามอันน่าเกรงขาม",
    "fingerprint": "d56315ea33558bbb",
    "vocab_sig": [
     "sublime"
@@ -423818,7 +423818,7 @@
    "en": "uncanny valley",
    "en_norm": "uncanny valley",
    "my_norm": "ထူးဆန်းစိတ်မသက်မသာချိုင့်ဝှမ်း",
-   "th_norm": "หุบเขาลึกลับ",
+   "th_norm": "หุบเหวประหลาด",
    "fingerprint": "f0f7db6c7cd3eaa3",
    "vocab_sig": [
     "uncanny",
@@ -424202,7 +424202,7 @@
    "en": "complication",
    "en_norm": "complication",
    "my_norm": "ဇာတ်လမ်းရှုပ်ထွေးမှု",
-   "th_norm": "ความซับซ้อน",
+   "th_norm": "ปมขัดแย้ง",
    "fingerprint": "f65eb6e52fc30d9b",
    "vocab_sig": [
     "complication"
@@ -428504,7 +428504,7 @@
    "en": "circulating library",
    "en_norm": "circulating library",
    "my_norm": "ငှားရမ်းစာကြည့်တိုက်",
-   "th_norm": "เซอร์คูเลติงไลบรารี",
+   "th_norm": "ห้องสมุดให้ยืม",
    "fingerprint": "74fb051ca461bceb",
    "vocab_sig": [
     "circulating",
@@ -441151,7 +441151,7 @@
    "en": "derivatives",
    "en_norm": "derivatives",
    "my_norm": "ဆင့်ပွားငွေကြေးကိရိယာများ",
-   "th_norm": "อนุพันธ์",
+   "th_norm": "ตราสารอนุพันธ์",
    "fingerprint": "93f88b3044937e4b",
    "vocab_sig": [
     "derivatives"
@@ -442710,7 +442710,7 @@
    "en": "appeasement",
    "en_norm": "appeasement",
    "my_norm": "ချော့မော့လိုက်လျောမှု",
-   "th_norm": "การประนีประนอม",
+   "th_norm": "นโยบายเอาใจ",
    "fingerprint": "a69c530783847a88",
    "vocab_sig": [
     "appeasement"
@@ -443514,15 +443514,15 @@
    "line": 75
   },
   {
-   "id": "word:diplomacy:depository",
+   "id": "word:diplomacy:depositary",
    "kind": "word",
-   "en": "depository",
-   "en_norm": "depository",
+   "en": "depositary",
+   "en_norm": "depositary",
    "my_norm": "စာချုပ်ထိန်းသိမ်းသူ",
-   "th_norm": "ผู้เก็บรักษา",
-   "fingerprint": "573b7eb5063a45fc",
+   "th_norm": "ผู้เก็บรักษาสนธิสัญญา",
+   "fingerprint": "54990d0ce81c2e80",
    "vocab_sig": [
-    "depository"
+    "depositary"
    ],
    "template_sig": "W",
    "tags": [
@@ -443533,15 +443533,15 @@
    "line": 76
   },
   {
-   "id": "example:diplomacy:depository",
+   "id": "example:diplomacy:depositary",
    "kind": "example",
-   "en": "The UN Secretary-General acts as depository for many treaties.",
-   "en_norm": "the un secretary general acts as depository for many treaties",
+   "en": "The UN Secretary-General acts as depositary for many treaties.",
+   "en_norm": "the un secretary general acts as depositary for many treaties",
    "my_norm": "",
-   "fingerprint": "96678523d5596913",
+   "fingerprint": "cc1751df8d22c4e6",
    "vocab_sig": [
     "acts",
-    "depository",
+    "depositary",
     "general",
     "many",
     "secretary",
@@ -447712,7 +447712,7 @@
    "kind": "word",
    "en": "lift the embargo",
    "en_norm": "lift the embargo",
-   "my_norm": "ပိတ်ဆို့မှုရုပ်သိမ်း",
+   "my_norm": "ပိတ်ဆို့မှုရုပ်သိမ်းသည်",
    "th_norm": "การยกเลิกการห้าม",
    "fingerprint": "15c8d6dbd6eecbe2",
    "vocab_sig": [
@@ -447730,17 +447730,18 @@
   {
    "id": "example:diplomacy:lift-the-embargo",
    "kind": "example",
-   "en": "Markets rallied when the embargo lifted.",
-   "en_norm": "markets rallied when the embargo lifted",
+   "en": "Markets rallied when the government lifted the embargo.",
+   "en_norm": "markets rallied when the government lifted the embargo",
    "my_norm": "",
-   "fingerprint": "7a2ee72be6a64dac",
+   "fingerprint": "21695715d48304b9",
    "vocab_sig": [
     "embargo",
+    "government",
     "lifted",
     "markets",
     "rallied"
    ],
-   "template_sig": "W W when the W W .",
+   "template_sig": "W W when the W W the W .",
    "tags": [
     "diplomacy",
     "example"
@@ -451855,7 +451856,7 @@
    "en": "safeguard measure",
    "en_norm": "safeguard measure",
    "my_norm": "အကာအကွယ်အစီအမံ",
-   "th_norm": "มาตรการคุ้มครอง",
+   "th_norm": "มาตรการปกป้อง",
    "fingerprint": "34425a366679b0fc",
    "vocab_sig": [
     "measure",
@@ -451986,8 +451987,8 @@
    "kind": "word",
    "en": "national treatment",
    "en_norm": "national treatment",
-   "my_norm": "ပြည်တွင်းကုန်နည်းတူတန်းတူဆက်ဆံမှု",
-   "th_norm": "การปฏิบัติเยี่ยงชาติ",
+   "my_norm": "ပြည်တွင်းလုပ်ငန်းများနည်းတူဆက်ဆံမှု",
+   "th_norm": "การปฏิบัติเยี่ยงคนชาติ",
    "fingerprint": "76129ddf97e78185",
    "vocab_sig": [
     "national",
@@ -452326,7 +452327,7 @@
    "kind": "word",
    "en": "portfolio investment",
    "en_norm": "portfolio investment",
-   "my_norm": "ငွေကြေးဈေးကွက်ရင်းနှီးမြှုပ်နှံမှု",
+   "my_norm": "အစုလိုက်ရင်းနှီးမြှုပ်နှံမှု",
    "th_norm": "การลงทุนในหลักทรัพย์",
    "fingerprint": "8c34868e07ce871d",
    "vocab_sig": [
@@ -463065,7 +463066,7 @@
    "kind": "word",
    "en": "model hallucination",
    "en_norm": "model hallucination",
-   "my_norm": "မော်ဒယ်အယောင်ဆောင်",
+   "my_norm": "မော်ဒယ်စိတ်ကူးယဉ်ဖန်တီးမှု",
    "th_norm": "การหลอนของโมเดล",
    "fingerprint": "27be78508c87490e",
    "vocab_sig": [
@@ -463247,7 +463248,7 @@
    "en": "mixture of experts",
    "en_norm": "mixture of experts",
    "my_norm": "ကျွမ်းကျင်မော်ဒယ်အရောအနှော",
-   "th_norm": "ส่วนผสมของผู้เชี่ยวชาญ",
+   "th_norm": "แบบจำลองผสมผู้เชี่ยวชาญ",
    "fingerprint": "49b907abe37c49ed",
    "vocab_sig": [
     "experts",
@@ -464463,11 +464464,12 @@
   {
    "id": "example:frontier-science:photonic-chip",
    "kind": "example",
-   "en": "A photonic chip computes with light instead of electricity, saving huge energy.",
-   "en_norm": "a photonic chip computes with light instead of electricity saving huge energy",
+   "en": "A photonic chip computes with light instead of electricity, saving huge amounts of energy.",
+   "en_norm": "a photonic chip computes with light instead of electricity saving huge amounts of energy",
    "my_norm": "",
-   "fingerprint": "673366c0285f4f7c",
+   "fingerprint": "d89dcad34cf3fb0e",
    "vocab_sig": [
+    "amounts",
     "chip",
     "computes",
     "electricity",
@@ -464478,7 +464480,7 @@
     "photonic",
     "saving"
    ],
-   "template_sig": "a W W W with W W of W , W W W .",
+   "template_sig": "a W W W with W W of W , W W W of W .",
    "tags": [
     "frontier-science",
     "example"
@@ -465897,7 +465899,7 @@
    "en": "ignition point",
    "en_norm": "ignition point",
    "my_norm": "လောင်ကျွမ်းစမှတ်",
-   "th_norm": "จุดติดไฟ",
+   "th_norm": "จุดระเบิดฟิวชัน",
    "fingerprint": "c13ef3ccc63d50cd",
    "vocab_sig": [
     "ignition",
@@ -466691,7 +466693,7 @@
    "en": "floating offshore wind",
    "en_norm": "floating offshore wind",
    "my_norm": "ရေပေါ်ကမ်းလွန်လေအား",
-   "th_norm": "ลมนอกชายฝั่งลอยน้ำ",
+   "th_norm": "พลังงานลมนอกชายฝั่งลอยน้ำ",
    "fingerprint": "168b1fe2d44a196e",
    "vocab_sig": [
     "floating",
@@ -468021,7 +468023,7 @@
    "kind": "word",
    "en": "Population III stars",
    "en_norm": "population iii stars",
-   "my_norm": "မျိုးဆက်သုံးကြယ်များ",
+   "my_norm": "ပေါ်ပျူလေးရှင်းသုံး ကြယ်များ",
    "th_norm": "ดาวประชากรที่สาม",
    "fingerprint": "4a170abea7ab15a1",
    "vocab_sig": [
@@ -469155,7 +469157,7 @@
    "en": "negative emissions",
    "en_norm": "negative emissions",
    "my_norm": "အနုတ်ထုတ်လွှတ်မှု",
-   "th_norm": "การปล่อยเชิงลบ",
+   "th_norm": "การปล่อยสุทธิติดลบ",
    "fingerprint": "af6e20e49a68e484",
    "vocab_sig": [
     "emissions",
@@ -470321,7 +470323,7 @@
    "en": "MXene",
    "en_norm": "mxene",
    "my_norm": "အမ်မက်ဇင်း",
-   "th_norm": "เอ็มซีน",
+   "th_norm": "เอ็มเอ็กซ์อีน",
    "fingerprint": "0f1e3d773fd44658",
    "vocab_sig": [
     "mxene"
@@ -471241,7 +471243,7 @@
    "kind": "word",
    "en": "high-bandwidth memory",
    "en_norm": "high bandwidth memory",
-   "my_norm": "လှိုင်းနှုန်းမြင့်မှတ်ဉာဏ်",
+   "my_norm": "ဒေတာလွှဲနှုန်းမြင့်မှတ်ဉာဏ်",
    "th_norm": "หน่วยความจำแบนด์วิดท์สูง",
    "fingerprint": "6cf147406a8477f7",
    "vocab_sig": [
@@ -472481,7 +472483,7 @@
    "en": "verifiable credential",
    "en_norm": "verifiable credential",
    "my_norm": "အတည်ပြုနိုင်အထောက်အထား",
-   "th_norm": "ข้อมูลประจำตัวที่ตรวจสอบได้",
+   "th_norm": "ข้อมูลรับรองที่ตรวจสอบได้",
    "fingerprint": "7be25bb38816a8b1",
    "vocab_sig": [
     "credential",
@@ -475282,7 +475284,7 @@
    "kind": "word",
    "en": "antisense oligonucleotide",
    "en_norm": "antisense oligonucleotide",
-   "my_norm": "ဆန့်ကျင်ဘက်အိုလီဂို",
+   "my_norm": "ဆန့်ကျင်ဘက်အိုလီဂိုနယူကလီယိုတိုက်",
    "th_norm": "โอลิโกนิวคลีโอไทด์แอนติเซนส์",
    "fingerprint": "6e06383b591a2c1b",
    "vocab_sig": [
@@ -475620,10 +475622,10 @@
   {
    "id": "example:frontier-science:lab-grown-meat",
    "kind": "example",
-   "en": "Lab-grown meat tastes like chicken but never required a farm.",
-   "en_norm": "lab grown meat tastes like chicken but never required a farm",
+   "en": "Lab-grown meat can taste like real chicken but never required a farm.",
+   "en_norm": "lab grown meat can taste like real chicken but never required a farm",
    "my_norm": "",
-   "fingerprint": "4713839583e448ce",
+   "fingerprint": "260a9e67fc3ec22a",
    "vocab_sig": [
     "chicken",
     "farm",
@@ -475631,10 +475633,11 @@
     "lab",
     "meat",
     "never",
+    "real",
     "required",
-    "tastes"
+    "taste"
    ],
-   "template_sig": "W - W W W like W but W W a W .",
+   "template_sig": "W - W W can W like W W but W W a W .",
    "tags": [
     "frontier-science",
     "example"
@@ -475789,7 +475792,7 @@
    "en": "humanized mouse",
    "en_norm": "humanized mouse",
    "my_norm": "လူသားဆန်ကြွက်",
-   "th_norm": "หนูมนุษย์",
+   "th_norm": "หนูที่มีเซลล์มนุษย์",
    "fingerprint": "f2d35060fff1f674",
    "vocab_sig": [
     "humanized",
@@ -476257,7 +476260,7 @@
    "en": "expansion microscopy",
    "en_norm": "expansion microscopy",
    "my_norm": "ချဲ့ထွင်အဏုကြည့်မှန်",
-   "th_norm": "กล้องจุลทรรศน์ขยาย",
+   "th_norm": "การขยายตัวอย่างด้วยกล้องจุลทรรศน์",
    "fingerprint": "38a3f82a383aeadd",
    "vocab_sig": [
     "expansion",
@@ -476578,7 +476581,7 @@
    "kind": "word",
    "en": "high-throughput screening",
    "en_norm": "high throughput screening",
-   "my_norm": "စွမ်းဆောင်ရည်မြင့်စစ်ဆေးမှု",
+   "my_norm": "အမြောက်အများမြန်ဆန်စစ်ဆေးမှု",
    "th_norm": "การคัดกรองปริมาณสูง",
    "fingerprint": "c3c0f2c2d6a733e4",
    "vocab_sig": [
@@ -477192,20 +477195,22 @@
   {
    "id": "example:frontier-science:lawson-criterion",
    "kind": "example",
-   "en": "The Lawson criterion defines the temperature and density fusion must reach.",
-   "en_norm": "the lawson criterion defines the temperature and density fusion must reach",
+   "en": "The Lawson criterion defines the temperature, density, and confinement time fusion must reach.",
+   "en_norm": "the lawson criterion defines the temperature density and confinement time fusion must reach",
    "my_norm": "",
-   "fingerprint": "0e191d134cabf878",
+   "fingerprint": "2b6c6281480e64fa",
    "vocab_sig": [
+    "confinement",
     "criterion",
     "defines",
     "density",
     "fusion",
     "lawson",
     "reach",
-    "temperature"
+    "temperature",
+    "time"
    ],
-   "template_sig": "the W W W the W and W W must W .",
+   "template_sig": "the W W W the W , W , and W W W must W .",
    "tags": [
     "frontier-science",
     "example"
@@ -478064,20 +478069,22 @@
   {
    "id": "example:frontier-science:hydrogen-aircraft",
    "kind": "example",
-   "en": "A hydrogen aircraft emits only water vapor from its engines.",
-   "en_norm": "a hydrogen aircraft emits only water vapor from its engines",
+   "en": "A hydrogen fuel-cell aircraft emits only water vapor from its engines.",
+   "en_norm": "a hydrogen fuel cell aircraft emits only water vapor from its engines",
    "my_norm": "",
-   "fingerprint": "23804fa708ef0175",
+   "fingerprint": "4b7441ff74302151",
    "vocab_sig": [
     "aircraft",
+    "cell",
     "emits",
     "engines",
+    "fuel",
     "hydrogen",
     "only",
     "vapor",
     "water"
    ],
-   "template_sig": "a W W W W W W from its W .",
+   "template_sig": "a W W - W W W W W W from its W .",
    "tags": [
     "frontier-science",
     "example"
@@ -478327,7 +478334,7 @@
    "en": "grid-scale storage",
    "en_norm": "grid scale storage",
    "my_norm": "ဓာတ်အားလိုင်းအရွယ်သိုလှောင်မှု",
-   "th_norm": "การจัดเก็บระดับกริด",
+   "th_norm": "การจัดเก็บพลังงานระดับกริด",
    "fingerprint": "5e2b20b21a0397ce",
    "vocab_sig": [
     "grid",
@@ -479123,7 +479130,7 @@
    "en": "hydrothermal liquefaction",
    "en_norm": "hydrothermal liquefaction",
    "my_norm": "ရေအပူအရည်ဖြစ်မှု",
-   "th_norm": "การทำให้เป็นของเหลวด้วยความร้อนใต้น้ำ",
+   "th_norm": "การทำให้เป็นของเหลวด้วยน้ำร้อนความดันสูง",
    "fingerprint": "c8574f84cc385d03",
    "vocab_sig": [
     "hydrothermal",
@@ -479682,7 +479689,7 @@
    "en": "black start",
    "en_norm": "black start",
    "my_norm": "အမှောင်စတင်မှု",
-   "th_norm": "การสตาร์ตดำ",
+   "th_norm": "แบล็กสตาร์ต",
    "fingerprint": "35d36d926c002926",
    "vocab_sig": [
     "black",
@@ -482486,7 +482493,7 @@
    "kind": "word",
    "en": "free energy perturbation",
    "en_norm": "free energy perturbation",
-   "my_norm": "လွတ်လပ်စွမ်းအင်တုန်ခါမှု",
+   "my_norm": "လွတ်လပ်စွမ်းအင်အနှောင့်အယှက်ဖြစ်မှု",
    "th_norm": "การรบกวนพลังงานอิสระ",
    "fingerprint": "540126952699d67b",
    "vocab_sig": [
@@ -482952,7 +482959,7 @@
    "en": "Square Kilometre Array",
    "en_norm": "square kilometre array",
    "my_norm": "စတုရန်းကီလိုမီတာအခင်းအကျင်း",
-   "th_norm": "อาร์เรย์ตารางกิโลเมตร",
+   "th_norm": "อาร์เรย์สแควร์กิโลเมตร",
    "fingerprint": "da74c9fe4aece14a",
    "vocab_sig": [
     "array",
@@ -483651,7 +483658,7 @@
    "en": "tidal disruption event",
    "en_norm": "tidal disruption event",
    "my_norm": "ဒီရေဖျက်ဆီးဖြစ်ရပ်",
-   "th_norm": "เหตุการณ์การฉีกขาดจากน้ำขึ้นน้ำลง",
+   "th_norm": "เหตุการณ์การฉีกขาดจากแรงไทดัล",
    "fingerprint": "fc44f3b5f04d089b",
    "vocab_sig": [
     "disruption",
@@ -483881,7 +483888,7 @@
    "en": "subsurface ocean",
    "en_norm": "subsurface ocean",
    "my_norm": "မျက်နှာပြင်အောက်သမုဒ္ဒရာ",
-   "th_norm": "มหาสมุทรใต้ผิวดิน",
+   "th_norm": "มหาสมุทรใต้พื้นผิว",
    "fingerprint": "0475702d5b849d1c",
    "vocab_sig": [
     "ocean",
@@ -484421,7 +484428,7 @@
    "en": "direct-to-cell satellite",
    "en_norm": "direct to cell satellite",
    "my_norm": "ဆဲလ်တိုက်ရိုက်ဂြိုဟ်တု",
-   "th_norm": "ดาวเทียมตรงถึงเซลล์",
+   "th_norm": "ดาวเทียมเชื่อมต่อตรงกับโทรศัพท์มือถือ",
    "fingerprint": "f9d7fb0a113bc407",
    "vocab_sig": [
     "cell",
