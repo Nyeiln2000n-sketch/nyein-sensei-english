@@ -38,6 +38,16 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 119,
+    slug: 'proud-and-shy-2026-10-28',
+    titleMy: 'အပိုင်း ၁၁၉: ဂုဏ်ယူခြင်းနဲ့ ရှက်ခြင်း — Proud and Shy',
+    titleOrig: 'ภูมิใจและอาย — Proud and Shy',
+    descMy: 'အခန်း ၁၂ ၏ ကိုးခုမြောက်အပိုင်း — အင်္ဂလိပ်လို ဂုဏ်ယူတာနဲ့ ရှက်တာကို ပြောဆိုနည်း — "I am proud of you." / "I am shy." / "Well done!" ဆိုတဲ့ ဝါကျများနဲ့ ကိုယ့်ကိုယ်ကို ဂုဏ်ယူတာကို လူမှုကွန်ရက်မှာ တင်တာ ကြွားတာလား ဆွေးနွေးမှုနဲ့ သူငယ်ချင်းကို ချီးမွမ်းတဲ့ လေ့ကျင့်ခန်း',
+    phrases: ['I am proud of you.', 'I am shy.', 'Well done!', 'Do not be shy.', 'I am proud of myself.'],
+    durationSecs: 704,
+    cover: '/podcast-covers/ep-119.jpg',
+  },
+  {
     n: 118,
     slug: 'excited-and-worried-2026-10-28',
     titleMy: 'အပိုင်း ၁၁၈: စိတ်လှုပ်ရှားခြင်းနဲ့ စိုးရိမ်ခြင်း — Excited and Worried',

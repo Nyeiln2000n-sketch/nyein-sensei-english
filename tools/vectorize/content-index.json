@@ -54240,7 +54240,7 @@
    "en": "Further to our conversation earlier today, I am sending the requested details.",
    "en_norm": "further to our conversation earlier today i am sending the requested details",
    "my_norm": "ဒီနေ့ အစောပိုင်းက ကျွန်တော်တို့ စကားပြောခဲ့တာနဲ့ ဆက်စပ်ပြီး တောင်းဆိုထားတဲ့ အသေးစိတ်တွေကို ပို့နေပါတယ်။",
-   "th_norm": "สืบเนื่องจากการสนทนาเมื่อเช้านี้ ข้าพเจ้าขอส่งรายละเอียดที่ขอมา",
+   "th_norm": "สืบเนื่องจากการสนทนาก่อนหน้านี้ในวันนี้ ข้าพเจ้าขอส่งรายละเอียดที่ขอมา",
    "fingerprint": "a1c95848320b8dd9",
    "vocab_sig": [
     "conversation",
@@ -54879,7 +54879,7 @@
    "en": "Should you have any questions, please feel free to reach out.",
    "en_norm": "should you have any questions please feel free to reach out",
    "my_norm": "မေးခွန်းများရှိရင် လွတ်လပ်စွာ ဆက်သွယ်နိုင်ပါတယ်။",
-   "th_norm": "หากท่านมีคำถามใด โปรดติดต่อมาได้เลย",
+   "th_norm": "หากท่านมีคำถามใด โปรดติดต่อข้าพเจ้าได้เสมอ",
    "fingerprint": "c34056504cfc8b01",
    "vocab_sig": [
     "any",
@@ -55014,7 +55014,7 @@
    "en": "I would be obliged if you could provide the necessary documentation.",
    "en_norm": "i would be obliged if you could provide the necessary documentation",
    "my_norm": "လိုအပ်တဲ့ စာရွက်စာတမ်းတွေ ပေးနိုင်ရင် ကျေးဇူးကြီးမိမှာပါ။",
-   "th_norm": "ข้าพเจ้าจะขอบพระคุณอย่างยิ่งหากท่านกรุณาจัดเตรียมเอกสารที่จำเป็น",
+   "th_norm": "ข้าพเจ้าจะขอบพระคุณอย่างยิ่งหากท่านกรุณาจัดส่งเอกสารที่จำเป็น",
    "fingerprint": "b572131f6b04ca92",
    "vocab_sig": [
     "documentation",
@@ -55105,7 +55105,7 @@
    "en": "I trust this email finds you well.",
    "en_norm": "i trust this email finds you well",
    "my_norm": "ဒီအီးမေးလ်က သင့်ကို ကျန်းမာချမ်းသာစွာ ရောက်ရှိမယ်လို့ ယုံကြည်ပါတယ်။",
-   "th_norm": "ข้าพเจ้าหวังว่าอีเมลฉบับนี้คงพบท่านในยามที่สบายดี",
+   "th_norm": "ข้าพเจ้าหวังว่าท่านสบายดี",
    "fingerprint": "a2ed62f16c305584",
    "vocab_sig": [
     "email",
@@ -56431,7 +56431,7 @@
    "kind": "phrase",
    "en": "With your permission, I would like to add an item to the agenda.",
    "en_norm": "with your permission i would like to add an item to the agenda",
-   "my_norm": "ခွင့်ပြုချက်နဲ့ အစီအစဉ်မှာ အချက်တစ်ခု ထပ်ထည့်ချင်ပါတယ်။",
+   "my_norm": "သင့်ခွင့်ပြုချက်နဲ့ အစီအစဉ်မှာ အချက်တစ်ခု ထပ်ထည့်ချင်ပါတယ်။",
    "th_norm": "หากท่านอนุญาต ข้าพเจ้าขอเพิ่มอีกหนึ่งวาระในการประชุม",
    "fingerprint": "a6b0a5a54d4b4d9d",
    "vocab_sig": [
@@ -56760,7 +56760,7 @@
    "en": "Point of order: we have not yet voted on the amendment.",
    "en_norm": "point of order we have not yet voted on the amendment",
    "my_norm": "လုပ်ထုံးအရ ပြင်ဆင်ချက်ကို မဲမခွဲရသေးပါဘူး။",
-   "th_norm": "ขอหารือตามระเบียบวาระ เรายังไม่ได้ลงมติเรื่องญัตติแก้ไข",
+   "th_norm": "ขอเสนอประเด็นข้อบังคับการประชุม เรายังไม่ได้ลงมติเรื่องญัตติแก้ไข",
    "fingerprint": "48be574a7f7409d3",
    "vocab_sig": [
     "amendment",
@@ -57945,7 +57945,7 @@
    "en": "The evidence strongly supports our conclusion.",
    "en_norm": "the evidence strongly supports our conclusion",
    "my_norm": "သက်သေအထောက်အထားတွေက ကျွန်တော်တို့ရဲ့ နိဂုံးကို ခိုင်ခိုင်မာမာ ထောက်ခံပါတယ်။",
-   "th_norm": "หลักฐานสนับสนุนข้อสรุปของเราอย่างแข็งแกร่ง",
+   "th_norm": "หลักฐานสนับสนุนข้อสรุปของเราอย่างหนักแน่น",
    "fingerprint": "b210a3d2d5a04446",
    "vocab_sig": [
     "conclusion",
@@ -59492,7 +59492,7 @@
    "kind": "phrase",
    "en": "We insist on including a confidentiality clause.",
    "en_norm": "we insist on including a confidentiality clause",
-   "my_norm": "လျှို့ဝှက်ချက်အပိုဒ် ထည့်သွင်းဖို့ ကျွန်တော်တို့ တောင်းဆိုပါတယ်။",
+   "my_norm": "လျှို့ဝှက်ချက်အပိုဒ် ထည့်သွင်းဖို့ ကျွန်တော်တို့ အခိုင်အမာ တောင်းဆိုပါတယ်။",
    "th_norm": "เราขอยืนกรานให้มีข้อกำหนดการรักษาความลับ",
    "fingerprint": "4cb586d7a35e085a",
    "vocab_sig": [
@@ -59944,7 +59944,7 @@
    "en": "We hereby confirm our acceptance of your offer.",
    "en_norm": "we hereby confirm our acceptance of your offer",
    "my_norm": "သင့်ကမ်းလှမ်းချက်ကို လက်ခံပါကြောင်း ဤဖြင့် အတည်ပြုပါတယ်။",
-   "th_norm": "ข้าพเจ้าขอยืนยันการตอบรับข้อเสนอของท่าน",
+   "th_norm": "เราขอยืนยันการตอบรับข้อเสนอของท่าน",
    "fingerprint": "84a9a4b01af0c70a",
    "vocab_sig": [
     "acceptance",
@@ -60524,7 +60524,7 @@
    "en": "I would like a full explanation of what went wrong.",
    "en_norm": "i would like a full explanation of what went wrong",
    "my_norm": "ဘာမှားသွားလဲဆိုတာ အပြည့်အဝ ရှင်းလင်းချက် တောင်းဆိုချင်ပါတယ်။",
-   "th_norm": "ข้าพเจ้าขอคำอธิบายอย่างละเอียดว่าเกิดอะไรขึ้น",
+   "th_norm": "ข้าพเจ้าขอคำอธิบายอย่างละเอียดว่าเกิดความผิดพลาดอะไรขึ้น",
    "fingerprint": "366ea3b4537b6dfb",
    "vocab_sig": [
     "explanation",
@@ -60545,7 +60545,7 @@
    "kind": "phrase",
    "en": "I insist on speaking with the manager in charge.",
    "en_norm": "i insist on speaking with the manager in charge",
-   "my_norm": "တာဝန်ရှိမန်နေဂျာနဲ့ စကားပြောဖို့ တောင်းဆိုပါတယ်။",
+   "my_norm": "တာဝန်ရှိမန်နေဂျာနဲ့ စကားပြောဖို့ အခိုင်အမာ တောင်းဆိုပါတယ်။",
    "th_norm": "ข้าพเจ้ายืนยันขอพูดกับผู้จัดการที่รับผิดชอบ",
    "fingerprint": "b5a4bded6ce6f026",
    "vocab_sig": [
@@ -61522,8 +61522,8 @@
    "kind": "phrase",
    "en": "We require two professional references.",
    "en_norm": "we require two professional references",
-   "my_norm": "ပရော်ဖက်ရှင်နယ် ထောက်ခံစာ နှစ်စောင် လိုအပ်ပါတယ်။",
-   "th_norm": "เราต้องการหนังสือรับรองวิชาชีพสองฉบับ",
+   "my_norm": "ပရော်ဖက်ရှင်နယ် ထောက်ခံပေးနိုင်သူ နှစ်ဦး လိုအပ်ပါတယ်။",
+   "th_norm": "เราต้องการบุคคลอ้างอิงด้านวิชาชีพสองท่าน",
    "fingerprint": "fe1cc2126240e50d",
    "vocab_sig": [
     "professional",
@@ -62821,7 +62821,7 @@
    "en": "The results are encouraging, to say the least.",
    "en_norm": "the results are encouraging to say the least",
    "my_norm": "ရလဒ်တွေက အနည်းဆုံးတော့ အားပေးစရာပါ။",
-   "th_norm": "ผลลัพธ์เป็นที่น่าพอใจอย่างยิ่ง",
+   "th_norm": "ผลลัพธ์นับว่าน่าพอใจ อย่างน้อยที่สุด",
    "fingerprint": "0214bd88d0b99010",
    "vocab_sig": [
     "encouraging",
@@ -64508,7 +64508,7 @@
    "kind": "phrase",
    "en": "Thank you for calling; we appreciate your business.",
    "en_norm": "thank you for calling we appreciate your business",
-   "my_norm": "ခေါ်ဆိုတာ ကျေးဇူးတင်ပါတယ်၊ သင့်စီးပွားရေးကို တန်ဖိုးထားပါတယ်။",
+   "my_norm": "ခေါ်ဆိုတာ ကျေးဇူးတင်ပါတယ်၊ ဆက်လက်အားပေးမှုကို တန်ဖိုးထားပါတယ်။",
    "th_norm": "ขอบคุณที่โทรมา เราขอขอบคุณที่ท่านไว้วางใจใช้บริการของเรา",
    "fingerprint": "5fcd5d2bab23e182",
    "vocab_sig": [
@@ -64681,7 +64681,7 @@
    "kind": "phrase",
    "en": "I will take the minutes for this call.",
    "en_norm": "i will take the minutes for this call",
-   "my_norm": "ဒီခေါ်ဆိုမှုရဲ့ မှတ်တမ်းကို ကျွန်တော် ယူပါ့မယ်။",
+   "my_norm": "ဒီခေါ်ဆိုမှုရဲ့ အစည်းအဝေးမှတ်တမ်းကို ကျွန်တော် ရေးမှတ်ပါ့မယ်။",
    "th_norm": "ข้าพเจ้าจะจดรายงานการประชุมสำหรับการโทรครั้งนี้",
    "fingerprint": "b1b8f1374dece410",
    "vocab_sig": [
@@ -65677,7 +65677,7 @@
    "kind": "phrase",
    "en": "They would have lost the contract if you hadn't intervened.",
    "en_norm": "they would have lost the contract if you hadn t intervened",
-   "my_norm": "သင်ဝင်မရောက်ခဲ့ရင် စာချုပ်ဆုံးရှုံးခဲ့မှာပါ။",
+   "my_norm": "သင်ကြားဝင်မဖြေရှင်းပေးခဲ့ရင် စာချုပ်ဆုံးရှုံးခဲ့မှာပါ။",
    "th_norm": "พวกเขาคงเสียสัญญาถ้าคุณไม่แทรกแซง",
    "fingerprint": "123c4be6bbf6f6d8",
    "vocab_sig": [
@@ -65836,7 +65836,7 @@
    "kind": "phrase",
    "en": "Had he not been so proud, he would have asked for help.",
    "en_norm": "had he not been so proud he would have asked for help",
-   "my_norm": "မာနမကြီးခဲ့ရင် အကူအညီတောင်းခဲ့မှာပါ။",
+   "my_norm": "မာနအရမ်းမကြီးခဲ့ရင် အကူအညီတောင်းခဲ့မှာပါ။",
    "th_norm": "ถ้าเขาไม่ถือตัวนัก เขาคงขอความช่วยเหลือ",
    "fingerprint": "b533ef79612fc04c",
    "vocab_sig": [
@@ -66016,7 +66016,7 @@
    "kind": "phrase",
    "en": "If she had trusted her instincts, she would have made the right choice.",
    "en_norm": "if she had trusted her instincts she would have made the right choice",
-   "my_norm": "သူ့အလိုလိုခံစားချက်ကိုယုံကြည်ခဲ့ရင် မှန်ကန်တဲ့ရွေးချယ်မှုလုပ်ခဲ့မှာပါ။",
+   "my_norm": "သူ့ပင်ကိုယ်ခံစားမှုကိုယုံကြည်ခဲ့ရင် မှန်ကန်တဲ့ရွေးချယ်မှုလုပ်ခဲ့မှာပါ။",
    "th_norm": "ถ้าเธอเชื่อสัญชาตญาณของตัวเอง เธอคงเลือกถูก",
    "fingerprint": "db319038ad7c4eeb",
    "vocab_sig": [
@@ -66039,7 +66039,7 @@
    "kind": "phrase",
    "en": "Had the meeting started on time, we would have finished by five.",
    "en_norm": "had the meeting started on time we would have finished by five",
-   "my_norm": "အစည်းအဝေးအချိန်မှန်စခဲ့ရင် ငါးနာရီမှာပြီးခဲ့မှာပါ။",
+   "my_norm": "အစည်းအဝေးအချိန်မှန်စခဲ့ရင် ငါးနာရီမတိုင်မီပြီးခဲ့မှာပါ။",
    "th_norm": "ถ้าประชุมเริ่มตรงเวลา เราคงเสร็จก่อนห้าโมง",
    "fingerprint": "514b89982ed47603",
    "vocab_sig": [
@@ -66110,7 +66110,7 @@
    "en": "Had she not missed the deadline, her proposal would have been accepted.",
    "en_norm": "had she not missed the deadline her proposal would have been accepted",
    "my_norm": "သတ်မှတ်ရက်မလွတ်ခဲ့ရင် သူ့တင်ပြချက်လက်ခံရခဲ့မှာပါ။",
-   "th_norm": "ถ้าเธอไม่พลาดกำหนด ข้อเสนอของเธอคงผ่าน",
+   "th_norm": "ถ้าเธอไม่พลาดกำหนดส่ง ข้อเสนอของเธอคงผ่าน",
    "fingerprint": "a14965f90d78a363",
    "vocab_sig": [
     "accepted",
@@ -66315,7 +66315,7 @@
    "en": "Had we stayed calm, the argument would never have escalated.",
    "en_norm": "had we stayed calm the argument would never have escalated",
    "my_norm": "စိတ်ငြိမ်နေခဲ့ရင် အငြင်းပွားမှုဘယ်တော့မှကြီးထွားမလာခဲ့ဘူး။",
-   "th_norm": "ถ้าเราตั้งสติ การโต้เถียงคงไม่บานปลาย",
+   "th_norm": "ถ้าเราตั้งสติ การโต้เถียงคงไม่มีวันบานปลาย",
    "fingerprint": "95983d9fe5b80482",
    "vocab_sig": [
     "argument",
@@ -66407,7 +66407,7 @@
    "en": "Were it not for your help, I would never have finished.",
    "en_norm": "were it not for your help i would never have finished",
    "my_norm": "သင့်အကူအညီမရှိခဲ့ရင် ဘယ်တော့မှမပြီးခဲ့ဘူး။",
-   "th_norm": "ถ้าไม่ได้ความช่วยเหลือจากคุณ ฉันคงทำไม่เสร็จ",
+   "th_norm": "ถ้าไม่ได้ความช่วยเหลือจากคุณ ฉันคงไม่มีวันทำเสร็จ",
    "fingerprint": "ab07bf2e63f1b188",
    "vocab_sig": [
     "finished",
@@ -66582,7 +66582,7 @@
    "kind": "phrase",
    "en": "Were he to apologize now, it might already be too late.",
    "en_norm": "were he to apologize now it might already be too late",
-   "my_norm": "အခုတောင်းပန်ခဲ့ရင် နောက်ကျနေပြီဖြစ်နိုင်ပါတယ်။",
+   "my_norm": "အခုတောင်းပန်ရင် နောက်ကျနေပြီဖြစ်နိုင်ပါတယ်။",
    "th_norm": "ถ้าเขาขอโทษตอนนี้ อาจสายเกินไปแล้ว",
    "fingerprint": "4da45e4ff001d8e0",
    "vocab_sig": [
@@ -66648,7 +66648,7 @@
    "kind": "phrase",
    "en": "Were it to snow tonight, all schools would close tomorrow.",
    "en_norm": "were it to snow tonight all schools would close tomorrow",
-   "my_norm": "ဒီညဆီးနှင်းကျခဲ့ရင် မနက်ဖြန်ကျောင်းတွေအားလုံးပိတ်မှာပါ။",
+   "my_norm": "ဒီညဆီးနှင်းကျရင် မနက်ဖြန်ကျောင်းတွေအားလုံးပိတ်မှာပါ။",
    "th_norm": "ถ้าหิมะตกคืนนี้ โรงเรียนทั้งหมดจะปิดพรุ่งนี้",
    "fingerprint": "ddcbbd16704ebd26",
    "vocab_sig": [
@@ -66672,7 +66672,7 @@
    "kind": "phrase",
    "en": "Had I the chance, I would start my own business.",
    "en_norm": "had i the chance i would start my own business",
-   "my_norm": "အခွင့်အရေးရှိခဲ့ရင် ကိုယ်ပိုင်လုပ်ငန်းစတင်မှာပါ။",
+   "my_norm": "အခွင့်အရေးရှိရင် ကိုယ်ပိုင်လုပ်ငန်းစတင်မှာပါ။",
    "th_norm": "ถ้าฉันมีโอกาส ฉันจะเปิดธุรกิจของตัวเอง",
    "fingerprint": "4d043e8e29e2c99a",
    "vocab_sig": [
@@ -66741,7 +66741,7 @@
    "en": "Had the doctor not acted quickly, the patient might have died.",
    "en_norm": "had the doctor not acted quickly the patient might have died",
    "my_norm": "ဆရာဝန်မြန်မြန်မဆောင်ရွက်ခဲ့ရင် လူနာသေခဲ့မှာဖြစ်နိုင်ပါတယ်။",
-   "th_norm": "ถ้าหมอไม่ได้ลงมืออย่างรวดเร็ว คนไข้คงเสียชีวิตไปแล้ว",
+   "th_norm": "ถ้าหมอไม่ได้ลงมืออย่างรวดเร็ว คนไข้อาจเสียชีวิตไปแล้ว",
    "fingerprint": "228ed87a77dd0d4b",
    "vocab_sig": [
     "acted",
@@ -66852,7 +66852,7 @@
    "kind": "phrase",
    "en": "Were she not so busy, she would help us organize the event.",
    "en_norm": "were she not so busy she would help us organize the event",
-   "my_norm": "အလုပ်မများခဲ့ရင် ပွဲကိုစီစဉ်ကူညီမှာပါ။",
+   "my_norm": "အလုပ်မများရင် ပွဲကိုစီစဉ်ကူညီမှာပါ။",
    "th_norm": "ถ้าเธอไม่ยุ่งขนาดนั้น เธอคงช่วยเราจัดงาน",
    "fingerprint": "63393cd82a6b2b6f",
    "vocab_sig": [
@@ -66918,7 +66918,7 @@
    "kind": "phrase",
    "en": "Were he to leave now, the whole project would collapse.",
    "en_norm": "were he to leave now the whole project would collapse",
-   "my_norm": "အခုထွက်သွားခဲ့ရင် စီမံကိန်းတစ်ခုလုံးပြိုလဲမှာပါ။",
+   "my_norm": "အခုထွက်သွားရင် စီမံကိန်းတစ်ခုလုံးပြိုလဲမှာပါ။",
    "th_norm": "ถ้าเขาออกไปตอนนี้ โครงการทั้งหมดคงพัง",
    "fingerprint": "e762e1ded40c05b2",
    "vocab_sig": [
@@ -66942,7 +66942,7 @@
    "en": "Had I known the truth, I would never have trusted him.",
    "en_norm": "had i known the truth i would never have trusted him",
    "my_norm": "အမှန်သိခဲ့ရင် သူ့ကိုဘယ်တော့မှမယုံကြည်ခဲ့ဘူး။",
-   "th_norm": "ถ้าฉันรู้ความจริง ฉันคงไม่ไว้ใจเขา",
+   "th_norm": "ถ้าฉันรู้ความจริง ฉันคงไม่มีวันไว้ใจเขา",
    "fingerprint": "5e1be6f0310964f0",
    "vocab_sig": [
     "known",
@@ -66985,7 +66985,7 @@
    "kind": "phrase",
    "en": "Were it not so expensive, I would buy it immediately.",
    "en_norm": "were it not so expensive i would buy it immediately",
-   "my_norm": "ဈေးမကြီးခဲ့ရင် ချက်ချင်းဝယ်မှာပါ။",
+   "my_norm": "ဈေးမကြီးရင် ချက်ချင်းဝယ်မှာပါ။",
    "th_norm": "ถ้าไม่แพงขนาดนั้น ฉันคงซื้อทันที",
    "fingerprint": "4143732ea2f488c2",
    "vocab_sig": [
@@ -67051,7 +67051,7 @@
    "kind": "phrase",
    "en": "Were I younger, I would learn to play the piano.",
    "en_norm": "were i younger i would learn to play the piano",
-   "my_norm": "ငယ်ခဲ့ရင် စန္ဒယားတီးတတ်အောင်သင်မှာပါ။",
+   "my_norm": "ငယ်ရင် စန္ဒယားတီးတတ်အောင်သင်မှာပါ။",
    "th_norm": "ถ้าฉันเด็กกว่านี้ ฉันจะเรียนเปียโน",
    "fingerprint": "17a22ea0232e4ce5",
    "vocab_sig": [
@@ -67563,8 +67563,8 @@
    "kind": "phrase",
    "en": "If he were more organized, he wouldn't have missed the deadline.",
    "en_norm": "if he were more organized he wouldn t have missed the deadline",
-   "my_norm": "စနစ်တကျရှိခဲ့ရင် သတ်မှတ်ရက်မလွတ်ခဲ့ဘူး။",
-   "th_norm": "ถ้าเขาเป็นระเบียบกว่านี้ เขาคงไม่พลาดกำหนด",
+   "my_norm": "စနစ်တကျရှိရင် သတ်မှတ်ရက်မလွတ်ခဲ့ဘူး။",
+   "th_norm": "ถ้าเขาเป็นระเบียบกว่านี้ เขาคงไม่พลาดกำหนดส่ง",
    "fingerprint": "671279ab1969df11",
    "vocab_sig": [
     "deadline",
@@ -67607,7 +67607,7 @@
    "kind": "phrase",
    "en": "If you weren't so stubborn, you would have accepted the help.",
    "en_norm": "if you weren t so stubborn you would have accepted the help",
-   "my_norm": "ခေါင်းမာမနေခဲ့ရင် အကူအညီလက်ခံခဲ့မှာပါ။",
+   "my_norm": "ခေါင်းမာမနေရင် အကူအညီလက်ခံခဲ့မှာပါ။",
    "th_norm": "ถ้าคุณไม่ดื้อขนาดนั้น คุณคงรับความช่วยเหลือไปแล้ว",
    "fingerprint": "4d82584c691a14b1",
    "vocab_sig": [
@@ -67651,7 +67651,7 @@
    "kind": "phrase",
    "en": "If I spoke better English, I would have gotten the job.",
    "en_norm": "if i spoke better english i would have gotten the job",
-   "my_norm": "အင်္ဂလိပ်ပိုကောင်းခဲ့ရင် အလုပ်ရခဲ့မှာပါ။",
+   "my_norm": "အင်္ဂလိပ်ပိုကောင်းရင် အလုပ်ရခဲ့မှာပါ။",
    "th_norm": "ถ้าฉันพูดอังกฤษดีกว่านี้ ฉันคงได้งานนั้น",
    "fingerprint": "b0bdb873d8a8e172",
    "vocab_sig": [
@@ -67674,7 +67674,7 @@
    "kind": "phrase",
    "en": "If she were honest with herself, she would have left long ago.",
    "en_norm": "if she were honest with herself she would have left long ago",
-   "my_norm": "ကိုယ့်ကိုယ်ကိုရိုးသားခဲ့ရင် ကြာပြီထွက်သွားခဲ့မှာပါ။",
+   "my_norm": "ကိုယ့်ကိုယ်ကိုရိုးသားရင် ကြာပြီထွက်သွားခဲ့မှာပါ။",
    "th_norm": "ถ้าเธอซื่อสัตย์กับตัวเอง เธอคงออกไปนานแล้ว",
    "fingerprint": "adca1485e61e42e3",
    "vocab_sig": [
@@ -67745,7 +67745,7 @@
    "kind": "phrase",
    "en": "If we lived closer, we would have visited more often.",
    "en_norm": "if we lived closer we would have visited more often",
-   "my_norm": "နီးနီးနေခဲ့ရင် မကြာခဏလာလည်ခဲ့မှာပါ။",
+   "my_norm": "နီးနီးနေရင် မကြာခဏလာလည်ခဲ့မှာပါ။",
    "th_norm": "ถ้าเราอยู่ใกล้กว่านี้ เราคงได้ไปเยี่ยมบ่อยกว่านี้",
    "fingerprint": "698ac8eee8ff47fb",
    "vocab_sig": [
@@ -67792,7 +67792,7 @@
    "kind": "phrase",
    "en": "If I were braver, I would have spoken up in the meeting.",
    "en_norm": "if i were braver i would have spoken up in the meeting",
-   "my_norm": "ရဲရင့်ခဲ့ရင် အစည်းအဝေးမှာပြောခဲ့မှာပါ။",
+   "my_norm": "ရဲရင့်ရင် အစည်းအဝေးမှာပြောခဲ့မှာပါ။",
    "th_norm": "ถ้าฉันกล้ากว่านี้ ฉันคงได้แสดงความคิดเห็นในการประชุม",
    "fingerprint": "53465e6ab334da2c",
    "vocab_sig": [
@@ -67836,7 +67836,7 @@
    "en": "If you had watered the plants, they wouldn't be dying now.",
    "en_norm": "if you had watered the plants they wouldn t be dying now",
    "my_norm": "အပင်တွေရေလောင်းခဲ့ရင် အခုမသေနေဘူး။",
-   "th_norm": "ถ้าคุณรดน้ำต้นไม้ ตอนนี้พวกมันคงไม่ตายแล้ว",
+   "th_norm": "ถ้าคุณรดน้ำต้นไม้ ตอนนี้พวกมันคงไม่ได้กำลังตาย",
    "fingerprint": "786076f8287429ba",
    "vocab_sig": [
     "dying",
@@ -67904,7 +67904,7 @@
    "kind": "phrase",
    "en": "If they were more flexible, they would have closed the deal.",
    "en_norm": "if they were more flexible they would have closed the deal",
-   "my_norm": "ပိုလိုက်လျောညီထွေရှိခဲ့ရင် စာချုပ်ချုပ်နိုင်ခဲ့မှာပါ။",
+   "my_norm": "ပိုလိုက်လျောညီထွေရှိရင် စာချုပ်ချုပ်နိုင်ခဲ့မှာပါ။",
    "th_norm": "ถ้าพวกเขายืดหยุ่นกว่านี้ พวกเขาคงปิดดีลได้",
    "fingerprint": "6c6c1666a1d93047",
    "vocab_sig": [
@@ -67950,7 +67950,7 @@
    "kind": "phrase",
    "en": "If he were less impulsive, he wouldn't have made that mistake.",
    "en_norm": "if he were less impulsive he wouldn t have made that mistake",
-   "my_norm": "စိတ်မမြန်ခဲ့ရင် အဲဒီအမှားမလုပ်ခဲ့ဘူး။",
+   "my_norm": "စိတ်မမြန်ရင် အဲဒီအမှားမလုပ်ခဲ့ဘူး။",
    "th_norm": "ถ้าเขาหุนหันพลันแล่นน้อยกว่านี้ เขาคงไม่ทำผิดพลาดนั้น",
    "fingerprint": "03ffe9b87295ffa4",
    "vocab_sig": [
@@ -67999,7 +67999,7 @@
    "en": "If the restaurant hadn't closed, we would be eating there tonight.",
    "en_norm": "if the restaurant hadn t closed we would be eating there tonight",
    "my_norm": "စားသောက်ဆိုင်မပိတ်ခဲ့ရင် ဒီညမှာအဲဒီဆိုင်မှာစားနေမှာပါ။",
-   "th_norm": "ถ้าร้านอาหารไม่ปิด ตอนนี้เราคงกำลังกินที่นั่น",
+   "th_norm": "ถ้าร้านอาหารไม่ปิด คืนนี้เราคงกำลังกินที่นั่น",
    "fingerprint": "8ea410a8699373fd",
    "vocab_sig": [
     "closed",
@@ -68044,7 +68044,7 @@
    "kind": "phrase",
    "en": "If you were taller, you could have reached the top shelf.",
    "en_norm": "if you were taller you could have reached the top shelf",
-   "my_norm": "အရပ်ပိုရှည်ခဲ့ရင် အပေါ်ဆုံးစင်ကိုရောက်နိုင်ခဲ့မှာပါ။",
+   "my_norm": "အရပ်ပိုရှည်ရင် အပေါ်ဆုံးစင်ကိုရောက်နိုင်ခဲ့မှာပါ။",
    "th_norm": "ถ้าคุณสูงกว่านี้ คุณคงเอื้อมถึงชั้นบนสุดได้แล้ว",
    "fingerprint": "7b8eef23551dfe5c",
    "vocab_sig": [
@@ -68134,7 +68134,7 @@
    "kind": "phrase",
    "en": "If he were a better listener, their marriage wouldn't have failed.",
    "en_norm": "if he were a better listener their marriage wouldn t have failed",
-   "my_norm": "နားထောင်ကောင်းတဲ့သူဖြစ်ခဲ့ရင် သူတို့အိမ်ထောင်ရေးမပျက်ခဲ့ဘူး။",
+   "my_norm": "နားထောင်ကောင်းတဲ့သူဖြစ်ရင် သူတို့အိမ်ထောင်ရေးမပျက်ခဲ့ဘူး။",
    "th_norm": "ถ้าเขาฟังเก่งกว่านี้ การแต่งงานของพวกเขาคงไม่ล้มเหลว",
    "fingerprint": "76ffdf5eba184485",
    "vocab_sig": [
@@ -68225,7 +68225,7 @@
    "kind": "phrase",
    "en": "If you weren't allergic to cats, you could have adopted one.",
    "en_norm": "if you weren t allergic to cats you could have adopted one",
-   "my_norm": "ကြောင်နဲ့ဓာတ်မတည့်ခဲ့ရင် တစ်ကောင်မွေးစားနိုင်ခဲ့မှာပါ။",
+   "my_norm": "ကြောင်နဲ့ဓာတ်မတည့်ရင် တစ်ကောင်မွေးစားနိုင်ခဲ့မှာပါ။",
    "th_norm": "ถ้าคุณไม่แพ้ขนแมว คุณคงได้เลี้ยงแมวสักตัวไปแล้ว",
    "fingerprint": "c1844c55846a59cd",
    "vocab_sig": [
@@ -68270,7 +68270,7 @@
    "kind": "phrase",
    "en": "If I were fluent in Thai, I would have applied for that job.",
    "en_norm": "if i were fluent in thai i would have applied for that job",
-   "my_norm": "ထိုင်းစကားကျွမ်းကျင်ခဲ့ရင် အဲဒီအလုပ်လျှောက်ခဲ့မှာပါ။",
+   "my_norm": "ထိုင်းစကားကျွမ်းကျင်ရင် အဲဒီအလုပ်လျှောက်ခဲ့မှာပါ။",
    "th_norm": "ถ้าฉันพูดไทยคล่อง ฉันคงสมัครงานนั้น",
    "fingerprint": "27aaf54fa04322bd",
    "vocab_sig": [
@@ -68361,7 +68361,7 @@
    "kind": "phrase",
    "en": "If we weren't so busy, we would have joined the protest.",
    "en_norm": "if we weren t so busy we would have joined the protest",
-   "my_norm": "အလုပ်မများခဲ့ရင် ဆန္ဒပြပွဲမှာပါဝင်ခဲ့မှာပါ။",
+   "my_norm": "အလုပ်မများရင် ဆန္ဒပြပွဲမှာပါဝင်ခဲ့မှာပါ။",
    "th_norm": "ถ้าเราไม่ยุ่งขนาดนั้น เราคงได้ร่วมประท้วงไปแล้ว",
    "fingerprint": "cfe4b60acdfc20d8",
    "vocab_sig": [
@@ -68454,7 +68454,7 @@
    "kind": "phrase",
    "en": "If she were more patient, she wouldn't have yelled at the kids.",
    "en_norm": "if she were more patient she wouldn t have yelled at the kids",
-   "my_norm": "စိတ်ပိုရှည်ခဲ့ရင် ကလေးတွေကိုမအော်ခဲ့ဘူး။",
+   "my_norm": "စိတ်ပိုရှည်ရင် ကလေးတွေကိုမအော်ခဲ့ဘူး။",
    "th_norm": "ถ้าเธออดทนกว่านี้ เธอคงไม่ตะคอกใส่เด็กๆ",
    "fingerprint": "c9b739a72ebac2a0",
    "vocab_sig": [
@@ -68549,7 +68549,7 @@
    "kind": "phrase",
    "en": "If I were twenty years younger, I would have climbed that mountain.",
    "en_norm": "if i were twenty years younger i would have climbed that mountain",
-   "my_norm": "အနှစ်နှစ်ဆယ်ငယ်ခဲ့ရင် အဲဒီတောင်တက်ခဲ့မှာပါ။",
+   "my_norm": "အနှစ်နှစ်ဆယ်ငယ်ရင် အဲဒီတောင်တက်ခဲ့မှာပါ။",
    "th_norm": "ถ้าฉันอายุน้อยกว่านี้สักยี่สิบปี ฉันคงได้ปีนภูเขาลูกนั้นแล้ว",
    "fingerprint": "a89698fdbadf2f2e",
    "vocab_sig": [
@@ -69403,7 +69403,7 @@
    "en": "We would adopt a rescue dog if our landlord agreed.",
    "en_norm": "we would adopt a rescue dog if our landlord agreed",
    "my_norm": "အိမ်ရှင်သဘောတူရင် ကယ်ဆယ်ရေးခွေးမွေးစားမှာပါ။",
-   "th_norm": "เราคงรับเลี้ยงหมาจรถ้าเจ้าของบ้านยอม",
+   "th_norm": "เราคงรับเลี้ยงหมาจากศูนย์ช่วยเหลือถ้าเจ้าของบ้านยอม",
    "fingerprint": "90761ddefc77f18a",
    "vocab_sig": [
     "adopt",
@@ -69491,7 +69491,7 @@
    "en": "I would buy an electric car if charging stations were common.",
    "en_norm": "i would buy an electric car if charging stations were common",
    "my_norm": "အားသွင်းစခန်းပေါများရင် လျှပ်စစ်ကားဝယ်မှာပါ။",
-   "th_norm": "ฉันคงซื้อรถไฟฟ้าถ้าจุดชาร์จมีทั่วไป",
+   "th_norm": "ฉันคงซื้อรถยนต์ไฟฟ้าถ้าจุดชาร์จมีทั่วไป",
    "fingerprint": "0524dcc7958dbe33",
    "vocab_sig": [
     "buy",
@@ -69672,7 +69672,7 @@
    "en": "She would wear traditional clothes if the occasion required it.",
    "en_norm": "she would wear traditional clothes if the occasion required it",
    "my_norm": "အခါသမယလိုအပ်ရင် ရိုးရာဝတ်စုံဝတ်မှာပါ။",
-   "th_norm": "เธอคงใส่ชุดไทยถ้าโอกาสเอื้ออำนวย",
+   "th_norm": "เธอคงใส่ชุดพื้นเมืองถ้างานกำหนดไว้",
    "fingerprint": "e21e4f1b770426e7",
    "vocab_sig": [
     "clothes",
@@ -69917,7 +69917,7 @@
    "kind": "phrase",
    "en": "What if the medicine has unexpected side effects?",
    "en_norm": "what if the medicine has unexpected side effects",
-   "my_norm": "ဆေးကမမျှော်လင့်တဲ့ဘေးထွက်ဆိုးကျိုးရှိခဲ့ရင် ဘယ်လိုလုပ်မလဲ။",
+   "my_norm": "ဆေးကမမျှော်လင့်တဲ့ဘေးထွက်ဆိုးကျိုးရှိရင် ဘယ်လိုလုပ်မလဲ။",
    "th_norm": "ถ้ายามีผลข้างเคียงที่ไม่คาดคิดล่ะ",
    "fingerprint": "e705a340496ea01f",
    "vocab_sig": [
@@ -70402,7 +70402,7 @@
    "kind": "phrase",
    "en": "What if the vaccine doesn't work as expected?",
    "en_norm": "what if the vaccine doesn t work as expected",
-   "my_norm": "ကာကွယ်ဆေးမျှော်လင့်သလိုအလုပ်မလုပ်ခဲ့ရင် ဘယ်လိုဖြစ်မလဲ။",
+   "my_norm": "ကာကွယ်ဆေးမျှော်လင့်သလိုအလုပ်မလုပ်ရင် ဘယ်လိုဖြစ်မလဲ။",
    "th_norm": "ถ้าวัคซีนไม่ได้ผลตามที่คาดล่ะ",
    "fingerprint": "4976aa0e10cadd6b",
    "vocab_sig": [
@@ -70492,7 +70492,7 @@
    "kind": "phrase",
    "en": "What if the restaurant is fully booked tonight?",
    "en_norm": "what if the restaurant is fully booked tonight",
-   "my_norm": "ဒီညစားသောက်ဆိုင်အပြည့်အဝကြိုတင်ခံရခဲ့ရင် ဘယ်လိုလုပ်မလဲ။",
+   "my_norm": "ဒီညစားသောက်ဆိုင်အပြည့်အဝကြိုတင်ခံရရင် ဘယ်လိုလုပ်မလဲ။",
    "th_norm": "ถ้าร้านอาหารเต็มคืนนี้ล่ะ",
    "fingerprint": "980c316bea12b75d",
    "vocab_sig": [
@@ -70696,7 +70696,7 @@
    "kind": "phrase",
    "en": "Supposing the software has a bug, who fixes it?",
    "en_norm": "supposing the software has a bug who fixes it",
-   "my_norm": "ဆော့ဖ်ဝဲမှာအမှားပါခဲ့ရင် ဘယ်သူကပြင်မလဲ။",
+   "my_norm": "ဆော့ဖ်ဝဲမှာအမှားပါရင် ဘယ်သူကပြင်မလဲ။",
    "th_norm": "สมมติซอฟต์แวร์มีบั๊ก ใครแก้",
    "fingerprint": "8ea93a5014ef3532",
    "vocab_sig": [
@@ -70718,7 +70718,7 @@
    "kind": "phrase",
    "en": "What if the bridge is closed for repairs?",
    "en_norm": "what if the bridge is closed for repairs",
-   "my_norm": "တံတားပြုပြင်ဖို့ပိတ်ထားခဲ့ရင် ဘယ်လိုလုပ်မလဲ။",
+   "my_norm": "တံတားပြုပြင်ဖို့ပိတ်ထားရင် ဘယ်လိုလုပ်မလဲ။",
    "th_norm": "ถ้าสะพานปิดซ่อมล่ะ",
    "fingerprint": "d19dd6b0cb614a0a",
    "vocab_sig": [
@@ -70807,7 +70807,7 @@
    "kind": "phrase",
    "en": "What if the documents contain errors?",
    "en_norm": "what if the documents contain errors",
-   "my_norm": "စာရွက်စာတမ်းတွေမှာအမှားပါခဲ့ရင် ဘယ်လိုဖြစ်မလဲ။",
+   "my_norm": "စာရွက်စာတမ်းတွေမှာအမှားပါရင် ဘယ်လိုဖြစ်မလဲ။",
    "th_norm": "ถ้าเอกสารมีข้อผิดพลาดล่ะ",
    "fingerprint": "df2db7e83b6b19ca",
    "vocab_sig": [
@@ -70980,7 +70980,7 @@
    "kind": "phrase",
    "en": "You should have told me sooner.",
    "en_norm": "you should have told me sooner",
-   "my_norm": "စောစောပြောခဲ့သင့်တယ်။",
+   "my_norm": "ကျွန်တော့်ကို စောစောပြောခဲ့သင့်တယ်။",
    "th_norm": "คุณน่าจะบอกฉันเร็วกว่านี้",
    "fingerprint": "69804ba4cc432b52",
    "vocab_sig": [
@@ -71000,8 +71000,8 @@
    "kind": "phrase",
    "en": "They could have warned us about the delay.",
    "en_norm": "they could have warned us about the delay",
-   "my_norm": "နောက်ကျမှုအကြောင်းသတိပေးနိုင်ခဲ့တယ်။",
-   "th_norm": "พวกเขาน่าจะเตือนเราเรื่องความล่าช้า",
+   "my_norm": "နောက်ကျမှုအကြောင်း ကျွန်တော်တို့ကို သတိပေးနိုင်ခဲ့တယ်။",
+   "th_norm": "พวกเขาเตือนเราเรื่องความล่าช้าก็ได้",
    "fingerprint": "994555b3b0aea661",
    "vocab_sig": [
     "delay",
@@ -71170,7 +71170,7 @@
    "en": "They can't have known about the surprise party.",
    "en_norm": "they can t have known about the surprise party",
    "my_norm": "သူတို့အံ့အားသင့်ပါတီအကြောင်းသိခဲ့တာ မဖြစ်နိုင်ဘူး။",
-   "th_norm": "พวกเขาคงไม่รู้เรื่องปาร์ตี้เซอร์ไพรส์หรอก",
+   "th_norm": "พวกเขาไม่มีทางรู้เรื่องปาร์ตี้เซอร์ไพรส์",
    "fingerprint": "0981017825dbb959",
    "vocab_sig": [
     "known",
@@ -71211,8 +71211,8 @@
    "kind": "phrase",
    "en": "You could have asked me for help.",
    "en_norm": "you could have asked me for help",
-   "my_norm": "အကူအညီတောင်းနိုင်ခဲ့တယ်။",
-   "th_norm": "คุณน่าจะขอความช่วยเหลือจากฉัน",
+   "my_norm": "ကျွန်တော့်ဆီက အကူအညီတောင်းနိုင်ခဲ့တယ်။",
+   "th_norm": "คุณขอความช่วยเหลือจากฉันก็ได้",
    "fingerprint": "5b28b423ad002e37",
    "vocab_sig": [
     "asked",
@@ -71294,7 +71294,7 @@
    "kind": "phrase",
    "en": "The results might have been influenced by the small sample.",
    "en_norm": "the results might have been influenced by the small sample",
-   "my_norm": "နမူနာနည်းတာကြောင့် ရလဒ်တွေ တိမ်းစောင်းသွားတာ ဖြစ်နိုင်တယ်။",
+   "my_norm": "နမူနာနည်းတာကြောင့် ရလဒ်တွေ လွှမ်းမိုးခံရတာ ဖြစ်နိုင်တယ်။",
    "th_norm": "ผลลัพธ์อาจได้รับอิทธิพลจากกลุ่มตัวอย่างเล็ก",
    "fingerprint": "465ac160ab85a15f",
    "vocab_sig": [
@@ -71447,7 +71447,7 @@
    "en": "The witness can't have seen the suspect clearly.",
    "en_norm": "the witness can t have seen the suspect clearly",
    "my_norm": "သက်သေကသံသယရှိသူကိုရှင်းရှင်းမြင်ခဲ့တာ မဖြစ်နိုင်ဘူး။",
-   "th_norm": "พยานคงเห็นผู้ต้องสงสัยไม่ชัดเจนหรอก",
+   "th_norm": "พยานไม่มีทางเห็นผู้ต้องสงสัยชัดเจน",
    "fingerprint": "80b5bc124e93dd6e",
    "vocab_sig": [
     "clearly",
@@ -71469,7 +71469,7 @@
    "en": "She could have taken the earlier train.",
    "en_norm": "she could have taken the earlier train",
    "my_norm": "သူစောတဲ့ရထားစီးနိုင်ခဲ့တယ်။",
-   "th_norm": "เธอน่าจะขึ้นรถไฟขบวนก่อนแล้ว",
+   "th_norm": "เธอขึ้นรถไฟขบวนก่อนก็ได้",
    "fingerprint": "f76e72e07f3ccc4f",
    "vocab_sig": [
     "earlier",
@@ -71531,7 +71531,7 @@
    "en": "The fire might have started from an electrical fault.",
    "en_norm": "the fire might have started from an electrical fault",
    "my_norm": "မီးကလျှပ်စစ်ချို့ယွင်းမှုကြောင့်စခဲ့တာဖြစ်နိုင်တယ်။",
-   "th_norm": "ไฟอาจเริ่มจากไฟฟ้าลัดวงจร",
+   "th_norm": "ไฟอาจเริ่มจากไฟฟ้าขัดข้อง",
    "fingerprint": "c981a7b8f3f53f7d",
    "vocab_sig": [
     "electrical",
@@ -71922,7 +71922,7 @@
    "en": "They can't have expected such a huge crowd.",
    "en_norm": "they can t have expected such a huge crowd",
    "my_norm": "သူတို့ဒီလောက်ကြီးတဲ့လူအုပ်ကိုမျှော်လင့်ခဲ့တာ မဖြစ်နိုင်ဘူး။",
-   "th_norm": "พวกเขาคงไม่คาดว่าคนจะมาเยอะขนาดนี้หรอก",
+   "th_norm": "พวกเขาไม่มีทางคาดว่าคนจะมาเยอะขนาดนี้",
    "fingerprint": "054b705c067f7c60",
    "vocab_sig": [
     "crowd",
@@ -72029,7 +72029,7 @@
    "kind": "phrase",
    "en": "It's unlikely that they'll agree to our terms.",
    "en_norm": "it s unlikely that they ll agree to our terms",
-   "my_norm": "သူတို့ကျွန်တော်တို့ရဲ့စည်းကမ်းချက်တွေကိုသဘောတူဖို့မဖြစ်နိုင်ဘူး။",
+   "my_norm": "သူတို့ကျွန်တော်တို့ရဲ့စည်းကမ်းချက်တွေကိုသဘောတူဖို့ဖြစ်နိုင်ခြေနည်းတယ်။",
    "th_norm": "พวกเขาไม่น่าจะยอมรับเงื่อนไขของเรา",
    "fingerprint": "e44ca84b29453272",
    "vocab_sig": [
@@ -72273,7 +72273,7 @@
    "kind": "phrase",
    "en": "The team is unlikely to win without their captain.",
    "en_norm": "the team is unlikely to win without their captain",
-   "my_norm": "အသင်းခေါင်းဆောင်မပါဘဲအသင်းအနိုင်ရဖို့မဖြစ်နိုင်ဘူး။",
+   "my_norm": "အသင်းခေါင်းဆောင်မပါဘဲအသင်းအနိုင်ရဖို့ဖြစ်နိုင်ခြေနည်းတယ်။",
    "th_norm": "ทีมไม่น่าจะชนะถ้าไม่มีกัปตัน",
    "fingerprint": "4fe41534af4436b5",
    "vocab_sig": [
@@ -72453,7 +72453,7 @@
    "kind": "phrase",
    "en": "He's unlikely to change his mind at this point.",
    "en_norm": "he s unlikely to change his mind at this point",
-   "my_norm": "ဒီအချိန်မှာသူစိတ်ပြောင်းဖို့မဖြစ်နိုင်ဘူး။",
+   "my_norm": "ဒီအချိန်မှာသူစိတ်ပြောင်းဖို့ဖြစ်နိုင်ခြေနည်းတယ်။",
    "th_norm": "ตอนนี้เขาไม่น่าจะเปลี่ยนใจ",
    "fingerprint": "c0a6ec7907fa7d60",
    "vocab_sig": [
@@ -72612,7 +72612,7 @@
    "en": "It's almost certain that the price will drop soon.",
    "en_norm": "it s almost certain that the price will drop soon",
    "my_norm": "ဈေးမကြာခင်ကျဖို့လုနီးပါးသေချာတယ်။",
-   "th_norm": "ค่อนข้างแน่ว่าราคาจะลงเร็วๆ นี้",
+   "th_norm": "เกือบแน่ว่าราคาจะลงเร็วๆ นี้",
    "fingerprint": "e7930fea8147f974",
    "vocab_sig": [
     "almost",
@@ -72704,7 +72704,7 @@
    "kind": "phrase",
    "en": "It's improbable that anyone noticed the mistake.",
    "en_norm": "it s improbable that anyone noticed the mistake",
-   "my_norm": "တစ်ယောက်ယောက်အမှားကိုသတိထားမိဖို့မဖြစ်နိုင်ဘူး။",
+   "my_norm": "တစ်ယောက်ယောက်အမှားကိုသတိထားမိဖို့ဖြစ်နိုင်ခြေအလွန်နည်းတယ်။",
    "th_norm": "ไม่น่าเป็นไปได้ที่มีใครสังเกตเห็นความผิดพลาด",
    "fingerprint": "b146a2c3dd47f311",
    "vocab_sig": [
@@ -72838,7 +72838,7 @@
    "kind": "phrase",
    "en": "There's no chance he'll apologize first.",
    "en_norm": "there s no chance he ll apologize first",
-   "my_norm": "သူအရင်တောင်းပန်ဖို့အခွင့်အရေးမရှိဘူး။",
+   "my_norm": "သူအရင်တောင်းပန်ဖို့ဖြစ်နိုင်ခြေမရှိဘူး။",
    "th_norm": "ไม่มีทางที่เขาจะขอโทษก่อน",
    "fingerprint": "4bf30ea817c860c9",
    "vocab_sig": [
@@ -72973,7 +72973,7 @@
    "kind": "phrase",
    "en": "It's unthinkable that she would betray us.",
    "en_norm": "it s unthinkable that she would betray us",
-   "my_norm": "သူကျွန်တော်တို့ကိုသစ္စာဖောက်ဖို့မတွေးနိုင်ဘူး။",
+   "my_norm": "သူကျွန်တော်တို့ကို သစ္စာဖောက်လိမ့်မယ်ဆိုတာ တွေးလို့တောင်မရဘူး။",
    "th_norm": "คิดไม่ถึงเลยว่าเธอจะทรยศเรา",
    "fingerprint": "63c3ae685312fb40",
    "vocab_sig": [
@@ -73817,7 +73817,7 @@
    "kind": "phrase",
    "en": "I wish the bus came more frequently.",
    "en_norm": "i wish the bus came more frequently",
-   "my_norm": "ဘတ်စ်မကြာခဏလာရင်ကောင်းမှာပဲ။",
+   "my_norm": "ဘတ်စ်ပိုမကြာခဏလာရင်ကောင်းမှာပဲ။",
    "th_norm": "อยากให้รถเมล์มาบ่อยกว่านี้",
    "fingerprint": "a46cf8abb06387b6",
    "vocab_sig": [
@@ -75397,7 +75397,7 @@
    "kind": "phrase",
    "en": "Hypothetically speaking, what would a fair solution look like?",
    "en_norm": "hypothetically speaking what would a fair solution look like",
-   "my_norm": "သီအိုရီအရပြောရရင် တရားမျှတတဲ့ဖြေရှင်းချက်ကဘယ်လိုဖြစ်မလဲ။",
+   "my_norm": "ယူဆချက်အနေနဲ့ပြောရရင် တရားမျှတတဲ့ဖြေရှင်းချက်ကဘယ်လိုဖြစ်မလဲ။",
    "th_norm": "ในเชิงสมมติ ทางออกที่ยุติธรรมจะมีลักษณะอย่างไร",
    "fingerprint": "54999549541f0036",
    "vocab_sig": [
@@ -75643,7 +75643,7 @@
    "kind": "phrase",
    "en": "Hypothetically, could a machine ever truly think?",
    "en_norm": "hypothetically could a machine ever truly think",
-   "my_norm": "သီအိုရီအရ စက်ကတကယ်စဉ်းစားနိုင်မလား။",
+   "my_norm": "ယူဆချက်အရ စက်ကတကယ်စဉ်းစားနိုင်မလား။",
    "th_norm": "ในเชิงสมมติ เครื่องจักรจะคิดได้จริงไหม",
    "fingerprint": "df3a58a8969d1e1a",
    "vocab_sig": [
@@ -75916,7 +75916,7 @@
    "kind": "phrase",
    "en": "Hypothetically, what if we never discovered electricity?",
    "en_norm": "hypothetically what if we never discovered electricity",
-   "my_norm": "သီအိုရီအရ လျှပ်စစ်ကိုဘယ်တော့မှမတွေ့ရှိခဲ့ရင် ဘာဖြစ်မလဲ။",
+   "my_norm": "ယူဆချက်အရ လျှပ်စစ်ကိုဘယ်တော့မှမတွေ့ရှိခဲ့ရင် ဘာဖြစ်မလဲ။",
    "th_norm": "ในเชิงสมมติ ถ้าเราไม่เคยค้นพบไฟฟ้าล่ะ",
    "fingerprint": "857cacd10b71e023",
    "vocab_sig": [
@@ -75939,7 +75939,7 @@
    "en": "Say you won a million dollars — what's the first thing you'd buy?",
    "en_norm": "say you won a million dollars what s the first thing you d buy",
    "my_norm": "ဒေါ်လာတစ်သန်းပေါက်ခဲ့ရင် ပထမဆုံးဘာဝယ်မလဲ။",
-   "th_norm": "สมมติคุณถูกรางวัลเงินล้านดอลลาร์ คุณจะซื้ออะไรเป็นอย่างแรก",
+   "th_norm": "สมมติคุณได้เงินล้านดอลลาร์ คุณจะซื้ออะไรเป็นอย่างแรก",
    "fingerprint": "40d7daca75b10a2a",
    "vocab_sig": [
     "buy",
@@ -76166,7 +76166,7 @@
    "kind": "phrase",
    "en": "Hypothetically, could time travel ever be possible?",
    "en_norm": "hypothetically could time travel ever be possible",
-   "my_norm": "သီအိုရီအရ အချိန်ခရီးသွားတာ ဖြစ်နိုင်မလား။",
+   "my_norm": "ယူဆချက်အရ အချိန်ခရီးသွားတာ ဖြစ်နိုင်မလား။",
    "th_norm": "ในเชิงสมมติ การเดินทางข้ามเวลาจะเป็นไปได้ไหม",
    "fingerprint": "fc6e0baae2183304",
    "vocab_sig": [
@@ -76375,7 +76375,7 @@
    "kind": "phrase",
    "en": "Hypothetically, what would you change about your past?",
    "en_norm": "hypothetically what would you change about your past",
-   "my_norm": "သီအိုရီအရ အတိတ်က ဘာကိုပြောင်းမလဲ။",
+   "my_norm": "ယူဆချက်အရ အတိတ်က ဘာကို ပြောင်းမလဲ။",
    "th_norm": "ในเชิงสมมติ คุณจะเปลี่ยนอะไรในอดีต",
    "fingerprint": "fc7b18c7726c1aa4",
    "vocab_sig": [
@@ -77691,7 +77691,7 @@
    "en": "I am not convinced that this is the right approach.",
    "en_norm": "i am not convinced that this is the right approach",
    "my_norm": "ဒါ မှန်ကန်တဲ့ချဉ်းကပ်ပုံလို့ ကျွန်တော် မယုံကြည်ဘူး။",
-   "th_norm": "ฉันไม่เชื่อว่านี่คือแนวทางที่ถูกต้อง",
+   "th_norm": "ฉันยังไม่มั่นใจว่านี่คือแนวทางที่ถูกต้อง",
    "fingerprint": "f78077f1ba837a0d",
    "vocab_sig": [
     "approach",
@@ -78115,7 +78115,7 @@
    "kind": "phrase",
    "en": "Call me skeptical, but I doubt it will work in practice.",
    "en_norm": "call me skeptical but i doubt it will work in practice",
-   "my_norm": "သံသယလွန်တယ်ပဲ ပြောပြော၊ လက်တွေ့မှာ အလုပ်ဖြစ်မယ်လို့ ကျွန်တော် သံသယရှိတယ်။",
+   "my_norm": "သံသယသမားလို့ ပြောပြော၊ လက်တွေ့မှာ အလုပ်ဖြစ်မယ်လို့ ကျွန်တော် သံသယရှိတယ်။",
    "th_norm": "ฉันอาจจะขี้สงสัยไปหน่อย แต่ฉันสงสัยว่ามันจะใช้ได้จริงหรือเปล่า",
    "fingerprint": "e5d049046043e8c9",
    "vocab_sig": [
@@ -78161,7 +78161,7 @@
    "en": "Not quite — the issue is far more nuanced than that.",
    "en_norm": "not quite the issue is far more nuanced than that",
    "my_norm": "သိပ်မမှန်ဘူး ဒီကိစ္စက အဲဒီထက် အများကြီး ပိုသိမ်မွေ့နက်နဲတယ်။",
-   "th_norm": "ไม่เชิง เรื่องนี้ละเอียดอ่อนกว่านั้นมาก",
+   "th_norm": "ไม่เชิง เรื่องนี้มีรายละเอียดซับซ้อนกว่านั้นมาก",
    "fingerprint": "006e9ec4fbd64d55",
    "vocab_sig": [
     "far",
@@ -79577,7 +79577,7 @@
    "en": "The burden of proof now lies with the opposition.",
    "en_norm": "the burden of proof now lies with the opposition",
    "my_norm": "သက်သေပြရမယ့်ဝန်ထုပ်က အခု ဆန့်ကျင်ဘက်အဖွဲ့ပေါ် ကျရောက်နေပြီ။",
-   "th_norm": "ภาระการพิสูจน์ตกอยู่กับฝ่ายค้านแล้ว",
+   "th_norm": "ภาระการพิสูจน์ตกอยู่กับฝ่ายตรงข้ามแล้ว",
    "fingerprint": "4665b61fcebb88fc",
    "vocab_sig": [
     "burden",
@@ -79878,7 +79878,7 @@
    "en": "The question isn't whether we can afford to act, but whether we can afford not to.",
    "en_norm": "the question isn t whether we can afford to act but whether we can afford not to",
    "my_norm": "မေးခွန်းက အရေးယူနိုင်မလားဆိုတာမဟုတ်ဘူး၊ အရေးမယူဘဲနေနိုင်မလားဆိုတာပဲ။",
-   "th_norm": "ประเด็นไม่ใช่ว่าเรามีทรัพยากรพอที่จะลงมือหรือไม่ แต่คือเรามีทรัพยากรพอที่จะนิ่งเฉยหรือ",
+   "th_norm": "ประเด็นไม่ใช่ว่าเราจ่ายไหวที่จะลงมือหรือไม่ แต่คือเราจ่ายไหวที่จะนิ่งเฉยหรือไม่",
    "fingerprint": "9213a14379848b68",
    "vocab_sig": [
     "act",
@@ -82082,7 +82082,7 @@
    "kind": "phrase",
    "en": "Cherry-picked data proves nothing.",
    "en_norm": "cherry picked data proves nothing",
-   "my_norm": "ရွေးချယ်ထားတဲ့အချက်အလက်တွေက ဘာမှ သက်သေမပြဘူး။",
+   "my_norm": "ကိုယ့်အလိုကျ ရွေးထုတ်ထားတဲ့ အချက်အလက်တွေက ဘာမှ သက်သေမပြဘူး။",
    "th_norm": "ข้อมูลที่เลือกมาเฉพาะพิสูจน์อะไรไม่ได้",
    "fingerprint": "37b3dca4e5796469",
    "vocab_sig": [
@@ -82174,7 +82174,7 @@
    "en": "The slippery-slope claim has no historical basis.",
    "en_norm": "the slippery slope claim has no historical basis",
    "my_norm": "လျှောကျတဲ့တောင်စောင်းအဆိုမှာ သမိုင်းအခြေခံ မရှိဘူး။",
-   "th_norm": "ข้อโต้แย้งแบบทางลื่นไม่มีพื้นฐานทางประวัติศาสตร์",
+   "th_norm": "ข้อโต้แย้งแบบทางลาดชันไม่มีพื้นฐานทางประวัติศาสตร์",
    "fingerprint": "09875d6c463cd960",
    "vocab_sig": [
     "basis",
@@ -82532,7 +82532,7 @@
    "en": "That defense crumbles under the lightest questioning.",
    "en_norm": "that defense crumbles under the lightest questioning",
    "my_norm": "အဲဒီကာကွယ်ချက်က အပေါ့ပါးဆုံးမေးခွန်းနဲ့တောင် ပြိုလဲတယ်။",
-   "th_norm": "ข้อแก้ตัวนั้นพังแม้เจอคำถามเบาๆ",
+   "th_norm": "ข้อแก้ต่างนั้นพังแม้เจอคำถามเบาๆ",
    "fingerprint": "7dc4ff707a6523c1",
    "vocab_sig": [
     "crumbles",
@@ -83428,7 +83428,7 @@
    "en": "Let's not confuse activity with achievement in this report.",
    "en_norm": "let s not confuse activity with achievement in this report",
    "my_norm": "ဒီအစီရင်ခံစာမှာ လှုပ်ရှားမှုနဲ့အောင်မြင်မှုကို မရောထွေးကြစို့။",
-   "th_norm": "อย่าสับสนระหว่างความวุ่นวายกับความสำเร็จในรายงานนี้",
+   "th_norm": "อย่าสับสนระหว่างกิจกรรมกับความสำเร็จในรายงานนี้",
    "fingerprint": "af7884b430f1942c",
    "vocab_sig": [
     "achievement",
@@ -85425,7 +85425,7 @@
    "kind": "phrase",
    "en": "Drug prices should reflect research costs, not monopoly power.",
    "en_norm": "drug prices should reflect research costs not monopoly power",
-   "my_norm": "ဆေးဈေးနှုန်းတွေဟာ သုတေသနကုန်ကျစရိတ်ကို ထင်ဟပ်သင့်တယ် ဈေးကွက်မူပိုင်မှုဩဇာကိုတော့ မဟုတ်ဘူး။",
+   "my_norm": "ဆေးဈေးနှုန်းတွေဟာ သုတေသနကုန်ကျစရိတ်ကို ထင်ဟပ်သင့်တယ် ဈေးကွက်လက်ဝါးကြီးအုပ်မှုဩဇာကိုတော့ မဟုတ်ဘူး။",
    "th_norm": "ราคายาควรสะท้อนต้นทุนวิจัย ไม่ใช่อำนาจผูกขาด",
    "fingerprint": "a90e4c4bc8b09425",
    "vocab_sig": [
@@ -87829,7 +87829,7 @@
    "kind": "phrase",
    "en": "Broadly speaking, I agree, with one important caveat.",
    "en_norm": "broadly speaking i agree with one important caveat",
-   "my_norm": "ယေဘုယျအားဖြင့် သဘောတူတယ်၊ အရေးကြီးတဲ့ခြွင်းချက်တစ်ခုနဲ့။",
+   "my_norm": "ယေဘုယျအားဖြင့် သဘောတူတယ်၊ ဒါပေမယ့် အရေးကြီးတဲ့ခြွင်းချက်တစ်ခုတော့ ရှိတယ်။",
    "th_norm": "โดยทั่วไปฉันเห็นด้วย โดยมีข้อแม้สำคัญหนึ่งข้อ",
    "fingerprint": "49c8200a0c384e40",
    "vocab_sig": [
