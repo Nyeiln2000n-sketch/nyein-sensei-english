@@ -38,6 +38,16 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 118,
+    slug: 'excited-and-worried-2026-10-28',
+    titleMy: 'အပိုင်း ၁၁၈: စိတ်လှုပ်ရှားခြင်းနဲ့ စိုးရိမ်ခြင်း — Excited and Worried',
+    titleOrig: 'ตื่นเต้นและกังวล — Excited and Worried',
+    descMy: 'အခန်း ၁၂ ၏ ရှစ်ခုမြောက်အပိုင်း — အင်္ဂလိပ်လို စိတ်လှုပ်ရှားတာနဲ့ စိုးရိမ်တာကို ပြောဆိုနည်း — "I am excited about my trip." / "I am worried about my exam tomorrow." / "Everything will be fine." ဆိုတဲ့ ဝါကျများနဲ့ အနာဂတ်အကြောင်း စိုးရိမ်တာ နိုင်ငံခြားသားတွေလည်း တူသလား ဆွေးနွေးမှုနဲ့ လေ့ကျင့်ခန်း',
+    phrases: ['I am excited about my trip.', 'I am worried about my exam tomorrow.', 'Do not worry. Everything will be fine.', 'I am excited about my new job.'],
+    durationSecs: 766,
+    cover: '/podcast-covers/ep-118.jpg',
+  },
+  {
     n: 117,
     slug: 'likes-and-dislikes-2026-10-28',
     titleMy: 'အပိုင်း ၁၁၇: ကြိုက်တာနဲ့ မကြိုက်တာ — Likes and Dislikes',

@@ -34360,7 +34360,7 @@
    "kind": "phrase",
    "en": "The waterfall was absolutely breathtaking.",
    "en_norm": "the waterfall was absolutely breathtaking",
-   "my_norm": "ရေတံခွန်က တကယ်ကို အသက်ရှုမှားစရာကောင်းတယ်။",
+   "my_norm": "ရေတံခွန်က တကယ်ကို အသက်ရှုရပ်လောက်အောင် လှပတယ်။",
    "th_norm": "น้ำตกสวยจนตะลึง",
    "fingerprint": "25e36b81ff8e6578",
    "vocab_sig": [
@@ -35159,7 +35159,7 @@
    "en": "This church was built in 1800.",
    "en_norm": "this church was built in 1800",
    "my_norm": "ဒီဘုရားကျောင်းကို ၁၈၀၀ ခုနှစ်မှာ တည်ဆောက်ခဲ့တယ်။",
-   "th_norm": "โบสถ์นี้สร้างเมื่อปี 1800",
+   "th_norm": "โบสถ์นี้สร้างเมื่อปี ค ศ 1800",
    "fingerprint": "b16be57e884c40ae",
    "vocab_sig": [
     "1800",
@@ -35438,7 +35438,7 @@
    "en": "This lighthouse is a local landmark.",
    "en_norm": "this lighthouse is a local landmark",
    "my_norm": "ဒီမီးပြတိုက်က ဒေသရဲ့ အထင်ကရနေရာပဲ။",
-   "th_norm": "ประภาคารนี้เป็นจุดสังเกตของท้องถิ่น",
+   "th_norm": "ประภาคารนี้เป็นสถานที่สำคัญของท้องถิ่น",
    "fingerprint": "1c88f7a93461ed1d",
    "vocab_sig": [
     "landmark",
@@ -36506,7 +36506,7 @@
    "en": "We have tea at four o'clock.",
    "en_norm": "we have tea at four o clock",
    "my_norm": "ကျွန်တော်တို့ ၄ နာရီမှာ လက်ဖက်ရည်သောက်တယ်။",
-   "th_norm": "เราดื่มชายามสี่โมง",
+   "th_norm": "เราดื่มชาตอนสี่โมงเย็น",
    "fingerprint": "0867dc9945a3cfd2",
    "vocab_sig": [
     "clock",
@@ -37294,7 +37294,7 @@
    "kind": "phrase",
    "en": "He tucks the kids into bed.",
    "en_norm": "he tucks the kids into bed",
-   "my_norm": "သူက ကလေးတွေကို အိပ်ရာထဲ ထည့်ပေးတယ်။",
+   "my_norm": "သူက ကလေးတွေကို စောင်ခြုံပြီး အိပ်ရာဝင်အောင် လုပ်ပေးတယ်။",
    "th_norm": "เขาห่มผ้าให้เด็กๆ เข้านอน",
    "fingerprint": "ee17e81f2e01f981",
    "vocab_sig": [
@@ -37378,7 +37378,7 @@
    "en": "He drives them to school.",
    "en_norm": "he drives them to school",
    "my_norm": "သူက သူတို့ကို ကျောင်းပို့တယ်။",
-   "th_norm": "เขาขับรถไปส่งพวกเขาโรงเรียน",
+   "th_norm": "เขาขับรถไปส่งพวกเขาที่โรงเรียน",
    "fingerprint": "84c3d340d0575fbd",
    "vocab_sig": [
     "drives",
@@ -37524,7 +37524,7 @@
    "kind": "phrase",
    "en": "We have stand-up meetings daily.",
    "en_norm": "we have stand up meetings daily",
-   "my_norm": "ကျွန်တော်တို့ နေ့တိုင်း မတ်တပ်အစည်းအဝေးလုပ်တယ်။",
+   "my_norm": "ကျွန်တော်တို့ နေ့တိုင်း မတ်တပ်ရပ် အစည်းအဝေးလုပ်တယ်။",
    "th_norm": "เรามีประชุมสั้นๆ ทุกวัน",
    "fingerprint": "7b1f7f302ea236ee",
    "vocab_sig": [
@@ -37696,7 +37696,7 @@
    "en": "We leave the office by six.",
    "en_norm": "we leave the office by six",
    "my_norm": "ကျွန်တော်တို့ ၆ နာရီနောက်ဆုံးထား ရုံးက ထွက်တယ်။",
-   "th_norm": "เราออกจากออฟฟิศก่อนหกโมงเย็น",
+   "th_norm": "เราออกจากออฟฟิศไม่เกินหกโมงเย็น",
    "fingerprint": "a0aac0a5ca22ca14",
    "vocab_sig": [
     "leave",
@@ -38051,7 +38051,7 @@
    "kind": "phrase",
    "en": "He felt guilty about lying.",
    "en_norm": "he felt guilty about lying",
-   "my_norm": "သူ လိမ်ညာခဲ့မိလို့ အပြစ်သားလို ခံစားနေရတယ်။",
+   "my_norm": "သူ လိမ်ညာခဲ့မိလို့ အပြစ်ရှိသလို ခံစားနေရတယ်။",
    "th_norm": "เขารู้สึกผิดที่โกหก",
    "fingerprint": "14e63d639f0e8566",
    "vocab_sig": [
@@ -39083,7 +39083,7 @@
    "kind": "phrase",
    "en": "She let out a sigh of relief.",
    "en_norm": "she let out a sigh of relief",
-   "my_norm": "သူ သက်ပြင်းချလိုက်တယ်။",
+   "my_norm": "သူ သက်သာရာရပြီး သက်ပြင်းချလိုက်တယ်။",
    "th_norm": "เธอถอนหายใจด้วยความโล่งใจ",
    "fingerprint": "ffbdf3e56732f510",
    "vocab_sig": [
@@ -42378,7 +42378,7 @@
    "kind": "phrase",
    "en": "It's widely acknowledged that Finland's schools are among the best.",
    "en_norm": "it s widely acknowledged that finland s schools are among the best",
-   "my_norm": "ဖင်လန်နိုင်ငံရဲ့ ကျောင်းတွေဟာ အကောင်းဆုံးတွေထဲက တစ်ခုဆိုတာ လူအများက အသိအမှတ်ပြုထားတယ်။",
+   "my_norm": "ဖင်လန်နိုင်ငံရဲ့ ကျောင်းတွေဟာ အကောင်းဆုံးကျောင်းတွေထဲမှာ ပါဝင်တယ်ဆိုတာ လူအများက အသိအမှတ်ပြုထားတယ်။",
    "th_norm": "เป็นที่ยอมรับกันอย่างกว้างขวางว่าโรงเรียนในฟินแลนด์ดีที่สุดแห่งหนึ่งของโลก",
    "fingerprint": "866daae25acd3f58",
    "vocab_sig": [
@@ -46769,7 +46769,7 @@
    "kind": "phrase",
    "en": "The truth of the matter is that the planet will survive; we might not.",
    "en_norm": "the truth of the matter is that the planet will survive we might not",
-   "my_norm": "အမှန်တရားက ကမ္ဘာမြေက ရှင်သန်နိုင်လိမ့်မယ်၊ ကျွန်တော်တို့တော့ မရှင်သန်နိုင်ဘူးဆိုတာပဲ။",
+   "my_norm": "အမှန်တရားက ကမ္ဘာမြေက ရှင်သန်နိုင်လိမ့်မယ်၊ ကျွန်တော်တို့တော့ မရှင်သန်နိုင်လောက်ဘူးဆိုတာပဲ။",
    "th_norm": "ความจริงก็คือโลกจะอยู่รอด แต่เราอาจไม่",
    "fingerprint": "c6af85d4ce5caab6",
    "vocab_sig": [
@@ -50989,7 +50989,7 @@
    "en": "The evidence suggests that family dinners improve children's wellbeing.",
    "en_norm": "the evidence suggests that family dinners improve children s wellbeing",
    "my_norm": "မိသားစုနဲ့အတူ ညစာစားတာက ကလေးတွေရဲ့ ကျန်းမာရေးကို တိုးတက်စေတယ်လို့ အထောက်အထားတွေက ဖော်ပြနေတယ်။",
-   "th_norm": "หลักฐานชี้ว่าอาหารเย็นพร้อมหน้าดีต่อสุขภาพจิตเด็ก",
+   "th_norm": "หลักฐานชี้ว่าอาหารเย็นพร้อมหน้าดีต่อสุขภาวะของเด็ก",
    "fingerprint": "9bdbd7f573b978bc",
    "vocab_sig": [
     "children",
@@ -51219,7 +51219,7 @@
    "en": "There's a strong case for parental leave for both parents.",
    "en_norm": "there s a strong case for parental leave for both parents",
    "my_norm": "မိဘနှစ်ဦးစလုံးအတွက် မိဘခွင့်ရှိသင့်တဲ့ ခိုင်မာတဲ့အကြောင်းပြချက်ရှိတယ်။",
-   "th_norm": "มีเหตุผลหนักแน่นที่ควรมีวันลาคลอดให้พ่อแม่ทั้งสองฝ่าย",
+   "th_norm": "มีเหตุผลหนักแน่นที่ควรมีวันลาเลี้ยงดูบุตรให้พ่อแม่ทั้งสองฝ่าย",
    "fingerprint": "750f6cff6ec3676f",
    "vocab_sig": [
     "both",
@@ -51384,7 +51384,7 @@
    "kind": "phrase",
    "en": "It goes without saying that children spell love as T-I-M-E.",
    "en_norm": "it goes without saying that children spell love as t i m e",
-   "my_norm": "ကလေးတွေအတွက် အချစ်ဆိုတာ အချိန်ပဲဆိုတာ ပြောစရာမလိုဘူး။",
+   "my_norm": "ကလေးတွေက အချစ်ကို T I M E အချိန် လို့ စာလုံးပေါင်းကြတယ်ဆိုတာ ပြောစရာမလိုဘူး။",
    "th_norm": "ไม่ต้องพูดก็รู้ว่าสำหรับเด็ก ความรักสะกดว่า เ ว ล า",
    "fingerprint": "ea5583794a7842ce",
    "vocab_sig": [
@@ -182656,7 +182656,7 @@
    "kind": "phrase",
    "en": "They argued about money again.",
    "en_norm": "they argued about money again",
-   "my_norm": "သူတို့ ပိုက်ဆံနဲ့ပတ်သက်ပြီး ထပ်အငြင်းပွားနေပြန်ပြီ။",
+   "my_norm": "သူတို့ ပိုက်ဆံနဲ့ပတ်သက်ပြီး ထပ်အငြင်းပွားခဲ့ကြပြန်တယ်။",
    "th_norm": "พวกเขาทะเลาะเรื่องเงินกันอีกแล้ว",
    "fingerprint": "b6fe132db54ccf72",
    "vocab_sig": [
@@ -183016,7 +183016,7 @@
    "en": "She listens before she judges.",
    "en_norm": "she listens before she judges",
    "my_norm": "သူက သူများကို မဝေဖန်ခင် အရင်နားထောင်တယ်။",
-   "th_norm": "เธอฟังก่อนตัดสินใจ",
+   "th_norm": "เธอฟังก่อนตัดสิน",
    "fingerprint": "9a781ba13d373972",
    "vocab_sig": [
     "judges",
@@ -183163,7 +183163,7 @@
    "en": "I could not convince him otherwise.",
    "en_norm": "i could not convince him otherwise",
    "my_norm": "သူ့ကို အမြင်ပြောင်းအောင် ကျွန်တော် စည်းရုံးမနိုင်ခဲ့ဘူး။",
-   "th_norm": "ฉันโน้มน้าวเขาไม่ได้",
+   "th_norm": "ฉันโน้มน้าวให้เขาเปลี่ยนใจไม่ได้",
    "fingerprint": "3f04019c195d81f4",
    "vocab_sig": [
     "convince",
@@ -184350,7 +184350,7 @@
    "en": "The movie starts at half past seven.",
    "en_norm": "the movie starts at half past seven",
    "my_norm": "ရုပ်ရှင်က ၇ နာရီခွဲမှာ စမယ်။",
-   "th_norm": "หนังเริ่มเจ็ดโมงครึ่ง",
+   "th_norm": "หนังเริ่มทุ่มครึ่ง",
    "fingerprint": "b161873855a222c3",
    "vocab_sig": [
     "half",
@@ -186171,7 +186171,7 @@
    "en": "Would you mind picking me up at six?",
    "en_norm": "would you mind picking me up at six",
    "my_norm": "၆ နာရီမှာ လာကြိုပေးနိုင်မလား။",
-   "th_norm": "มารับฉันตอนหกโมงเย็นได้ไหม",
+   "th_norm": "มารับฉันตอนหกโมงได้ไหม",
    "fingerprint": "5b6d0b02482631fc",
    "vocab_sig": [
     "mind",
@@ -188677,7 +188677,7 @@
    "en": "He is a bit of a perfectionist.",
    "en_norm": "he is a bit of a perfectionist",
    "my_norm": "သူက နည်းနည်း ပြီးပြည့်စုံမှုကို လိုက်စားသူပဲ။",
-   "th_norm": "เขาเป็นคนเจ้าระเบียบนิดๆ",
+   "th_norm": "เขาเป็นคนชอบความสมบูรณ์แบบนิดๆ",
    "fingerprint": "50a4c15b002b1e5b",
    "vocab_sig": [
     "bit",
