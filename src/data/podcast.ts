@@ -38,6 +38,16 @@ export function episodeUrl(ep: PodcastEpisode): string {
 /** Episodios ordenados del más nuevo al más viejo (como Spotify). */
 export const PODCAST_EPISODES: PodcastEpisode[] = [
   {
+    n: 117,
+    slug: 'likes-and-dislikes-2026-10-28',
+    titleMy: 'အပိုင်း ၁၁၇: ကြိုက်တာနဲ့ မကြိုက်တာ — Likes and Dislikes',
+    titleOrig: 'ชอบและไม่ชอบ — Likes and Dislikes',
+    descMy: 'အခန်း ၁၂ ၏ သတ္တမအပိုင်း — အင်္ဂလိပ်လို ကြိုက်တာနဲ့ မကြိုက်တာကို ပြောဆိုနည်း — "I like coffee." / "I do not like spicy food." / "My favorite food is Thai food." / "I hate waiting in long lines." ဆိုတဲ့ ဝါကျများနဲ့ အသက်ကြီးလာတာနဲ့အမျှ ကြိုက်တာတွေ ပြောင်းလဲသလား ဆွေးနွေးမှုနဲ့ ကြိုက်တာ ၂ ခု မကြိုက်တာ ၁ ခု ပြောတဲ့ လေ့ကျင့်ခန်းနဲ့ စားသောက်ဆိုင်နဲ့ ခရီးသွားတဲ့ role-play လေ့ကျင့်ခန်း',
+    phrases: ['I like coffee.', 'I do not like spicy food.', 'My favorite food is Thai food.', 'I hate waiting in long lines.'],
+    durationSecs: 697,
+    cover: '/podcast-covers/ep-117.jpg',
+  },
+  {
     n: 116,
     slug: 'disagreeing-politely-and-professionally-at-work-2026-10-27',
     titleMy: 'အပိုင်း ၁၁၆: အလုပ်တွင် ယဉ်ကျေးစွာ သဘောမတူခြင်း — Disagreeing Politely and Professionally at Work',

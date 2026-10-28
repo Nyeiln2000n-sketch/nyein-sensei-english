@@ -163306,7 +163306,7 @@
    "en": "The app crashed twice this morning.",
    "en_norm": "the app crashed twice this morning",
    "my_norm": "အက်ပ်က ဒီမနက် နှစ်ကြိမ် ပျက်ကျခဲ့တယ်။",
-   "th_norm": "แอปค้างสองครั้งเมื่อเช้านี้",
+   "th_norm": "แอปเด้งสองครั้งเมื่อเช้านี้",
    "fingerprint": "d3a8dc35bf97d386",
    "vocab_sig": [
     "app",
@@ -163631,7 +163631,7 @@
    "en": "The fish smells fresh.",
    "en_norm": "the fish smells fresh",
    "my_norm": "ငါးက လတ်ဆတ်တဲ့ အနံ့ရှိတယ်။",
-   "th_norm": "ปลาส่งกลิ่นสด",
+   "th_norm": "ปลาส่งกลิ่นหอมสด",
    "fingerprint": "5f7bb2db906421b1",
    "vocab_sig": [
     "fish",
@@ -164650,7 +164650,7 @@
    "en": "A gentle breeze cooled the evening.",
    "en_norm": "a gentle breeze cooled the evening",
    "my_norm": "လေပြေညင်းက ညနေခင်းကို အေးမြစေခဲ့တယ်။",
-   "th_norm": "ลมเย็นพัดให้ค่ำคืนเย็นสบาย",
+   "th_norm": "สายลมแผ่วเบาทำให้ยามเย็นสบาย",
    "fingerprint": "e5bcebd5c05cd6e4",
    "vocab_sig": [
     "breeze",
@@ -167181,7 +167181,7 @@
    "en": "I'd like to propose a new strategy.",
    "en_norm": "i d like to propose a new strategy",
    "my_norm": "နည်းဗျူဟာအသစ်တစ်ခု အဆိုပြုချင်ပါတယ်။",
-   "th_norm": "ฉันอยากเสนอยุทธศาสตร์ใหม่",
+   "th_norm": "ฉันอยากเสนอกลยุทธ์ใหม่",
    "fingerprint": "f0171cb74889579c",
    "vocab_sig": [
     "new",
@@ -171530,7 +171530,7 @@
    "en": "The fabric feels cheap.",
    "en_norm": "the fabric feels cheap",
    "my_norm": "အထည်ကိုင်ရတာ အရည်အသွေးညံ့တယ်။",
-   "th_norm": "เนื้อผ้าสัมผัสแล้วรู้สึกไม่ดี",
+   "th_norm": "เนื้อผ้าสัมผัสแล้วรู้สึกเหมือนของถูกๆ",
    "fingerprint": "22bf7234a5ca895a",
    "vocab_sig": [
     "cheap",
@@ -174687,7 +174687,7 @@
    "kind": "phrase",
    "en": "I've been signed off for a week.",
    "en_norm": "i ve been signed off for a week",
-   "my_norm": "တစ်ပတ် နားခွင့်ရထားတယ်။",
+   "my_norm": "ဆရာဝန်ထောက်ခံချက်နဲ့ တစ်ပတ် နားခွင့်ရထားတယ်။",
    "th_norm": "ฉันลาป่วยมาหนึ่งสัปดาห์แล้ว",
    "fingerprint": "2dcb31b0e075200a",
    "vocab_sig": [

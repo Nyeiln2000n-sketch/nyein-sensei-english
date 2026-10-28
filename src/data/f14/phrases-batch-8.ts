@@ -40,7 +40,7 @@ export const phrasesBatch8: Phrase[] = [
   { en: 'How many times a day?', my: 'တစ်နေ့ ဘယ်နှစ်ကြိမ်လဲ။', th: 'วันละกี่ครั้ง', topic: 'doctor', cefr: 'B1' },
   { en: 'The doctor told me to rest.', my: 'ဆရာဝန်က အနားယူဖို့ ပြောတယ်။', th: 'หมอบอกให้ฉันพักผ่อน', topic: 'health', cefr: 'B1' },
   { en: 'I need a sick note for work.', my: 'အလုပ်အတွက် ဆေးထောက်ခံစာ လိုပါတယ်။', th: 'ฉันต้องการใบรับรองแพทย์สำหรับที่ทำงาน', topic: 'doctor', cefr: 'B1' },
-  { en: 'I\'ve been signed off for a week.', my: 'တစ်ပတ် နားခွင့်ရထားတယ်။', th: 'ฉันลาป่วยมาหนึ่งสัปดาห์แล้ว', topic: 'work', cefr: 'B2' },
+  { en: 'I\'ve been signed off for a week.', my: 'ဆရာဝန်ထောက်ခံချက်နဲ့ တစ်ပတ် နားခွင့်ရထားတယ်။', th: 'ฉันลาป่วยมาหนึ่งสัปดาห์แล้ว', topic: 'work', cefr: 'B2' },
   { en: 'When can I go back to work?', my: 'အလုပ်ကို ဘယ်တော့ ပြန်သွားလို့ရမလဲ။', th: 'ฉันกลับไปทำงานได้เมื่อไหร่', topic: 'doctor', cefr: 'B1' },
   { en: 'I have to get my blood drawn.', my: 'သွေးဖောက်စစ်ဖို့ လိုပါတယ်။', th: 'ฉันต้องไปเจาะเลือด', topic: 'doctor', cefr: 'B1' },
   { en: 'The results will take three days.', my: 'ရလဒ်က သုံးရက်ကြာမယ်။', th: 'ผลตรวจจะออกในสามวัน', topic: 'doctor', cefr: 'B1' },
